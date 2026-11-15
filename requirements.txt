@@ -1,0 +1,2 @@
+# Python 3.10 ou superior. O gerador usa somente a biblioteca padrão.
+# As APIs OpenAI e Gemini são chamadas diretamente por HTTPS; não há pacotes extras.
