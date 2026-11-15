@@ -1,0 +1,21 @@
+# Chaves e ambientes locais
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+
+# Fontes descarregadas e ficheiros binários regeneráveis
+.bee-cache/
+.cache/
+.bee.lock
+.bee.compile.lock
+*.SQLite3
+*.SQLite3-journal
+*.SQLite3-wal
+*.SQLite3-shm
+*.bee-tmp
+
+# Trava de execução (libertada automaticamente ao terminar)
+livros_json/.bee.lock
