@@ -13,7 +13,7 @@ import json
 import re
 import unicodedata
 import urllib.request
-from typing import Any, Iterator, Sequence
+from typing import Any, Callable, Iterator, Sequence
 
 from .arquivos import DadosInvalidos, carregar_json, validar_versiculos
 from .catalogo import Livro
@@ -173,6 +173,8 @@ class MotorIA:
         self.rede = rede
         self.max_tokens = max_tokens
         self.aplicar_revisao = aplicar_revisao
+        # Recebe avisos legíveis (novas tentativas, 5xx) para o diário do autopiloto.
+        self.log: Callable[[str], None] | None = None
 
     @property
     def rotulo(self) -> str:
@@ -247,7 +249,9 @@ class MotorIA:
                 url, data=json.dumps(payload).encode('utf-8'), headers=headers, method='POST',
             )
             try:
-                resposta = _objeto_api(self.rede.obter(requisicao, self.provedor), self.provedor)
+                resposta = _objeto_api(
+                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                )
             except ErroRede as exc:
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc
@@ -266,7 +270,9 @@ class MotorIA:
                 headers=headers, method='POST',
             )
             try:
-                resposta = _objeto_api(self.rede.obter(requisicao, self.provedor), self.provedor)
+                resposta = _objeto_api(
+                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                )
             except ErroRede as exc:
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)

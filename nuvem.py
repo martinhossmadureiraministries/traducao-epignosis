@@ -18,6 +18,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import time
 from datetime import timezone
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
@@ -153,6 +154,45 @@ def _unir_progresso(local: Path, remoto: Path) -> int:
     return mantidos
 
 
+_SINAIS_TRANSITORIOS = (
+    'ServicoIndisponivel', 'HTTP 5', 'HTTP 408', 'HTTP 409', 'HTTP 425',
+    'falha de rede', 'timed out', 'timeout',
+)
+
+
+def _caminho_remoto(valor: str) -> Path | None:
+    """Só aceita uma pasta de recuperação explícita e descartável.
+
+    Uma variável vazia virava ``Path('.')`` e podia apagar o próprio projeto;
+    por isso o caminho tem de ser indicado e não pode ser a raiz nem a pasta atual.
+    """
+    if not valor.strip():
+        return None
+    caminho = Path(valor).expanduser()
+    try:
+        absoluto = caminho.resolve()
+    except OSError:
+        return None
+    if absoluto in (Path('/'), Path.home(), Path.cwd().resolve()):
+        return None
+    if '.git' in absoluto.parts:
+        return None
+    return absoluto
+
+
+def _apagar_recuperado(caminho: Path) -> None:
+    """Remove apenas diretórios temporários criados para a recuperação."""
+    if caminho.name.startswith('bee-remoto') or 'bee-remoto' in caminho.parts:
+        shutil.rmtree(caminho, ignore_errors=True)
+    else:
+        print(f'A pasta de recuperação {caminho} não foi apagada (não é temporária).', flush=True)
+
+
+def _parece_transitorio(erro: str) -> bool:
+    """Distingue indisponibilidade passageira do serviço de erro de configuração."""
+    return any(sinal in erro for sinal in _SINAIS_TRANSITORIOS)
+
+
 def _passo_do_plano(dados: Path, livros: list) -> tuple[int, int]:
     """Quantos versículos ainda faltam no livro atual e em toda a fila."""
     existentes = ler_todos(dados)
@@ -225,12 +265,12 @@ def main() -> int:
         fuso, fuso_nome = timezone.utc, 'UTC'
         print(f'Aviso: fuso {fuso_nome!r} desconhecido; a usar UTC.', file=sys.stderr)
 
-    remoto = Path(_env('BEE_REMOTO', ''))
-    if _env('BEE_UNIR', '1') != '0' and remoto.is_dir():
+    remoto = _caminho_remoto(_env('BEE_REMOTO', ''))
+    if _env('BEE_UNIR', '1') != '0' and remoto is not None and remoto.is_dir():
         mantidos = _unir_progresso(dados, remoto)
         if mantidos:
             print(f'Progresso recuperado sem sobrescrever {mantidos} versículo(s) já existentes localmente.')
-        shutil.rmtree(remoto, ignore_errors=True)
+        _apagar_recuperado(remoto)
 
     estado_caminho = dados / '.bee' / 'estado.json'
     estado = carregar_estado(estado_caminho)
@@ -257,6 +297,21 @@ def main() -> int:
             )
             resultado = agendador.ciclo(livros)
             salvar_estado(estado_caminho, estado)
+            # O serviço de IA às vezes responde 5xx em rajada (foi o que
+            # aconteceu na primeira execução real). Em vez de gastar uma
+            # execução inteira do cron, tenta-se de novo aqui.
+            extra = _env_int('BEE_TENTATIVAS_CICLO', 2) - 1
+            while (
+                resultado.acao == 'nada' and extra > 0
+                and estado.falhas_seguidas < agendador.config.max_falhas_seguidas
+                and _parece_transitorio(estado.ultimo_erro or '')
+            ):
+                print('Falha transitória do serviço; nova tentativa no mesmo trabalho...', flush=True)
+                diario.escrever('Falha transitória do serviço; nova tentativa no mesmo trabalho.', 'aviso')
+                time.sleep(float(_env('BEE_ESPERA_ENTRE_TENTATIVAS', '45') or 45))
+                extra -= 1
+                resultado = agendador.ciclo(livros)
+                salvar_estado(estado_caminho, estado)
     except EmExecucao as exc:
         _resumo(f'### {ROTULO}\n\nOutra execução está a usar os dados: {exc}. Nada foi feito.')
         return 0
@@ -294,6 +349,15 @@ def main() -> int:
         linhas.append(
             f'- Faltam {faltam_livro} versículos para concluir '
             f'**{trabalho[0].nome}**; {faltam_fila} em toda a fila'
+        )
+    if resultado.acao == 'nada' and estado.ultimo_erro:
+        linhas.append(f'- Último erro: `{estado.ultimo_erro}`')
+        linhas.append(
+            '- **Causa provável:** serviço de IA instável (5xx) — não é a sua chave nem o '
+            'projeto; o próximo ciclo tenta de novo.'
+            if _parece_transitorio(estado.ultimo_erro) else
+            '- **Causa provável:** configuração (chave, modelo ou quota). '
+            'Corra `python autopiloto.py --testar` e veja a tabela em COMECAR_HOJE.md.'
         )
     if resultado.resumo_compilacao:
         resumo = resultado.resumo_compilacao

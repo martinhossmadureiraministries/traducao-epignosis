@@ -27,7 +27,7 @@ class HTTPFalso:
         self.resposta = resposta
         self.requisicoes = []
 
-    def obter(self, req, descricao, limite=None):
+    def obter(self, req, descricao, limite=None, log=None):
         self.requisicoes.append((req, descricao))
         return json.dumps(self.resposta, ensure_ascii=False).encode()
 
