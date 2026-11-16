@@ -312,6 +312,21 @@ def main() -> int:
                 extra -= 1
                 resultado = agendador.ciclo(livros)
                 salvar_estado(estado_caminho, estado)
+            # O reserva de rede pode esgotar-se por completo (todos os provedores
+            # em 5xx, que foi o que já aconteceu). Não é erro de configuração:
+            # a próxima execução agendada volta a tentar. Sai com 0 e diz porquê,
+            # em vez de marcar o trabalho como falhado e alarmar o utilizador.
+            if (
+                resultado.acao == 'nada' and not resultado.progresso
+                and _parece_transitorio(estado.ultimo_erro or '')
+                and estado.falhas_seguidas < agendador.config.max_falhas_seguidas
+            ):
+                print('Serviço de IA indisponível neste momento; o próximo ciclo agendado volta a tentar.',
+                      flush=True)
+                diario.escrever(
+                    'Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.',
+                    'aviso',
+                )
     except EmExecucao as exc:
         _resumo(f'### {ROTULO}\n\nOutra execução está a usar os dados: {exc}. Nada foi feito.')
         return 0
@@ -369,8 +384,15 @@ def main() -> int:
     else:
         linhas.append('- Módulos: ainda não há capítulos completos')
     _resumo('\n'.join(linhas))
-    # 'nada' com falhas deve deixar a execução vermelha no GitHub.
-    return 1 if resultado.acao == 'nada' and estado.falhas_seguidas else 0
+    # 'nada' com falhas deve deixar a execução vermelha no GitHub — exceto
+    # quando a causa é o serviço estar em baixo (5xx): isso não é um defeito do
+    # projeto e o próximo ciclo agendado volta a tentar. Falhas de configuração
+    # continuam a marcar a execução como falhada, para não passarem em claro.
+    if resultado.acao == 'nada' and estado.falhas_seguidas:
+        if _parece_transitorio(estado.ultimo_erro or ''):
+            return 0
+        return 1
+    return 0
 
 
 if __name__ == '__main__':
