@@ -33,8 +33,8 @@ Tempo total: **cerca de 40 minutos**, dos quais ~25 são só esperar.
 
 Requer conta no GitHub (já tem, o repositório é seu) e 10 minutos.
 
-1. **Leve o código ao `main`:** abra o PR #2 no repositório e faça **Merge pull request**. O PR já foi verificado (71 testes locais) e é sobre automação, não sobre o conteúdo bíblico.
-2. **Crie o workflow.** O ficheiro está em `modelos/bee-autopiloto.yml` porque o agente que o criou não tem permissão de escrita em `.github/workflows`. Duas formas:
+1. **Confirme que está no `main` atualizado:** `git pull` (ou *Sync fork* no site). As correções de automação já estão no `main` e verificadas por 91 testes locais; nada disto toca no texto bíblico.
+2. **Atualize o workflow.** Se já criou `.github/workflows/bee-autopiloto.yml` antes, substitua o conteúdo pelo de `modelos/bee-autopiloto.yml` (só mudou uma frase do diagnóstico). Se ainda não o criou, o ficheiro está em `modelos/` porque o agente não tem permissão de escrita em `.github/workflows`. Duas formas:
    - **Pelo site:** no repositório, *Add file → Create new file*, nome exato `.github/workflows/bee-autopiloto.yml`, cole o conteúdo de `modelos/bee-autopiloto.yml` e *Commit changes* em `main`.
    - **No seu computador:**
      ```bash
@@ -53,13 +53,13 @@ Requer conta no GitHub (já tem, o repositório é seu) e 10 minutos.
 
 #### Quer ver o primeiro ciclo já, sem esperar os 15 minutos?
 
-Despache à mão a partir do PR:
+O seu código já está no `main`. Para disparar uma execução imediata:
 
-1. No PR #2, etiquetas (*Labels*) → crie a etiqueta **`bee-producao`** e aplique-a.
-2. Isso dispara o workflow no ramo do PR (o evento `pull_request: labeled` está previsto no modelo).
-3. Em *Actions* verá a execução e, no fim, o resumo com "+N versículos" e o `BEE-modulos.zip` em *Artifacts*.
+1. *Actions* → **BEE — produção automática** → botão **Run workflow** → **Run workflow** (deixe o modelo vazio: o programa descobre qual está disponível).
+2. Em poucos minutos, o resumo da execução mostra `Ação: gerado — …` com os versículos produzidos, e o `BEE-modulos.zip` fica em *Artifacts*.
+3. Se a etiqueta **`bee-producao`** já existir no repositório, aplicá-la a um PR também dispara o workflow (evento `pull_request: labeled`).
 
-Se o GitHub não mostrar o botão *Run workflow* no PR (comportamento varia), use o caminho B abaixo para o primeiro teste e deixe a nuvem arrancar sozinha depois do merge.
+Se o GitHub estiver lento ou o botão não aparecer, use o caminho B abaixo para o primeiro teste e deixe a nuvem arrancar sozinha depois.
 
 ### Caminho B — Seu computador (funciona sempre, mesmo sem GitHub)
 
@@ -185,7 +185,7 @@ cat livros_json/.bee/diario.md           # o que aconteceu
 
 ```text
 # nuvem (uma vez)
-1. Merge do PR #2 em main
+1. Código atualizado no main (git pull)
 2. Criar .github/workflows/bee-autopiloto.yml a partir de modelos/bee-autopiloto.yml
 3. Secret GEMINI_API_KEY (e, se quiser, GROQ_API_KEY)
 4. Actions → BEE — produção automática → Run workflow (ou etiqueta bee-producao no PR)
