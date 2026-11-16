@@ -49,9 +49,13 @@ Os números abaixo são **referências de 2026 que mudam sem aviso**; confirme-o
 
 Se o Gemini responder 503 e a reserva também falhar, a execução termina com
 `Serviço de IA indisponível neste momento; o próximo ciclo agendado volta a
-tentar` e **não** fica vermelha no GitHub. Não é um defeito do projeto nem da
-sua chave: o cron volta em 15 minutos. Só a configuração (chave recusada,
-quota esgotada) fica marcada como falha, para não passar em claro.
+tentar`. Não é um defeito do projeto nem da sua chave: o cron volta em 15
+minutos e um 5xx não conta para o limite de 6 falhas seguidas que pararia o
+agendador. Só a configuração (chave recusada, quota esgotada) marca a execução
+como falhada, para não passar em claro.
+
+**Nunca é preciso correr atrás de um nome de modelo.** Se o serviço retirar o
+modelo que estava a ser usado, a execução seguinte escolhe outro e continua.
 
 ### O programa pergunta ao serviço qual é o modelo
 
