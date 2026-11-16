@@ -1,2 +1,15 @@
-- 2026-11-16T14:52:48+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
-- 2026-11-16T14:52:48+00:00 — **ERRO** Ciclo 1 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:21:52+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.8s (1/3).
+- 2026-11-16T15:21:54+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.7s (2/3).
+- 2026-11-16T15:21:59+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:21:59+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:22:00+00:00 — **AVISO** groq: o modelo 'llama-3.3-70b-versatile' não existe nesta conta; use --testar --modelo <outro> ou o modelo padrão.
+- 2026-11-16T15:22:00+00:00 — Falha de rede em Groq · llama-3.3-70b-versatile; a tentar outro provedor.
+- 2026-11-16T15:22:00+00:00 — **ERRO** Ciclo 1 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.; Groq · llama-3.3-70b-versatile: groq: HTTP 404; verifique o endereço ou o nome do modelo.
+- 2026-11-16T15:22:00+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
+- 2026-11-16T15:22:45+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.4s (1/3).
+- 2026-11-16T15:22:51+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.0s (2/3).
+- 2026-11-16T15:22:57+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:22:57+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:22:58+00:00 — **AVISO** groq: o modelo 'llama-3.3-70b-versatile' não existe nesta conta; use --testar --modelo <outro> ou o modelo padrão.
+- 2026-11-16T15:22:58+00:00 — Falha de rede em Groq · llama-3.3-70b-versatile; a tentar outro provedor.
+- 2026-11-16T15:22:58+00:00 — **ERRO** Ciclo 2 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.; Groq · llama-3.3-70b-versatile: groq: HTTP 404; verifique o endereço ou o nome do modelo.
