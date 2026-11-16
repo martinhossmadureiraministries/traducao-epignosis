@@ -320,6 +320,31 @@ class IndisponibilidadeTest(Base):
         dados = json.loads((self.dados / '640_Filemom.json').read_text(encoding='utf-8'))
         self.assertEqual(len(dados['in_progress']['1']), 4)
 
+    def test_nuvem_5xx_persistente_nao_marca_falha(self):
+        """Serviço em baixo com a reserva esgotada: sai limpo, o cron volta."""
+        import nuvem
+
+        class Sempre503(MotorFalso):
+            def gerar(self, *a, **k):
+                raise ServicoIndisponivel('gemini: HTTP 503; esgotadas 3 tentativas.')
+
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0',
+            'BEE_TENTATIVAS_CICLO': '1', 'BEE_ESPERA_ENTRE_TENTATIVAS': '0',
+            'BEE_PUBLICAR': '0', 'BEE_LIVROS': '640',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache),
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[Sempre503()]), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 0, saida.getvalue())
+        self.assertIn('próximo ciclo', saida.getvalue())
+        diario = (self.dados / '.bee' / 'diario.md').read_text(encoding='utf-8')
+        self.assertIn('indisponível', diario)
+
     def test_nuvem_nao_repete_erro_de_configuracao(self):
         import nuvem
         chamadas = []

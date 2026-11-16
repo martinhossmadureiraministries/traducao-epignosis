@@ -45,6 +45,14 @@ Os números abaixo são **referências de 2026 que mudam sem aviso**; confirme-o
 | **OpenRouter** | modelos com sufixo `:free`, teto diário baixo | `openai/gpt-oss-120b:free`, `qwen/qwen3-235b-a22b:free` | Terceira reserva |
 | OpenAI | sem plano gratuito | — | Só se você já tiver crédito |
 
+### Quando o serviço está mesmo em baixo
+
+Se o Gemini responder 503 e a reserva também falhar, a execução termina com
+`Serviço de IA indisponível neste momento; o próximo ciclo agendado volta a
+tentar` e **não** fica vermelha no GitHub. Não é um defeito do projeto nem da
+sua chave: o cron volta em 15 minutos. Só a configuração (chave recusada,
+quota esgotada) fica marcada como falha, para não passar em claro.
+
 ### O programa pergunta ao serviço qual é o modelo
 
 Nomes de modelos envelhecem. A Groq retirou os Llama 3.x do plano gratuito em
