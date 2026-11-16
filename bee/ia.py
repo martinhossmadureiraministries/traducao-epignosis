@@ -382,6 +382,11 @@ class MotorIA:
                 # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
                 # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}
+            if self.provedor == 'groq' and 'gpt-oss' in self.modelo:
+                # Os modelos GPT-OSS "pensam" antes de responder e esses tokens
+                # contam para max_tokens: com esforço baixo cabem lotes maiores
+                # sem truncar (a causa mais comum de respostas cortadas).
+                payload['reasoning_effort'] = 'low'
             headers = {'Authorization': f'Bearer {chave}'}
         headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
         return url, payload, headers
