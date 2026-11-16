@@ -19,3 +19,10 @@ __pycache__/
 
 # Trava de execução (libertada automaticamente ao terminar)
 livros_json/.bee.lock
+
+# Autopiloto: estado, diário e pacotes gerados (o conteúdo dos capítulos
+# continua versionado em livros_json/*.json)
+livros_json/.bee/
+entregas/auto/
+BEE-modulos.zip
+BEE-*.zip

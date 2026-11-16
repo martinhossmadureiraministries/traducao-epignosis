@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 import math
 import random
+import re
 import sys
 import time
 import urllib.error
@@ -13,6 +14,10 @@ import urllib.request
 
 class ErroRede(RuntimeError):
     pass
+
+
+class CotaExcedida(ErroRede):
+    """HTTP 429 persistente: a quota do serviço (ou da chave) está esgotada por agora."""
 
 
 def _retry_after(valor: str | None) -> float:
@@ -65,8 +70,8 @@ class ClienteHTTP:
                 if not transitorio:
                     dica = {
                         400: 'verifique os parâmetros e a compatibilidade do modelo',
-                        401: 'verifique API_KEY',
-                        403: 'verifique permissões, faturação e API_KEY',
+                        401: 'verifique a chave do provedor',
+                        403: 'verifique permissões, faturação e a chave',
                         404: 'verifique o endereço ou o nome do modelo',
                     }.get(codigo, 'verifique a configuração do serviço')
                     raise ErroRede(f'{descricao}: HTTP {codigo}; {dica}.') from None
@@ -78,8 +83,24 @@ class ClienteHTTP:
                 # A pausa é medida após o fim da chamada, não apenas entre inícios.
                 self._ultima_requisicao = time.monotonic()
             if tentativa == self.tentativas:
-                raise ErroRede(f'{descricao}: {motivo}; esgotadas {self.tentativas} tentativas.') from None
+                classe = CotaExcedida if motivo == 'HTTP 429' else ErroRede
+                raise classe(
+                    f'{descricao}: {motivo}; esgotadas {self.tentativas} tentativas.'
+                ) from None
             atraso = max(retry_after, min(60.0, 2 ** (tentativa - 1) + random.random()))
             print(f'{descricao}: {motivo}; nova tentativa em {atraso:.1f}s ({tentativa}/{self.tentativas}).', file=sys.stderr)
             time.sleep(atraso)
         raise AssertionError('inalcançável')
+
+
+def mascarar(chave: str) -> str:
+    """Identifica uma chave nos registos sem revelar o segredo."""
+    chave = chave.strip()
+    return f'…{chave[-4:]}' if len(chave) > 8 else '(chave curta)'
+
+
+def ler_chaves(valor: str | None) -> list[str]:
+    """Aceita uma chave ou várias separadas por vírgula/ponto e vírgula."""
+    if not valor:
+        return []
+    return [parte.strip() for parte in re.split(r'[,;\s]+', valor) if parte.strip()]

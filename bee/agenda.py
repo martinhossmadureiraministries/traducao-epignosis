@@ -1,0 +1,438 @@
+"""Agendador da produção automática: ritmo, janela diária, orçamento e diário.
+
+O estado vive ao lado dos dados (`livros_json/.bee/`), nunca no Git, e é escrito
+de forma atómica. Um ciclo é: gerar uma fatia com orçamento → compilar → registar.
+Se algo falhar, o ciclo seguinte tenta de novo; nada é apagado.
+"""
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
+from datetime import date, datetime, time, timedelta, timezone
+import json
+import os
+from pathlib import Path
+import tempfile
+from typing import Any
+
+from .arquivos import ler_todos
+from .catalogo import LIVROS
+from .compilador import ErroCompilacao, compilar
+from .gerador import ConfigGeracao, Progresso, gerar_fatia
+from .ia import Rodizio, VERSOS_POR_PEDIDO_PADRAO
+from .fontes import FontesOriginais
+from .rede import ClienteHTTP
+
+
+FUSO_PADRAO = 'UTC'
+
+
+# --------------------------------------------------------------------------
+# Estado persistente
+
+
+def _agora() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def _iso(momento: datetime) -> str:
+    return momento.astimezone(timezone.utc).isoformat(timespec='seconds')
+
+
+def escrever_atomico(caminho: Path, texto: str) -> None:
+    caminho.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporario = tempfile.mkstemp(prefix=f'.{caminho.name}.', suffix='.bee-tmp', dir=caminho.parent)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as arquivo:
+            arquivo.write(texto)
+            arquivo.flush()
+            os.fsync(arquivo.fileno())
+        os.replace(temporario, caminho)
+    finally:
+        try:
+            os.unlink(temporario)
+        except FileNotFoundError:
+            pass
+
+
+@dataclass
+class Estado:
+    """Tudo o que o agendador precisa de recordar entre ciclos."""
+
+    criado_utc: str = field(default_factory=lambda: _iso(_agora()))
+    ciclos: int = 0
+    versos_total: int = 0
+    dias: dict[str, dict[str, Any]] = field(default_factory=dict)
+    ultimo_ciclo_utc: str | None = None
+    ultima_compilacao_utc: str | None = None
+    ultima_compilacao_build: str | None = None
+    falhas_seguidas: int = 0
+    ultimo_erro: str | None = None
+    # Provedores que o rodízio já marcou como esgotados hoje.
+    exaustos_em: str | None = None
+    exaustos: list[str] = field(default_factory=list)
+
+    def dia(self, chave: str) -> dict[str, Any]:
+        return self.dias.setdefault(chave, {
+            'pedidos': 0, 'versos': 0, 'capitulos': 0, 'falhas': 0,
+            'aberto': True, 'fechado_em_utc': None,
+        })
+
+    def para_json(self) -> dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def de_json(cls, dados: Any) -> 'Estado':
+        if not isinstance(dados, dict):
+            return cls()
+        conhecidos = {campo for campo in cls.__dataclass_fields__}
+        return cls(**{k: v for k, v in dados.items() if k in conhecidos})
+
+
+def carregar_estado(caminho: Path) -> Estado:
+    if not caminho.exists():
+        return Estado()
+    try:
+        return Estado.de_json(json.loads(caminho.read_text(encoding='utf-8')))
+    except (OSError, ValueError):
+        # Um estado ilegível nunca deve impedir a produção: começa-se de novo,
+        # mas os JSON dos capítulos permanecem intactos.
+        return Estado()
+
+
+def salvar_estado(caminho: Path, estado: Estado) -> None:
+    escrever_atomico(caminho, json.dumps(estado.para_json(), ensure_ascii=False, indent=2, sort_keys=True) + '\n')
+
+
+# --------------------------------------------------------------------------
+# Diário legível
+
+
+class Diario:
+    """Linha por acontecimento em Markdown, adequada para ler no telefone."""
+
+    def __init__(self, caminho: Path):
+        self.caminho = caminho
+
+    LIMITE_BYTES = 300_000
+
+    def escrever(self, texto: str, nivel: str = 'info') -> None:
+        marca = {'info': '', 'aviso': '**AVISO** ', 'erro': '**ERRO** '}.get(nivel, '')
+        self._rodar()
+        self.caminho.parent.mkdir(parents=True, exist_ok=True)
+        with self.caminho.open('a', encoding='utf-8', newline='\n') as arquivo:
+            arquivo.write(f'- {_iso(_agora())} — {marca}{texto}\n')
+
+    def _rodar(self) -> None:
+        """Mantém o diário legível: guarda as últimas linhas quando fica grande."""
+        try:
+            if self.caminho.stat().st_size <= self.LIMITE_BYTES:
+                return
+            linhas = self.caminho.read_text(encoding='utf-8').splitlines()
+        except OSError:
+            return
+        escrever_atomico(
+            self.caminho,
+            '# Diário da produção automática da BEE (continuação)\n\n'
+            + '\n'.join(linhas[-1000:]) + '\n',
+        )
+
+    def resumo(self, texto: str) -> None:
+        self.caminho.parent.mkdir(parents=True, exist_ok=True)
+        if not self.caminho.exists():
+            escrever_atomico(
+                self.caminho,
+                '# Diário da produção automática da BEE\n\n'
+                'Este ficheiro é escrito pelo agendador. O progresso real está nos JSON e nos módulos.\n\n',
+            )
+        with self.caminho.open('a', encoding='utf-8', newline='\n') as arquivo:
+            arquivo.write(f'\n## {_iso(_agora())}\n\n{texto}\n')
+
+
+# --------------------------------------------------------------------------
+# Janela diária e ritmo
+
+
+def _data_local(momento: datetime, fuso: Any) -> date:
+    return momento.astimezone(fuso).date()
+
+
+def dentro_da_janela(momento: datetime, fuso: Any, inicio: int, fim: int) -> bool:
+    """Horas locais inteiras; `inicio == fim` significa 24 horas por dia."""
+    if inicio == fim:
+        return True
+    hora = momento.astimezone(fuso).hour
+    if inicio < fim:
+        return inicio <= hora < fim
+    return hora >= inicio or hora < fim
+
+
+def segundos_ate_abrir(momento: datetime, fuso: Any, inicio: int) -> float:
+    local = momento.astimezone(fuso)
+    alvo = datetime.combine(local.date(), time(hour=inicio), tzinfo=local.tzinfo)
+    if alvo <= local:
+        alvo += timedelta(days=1)
+    return max(30.0, (alvo - local).total_seconds())
+
+
+@dataclass
+class ConfigAgenda:
+    """Parâmetros de um ciclo de produção automática."""
+
+    intervalo_min: float = 5.0
+    max_versos: int = 6
+    max_pedidos: int = 3
+    pedidos_por_dia: int = 400
+    versos_por_dia: int = 0            # 0: sem teto próprio
+    hora_inicio: int = 0
+    hora_fim: int = 24
+    fuso: str = FUSO_PADRAO
+    lote_global: int | None = None
+    versos_por_pedido: dict[str, int] = field(default_factory=dict)
+    tentativas_conteudo: int = 3
+    estilo: bool = True
+    compilar: bool = True
+    pausa_rede: float = 1.0
+    tentativas_rede: int = 3
+    timeout: float = 180.0
+    max_tokens: int = 4096
+    revisao: bool = True
+    max_falhas_seguidas: int = 6
+
+    def lote(self, provedor: str) -> int:
+        return (
+            self.versos_por_pedido.get(provedor)
+            or self.lote_global
+            or VERSOS_POR_PEDIDO_PADRAO.get(provedor, 8)
+        )
+
+
+# --------------------------------------------------------------------------
+# Fila de trabalho
+
+
+# As oito fases do PLANO_BEE.md, na ordem editorial aprovada.
+FASES = [
+    [640, 500],
+    [480, 470, 490, 510],
+    [10, 20],
+    [230, 240, 220, 250, 260],
+    [520, 530, 540, 550, 560, 570, 580, 590, 600, 610, 620, 630, 650, 660, 670, 680, 690, 700, 710, 720],
+    [30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 190],
+    [290, 300, 310, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460],
+    [730],
+]
+
+
+_ORDEM_PLANO = [numero for fase in FASES for numero in fase]
+_RANK_PLANO = {numero: i for i, numero in enumerate(_ORDEM_PLANO)}
+POR_NUMERO = {livro.numero: livro for livro in LIVROS}
+
+
+def livros_na_fila(apenas: list[int] | None = None, ordem: str = 'plano') -> list[Any]:
+    """Ordem de produção.
+
+    - 'plano': as oito fases do PLANO_BEE.md (Filemom primeiro).
+    - 'canonica': Génesis a Apocalipse.
+    - 'curtos': livros com menos capítulos primeiro (empate pela ordem do plano).
+    - `apenas`: mantém a ordem pedida pelo utilizador.
+    """
+    if apenas:
+        vistos: list[Any] = []
+        for numero in apenas:
+            livro = POR_NUMERO.get(numero)
+            if livro is not None and livro not in vistos:
+                vistos.append(livro)
+        return vistos
+    if ordem == 'canonica':
+        return list(LIVROS)
+    if ordem == 'curtos':
+        return sorted(LIVROS, key=lambda l: (l.capitulos, _RANK_PLANO.get(l.numero, 999)))
+    return sorted(LIVROS, key=lambda l: (_RANK_PLANO.get(l.numero, 999), l.numero))
+
+
+def proximo_trabalho(livros: list[Any], diretorio: Path) -> tuple[Any, int] | None:
+    """Primeiro capítulo ainda incompleto, para mostrar no diário."""
+    dados = ler_todos(diretorio)
+    for livro in livros:
+        completos = dados.get(livro.numero, {}).get('chapters', {})
+        for capitulo in range(1, livro.capitulos + 1):
+            if str(capitulo) not in completos:
+                return livro, capitulo
+    return None
+
+
+# --------------------------------------------------------------------------
+# Ciclo
+
+
+@dataclass
+class QuotaDeTodosEsgotada(RuntimeError):
+    pass
+
+
+@dataclass
+class ResultadoCiclo:
+    acao: str                    # 'gerado', 'nada', 'adormecer', 'parar'
+    detalhe: str = ''
+    progresso: Progresso | None = None
+    espera: float | None = None
+    resumo_compilacao: dict[str, Any] | None = None
+
+
+class Agendador:
+    def __init__(
+        self, dados: Path, saida: Path, cache: Path, estado: Estado,
+        config: ConfigAgenda, diario: Diario, fuso: Any, motores: list[Any],
+        fontes: FontesOriginais, rede: ClienteHTTP,
+    ):
+        self.dados = dados
+        self.saida = saida
+        self.cache = cache
+        self.estado = estado
+        self.config = config
+        self.diario = diario
+        self.fuso = fuso
+        self.motores = motores
+        self.fontes = fontes
+        self.rede = rede
+        self._rodizio: Rodizio | None = None
+
+    # -- rodízio de provedores ------------------------------------------------
+    def _obter_rodizio(self) -> Rodizio:
+        if self._rodizio is not None:
+            return self._rodizio
+        hoje = _data_local(_agora(), self.fuso).isoformat()
+        if self.estado.exaustos_em != hoje:
+            self.estado.exaustos_em = hoje
+            self.estado.exaustos = []
+        exaustos = set(self.estado.exaustos)
+        ativos = [m for m in self.motores if m.provedor not in exaustos]
+        if not ativos:
+            raise QuotaDeTodosEsgotada('todos os provedores configurados já esgotaram a quota hoje')
+        self._rodizio = Rodizio(ativos, registar=self.diario.escrever)
+        return self._rodizio
+
+    def _registar_exaustos(self) -> None:
+        if self._rodizio is None:
+            return
+        for nome in self._rodizio.esgotados():
+            if nome not in self.estado.exaustos:
+                self.estado.exaustos.append(nome)
+
+    # -- decisões de calendário ----------------------------------------------
+    def decidir(self, momento: datetime) -> ResultadoCiclo | None:
+        """Devolve None quando é hora de gerar, ou o motivo para esperar."""
+        chave = _data_local(momento, self.fuso).isoformat()
+        dia = self.estado.dia(chave)
+        if not dentro_da_janela(momento, self.fuso, self.config.hora_inicio, self.config.hora_fim):
+            if dia['aberto']:
+                dia['aberto'] = False
+                dia['fechado_em_utc'] = _iso(momento)
+                self.diario.escrever(f'Janela diária encerrada; retoma às {self.config.hora_inicio:02d}:00 ({self.config.fuso}).')
+            espera = segundos_ate_abrir(momento, self.fuso, self.config.hora_inicio)
+            return ResultadoCiclo('adormecer', 'fora da janela diária', espera=espera)
+        if not dia['aberto']:
+            dia['aberto'] = True
+            self.diario.escrever('Janela diária reaberta.')
+        if dia['pedidos'] >= self.config.pedidos_por_dia:
+            return ResultadoCiclo(
+                'parar', f"orçamento diário de {self.config.pedidos_por_dia} pedidos atingido", espera=None,
+            )
+        if self.config.versos_por_dia and dia['versos'] >= self.config.versos_por_dia:
+            return ResultadoCiclo(
+                'parar', f"orçamento diário de {self.config.versos_por_dia} versículos atingido",
+            )
+        if self.estado.falhas_seguidas >= self.config.max_falhas_seguidas:
+            return ResultadoCiclo(
+                'parar',
+                f"{self.estado.falhas_seguidas} falhas seguidas; última: {self.estado.ultimo_erro}",
+            )
+        return None
+
+    # -- um ciclo -------------------------------------------------------------
+    def ciclo(self, livros: list[Any]) -> ResultadoCiclo:
+        momento = _agora()
+        decisao = self.decidir(momento)
+        if decisao is not None:
+            return decisao
+        chave = _data_local(momento, self.fuso).isoformat()
+        dia = self.estado.dia(chave)
+        self.estado.ciclos += 1
+        self.estado.ultimo_ciclo_utc = _iso(momento)
+
+        try:
+            motor = self._obter_rodizio()
+        except QuotaDeTodosEsgotada as exc:
+            self.diario.escrever(f'{exc}; a aguardar a reabertura da janela diária.', 'aviso')
+            return ResultadoCiclo(
+                'adormecer', str(exc),
+                espera=segundos_ate_abrir(momento, self.fuso, self.config.hora_inicio),
+            )
+        config = ConfigGeracao(
+            versos_por_pedido=self.config.lote(motor.provedor),
+            tentativas_conteudo=self.config.tentativas_conteudo,
+            max_versos=self.config.max_versos,
+            estilo=self.config.estilo,
+        )
+        try:
+            progresso = gerar_fatia(livros, self.dados, self.fontes, motor, config)
+        except Exception as exc:  # qualquer falha é registada e o ciclo seguinte tenta de novo
+            dia['falhas'] += 1
+            self.estado.falhas_seguidas += 1
+            self.estado.ultimo_erro = f'{type(exc).__name__}: {exc}'
+            self._registar_exaustos()
+            self.diario.escrever(f'Ciclo {self.estado.ciclos} falhou: {exc}', 'erro')
+            return ResultadoCiclo('nada', f'falha: {exc}', progresso=None)
+        self.estado.falhas_seguidas = 0
+        dia['versos'] += progresso.versos
+        dia['capitulos'] += progresso.capitulos
+        dia['pedidos'] += progresso.pedidos
+        self.estado.versos_total += progresso.versos
+        self._registar_exaustos()
+
+        alvo = 'livro completo'
+        if progresso.livro:
+            alvo = f'{progresso.livro.nome} {progresso.capitulo or ""}'.strip()
+        if progresso.concluido and progresso.versos == 0:
+            self.diario.escrever(
+                f'Nada pendente nesta fila de {len(livros)} livro(s). '
+                'Se quiser continuar, acrescente mais livros à fila.'
+            )
+            return ResultadoCiclo('parar', f'nada pendente nesta fila de {len(livros)} livro(s)')
+        if progresso.versos == 0 and progresso.capitulos == 0:
+            return ResultadoCiclo(
+                'nada', '; '.join(progresso.motivos) or 'nenhum progresso', progresso=progresso,
+            )
+
+        resumo = None
+        if self.config.compilar and progresso.capitulos:
+            resumo = self._compilar(chave)
+        seguinte = proximo_trabalho(livros, self.dados)
+        onde = f' A seguir: {seguinte[0].nome} {seguinte[1]}.' if seguinte else ''
+        self.diario.escrever(
+            f'Ciclo {self.estado.ciclos}: +{progresso.versos} versículos, '
+            f'+{progresso.capitulos} capítulos em {alvo} '
+            f'({motor.provedor}/{motor.modelo}; {self.config.lote(motor.provedor)} versículos/pedido). '
+            f'Hoje: {dia["versos"]} versículos, {dia["pedidos"]} pedidos.{onde}'
+        )
+        salvar_estado(self.dados / '.bee' / 'estado.json', self.estado)
+        return ResultadoCiclo('gerado', alvo, progresso=progresso, resumo_compilacao=resumo)
+
+    def _compilar(self, chave: str) -> dict[str, Any] | None:
+        existentes = ler_todos(self.dados)
+        if not any(dados['chapters'] for dados in existentes.values()):
+            # Ainda não há um capítulo completo; nada a publicar.
+            return None
+        try:
+            resumo = compilar(self.dados, self.saida)
+        except (ErroCompilacao, ValueError, OSError) as exc:
+            self.diario.escrever(f'A compilação falhou; os módulos anteriores foram preservados: {exc}', 'aviso')
+            return None
+        self.estado.ultima_compilacao_utc = _iso(_agora())
+        self.estado.ultima_compilacao_build = str(resumo['build_id'])
+        estado = 'completo' if resumo['completo'] else 'PARCIAL'
+        self.diario.escrever(
+            f'Módulos recompilados ({estado}): {resumo["capitulos"]}/1189 capítulos, '
+            f'{resumo["versiculos"]} versículos.'
+        )
+        return resumo
