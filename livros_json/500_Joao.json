@@ -1,0 +1,1384 @@
+{
+  "format_version": 1,
+  "book_number": 500,
+  "book_name": "João",
+  "chapter_count": 21,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "No princípio, o Verbo já existia. O Verbo estava com Deus, e o Verbo era Deus.",
+        "commentary": "<p><b>Análise léxica:</b> λόγος (lógos, G3056) pode significar palavra, mensagem ou discurso; neste prólogo, ‘Verbo’ designa aquele que depois é apresentado como vindo ao mundo e tornando-se carne. θεός (theós, G2316) significa Deus.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener. A ausência do artigo antes do último θεός, por si só, não exige a tradução ‘um deus’.</p><p><b>Síntese exegética:</b> O versículo afirma a existência do Verbo no princípio, sua relação com Deus e que o Verbo era Deus. A relação indicada por ‘com Deus’ não reduz o Verbo a um simples sinônimo do Pai.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Ele estava com Deus no princípio.",
+        "commentary": "<p><b>Análise léxica:</b> πρός (prós, G4314), com o acusativo, pode expressar movimento ou relação; aqui acompanha a afirmação de que o Verbo estava com Deus.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A repetição retoma o início do prólogo e destaca a relação do Verbo com Deus desde o princípio.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Todas as coisas vieram a existir por meio dele; sem ele, nada do que existe veio a existir.",
+        "commentary": "<p><b>Análise léxica:</b> γίνομαι (gínomai, G1096) pode significar ‘vir a existir’, ‘acontecer’ ou ‘tornar-se’. A preposição διά com genitivo marca aqui o meio pelo qual tudo veio a existir.</p><p><b>Crítica textual:</b> As palavras de SBLGNT e Scrivener coincidem na comparação; a pontuação é uma decisão editorial. A tradução liga ‘o que veio a existir’ à frase anterior, enquanto o SBLGNT o liga ao início de 1:4.</p><p><b>Síntese exegética:</b> O texto apresenta todas as coisas como vindas à existência por meio do Verbo. A escolha de pontuação entre os versículos 3 e 4 merece revisão, pois altera a articulação das frases.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Nele estava a vida, e a vida era a luz da humanidade.",
+        "commentary": "<p><b>Análise léxica:</b> ζωή (zōḗ, G2222) significa vida, e φῶς (phōs, G5457), luz. ‘Humanidade’ traduz aqui o plural de ἄνθρωπος, que pode abranger pessoas em geral.</p><p><b>Crítica textual:</b> As palavras correspondem nas duas edições comparadas. O SBLGNT pontua a expressão final de 1:3 com esta frase; a tradução adota a outra ligação, indicada na nota de 1:3.</p><p><b>Síntese exegética:</b> Vida e luz são apresentadas em relação ao Verbo; o prólogo desenvolverá esses temas ao falar de sua vinda e de seu acolhimento.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "A luz brilha nas trevas, e as trevas não a venceram.",
+        "commentary": "<p><b>Análise léxica:</b> σκοτία (skotía, G4653) significa escuridão ou trevas. καταλαμβάνω (katalambánō, G2638) pode significar alcançar, dominar ou compreender, conforme o contexto.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a transcrição de Scrivener não preserva acentos nem pontuação.</p><p><b>Síntese exegética:</b> A tradução privilegia a ideia de que as trevas não venceram a luz. ‘Não a compreenderam’ é outra interpretação possível; os dois sentidos não precisam ser impostos simultaneamente.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Surgiu um homem enviado por Deus; seu nome era João.",
+        "commentary": "<p><b>Análise léxica:</b> ἀποστέλλω (apostéllō, G649) significa enviar, inclusive com uma missão. O particípio ‘enviado’ descreve a origem da missão de João.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O prólogo apresenta João como mensageiro de Deus, distinto do Verbo e da luz sobre a qual ele testemunhará.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Ele veio como testemunha, para dar testemunho da luz, a fim de que todos cressem por meio dele.",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρία (martyría, G3141) significa testemunho ou evidência; πιστεύω (pisteúō, G4100) pode significar crer ou confiar.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A missão de João é apontar para a luz, visando à fé dos ouvintes. ‘Por meio dele’ geralmente é entendido como referência ao testemunho de João, mas a referência do pronome é discutida.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Ele não era a luz, mas veio para dar testemunho da luz.",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρέω (martyréō, G3140) significa testemunhar ou dar testemunho. A segunda oração grega deixa implícito um verbo de movimento, aqui suprido por ‘veio’.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A negação impede que o mensageiro seja confundido com a própria luz; sua função é testemunhar a respeito dela.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "A verdadeira luz, que ilumina toda pessoa, estava vindo ao mundo.",
+        "commentary": "<p><b>Análise léxica:</b> ἀληθινός (alēthinós, G228) pode indicar algo verdadeiro ou genuíno; φωτίζω (phōtízō, G5461) significa iluminar e pode ser usado figuradamente.</p><p><b>Crítica textual:</b> As palavras de SBLGNT e Scrivener coincidem na comparação, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener. A relação de ‘vindo ao mundo’ é uma questão de sintaxe, não uma diferença de palavras entre essas edições.</p><p><b>Síntese exegética:</b> A frase ‘vindo ao mundo’ pode ser entendida como referente à luz ou a cada pessoa. A tradução segue a primeira leitura, sem pretender que a alternativa seja gramaticalmente impossível.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Ele estava no mundo, e o mundo veio a existir por meio dele, mas o mundo não o reconheceu.",
+        "commentary": "<p><b>Análise léxica:</b> κόσμος (kósmos, G2889) pode designar o mundo, seus habitantes ou, em determinados contextos, a humanidade em oposição a Deus. γινώσκω (ginṓskō, G1097) significa conhecer ou reconhecer.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O contraste é entre o mundo que veio a existir por meio do Verbo e o mundo que não o reconheceu. O sentido de ‘mundo’ é definido pelo contexto, não por um único significado obrigatório em todas as ocorrências.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Veio para o que era seu, mas os seus não o receberam.",
+        "commentary": "<p><b>Análise léxica:</b> παραλαμβάνω (paralambánō, G3880) pode significar receber, acolher ou tomar consigo. A primeira expressão traduz um plural neutro; a segunda, um plural masculino referente a pessoas.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O versículo contrasta a vinda ao que lhe pertencia com a falta de acolhimento por parte dos seus. O texto não autoriza culpar um povo inteiro; o próprio evangelho apresenta seguidores judeus de Jesus.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Mas a todos os que o receberam, aos que creem em seu nome, ele deu o direito de se tornarem filhos de Deus.",
+        "commentary": "<p><b>Análise léxica:</b> ἐξουσία (exousía, G1849) pode indicar autoridade, poder ou direito; τέκνον (téknon, G5043) significa filho ou criança. O direito aqui é concedido pelo Verbo, não apresentado como conquista independente.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O acolhimento do Verbo é associado à fé em seu nome e ao dom de se tornar filho de Deus. A referência a ‘filhos’ inclui aqueles que o recebem, sem restrição de sexo.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Estes não nasceram do sangue, nem da vontade da carne, nem da vontade de um homem, mas de Deus.",
+        "commentary": "<p><b>Análise léxica:</b> γεννάω (gennáō, G1080) pode significar gerar ou nascer, conforme a construção. σάρξ (sárx, G4561) significa carne e, em certos contextos, pode referir-se à condição humana.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener leem o verbo no plural: os que recebem o Verbo nasceram de Deus. A comparação não inclui cotejo direto de manuscritos.</p><p><b>Síntese exegética:</b> O nascimento descrito é atribuído a Deus, não à descendência ou à decisão humana. ‘Sangue’ traduz uma forma plural grega; ‘homem’ verte ἀνήρ, termo que também pode referir-se a um marido.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "O Verbo se tornou carne e habitou entre nós. Vimos sua glória, glória como a do <i>Filho</i> único vindo do Pai, cheio de graça e de verdade.",
+        "commentary": "<p><b>Análise léxica:</b> σάρξ (sárx, G4561) significa carne; σκηνόω (skēnóō, G4637) significa morar ou armar tenda; μονογενής (monogenḗs, G3439) pode expressar condição única ou de filho único.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener. ‘Filho’ explicita uma relação inferida do contexto; a palavra grega para ‘filho’ não aparece nesta frase.</p><p><b>Síntese exegética:</b> O Verbo assume a condição humana e vive entre as pessoas. A imagem de habitar pode evocar a tenda da presença divina, mas ‘habitou’ não obriga o leitor a uma única alusão. A glória é descrita em relação ao Pai, à graça e à verdade.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "João testemunha a respeito dele e proclama: “Este é aquele de quem eu falei: ‘O que vem depois de mim passou à minha frente, pois existia antes de mim.’”",
+        "commentary": "<p><b>Análise léxica:</b> ἔμπροσθεν (émprosthen, G1715) significa ‘diante’ ou ‘à frente’; πρῶτος (prōtos, G4413) pode indicar o primeiro em ordem ou posição. O contexto exige distinguir a vinda posterior da precedência afirmada.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras desta frase na comparação realizada. O aparato SBLGNT registra uma formulação diferente em outra edição; ele compara edições, não substitui o cotejo de manuscritos.</p><p><b>Síntese exegética:</b> João declara a precedência daquele que vem depois dele. ‘Passou à minha frente’ comunica a expressão de precedência; sua relação com a afirmação de existência anterior deve ser lida no conjunto do prólogo.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Pois de sua plenitude todos nós recebemos, graça sobre graça.",
+        "commentary": "<p><b>Análise léxica:</b> πλήρωμα (plḗrōma, G4138) significa plenitude; χάρις (cháris, G5485), graça ou favor. ἀντί (antí, G473) pode indicar substituição ou correspondência.</p><p><b>Crítica textual:</b> O SBLGNT começa com ὅτι, aqui traduzido ‘pois’; o Scrivener lê καί, ‘e’. A diferença foi verificada nas próprias edições.</p><p><b>Síntese exegética:</b> ‘Graça sobre graça’ favorece a ideia de abundância sucessiva. Também se propõem ‘graça em lugar de graça’ ou uma relação de correspondência; a preposição, por si só, não resolve a discussão.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Pois a lei foi dada por meio de Moisés; a graça e a verdade vieram por meio de Jesus Cristo.",
+        "commentary": "<p><b>Análise léxica:</b> νόμος (nómos, G3551) pode designar lei ou instrução; ἀλήθεια (alḗtheia, G225) significa verdade ou realidade, conforme o contexto.</p><p><b>Crítica textual:</b> As edições comparadas apresentam grafias gregas diferentes para o nome de Moisés, sem alterar sua identificação na tradução. A transcrição de Scrivener não conserva acentos nem pontuação.</p><p><b>Síntese exegética:</b> O versículo relaciona a lei a Moisés e a graça e a verdade a Jesus Cristo. A frase não inclui uma palavra equivalente a ‘mas’; a natureza da relação entre os dois dons exige leitura do contexto.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Ninguém jamais viu Deus; [[o Único, que é Deus]] e está junto ao Pai, foi quem o revelou.",
+        "commentary": "<p><b>Análise léxica:</b> μονογενής (monogenḗs, G3439) pode indicar alguém único; ἐξηγέομαι (exēgéomai, G1834) pode significar explicar ou dar a conhecer. ‘Junto ao Pai’ traduz uma expressão com κόλπος (kólpos, G2859), literalmente ligada ao seio, imagem de proximidade.</p><p><b>Crítica textual:</b> O SBLGNT lê μονογενὴς θεός, aqui ‘o Único, que é Deus’; o Scrivener lê ‘o Filho único’. Segundo Bruce Terry, P66, P75, Sinaítico e Vaticano apoiam a leitura com ‘Deus’; Alexandrino e muitas cópias posteriores, a leitura com ‘Filho’. O aparato SBLGNT compara edições; não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> A tradução entende ‘Único’ e ‘Deus’ em aposição, referindo-se àquele que torna o Pai conhecido. A construção do SBLGNT admite discussão, e a leitura ‘Filho único’ da outra edição deve permanecer visível ao leitor.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Este é o testemunho de João: os judeus enviaram de Jerusalém sacerdotes e levitas para lhe perguntar: “Quem é você?”",
+        "commentary": "<p><b>Análise léxica:</b> Ἰουδαῖος (Ioudaîos, G2453) pode referir-se a judeus ou, conforme o contexto, a pessoas da Judeia; ἀποστέλλω (apostéllō, G649) significa enviar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar acentos e pontuação. O aparato do SBLGNT registra em outras edições o acréscimo ‘a ele’ após o verbo enviar.</p><p><b>Síntese exegética:</b> A expressão ‘os judeus’ refere-se aqui a pessoas ligadas ao envio de sacerdotes e levitas de Jerusalém; seu alcance em João varia conforme a passagem. Ela não autoriza uma acusação contra o povo judeu como um todo; Jesus e seus primeiros seguidores também eram judeus.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Ele declarou e não negou; declarou: “Eu não sou o Cristo.”",
+        "commentary": "<p><b>Análise léxica:</b> ὁμολογέω (homologéō, G3670) pode significar confessar, declarar ou reconhecer publicamente. A repetição do verbo destaca a clareza da resposta.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener colocam o pronome ‘eu’ em posições diferentes na frase final, sem mudar a negativa de João.</p><p><b>Síntese exegética:</b> A primeira resposta de João define quem ele não é: ele nega ser o Cristo, o Messias esperado.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Então perguntaram: “Quem é você, então? É Elias?” Ele disse: “Não sou.” “É o Profeta?” Ele respondeu: “Não.”",
+        "commentary": "<p><b>Análise léxica:</b> προφήτης (prophḗtēs, G4396) significa profeta. O artigo em ‘o Profeta’ apresenta uma figura conhecida pelos que fazem a pergunta.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener apresentam ordem diferente das palavras na pergunta sobre Elias, sem mudar sua ideia principal.</p><p><b>Síntese exegética:</b> A pergunta pode refletir expectativas sobre Elias e sobre um profeta como Moisés; compare Malaquias 4:5 e Deuteronômio 18:15. A negativa não especifica todas as possíveis relações entre João e essas expectativas.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Por isso lhe disseram: “Quem é você? Precisamos dar uma resposta aos que nos enviaram. O que você diz de si mesmo?”",
+        "commentary": "<p><b>Análise léxica:</b> ἀπόκρισις (apókrisis, G612) significa resposta. O propósito de responder aos que enviaram a delegação explica a insistência na pergunta.</p><p><b>Crítica textual:</b> A comparação identificou formas gregas diferentes do verbo ‘disseram’ no SBLGNT e no Scrivener, sem alteração substancial da pergunta.</p><p><b>Síntese exegética:</b> Os enviados pedem a João que se identifique para que possam comunicar sua resposta aos responsáveis pela missão.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Ele respondeu: “Eu sou a voz de quem clama no deserto: ‘Endireitem o caminho do Senhor’, como disse o profeta Isaías.”",
+        "commentary": "<p><b>Análise léxica:</b> φωνή (phōnḗ, G5456) significa voz ou som; εὐθύνω (euthýnō, G2116) pode significar tornar reto ou endireitar.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener. Os limites da citação e a ligação de ‘no deserto’ dependem de pontuação interpretativa.</p><p><b>Síntese exegética:</b> João se descreve com palavras associadas a Isaías 40:3: sua função é preparar o caminho do Senhor. Não foi consultada diretamente uma edição da Septuaginta para comparar sua formulação com a citação.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Havia enviados dos fariseus.",
+        "commentary": "<p><b>Análise léxica:</b> Φαρισαῖος (Pharisaîos, G5330) designa um fariseu, membro de um grupo judaico da época; ἀποστέλλω (apostéllō, G649) significa enviar.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo antes de ‘enviados’; o SBLGNT não o inclui. A relação sintática dos enviados com os fariseus também é discutida.</p><p><b>Síntese exegética:</b> A frase pode ser entendida como referência a enviados que pertenciam ao grupo dos fariseus ou a enviados da parte deles. Ela não resolve, por si só, se é descrita uma delegação distinta da mencionada em 1:19.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Eles lhe perguntaram: “Então por que você batiza, se não é o Cristo, nem Elias, nem o Profeta?”",
+        "commentary": "<p><b>Análise léxica:</b> βαπτίζω (baptízō, G907) significa mergulhar ou batizar; χριστός (christós, G5547) significa ungido e é usado como título messiânico.</p><p><b>Crítica textual:</b> As edições comparadas variam na forma de ‘disseram’ e nas partículas traduzidas por ‘nem’; a pergunta fundamental permanece a mesma.</p><p><b>Síntese exegética:</b> Os interlocutores questionam a autoridade de João para batizar depois que ele negou ser as figuras mencionadas. O versículo não explica sozinho todas as práticas de purificação do período.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "João lhes respondeu: “Eu batizo com água. Entre vocês está alguém que vocês não conhecem,",
+        "commentary": "<p><b>Análise léxica:</b> βαπτίζω (baptízō, G907) é usado para batizar; μέσος (mésos, G3319) significa meio ou posição entre pessoas ou coisas.</p><p><b>Crítica textual:</b> O Scrivener acrescenta uma partícula adversativa antes de ‘entre vocês’; o SBLGNT não a inclui. A forma do verbo ‘estar’ também varia entre edições citadas no aparato.</p><p><b>Síntese exegética:</b> João apresenta seu batismo com água e dirige a atenção para alguém já presente, mas não reconhecido pelos interlocutores. A frase continua no versículo seguinte.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "aquele que vem depois de mim [[e passou à minha frente]], de quem não sou digno de desamarrar a correia da sandália.”",
+        "commentary": "<p><b>Análise léxica:</b> ἱμάς (himás, G2438) significa correia ou tira; ὑπόδημα (hypódēma, G5266) designa sandália ou calçado.</p><p><b>Crítica textual:</b> A frase entre colchetes traduz um suplemento do Scrivener, ausente no SBLGNT. Segundo Bruce Terry, P66, P75, Sinaítico e Vaticano apoiam a forma sem essa frase; Alexandrino e a tradição bizantina incluem-na. Não houve exame direto dos manuscritos. A precedência aparece também em 1:15 e 1:30.</p><p><b>Síntese exegética:</b> A imagem de desatar a sandália expressa a humildade de João diante daquele que vem depois dele; não é necessário reconstruir uma regra social específica para entender o contraste.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Isso aconteceu em [[Betânia]], do outro lado do Jordão, onde João estava batizando.",
+        "commentary": "<p><b>Análise léxica:</b> Βηθανία (Bēthanía, G963) é o nome Betânia; πέραν (péran, G4008) indica a região além ou do outro lado de algo.</p><p><b>Crítica textual:</b> O SBLGNT lê ‘Betânia’; o Scrivener lê ‘Betabara’. Conforme Bruce Terry, P66, P75, o primeiro texto do Sinaítico e o Vaticano apoiam Betânia; outros manuscritos gregos, incluindo K, apoiam Betabara. Há ainda outra forma do nome. O levantamento, não os manuscritos, foi consultado diretamente.</p><p><b>Síntese exegética:</b> O lugar é situado além do Jordão; sua identificação precisa é incerta. Não se deve presumir que seja a mesma localidade de Betânia perto de Jerusalém.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "No dia seguinte, <i>João</i> viu Jesus vindo em sua direção e disse: “Vejam, o Cordeiro de Deus, que tira o pecado do mundo!",
+        "commentary": "<p><b>Análise léxica:</b> ἀμνός (amnós, G286) significa cordeiro; αἴρω (aírō, G142) pode significar levantar, carregar ou tirar. Aqui é traduzido por ‘tira’.</p><p><b>Crítica textual:</b> O SBLGNT não nomeia João como sujeito neste versículo; o Scrivener acrescenta seu nome. A tradução o explicita a partir do contexto anterior.</p><p><b>Síntese exegética:</b> João identifica Jesus como o Cordeiro de Deus e relaciona sua ação ao pecado do mundo. Entre os possíveis ecos estão o cordeiro pascal e o servo comparado a um cordeiro em Isaías 53; o versículo não escolhe explicitamente uma única imagem.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "É dele que eu disse: ‘Depois de mim vem um homem que passou à minha frente, pois existia antes de mim.’",
+        "commentary": "<p><b>Análise léxica:</b> πρῶτος (prōtos, G4413) pode indicar prioridade em ordem ou posição; ἔμπροσθεν (émprosthen, G1715) expressa a ideia de estar diante ou à frente.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener usam preposições gregas diferentes antes de ‘quem’; ambas são compatíveis com a referência à pessoa de quem João fala.</p><p><b>Síntese exegética:</b> João identifica Jesus com aquele de quem havia falado. A precedência e a existência anterior retomam o testemunho de 1:15.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Eu não o conhecia, mas, para que ele fosse revelado a Israel, vim batizando com água.”",
+        "commentary": "<p><b>Análise léxica:</b> φανερόω (phaneróō, G5319) significa revelar, tornar conhecido ou manifestar; βαπτίζω (baptízō, G907) significa batizar.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo antes de ‘água’ que não aparece no SBLGNT; isso não exige uma tradução diferente neste contexto.</p><p><b>Síntese exegética:</b> João relaciona sua missão de batizar à manifestação daquele que seria conhecido por Israel. O texto não esclarece por si só o alcance de seu desconhecimento anterior nem descreve toda a relação pessoal entre os dois.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "João também testemunhou: “Vi o Espírito descer do céu como uma pomba, e ele permaneceu sobre <i>Jesus</i>.",
+        "commentary": "<p><b>Análise léxica:</b> περιστερά (peristerá, G4058) significa pomba; μένω (ménō, G3306) significa permanecer, ficar ou habitar.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener usam formas diferentes para a comparação ‘como’; a referência à pomba está presente em ambas as edições.</p><p><b>Síntese exegética:</b> João relata a descida e a permanência do Espírito sobre Jesus. A comparação com uma pomba não exige uma identificação única de seu simbolismo.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "Eu não o conhecia. Mas aquele que me enviou para batizar com água me disse: ‘Aquele sobre quem você vir o Espírito descer e permanecer, esse é o que batiza com o Espírito Santo.’",
+        "commentary": "<p><b>Análise léxica:</b> πνεῦμα (pneûma, G4151) pode significar espírito, sopro ou vento; ἅγιος (hágios, G40) significa santo ou separado para Deus.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O sinal recebido por João identifica aquele que batiza com o Espírito Santo. O texto contrasta a missão de João com a ação daquele que ele anuncia.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "Eu vi e tenho testemunhado que ele é o [[Escolhido de Deus]].”",
+        "commentary": "<p><b>Análise léxica:</b> ἐκλεκτός (eklektós, G1588) significa escolhido ou selecionado; μαρτυρέω (martyréō, G3140) significa dar testemunho.</p><p><b>Crítica textual:</b> O SBLGNT lê ‘o Escolhido de Deus’; o Scrivener lê ‘o Filho de Deus’. Segundo os levantamentos de Bruce Terry e H. A. G. Houghton, o primeiro texto do Sinaítico apoia ‘Escolhido’, enquanto P66, P75, Vaticano e a maior parte dos manuscritos gregos leem ‘Filho’. A evidência antiga não é uniforme; não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> Nesta leitura, João testemunha que Jesus é o Escolhido de Deus. A leitura ‘Filho de Deus’ deve ser considerada na revisão textual, sem ocultar a diferença entre as edições.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "No dia seguinte, João estava novamente ali com dois de seus discípulos.",
+        "commentary": "<p><b>Análise léxica:</b> μαθητής (mathētḗs, G3101) significa discípulo, aluno ou aprendiz. O termo descreve pessoas que acompanham um mestre.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A narrativa apresenta dois discípulos de João antes de relatar como passaram a seguir Jesus. Um deles será identificado em 1:40; o nome do outro não é informado aqui.</p>"
+      },
+      {
+        "verse": 36,
+        "text": "Ao olhar para Jesus, que caminhava, disse: “Vejam, o Cordeiro de Deus!”",
+        "commentary": "<p><b>Análise léxica:</b> ἐμβλέπω (emblépō, G1689) pode significar olhar atentamente; ἀμνός (amnós, G286) significa cordeiro.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> João volta a identificar Jesus como o Cordeiro de Deus, agora na presença de dois discípulos. O testemunho prepara a mudança relatada no versículo seguinte.</p>"
+      },
+      {
+        "verse": 37,
+        "text": "Os dois discípulos ouviram o que <i>João</i> disse e seguiram Jesus.",
+        "commentary": "<p><b>Análise léxica:</b> ἀκούω (akoúō, G191) significa ouvir, e ἀκολουθέω (akolouthéō, G190), seguir ou acompanhar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener diferem na posição de uma palavra referente a João, sem mudar o fato de que os dois discípulos ouviram e seguiram Jesus.</p><p><b>Síntese exegética:</b> O testemunho de João conduz os dois discípulos a seguir Jesus. O texto nomeia apenas um deles em 1:40.</p>"
+      },
+      {
+        "verse": 38,
+        "text": "Jesus se voltou e, vendo que o seguiam, perguntou: “O que vocês estão procurando?” Eles responderam: “Rabi, onde você está hospedado?” (Rabi quer dizer “Mestre”.)",
+        "commentary": "<p><b>Análise léxica:</b> ῥαββί (rhabbí, G4461) é um título de respeito; διδάσκαλος (didáskalos, G1320) significa mestre ou professor. μένω (ménō, G3306) pode significar ficar, permanecer ou morar.</p><p><b>Crítica textual:</b> As edições comparadas empregam formas diferentes para ‘disseram’ e para a expressão ‘traduzido’; o sentido principal do diálogo permanece.</p><p><b>Síntese exegética:</b> A pergunta de Jesus abre o diálogo, e os discípulos respondem perguntando onde ele está. ‘Hospedado’ expressa uma leitura contextual de μένω, sem afirmar quanto tempo ele permaneceria ali.</p>"
+      },
+      {
+        "verse": 39,
+        "text": "Ele lhes disse: “Venham e [[verão]].” Eles foram, viram onde ele estava hospedado e ficaram com ele naquele dia. Era cerca da décima hora.",
+        "commentary": "<p><b>Análise léxica:</b> μένω (ménō, G3306) significa permanecer ou ficar; δέκατος (dékatos, G1182) significa décimo.</p><p><b>Crítica textual:</b> O SBLGNT lê o futuro ‘vocês verão’; o Scrivener lê o imperativo ‘vejam’. O levantamento VarApp do STEP Bible relaciona P66, P75 e Vaticano ao futuro, e Sinaítico, Alexandrino e a tradição bizantina ao imperativo. Não houve cotejo direto dos manuscritos.</p><p><b>Síntese exegética:</b> Os discípulos aceitam o convite, observam onde Jesus está e permanecem com ele. Contada a partir do nascer do sol, a décima hora seria aproximadamente quatro da tarde; o texto não informa um horário moderno exato.</p>"
+      },
+      {
+        "verse": 40,
+        "text": "Um dos dois que ouviram João e seguiram <i>Jesus</i> era André, irmão de Simão Pedro.",
+        "commentary": "<p><b>Análise léxica:</b> ἀδελφός (adelphós, G80) significa irmão; ἀκολουθέω (akolouthéō, G190), seguir ou acompanhar.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> André é identificado como um dos dois discípulos e como irmão de Simão Pedro. A identidade do segundo não é declarada neste versículo.</p>"
+      },
+      {
+        "verse": 41,
+        "text": "Ele encontrou [[primeiro]] seu irmão Simão e lhe disse: “Encontramos o Messias” — que significa “Cristo”.",
+        "commentary": "<p><b>Análise léxica:</b> Μεσσίας (Messías, G3323) translitera uma palavra ligada à ideia de ungido; χριστός (christós, G5547) é a expressão grega correspondente.</p><p><b>Crítica textual:</b> O SBLGNT lê πρῶτον, ‘primeiro’, ligado à ação; o Scrivener lê πρῶτος, que pode qualificar André como o primeiro. Segundo Bruce Terry, P66, P75 e Vaticano apoiam a primeira forma, enquanto a primeira mão do Sinaítico e outras cópias apoiam a segunda. A relação da expressão com a sequência do relato é discutida; não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> André compartilha com seu irmão a convicção de ter encontrado o Messias. O próprio evangelho explica o título por meio do termo grego ‘Cristo’.</p>"
+      },
+      {
+        "verse": 42,
+        "text": "<i>André</i> o levou a Jesus. Jesus olhou para ele e disse: “Você é Simão, filho de [[João]]. Você será chamado Cefas” — que quer dizer “Pedro”.",
+        "commentary": "<p><b>Análise léxica:</b> Κηφᾶς (Kēphâs, G2786) vem de um nome aramaico associado a pedra ou rocha; Πέτρος (Pétros, G4074) é o nome grego Pedro, relacionado a pedra.</p><p><b>Crítica textual:</b> O SBLGNT lê ‘filho de João’; o Scrivener, ‘filho de Jonas’. Segundo Bruce Terry, P66, P75, Sinaítico e a primeira escrita do Vaticano apoiam ‘João’; Alexandrino, uma correção do Vaticano e muitos manuscritos posteriores leem ‘Jonas’. A tradução explicita André pelo contexto de 1:40–41; não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> Jesus identifica Simão e anuncia seu novo nome. O relato associa Cefas a Pedro, sem explicar aqui todos os desdobramentos desse nome.</p>"
+      },
+      {
+        "verse": 43,
+        "text": "No dia seguinte, Jesus decidiu partir para a Galileia. Encontrou Filipe e lhe disse: “Siga-me.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀκολουθέω (akolouthéō, G190) significa seguir ou acompanhar; o verbo aparece aqui como chamado direto a Filipe.</p><p><b>Crítica textual:</b> O nome de Jesus aparece em posições diferentes nas duas edições comparadas; ambas identificam Jesus no relato.</p><p><b>Síntese exegética:</b> Jesus encontra Filipe e o chama para segui-lo. O texto não relata aqui todos os detalhes do encontro.</p>"
+      },
+      {
+        "verse": 44,
+        "text": "Filipe era de Betsaida, cidade de André e de Pedro.",
+        "commentary": "<p><b>Análise léxica:</b> Βηθσαϊδά (Bēthsaïdá, G966) é o nome Betsaida; πόλις (pólis, G4172) significa cidade.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Filipe é relacionado à mesma cidade de André e Pedro. O versículo não declara que os três já eram amigos ou parentes.</p>"
+      },
+      {
+        "verse": 45,
+        "text": "Filipe encontrou Natanael e lhe disse: “Encontramos aquele de quem Moisés escreveu na Lei, e também os profetas: Jesus de Nazaré, filho de José.”",
+        "commentary": "<p><b>Análise léxica:</b> νόμος (nómos, G3551) pode referir-se à lei ou aos livros da Lei; Ναζαρέτ (Nazarét, G3478) é o nome Nazaré.</p><p><b>Crítica textual:</b> As edições apresentam grafias diferentes para Moisés e Nazaré, e o Scrivener inclui um artigo antes de ‘filho’. A identificação da pessoa permanece a mesma.</p><p><b>Síntese exegética:</b> Filipe apresenta Jesus como aquele a quem associa os escritos de Moisés e dos profetas. ‘Filho de José’ identifica Jesus em sua fala e não explica, neste versículo, todas as questões relativas à filiação.</p>"
+      },
+      {
+        "verse": 46,
+        "text": "Natanael perguntou: “Pode vir alguma coisa boa de Nazaré?” Filipe respondeu: “Venha e veja.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀγαθός (agathós, G18) significa bom; ἔρχομαι (érchomai, G2064) pode significar vir ou ir, conforme o contexto.</p><p><b>Crítica textual:</b> As edições comparadas apresentam grafias diferentes para Nazaré e diferem quanto ao artigo antes do nome Filipe; a pergunta e o convite permanecem.</p><p><b>Síntese exegética:</b> Natanael expressa dúvida sobre Nazaré. Filipe não desenvolve uma resposta detalhada, mas convida Natanael a verificar por si mesmo.</p>"
+      },
+      {
+        "verse": 47,
+        "text": "Jesus viu Natanael se aproximando e disse a respeito dele: “Vejam, um verdadeiro israelita, em quem não há falsidade.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀληθῶς (alēthōs, G230) significa verdadeiramente; δόλος (dólos, G1388) significa engano, falsidade ou astúcia.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Jesus elogia a sinceridade de Natanael. A afirmação descreve essa pessoa e não autoriza generalizações negativas sobre outros israelitas.</p>"
+      },
+      {
+        "verse": 48,
+        "text": "Natanael perguntou: “De onde você me conhece?” Jesus respondeu: “Antes que Filipe chamasse você, eu o vi debaixo da figueira.”",
+        "commentary": "<p><b>Análise léxica:</b> γινώσκω (ginṓskō, G1097) significa conhecer ou reconhecer; συκῆ (sykḗ, G4808) significa figueira.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo antes do nome de Jesus; o SBLGNT não o inclui nessa posição. Isso não altera a identificação de quem responde.</p><p><b>Síntese exegética:</b> Jesus afirma ter visto Natanael antes do chamado de Filipe. O texto não esclarece o que Natanael fazia sob a figueira, por isso explicações sobre a atividade permanecem conjecturais.</p>"
+      },
+      {
+        "verse": 49,
+        "text": "Natanael respondeu: “Rabi, você é o Filho de Deus! Você é o Rei de Israel!”",
+        "commentary": "<p><b>Análise léxica:</b> υἱός (hyiós, G5207) significa filho; βασιλεύς (basileús, G935) significa rei ou governante.</p><p><b>Crítica textual:</b> As edições diferem na forma de introduzir a resposta e na ordem de palavras da segunda afirmação, sem retirar os títulos ‘Filho de Deus’ e ‘Rei de Israel’.</p><p><b>Síntese exegética:</b> Natanael responde a Jesus com dois títulos. Seu conteúdo deve ser desenvolvido à luz do evangelho inteiro, sem presumir que Natanael já compreendesse todas as implicações da narrativa.</p>"
+      },
+      {
+        "verse": 50,
+        "text": "Jesus respondeu: “Você crê porque eu disse que o vi debaixo da figueira? Você verá coisas maiores do que estas.”",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) significa crer ou confiar; μείζων (meízōn, G3187) é uma forma comparativa que significa maior.</p><p><b>Crítica textual:</b> O SBLGNT inclui uma conjunção grega antes de ‘vi você’ que o Scrivener não inclui. A pontuação da primeira frase como pergunta é uma decisão editorial e admite discussão.</p><p><b>Síntese exegética:</b> Jesus relaciona a fé de Natanael à revelação recebida e aponta para algo maior que ele verá. A interpretação não depende de supor que a figueira tenha um significado oculto específico.</p>"
+      },
+      {
+        "verse": 51,
+        "text": "E lhe disse: “Eu lhes afirmo com toda a certeza: vocês [[de agora em diante]] verão o céu aberto e os anjos de Deus subindo e descendo sobre o Filho do Homem.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀμήν (amḗn, G281) é uma afirmação solene; sua repetição no grego é expressa por ‘com toda a certeza’. ἀναβαίνω (anabaínō, G305) significa subir, e καταβαίνω (katabaínō, G2597), descer.</p><p><b>Crítica textual:</b> ‘De agora em diante’ é um suplemento do Scrivener, assinalado entre colchetes; não está no SBLGNT. Segundo levantamento de James Snapp, P66, P75, Sinaítico e Vaticano não trazem a expressão, que aparece no Alexandrino e em muitos manuscritos posteriores. O plural ‘vocês’ traduz o grego; não houve cotejo direto dos manuscritos.</p><p><b>Síntese exegética:</b> Embora Jesus se dirija inicialmente a Natanael, a promessa é formulada no plural. A imagem dos anjos subindo e descendo evoca Gênesis 28:12, agora relacionada ao Filho do Homem.</p>"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "No terceiro dia houve um casamento em Caná da Galileia, e a mãe de Jesus estava ali.",
+        "commentary": "<p><b>Análise léxica:</b> γάμος (gámos, G1062) pode designar o casamento ou a festa de casamento; ἡμέρα (hēméra, G2250) significa dia.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar acentos e pontuação. O aparato SBLGNT mostra outra ordem de palavras para ‘terceiro dia’ em uma edição.</p><p><b>Síntese exegética:</b> A narrativa situa o acontecimento em Caná e apresenta a mãe de Jesus. A referência ao terceiro dia deve ser lida no contexto da sequência narrativa, sem impor uma cronologia que o versículo não explica.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Jesus e seus discípulos também foram convidados para o casamento.",
+        "commentary": "<p><b>Análise léxica:</b> καλέω (kaléō, G2564) pode significar chamar ou convidar; μαθητής (mathētḗs, G3101) significa discípulo ou aprendiz.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Jesus participa da celebração acompanhado de seus discípulos. O texto não informa a identidade dos noivos ou a relação deles com os convidados.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Quando o vinho acabou, a mãe de Jesus lhe disse: “Eles não têm mais vinho.”",
+        "commentary": "<p><b>Análise léxica:</b> οἶνος (oînos, G3631) significa vinho; ὑστερέω (hysteréō, G5302) pode expressar falta ou escassez.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A mãe de Jesus comunica a necessidade surgida durante a festa. O versículo não declara o que ela esperava que Jesus fizesse.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Jesus lhe respondeu: “Mulher, o que isso tem a ver comigo e com você? Minha hora ainda não chegou.”",
+        "commentary": "<p><b>Análise léxica:</b> γυνή (gynḗ, G1135), no vocativo γύναι, é uma forma de dirigir-se a uma mulher; ὥρα (hṓra, G5610) pode indicar hora ou momento determinado.</p><p><b>Crítica textual:</b> O SBLGNT inclui ‘e’ no início da frase, ausente no Scrivener. A pontuação da afirmação sobre a hora é editorial; alguns a entendem como pergunta, embora aqui seja traduzida como declaração.</p><p><b>Síntese exegética:</b> A expressão literalmente pergunta o que há entre ‘mim e você’; seu tom e seu alcance exatos são discutidos. ‘Mulher’ não é necessariamente um insulto. A hora de Jesus é tema retomado ao longo do evangelho.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Sua mãe disse aos serventes: “Façam tudo o que ele disser a vocês.”",
+        "commentary": "<p><b>Análise léxica:</b> διάκονος (diákonos, G1249) pode significar servo, ajudante ou alguém que presta um serviço; aqui designa os que atendem na celebração.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar acentos e pontuação. O aparato SBLGNT registra outra forma gráfica em uma edição.</p><p><b>Síntese exegética:</b> A mãe de Jesus orienta os serventes a atenderem ao que ele lhes disser, antes que as instruções sejam apresentadas na narrativa.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Havia ali seis potes de pedra para a purificação dos judeus; cada um tinha capacidade para duas ou três medidas.",
+        "commentary": "<p><b>Análise léxica:</b> ὑδρία (hydría, G5201) significa pote ou jarro para água; καθαρισμός (katharismós, G2512), purificação; μετρητής (metrētḗs, G3355), uma medida de capacidade.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener diferem na ordem de palavras ao descrever os potes e sua finalidade, sem alterar o número de recipientes nem sua capacidade indicada.</p><p><b>Síntese exegética:</b> Os recipientes são associados a práticas judaicas de purificação, não descritas aqui em detalhe. Se a medida ática de aproximadamente 39 litros for a referência, cada pote comportaria cerca de 80 a 120 litros; a conversão é aproximada.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Jesus lhes disse: “Encham os potes de água.” E eles os encheram até a borda.",
+        "commentary": "<p><b>Análise léxica:</b> γεμίζω (gemízō, G1072) significa encher. A expressão final indica que os potes foram enchidos até em cima.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Os serventes executam a instrução de Jesus. O destaque do relato está no enchimento completo dos recipientes.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Então lhes disse: “Agora tirem <i>um pouco</i> e levem ao encarregado do banquete.” E eles levaram.",
+        "commentary": "<p><b>Análise léxica:</b> ἀντλέω (antléō, G501) significa tirar ou retirar líquido; ἀρχιτρίκλινος (architríklinos, G755) designa alguém encarregado de um banquete.</p><p><b>Crítica textual:</b> O SBLGNT usa uma forma que retoma ‘eles’ antes de ‘levaram’; o Scrivener lê uma conjunção ‘e’. O conteúdo principal da ação permanece.</p><p><b>Síntese exegética:</b> Jesus pede que retirem líquido e o levem ao encarregado. ‘Um pouco’, em itálico, completa a frase em português; o grego não informa a quantidade retirada.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Quando o encarregado do banquete provou a água transformada em vinho, sem saber de onde ela vinha — embora os serventes que tiraram a água soubessem —, chamou o noivo",
+        "commentary": "<p><b>Análise léxica:</b> γεύομαι (geúomai, G1089) significa provar ou experimentar; νυμφίος (nymphíos, G3566) significa noivo.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O narrador distingue o conhecimento dos serventes da ignorância do encarregado quanto à origem do vinho. A frase continua no versículo seguinte.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "e lhe disse: “Todos servem primeiro o vinho bom e, quando os <i>convidados</i> já beberam bastante, servem o de qualidade inferior. Mas você guardou o vinho bom até agora.”",
+        "commentary": "<p><b>Análise léxica:</b> καλός (kalós, G2570) pode significar bom ou belo; μεθύσκω (methýskō, G3182), na forma passiva, pode indicar ficar embriagado. A tradução ‘beberam bastante’ preserva a referência ao consumo sem definir o grau de cada pessoa.</p><p><b>Crítica textual:</b> O Scrivener acrescenta uma partícula equivalente a ‘então’, ausente no SBLGNT; a sequência descrita continua inteligível nas duas edições.</p><p><b>Síntese exegética:</b> O encarregado elogia o noivo pela qualidade do vinho servido por último, sem saber sua origem. ‘Convidados’, em itálico, explicita o sujeito implícito pelo contexto da festa.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Assim, Jesus realizou em Caná da Galileia o primeiro de seus sinais; revelou sua glória, e seus discípulos creram nele.",
+        "commentary": "<p><b>Análise léxica:</b> σημεῖον (sēmeîon, G4592) significa sinal ou indício; δόξα (dóxa, G1391) pode significar glória ou honra.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo antes de ‘início’ ou ‘primeiro’; o SBLGNT não o inclui. Ambas as edições apresentam este acontecimento em relação ao começo dos sinais.</p><p><b>Síntese exegética:</b> O narrador chama o acontecimento de início dos sinais de Jesus e relaciona-o à manifestação de sua glória e à fé dos discípulos. ‘Primeiro’ não enumera aqui todos os sinais posteriores.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Depois disso, <i>Jesus</i> desceu a Cafarnaum com sua mãe, <i>seus</i> irmãos e seus discípulos. Ali ficaram poucos dias.",
+        "commentary": "<p><b>Análise léxica:</b> ἀδελφός (adelphós, G80) significa irmão; μένω (ménō, G3306) pode significar permanecer ou ficar.</p><p><b>Crítica textual:</b> As edições apresentam grafias diferentes para Cafarnaum; o Scrivener inclui um possessivo após ‘irmãos’, ausente nessa posição no SBLGNT. A tradução explicita Jesus e a referência dos irmãos pelo contexto, marcando-os em itálico.</p><p><b>Síntese exegética:</b> O relato menciona a mãe, os irmãos e os discípulos de Jesus em uma breve estadia. O grau exato de parentesco referido por ‘irmãos’ é objeto de interpretações distintas e não é resolvido aqui.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Estava próxima a Páscoa dos judeus, e Jesus subiu a Jerusalém.",
+        "commentary": "<p><b>Análise léxica:</b> πάσχα (páscha, G3957) designa a Páscoa; Ἰουδαῖος (Ioudaîos, G2453) significa judeu ou judaico, conforme o contexto.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A viagem de Jesus ocorre próximo da Páscoa, festa judaica também relacionada à vida de Jesus e de seus discípulos judeus. É a primeira Páscoa mencionada neste evangelho.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "No templo, encontrou pessoas vendendo bois, ovelhas e pombas, e cambistas sentados.",
+        "commentary": "<p><b>Análise léxica:</b> ἱερόν (hierón, G2411) pode designar o templo e seu recinto; κερματιστής (kermatistḗs, G2773) significa cambista ou trocador de moedas.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A venda de animais e a troca de moedas são apresentadas no ambiente do templo. Os outros evangelhos relatam uma ação semelhante perto do fim da narrativa do ministério; a relação cronológica entre os relatos é discutida.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Ele fez um chicote de cordas e expulsou todos do templo, com as ovelhas e os bois; espalhou as moedas dos cambistas e derrubou as mesas.",
+        "commentary": "<p><b>Análise léxica:</b> φραγέλλιον (phragéllion, G5416) significa chicote; σχοινίον (schoiníon, G4979), corda; ἐκβάλλω (ekbállō, G1544), expulsar ou lançar para fora.</p><p><b>Crítica textual:</b> O SBLGNT usa o plural ‘moedas’; o Scrivener usa uma forma singular coletiva para o dinheiro. O aparato SBLGNT registra essa diferença entre edições.</p><p><b>Síntese exegética:</b> Jesus interrompe a atividade descrita no templo. A relação entre ‘todos’ e a menção dos animais é discutida; o versículo não afirma explicitamente que ele tenha golpeado pessoas com o chicote.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Aos vendedores de pombas disse: “Tirem isso daqui! Não transformem a casa de meu Pai em lugar de comércio.”",
+        "commentary": "<p><b>Análise léxica:</b> οἶκος (oîkos, G3624) pode significar casa ou família; ἐμπόριον (empórion, G1712) significa lugar de comércio ou mercado.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Jesus dirige uma ordem específica aos vendedores de pombas e descreve o templo como a casa de seu Pai. O texto não afirma que toda prática comercial ou todo participante fosse fraudulento.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Seus discípulos se lembraram de que está escrito: “O zelo pela tua casa me [[consumirá]].”",
+        "commentary": "<p><b>Análise léxica:</b> ζῆλος (zēlos, G2205) pode significar zelo ou dedicação intensa; κατεσθίω (katesthíō, G2719) pode significar devorar ou consumir, também em sentido figurado.</p><p><b>Crítica textual:</b> O SBLGNT lê o verbo no futuro, ‘consumirá’; o Scrivener, no passado, ‘consumiu’. A consulta ao VarApp do STEP Bible aponta o futuro também na tradição bizantina; a resenha do International Critical Commentary menciona antigos códices com o futuro. Os testemunhos individuais para o passado não foram identificados na consulta e devem ser verificados; não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> Os discípulos relacionam a ação de Jesus a palavras do Salmo 69:9 na numeração tradicional. A citação é dirigida a Deus; a tradução conserva ‘tua’ nesse contexto.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Então os judeus lhe perguntaram: “Que sinal você nos mostra para agir assim?”",
+        "commentary": "<p><b>Análise léxica:</b> σημεῖον (sēmeîon, G4592) significa sinal, marca ou indicação; no evangelho, pode designar uma ação que aponta além de si mesma.</p><p><b>Crítica textual:</b> A comparação identificou formas gregas diferentes do verbo ‘disseram’ no SBLGNT e no Scrivener, sem mudança essencial na pergunta.</p><p><b>Síntese exegética:</b> Os interlocutores pedem um sinal em resposta à ação de Jesus. Como em 1:19, ‘os judeus’ deve ser entendido no contexto da cena, não como acusação contra o povo judeu em geral.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Jesus respondeu: “Destruam este templo, e em três dias eu o levantarei.”",
+        "commentary": "<p><b>Análise léxica:</b> ναός (naós, G3485) pode designar o templo ou santuário; ἐγείρω (egeírō, G1453) pode significar levantar ou despertar.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo antes do nome de Jesus, ausente nessa posição no SBLGNT; a diferença não altera a identificação de quem responde.</p><p><b>Síntese exegética:</b> A resposta coloca lado a lado a destruição e o levantamento em três dias. O narrador explicará em 2:21 que Jesus falava de seu corpo; a frase não precisa ser lida como incentivo a destruir um edifício.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Os judeus disseram: “Foram quarenta e seis anos na construção deste templo, e você o levantará em três dias?”",
+        "commentary": "<p><b>Análise léxica:</b> οἰκοδομέω (oikodoméō, G3618) significa construir ou edificar; ναός (naós, G3485) pode designar templo ou santuário.</p><p><b>Crítica textual:</b> As edições comparadas usam grafias ou formas diferentes para ‘disseram’, ‘quarenta’ e ‘foi construído’, sem alterar a referência aos quarenta e seis anos.</p><p><b>Síntese exegética:</b> Os interlocutores entendem a fala em relação ao edifício e contrastam seu tempo de construção com três dias. O versículo, por si só, não determina uma data exata nem resolve todas as questões sobre o andamento da obra.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Mas ele falava do templo de seu corpo.",
+        "commentary": "<p><b>Análise léxica:</b> ναός (naós, G3485) pode designar o templo ou santuário; σῶμα (sōma, G4983) significa corpo.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O narrador esclarece que Jesus se referia ao seu corpo. Embora ναός possa destacar o santuário e ἱερόν possa designar o recinto do templo, os usos dos termos devem ser avaliados pelo contexto.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Quando <i>Jesus</i> foi ressuscitado dentre os mortos, seus discípulos se lembraram de que ele havia dito isso e creram na Escritura e na palavra que Jesus havia falado.",
+        "commentary": "<p><b>Análise léxica:</b> ἐγείρω (egeírō, G1453) pode significar levantar ou despertar; γραφή (graphḗ, G1124) significa escrito ou Escritura.</p><p><b>Crítica textual:</b> O Scrivener acrescenta ‘a eles’ depois de ‘dizia isso’ e emprega outra forma do pronome relativo na frase final; essas diferenças não mudam a referência à memória dos discípulos.</p><p><b>Síntese exegética:</b> Após a ressurreição, os discípulos relacionam a palavra de Jesus à Escritura e creem. O verbo passivo ‘foi ressuscitado’ não identifica o agente nesta frase; o nome Jesus, em itálico, explicita o sujeito pelo contexto.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Enquanto <i>Jesus</i> estava em Jerusalém durante a festa da Páscoa, muitos creram em seu nome ao ver os sinais que ele fazia.",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) significa crer ou confiar; σημεῖον (sēmeîon, G4592) significa sinal.</p><p><b>Crítica textual:</b> O SBLGNT inclui um artigo antes do nome de Jerusalém que o Scrivener não apresenta; a diferença não altera o lugar mencionado. ‘Jesus’, em itálico, explicita o sujeito a partir do contexto.</p><p><b>Síntese exegética:</b> Muitos creem no nome de Jesus ao observar seus sinais. Os versículos seguintes qualificam o conhecimento que Jesus tem dessas pessoas.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Mas Jesus não confiava neles, pois conhecia a todos",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100), também usado no versículo anterior, pode significar crer ou confiar; γινώσκω (ginṓskō, G1097) significa conhecer.</p><p><b>Crítica textual:</b> As edições diferem quanto a um artigo antes de Jesus e à forma do pronome reflexivo; ambas apresentam a ideia de que ele não se confiava a eles.</p><p><b>Síntese exegética:</b> Há um contraste entre a fé de muitos em Jesus e o fato de ele não se confiar a eles. O motivo apresentado é seu conhecimento das pessoas; a frase continua em 2:25.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "e não precisava que alguém lhe desse testemunho a respeito das pessoas, pois ele mesmo sabia o que havia nelas.",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρέω (martyréō, G3140) significa testemunhar; ἄνθρωπος (ánthrōpos, G444) pode designar uma pessoa ou o ser humano em geral.</p><p><b>Crítica textual:</b> Na comparação das palavras, SBLGNT e Scrivener coincidem, sem considerar acentos e pontuação da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O texto afirma que Jesus conhece o interior humano sem depender de outro testemunho. O singular genérico grego é expresso por ‘pessoas’ em português; o versículo não descreve aqui o conteúdo específico de cada coração.</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Havia um fariseu chamado Nicodemos, uma autoridade entre os judeus.",
+        "commentary": "<p><b>Análise léxica:</b> Φαρισαῖος (Pharisaîos, G5330) designa um fariseu; ἄρχων (árchōn, G758) pode indicar governante, autoridade ou dirigente.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação ausentes da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Nicodemos é apresentado como fariseu e autoridade entre seu povo. Pode ser membro do conselho judaico, mas o versículo não nomeia sua função específica.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Ele foi encontrar <i>Jesus</i> à noite e lhe disse: “Rabi, sabemos que você veio da parte de Deus como mestre, pois ninguém pode fazer os sinais que você faz se Deus não estiver com ele.”",
+        "commentary": "<p><b>Análise léxica:</b> σημεῖον (sēmeîon, G4592) pode significar sinal ou indício; em João, os sinais frequentemente apontam para além do fato observado.</p><p><b>Crítica textual:</b> O SBLGNT usa um pronome para o destinatário da visita; o Scrivener menciona Jesus pelo nome. A ordem das palavras sobre os sinais também varia, sem alterar o sentido principal.</p><p><b>Síntese exegética:</b> O contexto anterior identifica Jesus, nome explicitado em itálico. A visita noturna é informada pelo relato, mas sua motivação não é declarada. Nicodemos reconhece os sinais; o plural ‘sabemos’ não identifica quem mais compartilha sua opinião.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Jesus respondeu: “Eu lhe afirmo com toda a certeza: se alguém não nascer de novo, não pode ver o reino de Deus.”",
+        "commentary": "<p><b>Análise léxica:</b> ἄνωθεν (ánōthen, G509) pode significar ‘de novo’ ou ‘do alto’; γεννάω (gennáō, G1080), na forma passiva, pode significar nascer.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo diante de ‘Jesus’, ausente nessa posição no SBLGNT; não há diferença na identificação do falante.</p><p><b>Síntese exegética:</b> A tradução escolhe ‘de novo’, preservando a pergunta de Nicodemos no versículo seguinte. O sentido ‘do alto’ também é possível e se relaciona à origem do nascimento explicado adiante.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Nicodemos lhe perguntou: “Como alguém pode nascer quando já é velho? Pode entrar uma segunda vez no ventre de sua mãe e nascer?”",
+        "commentary": "<p><b>Análise léxica:</b> γέρων (gérōn, G1088) significa velho ou pessoa idosa; κοιλία (koilía, G2836) pode designar ventre ou outra parte interna, conforme o contexto.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a transcrição de Scrivener não conserva acentos nem pontuação.</p><p><b>Síntese exegética:</b> A pergunta de Nicodemos entende o nascimento em termos de retorno físico ao ventre. Sua dificuldade abre caminho para a explicação de Jesus.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Jesus respondeu: “Eu lhe afirmo com toda a certeza: se alguém não nascer da água e do Espírito, não pode entrar no reino de Deus.",
+        "commentary": "<p><b>Análise léxica:</b> ὕδωρ (hýdōr, G5204) significa água; πνεῦμα (pneûma, G4151) pode significar espírito, sopro ou vento, conforme o contexto.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo diante de ‘Jesus’, ausente nessa posição no SBLGNT; as duas edições preservam a expressão ‘água e Espírito’.</p><p><b>Síntese exegética:</b> O sentido de ‘água’ é discutido: entre as leituras propostas estão o batismo, a purificação associada à ação do Espírito e o nascimento físico. Ezequiel 36:25–27 é um possível pano de fundo para água e Espírito. A passagem não identifica expressamente uma única explicação da imagem.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "O que nasce da carne é carne, e o que nasce do Espírito é espírito.",
+        "commentary": "<p><b>Análise léxica:</b> σάρξ (sárx, G4561) significa carne e pode referir-se à condição humana; πνεῦμα (pneûma, G4151) admite o sentido de espírito.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar os acentos e a pontuação não preservados em Scrivener.</p><p><b>Síntese exegética:</b> A frase contrasta as origens e características do que nasce da carne e do Espírito. As maiúsculas distinguem a referência entendida como Espírito de Deus do resultado descrito como espírito; são uma escolha de tradução.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Não se surpreenda porque eu lhe disse: ‘É necessário que vocês nasçam de novo.’",
+        "commentary": "<p><b>Análise léxica:</b> δεῖ (deî, G1163) indica necessidade; ἄνωθεν (ánōthen, G509), como em 3:3, pode significar ‘de novo’ ou ‘do alto’.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas. O Scrivener utilizado não oferece pontuação para definir as aspas.</p><p><b>Síntese exegética:</b> ‘Não se surpreenda’ e ‘lhe disse’ dirigem-se a Nicodemos no singular; ‘vocês nasçam’ está no plural. A exigência apresentada, portanto, não se limita linguisticamente a um único interlocutor.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "O vento sopra onde quer. Você ouve seu som, mas não sabe de onde vem nem para onde vai. Assim acontece com todo aquele que nasce do Espírito.”",
+        "commentary": "<p><b>Análise léxica:</b> πνεῦμα (pneûma, G4151) pode significar vento, sopro ou espírito; πνέω (pnéō, G4154) significa soprar. O grego relaciona as palavras usadas para vento e Espírito.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A imagem do vento audível, mas de percurso não controlado pelo observador, ilustra o nascimento do Espírito. A comparação não explica todos os detalhes da ação do Espírito.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Nicodemos perguntou: “Como isso pode acontecer?”",
+        "commentary": "<p><b>Análise léxica:</b> γίνομαι (gínomai, G1096) pode significar acontecer, vir a ser ou tornar-se.</p><p><b>Crítica textual:</b> As palavras das duas edições comparadas coincidem; a transcrição de Scrivener não conserva a pontuação.</p><p><b>Síntese exegética:</b> Nicodemos ainda pergunta como essas coisas podem acontecer. O relato não descreve neste ponto uma resposta final de sua parte.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Jesus respondeu: “Você é mestre em Israel e não compreende essas coisas?",
+        "commentary": "<p><b>Análise léxica:</b> διδάσκαλος (didáskalos, G1320) significa mestre ou professor; γινώσκω (ginṓskō, G1097) pode significar conhecer ou compreender.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo diante de ‘Jesus’, ausente nessa posição no SBLGNT; a identificação do falante permanece a mesma.</p><p><b>Síntese exegética:</b> Jesus relaciona a pergunta de Nicodemos à sua condição de mestre de Israel. A crítica é dirigida a ele neste diálogo, não a todos os judeus.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Eu lhe afirmo com toda a certeza: falamos do que sabemos e testemunhamos o que vimos, mas vocês não recebem o nosso testemunho.",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρέω (martyréō, G3140) significa testemunhar; μαρτυρία (martyría, G3141), testemunho.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas, desconsiderados acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> ‘Lhe afirmo’ dirige-se a Nicodemos no singular, enquanto ‘vocês não recebem’ está no plural. O texto não identifica de maneira explícita todos os abrangidos por ‘nós’ e ‘vocês’.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Se falei a vocês das coisas terrenas e vocês não creem, como crerão se eu lhes falar das coisas celestiais?",
+        "commentary": "<p><b>Análise léxica:</b> ἐπίγειος (epígeios, G1919) significa terreno; ἐπουράνιος (epouránios, G2032), celestial ou pertencente ao céu.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; essa comparação não estabelece, por si só, todas as variantes manuscritas.</p><p><b>Síntese exegética:</b> A pergunta contrapõe a dificuldade de crer no que já foi dito à recepção de ensinamentos sobre coisas celestiais. Os pronomes de tratamento neste versículo são plurais.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Ninguém subiu ao céu, a não ser aquele que desceu do céu, o Filho do Homem [[que está no céu]].",
+        "commentary": "<p><b>Análise léxica:</b> ἀναβαίνω (anabaínō, G305) significa subir; καταβαίνω (katabaínō, G2597), descer.</p><p><b>Crítica textual:</b> A leitura do SBLGNT termina em ‘Filho do Homem’. A frase entre colchetes é uma tradução suplementar do Scrivener e não está nessa edição crítica. Segundo o levantamento de Bruce Terry e o estudo de David Alan Black, P66, P75, Sinaítico e Vaticano apoiam a leitura curta; Alexandrino e uma ampla tradição posterior apoiam a longa. Os estudos discutem as duas possibilidades; não houve cotejo direto dos manuscritos.</p><p><b>Síntese exegética:</b> O contraste entre subir e descer introduz o testemunho daquele que veio do céu. A decisão textual sobre a frase suplementar deve ser distinguida de uma conclusão teológica imposta ao leitor.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Assim como Moisés levantou a serpente no deserto, também é necessário que o Filho do Homem seja levantado,",
+        "commentary": "<p><b>Análise léxica:</b> ὑψόω (hypsóō, G5312) pode significar levantar ou exaltar; ὄφις (óphis, G3789) significa serpente.</p><p><b>Crítica textual:</b> As palavras coincidem nas duas edições comparadas, sem considerar acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A comparação remete à serpente levantada por Moisés em Números 21:4–9. Em João, ‘ser levantado’ pode evocar tanto a elevação na cruz quanto a exaltação; a comparação não equipara todos os elementos dos dois relatos.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "para que todo aquele que crê nele [[não pereça, mas]] tenha a vida eterna.”",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) significa crer ou confiar; αἰώνιος (aiṓnios, G166) pode descrever o que pertence à era vindoura ou dura para sempre, conforme o contexto.</p><p><b>Crítica textual:</b> A leitura do SBLGNT não traz ‘não pereça, mas’; a expressão entre colchetes é suplementada do Scrivener. Conforme Bruce Terry, P75 e Vaticano apoiam a leitura curta, e Alexandrino e muitos manuscritos posteriores trazem uma leitura longa; as preposições também variam. Não houve exame direto dos testemunhos.</p><p><b>Síntese exegética:</b> A finalidade de ser levantado é associada à vida eterna para quem crê. No SBLGNT, ‘nele’ pode ser ligado à fé ou à vida; a tradução escolhe a primeira ligação. O lugar onde terminam as palavras de Jesus e começa uma reflexão do narrador é discutido, pois as aspas são editoriais.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Pois Deus amou o mundo de tal modo que deu seu Filho único, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
+        "commentary": "<p><b>Análise léxica:</b> μονογενής (monogenḗs, G3439) pode expressar singularidade ou condição de filho único. οὕτως (hoútōs, G3779), com a construção que segue, relaciona o amor de Deus ao dom do Filho.</p><p><b>Crítica textual:</b> O Scrivener explicita ‘seu’ junto de ‘Filho’, enquanto o SBLGNT não tem esse possessivo nesse ponto. ‘Seu’ na tradução expressa uma relação indicada pelo contexto.</p><p><b>Síntese exegética:</b> A frase apresenta o amor de Deus pelo mundo e o dom do Filho em relação à fé e à vida. Há debate sobre a ênfase de ‘de tal modo’ na maneira, na intensidade ou em ambas; o texto associa o amor ao fato de Deus dar o Filho.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Deus não enviou o Filho ao mundo para condenar o mundo, mas para que o mundo fosse salvo por meio dele.",
+        "commentary": "<p><b>Análise léxica:</b> κρίνω (krínō, G2919) pode significar julgar ou condenar, conforme o contexto; σῴζω (sṓzō, G4982) pode significar salvar ou resgatar.</p><p><b>Crítica textual:</b> O Scrivener acrescenta o possessivo ‘seu’ depois de ‘Filho’; o SBLGNT não o traz nesse ponto. O aparato SBLGNT registra a diferença entre edições.</p><p><b>Síntese exegética:</b> A finalidade declarada do envio é a salvação do mundo por meio do Filho. Os versículos seguintes também falam de juízo; ambas as afirmações devem ser lidas em seu contexto.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Quem crê nele não é condenado; quem não crê já está condenado, porque não creu no nome do Filho único de Deus.",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) refere-se a crer ou confiar; κρίνω (krínō, G2919) pode significar julgar ou condenar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas. O aparato registra que outra edição omite uma pequena conjunção, sem mudar o contraste principal.</p><p><b>Síntese exegética:</b> O versículo contrapõe a situação daquele que crê à daquele que não crê no Filho. ‘Nome’ aponta para a pessoa reconhecida, não para a mera pronúncia de um título.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "E este é o julgamento: a luz veio ao mundo, mas as pessoas amaram mais as trevas do que a luz, porque suas obras eram más.",
+        "commentary": "<p><b>Análise léxica:</b> κρίσις (krísis, G2920) pode significar julgamento ou decisão; φῶς (phōs, G5457), luz.</p><p><b>Crítica textual:</b> As edições SBLGNT e Scrivener diferem na ordem de ‘suas’ e ‘más’ na última oração, sem exigir mudança de sentido nesta tradução.</p><p><b>Síntese exegética:</b> A vinda da luz e a preferência pelas trevas são descritas em relação às obras humanas. A linguagem desenvolve o contraste entre luz e trevas já apresentado no prólogo.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Pois quem pratica o mal odeia a luz e não se aproxima dela, para que suas obras não sejam expostas.",
+        "commentary": "<p><b>Análise léxica:</b> φαῦλος (phaûlos, G5337) pode significar mau ou reprovável; ἐλέγχω (elénchō, G1651) pode significar expor, repreender ou demonstrar uma falta.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O texto relaciona a resistência à luz ao temor de que as obras sejam expostas. O verbo não exige que se acrescente uma descrição particular dessas obras.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Mas quem pratica a verdade se aproxima da luz, para que se veja claramente que suas obras foram realizadas em Deus.",
+        "commentary": "<p><b>Análise léxica:</b> ἀλήθεια (alḗtheia, G225) significa verdade; a expressão grega ‘fazer a verdade’ relaciona verdade e prática.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> O contraste com o versículo anterior envolve vir à luz e tornar visível a relação das obras com Deus. ‘Em Deus’ não é explicado aqui como uma técnica ou mérito autônomo.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Depois disso, Jesus e seus discípulos foram para a região da Judeia. Ele permaneceu ali com eles e batizava.",
+        "commentary": "<p><b>Análise léxica:</b> διατρίβω (diatríbō, G1304) pode significar permanecer ou passar tempo em um lugar; βαπτίζω (baptízō, G907), batizar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação não preservados em Scrivener.</p><p><b>Síntese exegética:</b> O relato apresenta Jesus na Judeia com seus discípulos e diz que batizava. João 4:2 esclarece que Jesus não batizava pessoalmente, mas seus discípulos; os dois enunciados devem ser considerados juntos.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "João também estava batizando em Enom, perto de Salim, porque havia muita água ali; <i>as pessoas</i> vinham e eram batizadas.",
+        "commentary": "<p><b>Análise léxica:</b> βαπτίζω (baptízō, G907) significa batizar e pode expressar imersão; o contexto determina sua função na passagem.</p><p><b>Crítica textual:</b> O SBLGNT inclui um artigo diante do nome de João; o Scrivener não o traz nesse ponto. Essa diferença não altera a identificação do personagem.</p><p><b>Síntese exegética:</b> A localização exata de Enom e Salim é incerta. ‘As pessoas’, em itálico, explicita o sujeito plural implícito de ‘vinham e eram batizadas’.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Pois João ainda não havia sido lançado na prisão.",
+        "commentary": "<p><b>Análise léxica:</b> φυλακή (phylakḗ, G5438) pode significar guarda, prisão ou encarceramento.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; o aparato registra uma diferença de artigo em outra edição.</p><p><b>Síntese exegética:</b> A observação situa a atividade descrita antes da prisão de João. Ela fornece um dado cronológico, sem resolver por si só todas as relações com a sequência dos outros evangelhos.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Surgiu então uma discussão entre discípulos de João e [[um judeu]] a respeito da purificação.",
+        "commentary": "<p><b>Análise léxica:</b> ζήτησις (zḗtēsis, G2214) pode significar questão ou discussão; καθαρισμός (katharismós, G2512), purificação ou limpeza.</p><p><b>Crítica textual:</b> O SBLGNT lê ‘um judeu’, no singular; o Scrivener lê ‘judeus’, no plural. Segundo Bruce Terry, P75, Vaticano e a correção do Sinaítico apoiam o singular, enquanto P66 e a primeira mão do Sinaítico apoiam o plural. A divergência entre testemunhos antigos impede atribuir a escolha somente à idade; não houve cotejo direto.</p><p><b>Síntese exegética:</b> O relato não especifica o conteúdo preciso da discussão. A menção de um participante judeu identifica pessoas na cena, não autoriza generalizações sobre o povo judeu.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Eles foram a João e lhe disseram: “Rabi, aquele que estava com você do outro lado do Jordão e de quem você deu testemunho está batizando! Veja, todos estão indo a ele.”",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρέω (martyréō, G3140) significa testemunhar; πέραν (péran, G4008) indica uma posição do outro lado.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas, sem considerar acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> Os discípulos identificam Jesus pela relação com o testemunho anterior de João. ‘Todos’ pertence à fala deles e pode expressar a impressão de um grande movimento, não uma contagem literal.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "João respondeu: “Ninguém pode receber coisa alguma, a não ser que lhe seja dada do céu.",
+        "commentary": "<p><b>Análise léxica:</b> οὐρανός (ouranós, G3772) pode significar céu ou a esfera celestial; o contexto pode usar ‘céu’ em referência a Deus.</p><p><b>Crítica textual:</b> O SBLGNT escreve a expressão para ‘nada’ em duas palavras, enquanto o Scrivener usa uma forma única; a diferença não muda o sentido geral da frase.</p><p><b>Síntese exegética:</b> A resposta de João atribui ao céu a origem do que alguém recebe. No contexto, prepara sua explicação sobre o lugar de Jesus e o seu próprio.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Vocês mesmos são testemunhas de que eu disse: ‘Eu não sou o Cristo, mas fui enviado à frente dele.’",
+        "commentary": "<p><b>Análise léxica:</b> χριστός (christós, G5547) significa ungido e é empregado como título correspondente a Messias; ἀποστέλλω (apostéllō, G649) significa enviar.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições SBLGNT e Scrivener comparadas. O aparato registra pequenas diferenças entre outras edições no pronome e na introdução da fala.</p><p><b>Síntese exegética:</b> João recorda seu testemunho de que não é o Cristo e apresenta sua missão como anterior à dele, em harmonia com João 1:20–23.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Quem tem a noiva é o noivo; o amigo do noivo, que está ao lado dele e o ouve, alegra-se muito com sua voz. Essa alegria, que é minha, agora está completa.",
+        "commentary": "<p><b>Análise léxica:</b> νυμφίος (nymphíos, G3566) significa noivo; νύμφη (nýmphē, G3565), noiva.</p><p><b>Crítica textual:</b> As palavras coincidem nas duas edições comparadas, desconsiderados acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A imagem nupcial distingue o noivo de seu amigo. João se identifica com a alegria do amigo, em vez de tomar para si o lugar central da celebração.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "É necessário que ele cresça e que eu diminua.”",
+        "commentary": "<p><b>Análise léxica:</b> αὐξάνω (auxánō, G837) pode significar crescer ou aumentar; ἐλαττόω (elattóō, G1642), diminuir ou tornar menor.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; as aspas são decisão editorial, não parte da transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A fala resume a relação entre o papel de Jesus e o de João. O ponto exato onde termina o discurso de João, antes ou depois do versículo 30, é discutido.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Aquele que vem do alto está acima de todos. Quem é da terra pertence à terra e fala das coisas terrenas. Aquele que vem do céu [[está acima de todos]].",
+        "commentary": "<p><b>Análise léxica:</b> ἄνωθεν (ánōthen, G509) pode significar do alto; ἐπάνω (epánō, G1883) indica posição acima ou superioridade.</p><p><b>Crítica textual:</b> A frase final, aqui entre colchetes, está no SBLGNT e no Scrivener. Conforme Bruce Terry, P66 e Vaticano a incluem, enquanto P75 e a primeira mão do Sinaítico passam diretamente ao testemunho do versículo seguinte. A primeira ocorrência de ‘acima de todos’, no início do versículo, não é o trecho aqui assinalado. Os manuscritos não foram examinados diretamente.</p><p><b>Síntese exegética:</b> O contraste entre o que vem da terra e o que vem do céu destaca a origem e o testemunho daquele que vem do alto. É discutido se os versículos 31–36 continuam a fala de João ou apresentam reflexão do narrador.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "Ele testemunha o que viu e ouviu, mas ninguém recebe seu testemunho.",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρία (martyría, G3141) significa testemunho; μαρτυρέω (martyréō, G3140), testemunhar.</p><p><b>Crítica textual:</b> O Scrivener inicia com uma conjunção ‘e’ que não aparece no SBLGNT. Algumas outras testemunhas também se relacionam de modo diferente com o fim do versículo anterior; veja a nota de 3:31.</p><p><b>Síntese exegética:</b> A frase destaca a rejeição do testemunho celestial. O versículo seguinte fala de quem o recebe; ‘ninguém’ expressa o contraste da passagem e não elimina a existência desses receptores.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "Quem recebe seu testemunho confirma que Deus é verdadeiro.",
+        "commentary": "<p><b>Análise léxica:</b> σφραγίζω (sphragízō, G4972) significa selar ou confirmar; ἀληθής (alēthḗs, G227) pode significar verdadeiro ou digno de confiança.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas, sem considerar acentos e pontuação não preservados em Scrivener.</p><p><b>Síntese exegética:</b> Receber o testemunho é apresentado como confirmação da veracidade de Deus. O contraste com 3:32 mostra que o relato reconhece pessoas que o recebem.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "Pois aquele que Deus enviou fala as palavras de Deus: [[Deus]] dá o Espírito sem medida.",
+        "commentary": "<p><b>Análise léxica:</b> ῥῆμα (rhêma, G4487) pode significar palavra ou declaração; μέτρον (métron, G3358), medida.</p><p><b>Crítica textual:</b> Na segunda oração, o SBLGNT não explicita o sujeito de ‘dá’; o nome ‘Deus’ entre colchetes traduz a forma explícita do Scrivener. Segundo Bruce Terry, P66, P75 e Sinaítico apoiam a forma sem o nome, enquanto Alexandrino e muitos manuscritos posteriores o incluem. A identificação do sujeito implícito no SBLGNT é uma questão de interpretação; não houve cotejo direto.</p><p><b>Síntese exegética:</b> O enviado fala as palavras de Deus e o Espírito é dado sem medida. A oração não identifica explicitamente o destinatário do dom; o contexto permite discutir essa relação sem acrescentá-la como certeza ao texto.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "O Pai ama o Filho e entregou todas as coisas em suas mãos.",
+        "commentary": "<p><b>Análise léxica:</b> ἀγαπάω (agapáō, G25) significa amar; χείρ (cheír, G5495) significa mão e pode ser empregado figuradamente.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados os acentos e a pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A frase une o amor do Pai pelo Filho à entrega de todas as coisas em sua mão, imagem de autoridade ou responsabilidade confiada.</p>"
+      },
+      {
+        "verse": 36,
+        "text": "Quem crê no Filho tem a vida eterna; quem desobedece ao Filho não verá a vida, mas a ira de Deus permanece sobre ele.",
+        "commentary": "<p><b>Análise léxica:</b> ἀπειθέω (apeithéō, G544) pode significar desobedecer ou recusar-se a obedecer; ὀργή (orgḗ, G3709) pode significar ira ou juízo.</p><p><b>Crítica textual:</b> As palavras coincidem nas duas edições comparadas, sem considerar acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> O contraste liga a fé no Filho à vida e a desobediência à permanência da ira. A tradução conserva o verbo de desobediência da segunda oração, sem reduzi-lo automaticamente a uma simples ausência de informação.</p>"
+      }
+    ],
+    "4": [
+      {
+        "verse": 1,
+        "text": "Quando [[Jesus]] soube que os fariseus tinham ouvido que ele fazia e batizava mais discípulos do que João",
+        "commentary": "<p><b>Análise léxica:</b> μαθητής (mathētḗs, G3101) significa discípulo ou aprendiz; βαπτίζω (baptízō, G907) significa batizar.</p><p><b>Crítica textual:</b> O SBLGNT lê ‘Jesus’ na primeira referência; o Scrivener lê ‘o Senhor’. Segundo Bruce Terry, Sinaítico e Bezae apoiam ‘Jesus’, enquanto os antigos P66 e P75, Vaticano, Alexandrino e muitos outros testemunhos leem ‘o Senhor’. A segunda ocorrência do nome no grego foi traduzida por ‘ele’ para maior fluidez. Não houve cotejo direto dos manuscritos.</p><p><b>Síntese exegética:</b> O relato informa o que Jesus soube a respeito do que os fariseus tinham ouvido; não descreve aqui uma ação deles contra Jesus. A frase continua nos versículos 2–3.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "(embora não fosse o próprio Jesus quem batizava, mas seus discípulos),",
+        "commentary": "<p><b>Análise léxica:</b> αὐτός (autós, G846), junto ao nome, enfatiza aqui o próprio Jesus; μαθητής (mathētḗs, G3101) designa discípulo.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> O esclarecimento distingue a atividade atribuída a Jesus da atuação pessoal de seus discípulos. Ele ajuda a ler conjuntamente João 3:22 e 4:1–2.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "ele deixou a Judeia e voltou para a Galileia.",
+        "commentary": "<p><b>Análise léxica:</b> ἀφίημι (aphíēmi, G863) pode significar deixar ou abandonar; ἀπέρχομαι (apérchomai, G565), partir ou ir embora.</p><p><b>Crítica textual:</b> As duas edições comparadas incluem a expressão ‘novamente’; o aparato SBLGNT registra sua ausência em outra edição. A pontuação que une 4:1–3 é editorial.</p><p><b>Síntese exegética:</b> O movimento da Judeia para a Galileia retoma a informação geográfica do fim do capítulo anterior e prepara o encontro na Samaria.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Era necessário que ele passasse por Samaria.",
+        "commentary": "<p><b>Análise léxica:</b> δεῖ (deî, G1163) expressa necessidade; διέρχομαι (diérchomai, G1330) pode significar atravessar ou passar por um lugar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a transcrição de Scrivener não conserva acentos nem pontuação.</p><p><b>Síntese exegética:</b> Samaria ficava no caminho entre a Judeia e a Galileia, embora houvesse outras rotas. Alguns intérpretes percebem também uma necessidade ligada à missão de Jesus; o versículo não explica a razão em detalhes.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Assim, chegou a uma cidade samaritana chamada Sicar, perto da terra que Jacó deu a seu filho José.",
+        "commentary": "<p><b>Análise léxica:</b> Συχάρ (Sychár, G4965) é o nome da localidade chamada Sicar; χωρίον (chōríon, G5564) designa uma propriedade ou porção de terra.</p><p><b>Crítica textual:</b> O SBLGNT inclui um artigo antes de ‘José’ que o Scrivener não traz nessa posição; a identificação de José não muda.</p><p><b>Síntese exegética:</b> A referência à terra evoca as tradições sobre Jacó e José; compare Gênesis 33:18–19 e Josué 24:32. A identificação exata de Sicar é discutida.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Ali ficava o poço de Jacó. Cansado da viagem, Jesus sentou-se junto ao poço. Era por volta da sexta hora.",
+        "commentary": "<p><b>Análise léxica:</b> πηγή (pēgḗ, G4077) pode indicar fonte ou poço; ὁδοιπορία (hodoiporía, G3597) significa viagem ou jornada.</p><p><b>Crítica textual:</b> As edições usam formas diferentes para ‘aproximadamente’, ambas adequadas à indicação de hora. Não se deve tratar a ausência de acentos em Scrivener como variante.</p><p><b>Síntese exegética:</b> A sexta hora é comumente entendida como cerca do meio-dia, dependendo da contagem adotada. O texto informa o cansaço de Jesus e não explica por que a mulher viria ao poço nesse horário.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Uma mulher de Samaria chegou para tirar água. Jesus lhe disse: “Dê-me de beber.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀντλέω (antléō, G501) significa tirar água; γυνή (gynḗ, G1135) pode significar mulher ou esposa, conforme o contexto.</p><p><b>Crítica textual:</b> Os infinitivos para ‘beber’ têm grafias diferentes nas transcrições (πειν no SBLGNT e πιειν em Scrivener, aqui sem acentos); o sentido é o mesmo.</p><p><b>Síntese exegética:</b> O pedido de Jesus inicia o diálogo a partir de uma necessidade concreta. A mulher é apresentada por sua origem; seu nome não é informado.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Pois seus discípulos tinham ido à cidade comprar comida.",
+        "commentary": "<p><b>Análise léxica:</b> τροφή (trophḗ, G5160) significa alimento; ἀγοράζω (agorázō, G59), comprar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A observação explica a ausência dos discípulos durante o início da conversa e prepara sua volta no versículo 27.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "A mulher samaritana lhe perguntou: “Como você, sendo judeu, pede de beber a mim, que sou samaritana?” [[Pois os judeus não mantêm relações com os samaritanos.]]",
+        "commentary": "<p><b>Análise léxica:</b> συγχράομαι (synchráomai, G4798) pode referir-se a relações ou trato com alguém; o sentido preciso nesta frase é discutido.</p><p><b>Crítica textual:</b> A frase explicativa entre colchetes está no SBLGNT e no Scrivener. Segundo Bruce Terry, P66, P75 e Vaticano, assim como uma correção do Sinaítico, a incluem; a primeira escrita do Sinaítico e Bezae não a trazem. A ordem de outras palavras difere entre as edições. Não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> A observação reflete tensões entre comunidades judaicas e samaritanas. ‘Não mantêm relações’ é uma tradução geral; há debate sobre contato social, uso de utensílios ou pedido de ajuda. O relato não exige que toda interação entre judeus e samaritanos fosse impossível, nem autoriza hostilidade contra qualquer dos grupos.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Jesus respondeu: “Se você conhecesse o dom de Deus e quem é aquele que lhe pede: ‘Dê-me de beber’, você lhe pediria, e ele lhe daria água viva.”",
+        "commentary": "<p><b>Análise léxica:</b> δωρεά (dōreá, G1431) significa dom ou presente; ζάω (záō, G2198) significa viver e compõe a expressão ‘água viva’.</p><p><b>Crítica textual:</b> As transcrições diferem na grafia do infinitivo para ‘beber’ (πειν no SBLGNT e πιειν em Scrivener, aqui sem acentos); o sentido é o mesmo.</p><p><b>Síntese exegética:</b> ‘Água viva’ pode designar água corrente, mas o diálogo desenvolverá também seu sentido figurado. Jesus convida a mulher a reconhecer o dom e a identidade de quem fala.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "[[A mulher]] lhe disse: “Senhor, você não tem com que tirar água, e o poço é fundo. De onde conseguirá essa água viva?",
+        "commentary": "<p><b>Análise léxica:</b> φρέαρ (phréar, G5421) pode significar poço ou cisterna; ἄντλημα (ántlēma, G502) designa um utensílio para tirar água.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener leem ‘a mulher’. Segundo Bruce Terry, P66 e o Sinaítico corrigido incluem a expressão; P75 e Vaticano a omitem e deixam o sujeito implícito. A primeira escrita do Sinaítico lê ‘aquela’. A identidade da interlocutora permanece clara pelo contexto; os manuscritos não foram examinados diretamente.</p><p><b>Síntese exegética:</b> A mulher pergunta pelo meio de acesso à água do poço. ‘Senhor’ traduz uma forma de tratamento respeitosa e não precisa, isoladamente, ser interpretado como confissão de divindade.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Você é maior do que nosso pai Jacó, que nos deu o poço e dele bebeu, assim como seus filhos e seus rebanhos?”",
+        "commentary": "<p><b>Análise léxica:</b> θρέμμα (thrémma, G2353), no plural, pode designar rebanhos ou animais criados; μή (mḗ, G3361) pode introduzir pergunta que espera resposta negativa.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a pontuação não é preservada na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A pergunta invoca Jacó como ancestral e associa o poço a ele. Sua forma pode sugerir uma expectativa negativa, mas não estabelece todas as convicções da interlocutora. O relato não resolve todas as questões históricas sobre a origem do poço.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Jesus respondeu: “Quem bebe desta água terá sede outra vez.",
+        "commentary": "<p><b>Análise léxica:</b> διψάω (dipsáō, G1372) significa ter sede e também pode ser usado figuradamente para um desejo.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo diante de ‘Jesus’, ausente nessa posição no SBLGNT; isso não altera a identificação do falante.</p><p><b>Síntese exegética:</b> Jesus distingue a necessidade recorrente satisfeita pela água do poço do que apresentará no versículo seguinte.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Mas quem beber da água que eu lhe der nunca mais terá sede. A água que eu lhe der se tornará nele uma fonte que jorra para a vida eterna.”",
+        "commentary": "<p><b>Análise léxica:</b> ἅλλομαι (hállomai, G242) pode significar saltar ou jorrar; ζωή (zōḗ, G2222) significa vida.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener apresentam formas verbais diferentes para ‘ter sede’; ambas permitem a expressão negativa enfática da tradução.</p><p><b>Síntese exegética:</b> A água oferecida por Jesus é associada a uma fonte interior e à vida eterna. A imagem não é uma promessa de que o corpo deixará de sentir sede física.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "A mulher lhe disse: “Senhor, dê-me dessa água, para que eu não tenha mais sede nem precise vir aqui tirá-la.”",
+        "commentary": "<p><b>Análise léxica:</b> ἐνθάδε (entháde, G1759) significa aqui, neste lugar; ἀντλέω (antléō, G501), tirar água.</p><p><b>Crítica textual:</b> As edições usam formas diferentes para o verbo de ir ou vir; a solicitação da mulher permanece compreensível nas duas leituras.</p><p><b>Síntese exegética:</b> A resposta relaciona a oferta à sede e ao trabalho de buscar água. O texto permite perceber a continuidade do diálogo sem exigir que se conheça tudo o que a mulher já compreendeu.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Ele lhe disse: “Vá, chame seu marido e volte.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀνήρ (anḗr, G435) pode significar homem ou marido; φωνέω (phōnéō, G5455) pode significar chamar ou convocar.</p><p><b>Crítica textual:</b> O SBLGNT não repete o nome de Jesus neste versículo; o Scrivener o inclui. A tradução usa um pronome cujo referente é fornecido pelo diálogo.</p><p><b>Síntese exegética:</b> O pedido introduz uma questão da vida da mulher, que ela responde no versículo seguinte. O narrador não informa todas as razões da mudança de assunto.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "A mulher respondeu [[a ele]]: “Não tenho marido.” Jesus lhe disse: “Você disse bem: ‘Não tenho marido.’",
+        "commentary": "<p><b>Análise léxica:</b> καλῶς (kalōs, G2573) pode significar bem ou corretamente; ἀνήρ (anḗr, G435), neste contexto, é traduzido ‘marido’.</p><p><b>Crítica textual:</b> O SBLGNT inclui ‘a ele’ após a resposta da mulher; o Scrivener não o traz. Segundo Bruce Terry, P66, P75 e Vaticano incluem a expressão, enquanto a primeira escrita do Sinaítico e outras testemunhas não a trazem. Não houve exame direto dos manuscritos.</p><p><b>Síntese exegética:</b> Jesus reconhece a veracidade da resposta antes de acrescentar informações. A formulação não autoriza supor, por si só, os sentimentos ou as intenções da mulher.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Pois você teve cinco maridos, e o homem com quem está agora não é seu marido. O que você disse é verdade.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀνήρ (anḗr, G435) pode significar homem ou marido; a relação exata é definida pelo contexto.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Jesus menciona cinco maridos anteriores e distingue a relação atual de um casamento. O relato não informa como terminaram as uniões anteriores, não afirma que a mulher era excluída pela comunidade e não descreve detalhes da relação atual.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "A mulher lhe disse: “Senhor, vejo que você é profeta.",
+        "commentary": "<p><b>Análise léxica:</b> προφήτης (prophḗtēs, G4396) significa profeta; θεωρέω (theōréō, G2334) pode significar observar ou perceber.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a pontuação é editorial.</p><p><b>Síntese exegética:</b> A mulher responde às palavras de Jesus reconhecendo-o como profeta e passa a perguntar sobre uma questão importante para sua comunidade.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Nossos antepassados adoraram neste monte, mas vocês dizem que Jerusalém é o lugar onde se deve adorar.”",
+        "commentary": "<p><b>Análise léxica:</b> προσκυνέω (proskynéō, G4352) pode significar prestar homenagem ou adorar; ὄρος (óros, G3735) significa monte ou montanha.</p><p><b>Crítica textual:</b> As edições diferem na ordem de ‘neste monte’ e das palavras ‘é necessário adorar’; isso não exige uma diferença de sentido nesta tradução.</p><p><b>Síntese exegética:</b> O monte é geralmente identificado com o Gerizim, importante para a tradição samaritana. A fala contrapõe a tradição de adoração de seus antepassados à ênfase em Jerusalém.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Jesus lhe disse: “Creia em mim, mulher: está chegando a hora em que vocês adorarão o Pai, não neste monte nem em Jerusalém.",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) pode significar crer ou confiar; ὥρα (hṓra, G5610) pode indicar hora, tempo ou momento.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener diferem na ordem e na forma do verbo de crer no início da fala. Nenhuma das duas leituras altera o assunto principal da frase.</p><p><b>Síntese exegética:</b> Jesus anuncia uma mudança quanto à centralidade dos locais mencionados. ‘Mulher’ traduz uma forma de tratamento cujo efeito deve ser entendido no contexto, não automaticamente como insulto.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Vocês adoram o que não conhecem; nós adoramos o que conhecemos, pois a salvação vem dos judeus.",
+        "commentary": "<p><b>Análise léxica:</b> σωτηρία (sōtēría, G4991) pode significar salvação ou libertação; Ἰουδαῖος (Ioudaîos, G2453) pode designar judeu ou judeus no contexto.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar os acentos e a pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A fala contrapõe ‘vocês’ e ‘nós’ e afirma a origem judaica da salvação. Jesus fala como judeu; o versículo não autoriza hostilidade contra samaritanos ou judeus.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Mas está chegando a hora, e já chegou, em que os verdadeiros adoradores adorarão o Pai em espírito e em verdade, pois o Pai procura pessoas que o adorem assim.",
+        "commentary": "<p><b>Análise léxica:</b> πνεῦμα (pneûma, G4151) pode significar espírito; ἀλήθεια (alḗtheia, G225) significa verdade; προσκυνητής (proskynētḗs, G4353), adorador.</p><p><b>Crítica textual:</b> As edições diferem na elisão da conjunção inicial, traduzida ‘mas’, sem alterar a ideia principal. Maiúsculas e pontuação são escolhas editoriais nesta comparação.</p><p><b>Síntese exegética:</b> O futuro e o presente aparecem juntos: a hora vem e já está presente. ‘Em espírito e em verdade’ admite discussão sobre a ação do Espírito de Deus e a natureza da adoração; a frase não deve ser reduzida automaticamente a um local ou sentimento.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Deus é espírito, e é necessário que aqueles que o adoram o adorem em espírito e em verdade.”",
+        "commentary": "<p><b>Análise léxica:</b> πνεῦμα (pneûma, G4151) significa espírito, sopro ou vento conforme o contexto; δεῖ (deî, G1163) expressa necessidade.</p><p><b>Crítica textual:</b> As palavras coincidem nas edições comparadas. O uso de maiúscula ou minúscula em ‘espírito’ na tradução é decisão editorial.</p><p><b>Síntese exegética:</b> A natureza de Deus é relacionada ao modo de adorá-lo. A interpretação de ‘espírito’ deve considerar a frase anterior e o conjunto do evangelho, sem fazer da grafia portuguesa uma prova isolada.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "A mulher lhe disse: “Sei que o Messias, chamado Cristo, está vindo. Quando ele vier, nos anunciará todas as coisas.”",
+        "commentary": "<p><b>Análise léxica:</b> Μεσσίας (Messías, G3323) e χριστός (christós, G5547) são títulos relacionados à ideia de ungido.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener usam formas próximas para ‘todas as coisas’; a diferença não exige mudança no sentido da frase portuguesa.</p><p><b>Síntese exegética:</b> A mulher expressa uma expectativa de revelação associada ao Messias. As expectativas samaritanas não devem ser presumidas idênticas em todos os detalhes às de outros grupos judaicos.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Jesus lhe disse: “Sou eu, aquele que fala com você.”",
+        "commentary": "<p><b>Análise léxica:</b> ἐγώ (egṓ, G1473) significa eu; εἰμί (eimí, G1510), sou ou estou.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a pontuação é editorial.</p><p><b>Síntese exegética:</b> Na sequência imediata, Jesus se identifica com aquele que a mulher acaba de mencionar. Alguns intérpretes também consideram possíveis ecos de fórmulas divinas do Antigo Testamento; isso é uma questão de contexto e interpretação.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "Nesse momento chegaram seus discípulos e ficaram admirados porque ele conversava com uma mulher. Mas ninguém perguntou: “O que você procura?” ou “Por que está falando com ela?”",
+        "commentary": "<p><b>Análise léxica:</b> θαυμάζω (thaumázō, G2296) pode significar admirar-se ou surpreender-se; γυνή (gynḗ, G1135), mulher.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener usam formas verbais diferentes para a reação de admiração e também diferem na forma de ‘chegaram’; o contraste principal da cena permanece.</p><p><b>Síntese exegética:</b> O narrador registra a surpresa dos discípulos, mas não especifica todas as razões dela. A quem se dirigiria a primeira pergunta não é explicitado na frase.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Então a mulher deixou seu cântaro, foi à cidade e disse às pessoas:",
+        "commentary": "<p><b>Análise léxica:</b> ὑδρία (hydría, G5201) designa um recipiente para água; ἀφίημι (aphíēmi, G863) pode significar deixar.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados os acentos e a pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A mulher sai do poço e se dirige às pessoas da cidade. O texto registra que ela deixou o cântaro, mas não explica expressamente o motivo.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "“Venham ver um homem que me disse tudo o que fiz. Será que ele é o Cristo?”",
+        "commentary": "<p><b>Análise léxica:</b> χριστός (christós, G5547) significa ungido e é usado como título. A partícula μήτι (mḗti, G3385) introduz uma pergunta que frequentemente espera resposta negativa.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener leem ὅσα na expressão traduzida ‘tudo o que’; o aparato registra ἃ em outra edição comparada. As duas formas admitem a tradução geral apresentada.</p><p><b>Síntese exegética:</b> A mulher convida os habitantes a conhecer Jesus e formula uma pergunta sobre sua identidade. A forma interrogativa pode expressar cautela, mas não permite determinar com certeza toda a sua atitude interior.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "Eles saíram da cidade e foram ao encontro dele.",
+        "commentary": "<p><b>Análise léxica:</b> ἐξέρχομαι (exérchomai, G1831) pode significar sair; ἔρχομαι (érchomai, G2064), vir ou ir.</p><p><b>Crítica textual:</b> O Scrivener inclui uma partícula de ligação após o verbo ‘saíram’, ausente nessa posição no SBLGNT; a sequência dos movimentos permanece a mesma.</p><p><b>Síntese exegética:</b> A resposta dos habitantes põe em movimento a cena que será retomada nos versículos 39–42.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Enquanto isso, os discípulos lhe pediam: “Rabi, coma.”",
+        "commentary": "<p><b>Análise léxica:</b> ἐρωτάω (erōtáō, G2065) pode significar perguntar ou pedir; ῥαββί (rhabbí, G4461) é um tratamento para mestre.</p><p><b>Crítica textual:</b> O Scrivener inclui uma partícula de ligação no início da frase que não aparece nessa posição no SBLGNT.</p><p><b>Síntese exegética:</b> Os discípulos haviam saído para comprar comida (4:8). O pedido introduz outra imagem que Jesus desenvolverá nos versículos seguintes.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "Ele lhes disse: “Tenho um alimento para comer que vocês não conhecem.”",
+        "commentary": "<p><b>Análise léxica:</b> βρῶσις (brôsis, G1035) pode indicar o ato de comer ou o alimento; οἶδα (oîda, G1492) significa saber ou conhecer.</p><p><b>Crítica textual:</b> As palavras coincidem nas duas edições comparadas, desconsiderados acentos e pontuação ausentes na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> A fala contrasta o que Jesus chama de alimento com o que os discípulos conhecem; o sentido da imagem é esclarecido em 4:34.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "Então os discípulos perguntavam uns aos outros: “Será que alguém lhe trouxe comida?”",
+        "commentary": "<p><b>Análise léxica:</b> ἀλλήλων (allḗlōn, G240) significa uns aos outros; φάγω (phágō, G5315) significa comer.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; os sinais de interrogação são uma opção de pontuação editorial.</p><p><b>Síntese exegética:</b> Os discípulos entendem a fala em termos de comida. A pergunta grega pode esperar uma resposta negativa, mas o texto não descreve separadamente a intenção de cada um.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "Jesus lhes disse: “Meu alimento é fazer a vontade daquele que me enviou e concluir a sua obra.",
+        "commentary": "<p><b>Análise léxica:</b> θέλημα (thélēma, G2307) significa vontade ou desejo; τελειόω (teleióō, G5048) pode significar completar ou levar a termo.</p><p><b>Crítica textual:</b> O SBLGNT usa ποιήσω para ‘fazer’, forma do subjuntivo aoristo; o Scrivener usa ποιῶ, forma do subjuntivo presente. A diferença de aspecto não exige outra tradução aqui.</p><p><b>Síntese exegética:</b> Jesus identifica seu alimento com fazer a vontade daquele que o enviou e concluir sua obra. A metáfora apresenta sua missão como aquilo que sustenta sua ação.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "Vocês não dizem: ‘Ainda faltam quatro meses para a colheita’? Olhem, eu lhes digo: levantem os olhos e vejam os campos, pois estão brancos para a colheita.",
+        "commentary": "<p><b>Análise léxica:</b> θερισμός (therismós, G2326) significa colheita; λευκός (leukós, G3022) significa branco ou brilhante.</p><p><b>Crítica textual:</b> O SBLGNT traz τετράμηνος e o Scrivener τετράμηνον, formas traduzíveis por ‘quatro meses’. No SBLGNT, ἤδη, ‘já’, aparece ao fim de 4:35, após uma pausa; esta tradução o liga ao início da frase de 4:36. Outra pontuação o liga à prontidão dos campos. A distribuição e a pontuação não demonstram, por si sós, variante manuscrita.</p><p><b>Síntese exegética:</b> Jesus contrapõe a espera mencionada no dizer à imagem de campos prontos para colher. O branco é preservado na tradução; seu sentido figurado se esclarece com a linguagem de semear e colher em 4:36–38.</p>"
+      },
+      {
+        "verse": 36,
+        "text": "Quem colhe já recebe salário e recolhe fruto para a vida eterna, para que quem semeia e quem colhe se alegrem juntos.",
+        "commentary": "<p><b>Análise léxica:</b> μισθός (misthós, G3408) pode significar salário ou recompensa; καρπός (karpós, G2590), fruto ou resultado.</p><p><b>Crítica textual:</b> O ‘já’ traduz ἤδη, impresso ao fim de 4:35 no SBLGNT, e é ligado aqui à ação de colher; também pode ser ligado aos campos no versículo anterior. O Scrivener acrescenta partículas de ligação neste versículo; a pontuação da transcrição comparada não está disponível.</p><p><b>Síntese exegética:</b> A imagem da colheita é relacionada à vida eterna e à alegria compartilhada de quem semeia e de quem colhe. A linguagem é figurada e não descreve apenas um pagamento agrícola.</p>"
+      },
+      {
+        "verse": 37,
+        "text": "Pois, neste caso, o ditado é verdadeiro: ‘Um semeia, e outro colhe.’",
+        "commentary": "<p><b>Análise léxica:</b> σπείρω (speírō, G4687) significa semear; θερίζω (therízō, G2325), colher.</p><p><b>Crítica textual:</b> As palavras comparadas de SBLGNT e Scrivener coincidem; o aparato registra um artigo adicional em outra edição, sem exigir mudança nesta frase.</p><p><b>Síntese exegética:</b> O ditado distingue as pessoas que semeiam e colhem. No contexto, essa distinção não exclui a alegria conjunta do versículo anterior.</p>"
+      },
+      {
+        "verse": 38,
+        "text": "Eu enviei vocês para colher aquilo pelo qual não trabalharam. Outros trabalharam, e vocês passaram a participar do trabalho deles.”",
+        "commentary": "<p><b>Análise léxica:</b> ἀποστέλλω (apostéllō, G649) significa enviar; κοπιάω (kopiáō, G2872) pode significar trabalhar arduamente ou cansar-se.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, sem considerar acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> A missão dos discípulos é descrita em continuidade com o trabalho de outros. O texto não identifica nominalmente esses trabalhadores; as propostas sobre quem são devem ser tratadas como interpretações.</p>"
+      },
+      {
+        "verse": 39,
+        "text": "Muitos samaritanos daquela cidade creram nele por causa do testemunho da mulher, que dizia: “Ele me disse tudo o que fiz.”",
+        "commentary": "<p><b>Análise léxica:</b> μαρτυρέω (martyréō, G3140) significa testemunhar; λόγος (lógos, G3056) pode significar palavra, relato ou declaração.</p><p><b>Crítica textual:</b> O SBLGNT usa ἃ e o Scrivener ὅσα na expressão ‘tudo o que fiz’; a diferença entre as formas não exige uma distinção na tradução portuguesa.</p><p><b>Síntese exegética:</b> O relato atribui a fé de muitos ao testemunho da mulher. Sua fala retoma o convite de 4:29, sem que o narrador precise enumerar tudo o que Jesus lhe disse.</p>"
+      },
+      {
+        "verse": 40,
+        "text": "Quando os samaritanos vieram até ele, pediram que ficasse com eles; e ele permaneceu ali dois dias.",
+        "commentary": "<p><b>Análise léxica:</b> μένω (ménō, G3306) pode significar permanecer ou ficar; ἐρωτάω (erōtáō, G2065), pedir ou perguntar.</p><p><b>Crítica textual:</b> As edições diferem na grafia do nome dos samaritanos, sem mudar a referência; acentos e pontuação não estão disponíveis na transcrição de Scrivener.</p><p><b>Síntese exegética:</b> Os samaritanos convidam Jesus a ficar e ele aceita. A permanência prepara a referência à escuta direta de sua palavra em 4:41–42.</p>"
+      },
+      {
+        "verse": 41,
+        "text": "Muitos mais creram por causa da palavra dele",
+        "commentary": "<p><b>Análise léxica:</b> πιστεύω (pisteúō, G4100) pode significar crer ou confiar; λόγος (lógos, G3056), palavra ou declaração.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a divisão e a pontuação da frase que continua no versículo seguinte são editoriais.</p><p><b>Síntese exegética:</b> O texto distingue a resposta à palavra de Jesus do testemunho que havia conduzido os primeiros habitantes até ele. A frase continua em 4:42.</p>"
+      },
+      {
+        "verse": 42,
+        "text": "e diziam à mulher: “Já não cremos por causa do que você disse, pois nós mesmos ouvimos e sabemos que ele é verdadeiramente [[o Salvador do mundo]].”",
+        "commentary": "<p><b>Análise léxica:</b> σωτήρ (sōtḗr, G4990) significa salvador ou libertador; κόσμος (kósmos, G2889) pode designar o mundo ou seus habitantes, conforme o contexto.</p><p><b>Crítica textual:</b> A expressão entre colchetes faz parte da leitura curta do SBLGNT, que termina com ‘Salvador do mundo’; o Scrivener acrescenta ‘o Cristo’ depois dela. Segundo Bruce Terry, P66, P75, Sinaítico e Vaticano apoiam a leitura curta, enquanto Alexandrino, Bezae e a tradição bizantina incluem o título adicional. A lista é fonte secundária; não houve cotejo direto dos manuscritos.</p><p><b>Síntese exegética:</b> O testemunho da mulher levou pessoas a Jesus; agora elas também falam de sua própria escuta. A confissão ‘Salvador do mundo’ amplia o horizonte do diálogo sem apagar a importância do testemunho inicial.</p>"
+      },
+      {
+        "verse": 43,
+        "text": "Depois dos dois dias, ele partiu dali para a Galileia.",
+        "commentary": "<p><b>Análise léxica:</b> ἐξέρχομαι (exérchomai, G1831) pode significar sair ou partir; Γαλιλαία (Galilaía, G1056) designa a Galileia.</p><p><b>Crítica textual:</b> O Scrivener acrescenta ‘e foi’ depois de ‘dali’; o SBLGNT tem a forma mais breve. Ambas descrevem a partida em direção à Galileia.</p><p><b>Síntese exegética:</b> Os dois dias retomam a permanência mencionada em 4:40 e encerram esta etapa da passagem por Samaria.</p>"
+      },
+      {
+        "verse": 44,
+        "text": "Pois o próprio Jesus havia declarado que um profeta não recebe honra em sua própria terra.",
+        "commentary": "<p><b>Análise léxica:</b> πατρίς (patrís, G3968) pode designar a terra natal ou a região de origem; τιμή (timḗ, G5092), honra ou valor.</p><p><b>Crítica textual:</b> O Scrivener inclui um artigo diante de ‘Jesus’ que não aparece nessa posição no SBLGNT; não muda a identificação de quem fala.</p><p><b>Síntese exegética:</b> A relação entre esta declaração, a viagem à Galileia e a acolhida dos galileus em 4:45 é debatida. Há propostas diferentes para a referência de ‘sua própria terra’ e para o sentido da acolhida; o texto não resolve expressamente todas as dificuldades.</p>"
+      },
+      {
+        "verse": 45,
+        "text": "Quando chegou à Galileia, os galileus o receberam, pois tinham visto tudo o que ele fizera em Jerusalém durante a festa; eles também tinham ido à festa.",
+        "commentary": "<p><b>Análise léxica:</b> δέχομαι (déchomai, G1209) pode significar receber ou acolher; ἑορτή (heortḗ, G1859) significa festa ou celebração.</p><p><b>Crítica textual:</b> O SBLGNT usa ὅσα e o Scrivener ἃ na expressão traduzida ‘tudo o que’; ambas as formas cabem na tradução geral aqui.</p><p><b>Síntese exegética:</b> A acolhida é relacionada ao que os galileus viram na festa em Jerusalém; compare João 2:23. O relato não explica de maneira inequívoca como essa acolhida se relaciona com a falta de honra mencionada em 4:44.</p>"
+      },
+      {
+        "verse": 46,
+        "text": "Ele voltou a Caná da Galileia, onde havia transformado a água em vinho. Havia um funcionário real cujo filho estava doente em Cafarnaum.",
+        "commentary": "<p><b>Análise léxica:</b> βασιλικός (basilikós, G937) pode designar alguém ligado ao rei, como um funcionário real; ἀσθενέω (asthenéō, G770) pode significar estar doente ou fraco.</p><p><b>Crítica textual:</b> O SBLGNT deixa implícito o sujeito de ‘veio’; o Scrivener explicita ‘Jesus’. A identidade dele é fornecida pelo contexto.</p><p><b>Síntese exegética:</b> Caná e a água transformada em vinho retomam João 2:1–11. O texto apresenta o homem como ligado à realeza, mas não informa seu nome nem seu cargo preciso.</p>"
+      },
+      {
+        "verse": 47,
+        "text": "Ao ouvir que Jesus havia vindo da Judeia para a Galileia, aquele homem foi até ele e pediu que descesse e curasse seu filho, pois este estava prestes a morrer.",
+        "commentary": "<p><b>Análise léxica:</b> ἰάομαι (iáomai, G2390) significa curar; καταβαίνω (katabaínō, G2597), descer.</p><p><b>Crítica textual:</b> O Scrivener explicita o pronome ‘a ele’ após o verbo de pedir; o SBLGNT o deixa implícito. O destinatário do pedido é Jesus em ambas as leituras.</p><p><b>Síntese exegética:</b> O pai procura Jesus por causa da doença grave do filho e pede que ele desça até onde a criança está. O relato ainda não descreve a resposta de Jesus.</p>"
+      },
+      {
+        "verse": 48,
+        "text": "Então Jesus lhe disse: “Se vocês não virem sinais e maravilhas, de modo algum crerão.”",
+        "commentary": "<p><b>Análise léxica:</b> σημεῖον (sēmeîon, G4592) significa sinal; τέρας (téras, G5059), prodígio ou maravilha.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas, desconsiderados acentos e pontuação ausentes em Scrivener.</p><p><b>Síntese exegética:</b> Embora a fala seja dirigida ao homem, os verbos ‘virem’ e ‘crerão’ estão no plural em grego. O texto não identifica expressamente cada pessoa incluída nesse plural.</p>"
+      },
+      {
+        "verse": 49,
+        "text": "O funcionário lhe disse: “Senhor, desça antes que meu menino morra.”",
+        "commentary": "<p><b>Análise léxica:</b> παιδίον (paidíon, G3813) significa criança ou menino pequeno; κύριος (kýrios, G2962) pode ser um tratamento respeitoso, ‘senhor’.</p><p><b>Crítica textual:</b> SBLGNT e Scrivener coincidem nas palavras comparadas; a pontuação é editorial.</p><p><b>Síntese exegética:</b> O homem insiste em seu pedido, agora expressando a urgência com que teme pela vida do menino.</p>"
+      },
+      {
+        "verse": 50,
+        "text": "Jesus lhe disse: “Vá; seu filho vive.” O homem creu na palavra que Jesus lhe disse e seguiu seu caminho.",
+        "commentary": "<p><b>Análise léxica:</b> ζάω (záō, G2198) significa viver; πιστεύω (pisteúō, G4100), crer ou confiar.</p><p><b>Crítica textual:</b> O Scrivener acrescenta ‘e’ antes de ‘creu’ e usa ᾧ onde o SBLGNT lê ὃν para ‘que’. Essas diferenças não exigem mudança substantiva nesta tradução.</p><p><b>Síntese exegética:</b> O verbo traduzido ‘vive’ está na forma presente. O homem confia na palavra de Jesus e parte antes de encontrar os escravos com a notícia.</p>"
+      },
+      {
+        "verse": 51,
+        "text": "Enquanto ele descia, seus escravos vieram ao seu encontro, dizendo que seu filho estava vivo.",
+        "commentary": "<p><b>Análise léxica:</b> δοῦλος (doûlos, G1401) designa uma pessoa escravizada; παῖς (paîs, G3816) pode significar criança, jovem ou servo, conforme o contexto.</p><p><b>Crítica textual:</b> O SBLGNT relata que ‘o menino dele’ vive; o Scrivener usa ‘o teu menino’ e acrescenta que eles anunciaram a notícia. Há também diferença no verbo para ‘encontrar’. A forma escolhida segue a referência de terceira pessoa do SBLGNT.</p><p><b>Síntese exegética:</b> Os escravos comunicam ao pai que a criança vive. O relato identifica a condição deles, mas não informa detalhes individuais de sua situação.</p>"
+      },
+      {
+        "verse": 52,
+        "text": "Ele lhes perguntou a hora em que <i>o menino</i> havia melhorado. Responderam: “Ontem, à sétima hora, a febre o deixou.”",
+        "commentary": "<p><b>Análise léxica:</b> ὥρα (hṓra, G5610) pode indicar hora ou momento; πυρετός (pyretós, G4446) significa febre.</p><p><b>Crítica textual:</b> O SBLGNT e o Scrivener diferem na ordem de ‘a hora’ e ‘a eles’, nas partículas que introduzem a resposta e na forma de ‘ontem’; a informação principal é a mesma. O sujeito ‘o menino’, em itálico, foi explicitado pelo contexto.</p><p><b>Síntese exegética:</b> O pai procura determinar quando ocorreu a melhora. Se a contagem começar aproximadamente ao nascer do sol, a sétima hora corresponderia a cerca de uma da tarde; a equivalência depende da forma de contar as horas.</p>"
+      },
+      {
+        "verse": 53,
+        "text": "O pai então entendeu que tinha sido naquela hora que Jesus lhe dissera: “Seu filho vive.” Ele e toda a sua casa creram.",
+        "commentary": "<p><b>Análise léxica:</b> οἰκία (oikía, G3614) pode significar casa ou grupo doméstico; πιστεύω (pisteúō, G4100), crer ou confiar.</p><p><b>Crítica textual:</b> O Scrivener inclui uma preposição antes de ‘naquela hora’ e uma partícula antes da fala de Jesus; o SBLGNT não as traz nessas posições. A pontuação da fala é editorial.</p><p><b>Síntese exegética:</b> O pai relaciona a hora da melhora à palavra de Jesus. A fé é atribuída a ele e a toda a sua casa; o relato não enumera separadamente os membros desse grupo doméstico.</p>"
+      },
+      {
+        "verse": 54,
+        "text": "Esse foi o segundo sinal que Jesus realizou quando voltou da Judeia para a Galileia.",
+        "commentary": "<p><b>Análise léxica:</b> δεύτερος (deúteros, G1208) significa segundo; σημεῖον (sēmeîon, G4592), sinal ou indicação.</p><p><b>Crítica textual:</b> O SBLGNT inclui uma partícula de ligação que o Scrivener não traz no início da frase. O valor de ‘novamente’ e sua relação com a volta à Galileia são questões de interpretação da frase.</p><p><b>Síntese exegética:</b> O episódio é ligado ao primeiro sinal em Caná (2:11). Como João 2:23 também menciona sinais em Jerusalém, a designação ‘segundo’ não precisa significar que nenhum outro sinal tenha ocorrido entre os dois relatos.</p>"
+      }
+    ]
+  },
+  "in_progress": {},
+  "history": [
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 1,
+      "verse_from": 1,
+      "verse_to": 18,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 1,
+      "verse_from": 19,
+      "verse_to": 35,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 1,
+      "verse_from": 36,
+      "verse_to": 51,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 12,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 2,
+      "verse_from": 13,
+      "verse_to": 25,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "sinalização de variantes relevantes nos capítulos 1 e 2 e complementação de evidências em fontes secundárias; alterações provisórias",
+      "date": "2026-11-14"
+    },
+    {
+      "event": "redação e comentários provisórios preparados nesta conversa",
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 36,
+      "date": "2026-11-14"
+    },
+    {
+      "event": "rascunho provisório de capítulo em andamento nesta conversa",
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 27,
+      "date": "2026-11-15"
+    },
+    {
+      "event": "redação e comentários provisórios preparados e integrados nesta conversa",
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 54,
+      "date": "2026-11-15"
+    }
+  ],
+  "sources": {
+    "versification": "KJV/tradicional",
+    "alignment_version": 1,
+    "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678"
+  },
+  "bibliography": [
+    {
+      "name": "SBL Greek New Testament, texto e aparato",
+      "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "text_url": "https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgnt/text/John.txt",
+      "apparatus_url": "https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgntapp/xml/John.xml",
+      "reference": "John 1:1–4:54; texto, contexto e aparato",
+      "use": "Texto-base e consulta ao aparato que compara edições; o aparato não é um cotejo direto de manuscritos.",
+      "license": "CC BY 4.0; https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Scripture quotations marked SBLGNT are from the SBL Greek New Testament. Copyright © 2010 Society of Biblical Literature and Logos Bible Software."
+    },
+    {
+      "name": "Textus Receptus de Scrivener, 1894, transcrição de Maurice A. Robinson",
+      "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "url": "https://github.com/byztxt/greektext-scrivener/blob/6049a43b135ed870f843b83eb6a04764fc796678/textonly/JOH.SCV",
+      "use": "Comparação direta com a edição SBLGNT. A transcrição é ASCII sem acentos, espíritos ou pontuação; sua ausência não é apresentada como variante.",
+      "license": "Domínio público segundo o fornecedor da transcrição."
+    },
+    {
+      "name": "Jeffrey Dodson, Greek Lexicon",
+      "revision": "74f70358d4acfaf2f980bf2feb58ab7115cbbcbc",
+      "url": "https://github.com/biblicalhumanities/Dodson-Greek-Lexicon/tree/74f70358d4acfaf2f980bf2feb58ab7115cbbcbc",
+      "entries": [
+        "G18",
+        "G25",
+        "G40",
+        "G59",
+        "G80",
+        "G142",
+        "G166",
+        "G190",
+        "G191",
+        "G225",
+        "G227",
+        "G228",
+        "G230",
+        "G240",
+        "G242",
+        "G281",
+        "G286",
+        "G305",
+        "G435",
+        "G444",
+        "G473",
+        "G501",
+        "G502",
+        "G509",
+        "G544",
+        "G565",
+        "G612",
+        "G649",
+        "G755",
+        "G758",
+        "G770",
+        "G837",
+        "G846",
+        "G863",
+        "G907",
+        "G935",
+        "G937",
+        "G963",
+        "G966",
+        "G1035",
+        "G1056",
+        "G1062",
+        "G1072",
+        "G1080",
+        "G1088",
+        "G1089",
+        "G1096",
+        "G1097",
+        "G1124",
+        "G1135",
+        "G1163",
+        "G1182",
+        "G1208",
+        "G1209",
+        "G1249",
+        "G1304",
+        "G1320",
+        "G1330",
+        "G1372",
+        "G1388",
+        "G1391",
+        "G1401",
+        "G1431",
+        "G1453",
+        "G1473",
+        "G1492",
+        "G1510",
+        "G1544",
+        "G1588",
+        "G1642",
+        "G1651",
+        "G1689",
+        "G1712",
+        "G1715",
+        "G1759",
+        "G1831",
+        "G1834",
+        "G1849",
+        "G1859",
+        "G1883",
+        "G1919",
+        "G2032",
+        "G2064",
+        "G2065",
+        "G2116",
+        "G2198",
+        "G2205",
+        "G2214",
+        "G2222",
+        "G2250",
+        "G2296",
+        "G2307",
+        "G2316",
+        "G2325",
+        "G2326",
+        "G2334",
+        "G2353",
+        "G2390",
+        "G2411",
+        "G2438",
+        "G2453",
+        "G2512",
+        "G2564",
+        "G2570",
+        "G2573",
+        "G2590",
+        "G2597",
+        "G2638",
+        "G2719",
+        "G2773",
+        "G2786",
+        "G2836",
+        "G2859",
+        "G2872",
+        "G2889",
+        "G2919",
+        "G2920",
+        "G2962",
+        "G3022",
+        "G3056",
+        "G3101",
+        "G3140",
+        "G3141",
+        "G3182",
+        "G3187",
+        "G3306",
+        "G3319",
+        "G3323",
+        "G3355",
+        "G3358",
+        "G3361",
+        "G3385",
+        "G3408",
+        "G3439",
+        "G3478",
+        "G3485",
+        "G3551",
+        "G3565",
+        "G3566",
+        "G3597",
+        "G3614",
+        "G3618",
+        "G3624",
+        "G3631",
+        "G3670",
+        "G3709",
+        "G3735",
+        "G3772",
+        "G3779",
+        "G3789",
+        "G3813",
+        "G3816",
+        "G3880",
+        "G3957",
+        "G3968",
+        "G4008",
+        "G4058",
+        "G4074",
+        "G4077",
+        "G4100",
+        "G4138",
+        "G4151",
+        "G4154",
+        "G4172",
+        "G4314",
+        "G4352",
+        "G4353",
+        "G4396",
+        "G4413",
+        "G4446",
+        "G4461",
+        "G4487",
+        "G4561",
+        "G4592",
+        "G4637",
+        "G4653",
+        "G4687",
+        "G4798",
+        "G4808",
+        "G4965",
+        "G4972",
+        "G4979",
+        "G4982",
+        "G4983",
+        "G4990",
+        "G4991",
+        "G5043",
+        "G5048",
+        "G5059",
+        "G5092",
+        "G5160",
+        "G5201",
+        "G5204",
+        "G5207",
+        "G5266",
+        "G5302",
+        "G5312",
+        "G5315",
+        "G5319",
+        "G5330",
+        "G5337",
+        "G5416",
+        "G5421",
+        "G5438",
+        "G5455",
+        "G5456",
+        "G5457",
+        "G5461",
+        "G5485",
+        "G5495",
+        "G5547",
+        "G5564",
+        "G5610"
+      ],
+      "use": "Consulta manual de números Strong e sentidos gerais, complementada pela leitura contextual do grego.",
+      "license": "Domínio público segundo o repositório e a declaração do autor.",
+      "download_sha256": "d8b7cfee28eaa96952b51935562c5239cac2746a42c348a7051804b2c8be6e4d"
+    },
+    {
+      "name": "G. Abbott-Smith, A Manual Greek Lexicon of the New Testament",
+      "revision": "8c00cb244761aa23659421a8cbbbf7a3b27b7d59",
+      "url": "https://github.com/translatable-exegetical-tools/Abbott-Smith/blob/8c00cb244761aa23659421a8cbbbf7a3b27b7d59/abbott-smith.tei.xml",
+      "entries": [
+        "G142",
+        "G286",
+        "G501",
+        "G755",
+        "G1062",
+        "G1072",
+        "G1089",
+        "G1096",
+        "G1135",
+        "G1182",
+        "G1249",
+        "G1453",
+        "G1588",
+        "G1712",
+        "G1834",
+        "G1849",
+        "G2205",
+        "G2222",
+        "G2411",
+        "G2453",
+        "G2512",
+        "G2638",
+        "G2719",
+        "G2773",
+        "G2786",
+        "G2889",
+        "G3056",
+        "G3141",
+        "G3323",
+        "G3355",
+        "G3439",
+        "G3485",
+        "G3618",
+        "G3957",
+        "G4100",
+        "G4592",
+        "G4637",
+        "G4653",
+        "G4979",
+        "G4983",
+        "G5201",
+        "G5302",
+        "G5416",
+        "G5461",
+        "G5610"
+      ],
+      "use": "Consulta manual da transcrição TEI, inclusive entradas que citam Filemom.",
+      "license": "Texto e transcrição TEI declarados em domínio público pelo repositório; o PDF do repositório tem condições próprias e não foi utilizado.",
+      "xml_sha256": "99821bee411626b4aa3e674040297b54b267eff86cb4f9b7ef69a8bdb18b6f90"
+    },
+    {
+      "name": "United States Conference of Catholic Bishops, notas a João 1",
+      "url": "https://bible.usccb.org/bible/john/1",
+      "use": "Consulta contextual e de questões de pontuação, variantes e interpretações; a tradução e as notas publicadas não foram incorporadas."
+    },
+    {
+      "name": "The Importance of the Punctuation of John 1:3–4, Bite-Sized Exegesis",
+      "url": "https://bitesizedexegesis.com/2021/02/15/the-importance-of-the-punctuation-of-john-13-4/",
+      "use": "Consulta sobre a ligação sintática de ὃ γέγονεν; não substitui exame de manuscritos."
+    },
+    {
+      "name": "United States Conference of Catholic Bishops, notas a João 2",
+      "url": "https://bible.usccb.org/bible/john/2",
+      "use": "Consulta contextual sobre Caná, medidas, o templo e dificuldades históricas; o texto da tradução e das notas publicadas não foi incorporado."
+    },
+    {
+      "name": "United States Conference of Catholic Bishops, notas a João 3",
+      "url": "https://bible.usccb.org/bible/john/3",
+      "use": "Consulta contextual sobre novo nascimento, água e Espírito, estrutura do discurso e outras questões; textos publicados não foram incorporados."
+    },
+    {
+      "name": "Bruce Terry, The Bible Student’s Guide to New Testament Textual Variants, João 1:15–8:57",
+      "url": "https://bterry.com/tc2/lay09jhn.htm",
+      "use": "Consulta das listas de testemunhos e leituras variantes; não substitui exame direto dos manuscritos nem incorpora a tradução do autor."
+    },
+    {
+      "name": "H. A. G. Houghton, panorama da transmissão textual de João",
+      "url": "https://pure-oai.bham.ac.uk/ws/files/29525014/Houghton_OHJS_preprint.pdf",
+      "use": "Consulta de variantes joaninas, incluindo João 1:34; não incorporado."
+    },
+    {
+      "name": "David Alan Black, The Text of John 3:13, Grace Theological Journal 6.1 (1985)",
+      "url": "https://faculty.gordon.edu/hu/bi/ted_hildebrandt/ntesources/ntarticles/gtj-nt/black-jn3-gtj-85.htm",
+      "use": "Consulta de evidência e de argumentos para a leitura longa e a curta; a preferência do autor pela leitura longa é diferente da opção SBLGNT."
+    },
+    {
+      "name": "STEP Bible, VarApp, João 1 e 2",
+      "urls": [
+        "https://www.stepbible.org/?q=version%3DVarApp%40reference%3DJoh.1",
+        "https://www.stepbible.org/?q=version%3DVarApp%7Creference%3DJoh.2"
+      ],
+      "use": "Consulta dos levantamentos de variantes e testemunhos em 1:39 e 2:17; não houve cotejo direto."
+    },
+    {
+      "name": "James Snapp, The Text of the Gospels, John 1:51",
+      "url": "https://www.thetextofthegospels.com/2022/01/john-151-hereafter-you-shall-see.html",
+      "use": "Consulta de testemunhos da expressão de 1:51; o autor defende sua inclusão, ao contrário da opção SBLGNT."
+    },
+    {
+      "name": "Aaron Michael Jensen, The Syntax of the Correlative οὕτως … ὥστε in John 3.16",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/syntax-of-the-correlative-in-john-316-in-the-light-of-parallel-constructions-in-the-ancient-greek-corpus/1A1C4264918AAF1EB10BAB8CA73A1BE8",
+      "use": "Consulta do resumo e discussão acessível sobre o debate entre intensidade e maneira; não incorpora o artigo."
+    },
+    {
+      "name": "United Bible Societies, Translation Commentary on John 3:15, excerto em TIPs",
+      "url": "https://tips.translation.bible/story/translation-commentary-on-john-315/",
+      "use": "Consulta das possíveis ligações de ‘nele’; não incorpora o excerto publicado."
+    },
+    {
+      "name": "United States Conference of Catholic Bishops, notas a João 4",
+      "url": "https://bible.usccb.org/bible/john/4",
+      "use": "Consulta contextual e de questões de leitura, inclusive 4:35–36 e 4:43–54; não incorpora a tradução ou as notas publicadas."
+    },
+    {
+      "name": "Gary Manning, Sharing Cups, Associating, or Getting Help? The Meaning of Συγχράομαι in John 4.9",
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/sharing-cups-associating-or-getting-help-the-meaning-of-in-john-49/0F8C321A81D2257D93CC40360D63CE68",
+      "use": "Consulta apenas do resumo acessível sobre alternativas de sentido em 4:9; não incorpora o artigo e não implica consenso sobre suas conclusões."
+    },
+    {
+      "name": "Caryn Reeder, Revisiting the Woman at the Well",
+      "url": "https://equipping.intervarsity.org/thewell/blog/revisiting-woman-well",
+      "use": "Consulta sobre inferências tradicionais relativas à mulher de João 4; não incorpora o texto publicado."
+    },
+    {
+      "name": "Solomon O. Ademiluka, Interpreting the Samaritan woman’s marital experience (Jn 4:16–18)",
+      "url": "https://hts.org.za/index.php/hts/article/view/8197/24556",
+      "use": "Consulta de interpretação contextual das uniões mencionadas, sem presumir causas não informadas no relato; não incorpora o artigo.",
+      "license": "Artigo publicado sob CC BY 4.0 segundo a página da revista.",
+      "attribution": "Solomon O. Ademiluka, HTS Teologiese Studies/Theological Studies 79(1), a8197 (2023), doi:10.4102/hts.v79i1.8197."
+    },
+    {
+      "name": "NET Bible, notas de João 4",
+      "urls": [
+        "https://www.bible.com/bible/107/JHN.4.NET",
+        "https://classic.net.bible.org/passage.php?passage=Joh+4%3A44-45"
+      ],
+      "use": "Consulta de notas sobre a leitura de 4:11, a pergunta em 4:29 e a discussão de 4:44–45; não incorpora a tradução ou as notas publicadas."
+    }
+  ],
+  "review": {
+    "status": "capítulos 1 a 4 estruturalmente completos; aprovação editorial e revisão especializada pendentes",
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 51,
+        "status": "pendente de revisão posterior pelo responsável"
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 25,
+        "status": "pendente de revisão posterior pelo responsável"
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 36,
+        "status": "pendente de revisão posterior pelo responsável"
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 54,
+        "status": "pendente de revisão posterior pelo responsável"
+      }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 51,
+        "status": "não revisado"
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 25,
+        "status": "não revisado"
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 36,
+        "status": "não revisado"
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 54,
+        "status": "não revisado"
+      }
+    ],
+    "use": "prévia para revisão no MyBible, não edição final nem publicação especializada",
+    "caution": "Autorização para continuar não constitui aprovação editorial dos trechos novos.",
+    "editorial_notes": [
+      "Em João 1:14, Filho está em itálico porque explicita a relação inferida do contexto; a palavra υἱός não está nessa frase grega.",
+      "Em João 1:29, 32, 37, 40 e 42, nomes em itálico explicitam sujeitos ou referentes implícitos na redação SBLGNT; pronomes exigidos pela gramática portuguesa não são marcados automaticamente.",
+      "Em João 2:8, 10 e 12, os itálicos marcam quantidade ou referentes explicitados pelo contexto e não expressos diretamente na mesma forma no SBLGNT.",
+      "Em João 2:22–23, Jesus está em itálico para explicitar sujeitos fornecidos pelo contexto.",
+      "João 3:2 e 3:23 usam itálico para explicitar um nome ou sujeito não expresso na mesma forma no SBLGNT. Os colchetes duplos indicam variantes; a crítica textual distingue leitura SBLGNT de suplementos do Scrivener.",
+      "Em João 4:52, o itálico explicita um sujeito pelo contexto. Em 4:35–36, o advérbio ἤδη, impresso ao fim de 4:35 no SBLGNT, é traduzido no versículo seguinte; isso não implica variante manuscrita. Em 4:42, a tradução segue a leitura curta do SBLGNT; o acréscimo do Scrivener é informado na crítica textual, não incluído no texto bíblico."
+    ]
+  },
+  "pending_decisions": [
+    "Rever editorialmente e submeter o capítulo completo a revisão especializada antes de publicação.",
+    "João 1:3–4: pontuação e ligação de ὃ γέγονεν; a tradução difere da pontuação editorial do SBLGNT.",
+    "João 1:5, 9, 16 e 18: rever escolhas semânticas, sintáticas e textuais, incluindo a leitura de μονογενὴς θεός.",
+    "João 1:24, 28 e 34: rever a identificação dos enviados e as leituras Betânia/Betabara e Escolhido/Filho de Deus.",
+    "João 1:39–42 e 51: revisar futuro/imperativo, identificação do primeiro encontro, nome do pai de Pedro e expressão adicional em Scrivener.",
+    "João 2:4, 6 e 12: rever o sentido da expressão dirigida à mãe, a conversão aproximada de medidas e a referência a irmãos.",
+    "João 2:15, 17 e 20: rever a abrangência de todos, as leituras consumirá/consumiu e a tradução da duração da obra do templo.",
+    "O aparato SBLGNT compara edições; não houve consulta direta a manuscritos nem ao Nestle-Aland.",
+    "João 3:3–8: rever de novo/do alto, o sentido de água e Espírito, e a manutenção do jogo de palavras com vento.",
+    "João 3:13, 15, 25, 31 e 34: rever a sinalização, os suplementos do Scrivener e as testemunhas citadas por fontes secundárias; não houve cotejo direto.",
+    "João 3:15–21 e 30–36: limites das falas são editoriais; avaliar alternativas sem lhes atribuir certeza manuscrita.",
+    "João 1:34: a leitura escolhida no SBLGNT difere de importantes testemunhos antigos que leem Filho; exige revisão especializada.",
+    "João 2:17: levantar testemunhos individuais para a leitura passada antes da publicação.",
+    "João 4:1, 9, 11, 17 e 42: revisar o levantamento secundário de variantes e testemunhos e a sinalização; não houve cotejo direto dos manuscritos.",
+    "João 4:9, 18 e 29: avaliar o alcance de συγχράομαι, a cautela quanto a inferências sobre a mulher e o valor da pergunta com μήτι.",
+    "João 4:35–36: revisar a ligação e a distribuição entre versículos de ἤδη; não tratá-la automaticamente como variante manuscrita.",
+    "João 4:44–45 e 54: revisar as alternativas para a relação entre o dito e a acolhida e para a indicação do segundo sinal."
+  ]
+}

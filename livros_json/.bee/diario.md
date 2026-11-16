@@ -1,0 +1,2 @@
+- 2026-11-16T14:52:48+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T14:52:48+00:00 — **ERRO** Ciclo 1 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.
