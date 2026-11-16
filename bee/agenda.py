@@ -309,6 +309,9 @@ class Agendador:
         ativos = [m for m in self.motores if m.provedor not in exaustos]
         if not ativos:
             raise QuotaDeTodosEsgotada('todos os provedores configurados já esgotaram a quota hoje')
+        for motor in ativos:
+            # Avisos de rede (novas tentativas, 503, 429) ficam no diário com data.
+            motor.log = lambda texto: self.diario.escrever(texto, 'aviso')
         self._rodizio = Rodizio(ativos, registar=self.diario.escrever)
         return self._rodizio
 

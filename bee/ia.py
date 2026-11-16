@@ -13,7 +13,7 @@ import json
 import re
 import unicodedata
 import urllib.request
-from typing import Any, Iterator, Sequence
+from typing import Any, Callable, Iterator, Sequence
 
 from .arquivos import DadosInvalidos, carregar_json, validar_versiculos
 from .catalogo import Livro
@@ -173,6 +173,8 @@ class MotorIA:
         self.rede = rede
         self.max_tokens = max_tokens
         self.aplicar_revisao = aplicar_revisao
+        # Recebe avisos legíveis (novas tentativas, 5xx) para o diário do autopiloto.
+        self.log: Callable[[str], None] | None = None
 
     @property
     def rotulo(self) -> str:
@@ -208,8 +210,11 @@ class MotorIA:
                 'temperature': 0.4,
             }
             if self.provedor == 'openai':
-                # A API da OpenAI mudou o nome do parâmetro e aceita JSON forçado.
+                # A API da OpenAI mudou o nome do parâmetro.
                 payload['max_completion_tokens'] = payload.pop('max_tokens')
+            if self.provedor in ('openai', 'groq', 'cerebras'):
+                # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
+                # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}
             headers = {'Authorization': f'Bearer {chave}'}
         headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
@@ -247,7 +252,9 @@ class MotorIA:
                 url, data=json.dumps(payload).encode('utf-8'), headers=headers, method='POST',
             )
             try:
-                resposta = _objeto_api(self.rede.obter(requisicao, self.provedor), self.provedor)
+                resposta = _objeto_api(
+                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                )
             except ErroRede as exc:
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc
@@ -266,8 +273,15 @@ class MotorIA:
                 headers=headers, method='POST',
             )
             try:
-                resposta = _objeto_api(self.rede.obter(requisicao, self.provedor), self.provedor)
+                resposta = _objeto_api(
+                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                )
             except ErroRede as exc:
+                if 'HTTP 404' in str(exc) and self.log:
+                    self.log(
+                        f'{self.provedor}: o modelo {self.modelo!r} não existe nesta conta; '
+                        'use --testar --modelo <outro> ou o modelo padrão.'
+                    )
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc

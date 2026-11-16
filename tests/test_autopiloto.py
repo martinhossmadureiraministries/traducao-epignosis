@@ -16,7 +16,7 @@ from bee.agenda import (
 from bee.catalogo import POR_NUMERO as LIVROS_POR_NUMERO
 from bee.gerador import ConfigGeracao, gerar_fatia
 from bee.ia import MotorIA, PROVEDORES, Rodizio, VERSOS_POR_PEDIDO_PADRAO
-from bee.rede import CotaExcedida, ErroRede
+from bee.rede import CotaExcedida, ErroRede, ServicoIndisponivel
 
 
 class FontesFalsas:
@@ -260,6 +260,146 @@ class ArranqueTest(Base):
         self.assertEqual(mantidos, 1)
         self.assertEqual([v['text'] for v in dados['in_progress']['1']],
                          ['VERSÃO REVISTA À MÃO', 'novo da IA'])
+
+
+class IndisponibilidadeTest(Base):
+    """O caso real de 16/11: o Gemini respondeu 503 e a produção parou."""
+
+    def test_503_no_gemini_passa_para_o_groq_e_continua(self):
+        notas = []
+        gemini = MotorFalso(falhar_em=1, erro=ServicoIndisponivel('gemini: HTTP 503; esgotadas 3 tentativas.'))
+        groq = MotorFalso()
+        groq.provedor = 'groq'
+        rodizio = Rodizio([gemini, groq], registar=notas.append)
+        versos = rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+        self.assertEqual(versos[0]['verse'], 1)
+        self.assertEqual(rodizio.provedor, 'groq')
+        self.assertEqual(rodizio.esgotados(), [], 'um 5xx não deve marcar o provedor como esgotado')
+        # O rodízio registou a passagem ao provedor seguinte, sem tratar o 5xx como quota.
+        self.assertTrue(any('outro provedor' in n for n in notas), notas)
+
+    def test_reconhece_erro_passageiro_e_de_configuracao(self):
+        import nuvem
+        for erro in ('gemini: HTTP 503; esgotadas 3 tentativas.',
+                     'ServicoIndisponivel: HTTP 500',
+                     'gemini: falha de rede (URLError)',
+                     'gemini: timed out'):
+            self.assertTrue(nuvem._parece_transitorio(erro), erro)
+        for erro in ('gemini: HTTP 401; verifique a chave do provedor.',
+                     'RespostaInvalida: falta a seção', ''):
+            self.assertFalse(nuvem._parece_transitorio(erro), erro)
+
+    def test_avisos_de_rede_vao_para_o_diario(self):
+        motor = MotorFalso()
+        agendador, _ = self.agendador(motor=motor)
+        agendador._obter_rodizio()
+        self.assertTrue(callable(motor.log))
+        motor.log('gemini: HTTP 503; nova tentativa em 1.6s (1/3).')
+        diario = (self.dados / '.bee' / 'diario.md').read_text(encoding='utf-8')
+        self.assertIn('HTTP 503', diario)
+        self.assertIn('AVISO', diario)
+
+    def test_nuvem_repete_quando_o_erro_e_passageiro(self):
+        import nuvem
+        motor = MotorFalso(falhar_em=1, erro=ServicoIndisponivel('gemini: HTTP 503; esgotadas 3 tentativas.'))
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0',
+            'BEE_TENTATIVAS_CICLO': '2', 'BEE_ESPERA_ENTRE_TENTATIVAS': '0',
+            'BEE_PUBLICAR': '0', 'BEE_VERSOS_POR_CICLO': '4', 'BEE_LOTE': '4',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache), 'BEE_FUSO': 'Africa/Luanda',
+            'BEE_LIVROS': '640',
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[motor]), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 0, saida.getvalue())
+        self.assertIn('Ação: **gerado**', saida.getvalue())
+        dados = json.loads((self.dados / '640_Filemom.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(dados['in_progress']['1']), 4)
+
+    def test_nuvem_nao_repete_erro_de_configuracao(self):
+        import nuvem
+        chamadas = []
+
+        class SemPermissao(MotorFalso):
+            def gerar(self, *a, **k):
+                chamadas.append(1)
+                raise ErroRede('gemini: HTTP 401; verifique a chave do provedor.')
+
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0',
+            'BEE_TENTATIVAS_CICLO': '3', 'BEE_ESPERA_ENTRE_TENTATIVAS': '0',
+            'BEE_PUBLICAR': '0', 'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache), 'BEE_LIVROS': '640',
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[SemPermissao()]), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 1)
+        self.assertEqual(len(chamadas), 1, 'erro de configuração não deve ser repetido')
+        self.assertIn('configuração', saida.getvalue())
+
+
+
+class RecuperacaoSeguraTest(Base):
+    """Regressão: uma variável vazia não pode apontar para a pasta atual."""
+
+    def test_sem_caminho_remoto_nao_apaga_nada(self):
+        import nuvem
+        self.assertIsNone(nuvem._caminho_remoto(''))
+        self.assertIsNone(nuvem._caminho_remoto('   '))
+        self.assertIsNone(nuvem._caminho_remoto('.'))
+        self.assertEqual(nuvem._caminho_remoto('/tmp/bee-remoto/livros_json'),
+                         __import__('pathlib').Path('/tmp/bee-remoto/livros_json'))
+
+    def test_nuvem_sem_remoto_preserva_o_projeto(self):
+        import nuvem
+        marca = self.raiz / 'nao_apagar.txt'
+        marca.write_text('ok', encoding='utf-8')
+        motor = MotorFalso()
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0', 'BEE_PUBLICAR': '0',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache), 'BEE_LIVROS': '640',
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[motor]), \
+             contextlib.redirect_stdout(io.StringIO()):
+            nuvem.main()
+        self.assertTrue(marca.exists(), 'a pasta atual não pode ser apagada')
+        self.assertTrue(self.dados.exists())
+
+class GroqTest(unittest.TestCase):
+    """A Groq é a reserva configurada pelo responsável: tem de falar JSON."""
+
+    def _corpo(self, provedor, modelo='llama-3.3-70b-versatile'):
+        from bee.ia import MotorIA
+        motor = MotorIA(provedor, modelo, 'chave-segura', HTTPFalso({}), 4096)
+        return motor._corpo('mensagem', 'chave-segura')
+
+    def test_groq_cerebras_e_openai_forcam_json(self):
+        for provedor in ('groq', 'cerebras', 'openai'):
+            with self.subTest(provedor=provedor):
+                _, payload, _ = self._corpo(provedor)
+                self.assertEqual(payload['response_format'], {'type': 'json_object'})
+
+    def test_groq_usa_token_do_formato_antigo(self):
+        _, payload, headers = self._corpo('groq')
+        self.assertIn('max_tokens', payload)
+        self.assertNotIn('max_completion_tokens', payload)
+        self.assertEqual(headers['Authorization'], 'Bearer chave-segura')
+        self.assertNotIn('chave-segura', str(payload))
+
+    def test_gemini_continua_com_json_nativo(self):
+        _, payload, headers = self._corpo('gemini', 'gemini-3.5-flash-lite')
+        self.assertEqual(payload['generationConfig']['responseMimeType'], 'application/json')
+        self.assertEqual(headers['x-goog-api-key'], 'chave-segura')
 
 
 class RodizioTest(unittest.TestCase):

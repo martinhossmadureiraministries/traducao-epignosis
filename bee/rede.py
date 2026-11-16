@@ -8,6 +8,7 @@ import random
 import re
 import sys
 import time
+from typing import Callable
 import urllib.error
 import urllib.request
 
@@ -18,6 +19,10 @@ class ErroRede(RuntimeError):
 
 class CotaExcedida(ErroRede):
     """HTTP 429 persistente: a quota do serviço (ou da chave) está esgotada por agora."""
+
+
+class ServicoIndisponivel(ErroRede):
+    """HTTP 5xx persistente: o serviço está instável, não é a configuração do projeto."""
 
 
 def _retry_after(valor: str | None) -> float:
@@ -51,7 +56,10 @@ class ClienteHTTP:
             if restante > 0:
                 time.sleep(restante)
 
-    def obter(self, requisicao: urllib.request.Request, descricao: str, limite: int = 64 * 1024 * 1024) -> bytes:
+    def obter(
+        self, requisicao: urllib.request.Request, descricao: str,
+        limite: int = 64 * 1024 * 1024, log: Callable[[str], None] | None = None,
+    ) -> bytes:
         """Nunca imprime a chave, o corpo da resposta ou o texto enviado à API."""
         for tentativa in range(1, self.tentativas + 1):
             self._esperar_pausa()
@@ -83,12 +91,21 @@ class ClienteHTTP:
                 # A pausa é medida após o fim da chamada, não apenas entre inícios.
                 self._ultima_requisicao = time.monotonic()
             if tentativa == self.tentativas:
-                classe = CotaExcedida if motivo == 'HTTP 429' else ErroRede
-                raise classe(
-                    f'{descricao}: {motivo}; esgotadas {self.tentativas} tentativas.'
-                ) from None
+                if motivo == 'HTTP 429':
+                    classe = CotaExcedida
+                elif motivo.startswith('HTTP 5'):
+                    classe = ServicoIndisponivel
+                else:
+                    classe = ErroRede
+                texto = f'{descricao}: {motivo}; esgotadas {self.tentativas} tentativas.'
+                if log:
+                    log(texto)
+                raise classe(texto) from None
             atraso = max(retry_after, min(60.0, 2 ** (tentativa - 1) + random.random()))
-            print(f'{descricao}: {motivo}; nova tentativa em {atraso:.1f}s ({tentativa}/{self.tentativas}).', file=sys.stderr)
+            aviso = f'{descricao}: {motivo}; nova tentativa em {atraso:.1f}s ({tentativa}/{self.tentativas}).'
+            print(aviso, file=sys.stderr)
+            if log:
+                log(aviso)
             time.sleep(atraso)
         raise AssertionError('inalcançável')
 
