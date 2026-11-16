@@ -172,9 +172,10 @@ def _rede_listagem(rede: ClienteHTTP) -> ClienteHTTP:
 
 def _pedido_listagem(config: Provedor, chave: str) -> urllib.request.Request:
     if config.nome == 'gemini':
+        # A chave vai no cabeçalho, como nos pedidos de geração: nunca na URL.
         return urllib.request.Request(
-            f'{config.url_modelos}?pageSize=200&key={chave}',
-            headers={'User-Agent': 'gerar-bee/1.0'},
+            f'{config.url_modelos}?pageSize=200',
+            headers={'x-goog-api-key': chave, 'User-Agent': 'gerar-bee/1.0'},
         )
     return urllib.request.Request(
         config.url_modelos,
