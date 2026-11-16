@@ -58,9 +58,19 @@ def _resumo(markdown: str) -> None:
 
 
 def _progresso(dados: Path) -> tuple[int, int]:
+    """Capítulos completos e versículos guardados (incluindo os de capítulos em curso).
+
+    Contar só os `chapters` fazia o resumo dizer "0 versículos guardados" logo
+    depois de guardar 6 — parecia que nada acontecia.
+    """
     livros = ler_todos(dados)
     capitulos = sum(len(item['chapters']) for item in livros.values())
-    versos = sum(len(v) for item in livros.values() for v in item['chapters'].values())
+    versos = sum(
+        len(valores)
+        for item in livros.values()
+        for lado in ('chapters', 'in_progress')
+        for valores in item.get(lado, {}).values()
+    )
     return capitulos, versos
 
 
@@ -312,15 +322,17 @@ def main() -> int:
                 extra -= 1
                 resultado = agendador.ciclo(livros)
                 salvar_estado(estado_caminho, estado)
-            # O reserva de rede pode esgotar-se por completo (todos os provedores
-            # em 5xx, que foi o que já aconteceu). Não é erro de configuração:
-            # a próxima execução agendada volta a tentar. Sai com 0 e diz porquê,
-            # em vez de marcar o trabalho como falhado e alarmar o utilizador.
+            # Uma falha passageira (5xx, rede) não deve contar como "código
+            # avariado": se o serviço estiver em baixo 6 ciclos seguidos, o
+            # agendador desistia e a produção só voltava quando alguém corresse
+            # o programa à mão. Nestes casos encerra-se o contador.
             if (
                 resultado.acao == 'nada' and not resultado.progresso
                 and _parece_transitorio(estado.ultimo_erro or '')
-                and estado.falhas_seguidas < agendador.config.max_falhas_seguidas
             ):
+                if estado.falhas_seguidas:
+                    estado.falhas_seguidas = 0
+                    salvar_estado(estado_caminho, estado)
                 print('Serviço de IA indisponível neste momento; o próximo ciclo agendado volta a tentar.',
                       flush=True)
                 diario.escrever(
@@ -352,12 +364,23 @@ def main() -> int:
     pacote = _empacotar(saida)
     trabalho = proximo_trabalho(livros, dados)
     faltam_livro, faltam_fila = _passo_do_plano(dados, livros)
-    linhas = [f'### {ROTULO}', '',
-              f'- Ação: **{resultado.acao}** — {resultado.detalhe or "—"}']
-    if resultado.progresso:
+    transitorio = _parece_transitorio(estado.ultimo_erro or '')
+    # Números pequenos e absolutos, sem percentagens que sugiram progresso que
+    # não existe: o que conta é quantos capítulos estão completos e quantos
+    # versículos já estão guardados (mesmo em capítulos ainda em curso).
+    linhas = [f'### {ROTULO}', '']
+    if resultado.acao == 'gerado':
+        linhas.append(f'- Ação: **{resultado.acao}** — {resultado.detalhe or "—"}')
         linhas.append(f'- Esta execução: +{resultado.progresso.versos} versículos, '
                       f'+{resultado.progresso.capitulos} capítulos')
-    linhas.append(f'- Progresso: **{depois_cap}/1189 capítulos**, {depois_versos}/31102 versículos')
+    elif transitorio:
+        linhas.append('- Ação: **nada gerado nesta execução** — o serviço de IA não respondeu.')
+        linhas.append('- **Não é um erro do projeto nem da sua chave.** O próximo ciclo '
+                      'agendado (15 min) volta a tentar sozinho; não precisa de fazer nada.')
+    else:
+        linhas.append(f'- Ação: **nada** — {resultado.detalhe or "—"}')
+    linhas.append(f'- Progresso: **{depois_cap}/1189 capítulos completos**, '
+                  f'{depois_versos}/31102 versículos guardados')
     seguinte = f'{trabalho[0].nome} {trabalho[1]}' if trabalho else 'nada pendente'
     linhas.append('- A seguir: ' + seguinte)
     if faltam_livro:
@@ -370,7 +393,7 @@ def main() -> int:
         linhas.append(
             '- **Causa provável:** serviço de IA instável (5xx) — não é a sua chave nem o '
             'projeto; o próximo ciclo tenta de novo.'
-            if _parece_transitorio(estado.ultimo_erro) else
+            if transitorio else
             '- **Causa provável:** configuração (chave, modelo ou quota). '
             'Corra `python autopiloto.py --testar` e veja a tabela em COMECAR_HOJE.md.'
         )

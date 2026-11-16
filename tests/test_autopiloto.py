@@ -345,6 +345,47 @@ class IndisponibilidadeTest(Base):
         diario = (self.dados / '.bee' / 'diario.md').read_text(encoding='utf-8')
         self.assertIn('indisponível', diario)
 
+    def test_resumo_conta_versiculos_de_capitulos_em_curso(self):
+        """Já aconteceu o resumo dizer '0 versículos' depois de guardar 6."""
+        import nuvem
+        motor = MotorFalso()
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0',
+            'BEE_TENTATIVAS_CICLO': '1', 'BEE_PUBLICAR': '0', 'BEE_LIVROS': '640',
+            'BEE_VERSOS_POR_CICLO': '6', 'BEE_LOTE': '6',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache),
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[motor]), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 0, saida.getvalue())
+        self.assertIn('6/31102 versículos guardados', saida.getvalue())
+
+    def test_servico_em_baixo_nao_faz_o_agendador_desistir(self):
+        """6 falhas seguidas param a produção: um 5xx não pode contar para isso."""
+        import nuvem
+
+        class Sempre503(MotorFalso):
+            def gerar(self, *a, **k):
+                raise ServicoIndisponivel('gemini: HTTP 503; esgotadas 3 tentativas.')
+
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0',
+            'BEE_TENTATIVAS_CICLO': '1', 'BEE_PUBLICAR': '0', 'BEE_LIVROS': '640',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache),
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[Sempre503()]), \
+             contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(nuvem.main(), 0)
+        estado = json.loads((self.dados / '.bee' / 'estado.json').read_text(encoding='utf-8'))
+        self.assertEqual(estado['falhas_seguidas'], 0)
+
     def test_nuvem_nao_repete_erro_de_configuracao(self):
         import nuvem
         chamadas = []
@@ -450,6 +491,12 @@ class DescobertaDeModeloTest(unittest.TestCase):
         ids = _ids_disponiveis(config, resposta)
         self.assertNotIn('text-embedding-004', ids)
         self.assertEqual(_escolher_modelo(config, ids), 'gemini-3.5-flash-lite')
+
+    def test_a_chave_do_gemini_nao_vai_na_url_da_listagem(self):
+        from bee.ia import PROVEDORES, _pedido_listagem
+        pedido = _pedido_listagem(PROVEDORES['gemini'], 'segredo-123')
+        self.assertNotIn('segredo-123', pedido.full_url, 'chave nunca na URL (fica nos registos)')
+        self.assertEqual(pedido.get_header('X-goog-api-key'), 'segredo-123')
 
     def test_sem_lista_usa_a_reserva_do_codigo(self):
         from bee.ia import resolver_modelos
