@@ -247,6 +247,9 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     # Provedores gratuitos primeiro; os pagos só entram se o utilizador os configurar.
     ordem = {nome: i for i, nome in enumerate(['gemini', 'groq', 'cerebras', 'openrouter', 'openai'])}
     configurados.sort(key=lambda par: ordem.get(par[0], 99))
+    if args.modelo and len(configurados) > 1:
+        print('  Aviso: --modelo só se aplica quando há um provedor; aqui o modelo é descoberto '
+              'em cada serviço.', flush=True)
     motores = []
     for nome, valor in configurados:
         chaves = ler_chaves(valor)
