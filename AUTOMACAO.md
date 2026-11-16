@@ -1,5 +1,7 @@
 # Produção automática da BEE — guia prático
 
+> **Quer começar hoje?** Siga [COMECAR_HOJE.md](COMECAR_HOJE.md): é o mesmo conteúdo em ordem cronometrada, com os atalhos para a nuvem e para o MyBible.
+
 Este guia responde a três perguntas: **como** a produção passa a acontecer sozinha, **o que** é realista esperar com ferramentas gratuitas, e **como** você põe os ficheiros no MyBible em cinco minutos.
 
 > **Antes de tudo, uma correção de expectativa.** A BEE tem 1.189 capítulos e 31.102 versículos. Nenhuma ferramenta gratuita gera 31 mil versículos com tradução + comentário léxico em poucos dias: os planos gratuitos não são ilimitados e cada versículo consome tokens de entrada e de saída. O que se automatiza aqui é o **ritmo**: o programa trabalha sozinho, em blocos pequenos, respeitando a quota gratuita, e você vai lendo o que já está pronto. A estimativa honesta com um plano gratuito está no fim.
@@ -17,7 +19,7 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
 
-Cada peça funciona offline nos testes: 67 testes automáticos não usam rede nem chaves.
+Cada peça funciona offline nos testes: 71 testes automáticos não usam rede nem chaves.
 
 ### O que cada execução faz
 
@@ -228,6 +230,7 @@ As mesmas. WLC/OSHB (CC BY 4.0), SBLGNT (CC BY 4.0), Scrivener (domínio públic
 ## 10. Referência rápida de comandos
 
 ```bash
+python autopiloto.py --testar                 # chave e modelo respondem? (1 pedido)
 python autopiloto.py --doctor                 # configuração e próximo capítulo (não gasta quota)
 python autopiloto.py --status                 # progresso nos JSON
 python autopiloto.py --uma-vez                # um bloco
@@ -236,7 +239,7 @@ python autopiloto.py --livros 640,500         # fila restrita
 python autopiloto.py --zip BEE.zip            # pacote com os dois módulos
 python autopiloto.py --sem-compilar           # só JSON (compila depois com gerar_bee.py --compilar)
 python gerar_bee.py --compilar                # compilar sem IA, sem rede e sem chave
-python -m unittest discover -s tests -v       # 67 testes, sem rede nem chaves
+python -m unittest discover -s tests -v       # 71 testes, sem rede nem chaves
 ```
 
 Lista completa: `python autopiloto.py --help`.

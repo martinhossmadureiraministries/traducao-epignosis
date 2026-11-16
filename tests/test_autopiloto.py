@@ -57,6 +57,13 @@ class MotorFalso:
         ]
 
 
+class TestadorFalso(MotorFalso):
+    """Finge a resposta mínima usada por --testar."""
+
+    def testar_ligacao(self):
+        raise ErroRede('gemini: falha de rede (URLError); esgotadas 1 tentativas.')
+
+
 class Base(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -198,6 +205,61 @@ class DiarioTest(Base):
         texto = (self.dados / '.bee' / 'diario.md').read_text(encoding='utf-8')
         self.assertIn('continuação', texto)
         self.assertIn('depois da rotação', texto)
+
+
+class ArranqueTest(Base):
+    """O que é preciso para começar hoje, num ambiente real."""
+
+    def test_env_carrega_chaves_sem_imprimir_valores(self):
+        ficheiro = self.raiz / '.env'
+        ficheiro.write_text(
+            '# comentário\nGEMINI_API_KEY="segredo-123"\nGROQ_API_KEY=outro\n',
+            encoding='utf-8',
+        )
+        ambiente = {}
+        with patch.dict(os.environ, ambiente, clear=True), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            nomes = autopiloto.carregar_env(ficheiro)
+            self.assertEqual(nomes, ['GEMINI_API_KEY', 'GROQ_API_KEY'])
+            self.assertEqual(os.environ['GEMINI_API_KEY'], 'segredo-123')
+        self.assertNotIn('segredo-123', saida.getvalue())
+
+    def test_ambiente_tem_precedencia_sobre_o_ficheiro(self):
+        ficheiro = self.raiz / '.env'
+        ficheiro.write_text('GEMINI_API_KEY=do-ficheiro\n', encoding='utf-8')
+        with patch.dict(os.environ, {'GEMINI_API_KEY': 'do-ambiente'}, clear=True):
+            autopiloto.carregar_env(ficheiro)
+            self.assertEqual(os.environ['GEMINI_API_KEY'], 'do-ambiente')
+
+    def test_testar_chave_nao_grava_conteudo_e_devolve_erro_em_falha(self):
+        with patch.dict(os.environ, {'GEMINI_API_KEY': 'chave-de-teste'}, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('autopiloto._motores', return_value=[TestadorFalso()]), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = autopiloto.main(['--testar', '--dados', str(self.dados)])
+        self.assertEqual(codigo, 1)
+        self.assertIn('FALHOU', saida.getvalue())
+        self.assertFalse((self.dados / '640_Filemom.json').exists())
+
+    def test_uniao_de_progresso_preserva_revisao_local(self):
+        import nuvem
+        local, remoto = self.raiz / 'local', self.raiz / 'remoto'
+        local.mkdir()
+        remoto.mkdir()
+        base = {'format_version': 1, 'book_number': 640, 'book_name': 'Filemom',
+                'chapter_count': 1, 'chapters': {}, 'history': []}
+        revisado = {'verse': 1, 'text': 'VERSÃO REVISTA À MÃO', 'commentary': '<p>Análise Léxica</p>'}
+        da_ia = {'verse': 1, 'text': 'versão da IA', 'commentary': '<p>x</p>'}
+        novo = {'verse': 2, 'text': 'novo da IA', 'commentary': '<p>y</p>'}
+        (local / '640_Filemom.json').write_text(
+            json.dumps({**base, 'in_progress': {'1': [revisado]}}), encoding='utf-8')
+        (remoto / '640_Filemom.json').write_text(
+            json.dumps({**base, 'in_progress': {'1': [da_ia, novo]}}), encoding='utf-8')
+        mantidos = nuvem._unir_progresso(local, remoto)
+        dados = json.loads((local / '640_Filemom.json').read_text(encoding='utf-8'))
+        self.assertEqual(mantidos, 1)
+        self.assertEqual([v['text'] for v in dados['in_progress']['1']],
+                         ['VERSÃO REVISTA À MÃO', 'novo da IA'])
 
 
 class RodizioTest(unittest.TestCase):

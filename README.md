@@ -4,12 +4,13 @@ Projeto de tradução e comentários para os 66 livros e 1.189 capítulos do câ
 
 ## Produção automática com ferramentas gratuitas
 
-> **Comece por [AUTOMACAO.md](AUTOMACAO.md).** É o guia passo a passo: chave gratuita, primeiro teste, ritmo diário, funcionamento com o computador desligado e cópia para o MyBible.
+> **Comece por [COMECAR_HOJE.md](COMECAR_HOJE.md)** (guia cronometrado: ~40 minutos até a produção estar a correr) e use [AUTOMACAO.md](AUTOMACAO.md) como referência completa: quotas reais, estimativas, nuvem, ritmo e resolução de problemas.
 
 O projeto passou a ter um **autopiloto** que produz sozinho, em blocos pequenos, com provedores de IA que têm plano gratuito (Google Gemini, Groq, Cerebras e OpenRouter). Ele grava cada lote, recompila os módulos quando um capítulo fica completo e registra tudo num diário legível:
 
 ```bash
 export GEMINI_API_KEY="a-sua-chave-gratuita"   # nunca no código nem no Git
+python autopiloto.py --testar                  # confirma a chave e o modelo (gasta 1 pedido)
 python autopiloto.py --doctor                  # configuração e próximo capítulo, sem gastar quota
 python autopiloto.py --uma-vez                 # primeiro teste real (6 versículos)
 python autopiloto.py --horas 6 --fuso Africa/Luanda
@@ -187,7 +188,7 @@ A prévia real de Filemom 1 e João 1–4 foi aberta programaticamente com o lei
 
 ## 7. Testes
 
-Os testes normais (67) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores e o orçamento diário. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
+Os testes normais (71) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores, o orçamento diário e a recuperação de progresso sem sobrescrever revisões locais. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
 
 ```bash
 python -m unittest discover -s tests -v

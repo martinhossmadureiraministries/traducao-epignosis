@@ -16,6 +16,9 @@ on:
   schedule:
     # A cada 15 minutos. O GitHub pode atrasar execuções em horas de ponta.
     - cron: '*/15 * * * *'
+  pull_request:
+    # Permite despachar a produção a partir deste PR ("Run workflow").
+    types: [labeled]
   workflow_dispatch:
     inputs:
       versos_por_ciclo:
@@ -56,24 +59,34 @@ env:
 
 jobs:
   produzir:
+    # Só quando despachado à mão ou com a etiqueta bee-producao num PR.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule') ||
+      (github.event_name == 'pull_request' && github.event.label.name == 'bee-producao')
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
       - name: Obter o código
         uses: actions/checkout@v4
         with:
+          # Num evento de PR (com a etiqueta bee-producao) usa-se o ramo do PR;
+          # nas execuções agendadas usa-se o ramo por omissão.
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || '' }}
           fetch-depth: 0
           persist-credentials: true
 
       - name: Recuperar o progresso do ramo de dados
         run: |
+          rm -rf /tmp/bee-remoto
           if git fetch origin "$BEE_BRAMO_DADOS" --depth=1 2>/dev/null; then
-            git checkout FETCH_HEAD -- livros_json || true
-            echo "Progresso recuperado do ramo $BEE_BRAMO_DADOS."
+            git worktree add --detach /tmp/bee-remoto FETCH_HEAD >/dev/null 2>&1
+            echo "Progresso recuperado do ramo $BEE_BRAMO_DADOS (o código não é alterado)."
           else
             echo "Ramo de dados ainda não existe; a começar do zero."
+            mkdir -p /tmp/bee-remoto
           fi
-          ls -la livros_json | head -20
+          ls livros_json | head -20
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -88,6 +101,8 @@ jobs:
 
       - name: Produzir um bloco, compilar e publicar
         env:
+          BEE_REMOTO: /tmp/bee-remoto/livros_json
+          BEE_UNIR: '1'
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}

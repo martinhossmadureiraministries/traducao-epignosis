@@ -215,6 +215,46 @@ class MotorIA:
         headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
         return url, payload, headers
 
+    def testar_ligacao(self) -> str:
+        """Gasta um pedido real e devolve o texto recebido.
+
+        Serve para confirmar, antes de começar, que a chave e o nome do modelo
+        funcionam nesta conta. Não usa o prompt exegético nem grava nada.
+        """
+        config = PROVEDORES[self.provedor]
+        ultimo: ErroRede | None = None
+        for tentativa in range(len(self._chaves)):
+            chave = self._chaves[self._indice_chave]
+            if config.formato == 'gemini':
+                url = f'{config.url}{self.modelo}:generateContent'
+                payload = {
+                    'contents': [{'role': 'user', 'parts': [{'text': 'Responda apenas: ok'}]}],
+                    'generationConfig': {'maxOutputTokens': 32},
+                }
+                headers = {'x-goog-api-key': chave}
+            else:
+                url = config.url
+                payload = {
+                    'model': self.modelo,
+                    'messages': [{'role': 'user', 'content': 'Responda apenas: ok'}],
+                    'max_tokens': 16,
+                }
+                if self.provedor == 'openai':
+                    payload['max_completion_tokens'] = payload.pop('max_tokens')
+                headers = {'Authorization': f'Bearer {chave}'}
+            headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
+            requisicao = urllib.request.Request(
+                url, data=json.dumps(payload).encode('utf-8'), headers=headers, method='POST',
+            )
+            try:
+                resposta = _objeto_api(self.rede.obter(requisicao, self.provedor), self.provedor)
+            except ErroRede as exc:
+                self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
+                ultimo = exc
+                continue
+            return self._extrair(resposta)
+        raise ultimo or ErroRede('Sem chaves utilizáveis.')
+
     def _requisicao(self, mensagem: str) -> str:
         """Tenta todas as chaves configuradas antes de desistir."""
         ultimo: ErroRede | None = None

@@ -12,8 +12,10 @@ O que guarda:
 """
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 from datetime import timezone
@@ -21,7 +23,8 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import autopiloto
 from bee.agenda import (
-    Agendador, Diario, carregar_estado, livros_na_fila, proximo_trabalho, salvar_estado,
+    Agendador, Diario, carregar_estado, escrever_atomico, livros_na_fila,
+    proximo_trabalho, salvar_estado,
 )
 from bee.arquivos import DadosInvalidos, ler_todos
 from bee.compilador import ErroCompilacao
@@ -103,6 +106,53 @@ def _commit_dados(ramo: str, mensagem: str, pastas: list[str]) -> str:
     return 'JSON publicados' if pai else 'ramo de dados criado'
 
 
+def _json_local(caminho: Path) -> dict | None:
+    try:
+        return json.loads(caminho.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return None
+
+
+def _unir_progresso(local: Path, remoto: Path) -> int:
+    """Mantém, para cada versículo, a versão que já existia localmente.
+
+    A nuvem só deve acrescentar texto novo. Se você editou ou reviu versículos
+    no seu computador, recuperar o ramo de dados não pode sobrescrever esse
+    trabalho. Devolve quantos versículos ficaram com a versão local.
+    """
+    mantidos = 0
+    if not remoto.is_dir():
+        return mantidos
+    for origem in sorted(remoto.glob('*.json')):
+        destino = local / origem.name
+        if not destino.exists():
+            shutil.copy2(origem, destino)
+            continue
+        novos, antigos = _json_local(origem), _json_local(destino)
+        if not isinstance(novos, dict) or not isinstance(antigos, dict):
+            shutil.copy2(origem, destino)
+            continue
+        for secao in ('chapters', 'in_progress'):
+            recebidos = novos.get(secao)
+            if not isinstance(recebidos, dict):
+                continue
+            guardados = antigos.get(secao)
+            if not isinstance(guardados, dict):
+                guardados = antigos[secao] = {}
+            for capitulo, versiculos in recebidos.items():
+                existentes = guardados.get(capitulo) or []
+                numeros = {v.get('verse') for v in existentes if isinstance(v, dict)}
+                for versiculo in versiculos:
+                    if versiculo.get('verse') in numeros:
+                        mantidos += 1
+                        continue
+                    existentes.append(versiculo)
+                    numeros.add(versiculo.get('verse'))
+                guardados[capitulo] = existentes
+        escrever_atomico(destino, json.dumps(antigos, ensure_ascii=False, indent=2) + '\n')
+    return mantidos
+
+
 def _passo_do_plano(dados: Path, livros: list) -> tuple[int, int]:
     """Quantos versículos ainda faltam no livro atual e em toda a fila."""
     existentes = ler_todos(dados)
@@ -174,6 +224,13 @@ def main() -> int:
     except (ZoneInfoNotFoundError, ValueError):
         fuso, fuso_nome = timezone.utc, 'UTC'
         print(f'Aviso: fuso {fuso_nome!r} desconhecido; a usar UTC.', file=sys.stderr)
+
+    remoto = Path(_env('BEE_REMOTO', ''))
+    if _env('BEE_UNIR', '1') != '0' and remoto.is_dir():
+        mantidos = _unir_progresso(dados, remoto)
+        if mantidos:
+            print(f'Progresso recuperado sem sobrescrever {mantidos} versículo(s) já existentes localmente.')
+        shutil.rmtree(remoto, ignore_errors=True)
 
     estado_caminho = dados / '.bee' / 'estado.json'
     estado = carregar_estado(estado_caminho)

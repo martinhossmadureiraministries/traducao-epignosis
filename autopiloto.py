@@ -151,6 +151,8 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
     saida.add_argument('--cache-fontes', type=Path, default=Path('.bee-cache'), metavar='PASTA',
                        help='cache das fontes originais (padrão: .bee-cache)')
     saida.add_argument('--sem-compilar', action='store_true', help='não recompilar os módulos')
+    saida.add_argument('--env', type=Path, default=Path('.env'), metavar='FICHEIRO',
+                       help='ficheiro de chaves KEY=VALOR, ignorado pelo Git (padrão: .env)')
     saida.add_argument('--zip', type=Path, metavar='FICHEIRO',
                        help='depois de compilar, criar um ZIP com os dois módulos')
     saida.add_argument('--zip-sempre', action='store_true',
@@ -158,6 +160,8 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
 
     outros = parser.add_argument_group('diagnóstico')
     outros.add_argument('--doctor', action='store_true', help='mostra a configuração e sai, sem gerar')
+    outros.add_argument('--testar', action='store_true',
+                        help='testa a chave com um pedido mínimo (gasta 1 pedido) e sai')
     outros.add_argument('--status', action='store_true', help='mostra o progresso e sai')
     outros.add_argument('--verbose', action='store_true', help='mostra os pedidos HTTP em detalhe')
     args = parser.parse_args(argv)
@@ -180,6 +184,28 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
     if args.zip and args.sem_compilar:
         parser.error('--zip precisa de compilação; remova --sem-compilar.')
     return args
+
+
+def carregar_env(caminho: Path = Path('.env')) -> list[str]:
+    """Lê chaves de um ficheiro .env local (ignorado pelo Git).
+
+    Variáveis já definidas no ambiente têm precedência. Devolve só os nomes
+    carregados, nunca os valores.
+    """
+    if not caminho.exists():
+        return []
+    carregados: list[str] = []
+    for linha in caminho.read_text(encoding='utf-8').splitlines():
+        linha = linha.strip()
+        if not linha or linha.startswith('#') or '=' not in linha:
+            continue
+        nome, valor = linha.split('=', 1)
+        nome, valor = nome.strip(), valor.strip().strip('"\'')
+        if not nome or not valor or nome in os.environ:
+            continue
+        os.environ[nome] = valor
+        carregados.append(nome)
+    return carregados
 
 
 def _fuso(nome: str):
@@ -341,6 +367,9 @@ def _zip(args: argparse.Namespace) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     args = argumentos(argv)
+    carregadas = carregar_env(args.env)
+    if carregadas:
+        print(f'Chaves carregadas de .env: {", ".join(carregadas)} (valores não impressos).')
     dados: Path = args.dados
     estado_caminho = dados / '.bee' / 'estado.json'
     if args.status:
@@ -348,6 +377,20 @@ def main(argv: list[str] | None = None) -> int:
     estado = carregar_estado(estado_caminho)
     if args.doctor:
         return _doctor(args, estado, dados)
+
+    if args.testar:
+        rede = ClienteHTTP(pausa=args.pausa, tentativas=args.tentativas, timeout=args.timeout or 1.0)
+        motores = _motores(args, rede)
+        falhou = False
+        for motor in motores:
+            try:
+                resposta = motor.testar_ligacao()
+            except (ErroRede, ValueError) as exc:
+                print(f'FALHOU · {motor.provedor}/{motor.modelo}: {exc}')
+                falhou = True
+            else:
+                print(f'OK · {motor.provedor}/{motor.modelo}: respondeu {resposta.strip()[:60]!r}')
+        return 1 if falhou else 0
 
     fuso = _fuso(args.fuso)
     config = _config(args)
