@@ -306,6 +306,14 @@ def _doctor(args: argparse.Namespace, estado: Estado, dados: Path) -> int:
         print(f'  Nenhum. {exc}')
         return 1
     _descrever_motores(motores, args)
+    if len(motores) > 1:
+        print(f'  Reserva ativa: se {motores[0].provedor} falhar (5xx) ou esgotar a quota, '
+              f'{motores[1].provedor} assume automaticamente.')
+        reservas = [m for m in motores if PROVEDORES[m.provedor].pedidos_por_dia]
+        if len(reservas) > 1:
+            print(f'  Capacidade de referência: '
+                  f'{sum(PROVEDORES[m.provedor].pedidos_por_dia or 0 for m in reservas)} pedidos/dia '
+                  f'entre {len(reservas)} provedores gratuitos.')
     livros = livros_na_fila(args.livros, args.ordem)
     trabalho = proximo_trabalho(livros, dados)
     print('\nFila:')

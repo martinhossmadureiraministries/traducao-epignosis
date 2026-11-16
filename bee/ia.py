@@ -210,8 +210,11 @@ class MotorIA:
                 'temperature': 0.4,
             }
             if self.provedor == 'openai':
-                # A API da OpenAI mudou o nome do parâmetro e aceita JSON forçado.
+                # A API da OpenAI mudou o nome do parâmetro.
                 payload['max_completion_tokens'] = payload.pop('max_tokens')
+            if self.provedor in ('openai', 'groq', 'cerebras'):
+                # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
+                # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}
             headers = {'Authorization': f'Bearer {chave}'}
         headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
@@ -274,6 +277,11 @@ class MotorIA:
                     self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
                 )
             except ErroRede as exc:
+                if 'HTTP 404' in str(exc) and self.log:
+                    self.log(
+                        f'{self.provedor}: o modelo {self.modelo!r} não existe nesta conta; '
+                        'use --testar --modelo <outro> ou o modelo padrão.'
+                    )
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc

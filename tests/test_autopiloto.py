@@ -375,6 +375,33 @@ class RecuperacaoSeguraTest(Base):
         self.assertTrue(marca.exists(), 'a pasta atual não pode ser apagada')
         self.assertTrue(self.dados.exists())
 
+class GroqTest(unittest.TestCase):
+    """A Groq é a reserva configurada pelo responsável: tem de falar JSON."""
+
+    def _corpo(self, provedor, modelo='llama-3.3-70b-versatile'):
+        from bee.ia import MotorIA
+        motor = MotorIA(provedor, modelo, 'chave-segura', HTTPFalso({}), 4096)
+        return motor._corpo('mensagem', 'chave-segura')
+
+    def test_groq_cerebras_e_openai_forcam_json(self):
+        for provedor in ('groq', 'cerebras', 'openai'):
+            with self.subTest(provedor=provedor):
+                _, payload, _ = self._corpo(provedor)
+                self.assertEqual(payload['response_format'], {'type': 'json_object'})
+
+    def test_groq_usa_token_do_formato_antigo(self):
+        _, payload, headers = self._corpo('groq')
+        self.assertIn('max_tokens', payload)
+        self.assertNotIn('max_completion_tokens', payload)
+        self.assertEqual(headers['Authorization'], 'Bearer chave-segura')
+        self.assertNotIn('chave-segura', str(payload))
+
+    def test_gemini_continua_com_json_nativo(self):
+        _, payload, headers = self._corpo('gemini', 'gemini-3.5-flash-lite')
+        self.assertEqual(payload['generationConfig']['responseMimeType'], 'application/json')
+        self.assertEqual(headers['x-goog-api-key'], 'chave-segura')
+
+
 class RodizioTest(unittest.TestCase):
     def test_salta_para_o_seguinte_quando_a_quota_esgota(self):
         notas = []
