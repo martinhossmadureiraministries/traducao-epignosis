@@ -444,6 +444,24 @@ class DescobertaDeModeloTest(unittest.TestCase):
         modelos = resolver_modelos('groq', ['chave'], ListaOK())
         self.assertEqual(modelos, ['openai/gpt-oss-120b'])
 
+    def test_gpt_oss_da_groq_pede_esforco_de_raciocinio_baixo(self):
+        """Os GPT-OSS gastam max_tokens a pensar; sem isto os lotes truncam."""
+        from bee.ia import MotorIA
+        corpos = []
+
+        class Guarda:
+            def obter(self, requisicao, descricao, limite=None, log=None):
+                corpos.append(json.loads(requisicao.data))
+                return json.dumps({'choices': [{'finish_reason': 'stop', 'message': {
+                    'content': json.dumps({'verses': [{
+                        'verse': 1, 'text': 'Texto.',
+                        'commentary': '<p>Análise Léxica; Crítica Textual; Síntese Exegética.</p>'}]})}}]}).encode()
+
+        motor = MotorIA('groq', ['openai/gpt-oss-120b'], 'chave', Guarda(), 4096)
+        motor.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+        self.assertEqual(corpos[0]['reasoning_effort'], 'low')
+        self.assertEqual(corpos[0]['model'], 'openai/gpt-oss-120b')
+
     def test_404_troca_de_modelo_e_continua(self):
         from bee.ia import MotorIA
         from bee.rede import ErroRede
