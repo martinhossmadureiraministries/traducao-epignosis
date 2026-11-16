@@ -19,7 +19,7 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
 
-Cada peça funciona offline nos testes: 71 testes automáticos não usam rede nem chaves.
+Cada peça funciona offline nos testes: 91 testes automáticos não usam rede nem chaves.
 
 ### O que cada execução faz
 
@@ -159,7 +159,9 @@ O que acontece em cada execução (a cada 15 minutos):
 - publica `entregas/auto/BEE-modulos.zip` como **artefato** descarregável (retenção de 14 dias);
 - escreve um resumo com o progresso no resumo da execução.
 
-**Vantagem:** continua 24 horas por dia. **Atenção:** repositórios privados consomem minutos de Actions do plano gratuito (2.000 minutos/mês). A 1 minuto por execução, 4 execuções por hora, 18 horas por dia, são ~2.100 minutos/mês — no limite. Se os minutos acabarem, reduza para `*/30 * * * *` (a cada 30 minutos), use `BEE_VERSOS_POR_CICLO=80`, ou deixe o workflow desativado e use `autopiloto.py` no seu computador. O programa não depende do GitHub: o mesmo comando corre em qualquer lugar.
+**Vantagem:** continua 24 horas por dia. **Atenção:** repositórios privados consomem minutos de Actions do plano gratuito (2.000 minutos/mês). A 1 minuto por execução, 4 execuções por hora, 18 horas por dia, são ~2.100 minutos/mês — no limite. Se os minutos acabarem, reduza para `*/30 * * * *` (a cada 30 minutos) e suba `BEE_VERSOS_POR_CICLO` de 40 para 80: metade das execuções, o mesmo trabalho. O programa não depende do GitHub: o mesmo comando corre em qualquer lugar.
+
+**Se a execução ficar vermelha:** leia o resumo no topo da página da execução. Ele diz em uma linha se foi o serviço (não precisa de fazer nada) ou a configuração (`--testar` mostra o resto). Com um modelo retirado pelo serviço, nem isso: o programa escolhe outro sozinho e continua.
 
 **Alternativas gratuitas à nuvem do GitHub**, se preferir:
 
@@ -267,7 +269,7 @@ python autopiloto.py --livros 640,500         # fila restrita
 python autopiloto.py --zip BEE.zip            # pacote com os dois módulos
 python autopiloto.py --sem-compilar           # só JSON (compila depois com gerar_bee.py --compilar)
 python gerar_bee.py --compilar                # compilar sem IA, sem rede e sem chave
-python -m unittest discover -s tests -v       # 71 testes, sem rede nem chaves
+python -m unittest discover -s tests -v       # 91 testes, sem rede nem chaves
 ```
 
 Lista completa: `python autopiloto.py --help`.
