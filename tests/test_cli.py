@@ -37,7 +37,8 @@ class CLITest(unittest.TestCase):
              contextlib.redirect_stderr(io.StringIO()) as erros:
             raiz = Path(tmp)
             dados, modulos = raiz / 'json', raiz / 'modulos'
-            argumentos = ['--livro', '640', '--dados', str(dados), '--saida', str(modulos), '--pausa', '0']
+            argumentos = ['--livro', '640', '--provedor', 'openai', '--dados', str(dados),
+                          '--saida', str(modulos), '--pausa', '0']
             fake_http = SimularHTTP()
             with patch.dict(os.environ, {'API_KEY':'nao-colocar-nos-ficheiros'}, clear=True), \
                  patch('gerar_bee.ClienteHTTP', return_value=fake_http), \
@@ -70,7 +71,7 @@ class CLITest(unittest.TestCase):
              patch.dict(os.environ, {}, clear=True), patch('gerar_bee.FontesOriginais') as fonte:
             self.assertEqual(gerar_bee.main(['--livro','500','--dados', tmp]), 1)
             fonte.return_value.capitulo.assert_not_called()
-            self.assertIn('API_KEY', erros.getvalue())
+            self.assertIn('GEMINI_API_KEY', erros.getvalue())
             self.assertFalse((Path(tmp) / '500_Joao.json').exists())
 
     def test_invalid_argumentos(self):

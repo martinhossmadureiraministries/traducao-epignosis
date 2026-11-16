@@ -36,7 +36,7 @@ class IATest(unittest.TestCase):
     def test_openai_json_e_system_prompt_incluem_fontes_e_chave_em_header(self):
         response = {'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(retorno([1,2]))}}]}
         http = HTTPFalso(response)
-        motor = MotorIA('openai', 'gpt-6-luna', 'SEGREDO', http, 8192)
+        motor = MotorIA('openai', 'gpt-6-luna', 'SEGREDO', http, 8192, aplicar_revisao=False)
         fontes = [{'verse': 1, 'base': [{'texto': 'ἀρχή'}]}, {'verse': 2, 'base': [{'texto': 'λόγος'}]}]
         result = motor.gerar(POR_NUMERO[500], 1, fontes)
         self.assertEqual([r['verse'] for r in result], [1,2])
@@ -52,7 +52,7 @@ class IATest(unittest.TestCase):
     def test_gemini_json_config_e_chave_no_cabecalho(self):
         resp = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [{'text': json.dumps(retorno([1]))}]}}]}
         http = HTTPFalso(resp)
-        motor = MotorIA('gemini', 'gemini-3.8-flash', 'CHAVE', http, 8192)
+        motor = MotorIA('gemini', 'gemini-3.8-flash', 'CHAVE', http, 8192, aplicar_revisao=False)
         self.assertEqual(motor.gerar(POR_NUMERO[500], 1, [{'verse':1, 'base': []}])[0]['verse'], 1)
         req, _ = http.requisicoes[0]
         dados = json.loads(req.data)
@@ -106,7 +106,7 @@ class IATest(unittest.TestCase):
     def test_chave_com_quebra_de_linha_e_rejeitada_sem_vazar(self):
         with self.assertRaises(ValueError) as erro:
             MotorIA('openai', 'gpt-6-luna', 'SEGREDO\nSECRET', HTTPFalso({}), 8192)
-        self.assertIn('API_KEY', str(erro.exception))
+        self.assertIn('chave', str(erro.exception))
         self.assertNotIn('SEGREDO', str(erro.exception))
         self.assertNotIn('SECRET', str(erro.exception))
 
@@ -118,7 +118,7 @@ class IATest(unittest.TestCase):
                 ClienteHTTP(0, 4, 1).obter(request, 'API')
         self.assertEqual(urlopen.call_count, 1)
         self.assertNotIn('SEGREDO', str(exc.exception))
-        self.assertIn('API_KEY', str(exc.exception))
+        self.assertIn('chave', str(exc.exception))
 
 
 if __name__ == '__main__':

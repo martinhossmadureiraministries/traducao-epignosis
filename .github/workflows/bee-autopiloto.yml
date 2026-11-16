@@ -1,0 +1,99 @@
+name: BEE — produção automática
+
+# Cada execução produz um bloco pequeno de versículos e termina. É o agendador
+# do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
+# com o seu computador desligado. Se a sua conta não tiver minutos de Actions
+# gratuitos, desative este ficheiro e use `autopiloto.py --horas 6` localmente.
+
+on:
+  schedule:
+    # A cada 15 minutos. O GitHub pode atrasar execuções em horas de ponta.
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      versos_por_ciclo:
+        description: 'Versículos a produzir nesta execução'
+        required: false
+        default: '40'
+      livros:
+        description: 'Só estes book_number (ex.: 640,500); vazio = fila das oito fases'
+        required: false
+        default: ''
+      modelo:
+        description: 'Modelo (vazio = modelo gratuito padrão do provedor)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+# Nunca duas execuções a escrever nos mesmos dados ao mesmo tempo.
+concurrency:
+  group: bee-producao
+  cancel-in-progress: false
+
+env:
+  BEE_BRAMO_DADOS: bee-dados
+  BEE_FUSO: Africa/Luanda
+  BEE_HORA_INICIO: '5'
+  BEE_HORA_FIM: '23'
+  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '40' }}
+  BEE_LIVROS: ${{ github.event.inputs.livros }}
+  BEE_MODELO: ${{ github.event.inputs.modelo }}
+  BEE_LOTE: '8'
+  BEE_PEDIDOS_POR_DIA: '400'
+  BEE_VERSOS_POR_DIA: '0'
+  BEE_PROVEDOR: auto
+  BEE_TIMEOUT: '180'
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Recuperar o progresso do ramo de dados
+        run: |
+          if git fetch origin "$BEE_BRAMO_DADOS" --depth=1 2>/dev/null; then
+            git checkout FETCH_HEAD -- livros_json || true
+            echo "Progresso recuperado do ramo $BEE_BRAMO_DADOS."
+          else
+            echo "Ramo de dados ainda não existe; a começar do zero."
+          fi
+          ls -la livros_json | head -20
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reutilizar as fontes originais (~22 MB)
+        uses: actions/cache@v4
+        with:
+          path: .bee-cache
+          key: bee-fontes-sha256-v1
+
+      - name: Produzir um bloco, compilar e publicar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python nuvem.py
+
+      # O ZIP com os dois módulos e o LEIA-ME é criado pelo próprio nuvem.py.
+
+      - name: Guardar os módulos como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: BEE-modulos-${{ github.run_number }}
+          path: entregas/auto/
+          if-no-files-found: ignore
+          retention-days: 14

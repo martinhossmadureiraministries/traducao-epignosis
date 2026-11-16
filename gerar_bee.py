@@ -49,7 +49,8 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
     acao.add_argument('--compilar', action='store_true', help='compila apenas os JSON completos, sem IA e sem API_KEY')
     acao.add_argument('--listar-livros', action='store_true', help='lista os 66 números e totais de capítulos')
     acao.add_argument('--status', action='store_true', help='mostra o progresso local, sem chamadas de rede')
-    parser.add_argument('--provedor', choices=tuple(MODELOS_PADRAO), default='openai', help='openai (padrão) ou gemini')
+    parser.add_argument('--provedor', choices=tuple(MODELOS_PADRAO), default='gemini',
+                        help='gemini (padrão, plano gratuito), groq, cerebras, openrouter ou openai')
     parser.add_argument('--modelo', help='modelo compatível com JSON do provedor (padrão depende do provedor)')
     parser.add_argument('--pausa', type=lambda v: _real(v, True), default=1.0, metavar='SEGUNDOS', help='pausa mínima após cada chamada (padrão: 1)')
     parser.add_argument('--tentativas', type=_positivo, default=4, help='tentativas em falha transitória ou resposta inválida (padrão: 4)')
@@ -128,9 +129,12 @@ def main(argv: list[str] | None = None) -> int:
             fontes = FontesOriginais(args.cache_fontes, rede)
 
             def obter_motor() -> MotorIA:
-                chave = os.environ.get('API_KEY', '')
+                from bee.ia import PROVEDORES
+                nome = PROVEDORES[args.provedor].variavel
+                chave = os.environ.get(nome, '') or os.environ.get('API_KEY', '')
                 if not chave.strip():
-                    raise ValueError('Defina a variável de ambiente API_KEY para gerar novos capítulos.')
+                    raise ValueError(f'Defina a variável {nome} (ou API_KEY) para gerar novos capítulos; '
+                                     'veja autopiloto.py para a produção automática.')
                 modelo = args.modelo or MODELOS_PADRAO[args.provedor]
                 return MotorIA(args.provedor, modelo, chave, rede, args.max_tokens)
 

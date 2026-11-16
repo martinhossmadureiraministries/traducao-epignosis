@@ -45,7 +45,7 @@ class MotorFalso:
         self.tamanho_max = tamanho_max
         self.falhar = falhar
 
-    def gerar(self, livro, capitulo, fontes):
+    def gerar(self, livro, capitulo, fontes, estilo=None):
         nums = [f['verse'] for f in fontes]
         self.calls.append(nums)
         if self.interromper_na_chamada == len(self.calls):

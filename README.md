@@ -2,27 +2,44 @@
 
 Projeto de tradução e comentários para os 66 livros e 1.189 capítulos do cânone escolhido, com ferramentas **de linha de comando** e compilação para `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 
+## Produção automática com ferramentas gratuitas
+
+> **Comece por [AUTOMACAO.md](AUTOMACAO.md).** É o guia passo a passo: chave gratuita, primeiro teste, ritmo diário, funcionamento com o computador desligado e cópia para o MyBible.
+
+O projeto passou a ter um **autopiloto** que produz sozinho, em blocos pequenos, com provedores de IA que têm plano gratuito (Google Gemini, Groq, Cerebras e OpenRouter). Ele grava cada lote, recompila os módulos quando um capítulo fica completo e registra tudo num diário legível:
+
+```bash
+export GEMINI_API_KEY="a-sua-chave-gratuita"   # nunca no código nem no Git
+python autopiloto.py --doctor                  # configuração e próximo capítulo, sem gastar quota
+python autopiloto.py --uma-vez                 # primeiro teste real (6 versículos)
+python autopiloto.py --horas 6 --fuso Africa/Luanda
+```
+
+Para continuar **com o computador desligado**, o workflow [`.github/workflows/bee-autopiloto.yml`](.github/workflows/bee-autopiloto.yml) corre `nuvem.py` numa GitHub Action a cada 15 minutos, publica os JSON no ramo `bee-dados` e deixa o `BEE-modulos.zip` como artefato descarregável. O programa não depende do GitHub: `autopiloto.py` faz o mesmo localmente ou num `cron`.
+
+Limites honestos: os planos gratuitos não são ilimitados. Com quota gratuita, 300–800 versículos por dia é realista; a Bíblia inteira leva semanas a meses, não dias, e continua a exigir revisão humana. Os textos automáticos entram marcados como rascunho, e o prompt automático proíbe atribuir consultas a BDB/Thayer/Nestle-Aland que não aconteceram. Detalhes, tabelas de quota e estimativas em [AUTOMACAO.md](AUTOMACAO.md).
+
 ## Fluxo colaborativo atual
 
-A produção é feita entre o responsável e o assistente nesta conversa, **sem chamadas a outras APIs de IA e sem `API_KEY`**. A ordem inicial escolhida é Salmos 23 e depois Filemom; veja [PLANO_BEE.md](PLANO_BEE.md). O [Salmo 23](rascunhos/230_Salmos_23.json) e Filemom 1:1–3 foram aprovados editorialmente pelo responsável, mas ainda requerem revisão especializada. O responsável autorizou prosseguir sem solicitar aprovação a cada bloco e reverá os textos mais tarde no aplicativo; isso não significa que o material posterior já esteja aprovado. Salmos 23 permanece fora dos módulos por ser uma amostra isolada.
+A produção colaborativa é feita entre o responsável e o assistente, sem chaves, e é complementada pelo autopiloto descrito acima (que usa APIs gratuitas). A ordem inicial escolhida é Salmos 23 e depois Filemom; veja [PLANO_BEE.md](PLANO_BEE.md). O [Salmo 23](rascunhos/230_Salmos_23.json) e Filemom 1:1–3 foram aprovados editorialmente pelo responsável, mas ainda requerem revisão especializada. O responsável autorizou prosseguir sem solicitar aprovação a cada bloco e reverá os textos mais tarde no aplicativo; isso não significa que o material posterior já esteja aprovado. Salmos 23 permanece fora dos módulos por ser uma amostra isolada.
 
 [Filemom completo](livros_json/640_Filemom.json) contém os 25 versículos e comentários: a redação e os comentários originais de 1:1–3 foram aprovados editorialmente, mas os colchetes e o adendo textual novos em 1:2 aguardam revisão; 1:4–25 permanecem provisórios. Todo o livro aguarda revisão especializada. [João 1–4](livros_json/500_Joao.json) contém 166 versículos e comentários provisórios, também sem revisão especializada. O progresso é **5/1.189 capítulos estruturalmente completos**, não revisados para publicação.
 
 Trechos com variantes relevantes são marcados como `[[...]]`. Conforme o caso, eles podem ser a leitura do SBLGNT **ou** um suplemento explicitamente identificado de Scrivener; a nota de crítica textual informa qual é o caso e relata a evidência consultada. Os colchetes, sozinhos, não significam que o trecho seja necessariamente um acréscimo tardio. Veja a convenção e os limites em [PLANO_BEE.md](PLANO_BEE.md#convenção-de-variantes-textuais). O validador confere apenas pares não vazios e não aninhados por versículo, não a exatidão das notas nem se todas as variantes relevantes foram marcadas.
 
-A [prévia parcial para MyBible](entregas/BEE-previa.zip) reúne os dois módulos da mesma compilação; não é uma edição final. `python gerar_bee.py --status` conta capítulos, não aprovações. `--compilar` opera offline, valida intervalos dos estados informados e os inclui nos metadados, mas não comprova as revisões nem exige aprovação editorial. Referências, licenças e detalhes permanecem nos JSON e nos metadados; a visualização dessas informações depende do leitor. **Não use `--livro` nem `--todos` para este fluxo:** esses comandos são legados e chamam APIs externas de IA. Amostras isoladas ou capítulos incompletos não são compiláveis.
+A [prévia parcial para MyBible](entregas/BEE-previa.zip) reúne os dois módulos da mesma compilação; não é uma edição final. `python gerar_bee.py --status` conta capítulos, não aprovações. `--compilar` opera offline, valida intervalos dos estados informados e os inclui nos metadados, mas não comprova as revisões nem exige aprovação editorial. Referências, licenças e detalhes permanecem nos JSON e nos metadados; a visualização dessas informações depende do leitor. **Para produzir texto novo, use `autopiloto.py`** (ver [AUTOMACAO.md](AUTOMACAO.md)); `--livro` e `--todos` do `gerar_bee.py` continuam a funcionar, mas são o percurso antigo de um livro inteiro por chamada, sem janela diária, rodízio de provedores nem estado. Amostras isoladas ou capítulos incompletos não são compiláveis.
 
 > **Antes de publicar:** rascunhos produzidos com IA podem conter erros de tradução, Strong, transliteração, atribuição a léxicos ou crítica textual. A validação automática verifica a estrutura, **não** a fidelidade teológica ou filológica. Faça revisão humana especializada e confira direitos e licenças. O projeto não é um produto oficial ou aprovado pelo MyBible.
 
-## Gerador legado com API
+## Gerador direto (linha de comando)
 
-As secções 1 a 3 abaixo documentam o gerador anterior para referência técnica. Elas **não são instruções para o fluxo colaborativo atual** e envolvem chamadas pagas ou sujeitas a quota. As secções posteriores sobre JSON e compilação descrevem a implementação existente, ainda sujeita à adaptação mencionada acima.
+As secções 1 a 3 abaixo documentam o gerador de linha de comando, ainda útil para gerar um livro inteiro de uma vez. Elas **não são instruções para o fluxo colaborativo atual** e envolvem chamadas pagas ou sujeitas a quota. As secções posteriores sobre JSON e compilação descrevem a implementação existente, ainda sujeita à adaptação mencionada acima.
 
 ## 1. Requisitos e preparação
 
 - Python **3.10 ou superior** com `sqlite3` (incluído na instalação habitual do Python).
 - Internet para descarregar as fontes e aceder à API. A compilação dos JSON existentes funciona **offline**, sem chave.
-- Uma chave de API com acesso ao modelo escolhido: OpenAI **ou** Google Gemini. A chave de um provedor não serve para o outro.
+- Uma chave de API do provedor escolhido. O padrão passou a ser o **Google Gemini** (plano gratuito); também são aceites Groq, Cerebras, OpenRouter e OpenAI. A variável é `GEMINI_API_KEY`, `GROQ_API_KEY`, `CEREBRAS_API_KEY`, `OPENROUTER_API_KEY` ou `OPENAI_API_KEY`; `API_KEY` continua a funcionar como alternativa genérica.
 - Não são necessários pacotes externos: as APIs são chamadas por HTTPS com a biblioteca padrão. `requirements.txt` existe para compatibilidade com o fluxo habitual de instalação.
 
 No macOS/Linux, dentro da pasta do projeto:
@@ -33,7 +50,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 
 # Introduza a chave sem a mostrar no terminal nem a gravar no histórico:
-export API_KEY="$(python -c 'import getpass; print(getpass.getpass("API_KEY: "))')"
+export GEMINI_API_KEY="$(python -c 'import getpass; print(getpass.getpass("GEMINI_API_KEY: "))')"
 ```
 
 No Windows PowerShell:
@@ -42,8 +59,8 @@ No Windows PowerShell:
 py -3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-$chaveSegura = Read-Host 'API_KEY' -AsSecureString
-$env:API_KEY = [System.Net.NetworkCredential]::new('', $chaveSegura).Password
+$chaveSegura = Read-Host 'GEMINI_API_KEY' -AsSecureString
+$env:GEMINI_API_KEY = [System.Net.NetworkCredential]::new('', $chaveSegura).Password
 Remove-Variable chaveSegura
 ```
 
@@ -69,12 +86,12 @@ python gerar_bee.py --livro 470
 python gerar_bee.py --compilar
 ```
 
-Por padrão usa OpenAI, modelo `gpt-6-luna`. Para usar uma chave **Gemini**, defina `API_KEY` com essa chave e execute:
+Por padrão usa o **Gemini**, modelo gratuito `gemini-3.5-flash-lite`:
 
 ```bash
-python gerar_bee.py --livro 500 --provedor gemini --max-capitulos 1
-# Opcional: substitua o modelo padrão, desde que seja compatível com geração JSON.
-python gerar_bee.py --livro 500 --provedor gemini --modelo gemini-3.5-flash-lite
+python gerar_bee.py --livro 500 --max-capitulos 1
+# Outro provedor gratuito com a respetiva variável definida:
+python gerar_bee.py --livro 500 --provedor groq --modelo llama-3.3-70b-versatile --max-capitulos 1
 ```
 
 Para processar toda a Bíblia, de forma sequencial:
@@ -97,8 +114,8 @@ A geração compila automaticamente ao terminar. Para guardar apenas JSON, acres
 | `--todos` | Todos os 66 livros, em ordem. |
 | `--compilar` | Lê os JSON existentes e recompila os dois módulos, sem chave ou rede. |
 | `--listar-livros` / `--status` | Catálogo completo / progresso local. |
-| `--provedor openai` ou `--provedor gemini` | Seleciona o serviço; padrão `openai`. |
-| `--modelo NOME` | Padrões: `gpt-6-luna` e `gemini-3.8-flash`; modelos disponíveis podem variar por conta. |
+| `--provedor NOME` | `gemini` (padrão), `groq`, `cerebras`, `openrouter` ou `openai`. |
+| `--modelo NOME` | Padrões gratuitos por provedor; modelos disponíveis podem variar por conta. |
 | `--max-capitulos N` | Para após N novos capítulos completos nesta execução. |
 | `--versos-por-pedido N` | Máximo por chamada; padrão 8. Respostas inválidas ou truncadas são divididas em lotes menores. |
 | `--max-tokens N` | Limite de tokens de saída por chamada; padrão 8192, mínimo 256. |
@@ -170,7 +187,7 @@ A prévia real de Filemom 1 e João 1–4 foi aberta programaticamente com o lei
 
 ## 7. Testes
 
-Os testes normais não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação e compilação. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
+Os testes normais (67) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores e o orçamento diário. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
 
 ```bash
 python -m unittest discover -s tests -v
