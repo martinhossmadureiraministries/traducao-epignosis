@@ -37,13 +37,33 @@ O estado fica em `livros_json/.bee/estado.json` e o diário em `livros_json/.bee
 
 Os números abaixo são **referências de 2026 que mudam sem aviso**; confirme-os na sua conta antes de confiar neles. O programa já vem com tetos conservadores e nunca tenta esgotar a quota.
 
-| Provedor | Plano gratuito (ordem de grandeza) | Modelo padrão no programa | Serve para |
+| Provedor | Plano gratuito (ordem de grandeza) | Modelos que o programa tenta | Serve para |
 |---|---|---|---|
 | **Google Gemini** (AI Studio) | Flash-Lite: ~500 pedidos/dia; Flash: ~20/dia | `gemini-3.5-flash-lite` | Melhor combinação qualidade/quota para este trabalho |
-| **Groq** | ~30 pedidos/min, ~14.400/dia, mas poucos milhares de tokens/min | `llama-3.3-70b-versatile` | Trabalho contínuo rápido; bom segundo lugar |
-| **Cerebras** | Plano gratuito com contexto curto (~8K) | `llama-3.3-70b` | Reserva; use lotes de 4 versículos |
-| **OpenRouter** | modelos com sufixo `:free`, teto diário baixo | `meta-llama/llama-3.3-70b-instruct:free` | Terceira reserva |
+| **Groq** | ~30 pedidos/min, ~14.400/dia, mas poucos milhares de tokens/min | `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `qwen/qwen3.8-27b` | Trabalho contínuo rápido; bom segundo lugar |
+| **Cerebras** | Plano gratuito com contexto curto (~8K) | `gpt-oss-120b`, `qwen-3-32b` | Reserva; use lotes de 4 versículos |
+| **OpenRouter** | modelos com sufixo `:free`, teto diário baixo | `openai/gpt-oss-120b:free`, `qwen/qwen3-235b-a22b:free` | Terceira reserva |
 | OpenAI | sem plano gratuito | — | Só se você já tiver crédito |
+
+### O programa pergunta ao serviço qual é o modelo
+
+Nomes de modelos envelhecem. A Groq retirou os Llama 3.x do plano gratuito em
+agosto de 2026 e passou a responder **HTTP 404**; o programa falhava por causa
+de um nome escrito à mão no código.
+
+Agora, antes de produzir, o programa chama a lista de modelos do próprio
+serviço (`/v1/models` na Groq e nos compatíveis, `models` no Gemini), escolhe o
+primeiro nome que existe **e** está na lista curada, e ignora uma lista de
+modelos retirados. Se o serviço não deixar listar, usa os nomes de reserva do
+código — e, se mesmo assim um nome der 404, passa ao nome seguinte sem parar a
+produção. Não precisa de decidir nada nem de editar ficheiros: se amanhã outro
+modelo for retirado, o programa adapta-se sozinho.
+
+Para ver o que foi escolhido na sua conta:
+
+```bash
+python autopiloto.py --doctor
+```
 
 **A conta que importa.** Um versículo com comentário exegético ocupa ~700–1.200 tokens de saída; com os textos originais e o contexto no pedido, o custo total por versículo fica perto de **2.000 tokens**. Um bloco de 6 versículos ≈ 12 mil tokens.
 
@@ -167,7 +187,7 @@ Se definir mais de uma chave (`GEMINI_API_KEY` e `GROQ_API_KEY`, por exemplo), o
 Para forçar a ordem ou usar só um:
 
 ```bash
-python autopiloto.py --uma-vez --provedor groq --modelo llama-3.1-8b-instant --lote 4
+python autopiloto.py --uma-vez --provedor groq --lote 4
 ```
 
 ---

@@ -402,6 +402,76 @@ class GroqTest(unittest.TestCase):
         self.assertEqual(headers['x-goog-api-key'], 'chave-segura')
 
 
+class DescobertaDeModeloTest(unittest.TestCase):
+    """Nomes fixos envelhecem: o modelo certo é o que o serviço disser que existe."""
+
+    def test_modelos_retirados_da_groq_nao_sao_escolhidos(self):
+        from bee.ia import PROVEDORES, RETIRADOS, _escolher_modelo
+        groq = PROVEDORES['groq']
+        self.assertNotIn(groq.modelos[0], RETIRADOS, 'o primeiro modelo não pode ser um retirado')
+        disponiveis = ['openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'llama-3.3-70b-versatile']
+        self.assertEqual(_escolher_modelo(groq, disponiveis), 'openai/gpt-oss-120b')
+        # Sem os GPT-OSS, sobra apenas um retirado: nada é escolhido.
+        self.assertIsNone(_escolher_modelo(groq, ['llama-3.3-70b-versatile']))
+
+    def test_gemini_prefere_flash_lite_e_ignora_modelos_sem_geracao(self):
+        from bee.ia import PROVEDORES, _escolher_modelo, _ids_disponiveis
+        config = PROVEDORES['gemini']
+        resposta = {'models': [
+            {'name': 'models/gemini-3.8-pro', 'supportedGenerationMethods': ['generateContent']},
+            {'name': 'models/gemini-3.5-flash-lite', 'supportedGenerationMethods': ['generateContent']},
+            {'name': 'models/text-embedding-004', 'supportedGenerationMethods': ['embedContent']},
+        ]}
+        ids = _ids_disponiveis(config, resposta)
+        self.assertNotIn('text-embedding-004', ids)
+        self.assertEqual(_escolher_modelo(config, ids), 'gemini-3.5-flash-lite')
+
+    def test_sem_lista_usa_a_reserva_do_codigo(self):
+        from bee.ia import resolver_modelos
+        modelos = resolver_modelos('groq', ['chave'], HTTPFalso({}))
+        self.assertEqual(modelos[0], 'openai/gpt-oss-120b')
+        self.assertGreater(len(modelos), 1, 'deve haver suplentes para 404')
+
+    def test_lista_real_e_usada_quando_existe(self):
+        from bee.ia import resolver_modelos
+        class ListaOK:
+            def obter(self, requisicao, descricao, limite=None, log=None):
+                return json.dumps({'data': [
+                    {'id': 'llama-3.3-70b-versatile'},
+                    {'id': 'openai/gpt-oss-20b'},
+                    {'id': 'openai/gpt-oss-120b'},
+                ]}).encode()
+        modelos = resolver_modelos('groq', ['chave'], ListaOK())
+        self.assertEqual(modelos, ['openai/gpt-oss-120b'])
+
+    def test_404_troca_de_modelo_e_continua(self):
+        from bee.ia import MotorIA
+        from bee.rede import ErroRede
+
+        pedidos = []
+        class HTTP404:
+            def obter(self, requisicao, descricao, limite=None, log=None):
+                pedidos.append(json.loads(requisicao.data)['model'])
+                if len(pedidos) == 1:
+                    raise ErroRede('groq: HTTP 404; verifique o endereço ou o nome do modelo.')
+                return json.dumps({'choices': [{'finish_reason': 'stop', 'message': {
+                    'content': json.dumps({'verses': [{
+                        'verse': 1, 'text': 'Texto.',
+                        'commentary': '<p>Análise Léxica: não verificada em léxico.</p>'
+                                      '<p>Crítica Textual: sem variante verificada.</p>'
+                                      '<p>Síntese Exegética: teste.</p>'}]})}}]}).encode()
+
+        motor = MotorIA('groq', ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b'],
+                        'chave', HTTP404(), 4096)
+        avisos = []
+        motor.log = avisos.append
+        versos = motor.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+        self.assertEqual(versos[0]['verse'], 1)
+        self.assertEqual(pedidos, ['llama-3.3-70b-versatile', 'openai/gpt-oss-120b'])
+        self.assertEqual(motor.modelo, 'openai/gpt-oss-120b')
+        self.assertTrue(any('404' in a for a in avisos))
+
+
 class RodizioTest(unittest.TestCase):
     def test_salta_para_o_seguinte_quando_a_quota_esgota(self):
         notas = []

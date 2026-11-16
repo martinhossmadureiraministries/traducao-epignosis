@@ -135,8 +135,12 @@ def main(argv: list[str] | None = None) -> int:
                 if not chave.strip():
                     raise ValueError(f'Defina a variável {nome} (ou API_KEY) para gerar novos capítulos; '
                                      'veja autopiloto.py para a produção automática.')
-                modelo = args.modelo or MODELOS_PADRAO[args.provedor]
-                return MotorIA(args.provedor, modelo, chave, rede, args.max_tokens)
+                from bee.ia import resolver_modelos
+                modelos = resolver_modelos(
+                    args.provedor, [chave], rede, pedido=args.modelo,
+                    log=lambda texto: print(f'  {texto}', flush=True),
+                )
+                return MotorIA(args.provedor, modelos, chave, rede, args.max_tokens)
 
             gerar_livros(
                 selecionados, args.dados, fontes, obter_motor,

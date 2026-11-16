@@ -92,7 +92,7 @@ Por padrão usa o **Gemini**, modelo gratuito `gemini-3.5-flash-lite`:
 ```bash
 python gerar_bee.py --livro 500 --max-capitulos 1
 # Outro provedor gratuito com a respetiva variável definida:
-python gerar_bee.py --livro 500 --provedor groq --modelo llama-3.3-70b-versatile --max-capitulos 1
+python gerar_bee.py --livro 500 --provedor groq --max-capitulos 1
 ```
 
 Para processar toda a Bíblia, de forma sequencial:
@@ -116,7 +116,7 @@ A geração compila automaticamente ao terminar. Para guardar apenas JSON, acres
 | `--compilar` | Lê os JSON existentes e recompila os dois módulos, sem chave ou rede. |
 | `--listar-livros` / `--status` | Catálogo completo / progresso local. |
 | `--provedor NOME` | `gemini` (padrão), `groq`, `cerebras`, `openrouter` ou `openai`. |
-| `--modelo NOME` | Padrões gratuitos por provedor; modelos disponíveis podem variar por conta. |
+| `--modelo NOME` | Opcional. Sem ele, o programa descobre na conta qual o modelo gratuito disponível (e troca sozinho se um nome for retirado). |
 | `--max-capitulos N` | Para após N novos capítulos completos nesta execução. |
 | `--versos-por-pedido N` | Máximo por chamada; padrão 8. Respostas inválidas ou truncadas são divididas em lotes menores. |
 | `--max-tokens N` | Limite de tokens de saída por chamada; padrão 8192, mínimo 256. |
