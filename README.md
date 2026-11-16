@@ -15,7 +15,7 @@ python autopiloto.py --uma-vez                 # primeiro teste real (6 versícu
 python autopiloto.py --horas 6 --fuso Africa/Luanda
 ```
 
-Para continuar **com o computador desligado**, o workflow [`.github/workflows/bee-autopiloto.yml`](.github/workflows/bee-autopiloto.yml) corre `nuvem.py` numa GitHub Action a cada 15 minutos, publica os JSON no ramo `bee-dados` e deixa o `BEE-modulos.zip` como artefato descarregável. O programa não depende do GitHub: `autopiloto.py` faz o mesmo localmente ou num `cron`.
+Para continuar **com o computador desligado**, o modelo de workflow [`modelos/bee-autopiloto.yml`](modelos/bee-autopiloto.yml) (copie-o para `.github/workflows/`) corre `nuvem.py` numa GitHub Action a cada 15 minutos, publica os JSON no ramo `bee-dados` e deixa o `BEE-modulos.zip` como artefato descarregável. O programa não depende do GitHub: `autopiloto.py` faz o mesmo localmente ou num `cron`.
 
 Limites honestos: os planos gratuitos não são ilimitados. Com quota gratuita, 300–800 versículos por dia é realista; a Bíblia inteira leva semanas a meses, não dias, e continua a exigir revisão humana. Os textos automáticos entram marcados como rascunho, e o prompt automático proíbe atribuir consultas a BDB/Thayer/Nestle-Aland que não aconteceram. Detalhes, tabelas de quota e estimativas em [AUTOMACAO.md](AUTOMACAO.md).
 

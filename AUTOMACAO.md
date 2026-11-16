@@ -12,7 +12,7 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 |---|---|
 | `autopiloto.py` | O motor. Trabalha em ciclos (por exemplo, 6 versículos a cada 5 minutos), compila e registra o progresso. Anda com o seu computador. |
 | `nuvem.py` | O mesmo trabalho numa GitHub Action: continua com o computador desligado. |
-| `.github/workflows/bee-autopiloto.yml` | O agendador na nuvem (a cada 15 minutos, das 05h às 23h de Luanda). |
+| `modelos/bee-autopiloto.yml` | O agendador na nuvem (a cada 15 minutos, das 05h às 23h de Luanda). É um **modelo**: copie-o para `.github/workflows/` para o ativar (ver secção 4). |
 | `bee/ia.py` | Cinco provedores, todos com plano gratuito: **Gemini, Groq, Cerebras, OpenRouter** (e OpenAI, opcional e paga). |
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
@@ -114,12 +114,12 @@ cat livros_json/.bee/diario.md
 
 ## 4. Funcionar com o computador desligado (GitHub Actions)
 
-O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem você, use o workflow incluído.
+O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem você, use o workflow incluído em `modelos/bee-autopiloto.yml`.
 
-1. **Crie o repositório** (já está: `traducao-epignosis`, privado) e leve este código ao ramo `main`.
-2. **Acrescente o segredo:** *Settings → Secrets and variables → Actions → New repository secret* → nome `GEMINI_API_KEY`, valor a sua chave. (Opcional: `GROQ_API_KEY` como reserva.)
-3. **Ative os workflows** no separador *Actions*.
-4. **Ajuste o ritmo** em `.github/workflows/bee-autopiloto.yml` (variáveis `BEE_*`) ou dispare manualmente com *Run workflow*.
+1. **Leve o código ao ramo `main`** do repositório `traducao-epignosis` (privado).
+2. **Ative o workflow.** O ficheiro está em `modelos/` porque foi preparado por um agente sem permissão para criar workflows. No site do GitHub: *Add file → Create new file*, escreva `.github/workflows/bee-autopiloto.yml` e cole o conteúdo de `modelos/bee-autopiloto.yml`. (Alternativa: no seu computador, `mkdir -p .github/workflows && cp modelos/bee-autopiloto.yml .github/workflows/ && git add .github && git commit -m "ativar autopiloto" && git push`.)
+3. **Acrescente o segredo:** *Settings → Secrets and variables → Actions → New repository secret* → nome `GEMINI_API_KEY`, valor a sua chave. (Opcional: `GROQ_API_KEY` como reserva.)
+4. **Confirme em *Actions*** que o workflow aparece ativo; ajuste o ritmo nas variáveis `BEE_*` do ficheiro ou dispare manualmente com *Run workflow*.
 
 O que acontece em cada execução (a cada 15 minutos):
 
@@ -137,7 +137,7 @@ O que acontece em cada execução (a cada 15 minutos):
 |---|---|---|
 | Computador de casa | `python autopiloto.py` com o Agendador de Tarefas (Windows) ou `cron` (Linux/macOS) | A máquina tem de estar ligada |
 | Servidor doméstico / Raspberry Pi | `cron` a cada 15 min: `*/15 * * * * cd /caminho && GEMINI_API_KEY=... python3 autopiloto.py --uma-vez` | Consome pouca energia |
-| GitHub Actions | o workflow incluído | Minutos do plano gratuito |
+| GitHub Actions | o modelo em `modelos/bee-autopiloto.yml` (ativar, ver secção 4) | Minutos do plano gratuito |
 
 ---
 

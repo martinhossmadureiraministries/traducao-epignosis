@@ -1,9 +1,16 @@
 name: BEE — produção automática
 
+# Modelo de produção automática na nuvem (GitHub Actions).
+#
+# Este ficheiro está em modelos/ porque o agente que preparou o projeto não tem
+# permissão para criar workflows. Para o ativar, copie-o para
+# .github/workflows/bee-autopiloto.yml (pelo site do GitHub ou depois de fazer
+# clone do repositório). Ver AUTOMACAO.md, secção 4.
+#
 # Cada execução produz um bloco pequeno de versículos e termina. É o agendador
 # do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
 # com o seu computador desligado. Se a sua conta não tiver minutos de Actions
-# gratuitos, desative este ficheiro e use `autopiloto.py --horas 6` localmente.
+# gratuitos, desative o workflow e use `autopiloto.py --horas 6` localmente.
 
 on:
   schedule:
