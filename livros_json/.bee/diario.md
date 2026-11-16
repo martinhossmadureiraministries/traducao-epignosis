@@ -1,15 +1,27 @@
-- 2026-11-16T15:21:52+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.8s (1/3).
-- 2026-11-16T15:21:54+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.7s (2/3).
-- 2026-11-16T15:21:59+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
-- 2026-11-16T15:21:59+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
-- 2026-11-16T15:22:00+00:00 — **AVISO** groq: o modelo 'llama-3.3-70b-versatile' não existe nesta conta; use --testar --modelo <outro> ou o modelo padrão.
-- 2026-11-16T15:22:00+00:00 — Falha de rede em Groq · llama-3.3-70b-versatile; a tentar outro provedor.
-- 2026-11-16T15:22:00+00:00 — **ERRO** Ciclo 1 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.; Groq · llama-3.3-70b-versatile: groq: HTTP 404; verifique o endereço ou o nome do modelo.
-- 2026-11-16T15:22:00+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
-- 2026-11-16T15:22:45+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.4s (1/3).
-- 2026-11-16T15:22:51+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.0s (2/3).
-- 2026-11-16T15:22:57+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
-- 2026-11-16T15:22:57+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
-- 2026-11-16T15:22:58+00:00 — **AVISO** groq: o modelo 'llama-3.3-70b-versatile' não existe nesta conta; use --testar --modelo <outro> ou o modelo padrão.
-- 2026-11-16T15:22:58+00:00 — Falha de rede em Groq · llama-3.3-70b-versatile; a tentar outro provedor.
-- 2026-11-16T15:22:58+00:00 — **ERRO** Ciclo 2 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.; Groq · llama-3.3-70b-versatile: groq: HTTP 404; verifique o endereço ou o nome do modelo.
+- 2026-11-16T15:38:46+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/3).
+- 2026-11-16T15:38:49+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.2s (2/3).
+- 2026-11-16T15:38:54+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:38:54+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:39:05+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/3).
+- 2026-11-16T15:39:07+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.3s (2/3).
+- 2026-11-16T15:39:11+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:39:11+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:39:12+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 8.0s (1/3).
+- 2026-11-16T15:39:36+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.2s (1/3).
+- 2026-11-16T15:39:39+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.8s (2/3).
+- 2026-11-16T15:39:46+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/3).
+- 2026-11-16T15:39:50+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.6s (2/3).
+- 2026-11-16T15:39:53+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:39:53+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:40:01+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/3).
+- 2026-11-16T15:40:03+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.7s (2/3).
+- 2026-11-16T15:40:07+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:40:07+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:40:14+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.8s (1/3).
+- 2026-11-16T15:40:16+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.1s (2/3).
+- 2026-11-16T15:40:20+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-16T15:40:20+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-16T15:40:21+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 6.0s (1/3).
+- 2026-11-16T15:40:33+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.2s (1/3).
+- 2026-11-16T15:40:35+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.2s (2/3).
+- 2026-11-16T15:40:38+00:00 — **ERRO** Ciclo 1 falhou: João 5:7: resposta inválida após 3 tentativa(s). Progresso anterior preservado. João 5:7-7: João 5:7-7: esperados 1 versículos; encontrados 0.

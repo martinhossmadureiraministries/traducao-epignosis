@@ -1,11 +1,11 @@
 {
-  "ciclos": 2,
-  "criado_utc": "2026-11-16T15:21:47+00:00",
+  "ciclos": 1,
+  "criado_utc": "2026-11-16T15:38:42+00:00",
   "dias": {
     "2026-11-16": {
       "aberto": true,
       "capitulos": 0,
-      "falhas": 2,
+      "falhas": 1,
       "fechado_em_utc": null,
       "pedidos": 0,
       "versos": 0
@@ -13,10 +13,10 @@
   },
   "exaustos": [],
   "exaustos_em": "2026-11-16",
-  "falhas_seguidas": 2,
+  "falhas_seguidas": 1,
   "ultima_compilacao_build": null,
   "ultima_compilacao_utc": null,
-  "ultimo_ciclo_utc": "2026-11-16T15:22:45+00:00",
-  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 3 tentativas.; Groq · llama-3.3-70b-versatile: groq: HTTP 404; verifique o endereço ou o nome do modelo.",
+  "ultimo_ciclo_utc": "2026-11-16T15:38:42+00:00",
+  "ultimo_erro": "RespostaInvalida: João 5:7: resposta inválida após 3 tentativa(s). Progresso anterior preservado. João 5:7-7: João 5:7-7: esperados 1 versículos; encontrados 0.",
   "versos_total": 0
 }
