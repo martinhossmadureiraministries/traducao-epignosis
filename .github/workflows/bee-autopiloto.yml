@@ -1,0 +1,121 @@
+name: BEE — produção automática
+
+# Modelo de produção automática na nuvem (GitHub Actions).
+#
+# Este ficheiro está em modelos/ porque o agente que preparou o projeto não tem
+# permissão para criar workflows. Para o ativar, copie-o para
+# .github/workflows/bee-autopiloto.yml (pelo site do GitHub ou depois de fazer
+# clone do repositório). Ver AUTOMACAO.md, secção 4.
+#
+# Cada execução produz um bloco pequeno de versículos e termina. É o agendador
+# do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
+# com o seu computador desligado. Se a sua conta não tiver minutos de Actions
+# gratuitos, desative o workflow e use `autopiloto.py --horas 6` localmente.
+
+on:
+  schedule:
+    # A cada 15 minutos. O GitHub pode atrasar execuções em horas de ponta.
+    - cron: '*/15 * * * *'
+  pull_request:
+    # Permite despachar a produção a partir deste PR ("Run workflow").
+    types: [labeled]
+  workflow_dispatch:
+    inputs:
+      versos_por_ciclo:
+        description: 'Versículos a produzir nesta execução'
+        required: false
+        default: '40'
+      livros:
+        description: 'Só estes book_number (ex.: 640,500); vazio = fila das oito fases'
+        required: false
+        default: ''
+      modelo:
+        description: 'Modelo (vazio = modelo gratuito padrão do provedor)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+# Nunca duas execuções a escrever nos mesmos dados ao mesmo tempo.
+concurrency:
+  group: bee-producao
+  cancel-in-progress: false
+
+env:
+  BEE_BRAMO_DADOS: bee-dados
+  BEE_FUSO: Africa/Luanda
+  BEE_HORA_INICIO: '5'
+  BEE_HORA_FIM: '23'
+  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '40' }}
+  BEE_LIVROS: ${{ github.event.inputs.livros }}
+  BEE_MODELO: ${{ github.event.inputs.modelo }}
+  BEE_LOTE: '8'
+  BEE_PEDIDOS_POR_DIA: '400'
+  BEE_VERSOS_POR_DIA: '0'
+  BEE_PROVEDOR: auto
+  BEE_TIMEOUT: '180'
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  produzir:
+    # Só quando despachado à mão ou com a etiqueta bee-producao num PR.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule') ||
+      (github.event_name == 'pull_request' && github.event.label.name == 'bee-producao')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@v4
+        with:
+          # Num evento de PR (com a etiqueta bee-producao) usa-se o ramo do PR;
+          # nas execuções agendadas usa-se o ramo por omissão.
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || '' }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Recuperar o progresso do ramo de dados
+        run: |
+          rm -rf /tmp/bee-remoto
+          if git fetch origin "$BEE_BRAMO_DADOS" --depth=1 2>/dev/null; then
+            git worktree add --detach /tmp/bee-remoto FETCH_HEAD >/dev/null 2>&1
+            echo "Progresso recuperado do ramo $BEE_BRAMO_DADOS (o código não é alterado)."
+          else
+            echo "Ramo de dados ainda não existe; a começar do zero."
+            mkdir -p /tmp/bee-remoto
+          fi
+          ls livros_json | head -20
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reutilizar as fontes originais (~22 MB)
+        uses: actions/cache@v4
+        with:
+          path: .bee-cache
+          key: bee-fontes-sha256-v1
+
+      - name: Produzir um bloco, compilar e publicar
+        env:
+          BEE_REMOTO: /tmp/bee-remoto/livros_json
+          BEE_UNIR: '1'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python nuvem.py
+
+      # O ZIP com os dois módulos e o LEIA-ME é criado pelo próprio nuvem.py.
+
+      - name: Guardar os módulos como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: BEE-modulos-${{ github.run_number }}
+          path: entregas/auto/
+          if-no-files-found: ignore
+          retention-days: 14
