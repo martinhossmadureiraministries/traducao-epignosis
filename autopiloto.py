@@ -33,7 +33,7 @@ from bee.arquivos import DadosInvalidos, ler_todos
 from bee.catalogo import LIVROS, POR_NUMERO
 from bee.compilador import ErroCompilacao
 from bee.fontes import ErroFonte, FontesOriginais
-from bee.ia import PROVEDORES, VERSOS_POR_PEDIDO_PADRAO, MotorIA
+from bee.ia import PROVEDORES, VERSOS_POR_PEDIDO_PADRAO, MotorIA, resolver_modelos
 from bee.rede import ClienteHTTP, ErroRede, ler_chaves
 from bee.trava import EmExecucao, trava
 
@@ -217,7 +217,11 @@ def _fuso(nome: str):
 
 
 def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
-    """Monta os motores a partir das chaves disponíveis, sem imprimir segredos."""
+    """Monta os motores a partir das chaves disponíveis, sem imprimir segredos.
+
+    O modelo é **descoberto** no próprio serviço: nomes fixos no código
+    envelhecem (a Groq retirou os Llama 3.x e passou a devolver 404).
+    """
     configurados: list[tuple[str, str]] = []
     if args.chaves:
         if args.provedor in ('auto', None):
@@ -227,7 +231,7 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
         for nome, config in PROVEDORES.items():
             valor = os.environ.get(config.variavel)
             if valor and ler_chaves(valor):
-                configurados.append((nome, valor or ''))
+                configurados.append((nome, valor))
     if args.provedor not in ('auto', None):
         configurados = [(n, c) for n, c in configurados if n == args.provedor]
         if not configurados:
@@ -245,10 +249,14 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     configurados.sort(key=lambda par: ordem.get(par[0], 99))
     motores = []
     for nome, valor in configurados:
-        config = PROVEDORES[nome]
-        modelo = args.modelo if args.modelo and len(configurados) == 1 else config.modelo_padrao
+        chaves = ler_chaves(valor)
+        modelos = resolver_modelos(
+            nome, chaves, rede,
+            pedido=args.modelo if (args.modelo and len(configurados) == 1) else None,
+            log=lambda texto: print(f'  {texto}', flush=True),
+        )
         motores.append(MotorIA(
-            nome, modelo, ler_chaves(valor), rede, args.max_tokens,
+            nome, modelos, chaves, rede, args.max_tokens,
             aplicar_revisao=not args.sem_revisao_prompt,
         ))
     return motores

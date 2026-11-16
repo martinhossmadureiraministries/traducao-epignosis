@@ -96,7 +96,7 @@ Nos dois casos, `--uma-vez` produz um bloco e termina: nada fica preso se a máq
    ```bash
    python autopiloto.py --testar
    ```
-   Esperado: `OK · gemini/gemini-3.5-flash-lite: respondeu 'ok'`. Se der `HTTP 400`, o nome do modelo mudou na sua conta: corra `--testar --modelo gemini-2.5-flash-lite` (ou outro Flash-Lite listado em <https://ai.google.dev/gemini-api/docs/models>).
+   Esperado: `OK · gemini/<modelo que a sua conta tem>: respondeu 'ok'`. O nome não é fixo: o programa pergunta ao serviço quais os modelos disponíveis e indica no ecrã qual escolheu. Se a lista não puder ser lida, usa os nomes de reserva e, se um deles der `HTTP 404`, passa sozinho ao seguinte.
 2. Produza um bloco:
    ```bash
    python autopiloto.py --uma-vez --fuso Africa/Luanda
@@ -111,7 +111,7 @@ Nos dois casos, `--uma-vez` produz um bloco e termina: nada fica preso se a máq
    - o tamanho das notas serve para leitura no telemóvel?
 5. Se a qualidade servir, não mude nada. Se as notas vierem curtas ou genéricas, experimente outro modelo uma vez:
    ```bash
-   python autopiloto.py --uma-vez --modelo gemini-3.1-flash-lite --max-versos 4
+   python autopiloto.py --uma-vez --max-versos 4
    ```
 
 > **Regra prática:** prefira lotes de 4–8 versículos. Lotes grandes truncam e o programa gasta quota a repetir.
@@ -157,7 +157,7 @@ Com dois provedores o trabalho continua quando a quota gratuita de um acaba.
 | No diário / Actions | O que fazer |
 |---|---|
 | `HTTP 429` repetido | quota do dia esgotada: acrescente `GROQ_API_KEY` ou baixe `--max-versos` |
-| `FALHOU · … HTTP 400` | nome do modelo mudou: `--testar --modelo <outro>` |
+| `FALHOU · … HTTP 404` | nome retirado pelo serviço; corra de novo: o programa escolhe outro sozinho |
 | `resposta inválida após 3 tentativas` | baixe o lote: `--lote 4` |
 | Execução vermelha por minutos de Actions | mude o cron para `*/30` ou use o caminho B |
 

@@ -17,6 +17,8 @@ class SimularHTTP:
         self.requests = []
 
     def obter(self, requisicao, descricao, limite=None, log=None):
+        if requisicao.data is None:  # listagem de modelos (GET)
+            return json.dumps({'data': []}).encode()
         self.requests.append(requisicao)
         payload = json.loads(requisicao.data)
         mensagem = payload['messages'][1]['content']

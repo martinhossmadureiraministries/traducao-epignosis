@@ -77,9 +77,15 @@ class Provedor:
     url: str
     variavel: str
     formato: str            # 'openai' ou 'gemini'
-    modelo_padrao: str
+    modelos: tuple[str, ...]      # em ordem de preferência; o primeiro é o padrão
     pedidos_por_dia: int | None   # None: o provedor não documenta um teto útil
     notas: str = ''
+    url_modelos: str = ''         # endpoint de listagem (descoberta automática)
+    prefixos_aceites: tuple[str, ...] = ()  # filtro grosseiro, se necessário
+
+    @property
+    def modelo_padrao(self) -> str:
+        return self.modelos[0] if self.modelos else ''
 
 
 # Só serviços com plano gratuito sem cartão. Os tetos diários são conservadores:
@@ -89,35 +95,170 @@ class Provedor:
 PROVEDORES: dict[str, Provedor] = {
     'gemini': Provedor(
         'gemini', 'Google Gemini (AI Studio)', 'https://generativelanguage.googleapis.com/v1beta/models/',
-        'GEMINI_API_KEY', 'gemini', 'gemini-3.5-flash-lite', 480,
-        'Plano gratuito sem cartão. O Flash-Lite tem o maior teto diário; o Flash é mais capaz e muito mais limitado.',
+        'GEMINI_API_KEY', 'gemini',
+        # O Flash-Lite tem o maior teto diário; o resto são suplentes pela ordem.
+        ('gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite',
+         'gemini-flash-lite-latest', 'gemini-3.8-flash', 'gemini-2.5-flash',
+         'gemini-flash-latest', 'gemini-2.0-flash-lite', 'gemini-2.0-flash'),
+        480,
+        'Plano gratuito sem cartão. O Flash-Lite tem o maior limite diário.',
+        'https://generativelanguage.googleapis.com/v1beta/models',
+        ('flash', 'lite'),
     ),
     'groq': Provedor(
         'groq', 'Groq', 'https://api.groq.com/openai/v1/chat/completions',
-        'GROQ_API_KEY', 'openai', 'llama-3.3-70b-versatile', 12000,
-        'Plano gratuito sem cartão. O limite real é o de tokens por minuto (TPM), não o diário.',
+        'GROQ_API_KEY', 'openai',
+        # A Groq desligou os Llama 3.x para planos gratuitos em 16/08/2026;
+        # os modelos livres passaram a ser os GPT-OSS.
+        ('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.8-27b',
+         'qwen/qwen3.6-27b', 'openai/gpt-oss-safeguard-20b'),
+        12000,
+        'Plano gratuito sem cartão. O limite real é o de tokens por minuto (TPM).',
+        'https://api.groq.com/openai/v1/models',
     ),
     'cerebras': Provedor(
         'cerebras', 'Cerebras', 'https://api.cerebras.ai/v1/chat/completions',
-        'CEREBRAS_API_KEY', 'openai', 'llama-3.3-70b', 900,
-        'Plano gratuito sem cartão, com teto de tokens por minuto e contexto de 8K: use lotes pequenos.',
+        'CEREBRAS_API_KEY', 'openai',
+        ('gpt-oss-120b', 'qwen-3-32b', 'llama3.1-8b'),
+        900,
+        'Plano gratuito sem cartão, com contexto curto (8K): use lotes pequenos.',
+        'https://api.cerebras.ai/v1/models',
     ),
     'openrouter': Provedor(
         'openrouter', 'OpenRouter', 'https://openrouter.ai/api/v1/chat/completions',
-        'OPENROUTER_API_KEY', 'openai', 'meta-llama/llama-3.3-70b-instruct:free', 40,
+        'OPENROUTER_API_KEY', 'openai',
+        ('openai/gpt-oss-120b:free', 'qwen/qwen3-235b-a22b:free',
+         'deepseek/deepseek-chat-v3-0324:free', 'google/gemini-2.5-flash:free'),
+        40,
         'Modelos com sufixo ":free" têm teto diário baixo; use como reserva.',
+        'https://openrouter.ai/api/v1/models',
+        (':free',),
     ),
     'openai': Provedor(
         'openai', 'OpenAI', 'https://api.openai.com/v1/chat/completions',
-        'OPENAI_API_KEY', 'openai', 'gpt-4o-mini', None,
+        'OPENAI_API_KEY', 'openai',
+        ('gpt-4.1-mini', 'gpt-4o-mini', 'gpt-4.1'),
+        None,
         'Sem plano gratuito permanente.',
+        'https://api.openai.com/v1/models',
     ),
 }
+
+# Modelos retirados que já causaram 404 em produção: nunca voltar a usá-los
+# sem que o serviço o confirme na sua própria lista.
+RETIRADOS = frozenset({
+    'llama-3.3-70b-versatile', 'llama-3.1-8b-instant', 'llama3-70b-8192',
+    'llama3-8b-8192', 'mixtral-8x7b-32768', 'gemma2-9b-it', 'gemma-7b-it',
+    'llama-3.1-70b-versatile', 'meta-llama/llama-4-scout-17b-16e-instruct',
+    'qwen/qwen3-32b', 'meta-llama/llama-4-maverick-17b-128e-instruct',
+})
 
 MODELOS_PADRAO = {nome: p.modelo_padrao for nome, p in PROVEDORES.items()}
 
 # Contexto seguro por omissão: os modelos gratuitos pequenos não aceitam lotes grandes.
 VERSOS_POR_PEDIDO_PADRAO = {'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4, 'openai': 8}
+
+
+def _rede_listagem(rede: ClienteHTTP) -> ClienteHTTP:
+    """Versão "leve" do cliente: uma tentativa, sem esperas, silenciosa.
+
+    A listagem de modelos é um extra; nunca deve custar minutos nem encher o
+    registo antes de a produção começar.
+    """
+    if isinstance(rede, ClienteHTTP):
+        return ClienteHTTP(pausa=0, tentativas=1, timeout=min(rede.timeout, 20.0))
+    return rede
+
+
+def _pedido_listagem(config: Provedor, chave: str) -> urllib.request.Request:
+    if config.nome == 'gemini':
+        return urllib.request.Request(
+            f'{config.url_modelos}?pageSize=200&key={chave}',
+            headers={'User-Agent': 'gerar-bee/1.0'},
+        )
+    return urllib.request.Request(
+        config.url_modelos,
+        headers={'Authorization': f'Bearer {chave}', 'User-Agent': 'gerar-bee/1.0'},
+    )
+
+
+def _ids_disponiveis(config: Provedor, resposta: dict[str, Any]) -> list[str]:
+    if config.nome == 'gemini':
+        itens = resposta.get('models') or []
+        ids = []
+        for item in itens:
+            nome = str(item.get('name', ''))
+            metodos = item.get('supportedGenerationMethods') or []
+            if metodos and 'generateContent' not in metodos:
+                continue
+            ids.append(nome.removeprefix('models/'))
+        return ids
+    itens = resposta.get('data') or []
+    return [str(item.get('id', '')) for item in itens if item.get('id')]
+
+
+def _escolher_modelo(config: Provedor, disponiveis: list[str]) -> str | None:
+    """Prefere a lista curada; se nada servir, aceita o que o serviço oferecer."""
+    if not disponiveis:
+        return None
+    baixos = {nome.casefold(): nome for nome in disponiveis}
+    for preferido in config.modelos:
+        if preferido in RETIRADOS:
+            continue
+        if preferido.casefold() in baixos:
+            return baixos[preferido.casefold()]
+    if not config.prefixos_aceites:
+        return None
+    # Só entra aqui quem passa o filtro do provedor, nunca um modelo retirado.
+    candidatos = [
+        nome for nome in disponiveis
+        if nome not in RETIRADOS
+        and any(marca.casefold() in nome.casefold() for marca in config.prefixos_aceites)
+    ]
+    return candidatos[0] if candidatos else None
+
+
+def descobrir_modelo(provedor: str, chave: str, rede: ClienteHTTP) -> str | None:
+    """Pergunta ao serviço quais modelos a chave pode usar agora.
+
+    Um nome fixo no código envelhece: foi assim que `llama-3.3-70b-versatile`
+    passou a devolver 404 depois de a Groq o retirar. Esta função evita essa
+    classe de falha em vez de a corrigir à mão outra vez.
+    """
+    config = PROVEDORES[provedor]
+    if not config.url_modelos:
+        return None
+    try:
+        corpo = _rede_listagem(rede).obter(
+            _pedido_listagem(config, chave), f'{provedor} (lista de modelos)',
+        )
+        resposta = _objeto_api(corpo, f'{provedor} (lista de modelos)')
+    except (ErroRede, RespostaInvalida):
+        return None
+    return _escolher_modelo(config, _ids_disponiveis(config, resposta))
+
+
+def resolver_modelos(
+    provedor: str, chaves: Sequence[str], rede: ClienteHTTP,
+    pedido: str | None = None, log: Callable[[str], None] | None = None,
+) -> list[str]:
+    """Modelo explícito, ou descoberto, ou a lista curada como último recurso."""
+    if pedido:
+        return [pedido]
+    for chave in chaves:
+        try:
+            descoberto = descobrir_modelo(provedor, chave, rede)
+        except Exception as exc:  # noqa: BLE001 - listar modelos é um extra, nunca um requisito
+            if log:
+                log(f'{provedor}: a lista de modelos falhou ({exc}); a usar os nomes de reserva do código.')
+            descoberto = None
+        if descoberto:
+            if log and descoberto != PROVEDORES[provedor].modelos[0]:
+                log(f'{provedor}: modelo disponível nesta conta: {descoberto}.')
+            return [descoberto]
+    if log:
+        log(f'{provedor}: não foi possível listar os modelos; a usar os nomes de reserva do código.')
+    return list(PROVEDORES[provedor].modelos)
 
 
 class RespostaInvalida(RuntimeError):
@@ -152,13 +293,17 @@ class MotorIA:
     """Um provedor e um modelo, com uma ou mais chaves em rodízio."""
 
     def __init__(
-        self, provedor: str, modelo: str, chaves: str | Sequence[str],
+        self, provedor: str, modelo: str | Sequence[str], chaves: str | Sequence[str],
         rede: ClienteHTTP, max_tokens: int, aplicar_revisao: bool = True,
     ):
         if provedor not in PROVEDORES:
             raise ValueError(f'Provedor desconhecido: {provedor!r}.')
-        if not re.fullmatch(r'[A-Za-z0-9._:/-]+', modelo):
-            raise ValueError('Nome de modelo inválido; use apenas letras, números, ponto, hífen, sublinhado, dois-pontos e barra.')
+        modelos = [modelo] if isinstance(modelo, str) else list(modelo)
+        if not modelos:
+            raise ValueError('Nenhum modelo indicado para o provedor.')
+        for nome in modelos:
+            if not re.fullmatch(r'[A-Za-z0-9._:/-]+', nome):
+                raise ValueError('Nome de modelo inválido; use apenas letras, números, ponto, hífen, sublinhado, dois-pontos e barra.')
         if isinstance(chaves, str):
             chaves = [chaves]
         limpas = [_limpar_chave(c) for c in chaves if c and c.strip()]
@@ -167,7 +312,8 @@ class MotorIA:
         if max_tokens < 256:
             raise ValueError('O limite de tokens deve ser pelo menos 256.')
         self.provedor = provedor
-        self.modelo = modelo
+        self._modelos = modelos
+        self._indice_modelo = 0
         self._chaves = limpas
         self._indice_chave = 0
         self.rede = rede
@@ -175,6 +321,26 @@ class MotorIA:
         self.aplicar_revisao = aplicar_revisao
         # Recebe avisos legíveis (novas tentativas, 5xx) para o diário do autopiloto.
         self.log: Callable[[str], None] | None = None
+
+    @property
+    def modelo(self) -> str:
+        return self._modelos[self._indice_modelo]
+
+    @property
+    def modelos(self) -> list[str]:
+        return list(self._modelos)
+
+    def _proximo_modelo(self, motivo: str) -> bool:
+        """Passa ao modelo seguinte quando este não existe nesta conta (404)."""
+        if self._indice_modelo + 1 >= len(self._modelos):
+            return False
+        anterior, self._indice_modelo = self.modelo, self._indice_modelo + 1
+        if self.log:
+            self.log(
+                f'{self.provedor}: o modelo {anterior!r} não está disponível nesta conta '
+                f'({motivo}); a usar {self.modelo!r}.'
+            )
+        return True
 
     @property
     def rotulo(self) -> str:
@@ -256,6 +422,8 @@ class MotorIA:
                     self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
                 )
             except ErroRede as exc:
+                if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
+                    return self.testar_ligacao()
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc
                 continue
@@ -277,11 +445,9 @@ class MotorIA:
                     self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
                 )
             except ErroRede as exc:
-                if 'HTTP 404' in str(exc) and self.log:
-                    self.log(
-                        f'{self.provedor}: o modelo {self.modelo!r} não existe nesta conta; '
-                        'use --testar --modelo <outro> ou o modelo padrão.'
-                    )
+                if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
+                    # Modelo retirado ou inexistente: não gasta mais tentativas nele.
+                    return self._requisicao(mensagem)
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
                 ultimo = exc

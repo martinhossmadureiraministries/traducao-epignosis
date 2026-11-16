@@ -30,7 +30,7 @@ on:
         required: false
         default: ''
       modelo:
-        description: 'Modelo (vazio = modelo gratuito padrão do provedor)'
+        description: 'Forçar um modelo (vazio = o programa descobre o modelo livre na conta)'
         required: false
         default: ''
 
@@ -128,7 +128,7 @@ jobs:
             echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY e GROQ_API_KEY." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- Chaves presentes. Se o erro for HTTP 5xx, o serviço estava instável: o próximo ciclo tenta de novo." >> "$GITHUB_STEP_SUMMARY"
-            echo "- Se for HTTP 400/404, o nome do modelo mudou: ajuste BEE_MODELO em 'Run workflow'." >> "$GITHUB_STEP_SUMMARY"
+            echo "- Se for HTTP 404, o serviço retirou esse modelo: basta voltar a correr, o programa escolhe outro sozinho." >> "$GITHUB_STEP_SUMMARY"
             echo "- Se for HTTP 429, a quota diária acabou: a reserva Groq entra automaticamente no ciclo seguinte." >> "$GITHUB_STEP_SUMMARY"
           fi
           tail -n 25 livros_json/.bee/diario.md 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || echo "- (ainda sem diário)" >> "$GITHUB_STEP_SUMMARY"
