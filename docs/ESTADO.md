@@ -1,6 +1,7 @@
 # Estado do projeto — 17/11/2026
 
-> Etapas 1 e 2 no PR **#32**, já integrado no `main` em 17/11/2026.
+> Etapas 1 e 2 integradas no `main` (PR #32). As etapas 3 e 4 estão no ramo
+> de trabalho `arena/d3007491-traducao-epignosis`, à espera de revisão.
 
 Este ficheiro é o **ponto único de verdade** sobre o que está feito, o que está
 a meio e o que falta. O `PLANO_ORGANIZACAO.md` explica o diagnóstico e as
@@ -73,9 +74,9 @@ sem autorização explícita.
   - Resumo já não rebenta quando `resultado is None`.
 - Workflow — **proposta em `docs/bee-autopiloto.yml`**
   - O GitHub recusou o push de `.github/workflows/bee-autopiloto.yml` com
-    “GitHub App … without `workflows` permission”. O ficheiro ativo continua
-    com `timeout-minutes: 50`; o `nuvem.py` já limita o trabalho a 11 min, mas
-    a configuração do job só muda quando a proposta for copiada.
+    “GitHub App … without `workflows` permission”. O ficheiro ativo tem
+    `timeout-minutes: 12`, mas os passos finais estão triplicados/corrompidos;
+    a configuração do job só fica correta quando a proposta for copiada na UI.
   - `timeout-minutes: 12`; cron `7,27,47` (20 min).
   - `BEE_VERSOS_POR_CICLO=80`, `BEE_TENTATIVAS_CICLO=2`,
     `BEE_TENTATIVAS=2`, `BEE_TIMEOUT=90`, `BEE_PEDIDOS_POR_DIA=500`.
@@ -85,24 +86,28 @@ sem autorização explícita.
 
 ### Testes
 
-`python3 -m unittest discover -s tests` → **146 testes, 2 skipped, OK**.
+`python3 -m unittest discover -s tests` → **152 testes, 2 skipped**; os únicos
+falhanços são o teste de sincronização do workflow ativo, que continua
+corrompido no `main` (ver abaixo). Sem esse teste, **150 testes OK**.
 Foram acrescentados testes para o 429 sem espera, o limite de 45 s, a contagem
-de tentativas, o prazo do ciclo, o orçamento com o Gemini sozinho e o
-relatório sem módulos.
+de tentativas, o prazo do ciclo, o orçamento com o Gemini sozinho, o
+relatório sem módulos, a quarentena e os pacotes com o número da execução.
 
 ### O que ainda não está validado
 
-- Uma execução real no GitHub com o código novo (só depois do merge).
-- O workflow ativo: falta aplicar `docs/bee-autopiloto.yml` em
-  `.github/workflows/bee-autopiloto.yml` e em `modelos/bee-autopiloto.yml`
-  (têm de ficar iguais). Enquanto isso, o job continua com 50 min, mas o
-  `nuvem.py` pára aos 11 min.
+- O workflow ativo: **continua corrompido no `main`**. A execução
+  `44109642278` (17/11, 15:01 UTC) usou essa versão e falhou ao fim de 2m36s:
+  os passos de artefactos/release estão triplicados e as linhas
+  `gh release upload ... "$GITHUB_REPOSITORY"ara ler e` e
+  `... "$GITHUB_REPOSITORY"        python nuvem.py` estão concatenadas.
+  A versão correta é `docs/bee-autopiloto.yml` (252 linhas, uma só cópia dos
+  passos) e tem de ser colada na UI em
+  `.github/workflows/bee-autopiloto.yml`; o push direto é recusado por falta da
+  permissão `workflows`.
+- Apesar da falha, a execução `44109642278` **produziu** os artefactos
+  `BEE-modulos-14` e `BEE-capitulos-14`, actualizou 18 HTML no release
+  `bee-previa` e guardou João 18:1–19 (19 versículos) no `main`.
 - O `SIGTERM` num cancelamento real.
-- O cron: **passou a disparar**. A execução `44106329613` (evento `schedule`)
-  arrancou às 14:43 UTC de 17/11, antes do merge, por isso ainda usou o código
-  antigo e o `bee-dados`; foi deixada terminar/cancelar na UI (a API recusa
-  `cancel` com 403). A execução seguinte, já sobre o novo `main`, é a validação
-  que falta.
 
 ### Como desativar o workflow
 
@@ -129,15 +134,16 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 ### Migração
 
 - Os 18 capítulos do antigo `bee-dados` foram copiados para `livros_json/` no
-  `main`: **João 1–17 + Filemom = 766 versículos**.
+  `main`: **João 1–17 + Filemom = 766 versículos**. Depois da execução
+  `44109642278`, estão mais **19 versículos de João 18** em `in_progress`;
+  o total guardado é **785**.
 - Os capítulos 1–4 de João e Filemom 1 já existiam no `main` e são
   **byte a byte iguais** aos do `bee-dados`; a migração não reescreveu texto.
 - Antes de apagar o ramo, foi criada a etiqueta
   `arquivo-bee-dados-2026-11-17` (o ramo fica recuperável pela etiqueta).
-- `livros_json/.bee/estado.json` e `diario.md` foram trazidos: o estado aponta
-  para **João 18:1**, que é onde a execução #12 foi interrompida. João 18:1–12
-  não existe em lado nenhum (foi gerado e perdido); o próximo ciclo com chaves
-  volta a produzi-lo.
+- `livros_json/.bee/estado.json` e `diario.md` foram trazidos. A execução
+  #12 tinha perdido João 18:1–12; a execução `44109642278` voltou a gerá-los e
+  guardou João 18:1–19. O capítulo 18 ainda não está completo.
 
 ### Código
 
@@ -161,19 +167,20 @@ O utilizador autorizou apagar os ramos desnecessários e ficar apenas com o
 ramo de trabalho e o `main`. A lista e o resultado ficam registados abaixo
 ### Ramos apagados
 
-Ficaram apenas **`main`** e **`arena/e4c173dc-traducao-epignosis`**. Foram
-apagados 20 ramos: 15 `arena/*` antigos, 4 `vibe/*` e o `bee-dados`. Antes de
-apagar o `bee-dados`, foi criada a etiqueta **`arquivo-bee-dados-2026-11-17`**,
-que preserva os 18 capítulos/766 versículos.
+Ficaram apenas **`main`** e o **ramo de trabalho da sessão**. Foram apagados
+20 ramos: 15 `arena/*` antigos, 4 `vibe/*` e o `bee-dados`. Antes de apagar o
+`bee-dados`, foi criada a etiqueta **`arquivo-bee-dados-2026-11-17`**, que
+preserva os 18 capítulos/766 versículos.
 
 ## Próximas etapas
 
 | Etapa | Estado |
 |---|---|
-| 1. Actions sob controlo | implementada; falta validar em execução real |
-| 2. Dados no `main` | feito: 18 capítulos/766 versículos |
-| 3. Capítulos e artefactos visíveis | base pronta (`RELATORIO.txt`); falta publicar/validar |
-| 4. Documentação coerente | por fazer (`AUTOMACAO.md` ainda diz 15 min) |
-| 5. Diagnóstico do cron | por fazer |
-| 6. Limpeza física | por fazer |
-| 7. Verificação final | por fazer |
+| 1. Actions sob controlo | feita; workflow ativo ainda por aplicar na UI |
+| 2. Dados no `main` | feito: 18 capítulos completos/785 versículos guardados |
+| 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
+| 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |
+| 5. Documentação coerente | em curso (`AUTOMACAO.md` ainda diz 15 min) |
+| 6. Diagnóstico do cron | por fazer |
+| 7. Limpeza física | por fazer |
+| 8. Verificação final | por fazer |

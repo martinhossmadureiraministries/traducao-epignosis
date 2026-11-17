@@ -339,15 +339,15 @@ continua.
 
 **Objetivo:** “está no Actions” passa a significar “posso descarregar e abrir”.
 
-- [ ] Um único pacote por execução: `BEE-modulos-<run>.zip` com
+- [x] Um único pacote por execução: `BEE-modulos-<run>.zip` com
       `BEE.SQLite3`, `BEE.commentaries.SQLite3`, `LEIA-ME.txt`.
-- [ ] Pacote de leitura: `BEE-capitulos-<run>.zip` com um HTML por capítulo,
+- [x] Pacote de leitura: `BEE-capitulos-<run>.zip` com um HTML por capítulo,
       incluindo capítulos em curso (marcados “em curso: X de Y”).
-- [ ] Pacote de diagnóstico: `estado.json`, `diario.md`, `quarentena.json`.
-- [ ] Release `bee-previa` criada automaticamente na primeira execução com
+- [x] Pacote de diagnóstico: `estado.json`, `diario.md`, `quarentena.json`.
+- [x] Release `bee-previa` criada automaticamente na primeira execução com
       conteúdo; assets atualizados com `--clobber`.
-- [ ] Nomes com número da execução e SHA curto; retenção explícita.
-- [ ] Passo “Verificar artefactos” que falha se o ZIP não tiver os dois módulos
+- [x] Nomes com número da execução; retenção explícita (14 dias).
+- [x] Passo “Verificar artefactos” que falha se o ZIP não tiver os dois módulos
       ou se o módulo não tiver versículos.
 
 **Aceitação:** qualquer execução com progresso tem, no mínimo, um ZIP

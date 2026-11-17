@@ -564,23 +564,78 @@ LEIA_ME = (
 )
 
 
-def _empacotar(saida: Path) -> str | None:
-    """ZIP com os dois módulos e um LEIA-ME curto, pronto para copiar ao telefone."""
+def _id_execucao() -> str:
+    """Número da execução (ou um identificador local) para os nomes dos pacotes."""
+    bruto = _env('GITHUB_RUN_NUMBER', '') or datetime.now(timezone.utc).strftime('%Y%m%d-%H%M')
+    return ''.join(c for c in bruto if c.isalnum() or c in '-_') or 'local'
+
+
+def _zipar(destino: Path, ficheiros: list[tuple[Path, str]]) -> str | None:
+    """Cria um ZIP atómico; devolve None se não houver nada para incluir."""
     from zipfile import ZIP_DEFLATED, ZipFile
-    modulos = [saida / nome for nome in ('BEE.SQLite3', 'BEE.commentaries.SQLite3')]
-    if not all(caminho.exists() for caminho in modulos):
+    if not ficheiros:
         return None
-    destino = saida / 'BEE-modulos.zip'
     temporario = destino.with_name(f'.{destino.name}.bee-tmp')
     try:
         with ZipFile(temporario, 'w', ZIP_DEFLATED) as pacote:
-            for caminho in modulos:
-                pacote.write(caminho, caminho.name)
+            for caminho, nome in ficheiros:
+                if caminho.exists():
+                    pacote.write(caminho, nome)
+        os.replace(temporario, destino)
+    finally:
+        temporario.unlink(missing_ok=True)
+    return str(destino)
+
+
+def _empacotar(saida: Path) -> str | None:
+    """ZIP com os dois módulos e um LEIA-ME curto, pronto para copiar ao telefone."""
+    modulos = [saida / nome for nome in ('BEE.SQLite3', 'BEE.commentaries.SQLite3')]
+    if not all(caminho.exists() for caminho in modulos):
+        return None
+    destino = saida / f'BEE-modulos-{_id_execucao()}.zip'
+    ficheiros = [(caminho, caminho.name) for caminho in modulos]
+    temporario = saida / f'.{destino.name}.bee-tmp'
+    from zipfile import ZIP_DEFLATED, ZipFile
+    try:
+        with ZipFile(temporario, 'w', ZIP_DEFLATED) as pacote:
+            for caminho, nome in ficheiros:
+                pacote.write(caminho, nome)
             pacote.writestr('LEIA-ME.txt', LEIA_ME)
         os.replace(temporario, destino)
     finally:
         temporario.unlink(missing_ok=True)
     return str(destino)
+
+
+def _empacotar_capitulos(saida: Path) -> str | None:
+    """ZIP com um HTML por capítulo, incluindo os capítulos em curso."""
+    pasta = saida.parent / 'capitulos'
+    if not pasta.is_dir():
+        return None
+    ficheiros = [( caminho, caminho.name) for caminho in sorted(pasta.glob('*.html'))]
+    return _zipar(saida / f'BEE-capitulos-{_id_execucao()}.zip', ficheiros)
+
+
+def _empacotar_diagnostico(saida: Path, dados: Path) -> str | None:
+    """ZIP com relatório, estado, diário e quarentena desta execução."""
+    ficheiros: list[tuple[Path, str]] = []
+    for caminho in (
+        saida / 'RELATORIO.txt',
+        dados / '.bee' / 'estado.json',
+        dados / '.bee' / 'diario.md',
+        dados / '.bee' / 'quarentena.json',
+    ):
+        if caminho.exists():
+            ficheiros.append((caminho, caminho.name))
+    return _zipar(saida / f'BEE-diagnostico-{_id_execucao()}.zip', ficheiros)
+
+
+def _empacotar_tudo(saida: Path, dados: Path) -> dict[str, str | None]:
+    return {
+        'modulos': _empacotar(saida),
+        'capitulos': _empacotar_capitulos(saida),
+        'diagnostico': _empacotar_diagnostico(saida, dados),
+    }
 
 
 def _escrever_relatorio(
@@ -823,10 +878,11 @@ def main() -> int:
             diario.escrever(publicado, 'erro')
             print(f'AVISO: {publicado}', file=sys.stderr)
 
-    pacote = _empacotar(saida)
     relatorio = _escrever_relatorio(
         saida, dados, motores, resultado, publicado, ramo, exportados,
     )
+    pacotes = _empacotar_tudo(saida, dados)
+    pacote = pacotes['modulos']
     env = (saida / 'BEE.SQLite3')
     trabalho = proximo_trabalho(livros, dados)
     faltam_livro, faltam_fila = _passo_do_plano(dados, livros)
@@ -957,7 +1013,17 @@ def main() -> int:
     if pacote:
         linhas.append(
             f'- **Descarregue para o MyBible:** Abaixo, em *Artifacts* → '
-            f'`BEE-modulos.zip` com os dois ficheiros .SQLite3.'
+            f'`{Path(pacote).name}` com os dois ficheiros .SQLite3.'
+        )
+    if pacotes['capitulos']:
+        linhas.append(
+            f'- **Capítulos num ZIP:** `{Path(pacotes["capitulos"]).name}` '
+            '(HTML por capítulo, incluindo os que estão em curso).'
+        )
+    if pacotes['diagnostico']:
+        linhas.append(
+            f'- **Diagnóstico:** `{Path(pacotes["diagnostico"]).name}` '
+            '(relatório, estado, diário e quarentena).'
         )
     _resumo('\n'.join(linhas))
     # 'nada' com falhas deve deixar a execução vermelha no GitHub — exceto
