@@ -19,3 +19,31 @@
 - 2026-11-17T15:04:16+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-17T15:04:16+00:00 — Módulos recompilados no fim do ciclo: 18/1189 capítulos, 766 versículos.
 - 2026-11-17T15:04:16+00:00 — Capítulos exportados para leitura: 19 (1 mudaram nesta execução).
+- 2026-11-17T15:32:58+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-17T15:33:10+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:33:10+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:33:20+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-17T15:33:21+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-17T15:33:27+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-17T15:33:35+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:33:35+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:33:35+00:00 — **ERRO** Ciclo 4 falhou: Nenhum provedor conseguiu responder: Groq · openai/gpt-oss-120b: quota esgotada; Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:33:35+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
+- 2026-11-17T15:33:59+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (2/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-17T15:34:11+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-17T15:34:25+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-17T15:34:35+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.0s (1/2).
+- 2026-11-17T15:35:00+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.0s (1/2).
+- 2026-11-17T15:35:11+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:35:11+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:35:19+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-17T15:35:29+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-17T15:35:44+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-17T15:36:25+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-17T15:36:37+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:36:37+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:36:38+00:00 — Quota de Groq · openai/gpt-oss-120b esgotada 3 vezes; fica de fora até ao próximo dia.
+- 2026-11-17T15:36:38+00:00 — **ERRO** Ciclo 5 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.; Groq · openai/gpt-oss-120b: quota esgotada
+- 2026-11-17T15:36:38+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
+- 2026-11-17T15:36:39+00:00 — Módulos recompilados no fim do ciclo: 19/1189 capítulos, 806 versículos.
+- 2026-11-17T15:36:39+00:00 — Capítulos exportados para leitura: 20 (2 mudaram nesta execução).
