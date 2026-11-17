@@ -85,7 +85,7 @@ sem autorização explícita.
 
 ### Testes
 
-`python3 -m unittest discover -s tests` → **145 testes, 2 skipped, OK**.
+`python3 -m unittest discover -s tests` → **146 testes, 2 skipped, OK**.
 Foram acrescentados testes para o 429 sem espera, o limite de 45 s, a contagem
 de tentativas, o prazo do ciclo, o orçamento com o Gemini sozinho e o
 relatório sem módulos.
@@ -149,6 +149,9 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
   atrasado.
 - `scripts/verificar_dados.py` verifica sequência de versículos, texto,
   comentário e regressões; o workflow proposto corre-o com `--minimo 18`.
+- `_commit_dados` atualiza `refs/remotes/origin/main` depois de cada push: sem
+  isso, o checkpoint e a publicação final do mesmo ciclo eram commits irmãos e
+  o segundo push era recusado por não ser fast-forward.
 - O workflow proposto (`docs/bee-autopiloto.yml`) já não tem o passo de
   recuperar `bee-dados` e define `BEE_BRAMO_DADOS: main`.
 

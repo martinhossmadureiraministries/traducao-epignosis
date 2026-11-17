@@ -19,7 +19,7 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
 
-Cada peça funciona offline nos testes: 145 testes automáticos não usam rede nem chaves.
+Cada peça funciona offline nos testes: 146 testes automáticos não usam rede nem chaves.
 
 ### O que cada execução faz
 
@@ -397,7 +397,7 @@ python autopiloto.py --livros 640,500         # fila restrita
 python autopiloto.py --zip BEE.zip            # pacote com os dois módulos
 python autopiloto.py --sem-compilar           # só JSON (compila depois com gerar_bee.py --compilar)
 python gerar_bee.py --compilar                # compilar sem IA, sem rede e sem chave
-python -m unittest discover -s tests -v       # 145 testes, sem rede nem chaves
+python -m unittest discover -s tests -v       # 146 testes, sem rede nem chaves
 ```
 
 Lista completa: `python autopiloto.py --help`.
