@@ -167,6 +167,10 @@ def _commit_dados(ramo: str, mensagem: str, pastas: list[str]) -> str:
         comando[2:2] = ['-p', pai.splitlines()[0]]
     novo = _git(*comando, env=env).stdout.strip()
     _git('push', 'origin', f'{novo}:refs/heads/{ramo}')
+    # Sem isto, o checkpoint e a publicação final do mesmo ciclo partiam ambos
+    # do `origin/main` antigo; o segundo commit era irmão do primeiro e o push
+    # era recusado por não ser fast-forward. O estado/diário ficava por publicar.
+    _git('update-ref', f'refs/remotes/origin/{ramo}', novo)
     return 'JSON publicados' if pai else 'ramo de dados criado'
 
 

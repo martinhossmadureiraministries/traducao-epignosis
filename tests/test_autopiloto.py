@@ -1117,6 +1117,36 @@ class DadosNoMainTest(unittest.TestCase):
         import nuvem
         self.assertEqual(nuvem.RAMO_DADOS, 'main')
 
+    def test_dois_commits_no_mesmo_ciclo_sao_fast_forward(self):
+        """Checkpoint + publicação final não podem ser commits irmãos."""
+        import nuvem
+        raiz = Path(tempfile.mkdtemp(prefix='bee-ff-'))
+        self.addCleanup(__import__('shutil').rmtree, raiz, True)
+        remoto = raiz / 'remoto.git'
+        repo = raiz / 'repo'
+        subprocess.run(['git', 'init', '-q', '--bare', str(remoto)], check=True)
+        subprocess.run(['git', 'init', '-q', str(repo)], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.email', 't@e'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.name', 't'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'remote', 'add', 'origin', str(remoto)], check=True)
+        dados = repo / 'livros_json'
+        dados.mkdir()
+        arquivo = dados / '640_Filemom.json'
+        arquivo.write_text(json.dumps({'chapters': {'1': [{'verse': 1}]}}), encoding='utf-8')
+        with patch.dict(os.environ, {'BEE_REPO': str(repo)}, clear=False):
+            nuvem._commit_dados('main', 'checkpoint', ['livros_json'])
+            arquivo.write_text(
+                json.dumps({'chapters': {'1': [{'verse': 1}, {'verse': 2}]}}),
+                encoding='utf-8',
+            )
+            nuvem._commit_dados('main', 'final', ['livros_json'])
+        log = subprocess.run(
+            ['git', '-C', str(remoto), 'log', '--format=%s', 'main'],
+            capture_output=True, text=True, check=True,
+        ).stdout.splitlines()
+        self.assertEqual(log[:2], ['final', 'checkpoint'])
+
+
     def test_verificador_aceita_os_dados_do_main(self):
         raiz = Path(__file__).resolve().parents[1]
         resultado = subprocess.run(
