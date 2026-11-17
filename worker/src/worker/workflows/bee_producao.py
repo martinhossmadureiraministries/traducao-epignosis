@@ -24,7 +24,7 @@ FALHAS_PARA_PARAR = 3
 
 class EntradaProducao(BaseModel):
     repositorio: str = REPOSITORIO_PADRAO
-    ramo_dados: str = 'bee-dados'
+    ramo_dados: str = 'main'
     modelo: str = 'mistral-medium-latest'
     versos_por_fatia: int = 24
     versos_por_pedido: int = 8

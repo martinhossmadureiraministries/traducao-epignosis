@@ -283,17 +283,17 @@ O `bee-dados` fica arquivado como histórico.
 
 Ações:
 
-- [ ] Migrar os 18 capítulos do `bee-dados` para o `main`, preservando
-      `history`, `review`, `bibliography` e `sources`.
-- [ ] Corrigir `nuvem.py::_unir_progresso` para fundir também metadados, não só
-      versículos (hoje pode perder `history`/`review`).
-- [ ] Regenerar João 18:1–12 (perdidos na execução #12). Custo estimado: 1–2
-      pedidos. Se o texto antigo existir em cache/log, recuperar primeiro.
-- [ ] Remover a dependência do `worktree /tmp/bee-remoto` e do `git fetch` do
+- [x] Migrar os 18 capítulos do `bee-dados` para o `main`, preservando
+      `history`, `review`, `bibliography` e `sources` (eram idênticos).
+- [x] Corrigir `nuvem.py`: o `main` é a fonte; `_unir_progresso` deixou de ser
+      usado no caminho normal e o `BEE_REMOTO` foi removido.
+- [ ] Regenerar João 18:1–12 (perdidos na execução #12). O estado aponta para
+      João 18:1; falta uma execução com chaves. Custo estimado: 1–2 pedidos.
+- [x] Remover a dependência do `worktree /tmp/bee-remoto` e do `git fetch` do
       ramo de dados; o checkout do `main` já traz tudo.
-- [ ] Criar `scripts/verificar_dados.py` que compara:
-      JSON ↔ contagens ↔ módulos SQLite ↔ `versos_por_capitulo.json`.
-- [ ] Criar uma etiqueta/tag por cada marco (ex.: `dados-18-capitulos`).
+- [~] Criar `scripts/verificar_dados.py` (JSON e regressões; falta a comparação
+      com os módulos SQLite).
+- [x] Criar etiqueta/tag de segurança: `arquivo-bee-dados-2026-11-17`.
 
 **Aceitação:** um clone limpo do `main` mostra 18/1189 no `--status`;
 `--compilar` produz módulos com 766 versículos; não há dois sítios com números
