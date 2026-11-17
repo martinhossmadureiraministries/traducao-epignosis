@@ -13,6 +13,7 @@ import autopiloto
 from bee.agenda import (
     Agendador, ConfigAgenda, Diario, Estado, dentro_da_janela, livros_na_fila,
 )
+from bee.arquivos import novo_livro, salvar_livro
 from bee.catalogo import POR_NUMERO as LIVROS_POR_NUMERO
 from bee.gerador import ConfigGeracao, gerar_fatia
 from bee.ia import MotorIA, PROVEDORES, Rodizio, VERSOS_POR_PEDIDO_PADRAO
@@ -952,6 +953,60 @@ class HTTPFalso:
 
     def obter(self, requisicao, descricao, limite=None):
         return json.dumps(self.resposta).encode()
+
+
+class CapitulosExportadosTest(Base):
+    def _livro(self, capitulo, versos, completo=True):
+        livro = LIVROS_POR_NUMERO[230]
+        dados = novo_livro(livro)
+        colecao = 'chapters' if completo else 'in_progress'
+        dados.setdefault(colecao, {})[str(capitulo)] = versos
+        salvar_livro(self.dados / '230.json', dados, livro)
+        return livro
+
+    def _versos(self, numeros):
+        return [
+            {'verse': n, 'text': f'Texto {n}.',
+             'commentary': '<p><b>Análise Léxica:</b> teste.</p>'}
+            for n in numeros
+        ]
+
+    def test_capitulo_produzido_vira_html_legivel(self):
+        from nuvem import exportar_capitulos
+        livro = self._livro(23, self._versos([1, 2, 3, 4, 5, 6]))
+        diario = Diario(self.dados / '.bee' / 'diario.md')
+        destino = self.raiz / 'entregas' / 'capitulos'
+        exportados = exportar_capitulos(self.dados, destino, {}, diario)
+        self.assertEqual(exportados, ['Salmos-023.html'])
+        html = (destino / 'Salmos-023.html').read_text(encoding='utf-8')
+        self.assertIn(f'<h1>{livro.nome} 23</h1>', html)
+        self.assertIn('Texto 2.', html)
+        self.assertIn('Análise Léxica', html)
+        self.assertIn('NÃO revisto', html)
+        self.assertNotIn('em curso', html)
+
+    def test_capitulo_em_curso_e_exportado_com_aviso(self):
+        from nuvem import _mapa_capitulos, exportar_capitulos
+        self._livro(23, self._versos([1, 2]), completo=False)
+        antes = _mapa_capitulos(self.dados)
+        self.assertEqual(antes, {(230, 23): 2})
+        self._livro(23, self._versos([1, 2, 3]), completo=False)
+        diario = Diario(self.dados / '.bee' / 'diario.md')
+        destino = self.raiz / 'entregas' / 'capitulos'
+        exportados = exportar_capitulos(self.dados, destino, antes, diario)
+        self.assertEqual(exportados, ['Salmos-023.html'])
+        html = (destino / 'Salmos-023.html').read_text(encoding='utf-8')
+        self.assertIn('em curso: 3 de 6 versículos', html)
+
+    def test_so_exporta_capitulos_que_mudaram(self):
+        from nuvem import exportar_capitulos
+        self._livro(23, self._versos([1, 2, 3, 4, 5, 6]))
+        diario = Diario(self.dados / '.bee' / 'diario.md')
+        destino = self.raiz / 'entregas' / 'capitulos'
+        antes = {(230, 23): 6, (230, 24): 0}
+        self._livro(24, self._versos([1, 2]), completo=False)
+        exportados = exportar_capitulos(self.dados, destino, antes, diario)
+        self.assertEqual(exportados, ['Salmos-024.html'])
 
 
 class CLIautopilotoTest(Base):
