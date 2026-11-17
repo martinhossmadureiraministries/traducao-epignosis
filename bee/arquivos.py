@@ -97,6 +97,15 @@ def carregar_json(texto: str) -> Any:
         recuperado = _corte_valido(texto.strip())
         if recuperado is not None:
             return recuperado
+        # A corrupção também surge a meio (aspas sem escape, vírgula em falta):
+        # em 17/11 o João 18:1-10 falhou 3 vezes seguidas assim e cada tentativa
+        # perdeu a resposta inteira. O erro indica o primeiro caractere
+        # impossível de interpretar; os versículos anteriores a esse ponto
+        # continuam válidos e podem ser guardados.
+        if isinstance(exc, json.JSONDecodeError) and exc.pos:
+            recuperado = _corte_valido(texto[:exc.pos].strip())
+            if recuperado is not None:
+                return recuperado
         raise DadosInvalidos(f'JSON inválido: {exc}') from exc
 
 

@@ -81,6 +81,48 @@ class IATest(unittest.TestCase):
             self.assertIn(titulo, versiculo['commentary'])
         self.assertIn('não devolvida pelo modelo', versiculo['commentary'])
 
+    def test_json_corrompido_a_meio_salva_os_versiculos_anteriores(self):
+        """17/11: João 18:1-10 voltou 3 vezes com JSON inválido a meio (aspas
+        sem escape) e cada tentativa perdeu a resposta inteira."""
+        corrompido = (
+            '{"verses":['
+            '{"verse":1,"text":"Verso 1","commentary":"<p>Análise Léxica: a.</p>'
+            '<p>Crítica Textual: b.</p><p>Síntese Exegética: c.</p>"},'
+            '{"verse":2,"text":"Verso "2","commentary":"<p>x</p>"}]}'
+        )
+        http = HTTPFalso({'choices': [{'finish_reason': 'stop', 'message': {'content': corrompido}}]})
+        motor = MotorIA('openai', 'gpt-6-luna', 'x', http, 8192, aplicar_revisao=False)
+        fontes = [{'verse': 1, 'base': []}, {'verse': 2, 'base': []}]
+        resultado = motor.gerar(POR_NUMERO[500], 1, fontes)
+        self.assertEqual([v['verse'] for v in resultado], [1])
+
+    def test_numero_de_versiculo_como_texto_e_aceite(self):
+        """17/11: o modelo devolveu "verse": "11" e o lote foi rejeitado."""
+        resposta = retorno([1])
+        resposta['verses'][0]['verse'] = '1'
+        http = HTTPFalso({'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(resposta)}}]})
+        motor = MotorIA('openai', 'gpt-6-luna', 'x', http, 8192, aplicar_revisao=False)
+        resultado = motor.gerar(POR_NUMERO[500], 1, [{'verse': 1, 'base': []}])
+        self.assertEqual(resultado[0]['verse'], 1)
+
+    def test_resposta_parcial_contigua_e_aceite(self):
+        resposta = retorno([1, 2])
+        http = HTTPFalso({'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(resposta)}}]})
+        motor = MotorIA('openai', 'gpt-6-luna', 'x', http, 8192, aplicar_revisao=False)
+        fontes = [{'verse': n, 'base': []} for n in (1, 2, 3)]
+        resultado = motor.gerar(POR_NUMERO[500], 1, fontes)
+        self.assertEqual([v['verse'] for v in resultado], [1, 2])
+
+    def test_resposta_com_lacuna_ou_excesso_continua_rejeitada(self):
+        http = HTTPFalso({'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(retorno([1, 3]))}}]})
+        motor = MotorIA('openai', 'gpt-6-luna', 'x', http, 8192, aplicar_revisao=False)
+        fontes = [{'verse': n, 'base': []} for n in (1, 2, 3)]
+        with self.assertRaises(RespostaInvalida):
+            motor.gerar(POR_NUMERO[500], 1, fontes)
+        http.resposta = {'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(retorno([1, 2, 3, 4]))}}]}
+        with self.assertRaises(RespostaInvalida):
+            motor.gerar(POR_NUMERO[500], 1, fontes)
+
     def test_retry_429_respeita_retry_after_e_nao_expoe_chave(self):
         headers = Message()
         headers['Retry-After'] = '3'

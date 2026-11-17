@@ -652,7 +652,23 @@ class MotorIA:
             if not isinstance(raiz, dict) or 'verses' not in raiz:
                 raise DadosInvalidos('O objeto deve conter a lista verses.')
             versiculos = raiz['verses']
-            validar_versiculos(versiculos, range(inicio, fim + 1), contexto)
+            if isinstance(versiculos, list):
+                for item in versiculos:
+                    numero = item.get('verse') if isinstance(item, dict) else None
+                    if isinstance(numero, str) and numero.strip().isdigit():
+                        # Em 17/11 o modelo devolveu "verse": "11" e o lote foi
+                        # rejeitado por ser texto em vez de número.
+                        item['verse'] = int(numero.strip())
+                # Uma resposta que traga menos versículos do que os pedidos, mas
+                # comece no primeiro esperado, é aceite: o gerador guarda o que
+                # veio e continua do versículo seguinte em vez de repetir o
+                # pedido inteiro (e gastar quota) por causa dos que faltam.
+                if 0 < len(versiculos) <= fim - inicio + 1:
+                    validar_versiculos(versiculos, range(inicio, inicio + len(versiculos)), contexto)
+                else:
+                    validar_versiculos(versiculos, range(inicio, fim + 1), contexto)
+            else:
+                validar_versiculos(versiculos, range(inicio, fim + 1), contexto)
             for versiculo in versiculos:
                 texto_comentario = unescape(re.sub(r'<[^>]+>', ' ', versiculo['commentary']))
                 texto_comentario = ''.join(
