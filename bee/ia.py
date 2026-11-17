@@ -15,7 +15,7 @@ import unicodedata
 import urllib.request
 from typing import Any, Callable, Iterator, Sequence
 
-from .arquivos import DadosInvalidos, carregar_json, validar_versiculos
+from .arquivos import DadosInvalidos, carregar_json, sanear_html, validar_versiculos
 from .catalogo import Livro
 from .rede import ClienteHTTP, CotaExcedida, ErroRede
 
@@ -49,7 +49,8 @@ SYSTEM_PROMPT = (
     'Quando houver referências repartidas ou contexto de versículo vizinho, confira os limites '
     'e não atribua automaticamente diferenças de numeração a variantes textuais. '
     'Em cada commentary inclua as seções Análise Léxica, Crítica Textual e Síntese Exegética. '
-    'Apenas tags HTML simples, sem atributos, links, imagens, scripts ou Markdown. '
+    'No comentário use apenas <p>, <br>, <b>, <strong>, <i>, <em>, <ul>, <ol>, <li>, <sup> e '
+    '<sub>, sem atributos, sem <div> e sem HTML dentro de valores: as três secções começam em <p>. '
     'Nos textos bíblicos use apenas <i> e </i> quando necessário. '
     'Não omita nem acrescente números, não devolva introduções e não copie uma tradução portuguesa existente.'
 )
@@ -383,7 +384,7 @@ class MotorIA:
                 # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
                 # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}
-            if self.provedor == 'groq' and 'gpt-oss' in self.modelo:
+            if self.provedor == 'groq' and 'oss' in self.modelo:
                 # Os modelos GPT-OSS "pensam" antes de responder e esses tokens
                 # contam para max_tokens: com esforço baixo cabem lotes maiores
                 # sem truncar (a causa mais comum de respostas cortadas).
@@ -453,6 +454,10 @@ class MotorIA:
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
                     # Modelo retirado ou inexistente: não gasta mais tentativas nele.
+                    return self._requisicao(mensagem)
+                if isinstance(exc, CotaExcedida) and self._proximo_modelo('quota esgotada'):
+                    # A quota é por modelo/chave: outro modelo do mesmo serviço
+                    # pode ainda responder, sem gastar as tentativas restantes.
                     return self._requisicao(mensagem)
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
@@ -543,13 +548,31 @@ class MotorIA:
                     if not unicodedata.combining(c)
                 )
                 texto_comentario = ' '.join(texto_comentario.split())
-                for secao in ('analise lexica', 'critica textual', 'sintese exegetica'):
+                for secao, titulo in (
+                    ('analise lexica', 'Análise Léxica'),
+                    ('critica textual', 'Crítica Textual'),
+                    ('sintese exegetica', 'Síntese Exegética'),
+                ):
                     if secao not in texto_comentario:
-                        raise DadosInvalidos(f"{contexto}:{versiculo['verse']}: falta a seção {secao!r} no comentário.")
+                        # Perder o lote inteiro por falta de um título obrigava a
+                        # repetir pedidos pagos em quota. A secção é assinalada
+                        # como ausente e a revisão humana vê-o no módulo.
+                        versiculo['commentary'] += (
+                            '<p><b>' + titulo + ':</b> não devolvida pelo modelo nesta '
+                            'geração; não verificada. Assinalado para revisão.</p>'
+                        )
         except DadosInvalidos as exc:
             raise RespostaInvalida(f'{contexto}: {exc}') from exc
-        # Não armazene quaisquer chaves extras que o modelo possa ter inventado.
-        return [{'verse': v['verse'], 'text': v['text'], 'commentary': v['commentary']} for v in versiculos]
+        # Normaliza a marcação (div -> p, atributos fora, tags a mais fechadas)
+        # e não armazena chaves que o modelo possa ter inventado.
+        return [
+            {
+                'verse': v['verse'],
+                'text': sanear_html(v['text']),
+                'commentary': sanear_html(v['commentary'], True),
+            }
+            for v in versiculos
+        ]
 
 
 def _rotulo(motor: Any) -> str:
@@ -563,6 +586,8 @@ class Rodizio:
     que o gerador não precisa de saber quantos serviços estão configurados.
     """
 
+    QUOTA_PARA_DESISTIR = 3
+
     def __init__(self, motores: list[MotorIA], registar: Any = None):
         if not motores:
             raise ValueError('Nenhum provedor configurado.')
@@ -570,6 +595,10 @@ class Rodizio:
         self._indice = 0
         self.registar = registar
         self.exaustos: set[int] = set()
+        # Um HTTP 429 costuma ser o limite por minuto, não a quota do dia:
+        # desistir do provedor ao primeiro 429 foi o que deixou a produção sem
+        # nenhum serviço. Só se desiste depois de várias falhas.
+        self.falhas_quota: dict[int, int] = {}
 
     @property
     def _atual(self) -> MotorIA:
@@ -601,9 +630,20 @@ class Rodizio:
                 resultado = motor.gerar(livro, capitulo, fontes, estilo)
             except CotaExcedida:
                 erros.append(f'{_rotulo(motor)}: quota esgotada')
-                self.exaustos.add(indice)
-                if self.registar:
-                    self.registar(f'Quota esgotada em {_rotulo(motor)}; a passar ao provedor seguinte.')
+                falhas = self.falhas_quota.get(indice, 0) + 1
+                self.falhas_quota[indice] = falhas
+                if falhas >= self.QUOTA_PARA_DESISTIR:
+                    self.exaustos.add(indice)
+                    if self.registar:
+                        self.registar(
+                            f'Quota de {_rotulo(motor)} esgotada {falhas} vezes; '
+                            'fica de fora até ao próximo dia.'
+                        )
+                elif self.registar:
+                    self.registar(
+                        f'Limite por minuto em {_rotulo(motor)} ({falhas}/{self.QUOTA_PARA_DESISTIR}); '
+                        'a tentar outro provedor e a voltar a este em breve.'
+                    )
                 continue
             except ErroRede as exc:
                 erros.append(f'{_rotulo(motor)}: {exc}')

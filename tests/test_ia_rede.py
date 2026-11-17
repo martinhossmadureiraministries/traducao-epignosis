@@ -75,8 +75,11 @@ class IATest(unittest.TestCase):
             motor.gerar(POR_NUMERO[500], 1, [{'verse':1}])
         ruim = {'verses': [{'verse': 1, 'text': 'Texto', 'commentary': '<p>Só uma nota.</p>'}]}
         http.resposta = {'choices': [{'finish_reason':'stop', 'message': {'content':json.dumps(ruim)}}]}
-        with self.assertRaisesRegex(RespostaInvalida, 'falta a seção'):
-            motor.gerar(POR_NUMERO[500], 1, [{'verse':1}])
+        # Uma secção em falta não perde o lote: fica assinalada para revisão.
+        versiculo = motor.gerar(POR_NUMERO[500], 1, [{'verse':1}])[0]
+        for titulo in ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética'):
+            self.assertIn(titulo, versiculo['commentary'])
+        self.assertIn('não devolvida pelo modelo', versiculo['commentary'])
 
     def test_retry_429_respeita_retry_after_e_nao_expoe_chave(self):
         headers = Message()

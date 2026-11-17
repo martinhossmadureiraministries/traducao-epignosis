@@ -4,11 +4,11 @@ from __future__ import annotations
 import json
 import os
 import re
-from html.parser import HTMLParser
 from pathlib import Path
 import tempfile
 from typing import Any
 
+from . import sanea
 from .catalogo import Livro, POR_NUMERO
 
 
@@ -36,62 +36,34 @@ def carregar_json(texto: str) -> Any:
         raise DadosInvalidos(f'JSON inválido: {exc}') from exc
 
 
-class _HTMLSeguro(HTMLParser):
-    def __init__(self, permitidas: set[str]):
-        super().__init__(convert_charrefs=True)
-        self.permitidas = permitidas
-        self.pilha: list[str] = []
-        self.texto: list[str] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag not in self.permitidas or attrs:
-            raise DadosInvalidos(f'Tag HTML ou atributo não permitido: <{tag}>.')
-        if tag != 'br':
-            self.pilha.append(tag)
-
-    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag != 'br' or tag not in self.permitidas or attrs:
-            raise DadosInvalidos(f'Tag HTML não permitida: <{tag}/>.')
-
-    def handle_endtag(self, tag: str) -> None:
-        if tag == 'br' or not self.pilha or self.pilha[-1] != tag:
-            raise DadosInvalidos(f'Tag HTML mal fechada: </{tag}>.')
-        self.pilha.pop()
-
-    def handle_data(self, data: str) -> None:
-        self.texto.append(data)
-
-    def handle_comment(self, data: str) -> None:
-        raise DadosInvalidos('Comentários HTML não são permitidos.')
-
-    def handle_decl(self, decl: str) -> None:
-        raise DadosInvalidos('Declarações HTML não são permitidas.')
-
-    def unknown_decl(self, data: str) -> None:
-        raise DadosInvalidos('Declarações HTML não são permitidas.')
-
-    def handle_pi(self, data: str) -> None:
-        raise DadosInvalidos('Instruções de processamento HTML não são permitidas.')
-
-
 def validar_html(valor: Any, campo: str, comentario: bool = False) -> None:
+    """Aceita HTML simples e tolera contentores neutros (`<div>`).
+
+    Antes, um `<div>` a envolver os parágrafos fazia a **resposta inteira** ser
+    rejeitada: o lote era dividido até 1 versículo e, com o serviço instável, a
+    produção parava por causa de uma tag sem significado. `<div>`, `<span>` e
+    afins passam a ser aceites e convertidos em `<p>` ao guardar. As regras de
+    segurança mantêm-se: scripts, iframes, comentários, atributos e tags
+    desconhecidas continuam a ser recusados nesta porta.
+    """
     if not isinstance(valor, str) or not valor.strip():
         raise DadosInvalidos(f'{campo} deve ser texto não vazio.')
-    permitidas = {'i'} if not comentario else {
-        'p', 'br', 'b', 'strong', 'i', 'em', 'ul', 'ol', 'li', 'sup', 'sub'
-    }
-    parser = _HTMLSeguro(permitidas)
     try:
-        parser.feed(valor)
-        parser.close()
-    except (ValueError, AssertionError) as exc:
-        if isinstance(exc, DadosInvalidos):
-            raise
-        raise DadosInvalidos(f'HTML inválido em {campo}: {exc}') from exc
-    if parser.pilha:
-        raise DadosInvalidos(f'Tag HTML não fechada em {campo}: <{parser.pilha[-1]}>.')
-    if not ''.join(parser.texto).strip():
+        limpo = sanea.limpar(valor, comentario, estrito=True)
+    except sanea.ErroHTML as exc:
+        raise DadosInvalidos(str(exc)) from exc
+    if not re.sub(r'<[^>]*>', '', limpo).strip():
         raise DadosInvalidos(f'{campo} não pode conter apenas marcação.')
+
+
+def sanear_html(valor: Any, comentario: bool = False) -> Any:
+    """Devolve o HTML limpo (usada antes de guardar um lote)."""
+    if not isinstance(valor, str):
+        return valor
+    try:
+        return sanea.limpar(valor, comentario)
+    except sanea.ErroHTML:
+        return valor
 
 
 def validar_colchetes_variantes(valor: str, campo: str) -> None:

@@ -408,7 +408,7 @@ class IndisponibilidadeTest(Base):
             codigo = nuvem.main()
         self.assertEqual(codigo, 1)
         self.assertEqual(len(chamadas), 1, 'erro de configuração não deve ser repetido')
-        self.assertIn('configuração', saida.getvalue())
+        self.assertIn('chave', saida.getvalue())
 
 
 
@@ -562,8 +562,139 @@ class DescobertaDeModeloTest(unittest.TestCase):
         self.assertTrue(any('404' in a for a in avisos))
 
 
+class MotorDeLotes:
+    """Motor mínimo com lotes registados (independente do MotorFalso local)."""
+
+    provedor = 'gemini'
+    modelo = 'modelo-teste'
+
+    def __init__(self, tamanho_max=None, falhar=False):
+        self.calls = []
+        self.tamanho_max = tamanho_max
+        self.falhar = falhar
+
+    def gerar(self, livro, capitulo, fontes, estilo=None):
+        from bee.ia import RespostaInvalida, RespostaTruncada
+        nums = [f['verse'] for f in fontes]
+        self.calls.append(nums)
+        if self.falhar:
+            raise RespostaInvalida('JSON incompleto')
+        if self.tamanho_max is not None and len(nums) > self.tamanho_max:
+            raise RespostaTruncada('limite')
+        return [
+            {'verse': n, 'text': f'Texto {n}.',
+             'commentary': ('<p><b>Análise Léxica:</b> não verificada.</p>'
+                            '<p><b>Crítica Textual:</b> sem variante.</p>'
+                            '<p><b>Síntese Exegética:</b> rascunho.</p>')}
+            for n in nums
+        ]
+
+
+class MarcacaoDoModeloTest(unittest.TestCase):
+    """O que aconteceu em produção: `<div>` fazia o lote ser recusado e dividido."""
+
+    def test_div_envolvente_e_aceite_e_convertido(self):
+        from bee.arquivos import sanear_html as sanitizar_para_guardar, validar_html
+        texto = ('<div><p><b>Análise Léxica</b><br>ἦν (ēn - era).</p>'
+                 '<p><b>Crítica Textual</b><br>Sem variante.</p>'
+                 '<p><b>Síntese Exegética</b><br>Rascunho.</p></div>')
+        validar_html(texto, 'commentary', True)          # antes: erro, lote dividido
+        limpo = sanitizar_para_guardar(texto, True)
+        self.assertNotIn('<div>', limpo)
+        self.assertEqual(limpo.count('<p>'), limpo.count('</p>'))
+        self.assertIn('Análise Léxica', limpo)
+
+    def test_script_e_conteudo_de_script_continuam_recusados(self):
+        from bee.arquivos import DadosInvalidos, validar_html
+        for perigoso in ('<script>alert(1)</script>', '<iframe src="x"></iframe>',
+                         '<p onclick="x">oi</p>', '<p>a</p></p>', '<!-- nota --><p>a</p>'):
+            with self.assertRaises(DadosInvalidos, msg=perigoso):
+                validar_html(perigoso, 'commentary', True)
+
+    def test_tag_sem_significado_e_atributo_sao_limpos_na_limpeza(self):
+        from bee.arquivos import sanear_html as sanitizar_para_guardar
+        self.assertEqual(sanitizar_para_guardar('a <b onclick="x">b</b>', True), 'a b')
+        self.assertEqual(sanitizar_para_guardar('<p>a</p></p><b>solto', True),
+                         '<p>a</p><b>solto</b>')
+
+    def test_texto_biblico_so_pode_ter_italico(self):
+        from bee.arquivos import DadosInvalidos, validar_html
+        validar_html('palavra <i>acrescentada</i>', 'text')
+        with self.assertRaises(DadosInvalidos):
+            validar_html('palavra <b>negrito</b>', 'text')
+
+    def test_resposta_com_div_e_guardada_sem_repetir_o_lote(self):
+        """Antes: 3 tentativas, lote dividido até 1 versículo e produção parada."""
+        from bee.ia import MotorIA
+        from bee.arquivos import ler_livro
+        pedidos = []
+
+        class DivHTTP:
+            def obter(self, requisicao, descricao, limite=None, log=None):
+                corpo = json.loads(requisicao.data)
+                fontes = json.loads(corpo['messages'][1]['content'].rsplit('\n\n', 1)[-1])
+                pedidos.append(len(fontes))
+                versos = [{'verse': f['verse'], 'text': 'Texto.',
+                           'commentary': '<div><p>Análise Léxica: x</p>'
+                                         '<p>Crítica Textual: y</p>'
+                                         '<p>Síntese Exegética: z</p></div>'} for f in fontes]
+                return json.dumps({'choices': [{'finish_reason': 'stop', 'message': {
+                    'content': json.dumps({'verses': versos}, ensure_ascii=False)}}]},
+                    ensure_ascii=False).encode()
+
+        motor = MotorIA('groq', ['openai/gpt-oss-120b'], 'chave', DivHTTP(), 4096)
+        versos = motor.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': n} for n in (1, 2, 3)])
+        self.assertEqual(len(versos), 3)
+        self.assertNotIn('<div>', versos[0]['commentary'])
+
+
+class RetomadaDoLoteTest(unittest.TestCase):
+    """A produção parava em João 5:7 e insistia nele em vez de avançar."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dados = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_lote_repetido_apos_falhas_vai_direto_a_1_versiculo(self):
+        from bee.gerador import ConfigGeracao, gerar_fatia
+        motor = MotorDeLotes(tamanho_max=1)
+        config = ConfigGeracao(versos_por_pedido=8, max_versos=4,
+                               falhas_anteriores=2, lote_retomar=1)
+        gerar_fatia([LIVROS_POR_NUMERO[640]], self.dados, FontesFalsas(), motor, config)
+        self.assertEqual(motor.calls[0], [1], 'devia pedir só o versículo em falta')
+
+    def test_falhas_do_mesmo_lote_ficam_no_progresso(self):
+        from bee.gerador import ConfigGeracao, gerar_fatia
+        motor = MotorDeLotes(falhar=True)
+        with self.assertRaises(Exception):
+            gerar_fatia([LIVROS_POR_NUMERO[640]], self.dados, FontesFalsas(), motor,
+                        ConfigGeracao(versos_por_pedido=1, tentativas_conteudo=2))
+
+    def test_agendador_guarda_o_lote_em_falta_entre_ciclos(self):
+        from bee.agenda import Agendador, ConfigAgenda, Estado
+        from bee.gerador import Progresso
+        agendador = Agendador.__new__(Agendador)
+        agendador.estado = Estado()
+        agendador.diario = type('D', (), {'escrever': staticmethod(lambda *a, **k: None)})()
+        progresso = Progresso(livro=LIVROS_POR_NUMERO[500], capitulo=5, lote_inicio=7,
+                              falhas_lote=1)
+        agendador._registar_lote(progresso)
+        self.assertEqual(
+            (agendador.estado.lote_livro, agendador.estado.lote_capitulo,
+             agendador.estado.lote_versiculo),
+            (500, 5, 7),
+        )
+        self.assertEqual(agendador.estado.lote_falhas, 1)
+        agendador._registar_lote(Progresso(livro=LIVROS_POR_NUMERO[500], capitulo=5, versos=3))
+        self.assertIsNone(agendador.estado.lote_versiculo)
+
+
 class RodizioTest(unittest.TestCase):
     def test_salta_para_o_seguinte_quando_a_quota_esgota(self):
+        """Um 429 é limite por minuto: passa ao seguinte sem o dar por perdido."""
         notas = []
         primeiro = MotorFalso(falhar_em=1, erro=CotaExcedida('HTTP 429'))
         segundo = MotorFalso()
@@ -571,17 +702,32 @@ class RodizioTest(unittest.TestCase):
         versos = rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
         self.assertEqual(versos[0]['verse'], 1)
         self.assertEqual(rodizio.provedor, segundo.provedor)
-        self.assertIn(primeiro.provedor, rodizio.esgotados())
-        self.assertTrue(any('Quota esgotada' in n for n in notas))
+        self.assertEqual(rodizio.esgotados(), [], 'um 429 isolado não é quota do dia')
+        self.assertTrue(any('Limite por minuto' in n for n in notas))
+
+    def test_429_repetido_marca_o_provedor_como_esgotado(self):
+        notas = []
+
+        class Sempre429(MotorFalso):
+            def gerar(self, *a, **k):
+                raise CotaExcedida('HTTP 429; esgotadas 3 tentativas.')
+
+        rodizio = Rodizio([Sempre429(), Sempre429()], registar=notas.append)
+        for _ in range(Rodizio.QUOTA_PARA_DESISTIR):
+            with self.assertRaises(ErroRede):
+                rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+        self.assertEqual(sorted(rodizio.esgotados()), ['gemini', 'gemini'])
+        self.assertTrue(any('fica de fora' in n for n in notas))
 
     def test_todos_esgotados_levanta_erro_de_rede(self):
-        rodizio = Rodizio([
-            MotorFalso(falhar_em=1, erro=CotaExcedida('HTTP 429')),
-            MotorFalso(falhar_em=1, erro=CotaExcedida('HTTP 429')),
-        ])
+        class Sempre429(MotorFalso):
+            def gerar(self, *a, **k):
+                raise CotaExcedida('HTTP 429; esgotadas 3 tentativas.')
+
+        rodizio = Rodizio([Sempre429(), Sempre429()])
         with self.assertRaises(ErroRede):
             rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
-        self.assertEqual(len(rodizio.esgotados()), 2)
+        self.assertEqual(rodizio.esgotados(), [])
 
 
 class ProvedoresTest(unittest.TestCase):

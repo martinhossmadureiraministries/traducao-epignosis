@@ -124,8 +124,8 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
                        help='chaves separadas por vírgula (alternativa às variáveis de ambiente)')
     fonte.add_argument('--versos-por-pedido', metavar='PROVEDOR=N',
                        help='lote por provedor, por exemplo groq=4,gemini=8')
-    fonte.add_argument('--max-tokens', type=_positivo, default=4096, metavar='N',
-                       help='limite de tokens de saída por pedido (padrão: 4096)')
+    fonte.add_argument('--max-tokens', type=_positivo, default=12000, metavar='N',
+                       help='limite de tokens de saída por pedido (padrão: 12000; 8 versículos com comentário não cabem em 4096)')
     fonte.add_argument('--pausa', type=_nao_negativo, default=1.0, metavar='SEGUNDOS',
                        help='intervalo mínimo entre pedidos HTTP (padrão: 1)')
     fonte.add_argument('--tentativas', type=_positivo, default=3, metavar='N',
