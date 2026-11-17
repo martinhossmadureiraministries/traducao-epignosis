@@ -249,6 +249,36 @@ jobs:
             || gh release create "bee-previa" --repo "$GITHUB_REPOSITORY" \
                  --title "BEE — prévia (rascunho automático)" \
                  --notes "Um ficheiro HTML por capítulo gerado pelo autopiloto, para leitura e verificação no telemóvel. Conteúdo gerado por IA e NÃO revisto. Os módulos MyBible completos estão no artifact BEE-modulos de cada execução."
+          gh release upload "bee-previa" "${ficheiros[@]}" --clobber --repo "$GITHUB_REPOSITORY"ara ler e
+      # verificar no telemóvel sem esperar pelo módulo compilado, que só recebe
+      # capítulos completos e consecutivos.
+      - name: Guardar os capítulos como artefato
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: BEE-capitulos-${{ github.run_number }}
+          path: entregas/capitulos/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      # Artifacts só se descarregam com sessão iniciada no GitHub; o release é
+      # público, por isso os capítulos lá acumulados abrem em qualquer telemóvel.
+      - name: Publicar os capítulos no release bee-previa
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          ficheiros=(entregas/capitulos/*.html)
+          if [ ${#ficheiros[@]} -eq 0 ]; then
+            echo "Sem capítulos novos nesta execução."
+            exit 0
+          fi
+          gh release view "bee-previa" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
+            || gh release create "bee-previa" --repo "$GITHUB_REPOSITORY" \
+                 --title "BEE — prévia (rascunho automático)" \
+                 --notes "Um ficheiro HTML por capítulo gerado pelo autopiloto, para leitura e verificação no telemóvel. Conteúdo gerado por IA e NÃO revisto. Os módulos MyBible completos estão no artifact BEE-modulos de cada execução."
           gh release upload "bee-previa" "${ficheiros[@]}" --clobber --repo "$GITHUB_REPOSITORY"        python nuvem.py
 
       - name: Avisar se a produção falhou
