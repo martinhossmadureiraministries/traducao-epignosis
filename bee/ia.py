@@ -87,6 +87,8 @@ class Provedor:
     # rajada: pedir mais depressa do que isto devolve erro, mesmo com quota
     # diária disponível. Valores conservadores; confirme na sua conta.
     tokens_por_minuto: int = 0
+    # Teto de tokens por dia. 0 = sem limite conhecido.
+    tokens_por_dia: int = 0
 
     @property
     def modelo_padrao(self) -> str:
@@ -122,10 +124,13 @@ PROVEDORES: dict[str, Provedor] = {
         'Plano gratuito sem cartão. O limite real é o de tokens por minuto (TPM).',
         'https://api.groq.com/openai/v1/models',
         (),
-        # Documentado pela Groq em 2026: gpt-oss-120b tem 8.000 TPM no plano
-        # gratuito. Com lotes de 6 versículos e ~1.500 tokens por pedido,
-        # 8.000 TPM dá ~5 pedidos por minuto. Pedir mais depressa = 429.
+        # Documentado pela Groq em 2026: gpt-oss-120b tem 8.000 TPM e 200.000
+        # TPD (tokens por dia) no plano gratuito. Com ~3.000 tokens por pedido
+        # de 6 versículos, o TPD corta às ~66 respostas/dia — é o tecto mais
+        # apertado dos dois serviços e a razão para o Gemini ficar de reserva
+        # (mais quota, menos fiável).
         8_000,
+        tokens_por_dia=200_000,
     ),
     'cerebras': Provedor(
         'cerebras', 'Cerebras', 'https://api.cerebras.ai/v1/chat/completions',
