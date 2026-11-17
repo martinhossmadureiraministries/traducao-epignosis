@@ -99,11 +99,19 @@ python3 autopiloto.py --uma-vez
      versículo vai para quarentena e a fila não bloqueia.
 4. `python3 autopiloto.py --testar` isola a chave e o modelo sem produzir texto.
 
-## Desenvolvimento
+## CI e desenvolvimento
+
+O CI proposto está em `docs/ci.yml` (igual a `modelos/ci.yml`): corre os testes,
+valida os JSON, verifica a coerência da documentação e a igualdade
+modelo↔workflow. Para ativar, copie-o para `.github/workflows/ci.yml` na UI,
+como no workflow de produção. Enquanto o workflow ativo estiver corrompido, o
+passo de sincronização falha — é intencional.
 
 ```bash
 python3 -m unittest discover -s tests -v
 python3 -m unittest tests.test_workflow_sincronizado -v
+python3 scripts/verificar_dados.py --minimo 18
+python3 scripts/verificar_documentacao.py
 ```
 
 Os testes principais usam só a biblioteca padrão. O `worker/` é experimental e

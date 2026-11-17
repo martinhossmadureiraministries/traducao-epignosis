@@ -401,13 +401,13 @@ poucos ficheiros; um leitor sabe qual é o comando de produção.
 
 ### Etapa 6 — CI e testes (1–2 h)
 
-- [ ] `.github/workflows/ci.yml` em `push`/`pull_request`: unittest, validação
-      dos JSON, compilação de uma amostra, igualdade modelo↔workflow.
+- [ ] `.github/workflows/ci.yml` em `push`/`pull_request` (proposta pronta em
+      `docs/ci.yml`; falta colar na UI por causa da permissão `workflows`).
 - [ ] Testes do worker em job separado (ou marcados como opcionais) com as
       dependências fixadas.
-- [ ] Teste que falha se houver segredos, `.env` ou SQLite versionados.
-- [ ] Teste que compara as contagens documentadas em `docs/ESTADO.md` com os
-      dados reais.
+- [x] Teste que falha se houver segredos, `.env` ou SQLite versionados (`tests/test_repositorio.py`).
+- [x] Teste que compara as contagens documentadas com os dados reais
+      (`tests/test_documentacao.py` e `scripts/verificar_documentacao.py`).
 - [ ] (Opcional) `ruff`/`black` para consistência.
 
 **Aceitação:** um PR não faz merge com testes vermelhos; o número de testes no
