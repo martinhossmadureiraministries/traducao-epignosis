@@ -11,6 +11,9 @@ import unittest
 RAIZ = Path(__file__).resolve().parent.parent
 MODELO = RAIZ / 'modelos' / 'bee-autopiloto.yml'
 ATIVO = RAIZ / '.github' / 'workflows' / 'bee-autopiloto.yml'
+REL_MODELO = RAIZ / 'modelos' / 'bee-relogio.yml'
+REL_DOC = RAIZ / 'docs' / 'bee-relogio.yml'
+REL_ATIVO = RAIZ / '.github' / 'workflows' / 'bee-relogio.yml'
 
 
 class WorkflowSincronizadoTest(unittest.TestCase):
@@ -57,6 +60,38 @@ class WorkflowSincronizadoTest(unittest.TestCase):
         self.assertNotEqual(minutos, '0', 'a hora cheia é o pior minuto para agendar')
         self.assertNotRegex(expressao, r'^\*/[1-9]\b',
                             'passos de */N perdem o alinhamento quando o GitHub atrasa')
+
+    def test_cron_horario(self):
+        """24 disparos por dia: a alta frequência é travada em silêncio.
+
+        O cron '7,27,47' esteve no `main` desde 16/11 e produziu zero execuções
+        agendadas; 20 em 20 minutos é frequência de filtro anti-abuso.
+        """
+        texto = MODELO.read_text(encoding='utf-8')
+        linha = [l for l in texto.splitlines() if 'cron:' in l][0]
+        expressao = linha.split("'")[1].strip()
+        self.assertEqual(expressao, '23 * * * *')
+
+
+class RelogioSincronizadoTest(unittest.TestCase):
+    """O segundo relógio é opcional no GitHub, mas as cópias não divergem."""
+
+    def test_docs_e_modelo_sao_iguais(self):
+        self.assertTrue(REL_DOC.is_file(), 'falta docs/bee-relogio.yml')
+        self.assertEqual(REL_DOC.read_text(encoding='utf-8'),
+                         REL_MODELO.read_text(encoding='utf-8'))
+
+    def test_cron_do_relogio_depois_da_producao(self):
+        texto = REL_MODELO.read_text(encoding='utf-8')
+        linha = [l for l in texto.splitlines() if 'cron:' in l][0]
+        self.assertEqual(linha.split("'")[1].strip(), '41 * * * *')
+
+    def test_workflow_ativo_igual_se_existir(self):
+        """Enquanto não for colado na UI, o relógio não corre — e o teste diz isso."""
+        if not REL_ATIVO.is_file():
+            self.skipTest('bee-relogio.yml ainda não foi colado na UI (ver docs/AGENDADOR.md)')
+        self.assertEqual(REL_ATIVO.read_text(encoding='utf-8'),
+                         REL_MODELO.read_text(encoding='utf-8'))
 
 
 if __name__ == '__main__':

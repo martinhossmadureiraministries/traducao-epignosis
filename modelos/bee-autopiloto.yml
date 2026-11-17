@@ -10,17 +10,27 @@ name: BEE — produção automática
 # do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
 # com o seu computador desligado. Se a sua conta não tiver minutos de Actions
 # gratuitos, desative o workflow e use `autopiloto.py --horas 6` localmente.
+#
+# O cron do GitHub pode NÃO registar este agendador (foi o que aconteceu entre
+# 16/11 e 17/11: 0 execuções `schedule`). Há duas redes de segurança, descritas
+# em docs/AGENDADOR.md:
+#   1. `.github/workflows/bee-relogio.yml` — outro cron, independente, que
+#      despacha este workflow quando vê que ele não correu na última hora;
+#   2. um pinger externo (cron-job.org) que chama `workflow_dispatch` pela API.
 
 on:
   schedule:
-    # A cada 20 minutos, a começar fora da hora cheia.
+    # UMA vez por hora, ao minuto 23.
     # Repositório público = minutos de Actions ilimitados, por isso o que conta
     # é a quota da IA, não o orçamento de minutos.
-    # Duas armadilhas do cron do GitHub que já nos custaram horas de produção:
-    #   * o minuto 0 é o mais congestionado (execuções em atraso ou perdidas);
-    #   * um cron '*/15' perde o alinhamento por horas quando o GitHub atrasa.
-    # '7,27,47' mantém sempre o mesmo compasso.
-    - cron: '7,27,47 * * * *'
+    # Porque não de 20 em 20 minutos (era '7,27,47')? Porque essa expressão
+    # esteve no `main` desde 16/11 e NUNCA produziu uma execução `schedule`:
+    # zero em 5 h 30 (17/11, 21:23 UTC). Cron muito frequente é travado em
+    # silêncio pelo filtro anti-abuso do GitHub; 24 disparos por dia não são.
+    # Outras armadilhas já pagas: o minuto 0 é o mais congestionado e um
+    # '*/15' perde o alinhamento quando o GitHub atrasa. O minuto 23 é fixo e
+    # fora da hora cheia.
+    - cron: '23 * * * *'
   pull_request:
     # Permite despachar a produção a partir deste PR ("Run workflow").
     types: [labeled]
@@ -108,11 +118,12 @@ jobs:
       (github.event_name == 'schedule') ||
       (github.event_name == 'pull_request' && github.event.label.name == 'bee-producao')
     runs-on: ubuntu-latest
-    # 12 min: MENOS do que o intervalo do cron (20 min). O ciclo interno pára
-    # aos 9 min (BEE_TEMPO_MAXIMO) para ainda haver tempo de compilar,
-    # publicar e carregar artefactos. Antes eram 50 min: a execução ficava
-    # presa em Retry-After de 20 minutos e era cancelada sem publicar.
-    timeout-minutes: 12
+    # 15 min, com o cron a disparar de 60 em 60 minutos: há folga de sobra.
+    # O ciclo interno pára aos 9 min (BEE_TEMPO_MAXIMO) para ainda haver tempo
+    # de compilar, publicar e carregar artefactos. Antes eram 50 min: a
+    # execução ficava presa em Retry-After de 20 minutos e era cancelada sem
+    # publicar nada.
+    timeout-minutes: 15
     steps:
       - name: Obter o código
         uses: actions/checkout@v7

@@ -252,15 +252,19 @@ gerou e diz a verdade no resumo.
 
 #### 1.5 Perceber porque o cron não dispara
 
-- [ ] Criar um workflow mínimo de diagnóstico (`cron: '*/5 * * * *'`) que só
-      escreve a hora no resumo. Se ele disparar, o problema é a expressão ou o
-      registo do workflow principal; se não disparar, é configuração do
-      repositório/agendador.
-- [ ] Reenviar o workflow principal para o `main` e confirmar
-      `gh run list --event schedule`.
-- [ ] Se o cron continuar sem disparar: usar um agendador externo que chame
-      `workflow_dispatch` por API, ou um cron local/Raspberry Pi. Não deixar a
-      produção dependente de um mecanismo que não funciona.
+- [x] Confirmar nas execuções quantas foram agendadas: às 21:23 UTC de 17/11,
+      **0 `schedule`** contra 1 `workflow_dispatch`. O cron de 20 em 20 minutos
+      nunca foi registado (filtro anti-abuso de alta frequência).
+- [x] Baixar a frequência para horária (`23 * * * *`) e `timeout-minutes: 15`.
+- [x] Criar `scripts/verificar_agendador.py`: diz em segundos se há execuções
+      agendadas recentes (`a-funcionar`, `nunca-agendado`, `parado`).
+- [x] Criar `bee-relogio.yml`: segundo cron (minuto 41) que despacha a produção
+      quando ela não correu na última hora.
+- [x] Documentar o pinger externo (cron-job.org + token fine-grained com
+      `Actions: Read and write`) para o caso de o GitHub não agendar nenhum dos
+      dois workflows: ver [AGENDADOR.md](AGENDADOR.md), fase 4.
+- [ ] Confirmar uma execução `schedule` real depois de colar os dois ficheiros
+      na UI. Sem isso, a produção continua dependente do botão.
 
 **Aceitação da Etapa 1:**
 

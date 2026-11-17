@@ -30,8 +30,13 @@ e a quarentena em `livros_json/.bee/quarentena.json`.
 
 ## Nuvem (GitHub Actions)
 
-- Workflow: `.github/workflows/bee-autopiloto.yml`, cron `7,27,47 * * * *`
-  (20 em 20 minutos), `timeout-minutes: 12`.
+- Workflow: `.github/workflows/bee-autopiloto.yml`, cron `23 * * * *`
+  (1× por hora, ao minuto 23), `timeout-minutes: 15`.
+- Segundo relógio: `.github/workflows/bee-relogio.yml`, cron `41 * * * *`;
+  despacha a produção se ela não correu nos últimos 65 min.
+- Se o GitHub não disparar o cron, o caminho está em
+  [AGENDADOR.md](AGENDADOR.md). Para saber onde está:
+  `python3 scripts/verificar_agendador.py`.
 - Segredos necessários: `GEMINI_API_KEY` e, como reserva, `GROQ_API_KEY`
   (**Settings → Secrets and variables → Actions**). Nunca no repositório.
 - O repositório é **público**: os minutos de Actions são ilimitados; o limite
@@ -39,21 +44,29 @@ e a quarentena em `livros_json/.bee/quarentena.json`.
 
 ### Aplicar a versão correcta do workflow
 
-O workflow ativo já está alinhado com `docs/bee-autopiloto.yml` (17/11/2026).
-Se voltar a divergir, o push de `.github/workflows/*` pode ser recusado quando a
-integração não tem a permissão `workflows`; nesse caso, a alteração faz-se na UI:
+O push de `.github/workflows/*` é recusado quando a integração não tem a
+permissão `workflows`; por isso a alteração faz-se na UI. Desde 17/11/2026 há
+**dois** ficheiros a colar — o da produção (cron horário) e o do relógio de
+segurança — e o passo a passo completo, com o que verificar em cada fase, está
+em [AGENDADOR.md](AGENDADOR.md). Resumo:
 
 1. Abrir
    <https://github.com/martinhossmadureiraministries/traducao-epignosis/edit/main/.github/workflows/bee-autopiloto.yml>.
 2. Seleccionar tudo, apagar e colar o conteúdo de
-   [`docs/bee-autopiloto.yml`](bee-autopiloto.yml) (ou de
-   `modelos/bee-autopiloto.yml`, que deve ser igual).
+   [`docs/bee-autopiloto.yml`](bee-autopiloto.yml) (igual a
+   `modelos/bee-autopiloto.yml`).
 3. **Commit changes**.
-4. Confirmar com `python3 -m unittest tests.test_workflow_sincronizado -v`
-   e correr uma vez em **Actions → BEE — produção automática → Run workflow**.
+4. Criar `.github/workflows/bee-relogio.yml` e colar
+   [`docs/bee-relogio.yml`](bee-relogio.yml).
+5. **Actions → BEE — produção automática → ⋯ → Disable → ⋯ → Enable**, para o
+   GitHub voltar a registar o agendador, e depois **Run workflow** uma vez.
+6. Confirmar com `python3 -m unittest tests.test_workflow_sincronizado -v`
+   (verde quando os dois ficheiros activos forem iguais aos modelos) e, uma hora
+   depois, `python3 scripts/verificar_agendador.py` (deve dizer `a-funcionar`).
 
-O teste `test_modelo_e_workflow_ativo_sao_iguais` falha de propósito se o
-workflow ativo voltar a divergir do modelo.
+O teste `test_modelo_e_workflow_ativo_sao_iguais` falha de propósito — e diz
+qual é a linha que difere — enquanto os ficheiros activos não receberem os
+modelos.
 
 ### Pausar
 

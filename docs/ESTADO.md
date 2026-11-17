@@ -14,7 +14,7 @@ etapas; este documento regista a execução.
 | Fonte de dados | `main` (o ramo `bee-dados` deixa de ser a fonte) |
 | Provedores de IA | **Gemini** (principal) e **Groq** (reserva) |
 | OVHcloud | Só com opt-in explícito (`OVH_API_KEY_ATIVO=1` ou chave) |
-| Cadência | cron a cada **20 min**, `timeout-minutes: 12` (proposto) |
+| Cadência | cron **horário** (`23 * * * *`), `timeout-minutes: 15`; o cron de 20 min nunca disparou (17/11) |
 | Prazo interno | `BEE_TEMPO_MAXIMO=540` s por ciclo e `BEE_TEMPO_TOTAL=660` s por execução |
 | Visibilidade | repositório continua **público** |
 | Dados no código | os JSON ficam versionados no `main` (Etapa 2) |
@@ -77,7 +77,8 @@ sem autorização explícita.
     “GitHub App … without `workflows` permission”. O ficheiro ativo tem
     `timeout-minutes: 12`, mas os passos finais estão triplicados/corrompidos;
     a configuração do job só fica correta quando a proposta for copiada na UI.
-  - `timeout-minutes: 12`; cron `7,27,47` (20 min).
+  - `timeout-minutes: 15`; cron `23 * * * *` (horário). Foi `7,27,47` (20 min)
+    até 17/11 — expressão que o GitHub nunca chegou a agendar.
   - `BEE_VERSOS_POR_CICLO=80`, `BEE_TENTATIVAS_CICLO=2`,
     `BEE_TENTATIVAS=2`, `BEE_TIMEOUT=90`, `BEE_PEDIDOS_POR_DIA=500`.
   - `BEE_PROVEDORES=gemini,groq`, `OVH_API_KEY_ATIVO=0`.
@@ -101,8 +102,13 @@ relatório sem módulos, a quarentena e os pacotes com o número da execução.
   e criou `BEE-modulos-16` e `BEE-capitulos-16`.
 - A execução 16 não somou versículos: o Gemini devolveu **HTTP 503** e a quota
   da Groq estava esgotada. Não é falha do agendador; o próximo ciclo volta a
-  tentar. A primeira execução **agendada** depois da correção ainda está por
-  confirmar (o cron é `7,27,47` UTC).
+  tentar.
+- **O cron nunca disparou.** Verificado às 21:23 UTC de 17/11: 1 execução no
+  total, `event=workflow_dispatch`; **0 `schedule`** em 5 h 30 desde que o
+  workflow ficou activo. O cron de 20 em 20 minutos foi travado em silêncio
+  (filtro anti-abuso do GitHub); passou a horário (`23 * * * *`) e ganhou o
+  `bee-relogio.yml`. Procedimento e verificação: [AGENDADOR.md](AGENDADOR.md) e
+  `python3 scripts/verificar_agendador.py`.
 - Apesar da falha, a execução `44115508985` (run 15) **produziu** os artefactos
   `BEE-modulos-15` (763 KB) e `BEE-capitulos-15` (253 KB), actualizou os HTML no
   release `bee-previa` e levou os dados a 19 capítulos completos e 818
@@ -193,12 +199,12 @@ preserva os 18 capítulos/766 versículos.
 
 | Etapa | Estado |
 |---|---|
-| 1. Actions sob controlo | feita e aplicada; aguarda confirmação do primeiro cron |
+| 1. Actions sob controlo | feita e aplicada; cron horário e relógio prontos a colar (AGENDADOR.md) |
 | 2. Dados no `main` | feito: 19 capítulos completos/818 versículos guardados |
 | 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
 | 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |
 | 5. Documentação coerente | feita: README curto, runbook, arquitetura e editorial; guias antigos em `arquivo/` |
 | 6. CI e testes | proposta em `docs/ci.yml`; testes de higiene e documentação feitos |
-| 7. Diagnóstico do cron | por fazer |
+| 7. Diagnóstico do cron | feito: `schedule` nunca correu; hora+cron reduzidos, relógio e pinger documentados |
 | 8. Limpeza física | feita: raiz curta e antigos em `docs/arquivo/` |
 | 9. Verificação final | por fazer |

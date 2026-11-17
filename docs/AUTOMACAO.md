@@ -14,7 +14,7 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 |---|---|
 | `autopiloto.py` | O motor. Trabalha em ciclos (por exemplo, 80 versículos por execução de 12 minutos), compila e registra o progresso. Anda com o seu computador. |
 | `nuvem.py` | O mesmo trabalho numa GitHub Action: continua com o computador desligado. |
-| `bee-autopiloto.yml` | O agendador na nuvem (20 em 20 minutos, 24 h). É a **fonte correcta**: `./scripts/aplicar_workflow.sh` copia-a para `modelos/` e `.github/workflows/`; o push do workflow ativo pode precisar da UI (ver secção 4). |
+| `bee-autopiloto.yml` | O agendador na nuvem (1×/h ao minuto 23, 24 h). `bee-relogio.yml` é o segundo relógio que o vigia (ver [AGENDADOR.md](AGENDADOR.md)). É a **fonte correcta**: `./scripts/aplicar_workflow.sh` copia-a para `modelos/` e `.github/workflows/`; o push do workflow ativo pode precisar da UI (ver secção 4). |
 | `bee/ia.py` | Provedores com plano gratuito. A produção usa **Gemini + Groq**; Cerebras/OpenRouter/OpenAI ficam fora da fila por omissão. |
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
@@ -57,22 +57,20 @@ limitador passou a ser a **quota gratuita da IA**, e o número que a controla é
 
 Configuração actual, a 24 horas por dia:
 
-> **Workflow ativo vs. versão correcta:** o GitHub recusou o push de
-> `.github/workflows/` por falta da permissão `workflows`. O ficheiro ativo tem
-> `timeout-minutes: 12`, mas os passos finais estão corrompidos (duplicados e
-> com linhas concatenadas); a versão correcta está em
-> `bee-autopiloto.yml`. O `nuvem.py` limita o ciclo a 9 min e a execução a
-> 11 min, por isso o trabalho é publicado mesmo assim. Aplicar pela UI: ver
-> [OPERACAO.md](OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
+> **Agendador:** o push de `.github/workflows/` continua a ser recusado por
+> falta da permissão `workflows`; as alterações ao ficheiro activo fazem-se pela
+> UI (ver [AGENDADOR.md](AGENDADOR.md)). O cron de 20 em 20 minutos esteve no
+> `main` desde 16/11 e nunca disparou: **0 execuções `schedule`**. Passou a
+> horário (`23 * * * *`) e ganhou um segundo relógio (`bee-relogio.yml`).
 
 | Peça | Valor | Porquê |
 |---|---|---|
-| cron | `7,27,47 * * * *` | 3 execuções/hora, fora da hora cheia |
+| cron | `23 * * * *` | 1 execução/hora ao minuto 23: alta frequência é travada em silêncio pelo GitHub |
 | janela | 00–24 | ninguém precisa de estar acordado |
-| `BEE_VERSOS_POR_CICLO` | 80 | bloco que cabe nos 12 min do job |
+| `BEE_VERSOS_POR_CICLO` | 80 | bloco que cabe nos 15 min do job |
 | `BEE_LOTE` | 6 | lotes pequenos, menos respostas truncadas |
 | `BEE_PEDIDOS_POR_DIA` | 500 | teto de segurança (Gemini + Groq) |
-| `BEE_TEMPO_MAXIMO` | 540 s | pára o ciclo antes do `timeout-minutes: 12` |
+| `BEE_TEMPO_MAXIMO` | 540 s | pára o ciclo antes do `timeout-minutes: 15` |
 
 Contas:
 

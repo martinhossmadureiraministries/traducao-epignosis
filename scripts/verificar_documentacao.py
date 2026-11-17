@@ -45,6 +45,19 @@ def verificar() -> list[str]:
                 problemas.append(f'{nome}: ainda contém {velho!r}.')
     if em_curso and f'{guardados}' not in readme:
         problemas.append('README.md: não distingue versículos completos dos que estão em curso.')
+
+    # O cron do modelo e o que os documentos prometem têm de ser o mesmo. Já
+    # houve documentação a jurar 20 minutos com o cron a dizer outra coisa, e
+    # um agendador que não dispara é invisível até alguém contar as execuções.
+    modelo = (RAIZ / 'modelos' / 'bee-autopiloto.yml').read_text(encoding='utf-8')
+    cron = next((linha.split("'")[1] for linha in modelo.splitlines() if 'cron:' in linha), '')
+    if not cron:
+        problemas.append('modelos/bee-autopiloto.yml: não encontrei a expressão cron.')
+    for nome in ('docs/OPERACAO.md', 'docs/AGENDADOR.md'):
+        if cron and cron not in (RAIZ / nome).read_text(encoding='utf-8'):
+            problemas.append(f'{nome}: não menciona o cron real do modelo ({cron}).')
+    if not (RAIZ / 'scripts' / 'verificar_agendador.py').is_file():
+        problemas.append('falta scripts/verificar_agendador.py, indicado em docs/AGENDADOR.md.')
     return problemas
 
 
