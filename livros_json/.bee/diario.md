@@ -47,3 +47,15 @@
 - 2026-11-17T15:36:38+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-17T15:36:39+00:00 — Módulos recompilados no fim do ciclo: 19/1189 capítulos, 806 versículos.
 - 2026-11-17T15:36:39+00:00 — Capítulos exportados para leitura: 20 (2 mudaram nesta execução).
+- 2026-11-17T15:57:58+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-17T15:58:13+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:58:13+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:58:13+00:00 — **ERRO** Ciclo 6 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:58:13+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
+- 2026-11-17T15:58:31+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.4s (1/2).
+- 2026-11-17T15:58:35+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:58:35+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T15:58:35+00:00 — **ERRO** Ciclo 7 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-17T15:58:35+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
+- 2026-11-17T15:58:35+00:00 — Módulos recompilados no fim do ciclo: 19/1189 capítulos, 806 versículos.
+- 2026-11-17T15:58:35+00:00 — Capítulos exportados para leitura: 20 (0 mudaram nesta execução).
