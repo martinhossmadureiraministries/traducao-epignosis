@@ -19,6 +19,7 @@ MyBible `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 |---|---|
 | [docs/ESTADO.md](docs/ESTADO.md) | Fotografia actual: progresso, decisões e o que falta. |
 | [docs/OPERACAO.md](docs/OPERACAO.md) | Ligar, pausar, recuperar e diagnosticar a produção. |
+| [docs/AGENDADOR.md](docs/AGENDADOR.md) | Pôr a produção a correr sozinha (cron, relógio de segurança e pinger externo). |
 | [docs/ARQUITETURA.md](docs/ARQUITETURA.md) | Módulos, fluxo, formato dos JSON e compilação. |
 | [docs/EDITORIAL.md](docs/EDITORIAL.md) | Directrizes editoriais, variantes e revisão. |
 | [AUTOMACAO.md](docs/AUTOMACAO.md) | Quotas gratuitas, provedores, ritmo e resolução de problemas. |
@@ -58,10 +59,14 @@ computador desligado, o mesmo trabalho corre em `nuvem.py` numa GitHub Action
   execução manual **16** (`44120273655`) terminou verde e criou
   `BEE-modulos-16` e `BEE-capitulos-16`.
 - A execução 16 não somou versículos porque o Gemini devolveu **HTTP 503** e a
-  quota da Groq estava esgotada. A próxima execução agendada volta a tentar;
-  isto é disponibilidade dos serviços, não falta de agendamento.
-  A correcção tem de ser colada na UI; o passo a passo está em
-  [docs/OPERACAO.md](docs/OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
+  quota da Groq estava esgotada: é disponibilidade dos serviços, não falta de
+  agendamento.
+- **O cron ainda não dispara:** às 21:23 UTC de 17/11 havia 1 execução (manual)
+  e **0 agendadas** em 5 h 30. O cron foi reduzido a horário (`23 * * * *`) e
+  há um segundo relógio; os dois ficheiros têm de ser colados na UI. Passo a
+  passo, com diagnóstico e alternativa externa:
+  [docs/AGENDADOR.md](docs/AGENDADOR.md). Verificação rápida:
+  `python3 scripts/verificar_agendador.py`.
 - Tudo é provisório e precisa de revisão especializada.
 
 Números de referência: **1.189 capítulos**, **31.102 versículos**. O progresso
