@@ -95,15 +95,14 @@ relatório sem módulos, a quarentena e os pacotes com o número da execução.
 
 ### O que ainda não está validado
 
-- O workflow ativo: **continua corrompido no `main`**. A execução
-  `44109642278` (17/11, 15:01 UTC) usou essa versão e falhou ao fim de 2m36s:
-  os passos de artefactos/release estão triplicados e as linhas
-  `gh release upload ... "$GITHUB_REPOSITORY"ara ler e` e
-  `... "$GITHUB_REPOSITORY"        python nuvem.py` estão concatenadas.
-  A versão correta é `bee-autopiloto.yml` (252 linhas, uma só cópia dos
-  passos) e tem de ser colada na UI em
-  `.github/workflows/bee-autopiloto.yml`; o push direto é recusado por falta da
-  permissão `workflows`.
+- O workflow ativo está **corrigido e igual** a `docs/bee-autopiloto.yml` e a
+  `modelos/bee-autopiloto.yml` (SHA-256 igual, teste de sincronização verde).
+  A execução manual **16** (`44120273655`, 15:57 UTC) terminou verde em 1m12s
+  e criou `BEE-modulos-16` e `BEE-capitulos-16`.
+- A execução 16 não somou versículos: o Gemini devolveu **HTTP 503** e a quota
+  da Groq estava esgotada. Não é falha do agendador; o próximo ciclo volta a
+  tentar. A primeira execução **agendada** depois da correção ainda está por
+  confirmar (o cron é `7,27,47` UTC).
 - Apesar da falha, a execução `44115508985` (run 15) **produziu** os artefactos
   `BEE-modulos-15` (763 KB) e `BEE-capitulos-15` (253 KB), actualizou os HTML no
   release `bee-previa` e levou os dados a 19 capítulos completos e 818
@@ -122,16 +121,14 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 2. Menu **⋯** (canto superior direito) → **Disable workflow**.
 3. Para voltar: **Enable workflow**.
 
-### Aplicar o workflow novo (devido à permissão `workflows`)
+### Workflow: como foi aplicado e como voltar a aplicar
 
-1. `./scripts/aplicar_workflow.sh` copia `bee-autopiloto.yml` para
-   `.github/workflows/bee-autopiloto.yml` e para `modelos/bee-autopiloto.yml`
-   (o teste `test_modelo_e_workflow_ativo_sao_iguais` exige que sejam iguais).
-2. Confirme com `python3 -m unittest tests.test_workflow_sincronizado -v`.
-3. Faça commit e push com uma conta/integração que tenha a permissão
-   `workflows` no GitHub.
-4. Em **Actions → BEE — produção automática → Run workflow**, corra uma vez à
-   mão para confirmar o resumo, o `RELATORIO.txt` e o tempo total.
+A versão ativa foi colada pela UI (o push de `.github/workflows/*` é recusado
+sem a permissão `workflows`). O teste
+`python3 -m unittest tests.test_workflow_sincronizado -v` confirma que os três
+ficheiros são iguais. Se for preciso alterar novamente, copie
+`docs/bee-autopiloto.yml` para `.github/workflows/bee-autopiloto.yml` na UI e
+confirme o teste.
 
 ## Etapa 2 — dados no `main`
 
@@ -196,7 +193,7 @@ preserva os 18 capítulos/766 versículos.
 
 | Etapa | Estado |
 |---|---|
-| 1. Actions sob controlo | feita; workflow ativo ainda por aplicar na UI |
+| 1. Actions sob controlo | feita e aplicada; aguarda confirmação do primeiro cron |
 | 2. Dados no `main` | feito: 19 capítulos completos/818 versículos guardados |
 | 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
 | 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |

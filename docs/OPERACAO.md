@@ -39,8 +39,9 @@ e a quarentena em `livros_json/.bee/quarentena.json`.
 
 ### Aplicar a versão correcta do workflow
 
-O push de `.github/workflows/*` é recusado quando a integração não tem a
-permissão `workflows`. Nesse caso, a alteração faz-se na UI:
+O workflow ativo já está alinhado com `docs/bee-autopiloto.yml` (17/11/2026).
+Se voltar a divergir, o push de `.github/workflows/*` pode ser recusado quando a
+integração não tem a permissão `workflows`; nesse caso, a alteração faz-se na UI:
 
 1. Abrir
    <https://github.com/martinhossmadureiraministries/traducao-epignosis/edit/main/.github/workflows/bee-autopiloto.yml>.
@@ -51,8 +52,8 @@ permissão `workflows`. Nesse caso, a alteração faz-se na UI:
 4. Confirmar com `python3 -m unittest tests.test_workflow_sincronizado -v`
    e correr uma vez em **Actions → BEE — produção automática → Run workflow**.
 
-Enquanto o workflow ativo estiver diferente do modelo, o teste
-`test_modelo_e_workflow_ativo_sao_iguais` falha de propósito.
+O teste `test_modelo_e_workflow_ativo_sao_iguais` falha de propósito se o
+workflow ativo voltar a divergir do modelo.
 
 ### Pausar
 

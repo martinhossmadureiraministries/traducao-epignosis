@@ -54,11 +54,12 @@ computador desligado, o mesmo trabalho corre em `nuvem.py` numa GitHub Action
 - **818 versículos guardados:** 806 nos capítulos completos + João 19:1–12 em
   `in_progress`.
 - A fila retoma em **João 19:13**.
-- A execução `44115508985` produziu os artefactos `BEE-modulos-15` e
-  `BEE-capitulos-15` e actualizou o release `bee-previa`, mas ficou vermelha
-  porque o workflow ativo tenta criar os mesmos artefactos duas vezes (HTTP
-  409). O passo a passo para corrigir está em
-  [docs/OPERACAO.md](docs/OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
+- O workflow ativo já está corrigido e igual a `docs/bee-autopiloto.yml`; a
+  execução manual **16** (`44120273655`) terminou verde e criou
+  `BEE-modulos-16` e `BEE-capitulos-16`.
+- A execução 16 não somou versículos porque o Gemini devolveu **HTTP 503** e a
+  quota da Groq estava esgotada. A próxima execução agendada volta a tentar;
+  isto é disponibilidade dos serviços, não falta de agendamento.
   A correcção tem de ser colada na UI; o passo a passo está em
   [docs/OPERACAO.md](docs/OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
 - Tudo é provisório e precisa de revisão especializada.
