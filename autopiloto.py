@@ -257,19 +257,20 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     # Provedores gratuitos primeiro; os pagos só entram se o utilizador os
     # configurar.
     #
-    # A Groq passou a principal em 17/11: o Gemini respondeu 503 em rajada
-    # durante horas, enquanto a Groq respondia sempre que tinha tokens. O
-    # Gemini fica como reserva — tem mais quota diária (480 pedidos) mas é
-    # menos fiável. `BEE_PROVEDOR_PRINCIPAL` permite inverter sem tocar no
-    # código.
+    # O Gemini respondeu 503 em rajada a 17/11, mas tem a maior quota diária
+    # gratuita (~480 pedidos) e é rápido; a Groq é pequena (~66 pedidos/dia
+    # pelos 200.000 tokens) mas fiável. `BEE_PROVEDOR_PRINCIPAL` escolhe quem
+    # abre a fila sem tocar no código.
     principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'ovh').strip().lower()
-    # Ordem por quota: o Mistral tem ~20x a quota da Groq e é o que mais pode
-    # produzir; o Gemini tem mais quota mas é instável (503); a Groq é pequena
-    # mas fiável; o OpenRouter fecha a fila. `BEE_PROVEDOR_PRINCIPAL` inverte.
-    ordem_nomes = ['ovh', 'gemini', 'groq', 'openrouter', 'cerebras', 'openai']
-    if principal in ordem_nomes:
-        ordem_nomes.remove(principal)
-        ordem_nomes.insert(0, principal)
+    # A OVHcloud anónima vai por ÚLTIMO quando há chaves: aceita 2 pedidos/
+    # minuto, e ficar à frente de um serviço com quota desperdiçava-o — o
+    # rodízio fica preso no primeiro que responde. Sem chave nenhuma, é a
+    # única da fila e o `principal` por omissão volta a pô-la à frente.
+    ordem_nomes = ['gemini', 'groq', 'openrouter', 'cerebras', 'openai', 'ovh']
+    if principal not in ordem_nomes:
+        principal = 'ovh'
+    ordem_nomes.remove(principal)
+    ordem_nomes.insert(0, principal)
     ordem = {nome: i for i, nome in enumerate(ordem_nomes)}
     configurados.sort(key=lambda par: ordem.get(par[0], 99))
     if args.modelo and len(configurados) > 1:
