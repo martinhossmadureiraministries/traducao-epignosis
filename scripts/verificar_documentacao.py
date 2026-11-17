@@ -25,10 +25,12 @@ def numeros_reais() -> tuple[int, int, int, int]:
 def verificar() -> list[str]:
     problemas: list[str] = []
     capitulos, completos, em_curso, guardados = numeros_reais()
-    if (capitulos, completos) != (18, 766):
+    # O progresso só cresce; estes mínimos detectam uma perda de dados sem
+    # obrigar a editar o teste a cada capítulo novo.
+    if (capitulos, completos) < (18, 766):
         problemas.append(
-            f'dados: esperava 18 capítulos e 766 versículos completos; '
-            f'encontrei {capitulos} e {completos}.'
+            f'dados: regressão — esperava pelo menos 18 capítulos e 766 '
+            f'versículos completos; encontrei {capitulos} e {completos}.'
         )
     readme = (RAIZ / 'README.md').read_text(encoding='utf-8')
     for texto in (f'{capitulos} capítulos', f'{guardados} versículos guardados', '1.189', '31.102'):

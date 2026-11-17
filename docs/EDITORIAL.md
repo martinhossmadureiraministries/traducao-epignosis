@@ -1,6 +1,6 @@
 # Plano de trabalho — Bíblia de Estudo Epignósis
 
-**Estado (17/11/2026):** 18 capítulos estruturalmente completos — João 1–17 e Filemom 1 — e João 18:1–19 já guardado em `in_progress`; total de 785 versículos guardados. O responsável aprovou editorialmente a amostra de Salmos 23 e Filemom 1:1–3 e autorizou a produção contínua sem aprovação a cada bloco; isso não aprova os trechos ainda não examinados. Tudo continua provisório e precisa de revisão especializada. O contador operacional é 18/1.189 capítulos completos; não representa aprovação editorial.
+**Estado (17/11/2026):** 19 capítulos estruturalmente completos — João 1–18 e Filemom 1 — e João 19:1–12 já guardado em `in_progress`; total de 818 versículos guardados. O responsável aprovou editorialmente a amostra de Salmos 23 e Filemom 1:1–3 e autorizou a produção contínua sem aprovação a cada bloco; isso não aprova os trechos ainda não examinados. Tudo continua provisório e precisa de revisão especializada. O contador operacional é 19/1.189 capítulos completos; não representa aprovação editorial.
 
 ## 1. Objetivo e forma de trabalho
 
@@ -85,8 +85,8 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-Continuar João a partir de **18:20** (o capítulo 18 tem 40 versículos; os
-primeiros 19 já estão guardados), sem pedir aprovação a cada bloco e
+Continuar João a partir de **19:13** (o capítulo 19 tem 38 versículos; os
+primeiros 12 já estão guardados), sem pedir aprovação a cada bloco e
 actualizando as prévias quando o capítulo fechar. João 5:4 não consta no SBLGNT
 fixado e exige tratamento explícito da versificação e da evidência se for
 apresentado como suplemento. Os textos novos continuam provisórios e precisam

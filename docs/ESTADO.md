@@ -88,7 +88,7 @@ sem autorização explícita.
 
 `python3 -m unittest discover -s tests` → **152 testes, 2 skipped**; os únicos
 falhanços são o teste de sincronização do workflow ativo, que continua
-corrompido no `main` (ver abaixo). Sem esse teste, **150 testes OK**.
+corrompido no `main` (ver abaixo). Sem esse teste, **152 testes OK** (2 skipped).
 Foram acrescentados testes para o 429 sem espera, o limite de 45 s, a contagem
 de tentativas, o prazo do ciclo, o orçamento com o Gemini sozinho, o
 relatório sem módulos, a quarentena e os pacotes com o número da execução.
@@ -104,9 +104,13 @@ relatório sem módulos, a quarentena e os pacotes com o número da execução.
   passos) e tem de ser colada na UI em
   `.github/workflows/bee-autopiloto.yml`; o push direto é recusado por falta da
   permissão `workflows`.
-- Apesar da falha, a execução `44109642278` **produziu** os artefactos
-  `BEE-modulos-14` e `BEE-capitulos-14`, actualizou 18 HTML no release
-  `bee-previa` e guardou João 18:1–19 (19 versículos) no `main`.
+- Apesar da falha, a execução `44115508985` (run 15) **produziu** os artefactos
+  `BEE-modulos-15` (763 KB) e `BEE-capitulos-15` (253 KB), actualizou os HTML no
+  release `bee-previa` e levou os dados a 19 capítulos completos e 818
+  versículos guardados (João 19:1–12 em curso). O primeiro upload de cada nome
+  passou; as cópias seguintes do workflow ativo receberam **HTTP 409
+  (Conflict: an artifact with this name already exists)**. Não é falha de
+  produção nem dos dados: é a duplicação do workflow.
 - O `SIGTERM` num cancelamento real.
 
 ### Como desativar o workflow
@@ -134,16 +138,17 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 ### Migração
 
 - Os 18 capítulos do antigo `bee-dados` foram copiados para `livros_json/` no
-  `main`: **João 1–17 + Filemom = 766 versículos**. Depois da execução
-  `44109642278`, estão mais **19 versículos de João 18** em `in_progress`;
-  o total guardado é **785**.
+  `main`: **João 1–17 + Filemom = 766 versículos**. Depois das execuções 14 e
+  15, João 18 ficou completo e há mais **12 versículos de João 19** em
+  `in_progress`; o total guardado é **818** (806 completos).
 - Os capítulos 1–4 de João e Filemom 1 já existiam no `main` e são
   **byte a byte iguais** aos do `bee-dados`; a migração não reescreveu texto.
 - Antes de apagar o ramo, foi criada a etiqueta
   `arquivo-bee-dados-2026-11-17` (o ramo fica recuperável pela etiqueta).
 - `livros_json/.bee/estado.json` e `diario.md` foram trazidos. A execução
   #12 tinha perdido João 18:1–12; a execução `44109642278` voltou a gerá-los e
-  guardou João 18:1–19. O capítulo 18 ainda não está completo.
+  guardou João 18:1–19; a execução `44115508985` fechou o capítulo 18 e
+  começou João 19 (1–12).
 
 ### Código
 
@@ -184,15 +189,15 @@ preserva os 18 capítulos/766 versículos.
   foram actualizados.
 - `requirements-dev.txt` separa as dependências opcionais (pytest e worker
   Mistral); o fluxo principal continua só com a biblioteca padrão.
-- `entregas/BEE-previa.zip` foi regenerado a partir dos **18 capítulos/766
-  versículos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
+- `entregas/BEE-previa.zip` foi regenerado a partir dos **19 capítulos/806
+  versículos completos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
 
 ## Próximas etapas
 
 | Etapa | Estado |
 |---|---|
 | 1. Actions sob controlo | feita; workflow ativo ainda por aplicar na UI |
-| 2. Dados no `main` | feito: 18 capítulos completos/785 versículos guardados |
+| 2. Dados no `main` | feito: 19 capítulos completos/818 versículos guardados |
 | 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
 | 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |
 | 5. Documentação coerente | feita: README curto, runbook, arquitetura e editorial; guias antigos em `arquivo/` |

@@ -1190,7 +1190,7 @@ class DadosNoMainTest(unittest.TestCase):
             capture_output=True, text=True,
         )
         self.assertEqual(resultado.returncode, 0, resultado.stderr)
-        self.assertIn('18 capítulos completos', resultado.stdout)
+        self.assertRegex(resultado.stdout, r'\d+ capítulos completos')
 
 
 if __name__ == '__main__':

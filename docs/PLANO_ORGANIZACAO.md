@@ -381,7 +381,7 @@ Ações:
       visibilidade do repositório; remover o que já não é usado.
 - [x] `BEE-gerador.zip`: mover para `docs/arquivo/` ou apagar (é um snapshot
       antigo do código).
-- [x] `entregas/BEE-previa.zip`: regenerar a partir dos 18 capítulos ou remover
+- [x] `entregas/BEE-previa.zip`: regenerar a partir dos 19 capítulos ou remover
       até haver uma prévia válida.
 - [ ] `modelos/`: manter uma só cópia do workflow. Recomendação: `.github/` é a
       fonte; `scripts/sincronizar_workflow.py` gera `modelos/`, e o teste
@@ -417,7 +417,7 @@ README é lido do CI, não escrito à mão.
 
 ### Etapa 7 — Validar no MyBible (1 h)
 
-- [ ] Compilar a partir dos 18 capítulos consolidados.
+- [ ] Compilar a partir dos 19 capítulos consolidados.
 - [ ] Abrir os dois SQLite com um leitor independente e conferir 766 versículos
       e 766 comentários.
 - [ ] Copiar para o Android e abrir Filemom 1 e João 1–17.
@@ -425,7 +425,7 @@ README é lido do CI, não escrito à mão.
       telemóvel.
 - [ ] Documentar o caminho exato das pastas e o procedimento de atualização.
 
-**Aceitação:** o utilizador vê 18 capítulos no MyBible e consegue identificar
+**Aceitação:** o utilizador vê 19 capítulos no MyBible e consegue identificar
 que é rascunho.
 
 ---
