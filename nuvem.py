@@ -41,6 +41,10 @@ from bee.trava import EmExecucao, trava
 
 
 ROTULO = 'BEE · nuvem'
+# Decisão de 17/11: os dados vivem no `main`, ao lado do código. O ramo
+# `bee-dados` foi arquivado depois de os 18 capítulos serem migrados; manter
+# dois sítios era a causa de metade das confusões e dos capítulos “perdidos”.
+RAMO_DADOS = 'main'
 
 # O GitHub envia SIGTERM quando o job chega ao timeout-minutes e só depois
 # SIGKILL. Este sinal permite terminar o ciclo no ponto seguro, compilar,
@@ -647,21 +651,6 @@ def main() -> int:
         fuso, fuso_nome = timezone.utc, 'UTC'
         print(f'Aviso: fuso {fuso_nome!r} desconhecido; a usar UTC.', file=sys.stderr)
 
-    remoto = _caminho_remoto(_env('BEE_REMOTO', ''))
-    recuperado = False
-    if _env('BEE_UNIR', '1') != '0' and remoto is not None and remoto.is_dir():
-        recuperado = any(remoto.glob('*.json'))
-        mantidos = _unir_progresso(dados, remoto)
-        if mantidos:
-            print(f'Progresso recuperado sem sobrescrever {mantidos} versículo(s) já existentes localmente.')
-    if remoto is not None and not recuperado:
-        print(
-            'AVISO: não foi possível recuperar o ramo de dados; esta execução começou '
-            'do zero e só pode publicar versículos que produzir agora.',
-            file=sys.stderr, flush=True,
-        )
-        _apagar_recuperado(remoto)
-
     estado_caminho = dados / '.bee' / 'estado.json'
     estado = carregar_estado(estado_caminho)
     diario = Diario(dados / '.bee' / 'diario.md')
@@ -686,7 +675,9 @@ def main() -> int:
         config.hora_inicio, config.hora_fim = 0, 24
 
     livros = livros_na_fila(argumentos.livros, argumentos.ordem)
-    ramo = _env('BEE_BRAMO_DADOS', 'bee-dados')
+    # Ignora `BEE_BRAMO_DADOS`: o workflow antigo ainda aponta para `bee-dados`,
+    # e não queremos que uma execução recrie o ramo que acabámos de arquivar.
+    ramo = RAMO_DADOS
     reparacao, reparados = '', 0
     try:
         reparacao, reparados = _reparar_dados(
@@ -800,19 +791,16 @@ def main() -> int:
         dados, saida.parent / 'capitulos', antes_capitulos, diario,
     )
     depois_cap, depois_versos = _progresso(dados)
-    if recuperado or reparados:
-        origem = (
-            f'recuperados do ramo `{ramo}`'
-            if recuperado else f'reparados a partir do ramo `{ramo}`'
-        )
+    if reparados:
         linhas_recuperacao = (
-            f'- Dados de partida: {origem} '
-            f'({antes_cap} capítulos completos, {antes_versos} versículos).'
+            f'- Dados de partida: {reparados} versículo(s) reparados a partir do ramo '
+            f'`{ramo}` ({antes_cap} capítulos completos, {antes_versos} versículos).'
         )
     else:
+        # O checkout já é o `main`: não há um segundo ramo para “recuperar”.
         linhas_recuperacao = (
-            f'- **Dados de partida: nenhum** — o ramo `{ramo}` não pôde ser recuperado nesta '
-            'execução. Se já havia versículos publicados, esta é a razão pela qual não aparecem.'
+            f'- Dados de partida: `{ramo}` '
+            f'({antes_cap} capítulos completos, {antes_versos} versículos).'
         )
     publicado = 'não configurado'
     if _env('BEE_PUBLICAR', '1') != '0':

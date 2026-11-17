@@ -56,7 +56,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BEE_BRAMO_DADOS: bee-dados
+  BEE_BRAMO_DADOS: main
   BEE_FUSO: Africa/Luanda
   # O cron do GitHub corre em UTC e Angola também, por isso coincidem.
   # BEE_HORA_INICIO/FIM em UTC; BEE_JANELA=0 desliga a janela interna para
@@ -127,22 +127,15 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Recuperar o progresso do ramo de dados
-        run: |
-          rm -rf /tmp/bee-remoto
-          if git fetch origin "$BEE_BRAMO_DADOS" --depth=1 2>/dev/null; then
-            git worktree add --detach /tmp/bee-remoto FETCH_HEAD >/dev/null 2>&1
-            echo "Progresso recuperado do ramo $BEE_BRAMO_DADOS (o código não é alterado)."
-          else
-            echo "Ramo de dados ainda não existe; a começar do zero."
-            mkdir -p /tmp/bee-remoto
-          fi
-          ls livros_json | head -20
-
       - name: Configurar Python
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+
+      - name: Verificar os dados versionados
+        # Barreira contra a regressão que apagou João 5:7–46. O mínimo sobe
+        # quando entra um capítulo novo; nunca desce.
+        run: python3 scripts/verificar_dados.py --minimo 18
 
       - name: Reutilizar as fontes originais (~22 MB)
         uses: actions/cache@v6
@@ -193,8 +186,8 @@ jobs:
       - name: Produzir um bloco, compilar e publicar
         if: github.event_name != 'schedule' || steps.janela.outputs.dentro == 'true'
         env:
-          BEE_REMOTO: /tmp/bee-remoto/livros_json
-          BEE_UNIR: '1'
+          # Os dados já estão no `main`: o checkout trouxe-os. Já não há um
+          # segundo ramo para recuperar antes de produzir.
           # BEE_PROVEDORES (acima) limita a fila a Gemini e Groq. Cada um tem
           # o seu orçamento diário: esgotar um não cala o outro. Chaves de
           # outros serviços, mesmo que existam, não entram.

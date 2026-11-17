@@ -125,12 +125,46 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 4. Em **Actions → BEE — produção automática → Run workflow**, corra uma vez à
    mão para confirmar o resumo, o `RELATORIO.txt` e o tempo total.
 
+## Etapa 2 — dados no `main`
+
+### Migração
+
+- Os 18 capítulos do antigo `bee-dados` foram copiados para `livros_json/` no
+  `main`: **João 1–17 + Filemom = 766 versículos**.
+- Os capítulos 1–4 de João e Filemom 1 já existiam no `main` e são
+  **byte a byte iguais** aos do `bee-dados`; a migração não reescreveu texto.
+- Antes de apagar o ramo, foi criada a etiqueta
+  `arquivo-bee-dados-2026-11-17` (o ramo fica recuperável pela etiqueta).
+- `livros_json/.bee/estado.json` e `diario.md` foram trazidos: o estado aponta
+  para **João 18:1**, que é onde a execução #12 foi interrompida. João 18:1–12
+  não existe em lado nenhum (foi gerado e perdido); o próximo ciclo com chaves
+  volta a produzi-lo.
+
+### Código
+
+- `nuvem.py` passou a usar `RAMO_DADOS = 'main'` e **ignora** o antigo
+  `BEE_BRAMO_DADOS=bee-dados`. Isto evita que o workflow antigo recrie o ramo
+  que foi arquivado.
+- O bloco de recuperação por `BEE_REMOTO` foi removido; o checkout do `main`
+  já traz os dados. `_reparar_dados` continua a proteger contra um checkout
+  atrasado.
+- `scripts/verificar_dados.py` verifica sequência de versículos, texto,
+  comentário e regressões; o workflow proposto corre-o com `--minimo 18`.
+- O workflow proposto (`docs/bee-autopiloto.yml`) já não tem o passo de
+  recuperar `bee-dados` e define `BEE_BRAMO_DADOS: main`.
+
+### Limpeza de ramos
+
+O utilizador autorizou apagar os ramos desnecessários e ficar apenas com o
+ramo de trabalho e o `main`. A lista e o resultado ficam registados abaixo
+(ver “Ramos apagados”).
+
 ## Próximas etapas
 
 | Etapa | Estado |
 |---|---|
 | 1. Actions sob controlo | implementada; falta validar em execução real |
-| 2. Dados no `main` | por fazer |
+| 2. Dados no `main` | feito: 18 capítulos/766 versículos |
 | 3. Capítulos e artefactos visíveis | base pronta (`RELATORIO.txt`); falta publicar/validar |
 | 4. Documentação coerente | por fazer (`AUTOMACAO.md` ainda diz 15 min) |
 | 5. Diagnóstico do cron | por fazer |

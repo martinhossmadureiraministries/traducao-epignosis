@@ -1,0 +1,3 @@
+- 2026-11-17T05:36:53+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.9s (1/3).
+- 2026-11-17T05:37:56+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/3).
+- 2026-11-17T05:40:23+00:00 — **ERRO** Ciclo 1 falhou: João 18:1: resposta inválida após 3 tentativa(s). Progresso anterior preservado. João 18:1-10: JSON inválido: Expecting ':' delimiter: line 1 column 2464 (char 2463)

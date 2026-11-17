@@ -275,10 +275,10 @@ O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem
 
 O que acontece em cada execução (a cada 20 minutos):
 
-- recupera o progresso do ramo de dados (até a Etapa 2 estar feita, `bee-dados`);
+- o checkout do `main` já traz o progresso; não há segundo ramo de dados;
 - produz 80 versículos (configurável), com prazo interno de 9 minutos;
-- faz um **checkpoint** dos JSON logo após o ciclo, antes de compilar;
-- publica os JSON no ramo de dados (história limpa, só dados);
+- faz um **checkpoint** dos JSON no `main` logo após o ciclo, antes de compilar;
+- os JSON ficam versionados no próprio `main`; já não há ramo de dados separado;
 - publica `entregas/auto/BEE-modulos.zip` e `RELATORIO.txt` como **artefactos**
   descarregáveis (retenção de 14 dias); o relatório existe sempre, mesmo sem módulos;
 - escreve um resumo com os provedores **realmente carregados** e o progresso.

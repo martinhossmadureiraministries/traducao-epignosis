@@ -4,6 +4,8 @@ import json
 import os
 from pathlib import Path
 import sqlite3
+import subprocess
+import sys
 import tempfile
 from unittest.mock import patch
 import unittest
@@ -1106,6 +1108,24 @@ class ControloDeTempoEOrcamentoTest(Base):
         texto = caminho.read_text(encoding='utf-8')
         self.assertIn('Provedores ativos: (nenhum)', texto)
         self.assertIn('Capítulos completos: 0/1189', texto)
+
+
+class DadosNoMainTest(unittest.TestCase):
+    """A Etapa 2 tirou os dados do ramo `bee-dados`."""
+
+    def test_nuvem_usa_main_como_ramo_de_dados(self):
+        import nuvem
+        self.assertEqual(nuvem.RAMO_DADOS, 'main')
+
+    def test_verificador_aceita_os_dados_do_main(self):
+        raiz = Path(__file__).resolve().parents[1]
+        resultado = subprocess.run(
+            [sys.executable, str(raiz / 'scripts/verificar_dados.py'),
+             '--dados', str(raiz / 'livros_json'), '--minimo', '18'],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(resultado.returncode, 0, resultado.stderr)
+        self.assertIn('18 capítulos completos', resultado.stdout)
 
 
 if __name__ == '__main__':
