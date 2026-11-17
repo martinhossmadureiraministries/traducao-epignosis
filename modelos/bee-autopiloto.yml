@@ -155,7 +155,7 @@ jobs:
           else
             echo "- Chaves presentes. Se o erro for HTTP 5xx, o serviço estava instável: o próximo ciclo tenta de novo." >> "$GITHUB_STEP_SUMMARY"
             echo "- Se for HTTP 404, o serviço retirou esse modelo: basta voltar a correr, o programa escolhe outro sozinho." >> "$GITHUB_STEP_SUMMARY"
-            echo "- Se for HTTP 429, a quota diária acabou: a reserva Groq entra automaticamente no ciclo seguinte." >> "$GITHUB_STEP_SUMMARY"
+            echo "- Se for HTTP 429, é o limite por minuto: o programa passa a outro modelo/provedor e volta a tentar no ciclo seguinte." >> "$GITHUB_STEP_SUMMARY"
           fi
           tail -n 25 livros_json/.bee/diario.md 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || echo "- (ainda sem diário)" >> "$GITHUB_STEP_SUMMARY"
 
