@@ -1,9 +1,9 @@
-"""A fila de provedores: OVHcloud, Gemini, Groq, OpenRouter.
+"""A fila de provedores: Gemini (principal) e Groq (reserva).
 
-Ordem por quanto cada um pode produzir e por quanto pede em troca. A OVHcloud
-vai primeiro porque é o único que **não pede chave nenhuma** (2 pedidos por
-minuto, sem conta, sem cartão). O Gemini dá a maior quota mas respondeu 503 em
-rajada durante horas; a Groq é pequena mas fiável.
+Decisão de 17/11/2026: só estes dois entram na produção. A OVHcloud anónima
+passou a ser opt-in (`OVH_API_KEY_ATIVO=1` ou chave) porque entrava sempre na
+fila, falhava a listagem de modelos e o resumo dizia que estava a produzir.
+OpenRouter, Cerebras e OpenAI só entram se forem pedidos explicitamente.
 
 O Mistral saiu do rodízio gratuito em 17/11/2026 (o plano Free deixou de
 activar chaves de API) e voltou depois como API paga do workflow durável —
@@ -34,17 +34,25 @@ class OrdemDosProvedoresTest(unittest.TestCase):
              patch('autopiloto.resolver_modelos', return_value=['modelo']):
             return [m.provedor for m in autopiloto._motores(args, object())]
 
-    def test_ovhcloud_responde_primeiro(self):
-        self.assertEqual(self._ordem()[0], 'ovh', 'a OVHcloud não pede chave nenhuma')
+    def test_gemini_responde_primeiro(self):
+        self.assertEqual(self._ordem()[0], 'gemini', 'decisão de 17/11: Gemini principal')
 
     def test_fila_por_utilidade(self):
-        """OVHcloud (sem chave) -> Gemini (480 ped) -> Groq (66 ped)."""
-        self.assertEqual(self._ordem()[:3], ['ovh', 'gemini', 'groq'])
+        """Gemini (480 ped) -> Groq (66 ped); OVH só com opt-in."""
+        self.assertEqual(self._ordem()[:2], ['gemini', 'groq'])
 
-    def test_ovhcloud_entra_mesmo_sem_chave_nenhuma(self):
-        """O ponto da OVHcloud: funciona com o ambiente vazio."""
+    def test_sem_chaves_nao_inventa_provedor(self):
+        """Com o ambiente vazio não há fila: falhar é melhor do que fingir."""
         args = autopiloto.argumentos([])
         with patch.dict(os.environ, {}, clear=True), \
+             patch('autopiloto.resolver_modelos', return_value=['modelo']):
+            with self.assertRaises(SystemExit):
+                autopiloto._motores(args, object())
+
+    def test_ovhcloud_entra_com_opt_in(self):
+        """A OVHcloud anónima só entra quando pedida (OVH_API_KEY_ATIVO=1)."""
+        args = autopiloto.argumentos([])
+        with patch.dict(os.environ, {'OVH_API_KEY_ATIVO': '1'}, clear=True), \
              patch('autopiloto.resolver_modelos', return_value=['modelo']):
             ordem = [m.provedor for m in autopiloto._motores(args, object())]
         self.assertEqual(ordem, ['ovh'])
@@ -74,8 +82,20 @@ class OrdemDosProvedoresTest(unittest.TestCase):
         self.assertEqual(self._ordem('groq')[0], 'groq')
 
     def test_fila_da_producao_gemini_principal(self):
-        """Ordem na GitHub Action: gemini (480/dia) -> groq (66/dia) -> ovh (2/min)."""
-        self.assertEqual(self._ordem('gemini'), ['gemini', 'groq', 'ovh'])
+        """Ordem na GitHub Action: gemini (480/dia) -> groq (66/dia)."""
+        self.assertEqual(self._ordem('gemini'), ['gemini', 'groq'])
+
+    def test_lista_branca_limita_a_fila(self):
+        """BEE_PROVEDORES=gemini,groq não deixa entrar uma chave esquecida."""
+        args = autopiloto.argumentos([])
+        ambiente = {
+            'GEMINI_API_KEY': 'k1', 'GROQ_API_KEY': 'k2', 'OVH_API_KEY_ATIVO': '1',
+            'BEE_PROVEDORES': 'gemini,groq',
+        }
+        with patch.dict(os.environ, ambiente, clear=True), \
+             patch('autopiloto.resolver_modelos', return_value=['modelo']):
+            ordem = [m.provedor for m in autopiloto._motores(args, object())]
+        self.assertEqual(ordem, ['gemini', 'groq'])
 
     def test_variavel_desconhecida_e_ignorada(self):
         """Valor inválido cai na ordem por omissão, sem erro."""

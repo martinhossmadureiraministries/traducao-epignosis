@@ -4,6 +4,8 @@ import json
 import os
 from pathlib import Path
 import sqlite3
+import subprocess
+import sys
 import tempfile
 from unittest.mock import patch
 import unittest
@@ -693,7 +695,7 @@ class DescobertaDeModeloTest(unittest.TestCase):
     def test_lista_real_e_usada_quando_existe(self):
         from bee.ia import resolver_modelos
         class ListaOK:
-            def obter(self, requisicao, descricao, limite=None, log=None):
+            def obter(self, requisicao, descricao, limite=None, log=None, provedor=None):
                 return json.dumps({'data': [
                     {'id': 'llama-3.3-70b-versatile'},
                     {'id': 'openai/gpt-oss-20b'},
@@ -708,7 +710,7 @@ class DescobertaDeModeloTest(unittest.TestCase):
         corpos = []
 
         class Guarda:
-            def obter(self, requisicao, descricao, limite=None, log=None):
+            def obter(self, requisicao, descricao, limite=None, log=None, provedor=None):
                 corpos.append(json.loads(requisicao.data))
                 return json.dumps({'choices': [{'finish_reason': 'stop', 'message': {
                     'content': json.dumps({'verses': [{
@@ -726,7 +728,7 @@ class DescobertaDeModeloTest(unittest.TestCase):
 
         pedidos = []
         class HTTP404:
-            def obter(self, requisicao, descricao, limite=None, log=None):
+            def obter(self, requisicao, descricao, limite=None, log=None, provedor=None):
                 pedidos.append(json.loads(requisicao.data)['model'])
                 if len(pedidos) == 1:
                     raise ErroRede('groq: HTTP 404; verifique o endereço ou o nome do modelo.')
@@ -816,7 +818,7 @@ class MarcacaoDoModeloTest(unittest.TestCase):
         pedidos = []
 
         class DivHTTP:
-            def obter(self, requisicao, descricao, limite=None, log=None):
+            def obter(self, requisicao, descricao, limite=None, log=None, provedor=None):
                 corpo = json.loads(requisicao.data)
                 fontes = json.loads(corpo['messages'][1]['content'].rsplit('\n\n', 1)[-1])
                 pedidos.append(len(fontes))
@@ -951,7 +953,7 @@ class HTTPFalso:
     def __init__(self, resposta):
         self.resposta = resposta
 
-    def obter(self, requisicao, descricao, limite=None):
+    def obter(self, requisicao, descricao, limite=None, provedor=None):
         return json.dumps(self.resposta).encode()
 
 
@@ -1067,6 +1069,63 @@ class CLIautopilotoTest(Base):
         self.assertEqual(codigo, 0)
         self.assertIn('Google Gemini', texto)
         self.assertFalse((self.dados / '640_Filemom.json').exists())
+
+
+class ControloDeTempoEOrcamentoTest(Base):
+    """Regressões da execução #12, que ficou 50 min presa e perdeu trabalho."""
+
+    def test_prazo_do_ciclo_para_e_preserva(self):
+        agendador, _ = self.agendador(max_versos=1000, max_tempo_ciclo=0.0001)
+        resultado = agendador.ciclo(livros_na_fila([640]))
+        # Pode gravar um lote antes de o relógio passar; o que não pode é
+        # continuar indefinidamente. O capítulo não fica completo.
+        self.assertIn(resultado.acao, ('gerado', 'nada'))
+        self.assertTrue(resultado.progresso.tempo_esgotado)
+        self.assertLessEqual(resultado.progresso.versos, 8)
+        caminho = self.dados / '640_Filemom.json'
+        if caminho.exists():
+            dados = json.loads(caminho.read_text(encoding='utf-8'))
+            self.assertNotIn('1', dados.get('chapters', {}))
+            self.assertLessEqual(len(dados.get('in_progress', {}).get('1', [])), 8)
+
+    def test_gemini_sem_tecto_proprio_nao_para_o_dia(self):
+        """Antes, all([]) era True e o dia parava com detalhe vazio."""
+        agendador, _ = self.agendador(
+            max_versos=5, pedidos_por_dia=100,
+            tectos_por_provedor={'groq': 66},
+        )
+        self.assertEqual(agendador.ciclo(livros_na_fila([640])).acao, 'gerado')
+        segundo = agendador.ciclo(livros_na_fila([640]))
+        self.assertNotEqual(segundo.acao, 'parar', segundo.detalhe)
+
+    def test_relatorio_existe_mesmo_sem_modulos(self):
+        import nuvem
+        destino = self.raiz / 'entregas' / 'auto'
+        caminho = nuvem._escrever_relatorio(
+            destino, self.dados, [], None, 'não configurado', 'bee-dados', [],
+        )
+        self.assertTrue(caminho.exists())
+        texto = caminho.read_text(encoding='utf-8')
+        self.assertIn('Provedores ativos: (nenhum)', texto)
+        self.assertIn('Capítulos completos: 0/1189', texto)
+
+
+class DadosNoMainTest(unittest.TestCase):
+    """A Etapa 2 tirou os dados do ramo `bee-dados`."""
+
+    def test_nuvem_usa_main_como_ramo_de_dados(self):
+        import nuvem
+        self.assertEqual(nuvem.RAMO_DADOS, 'main')
+
+    def test_verificador_aceita_os_dados_do_main(self):
+        raiz = Path(__file__).resolve().parents[1]
+        resultado = subprocess.run(
+            [sys.executable, str(raiz / 'scripts/verificar_dados.py'),
+             '--dados', str(raiz / 'livros_json'), '--minimo', '18'],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(resultado.returncode, 0, resultado.stderr)
+        self.assertIn('18 capítulos completos', resultado.stdout)
 
 
 if __name__ == '__main__':

@@ -18,6 +18,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -40,6 +41,31 @@ from bee.trava import EmExecucao, trava
 
 
 ROTULO = 'BEE · nuvem'
+# Decisão de 17/11: os dados vivem no `main`, ao lado do código. O ramo
+# `bee-dados` foi arquivado depois de os 18 capítulos serem migrados; manter
+# dois sítios era a causa de metade das confusões e dos capítulos “perdidos”.
+RAMO_DADOS = 'main'
+
+# O GitHub envia SIGTERM quando o job chega ao timeout-minutes e só depois
+# SIGKILL. Este sinal permite terminar o ciclo no ponto seguro, compilar,
+# exportar e publicar o que já está no disco.
+_PARAR = False
+
+
+def _pedir_paragem(signum, frame) -> None:  # noqa: ARG001
+    global _PARAR
+    _PARAR = True
+    print('Pedido de paragem recebido; a fechar o ciclo e a publicar o que existe.', flush=True)
+
+
+def _instalar_sinais() -> None:
+    for nome in ('SIGTERM', 'SIGINT'):
+        sinal = getattr(signal, nome, None)
+        if sinal is not None:
+            try:
+                signal.signal(sinal, _pedir_paragem)
+            except (ValueError, OSError):
+                pass
 
 
 def _env(nome: str, padrao: str = '') -> str:
@@ -553,7 +579,54 @@ def _empacotar(saida: Path) -> str | None:
     return str(destino)
 
 
+def _escrever_relatorio(
+    saida: Path, dados: Path, motores: list, resultado, publicado: str,
+    ramo: str, exportados: list[str],
+) -> Path:
+    """Relatório sempre presente no artefacto, mesmo quando não há módulos.
+
+    A execução #12 terminou sem artefacto de capítulos e com o de módulos
+    vazio; quem ia buscar o resultado não tinha como saber o que aconteceu.
+    Este ficheiro garante que existe algo para descarregar e para diagnosticar.
+    """
+    capitulos, versos = _progresso(dados)
+    linhas = [
+        'BEE — relatório da execução',
+        f'Gerado em: {_agora():%Y-%m-%d %H:%M:%S} UTC',
+        f'Execução GitHub: {_env("GITHUB_RUN_NUMBER", "local")}',
+        f'Ramo de dados: {ramo}',
+        f'Provedores ativos: {", ".join(m.provedor for m in motores) or "(nenhum)"}',
+        f'Ação: {getattr(resultado, "acao", "interrompida")}',
+        f'Detalhe: {getattr(resultado, "detalhe", "") or "(sem detalhe)"}',
+        f'Capítulos completos: {capitulos}/1189',
+        f'Versículos guardados: {versos}/31102',
+        f'Capítulos exportados para leitura: {len(exportados)}',
+        f'Dados: {publicado}',
+    ]
+    modulo = saida / 'BEE.SQLite3'
+    if modulo.exists():
+        try:
+            import sqlite3
+            with sqlite3.connect(modulo) as conexao:
+                linhas.append(
+                    'Módulo MyBible: '
+                    f'{conexao.execute("SELECT COUNT(*) FROM verses").fetchone()[0]} versículos'
+                )
+        except Exception as exc:  # diagnóstico não pode falhar a execução
+            linhas.append(f'Módulo MyBible: não foi possível ler ({type(exc).__name__})')
+    else:
+        linhas.append('Módulo MyBible: não gerado nesta execução')
+    caminho = saida / 'RELATORIO.txt'
+    escrever_atomico(caminho, '\n'.join(linhas) + '\n')
+    return caminho
+
+
 def main() -> int:
+    _instalar_sinais()
+    # A produção da nuvem é Gemini + Groq. O `setdefault` respeita o workflow
+    # (quando ele define BEE_PROVEDORES) e impede que uma chave esquecida no
+    # ambiente acrescente outro serviço enquanto o workflow ativo é o antigo.
+    os.environ.setdefault('BEE_PROVEDORES', 'gemini,groq')
     dados = Path(_env('BEE_DADOS', 'livros_json'))
     saida = Path(_env('BEE_SAIDA', 'entregas/auto'))
     cache = Path(_env('BEE_CACHE', '.bee-cache'))
@@ -578,27 +651,21 @@ def main() -> int:
         fuso, fuso_nome = timezone.utc, 'UTC'
         print(f'Aviso: fuso {fuso_nome!r} desconhecido; a usar UTC.', file=sys.stderr)
 
-    remoto = _caminho_remoto(_env('BEE_REMOTO', ''))
-    recuperado = False
-    if _env('BEE_UNIR', '1') != '0' and remoto is not None and remoto.is_dir():
-        recuperado = any(remoto.glob('*.json'))
-        mantidos = _unir_progresso(dados, remoto)
-        if mantidos:
-            print(f'Progresso recuperado sem sobrescrever {mantidos} versículo(s) já existentes localmente.')
-    if remoto is not None and not recuperado:
-        print(
-            'AVISO: não foi possível recuperar o ramo de dados; esta execução começou '
-            'do zero e só pode publicar versículos que produzir agora.',
-            file=sys.stderr, flush=True,
-        )
-        _apagar_recuperado(remoto)
-
     estado_caminho = dados / '.bee' / 'estado.json'
     estado = carregar_estado(estado_caminho)
     diario = Diario(dados / '.bee' / 'diario.md')
     config = autopiloto._config(argumentos)
     config.fuso = fuso_nome
     config.intervalo_min = 0
+    # 9 minutos por padrão: o job tem 12, e ainda é preciso compilar, exportar,
+    # publicar e carregar artefactos. Antes o ciclo podia durar os 50 minutos e
+    # ser morto com trabalho por publicar.
+    config.max_tempo_ciclo = float(_env('BEE_TEMPO_MAXIMO', '540') or 0)
+    # Tecto para o script inteiro (incluindo as repetições por falha
+    # transitória). Sem isto, `BEE_TENTATIVAS_CICLO=8` podia somar 8 ciclos de
+    # 9 min e continuar a estourar o timeout do job.
+    inicio_execucao = time.monotonic()
+    limite_total = float(_env('BEE_TEMPO_TOTAL', '660') or 0)
     if _env('BEE_COMPILAR', '1') == '0':
         config.compilar = False
     # `BEE_JANELA=0` desliga a janela horária interna quando é o próprio
@@ -608,7 +675,9 @@ def main() -> int:
         config.hora_inicio, config.hora_fim = 0, 24
 
     livros = livros_na_fila(argumentos.livros, argumentos.ordem)
-    ramo = _env('BEE_BRAMO_DADOS', 'bee-dados')
+    # Ignora `BEE_BRAMO_DADOS`: o workflow antigo ainda aponta para `bee-dados`,
+    # e não queremos que uma execução recrie o ramo que acabámos de arquivar.
+    ramo = RAMO_DADOS
     reparacao, reparados = '', 0
     try:
         reparacao, reparados = _reparar_dados(
@@ -622,33 +691,67 @@ def main() -> int:
     falha: str | None = None
     resultado = None
     exportados: list[str] = []
+    motores: list = []
+    publicado_cedo = ''
 
     try:
         with trava(dados):
             rede = ClienteHTTP(pausa=float(_env('BEE_PAUSA', '1') or 1),
                                tentativas=_env_int('BEE_TENTATIVAS', 3),
                                timeout=float(_env('BEE_TIMEOUT', '180') or 180))
-            motores = autopiloto._motores(argumentos, rede)
+            try:
+                motores = autopiloto._motores(argumentos, rede)
+            except SystemExit as exc:
+                # Sem chaves não há fila. Transformar em ErroRede faz com que
+                # o bloco de preservação escreva o resumo e o RELATORIO.txt,
+                # em vez de o processo morrer sem deixar artefacto.
+                raise ErroRede(str(exc)) from None
             print(f'{ROTULO}: {", ".join(m.provedor for m in motores)}', flush=True)
             fontes = FontesOriginais(cache, rede)
             agendador = Agendador(
                 dados, saida, cache, estado, config, diario, fuso, motores, fontes, rede,
             )
+            if limite_total > 0:
+                restante = limite_total - (time.monotonic() - inicio_execucao)
+                config.max_tempo_ciclo = max(0.0, min(config.max_tempo_ciclo, restante))
             resultado = agendador.ciclo(livros)
             salvar_estado(estado_caminho, estado)
+            # Checkpoint imediato: se o job for morto a seguir (timeout,
+            # cancelamento manual), os versículos já gerados ficam no ramo.
+            if (
+                _env('BEE_PUBLICAR', '1') != '0'
+                and resultado.progresso is not None
+                and resultado.progresso.versos
+            ):
+                try:
+                    cap_checkpoint, _ = _progresso(dados)
+                    publicado_cedo = _commit_dados(
+                        ramo,
+                        f'BEE: checkpoint de {resultado.progresso.versos} versículos '
+                        f'({cap_checkpoint}/1189 capítulos completos)',
+                        ['livros_json'],
+                    )
+                    print(f'Checkpoint publicado: {publicado_cedo}', flush=True)
+                except Exception as exc:  # a publicação final ainda tenta
+                    publicado_cedo = f'checkpoint falhou ({type(exc).__name__})'
+                    print(f'Aviso: {publicado_cedo}', file=sys.stderr, flush=True)
             # O serviço de IA às vezes responde 5xx em rajada (foi o que
             # aconteceu na primeira execução real). Em vez de gastar uma
             # execução inteira do cron, tenta-se de novo aqui.
             extra = _env_int('BEE_TENTATIVAS_CICLO', 2) - 1
             while (
-                resultado.acao == 'nada' and extra > 0
+                resultado.acao == 'nada' and extra > 0 and not _PARAR
                 and estado.falhas_seguidas < agendador.config.max_falhas_seguidas
                 and _parece_transitorio(estado.ultimo_erro or '')
+                and (limite_total <= 0 or time.monotonic() < inicio_execucao + limite_total)
             ):
                 print('Falha transitória do serviço; nova tentativa no mesmo trabalho...', flush=True)
                 diario.escrever('Falha transitória do serviço; nova tentativa no mesmo trabalho.', 'aviso')
                 time.sleep(float(_env('BEE_ESPERA_ENTRE_TENTATIVAS', '45') or 45))
                 extra -= 1
+                if limite_total > 0:
+                    restante = limite_total - (time.monotonic() - inicio_execucao)
+                    config.max_tempo_ciclo = max(0.0, min(config.max_tempo_ciclo, restante))
                 resultado = agendador.ciclo(livros)
                 salvar_estado(estado_caminho, estado)
             # Uma falha passageira (5xx, rede) não deve contar como "código
@@ -688,19 +791,16 @@ def main() -> int:
         dados, saida.parent / 'capitulos', antes_capitulos, diario,
     )
     depois_cap, depois_versos = _progresso(dados)
-    if recuperado or reparados:
-        origem = (
-            f'recuperados do ramo `{ramo}`'
-            if recuperado else f'reparados a partir do ramo `{ramo}`'
-        )
+    if reparados:
         linhas_recuperacao = (
-            f'- Dados de partida: {origem} '
-            f'({antes_cap} capítulos completos, {antes_versos} versículos).'
+            f'- Dados de partida: {reparados} versículo(s) reparados a partir do ramo '
+            f'`{ramo}` ({antes_cap} capítulos completos, {antes_versos} versículos).'
         )
     else:
+        # O checkout já é o `main`: não há um segundo ramo para “recuperar”.
         linhas_recuperacao = (
-            f'- **Dados de partida: nenhum** — o ramo `{ramo}` não pôde ser recuperado nesta '
-            'execução. Se já havia versículos publicados, esta é a razão pela qual não aparecem.'
+            f'- Dados de partida: `{ramo}` '
+            f'({antes_cap} capítulos completos, {antes_versos} versículos).'
         )
     publicado = 'não configurado'
     if _env('BEE_PUBLICAR', '1') != '0':
@@ -720,6 +820,9 @@ def main() -> int:
             print(f'AVISO: {publicado}', file=sys.stderr)
 
     pacote = _empacotar(saida)
+    relatorio = _escrever_relatorio(
+        saida, dados, motores, resultado, publicado, ramo, exportados,
+    )
     env = (saida / 'BEE.SQLite3')
     trabalho = proximo_trabalho(livros, dados)
     faltam_livro, faltam_fila = _passo_do_plano(dados, livros)
@@ -728,7 +831,20 @@ def main() -> int:
     # não existe: o que conta é quantos capítulos estão completos e quantos
     # versículos já estão guardados (mesmo em capítulos ainda em curso).
     linhas = [f'### {ROTULO}', '']
-    if resultado.acao == 'adormecer':
+    linhas.append(
+        '- Provedores ativos: '
+        + (', '.join(f'`{m.provedor}`' for m in motores) if motores else '**(nenhum)**')
+    )
+    if publicado_cedo:
+        linhas.append(f'- Checkpoint publicado durante o ciclo: {publicado_cedo}.')
+    if resultado is None:
+        # O ciclo pode ter falhado antes de devolver um ResultadoCiclo.
+        linhas.append(f'- Ação: **interrompida** — {falha}')
+        linhas.append(
+            '- **O trabalho feito antes da falha foi guardado** (compilado e '
+            'publicado). O próximo ciclo continua a partir dele.'
+        )
+    elif resultado.acao == 'adormecer':
         espera = resultado.espera or 0
         horas, minutos = int(espera // 3600), int((espera % 3600) // 60)
         linhas.append(
@@ -740,12 +856,6 @@ def main() -> int:
         linhas.append(
             '- Isto é normal e não é uma falha: o horário está nas variáveis '
             '`BEE_HORA_INICIO` e `BEE_HORA_FIM` do workflow.'
-        )
-    elif resultado is None:
-        linhas.append(f'- Ação: **interrompida** — {falha}')
-        linhas.append(
-            '- **O trabalho feito antes da falha foi guardado** (compilado e '
-            'publicado). O próximo ciclo continua a partir dele.'
         )
     elif resultado.acao == 'parar':
         linhas.append(f'- Ação: **parado até amanhã** — {resultado.detalhe or "orçamento diário atingido"}.')
@@ -762,7 +872,7 @@ def main() -> int:
     elif transitorio:
         linhas.append('- Ação: **nada gerado nesta execução** — o serviço de IA não respondeu.')
         linhas.append('- **Não é um erro do projeto nem da sua chave.** O próximo ciclo '
-                      'agendado (15 min) volta a tentar sozinho; não precisa de fazer nada.')
+                      'agendado (20 min) volta a tentar sozinho; não precisa de fazer nada.')
     else:
         linhas.append(f'- Ação: **nada** — {resultado.detalhe or "—"}')
     linhas.append(linhas_recuperacao)

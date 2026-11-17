@@ -11,7 +11,7 @@ from urllib.request import Request
 
 from bee.catalogo import POR_NUMERO
 from bee.ia import MotorIA, RespostaInvalida, RespostaTruncada, SYSTEM_PROMPT
-from bee.rede import ClienteHTTP, ErroRede
+from bee.rede import ClienteHTTP, CotaExcedida, ErroRede
 
 
 def retorno(versos):
@@ -27,7 +27,7 @@ class HTTPFalso:
         self.resposta = resposta
         self.requisicoes = []
 
-    def obter(self, req, descricao, limite=None, log=None):
+    def obter(self, req, descricao, limite=None, log=None, provedor=None):
         self.requisicoes.append((req, descricao))
         return json.dumps(self.resposta, ensure_ascii=False).encode()
 
@@ -123,19 +123,45 @@ class IATest(unittest.TestCase):
         with self.assertRaises(RespostaInvalida):
             motor.gerar(POR_NUMERO[500], 1, fontes)
 
-    def test_retry_429_respeita_retry_after_e_nao_expoe_chave(self):
+    def test_429_nao_dorme_e_passa_ao_provedor(self):
+        """17/11: Retry-After de 523/1176/989/1542 s levou ao cancelamento aos 50 min."""
         headers = Message()
-        headers['Retry-After'] = '3'
+        headers['Retry-After'] = '1200'
         request = Request('https://example.com/api', headers={'Authorization': 'Bearer SEGREDO'})
         error = HTTPError(request.full_url, 429, 'Too many', headers, io.BytesIO(b'key SEGREDO'))
-        cliente = ClienteHTTP(pausa=0, tentativas=2, timeout=1)
+        cliente = ClienteHTTP(pausa=0, tentativas=3, timeout=1)
         stderr = io.StringIO()
-        with patch('bee.rede.urllib.request.urlopen', side_effect=[error, io.BytesIO(b'{}')]) as urlopen, \
+        with patch('bee.rede.urllib.request.urlopen', side_effect=[error]) as urlopen, \
              patch('bee.rede.time.sleep') as sleep, contextlib.redirect_stderr(stderr):
-            self.assertEqual(cliente.obter(request, 'API'), b'{}')
-        self.assertEqual(urlopen.call_count, 2)
-        self.assertGreaterEqual(sleep.call_args[0][0], 3)
+            with self.assertRaises(CotaExcedida):
+                cliente.obter(request, 'API', provedor='groq')
+        self.assertEqual(urlopen.call_count, 1, 'não insiste no mesmo 429')
+        sleep.assert_not_called()
         self.assertNotIn('SEGREDO', stderr.getvalue())
+        self.assertEqual(cliente.pedidos_por_provedor(), {'groq': 1})
+
+    def test_retry_after_longo_de_5xx_fica_limitado(self):
+        """Um 503 com Retry-After de 20 min não pode bloquear o ciclo."""
+        headers = Message()
+        headers['Retry-After'] = '1200'
+        request = Request('https://example.com/api')
+        error = HTTPError(request.full_url, 503, 'Indisponível', headers, io.BytesIO(b''))
+        cliente = ClienteHTTP(pausa=0, tentativas=2, timeout=1)
+        with patch('bee.rede.urllib.request.urlopen', side_effect=[error, io.BytesIO(b'{}')]), \
+             patch('bee.rede.time.sleep') as sleep:
+            self.assertEqual(cliente.obter(request, 'API'), b'{}')
+        self.assertLessEqual(sleep.call_args[0][0], 45.0)
+
+    def test_contagem_de_tentativas_inclui_falhas(self):
+        request = Request('https://example.com/api')
+        headers = Message()
+        headers['Retry-After'] = '1'
+        error = HTTPError(request.full_url, 500, 'Erro', headers, io.BytesIO(b''))
+        cliente = ClienteHTTP(pausa=0, tentativas=2, timeout=1)
+        with patch('bee.rede.urllib.request.urlopen', side_effect=[error, io.BytesIO(b'{}')]), \
+             patch('bee.rede.time.sleep'):
+            cliente.obter(request, 'API', provedor='gemini')
+        self.assertEqual(cliente.pedidos_por_provedor(), {'gemini': 2})
 
     def test_pausa_e_aplicada_depois_da_resposta_anterior(self):
         request = Request('https://example.com/api')
@@ -207,7 +233,7 @@ class IATest(unittest.TestCase):
         enviados = {}
 
         class RedeFalsa:
-            def obter(self, requisicao, provedor, log=None):
+            def obter(self, requisicao, descricao, log=None, provedor=None):
                 enviados['headers'] = dict(requisicao.headers)
                 enviados['url'] = requisicao.full_url
                 return b'{"choices":[{"message":{"content":"{\\"ok\\":1}"}}]}'
@@ -231,7 +257,7 @@ class IATest(unittest.TestCase):
             def __init__(self):
                 self.cabecalhos = {}
 
-            def obter(self, requisicao, provedor, log=None):
+            def obter(self, requisicao, descricao, log=None, provedor=None):
                 self.cabecalhos = dict(requisicao.headers)
                 return b'{"choices":[{"message":{"content":"{\\"ok\\":1}"}}]}'
 

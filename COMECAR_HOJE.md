@@ -151,7 +151,7 @@ Com dois provedores o trabalho continua quando a quota gratuita de um acaba.
 
 **Como acompanhar sem abrir o código:** no GitHub, *Actions* mostra o resumo de cada execução com “Faltam N versículos para concluir João”. No computador: `python autopiloto.py --status`.
 
-**Sinais de que está tudo bem:** o ramo `bee-dados` recebe commits `BEE: +12 versículos (…/1189 capítulos completos)`; o diário tem uma linha por ciclo; nunca aparece uma chave nos ficheiros.
+**Sinais de que está tudo bem:** o `main` recebe commits `BEE: +12 versículos (…/1189 capítulos completos)`; o diário tem uma linha por ciclo; nunca aparece uma chave nos ficheiros.
 
 **Sinais de que algo precisa de você:**
 | No diário / Actions | O que fazer |
@@ -168,7 +168,7 @@ Com dois provedores o trabalho continua quando a quota gratuita de um acaba.
 - **Hoje** o que começa é a **produção contínua**, não a Bíblia completa. 1.189 capítulos com plano gratuito levam **semanas a meses**.
 - **O que você revê é lei.** Se editar um versículo localmente e depois recuperar o ramo de dados, a versão local **prevalece**: a nuvem só acrescenta texto novo (o `nuvem.py` foi testado para isso).
 - **A revisão não se automatiza.** O texto automático entra como rascunho, diz o que não verificou, e o MyBible mostra o aviso. A sua leitura no telemóvel é a etapa seguinte — e é ela que transforma rascunho em Bíblia de estudo.
-- **O plano das oito fases mantém-se:** o autopiloto segue a fila do `PLANO_BEE.md` e está agora em **João 5**.
+- **O plano das oito fases mantém-se:** o autopiloto segue a fila do `PLANO_BEE.md` e está agora em **João 18**.
 
 ---
 

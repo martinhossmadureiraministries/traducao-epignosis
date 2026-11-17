@@ -486,7 +486,7 @@ class MotorIA:
             )
             try:
                 resposta = _objeto_api(
-                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                    self.rede.obter(requisicao, self.provedor, log=self.log, provedor=self.provedor), self.provedor
                 )
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
@@ -547,7 +547,7 @@ class MotorIA:
             )
             try:
                 resposta = _objeto_api(
-                    self.rede.obter(requisicao, self.provedor, log=self.log), self.provedor
+                    self.rede.obter(requisicao, self.provedor, log=self.log, provedor=self.provedor), self.provedor
                 )
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):

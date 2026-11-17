@@ -14,12 +14,12 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 |---|---|
 | `autopiloto.py` | O motor. Trabalha em ciclos (por exemplo, 6 versículos a cada 5 minutos), compila e registra o progresso. Anda com o seu computador. |
 | `nuvem.py` | O mesmo trabalho numa GitHub Action: continua com o computador desligado. |
-| `modelos/bee-autopiloto.yml` | O agendador na nuvem (a cada 15 minutos, das 05h às 23h de Luanda). É um **modelo**: copie-o para `.github/workflows/` para o ativar (ver secção 4). |
+| `modelos/bee-autopiloto.yml` | O agendador na nuvem (a cada 20 minutos, das 05h às 23h de Luanda). É um **modelo**: copie-o para `.github/workflows/` para o ativar (ver secção 4). |
 | `bee/ia.py` | Cinco provedores, todos com plano gratuito: **Gemini, Groq, Cerebras, OpenRouter** (e OpenAI, opcional e paga). |
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
 
-Cada peça funciona offline nos testes: 91 testes automáticos não usam rede nem chaves.
+Cada peça funciona offline nos testes: 143 testes automáticos não usam rede nem chaves.
 
 ### O que cada execução faz
 
@@ -57,13 +57,21 @@ limitador passou a ser a **quota gratuita da IA**, e o número que a controla é
 
 Configuração actual, a 24 horas por dia:
 
+> **Workflow ativo vs. proposta:** o GitHub recusou o push de
+> `.github/workflows/` por falta da permissão `workflows`. O ficheiro ativo
+> ainda tem `timeout-minutes: 50` e os valores antigos; a proposta está em
+> `docs/bee-autopiloto.yml`. O `nuvem.py` já limita o ciclo a 9 min e a
+> execução a 11 min, por isso o trabalho termina e publica mesmo com o job
+> antigo. Os valores da tabela são os da proposta.
+
 | Peça | Valor | Porquê |
 |---|---|---|
 | cron | `7,27,47 * * * *` | 3 execuções/hora, fora da hora cheia |
 | janela | 00–24 | ninguém precisa de estar acordado |
-| `BEE_VERSOS_POR_CICLO` | 240 | blocos grandes, menos arranques |
-| `BEE_LOTE` | 10 | menos pedidos para os mesmos versículos |
-| `BEE_PEDIDOS_POR_DIA` | 1200 | teto de segurança (Gemini ~480 + Groq ~1000) |
+| `BEE_VERSOS_POR_CICLO` | 80 | bloco que cabe nos 12 min do job |
+| `BEE_LOTE` | 6 | lotes pequenos, menos respostas truncadas |
+| `BEE_PEDIDOS_POR_DIA` | 500 | teto de segurança (Gemini + Groq) |
+| `BEE_TEMPO_MAXIMO` | 540 s | pára o ciclo antes do `timeout-minutes: 12` |
 
 Contas:
 
@@ -83,33 +91,31 @@ a ser respeitado, o que elimina a rajada de 429 que travou a produção.
 
 ## 1d. Os serviços de IA e a fila (porquê esta ordem)
 
-| Ordem | Serviço | Quota gratuita | Precisa de | Versículos/dia |
-|---|---|---|---|---|
-| 1 | **OVHcloud AI Endpoints** | 2 ped/min por IP e modelo | **nada** (sem chave, sem conta) | ~2.880 |
-| 2 | Gemini Flash-Lite | ~480 pedidos/dia | chave grátis | ~2.880 |
-| 3 | Groq (gpt-oss-120b) | 200K tokens/dia (~66 ped) | chave grátis | ~396 |
-| 4 | OpenRouter `:free` | ~40 pedidos/dia | chave grátis | ~240 |
+| Ordem | Serviço | Quota gratuita | Precisa de |
+|---|---|---|---|
+| 1 | **Gemini Flash-Lite** | ~480 pedidos/dia | chave grátis |
+| 2 | **Groq (gpt-oss-120b)** | 200K tokens/dia (~66 ped) | chave grátis |
+| — | OVHcloud AI Endpoints | 2 ped/min por IP e modelo | **opt-in** (`OVH_API_KEY_ATIVO=1`) |
 
-**A OVHcloud vai primeiro porque é o único que não pede nada em troca.** Nem
-chave, nem conta, nem cartão — o pedido segue sem `Authorization`. É também o
-que garante que a produção arranca numa instalação nova.
+**Só o Gemini e a Groq estão na produção.** A OVHcloud anónima entrou sempre na
+fila, falhava a listagem de modelos e o resumo dizia que estava a produzir.
+Passou a ser opt-in. O OpenRouter e a Cerebras saíram da fila.
 
-**Como colaboram:** fila por prioridade. Se o primeiro falhar (503, 429,
-resposta inválida), o lote passa ao seguinte — e volta ao primeiro no lote
-seguinte. Cada serviço tem o seu **próprio orçamento diário**: quando um
-esgota, os outros continuam. A OVHcloud tem, ainda, um limite de ritmo de
-2 pedidos/minuto, respeitado por `ClienteHTTP.reservar_pedido()`.
+**Como colaboram:** o Gemini abre (maior quota diária) e a Groq é a reserva.
+Se um falhar (429, 5xx, resposta inválida), o lote passa ao seguinte. Cada um
+tem o seu **orçamento diário**: esgotar um não cala o outro.
 
 Para inverter a ordem sem tocar no código:
 
 ```yaml
-BEE_PROVEDOR_PRINCIPAL: 'gemini'
+BEE_PROVEDOR_PRINCIPAL: 'groq'
 ```
 
-Para tirar a OVHcloud da fila:
+Para permitir a OVHcloud sem chave:
 
 ```yaml
-OVH_API_KEY_ATIVO: '0'
+OVH_API_KEY_ATIVO: '1'
+BEE_PROVEDORES: 'gemini,groq,ovh'
 ```
 
 ### Testar as ligações antes de produzir
@@ -120,8 +126,8 @@ execução:
 
 ```
 ### Teste das ligações
-OK · ovh/gpt-oss-120b: respondeu 'ok'
-FALHOU · gemini/gemini-3.5-flash-lite: gemini: HTTP 401
+OK · gemini/gemini-3.5-flash-lite: respondeu 'ok'
+FALHOU · groq/openai/gpt-oss-120b: groq: HTTP 401
 ```
 
 Sem este passo, um endpoint partido só se revelava ao fim de 20 minutos de
@@ -262,20 +268,26 @@ cat livros_json/.bee/diario.md
 
 O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem você, use o workflow incluído em `modelos/bee-autopiloto.yml`.
 
-1. **Leve o código ao ramo `main`** do repositório `traducao-epignosis` (privado).
+1. **Leve o código ao ramo `main`** do repositório `traducao-epignosis` (público).
 2. **Ative o workflow.** O ficheiro está em `modelos/` porque foi preparado por um agente sem permissão para criar workflows. No site do GitHub: *Add file → Create new file*, escreva `.github/workflows/bee-autopiloto.yml` e cole o conteúdo de `modelos/bee-autopiloto.yml`. (Alternativa: no seu computador, `mkdir -p .github/workflows && cp modelos/bee-autopiloto.yml .github/workflows/ && git add .github && git commit -m "ativar autopiloto" && git push`.)
 3. **Acrescente o segredo:** *Settings → Secrets and variables → Actions → New repository secret* → nome `GEMINI_API_KEY`, valor a sua chave. (Opcional: `GROQ_API_KEY` como reserva.)
 4. **Confirme em *Actions*** que o workflow aparece ativo; ajuste o ritmo nas variáveis `BEE_*` do ficheiro ou dispare manualmente com *Run workflow*.
 
-O que acontece em cada execução (a cada 15 minutos):
+O que acontece em cada execução (a cada 20 minutos):
 
-- recupera o progresso do ramo **`bee-dados`**;
-- produz 40 versículos (configurável), compila os módulos;
-- publica os JSON no ramo `bee-dados` (história limpa, só dados);
-- publica `entregas/auto/BEE-modulos.zip` como **artefato** descarregável (retenção de 14 dias);
-- escreve um resumo com o progresso no resumo da execução.
+- o checkout do `main` já traz o progresso; não há segundo ramo de dados;
+- produz 80 versículos (configurável), com prazo interno de 9 minutos;
+- faz um **checkpoint** dos JSON no `main` logo após o ciclo, antes de compilar;
+- os JSON ficam versionados no próprio `main`; já não há ramo de dados separado;
+- publica `entregas/auto/BEE-modulos.zip` e `RELATORIO.txt` como **artefactos**
+  descarregáveis (retenção de 14 dias); o relatório existe sempre, mesmo sem módulos;
+- escreve um resumo com os provedores **realmente carregados** e o progresso.
 
-**Vantagem:** continua 24 horas por dia. **Atenção:** repositórios privados consomem minutos de Actions do plano gratuito (2.000 minutos/mês). A 1 minuto por execução, 4 execuções por hora, 18 horas por dia, são ~2.100 minutos/mês — no limite. Se os minutos acabarem, reduza para `*/30 * * * *` (a cada 30 minutos) e suba `BEE_VERSOS_POR_CICLO` de 40 para 80: metade das execuções, o mesmo trabalho. O programa não depende do GitHub: o mesmo comando corre em qualquer lugar.
+**Vantagem:** continua 24 horas por dia. O repositório é **público**, por isso
+os minutos de Actions são ilimitados; o que limita é a quota da IA. O job tem
+`timeout-minutes: 12`, menos do que os 20 minutos entre execuções, para nunca
+haver duas a atropelarem-se. O programa não depende do GitHub: o mesmo comando
+corre em qualquer lugar.
 
 **Se a execução ficar vermelha:** leia o resumo no topo da página da execução. Ele diz em uma linha se foi o serviço (não precisa de fazer nada) ou a configuração (`--testar` mostra o resto). Com um modelo retirado pelo serviço, nem isso: o programa escolhe outro sozinho e continua.
 
@@ -385,7 +397,7 @@ python autopiloto.py --livros 640,500         # fila restrita
 python autopiloto.py --zip BEE.zip            # pacote com os dois módulos
 python autopiloto.py --sem-compilar           # só JSON (compila depois com gerar_bee.py --compilar)
 python gerar_bee.py --compilar                # compilar sem IA, sem rede e sem chave
-python -m unittest discover -s tests -v       # 91 testes, sem rede nem chaves
+python -m unittest discover -s tests -v       # 143 testes, sem rede nem chaves
 ```
 
 Lista completa: `python autopiloto.py --help`.

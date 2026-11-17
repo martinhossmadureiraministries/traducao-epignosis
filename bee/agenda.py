@@ -79,14 +79,17 @@ class Estado:
     lote_falhas: int = 0
 
     def dia(self, chave: str) -> dict[str, Any]:
-        return self.dias.setdefault(chave, {
-            'pedidos': 0, 'versos': 0, 'capitulos': 0, 'falhas': 0,
+        registo = self.dias.setdefault(chave, {
+            'pedidos': 0, 'pedidos_ok': 0, 'versos': 0, 'capitulos': 0, 'falhas': 0,
             'aberto': True, 'fechado_em_utc': None,
             # Pedidos e versículos por provedor. Sem isto, esgotar a Groq
             # calava o dia inteiro e o Gemini — que ainda tinha quota — nunca
             # era usado. Cada serviço tem o seu próprio tecto.
             'por_provedor': {},
         })
+        # Estados antigos não têm o contador de tentativas bem-sucedidas.
+        registo.setdefault('pedidos_ok', 0)
+        return registo
 
     def orcamento(self, chave: str, provedor: str) -> dict[str, int]:
         """Contadores do dia para um provedor (criados à primeira utilização)."""
@@ -222,6 +225,10 @@ class ConfigAgenda:
     max_tokens: int = 4096
     revisao: bool = True
     max_falhas_seguidas: int = 6
+    # Prazo interno do ciclo, em segundos (0 = sem limite). O nuvem.py usa isto
+    # para parar a geração antes de o GitHub matar o job; o trabalho guardado é
+    # então compilado e publicado.
+    max_tempo_ciclo: float = 0.0
 
     def lote(self, provedor: str) -> int:
         return (
@@ -373,6 +380,55 @@ class Agendador:
             if nome not in self.estado.exaustos:
                 self.estado.exaustos.append(nome)
 
+    def _contagem_rede(self) -> dict[str, int]:
+        """Tentativas HTTP acumuladas no cliente, se ele as souber contar."""
+        contar = getattr(self.rede, 'pedidos_por_provedor', None)
+        if contar is None:
+            return {}
+        try:
+            return dict(contar())
+        except Exception:  # um contador extra nunca deve parar a produção
+            return {}
+
+    def _registar_consumo(
+        self, chave: str, antes: dict[str, int], progresso: Progresso | None,
+    ) -> None:
+        """Regista no orçamento o que foi realmente tentado, não só o que passou.
+
+        Em 17/11 o estado dizia zero pedidos enquanto a Groq devolvia 429 em
+        série: só os lotes guardados contavam. O tecto diário era, por isso,
+        uma ficção. O contador do ClienteHTTP inclui as tentativas falhadas.
+        """
+        depois = self._contagem_rede()
+        deltas = {
+            nome: depois.get(nome, 0) - antes.get(nome, 0)
+            for nome in set(antes) | set(depois)
+        }
+        total = sum(max(0, delta) for delta in deltas.values())
+        dia = self.estado.dia(chave)
+        if total:
+            dia['pedidos'] += total
+            for nome, delta in deltas.items():
+                if delta > 0:
+                    self.estado.orcamento(chave, nome)['pedidos'] += delta
+        else:
+            # Sem contador de rede (motores falsos nos testes), usa os pedidos
+            # que o gerador conseguiu completar.
+            sucesso = progresso.pedidos if progresso else 0
+            dia['pedidos'] += sucesso
+            usado = (progresso.provedor if progresso else None) or (
+                getattr(self.motores[0], 'provedor', None) if self.motores else None
+            )
+            if sucesso and usado:
+                self.estado.orcamento(chave, usado)['pedidos'] += sucesso
+        if progresso is not None:
+            dia['pedidos_ok'] += progresso.pedidos
+            usado = progresso.provedor or (
+                getattr(self.motores[0], 'provedor', None) if self.motores else None
+            )
+            if usado:
+                self.estado.orcamento(chave, usado)['versos'] += progresso.versos
+
     # -- decisões de calendário ----------------------------------------------
     def decidir(self, momento: datetime) -> ResultadoCiclo | None:
         """Devolve None quando é hora de gerar, ou o motivo para esperar."""
@@ -397,10 +453,16 @@ class Agendador:
         # dia inteiro e os restantes ficavam por usar.
         if self.config.tectos_por_provedor:
             usados = dia.setdefault('por_provedor', {})
-            todos_esgotados = bool(usados) and all(
-                usados.get(nome, {}).get('pedidos', 0) >= tecto
-                for nome, tecto in self.config.tectos_por_provedor.items()
+            # Só contam os provedores que têm tecto próprio E já foram usados.
+            # Antes, se o único provedor usado fosse o Gemini (sem tecto de
+            # tokens/dia), `all([])` era True e o dia parava com a mensagem
+            # vazia “orçamento diário de cada provedor atingido ()”.
+            com_tecto = [
+                (nome, tecto) for nome, tecto in self.config.tectos_por_provedor.items()
                 if nome in usados
+            ]
+            todos_esgotados = bool(com_tecto) and all(
+                usados[nome].get('pedidos', 0) >= tecto for nome, tecto in com_tecto
             )
             if todos_esgotados:
                 detalhe = ', '.join(
@@ -431,6 +493,7 @@ class Agendador:
             return decisao
         chave = _data_local(momento, self.fuso).isoformat()
         dia = self.estado.dia(chave)
+        antes_rede = self._contagem_rede()
         self.estado.ciclos += 1
         self.estado.ultimo_ciclo_utc = _iso(momento)
 
@@ -449,6 +512,7 @@ class Agendador:
             estilo=self.config.estilo,
             falhas_anteriores=self.estado.lote_falhas,
             lote_retomar=self.estado.lote_versiculo,
+            max_segundos=self.config.max_tempo_ciclo or None,
         )
         try:
             progresso = gerar_fatia(livros, self.dados, self.fontes, motor, config)
@@ -457,6 +521,7 @@ class Agendador:
             self.estado.falhas_seguidas += 1
             self.estado.ultimo_erro = f'{type(exc).__name__}: {exc}'
             self._registar_lote(getattr(exc, 'progresso', None))
+            self._registar_consumo(chave, antes_rede, getattr(exc, 'progresso', None))
             self._registar_exaustos()
             self.diario.escrever(f'Ciclo {self.estado.ciclos} falhou: {exc}', 'erro')
             return ResultadoCiclo('nada', f'falha: {exc}', progresso=None)
@@ -464,15 +529,9 @@ class Agendador:
         self._registar_lote(progresso)
         dia['versos'] += progresso.versos
         dia['capitulos'] += progresso.capitulos
-        dia['pedidos'] += progresso.pedidos
-        # Consumo por provedor: é isto que permite trocar de serviço quando um
-        # esgota, em vez de parar o dia inteiro.
-        usado = progresso.provedor or getattr(self.motores[0], 'provedor', None)
-        if usado:
-            self.estado.gastou(
-                _data_local(_agora(), self.fuso).isoformat(),
-                usado, progresso.pedidos, progresso.versos,
-            )
+        # Consumo por provedor: inclui tentativas falhadas e é isto que permite
+        # trocar de serviço quando um esgota, em vez de parar o dia inteiro.
+        self._registar_consumo(chave, antes_rede, progresso)
         self.estado.versos_total += progresso.versos
         self._registar_exaustos()
 

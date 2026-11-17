@@ -57,7 +57,7 @@ class FontesReaisTest(unittest.TestCase):
                 self.edicoes = set()
                 self.chamadas = 0
 
-            def obter(self, req, descricao, limite=64 * 1024 * 1024):
+            def obter(self, req, descricao, limite=64 * 1024 * 1024, provedor=None):
                 if descricao != 'openai':
                     return self.real.obter(req, descricao, limite)
                 self.chamadas += 1
