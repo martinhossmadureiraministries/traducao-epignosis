@@ -16,7 +16,7 @@ from typing import Any, Callable, Protocol
 from .arquivos import DadosInvalidos, ler_livro, ler_todos, salvar_livro, validar_versiculos
 from .catalogo import Livro
 from .fontes import ALINHAMENTO_VERSAO, FontesOriginais, MORPH_COMMIT, SBL_COMMIT, TR_COMMIT
-from .ia import RespostaInvalida
+from .ia import RespostaInvalida, RespostaTruncada
 
 
 # Vocabulário fixo pedido em todos os pedidos: evita que a mesma palavra grega
@@ -51,6 +51,14 @@ class Progresso:
     concluido: bool = False        # não há mais trabalho em nenhum livro da fila
     alterado: bool = False
     motivos: list[str] = field(default_factory=list)
+    # Lote onde a produção parou e quantas vezes já falhou: a repetição no mesmo
+    # trabalho continua a partir daqui, em vez de recomeçar o capítulo.
+    lote_inicio: int | None = None
+    falhas_lote: int = 0
+    # O modelo devolveu os versículos, mas o lote foi recusado na validação
+    # (marcação inválida). Repetir com o mesmo pedido não resolve: o lote é
+    # dividido de imediato em vez de gastar tentativas.
+    lote_defeituoso: bool = False
 
     def somar(self, outro: 'Progresso') -> None:
         self.versos += outro.versos
@@ -69,6 +77,9 @@ class ConfigGeracao:
     max_versos: int | None = None       # orçamento desta fatia
     estilo: bool = True                 # enviar contexto e glossário
     max_capitulos: int | None = None
+    # Falhas já acumuladas no mesmo lote em execuções anteriores.
+    falhas_anteriores: int = 0
+    lote_retomar: int | None = None
 
 
 def _placeholder_ausente(verso: int) -> dict[str, Any]:
@@ -171,6 +182,9 @@ def _gerar_capitulo(
             if item.get('ausente'):
                 tamanho = indice
                 break
+        # Se o lote já vinha a falhar de ciclos anteriores, começa mais pequeno.
+        if config.lote_retomar == inicio and config.falhas_anteriores and tamanho > 1:
+            tamanho = 1
         falhas_unitarias = 0
         while True:
             selecionadas = fontes_capitulo[inicio - 1:inicio - 1 + tamanho]
@@ -180,7 +194,14 @@ def _gerar_capitulo(
                 validar_versiculos(versiculos, range(inicio, inicio + tamanho), f'{livro.nome} {capitulo}')
                 break
             except RespostaInvalida as exc:
-                if tamanho > 1:
+                # Resposta cortada por limite de tokens: dividir sempre resolve.
+                # Conteúdo inválido (marcação, números): dividir uma vez e, se
+                # voltar a falhar, não repetir o mesmo pedido.
+                dividir = tamanho > 1 and (
+                    isinstance(exc, RespostaTruncada) or not progresso.lote_defeituoso
+                )
+                if dividir:
+                    progresso.lote_defeituoso = True
                     tamanho = max(1, tamanho // 2)
                     limite_lote = min(limite_lote, tamanho)
                     print(
@@ -189,6 +210,8 @@ def _gerar_capitulo(
                     )
                 else:
                     falhas_unitarias += 1
+                    progresso.lote_inicio = inicio
+                    progresso.falhas_lote = config.falhas_anteriores + falhas_unitarias
                     if falhas_unitarias >= config.tentativas_conteudo:
                         raise RespostaInvalida(
                             f'{livro.nome} {capitulo}:{inicio}: resposta inválida após '
@@ -200,6 +223,8 @@ def _gerar_capitulo(
                 versiculo['commentary'] += (
                     '<p><b>Nota de fonte:</b> ' + escape(fonte['aviso']) + '</p>'
                 )
+        progresso.lote_inicio = None
+        progresso.falhas_lote = 0
         parcial.extend(versiculos)
         progresso.versos += len(versiculos)
         progresso.pedidos += 1
@@ -223,6 +248,19 @@ def gerar_fatia(
     diretorio.mkdir(parents=True, exist_ok=True)
     existentes = ler_todos(diretorio)
     progresso = Progresso()
+    try:
+        return _percorrer(livros, diretorio, fontes, motor, config, existentes, progresso)
+    except Exception as exc:
+        # Quem chama precisa de saber onde a produção parou (lote em falta),
+        # mesmo quando o gerador não devolve nada.
+        exc.progresso = progresso
+        raise
+
+
+def _percorrer(
+    livros: list[Livro], diretorio: Path, fontes: FontesOriginais, motor: Motor,
+    config: ConfigGeracao, existentes: dict[int, Any], progresso: Progresso,
+) -> Progresso:
     for livro in livros:
         caminho = diretorio / livro.nome_arquivo
         if livro.numero in existentes and not caminho.exists():

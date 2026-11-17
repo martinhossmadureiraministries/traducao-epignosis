@@ -165,8 +165,8 @@ def _unir_progresso(local: Path, remoto: Path) -> int:
 
 
 _SINAIS_TRANSITORIOS = (
-    'ServicoIndisponivel', 'HTTP 5', 'HTTP 408', 'HTTP 409', 'HTTP 425',
-    'falha de rede', 'timed out', 'timeout',
+    'ServicoIndisponivel', 'HTTP 5', 'HTTP 408', 'HTTP 409', 'HTTP 425', 'HTTP 429',
+    'falha de rede', 'timed out', 'timeout', 'CotaExcedida',
 )
 
 
@@ -391,11 +391,12 @@ def main() -> int:
     if resultado.acao == 'nada' and estado.ultimo_erro:
         linhas.append(f'- Último erro: `{estado.ultimo_erro}`')
         linhas.append(
-            '- **Causa provável:** serviço de IA instável (5xx) — não é a sua chave nem o '
-            'projeto; o próximo ciclo tenta de novo.'
+            '- **Causa provável:** serviço de IA instável (5xx) ou limite de pedidos por minuto — '
+            'não é a sua chave nem o projeto; o próximo ciclo tenta de novo.'
             if transitorio else
-            '- **Causa provável:** configuração (chave, modelo ou quota). '
-            'Corra `python autopiloto.py --testar` e veja a tabela em COMECAR_HOJE.md.'
+            '- **Causa provável:** os provedores gratuitos estão sem quota (a reposição é '
+            'diária) ou recusaram a chave. O próximo ciclo tenta de novo; se durar mais de '
+            'um dia, corra `python autopiloto.py --testar` (configuração da chave).'
         )
     if resultado.resumo_compilacao:
         resumo = resultado.resumo_compilacao

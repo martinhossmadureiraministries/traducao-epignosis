@@ -70,6 +70,13 @@ class Estado:
     # Provedores que o rodízio já marcou como esgotados hoje.
     exaustos_em: str | None = None
     exaustos: list[str] = field(default_factory=list)
+    # Onde a produção parou (livro/capítulo/versículo) e quantas vezes o mesmo
+    # lote já falhou. Permite repetir só o lote em falta no ciclo seguinte, em
+    # vez de recomeçar o capítulo e gastar quota nos versículos já guardados.
+    lote_livro: int | None = None
+    lote_capitulo: int | None = None
+    lote_versiculo: int | None = None
+    lote_falhas: int = 0
 
     def dia(self, chave: str) -> dict[str, Any]:
         return self.dias.setdefault(chave, {
@@ -315,6 +322,32 @@ class Agendador:
         self._rodizio = Rodizio(ativos, registar=self.diario.escrever)
         return self._rodizio
 
+    def _registar_lote(self, progresso: Progresso | None) -> None:
+        """Guarda onde a produção parou para o próximo ciclo continuar daí."""
+        if progresso is not None and progresso.lote_inicio is not None:
+            livro = progresso.livro
+            # `progresso.capitulo` fica preenchido durante a fatia; se a falha
+            # aconteceu no fim de um livro, mantém-se o último capítulo válido.
+            if livro is not None and progresso.capitulo:
+                self.estado.lote_livro = livro.numero
+                self.estado.lote_capitulo = progresso.capitulo
+                self.estado.lote_versiculo = progresso.lote_inicio
+                # `falhas_lote` já inclui as falhas dos ciclos anteriores.
+                self.estado.lote_falhas = progresso.falhas_lote or (self.estado.lote_falhas + 1)
+                if self.estado.lote_falhas > 6:
+                    self.diario.escrever(
+                        f'O lote {livro.nome} {progresso.capitulo}:{progresso.lote_inicio} falhou '
+                        f'{self.estado.lote_falhas} vezes; a saltar para o versículo seguinte.',
+                        'aviso',
+                    )
+                    self.estado.lote_versiculo = None
+                    self.estado.lote_falhas = 0
+        elif progresso is not None and progresso.versos:
+            self.estado.lote_livro = None
+            self.estado.lote_capitulo = None
+            self.estado.lote_versiculo = None
+            self.estado.lote_falhas = 0
+
     def _registar_exaustos(self) -> None:
         if self._rodizio is None:
             return
@@ -376,6 +409,8 @@ class Agendador:
             tentativas_conteudo=self.config.tentativas_conteudo,
             max_versos=self.config.max_versos,
             estilo=self.config.estilo,
+            falhas_anteriores=self.estado.lote_falhas,
+            lote_retomar=self.estado.lote_versiculo,
         )
         try:
             progresso = gerar_fatia(livros, self.dados, self.fontes, motor, config)
@@ -383,10 +418,12 @@ class Agendador:
             dia['falhas'] += 1
             self.estado.falhas_seguidas += 1
             self.estado.ultimo_erro = f'{type(exc).__name__}: {exc}'
+            self._registar_lote(getattr(exc, 'progresso', None))
             self._registar_exaustos()
             self.diario.escrever(f'Ciclo {self.estado.ciclos} falhou: {exc}', 'erro')
             return ResultadoCiclo('nada', f'falha: {exc}', progresso=None)
         self.estado.falhas_seguidas = 0
+        self._registar_lote(progresso)
         dia['versos'] += progresso.versos
         dia['capitulos'] += progresso.capitulos
         dia['pedidos'] += progresso.pedidos
