@@ -1,75 +1,71 @@
-# Correção da produção automática
+# BEE — como está a produção agora (17/11, 04:30)
 
-**Estado:** no `main`. Nada a mudar nos segredos. **Copie o workflow outra vez** (mudou a janela horária e as versões das ações).
+## Resposta curta
 
-## Execução de 17/11 (04:17) — verde em 9 s, zero versículos
-
-Não era avaria: a **janela de produção** é 05:00–23:00 em Luanda, e o cron
-corre também de madrugada. O programa adormecia, mas o resumo não o dizia — daí
-parecer que algo estava errado. Agora:
-
-- o resumo escreve `a aguardar a janela diária — agora são 04:17 em
-  Africa/Luanda, fora de 05:00–23:00; retoma às 05:00, daqui a 0h43`;
-- o workflow verifica a janela **antes** de arrancar (em UTC) e, fora dela,
-  termina de imediato sem gastar minutos de Actions;
-- `BEE_JANELA=0` desliga a janela interna do Python, para não haver duas réguas
-  (UTC no workflow, Luanda no programa);
-- as ações passaram a versões em Node 24 (`checkout@v7`, `setup-python@v7`,
-  `cache@v6`, `upload-artifact@v7`), terminando o aviso de depreciação.
-
-## Execução de 16/11 (16:42) — o que falhou
+**Está a funcionar.** A execução das 04:29 foi a primeira que correu de ponta a
+ponta:
 
 ```
-Resposta inválida ou truncada (João 5:1-8: Tag HTML ou atributo não permitido: <div>.)
-groq: HTTP 429; nova tentativa em 8.0s (1/3).
-- Ação: nada — falha: João 5:7: resposta inválida após 3 tentativa(s).
-```
-
-Três defeitos somados, nenhum deles na sua chave:
-
-1. **`<div>`**: o modelo envolvia os parágrafos num `<div>` e o validador recusava **a resposta inteira** por causa de uma tag sem significado. O lote era dividido até 1 versículo e o capítulo não avançava.
-2. **429**: um único HTTP 429 marcava a Groq como esgotada **pelo dia todo** — mas 429 é o limite por minuto. Ficava sem nenhum provedor.
-3. **Recomeço**: cada execução repetia o pedido do início do lote e o teto de 4096 tokens truncava 8 versículos com comentário (quota gasta a repetir).
-
-## Correções
-
-| Problema | Correção |
-|---|---|
-| `<div>` recusado | contentores neutros são aceites e convertidos em `<p>`; scripts, iframes, comentários, atributos e tags desconhecidas continuam recusados |
-| Conteúdo de `<script>` lido como HTML | ignorado por inteiro |
-| Secção do comentário em falta | nota "não devolvida pelo modelo; assinalada para revisão" — o lote não se perde |
-| Repetir o mesmo pedido 3× | divide uma vez e, se falhar, passa ao provedor seguinte |
-| 429 = quota do dia | só após 3 falhas; 429 conta como transitório |
-| Recomeçar do 5:1 | o estado guarda o versículo em falta e o ciclo seguinte pede **só** esse |
-| Lotes truncados | `--max-tokens` 12000; o workflow passa a pedir 6 versículos por pedido |
-| Execução sem nada guardado | 8 tentativas por execução (era 1) com 20 s entre elas |
-
-## Prova (dados reais, Gemini sempre 503, Groq 429 na primeira chamada, `<div>` em tudo)
-
-```
+Provedores disponíveis: Gemini (principal) + Groq (reserva).
 A retomar João 5 a partir do versículo 7/47.
-- Ação: gerado — João 5 · +6 versículos
-Progresso: 5/1189 capítulos completos, 203/31102 versículos guardados
-7..12 guardados, sem <div> nos ficheiros
+  Guardados João 5:7-12.  ... Guardados João 5:43-46.
+- Ação: gerado — João 5 · +40 versículos
+- Progresso: 5/1189 capítulos completos, 237/31102 versículos guardados
+- Dados: JSON publicados (ramo bee-dados)
 ```
 
-**102 testes automáticos** passam (14 novos reproduzem estes erros, incluindo o
-resumo fora da janela).
+Repare nas três coisas que antes falhavam e agora acontecem:
 
-## O que fazer agora (2 minutos)
+1. **Retomou no versículo 7**, não recomeçou o capítulo (os 6 versículos de
+   antes foram aproveitados).
+2. **Guardou 40 versículos** apesar de o Gemini ter dado `HTTP 503` (a resposta
+   veio da Groq, sem intervenção).
+3. **Publicou** os JSON no ramo `bee-dados`.
 
-1. **Atualize o workflow** — `modelos/bee-autopiloto.yml` → *Raw* → copiar → `.github/workflows/bee-autopiloto.yml` → editar → colar → *Commit changes* em `main`.
-   Mudou: janela em UTC (`BEE_HORA_INICIO=4`, `BEE_HORA_FIM=22`, `BEE_JANELA=0`),
-   passo de verificação da janela, `BEE_LOTE=6`, `BEE_TENTATIVAS_CICLO=8` e as
-   versões das ações.
-2. **Actions → BEE — produção automática → Run workflow** (campo *modelo* **vazio**). Uma execução manual produz a **qualquer hora** — a janela só se aplica ao cron.
-3. O resumo deve dizer `Ação: gerado — João 5` e o `BEE-modulos.zip` aparece em *Artifacts*.
+## O que ainda não está perfeito (e ficou corrigido agora)
 
-Se correr o cron de madrugada verá `Fora da janela (03 UTC): a produção retoma
-às 04:00 UTC` e mais nada — é o comportamento correto, não uma falha.
+`Módulos: ainda não há capítulos completos` — a frase que o fez desconfiar.
+Era verdade, mas inútil: o programa só compilava o módulo do MyBible quando um
+capítulo era **fechado**, e João 5 tem 47 versículos com lotes de 6. Ou seja:
+oito execuções (duas horas) sem nada novo no telemóvel, apesar de o trabalho
+estar a ser feito.
 
-Se o Gemini estiver mesmo em baixo, o resumo diz "não precisa de fazer nada" e o ciclo de 15 minutos retoma sozinho — mas agora, quando um dos dois provedores responde, alguma coisa é sempre guardada.
+Agora:
 
-## Nota honesta
+- **compila no fim de cada ciclo** sempre que há versículos novos (falha de
+  compilação nunca estraga a produção);
+- o resumo diz `Módulos: parciais, 6 capítulos completos e 238 versículos
+  (o MyBible só aceita capítulos inteiros)`;
+- e diz onde descarregar: `Artifacts → BEE-modulos.zip`;
+- quando a próxima execução retoma um lote, indica o versículo (`João 6:6`).
 
-O progresso guardado é **5 de 1.189 capítulos** e **191 versículos**. O que mudou hoje foi o programa deixar de perder trabalho e de parar por detalhes de marcação; a velocidade da IA e a revisão humana continuam iguais. A Bíblia inteira são semanas ou meses nestes planos gratuitos.
+## O que fazer para ver no MyBible (5 minutos)
+
+1. Em *Actions* → **BEE — produção autopiloto** → a última execução →
+   **Artifacts** → `BEE-modulos-N.zip` → descarregar.
+2. Descompactar e copiar **os dois** ficheiros (`BEE.SQLite3` e
+   `BEE.commentaries.SQLite3`) para a pasta do MyBible no Android.
+3. No MyBible: *Configurações → Módulos* → ativar os dois.
+
+O que vai ver: **João 1–4 completos** e João 5 a crescer. Note que o MyBible
+**só mostra capítulos fechados** — João 5 aparece quando o programa chegar ao
+versículo 47, o que deve acontecer na próxima execução (tem 46 de 47).
+
+## O que ainda é frágil, sem rodeios
+
+- **O Gemini está instável** (503 repetidos). A Groq segura o trabalho, mas a
+  qualidade do comentário varia com o modelo que responde.
+- **Ritmo**: 40 versículos por execução, de 15 em 15 minutos, dentro da janela
+  05:00–23:00 em Luanda. Na prática, algumas centenas de versículos por dia —
+  semanas ou meses para os 31.102. Não prometo mais do que isto.
+- **Revisão humana**: tudo o que está nos JSON é rascunho sinalizado como tal.
+  Nada disto substitui a sua leitura crítica, que é o objetivo do projeto.
+
+## Ficheiros
+
+| Ficheiro | Para quê |
+|---|---|
+| `ENTREGA.md` | Esta página |
+| `AUTOMACAO.md` | Planos gratuitos, janela horária, minutos de Actions, problemas comuns |
+| `COMECAR_HOJE.md` | Passo a passo |
+| `modelos/bee-autopiloto.yml` | O workflow (copiar para `.github/workflows/`) |
