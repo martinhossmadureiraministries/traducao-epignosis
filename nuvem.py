@@ -8,10 +8,12 @@ chamá-lo. É assim que a produção continua mesmo com o computador desligado.
 O que guarda:
   - os JSON dos capítulos no ramo de dados, sem misturar com o código;
   - os módulos SQLite3 como artefato descarregável (retenção configurável);
+  - um HTML por capítulo produzido (artifact + release `bee-previa`);
   - um resumo no resumo da execução do GitHub.
 """
 from __future__ import annotations
 
+from html import escape
 import json
 import os
 from pathlib import Path
@@ -19,6 +21,7 @@ import shutil
 import subprocess
 import sys
 import time
+import unicodedata
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
@@ -387,6 +390,91 @@ def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
     return resumo
 
 
+def _mapa_capitulos(dados: Path) -> dict[tuple[int, int], int]:
+    """{(book_number, capítulo): quantos versículos estão guardados}.
+
+    Conta também os capítulos ainda em curso (`in_progress`): é o que a
+    produção escreve antes de o capítulo fechar, e é precisamente o que se
+    quer poder ler no telemóvel enquanto o capítulo não está inteiro.
+    """
+    mapa: dict[tuple[int, int], int] = {}
+    for numero, livro in ler_todos(dados).items():
+        for colecao in ('chapters', 'in_progress'):
+            for cap, versos in livro.get(colecao, {}).items():
+                mapa[(numero, int(cap))] = len(versos)
+    return mapa
+
+
+def _ficheiro_capitulo(nome: str, cap: int) -> str:
+    texto = unicodedata.normalize('NFKD', nome)
+    simples = ''.join(c for c in texto if not unicodedata.combining(c) and c.isalnum())
+    return f'{simples}-{cap:03d}.html'
+
+
+def exportar_capitulos(
+    dados: Path, destino: Path, antes: dict[tuple[int, int], int], diario,
+) -> list[str]:
+    """Um HTML legível por capítulo produzido ou avançado nesta execução.
+
+    O módulo MyBible só recebe capítulos completos e consecutivos; quem quer
+    verificar no telemóvel um capítulo acabado (ou a meio) não tinha nada para
+    abrir. Os ficheiros viajam como artifact da execução e como assets do
+    release `bee-previa`, que acumula todos os capítulos já produzidos.
+    """
+    try:
+        livros = ler_todos(dados)
+    except DadosInvalidos as exc:
+        diario.escrever(f'A exportação de capítulos falhou: {exc}', 'aviso')
+        return []
+    exportados: list[str] = []
+    destino.mkdir(parents=True, exist_ok=True)
+    for numero, livro_dados in sorted(livros.items()):
+        livro = POR_NUMERO[numero]
+        vistos: set[int] = set()
+        for colecao, completo in (('chapters', True), ('in_progress', False)):
+            for cap in sorted(livro_dados.get(colecao, {}), key=int):
+                chave = (numero, int(cap))
+                if chave in vistos:
+                    continue
+                vistos.add(chave)
+                versos = livro_dados[colecao][cap]
+                if len(versos) == antes.get(chave, -1):
+                    continue  # nada mudou neste capítulo nesta execução
+                total = livro.versos_por_capitulo[int(cap) - 1]
+                estado = '' if completo or len(versos) >= total else (
+                    f' <small>(em curso: {len(versos)} de {total} versículos)</small>'
+                )
+                linhas = [
+                    '<!DOCTYPE html><html><head><meta charset="utf-8">',
+                    '<meta name="viewport" content="width=device-width, initial-scale=1">',
+                    f'<title>{escape(livro.nome)} {cap} — BEE</title>',
+                    '<style>body{font-family:serif;margin:1em auto;max-width:40em;'\
+                    'line-height:1.5}blockquote{border-left:3px solid #b8d8be;'\
+                    'margin:.4em 0 .4em .8em;padding:.1em 0 .1em .8em;color:#333;'\
+                    'font-size:.95em}</style></head><body>',
+                    f'<h1>{escape(livro.nome)} {cap}</h1>{estado}',
+                    '<p><i>Bíblia de Estudo Epignósis — rascunho automático gerado '
+                    'por IA e NÃO revisto. Autor: Martinho S. S. Madureira.</i></p>',
+                ]
+                for versiculo in sorted(versos, key=lambda v: v['verse']):
+                    linhas.append(f'<p><b>{versiculo["verse"]}</b> {versiculo["text"]}</p>')
+                    if versiculo.get('commentary'):
+                        linhas.append(f'<blockquote>{versiculo["commentary"]}</blockquote>')
+                linhas.append('</body></html>')
+                caminho = destino / _ficheiro_capitulo(livro.nome, int(cap))
+                try:
+                    escrever_atomico(caminho, '\n'.join(linhas))
+                except (OSError, ValueError) as exc:
+                    diario.escrever(f'A exportação de {caminho.name} falhou: {exc}', 'aviso')
+                    continue
+                exportados.append(caminho.name)
+    if exportados:
+        diario.escrever(
+            f'Capítulos exportados para leitura: {", ".join(exportados)}.'
+        )
+    return exportados
+
+
 LEIA_ME = (
     'Bíblia de Estudo Epignósis (BEE) — Projeto Epignósis.\n'
     'Autor: Martinho S. S. Madureira.\n'
@@ -483,8 +571,10 @@ def main() -> int:
         reparacao = f'não foi possível reparar ({type(exc).__name__})'
         print(f'Aviso: {reparacao}', file=sys.stderr, flush=True)
     antes_cap, antes_versos = _progresso(dados)
+    antes_capitulos = _mapa_capitulos(dados)
     falha: str | None = None
     resultado = None
+    exportados: list[str] = []
 
     try:
         with trava(dados):
@@ -547,6 +637,9 @@ def main() -> int:
     # A partir daqui o trabalho feito é preservado mesmo com falha: compilar,
     # publicar e empacotar não dependem de o ciclo ter terminado bem.
     resumo_compilacao = _compilar_no_fim(resultado, dados, saida, diario)
+    exportados = exportar_capitulos(
+        dados, saida.parent / 'capitulos', antes_capitulos, diario,
+    )
     depois_cap, depois_versos = _progresso(dados)
     if recuperado or reparados:
         origem = (
@@ -693,6 +786,12 @@ def main() -> int:
     else:
         linhas.append('- Módulos: ainda não há capítulos completos.')
     linhas.append(f'- Dados: {publicado} (ramo `{ramo}`)')
+    if exportados:
+        linhas.append(
+            f'- **Capítulos para ler no telemóvel:** {len(exportados)} novo(s) — '
+            'em *Artifacts* → `BEE-capitulos` desta execução e acumulados no '
+            'release `bee-previa` (Assets), um ficheiro HTML por capítulo.'
+        )
     if pacote:
         linhas.append(
             f'- **Descarregue para o MyBible:** Abaixo, em *Artifacts* → '
