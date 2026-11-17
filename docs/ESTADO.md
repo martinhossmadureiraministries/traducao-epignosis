@@ -1,5 +1,7 @@
 # Estado do projeto — 17/11/2026
 
+> Etapa 1 no PR **#32** (`arena/e4c173dc-traducao-epignosis`).
+
 Este ficheiro é o **ponto único de verdade** sobre o que está feito, o que está
 a meio e o que falta. O `PLANO_ORGANIZACAO.md` explica o diagnóstico e as
 etapas; este documento regista a execução.
