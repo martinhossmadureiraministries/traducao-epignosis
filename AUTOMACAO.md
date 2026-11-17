@@ -81,31 +81,37 @@ a ser respeitado, o que elimina a rajada de 429 que travou a produção.
 **Onde afinar:** se aparecerem 429 nos registos, baixe `BEE_PEDIDOS_POR_DIA`.
 É o único número que corta a produção diária.
 
-## 1d. Qual IA responde primeiro (e porquê)
+## 1d. Os serviços de IA e a fila (porquê esta ordem)
 
-Desde 17/11 a ordem é **Groq primeiro, Gemini de reserva**. A troca aconteceu
-porque o Gemini respondeu `503` em rajada durante horas, enquanto a Groq
-respondia sempre que tinha tokens.
+Quatro serviços gratuitos, **sem cartão**, em fila por quota decrescente:
 
-Mas a troca tem um custo que convém saber:
+| Ordem | Serviço | Quota gratuita | Versículos/dia |
+|---|---|---|---|
+| 1 | **Mistral** (Free mode) | 1.000 M tokens/mês, 500K TPM, ~2 ped/min | ~17.000 |
+| 2 | Gemini Flash-Lite | ~480 pedidos/dia, 250K TPM | ~2.880 |
+| 3 | Groq (gpt-oss-120b) | 8K TPM, 200K tokens/dia (~66 ped) | ~396 |
+| 4 | OpenRouter `:free` | ~40 pedidos/dia | ~240 |
 
-| Serviço | Quota gratuita | Versículos/dia |
-|---|---|---|
-| **Groq** (gpt-oss-120b) | 8.000 tokens/min, **200.000 tokens/dia**, 1.000 pedidos/dia | ~396 |
-| Gemini (Flash-Lite) | 250.000 tokens/min, ~480 pedidos/dia | ~2.880 |
+**Porque o Mistral vai primeiro:** dá ~20× a quota da Groq. Pô-lo no fim
+seria desperdiçar exactamente o serviço que mais pode produzir.
 
-A Groq tem **muito menos quota diária** (~66 pedidos, por causa dos tokens) do
-que o Gemini. Quando esgota, o Gemini assume o resto do dia — e é essa
-combinação que interessa.
+**Como colaboram:** fila por prioridade. Se o primeiro falhar (503, 429,
+resposta inválida), o lote passa ao seguinte — e volta ao primeiro no lote
+seguinte. Cada serviço tem o seu **próprio orçamento diário**: quando um
+esgota, os outros continuam.
 
-Cada serviço tem agora **o seu próprio orçamento diário**. Antes, esgotar um
-calava o dia inteiro e o outro ficava por usar.
+**Chaves em falta:** a fila é montada só com as chaves que existirem. O
+resumo de cada execução diz, no topo, quais entraram e quais faltam — uma
+chave em falta é a causa mais comum de a produção ficar abaixo do esperado.
 
 Para inverter a ordem sem tocar no código:
 
-```
+```yaml
 BEE_PROVEDOR_PRINCIPAL: 'gemini'
 ```
+
+**Cerebras está fora por omissão:** o plano de teste passou a exigir cartão.
+Se um dia tiver chave, basta preencher `CEREBRAS_API_KEY`.
 
 ## 2. Plano gratuito: o que é possível de verdade
 

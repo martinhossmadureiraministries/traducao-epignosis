@@ -920,6 +920,7 @@ class ProvedoresTest(unittest.TestCase):
         gratuitos = [nome for nome, p in PROVEDORES.items() if p.pedidos_por_dia]
         self.assertIn('gemini', gratuitos)
         self.assertIn('groq', gratuitos)
+        self.assertIn('mistral', gratuitos, 'o Mistral tem 1.000M tokens/mês grátis')
         self.assertNotIn('openai', gratuitos)
         for nome in gratuitos:
             self.assertIn(nome, VERSOS_POR_PEDIDO_PADRAO)

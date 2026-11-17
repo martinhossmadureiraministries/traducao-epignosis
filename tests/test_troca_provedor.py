@@ -1,8 +1,10 @@
-"""A troca de 17/11: Groq principal, Gemini de reserva.
+"""A fila de provedores: Mistral, Gemini, Groq, OpenRouter.
 
 O Gemini deu 503 em rajada durante horas. A Groq respondia sempre que tinha
-tokens, mas tinha menos quota diária. A troca só é segura porque cada serviço
-passa a ter o seu próprio orçamento: esgotar a Groq não cala o Gemini.
+tokens, mas a quota dela é pequena (200.000 tokens/dia). O Mistral entrou
+como principal porque dá 1.000 milhões de tokens/mês sem cartão — vinte vezes
+a Groq. A fila só é segura porque cada serviço tem o seu próprio orçamento:
+esgotar um não cala os outros.
 """
 import os
 from pathlib import Path
@@ -20,7 +22,7 @@ from bee.ia import PROVEDORES
 
 class OrdemDosProvedoresTest(unittest.TestCase):
     def _ordem(self, variavel=None) -> list[str]:
-        valores = {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2'}
+        valores = {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2', 'MISTRAL_API_KEY': 'k3'}
         if variavel is not None:
             valores['BEE_PROVEDOR_PRINCIPAL'] = variavel
         args = autopiloto.argumentos([])
@@ -28,17 +30,26 @@ class OrdemDosProvedoresTest(unittest.TestCase):
              patch('autopiloto.resolver_modelos', return_value=['modelo']):
             return [m.provedor for m in autopiloto._motores(args, object())]
 
-    def test_groq_responde_primeiro(self):
-        self.assertEqual(self._ordem()[0], 'groq', 'a Groq passou a principal em 17/11')
+    def test_mistral_responde_primeiro(self):
+        self.assertEqual(self._ordem()[0], 'mistral', 'o Mistral tem a maior quota gratuita')
 
-    def test_gemini_e_a_reserva(self):
-        self.assertEqual(self._ordem()[:2], ['groq', 'gemini'])
+    def test_fila_por_quota_decrescente(self):
+        """Mistral (1e9 tokens/mês) -> Gemini (480 ped) -> Groq (66 ped)."""
+        self.assertEqual(self._ordem()[:3], ['mistral', 'gemini', 'groq'])
+
+    def test_sem_mistral_a_fila_comeca_no_gemini(self):
+        args = autopiloto.argumentos([])
+        with patch.dict(os.environ, {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2'}, clear=True), \
+             patch('autopiloto.resolver_modelos', return_value=['modelo']):
+            ordem = [m.provedor for m in autopiloto._motores(args, object())]
+        self.assertEqual(ordem[:2], ['gemini', 'groq'])
 
     def test_variavel_permite_inverter_sem_tocar_no_codigo(self):
         self.assertEqual(self._ordem('gemini')[0], 'gemini')
+        self.assertEqual(self._ordem('groq')[0], 'groq')
 
     def test_variavel_desconhecida_e_ignorada(self):
-        self.assertEqual(self._ordem('inventado')[0], 'groq')
+        self.assertEqual(self._ordem('inventado')[0], 'mistral')
 
 
 class OrcamentoPorProvedorTest(unittest.TestCase):

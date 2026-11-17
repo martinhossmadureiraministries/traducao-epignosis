@@ -143,6 +143,36 @@ class IATest(unittest.TestCase):
         self.assertLess(PROVEDORES['groq'].tokens_por_minuto,
                         PROVEDORES['gemini'].tokens_por_minuto)
 
+    def test_pedidos_por_minuto_do_mistral_evita_429(self):
+        """O Mistral dá ~2 pedidos/minuto: o terceiro tem de esperar."""
+        cliente = ClienteHTTP(pausa=0, tentativas=1)
+        cliente.pedidos_por_minuto['mistral'] = 2
+        relogio = [0.0]
+
+        def dormir(segundos):
+            relogio[0] += segundos
+
+        with patch('bee.rede.time.monotonic', side_effect=lambda: relogio[0]), \
+             patch('bee.rede.time.sleep', side_effect=dormir) as sleep:
+            esperas = [cliente.reservar_pedido('mistral') for _ in range(4)]
+        self.assertEqual(esperas[:2], [0.0, 0.0], 'os dois primeiros cabem no minuto')
+        self.assertGreaterEqual(esperas[2], 59.0, 'o terceiro espera pelo minuto seguinte')
+        self.assertEqual(sleep.call_count, 1)
+
+    def test_mistral_tem_quota_muito_maior_que_a_groq(self):
+        from bee.ia import PROVEDORES
+        mistral, groq = PROVEDORES['mistral'], PROVEDORES['groq']
+        self.assertEqual(mistral.tokens_por_minuto, 500_000)
+        self.assertEqual(mistral.pedidos_por_minuto, 2, 'limite de ritmo do plano gratuito')
+        # A Groq declara 12.000 no papel, mas o limite real são os 200.000
+        # tokens/dia (~66 pedidos). O Mistral não tem tecto de tokens diário:
+        # manda o ritmo (2/min = 2.880/dia).
+        self.assertEqual(groq.tokens_por_dia, 200_000)
+        self.assertEqual(mistral.tokens_por_dia, 0, 'sem tecto de tokens por dia')
+        self.assertGreater(mistral.pedidos_por_minuto * 1440, groq.tokens_por_dia // 3000,
+                           'no fim do dia o Mistral produz muito mais')
+        self.assertEqual(mistral.variavel, 'MISTRAL_API_KEY')
+
     def test_chave_com_quebra_de_linha_e_rejeitada_sem_vazar(self):
         with self.assertRaises(ValueError) as erro:
             MotorIA('openai', 'gpt-6-luna', 'SEGREDO\nSECRET', HTTPFalso({}), 8192)

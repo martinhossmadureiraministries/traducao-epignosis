@@ -89,6 +89,9 @@ class Provedor:
     tokens_por_minuto: int = 0
     # Teto de tokens por dia. 0 = sem limite conhecido.
     tokens_por_dia: int = 0
+    # Pedidos por minuto. É o limite que aperta no Mistral (~2) e o que evita
+    # os 429 em rajada da Groq (30). 0 = o ritmo é só o do TPM.
+    pedidos_por_minuto: int = 0
 
     @property
     def modelo_padrao(self) -> str:
@@ -131,6 +134,7 @@ PROVEDORES: dict[str, Provedor] = {
         # (mais quota, menos fiável).
         8_000,
         tokens_por_dia=200_000,
+        pedidos_por_minuto=30,
     ),
     'cerebras': Provedor(
         'cerebras', 'Cerebras', 'https://api.cerebras.ai/v1/chat/completions',
@@ -141,6 +145,25 @@ PROVEDORES: dict[str, Provedor] = {
         'https://api.cerebras.ai/v1/models',
         (),
         60_000,
+    ),
+    'mistral': Provedor(
+        'mistral', 'Mistral AI', 'https://api.mistral.ai/v1/chat/completions',
+        'MISTRAL_API_KEY', 'openai',
+        # O plano gratuito ("Free mode") não exige cartão e dá 1 bilião de
+        # tokens por mês — vinte vezes a quota da Groq. O limite é o ritmo:
+        # ~1-2 pedidos por minuto.
+        ('mistral-small-4', 'mistral-small-latest', 'mistral-medium-latest',
+         'open-mistral-nemo'),
+        # 1 bilião de tokens/mês ÷ 30 dias ≈ 33M/dia ÷ 3.000 por pedido. O
+        # limite que aperta primeiro é o de pedidos por minuto, não o diário.
+        2880,
+        'Plano gratuito sem cartão (1.000 milhões de tokens/mês). O limite é o '
+        'ritmo (~1-2 pedidos/minuto), não a quota diária.',
+        'https://api.mistral.ai/v1/models',
+        (),
+        500_000,
+        0,
+        2,
     ),
     'openrouter': Provedor(
         'openrouter', 'OpenRouter', 'https://openrouter.ai/api/v1/chat/completions',
@@ -175,7 +198,10 @@ RETIRADOS = frozenset({
 MODELOS_PADRAO = {nome: p.modelo_padrao for nome, p in PROVEDORES.items()}
 
 # Contexto seguro por omissão: os modelos gratuitos pequenos não aceitam lotes grandes.
-VERSOS_POR_PEDIDO_PADRAO = {'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4, 'openai': 8}
+VERSOS_POR_PEDIDO_PADRAO = {
+    'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4,
+    'mistral': 6, 'openai': 8,
+}
 
 
 def _rede_listagem(rede: ClienteHTTP) -> ClienteHTTP:
@@ -462,6 +488,17 @@ class MotorIA:
         429 em rajada até gastar todas as tentativas. Uma espera curta e
         previsível rende muito mais do que bater no limite e desistir.
         """
+        # Pedidos por minuto primeiro: no Mistral o limite é o ritmo (2/min) e
+        # não os tokens. Sem isto, o segundo pedido seguido recebia 429.
+        rpm = PROVEDORES[self.provedor].pedidos_por_minuto
+        reservar_pedido = getattr(self.rede, 'reservar_pedido', None)
+        if rpm and reservar_pedido is not None:
+            espera_rpm = reservar_pedido(self.provedor)
+            if espera_rpm >= 1.0 and self.log:
+                self.log(
+                    f'{self.provedor}: limite de {rpm} pedidos/minuto; a aguardar '
+                    f'{espera_rpm:.0f}s para não receber HTTP 429.'
+                )
         teto = PROVEDORES[self.provedor].tokens_por_minuto
         reservar = getattr(self.rede, 'reservar_tokens', None)
         if not teto or reservar is None:
