@@ -110,6 +110,13 @@ class Provedor:
 # a Groq e a Cerebras impõem tetos por minuto de tokens. Confirme os números na
 # sua conta: mudam sem aviso e o agendador nunca deve esgotá-los.
 PROVEDORES: dict[str, Provedor] = {
+    'mistral': Provedor(
+        'mistral', 'Mistral AI', 'https://api.mistral.ai/v1/chat/completions',
+        'MISTRAL_API_KEY', 'openai',
+        ('mistral-medium-latest', 'mistral-large-latest', 'mistral-small-latest'),
+        None,
+        'API paga, usada pelo workflow durável (worker autentica-se com a conta de serviço).',
+    ),
     'gemini': Provedor(
         'gemini', 'Google Gemini (AI Studio)', 'https://generativelanguage.googleapis.com/v1beta/models/',
         'GEMINI_API_KEY', 'gemini',
@@ -430,7 +437,7 @@ class MotorIA:
             if self.provedor == 'openai':
                 # A API da OpenAI mudou o nome do parâmetro.
                 payload['max_completion_tokens'] = payload.pop('max_tokens')
-            if self.provedor in ('openai', 'groq', 'cerebras', 'ovh'):
+            if self.provedor in ('openai', 'groq', 'cerebras', 'ovh', 'mistral'):
                 # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
                 # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}

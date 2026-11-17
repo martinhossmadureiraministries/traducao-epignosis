@@ -5,8 +5,10 @@ vai primeiro porque é o único que **não pede chave nenhuma** (2 pedidos por
 minuto, sem conta, sem cartão). O Gemini dá a maior quota mas respondeu 503 em
 rajada durante horas; a Groq é pequena mas fiável.
 
-O Mistral saiu em 17/11/2026: o plano Free deixou de activar chaves de API
-(passa a exigir facturação). Ver `test_mistral_saiu_porque_deixou_de_ser_gratis`.
+O Mistral saiu do rodízio gratuito em 17/11/2026 (o plano Free deixou de
+activar chaves de API) e voltou depois como API paga do workflow durável —
+só entra na fila do autopiloto se MISTRAL_API_KEY estiver definida.
+Ver `test_mistral_so_entra_com_chave_e_e_pago`.
 """
 import os
 from pathlib import Path
@@ -56,10 +58,16 @@ class OrdemDosProvedoresTest(unittest.TestCase):
             ordem = [m.provedor for m in autopiloto._motores(args, object())]
         self.assertEqual(ordem, ['groq'])
 
-    def test_mistral_saiu_porque_deixou_de_ser_gratis(self):
-        """17/11/2026: o plano Free deixou de activar chaves de API."""
-        self.assertNotIn('mistral', PROVEDORES)
-        self.assertNotIn('MISTRAL_API_KEY', str([p.variavel for p in PROVEDORES.values()]))
+    def test_mistral_so_entra_com_chave_e_e_pago(self):
+        """17/11/2026 saiu do rodízio gratuito; voltou como API paga do workflow durável.
+
+        No autopiloto gratuito só entra quem tem chave definida; sem
+        MISTRAL_API_KEY definida, o rodízio não o considera.
+        """
+        config = PROVEDORES['mistral']
+        self.assertIsNone(config.pedidos_por_dia)
+        self.assertEqual(config.variavel, 'MISTRAL_API_KEY')
+        self.assertFalse(config.sem_chave)
 
     def test_variavel_permite_inverter_sem_tocar_no_codigo(self):
         self.assertEqual(self._ordem('gemini')[0], 'gemini')
