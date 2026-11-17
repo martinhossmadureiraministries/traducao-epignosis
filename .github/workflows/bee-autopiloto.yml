@@ -14,8 +14,14 @@ name: BEE — produção automática
 
 on:
   schedule:
-    # A cada 15 minutos. O GitHub pode atrasar execuções em horas de ponta.
-    - cron: '*/15 * * * *'
+    # A cada 20 minutos, a começar fora da hora cheia.
+    # Repositório público = minutos de Actions ilimitados, por isso o que conta
+    # é a quota da IA, não o orçamento de minutos.
+    # Duas armadilhas do cron do GitHub que já nos custaram horas de produção:
+    #   * o minuto 0 é o mais congestionado (execuções em atraso ou perdidas);
+    #   * um cron '*/15' perde o alinhamento por horas quando o GitHub atrasa.
+    # '7,27,47' mantém sempre o mesmo compasso.
+    - cron: '7,27,47 * * * *'
   pull_request:
     # Permite despachar a produção a partir deste PR ("Run workflow").
     types: [labeled]
@@ -24,7 +30,7 @@ on:
       versos_por_ciclo:
         description: 'Versículos a produzir nesta execução'
         required: false
-        default: '40'
+        default: '240'
       livros:
         description: 'Só estes book_number (ex.: 640,500); vazio = fila das oito fases'
         required: false
@@ -45,24 +51,33 @@ concurrency:
 env:
   BEE_BRAMO_DADOS: bee-dados
   BEE_FUSO: Africa/Luanda
-  # O cron do GitHub corre em UTC. 04:00–22:00 UTC = 05:00–23:00 em Luanda
-  # (Angola não muda de hora). Usamos BEE_HORA_INICIO/FIM em UTC e desligamos
-  # a janela interna (BEE_JANELA=0) para não haver duas réguas diferentes.
-  BEE_HORA_INICIO: '4'
-  BEE_HORA_FIM: '22'
+  # O cron do GitHub corre em UTC e Angola também, por isso coincidem.
+  # BEE_HORA_INICIO/FIM em UTC; BEE_JANELA=0 desliga a janela interna para
+  # não haver duas réguas diferentes. 24 horas por dia: com minutos ilimitados
+  # não há razão para parar de madrugada.
+  BEE_HORA_INICIO: '0'
+  BEE_HORA_FIM: '24'
   BEE_JANELA: '0'
-  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '40' }}
+  # 240 versículos por execução: o arranque (checkout, python, cache) custa
+  # ~1 min fixo. Com minutos ilimitados, blocos maiores rendem mais por
+  # execução e reduzem o número de arranques.
+  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '240' }}
   BEE_LIVROS: ${{ github.event.inputs.livros }}
   BEE_MODELO: ${{ github.event.inputs.modelo }}
-  # 6 versículos por pedido: cabe no teto de tokens dos modelos gratuitos e
-  # reduz a probabilidade de respostas cortadas (que gastam quota a repetir).
-  BEE_LOTE: '6'
+  # 10 versículos por pedido: com o TPM agora respeitado, cada pedido pode ser
+  # maior. Menos pedidos = menos 429 = mais versículos por hora. O programa
+  # divide o lote sozinho se a resposta vier cortada.
+  BEE_LOTE: '10'
   # 8 tentativas por lote: com o Gemini instável, 1 tentativa de 3 + 1 da
   # reserva não bastava para guardar um único lote por execução.
   BEE_TENTATIVAS_CICLO: '8'
   BEE_ESPERA_ENTRE_TENTATIVAS: '20'
   BEE_TENTATIVAS: '3'
-  BEE_PEDIDOS_POR_DIA: '400'
+  # Teto de segurança, não de ambição: o Gemini Flash-Lite dá ~480 pedidos/dia
+  # e a Groq ~1.000; juntos dão ~1.500. O programa reparte pelos dois, por
+  # isso 1.200 não esgota um serviço sozinho. Se aparecer 429, BAIXE este
+  # número — é o único sítio que corta a produção diária.
+  BEE_PEDIDOS_POR_DIA: '1200'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
   BEE_TIMEOUT: '180'
@@ -76,7 +91,11 @@ jobs:
       (github.event_name == 'schedule') ||
       (github.event_name == 'pull_request' && github.event.label.name == 'bee-producao')
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    # 20 min entre execuções, mas um ciclo pode ser mais lento quando cai na
+    # Groq (8.000 TPM = ~2 pedidos/minuto) e tem de esperar para não receber
+    # 429. 50 minutos dá folga; a `concurrency` impede sobreposição, por isso
+    # uma execução lenta não atropela a seguinte — apenas a atrasa.
+    timeout-minutes: 50
     steps:
       - name: Obter o código
         uses: actions/checkout@v7
@@ -116,6 +135,13 @@ jobs:
         if: github.event_name == 'schedule'
         id: janela
         run: |
+          # Janela de 24 h (0 a 24): não há nada para verificar. Tratar "24"
+          # como hora compara-o com 00 e fecharia a janela o dia inteiro.
+          if [ "$BEE_HORA_INICIO" = "0" ] && [ "$BEE_HORA_FIM" = "24" ]; then
+            echo "Produção a 24 horas (minutos ilimitados)." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "dentro=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           hora=$(date -u +%H)
           if [ "$hora" -lt "$BEE_HORA_INICIO" ] || [ "$hora" -ge "$BEE_HORA_FIM" ]; then
             echo "Fora da janela ($hora UTC): a produção retoma às ${BEE_HORA_INICIO}:00 UTC." | tee -a "$GITHUB_STEP_SUMMARY"
