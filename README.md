@@ -87,7 +87,8 @@ nem estado. Prefira `autopiloto.py` para texto novo.
 python3 -m unittest discover -s tests -v
 ```
 
-O teste `tests/test_workflow_sincronizado.py` compara
+O CI proposto está em `docs/ci.yml`; para ativar, copie-o para
+`.github/workflows/ci.yml` na UI. O teste `tests/test_workflow_sincronizado.py` compara
 `modelos/bee-autopiloto.yml` com `.github/workflows/bee-autopiloto.yml` e falha
 de propósito enquanto o workflow ativo não receber a versão de
 `docs/bee-autopiloto.yml`. O `worker/` é experimental e tem dependências

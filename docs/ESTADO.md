@@ -196,7 +196,7 @@ preserva os 18 capítulos/766 versículos.
 | 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
 | 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |
 | 5. Documentação coerente | feita: README curto, runbook, arquitetura e editorial; guias antigos em `arquivo/` |
-| 6. CI e testes | por fazer (não há workflow de CI) |
+| 6. CI e testes | proposta em `docs/ci.yml`; testes de higiene e documentação feitos |
 | 7. Diagnóstico do cron | por fazer |
-| 8. Limpeza física | por fazer |
+| 8. Limpeza física | feita: raiz curta e antigos em `docs/arquivo/` |
 | 9. Verificação final | por fazer |
