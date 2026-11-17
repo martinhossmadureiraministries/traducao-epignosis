@@ -82,7 +82,22 @@ class Estado:
         return self.dias.setdefault(chave, {
             'pedidos': 0, 'versos': 0, 'capitulos': 0, 'falhas': 0,
             'aberto': True, 'fechado_em_utc': None,
+            # Pedidos e versículos por provedor. Sem isto, esgotar a Groq
+            # calava o dia inteiro e o Gemini — que ainda tinha quota — nunca
+            # era usado. Cada serviço tem o seu próprio tecto.
+            'por_provedor': {},
         })
+
+    def orcamento(self, chave: str, provedor: str) -> dict[str, int]:
+        """Contadores do dia para um provedor (criados à primeira utilização)."""
+        return self.dia(chave).setdefault('por_provedor', {}).setdefault(
+            provedor, {'pedidos': 0, 'versos': 0},
+        )
+
+    def gastou(self, chave: str, provedor: str, pedidos: int, versos: int) -> None:
+        registo = self.orcamento(chave, provedor)
+        registo['pedidos'] += pedidos
+        registo['versos'] += versos
 
     def para_json(self) -> dict[str, Any]:
         return asdict(self)
@@ -190,6 +205,9 @@ class ConfigAgenda:
     max_pedidos: int = 3
     pedidos_por_dia: int = 400
     versos_por_dia: int = 0            # 0: sem teto próprio
+    # Tecto de pedidos de cada provedor, por dia. Vazio: usa pedidos_por_dia
+    # para todos (comportamento antigo).
+    tectos_por_provedor: dict[str, int] = field(default_factory=dict)
     hora_inicio: int = 0
     hora_fim: int = 24
     fuso: str = FUSO_PADRAO
@@ -374,6 +392,26 @@ class Agendador:
             return ResultadoCiclo(
                 'parar', f"orçamento diário de {self.config.pedidos_por_dia} pedidos atingido", espera=None,
             )
+        # Cada provedor tem o seu tecto: esgotar a Groq não deve calar o
+        # Gemini, que ainda tem quota. Antes, o primeiro a esgotar-se parava o
+        # dia inteiro e os restantes ficavam por usar.
+        if self.config.tectos_por_provedor:
+            usados = dia.setdefault('por_provedor', {})
+            todos_esgotados = bool(usados) and all(
+                usados.get(nome, {}).get('pedidos', 0) >= tecto
+                for nome, tecto in self.config.tectos_por_provedor.items()
+                if nome in usados
+            )
+            if todos_esgotados:
+                detalhe = ', '.join(
+                    f'{nome}: {usados[nome]["pedidos"]}/{tecto}'
+                    for nome, tecto in self.config.tectos_por_provedor.items()
+                    if nome in usados
+                )
+                return ResultadoCiclo(
+                    'parar', f'orçamento diário de cada provedor atingido ({detalhe})',
+                    espera=None,
+                )
         if self.config.versos_por_dia and dia['versos'] >= self.config.versos_por_dia:
             return ResultadoCiclo(
                 'parar', f"orçamento diário de {self.config.versos_por_dia} versículos atingido",
@@ -427,6 +465,14 @@ class Agendador:
         dia['versos'] += progresso.versos
         dia['capitulos'] += progresso.capitulos
         dia['pedidos'] += progresso.pedidos
+        # Consumo por provedor: é isto que permite trocar de serviço quando um
+        # esgota, em vez de parar o dia inteiro.
+        usado = progresso.provedor or getattr(self.motores[0], 'provedor', None)
+        if usado:
+            self.estado.gastou(
+                _data_local(_agora(), self.fuso).isoformat(),
+                usado, progresso.pedidos, progresso.versos,
+            )
         self.estado.versos_total += progresso.versos
         self._registar_exaustos()
 

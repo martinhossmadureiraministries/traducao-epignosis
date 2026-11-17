@@ -81,6 +81,32 @@ a ser respeitado, o que elimina a rajada de 429 que travou a produção.
 **Onde afinar:** se aparecerem 429 nos registos, baixe `BEE_PEDIDOS_POR_DIA`.
 É o único número que corta a produção diária.
 
+## 1d. Qual IA responde primeiro (e porquê)
+
+Desde 17/11 a ordem é **Groq primeiro, Gemini de reserva**. A troca aconteceu
+porque o Gemini respondeu `503` em rajada durante horas, enquanto a Groq
+respondia sempre que tinha tokens.
+
+Mas a troca tem um custo que convém saber:
+
+| Serviço | Quota gratuita | Versículos/dia |
+|---|---|---|
+| **Groq** (gpt-oss-120b) | 8.000 tokens/min, **200.000 tokens/dia**, 1.000 pedidos/dia | ~396 |
+| Gemini (Flash-Lite) | 250.000 tokens/min, ~480 pedidos/dia | ~2.880 |
+
+A Groq tem **muito menos quota diária** (~66 pedidos, por causa dos tokens) do
+que o Gemini. Quando esgota, o Gemini assume o resto do dia — e é essa
+combinação que interessa.
+
+Cada serviço tem agora **o seu próprio orçamento diário**. Antes, esgotar um
+calava o dia inteiro e o outro ficava por usar.
+
+Para inverter a ordem sem tocar no código:
+
+```
+BEE_PROVEDOR_PRINCIPAL: 'gemini'
+```
+
 ## 2. Plano gratuito: o que é possível de verdade
 
 Os números abaixo são **referências de 2026 que mudam sem aviso**; confirme-os na sua conta antes de confiar neles. O programa já vem com tetos conservadores e nunca tenta esgotar a quota.

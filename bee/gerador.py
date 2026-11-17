@@ -51,6 +51,9 @@ class Progresso:
     concluido: bool = False        # não há mais trabalho em nenhum livro da fila
     alterado: bool = False
     motivos: list[str] = field(default_factory=list)
+    # Provedor que respondeu nesta fatia: o agendador precisa de saber a quem
+    # imputar os pedidos para respeitar o tecto diário de cada serviço.
+    provedor: str | None = None
     # Lote onde a produção parou e quantas vezes já falhou: a repetição no mesmo
     # trabalho continua a partir daqui, em vez de recomeçar o capítulo.
     lote_inicio: int | None = None
@@ -247,6 +250,7 @@ def _gerar_capitulo(
         progresso.versos += len(versiculos)
         progresso.pedidos += 1
         progresso.alterado = True
+        progresso.provedor = motor.provedor
         _registrar(dados, capitulo, inicio, inicio + tamanho - 1, motor.provedor, motor.modelo)
         _salvar_lote(caminho, dados, livro, capitulo, parcial, total)
         print(f'  Guardados {livro.nome} {capitulo}:{inicio}-{inicio + tamanho - 1}.', flush=True)

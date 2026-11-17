@@ -74,11 +74,14 @@ env:
   BEE_TENTATIVAS_CICLO: '8'
   BEE_ESPERA_ENTRE_TENTATIVAS: '20'
   BEE_TENTATIVAS: '3'
-  # Teto de segurança, não de ambição: o Gemini Flash-Lite dá ~480 pedidos/dia
-  # e a Groq ~1.000; juntos dão ~1.500. O programa reparte pelos dois, por
-  # isso 1.200 não esgota um serviço sozinho. Se aparecer 429, BAIXE este
-  # número — é o único sítio que corta a produção diária.
-  BEE_PEDIDOS_POR_DIA: '1200'
+  # Teto GLOBAL de pedidos por dia (soma dos serviços). Cada serviço tem também
+  # o seu próprio tecto, calculado a partir da quota real: a Groq está limitada
+  # a ~66 pedidos/dia por causa dos 200.000 tokens/dia do plano gratuito. O
+  # Gemini fica com os 480 dele quando a Groq esgota.
+  BEE_PEDIDOS_POR_DIA: '600'
+  # Quem responde primeiro. A Groq passou a principal em 17/11: o Gemini deu
+  # 503 em rajada durante horas. Para inverter, mude para 'gemini'.
+  BEE_PROVEDOR_PRINCIPAL: 'groq'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
   BEE_TIMEOUT: '180'

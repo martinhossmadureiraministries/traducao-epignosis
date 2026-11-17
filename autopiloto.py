@@ -244,8 +244,20 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
         raise SystemExit(
             'Nenhum provedor configurado. Defina uma destas variáveis de ambiente: ' + disponiveis + '.'
         )
-    # Provedores gratuitos primeiro; os pagos só entram se o utilizador os configurar.
-    ordem = {nome: i for i, nome in enumerate(['gemini', 'groq', 'cerebras', 'openrouter', 'openai'])}
+    # Provedores gratuitos primeiro; os pagos só entram se o utilizador os
+    # configurar.
+    #
+    # A Groq passou a principal em 17/11: o Gemini respondeu 503 em rajada
+    # durante horas, enquanto a Groq respondia sempre que tinha tokens. O
+    # Gemini fica como reserva — tem mais quota diária (480 pedidos) mas é
+    # menos fiável. `BEE_PROVEDOR_PRINCIPAL` permite inverter sem tocar no
+    # código.
+    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'groq').strip().lower()
+    ordem_nomes = ['groq', 'gemini', 'cerebras', 'openrouter', 'openai']
+    if principal in ordem_nomes:
+        ordem_nomes.remove(principal)
+        ordem_nomes.insert(0, principal)
+    ordem = {nome: i for i, nome in enumerate(ordem_nomes)}
     configurados.sort(key=lambda par: ordem.get(par[0], 99))
     if args.modelo and len(configurados) > 1:
         print('  Aviso: --modelo só se aplica quando há um provedor; aqui o modelo é descoberto '
@@ -265,8 +277,27 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     return motores
 
 
+def _tectos_por_provedor(lote: int) -> dict[str, int]:
+    """Quantos pedidos por dia cada serviço aguenta, pela sua própria quota.
+
+    O tecto global (`BEE_PEDIDOS_POR_DIA`) é uma média; este é o limite real de
+    cada serviço. Sem ele, esgotar a Groq (200.000 tokens/dia) calava o dia
+    inteiro mesmo com o Gemini disponível.
+    """
+    tectos: dict[str, int] = {}
+    if not lote:
+        return tectos
+    for nome, config in PROVEDORES.items():
+        if config.tokens_por_dia:
+            # ~3.000 tokens por pedido com lote de 6 (1.500 de entrada + 1.500
+            # de saída); pedidos maiores gastam proporcionalmente mais.
+            tectos[nome] = max(1, config.tokens_por_dia // (lote * 500))
+    return tectos
+
+
 def _config(args: argparse.Namespace) -> ConfigAgenda:
     return ConfigAgenda(
+        tectos_por_provedor=_tectos_por_provedor(args.lote),
         intervalo_min=args.intervalo_min,
         max_versos=args.max_versos,
         pedidos_por_dia=args.pedidos_por_dia,
