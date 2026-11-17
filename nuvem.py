@@ -29,6 +29,7 @@ import autopiloto
 from bee.agenda import (
     Agendador, Diario, carregar_estado, escrever_atomico, livros_na_fila,
     proximo_trabalho, salvar_estado,
+    _agora,
 )
 from bee.arquivos import DadosInvalidos, ler_todos
 from bee.catalogo import POR_NUMERO
@@ -411,22 +412,59 @@ def _ficheiro_capitulo(nome: str, cap: int) -> str:
     return f'{simples}-{cap:03d}.html'
 
 
+ESTILO_CAPITULO = (
+    ':root{--tinta:#242019;--suave:#635c4e;--acento:#2e6b45;--fundo:#faf7f1;'\
+    '--cartao:#f1ebe0;--borda:#ddd3c0}'\
+    '@media(prefers-color-scheme:dark){:root{--tinta:#e7e2d6;--suave:#a59d8c;'\
+    '--acento:#95cba4;--fundo:#171511;--cartao:#22201a;--borda:#3c382d}}'\
+    '*{box-sizing:border-box}'\
+    'html{-webkit-text-size-adjust:100%}'\
+    'body{margin:0;background:var(--fundo);color:var(--tinta);'\
+    "font-family:Georgia,'Times New Roman',serif;line-height:1.75;font-size:18px}"\
+    'main{max-width:38em;margin:0 auto;padding:1.4em 1.2em 3.5em}'\
+    'header{border-bottom:2px solid var(--borda);padding-bottom:.55em;margin-bottom:1.1em}'\
+    'h1{margin:0;font-size:1.6em;line-height:1.25;font-weight:normal}'\
+    '.rotulo{color:var(--suave);font-size:.78em;margin-top:.25em;'\
+    "font-family:system-ui,sans-serif}"\
+    '.aviso{background:var(--cartao);border:1px solid var(--borda);'\
+    'border-radius:10px;padding:.6em .85em;font-size:.76em;color:var(--suave);'\
+    'margin:0 0 1.6em;line-height:1.55;font-family:system-ui,sans-serif}'\
+    '.v{margin:0 0 1em}'\
+    '.v sup{color:var(--acento);font-weight:700;font-size:.7em;'\
+    'margin-right:.45em;font-family:system-ui,sans-serif}'\
+    'details{margin:-.5em 0 1.4em;border:1px solid var(--borda);'\
+    'border-radius:10px;background:var(--cartao);overflow:hidden}'\
+    'summary{cursor:pointer;padding:.55em .9em;color:var(--acento);'\
+    "font-family:system-ui,sans-serif;font-size:.78em;font-weight:600;"\
+    'letter-spacing:.02em}'\
+    'summary::before{content:"▸ "}'\
+    'details[open] summary::before{content:"▾ "}'\
+    'details>div{padding:.2em 1em .75em;font-size:.88em;line-height:1.65;'\
+    'border-top:1px solid var(--borda)}'\
+    'details b{color:var(--acento)}'\
+    'details p{margin:.45em 0}'\
+    'i{font-style:italic}'\
+)
+
+
 def exportar_capitulos(
     dados: Path, destino: Path, antes: dict[tuple[int, int], int], diario,
-) -> list[str]:
-    """Um HTML legível por capítulo produzido ou avançado nesta execução.
+) -> tuple[list[str], int]:
+    """Um HTML legível por capítulo, todos os capítulos, em cada execução.
 
     O módulo MyBible só recebe capítulos completos e consecutivos; quem quer
     verificar no telemóvel um capítulo acabado (ou a meio) não tinha nada para
     abrir. Os ficheiros viajam como artifact da execução e como assets do
-    release `bee-previa`, que acumula todos os capítulos já produzidos.
+    release `bee-previa`, que fica com a coleção completa e atual.
+    Devolve (ficheiros escritos, quantos capítulos mudaram nesta execução).
     """
     try:
         livros = ler_todos(dados)
     except DadosInvalidos as exc:
         diario.escrever(f'A exportação de capítulos falhou: {exc}', 'aviso')
-        return []
+        return [], 0
     exportados: list[str] = []
+    novos = 0
     destino.mkdir(parents=True, exist_ok=True)
     for numero, livro_dados in sorted(livros.items()):
         livro = POR_NUMERO[numero]
@@ -438,29 +476,37 @@ def exportar_capitulos(
                     continue
                 vistos.add(chave)
                 versos = livro_dados[colecao][cap]
-                if len(versos) == antes.get(chave, -1):
-                    continue  # nada mudou neste capítulo nesta execução
+                if len(versos) != antes.get(chave, -1):
+                    novos += 1
                 total = livro.versos_por_capitulo[int(cap) - 1]
-                estado = '' if completo or len(versos) >= total else (
-                    f' <small>(em curso: {len(versos)} de {total} versículos)</small>'
-                )
+                em_curso = not completo and len(versos) < total
+                cabecalho = f'{escape(livro.nome)} {cap}'
                 linhas = [
-                    '<!DOCTYPE html><html><head><meta charset="utf-8">',
+                    '<!DOCTYPE html>',
+                    '<html lang="pt"><head><meta charset="utf-8">',
                     '<meta name="viewport" content="width=device-width, initial-scale=1">',
-                    f'<title>{escape(livro.nome)} {cap} — BEE</title>',
-                    '<style>body{font-family:serif;margin:1em auto;max-width:40em;'\
-                    'line-height:1.5}blockquote{border-left:3px solid #b8d8be;'\
-                    'margin:.4em 0 .4em .8em;padding:.1em 0 .1em .8em;color:#333;'\
-                    'font-size:.95em}</style></head><body>',
-                    f'<h1>{escape(livro.nome)} {cap}</h1>{estado}',
-                    '<p><i>Bíblia de Estudo Epignósis — rascunho automático gerado '
-                    'por IA e NÃO revisto. Autor: Martinho S. S. Madureira.</i></p>',
+                    f'<title>{cabecalho} — BEE</title>',
+                    f'<style>{ESTILO_CAPITULO}</style></head><body><main>',
+                    f'<header><h1>{cabecalho}</h1>'
+                    + (
+                        f'<div class="rotulo">em curso: {len(versos)} de {total} versículos</div>'
+                        if em_curso else ''
+                    )
+                    + '</header>',
+                    '<div class="aviso">Bíblia de Estudo Epignósis — rascunho automático '
+                    'gerado por IA e <b>NÃO revisto</b>. Autor: Martinho S. S. Madureira. '
+                    f'Gerado em {_agora():%d/%m/%Y %H:%M}.</div>',
                 ]
                 for versiculo in sorted(versos, key=lambda v: v['verse']):
-                    linhas.append(f'<p><b>{versiculo["verse"]}</b> {versiculo["text"]}</p>')
+                    linhas.append(
+                        f'<p class="v"><sup>{versiculo["verse"]}</sup>{versiculo["text"]}</p>'
+                    )
                     if versiculo.get('commentary'):
-                        linhas.append(f'<blockquote>{versiculo["commentary"]}</blockquote>')
-                linhas.append('</body></html>')
+                        linhas.append(
+                            '<details><summary>Comentário — toque para abrir</summary><div>'
+                            + versiculo['commentary'] + '</div></details>'
+                        )
+                linhas.append('</main></body></html>')
                 caminho = destino / _ficheiro_capitulo(livro.nome, int(cap))
                 try:
                     escrever_atomico(caminho, '\n'.join(linhas))
@@ -470,9 +516,10 @@ def exportar_capitulos(
                 exportados.append(caminho.name)
     if exportados:
         diario.escrever(
-            f'Capítulos exportados para leitura: {", ".join(exportados)}.'
+            f'Capítulos exportados para leitura: {len(exportados)} '
+            f'({novos} mudaram nesta execução).'
         )
-    return exportados
+    return exportados, novos
 
 
 LEIA_ME = (
@@ -637,7 +684,7 @@ def main() -> int:
     # A partir daqui o trabalho feito é preservado mesmo com falha: compilar,
     # publicar e empacotar não dependem de o ciclo ter terminado bem.
     resumo_compilacao = _compilar_no_fim(resultado, dados, saida, diario)
-    exportados = exportar_capitulos(
+    exportados, capitulos_novos = exportar_capitulos(
         dados, saida.parent / 'capitulos', antes_capitulos, diario,
     )
     depois_cap, depois_versos = _progresso(dados)
@@ -788,9 +835,10 @@ def main() -> int:
     linhas.append(f'- Dados: {publicado} (ramo `{ramo}`)')
     if exportados:
         linhas.append(
-            f'- **Capítulos para ler no telemóvel:** {len(exportados)} novo(s) — '
-            'em *Artifacts* → `BEE-capitulos` desta execução e acumulados no '
-            'release `bee-previa` (Assets), um ficheiro HTML por capítulo.'
+            f'- **Capítulos para ler no telemóvel:** {len(exportados)} no total, '
+            f'{capitulos_novos} mudado(s) nesta execução — em *Artifacts* → '
+            '`BEE-capitulos` desta execução e acumulados no release `bee-previa` '
+            '(Assets), um ficheiro HTML por capítulo.'
         )
     if pacote:
         linhas.append(
