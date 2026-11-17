@@ -50,7 +50,14 @@ env:
   BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '40' }}
   BEE_LIVROS: ${{ github.event.inputs.livros }}
   BEE_MODELO: ${{ github.event.inputs.modelo }}
-  BEE_LOTE: '8'
+  # 6 versículos por pedido: cabe no teto de tokens dos modelos gratuitos e
+  # reduz a probabilidade de respostas cortadas (que gastam quota a repetir).
+  BEE_LOTE: '6'
+  # 8 tentativas por lote: com o Gemini instável, 1 tentativa de 3 + 1 da
+  # reserva não bastava para guardar um único lote por execução.
+  BEE_TENTATIVAS_CICLO: '8'
+  BEE_ESPERA_ENTRE_TENTATIVAS: '20'
+  BEE_TENTATIVAS: '3'
   BEE_PEDIDOS_POR_DIA: '400'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
