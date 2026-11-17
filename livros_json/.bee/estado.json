@@ -1,26 +1,37 @@
 {
-  "ciclos": 1,
+  "ciclos": 3,
   "criado_utc": "2026-11-17T05:36:21+00:00",
   "dias": {
     "2026-11-17": {
       "aberto": true,
       "capitulos": 0,
-      "falhas": 1,
+      "falhas": 3,
       "fechado_em_utc": null,
-      "pedidos": 0,
+      "pedidos": 12,
+      "pedidos_ok": 4,
+      "por_provedor": {
+        "gemini": {
+          "pedidos": 7,
+          "versos": 0
+        },
+        "groq": {
+          "pedidos": 5,
+          "versos": 19
+        }
+      },
       "versos": 0
     }
   },
   "exaustos": [],
   "exaustos_em": "2026-11-17",
-  "falhas_seguidas": 1,
-  "lote_capitulo": 18,
-  "lote_falhas": 3,
-  "lote_livro": 500,
-  "lote_versiculo": 1,
+  "falhas_seguidas": 0,
+  "lote_capitulo": null,
+  "lote_falhas": 0,
+  "lote_livro": null,
+  "lote_versiculo": null,
   "ultima_compilacao_build": null,
   "ultima_compilacao_utc": null,
-  "ultimo_ciclo_utc": "2026-11-17T05:36:22+00:00",
-  "ultimo_erro": "RespostaInvalida: João 18:1: resposta inválida após 3 tentativa(s). Progresso anterior preservado. João 18:1-10: JSON inválido: Expecting ':' delimiter: line 1 column 2464 (char 2463)",
+  "ultimo_ciclo_utc": "2026-11-17T15:03:53+00:00",
+  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Groq · openai/gpt-oss-120b: quota esgotada; Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
   "versos_total": 766
 }

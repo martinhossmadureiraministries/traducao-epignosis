@@ -3744,7 +3744,105 @@
       }
     ]
   },
-  "in_progress": {},
+  "in_progress": {
+    "18": [
+      {
+        "verse": 1,
+        "text": "Tendo dito estas <i>coisas</i>, Jesus saiu com os seus discípulos para além do ribeiro de Cedrom, onde havia um jardim, no qual entrou ele e os seus discípulos.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Ταῦτα</i> (tauta - estes / estas coisas); <i>εἰπὼν</i> (eipōn - tendo dito, definição não verificada em léxico); <i>Ἰησοῦς</i> (Iēsous - Jesus); <i>ἐξῆλθεν</i> (exēlthen - saiu); <i>σὺν</i> (syn - com); <i>μαθηταῖς</i> (mathitais - discípulos); <i>πέραν</i> (peran - além de); <i>χειμάρρου</i> (cheimarrou - ribeiro / torrente); <i>Κεδρὼν</i> (Kedrōn - Cedrom); <i>κῆπος</i> (kēpos - jardim); <i>εἰσῆλθεν</i> (eisēlthen - entrou).</p><p><b>Crítica Textual:</b> Na primeira variação indicada no aparato, o SBLGNT e as edições críticas adotam <i>εἰπὼν</i> sem o artigo <i>ὁ</i>, enquanto o Textus Receptus inclui <i>ὁ</i> antes de <i>Ἰησοῦς</i> (resultando em <i>ὁ Ἰησοῦς</i>). Na segunda variação, o SBLGNT traz o genitivo singular <i>τοῦ</i> [Κεδρὼν], alinhando-se a Tregelles e Nestle-Aland 28, ao passo que o Textus Receptus e o grupo WH/RP registram o genitivo plural <i>τῶν</i> [κεδρων].</p><p><b>Síntese Exegética:</b> O versículo marca a transição dramática do discurso de despedida e da oração sacerdotal para o cenário da paixão. Após proferir suas últimas palavras aos discípulos no cenáculo ou no caminho, Jesus atravessa a torrente de Cedrom em direção a um jardim — o Getsêmani —, antecipando o sofrimento e cumprindo voluntariamente a entrega ao plano redentor.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Mas Judas, que o entregava, conhecia também o lugar, porque muitas vezes <i>Jesus</i> se ajuntava ali com os seus discípulos.",
+        "commentary": "<p><b>Análise Léxica</b><br>ᾔδει (eidē) – “sabia, conhecia”; ὁ παραδιδούς (ho paradidōs) – “o que entregava”; τὸν τόπον (ton topon) – “o lugar”; ὅτι (hoti) – “porque”; πολλάκις (pollakis) – “muitas vezes”; συνήχθη (sunēchthē) – “se ajuntava”; Ἰησοῦς (Iēsous) – “Jesus”; ἐκεῖ (ekeî) – “ali”; μετὰ (meta) – “com”; τῶν μαθητῶν (tōn mathētōn) – “dos discípulos”; αὐτοῦ (autou) – “dele”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Judas, intimamente familiar com as rotinas de Jesus, sabia que o Mestre frequentemente se reunia naquele jardim com seus seguidores, o que facilitou a traição planejada.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Então Judas, tomando a espada, e vindo dos sacerdotes e dos fariseus, chegou ali com lanternas, tochas e armas.",
+        "commentary": "<p><b>Análise Léxica</b><br>ὁ οὖν (ho oun) – “então”; Ἰούδας (Ioudas) – “Judas”; λαβὼν (labōn) – “tomando”; τὴν σπεῖραν (tēn speiran) – “a espada”; ἐκ τῶν ἀρχιερέων (ek tōn archiereōn) – “dos sacerdotes”; καὶ (kai) – “e”; ἐκ τῶν Φαρισαίων (ek tōn Pharisaiōn) – “dos fariseus”; ὑπηρέτας (hypērētas) – “servos, ajudantes”; ἔρχεται (erchetai) – “chega”; ἐκεῖ (ekei) – “ali”; μετὰ (meta) – “com”; φανῶν (phanōn) – “lanternas”; καὶ (kai) – “e”; λαμπάδων (lampadōn) – “tochas”; καὶ (kai) – “e”; ὅπλων (hoplon) – “armas”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Judas, munido de espada, chega ao local acompanhado de guardas dos principais líderes religiosos, trazendo iluminação e armas, indicando a intenção de captura violenta.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Então <i>Jesus</i>, conhecendo tudo o que havia de acontecer contra Ele, saiu e lhes disse: “A quem buscais?”",
+        "commentary": "<p><b>Análise Léxica</b><br>Ἰησοῦς (Iēsous) – “Jesus”; οὖν (oun) – “então”; εἰδὼς (eidōs) – “conhecendo”; πάντα (panta) – “tudo”; τὰ ἐρχόμενα (ta erchomena) – “o que vem, o que está para acontecer”; ἐπ’ αὐτὸν (ep&#x27; auton) – “contra Ele”; ἐξῆλθεν (exēlthen) – “saiu”; καὶ (kai) – “e”; λέγει (legei) – “diz”; αὐτοῖς (autois) – “a eles”; Τίνα (Tina) – “A quem”; ζητεῖτε (zeteite) – “buscais”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Jesus, plenamente ciente da traição iminente, confronta os que o cercam com a pergunta que revela sua identidade e autoridade.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Responderam-lhe: “Jesus, o Nazareno.” Ele lhes disse: “Eu Sou.” E Judas, o que o entregava, permanecia com eles.",
+        "commentary": "<p><b>Análise Léxica</b><br>ἀπεκρίθησαν (apekrithēsan) – “responderam”; αὐτῷ (autō) – “a Ele”; Ἰησοῦν τὸν Ναζωραῖον (Iēsoun ton Nazōraion) – “Jesus, o Nazareno”; λέγει (legei) – “diz”; αὐτοῖς (autois) – “a eles”; Ἐγώ εἰμι (Ego eimi) – “Eu Sou”; εἱστήκει (heistēkei) – “permanecia”; δὲ (de) – “e”; Ἰούδας ὁ παραδίδους (Ioudas ho paradidous) – “Judas, o que entregava”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Os guardas identificam Jesus pelo nome e local; Ele afirma sua divindade com “Eu Sou”; Judas permanece entre eles, pronto para cumprir a traição.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Então, dizendo-lhes: “Eu Sou”, retirou‑se para trás e eles caíram ao chão.",
+        "commentary": "<p><b>Análise Léxica</b><br>ὡς οὖν (hōs oun) – “então”; εἶπεν (eipen) – “disse”; αὐτοῖς (autois) – “a eles”; Ἐγώ εἰμι (Ego eimi) – “Eu Sou”; ἀπῆλθον (apēlthon) – “retirou‑se”; εἰς τὰ ὀπίσω (eis ta opisō) – “para trás”; καὶ (kai) – “e”; ἔπεσαν (epesan) – “caíram”; χαμαί (chamai) – “ao chão”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Ao proclamar sua identidade, Jesus se afasta, e a reação dos guardas é de queda, simbolizando a derrota da tentativa de captura.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Novamente, então, perguntou-lhes: “A quem buscais?” E eles responderam: “Jesus, o Nazareno.”",
+        "commentary": "<p><b>Análise Léxica</b><br>πάλιν (palin) – “novamente”; οὖν (oun) – “então”; ἐπηρώτησεν (epērōtēsen) – “perguntou”; αὐτούς (autous) – “a eles”; Τίνα (Tina) – “A quem”; ζητεῖτε (zeteite) – “buscais”; οἱ δὲ (hoi de) – “e eles”; εἶπαν (eipan) – “responderam”; Ἰησοῦν τὸν Ναζωραῖον (Iēsoun ton Nazōraion) – “Jesus, o Nazareno”. definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>sem variante verificada</p><p><b>Síntese Exegética</b><br>Jesus reitera a pergunta, reforçando sua autoridade; a resposta confirma a identidade buscada, preparando o cenário para a prisão.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "<i>Respondeu Jesus: “Eu Sou; portanto, se me buscais, deixai que estes se retirem.”</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ἀπεκρίθη – <i>apekríthē</i> – “respondeu” (definição não verificada em léxico).<br>Ἰησοῦς – <i>Iēsous</i> – “Jesus”.<br>Εἶπον – <i>eípōn</i> – “disse”.<br>ὑμῖν – <i>humîn</i> – “a vós”.<br>ὅτι – <i>hóti</i> – “que”.<br>ἐγώ – <i>egṓ</i> – “eu”.<br>εἰμι – <i>eimi</i> – “sou”.<br>εἰ – <i>ei</i> – “se”.<br>οὖν – <i>oun</i> – “portanto”.<br>ἐμὲ – <i>eme</i> – “a mim” (TR tem <i>εμε</i>).<br>ζητεῖτε – <i>zēteíte</i> – “buscais”.<br>ἄφετε – <i>aphete</i> – “deixai”.<br>τούτους – <i>toútous</i> – “estes”.<br>ὑπάγειν – <i>hypágein</i> – “retirar‑se”.</p><p><b>Crítica Textual</b><br>Diferença observada entre SBLGNT e Textus Receptus: [[εμε/ἐμὲ]] (forma acusativa de “eu”). Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b><br>Jesus reafirma sua identidade divina e, ao reconhecer que o procuram, concede liberdade aos que o acompanham, demonstrando sua autoridade sobre a situação.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "<i>Para que se cumprisse a palavra que disse: “Dos que me deste, não perdi nenhum.”</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ἵνα – <i>hina</i> – “para que”.<br>πληρωθῇ – <i>plērōthē</i> – “se cumpra”.<br>ὁ λόγος – <i>ho lógos</i> – “a palavra”.<br>ὃν – <i>hon</i> – “que”.<br>εἶπεν – <i>eipen</i> – “disse”.<br>ὅτι – <i>hóti</i> – “que”.<br>Οὓς – <i>hoús</i> – “dos quais” (TR tem <i>ουσ</i>).<br>δέδωκάς – <i>dedōkás</i> – “deste”.<br>μοι – <i>moi</i> – “a mim”.<br>οὐκ – <i>ouk</i> – “não”.<br>ἀπώλεσα – <i>apōlesa</i> – “perdi”.<br>ἐξ – <i>ex</i> – “de”.<br>αὐτῶν – <i>autōn</i> – “eles”.<br>οὐδένα – <i>oudena</i> – “nenhum”.</p><p><b>Crítica Textual</b><br>Diferença observada: [[Οὓς/ουσ]] (variante de ortografia). Sem outras diferenças relevantes.</p><p><b>Síntese Exegética</b><br>Jesus indica que a prisão cumpre a profecia de que nenhum dos que lhe foram confiados seria perdido, sublinhando a soberania divina sobre os acontecimentos.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "<i>Então Simão Pedro, tendo uma espada, a puxou e feriu o servo do sumo sacerdote, cortando-lhe a orelha direita; o servo chamava‑se Malco.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>Σίμων – <i>Simōn</i> – “Simão”.<br>οὖν – <i>oun</i> – “então”.<br>Πέτρος – <i>Pétros</i> – “Pedro”.<br>ἔχων – <i>echōn</i> – “tendo”.<br>μάχαιραν – <i>machairan</i> – “espada”.<br>εἵλκυσεν – <i>heílkysen</i> – “puxou”.<br>αὐτὴν – <i>autēn</i> – “ela”.<br>ἔπαισεν – <i>epaisen</i> – “feriu”.<br>τὸν τοῦ ἀρχιερέως δοῦλον – “o servo do sumo sacerdote”.<br>ἀπέκοψεν – <i>apékopsen</i> – “cortou”.<br>τὸ ὠτάριον τὸ δεξιόν – “a orelha direita” (TR tem <i>ωτιον</i>).<br>ἦν δὲ ὄνομα τῷ δούλῳ Μάλχος – “chamava‑se Malco”.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[ἀπέκοψεν/apekopsen]] (acentuação), [[ὠτάριον/ωτιον]] (ortografia). Sem outras variantes.</p><p><b>Síntese Exegética</b><br>Pedro, em reação violenta, corta a orelha do servo, mas Jesus o repreende, revelando que a sua missão não se cumpre por força humana.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "<i>Então Jesus disse a Pedro: “Guarda a espada; não beberei do cálice que o Pai me deu.”</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>εἶπεν – <i>eipen</i> – “disse”.<br>οὖν – <i>oun</i> – “então”.<br>ὁ Ἰησοῦς – “Jesus”.<br>τῷ Πέτρῳ – “a Pedro”.<br>Βάλε – <i>Balé</i> – “guarda”.<br>τὴν μάχαιραν – “a espada” (TR tem <i>μαχαιραν</i> sem artigo).<br>εἰς τὴν θήκην – “para a caixa”.<br>τὸ ποτήριον – “o cálice”.<br>ὃ δέδωκέν μοι ὁ πατὴρ – “que o Pai me deu”.<br>οὐ μὴ πίω αὐτό – “não beberei dele”.</p><p><b>Crítica Textual</b><br>Diferenças: [[μάχαιραν/μαχαιραν σου]] (TR inclui <i>σου</i> que o SBLGNT não tem) e ausência de artigo em <i>τὴν</i>. Sem outras variantes.</p><p><b>Síntese Exegética</b><br>Jesus instrui Pedro a não usar a violência, indicando que o seu destino está selado pelo Pai e que ele não consumará o cálice da paixão.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "<i>E a multidão, o capitão da guarda e os servos dos judeus prenderam Jesus e o ataram.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>Ἡ οὖν σπεῖρα – “a multidão”.<br>καὶ ὁ χιλίαρχος – “e o capitão da guarda”.<br>καὶ οἱ ὑπηρέται τῶν Ἰουδαίων – “e os servos dos judeus”.<br>συνέλαβον – <i>synélabon</i> – “prenderam”.<br>τὸν Ἰησοῦν – “Jesus”.<br>καὶ ἔδησαν – “e o ataram”.</p><p><b>Crítica Textual</b><br>Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>O conjunto das autoridades judaicas captura Jesus, cumprindo o plano divino de entrega ao julgamento.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "<i>E levaram‑o primeiro a Anás, pois era sogro de Caifás, que naquele ano era sumo sacerdote.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>καὶ ἤγαγον – <i>ēgagon</i> – “e levaram”. (TR tem <i>απηγαγον</i>).<br>πρὸς Ἅνναν – “a Anás”.<br>πρώτον – “primeiro”.<br>ἦν γὰρ – “pois era”.<br>πενθερὸς τοῦ Καϊάφα – “sogro de Caifás”.<br>ὃς ἦν ἀρχιερεὺς τοῦ ἐνιαυτοῦ ἐκείνου – “que era sumo sacerdote daquele ano”.</p><p><b>Crítica Textual</b><br>Diferença observada: [[ἤγαγον/απηγαγον]] (variante de verbo). Sem outras diferenças relevantes.</p><p><b>Síntese Exegética</b><br>Jesus é conduzido ao pai de Caifás, demonstrando a conexão entre as lideranças judaicas e a progressão do julgamento.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "<i>E Caifás, que aconselhara aos judeus que convinha que um homem morresse por causa do povo.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>ἦν – <i>ēn</i> – verbo &quot;ser&quot;/&quot;estar&quot; – definição não verificada em léxico. <br>Καϊάφας – <i>Kaïáphas</i> – nome próprio – definição não verificada em léxico. <br>συμβουλεύσας – <i>symboulēsas</i> – particípio de συμβουλεύω &quot;aconselhar&quot; – definição não verificada em léxico. <br>συμφέρει – <i>sympherei</i> – verbo &quot;convém&quot; – definição não verificada em léxico. <br>ἀποθανεῖν – <i>apothanein</i> – infinitivo &quot;morrer&quot; – definição não verificada em léxico. <br>ἀπολέσθαι – <i>apolesthai</i> – infinitivo &quot;perder, morrer&quot; – definição não verificada em léxico. <br>ὑπὲρ – <i>hyper</i> – preposição &quot;por, em favor de&quot; – definição não verificada em léxico. <br>λαοῦ – <i>laou</i> – substantivo &quot;povo&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: diferença entre SBLGNT e Textus Receptus em [[ἀποθανεῖν / απολέσθαι]]; ambas atestam a ideia de morte do homem. Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b>: Caifás, sumo sacerdote, recomenda que seja sacrificado um indivíduo para salvar o povo, revelando a estratégia política dos líderes judeus perante a crise de Jesus.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "<i>Seguia a Jesus Simão Pedro e outro discípulo; aquele discípulo era conhecido do sumo sacerdote e entrou com Jesus no pátio do sumo sacerdote.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>Ἠκολούθει – <i>ēkolouthei</i> – verbo &quot;seguir&quot; – definição não verificada em léxico. <br>Σίμων – <i>Simon</i> – nome próprio – definição não verificada em léxico. <br>Πέτρος – <i>Petros</i> – nome próprio – definição não verificada em léxico. <br>μαθητής – <i>mathētēs</i> – substantivo &quot;discípulo&quot; – definição não verificada em léxico. <br>γνωστὸς – <i>gnostos</i> – adjetivo &quot;conhecido&quot; – definição não verificada em léxico. <br>ἀρχιερεῖ – <i>archierei</i> – dativo de &quot;sumo sacerdote&quot; – definição não verificada em léxico. <br>αὐλὴν – <i>aulēn</i> – substantivo &quot;pátio, átrio&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: Pedro e outro discípulo, familiar do sumo sacerdote, acompanham Jesus ao interior do átrio sacerdotal, indicando a presença de aliados internos e a tensão entre os seguidores de Jesus e a autoridade judaica.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "<i>Mas Pedro estava junto à porta, fora. Então o outro discípulo, o conhecido do sumo sacerdote, saiu, falou à porteira e introduziu Pedro.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>εἱστήκει – <i>heistēkei</i> – verbo &quot;estar de pé&quot; – definição não verificada em léxico. <br>θύρᾳ – <i>thura</i> – dativo &quot;porta&quot; – definição não verificada em léxico. <br>ἐξῆλθεν – <i>exēlthen</i> – verbo &quot;sair&quot; – definição não verificada em léxico. <br>εἶπεν – <i>eipen</i> – verbo &quot;disse&quot; – definição não verificada em léxico. <br>θυρωρῷ – <i>thyrōrō</i> – dativo &quot;porteiro&quot; – definição não verificada em léxico. <br>εἰσήγαγεν – <i>eisēgagen</i> – verbo &quot;introduziu&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre as edições fornecidas.</p><p><b>Síntese Exegética</b>: Pedro permanece à porta enquanto o discípulo familiar com o sumo sacerdote abre caminho, demonstrando a cooperação entre os discípulos e a estrutura de segurança do recinto.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "<i>Então a serva que era porteira disse a Pedro: Não és também tu um dos discípulos deste homem? Ele respondeu: Não sou.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>λέγει – <i>legei</i> – verbo &quot;diz&quot; – definição não verificada em léxico. <br>παιδίσκη – <i>paidiskē</i> – substantivo &quot;serva, menina&quot; – definição não verificada em léxico. <br>θυρωρός – <i>thyrōrós</i> – substantivo &quot;porteiro&quot; – definição não verificada em léxico. <br>μαθητῶν – <i>mathētōn</i> – genitivo plural &quot;dos discípulos&quot; – definição não verificada em léxico. <br>οὐκ εἰμί – <i>ouk eimi</i> – frase negativa &quot;não sou&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: A porteira tenta identificar Pedro como seguidor de Jesus; sua negação pode indicar temor ou estratégia para evitar maior suspeita.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "<i>Estavam ali os servos e os empregados, tendo feito uma lareira, porque fazia frio, e se aqueciam; e Pedro também estava com eles, de pé, aquecendo-se.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>δοῦλοι – <i>douloi</i> – substantivo &quot;servos&quot; – definição não verificada em léxico. <br>ὑπηρέται – <i>hypēretai</i> – substantivo &quot;empregados&quot; – definição não verificada em léxico. <br>ἀνθρακιὰν – <i>anthrakiān</i> – substantivo &quot;lareira, brasas&quot; – definição não verificada em léxico. <br>ψῦχος – <i>psuchos</i> – substantivo &quot;frio&quot; – definição não verificada em léxico. <br>θερμαινόμενος – <i>thermainomenos</i> – particípio &quot;aquecendo-se&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: diferença de leitura em [[καὶ ὁ Πέτρος μετʼ αὐτῶν / μετʼ αὐτῶν ὁ Πέτρος]]; ambas colocam Pedro entre os que se aquecem. Sem outras variantes.</p><p><b>Síntese Exegética</b>: Enquanto os servos mantêm o fogo para aquecer o ambiente frio, Pedro se junta a eles, indicando sua presença física no local, ainda que não participe da conspiração.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "<i>Então o sumo sacerdote interrogou Jesus acerca de seus discípulos e de sua doutrina.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>ἀρχιερεὺς – <i>archiereus</i> – substantivo &quot;sumo sacerdote&quot; – definição não verificada em léxico. <br>ἠρώτησεν – <i>ērōtēsen</i> – verbo &quot;interrogou&quot; – definição não verificada em léxico. <br>πρὸς τὸν Ἰησοῦν – <i>pros ton Iēsoun</i> – expressão &quot;a Jesus&quot; – definição não verificada em léxico. <br>μαθητῶν – <i>mathētōn</i> – genitivo &quot;dos discípulos&quot; – definição não verificada em léxico. <br>διδασκαλίας – <i>didaskalias</i> – genitivo &quot;da doutrina&quot; – definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre as edições fornecidas.</p><p><b>Síntese Exegética</b>: O sumo sacerdote busca obter informações sobre a comunidade de seguidores de Jesus e sobre o conteúdo de seus ensinamentos, preparando o terreno para o julgamento que se seguirá.</p>"
+      }
+    ]
+  },
   "history": [
     {
       "event": "redação e comentários provisórios preparados nesta conversa",
@@ -3893,6 +3991,38 @@
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
       "generated_at_utc": "2026-11-17T05:39:45+00:00"
+    },
+    {
+      "chapter": 18,
+      "verse_from": 1,
+      "verse_to": 1,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T15:02:51+00:00"
+    },
+    {
+      "chapter": 18,
+      "verse_from": 2,
+      "verse_to": 7,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T15:03:18+00:00"
+    },
+    {
+      "chapter": 18,
+      "verse_from": 8,
+      "verse_to": 13,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T15:03:26+00:00"
+    },
+    {
+      "chapter": 18,
+      "verse_from": 14,
+      "verse_to": 19,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T15:03:58+00:00"
     }
   ],
   "sources": {
