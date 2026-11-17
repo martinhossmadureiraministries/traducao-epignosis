@@ -1,3 +1,8 @@
+> **Documento histórico (arquivado em 17/11/2026).** Conserva o conteúdo
+> original para memória; os comandos, números e o ramo `bee-dados` já não
+> são os actuais. Use [../OPERACAO.md](../OPERACAO.md) e
+> [../ESTADO.md](../ESTADO.md).
+
 # BEE — como está a produção agora (17/11, 04:30)
 
 ## Resposta curta

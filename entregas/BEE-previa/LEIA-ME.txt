@@ -1,9 +1,9 @@
 BÍBLIA DE ESTUDO EPIGNÓSIS — PRÉVIA PARCIAL
-Atualizada em 15 de novembro de 2026 (UTC)
+Atualizada em 17 de novembro de 2026 (UTC)
 
 CONTEÚDO
 
-Esta prévia contém Filemom 1 (25 versículos) e João 1–4 (51, 25, 36 e 54 versículos), com um comentário por versículo: 191 textos e 191 comentários no total. Os demais capítulos não estão incluídos. Salmos 23 foi aprovado como amostra, mas ainda não integra os módulos porque é um capítulo isolado.
+Esta prévia contém Filemom 1 (25 versículos) e João 1–17 (741 versículos), com um comentário por versículo: 766 textos e 766 comentários no total. João 18:1–19 já está guardado em `in_progress`, mas o capítulo ainda não está completo e por isso não entra nos módulos. Os demais capítulos não estão incluídos. Salmos 23 foi aprovado como amostra, mas ainda não integra os módulos porque é um capítulo isolado.
 
 BEE.SQLite3 — texto bíblico
 BEE.commentaries.SQLite3 — comentários correspondentes
@@ -11,14 +11,14 @@ BEE.commentaries.SQLite3 — comentários correspondentes
 ESTADO DE REVISÃO
 
 • Filemom 1:1–3: a redação e os comentários originais foram aprovados editorialmente pelo responsável. Em 1:2, a sinalização entre colchetes e o adendo textual são posteriores e aguardam revisão; a amostra aprovada está preservada no projeto.
-• Filemom 1:4–25 e João 1–4: rascunhos ainda não aprovados editorialmente.
+• Filemom 1:4–25 e João 1–17: rascunhos ainda não aprovados editorialmente.
 • Todos os trechos, inclusive os aprovados editorialmente, aguardam revisão especializada.
 
-Esta é uma prévia de trabalho, não uma Bíblia completa nem uma edição pronta para publicação. A completude dos cinco capítulos é apenas estrutural; as validações automáticas não comprovam fidelidade textual, filológica ou teológica.
+Esta é uma prévia de trabalho, não uma Bíblia completa nem uma edição pronta para publicação. A completude dos 18 capítulos é apenas estrutural; as validações automáticas não comprovam fidelidade textual, filológica ou teológica.
 
 COLCHETES E VARIANTES
 
-[[...]] sinaliza um trecho textual relevante para o qual há leituras diferentes. A nota de crítica textual identifica a leitura do SBLGNT, a alternativa e a evidência consultada. Conforme o caso, os colchetes podem conter a leitura adotada pelo SBLGNT ou um suplemento do Textus Receptus de Scrivener ausente na edição crítica. Portanto, não basta remover todos os trechos entre colchetes para reconstruir automaticamente o texto crítico. A convenção de trabalho permanece sujeita à revisão do responsável; ela e as fontes detalhadas estão no PLANO_BEE.md e nos JSON dos livros.
+[[...]] sinaliza um trecho textual relevante para o qual há leituras diferentes. A nota de crítica textual identifica a leitura do SBLGNT, a alternativa e a evidência consultada. Conforme o caso, os colchetes podem conter a leitura adotada pelo SBLGNT ou um suplemento do Textus Receptus de Scrivener ausente na edição crítica. Portanto, não basta remover todos os trechos entre colchetes para reconstruir automaticamente o texto crítico. A convenção de trabalho permanece sujeita à revisão do responsável; ela e as fontes detalhadas estão em docs/EDITORIAL.md e nos JSON dos livros.
 
 COMO ABRIR NO MYBIBLE
 
@@ -27,7 +27,7 @@ COMO ABRIR NO MYBIBLE
 3. Reinicie o aplicativo, selecione a Bíblia BEE e ative o módulo de comentários. Ao atualizar, substitua os dois arquivos juntos.
 4. Se houver dificuldade para localizar a pasta, consulte as instruções do aplicativo: https://mybible.zone/doers/
 
-A leitura programática dos 191 versículos e 191 comentários foi testada com o leitor independente Bible for Sermon Preparation, revisão 7ec3d446b9b921ff6783546d5ee47ad57cbea891. A instalação e a apresentação visual no aplicativo MyBible ainda não foram testadas.
+A leitura programática dos 766 versículos e 766 comentários foi testada com o leitor independente Bible for Sermon Preparation, revisão 7ec3d446b9b921ff6783546d5ee47ad57cbea891. A instalação e a apresentação visual no aplicativo MyBible ainda não foram testadas.
 
 Os estados de revisão e um identificador comum da compilação constam nos metadados dos dois arquivos. A exibição dessas informações e dos colchetes depende do leitor.
 

@@ -1,6 +1,11 @@
+> **Documento histórico (arquivado em 17/11/2026).** Conserva o conteúdo
+> original para memória; os comandos, números e o ramo `bee-dados` já não
+> são os actuais. Use [../OPERACAO.md](../OPERACAO.md) e
+> [../ESTADO.md](../ESTADO.md).
+
 # Arrancar hoje — guia cronometrado
 
-> **Objetivo até ao fim do dia:** produção a correr sozinha, `BEE-modulos.zip` a ser gerado e o primeiro lote real de versículos novos já no MyBible. O plano completo e as quotas estão em [AUTOMACAO.md](AUTOMACAO.md).
+> **Objetivo até ao fim do dia:** produção a correr sozinha, `BEE-modulos.zip` a ser gerado e o primeiro lote real de versículos novos já no MyBible. O plano completo e as quotas estão em [AUTOMACAO.md](../AUTOMACAO.md).
 
 Tempo total: **cerca de 40 minutos**, dos quais ~25 são só esperar.
 

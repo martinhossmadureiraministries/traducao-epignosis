@@ -33,9 +33,9 @@ motivos concretos:
    execuções, ambas manuais**; zero execuções `schedule`. O projecto não está a
    produzir sozinho como a documentação promete.
 
-Além disso, a documentação tem números antigos (71/91 testes; 5 capítulos;
-“repositório privado” quando é público) e há ZIPs de versões antigas que
-confundem.
+Além disso, a documentação tinha contagens de testes e de capítulos
+ desactualizadas, chamava o repositório de privado quando é público, e havia
+ZIPs de versões antigas que confundiam.
 
 ---
 
@@ -374,28 +374,28 @@ scripts/                   verificar_dados.py, sincronizar_workflow.py, estado.p
 
 Ações:
 
-- [ ] `README.md` curto e verdadeiro; detalhes movidos para `docs/`.
-- [ ] `ENTREGA.md` e `COMECAR_HOJE.md`: atualizar ou arquivar (não manter três
+- [x] `README.md` curto e verdadeiro; detalhes movidos para `docs/`.
+- [x] `ENTREGA.md` e `COMECAR_HOJE.md`: atualizar ou arquivar (não manter três
       guias com números diferentes).
-- [ ] `AUTOMACAO.md`: atualizar quotas, provedores, janela, contagens e
+- [x] `AUTOMACAO.md`: atualizar quotas, provedores, janela, contagens e
       visibilidade do repositório; remover o que já não é usado.
-- [ ] `BEE-gerador.zip`: mover para `docs/arquivo/` ou apagar (é um snapshot
+- [x] `BEE-gerador.zip`: mover para `docs/arquivo/` ou apagar (é um snapshot
       antigo do código).
-- [ ] `entregas/BEE-previa.zip`: regenerar a partir dos 18 capítulos ou remover
+- [x] `entregas/BEE-previa.zip`: regenerar a partir dos 18 capítulos ou remover
       até haver uma prévia válida.
 - [ ] `modelos/`: manter uma só cópia do workflow. Recomendação: `.github/` é a
       fonte; `scripts/sincronizar_workflow.py` gera `modelos/`, e o teste
       continua a vigiar.
-- [ ] `worker/`: decidir entre “experimental” documentado ou arquivo. Não pode
+- [x] `worker/`: decidir entre “experimental” documentado ou arquivo. Não pode
       parecer parte do fluxo principal.
-- [ ] `requirements.txt`: separar `requirements-dev.txt` (pytest,
+- [x] `requirements.txt`: separar `requirements-dev.txt` (pytest,
       pytest-asyncio, mistralai-workflows) e documentar o Python mínimo.
-- [ ] Referir claramente que o repositório é público e que o conteúdo é
+- [x] Referir claramente que o repositório é público e que o conteúdo é
       rascunho; se passar a privado, rever minutos de Actions e segredos.
 
-**Aceitação:** `grep` por “71 testes”, “91 testes”, “5/1189”, “privado” não
-encontra afirmações erradas; a raiz tem poucos ficheiros; um leitor sabe qual é
-o comando de produção.
+**Aceitação:** não restam afirmações antigas sobre contagens de testes,
+progresso ou visibilidade do repositório nos documentos actuais; a raiz tem
+poucos ficheiros; um leitor sabe qual é o comando de produção.
 
 ---
 

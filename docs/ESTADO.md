@@ -1,7 +1,7 @@
 # Estado do projeto — 17/11/2026
 
-> Etapas 1 e 2 integradas no `main` (PR #32). As etapas 3 e 4 estão no ramo
-> de trabalho `arena/d3007491-traducao-epignosis`, à espera de revisão.
+> Etapas 1 e 2 integradas no `main` (PR #32); etapas 3 e 4 no PR #37
+> (merge `4972e27`); etapa 5 neste ramo de trabalho.
 
 Este ficheiro é o **ponto único de verdade** sobre o que está feito, o que está
 a meio e o que falta. O `PLANO_ORGANIZACAO.md` explica o diagnóstico e as
@@ -72,7 +72,7 @@ sem autorização explícita.
   - `RELATORIO.txt` sempre escrito em `entregas/auto/`; o artefacto deixa de
     poder sair vazio mesmo quando não há módulos.
   - Resumo já não rebenta quando `resultado is None`.
-- Workflow — **proposta em `docs/bee-autopiloto.yml`**
+- Workflow — **proposta em `bee-autopiloto.yml`**
   - O GitHub recusou o push de `.github/workflows/bee-autopiloto.yml` com
     “GitHub App … without `workflows` permission”. O ficheiro ativo tem
     `timeout-minutes: 12`, mas os passos finais estão triplicados/corrompidos;
@@ -100,7 +100,7 @@ relatório sem módulos, a quarentena e os pacotes com o número da execução.
   os passos de artefactos/release estão triplicados e as linhas
   `gh release upload ... "$GITHUB_REPOSITORY"ara ler e` e
   `... "$GITHUB_REPOSITORY"        python nuvem.py` estão concatenadas.
-  A versão correta é `docs/bee-autopiloto.yml` (252 linhas, uma só cópia dos
+  A versão correta é `bee-autopiloto.yml` (252 linhas, uma só cópia dos
   passos) e tem de ser colada na UI em
   `.github/workflows/bee-autopiloto.yml`; o push direto é recusado por falta da
   permissão `workflows`.
@@ -120,7 +120,7 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 
 ### Aplicar o workflow novo (devido à permissão `workflows`)
 
-1. `./scripts/aplicar_workflow.sh` copia `docs/bee-autopiloto.yml` para
+1. `./scripts/aplicar_workflow.sh` copia `bee-autopiloto.yml` para
    `.github/workflows/bee-autopiloto.yml` e para `modelos/bee-autopiloto.yml`
    (o teste `test_modelo_e_workflow_ativo_sao_iguais` exige que sejam iguais).
 2. Confirme com `python3 -m unittest tests.test_workflow_sincronizado -v`.
@@ -158,7 +158,7 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 - `_commit_dados` atualiza `refs/remotes/origin/main` depois de cada push: sem
   isso, o checkpoint e a publicação final do mesmo ciclo eram commits irmãos e
   o segundo push era recusado por não ser fast-forward.
-- O workflow proposto (`docs/bee-autopiloto.yml`) já não tem o passo de
+- O workflow proposto (`bee-autopiloto.yml`) já não tem o passo de
   recuperar `bee-dados` e define `BEE_BRAMO_DADOS: main`.
 
 ### Limpeza de ramos
@@ -172,6 +172,21 @@ Ficaram apenas **`main`** e o **ramo de trabalho da sessão**. Foram apagados
 `bee-dados`, foi criada a etiqueta **`arquivo-bee-dados-2026-11-17`**, que
 preserva os 18 capítulos/766 versículos.
 
+## Etapa 5 — documentação coerente
+
+- `README.md` passou a ser uma entrada curta: o que é, como produzir, estado
+  actual, dados e avisos de rascunho.
+- O runbook está em `docs/OPERACAO.md`; a arquitetura em
+  `docs/ARQUITETURA.md`; as directrizes editoriais em `docs/EDITORIAL.md`.
+- `COMECAR_HOJE.md`, `ENTREGA.md` e o antigo `BEE-gerador.zip` foram movidos
+  para `docs/arquivo/`, com aviso de documento histórico.
+- `AUTOMACAO.md` e o plano da reorganização passaram para `docs/`; os links
+  foram actualizados.
+- `requirements-dev.txt` separa as dependências opcionais (pytest e worker
+  Mistral); o fluxo principal continua só com a biblioteca padrão.
+- `entregas/BEE-previa.zip` foi regenerado a partir dos **18 capítulos/766
+  versículos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
+
 ## Próximas etapas
 
 | Etapa | Estado |
@@ -180,7 +195,8 @@ preserva os 18 capítulos/766 versículos.
 | 2. Dados no `main` | feito: 18 capítulos completos/785 versículos guardados |
 | 3. Motor de produção | feita no ramo: quarentena, troca de provedor, lote real, cache, `/models` |
 | 4. Artefactos e publicação | feita no ramo: 3 ZIP por execução, verificação, release; falta aplicar o workflow |
-| 5. Documentação coerente | em curso (`AUTOMACAO.md` ainda diz 15 min) |
-| 6. Diagnóstico do cron | por fazer |
-| 7. Limpeza física | por fazer |
-| 8. Verificação final | por fazer |
+| 5. Documentação coerente | feita: README curto, runbook, arquitetura e editorial; guias antigos em `arquivo/` |
+| 6. CI e testes | por fazer (não há workflow de CI) |
+| 7. Diagnóstico do cron | por fazer |
+| 8. Limpeza física | por fazer |
+| 9. Verificação final | por fazer |

@@ -1,6 +1,6 @@
 # Produção automática da BEE — guia prático
 
-> **Quer começar hoje?** Siga [COMECAR_HOJE.md](COMECAR_HOJE.md): é o mesmo conteúdo em ordem cronometrada, com os atalhos para a nuvem e para o MyBible.
+> **Comece pelo runbook:** [OPERACAO.md](OPERACAO.md) explica como ligar, pausar, recuperar e diagnosticar. Este guia aprofunda quotas, provedores e ritmo.
 
 Este guia responde a três perguntas: **como** a produção passa a acontecer sozinha, **o que** é realista esperar com ferramentas gratuitas, e **como** você põe os ficheiros no MyBible em cinco minutos.
 
@@ -12,24 +12,24 @@ Este guia responde a três perguntas: **como** a produção passa a acontecer so
 
 | Peça | Para que serve |
 |---|---|
-| `autopiloto.py` | O motor. Trabalha em ciclos (por exemplo, 6 versículos a cada 5 minutos), compila e registra o progresso. Anda com o seu computador. |
+| `autopiloto.py` | O motor. Trabalha em ciclos (por exemplo, 80 versículos por execução de 12 minutos), compila e registra o progresso. Anda com o seu computador. |
 | `nuvem.py` | O mesmo trabalho numa GitHub Action: continua com o computador desligado. |
-| `docs/bee-autopiloto.yml` | O agendador na nuvem (20 em 20 minutos, 24 h). É a **proposta da Etapa 1**: `./scripts/aplicar_workflow.sh` copia-a para `modelos/` e `.github/workflows/` (ver secção 4). |
-| `bee/ia.py` | Cinco provedores, todos com plano gratuito: **Gemini, Groq, Cerebras, OpenRouter** (e OpenAI, opcional e paga). |
+| `bee-autopiloto.yml` | O agendador na nuvem (20 em 20 minutos, 24 h). É a **fonte correcta**: `./scripts/aplicar_workflow.sh` copia-a para `modelos/` e `.github/workflows/`; o push do workflow ativo pode precisar da UI (ver secção 4). |
+| `bee/ia.py` | Provedores com plano gratuito. A produção usa **Gemini + Groq**; Cerebras/OpenRouter/OpenAI ficam fora da fila por omissão. |
 | `bee/agenda.py` | Estado, diário legível, janela diária, tetos de quota e rodízio de provedores. |
 | `bee/gerador.py` | Agora grava **por fatia**: pode parar a meio do capítulo e retomar sem repetir pedidos. |
 
-Cada peça funciona offline nos testes: 146 testes automáticos não usam rede nem chaves.
+Os testes principais não usam rede nem chaves; o comando está no [README](../README.md#testes).
 
 ### O que cada execução faz
 
-1. Vê qual é o próximo capítulo incompleto (na ordem das oito fases do `PLANO_BEE.md`).
+1. Vê qual é o próximo capítulo incompleto (na ordem das oito fases do [plano editorial](EDITORIAL.md)).
 2. Pede à IA um bloco pequeno de versículos, com o texto original (WLC/SBLGNT) e o contexto do versículo anterior para manter o vocabulário coerente.
 3. Valida tudo (HTML permitido, colchetes de variantes, numeração) e **grava imediatamente** no JSON do livro.
 4. Quando um capítulo fica completo, **recompila** `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 5. Escreve uma linha no diário: o que gerou, quantos pedidos gastou hoje, qual é o próximo.
 
-O estado fica em `livros_json/.bee/estado.json` e o diário em `livros_json/.bee/diario.md`. Nada disso vai para o Git (só o conteúdo dos capítulos vai).
+O estado fica em `livros_json/.bee/estado.json`, o diário em `livros_json/.bee/diario.md` e a quarentena em `livros_json/.bee/quarentena.json`. Estes ficheiros andam no `main` com os JSON, para a execução seguinte retomar exactamente onde parou.
 
 ---
 
@@ -57,12 +57,13 @@ limitador passou a ser a **quota gratuita da IA**, e o número que a controla é
 
 Configuração actual, a 24 horas por dia:
 
-> **Workflow ativo vs. proposta:** o GitHub recusou o push de
-> `.github/workflows/` por falta da permissão `workflows`. O ficheiro ativo
-> ainda tem `timeout-minutes: 50` e os valores antigos; a proposta está em
-> `docs/bee-autopiloto.yml`. O `nuvem.py` já limita o ciclo a 9 min e a
-> execução a 11 min, por isso o trabalho termina e publica mesmo com o job
-> antigo. Os valores da tabela são os da proposta.
+> **Workflow ativo vs. versão correcta:** o GitHub recusou o push de
+> `.github/workflows/` por falta da permissão `workflows`. O ficheiro ativo tem
+> `timeout-minutes: 12`, mas os passos finais estão corrompidos (duplicados e
+> com linhas concatenadas); a versão correcta está em
+> `bee-autopiloto.yml`. O `nuvem.py` limita o ciclo a 9 min e a execução a
+> 11 min, por isso o trabalho é publicado mesmo assim. Aplicar pela UI: ver
+> [OPERACAO.md](OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
 
 | Peça | Valor | Porquê |
 |---|---|---|
@@ -266,10 +267,10 @@ cat livros_json/.bee/diario.md
 
 ## 4. Funcionar com o computador desligado (GitHub Actions)
 
-O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem você, use o workflow incluído em `docs/bee-autopiloto.yml`.
+O `autopiloto.py` só corre enquanto a máquina está ligada. Para continuar sem você, use o workflow incluído em `bee-autopiloto.yml`.
 
 1. **Leve o código ao ramo `main`** do repositório `traducao-epignosis` (público).
-2. **Ative o workflow.** A versão nova está em `docs/bee-autopiloto.yml` porque o GitHub recusou o push de `.github/workflows/` sem a permissão `workflows`. Corra `./scripts/aplicar_workflow.sh` e faça commit/push com uma conta que tenha essa permissão.
+2. **Ative o workflow.** A versão nova está em `bee-autopiloto.yml` porque o GitHub recusou o push de `.github/workflows/` sem a permissão `workflows`. Corra `./scripts/aplicar_workflow.sh` e faça commit/push com uma conta que tenha essa permissão.
 3. **Acrescente o segredo:** *Settings → Secrets and variables → Actions → New repository secret* → nome `GEMINI_API_KEY`, valor a sua chave. (Opcional: `GROQ_API_KEY` como reserva.)
 4. **Confirme em *Actions*** que o workflow aparece ativo; ajuste o ritmo nas variáveis `BEE_*` do ficheiro ou dispare manualmente com *Run workflow*.
 
@@ -279,8 +280,9 @@ O que acontece em cada execução (a cada 20 minutos):
 - produz 80 versículos (configurável), com prazo interno de 9 minutos;
 - faz um **checkpoint** dos JSON no `main` logo após o ciclo, antes de compilar;
 - os JSON ficam versionados no próprio `main`; já não há ramo de dados separado;
-- publica `entregas/auto/BEE-modulos.zip` e `RELATORIO.txt` como **artefactos**
-  descarregáveis (retenção de 14 dias); o relatório existe sempre, mesmo sem módulos;
+- publica `BEE-modulos-<run>.zip`, `BEE-capitulos-<run>.zip` e
+  `BEE-diagnostico-<run>.zip` como **artefactos** descarregáveis (retenção de
+  14 dias); o relatório existe sempre, mesmo sem módulos;
 - escreve um resumo com os provedores **realmente carregados** e o progresso.
 
 **Vantagem:** continua 24 horas por dia. O repositório é **público**, por isso
@@ -296,8 +298,8 @@ corre em qualquer lugar.
 | Onde | Como | Limite |
 |---|---|---|
 | Computador de casa | `python autopiloto.py` com o Agendador de Tarefas (Windows) ou `cron` (Linux/macOS) | A máquina tem de estar ligada |
-| Servidor doméstico / Raspberry Pi | `cron` a cada 15 min: `*/15 * * * * cd /caminho && GEMINI_API_KEY=... python3 autopiloto.py --uma-vez` | Consome pouca energia |
-| GitHub Actions | `docs/bee-autopiloto.yml` (aplicar, ver secção 4) | Minutos do plano gratuito |
+| Servidor doméstico / Raspberry Pi | `cron` a cada 20 min: `7,27,47 * * * * cd /caminho && GEMINI_API_KEY=... python3 autopiloto.py --uma-vez` | Consome pouca energia |
+| GitHub Actions | `bee-autopiloto.yml` (aplicar, ver secção 4) | Minutos do plano gratuito |
 
 ---
 
@@ -397,7 +399,7 @@ python autopiloto.py --livros 640,500         # fila restrita
 python autopiloto.py --zip BEE.zip            # pacote com os dois módulos
 python autopiloto.py --sem-compilar           # só JSON (compila depois com gerar_bee.py --compilar)
 python gerar_bee.py --compilar                # compilar sem IA, sem rede e sem chave
-python -m unittest discover -s tests -v       # 146 testes, sem rede nem chaves
+python -m unittest discover -s tests -v       # testes sem rede nem chaves
 ```
 
 Lista completa: `python autopiloto.py --help`.
