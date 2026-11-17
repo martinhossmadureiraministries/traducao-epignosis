@@ -13,7 +13,7 @@ from typing import Any
 
 from .arquivos import DadosInvalidos, ler_todos
 from .catalogo import LIVROS, POR_NUMERO
-from .fontes import ATRIBUICAO
+from .fontes import ATRIBUICAO, AUTORIA
 from .trava import trava
 
 
@@ -115,7 +115,7 @@ def _criar_biblia(caminho: Path, livros: dict[int, dict[str, Any]], build_id: st
                 CREATE UNIQUE INDEX verses_index ON verses (book_number, chapter, verse);
             ''')
             estado = 'RASCUNHO' if completo else 'RASCUNHO PARCIAL'
-            referencias = ATRIBUICAO + _atribuicao_complementar(livros)
+            referencias = AUTORIA + ' ' + ATRIBUICAO + _atribuicao_complementar(livros)
             resumo_revisao, revisao_json = _metadados_revisao(livros)
             aviso = (
                 'Prévia produzida com IA para revisão, não edição final; '
@@ -178,7 +178,7 @@ def _criar_comentarios(caminho: Path, livros: dict[int, dict[str, Any]], build_i
                     (book_number, chapter_number_from, verse_number_from);
             ''')
             estado = 'RASCUNHO' if completo else 'RASCUNHO PARCIAL'
-            referencias = ATRIBUICAO + _atribuicao_complementar(livros)
+            referencias = AUTORIA + ' ' + ATRIBUICAO + _atribuicao_complementar(livros)
             resumo_revisao, revisao_json = _metadados_revisao(livros)
             aviso = (
                 'Prévia produzida com IA para revisão, não edição final; '

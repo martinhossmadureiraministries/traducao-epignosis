@@ -35,10 +35,12 @@ O estado fica em `livros_json/.bee/estado.json` e o diário em `livros_json/.bee
 
 ## 1b. A janela horária — para que serve e como se muda
 
-A produção só corre entre `BEE_HORA_INICIO` e `BEE_HORA_FIM` (por omissão
-05:00–23:00 em `Africa/Luanda`). Serve para **não gastar os 2.000 minutos
-mensais de Actions de madrugada** enquanto dorme, e para o trabalho pesado
-acontecer na altura em que pode ler o resultado.
+A produção agendada só corre entre `BEE_HORA_INICIO` e `BEE_HORA_FIM`. Essas
+duas horas estão em **UTC**, porque quem as compara é o cron do GitHub: com
+`4` e `22` produz entre as **05:00 e as 23:00 em Luanda**. Serve para não
+gastar os 2.000 minutos mensais de Actions de madrugada, enquanto dorme, e
+para o trabalho acontecer na altura em que pode ler o resultado. Não tem nada
+a ver com a quota da IA — essa é outra coisa (ver §2).
 
 - Uma execução **manual** (*Run workflow*) produz a qualquer hora, mesmo de
   madrugada — a janela só se aplica às execuções agendadas.
@@ -46,6 +48,32 @@ acontecer na altura em que pode ler o resultado.
   `Fora da janela (03 UTC): a produção retoma às 04:00 UTC`. Não é falha.
 - Para produzir 24 horas: mude `BEE_HORA_INICIO: '0'` e `BEE_HORA_FIM: '24'`
   no workflow (e conte com mais minutos de Actions).
+
+## 1c. Quanto tempo até terminar (contas honestas)
+
+O limitador **não é a IA nem o cron** — são os **2.000 minutos de Actions por
+mês** do repositório privado. Tudo depende de quantos minutos cada execução
+gasta:
+
+| Intervalo | Execuções/dia | Minutos/mês | Cabe? | Versos/dia | Até terminar |
+|---|---|---|---|---|---|
+| `*/15` (antes) | 72 | ~4.320 | **não** — acaba em 2 semanas | 2.880 | nunca (pára a meio) |
+| `*/30` | 36 | ~2.160 | não | 1.440 | — |
+| **`0 * * * *` (agora)** | **18** | **~1.620** | **sim (81%)** | **1.440** | **~22 dias** |
+| `*/90` | 12 | ~1.080 | sim (54%) | 960 | ~33 dias |
+
+Configuração actual: **1 execução por hora, 80 versículos**, dentro da janela
+05:00–23:00 de Luanda. Produz ~1.440 versículos/dia. Com 30.824 por fazer:
+**cerca de 3 semanas**, se o serviço de IA colaborar.
+
+Duas ressalvas, para não haver surpresas:
+
+- **O ritmo observado até agora é muito pior**: em 14 horas saíram 81
+  versículos, porque o Gemini respondeu `503` e a Groq `429` em rajada. A
+  estimativa de 3 semanas assume que o serviço responde. Se não responder, o
+  tempo estica na proporção.
+- **Ao dia 1 do mês seguinte** o orçamento renova e a produção continua. Não é
+  preciso fazer nada.
 
 ## 2. Plano gratuito: o que é possível de verdade
 

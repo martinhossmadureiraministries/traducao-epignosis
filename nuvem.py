@@ -299,9 +299,19 @@ def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool) -> tuple[str,
     curso a partir do versículo 1 e 46 versículos já pagos em quota ficaram
     fora do ficheiro. Devolve (mensagem, versículos acrescentados).
     """
-    anterior = _git('rev-parse', '--verify', f'refs/remotes/origin/{ramo}', verificar=False)
+    referencia = f'refs/remotes/origin/{ramo}'
+    anterior = _git('rev-parse', '--verify', referencia, verificar=False)
     if anterior.returncode != 0 or not anterior.stdout.strip():
-        return 'sem ramo de dados publicado', 0
+        # No workflow o ramo é buscado para FETCH_HEAD, não para
+        # refs/remotes/origin/…; sem esta busca a reparação seria um no-op
+        # silencioso exactamente onde é precisa.
+        try:
+            _git('fetch', '--quiet', '--depth=1', 'origin', f'+refs/heads/{ramo}:{referencia}')
+        except subprocess.CalledProcessError:
+            return 'sem ramo de dados publicado', 0
+        anterior = _git('rev-parse', '--verify', referencia, verificar=False)
+        if anterior.returncode != 0 or not anterior.stdout.strip():
+            return 'sem ramo de dados publicado', 0
     revisao = anterior.stdout.strip()
     alvo = Path(os.environ.get('RUNNER_TEMP', '/tmp')) / 'bee-reparo'
     shutil.rmtree(alvo, ignore_errors=True)
@@ -372,7 +382,11 @@ def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
 
 
 LEIA_ME = (
-    'Rascunho automático da Bíblia de Estudo Epignósis (BEE).\n'
+    'Bíblia de Estudo Epignósis (BEE) — Projeto Epignósis.\n'
+    'Autor: Martinho S. S. Madureira.\n'
+    'Publicado por Martinho S. S. Madureira Ministries.\n'
+    '\n'
+    'Rascunho automático: este conteúdo é gerado por IA sob direcção do autor\n'
     'Copie os dois ficheiros .SQLite3 para a pasta do MyBible no Android e\n'
     'reinicie o aplicativo. Conteúdo gerado por IA e NÃO revisto: use para\n'
     'estudo e revisão, não como edição final.\n'
