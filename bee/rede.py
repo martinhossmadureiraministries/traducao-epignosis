@@ -54,8 +54,34 @@ class ClienteHTTP:
         # e o serviço responde 429 em rajada — foi o que aconteceu em 17/11:
         # dez 429 seguidos e um único lote guardado em quatro minutos.
         self.tokens_por_minuto: dict[str, int] = {}
+        # Pedidos por minuto: o Mistral dá ~2 e a Groq 30. Sem este limite o
+        # ciclo pedia lotes em sequência e recebia 429 a cada segundo pedido.
+        self.pedidos_por_minuto: dict[str, int] = {}
         self._gasto: dict[str, list[tuple[float, int]]] = {}
+        self._pedidos: dict[str, list[float]] = {}
         self._esperas: dict[str, float] = {}
+
+    def reservar_pedido(self, provedor: str) -> float:
+        """Espera o necessário para não exceder os pedidos/minuto do serviço."""
+        teto = self.pedidos_por_minuto.get(provedor)
+        if not teto:
+            return 0.0
+        agora = time.monotonic()
+        marcas = self._pedidos.setdefault(provedor, [])
+        limite = agora - 60.0
+        while marcas and marcas[0] <= limite:
+            marcas.pop(0)
+        espera = 0.0
+        if len(marcas) >= teto:
+            espera = max(0.0, (marcas[0] + 60.0) - agora) + 0.05
+            time.sleep(espera)
+            agora = time.monotonic()
+            while marcas and marcas[0] <= agora - 60.0:
+                marcas.pop(0)
+        marcas.append(agora)
+        if espera:
+            self._esperas[provedor] = self._esperas.get(provedor, 0.0) + espera
+        return espera
 
     def reservar_tokens(self, provedor: str, tokens: int) -> float:
         """Espera o necessário para caber no TPM do provedor; devolve os segundos.

@@ -252,8 +252,11 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     # Gemini fica como reserva — tem mais quota diária (480 pedidos) mas é
     # menos fiável. `BEE_PROVEDOR_PRINCIPAL` permite inverter sem tocar no
     # código.
-    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'groq').strip().lower()
-    ordem_nomes = ['groq', 'gemini', 'cerebras', 'openrouter', 'openai']
+    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'mistral').strip().lower()
+    # Ordem por quota: o Mistral tem ~20x a quota da Groq e é o que mais pode
+    # produzir; o Gemini tem mais quota mas é instável (503); a Groq é pequena
+    # mas fiável; o OpenRouter fecha a fila. `BEE_PROVEDOR_PRINCIPAL` inverte.
+    ordem_nomes = ['mistral', 'gemini', 'groq', 'openrouter', 'cerebras', 'openai']
     if principal in ordem_nomes:
         ordem_nomes.remove(principal)
         ordem_nomes.insert(0, principal)

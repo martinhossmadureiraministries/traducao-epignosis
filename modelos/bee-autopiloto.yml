@@ -159,29 +159,46 @@ jobs:
         env:
           BEE_REMOTO: /tmp/bee-remoto/livros_json
           BEE_UNIR: '1'
+          # A fila é montada só com as chaves que chegarem. Cada serviço tem o
+          # seu próprio orçamento diário: esgotar um não cala os outros.
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # A reserva configurada pelo responsável. Se o Gemini estiver
-          # indisponível (5xx) ou sem quota, a Groq assume automaticamente.
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # A Cerebras passou a exigir cartão no plano de teste: fica de fora
+          # por omissão. Se um dia tiver chave, basta preenchê-la.
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
         run: |
-          if [ -n "$GROQ_API_KEY" ]; then
-            echo "Provedores disponíveis: Gemini (principal) + Groq (reserva)."
-          else
-            echo "Aviso: sem GROQ_API_KEY; só o Gemini está disponível."
+          # Dizer no resumo que serviços entraram: uma chave em falta é a causa
+          # mais comum de a produção ficar mais lenta do que o esperado.
+          echo "### Provedores nesta execução" >> "$GITHUB_STEP_SUMMARY"
+          faltam=""
+          for par in "MISTRAL_API_KEY:Mistral" "GEMINI_API_KEY:Gemini" \
+                     "GROQ_API_KEY:Groq" "OPENROUTER_API_KEY:OpenRouter"; do
+            nome="${par%%:*}"; rotulo="${par##*:}"
+            if [ -n "${!nome}" ]; then
+              echo "- $rotulo: chave presente" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "- $rotulo: **sem chave**" >> "$GITHUB_STEP_SUMMARY"
+              faltam="$faltam $rotulo"
+            fi
+          done
+          if [ -n "$faltam" ]; then
+            echo "Sem chave para:$faltam. A produção usa só os que têm chave." >> "$GITHUB_STEP_SUMMARY"
           fi
           python nuvem.py
 
       - name: Avisar se a produção falhou
         if: failure()
         env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           echo "### Diagnóstico rápido" >> "$GITHUB_STEP_SUMMARY"
-          if [ -z "${GEMINI_API_KEY}${GROQ_API_KEY}" ]; then
-            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY e GROQ_API_KEY." >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "${MISTRAL_API_KEY}${GEMINI_API_KEY}${GROQ_API_KEY}${OPENROUTER_API_KEY}" ]; then
+            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets MISTRAL_API_KEY, GEMINI_API_KEY e GROQ_API_KEY." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- Chaves presentes. Se o erro for HTTP 5xx, o serviço estava instável: o próximo ciclo tenta de novo." >> "$GITHUB_STEP_SUMMARY"
             echo "- Se for HTTP 404, o serviço retirou esse modelo: basta voltar a correr, o programa escolhe outro sozinho." >> "$GITHUB_STEP_SUMMARY"
