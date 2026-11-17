@@ -159,19 +159,58 @@ class IATest(unittest.TestCase):
         self.assertGreaterEqual(esperas[2], 59.0, 'o terceiro espera pelo minuto seguinte')
         self.assertEqual(sleep.call_count, 1)
 
-    def test_mistral_tem_quota_muito_maior_que_a_groq(self):
+    def test_ovhcloud_funciona_sem_chave_nenhuma(self):
+        """O nível anónimo não leva 'Authorization': um Bearer vazio é rejeitado."""
+        from bee.ia import OVH_URL
+        enviados = {}
+
+        class RedeFalsa:
+            def obter(self, requisicao, provedor, log=None):
+                enviados['headers'] = dict(requisicao.headers)
+                enviados['url'] = requisicao.full_url
+                return b'{"choices":[{"message":{"content":"{\\"ok\\":1}"}}]}'
+
+            def reservar_pedido(self, provedor):
+                return 0.0
+
+            def reservar_tokens(self, *a, **k):
+                return 0.0
+
+        motor = MotorIA('ovh', 'gpt-oss-120b', [], RedeFalsa(), 512)
+        self.assertEqual(motor._requisicao('teste'), '{"ok":1}')
+        self.assertEqual(enviados['url'], OVH_URL)
+        self.assertNotIn('Authorization', enviados['headers'])
+        self.assertEqual(enviados['headers']['Content-type'], 'application/json')
+
+    def test_ovhcloud_com_chave_usa_bearer(self):
+        from bee.ia import OVH_URL  # noqa: F401  (garante que a URL é o endpoint OVH)
+
+        class RedeFalsa:
+            def __init__(self):
+                self.cabecalhos = {}
+
+            def obter(self, requisicao, provedor, log=None):
+                self.cabecalhos = dict(requisicao.headers)
+                return b'{"choices":[{"message":{"content":"{\\"ok\\":1}"}}]}'
+
+            def reservar_pedido(self, provedor):
+                return 0.0
+
+            def reservar_tokens(self, *a, **k):
+                return 0.0
+
+        rede = RedeFalsa()
+        MotorIA('ovh', 'gpt-oss-120b', 'chave-abc', rede, 512)._requisicao('teste')
+        self.assertEqual(rede.cabecalhos['Authorization'], 'Bearer chave-abc')
+
+    def test_ovhcloud_respeita_o_ritmo_do_nivel_anonimo(self):
         from bee.ia import PROVEDORES
-        mistral, groq = PROVEDORES['mistral'], PROVEDORES['groq']
-        self.assertEqual(mistral.tokens_por_minuto, 500_000)
-        self.assertEqual(mistral.pedidos_por_minuto, 2, 'limite de ritmo do plano gratuito')
-        # A Groq declara 12.000 no papel, mas o limite real são os 200.000
-        # tokens/dia (~66 pedidos). O Mistral não tem tecto de tokens diário:
-        # manda o ritmo (2/min = 2.880/dia).
-        self.assertEqual(groq.tokens_por_dia, 200_000)
-        self.assertEqual(mistral.tokens_por_dia, 0, 'sem tecto de tokens por dia')
-        self.assertGreater(mistral.pedidos_por_minuto * 1440, groq.tokens_por_dia // 3000,
-                           'no fim do dia o Mistral produz muito mais')
-        self.assertEqual(mistral.variavel, 'MISTRAL_API_KEY')
+        ovh = PROVEDORES['ovh']
+        self.assertTrue(ovh.sem_chave)
+        self.assertEqual(ovh.pedidos_por_minuto, 2, '2 pedidos/minuto por IP e modelo')
+        self.assertEqual(ovh.pedidos_por_minuto * 1440, ovh.pedidos_por_dia)
+        self.assertGreater(ovh.pedidos_por_dia, PROVEDORES['groq'].tokens_por_dia // 3000,
+                           'no fim do dia a OVHcloud produz mais do que a Groq')
 
     def test_chave_com_quebra_de_linha_e_rejeitada_sem_vazar(self):
         with self.assertRaises(ValueError) as erro:

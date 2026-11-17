@@ -1,10 +1,12 @@
-"""A fila de provedores: Mistral, Gemini, Groq, OpenRouter.
+"""A fila de provedores: OVHcloud, Gemini, Groq, OpenRouter.
 
-O Gemini deu 503 em rajada durante horas. A Groq respondia sempre que tinha
-tokens, mas a quota dela é pequena (200.000 tokens/dia). O Mistral entrou
-como principal porque dá 1.000 milhões de tokens/mês sem cartão — vinte vezes
-a Groq. A fila só é segura porque cada serviço tem o seu próprio orçamento:
-esgotar um não cala os outros.
+Ordem por quanto cada um pode produzir e por quanto pede em troca. A OVHcloud
+vai primeiro porque é o único que **não pede chave nenhuma** (2 pedidos por
+minuto, sem conta, sem cartão). O Gemini dá a maior quota mas respondeu 503 em
+rajada durante horas; a Groq é pequena mas fiável.
+
+O Mistral saiu em 17/11/2026: o plano Free deixou de activar chaves de API
+(passa a exigir facturação). Ver `test_mistral_saiu_porque_deixou_de_ser_gratis`.
 """
 import os
 from pathlib import Path
@@ -22,7 +24,7 @@ from bee.ia import PROVEDORES
 
 class OrdemDosProvedoresTest(unittest.TestCase):
     def _ordem(self, variavel=None) -> list[str]:
-        valores = {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2', 'MISTRAL_API_KEY': 'k3'}
+        valores = {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2'}
         if variavel is not None:
             valores['BEE_PROVEDOR_PRINCIPAL'] = variavel
         args = autopiloto.argumentos([])
@@ -30,26 +32,41 @@ class OrdemDosProvedoresTest(unittest.TestCase):
              patch('autopiloto.resolver_modelos', return_value=['modelo']):
             return [m.provedor for m in autopiloto._motores(args, object())]
 
-    def test_mistral_responde_primeiro(self):
-        self.assertEqual(self._ordem()[0], 'mistral', 'o Mistral tem a maior quota gratuita')
+    def test_ovhcloud_responde_primeiro(self):
+        self.assertEqual(self._ordem()[0], 'ovh', 'a OVHcloud não pede chave nenhuma')
 
-    def test_fila_por_quota_decrescente(self):
-        """Mistral (1e9 tokens/mês) -> Gemini (480 ped) -> Groq (66 ped)."""
-        self.assertEqual(self._ordem()[:3], ['mistral', 'gemini', 'groq'])
+    def test_fila_por_utilidade(self):
+        """OVHcloud (sem chave) -> Gemini (480 ped) -> Groq (66 ped)."""
+        self.assertEqual(self._ordem()[:3], ['ovh', 'gemini', 'groq'])
 
-    def test_sem_mistral_a_fila_comeca_no_gemini(self):
+    def test_ovhcloud_entra_mesmo_sem_chave_nenhuma(self):
+        """O ponto da OVHcloud: funciona com o ambiente vazio."""
         args = autopiloto.argumentos([])
-        with patch.dict(os.environ, {'GROQ_API_KEY': 'k1', 'GEMINI_API_KEY': 'k2'}, clear=True), \
+        with patch.dict(os.environ, {}, clear=True), \
              patch('autopiloto.resolver_modelos', return_value=['modelo']):
             ordem = [m.provedor for m in autopiloto._motores(args, object())]
-        self.assertEqual(ordem[:2], ['gemini', 'groq'])
+        self.assertEqual(ordem, ['ovh'])
+
+    def test_ovhcloud_desliga_se_sem_variables(self):
+        """Basta OVH_API_KEY_ATIVO=0 para a tirar da fila sem tocar no código."""
+        args = autopiloto.argumentos([])
+        ambiente = {'OVH_API_KEY_ATIVO': '0', 'GROQ_API_KEY': 'k'}
+        with patch.dict(os.environ, ambiente, clear=True), \
+             patch('autopiloto.resolver_modelos', return_value=['modelo']):
+            ordem = [m.provedor for m in autopiloto._motores(args, object())]
+        self.assertEqual(ordem, ['groq'])
+
+    def test_mistral_saiu_porque_deixou_de_ser_gratis(self):
+        """17/11/2026: o plano Free deixou de activar chaves de API."""
+        self.assertNotIn('mistral', PROVEDORES)
+        self.assertNotIn('MISTRAL_API_KEY', str([p.variavel for p in PROVEDORES.values()]))
 
     def test_variavel_permite_inverter_sem_tocar_no_codigo(self):
         self.assertEqual(self._ordem('gemini')[0], 'gemini')
         self.assertEqual(self._ordem('groq')[0], 'groq')
 
     def test_variavel_desconhecida_e_ignorada(self):
-        self.assertEqual(self._ordem('inventado')[0], 'mistral')
+        self.assertEqual(self._ordem('inventado')[0], 'ovh')
 
 
 class OrcamentoPorProvedorTest(unittest.TestCase):
