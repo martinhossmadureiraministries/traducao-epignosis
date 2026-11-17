@@ -1,12 +1,12 @@
 {
   "ciclos": 0,
-  "criado_utc": "2026-11-16T23:33:19+00:00",
+  "criado_utc": "2026-11-17T03:16:26+00:00",
   "dias": {
     "2026-11-17": {
       "aberto": false,
       "capitulos": 0,
       "falhas": 0,
-      "fechado_em_utc": "2026-11-16T23:33:19+00:00",
+      "fechado_em_utc": "2026-11-17T03:16:26+00:00",
       "pedidos": 0,
       "versos": 0
     }
@@ -14,6 +14,10 @@
   "exaustos": [],
   "exaustos_em": null,
   "falhas_seguidas": 0,
+  "lote_capitulo": null,
+  "lote_falhas": 0,
+  "lote_livro": null,
+  "lote_versiculo": null,
   "ultima_compilacao_build": null,
   "ultima_compilacao_utc": null,
   "ultimo_ciclo_utc": null,

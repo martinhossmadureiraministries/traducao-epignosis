@@ -1,1 +1,1 @@
-- 2026-11-16T23:33:19+00:00 — Janela diária encerrada; retoma às 05:00 (Africa/Luanda).
+- 2026-11-17T03:16:26+00:00 — Janela diária encerrada; retoma às 05:00 (Africa/Luanda).
