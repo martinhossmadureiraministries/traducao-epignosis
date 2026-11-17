@@ -51,29 +51,35 @@ a ver com a quota da IA — essa é outra coisa (ver §2).
 
 ## 1c. Quanto tempo até terminar (contas honestas)
 
-O limitador **não é a IA nem o cron** — são os **2.000 minutos de Actions por
-mês** do repositório privado. Tudo depende de quantos minutos cada execução
-gasta:
+Com o repositório **público**, os minutos de Actions são **ilimitados**. O
+limitador passou a ser a **quota gratuita da IA**, e o número que a controla é
+`BEE_PEDIDOS_POR_DIA`.
 
-| Intervalo | Execuções/dia | Minutos/mês | Cabe? | Versos/dia | Até terminar |
-|---|---|---|---|---|---|
-| `*/15` (antes) | 72 | ~4.320 | **não** — acaba em 2 semanas | 2.880 | nunca (pára a meio) |
-| `*/30` | 36 | ~2.160 | não | 1.440 | — |
-| **`0 * * * *` (agora)** | **18** | **~1.620** | **sim (81%)** | **1.440** | **~22 dias** |
-| `*/90` | 12 | ~1.080 | sim (54%) | 960 | ~33 dias |
+Configuração actual, a 24 horas por dia:
 
-Configuração actual: **1 execução por hora, 80 versículos**, dentro da janela
-05:00–23:00 de Luanda. Produz ~1.440 versículos/dia. Com 30.824 por fazer:
-**cerca de 3 semanas**, se o serviço de IA colaborar.
+| Peça | Valor | Porquê |
+|---|---|---|
+| cron | `7,27,47 * * * *` | 3 execuções/hora, fora da hora cheia |
+| janela | 00–24 | ninguém precisa de estar acordado |
+| `BEE_VERSOS_POR_CICLO` | 240 | blocos grandes, menos arranques |
+| `BEE_LOTE` | 10 | menos pedidos para os mesmos versículos |
+| `BEE_PEDIDOS_POR_DIA` | 1200 | teto de segurança (Gemini ~480 + Groq ~1000) |
 
-Duas ressalvas, para não haver surpresas:
+Contas:
 
-- **O ritmo observado até agora é muito pior**: em 14 horas saíram 81
-  versículos, porque o Gemini respondeu `503` e a Groq `429` em rajada. A
-  estimativa de 3 semanas assume que o serviço responde. Se não responder, o
-  tempo estica na proporção.
-- **Ao dia 1 do mês seguinte** o orçamento renova e a produção continua. Não é
-  preciso fazer nada.
+| Cenário | Versículos/dia | Até terminar |
+|---|---|---|
+| só o teto de pedidos (1.200 × 10) | 12.000 | **~3 dias** |
+| só o Gemini (480 pedidos × 10) | 4.800 | ~7 dias |
+| ritmo observado em 17/11 (com 503 e 429) | 140 | ~7 meses |
+
+As duas primeiras linhas mostram o que é possível **quando o serviço responde**.
+A terceira mostra o que aconteceu **quando não respondeu**. É por isso que as
+correções desta ronda são sobre a rede e não sobre o cron: o TPM da Groq passou
+a ser respeitado, o que elimina a rajada de 429 que travou a produção.
+
+**Onde afinar:** se aparecerem 429 nos registos, baixe `BEE_PEDIDOS_POR_DIA`.
+É o único número que corta a produção diária.
 
 ## 2. Plano gratuito: o que é possível de verdade
 

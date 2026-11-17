@@ -49,6 +49,45 @@ class ClienteHTTP:
         self.tentativas = tentativas
         self.timeout = timeout
         self._ultima_requisicao: float | None = None
+        # Orçamento de tokens por minuto, por provedor. Sem isto, um lote atrás
+        # do outro esgota o TPM da Groq (8.000 tokens/minuto no plano gratuito)
+        # e o serviço responde 429 em rajada — foi o que aconteceu em 17/11:
+        # dez 429 seguidos e um único lote guardado em quatro minutos.
+        self.tokens_por_minuto: dict[str, int] = {}
+        self._gasto: dict[str, list[tuple[float, int]]] = {}
+        self._esperas: dict[str, float] = {}
+
+    def reservar_tokens(self, provedor: str, tokens: int) -> float:
+        """Espera o necessário para caber no TPM do provedor; devolve os segundos.
+
+        A espera é devolvida para que o chamador a possa mostrar no diário e no
+        resumo: uma pausa de 40 s tem de ser visível, não silenciosa.
+        """
+        teto = self.tokens_por_minuto.get(provedor)
+        if not teto or tokens <= 0:
+            return 0.0
+        agora = time.monotonic()
+        marcas = self._gasto.setdefault(provedor, [])
+        limite = agora - 60.0
+        while marcas and marcas[0][0] <= limite:
+            marcas.pop(0)
+        usado = sum(quantidade for _, quantidade in marcas)
+        espera = 0.0
+        if usado + tokens > teto and marcas:
+            espera = max(0.0, (marcas[0][0] + 60.0) - agora) + 0.05
+            if espera > 0:
+                time.sleep(espera)
+                agora = time.monotonic()
+                while marcas and marcas[0][0] <= agora - 60.0:
+                    marcas.pop(0)
+        marcas.append((agora, min(tokens, teto)))
+        if espera:
+            self._esperas[provedor] = self._esperas.get(provedor, 0.0) + espera
+        return espera
+
+    def esperas_por_provedor(self) -> dict[str, float]:
+        """Segundos totais passados à espera de TPM, por provedor."""
+        return dict(self._esperas)
 
     def _esperar_pausa(self) -> None:
         if self._ultima_requisicao is not None:

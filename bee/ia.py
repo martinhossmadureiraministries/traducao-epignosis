@@ -17,7 +17,7 @@ from typing import Any, Callable, Iterator, Sequence
 
 from .arquivos import DadosInvalidos, carregar_json, sanear_html, validar_versiculos
 from .catalogo import Livro
-from .rede import ClienteHTTP, CotaExcedida, ErroRede
+from .rede import ClienteHTTP, CotaExcedida, ErroRede, ServicoIndisponivel
 
 
 # As instruções preservam o objetivo do projeto e não fingem acesso a obras
@@ -83,6 +83,10 @@ class Provedor:
     notas: str = ''
     url_modelos: str = ''         # endpoint de listagem (descoberta automática)
     prefixos_aceites: tuple[str, ...] = ()  # filtro grosseiro, se necessário
+    # Tokens por minuto do plano gratuito. É este o teto que causa os 429 em
+    # rajada: pedir mais depressa do que isto devolve erro, mesmo com quota
+    # diária disponível. Valores conservadores; confirme na sua conta.
+    tokens_por_minuto: int = 0
 
     @property
     def modelo_padrao(self) -> str:
@@ -105,6 +109,7 @@ PROVEDORES: dict[str, Provedor] = {
         'Plano gratuito sem cartão. O Flash-Lite tem o maior limite diário.',
         'https://generativelanguage.googleapis.com/v1beta/models',
         ('flash', 'lite'),
+        250_000,
     ),
     'groq': Provedor(
         'groq', 'Groq', 'https://api.groq.com/openai/v1/chat/completions',
@@ -116,6 +121,11 @@ PROVEDORES: dict[str, Provedor] = {
         12000,
         'Plano gratuito sem cartão. O limite real é o de tokens por minuto (TPM).',
         'https://api.groq.com/openai/v1/models',
+        (),
+        # Documentado pela Groq em 2026: gpt-oss-120b tem 8.000 TPM no plano
+        # gratuito. Com lotes de 6 versículos e ~1.500 tokens por pedido,
+        # 8.000 TPM dá ~5 pedidos por minuto. Pedir mais depressa = 429.
+        8_000,
     ),
     'cerebras': Provedor(
         'cerebras', 'Cerebras', 'https://api.cerebras.ai/v1/chat/completions',
@@ -124,6 +134,8 @@ PROVEDORES: dict[str, Provedor] = {
         900,
         'Plano gratuito sem cartão, com contexto curto (8K): use lotes pequenos.',
         'https://api.cerebras.ai/v1/models',
+        (),
+        60_000,
     ),
     'openrouter': Provedor(
         'openrouter', 'OpenRouter', 'https://openrouter.ai/api/v1/chat/completions',
@@ -134,6 +146,7 @@ PROVEDORES: dict[str, Provedor] = {
         'Modelos com sufixo ":free" têm teto diário baixo; use como reserva.',
         'https://openrouter.ai/api/v1/models',
         (':free',),
+        20_000,
     ),
     'openai': Provedor(
         'openai', 'OpenAI', 'https://api.openai.com/v1/chat/completions',
@@ -437,9 +450,34 @@ class MotorIA:
             return self._extrair(resposta)
         raise ultimo or ErroRede('Sem chaves utilizáveis.')
 
+    def _reservar(self, mensagem: str) -> None:
+        """Respeita o tokens-por-minuto do provedor antes de gastar um pedido.
+
+        Sem isto, o ciclo pede lotes em sequência, esgota o TPM da Groq e recebe
+        429 em rajada até gastar todas as tentativas. Uma espera curta e
+        previsível rende muito mais do que bater no limite e desistir.
+        """
+        teto = PROVEDORES[self.provedor].tokens_por_minuto
+        reservar = getattr(self.rede, 'reservar_tokens', None)
+        if not teto or reservar is None:
+            return
+        # ~4 caracteres por token, mais a resposta esperada (o lote).
+        estimado = (len(mensagem) + len(self._system())) // 4 + self._tokens_resposta()
+        espera = reservar(self.provedor, estimado)
+        if espera >= 1.0 and self.log:
+            self.log(
+                f'{self.provedor}: limite de {teto} tokens/minuto; a aguardar '
+                f'{espera:.0f}s para não receber HTTP 429.'
+            )
+
+    def _tokens_resposta(self) -> int:
+        """Quanto a resposta deve ocupar: 6 versículos com comentário ≈ 1.500."""
+        return 2_000
+
     def _requisicao(self, mensagem: str) -> str:
         """Tenta todas as chaves configuradas antes de desistir."""
         ultimo: ErroRede | None = None
+        self._reservar(mensagem)
         for tentativa in range(len(self._chaves)):
             chave = self._chaves[self._indice_chave]
             url, payload, headers = self._corpo(mensagem, chave)
@@ -454,6 +492,12 @@ class MotorIA:
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
                     # Modelo retirado ou inexistente: não gasta mais tentativas nele.
+                    return self._requisicao(mensagem)
+                if isinstance(exc, ServicoIndisponivel) and self._proximo_modelo('HTTP 5xx'):
+                    # Um modelo específico em baixo (503) não deve condenar o
+                    # provedor inteiro: outro modelo do mesmo serviço pode
+                    # responder. Em 17/11 foram 3 tentativas perdidas no mesmo
+                    # modelo instável antes de desistir do Gemini.
                     return self._requisicao(mensagem)
                 if isinstance(exc, CotaExcedida) and self._proximo_modelo('quota esgotada'):
                     # A quota é por modelo/chave: outro modelo do mesmo serviço

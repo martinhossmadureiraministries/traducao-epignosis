@@ -106,6 +106,43 @@ class IATest(unittest.TestCase):
         sleep.assert_called_once()
         self.assertAlmostEqual(sleep.call_args[0][0], 0.8)
 
+    def test_limite_de_tokens_por_minuto_evita_429(self):
+        """17/11: sem TPM, a Groq devolveu 10 respostas 429 seguidas.
+
+        O plano gratuito do gpt-oss-120b dá 8.000 tokens/minuto. Quatro lotes
+        de 2.000 caberam; o quinto tinha de esperar — não falhar.
+        """
+        cliente = ClienteHTTP(pausa=0, tentativas=1)
+        cliente.tokens_por_minuto['groq'] = 8_000
+        relogio = [100.0]
+
+        def agora():
+            return relogio[0]
+
+        def dormir(segundos):
+            relogio[0] += segundos
+
+        with patch('bee.rede.time.monotonic', side_effect=agora), \
+             patch('bee.rede.time.sleep', side_effect=dormir) as sleep:
+            esperas = [cliente.reservar_tokens('groq', 2_000) for _ in range(5)]
+        self.assertEqual(esperas[:4], [0.0, 0.0, 0.0, 0.0], 'os primeiros cabem no minuto')
+        self.assertGreaterEqual(esperas[4], 59.0, 'o quinto tem de esperar pelo minuto seguinte')
+        self.assertEqual(sleep.call_count, 1)
+        self.assertAlmostEqual(cliente.esperas_por_provedor()['groq'], esperas[4], places=1)
+
+    def test_sem_teto_de_tpm_nao_espera(self):
+        cliente = ClienteHTTP(pausa=0, tentativas=1)
+        self.assertEqual(cliente.reservar_tokens('gemini', 50_000), 0.0)
+        self.assertEqual(cliente.esperas_por_provedor(), {})
+
+    def test_provedores_declararam_tpm_e_groq_e_o_mais_apertado(self):
+        from bee.ia import PROVEDORES
+        self.assertGreater(PROVEDORES['gemini'].tokens_por_minuto, 0)
+        self.assertEqual(PROVEDORES['groq'].tokens_por_minuto, 8_000,
+                         'gpt-oss-120b tem 8.000 TPM no plano gratuito')
+        self.assertLess(PROVEDORES['groq'].tokens_por_minuto,
+                        PROVEDORES['gemini'].tokens_por_minuto)
+
     def test_chave_com_quebra_de_linha_e_rejeitada_sem_vazar(self):
         with self.assertRaises(ValueError) as erro:
             MotorIA('openai', 'gpt-6-luna', 'SEGREDO\nSECRET', HTTPFalso({}), 8192)
