@@ -1,1 +1,2 @@
-- 2026-11-17T03:16:26+00:00 — Janela diária encerrada; retoma às 05:00 (Africa/Luanda).
+- 2026-11-17T03:26:38+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/3).
+- 2026-11-17T03:27:08+00:00 — Ciclo 1: +40 versículos, +0 capítulos em João 5 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 40 versículos, 7 pedidos. A seguir: João 5.
