@@ -619,6 +619,10 @@ def _escrever_relatorio(
 
 def main() -> int:
     _instalar_sinais()
+    # A produção da nuvem é Gemini + Groq. O `setdefault` respeita o workflow
+    # (quando ele define BEE_PROVEDORES) e impede que uma chave esquecida no
+    # ambiente acrescente outro serviço enquanto o workflow ativo é o antigo.
+    os.environ.setdefault('BEE_PROVEDORES', 'gemini,groq')
     dados = Path(_env('BEE_DADOS', 'livros_json'))
     saida = Path(_env('BEE_SAIDA', 'entregas/auto'))
     cache = Path(_env('BEE_CACHE', '.bee-cache'))
