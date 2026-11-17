@@ -1,26 +1,26 @@
 {
-  "ciclos": 1,
-  "criado_utc": "2026-11-17T04:30:40+00:00",
+  "ciclos": 3,
+  "criado_utc": "2026-11-17T05:15:25+00:00",
   "dias": {
     "2026-11-17": {
       "aberto": true,
-      "capitulos": 1,
-      "falhas": 0,
+      "capitulos": 0,
+      "falhas": 3,
       "fechado_em_utc": null,
-      "pedidos": 8,
-      "versos": 41
+      "pedidos": 0,
+      "versos": 0
     }
   },
   "exaustos": [],
   "exaustos_em": "2026-11-17",
-  "falhas_seguidas": 0,
-  "lote_capitulo": null,
-  "lote_falhas": 0,
-  "lote_livro": null,
-  "lote_versiculo": null,
-  "ultima_compilacao_build": "5ef2124682b24b339031812d68201f6b",
-  "ultima_compilacao_utc": "2026-11-17T04:35:04+00:00",
-  "ultimo_ciclo_utc": "2026-11-17T04:30:40+00:00",
-  "ultimo_erro": null,
-  "versos_total": 41
+  "falhas_seguidas": 3,
+  "lote_capitulo": 15,
+  "lote_falhas": 3,
+  "lote_livro": 500,
+  "lote_versiculo": 11,
+  "ultima_compilacao_build": null,
+  "ultima_compilacao_utc": null,
+  "ultimo_ciclo_utc": "2026-11-17T05:29:40+00:00",
+  "ultimo_erro": "RespostaInvalida: João 15:11: resposta inválida após 3 tentativa(s). Progresso anterior preservado. João 15:11-20: JSON inválido: Expecting property name enclosed in double quotes: line 1 column 1058 (char 1057)",
+  "versos_total": 0
 }
