@@ -9,6 +9,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from html import escape
+import json
+import os
 from pathlib import Path
 import sys
 import time
@@ -66,6 +68,11 @@ class Progresso:
     # O prazo interno do ciclo foi atingido: o que está gravado é válido e o
     # ciclo termina para o nuvem.py poder publicar antes de o job ser morto.
     tempo_esgotado: bool = False
+    # Versículos que ficaram em quarentena nesta fatia (marcador gravado).
+    quarentenados: int = 0
+    # A fatia deve terminar de forma limpa depois de gravar o que tem (por
+    # exemplo, atingiu o limite de versículos em quarentena).
+    parar: bool = False
 
     def somar(self, outro: 'Progresso') -> None:
         self.versos += outro.versos
@@ -74,6 +81,8 @@ class Progresso:
         self.concluido = outro.concluido
         self.alterado = self.alterado or outro.alterado
         self.tempo_esgotado = self.tempo_esgotado or outro.tempo_esgotado
+        self.quarentenados += outro.quarentenados
+        self.parar = self.parar or outro.parar
         self.livro, self.capitulo = outro.livro, outro.capitulo
         self.motivos.extend(outro.motivos)
 
@@ -90,6 +99,70 @@ class ConfigGeracao:
     lote_retomar: int | None = None
     # Prazo em segundos para esta fatia (None = sem prazo). Ver nuvem.py.
     max_segundos: float | None = None
+    # Depois de N versículos em quarentena, a fatia para: evita encher o livro
+    # de marcadores quando o problema é do serviço inteiro, não de um versículo.
+    max_quarentena: int = 3
+
+
+PENDENTE_PREFIXO = '[Versículo pendente:'
+
+
+def _placeholder_pendente(verso: int, motivo: str) -> dict[str, Any]:
+    """Marcador explícito para um versículo que nenhum provedor conseguiu produzir.
+
+    Não é texto bíblico: fica assim para o leitor saber que a tradução daquele
+    versículo ainda falta, e para a quarentena poder ser revista depois.
+    """
+    return {
+        'verse': verso,
+        'text': f'{PENDENTE_PREFIXO} tradução ainda não produzida — {motivo}.]',
+        'commentary': (
+            '<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido '
+            'para este versículo.</p>'
+            '<p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o '
+            'comentário. Versículo registado em quarentena para revisão.</p>'
+            '<p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>'
+        ),
+    }
+
+
+def _registar_quarentena(
+    caminho: Path, livro: Livro, capitulo: int, verso: int,
+    motor: Motor, erro: str,
+) -> None:
+    """Acrescenta uma entrada a `livros_json/.bee/quarentena.json` de forma atómica."""
+    pasta = caminho.parent / '.bee'
+    pasta.mkdir(parents=True, exist_ok=True)
+    destino = pasta / 'quarentena.json'
+    dados: dict[str, Any] = {'entries': []}
+    if destino.exists():
+        try:
+            lido = json.loads(destino.read_text(encoding='utf-8'))
+            if isinstance(lido, dict) and isinstance(lido.get('entries'), list):
+                dados = lido
+            elif isinstance(lido, list):
+                dados = {'entries': lido}
+        except (OSError, UnicodeError, ValueError):
+            # Não apagar um ficheiro que não percebemos: guarda-o ao lado.
+            try:
+                os.replace(destino, destino.with_suffix('.json.invalido'))
+            except OSError:
+                pass
+    dados['entries'].append({
+        'reference': f'{livro.nome} {capitulo}:{verso}',
+        'book': livro.numero,
+        'chapter': capitulo,
+        'verse': verso,
+        'provider': getattr(motor, 'provedor', None),
+        'model': getattr(motor, 'modelo', None),
+        'error': erro,
+        'at_utc': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'status': 'pendente',
+    })
+    dados['updated_at_utc'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    temporario = destino.with_suffix('.json.tmp')
+    temporario.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    os.replace(temporario, destino)
 
 
 def _placeholder_ausente(verso: int) -> dict[str, Any]:
@@ -205,6 +278,7 @@ def _gerar_capitulo(
         if config.lote_retomar == inicio and config.falhas_anteriores and tamanho > 1:
             tamanho = 1
         falhas_unitarias = 0
+        quarentena_feita = False
         while True:
             if sem_tempo():
                 return
@@ -252,11 +326,37 @@ def _gerar_capitulo(
                     progresso.lote_inicio = inicio
                     progresso.falhas_lote = config.falhas_anteriores + falhas_unitarias
                     if falhas_unitarias >= config.tentativas_conteudo:
-                        raise RespostaInvalida(
-                            f'{livro.nome} {capitulo}:{inicio}: resposta inválida após '
-                            f'{falhas_unitarias} tentativa(s). Progresso anterior preservado. {exc}'
-                        ) from exc
+                        # Nenhum provedor/modelo produziu este versículo. Em vez de
+                        # bloquear o capítulo inteiro (e a fila), grava um marcador
+                        # explícito, regista a quarentena e segue para o seguinte.
+                        motivo = (
+                            f'resposta inválida após {falhas_unitarias} tentativa(s): {exc}'
+                        )
+                        parcial.append(_placeholder_pendente(inicio, motivo))
+                        _registrar(dados, capitulo, inicio, inicio, 'local', 'quarentena')
+                        _registar_quarentena(caminho, livro, capitulo, inicio, motor, motivo)
+                        _salvar_lote(caminho, dados, livro, capitulo, parcial, total)
+                        progresso.alterado = True
+                        progresso.quarentenados += 1
+                        progresso.lote_inicio = None
+                        progresso.falhas_lote = 0
+                        quarentena_feita = True
+                        print(
+                            f'  {livro.nome} {capitulo}:{inicio}: em quarentena; '
+                            'a continuar com o versículo seguinte.',
+                            file=sys.stderr, flush=True,
+                        )
+                        if progresso.quarentenados >= config.max_quarentena:
+                            progresso.motivos.append(
+                                'limite de versículos em quarentena atingido'
+                            )
+                            progresso.parar = True
+                        break
                     print(f'  A repetir {livro.nome} {capitulo}:{inicio}: {exc}', file=sys.stderr, flush=True)
+        if quarentena_feita:
+            if progresso.parar:
+                return
+            continue
         for versiculo, fonte in zip(versiculos, selecionadas):
             if fonte.get('aviso'):
                 versiculo['commentary'] += (
@@ -342,6 +442,9 @@ def _percorrer(
                 livro, capitulo, caminho, dados, fontes_capitulo, motor, config,
                 progresso, prazo,
             )
+            if progresso.parar:
+                progresso.concluido = False
+                return progresso
             if progresso.tempo_esgotado:
                 progresso.concluido = False
                 return progresso

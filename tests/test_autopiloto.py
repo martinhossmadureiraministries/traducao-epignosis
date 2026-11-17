@@ -280,6 +280,15 @@ class IndisponibilidadeTest(Base):
         self.assertEqual(rodizio.esgotados(), [], 'um 5xx não deve marcar o provedor como esgotado')
         # O rodízio registou a passagem ao provedor seguinte, sem tratar o 5xx como quota.
         self.assertTrue(any('outro provedor' in n for n in notas), notas)
+    def test_tectos_seguem_o_lote_configurado_por_provedor(self):
+        import autopiloto
+        padrao = autopiloto._tectos_por_provedor(6)
+        self.assertIn('groq', padrao)
+        maior = autopiloto._tectos_por_provedor(6, {'groq': 8})
+        self.assertLess(maior['groq'], padrao['groq'])
+        menor = autopiloto._tectos_por_provedor(6, {'groq': 4})
+        self.assertGreater(menor['groq'], padrao['groq'])
+
 
     def test_reconhece_erro_passageiro_e_de_configuracao(self):
         import nuvem
@@ -854,12 +863,16 @@ class RetomadaDoLoteTest(unittest.TestCase):
         gerar_fatia([LIVROS_POR_NUMERO[640]], self.dados, FontesFalsas(), motor, config)
         self.assertEqual(motor.calls[0], [1], 'devia pedir só o versículo em falta')
 
-    def test_falhas_do_mesmo_lote_ficam_no_progresso(self):
+    def test_falhas_do_mesmo_lote_vao_para_quarentena(self):
         from bee.gerador import ConfigGeracao, gerar_fatia
         motor = MotorDeLotes(falhar=True)
-        with self.assertRaises(Exception):
-            gerar_fatia([LIVROS_POR_NUMERO[640]], self.dados, FontesFalsas(), motor,
-                        ConfigGeracao(versos_por_pedido=1, tentativas_conteudo=2))
+        progresso = gerar_fatia(
+            [LIVROS_POR_NUMERO[640]], self.dados, FontesFalsas(), motor,
+            ConfigGeracao(versos_por_pedido=1, tentativas_conteudo=2),
+        )
+        self.assertEqual(progresso.quarentenados, 3)
+        self.assertTrue(progresso.parar)
+        self.assertTrue((self.dados / '.bee' / 'quarentena.json').exists())
 
     def test_agendador_guarda_o_lote_em_falta_entre_ciclos(self):
         from bee.agenda import Agendador, ConfigAgenda, Estado
@@ -906,6 +919,28 @@ class RodizioTest(unittest.TestCase):
                 rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
         self.assertEqual(sorted(rodizio.esgotados()), ['gemini', 'gemini'])
         self.assertTrue(any('fica de fora' in n for n in notas))
+    def test_conteudo_invalido_troca_de_provedor(self):
+        """O mesmo lote pode passar noutro modelo; não bloquear o capítulo."""
+        from bee.ia import RespostaInvalida
+        notas = []
+
+        class Invalido(MotorFalso):
+            provedor = 'gemini'
+            modelo = 'invalido'
+
+            def gerar(self, *a, **k):
+                raise RespostaInvalida('JSON inválido')
+
+        class Bom(MotorFalso):
+            provedor = 'groq'
+            modelo = 'bom'
+
+        rodizio = Rodizio([Invalido(), Bom()], registar=notas.append)
+        versos = rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+        self.assertEqual(versos[0]['verse'], 1)
+        self.assertEqual(rodizio.provedor, 'groq')
+        self.assertTrue(any('outro provedor' in n for n in notas), notas)
+
 
     def test_todos_esgotados_levanta_erro_de_rede(self):
         class Sempre429(MotorFalso):

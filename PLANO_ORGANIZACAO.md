@@ -306,28 +306,28 @@ diferentes.
 **Objetivo:** produzir de forma previsível, sem bloqueios e sem contar mal a
 quota.
 
-- [ ] Contabilidade de pedidos: `ClienteHTTP` conta tentativas por provedor;
+- [x] Contabilidade de pedidos: `ClienteHTTP` conta tentativas por provedor;
       `Agendador` grava esses números no estado. O teto diário passa a ser real.
-- [ ] Orçamento por provedor calculado com o lote **daquele** provedor (hoje
+- [x] Orçamento por provedor calculado com o lote **daquele** provedor (hoje
       `_tectos_por_provedor(args.lote)` ignora `--versos-por-pedido`).
-- [ ] Em resposta JSON inválida a meio:
-      - dividir até 1 versículo (já existe);
-      - se continuar inválida, tentar **outro provedor/modelo** para esse lote;
-      - se todos falharem, gravar um marcador de “versículo pendente” com
+- [x] Em resposta JSON inválida a meio:
+      - [x] dividir até 1 versículo (já existe);
+      - [x] se continuar inválida, tentar **outro provedor/modelo** para esse lote;
+      - [x] se todos falharem, gravar um marcador de “versículo pendente” com
         comentário explícito e seguir, em vez de bloquear o capítulo inteiro.
-- [ ] Um único versículo problemático não pode parar a fila para sempre. Estado
+- [x] Um único versículo problemático não pode parar a fila para sempre. Estado
       de quarentena em `livros_json/.bee/quarentena.json`, com referência,
       provedor, erro e data.
-- [ ] Cache da descoberta de modelos por execução (não repetir `/models` a cada
+- [x] Cache da descoberta de modelos por execução (não repetir `/models` a cada
       motor).
-- [ ] Lote por provedor revisto com os dados reais: Gemini 6–8, Groq 4–6,
+- [x] Lote por provedor revisto com os dados reais: Gemini 6–8, Groq 4–6,
       OVH 4. Lotes grandes truncam e gastam quota a repetir.
-- [ ] Testes de regressão:
-      - `Retry-After` de 1200 s não dorme 1200 s;
-      - `429` troca de provedor em menos de X segundos;
-      - o orçamento conta tentativas falhadas;
-      - um JSON inválido num versículo não bloqueia o capítulo;
-      - o resumo só lista provedores ativos.
+- [x] Testes de regressão:
+      - [x] `Retry-After` de 1200 s não dorme 1200 s;
+      - [x] `429` troca de provedor em menos de X segundos;
+      - [x] o orçamento conta tentativas falhadas;
+      - [x] um JSON inválido num versículo não bloqueia o capítulo;
+      - [x] o resumo só lista provedores ativos.
 
 **Aceitação:** uma rajada de 429 não consome mais de 2 min; o estado diário
 reflete os pedidos reais; um versículo problemático fica em quarentena e a fila
@@ -339,15 +339,15 @@ continua.
 
 **Objetivo:** “está no Actions” passa a significar “posso descarregar e abrir”.
 
-- [ ] Um único pacote por execução: `BEE-modulos-<run>.zip` com
+- [x] Um único pacote por execução: `BEE-modulos-<run>.zip` com
       `BEE.SQLite3`, `BEE.commentaries.SQLite3`, `LEIA-ME.txt`.
-- [ ] Pacote de leitura: `BEE-capitulos-<run>.zip` com um HTML por capítulo,
+- [x] Pacote de leitura: `BEE-capitulos-<run>.zip` com um HTML por capítulo,
       incluindo capítulos em curso (marcados “em curso: X de Y”).
-- [ ] Pacote de diagnóstico: `estado.json`, `diario.md`, `quarentena.json`.
-- [ ] Release `bee-previa` criada automaticamente na primeira execução com
+- [x] Pacote de diagnóstico: `estado.json`, `diario.md`, `quarentena.json`.
+- [x] Release `bee-previa` criada automaticamente na primeira execução com
       conteúdo; assets atualizados com `--clobber`.
-- [ ] Nomes com número da execução e SHA curto; retenção explícita.
-- [ ] Passo “Verificar artefactos” que falha se o ZIP não tiver os dois módulos
+- [x] Nomes com número da execução; retenção explícita (14 dias).
+- [x] Passo “Verificar artefactos” que falha se o ZIP não tiver os dois módulos
       ou se o módulo não tiver versículos.
 
 **Aceitação:** qualquer execução com progresso tem, no mínimo, um ZIP

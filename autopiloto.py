@@ -307,7 +307,8 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     return motores
 
 
-def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
+def _tectos_por_provedor(lote: int | None,
+                         lotes: dict[str, int] | None = None) -> dict[str, int]:
     """Quantos pedidos por dia cada serviço aguenta, pela sua própria quota.
 
     O tecto global (`BEE_PEDIDOS_POR_DIA`) é uma média; este é o limite real de
@@ -317,9 +318,11 @@ def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
     tectos: dict[str, int] = {}
     # Sem --lote, usa o tamanho padrão de 6 para não desligar os tectos por
     # provedor (antes, `args.lote=None` devolvia um dicionário vazio).
-    base = lote or 6
     for nome, config in PROVEDORES.items():
         if config.tokens_por_dia:
+            # O tamanho real do lote manda: `--versos-por-pedido gemini=8` não
+            # pode continuar a calcular a quota como se fossem 6 versículos.
+            base = (lotes or {}).get(nome) or lote or 6
             # ~3.000 tokens por pedido com lote de 6 (1.500 de entrada + 1.500
             # de saída); pedidos maiores gastam proporcionalmente mais.
             tectos[nome] = max(1, config.tokens_por_dia // (base * 500))
@@ -328,7 +331,7 @@ def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
 
 def _config(args: argparse.Namespace) -> ConfigAgenda:
     return ConfigAgenda(
-        tectos_por_provedor=_tectos_por_provedor(args.lote),
+        tectos_por_provedor=_tectos_por_provedor(args.lote, args.lotes),
         intervalo_min=args.intervalo_min,
         max_versos=args.max_versos,
         pedidos_por_dia=args.pedidos_por_dia,
@@ -409,16 +412,31 @@ def _status(args: argparse.Namespace, dados: Path) -> int:
     dados_livros = ler_todos(dados)
     feitos = sum(len(item['chapters']) for item in dados_livros.values())
     versos = sum(len(v) for item in dados_livros.values() for v in item['chapters'].values())
+    em_curso = sum(len(item.get('in_progress', {})) for item in dados_livros.values())
+    versos_guardados = versos + sum(
+        len(v) for item in dados_livros.values()
+        for v in item.get('in_progress', {}).values()
+    )
     print(f'{ROTULO} — progresso')
     print(f'Capítulos estruturalmente completos: {feitos}/1189')
-    print(f'Versículos nos capítulos completos: {versos}/31102')
+    print(f'Versículos guardados (inclui capítulos em curso): {versos_guardados}/31102')
+    if em_curso:
+        print(f'Capítulos em curso (parciais, já guardados): {em_curso}')
     if feitos:
-        print(f'Falta: {1189 - feitos} capítulos e {31102 - versos} versículos.')
+        print(f'Falta: {1189 - feitos} capítulos e {31102 - versos_guardados} versículos.')
     for livro in LIVROS:
         item = dados_livros.get(livro.numero, {})
         completos = len(item.get('chapters', {}))
-        if completos:
-            print(f'  {livro.numero:03d}  {livro.nome:<22} {completos:3d}/{livro.capitulos}')
+        parciais = item.get('in_progress', {})
+        if completos or parciais:
+            detalhe = f'{completos:3d}/{livro.capitulos}'
+            if parciais:
+                pedacos = ', '.join(
+                    f'{cap}: {len(versos_cap)}'
+                    for cap, versos_cap in sorted(parciais.items(), key=lambda par: int(par[0]))
+                )
+                detalhe += f' (+ {len(parciais)} em curso; versículos guardados: {pedacos})'
+            print(f'  {livro.numero:03d}  {livro.nome:<22} {detalhe}')
     estado = carregar_estado(dados / '.bee' / 'estado.json')
     if estado.ciclos:
         print(f'Autopiloto: {estado.ciclos} ciclos; {estado.versos_total} versículos gerados; '

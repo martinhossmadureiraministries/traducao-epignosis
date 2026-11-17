@@ -208,14 +208,42 @@ jobs:
           fi
           tail -n 25 livros_json/.bee/diario.md 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || echo "- (ainda sem diário)" >> "$GITHUB_STEP_SUMMARY"
 
-      # O ZIP com os dois módulos e o LEIA-ME é criado pelo próprio nuvem.py.
+      # Os ZIP são criados pelo próprio nuvem.py, com o número da execução no
+      # nome: BEE-modulos-<run>.zip, BEE-capitulos-<run>.zip e
+      # BEE-diagnostico-<run>.zip. O RELATORIO.txt viaja sempre no diagnóstico.
+      - name: Verificar os pacotes
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import sqlite3, tempfile, zipfile
+          modulos = sorted(Path('entregas/auto').glob('BEE-modulos-*.zip'))
+          if not modulos:
+              print('Sem pacote de módulos nesta execução (ainda sem capítulo completo).')
+              raise SystemExit(0)
+          with zipfile.ZipFile(modulos[-1]) as pacote:
+              nomes = set(pacote.namelist())
+              for nome in ('BEE.SQLite3', 'BEE.commentaries.SQLite3', 'LEIA-ME.txt'):
+                  if nome not in nomes:
+                      raise SystemExit(f'{modulos[-1].name}: falta {nome}')
+              with tempfile.TemporaryDirectory() as pasta:
+                  pacote.extract('BEE.SQLite3', pasta)
+                  total = sqlite3.connect(Path(pasta) / 'BEE.SQLite3').execute(
+                      'SELECT COUNT(*) FROM verses').fetchone()[0]
+                  if not total:
+                      raise SystemExit(f'{modulos[-1].name}: módulo sem versículos')
+                  print(f'{modulos[-1].name}: {total} versículos.')
+          PY
 
       - name: Guardar os módulos como artefato
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: BEE-modulos-${{ github.run_number }}
-          path: entregas/auto/
+          path: |
+            entregas/auto/BEE-modulos-*.zip
+            entregas/auto/BEE-diagnostico-*.zip
+            entregas/auto/RELATORIO.txt
           if-no-files-found: ignore
           retention-days: 14
 
@@ -227,7 +255,9 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: BEE-capitulos-${{ github.run_number }}
-          path: entregas/capitulos/
+          path: |
+            entregas/auto/BEE-capitulos-*.zip
+            entregas/capitulos/
           if-no-files-found: ignore
           retention-days: 14
 
@@ -241,12 +271,20 @@ jobs:
         run: |
           shopt -s nullglob
           ficheiros=(entregas/capitulos/*.html)
-          if [ ${#ficheiros[@]} -eq 0 ]; then
-            echo "Sem capítulos novos nesta execução."
+          pacotes=(entregas/auto/BEE-modulos-*.zip entregas/auto/BEE-capitulos-*.zip)
+          if [ ${#ficheiros[@]} -eq 0 ] && [ ${#pacotes[@]} -eq 0 ]; then
+            echo "Sem capítulos nem pacotes novos nesta execução."
             exit 0
           fi
           gh release view "bee-previa" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
             || gh release create "bee-previa" --repo "$GITHUB_REPOSITORY" \
                  --title "BEE — prévia (rascunho automático)" \
-                 --notes "Um ficheiro HTML por capítulo gerado pelo autopiloto, para leitura e verificação no telemóvel. Conteúdo gerado por IA e NÃO revisto. Os módulos MyBible completos estão no artifact BEE-modulos de cada execução."
-          gh release upload "bee-previa" "${ficheiros[@]}" --clobber --repo "$GITHUB_REPOSITORY"
+                 --notes "Capítulos em HTML e pacotes ZIP gerados pelo autopiloto. Conteúdo gerado por IA e NÃO revisto. Os módulos MyBible completos e o diagnóstico estão também nos artifacts BEE-modulos e BEE-capitulos de cada execução."
+          if [ ${#ficheiros[@]} -gt 0 ]; then
+            gh release upload "bee-previa" "${ficheiros[@]}" --clobber --repo "$GITHUB_REPOSITORY"
+          fi
+          # Os ZIP também ficam no release, para quem não consegue autenticar-se
+          # nos artifacts do Actions.
+          if [ ${#pacotes[@]} -gt 0 ]; then
+            gh release upload "bee-previa" "${pacotes[@]}" --clobber --repo "$GITHUB_REPOSITORY"
+          fi
