@@ -407,6 +407,30 @@ class IndisponibilidadeTest(Base):
         self.assertIn('04:17', saida.getvalue())
         self.assertIn('05:00', saida.getvalue())
 
+    def test_compila_no_fim_mesmo_sem_fechar_capitulo(self):
+        """João 5 tem 47 versículos: 8 ciclos não podem ficar sem módulos novos."""
+        import nuvem
+        from bee.arquivos import novo_livro, salvar_livro
+        livro = LIVROS_POR_NUMERO[640]
+        dados = novo_livro(livro)
+        dados['chapters']['1'] = [
+            {'verse': n, 'text': f'Texto {n}.',
+             'commentary': '<p>Análise Léxica: a</p><p>Crítica Textual: b</p>'
+                           '<p>Síntese Exegética: c</p>'}
+            for n in range(1, 26)
+        ]
+        salvar_livro(self.dados / livro.nome_arquivo, dados, livro)
+
+        class Resultado:
+            acao = 'gerado'
+            resumo_compilacao = None
+
+        diario = type('D', (), {'escrever': staticmethod(lambda *a, **k: None)})()
+        resultado = Resultado()
+        nuvem._compilar_no_fim(resultado, self.dados, self.saida, diario)
+        self.assertTrue((self.saida / 'BEE.SQLite3').exists())
+        self.assertIsNotNone(resultado.resumo_compilacao)
+
     def test_janela_desligada_produz_a_qualquer_hora(self):
         import nuvem
         with patch.dict(os.environ, {

@@ -28,7 +28,8 @@ from bee.agenda import (
     proximo_trabalho, salvar_estado,
 )
 from bee.arquivos import DadosInvalidos, ler_todos
-from bee.compilador import ErroCompilacao
+from bee.catalogo import POR_NUMERO
+from bee.compilador import ErroCompilacao, compilar
 from bee.fontes import ErroFonte, FontesOriginais
 from bee.rede import ClienteHTTP, ErroRede
 from bee.trava import EmExecucao, trava
@@ -230,6 +231,45 @@ def _passo_do_plano(dados: Path, livros: list) -> tuple[int, int]:
     return atual, restante_fila
 
 
+def _modulos_desatualizados(dados: Path, saida: Path) -> bool:
+    """Os módulos existem e são mais recentes do que todos os JSON de dados?"""
+    env = saida / 'BEE.SQLite3'
+    comentarios = saida / 'BEE.commentaries.SQLite3'
+    try:
+        mais_recente = max(c.stat().st_mtime for c in dados.glob('*.json'))
+        modulos = min(env.stat().st_mtime, comentarios.stat().st_mtime)
+    except (OSError, ValueError):
+        return True
+    return modulos < mais_recente
+
+
+def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
+    """Compila quando há capítulos completos novos, mesmo em fim de ciclo parcial.
+
+    O agendador só compila quando fecha um capítulo inteiro. Com lotes de 6
+    versículos, um capítulo de 47 (João 5) levava 8 ciclos: o resumo repetia
+    'ainda não há capítulos completos' e o MyBible não recebia nada durante
+    horas. Aqui compila-se sempre que apareceu, desde a última compilação,
+    pelo menos um capítulo completo novo.
+    """
+    if resultado.acao != 'gerado' or resultado.resumo_compilacao:
+        return
+    if _env('BEE_COMPILAR', '1') == '0':  # respeita BEE_COMPILAR=0
+        return
+    if not _modulos_desatualizados(dados, saida):
+        return
+    try:
+        resumo = compilar(dados, saida)
+    except Exception as exc:  # a compilação nunca deve estragar a produção
+        diario.escrever(f'A compilação do fim do ciclo falhou; módulos anteriores preservados: {exc}', 'aviso')
+        return
+    resultado.resumo_compilacao = resumo
+    diario.escrever(
+        f'Módulos recompilados no fim do ciclo: {resumo["capitulos"]}/1189 capítulos, '
+        f'{resumo["versiculos"]} versículos.'
+    )
+
+
 LEIA_ME = (
     'Rascunho automático da Bíblia de Estudo Epignósis (BEE).\n'
     'Copie os dois ficheiros .SQLite3 para a pasta do MyBible no Android e\n'
@@ -319,6 +359,7 @@ def main() -> int:
             )
             resultado = agendador.ciclo(livros)
             salvar_estado(estado_caminho, estado)
+            _compilar_no_fim(resultado, dados, saida, diario)
             # O serviço de IA às vezes responde 5xx em rajada (foi o que
             # aconteceu na primeira execução real). Em vez de gastar uma
             # execução inteira do cron, tenta-se de novo aqui.
@@ -374,6 +415,7 @@ def main() -> int:
             print(f'Aviso: {publicado}', file=sys.stderr)
 
     pacote = _empacotar(saida)
+    env = (saida / 'BEE.SQLite3')
     trabalho = proximo_trabalho(livros, dados)
     faltam_livro, faltam_fila = _passo_do_plano(dados, livros)
     transitorio = _parece_transitorio(estado.ultimo_erro or '')
@@ -400,8 +442,12 @@ def main() -> int:
             linhas.append('- O limite está em `BEE_PEDIDOS_POR_DIA`; a reposição é à meia-noite local.')
     elif resultado.acao == 'gerado':
         linhas.append(f'- Ação: **{resultado.acao}** — {resultado.detalhe or "—"}')
-        linhas.append(f'- Esta execução: +{resultado.progresso.versos} versículos, '
-                      f'+{resultado.progresso.capitulos} capítulos')
+        versos = resultado.progresso.versos
+        capitulos = resultado.progresso.capitulos
+        linhas.append(
+            f'- Esta execução: +{versos} {"versículo" if versos == 1 else "versículos"}, '
+            f'+{capitulos} {"capítulo" if capitulos == 1 else "capítulos"}'
+        )
     elif transitorio:
         linhas.append('- Ação: **nada gerado nesta execução** — o serviço de IA não respondeu.')
         linhas.append('- **Não é um erro do projeto nem da sua chave.** O próximo ciclo '
@@ -410,6 +456,18 @@ def main() -> int:
         linhas.append(f'- Ação: **nada** — {resultado.detalhe or "—"}')
     linhas.append(f'- Progresso: **{depois_cap}/1189 capítulos completos**, '
                   f'{depois_versos}/31102 versículos guardados')
+    if (
+        estado.lote_capitulo and estado.lote_versiculo
+        and estado.lote_livro == (trabalho[0].numero if trabalho else None)
+        and estado.lote_capitulo == (trabalho[1] if trabalho else None)
+    ):
+        livro = POR_NUMERO.get(estado.lote_livro or 0)
+        if livro is not None:
+            linhas.append(
+                f'- A próxima execução continua em **{livro.nome} '
+                f'{estado.lote_capitulo}:{estado.lote_versiculo}** '
+                '(não recomeça o capítulo).'
+            )
     seguinte = f'{trabalho[0].nome} {trabalho[1]}' if trabalho else 'nada pendente'
     linhas.append('- A seguir: ' + seguinte)
     if faltam_livro:
@@ -429,13 +487,24 @@ def main() -> int:
         )
     if resultado.resumo_compilacao:
         resumo = resultado.resumo_compilacao
-        linhas.append(f'- Módulos: {"completo" if resumo["completo"] else "PARCIAL"}, '
-                      f'{resumo["versiculos"]} versículos')
+        linhas.append(
+            f'- Módulos: {"Bíblia completa" if resumo["completo"] else "parciais"}, '
+            f'{resumo["capitulos"]} capítulos completos e {resumo["versiculos"]} versículos '
+            f'(recompilados nesta execução; o MyBible só aceita capítulos inteiros).'
+        )
+    elif env.exists():
+        # Não houve capítulo novo, mas os módulos de antes continuam válidos.
+        linhas.append(
+            '- Módulos: sem capítulos novos nesta execução; os de antes continuam válidos.'
+        )
+    else:
+        linhas.append('- Módulos: ainda não há capítulos completos (precisa de fechar João 5)')
     linhas.append(f'- Dados: {publicado} (ramo `{ramo}`)')
     if pacote:
-        linhas.append(f'- Módulos: `{pacote}` (descarregue em Artifacts)')
-    else:
-        linhas.append('- Módulos: ainda não há capítulos completos')
+        linhas.append(
+            f'- **Descarregue para o MyBible:** Abaixo, em *Artifacts* → '
+            f'`BEE-modulos.zip` com os dois ficheiros .SQLite3.'
+        )
     _resumo('\n'.join(linhas))
     # 'nada' com falhas deve deixar a execução vermelha no GitHub — exceto
     # quando a causa é o serviço estar em baixo (5xx): isso não é um defeito do
