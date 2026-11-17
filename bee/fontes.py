@@ -51,6 +51,14 @@ FONTES = {
     ),
 }
 
+AUTORIA = (
+    'Obra: Bíblia de Estudo Epignósis (BEE) — Projeto Epignósis. '
+    'Autor: Martinho S. S. Madureira. '
+    'Publicado por Martinho S. S. Madureira Ministries. '
+    'Texto bíblico e comentários gerados por IA sob direcção editorial do autor, '
+    'sujeitos a revisão humana antes de qualquer edição final. '
+)
+
 ATRIBUICAO = (
     'AT: Original work of the Open Scriptures Hebrew Bible available at '
     'https://github.com/openscriptures/morphhb (CC BY 4.0), baseado no WLC; '

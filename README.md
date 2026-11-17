@@ -1,5 +1,14 @@
 # Bíblia de Estudo Epignósis (BEE) — projeto para MyBible
 
+> **Obra:** Bíblia de Estudo Epignósis (BEE) — *Projeto Epignósis*
+> **Autor:** Martinho S. S. Madureira
+> **Publicado por:** Martinho S. S. Madureira Ministries
+>
+> A autoria fica gravada no próprio módulo (campo `source` do `BEE.SQLite3`)
+> e no `LEIA-ME.txt` dentro do ZIP, para que acompanhe o ficheiro onde quer que
+> ele vá. O texto bíblico e os comentários são gerados por IA sob direcção
+> editorial do autor e passam por revisão humana antes de qualquer edição final.
+
 Projeto de tradução e comentários para os 66 livros e 1.189 capítulos do cânone escolhido, com ferramentas **de linha de comando** e compilação para `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 
 ## Produção automática com ferramentas gratuitas

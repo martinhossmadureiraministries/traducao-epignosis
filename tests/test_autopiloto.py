@@ -399,9 +399,15 @@ class IndisponibilidadeTest(Base):
              patch('autopiloto.ClienteHTTP'), \
              patch('nuvem.FontesOriginais', FontesFalsas), \
              patch('autopiloto._motores', return_value=[MotorFalso()]), \
-             patch('nuvem._agora_local', return_value=__import__('datetime').datetime(2026, 11, 17, 4, 17)), \
+             patch('bee.agenda._agora',
+                   return_value=__import__('datetime').datetime(
+                       2026, 11, 17, 3, 17, tzinfo=__import__('datetime').timezone.utc)), \
+             patch('nuvem._agora_local',
+                   return_value=__import__('datetime').datetime(2026, 11, 17, 4, 17)), \
              contextlib.redirect_stdout(io.StringIO()) as saida:
             codigo = nuvem.main()
+        # Sem fixar o relógio do agendador, este teste passava só quando corria
+        # fora da janela: `bee.agenda._agora` lia a hora real.
         self.assertEqual(codigo, 0, saida.getvalue())
         self.assertIn('a aguardar a janela diária', saida.getvalue())
         self.assertIn('04:17', saida.getvalue())
