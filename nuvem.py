@@ -19,7 +19,7 @@ import shutil
 import subprocess
 import sys
 import time
-from datetime import timezone
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import autopiloto
@@ -55,6 +55,13 @@ def _resumo(markdown: str) -> None:
         with open(destino, 'a', encoding='utf-8') as arquivo:
             arquivo.write(markdown + '\n')
     print(markdown)
+
+
+def _agora_local(fuso: str) -> datetime:
+    try:
+        return datetime.now(ZoneInfo(fuso))
+    except (ZoneInfoNotFoundError, ValueError):
+        return datetime.now(timezone.utc)
 
 
 def _progresso(dados: Path) -> tuple[int, int]:
@@ -290,6 +297,11 @@ def main() -> int:
     config.intervalo_min = 0
     if _env('BEE_COMPILAR', '1') == '0':
         config.compilar = False
+    # `BEE_JANELA=0` desliga a janela horária interna quando é o próprio
+    # agendador (cron) que decide quando correr. Sem isto, uma execução manual
+    # lançada de madrugada terminava verde sem produzir nada.
+    if _env('BEE_JANELA', '1') == '0':
+        config.hora_inicio, config.hora_fim = 0, 24
 
     livros = livros_na_fila(argumentos.livros, argumentos.ordem)
     antes_cap, antes_versos = _progresso(dados)
@@ -369,7 +381,24 @@ def main() -> int:
     # não existe: o que conta é quantos capítulos estão completos e quantos
     # versículos já estão guardados (mesmo em capítulos ainda em curso).
     linhas = [f'### {ROTULO}', '']
-    if resultado.acao == 'gerado':
+    if resultado.acao == 'adormecer':
+        espera = resultado.espera or 0
+        horas, minutos = int(espera // 3600), int((espera % 3600) // 60)
+        linhas.append(
+            f'- Ação: **a aguardar a janela diária** — agora são '
+            f'{_agora_local(config.fuso):%H:%M} em {config.fuso}, fora de '
+            f'{config.hora_inicio:02d}:00–{config.hora_fim:02d}:00. '
+            f'A produção retoma às {config.hora_inicio:02d}:00, daqui a {horas}h{minutos:02d}.'
+        )
+        linhas.append(
+            '- Isto é normal e não é uma falha: o horário está nas variáveis '
+            '`BEE_HORA_INICIO` e `BEE_HORA_FIM` do workflow.'
+        )
+    elif resultado.acao == 'parar':
+        linhas.append(f'- Ação: **parado até amanhã** — {resultado.detalhe or "orçamento diário atingido"}.')
+        if 'orçamento' in (resultado.detalhe or ''):
+            linhas.append('- O limite está em `BEE_PEDIDOS_POR_DIA`; a reposição é à meia-noite local.')
+    elif resultado.acao == 'gerado':
         linhas.append(f'- Ação: **{resultado.acao}** — {resultado.detalhe or "—"}')
         linhas.append(f'- Esta execução: +{resultado.progresso.versos} versículos, '
                       f'+{resultado.progresso.capitulos} capítulos')

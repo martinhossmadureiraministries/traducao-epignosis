@@ -386,6 +386,46 @@ class IndisponibilidadeTest(Base):
         estado = json.loads((self.dados / '.bee' / 'estado.json').read_text(encoding='utf-8'))
         self.assertEqual(estado['falhas_seguidas'], 0)
 
+    def test_fora_da_janela_o_resumo_diz_o_motivo(self):
+        """Uma execução às 04:17 não pode ficar verde sem explicar que não produziu."""
+        import nuvem
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0', 'BEE_PUBLICAR': '0',
+            'BEE_LIVROS': '640', 'BEE_HORA_INICIO': '5', 'BEE_HORA_FIM': '23',
+            'BEE_FUSO': 'Africa/Luanda',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache),
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[MotorFalso()]), \
+             patch('nuvem._agora_local', return_value=__import__('datetime').datetime(2026, 11, 17, 4, 17)), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 0, saida.getvalue())
+        self.assertIn('a aguardar a janela diária', saida.getvalue())
+        self.assertIn('04:17', saida.getvalue())
+        self.assertIn('05:00', saida.getvalue())
+
+    def test_janela_desligada_produz_a_qualquer_hora(self):
+        import nuvem
+        with patch.dict(os.environ, {
+            'GEMINI_API_KEY': 'chave-de-teste', 'BEE_PAUSA': '0', 'BEE_PUBLICAR': '0',
+            'BEE_LIVROS': '640', 'BEE_HORA_INICIO': '5', 'BEE_HORA_FIM': '23',
+            'BEE_JANELA': '0', 'BEE_VERSOS_POR_CICLO': '2', 'BEE_LOTE': '2',
+            'BEE_FUSO': 'Africa/Luanda',
+            'BEE_DADOS': str(self.dados), 'BEE_SAIDA': str(self.saida),
+            'BEE_CACHE': str(self.cache),
+        }, clear=True), \
+             patch('autopiloto.ClienteHTTP'), \
+             patch('nuvem.FontesOriginais', FontesFalsas), \
+             patch('autopiloto._motores', return_value=[MotorFalso()]), \
+             patch('nuvem._agora_local', return_value=__import__('datetime').datetime(2026, 11, 17, 4, 17)), \
+             contextlib.redirect_stdout(io.StringIO()) as saida:
+            codigo = nuvem.main()
+        self.assertEqual(codigo, 0, saida.getvalue())
+        self.assertIn('Ação: **gerado**', saida.getvalue())
+
     def test_nuvem_nao_repete_erro_de_configuracao(self):
         import nuvem
         chamadas = []
