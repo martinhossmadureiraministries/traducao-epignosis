@@ -83,26 +83,22 @@ a ser respeitado, o que elimina a rajada de 429 que travou a produção.
 
 ## 1d. Os serviços de IA e a fila (porquê esta ordem)
 
-Quatro serviços gratuitos, **sem cartão**, em fila por quota decrescente:
+| Ordem | Serviço | Quota gratuita | Precisa de | Versículos/dia |
+|---|---|---|---|---|
+| 1 | **OVHcloud AI Endpoints** | 2 ped/min por IP e modelo | **nada** (sem chave, sem conta) | ~2.880 |
+| 2 | Gemini Flash-Lite | ~480 pedidos/dia | chave grátis | ~2.880 |
+| 3 | Groq (gpt-oss-120b) | 200K tokens/dia (~66 ped) | chave grátis | ~396 |
+| 4 | OpenRouter `:free` | ~40 pedidos/dia | chave grátis | ~240 |
 
-| Ordem | Serviço | Quota gratuita | Versículos/dia |
-|---|---|---|---|
-| 1 | **Mistral** (Free mode) | 1.000 M tokens/mês, 500K TPM, ~2 ped/min | ~17.000 |
-| 2 | Gemini Flash-Lite | ~480 pedidos/dia, 250K TPM | ~2.880 |
-| 3 | Groq (gpt-oss-120b) | 8K TPM, 200K tokens/dia (~66 ped) | ~396 |
-| 4 | OpenRouter `:free` | ~40 pedidos/dia | ~240 |
-
-**Porque o Mistral vai primeiro:** dá ~20× a quota da Groq. Pô-lo no fim
-seria desperdiçar exactamente o serviço que mais pode produzir.
+**A OVHcloud vai primeiro porque é o único que não pede nada em troca.** Nem
+chave, nem conta, nem cartão — o pedido segue sem `Authorization`. É também o
+que garante que a produção arranca numa instalação nova.
 
 **Como colaboram:** fila por prioridade. Se o primeiro falhar (503, 429,
 resposta inválida), o lote passa ao seguinte — e volta ao primeiro no lote
 seguinte. Cada serviço tem o seu **próprio orçamento diário**: quando um
-esgota, os outros continuam.
-
-**Chaves em falta:** a fila é montada só com as chaves que existirem. O
-resumo de cada execução diz, no topo, quais entraram e quais faltam — uma
-chave em falta é a causa mais comum de a produção ficar abaixo do esperado.
+esgota, os outros continuam. A OVHcloud tem, ainda, um limite de ritmo de
+2 pedidos/minuto, respeitado por `ClienteHTTP.reservar_pedido()`.
 
 Para inverter a ordem sem tocar no código:
 
@@ -110,8 +106,26 @@ Para inverter a ordem sem tocar no código:
 BEE_PROVEDOR_PRINCIPAL: 'gemini'
 ```
 
-**Cerebras está fora por omissão:** o plano de teste passou a exigir cartão.
-Se um dia tiver chave, basta preencher `CEREBRAS_API_KEY`.
+Para tirar a OVHcloud da fila:
+
+```yaml
+OVH_API_KEY_ATIVO: '0'
+```
+
+### Serviços que saíram (e porquê)
+
+| Serviço | Motivo |
+|---|---|
+| **Mistral** | Desde 01–05/11/2026 o plano Free já não activa chaves de API; o botão "Nova chave" fica desactivado e pede facturação. |
+| **Cerebras** | O plano de teste passou a exigir cartão de crédito. |
+
+### Serviços por experimentar
+
+| Serviço | Quota | O que falta confirmar |
+|---|---|---|
+| SambaNova | $5 em créditos, no card, 30 dias | É temporário: serve para um arranque, não para 30.000 versículos |
+| Cloudflare Workers AI | 10.000 neurons/dia, sem cartão | API fora do padrão (base URL por conta) |
+| LLM7.io | 100K tokens/dia, sem cartão | Chaves expiram na data que se escolher |
 
 ## 2. Plano gratuito: o que é possível de verdade
 

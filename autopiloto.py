@@ -41,6 +41,11 @@ from bee.trava import EmExecucao, trava
 ROTULO = 'BEE · autopiloto'
 
 
+def constante_ligada(valor: str | None) -> bool:
+    """Interpreta uma variável de ligar/desligar ('0', 'nao', 'false' = desliga)."""
+    return (valor or '').strip().lower() not in ('0', 'nao', 'não', 'false', 'off')
+
+
 def _positivo(valor: str) -> int:
     valor = valor.strip()
     try:
@@ -229,8 +234,13 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
         configurados.append((args.provedor, args.chaves))
     else:
         for nome, config in PROVEDORES.items():
-            valor = os.environ.get(config.variavel)
-            if valor and ler_chaves(valor):
+            valor = os.environ.get(config.variavel) or ''
+            if config.sem_chave:
+                # Nível anónimo: entra na fila sem chave nenhuma. Basta uma
+                # variável posta a '0' para o desligar sem tocar no código.
+                if constante_ligada(os.environ.get(config.variavel + '_ATIVO', '1')):
+                    configurados.append((nome, valor))
+            elif valor and ler_chaves(valor):
                 configurados.append((nome, valor))
     if args.provedor not in ('auto', None):
         configurados = [(n, c) for n, c in configurados if n == args.provedor]
@@ -252,11 +262,11 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     # Gemini fica como reserva — tem mais quota diária (480 pedidos) mas é
     # menos fiável. `BEE_PROVEDOR_PRINCIPAL` permite inverter sem tocar no
     # código.
-    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'mistral').strip().lower()
+    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'ovh').strip().lower()
     # Ordem por quota: o Mistral tem ~20x a quota da Groq e é o que mais pode
     # produzir; o Gemini tem mais quota mas é instável (503); a Groq é pequena
     # mas fiável; o OpenRouter fecha a fila. `BEE_PROVEDOR_PRINCIPAL` inverte.
-    ordem_nomes = ['mistral', 'gemini', 'groq', 'openrouter', 'cerebras', 'openai']
+    ordem_nomes = ['ovh', 'gemini', 'groq', 'openrouter', 'cerebras', 'openai']
     if principal in ordem_nomes:
         ordem_nomes.remove(principal)
         ordem_nomes.insert(0, principal)

@@ -920,11 +920,15 @@ class ProvedoresTest(unittest.TestCase):
         gratuitos = [nome for nome, p in PROVEDORES.items() if p.pedidos_por_dia]
         self.assertIn('gemini', gratuitos)
         self.assertIn('groq', gratuitos)
-        self.assertIn('mistral', gratuitos, 'o Mistral tem 1.000M tokens/mês grátis')
+        self.assertIn('ovh', gratuitos, 'a OVHcloud tem nível anónimo sem chave')
         self.assertNotIn('openai', gratuitos)
         for nome in gratuitos:
             self.assertIn(nome, VERSOS_POR_PEDIDO_PADRAO)
             self.assertTrue(PROVEDORES[nome].variavel.endswith('_API_KEY'))
+        # Só um serviço pode dispensar chave; é o que garante que a produção
+        # arranca numa instalação nova, sem contas nenhumas.
+        sem_chave = [n for n, p in PROVEDORES.items() if p.sem_chave]
+        self.assertEqual(sem_chave, ['ovh'])
 
     def test_prompt_de_rascunho_acrescenta_regras_sem_tocar_no_original(self):
         from bee.ia import PROMPT_REVISAO, SYSTEM_PROMPT

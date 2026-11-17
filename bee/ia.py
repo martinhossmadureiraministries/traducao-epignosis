@@ -69,6 +69,11 @@ PROMPT_REVISAO = (
 )
 
 
+# Endpoint da OVHcloud. Fica numa constante porque o cabeçalho de autenticação
+# depende dele: sem chave, a OVH recusa um 'Authorization' vazio.
+OVH_URL = 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions'
+
+
 @dataclass(frozen=True)
 class Provedor:
     """Como falar com um serviço e qual é o seu plano gratuito."""
@@ -89,9 +94,11 @@ class Provedor:
     tokens_por_minuto: int = 0
     # Teto de tokens por dia. 0 = sem limite conhecido.
     tokens_por_dia: int = 0
-    # Pedidos por minuto. É o limite que aperta no Mistral (~2) e o que evita
-    # os 429 em rajada da Groq (30). 0 = o ritmo é só o do TPM.
+    # Pedidos por minuto. Evita os 429 em rajada (a Groq dá 30).
     pedidos_por_minuto: int = 0
+    # Serviços com nível anónimo: funcionam sem chave nenhuma. Não vale a pena
+    # pedir ao utilizador para criar contas que hoje não dão acesso.
+    sem_chave: bool = False
 
     @property
     def modelo_padrao(self) -> str:
@@ -146,24 +153,23 @@ PROVEDORES: dict[str, Provedor] = {
         (),
         60_000,
     ),
-    'mistral': Provedor(
-        'mistral', 'Mistral AI', 'https://api.mistral.ai/v1/chat/completions',
-        'MISTRAL_API_KEY', 'openai',
-        # O plano gratuito ("Free mode") não exige cartão e dá 1 bilião de
-        # tokens por mês — vinte vezes a quota da Groq. O limite é o ritmo:
-        # ~1-2 pedidos por minuto.
-        ('mistral-small-4', 'mistral-small-latest', 'mistral-medium-latest',
-         'open-mistral-nemo'),
-        # 1 bilião de tokens/mês ÷ 30 dias ≈ 33M/dia ÷ 3.000 por pedido. O
-        # limite que aperta primeiro é o de pedidos por minuto, não o diário.
+    'ovh': Provedor(
+        'ovh', 'OVHcloud AI Endpoints', OVH_URL, 'OVH_API_KEY', 'openai',
+        # Serve gpt-oss-120b, Qwen e Mistral. Nível anónimo: **sem chave, sem
+        # conta, sem cartão** — 2 pedidos/minuto por IP e por modelo. É o único
+        # serviço gratuito que hoje não pede nada em troca.
+        ('gpt-oss-120b', 'Qwen3.5-397B-A17B', 'Mistral-Small-3.2-24B-Instruct-2506',
+         'Meta-Llama-3_3-70B-Instruct'),
+        # 2/min x 1440 = 2.880. O limite é o ritmo, não a quota diária.
         2880,
-        'Plano gratuito sem cartão (1.000 milhões de tokens/mês). O limite é o '
-        'ritmo (~1-2 pedidos/minuto), não a quota diária.',
-        'https://api.mistral.ai/v1/models',
+        'Nível anónimo sem chave (2 pedidos/minuto por IP e por modelo). Com '
+        'chave de projeto Public Cloud sobe para 400/min.',
+        OVH_URL.replace('/chat/completions', '/models'),
         (),
-        500_000,
+        0,
         0,
         2,
+        True,
     ),
     'openrouter': Provedor(
         'openrouter', 'OpenRouter', 'https://openrouter.ai/api/v1/chat/completions',
@@ -200,7 +206,7 @@ MODELOS_PADRAO = {nome: p.modelo_padrao for nome, p in PROVEDORES.items()}
 # Contexto seguro por omissão: os modelos gratuitos pequenos não aceitam lotes grandes.
 VERSOS_POR_PEDIDO_PADRAO = {
     'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4,
-    'mistral': 6, 'openai': 8,
+    'ovh': 6, 'openai': 8,
 }
 
 
@@ -353,7 +359,7 @@ class MotorIA:
         if isinstance(chaves, str):
             chaves = [chaves]
         limpas = [_limpar_chave(c) for c in chaves if c and c.strip()]
-        if not limpas:
+        if not limpas and not PROVEDORES[provedor].sem_chave:
             raise ValueError('Defina a variável de ambiente do provedor ou use --chaves.')
         if max_tokens < 256:
             raise ValueError('O limite de tokens deve ser pelo menos 256.')
@@ -424,7 +430,7 @@ class MotorIA:
             if self.provedor == 'openai':
                 # A API da OpenAI mudou o nome do parâmetro.
                 payload['max_completion_tokens'] = payload.pop('max_tokens')
-            if self.provedor in ('openai', 'groq', 'cerebras'):
+            if self.provedor in ('openai', 'groq', 'cerebras', 'ovh'):
                 # Estas APIs aceitam JSON forçado; sem isto a resposta pode vir
                 # com texto à volta e o lote é rejeitado (gasto de quota).
                 payload['response_format'] = {'type': 'json_object'}
@@ -433,7 +439,9 @@ class MotorIA:
                 # contam para max_tokens: com esforço baixo cabem lotes maiores
                 # sem truncar (a causa mais comum de respostas cortadas).
                 payload['reasoning_effort'] = 'low'
-            headers = {'Authorization': f'Bearer {chave}'}
+            # A OVHcloud tem nível anónimo: um 'Bearer' vazio é rejeitado, por
+            # isso o cabeçalho só entra quando há chave.
+            headers = {'Authorization': f'Bearer {chave}'} if (chave or self.provedor != 'ovh') else {}
         headers.update({'Content-Type': 'application/json', 'User-Agent': 'gerar-bee/1.0'})
         return url, payload, headers
 
@@ -445,8 +453,9 @@ class MotorIA:
         """
         config = PROVEDORES[self.provedor]
         ultimo: ErroRede | None = None
-        for tentativa in range(len(self._chaves)):
-            chave = self._chaves[self._indice_chave]
+        # Sem chave (nível anónimo) tem de haver na mesma uma tentativa.
+        for tentativa in range(max(1, len(self._chaves))):
+            chave = self._chaves[self._indice_chave] if self._chaves else None
             if config.formato == 'gemini':
                 url = f'{config.url}{self.modelo}:generateContent'
                 payload = {
@@ -520,8 +529,9 @@ class MotorIA:
         """Tenta todas as chaves configuradas antes de desistir."""
         ultimo: ErroRede | None = None
         self._reservar(mensagem)
-        for tentativa in range(len(self._chaves)):
-            chave = self._chaves[self._indice_chave]
+        # Sem chave (nível anónimo) tem de haver na mesma uma tentativa.
+        for tentativa in range(max(1, len(self._chaves))):
+            chave = self._chaves[self._indice_chave] if self._chaves else None
             url, payload, headers = self._corpo(mensagem, chave)
             requisicao = urllib.request.Request(
                 url, data=json.dumps(payload, ensure_ascii=False).encode('utf-8'),
