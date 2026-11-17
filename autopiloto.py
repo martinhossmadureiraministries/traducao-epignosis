@@ -307,7 +307,8 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     return motores
 
 
-def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
+def _tectos_por_provedor(lote: int | None,
+                         lotes: dict[str, int] | None = None) -> dict[str, int]:
     """Quantos pedidos por dia cada serviço aguenta, pela sua própria quota.
 
     O tecto global (`BEE_PEDIDOS_POR_DIA`) é uma média; este é o limite real de
@@ -317,9 +318,11 @@ def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
     tectos: dict[str, int] = {}
     # Sem --lote, usa o tamanho padrão de 6 para não desligar os tectos por
     # provedor (antes, `args.lote=None` devolvia um dicionário vazio).
-    base = lote or 6
     for nome, config in PROVEDORES.items():
         if config.tokens_por_dia:
+            # O tamanho real do lote manda: `--versos-por-pedido gemini=8` não
+            # pode continuar a calcular a quota como se fossem 6 versículos.
+            base = (lotes or {}).get(nome) or lote or 6
             # ~3.000 tokens por pedido com lote de 6 (1.500 de entrada + 1.500
             # de saída); pedidos maiores gastam proporcionalmente mais.
             tectos[nome] = max(1, config.tokens_por_dia // (base * 500))
@@ -328,7 +331,7 @@ def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
 
 def _config(args: argparse.Namespace) -> ConfigAgenda:
     return ConfigAgenda(
-        tectos_por_provedor=_tectos_por_provedor(args.lote),
+        tectos_por_provedor=_tectos_por_provedor(args.lote, args.lotes),
         intervalo_min=args.intervalo_min,
         max_versos=args.max_versos,
         pedidos_por_dia=args.pedidos_por_dia,

@@ -212,8 +212,10 @@ MODELOS_PADRAO = {nome: p.modelo_padrao for nome, p in PROVEDORES.items()}
 
 # Contexto seguro por omissão: os modelos gratuitos pequenos não aceitam lotes grandes.
 VERSOS_POR_PEDIDO_PADRAO = {
+    # Lotes grandes truncam e gastam quota a repetir. Valores revistos com os
+    # limites reais dos serviços gratuitos.
     'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4,
-    'ovh': 6, 'openai': 8,
+    'ovh': 4, 'openai': 8,
 }
 
 
@@ -287,14 +289,29 @@ def descobrir_modelo(provedor: str, chave: str, rede: ClienteHTTP) -> str | None
     config = PROVEDORES[provedor]
     if not config.url_modelos:
         return None
+    # Uma descoberta por provedor e por execução: os motores são construídos
+    # uma vez, mas chamar /models outra vez só gasta tempo e pedidos.
+    cache = getattr(rede, '_cache_modelos', None)
+    if cache is None:
+        cache = {}
+        try:
+            setattr(rede, '_cache_modelos', cache)
+        except (AttributeError, TypeError):
+            pass
+    chave_cache = (provedor, chave)
+    if chave_cache in cache:
+        return cache[chave_cache]
     try:
         corpo = _rede_listagem(rede).obter(
             _pedido_listagem(config, chave), f'{provedor} (lista de modelos)',
         )
         resposta = _objeto_api(corpo, f'{provedor} (lista de modelos)')
     except (ErroRede, RespostaInvalida):
+        cache[chave_cache] = None
         return None
-    return _escolher_modelo(config, _ids_disponiveis(config, resposta))
+    escolhido = _escolher_modelo(config, _ids_disponiveis(config, resposta))
+    cache[chave_cache] = escolhido
+    return escolhido
 
 
 def resolver_modelos(
@@ -749,6 +766,7 @@ class Rodizio:
     def gerar(self, livro: Livro, capitulo: int, fontes: list[dict[str, Any]],
               estilo: dict[str, str] | None = None) -> list[dict[str, Any]]:
         erros: list[str] = []
+        ultimo_conteudo: RespostaInvalida | None = None
         for passo in range(len(self._motores)):
             indice = (self._indice + passo) % len(self._motores)
             if indice in self.exaustos:
@@ -778,9 +796,25 @@ class Rodizio:
                 if self.registar:
                     self.registar(f'Falha de rede em {_rotulo(motor)}; a tentar outro provedor.')
                 continue
+            except RespostaInvalida as exc:
+                # JSON inválido/marcação em falta não é falha de rede, mas o
+                # mesmo lote pode passar noutro modelo. Antes, o gerador repetia
+                # três vezes no mesmo provedor e bloqueava o capítulo.
+                erros.append(f'{_rotulo(motor)}: {exc}')
+                ultimo_conteudo = exc
+                if self.registar:
+                    self.registar(
+                        f'Conteúdo inválido em {_rotulo(motor)}; a tentar outro provedor '
+                        'para o mesmo lote.'
+                    )
+                continue
             if indice != self._indice:
                 self._indice = indice
                 if self.registar:
                     self.registar(f'A usar agora {_rotulo(motor)}.')
             return resultado
+        if ultimo_conteudo is not None:
+            # Preserva o tipo para o gerador poder dividir/repetir o lote em vez
+            # de tratar isto como uma falha de rede sem recuperação.
+            raise ultimo_conteudo
         raise ErroRede('Nenhum provedor conseguiu responder: ' + '; '.join(erros or ['nenhum disponível']))

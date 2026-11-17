@@ -166,12 +166,39 @@ class WorkflowTest(unittest.TestCase):
         with sqlite3.connect(self.saida / 'BEE.SQLite3') as conn:
             self.assertEqual(conn.execute("SELECT value FROM info WHERE name='bee_source_gaps'").fetchone()[0], '1')
 
-    def test_falhas_do_modelo_nao_gravam_capitulo_incompleto(self):
+    def test_falhas_do_modelo_vao_para_quarentena_e_nao_bloqueiam_capitulo(self):
+        """Um versículo problemático não pode parar o capítulo nem a fila."""
         motor = MotorFalso(falhar=True)
-        with self.assertRaises(RespostaInvalida):
-            self.gerar(motor, lote=1, tentativas=2)
-        self.assertEqual(len(motor.calls), 2)
-        self.assertFalse((self.dados / self.livro.nome_arquivo).exists())
+        self.gerar(motor, lote=1, tentativas=2)
+        caminho = self.dados / self.livro.nome_arquivo
+        dados = ler_livro(caminho, self.livro)
+        self.assertEqual(len(motor.calls), 6, '3 quarentenas x 2 tentativas')
+        self.assertNotIn('1', dados['chapters'])
+        self.assertEqual(len(dados['in_progress']['1']), 3)
+        self.assertTrue(dados['in_progress']['1'][0]['text'].startswith('[Versículo pendente:'))
+        self.assertTrue(any(h['model'] == 'quarentena' for h in dados['history']))
+        import json
+        quarentena = json.loads((self.dados / '.bee' / 'quarentena.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(quarentena['entries']), 3)
+        self.assertEqual(quarentena['entries'][0]['reference'], 'Filemom 1:1')
+        self.assertEqual(quarentena['entries'][0]['status'], 'pendente')
+        self.assertEqual(quarentena['entries'][0]['error'].count('JSON incompleto'), 1)
+    def test_versiculo_pendente_nao_e_contado_como_traducao_final(self):
+        self.gerar(MotorFalso())
+        caminho = self.dados / self.livro.nome_arquivo
+        dados = ler_livro(caminho, self.livro)
+        dados['chapters']['1'][0]['text'] = '[Versículo pendente: tradução ainda não produzida — teste.]'
+        salvar_livro(caminho, dados, self.livro)
+        with silencioso():
+            resumo = compilar(self.dados, self.saida)
+        self.assertEqual(resumo['pendentes'], 1)
+        self.assertFalse(resumo['completo'])
+        with sqlite3.connect(self.saida / 'BEE.SQLite3') as conn:
+            self.assertEqual(
+                conn.execute("SELECT value FROM info WHERE name='bee_pending_verses'").fetchone()[0],
+                '1',
+            )
+
 
     def test_sqlite_mybible_parcial_com_metadados_indices_e_intervalos(self):
         self.gerar(MotorFalso())

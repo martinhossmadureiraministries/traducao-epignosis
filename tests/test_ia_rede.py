@@ -48,6 +48,13 @@ class IATest(unittest.TestCase):
         self.assertEqual(req.get_header('Authorization'), 'Bearer SEGREDO')
         self.assertNotIn('SEGREDO', req.full_url)
         self.assertNotIn('SEGREDO', json.dumps(payload))
+    def test_descoberta_de_modelos_e_cacheada_por_execucao(self):
+        from bee.ia import descobrir_modelo
+        http = HTTPFalso({'data': [{'id': 'openai/gpt-oss-120b'}]})
+        self.assertEqual(descobrir_modelo('groq', 'CHAVE', http), 'openai/gpt-oss-120b')
+        self.assertEqual(descobrir_modelo('groq', 'CHAVE', http), 'openai/gpt-oss-120b')
+        self.assertEqual(len(http.requisicoes), 1, 'só deve pedir /models uma vez')
+
 
     def test_gemini_json_config_e_chave_no_cabecalho(self):
         resp = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [{'text': json.dumps(retorno([1]))}]}}]}

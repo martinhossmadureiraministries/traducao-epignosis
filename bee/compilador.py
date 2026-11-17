@@ -98,7 +98,7 @@ def _temporario(pasta: Path, prefixo: str) -> Path:
     return Path(caminho)
 
 
-def _criar_biblia(caminho: Path, livros: dict[int, dict[str, Any]], build_id: str, completo: bool, lacunas_fonte: int) -> int:
+def _criar_biblia(caminho: Path, livros: dict[int, dict[str, Any]], build_id: str, completo: bool, lacunas_fonte: int, pendentes: int = 0) -> int:
     conexao = sqlite3.connect(caminho)
     try:
         with conexao:
@@ -130,6 +130,7 @@ def _criar_biblia(caminho: Path, livros: dict[int, dict[str, Any]], build_id: st
                 'bee_build_id': build_id,
                 'bee_complete': str(completo).lower(),
                 'bee_source_gaps': str(lacunas_fonte),
+                'bee_pending_verses': str(pendentes),
                 'bee_review_status': aviso,
                 'bee_review_by_book': revisao_json,
             }
@@ -159,7 +160,7 @@ def _criar_biblia(caminho: Path, livros: dict[int, dict[str, Any]], build_id: st
         conexao.close()
 
 
-def _criar_comentarios(caminho: Path, livros: dict[int, dict[str, Any]], build_id: str, completo: bool, lacunas_fonte: int) -> int:
+def _criar_comentarios(caminho: Path, livros: dict[int, dict[str, Any]], build_id: str, completo: bool, lacunas_fonte: int, pendentes: int = 0) -> int:
     conexao = sqlite3.connect(caminho)
     try:
         with conexao:
@@ -193,6 +194,7 @@ def _criar_comentarios(caminho: Path, livros: dict[int, dict[str, Any]], build_i
                 'bee_build_id': build_id,
                 'bee_complete': str(completo).lower(),
                 'bee_source_gaps': str(lacunas_fonte),
+                'bee_pending_verses': str(pendentes),
                 'bee_review_status': aviso,
                 'bee_review_by_book': revisao_json,
             }
@@ -277,18 +279,26 @@ def _compilar_travado(diretorio_json: Path, diretorio_saida: Path) -> dict[str, 
             raise DadosInvalidos(
                 f'{POR_NUMERO[numero].nome}: capítulos têm lacunas; MyBible requer capítulos consecutivos a partir de 1.'
             )
-    completo = capitulos == sum(l.capitulos for l in LIVROS)
     lacunas_fonte = sum(
         v['text'].startswith('[Versículo sem texto correspondente no WLC consultado.]')
         for dados in livros.values() for versiculos in dados['chapters'].values() for v in versiculos
     )
+    pendentes = sum(
+        v['text'].startswith('[Versículo pendente:')
+        for dados in livros.values() for versiculos in dados['chapters'].values() for v in versiculos
+    )
+    # Um capítulo com marcadores pendentes não conta como edição final, mesmo
+    # que a estrutura tenha todos os capítulos.
+    completo = capitulos == sum(l.capitulos for l in LIVROS) and pendentes == 0
     diretorio_saida.mkdir(parents=True, exist_ok=True)
     id_compilacao = uuid.uuid4().hex
     bible_temp = _temporario(diretorio_saida, '.BEE-')
     comentarios_temp = _temporario(diretorio_saida, '.BEE-comentarios-')
     try:
-        total_versos = _criar_biblia(bible_temp, livros, id_compilacao, completo, lacunas_fonte)
-        total_comentarios = _criar_comentarios(comentarios_temp, livros, id_compilacao, completo, lacunas_fonte)
+        total_versos = _criar_biblia(
+            bible_temp, livros, id_compilacao, completo, lacunas_fonte, pendentes)
+        total_comentarios = _criar_comentarios(
+            comentarios_temp, livros, id_compilacao, completo, lacunas_fonte, pendentes)
         if total_versos == 0 or total_versos != total_comentarios:
             raise ErroCompilacao('Inconsistência entre os módulos; os ficheiros anteriores foram preservados.')
         _publicar([
@@ -303,5 +313,6 @@ def _compilar_travado(diretorio_json: Path, diretorio_saida: Path) -> dict[str, 
     return {
         'livros': sum(bool(v['chapters']) for v in livros.values()),
         'capitulos': capitulos, 'parciais': parciais, 'versiculos': total_versos,
-        'lacunas_fonte': lacunas_fonte, 'completo': completo, 'build_id': id_compilacao,
+        'lacunas_fonte': lacunas_fonte, 'pendentes': pendentes,
+        'completo': completo, 'build_id': id_compilacao,
     }
