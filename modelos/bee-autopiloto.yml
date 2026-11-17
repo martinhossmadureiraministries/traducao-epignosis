@@ -27,6 +27,10 @@ on:
     types: [labeled]
   workflow_dispatch:
     inputs:
+      pular_teste:
+        description: 'Saltar o teste das ligações (sim/nao)'
+        required: false
+        default: 'nao'
       versos_por_ciclo:
         description: 'Versículos a produzir nesta execução'
         required: false
@@ -154,6 +158,27 @@ jobs:
             echo "dentro=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Passo 0: perguntar a cada serviço se responde, antes de produzir.
+      # Sem isto, um endpoint novo só se revela partido ao fim de 20 minutos
+      # de trabalho — e o erro aparece como "resposta inválida", que esconde
+      # a causa. Uma chave em falta deixava de ser visível.
+      - name: Testar as ligações (não produz nada)
+        if: github.event.inputs.pular_teste != 'sim'
+        continue-on-error: true
+        env:
+          OVH_API_KEY: ${{ secrets.OVH_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python autopiloto.py --testar 2>&1 | tee /tmp/teste.txt || true
+          {
+            echo "### Teste das ligações"
+            echo '```'
+            cat /tmp/teste.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Produzir um bloco, compilar e publicar
         if: github.event_name != 'schedule' || steps.janela.outputs.dentro == 'true'
         env:
@@ -163,7 +188,9 @@ jobs:
           # seu próprio orçamento diário: esgotar um não cala os outros.
           #
           # A OVHcloud não precisa de chave nenhuma (nível anónimo, 2 pedidos
-          # por minuto): está sempre na fila. O Mistral saiu a 17/11/2026 — o
+          # por minuto): está sempre na fila. A chave é opcional e só serve
+          # para subir o limite de 2 para 400 pedidos/minuto.
+          OVH_API_KEY: ${{ secrets.OVH_API_KEY }} O Mistral saiu a 17/11/2026 — o
           # plano Free deixou de activar chaves de API.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

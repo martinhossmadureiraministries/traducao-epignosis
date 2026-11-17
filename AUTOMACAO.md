@@ -112,6 +112,24 @@ Para tirar a OVHcloud da fila:
 OVH_API_KEY_ATIVO: '0'
 ```
 
+### Testar as ligações antes de produzir
+
+O workflow tem um passo **"Testar as ligações"** antes da produção. Ele
+pergunta a cada serviço se responde e escreve o resultado no resumo da
+execução:
+
+```
+### Teste das ligações
+OK · ovh/gpt-oss-120b: respondeu 'ok'
+FALHOU · gemini/gemini-3.5-flash-lite: gemini: HTTP 401
+```
+
+Sem este passo, um endpoint partido só se revelava ao fim de 20 minutos de
+trabalho — e aparecia como "resposta inválida", que esconde a causa.
+
+O passo é `continue-on-error`: **um serviço em baixo não impede os outros de
+produzir**. Para o saltar numa execução manual, escolha `pular_teste: sim`.
+
 ### Serviços que saíram (e porquê)
 
 | Serviço | Motivo |

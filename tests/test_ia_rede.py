@@ -203,6 +203,26 @@ class IATest(unittest.TestCase):
         MotorIA('ovh', 'gpt-oss-120b', 'chave-abc', rede, 512)._requisicao('teste')
         self.assertEqual(rede.cabecalhos['Authorization'], 'Bearer chave-abc')
 
+    def test_provedor_sem_chave_nao_divide_por_zero(self):
+        """Nível anónimo tem lista de chaves vazia: rodar a chave rebentava."""
+        from bee.rede import ErroRede
+
+        class RedeFalsa:
+            def obter(self, *a, **k):
+                raise ErroRede('ovh: falha de rede (URLError); esgotadas 3 tentativas.')
+
+            def reservar_pedido(self, provedor):
+                return 0.0
+
+            def reservar_tokens(self, *a, **k):
+                return 0.0
+
+        motor = MotorIA('ovh', 'gpt-oss-120b', [], RedeFalsa(), 512)
+        with self.assertRaises(ErroRede):
+            motor.testar_ligacao()
+        with self.assertRaises(ErroRede):
+            motor._requisicao('teste')
+
     def test_ovhcloud_respeita_o_ritmo_do_nivel_anonimo(self):
         from bee.ia import PROVEDORES
         ovh = PROVEDORES['ovh']
