@@ -3306,9 +3306,7 @@
         "text": "Mas para que o mundo conheça que eu amo o Pai, e assim como o Pai me ordenou, assim faço. Levantai-<i>vos</i>, vamo-nos daqui.",
         "commentary": "<p><b>Análise Léxica:</b> ἀλλά (allá, conjunção, definição não verificada em léxico); ἵνα (hina, conjunção, definição não verificada em léxico); γινώσκing/γνῷ (gnō, verbo, definição não verificada em léxico); κόσμος (kosmos, substantivo, definição não verificada em léxico); ἀγαπῶ (agapō, verbo, definição não verificada em léxico); πατέρα (patera, substantivo, definição não verificada em léxico); ἐνετείλαato (eneteilato, verbo, definição não verificada em léxico); ποιῶ (poiō, verbo, definição não verificada em léxico); ἐγείρεσθε (egeiresthe, verbo, definição não verificada em léxico); ἄγωμεν (agōmen, verbo, definição não verificada em léxico); ἐντεῦθεν (enteuthen, advérbio, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> No texto SBLGNT e no Textus Receptus, observa-se a variação ortográfica e morfológica na forma verbal ⸀ἐνετείλατο (SBLGNT / NA28 / RP) em comparação com a alternativa manuscrita <i>ἐντολὴν ἔδωκέν</i> (WH Treg), sem alteração substancial do sentido geral da cláusula.</p><p><b>Síntese Exegética:</b> O versículo apresenta a motivação suprema da obediência de Cristo ao Pai: a demonstração pública e universal do amor filial, culminando no cumprimento rigoroso da missão salvífica através da entrega na cruz. O chamamento final para a partida assinala a transição decisiva para o cenário da paixão.</p>"
       }
-    ]
-  },
-  "in_progress": {
+    ],
     "15": [
       {
         "verse": 1,
@@ -3359,9 +3357,394 @@
         "verse": 10,
         "text": "Se guardardes os meus mandamentos, permanecereis no meu amor; assim como também eu tenho guardado os mandamentos de meu Pai e permaneço no seu amor.",
         "commentary": "<p><b>Análise Léxica:</b> ἐὰν τὰς ἐντολάς μου τηρήσητε (ean tas entolas mou tērisēte - expressão, se os meus mandamentos guardardes), μενεῖτε (meneite - verbo, permanecereis), ἐν τῇ ἀγάπῃ μου (en tē agapē mou - expressão, no meu amor), καθὼς ἐγὼ (kathōs egō - expressão, assim como eu), τὰς ἐντολὰς τοῦ πατρός μου τετήρηκα (tas entolas tou patros mou tetērika - expressão, os mandamentos de meu Pai tenho guardado), καὶ μένω αὐτοῦ ἐν τῇ ἀγάπῃ (kai menō autou en tē agapē - expressão, e permaneço no seu amor). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato registra a variação na ordem das palavras em [[τὰς ἐντολὰς τοῦ πατρός μου]] (Treg, NA28, RP) em contraste com [[τοῦ πατρὸς τὰς ἐντολὰς]] (WH). O significado essencial permanece intacto.</p><p><b>Síntese Exegética:</b> A obediência aos mandamentos não é o mérito que conquista o amor, mas a evidência e o canal prático pelo qual se experimenta a continuidade da comunhão e do amor divino.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Estas coisas vos tenho falado, para que a minha alegria esteja em vocês, e a alegria de vocês seja completa.",
+        "commentary": "<p><b>Análise Léxica:</b> ταῦτα (tauta - G5023 - definição não verificada em léxico), λελάληκα (lelalēka - G2980 - definição não verificada em léxico), ὑμῖν (hymin - G4771 - definição não verificada em léxico), ἵνα (hina - G2443 - definição não verificada em léxico), ἡ χαρὰ (hē chara - G5479 - definição não verificada em léxico), ἡ ἐμὴ (hē emē - G1699 - definição não verificada em léxico), ἐν ὑμῖν (en hymin - definição não verificada em léxico), [[ᾖ]] (ē - G1510 / [[μείνῃ]] - G3306 - definição não verificada em léxico), καὶ ἡ χαρὰ ὑμῶν πληρωθῇ (kai hē chara hymōn plērōthē - G4137 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra a variante [[ᾖ]] (SBL, WH, Treg, NA28) em contraste com [[μείνῃ]] (RP, Textus Receptus). A forma <i>ᾖ</i> (&quot;esteja&quot;) enfatiza o estado contínuo da alegria, enquanto <i>μείνῃ</i> (&quot;permaneça&quot;) destaca a permanência dessa virtude nos discípulos.</p><p><b>Síntese Exegética:</b> O Senhor Jesus recapitula o propósito de seus ensinamentos: comunicar sua própria alegria aos discípulos para que a existência deles alcance plenitude e jubilação espiritual perene, mesmo em meio às adversidades.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Este é o meu mandamento: que vocês se amem uns aos outros, assim como eu vos amei.",
+        "commentary": "<p><b>Análise Léxica:</b> Aὕτη (hautē - G3778 - definição não verificada em léxico) ἐστὶν (estin - G1510 - definição não verificada em léxico) ἡ ἐντολὴ (hē entolē - G1785 - definição não verificada em léxico) ἡ ἐμὴ (hē emē - G1699 - definição não verificada em léxico) ἵνα (hina - G2443 - definição não verificada em léxico) ἀγαπᾶτε (agapate - G25 - definição não verificada em léxico) ἀλλήλους (allēlous - G240 - definição não verificada em léxico) καθὼς (kathōs - G2531 - definição não verificada em léxico) ἠγάπησα (ēgapēsa - G25 - definição não verificada em léxico) ὑμᾶς (hymas - G4771 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O amor fraternal deixa de ser um mero preceito ético geral e passa a ser definido pelo padrão supremo e sacrificial do próprio amor de Cristo pelos seus.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Ninguém tem maior amor do que este: que alguém dê a sua vida pelos seus amigos.",
+        "commentary": "<p><b>Análise Léxica:</b> μείζona (meizona - G3173 - definição não verificada em léxico) ταύτης (tautēs - G3778 - definição não verificada em léxico) ἀγάπην (agapēn - G26 - definição não verificada em léxico) οὐδεὶς (oudeis - G3762 - definição não verificada em léxico) ἔχει (echei - G2192 - definição não verificada em léxico), ἵνα (hina - G2443 - definição não verificada em léxico) τις (tis - G5100 - definição não verificada em léxico) τὴν ψυχὴν (tēn psychēn - G5590 - definição não verificada em léxico) αὐτοῦ (autou - definição não verificada em léxico) θῇ (thē - G5087 - definição não verificada em léxico) ὑπὲρ (hyper - G5228 - definição não verificada em léxico) τῶν φίλων (tōn filōn - G5384 - definição não verificada em léxico) αὐτοῦ (autou - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A entrega voluntária da vida física (ψυχή) constitui a mais alta e insuperável prova de amor, antecipando o sacrifício redentor que Cristo consumaria na cruz.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Vocês são meus amigos, se fizerem o que eu vos mando.",
+        "commentary": "<p><b>Análise Léxica:</b> ὑμεῖς (hymeis - G4771 - definição não verificada em léxico) φίλοι (filoi - G5384 - definição não verificada em léxico) μου (mou - definição não verificada em léxico) ἐστε (este - G1510 - definição não verificada em léxico) ἐὰν (ean - G1437 - definição não verificada en léxico) ποιῆτε (poiēte - G4160 - definição não verificada em léxico) [[ἃ]] (ha - G3739 / [[ὃ]] - G3739 / [[ὅσα]] - G3745 - definição não verificada em léxico) ἐγὼ (egō - G1473 - definição não verificada em léxico) ἐντέλλομαι (entellomai - G1781 - definição não verificada em léxico) ὑμῖν (hymin - G4771 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT aponta variações no pronome relativo: [[ἃ]] (Treg, NA28), [[ὃ]] (WH) e [[ὅσα]] (RP, Textus Receptus). O sentido global de submissão aos mandamentos permanece inalterado.</p><p><b>Síntese Exegética:</b> A amizade com o Mestre não anula a obediência; antes, a obediência voluntária e leal é a demonstração prática e o requisito relacional dessa mesma amizade.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Já não vos chamo servos, porque o servo não sabe o que faz o seu senhor; mas vos tenho chamado amigos, porque tudo quanto ouvi de meu Pai eu vos fiz conhecer.",
+        "commentary": "<p><b>Análise Léxica:</b> οὐκέτι (oukeseti - G3765 - definição não verificada em léxico) [[λέγω ὑμᾶς]] (legō hymas - G3004 / G4771 - definição não verificada em léxico) δούλους (doulous - G1401 - definição não verificada em léxico), ὅτι (hoti - G3754 - definição não verificada em léxico) ὁ δοῦλος (ho doulos - G1401 - definição não verificada em léxico) οὐκ οἶδεν (ouk oiden - G3756 / G1492 - definição não verificada em léxico) τί ποιεῖ (ti poiei - G5101 / G4160 - definição não verificada em léxico) αὐτοῦ (autou - definição não verificada em léxico) ὁ κύριος (ho kyrios - G2962 - definição não verificada em léxico); ὑμᾶς δὲ εἴρηκα φίλους (hymas de eirēka filous - G4771 / G2036 / G5384 - definição não verificada em léxico), ὅτι (hoti - G3754 - definição não verificada em léxico) πάντα (panta - G3956 - definição não verificada em léxico) ἃ ἤκουσα (ha ēkousa - G3739 / G191 - definição não verificada em léxico) παρὰ τοῦ πατρός μου (para tou patros mou - G3844 / G3962 - definição não verificada em léxico) ἐγνώρισα (egnōrisa - G1107 - definição não verificada em léxico) ὑμῖν (hymin - G4771 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra a ordem [[λέγω ὑμᾶς]] (SBL, WH, Treg, NA28) contra [[ὑμᾶς λέγω]] (RP, Textus Receptus), sem alteração significativa de significado.</p><p><b>Síntese Exegética:</b> A transição da condição de servo para a de amigo baseia-se na revelação íntima dos segredos e desígnios divinos que o Filho transmitiu aos discípulos.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Não fostes vocês que me escolhestes a mim, mas fui eu que vos escolhi a vocês, e vos designei para que vocês váis e deis fruto, e o vosso fruto permaneça; a fim de que tudo quanto pedirdes ao Pai em meu nome, ele vos dê.",
+        "commentary": "<p><b>Análise Léxica:</b> οὐχ (ouch - G3756 - definição não verificada em léxico) ὑμῖs με ἐξελέξασθε (hymeis me exelexasthe - G4771 / G3165 / G1586 - definição não verificada em léxico), ἀλλʼ ἐγὼ ἐξελεξάμην ὑμᾶς (all egō exelexamēn hymas - G235 / G1473 / G1586 / G4771 - definição não verificada em léxico), καὶ ἔθηκα ὑμᾶς (kai ethēka hymas - G2532 / G5087 / G4771 - definição não verificada em léxico) ἵνα ὑμεῖς ὑπάγητε (hina hymeis hypagēte - G2443 / G4771 / -G5217 - definição não verificada em léxico) καὶ καρπὸν φέρητε (kai karpon pherēte - G2532 / G2590 / G5342 - definição não verificada em léxico) καὶ ὁ καρπὸς ὑμῶν μένῃ (kai ho karpos hymōn menē - G2532 / G2590 / G444 - G3306 - definição não verificada em léxico), ἵνα ὅ τι ἂν αἰτήσητε (hina ho ti an aitēsēte - G2443 / G3739 / G5100 / G302 / G154 - definição não verificada em léxico) τὸν πατέρα (ton patera - G3962 - definição não verificada em léxico) ἐν τῷ ὀνόματί μου (en tō onomati mou - G1722 / G3588 / G3686 / G3450 - definição não verificada em léxico) δῷ ὑμῖν (dō hymin - G1325 / G4771 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A iniciativa da salvação e do chamado apostólico pertence inteiramente a Cristo. A eleição divina visa uma vida frutífera e uma eficácia contínua na oração intercessória.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Estas coisas vos mando, para que vos ameis uns aos outros.",
+        "commentary": "<p><b>Análise Léxica:</b> ταῦτα (tauta - G5023 - definição não verificada em léxico) ἐντέλλομαι (entellomai - G1781 - definição não verificada em léxico) ὑμῖν (hymin - G4771 - definição não verificada em léxico) ἵνα (hina - G2443 - definição não verificada em léxico) ἀγαπᾶτε (agapate - G25 - definição não verificada em léxico) ἀλλήλους (allēlous - G240 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O mandamento do amor mútuo é reiterado como o núcleo ético e relacional indispensable que deve governar a comunidade dos discípulos.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Se o mundo vos odeia, sabei que a mim me tem odiado antes de vós.",
+        "commentary": "<p><b>Análise Léxica:</b> Εἰ (ei - G1487 - definição não verificada em léxico) ὁ κόσμος (ho kosmos - G2889 - definição não verificada em léxico) ὑμᾶς (hymas - G4771 - definição não verificada em léxico) μισεῖ (misei - G3404 - definição não verificada em léxico), γινώσκετε (ginōskete - G1097 - definição não verificada em léxico) ὅτι (hoti - G3754 - definição não verificada em léxico) ἐμὲ (eme - G1691 - definição não verificada em léxico) πρῶτον (prōton - G4412 - definição não verificada em léxico) [[ὑμῶν]] (hymōn - G4771 - definição não verificada em léxico) μεμίσηκεν (memisēken - G3404 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT indica a inclusão de [[ὑμῶν]] (SBL, WH, Treg, RP, NA28), omitido apenas em alguns testemunhos isolados (como NIV textualmente), significando &quot;antes de vós&quot;.</p><p><b>Síntese Exegética:</b> A oposição do mundo secular contra a igreja não deve surpreender os crentes, visto que o próprio Cristo foi o alvo primordial dessa rejeição hostil.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Se fôssésseis do mundo, o mundo amaria o que era seu; mas, porque não sois do mundo, antes eu vos escolhi do mundo, por isso o mundo vos odeia.",
+        "commentary": "<p><b>Análise Léxica:</b> εἰ (ei - G1487 - definição não verificada em léxico) ἐκ τοῦ κόσμου (ek tou kosμου - G1537 / G3588 / G2889 - definição não verificada em léxico) ἦτε (ēte - G1510 - definição não verificada em léxico), ὁ κόσμος ἂν τὸ ἴδιον ἐφίλει (ho kosmos an to idion efilei - G2889 / G302 / G3588 / G2398 / G5368 - definição não verificada em léxico); ὅτι δὲ ἐκ τοῦ κόσμου οὐκ ἐστέ (hoti de ek tou kosmou ouk este - G3754 / G1161 / G1537 / G3588 / G2889 / G3756 / G1510 - definição não verificada em léxico), ἀλλʼ ἐγὼ ἐξελεξάμην ὑμᾶς ἐκ τοῦ κόσμου (all egō exelexamēn hymas ek tou kosmou - G235 / G1473 / G1586 / G4771 / G1537 / G3588 / G2889 - definição não verificada em léxico), διὰ τοῦτο (dia touto - G1223 / G5124 - definição não verificada em léxico) μισεῖ ὑμᾶς ὁ κόσμος (misei hymas ho kosmos - G3404 / G4771 / G3588 / G2889 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A separação ética e espiritual operada pela eleição divina retira o crente do sistema mundano corrompido, tornando-o inevitavelmente alvo da animosidade desse mesmo mundo.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Lembrai-vos da palavra que eu vos disse: Não é o servo maior do que o seu senhor. Se a mim me perseguiram, também a vocês hão de perseguir; se guardaram a minha palavra, também guardarão a de vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> μνημονεύετε (mnōmoneuete - G3421 - definição não verificada em léxico) τοῦ λόγου (tou logou - G3588 / G3056 - definição não verificada em léxico) οὗ ἐγὼ εἶπον ὑμῖν (hou egō eipon hymin - G3739 / G1473 / G2036 / G4771 - definição não verificada em léxico); Οὐκ ἔστιν δοῦλος μείζων τοῦ κυρίου αὐτοῦ (Ouk estin doulos meizōn tou kyriou autou - G3756 / G1510 / G1401 / G3173 / G3588 / G2962 / G846 - definição não verificada em léxico); εἰ ἐμὲ ἐδίωξαν (ei eme ediōxan - G1487 / G1691 / G1377 - definição não verificada em léxico), καὶ ὑμᾶς διώξουσιν (kai hymas diōxousin - G2532 / G4771 / G1377 - definição não verificada em léxico); εἰ τὸν λόγον μου ἐτήρησαν (ei ton logon mou etērēsan - G1487 / G3588 / G3056 / G3450 / G5083 - definição não verificada em léxico), καὶ τὸν ὑμέτερον τηρήσουσιν (kai ton hymeteron tērēsousin - G2532 / G3588 / G5212 / G5083 - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O destino do servo está indissoluvelmente ligado ao do seu Senhor; portanto, a rejeição e a perseguição sofridas por Cristo constituem o protótipo da experiência dos discípulos no mundo.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Mas tudo isto farão contra vocês por causa do meu nome, porque não conhecem aquele que me enviou.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλλά</i> (alla - Strong: 235), conjunção adversativa, mas; <i>ταῦta</i> (tauta - Strong: 3778), pronome demonstrativo, estes / isto; <i>πάνta</i> (panta - Strong: 3956), adjetivo, todos / tudo; <i>ποιήσουσιν</i> (poiēsousin - Strong: 4160), verbo, farão; <i>εἰς ὑμᾶς</i> (eis hymas - Strong: 1519, 5209), preposição e pronome, contra vocês / para com vocês; <i>διὰ</i> (dia - Strong: 1223), preposição, por causa de; <i>τὸ ὄνομα</i> (to onoma - Strong: 3588, 3686), artigo e substantivo neutro, o nome; <i>μου</i> (mou - Strong: 3450), pronome pessoal, meu; <i>ὅti</i> (hoti - Strong: 3754), conjunção, porque; <i>οὐκ</i> (ouk - Strong: 3756), advérbio de negação, não; <i>οἴδασιν</i> (eidasin - Strong: 1492), verbo, sabem / conhecem; <i>τὸν πέμψαντά</i> (ton pempsanta - Strong: 3588, 3992), artigo e particípio aoristo, o que enviou; <i>με</i> (me - Strong: 1691), pronome pessoal, a mim. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Há uma variação preposicional entre o SBLGNT e o Textus Receptus. O SBLGNT traz <i>εἰς ὑμᾶς</i> (contra vocês), enquanto o Textus Receptus apresenta <i>ὑμῖν</i> (a vós / para vós).</p><p><b>Síntese Exegética:</b> A hostilidade que os discípulos enfrentam não é dirigida a eles pessoalmente, mas decorre da rejeição fundamental à revelação divina manifestada em Cristo, revelando a ignorância espiritual daqueles que perseguem os seguidores do Senhor.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Se eu não tivesse vindo e não lhes houvera falado, não teriam pecado; mas agora não têm desculpa acerca do seu pecado.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰ μή</i> (ei mē - Strong: 1487, 3362), conjunção condicional negativa, se não; <i>ἦλθον</i> (ēlthon - Strong: 2064), verbo aoristo, vim; <i>καί</i> (kai - Strong: 2532), conjunção, e; <i>ἐλάλησα</i> (elalēsa - Strong: 2980), verbo aoristo, falei; <i>αὐτοῖς</i> (autois - Strong: 846), pronome, a eles; <i>ἁμαρτίαν</i> (hamartian - Strong: 266), substantivo feminino, pecado; <i>οὐκ</i> (ouk - Strong: 3756), advérbio, não; <i>eἴχοσαν</i> (eichosan - Strong: 2192), verbo, teriam / tinham; <i>νῦν δέ</i> (nyn de - Strong: 3568, 1161), advérbio e conjunção, mas agora; <i>πρόφασιν</i> (prophasin - Strong: 4392), substantivo feminino, desculpa / pretexto; <i>ἔχουσιν</i> (echousin - Strong: 2192), verbo, têm; <i>περί</i> (peri - Strong: 4012), preposição, acerca de / sobre; <i>τῆς ἁμαρτίας</i> (tēs hamartias - Strong: 3588, 266), artigo e substantivo, do pecado; <i>αὐτῶν</i> (autōn - Strong: 846), pronome, deles. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> No verbo para &quot;tinham&quot;, o SBLGNT traz a forma <i>eἴχοσαν</i> (com desinência secundária típica do grego helenístico), enquanto o Textus Receptus emprega a forma clássica <i>eἶχον</i>.</p><p><b>Síntese Exegética:</b> A vinda e a palavra de Cristo exercem um papel de revelação e juízo, removendo qualquer pretexto de ignorância e expondo a culpabilidade daqueles que rejeitam deliberadamente a verdade.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Aquele que me odeia, odeia também a meu Pai.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ὁ</i> (ho - Strong: 3588), artigo, o que; <i>ἐμέ</i> (eme - Strong: 1691), pronome pessoal, a mim; <i>μισῶν</i> (misōn - Strong: 3404), particípio, odiando / que odeia; <i>καί</i> (kai - Strong: 2532), conjunção, e; <i>τὸν πατέρα</i> (ton patera - Strong: 3588, 3962), artigo e substantivo, o pai; <i>μου</i> (mou - Strong: 3450), pronome, meu; <i>μισεῖ</i> (misei - Strong: 3404), verbo, odeia. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A unidade essencial entre o Filho e o Pai é tamanha que qualquer atitude de rejeição ou ódio manifestada contra Jesus atinge diretamente o próprio Deus Pai.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Se eu não tivesse feito entre eles obras que nenhum outro fez, não teriam pecado; mas agora, tanto as viram como me odiaram a mim e a meu Pai.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰ</i> (ei - Strong: 1487), conjunção, se; <i>tà ἔργα</i> (ta erga - Strong: 3588, 2041), artigo e substantivo, as obras; <i>μή</i> (mē - Strong: 3362), advérbio, não; <i>ἐποίησα</i> (epoiēsa - Strong: 4160), verbo, fiz; <i>ἐν αὐτοῖς</i> (en autois - Strong: 1722, 846), preposição e pronome, neles / entre eles; <i>ἃ</i> (ha - Strong: 3739), pronome relativo, as quais; <i>οὐδείς</i> (oudeis - Strong: 3762), pronome, ninguém; <i>ἄλλος</i> (allos - Strong: 243), adjetivo, outro; <i>ἐποίηsen</i> (epoiesen - Strong: 4160) / <i>πεποίηκεν</i> (pepoiēken - Strong: 4160), verbo, fez / tem feito; <i>ἁμαρτίαν</i> (hamartian - Strong: 266), substantivo, pecado; <i>οὐκ</i> (ouk - Strong: 3756), advérbio, não; <i>eἴχοσαν</i> (eichosan - Strong: 2192) / <i>eἶχον</i> (eichon), verbo, tinham; <i>νῦν δέ</i> (nyn de - Strong: 3568, 1161), mas agora; <i>καί</i> (kai - Strong: 2532), e; <i>ἑωράκασιν</i> (hēōrakasin - Strong: 3708), verbo, viram / têm visto; <i>μεμισήκασιν</i> (memisēkasin - Strong: 3404), verbo, odiaram / têm odiado; <i>ἐμέ</i> (eme - Strong: 1691), a mim; <i>καί</i> (kai - Strong: 2532), e; <i>τὸν πατέρα</i> (ton patera - Strong: 3588, 3962), o pai; <i>μου</i> (mou - Strong: 3450), meu. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Existem duas variações: o SBLGNT traz <i>ἐποίησεν</i> enquanto o Textus Receptus traz <i>πεποίηκεν</i>; e, na forma verbal de &quot;teriam&quot;, o SBLGNT traz <i>eἴχοσαν</i> contra <i>eἶχον</i> no Textus Receptus.</p><p><b>Síntese Exegética:</b> As obras portentosas de Jesus serviram como testemunho irrecusável de sua origem divina; contudo, a rejeição persistente apesar de tais provas agrava a culpa dos opositores.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Mas isto sucede para que se cumpra a palavra que está escrita na lei deles: Odiaram-me sem causa.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλλά</i> (alla - Strong: 235), mas; <i>ἵνα</i> (hina - Strong: 2443), conjunção, para que; <i>πληρωθῇ</i> (plērōthē - Strong: 4137), verbo passivo, se cumpra; <i>ὁ λόγος</i> (ho logos - Strong: 3588, 3056), artigo e substantivo, a palavra; <i>ὁ</i> (ho - Strong: 3588), artigo; <i>ἐν τῷ νόμῳ</i> (en tō nomō - Strong: 1722, 3588, 3551), na lei; <i>αὐτῶν</i> (autōn - Strong: 846), deles; <i>γεγραμμένος</i> (gegrammenos - Strong: 1125), particípio perfeito, escrito; <i>ὅti</i> (hoti - Strong: 3754), que; <i>Ἐμίσησάν</i> (Emisēsan - Strong: 3404), verbo, odiaram; <i>με</i> (me - Strong: 1691), a mim; <i>δωρεάν</i> (dōrean - Strong: 1432), advérbio, de graça / sem causa. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> A ordem das palavras difere: o SBLGNT traz [[<i>ἐν τῷ νόμῳ αὐτῶν γεγραμμένος</i>]], enquanto o Textus Receptus apresenta [[<i>γεγραμμένος ἐν τῷ νόμῳ αὐτῶν</i>]].</p><p><b>Síntese Exegética:</b> A oposição irracional movida contra o Messias não aponta para o fracasso do plano divino, mas cumpre as Escrituras proféticas, atestando a soberania de Deus sobre a história.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Quando porém vier o Conselheiro, que eu vos enviarei da parte do Pai, o Espírito da verdade, que procede da parte do Pai, esse dará testemunho de mim;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Ὅtan</i> (hotan - Strong: 3752), conjunção temporal, quando; <i>ἔλθῃ</i> (elthē - Strong: 2064), verbo aoristo subjuntivo, vier; <i>ὁ παράκλητος</i> (ho paraklētos - Strong: 3588, 3875), artigo e substantivo, o consolador / conselheiro; <i>ὃν</i> (hon - Strong: 3739), pronome relativo, o qual; <i>ἐγώ</i> (egō - Strong: 1473), pronome pessoal, eu; <i>πέμψω</i> (pempsō - Strong: 3992), verbo, enviarei; <i>ὑμῖν</i> (hymin - Strong: 5209), pronome, a vós / vocês; <i>παρά</i> (para - Strong: 3844), preposição, da parte de; <i>τοῦ πατρός</i> (tou patros - Strong: 3588, 3962), do pai; <i>τὸ πνεῦμα</i> (to pneuma - Strong: 3588, 4151), o espírito; <i>τῆς ἀληθείας</i> (tēs alētheias - Strong: 3588, 225), da verdade; <i>ὃ</i> (ho - Strong: 3739), o qual; <i>παρά</i> (para - Strong: 3844), de; <i>τοῦ πατρὸς</i> (tou patros - Strong: 3588, 3962), do pai; <i>ἐκπορεύεται</i> (ekporeuetai - Strong: 1607), verbo, procede; <i>ἐκεῖνος</i> (ekeinos - Strong: 1565), pronome demonstrativo, esse / aquele; <i>μαρτυρήσει</i> (marturēsei - Strong: 3140), verbo, dará testemunho; <i>περί</i> (peri - Strong: 4012), acerca de; <i>ἐμοῦ</i> (emou - Strong: 1700), de mim. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O Textus Receptus inclui a partícula [[<i>δέ</i>]] logo após [[<i>Ὅταν</i>]], ausente no texto do SBLGNT.</p><p><b>Síntese Exegética:</b> Diante da rejeição do mundo, os discípulos não ficam desamparados; a promessa do envio do Espírito da verdade pelo Pai e pelo Filho garante o testemunho contínuo e divino sobre a identidade de Cristo.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "E vocês também dão testemunho, porque desde o princípio estais comigo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>καί</i> (kai - Strong: 2532), e; <i>ὑμεῖς δέ</i> (hymeis de - Strong: 5210, 1161), pronome e conjunção, e vós / vocês também; <i>μαρτυρεῖτε</i> (martureite - Strong: 3140), verbo, dais testemunho; <i>ὅti</i> (hoti - Strong: 3754), porque; <i>ἀπʼ ἀρχῆς</i> (ap archēs - Strong: 575, 746), preposição e substantivo, desde o princípio; <i>μετʼ ἐμοῦ</i> (met emou - Strong: 3326, 1700), preposição e pronome, comigo; <i>ἐστε</i> (este - Strong: 1510), verbo, estais / sois. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A incumbência do testemunho apostólico fundamenta-se na convivência histórica e contínua com Jesus desde o início de seu ministério terreno, capacitando-os a testemunhar com autoridade.</p>"
+      }
+    ],
+    "16": [
+      {
+        "verse": 1,
+        "text": "Estas coisas vos tenho dito para que não vos escandalizeis.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ταῦτα</i> (tauta - dem. pron., &quot;estas coisas&quot;); <i>λελάληκα</i> (lelalēka - v., &quot;tenho dito&quot;); <i>ὑμῖν</i> (humin - pron., &quot;a vós / convosco&quot;); <i>ἵνα</i> (hina - conj., &quot;para que&quot;); <i>μὴ</i> (mē - adv., &quot;não&quot;); <i>σκανδαλισθῆτε</i> (skandalisthēte - v., &quot;sejais escandalizados&quot;, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O Senhor antecipa aos discípulos os dissabores vindouros para que a perseguição não lhes abale a fé a ponto de tropeçarem ou abandonarem o caminho.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Expulsar-vos-ão das sinagogas; mas vem a hora em que todo aquele que vos matar pensará que oferece culto a Deus.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀποσυναγώγους</i> (aposunagōgous - adj., &quot;expulsos da sinagoga&quot;); <i>ποιήσουσιν</i> (poiēsousin - v., &quot;farão&quot;); <i>ὑμᾶς</i> (humas - pron., &quot;a vós&quot;); <i>ἀλλʼ</i> (all&#x27; - conj., &quot;mas&quot;); <i>ἔρχεται</i> (erchetai - v., &quot;vem&quot;); <i>ὥρα</i> (hōra - n., &quot;hora&quot;); <i>ἵνα</i> (hina - conj., &quot;para que&quot;); <i>πᾶς</i> (pas - adj., &quot;todo&quot;); <i>ὁ αποκτείνας</i> (ho apokteinas - v., &quot;o que mata&quot;); <i>δόξῃ</i> (doxē - v., &quot;pense / julgue&quot;); <i>λατρείαν</i> (latreian - n., &quot;culto / serviço sagrado&quot;); <i>προσφέρειν</i> (prospherein - v., &quot;oferecer&quot;); <i>τῷ θεῷ</i> (tō theō - n., &quot;a Deus&quot;).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A excomunhão religiosa e o assassinato movido por falso zelo religioso revelam a cegueira daqueles que perseguem os seguidores de Cristo crendo prestar serviço aceitável ao Altíssimo.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E isto vos farão porque não conheceram ao Pai nem a mim.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>καὶ</i> (kai - conj., &quot;e&quot;); <i>ταῦτα</i> (tauta - pron., &quot;estas coisas&quot;); <i>ποιήσουσιν</i> (poiēsousin - v., &quot;farão&quot;); <i>ὅτι</i> (hoti - conj., &quot;porque&quot;); <i>οὐκ</i> (ouk - adv., &quot;não&quot;); <i>ἔγνωσαν</i> (egnōsan - v., &quot;conheceram&quot;); <i>τὸν πατέρα</i> (ton patera - n., &quot;o Pai&quot;); <i>οὐδὲ</i> (oude - conj., &quot;nem&quot;); <i>ἐμέ</i> (eme - pron., &quot;a mim&quot;).</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta o pronome <i>ὑμῖν</i> (&quot;a vós&quot;) após <i>ποιήσουσιν</i>, ausente no SBLGNT.</p><p><b>Síntese Exegética:</b> A raiz de toda hostilidade contra a igreja reside na ignorância espiritual acerca da verdadeira identidade do Pai e do Filho.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Mas estas coisas vos tenho dito para que, quando chegar a hora, vos lembreis delas, de que eu vos disse. Porém não vos disse estas coisas desde o princípio, porque estava convosco.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλλὰ</i> (alla - conj., &quot;mas&quot;); <i>ταῦτα</i> (tauta - pron., &quot;estas coisas&quot;); <i>λελάληκα</i> (lelalēka - v., &quot;tenho dito&quot;); <i>ὑμῖν</i> (humin - pron., &quot;a vós&quot;); <i>ἵνα</i> (hina - conj., &quot;para que&quot;); <i>ὅταν</i> (hotan - conj., &quot;quando&quot;); <i>ἔλθῃ</i> (elthē - v., &quot;chegar&quot;); <i>ἡ ὥρα</i> (hē hōra - n., &quot;a hora&quot;); <i>μνημονεύητε</i> (mnēmoneuēte - v., &quot;lembreis&quot;); <i>ὅτι</i> (hoti - conj., &quot;de que / porque&quot;); <i>ἐγὼ</i> (egō - pron., &quot;eu&quot;); <i>εἶπον</i> (eipon - v., &quot;disse&quot;); <i>ἐξ ἀρχῆς</i> (ex archēs - adv., &quot;desde o princípio&quot;); <i>ἤμην</i> (hēmōn/hēmēn - v., &quot;estava&quot;).</p><p><b>Crítica Textual:</b> No SBLGNT há variações pontuais na repetição do pronome [[αὐτῶν]] amparadas por testemunhos do aparato crítico, enquanto o Textus Receptus segue uma estrutura similar sem destacar tais particularidades modernas de edição.</p><p><b>Síntese Exegética:</b> A predição detalhada serve como <i>apologética</i> futura: quando as provações irromperem, a memória das palavras de Jesus fortalecerá a confiança dos discípulos.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Mas agora vou para aquele que me enviou, e nenhum de vós me pergunta: Para onde vais?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>νῦν</i> (nun - adv., &quot;agora&quot;); <i>δὲ</i> (de - conj., &quot;mas / e&quot;); <i>ὑπάγω</i> (hupagō - v., &quot;vou / retiro-me&quot;); <i>πρὸς</i> (pros - prep., &quot;para junto de&quot;); <i>τὸν πέμψαντά με</i> (ton pempsanta me - v., &quot;o que me enviou&quot;); <i>καὶ</i> (kai - conj., &quot;e&quot;); <i>οὐδεὶς</i> (oudeis - pron., &quot;ninguễm&quot;); <i>ἐξ ὑμῶν</i> (ex humōn - pron., &quot;de vós&quot;); <i>ἐρωτᾷ με</i> (erōta me - v., &quot;pergunta-me&quot;); <i>Ποῦ</i> (pou - adv., &quot;onde&quot;); <i>ὑπάγεις</i> (hupageis - v., &quot;vais&quot;).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Jesus nota que a tristeza absorve de tal maneira os discípulos que eles sequer inquirem sobre a glória do seu retorno ao Pai, focando apenas na separação.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas, porque vos tenho dito isto, a tristeza encheu o vosso coração.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλλʼ</i> (all&#x27; - conj., &quot;mas&quot;); <i>ὅτι</i> (hoti - conj., &quot;porque&quot;); <i>ταῦτα</i> (tauta - pron., &quot;isto&quot;); <i>λελάληκα</i> (lelalēka - v., &quot;tenho dito&quot;); <i>ὑμῖν</i> (humin - pron., &quot;a vós&quot;); <i>ἡ λύπη</i> (hē lupē - n., &quot;a tristeza&quot;); <i>πεπλήρωκεν</i> (peplērōken - v., &quot;encheu&quot;); <i>ὑμῶν τὴν καρδίαν</i> (humōn tēn kardian - n., &quot;o vosso coração&quot;).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O peso da revelação da partida gera um luto profundo nos discípulos, mostrando a limitação humana diante dos desígnios divinos.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Mas eu vos digo a verdade: convém-vos que eu vá; porque, se eu não for, o Conselheiro não virá para vós outros; porém, se eu for, vos o enviarei.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλλʼ</i> (all&#x27; - conj., &quot;mas&quot;); <i>ἐγὼ</i> (egō - pron., &quot;eu&quot;); <i>τὴν ἀλήθειαν</i> (tēn alētheian - n., &quot;a verdade&quot;); <i>λέγω</i> (legō - v., &quot;digo&quot;); <i>ὑμῖν</i> (humin - pron., &quot;a vós&quot;); <i>συμφέρει</i> (sumpherei - v., &quot;convém&quot;); <i>ἵνα</i> (hina - conj., &quot;que&quot;); <i>ἀπέλθω</i> (apelthō - v., &quot;eu vá / parta&quot;); <i>ἐὰν</i> (ean - conj., &quot;se&quot;); <i>γὰρ</i> (gar - conj., &quot;pois&quot;); <i>μὴ</i> (mē - adv., &quot;não&quot;); <i>ὁ παράκλητος</i> (ho paraklētos - n., &quot;o Conselheiro&quot;); <i>οὐ μὴ ἔλθῃ</i> (ou mē elthē - v., &quot;de modo algum virá&quot;); <i>πρὸς ὑμᾶς</i> (pros humas - pron., &quot;para vós&quot;); <i>πορευθῶ</i> (poreuthō - v., &quot;for&quot;); <i>πέμψω</i> (pempsō - v., &quot;enviarei&quot;); <i>αὐτὸν</i> (auton - pron., &quot;ele&quot;).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>γὰρ</i> e a forma [[οὐ μὴ ἔλθῃ]], enquanto o Textus Receptus emprega <i>οὐκ ἐλεύσεται</i>.</p><p><b>Síntese Exegética:</b> A partida física de Cristo é indispensável para a inauguração da dispensação do Espírito Santo, cuja habitação universal suplanta a presença física limitada.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "E ele, quando vier, convencerá o mundo acerca do pecado, e acerca da justiça, e acerca do juízo:",
+        "commentary": "<p><b>Análise Léxica:</b> <i>καὶ</i> (kai - conj., &quot;e&quot;); <i>ἐλθὼν</i> (elthōn - v., &quot;vindo&quot;); <i>ἐκεῖνος</i> (ekeinos - pron., &quot;aquele&quot;); <i>ἐλέγξει</i> (eletxei - v., &quot;convencerá / repreenderá&quot;); <i>τὸν κόσμον</i> (ton kosmon - n., &quot;o mundo&quot;); <i>περὶ ἁμαρτίας</i> (peri hamartias - prep. + n., &quot;acerca do pecado&quot;); <i>καὶ</i> (kai - conj., &quot;e&quot;); <i>δικαιοσύνης</i> (dikaiosunēs - n., &quot;da justiça&quot;); <i>κρίσεως</i> (kriseως - n., &quot;do juízo&quot;).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A atuação do Espírito Santo no mundo possui caráter judicial e convictivo, operando na consciência humana nas três esferas fundamentais da verdade moral e espiritual.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Acerca do pecado, porque não crêem em mim;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>περὶ ἁμαρτίας</i> (peri hamartias - prep. + n., &quot;acerca do pecado&quot;); <i>μέν</i> (men - part., &quot;certamente / por um lado&quot;); <i>ὅτι</i> (hoti - conj., &quot;porque&quot;); <i>οὐ</i> (ou - adv., &quot;não&quot;); <i>πιστεύουσιν</i> (pisteuousin - v., &quot;crêem&quot;); <i>εἰς ἐμέ</i> (eis eme - prep. + pron., &quot;em mim&quot;).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O pecado supremo revelado pelo Espírito é a rejeição obstinada da pessoa e da obra de Jesus Cristo, a incredulidade que recusa a salvação.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Acerca da justiça, porque vou para o Pai, e não mais me vereis;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>περὶ δικαιοσύνης</i> (peri dikaiosunēs - prep. + n., &quot;acerca da justiça&quot;); <i>δέ</i> (de - conj., &quot;por outro lado / e&quot;); <i>ὅτι</i> (hoti - conj., &quot;porque&quot;); <i>πρὸς τὸν πατέρα</i> (pros ton patera - prep. + n., &quot;para o Pai&quot;); <i>ὑπάγω</i> (hupagō - v., &quot;vou&quot;); <i>καὶ</i> (kai - conj., &quot;e&quot;); <i>οὐκέτι</i> (oukeneti - adv., &quot;não mais&quot;); <i>θεωρεῖτέ με</i> (theōreite me - v., &quot;me vedes / contemplais&quot;).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>πατέρα</i>, enquanto o Textus Receptus acrescenta o pronome possessivo [[μου]] (&quot;meu Pai&quot;).</p><p><b>Síntese Exegética:</b> A exaltação de Cristo à destra do Pai atesta cabalmente a sua justiça perfeita, validada pela aceitação divina e demonstrada pela sua ausência física na terra.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "E acerca do juízo, porque o príncipe deste mundo já está julgado.",
+        "commentary": "<p><b>Análise Léxica:</b> περὶ (peri - definição não verificada em léxico), κρίσεως (kriseōs - definição não verificada em léxico), ἄρχων (archōn - definição não verificada em léxico), κόσμου (kosmou - definição não verificada em léxico), κέκριται (kekritai - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O Espírito Santo convence o mundo acerca do juízo, demonstrado cabalmente na derrota e no julgamento do príncipe deste mundo, o diabo, por meio da obra redentora de Cristo.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Ainda tenho muitas coisas para dizer a vocês, mas não as podeis suportar agora;",
+        "commentary": "<p><b>Análise Léxica:</b> Ἔτι (eti - definição não verificada em léxico), πολλὰ (polla - definição não verificada em léxico), ἔχω (echō - definição não verificada em léxico), λέγειν (legein - definição não verificada em léxico), βαστάζειν (bastazein - definição não verificada em léxico), ἄρτι (arti - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variação na ordem das palavras [[ὑμῖν λέγειν]] (SBLGNT, WH, Treg, NA28) versus [[λέγειν ὑμῖν]] (RP / Textus Receptus), sem alterar o sentido essencial da frase.</p><p><b>Síntese Exegética:</b> Jesus reconhece a limitação temporária dos discípulos, guardando revelações adicionais para o momento em que receberão o auxílio do Espírito Santo.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Porém, quando ele vier, o Espírito da verdade, ele os guiará a toda a verdade; porque não falará de si mesmo, mas dirá tudo o que tiver ouvido e anunciará a vocês as coisas que hão de vir.",
+        "commentary": "<p><b>Análise Léxica:</b> πνεῦμα (pneuma - definição não verificada em léxico), ἀληθείας (alētheias - definição não verificada em léxico), ὁδηγήσει (odēgēsei - definição não verificada em léxico), λαλήσει (lalēsei - definição não verificada em léxico), ἀκούσει (akousei - definição não verificada em léxico), ἀναγγελεῖ (anangelei - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Há divergências textuais notadas no SBLGNT: [[ἐν τῇ ἀληθείᾳ πάσῃ]] (NA28) em contraste com [[εἰς τὴν ἀλήθειαν πᾶσαν]] (WH, Treg) e [[εἰς πᾶσαν τὴν ἀλήθειαν]] (RP). Além disso, a forma verbal [[ἀκούσει]] (Treg, NA28) difere de [[ἀκούει]] (WH) e [[ἂν ἀκούσῃ]] (RP).</p><p><b>Síntese Exegética:</b> A função primordial do Espírito da verdade é guiar os crentes na plena revelação divina, falando não por iniciativa própria, mas transmitindo fielmente o que procede da comunhão trinitária.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Ele me glorificará, porque há de receber do que é meu e anunciar a vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> δοξάσει (doxasei - definição não verificada em léxico), λήμψεται (lēmpsetai - definição não verificada em léxico), ἀναγγελεῖ (anangelei - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante significativa entre o SBLGNT e o Textus Receptus na formulação deste versículo.</p><p><b>Síntese Exegética:</b> A atuação do Espírito Santo tem como alvo supremo a exaltação do Filho, revelando e aplicando a glória e os ensinamentos de Cristo aos corações dos discípulos.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Tudo quanto o Pai tem é meu; por isso disse que ele há de receber do que é meu e anunciar a vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> πατὴρ (patēr - definição não verificada em léxico), ἐμά (ema - definição não verificada em léxico), λαμβάνει (lambanei - definição não verificada em léxico), λήμψεται (lēmpsetai - definição não verificada em léxico), ἀναγγελεῖ (anangelei - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz o verbo [[λαμβάνει]], enquanto o Textus Receptus emprega [[λήμψεται]], refletindo uma nuance entre a ação contínua e a recepção pontual, mantendo contudo a mesma harmonia teológica.</p><p><b>Síntese Exegética:</b> A perfeita unidade entre o Pai e o Filho fundamenta a revelação espiritual: tudo o que pertence ao Pai pertence a Cristo, e o Espírito Santo comunica essa mesma plenitude aos crentes.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Um pouco e já não me <i>vão a</i> ver, e novamente um pouco e me <i>vão a</i> ver.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>μικρόν</i> (mikron - definição não verificada em léxico: um pouco, breve momento); <i>θεωρεῖτέ</i> (theōreite - definição não verificada em léxico: contemplar, ver, observar); <i>ὄψεσθέ</i> (ophesthe - definição não verificada em léxico: ver, avistar).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>οὐκέτι</i>, enquanto o Textus Receptus apresenta <i>οὐ</i>. O SBLGNT omite o acréscimo <i>ὅτι ὑπάγω πρὸς τὸν πατέρα</i> no final do versículo, o qual está presente no Textus Receptus.</p><p><b>Síntese Exegética:</b> O Senhor Jesus antecipa aos seus discípulos a breve separação decorrente da sua morte e o posterior reencontro na ressurreição, gerando perplexidade entre eles.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Disseram, pois, alguns dos seus discípulos uns aos outros: O que é isto que nos diz: Um pouco e já não me <i>vão a</i> ver, e novamente um pouco e me <i>vão a</i> ver; e: <i>Porque</i> vou para o Pai?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἶπαν</i> (eipan - definição não verificada em léxico: disseram); <i>μαθητῶν</i> (mathētōn - definição não verificada em léxico: discípulos); <i>ἀλλήλους</i> (allēlous - definição não verificada em léxico: uns aos outros).</p><p><b>Crítica Textual:</b> O SBLGNT utiliza <i>Ὅτι</i> sem pronome pessoal, ao passo que o Textus Receptus traz <i>ὅτι ἐγὼ</i>.</p><p><b>Síntese Exegética:</b> A incompreensão dos discípulos reflete-se no diálogo mútuo sobre o enigma das palavras do Mestre acerca da partida para junto do Pai.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Diziam, pois: O que é isto que diz: Um pouco? Não sabemos o que fala.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔλεγον</i> (elegon - definição não verificada em léxico: diziam); <i>οἴδαμεν</i> (oidamen - definição não verificada em léxico: sabemos); <i>λαλεῖ</i> (lalei - definição não verificada em léxico: fala).</p><p><b>Crítica Textual:</b> O SBLGNT traz a ordem <i>Τί ἐστιν τοῦτο</i> e omite o artigo <i>τὸ</i> antes de <i>μικρόν</i>, enquanto o Textus Receptus apresenta <i>τοῦτο τί ἐστιν</i> e inclui o artigo.</p><p><b>Síntese Exegética:</b> A repetição da expressão temporal causa profunda incerteza no grupo, evidenciando a opacidade momentânea da mensagem aos seus corações.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Conheceu <i>então</i> Jesus que queriam interrogá-lo, e disse-lhes: Sobre isto <i>vos</i> questionais uns aos outros, porque disse: Um pouco e já não me <i>vão a</i> ver, e novamente um pouco e me <i>vão a</i> ver?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔγνω</i> (egnō - definição não verificada em léxico: conheceu, percebeu); <i>ἐρωτᾶν</i> (erōtan - definição não verificada em léxico: perguntar, interrogar); <i>ζητεῖτε</i> (zēteite - definição não verificada em léxico: buscais, questionais).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἔγνω Ἰησοῦς</i>, enquanto o Textus Receptus expande para <i>εγνω ουν ο ιησους</i>.</p><p><b>Síntese Exegética:</b> Onisciente, Jesus antecipa-se aos questionamentos não verbalizados dos discípulos, trazendo à tona a dúvida que os consumia para corrigi-la.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Em verdade, em verdade vos digo que vós chorareis e vos lamentareis, e o mundo se alegrará; <i>porém</i> vós vos entristecereis, mas a vossa tristeza se converterá em alegria.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀμὴν</i> (amēn - definição não verificada em léxico: em verdade, amém); <i>κλαύσετε</i> (klausete - definição não verificada em léxico: chorareis); <i>θρηνήσετε</i> (thrēnēsete - definição não verificada em léxico: lamentareis); <i>χαρήσεται</i> (charēsetai - definição não verificada em léxico: alegrar-se-á); <i>λυπηθήσεσθε</i> (lupēthēsesthe - definição não verificada em léxico: entristecer-vos-eis).</p><p><b>Crítica Textual:</b> O SBLGNT utiliza a conjunção <i>ἀλλʼ</i> antes de <i>ἡ λύπη</i>, enquanto o Textus Receptus emprega <i>ὑμεῖς δὲ</i> seguido de <i>ἀλλʼ ἡ λύπη</i>.</p><p><b>Síntese Exegética:</b> O Mestre contrasta o luto iminente dos discípulos por causa da sua morte com a breve alegria do mundo, prometendo que a dor da cruz se transformará em júbilo irrevogável com a ressurreição.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "A mulher, quando dá à luz, tem tristeza, porque é chegada a sua hora; mas, quando dá à luz o menino, já não se lembra da aflição, por causa da alegria de que <i>um</i> homem nasceu para o mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> γυνή (gyne, Strong: 1135 - mulher), τίκτῃ (tikte, Strong: 5088 - dar à luz), λύπην (lypen, Strong: 3077 - tristeza), θλίψεως (thlipseos, Strong: 2347 - tribulação, aflição), χαρὰν (charan, Strong: 5479 - alegria), ἄνθρωπος (anthropos, Strong: 444 - homem, ser humano). Definição baseada no uso corrente; definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Não há variantes significativas entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> Jesus emprega a metáfora das dores do parto para ilustrar a transição inevitável entre a angústia presente dos discípulos e a alegria imorredoura da ressurreição, onde a dor é suplantada pela glória da nova vida gerada.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Também vós, <i>agora</i>, <i>então</i>, tendes tristeza; mas outra vez vos verei, e o vosso coração se alegrará, e a vossa alegria ninguém <i>a</i> tirará de vós.",
+        "commentary": "<p><b>Análise Léxica:</b> λύπην (lypen, Strong: 3077 - tristeza), ἔχετε (echete, Strong: 2192 - tendes), ὄψομαι (opsomai, Strong: 3700 - verei), χαρήσεται (charesetai, Strong: 5463 - alegrar-se-á), καρδία (kardia, Strong: 2588 - coração), αἴρει / ἀρεῖ (airei / arei, Strong: 142 - tirar, levantar). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e o Textus Receptus apresentam a ordem [[νῦν μὲν λύπην]] (SBLGNT) em contraponto a [[λύπην μὲν νῦν]] (RP). Além disso, há divergência quanto ao verbo no final do versículo: [[αἴρει]] (NA28, RP) versus [[ἀρεῖ]] (WH, Treg).</p><p><b>Síntese Exegética:</b> O Mestre assegura aos seus seguidores que o desgosto atual é passageiro. O reencontro com o Cristo ressuscitado produzirá uma alegria permanente e inabalável no âmago de seus corações.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "E naquele dia nada me perguntareis. Em verdade, em verdade vos digo que, tudo quanto pedirdes ao Pai, ele <i>o</i> dará a vós em meu nome.",
+        "commentary": "<p><b>Análise Léxica:</b> ἡμέρᾳ (hemera, Strong: 2250 - dia), ἐρωτήσετε (erotesete, Strong: 2065 - perguntareis), αἰτήσητε (aitisete, Strong: 154 - pedirdes), πατέρα (patera, Strong: 3962 - pai), ὀνόματι (onomati, Strong: 3686 - nome), δώσει (dosei, Strong: 1325 - dará). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Observa-se variação na construção da oração condicional: o SBLGNT traz [[ἄν τι]] ao passo que o Textus Receptus utiliza [[ὅτι ὅσα ἄν]]. Outra divergência ocorre na posição dos termos, com [[δώσει ὑμῖν ἐν τῷ ὀνόματί μου]] no SBLGNT e [[ἐν τῷ ὀνόματί μου δώσει ὑμῖν]] no Textus Receptus (RP).</p><p><b>Síntese Exegética:</b> Com a vinda do Espírito e a consumação da obra redentora, a comunhão com o Pai será direta, legitimada e atendida mediante a autoridade e a intercessão do nome de Cristo.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Até agora nada pedistes em meu nome; pedi e recebereis, para que a vossa alegria seja completa.",
+        "commentary": "<p><b>Análise Léxica:</b> ἄρτι (arti, Strong: 737 - agora), ᾐτήσατε (etisate, Strong: 154 - pedistes), αἰτεῖτε (aiteite, Strong: 154 - pedi), λήμψεσθε (lempsesthe, Strong: 2983 - recebereis), χαρά (chara, Strong: 5479 - alegria), πεπληρωμένη (pepleromene, Strong: 4137 - completa, cheia). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecidos.</p><p><b>Síntese Exegética:</b> A eficácia da oração é vinculada ao patamar da revelação que se inaugura: pedir em nome de Jesus é alinhar-se à sua vontade, culminando na plenitude da satisfação espiritual.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Disse-vos estas coisas por parábolas; <i>mas</i> vem a hora em que já não vos falarei por parábolas, mas abertamente vos anunciarão acerca do Pai.",
+        "commentary": "<p><b>Análise Léxica:</b> παροιμίαις (paroimiais, Strong: 3942 - parábolas, provérbios), λελάληκα (lelaleka, Strong: 2980 - tenho falado), ὥρα (hora, Strong: 5610 - hora), παρρησίᾳ (parresia, Strong: 3954 - ousadia, franqueza, abertamente), ἀπαγγελῶ / ἀναγγελῶ (apangelo / anangelo, Strong: 518 / 312 - anunciar, declarar). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta [[ἔρχεται]] de forma direta, enquanto o Textus Receptus (RP) introduz a partícula [[ἀλλʼ ἔρχεται]]. Adicionalmente, verifica-se variação no verbo final: [[ἀπαγγελῶ]] (SBLGNT) contra [[ἀναγγελῶ]] (Textus Receptus).</p><p><b>Síntese Exegética:</b> O véu do discurso enigmático será retirado. A manifestação plena da verdade divina trará clareza meridiana sobre a natureza e o amor do Pai, encerrando o tempo das obscuridades alegóricas.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Naquele dia em meu nome pedireis, e não vos digo que eu rogarei ao Pai por vós,",
+        "commentary": "<p><b>Análise Léxica:</b> ἐν (en - definição não verificada em léxico), ἐκείνῃ (ekeinē - definição não verificada em léxico), ἡμέρᾳ (hēmera - definição não verificada em léxico), ὀνόματι (onomati - definição não verificada em léxico), αἰτήσεσθε (aitēsesthe - definição não verificada em léxico), ἐρωτήσω (erotēsō - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O texto destaca a proximidade relacional dos crentes com o Pai, indicando que a intercessão do Filho naquele dia opera em harmonia direta com o amor paternal que já os acolhe.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "pois o próprio Pai vos ama, porque vós me tendes amado e tendes crido que eu saí de Deus.",
+        "commentary": "<p><b>Análise Léxica:</b> αὐτός (autos - definição não verificada em léxico), πατὴρ (patēr - definição não verificada em léxico), φιλεῖ (philei - definição não verificada em léxico), πεφιλήκατε (pephilēkate - definição não verificada em léxico), πεπιστεύκατε (pepisteukate - definição não verificada em léxico), ἐξῆλθον (exēlthon - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra uma variante no final do versículo: θεοῦ (SBLGNT, NA28, RP) em oposição a πατρὸς (WH, Treg).</p><p><b>Síntese Exegética:</b> A afeição do Pai fundamenta-se na resposta de fé e amor que os discípulos manifestaram para com o Filho, reconhecendo sua origem divina.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Saí do Pai e vim ao mundo; outra vez deixo o mundo e vou para o Pai.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐξῆλθον (exēlthon - definição não verificada em léxico), πατρός (patros - definição não verificada em léxico), κόσμον (kosmon - definição não verificada em léxico), ἀφίημι (aphiēmi - definição não verificada em léxico), πορεύομαι (poreuomai - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra a preposição [[ἐκ]] (SBLGNT, WH, Treg) em contraste com [[παρὰ]] (NA28, RP).</p><p><b>Síntese Exegética:</b> Esta declaração resume a trajetória soteriológica de Cristo, traçando sua descensão da esfera divina e seu retorno triunfante ao Pai.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Dizem <i>seus</i> discípulos: Eis que agora falas abertamente e nenhuma parábola dizes.",
+        "commentary": "<p><b>Análise Léxica:</b> Λέγουσιν (legousin - definição não verificada em léxico), μαθηταί (mathētai - definição não verificada em léxico), παρρησίᾳ (parrēsia - definição não verificada em léxico), λαλεῖς (laleis - definição não verificada em léxico), παροιμίαν (paroimian - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variações: o acréscimo de [[αὐτῷ]] e a presença ou ausência da preposição [[ἐν]] antes de παρρησίᾳ entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Os discípulos expressam surpresa e convicção diante da clareza das palavras de Jesus, julgando compreender perfeitamente a sua mensagem sem enigmas.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "Agora sabemos que sabes todas as coisas e não tens necessidade de que alguém te pergunte; por isto cremos que de Deus saíste.",
+        "commentary": "<p><b>Análise Léxica:</b> oἴδαμεν (oidamen - definição não verificada em léxico), οἶδας (oidas - definição não verificada em léxico), χρείαν (chreian - definição não verificada em léxico), ἐρωτᾷ (erota - definição não verificada em léxico), πιστεύομεν (pisteuomen - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A onisciência demonstrada por Jesus consolida de forma definitiva a confissão de fé dos discípulos em sua procedência divina.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Respondeu-lhes Jesus: Agora credes?",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπεκρίθη (apekrithē - definição não verificada em léxico, responder), αὐτοῖς (autois - a eles), Ἰησοῦς (Iēsous - Jesus), Ἄρτι (arti - agora), πιστεύετε (pisteuete - credes).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἀπεκρίθη αὐτοῖς Ἰησοῦς</i>, enquanto o Textus Receptus inclui o artigo <i>ὁ</i> antes de <i>Ἰησοῦς</i>, lendo <i>απεκριθη αυτοις ο ιησους</i>. O aparato SBLGNT indica a variante em αὐτοῖς, onde o Textus Receptus e o grupo RP alinham-se na inclusão de o (ὁ).</p><p><b>Síntese Exegética:</b> Jesus confronta a declaração de certeza momentânea dos discípulos com uma pergunta retórica que evidencia a fragilidade e a incompletude da fé deles diante da prova iminente.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "Eis que vem a hora, e <i>já</i> é chegada, em que vocês serão dispersados, cada um para o que é seu, e a mim deixarão só; mas não estou só, porque o Pai está comigo.",
+        "commentary": "<p><b>Análise Léxica:</b> ἰδοὺ (idou - eis), ἔρχεται (erchetai - vem), ὥρα (hōra - hora), ἐλήλυθεν (elēlythen - tem chegado), σκορπισθῆτε (skorpisthēte - sereis dispersados), ἕκαστος (hekastos - cada um), εἰς (eis - para), τὰ ἴδια (ta idia - os seus próprios lares ou coisas), ἀφῆτε (aphēte - deixareis), μόνος (monos - só), πατὴρ (patēr - pai).</p><p><b>Crítica Textual:</b> Há divergência notável no texto: o SBLGNT traz <i>καὶ ἐλήλυθεν</i>, ao passo que o Textus Receptus (e a edição RP) acrescenta o advérvio <i>νῦν</i>, lendo <i>καὶ νῦν εληλυθεν</i>.</p><p><b>Síntese Exegética:</b> O Senhor prediz a dispersão inevitável dos discípulos na hora da sua paixão, revelando contudo a união indissolúvel com o Pai que o sustenta mesmo no abandono humano.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "Estas coisas tenho falado a vocês para que em mim tenham paz; no mundo tereis tribulação; mas tende bom ânimo, eu venci o mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> ταῦτα (tauta - estas coisas), λελάληκα (lelalēka - tenho falado), ὑμῖν (hymin - a vocês), εἰρήνην (eirēnēn - paz), ἔχητε (echēte - tenhais), κόσμῳ (kosmō - mundo), θλῖψιν (thlipsin - tribulação), θαρσεῖτε (tharseite - tende bom ânimo), νενίκηκα (nenikēka - tenho vencido).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A promessa de paz interior em Cristo contrasta com a tribulação externa no mundo, fundamentando-se na vitória consumada que o próprio Cristo alcançou sobre o sistema mundano.</p>"
+      }
+    ],
+    "17": [
+      {
+        "verse": 1,
+        "text": "Estas coisas falou Jesus, e, levantando os olhos ao céu, disse: Pai, é chegada a hora; glorifica a teu Filho, para que o Filho te glorifique,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>λαλέω</i> (lalēo, Strong G2980) - falar, proferir; <i>ὀφθαλμός</i> (ophthalmos, Strong G3788) - olho; <i>οὐρανós</i> (ouranos, Strong G3772) - céu; <i>πατήρ</i> (patēr, Strong G3962) - pai; <i>ὥρα</i> (hōra, Strong G5610) - hora, momento oportuno; <i>δοξάζω</i> (doxazō, Strong G1392) - glorificar, honrar; <i>υἱός</i> (huios, Strong G5207) - filho. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἐλάλησεν Ἰησοῦς</i>, enquanto o Textus Receptus acrescenta o artigo <i>ὁ ἰησοûς</i>. O SBLGNT registra <i>ἐπάρας τοὺς ὀφθαλμοὺς αὐτοῦ εἰς τὸν οὐρανὸν εἶπεν</i>, ao passo que o Textus Receptus emprega <i>ἐπῆρεν</i> e insere <i>καὶ</i> antes de <i>εἶπεν</i>. O SBLGNT traz <i>ἵνα ὁ υἱὸς δοξάσῃ</i>, enquanto o Textus Receptus acrescenta <i>καὶ</i> e <i>σου</i> (<i>ἵνα καὶ οἱ υἱὸς σου δοξάση</i>).</p><p><b>Síntese Exegética:</b> Jesus conclui o seu discurso aos discípulos e volve o olhar para o alto, reconhecendo que o momento supremo de sua paixão e exaltação é chegado, rogando ao Pai que glorifique o Filho para que a glória retorne à fonte divina.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "assim como lhe deste autoridade sobre toda carne, para que <i>a todos</i> os que lhe tens dado, a eles dê a vida eterna.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐξουσία</i> (exousia, Strong G1849) - autoridade, poder; <i>σάρξ</i> (sarx, Strong G4561) - carne, humanidade; <i>ζωή</i> (zōē, Strong G2222) - vida; <i>αἰώνιος</i> (aiōnios, Strong G166) - eterno, duradouro. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> No tocante à forma verbal, o SBLGNT traz <i>δώσῃ</i> (subjuntivo aoristo), enquanto o Textus Receptus, junto a outras testemunhas, apresenta <i>δώσει</i> (futuro).</p><p><b>Síntese Exegética:</b> A soberania do Filho estende-se sobre toda a humanidade, tendo por propósito conceder a vida eterna a todos aqueles que o Pai lhe confiou.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E a vida eterna é esta: que te conheçam a ti, o único Deus verdadeiro, e a quem enviaste, Jesus Cristo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>γινώσκω</i> (ginōskō, Strong G1097) - conhecer, reconhecer por experiência; <i>ἀληθινός</i> (alēthinos, Strong G228) - verdadeiro, genuíno; <i>θεός</i> (theos, Strong G2316) - Deus; <i>ἀποστέλλω</i> (apostellō, Strong G649) - enviar, despachar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus, exceto por minúcias ortográficas na conjugação de <i>γινώσκωσι</i> (SBLGNT) versus <i>γινωσκωσιν</i> (TR).</p><p><b>Síntese Exegética:</b> A essência da vida eterna não consiste em mera acumulação de dados teológicos, mas no relacionamento de profundo conhecimento salvífico com o Deus único e verdadeiro e com o Messias enviado.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Eu te glorifiquei na terra, tendo consumado a obra que me deste para fazer;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>δοξάζω</i> (doxazō, Strong G1392) - glorificar; <i>γῆ</i> (gē, Strong G1093) - terra; <i>ἔργον</i> (ergon, Strong G2041) - obra, labor; <i>τελειόω</i> (teleioō, Strong G5048) - aperfeiçoar, completar, consumar; <i>ποιέω</i> (poieō, Strong G4160) - fazer, realizar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz o particípio <i>τελειώσας</i>, enquanto o Textus Receptus utiliza o verbo finito no aoristo <i>ἐτελείωσα</i>.</p><p><b>Síntese Exegética:</b> Jesus declara a conclusão cabal da missão terrena que lhe fora outorgada pelo Pai, tendo manifestado a glória divina em seus atos e palavras.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "e agora, glorifica-me tu, ó Pai, contigo mesmo, com a glória que eu tinha junto de ti antes que o mundo existisse.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>δόξα</i> (doxa, Strong G1391) - glória, esplendor; <i>κόσμος</i> (kosmos, Strong G2889) - mundo, universo; <i>εἰμί</i> (eimi, Strong G1510) - ser, existir. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O Filho ora pedindo o reavivamento da glória pré-incriada e celestial que partilhava com o Pai na eternidade, antes da fundação do cosmos.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Manifestei o teu nome aos homens que do mundo me deste; eram teus, e tu mos deste, e têm guardado a tua palavra.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>φανερόω</i> (phaneroō, Strong G5319) - manifestar, tornar visível; <i>ὄνομα</i> (onoma, Strong G3686) - nome; <i>ἄνθρωπος</i> (anthrōpos, Strong G444) - homem, ser humano; <i>τηρέω</i> (tēreō, Strong G5083) - guardar, observar, custodiar; <i>λόγος</i> (logos, Strong G3056) - palavra, discurso. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a forma <i>ἔδωκάς</i> (com acento oxítono na última sílaba em algumas edições pelo tratamento proclítico/enclítico, mas grafado sem aumento silábico atípico em certas leituras), ao passo que o Textus Receptus grafa comumente com o augmento <i>δέδωκάς</i> em ambos os casos ou varia entre a forma reduplicada.</p><p><b>Síntese Exegética:</b> A revelação do caráter e da autoridade divina foi entregue aos discípulos tirados do mundo; eles pertenciam por direito ao Pai, foram dados ao Filho e demonstraram fidelidade guardando a palavra.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Agora já têm conhecido que tudo quanto me tens dado vem de ti;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>γινώσκω</i> (ginōskō, Strong G1097) - saber, conhecer; <i>πᾶς</i> (pas, Strong G3956) - todo, tudo; <i>παρά</i> (para, Strong G3844) - da parte de, junto de. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra [[<i>δέδωκάς</i>]] (embora o aparato note a variação com WH em <i>ἔδωκάς</i>) e o plural [[<i>εἰσιν</i>]], enquanto o Textus Receptus apresenta consistentemente <i>δέδωκας</i> e o singular <i>ἐστιν</i>.</p><p><b>Síntese Exegética:</b> Os discípulos alcançaram a plena percepção de que toda a autoridade, ensino e obra exercidos por Jesus originam-se diretamente do Pai.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "porque as palavras que me deste eu lhes tenho dado; e eles as receberam, e têm conhecido verdadeiramente que saí de ti, e creram que tu me enviaste.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ῥῆμα</i> (rhēma, Strong G4487) - palavra, dito; <i>λαμβάνω</i> (lambanō, Strong G2983) - receber, tomar; <i>ἀληθῶς</i> (alēthōs, Strong G230) - verdadeiramente; <i>ἐξέρχομαι</i> (exerchomai, Strong G1831) - sair, proceder de; <i>πιστεύω</i> (pisteuō, Strong G4100) - crer, confiar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἔδωκάς</i>, ao passo que o Textus Receptus registra a forma reduplicada <i>δέδωκάς</i>.</p><p><b>Síntese Exegética:</b> A transmissão da mensagem divina cumpriu-se fidedignamente; os discípulos acolheram os ensinamentos, reconheceram a origem divina de Jesus e firmaram sua fé no seu envio pelo Pai.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Eu rogo por eles; não rogo pelo mundo, mas por aqueles que me deste, porque são teus;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐρωτάω</i> (erōtaō, Strong G2065) - perguntar, rogar, suplicar; <i>κόσμος</i> (kosmos, Strong G2889) - mundo. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante relevante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O foco da intercessão sacerdotal de Jesus neste momento restringe-se aos seus discípulos, aqueles que pertencem ao Pai e foram dados ao Filho, diferenciando-os do mundo rebelde.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "e todas as minhas coisas são tuas, e as tuas coisas são minhas; e neles sou glorificado.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐμός</i> (emos, Strong G1699) - meu; <i>σός</i> (sos, Strong G4674) - teu; <i>δοξάζω</i> (doxazō, Strong G1392) - glorificar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A comunhão perfeita entre o Pai e o Filho implica a partilha integral de tudo o que possuem, refletindo-se e manifestando-se a glória de Cristo na vida dos crentes.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "E já não estou no mundo, mas eles estão no mundo, e eu vou para ti. Pai santo, guarda-os no teu nome, o qual me tens dado, a fim de que sejam um, assim como nós.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>κόσμος</i> (kosmos - Strong G2889), o mundo, o sistema humano apartado de Deus; <i>ἅγιος</i> (hagios - Strong G40), santo, consagrado; <i>τηρέω</i> (tereo - Strong G5083), guardar, conservar, vigiar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> No SBLGNT lê-se <i>αὐτοὶ</i>, enquanto o Textus Receptus apresenta <i>οὗτοι</i>. Outrossim, o SBLGNT registra <i>καθὼς</i>, ao passo que o Textus Receptus inclui <i>καὶ καθὼς</i> [[καθὼς / καὶ καθὼς]].</p><p><b>Síntese Exegética:</b> Jesus reconhece a sua partida iminente do cenário terreno, enquanto seus discípulos permanecerão nele. Ele confia-os diretamente ao Pai, intercedendo para que mantenham a unidade perfeita que reflete a comunhão eterna entre o Pai e o Filho.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Quando eu estava com eles, eu os guardava no teu nome, o qual me tens dado; e os protegi, e nenhum deles se perdeu, senão o filho da perdição, para que a Escritura se cumprisse.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>φυλάσσω</i> (fulasso - Strong G5442), guardar, proteger, vigiar; <i>ἀπώλεια</i> (apoleia - Strong G684), perdição, destruição; <i>γραφή</i> (graphe - Strong G1124), escrito, Escritura sagrada. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>αὐτῶν</i> e <i>ᾧ</i>, enquanto o Textus Receptus expande com <i>ἐν τῷ κόσμῳ</i> após <i>αὐτῶν</i> e utiliza <i>οὓς</i> em lugar de <i>ᾧ</i> [[αὐτῶν / αὐτῶν ἐν τῷ κόσμῳ; ᾧ / οὓς; καὶ / sem esta conjunção no TR]].</p><p><b>Síntese Exegética:</b> O Senhor relembra o cuidado zeloso exercido sobre os seus durante o seu ministério terreno. A exceção do filho da perdição evidencia o cumprimento soberano das Escrituras proféticas acerca da traição.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Mas agora vou para ti, e digo estas coisas no mundo, para que tenham a minha alegria completa em si mesmos.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>χαρά</i> (chara - Strong G5479), alegria, gozo; <i>πληρόω</i> (pleroo - Strong G4137), preencher, completar, tornar pleno; <i>λαλέω</i> (laleo - Strong G2980), falar, dizer. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT utiliza o pronome reflexivo <i>ἑαυτοῖς</i>, ao passo que o Textus Receptus apresenta o pronome pessoal <i>αὐτοῖς</i> [[ἑαυτοῖς / αὐτοῖς]].</p><p><b>Síntese Exegética:</b> Ao proferir estas palavras publicamente antes de sua partida, Jesus visa conferir aos discípulos a plenitude da alegria divina, sustentando-os espiritualmente em meio às oposições do mundo.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Eu lhes tenho dado a tua palavra, e o mundo os odiou, porque não são do mundo, assim como eu não sou do mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>λόγος</i> (logos - Strong G3056), palavra, mensagem; <i>μισέω</i> (miseo - Strong G3404), odiar, aborrecer. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A recepção da palavra divina opera uma descontinuidade radical entre os discípulos e o mundo. O ódio do sistema mundano decorre justamente dessa nova identidade celestial compartilhada com Cristo.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Não rogo que os tires do mundo, mas que os guardes do maligno.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐρωτάω</i> (erotao - Strong G2065), perguntar, rogar, pedir; <i>αἴρω</i> (airo - Strong G142), levantar, tirar, remover; <i>πονηρός</i> (poneros - Strong G4190), mau, perverso, o maligno. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A missão cristã ocorre no interior do mundo. Por isso, o pedido de Cristo não é pelo isolamento físico dos crentes, mas pela proteção espiritual contra as garras e influências do maligno.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Eles não são do mundo, assim como eu não sou do mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰμί</i> (eimi - Strong G1510), ser, existir; <i>κόσμος</i> (kosmos - Strong G2889), mundo. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT ordena a expressão como <i>οὐκ εἰμὶ ἐκ τοῦ κόσμου</i>, enquanto o Textus Receptus apresenta <i>ἐκ τοῦ κόσμου οὐκ εἰμὶ</i> [[οὐκ εἰμὶ ἐκ τοῦ κόσμου / ἐκ τοῦ κόσμου οὐκ εἰμὶ]].</p><p><b>Síntese Exegética:</b> Esta afirmação categórica reitera a origem espiritual dos discípulos. Eles pertencem à esfera de Deus, estando no mundo apenas como embaixadores temporários.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Santifica-os na verdade; a tua palavra é a verdade.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἁγιάζω</i> (hagiazo - Strong G37), santificar, consagrar, purificar; <i>ἀλήθεια</i> (aletheia - Strong G225), verdade, realidade. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἀληθείᾳ</i>, enquanto o Textus Receptus acrescenta o pronome possessivo <i>σου</i>, formando <i>ἀληθείᾳ σου</i> [[ἀληθείᾳ / ἀληθείᾳ σου]].</p><p><b>Síntese Exegética:</b> A santificação dos crentes não se dá por esforço autônomo, mas pela imersão na verdade divina, cuja expressão suprema e normativa é a própria palavra de Deus.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Assim como tu me enviaste ao mundo, também eu os enviei ao mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀποστέλλω</i> (apostello - Strong G649), enviar, despachar com uma missão. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A missão dos discípulos no mundo possui o mesmo padrão e autoridade da missão do próprio Filho enviado pelo Pai, estabelecendo um encargo apostólico contínuo.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "E por eles a mim mesmo santifico, para que também eles sejam santificados na verdade.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἑαυτοῦ</i> (heautou - Strong G1438), a si mesmo; <i>ἡγιασμένος</i> (hagiasmenos - Strong G37), santificado, consagrado. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a ordem <i>ὦσιν καὶ αὐτοὶ</i>, ao passo que o Textus Receptus apresenta <i>καὶ αὐτοὶ ὦσιν</i> [[ὦσιν καὶ αὐτοὶ / καὶ αὐτοὶ ὦσιν]].</p><p><b>Síntese Exegética:</b> A auto-consagração sacrificial de Cristo na cruz constitui o fundamento jurídico e espiritual que viabiliza a verdadeira santificação dos crentes.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "E não rogo somente por estes, mas também por aqueles que hão de crer em mim por meio da palavra deles,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>πιστεύω</i> (pisteuo - Strong G4100), crer, ter fé, confiar; <i>λόγος</i> (logos - Strong G3056), palavra, testemunho. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz o particípio presente <i>πιστευόντων</i>, enquanto o Textus Receptus emprega o particípio futuro <i>πιστευσοντων</i> [[πιστευόντων / πιστευσοντων]].</p><p><b>Síntese Exegética:</b> O escopo da intercessão sacerdotal de Cristo amplia-se para abraçar toda a igreja futura, alcançando a todos quantos crerão através do testemunho apostólico transmitido ao longo das gerações.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Para que todos sejam um, assim como tu, ó <i>P</i>áter, estás em mim e eu em ti, para que também eles estejam em nós, para que o mundo creia que tu me enviaste.",
+        "commentary": "<p><b>Análise Léxica:</b> ἵνα (hina) - conjunção, para que; πάντες (pantes) - adjetivo, todos; ἓν (hen) - numeral, um; ὦσιν (ōsin) - verbo, estejam; καθὼς (kathōs) - advérbio, assim como; σύ (sy) - pronome, tu; πάτερ (pater) - substantivo, pai; ἐν (en) - preposição, em; ἐμοὶ (emoi) - pronome, mim; ἀπέστειλας (apesteilas) - verbo, enviaste. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>πάτερ</i>, enquanto o aparato indica a variante <i>πατὴρ</i> em Treg. Em relação a <i>ἡμῖν</i>, o SBLGNT registra sem acréscimo, ao passo que o Textus Receptus e o RP trazem <i>ἡμῖν ἓν</i>. Quanto ao verbo, o SBLGNT usa <i>πιστεύῃ</i> (subjuntivo presente), enquanto o Textus Receptus e RP trazem <i>πιστεύσῃ</i> (subjuntivo aoristo).</p><p><b>Síntese Exegética:</b> A unidade pedida por Jesus para os discípulos reflete a comunhão perfeita entre o Pai e o Filho, servindo como testemunho vivo e convincente para que o mundo reconheça a origem divina do envio do Messias.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "E eu lhes tenho dado a glória que me tens dado, para que sejam um, assim como nós <i>somos</i> um.",
+        "commentary": "<p><b>Análise Léxica:</b> κἀγὼ (kagō) - conjunção/pronome, e eu; τὴν (tēn) - artigo, a; δόξαν (doxan) - substantivo, glória; δέδωκάς (dedōkas) - verbo, tens dado; μοι (moi) - pronome, a mim; αὐτοῖς (autois) - pronome, a eles; ὦσιν (ōsin) - verbo, sejam; ἡμεῖς (hēmeis) - pronome, nós; ἕν (hen) - numeral, um. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e a maioria dos críticos estabelecem <i>ἕν</i> no final da oração, enquanto o Textus Receptus e a tradição bizantina (RP) acrescentam <i>ἐσμεν</i>, formando <i>ἡμεῖς ἕν ἐσμεν</i>.</p><p><b>Síntese Exegética:</b> A glória concedida aos crentes não é meramente um atributo estético, mas a participação na própria vida e presença divina, fundamentando a unidade espiritual da comunidade da fé à imagem da Trindade.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Eu neles e tu em mim, para que sejam aperfeiçoados em um, para que o mundo conheça que tu me enviaste e que os amaste assim como a mim me amaste.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐγὼ (egō) - pronome, eu; αὐτοῖς (autois) - pronome, neles; σὺ (sy) - pronome, tu; ἐμοί (emoi) - pronome, mim; τετελειωμένοι (teteleiōmenoi) - particípio, aperfeiçoados; εἰς (eis) - preposição, em/para; γινωσκη (ginōskē) - verbo, conheça; ἠγάπησας (ēgapēsas) - verbo, amaste. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz simplesmente <i>ἵνα γινώσκῃ</i>, enquanto a tradição do Textus Receptus e RP insere a conjunção <i>καὶ</i> antes de <i>ἵνα</i>, resultando em <i>καὶ ἵνα γινώσκῃ</i>.</p><p><b>Síntese Exegética:</b> A consumação da obra de Cristo nos crentes resulta em uma maturidade espiritual comunitária, evidenciada pelo amor recíproco que espelha o amor incomparável do Pai pelo Filho e pelos seus.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "P<i>á</i>ter, aquilo que me tens dado, quero que onde eu estiver também eles estejam comigo, para que vejam a minha glória que me tens dado, porque me amaste antes da fundação do mundo.",
+        "commentary": "<p><b>Análise Léxica:</b> πάτερ (pater) - substantivo, pai; δέδωκάς (dedōkas) - verbo, tens dado; θέλω (thelō) - verbo, quero; ὅπου (hopou) - advérbio, onde; εἰμὶ (eimi) - verbo, estou; θεωρῶσιν (theōrōsin) - verbo, vejam; δόξαν (doxan) - substantivo, glória; καταβολῆς (katabolēs) - substantivo, fundação. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Há variação no pronome relativo que designa os discípulos: o SBLGNT traz <i>ὃ</i> (singular neutro), enquanto o Textus Receptus e o RP trazem <i>οὕς</i> (plural masculino). No verbo referente à dádiva, o SBLGNT usa <i>δέδωκάς</i>, e o Textus Receptus usa <i>ἔδωκάς</i>.</p><p><b>Síntese Exegética:</b> O ponto culminante da intercessão sacerdotal de Cristo é a comunhão eterna dos remidos com o seu Senhor, contemplando a glória pré-mundana compartilhada na eternidade com o Pai.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "P<i>á</i>ter justo, o mundo de fato não te conheceu; mas eu te conheci, e estes conheceram que tu me enviaste.",
+        "commentary": "<p><b>Análise Léxica:</b> πάτερ (pater) - substantivo, pai; δίκαιε (dikaie) - adjetivo, justo; κόσμος (kosmos) - substantivo, mundo; ἔγνω (egnō) - verbo, conheceu; ἔγνων (egnōn) - verbo, conheci; ἔγνωσan (egnōsan) - verbo, conheceram; ἀπέστειλας (apesteilas) - verbo, enviaste. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta <i>Πάτερ</i>, com variação ortográfica de acentuação em alguns testigos registrados no aparato como <i>Πατὴρ</i> em Treg. O Textus Receptus concorda substancialmente com a base crítica principal.</p><p><b>Síntese Exegética:</b> A justiça de Deus sobressai na oposição do mundo cego à revelação divina, contrastando com o conhecimento íntimo e salvífico possuído pelo Filho e transmitido aos discípulos.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "E eu lhes fiz conhecido o teu nome e o farei conhecido, para que o amor com que me amaste esteja neles, e eu neles esteja.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐγνώρισα (egnōrisa) - verbo, fiz conhecido; ὄνοmatos/ὄνομά (onoma) - substantivo, nome; γνωρίσω (gnōrisō) - verbo, farei conhecido; ἀγάπη (agapē) - substantivo, amor; ἠγάπησας (ēgapēsas) - verbo, amaste; ᾖ (ē) - verbo, esteja. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo; ambas as edições registram o texto de modo idêntico quanto à estrutura e vocabulário.</p><p><b>Síntese Exegética:</b> A revelação plena do caráter e da identidade de Deus (o nome) inaugura a habitação mútua do próprio Cristo no crente, sustentada pelo poder do amor divino.</p>"
       }
     ]
   },
+  "in_progress": {},
   "history": [
     {
       "event": "redação e comentários provisórios preparados nesta conversa",
@@ -3424,428 +3807,92 @@
       "date": "2026-11-15"
     },
     {
-      "chapter": 6,
-      "verse_from": 41,
-      "verse_to": 50,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:15:33+00:00"
-    },
-    {
-      "chapter": 6,
-      "verse_from": 51,
-      "verse_to": 60,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:15:44+00:00"
-    },
-    {
-      "chapter": 6,
-      "verse_from": 61,
-      "verse_to": 70,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:15:52+00:00"
-    },
-    {
-      "chapter": 6,
-      "verse_from": 71,
-      "verse_to": 71,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:15:55+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:16:19+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 11,
-      "verse_to": 20,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:16:50+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 21,
-      "verse_to": 25,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:18:35+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 26,
-      "verse_to": 30,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:07+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 31,
-      "verse_to": 35,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:24+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 36,
-      "verse_to": 40,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:32+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 41,
-      "verse_to": 45,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:41+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 46,
-      "verse_to": 50,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:46+00:00"
-    },
-    {
-      "chapter": 7,
-      "verse_from": 51,
-      "verse_to": 53,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:19:51+00:00"
-    },
-    {
-      "chapter": 8,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:20:16+00:00"
-    },
-    {
-      "chapter": 8,
+      "chapter": 15,
       "verse_from": 11,
       "verse_to": 20,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:20:33+00:00"
+      "generated_at_utc": "2026-11-17T05:37:13+00:00"
     },
     {
-      "chapter": 8,
+      "chapter": 15,
       "verse_from": 21,
-      "verse_to": 30,
+      "verse_to": 27,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:20:43+00:00"
+      "generated_at_utc": "2026-11-17T05:37:27+00:00"
     },
     {
-      "chapter": 8,
-      "verse_from": 31,
-      "verse_to": 40,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:20:50+00:00"
-    },
-    {
-      "chapter": 8,
-      "verse_from": 41,
-      "verse_to": 50,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:21:26+00:00"
-    },
-    {
-      "chapter": 8,
-      "verse_from": 51,
-      "verse_to": 59,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:21:34+00:00"
-    },
-    {
-      "chapter": 9,
+      "chapter": 16,
       "verse_from": 1,
       "verse_to": 10,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:22:32+00:00"
+      "generated_at_utc": "2026-11-17T05:37:44+00:00"
     },
     {
-      "chapter": 9,
-      "verse_from": 11,
-      "verse_to": 20,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:23:01+00:00"
-    },
-    {
-      "chapter": 9,
-      "verse_from": 21,
-      "verse_to": 30,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:23:59+00:00"
-    },
-    {
-      "chapter": 9,
-      "verse_from": 31,
-      "verse_to": 40,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:24:49+00:00"
-    },
-    {
-      "chapter": 9,
-      "verse_from": 41,
-      "verse_to": 41,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:25:25+00:00"
-    },
-    {
-      "chapter": 10,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:25:31+00:00"
-    },
-    {
-      "chapter": 10,
-      "verse_from": 11,
-      "verse_to": 20,
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b",
-      "generated_at_utc": "2026-11-17T05:26:38+00:00"
-    },
-    {
-      "chapter": 10,
-      "verse_from": 21,
-      "verse_to": 30,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:27:45+00:00"
-    },
-    {
-      "chapter": 10,
-      "verse_from": 31,
-      "verse_to": 40,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:27:58+00:00"
-    },
-    {
-      "chapter": 10,
-      "verse_from": 41,
-      "verse_to": 42,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:28:03+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:28:14+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 11,
-      "verse_to": 20,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:28:25+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 21,
-      "verse_to": 30,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:28:39+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 31,
-      "verse_to": 40,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:29:01+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 41,
-      "verse_to": 50,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:30:04+00:00"
-    },
-    {
-      "chapter": 11,
-      "verse_from": 51,
-      "verse_to": 57,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:30:15+00:00"
-    },
-    {
-      "chapter": 12,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:30:27+00:00"
-    },
-    {
-      "chapter": 12,
+      "chapter": 16,
       "verse_from": 11,
       "verse_to": 15,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:30:55+00:00"
+      "generated_at_utc": "2026-11-17T05:38:09+00:00"
     },
     {
-      "chapter": 12,
+      "chapter": 16,
       "verse_from": 16,
       "verse_to": 20,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:31:00+00:00"
+      "generated_at_utc": "2026-11-17T05:38:21+00:00"
     },
     {
-      "chapter": 12,
+      "chapter": 16,
       "verse_from": 21,
       "verse_to": 25,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:31:13+00:00"
+      "generated_at_utc": "2026-11-17T05:38:35+00:00"
     },
     {
-      "chapter": 12,
+      "chapter": 16,
       "verse_from": 26,
       "verse_to": 30,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:31:21+00:00"
+      "generated_at_utc": "2026-11-17T05:38:45+00:00"
     },
     {
-      "chapter": 12,
+      "chapter": 16,
       "verse_from": 31,
-      "verse_to": 35,
+      "verse_to": 33,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:31:29+00:00"
+      "generated_at_utc": "2026-11-17T05:38:55+00:00"
     },
     {
-      "chapter": 12,
-      "verse_from": 36,
-      "verse_to": 40,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:32:16+00:00"
-    },
-    {
-      "chapter": 12,
-      "verse_from": 41,
-      "verse_to": 45,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:32:36+00:00"
-    },
-    {
-      "chapter": 12,
-      "verse_from": 46,
-      "verse_to": 50,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:32:52+00:00"
-    },
-    {
-      "chapter": 13,
+      "chapter": 17,
       "verse_from": 1,
       "verse_to": 10,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:33:09+00:00"
+      "generated_at_utc": "2026-11-17T05:39:11+00:00"
     },
     {
-      "chapter": 13,
+      "chapter": 17,
       "verse_from": 11,
       "verse_to": 20,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:33:24+00:00"
+      "generated_at_utc": "2026-11-17T05:39:33+00:00"
     },
     {
-      "chapter": 13,
+      "chapter": 17,
       "verse_from": 21,
-      "verse_to": 30,
+      "verse_to": 26,
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:33:42+00:00"
-    },
-    {
-      "chapter": 13,
-      "verse_from": 31,
-      "verse_to": 38,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:33:57+00:00"
-    },
-    {
-      "chapter": 14,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:34:13+00:00"
-    },
-    {
-      "chapter": 14,
-      "verse_from": 11,
-      "verse_to": 20,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:34:54+00:00"
-    },
-    {
-      "chapter": 14,
-      "verse_from": 21,
-      "verse_to": 30,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:35:06+00:00"
-    },
-    {
-      "chapter": 14,
-      "verse_from": 31,
-      "verse_to": 31,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:35:15+00:00"
-    },
-    {
-      "chapter": 15,
-      "verse_from": 1,
-      "verse_to": 10,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T05:35:34+00:00"
+      "generated_at_utc": "2026-11-17T05:39:45+00:00"
     }
   ],
   "sources": {
