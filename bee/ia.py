@@ -484,7 +484,8 @@ class MotorIA:
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
                     return self.testar_ligacao()
-                self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
+                # Provedor sem chave (nível anónimo): só há uma tentativa.
+                self._indice_chave = (self._indice_chave + 1) % max(1, len(self._chaves))
                 ultimo = exc
                 continue
             return self._extrair(resposta)
@@ -563,7 +564,8 @@ class MotorIA:
                     # pode ainda responder, sem gastar as tentativas restantes.
                     return self._requisicao(mensagem)
                 # Rode a chave: pode ser quota individual ou chave revogada.
-                self._indice_chave = (self._indice_chave + 1) % len(self._chaves)
+                # Num provedor sem chave não há nada a rodar.
+                self._indice_chave = (self._indice_chave + 1) % max(1, len(self._chaves))
                 ultimo = exc
                 if isinstance(exc, CotaExcedida) or 'HTTP 401' in str(exc) or 'HTTP 403' in str(exc):
                     continue
