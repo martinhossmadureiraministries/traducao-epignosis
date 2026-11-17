@@ -412,16 +412,31 @@ def _status(args: argparse.Namespace, dados: Path) -> int:
     dados_livros = ler_todos(dados)
     feitos = sum(len(item['chapters']) for item in dados_livros.values())
     versos = sum(len(v) for item in dados_livros.values() for v in item['chapters'].values())
+    em_curso = sum(len(item.get('in_progress', {})) for item in dados_livros.values())
+    versos_guardados = versos + sum(
+        len(v) for item in dados_livros.values()
+        for v in item.get('in_progress', {}).values()
+    )
     print(f'{ROTULO} — progresso')
     print(f'Capítulos estruturalmente completos: {feitos}/1189')
-    print(f'Versículos nos capítulos completos: {versos}/31102')
+    print(f'Versículos guardados (inclui capítulos em curso): {versos_guardados}/31102')
+    if em_curso:
+        print(f'Capítulos em curso (parciais, já guardados): {em_curso}')
     if feitos:
-        print(f'Falta: {1189 - feitos} capítulos e {31102 - versos} versículos.')
+        print(f'Falta: {1189 - feitos} capítulos e {31102 - versos_guardados} versículos.')
     for livro in LIVROS:
         item = dados_livros.get(livro.numero, {})
         completos = len(item.get('chapters', {}))
-        if completos:
-            print(f'  {livro.numero:03d}  {livro.nome:<22} {completos:3d}/{livro.capitulos}')
+        parciais = item.get('in_progress', {})
+        if completos or parciais:
+            detalhe = f'{completos:3d}/{livro.capitulos}'
+            if parciais:
+                pedacos = ', '.join(
+                    f'{cap}: {len(versos_cap)}'
+                    for cap, versos_cap in sorted(parciais.items(), key=lambda par: int(par[0]))
+                )
+                detalhe += f' (+ {len(parciais)} em curso; versículos guardados: {pedacos})'
+            print(f'  {livro.numero:03d}  {livro.nome:<22} {detalhe}')
     estado = carregar_estado(dados / '.bee' / 'estado.json')
     if estado.ciclos:
         print(f'Autopiloto: {estado.ciclos} ciclos; {estado.versos_total} versículos gerados; '
