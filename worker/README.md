@@ -2,14 +2,14 @@
 
 Produção contínua da Bíblia de Estudo Epignósis com modelos Mistral, num
 deployment gerenciado da Mistral: depois de iniciada, a execução corre sozinha,
-commita cada fatia no ramo `bee-dados` e publica os módulos MyBible na release
+commita cada fatia no `main` e publica os módulos MyBible na release
 `bee-previa` — sem depender do computador de ninguém.
 
 ## Como funciona
 
 Cada iteração (fatia) é uma atividade:
 
-1. Baixa os JSON de `livros_json/` do ramo de dados (`bee-dados`, com recurso
+1. Baixa os JSON de `livros_json/` do ramo de dados (o `main`, com recurso
    ao `main` quando o ramo ainda não tem ficheiros).
 2. Gera um orçamento de versículos (`versos_por_fatia`) com o gerador existente
    (`gerar_fatia`), que consulta as fontes fixadas (WLC/OSHB, SBLGNT, Textus
@@ -61,7 +61,7 @@ Query `estado` devolve `{"parar": bool, "orientacoes_pendentes": bool}`.
 ## Requisitos do deployment
 
 - **Secret do workspace** `GITHUB_TOKEN`: token fino do GitHub com permissão
-  `contents: write` sobre este repositório (criar/atualizar o ramo `bee-dados`,
+  `contents: write` sobre este repositório (criar/atualizar o `main`,
   commitar módulos em `entregas/` e publicar a release). Vincular ao deployment
   como secret do workspace; o valor nunca vai para o código nem para o Git.
 - `MISTRAL_API_KEY` não é precisa: no deployment o worker autentica-se com o

@@ -1,6 +1,6 @@
 # Estado do projeto — 17/11/2026
 
-> Etapa 1 no PR **#32** (`arena/e4c173dc-traducao-epignosis`).
+> Etapas 1 e 2 no PR **#32**, já integrado no `main` em 17/11/2026.
 
 Este ficheiro é o **ponto único de verdade** sobre o que está feito, o que está
 a meio e o que falta. O `PLANO_ORGANIZACAO.md` explica o diagnóstico e as
@@ -98,12 +98,11 @@ relatório sem módulos.
   (têm de ficar iguais). Enquanto isso, o job continua com 50 min, mas o
   `nuvem.py` pára aos 11 min.
 - O `SIGTERM` num cancelamento real.
-- O cron: continuam a existir **0 execuções `schedule`** desde a criação do
-  workflow. O ficheiro está `active`, o `on.schedule` está no `main` e o
-  repositório não está inativo. Hipótese principal: o agendador do GitHub
-  ainda não registou o workflow ou a conta/organização tem uma política que o
-  impede. A verificação prática é, depois do merge, correr uma vez à mão e
-  confirmar se aparece uma execução `schedule` no ciclo seguinte.
+- O cron: **passou a disparar**. A execução `44106329613` (evento `schedule`)
+  arrancou às 14:43 UTC de 17/11, antes do merge, por isso ainda usou o código
+  antigo e o `bee-dados`; foi deixada terminar/cancelar na UI (a API recusa
+  `cancel` com 403). A execução seguinte, já sobre o novo `main`, é a validação
+  que falta.
 
 ### Como desativar o workflow
 
@@ -157,7 +156,12 @@ A API recusou `gh workflow disable` com **HTTP 403** (a integração não tem
 
 O utilizador autorizou apagar os ramos desnecessários e ficar apenas com o
 ramo de trabalho e o `main`. A lista e o resultado ficam registados abaixo
-(ver “Ramos apagados”).
+### Ramos apagados
+
+Ficaram apenas **`main`** e **`arena/e4c173dc-traducao-epignosis`**. Foram
+apagados 20 ramos: 15 `arena/*` antigos, 4 `vibe/*` e o `bee-dados`. Antes de
+apagar o `bee-dados`, foi criada a etiqueta **`arquivo-bee-dados-2026-11-17`**,
+que preserva os 18 capítulos/766 versículos.
 
 ## Próximas etapas
 
