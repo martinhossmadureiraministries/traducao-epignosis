@@ -1,6 +1,21 @@
-# Correção definitiva da produção automática
+# Correção da produção automática
 
-**Estado:** no `main`. Nada a mudar nos segredos. Se já copiou o workflow antes, copie-o outra vez (mudaram duas variáveis).
+**Estado:** no `main`. Nada a mudar nos segredos. **Copie o workflow outra vez** (mudou a janela horária e as versões das ações).
+
+## Execução de 17/11 (04:17) — verde em 9 s, zero versículos
+
+Não era avaria: a **janela de produção** é 05:00–23:00 em Luanda, e o cron
+corre também de madrugada. O programa adormecia, mas o resumo não o dizia — daí
+parecer que algo estava errado. Agora:
+
+- o resumo escreve `a aguardar a janela diária — agora são 04:17 em
+  Africa/Luanda, fora de 05:00–23:00; retoma às 05:00, daqui a 0h43`;
+- o workflow verifica a janela **antes** de arrancar (em UTC) e, fora dela,
+  termina de imediato sem gastar minutos de Actions;
+- `BEE_JANELA=0` desliga a janela interna do Python, para não haver duas réguas
+  (UTC no workflow, Luanda no programa);
+- as ações passaram a versões em Node 24 (`checkout@v7`, `setup-python@v7`,
+  `cache@v6`, `upload-artifact@v7`), terminando o aviso de depreciação.
 
 ## Execução de 16/11 (16:42) — o que falhou
 
@@ -38,13 +53,20 @@ Progresso: 5/1189 capítulos completos, 203/31102 versículos guardados
 7..12 guardados, sem <div> nos ficheiros
 ```
 
-**100 testes automáticos** passam (12 novos reproduzem exatamente estes erros).
+**102 testes automáticos** passam (14 novos reproduzem estes erros, incluindo o
+resumo fora da janela).
 
 ## O que fazer agora (2 minutos)
 
-1. **Atualize o workflow** — `modelos/bee-autopiloto.yml` → *Raw* → copiar → `.github/workflows/bee-autopiloto.yml` → editar → colar → *Commit changes* em `main`. Mudou: `BEE_LOTE` 8→6, `BEE_TENTATIVAS_CICLO` 1→8, `BEE_ESPERA_ENTRE_TENTATIVAS` 20.
-2. **Actions → BEE — produção automática → Run workflow** (campo *modelo* **vazio**).
+1. **Atualize o workflow** — `modelos/bee-autopiloto.yml` → *Raw* → copiar → `.github/workflows/bee-autopiloto.yml` → editar → colar → *Commit changes* em `main`.
+   Mudou: janela em UTC (`BEE_HORA_INICIO=4`, `BEE_HORA_FIM=22`, `BEE_JANELA=0`),
+   passo de verificação da janela, `BEE_LOTE=6`, `BEE_TENTATIVAS_CICLO=8` e as
+   versões das ações.
+2. **Actions → BEE — produção automática → Run workflow** (campo *modelo* **vazio**). Uma execução manual produz a **qualquer hora** — a janela só se aplica ao cron.
 3. O resumo deve dizer `Ação: gerado — João 5` e o `BEE-modulos.zip` aparece em *Artifacts*.
+
+Se correr o cron de madrugada verá `Fora da janela (03 UTC): a produção retoma
+às 04:00 UTC` e mais nada — é o comportamento correto, não uma falha.
 
 Se o Gemini estiver mesmo em baixo, o resumo diz "não precisa de fazer nada" e o ciclo de 15 minutos retoma sozinho — mas agora, quando um dos dois provedores responde, alguma coisa é sempre guardada.
 
