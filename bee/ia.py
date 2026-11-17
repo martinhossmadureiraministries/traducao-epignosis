@@ -493,6 +493,13 @@ class MotorIA:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
                     # Modelo retirado ou inexistente: não gasta mais tentativas nele.
                     return self._requisicao(mensagem)
+                if 'HTTP 413' in str(exc):
+                    # Pedido maior do que o serviço aceita. Aconteceu com o
+                    # lote de 10 na Groq: 413 e o provedor dado como perdido.
+                    raise RespostaTruncada(
+                        f'{self.provedor}: pedido demasiado grande (HTTP 413); '
+                        'a reduzir o lote.'
+                    ) from exc
                 if isinstance(exc, ServicoIndisponivel) and self._proximo_modelo('HTTP 5xx'):
                     # Um modelo específico em baixo (503) não deve condenar o
                     # provedor inteiro: outro modelo do mesmo serviço pode

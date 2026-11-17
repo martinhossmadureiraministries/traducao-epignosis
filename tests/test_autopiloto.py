@@ -519,6 +519,39 @@ class IndisponibilidadeTest(Base):
         self.assertTrue((self.saida / 'BEE.SQLite3').exists())
         self.assertIsNotNone(resultado.resumo_compilacao)
 
+    def test_compila_mesmo_quando_o_ciclo_termina_mal(self):
+        """17/11: o ciclo 3 morreu e 9 capítulos completos não chegaram ao MyBible.
+
+        A condição antiga (`acao != 'gerado'`) impedia a compilação quando o
+        ciclo terminava como 'nada' — que é exactamente o que acontece depois
+        de falhar, com versículos já gravados no disco.
+        """
+        import nuvem
+        from bee.arquivos import novo_livro, salvar_livro
+        livro = LIVROS_POR_NUMERO[640]
+        dados = novo_livro(livro)
+        dados['chapters']['1'] = [
+            {'verse': n, 'text': f'Texto {n}.',
+             'commentary': '<p>Análise Léxica: a</p><p>Crítica Textual: b</p>'
+                           '<p>Síntese Exegética: c</p>'}
+            for n in range(1, 26)
+        ]
+        salvar_livro(self.dados / livro.nome_arquivo, dados, livro)
+
+        for acao in ('nada', 'parar'):
+            for ficheiro in self.saida.glob('*.SQLite3'):
+                ficheiro.unlink()
+
+            class Resultado:
+                resumo_compilacao = None
+
+            resultado = Resultado()
+            resultado.acao = acao
+            diario = type('D', (), {'escrever': staticmethod(lambda *a, **k: None)})()
+            resumo = nuvem._compilar_no_fim(resultado, self.dados, self.saida, diario)
+            self.assertIsNotNone(resumo, f'compilação perdida com acao={acao!r}')
+            self.assertTrue((self.saida / 'BEE.SQLite3').exists())
+
     def test_janela_desligada_produz_a_qualquer_hora(self):
         import nuvem
         with patch.dict(os.environ, {
