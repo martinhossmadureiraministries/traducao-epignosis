@@ -1,14 +1,14 @@
 {
   "ciclos": 1,
-  "criado_utc": "2026-11-17T03:26:18+00:00",
+  "criado_utc": "2026-11-17T04:30:40+00:00",
   "dias": {
     "2026-11-17": {
       "aberto": true,
-      "capitulos": 0,
+      "capitulos": 1,
       "falhas": 0,
       "fechado_em_utc": null,
-      "pedidos": 7,
-      "versos": 40
+      "pedidos": 8,
+      "versos": 41
     }
   },
   "exaustos": [],
@@ -18,9 +18,9 @@
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
-  "ultima_compilacao_build": null,
-  "ultima_compilacao_utc": null,
-  "ultimo_ciclo_utc": "2026-11-17T03:26:18+00:00",
+  "ultima_compilacao_build": "5ef2124682b24b339031812d68201f6b",
+  "ultima_compilacao_utc": "2026-11-17T04:35:04+00:00",
+  "ultimo_ciclo_utc": "2026-11-17T04:30:40+00:00",
   "ultimo_erro": null,
-  "versos_total": 40
+  "versos_total": 41
 }

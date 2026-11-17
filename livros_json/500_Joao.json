@@ -841,9 +841,7 @@
         "text": "Esse foi o segundo sinal que Jesus realizou quando voltou da Judeia para a Galileia.",
         "commentary": "<p><b>Análise léxica:</b> δεύτερος (deúteros, G1208) significa segundo; σημεῖον (sēmeîon, G4592), sinal ou indicação.</p><p><b>Crítica textual:</b> O SBLGNT inclui uma partícula de ligação que o Scrivener não traz no início da frase. O valor de ‘novamente’ e sua relação com a volta à Galileia são questões de interpretação da frase.</p><p><b>Síntese exegética:</b> O episódio é ligado ao primeiro sinal em Caná (2:11). Como João 2:23 também menciona sinais em Jerusalém, a designação ‘segundo’ não precisa significar que nenhum outro sinal tenha ocorrido entre os dois relatos.</p>"
       }
-    ]
-  },
-  "in_progress": {
+    ],
     "5": [
       {
         "verse": 1,
@@ -1074,6 +1072,215 @@
         "verse": 46,
         "text": "Porque, se crêveis em Moisés, crêveis <i>[[creríeis]]</i> em mim; pois a respeito de mim ele escreveu.",
         "commentary": "<p><b>Análise Léxica:</b> γὰρ (gar - conjunção, &quot;pois / porque&quot;, definição não verificada em léxico), ἐπιστεύετε (episteuete - verbo, &quot;crêveis / tínheis crido&quot;, definição não verificada em léxico), ἐμοί (emoi - pronome, &quot;a mim&quot;, definição não verificada em léxico), ἔγραψεν (egrapsen - verbo, &quot;escreveu&quot;, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz a grafia <i>Μωϋσεῖ</i>, ao passo que o Textus Receptus apresenta <i>μωση</i>. Tratando-se de uma variação na declinação/ortografia do nome de Moisés entre as fontes, mantém-se a tradução referencial unitária.</p><p><b>Síntese Exegética:</b> A aceitação genuína dos escritos mosaicos conduz inevitavelmente ao reconhecimento e à fé em Cristo, visto que toda a estrutura da Lei e dos Profetas aponta para a Sua pessoa e obra.</p>"
+      },
+      {
+        "verse": 47,
+        "text": "Se, porém, não credes nas <i>escritas</i> daquele, como crereis nas minhas <i>palavras</i>?",
+        "commentary": "<p><b>Análise Léxica</b><br>εἰ (ei) – “se”, conjunção condicional; <i>definição não verificada em léxico</i>.<br>δὲ (de) – “mas, porém”; <i>definição não verificada em léxico</i>.<br>τοῖς ἐκείνου γράμμασιν (tois ekeinou grammason) – “às cartas/dequelas escrituras daquele”; <i>definição não verificada em léxico</i>.<br>οὐ (ou) – “não”; <i>definição não verificada em léxico</i>.<br>πιστεύετε (pisteuete) – “crês, acreditas”; <i>definição não verificada em léxico</i>.<br>πῶς (pos) – “como”; <i>definição não verificada em léxico</i>.<br>τοῖς ἐμοῖς ῥήμασιν (tois emois rhēmasin) – “às minhas palavras”; <i>definição não verificada em léxico</i>.<br>πιστεύσετε (pisteusete) – “crereis”; <i>definição não verificada em léxico</i>.<br></p><p><b>Crítica Textual</b><br>Comparação entre SBLGNT e Textus Receptus: [[sem variante verificada]]; as diferenças são apenas de acentuação e pontuação, sem impacto no sentido.</p><p><b>Síntese Exegética</b><br>Jesus argumenta que a incredulidade nas palavras de Moisés (ou nas Escrituras judaicas) impossibilita a confiança em suas próprias declarações, revelando a continuidade e a autoridade das Escrituras que apontam para Ele.</p>"
+      }
+    ]
+  },
+  "in_progress": {
+    "6": [
+      {
+        "verse": 1,
+        "text": "Depois disso, Jesus partiu para além do mar da Galileia, da Tiberíade.",
+        "commentary": "<p><b>Análise Léxica</b>: Μετὰ (meta) – “depois de, após”; ταῦτα (tauta) – “isto”; ἀπῆλθεν (apēlthen) – “partiu”; ὁ Ἰησοῦς (ho Iēsous) – “Jesus”; πέραν (peran) – “para além de”; τῆς θαλάσσης (tēs thalassēs) – “do mar”; τῆς Γαλιλαίας (tēs Galilaias) – “da Galileia”; τῆς Τιβεριάδος (tēs Tiberiados) – “da Tiberíade”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: O evangelista indica que, concluída a narrativa anterior, Jesus se desloca para a região leste do mar da Galileia, preparando o cenário para o milagre da multiplicação.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Seguia‑lhe uma multidão numerosa, porque <i>viam</i> os sinais que ele fazia entre os enfermos.",
+        "commentary": "<p><b>Análise Léxica</b>: ἠκολούθει (ēkolouthē) – “seguia”; δὲ (de) – partícula adversativa; αὐτῷ (autō) – “a ele”; ὄχλος (ochlos) – “multidão”; πολύς (polys) – “numeroso”; ὅτι (hoti) – “porque”; ἐθεώρουν (etheōroun) – “viam”; τὰ (ta) – artigo; σημεῖα (sēmeia) – “sinais”; ἃ (ha) – “que”; ἐποίει (epoiei) – “fazia”; ἐπὶ (epi) – “entre”; τῶν (tōn) – artigo; ἀσθενούντων (asthenountōn) – “dos enfermos”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: diferença observada – SBLGNT tem [[ἠκολούθει δὲ]] enquanto Textus Receptus tem [[και ηκολουθει]]. Também [[ἐθεώρουν]] (SBLGNT) versus [[εωρων]] (TR). </p><p><b>Síntese Exegética</b>: O texto sublinha a grande quantidade de pessoas que acompanhavam Jesus, motivadas pela observação dos milagres praticados sobre os enfermos, indicando a crescente fama de seu ministério.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Então Jesus subiu ao monte, e ali se assentou com os seus discípulos.",
+        "commentary": "<p><b>Análise Léxica</b>: ἀνῆλθεν (anēlthen) – “subiu”; δὲ (de) – partícula; εἰς (eis) – “para”; τὸ ὄρος (to oros) – “o monte”; Ἰησοῦς (Iēsous) – “Jesus”; καὶ (kai) – “e”; ἐκεῖ (ekeí) – “ali”; ἐκάθητο (ekathēto) – “se assentou”; μετὰ (meta) – “com”; τῶν μαθητῶν (tōn mathētōn) – “dos discípulos”; αὐτοῦ (autou) – “dele”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: O evangelista descreve a ação deliberada de Jesus ao buscar um local elevado, onde, em companhia íntima de seus seguidores, poderia instruir e preparar o que se seguiria.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Estava próximo o Páscoa, a festa dos judeus.",
+        "commentary": "<p><b>Análise Léxica</b>: ἦν (ēn) – “estava”; δὲ (de) – partícula; ἐγγὺς (engys) – “próximo”; τὸ Πάσχα (to Pascha) – “a Páscoa”; ἡ ἑορτὴ (hē heorte) – “a festa”; τῶν Ἰουδαίων (tōn Ioudaion) – “dos judeus”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: A menção ao calendário judaico situa o relato no contexto da celebração pascal, preparando o leitor para o milagre da multiplicação dos pães, que ocorre justamente antes da festa.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Levantando, pois, os olhos, Jesus viu que uma grande multidão vinha ao seu encontro e disse a Filipe: <i>De onde compraremos pão para que estes comam?</i>",
+        "commentary": "<p><b>Análise Léxica</b>: ἐπάρας (eparas) – “levantando”; οὖν (oun) – “pois”; τοὺς ὀφθαλμοὺς (tous ophthalmoùs) – “os olhos”; ὁ Ἰησοῦς (ho Iēsous) – “Jesus”; καὶ (kai) – “e”; θεασάμενος (theasamenos) – “vendo”; ὅτι (hoti) – “que”; πολὺς (polys) – “grande”; ὄχλος (ochlos) – “multidão”; ἔρχεται (erchetai) – “vem”; πρὸς (pros) – “para”; αὐτὸν (auton) – “ele”; λέγει (legei) – “diz”; πρὸς Φίλιππον (pros Philippon) – “a Filipe”; Πόθεν (Pothen) – “de onde”; ἀγοράσωμεν (agorasōmen) – “compraremos”; ἄρτους (artos) – “pão”; ἵνα (hina) – “para que”; φάγωσιν (phagōsin) – “comam”; οὗτοι (houtoi) – “estes”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: diferenças observadas – SBLGNT tem [[τοὺς ὀφθαλμοὺς ὁ Ἰησοῦς]] enquanto TR tem [[τους οφθαλμους]]. Também [[πρὸς]] (SBLGNT) versus [[προς τον]] (TR) e [[ἀγοράσωμεν]] (SBLGNT) versus [[αγορασομεν]] (TR).</p><p><b>Síntese Exegética</b>: Ao perceber a enorme massa de seguidores, Jesus, em diálogo com Filipe, coloca a questão prática da alimentação, antecipando o milagre que demonstrará sua providência divina.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Ele dizia isso, tentando‑o; pois ele sabia o que estava para fazer.",
+        "commentary": "<p><b>Análise Léxica</b>: τοῦτο (touto) – “isto”; δὲ (de) – partícula; ἔλεγεν (elegen) – “dizia”; πειράζων (peirazōn) – “tentando”; αὐτόν (auton) – “ele”; αὐτὸς (autos) – “ele mesmo”; γὰρ (gar) – “pois”; ᾔδει (ēidei) – “sabia”; τί (ti) – “o que”; ἔμελλεν (emellen) – “estava para”; ποιεῖν (poiein) – “fazer”. definição não verificada em léxico.</p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b>: O versículo indica que a pergunta de Jesus não era meramente retórica, mas um teste de fé, revelando que ele já conhecia o milagre que iria realizar.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "<i>Respondeu-lhe Filipe: Duzentos denários de pão não bastam a eles, para que cada um deles receba um pouco.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>ἀπεκρίθη (apekríthē) – “respondeu”; <i>definição não verificada em léxico</i>. <br>αὐτῷ (autō) – “a ele”; <i>definição não verificada em léxico</i>. <br>Φίλιππος (Phílipos) – “Filipe”; <i>definição não verificada em léxico</i>. <br>διακοσίων (diakosíōn) – “duzentos”; <i>definição não verificada em léxico</i>. <br>δηνάριων (dēnáriōn) – “denários”; <i>definição não verificada em léxico</i>. <br>ἄρτοι (ártoi) – “pães”; <i>definição não verificada em léxico</i>. <br>οὐκ (ouk) – “não”; <i>definição não verificada em léxico</i>. <br>ἀρκοῦσιν (arkousin) – “bastam”; <i>definição não verificada em léxico</i>. <br>αὐτοῖς (autois) – “a eles”; <i>definição não verificada em léxico</i>. <br>ἕκαστος (hekastos) – “cada”; <i>definição não verificada em léxico</i>. <br>βραχύ (brachú) – “pouco”; <i>definição não verificada em léxico</i>. <br>τι (ti) – “algum”; <i>definição não verificada em léxico</i>. <br>λάβῃ (labē) – “receba”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: Filipe indica que o recurso financeiro disponível não seria suficiente para saciar a multidão, sublinhando a necessidade de um milagre que transcenda a mera quantidade material.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "<i>Respondeu-lhe um dos seus discípulos, André, irmão de Simão Pedro.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>λέγει (légei) – “diz”; <i>definição não verificada em léxico</i>. <br>αὐτῷ (autō) – “a ele”; <i>definição não verificada em léxico</i>. <br>εἷς (heîs) – “um”; <i>definição não verificada em léxico</i>. <br>ἐκ (ek) – “de”; <i>definição não verificada em léxico</i>. <br>τῶν (tōn) – “dos”; <i>definição não verificada em léxico</i>. <br>μαθητῶν (mathētōn) – “discípulos”; <i>definição não verificada em léxico</i>. <br>αὐτοῦ (autou) – “dele”; <i>definição não verificada em léxico</i>. <br>Ἀνδρέας (Andréas) – “André”; <i>definição não verificada em léxico</i>. <br>ὁ (ho) – artigo definido; <i>definição não verificada em léxico</i>. <br>ἀδελφὸς (adelphòs) – “irmão”; <i>definição não verificada em léxico</i>. <br>Σίμωνος (Simōnos) – “de Simão”; <i>definição não verificada em léxico</i>. <br>Πέτρου (Pétrou) – “Pedro”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: A iniciativa surge de André, revelando a disposição dos discípulos em participar do milagre, ao mesmo tempo que introduz a figura de Simão Pedro, futuro líder da igreja.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "<i>Hí havia um menino ali que tinha cinco pães de cevada e dois peixinhos; mas, que serviria isso a tantos?</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>Ἔστιν (éstin) – “há”; <i>definição não verificada em léxico</i>. <br>παιδάριον (paidárion) – “menino”; <i>definição não verificada em léxico</i>. <br>ὧδε (hōde) – “aqui”; <i>definição não verificada em léxico</i>. <br>ὃς (hōs) – “que”; <i>definição não verificada em léxico</i>. <br>ἔχει (échei) – “tem”; <i>definição não verificada em léxico</i>. <br>πέντε (pénte) – “cinco”; <i>definição não verificada em léxico</i>. <br>ἄρτους (ártoūs) – “pães”; <i>definição não verificada em léxico</i>. <br>κριθίνους (krithínous) – “de cevada”; <i>definição não verificada em léxico</i>. <br>καὶ (kaí) – “e”; <i>definição não verificada em léxico</i>. <br>δύο (dýo) – “dois”; <i>definição não verificada em léxico</i>. <br>ὀψάρια (opsária) – “peixinhos”; <i>definição não verificada em léxico</i>. <br>ἀλλὰ (allà) – “mas”; <i>definição não verificada em léxico</i>. <br>ταῦτα (taûta) – “isto”; <i>definição não verificada em léxico</i>. <br>τί (tí) – “que”; <i>definição não verificada em léxico</i>. <br>ἐστίν (estín) – “é”; <i>definição não verificada em léxico</i>. <br>εἰς (eis) – “para”; <i>definição não verificada em léxico</i>. <br>τοσούτους (tosóutois) – “tantos”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: O menino oferece o que parece insuficiente, mas o texto prepara o leitor para a demonstração do poder de Cristo ao multiplicar o alimento.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "<i>Disse Jesus: Fazei que os homens se assentem. Havia muita erva no lugar; assim, os homens se assentaram, cerca de cinco mil.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>εἶπεν (eípen) – “disse”; <i>definição não verificada em léxico</i>. <br>ὁ (ho) – artigo; <i>definição não verificada em léxico</i>. <br>Ἰησοῦς (Iēsoûs) – “Jesus”; <i>definição não verificada em léxico</i>. <br>Ποιήσατε (Poiḗsate) – “fazei”; <i>definição não verificada em léxico</i>. <br>τοὺς ἀνθρώπους (tous anthrṓpous) – “os homens”; <i>definição não verificada em léxico</i>. <br>ἀναπεσεῖν (anapesein) – “assentarem-se”; <i>definição não verificada em léxico</i>. <br>ἦν (ēn) – “havia”; <i>definição não verificada em léxico</i>. <br>δὲ (de) – “mas”; <i>definição não verificada em léxico</i>. <br>χόρτος (chórtos) – “erva”; <i>definição não verificada em léxico</i>. <br>πολύς (polýs) – “muito”; <i>definição não verificada em léxico</i>. <br>ἐν τῷ τόπῳ (en tōi tópōi) – “no lugar”; <i>definição não verificada em léxico</i>. <br>ἀνέπεσαν (anépesan) – “assentaram”; <i>definição não verificada em léxico</i>. <br>οὖν (oun) – “então”; <i>definição não verificada em léxico</i>. <br>οἱ ἄνδρες (hoi ándres) – “os homens”; <i>definição não verificada em léxico</i>. <br>τὸν ἀριθμὸν (tòn arithmòn) – “o número”; <i>definição não verificada em léxico</i>. <br>ὡς (hōs) – “cerca de”; <i>definição não verificada em léxico</i>. <br>πεντακισχίλιοι (pentakischílioi) – “cinco mil”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: Cristo ordena que a multidão se sente, preparando o cenário para a multiplicação dos pães, e indica a magnitude da multidão, reforçando o caráter público do milagre.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "<i>Tomou, pois, os pães, deu graças e os repartiu entre os que estavam assentados; da mesma sorte fez também com os peixes, quanto quiseram.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>ἔλαβεν (élaben) – “tomou”; <i>definição não verificada em léxico</i>. <br>οὖν (oun) – “pois”; <i>definição não verificada em léxico</i>. <br>τοὺς ἄρτους (tous ártoūs) – “os pães”; <i>definição não verificada em léxico</i>. <br>ὁ Ἰησοῦς (ho Iēsoûs) – “Jesus”; <i>definição não verificada em léxico</i>. <br>καὶ (kaí) – “e”; <i>definição não verificada em léxico</i>. <br>εὐχαριστήσας (eukharistēsas) – “dando graças”; <i>definição não verificada em léxico</i>. <br>διέδωκεν (diédōken) – “repartiu”; <i>definição não verificada em léxico</i>. <br>τοῖς ἀνακειμένοις (toîs anakeimenoîs) – “aos assentados”; <i>definição não verificada em léxico</i>. <br>ὁμοίως (homoíos) – “da mesma sorte”; <i>definição não verificada em léxico</i>. <br>καὶ (kaí) – “e”; <i>definição não verificada em léxico</i>. <br>ἐκ τῶν ὀψαρίων (ek tōn opsariōn) – “dos peixes”; <i>definição não verificada em léxico</i>. <br>ὅσον (hóson) – “quanto”; <i>definição não verificada em léxico</i>. <br>ἤθελον (ēthélon) – “queriam”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: O ato de agradecer antes de distribuir sublinha a gratidão de Cristo e a providência divina, enquanto a distribuição abundante demonstra o caráter sobrenatural do milagre.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "<i>Quando se encheram, disse aos seus discípulos: Reunam os pedaços que sobraram, para que nada se perca.</i>",
+        "commentary": "<p><b>Análise Léxica</b>: <br>ὡς (hōs) – “quando”; <i>definição não verificada em léxico</i>. <br>δὲ (de) – “então”; <i>definição não verificada em léxico</i>. <br>ἐνεπλήσθησαν (enepélsthēsan) – “se encheram”; <i>definição não verificada em léxico</i>. <br>λέγει (légei) – “diz”; <i>definição não verificada em léxico</i>. <br>τοῖς μαθηταῖς (toîs mathētaîs) – “aos discípulos”; <i>definição não verificada em léxico</i>. <br>αὐτοῦ (autou) – “dele”; <i>definição não verificada em léxico</i>. <br>συναγάγετε (synagágete) – “reúnam”; <i>definição não verificada em léxico</i>. <br>τὰ περισσεύσαντα (tà perisseúsanta) – “os que sobraram”; <i>definição não verificada em léxico</i>. <br>κλάσματα (klásmata) – “pedaços”; <i>definição não verificada em léxico</i>. <br>ἵνα (hína) – “para que”; <i>definição não verificada em léxico</i>. <br>μή (mē) – “não”; <i>definição não verificada em léxico</i>. <br>τι (ti) – “algo”; <i>definição não verificada em léxico</i>. <br>ἀπόληται (apólētai) – “se perca”; <i>definição não verificada em léxico</i>. </p><p><b>Crítica Textual</b>: sem variante verificada entre SBLGNT e Textus Receptus. </p><p><b>Síntese Exegética</b>: Cristo instrui a recolher os restos, enfatizando a importância de não desperdiçar o que já foi providenciado, sinal de cuidado e ordem no ministério.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "<i>Então</i> eles recolheram e encheram doze cestos de pedaços dos cinco pães de cevada que <i>haviam sobrado</i> aos que comeram.",
+        "commentary": "<p><b>Análise Léxica</b><br>συνήγαγον (sunēgagon) – “recolheram”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>ἐγέμισαν (egemisan) – “encheram”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>δώδεκα (dōdeka) – “doze”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>κοφίνους (kophinous) – “cestos”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>κλασμάτων (klasmatōn) – “pedaços”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>πέντε (pente) – “cinco”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>ἄρτων (arton) – “pães”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>κριθίνων (krithinōn) – “de cevada”, Strong <em>não verificado</em>, definição não verificada em léxico.<br>ἐπερίσσευσαν / ἐπερίσσευσεν – “sobraram”, Strong <em>não verificado</em>, definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: forma verbal <i>ἐπερίσσευσαν</i> (SBLGNT) versus <i>επερισσεεν</i> (TR). Variante observada: [[ἐπερίσσευσαν]] (SBLGNT) ≠ [[επερισσεεν]] (TR).</p><p><b>Síntese Exegética</b><br>Jesus demonstra providência ao multiplicar o alimento, deixando abundante sobra que evidencia o poder divino e a generosidade do <i>SENHOR</i> que provê além da necessidade humana.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "<i>Então</i> os homens, vendo <i>o que</i> ele fez como sinal, diziam: &quot;Este é verdadeiramente o profeta que vem ao mundo.&quot;",
+        "commentary": "<p><b>Análise Léxica</b><br>οἱ (hoi) – “os”, Strong <em>não verificado</em>.<br>ἄνθρωποι (anthrōpoi) – “homens”, Strong <em>não verificado</em>.<br>ἰδόντες (idontes) – “vendo”, Strong <em>não verificado</em>.<br>ὃ (ho) – “o que”, Strong <em>não verificado</em>.<br>ἐποίησεν (epoiesen) – “fez”, Strong <em>não verificado</em>.<br>σημεῖον (sēmeion) – “sinal”, Strong <em>não verificado</em>.<br>ἔλεγον (elegon) – “diziam”, Strong <em>não verificado</em>.<br>ὅτι (hoti) – “que”, Strong <em>não verificado</em>.<br>Οὗτός (Houtos) – “este”, Strong <em>não verificado</em>.<br>ἀληθῶς (alēthōs) – “verdadeiramente”, Strong <em>não verificado</em>.<br>προφήτης (prophētēs) – “profeta”, Strong <em>não verificado</em>.<br>ἐρχόμενος (erchomenos) – “que vem”, Strong <em>não verificado</em>.<br>κόσμον (kosmon) – “mundo”, Strong <em>não verificado</em>.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: SBLGNT tem ὃ ἐποίησεν σημεῖον, TR tem ο ἐποιησεν σημειον. Também TR inclui “Ιησους” antes de ἔλεγον, ausente no SBLGNT. Variante observada: [[ὃ ἐποίησεν σημεῖον]] ≠ [[ο ἐποιησεν σημειον]]; [[ἔλεγον]] (SBLGNT) vs [[ὁ Ἰησοῦς ἔλεγον]] (TR).</p><p><b>Síntese Exegética</b><br>A multidão reconhece em Jesus o cumprimento da profecia messiânica, atribuindo‑lhe autoridade divina ao observar o milagre como sinal providencial.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Jesus, percebendo que iam <i>vindo</i> para tomá‑lo e fazer‑lhe rei, retirou‑se novamente ao monte, só ele mesmo.",
+        "commentary": "<p><b>Análise Léxica</b><br>Ἰησοῦς (Iēsous) – “Jesus”, Strong <em>não verificado</em>.<br>γνοὺς (gnous) – “sabendo”, Strong <em>não verificado</em>.<br>ὅτι (hoti) – “que”, Strong <em>não verificado</em>.<br>μέλλουσιν (mellousin) – “irão”, Strong <em>não verificado</em>.<br>ἔρχεσθαι (erchesthai) – “vir”, Strong <em>não verificado</em>.<br>ἁρπάζειν (harpazein) – “apoderar‑se”, Strong <em>não verificado</em>.<br>αὐτὸν (auton) – “a ele”, Strong <em>não verificado</em>.<br>ποιήσωσιν (poiēsōsin) – “fazer”, Strong <em>não verificado</em>.<br>βασιλέα (basilea) – “rei”, Strong <em>não verificado</em>.<br>ἀνεχώρησεν (anechōrēsen) – “retirou‑se”, Strong <em>não verificado</em>.<br>πάλιν (palin) – “novamente”, Strong <em>não verificado</em>.<br>ὄρος (oros) – “monte”, Strong <em>não verificado</em>.<br>αὐτὸς (autos) – “ele mesmo”, Strong <em>não verificado</em>.<br>μόνος (monos) – “sozinho”, Strong <em>não verificado</em>.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: SBLGNT lê <i>ποιήσωσιν αὐτὸν</i>, TR tem <i>ποιησωσιν</i> (sem αὐτὸν). Também <i>πάλιν</i> aparece em SBLGNT, ausente no TR. Variante observada: [[ποιήσωσιν αὐτὸν]] (SBLGNT) ≠ [[ποιησωσιν]] (TR); [[πάλιν]] (SBLGNT) vs [[–]] (TR).</p><p><b>Síntese Exegética</b><br>Jesus, consciente da ambição humana de o proclamar rei, escolhe a solidão do monte, indicando que sua missão transcende o poder terreno.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Quando já era tarde, desceram os discípulos ao mar,",
+        "commentary": "<p><b>Análise Léxica</b><br>Ὡς (hōs) – “quando”, Strong <em>não verificado</em>.<br>δὲ (de) – “já”, Strong <em>não verificado</em>.<br>ὀψία (opsia) – “tarde”, Strong <em>não verificado</em>.<br>ἐγένετο (egeneto) – “foi”, Strong <em>não verificado</em>.<br>κατέβησαν (katebēsan) – “desceram”, Strong <em>não verificado</em>.<br>μαθηταὶ (mathētai) – “discípulos”, Strong <em>não verificado</em>.<br>αὐτοῦ (autou) – “dele”, Strong <em>não verificado</em>.<br>ἐπὶ (epi) – “sobre”, Strong <em>não verificado</em>.<br>τὴν (tēn) – artigo.<br>θάλασσαν (thalassan) – “mar”, Strong <em>não verificado</em>.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: sem variante verificada.</p><p><b>Síntese Exegética</b><br>Ao anoitecer, os discípulos seguem Jesus ao mar, preparando‑se para o próximo milagre que revelará novamente a soberania divina sobre as forças da natureza.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "e, subindo ao barco, atravessaram para o outro lado do mar, rumo a Cafarnaum; já havia escurecido, e <i>Jesus ainda não havia chegado</i> a eles.",
+        "commentary": "<p><b>Análise Léxica</b><br>καὶ (kai) – “e”, Strong <em>não verificado</em>.<br>ἐμβάντες (embantes) – “subindo”, Strong <em>não verificado</em>.<br>εἰς (eis) – “para”, Strong <em>não verificado</em>.<br>πλοῖον (ploion) – “barco”, Strong <em>não verificado</em>.<br>ἤρχοντο (ērchonto) – “atravessavam”, Strong <em>não verificado</em>.<br>πέραν (peran) – “além”, Strong <em>não verificado</em>.<br>τῆς (tēs) – artigo.<br>θαλάσσης (thalassēs) – “mar”, Strong <em>não verificado</em>.<br>εἰς (eis) – “para”, Strong <em>não verificado</em>.<br>Καφαρναούμ (Kapharnaoum) – “Cafarnaum”, Strong <em>não verificado</em>.<br>σκοτία (skotia) – “escuridão”, Strong <em>não verificado</em>.<br>ἤδη (ēdē) – “já”, Strong <em>não verificado</em>.<br>ἐγεγόνει (egegonei) – “tinha escurecido”, Strong <em>não verificado</em>.<br>οὔπω (oupō) – “ainda não”, Strong <em>não verificado</em>.<br>ἔληλυθει (elēluthē) – “chegado”, Strong <em>não verificado</em>.<br>πρὸς (pros) – “para”, Strong <em>não verificado</em>.<br>αὐτοὺς (autous) – “eles”, Strong <em>não verificado</em>.<br>Ἰησοῦς (Iēsous) – “Jesus”, Strong <em>não verificado</em>.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: SBLGNT contém <i>εἰς τὸ πλοῖον</i> (com artigo), TR tem <i>εις το πλοιον</i> (sem artigo). Também <i>οὔπω</i> (SBLGNT) versus <i>ουκ</i> (TR). Variante observada: [[εἰς τὸ πλοῖον]] (SBLGNT) ≠ [[εις το πλοιον]] (TR); [[οὔπω]] (SBLGNT) ≠ [[ουκ]] (TR).</p><p><b>Síntese Exegética</b><br>Os discípulos cruzam o mar rumo a Cafarnaum, mas a noite se adensa e Jesus ainda não se apresenta, preparando o cenário para o milagre da travessia sobre as águas.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "A <i>mar</i> estava <i>agitada por um vento muito forte</i>.",
+        "commentary": "<p><b>Análise Léxica</b><br>ἥ (hē) – artigo.<br>θάλασσα (thalassa) – “mar”, Strong <em>não verificado</em>.<br>ἀνέμου (anemou) – “de vento”, Strong <em>não verificado</em>.<br>μεγάλου (megalou) – “grande”, Strong <em>não verificado</em>.<br>πνέοντος (pneontos) – “soprando”, Strong <em>não verificado</em>.<br>διεγείρετο (diegeireto) – “estava agitada”, Strong <em>não verificado</em>.<br>διηγείρετο (diēgeireto) – variante do TR.</p><p><b>Crítica Textual</b><br>Comparação SBLGNT vs Textus Receptus: SBLGNT tem <i>διεγείρετο</i>, TR tem <i>διηγείρετο</i>. Variante observada: [[διεγείρετο]] (SBLGNT) ≠ [[διηγείρετο]] (TR).</p><p><b>Síntese Exegética</b><br>O mar, dominado por um vento violento, cria um ambiente de perigo que realçará a demonstração subsequente do poder de Cristo sobre as forças naturais.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "<i>Vendo‑os, pois, a cerca de duzentos e cinquenta ou trinta passos, observaram Jesus caminhando sobre o mar, aproximando‑se do barco, e ficaram atemorizados.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ἐληλακότες (elēlakótes) – particípio aoristo ativo, “tendo visto”. <i>definição não verificada em léxico</i>.<br>ὡς (hōs) – conjunção, “como, a cerca de”. <i>definição não verificada em léxico</i>.<br>σταδίους (stadíous) – substantivo masculino plural, “passos”. <i>definição não verificada em léxico</i>.<br>εἴκοσι (eíkosi) – numeral, “vinte”. <i>definição não verificada em léxico</i>.<br>πέντε (pénte) – numeral, “cinco”. <i>definição não verificada em léxico</i>.<br>τριάκοντα (triákonta) – numeral, “trinta”. <i>definição não verificada em léxico</i>.<br>θεωροῦντ(α)ι (theōroúntai) – verbo, “observam, veem”. <i>definição não verificada em léxico</i>.<br>Ἰησοῦν (Iēsoun) – nome próprio, “Jesus”. <i>definição não verificada em léxico</i>.<br>περιπατοῦντα (peripatounta) – particípio presente ativo, “caminhando”. <i>definição não verificada em léxico</i>.<br>ἐπὶ τῆς θαλάσσης (epi tēs thalássēs) – “sobre o mar”. <i>definição não verificada em léxico</i>.<br>ἐγγὺς (engús) – advérbio, “próximo”. <i>definição não verificada em léxico</i>.<br>πλοίου (ploiou) – genitivo singular, “do barco”. <i>definição não verificada em léxico</i>.<br>γινόμενον (ginómenon) – particípio presente médio, “tornando‑se, aproximando‑se”. <i>definição não verificada em léxico</i>.<br>ἐφοβήθησαν (ephobḗthēsan) – verbo aoristo passivo, “ficaram atemorizados”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>Comparação entre SBLGNT e Textus Receptus revela apenas diferença ortográfica em [[εληλακοτες vs ἐληλακότες]]. Não há variante substantiva; portanto, [[sem variante verificada]].</p><p><b>Síntese Exegética</b><br>Jesus caminha sobre as águas, aproximando‑se do barco dos discípulos; a multidão, ao vê‑Lo, sente temor, reconhecendo o milagre como algo extraordinário.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "<i>Ele lhes disse: Eu sou; não temais.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ὁ δὲ (ho de) – conjunção adversativa, “mas, porém”. <i>definição não verificada em léxico</i>.<br>λέγει (légei) – verbo presente ativo, “diz”. <i>definição não verificada em léxico</i>.<br>αὐτοῖς (autoîs) – dativo plural, “a eles”. <i>definição não verificada em léxico</i>.<br>Ἐγώ (Egṓ) – pronome pessoal, “eu”. <i>definição não verificada em léxico</i>.<br>εἰμι (eimi) – verbo “sou”. <i>definição não verificada em léxico</i>.<br>μὴ (mē) – partícula negativa, “não”. <i>definição não verificada em léxico</i>.<br>φοβεῖσθε (phobeîsthe) – verbo imperativo médio, “temais”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>Texto SBLGNT e Textus Receptus coincidem em todas as palavras; [[sem variante verificada]].</p><p><b>Síntese Exegética</b><br>Jesus se identifica como a presença divina (“Eu sou”) e tranquiliza a multidão, ordenando‑les que não temam.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "<i>Então quiseram levá‑Lo para o barco; e logo o barco se pôs sobre a terra a que estavam indo.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ἤθελον (ēthélon) – verbo aoristo ativo, “queriam”. <i>definição não verificada em léxico</i>.<br>οὖν (oun) – conjunção, “então”. <i>definição não verificada em léxico</i>.<br>λαβεῖν (labeîn) – infinitivo aoristo ativo, “levarem”. <i>definição não verificada em léxico</i>.<br>αὐτὸν (autòn) – acusativo singular, “Ele”. <i>definição não verificada em léxico</i>.<br>εἰς τὸ πλοῖον (eis tò ploîon) – “para o barco”. <i>definição não verificada em léxico</i>.<br>καὶ (kaì) – conjunção, “e”. <i>definição não verificada em léxico</i>.<br>εὐθέως (euthéōs) – advérbio, “imediatamente”. <i>definição não verificada em léxico</i>.<br>τὸ πλοῖον ἐγένετο (tò ploîon éngeto) – “o barco se pôs”. <i>definição não verificada em léxico</i>.<br>ἐπὶ τῆς γῆς (epi tēs gēs) – “sobre a terra”. <i>definição não verificada em léxico</i>.<br>εἰς ἣν ὑπῆγον (eis hēn hupēgón) – “para a qual levávamos”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>O aparato SBLGNT indica variante [[τὸ πλοῖον ἐγένετο]] versus [[τὸ πλοῖον]]; o Textus Receptus contém apenas “το πλοιον εγενετο”. Não há outra diferença significativa; portanto, [[sem variante verificada]] além da presença do artigo em ambas as fontes.</p><p><b>Síntese Exegética</b><br>Os discípulos desejam levar Jesus ao barco; ao fazê‑lo, o barco se estabiliza sobre a terra, sinalizando a cessação do perigo das ondas.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "<i>No dia seguinte, a multidão que estava à beira do mar viu que não havia outro barco senão um, e que Jesus não havia entrado no barco, mas somente os seus discípulos partiram.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>Τῇ ἐπαύριον (Tē epáurion) – “no dia seguinte”. <i>definição não verificada em léxico</i>.<br>ὁ ὄχλος (ho óchlos) – “a multidão”. <i>definição não verificada em léxico</i>.<br>ὁ ἑστηκὼς (ho hestēkōs) – particípio presente ativo, “que estava de pé”. <i>definição não verificada em léxico</i>.<br>πέραν τῆς θαλάσσης (péran tēs thalássēs) – “além do mar”. <i>definição não verificada em léxico</i>.<br>εἶδον (eîdon) – aoristo ativo, “viram”. <i>definição não verificada em léxico</i>.<br>ὅτι (hóti) – conjunção, “que”. <i>definição não verificada em léxico</i>.<br>πλοιάριον (ploiárion) – diminutivo de “barco”, “pequeno barco”. <i>definição não verificada em léxico</i>.<br>ἄλλο (állo) – adjetivo, “outro”. <i>definição não verificada em léxico</i>.<br>οὐκ ἦν (ouk ēn) – “não havia”. <i>definição não verificada em léxico</i>.<br>ἐκεῖ (ekeî) – advérbio, “lá”. <i>definição não verificada em léxico</i>.<br>εἰ μὴ ἕν (ei mē hé) – “senão um”. <i>definição não verificada em léxico</i>.<br>οὐ συνεισῆλθεν (ou syneisēlthen) – aoristo ativo, “não entrou”. <i>definição não verificada em léxico</i>.<br>τοῖς μαθηταῖς αὐτοῦ (toîs mathētais autoû) – “aos seus discípulos”. <i>definição não verificada em léxico</i>.<br>ὁ Ἰησοῦς (ho Iēsous) – “Jesus”. <i>definição não verificada em léxico</i>.<br>εἰς τὸ πλοῖον (eis tò ploîon) – “no barco”. <i>definição não verificada em léxico</i>.<br>ἀλλὰ μόνοι (allà mónoi) – “mas somente”. <i>definição não verificada em léxico</i>.<br>οἱ μαθηταὶ αὐτοῦ (hoi mathētai autoû) – “os seus discípulos”. <i>definição não verificada em léxico</i>.<br>ἀπῆλθον (apē̂lthon) – aoristo ativo, “partiram”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus são meramente ortográficas (ex.: εἶδον vs εἰδον). O aparato indica variantes de leitura (πλοιάριον vs πλοῖα) e de artigo (ἕν vs ἐκεῖνο). Como o texto fornecido já contém a forma “πλοιάριον”, registramos [[πλοιάριον vs πλοῖα]] como variante observada; porém, entre as edições apresentadas não há divergência explícita, logo [[sem variante verificada]].</p><p><b>Síntese Exegética</b><br>No dia seguinte, a multidão percebe que só havia um pequeno barco e que Jesus não entrou nele; apenas os discípulos deixaram o local, indicando que o Mestre permanecia na margem.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "<i>Mas chegou um barco de Tiberíades, próximo do lugar onde haviam agradecido o pão ao SENHOR.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ἀλλὰ (allà) – conjunção adversativa, “mas”. <i>definição não verificada em léxico</i>.<br>ἦλθεν (ēlthen) – aoristo ativo, “veio”. <i>definição não verificada em léxico</i>.<br>πλοιάρια (ploiária) – plural de “barco”. <i>definição não verificada em léxico</i>.<br>ἐκ Τιβεριάδος (ek Tiberíados) – “de Tiberíades”. <i>definição não verificada em léxico</i>.<br>ἐγγὺς (engús) – advérbio, “próximo”. <i>definição não verificada em léxico</i>.<br>τοῦ τόπου (toû tópou) – “do lugar”. <i>definição não verificada em léxico</i>.<br>ὅπου (hopou) – advérbio relativo, “onde”. <i>definição não verificada em léxico</i>.<br>ἔφαγον (éphagon) – aoristo ativo, “comeram”. <i>definição não verificada em léxico</i>.<br>τὸν ἄρτον (tòn árton) – “o pão”. <i>definição não verificada em léxico</i>.<br>εὐχαριστήσαντος (eukharistēsantos) – particípio aoristo ativo, “agradecendo”. <i>definição não verificada em léxico</i>.<br>τοῦ κυρίου (toû kyríou) – “do SENHOR”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>O aparato registra variante [[ἀλλὰ vs ἄλλα]] e [[πλοιάρια vs πλοῖα]]. As edições fornecidas apresentam “πλοιάρια”; não há divergência entre SBLGNT e Textus Receptus, portanto [[sem variante verificada]].</p><p><b>Síntese Exegética</b><br>Um barco vindo de Tiberíades se aproxima do local onde a multidão havia celebrado o milagre da multiplicação dos pães, reforçando a conexão entre o milagre anterior e o presente relato.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "<i>Quando a multidão viu que Jesus não estava ali, nem os seus discípulos, subiram ao barco e foram a Cafarnaum, buscando a Jesus.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ὅτε (hóte) – conjunção temporal, “quando”. <i>definição não verificada em léxico</i>.<br>οὖν (oun) – “então”. <i>definição não verificada em léxico</i>.<br>εἶδεν (eîden) – aoristo ativo, “vê”. <i>definição não verificada em léxico</i>.<br>ὁ ὄχλος (ho óchlos) – “a multidão”. <i>definição não verificada em léxico</i>.<br>ὅτι (hóti) – “que”. <i>definição não verificada em léxico</i>.<br>Ἰησοῦς (Iēsous) – “Jesus”. <i>definição não verificada em léxico</i>.<br>οὐκ ἔστιν (ouk éstin) – “não está”. <i>definição não verificada em léxico</i>.<br>ἐκεῖ (ekeî) – “ali”. <i>definição não verificada em léxico</i>.<br>οὐδὲ (oudè) – “nem”. <i>definição não verificada em léxico</i>.<br>οἱ μαθηταὶ αὐτοῦ (hoi mathētai autoû) – “os seus discípulos”. <i>definição não verificada em léxico</i>.<br>ἐνέβησαν (enébēsan) – aoristo ativo, “subiram”. <i>definição não verificada em léxico</i>.<br>αὐτοὶ (autoì) – pronome, “eles”. <i>definição não verificada em léxico</i>.<br>εἰς τὰ πλοιάρια (eis tà ploiária) – “para os barcos”. <i>definição não verificada em léxico</i>.<br>καὶ (kaì) – “e”. <i>definição não verificada em léxico</i>.<br>ἦλθον (ēlthon) – aoristo ativo, “foram”. <i>definição não verificada em léxico</i>.<br>εἰς Καφαρναοὺμ (eis Kapharnaoũm) – “a Cafarnaum”. <i>definição não verificada em léxico</i>.<br>ζητοῦντες (zētountes) – particípio presente ativo, “buscando”. <i>definição não verificada em léxico</i>.<br>τὸν Ἰησοῦν (tòn Iēsoun) – “a Jesus”. <i>definição não verificada em léxico</i>.</p><p><b>Crítica Textual</b><br>Comparação entre SBLGNT e Textus Receptus mostra apenas diferenças ortográficas (πλοιάρια vs πλοια). Não há divergência de conteúdo; [[sem variante verificada]].</p><p><b>Síntese Exegética</b><br>Ao perceber que Jesus e seus discípulos não estavam na margem, a multidão embarca nos barcos e se dirige a Cafarnaum, demonstrando a determinação em buscar o Mestre.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "<i>E, achando‑o além do mar, disseram‑lhe: Rabi, quando chegaste aqui?</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>εὑρόντες (heurontes) – gerúndio de εὑρίσκω, Strong G2149, “achar, encontrar”. definição não verificada em léxico.</li><li>αὐτὸν (auton) – pronome acusativo masc. sing., Strong G846, “ele, o”. definição não verificada em léxico.</li><li>πέραν (peran) – preposição, Strong G4012, “além, além de”. definição não verificada em léxico.</li><li>τῆς θαλάσσης (tēs thalassēs) – substantivo genitivo fem. sing., Strong G2329, “mar”. definição não verificada em léxico.</li><li>Ῥαββί (Rabi) – translit. “Rabi”, título de mestre.</li></ul></p><p><b>Crítica Textual</b><br>sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>Jesus é reconhecido pelos discípulos que o encontram fora da margem, indicando a expectativa messiânica e a necessidade de revelação pessoal.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "<i>Respondeu‑lhes Jesus e disse: Em verdade, em verdade vos digo, não me buscais porque vistes os sinais, mas porque comestes dos pães e vos saciastes.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>ἀπεκρίθη (apekrithē) – aoristo passivo de ἀποκρίνω, Strong G629, “responder”. definição não verificada em léxico.</li><li>Ἀμὴν ἀμὴν (amēn amēn) – “em verdade, em verdade”. definição não verificada em léxico.</li><li>λέγω (legō) – presente ativo, Strong G3004, “dizer”. definição não verificada em léxico.</li><li>ζητεῖτε (zēteite) – presente ativo, Strong G2210, “buscar”. definição não verificada em léxico.</li><li>σῆμα (sēma) – “sinal”. definição não verificada em léxico.</li><li>ἔφαγετε (ephagete) – aoristo ativo de τρώγω, Strong G5588, “comer”. definição não verificada em léxico.</li><li>ἐχορτάσθητε (echortasthēte) – aoristo passivo de χορτάζω, Strong G5535, “saciar”. definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual</b><br>sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>Jesus aponta que a motivação da multidão é a satisfação material, não a fé nos sinais divinos.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "<i>Trabalhai, não pela comida que perece, mas pela comida que permanece para a vida eterna, a qual o Filho do Homem vos dará; porque o Pai selou isso, o Deus.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>ἐργάζεσθε (ergazesthe) – presente médio de ἐργάζομαι, Strong G2040, “trabalhar”. definição não verificada em léxico.</li><li>βρῶσιν (brōsin) – acusativo singular de βρῶσις, Strong G1020, “comida”. definição não verificada em léxico.</li><li>ἀπολλυμένην (apollymenēn) – particípio futuro passivo, Strong G618, “que perece”. definição não verificada em léxico.</li><li>μένουσαν (menousan) – particípio presente ativo, Strong G3325, “que permanece”. definição não verificada em léxico.</li><li>ζωὴν αἰώνιον (zōēn aiōnion) – “vida eterna”. definição não verificada em léxico.</li><li>υἱὸς τοῦ ἀνθρώπου (huios tou anthrōpou) – “Filho do Homem”. definição não verificada em léxico.</li><li>σφραγισεν (sphragisen) – aoristo ativo de σφραγίζω, Strong G4675, “selar”. definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual</b><br>sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>Jesus contrasta o alimento temporário com o alimento espiritual que conduz à vida eterna, enfatizando a autoridade divina.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "<i>E lhe disseram: Que faremos para que possamos praticar as obras de Deus?</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>εἶπον (eipon) – aoristo ativo de λέγω, Strong G3004, “dizer”. definição não verificada em léxico.</li><li>τί (ti) – pronome interrogativo, Strong G5109, “que”. definição não verificada em léxico.</li><li>ποιῶμεν (poiōmen) – presente ativo de ποιέω, Strong G4183, “fazer”. definição não verificada em léxico.</li><li>ἔργα (erga) – acusativo plural de ἔργον, Strong G2041, “obras”. definição não verificada em léxico.</li><li>Θεοῦ (Theou) – genitivo de Θεός, Strong G2316, “Deus”. definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual</b><br>sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>A multidão busca a prática das obras divinas como caminho para a salvação.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "<i>Respondeu Jesus e disse-lhes: Esta é a obra de Deus, a saber, crer naquele a quem ele enviou.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>ἀπεκρίθη (apekrithē) – aoristo passivo de ἀποκρίνω, Strong G629, “responder”. definição não verificada em léxico.</li><li>ἔργον (ergon) – acusativo singular de ἔργον, Strong G2041, “obra”. definição não verificada em léxico.</li><li>πιστεύητε / πιστεύσητε (pisteuēte / pisteusēte) – presente ou futuro ativo de πιστεύω, Strong G4100, “crer”. definição não verificada em léxico.</li><li>ὃν (hon) – pronome relativo acusativo masc., Strong G3739, “aquele”. definição não verificada em léxico.</li><li>ἀπέστειλεν (apesteilen) – aoristo ativo de ἀποστέλλω, Strong G652, “enviar”. definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual</b><br>[[πιστεύητε (SBLGNT) vs πιστεύσητε (TR)]] – variante de forma verbal; ambas significam “crer”.</p><p><b>Síntese Exegética</b><br>Jesus define a verdadeira obra de Deus como a fé naquele que foi enviado, apontando à missão messiânica.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "<i>E lhe disseram: Que fazes tu, sinal, para que possamos ver e crer em ti? Que trabalhas?</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>εἶπον (eipon) – aoristo ativo de λέγω, Strong G3004, “dizer”. definição não verificada em léxico.</li><li>τί (ti) – pronome interrogativo, Strong G5109, “que”. definição não verificada em léxico.</li><li>ποιεῖς (poieis) – presente ativo de ποιέω, Strong G4183, “fazer”. definição não verificada em léxico.</li><li>σημεῖον (sēmeion) – “sinal”. definição não verificada em léxico.</li><li>ἴδωμεν (idōmen) – aoristo subjuntivo de ὁράω, Strong G3708, “ver”. definição não verificada em léxico.</li><li>πιστεύσωμεν (pisteusōmen) – aoristo subjuntivo de πιστεύω, Strong G4100, “crer”. definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual</b><br>sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b><br>A multidão demanda um sinal concreto como condição para a fé, revelando a sua compreensão limitada de fé.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "<i>Os nossos pais comeram o maná no deserto, como está escrito: O SENHOR deu do céu o pão para que o comam.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>οἱ πατέρες ἡμῶν – <i>hoi pateres hēmōn</i> – &quot;os nossos pais&quot; – definição não verificada em léxico</li><li>τὸ μάννα – <i>to manna</i> – &quot;o maná&quot; – definição não verificada em léxico</li><li>ἔφαγον – <i>ephagon</i> – &quot;comeram&quot; – definição não verificada em léxico</li><li>ἐν τῇ ἐρήμῳ – <i>en tē erēmō</i> – &quot;no deserto&quot; – definição não verificada em léxico</li><li>Ἄρτον ἐκ τοῦ οὐρανοῦ – <i>Arton ek tou ouranou</i> – &quot;pão do céu&quot; – definição não verificada em léxico</li><li>ἔδωκεν – <i>edōken</i> – &quot;deu&quot; – definição não verificada em léxico</li><li>φαγεῖν – <i>phagein</i> – &quot;para comer&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Comparação entre SBLGNT e Textus Receptus: [[φαγεῖν]] (SBLGNT) vs φαγειν (TR); [[Ἄρτον]] (maiúscula SBLGNT) vs αρτον (TR). Sem outras variantes verificadas.</p><p><b>Síntese Exegética</b><br>Jesus remete ao relato do maná, apontando que, assim como Deus providenciou pão celestial para Israel, Ele mesmo oferece o pão verdadeiro que provém do céu.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "<i>Então Jesus lhes disse: Em verdade, em verdade vos digo, não foi Moisés que vos deu o pão do céu, mas meu Pai vos dá o pão do céu, o verdadeiro.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>Ἀμὴν ἀμὴν – <i>amēn amēn</i> – &quot;em verdade, em verdade&quot; – definição não verificada em léxico</li><li>λέγω – <i>lego</i> – &quot;digo&quot; – definição não verificada em léxico</li><li>οὐ Μωϋσῆς – <i>ou Mōusēs</i> – &quot;não Moisés&quot; – definição não verificada em léxico</li><li>δέδωκεν – <i>dedōken</i> – &quot;deu&quot; – definição não verificada em léxico</li><li>πατήρ μου – <i>patēr mou</i> – &quot;meu Pai&quot; – definição não verificada em léxico</li><li>τὸν ἀληθινόν – <i>ton alēthinon</i> – &quot;o verdadeiro&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Diferenças entre as edições: [[Μωϋσῆς]] (SBLGNT) vs μωσης (TR); [[δέδωκεν]] (SBLGNT) vs δεδωκεν (TR). Pontuação e acentuação divergem, mas o sentido permanece.</p><p><b>Síntese Exegética</b><br>Jesus contrasta o pão que Moisés recebeu (o maná) com o pão que o Pai oferece, enfatizando sua origem divina e autenticidade.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "<i>Pois o pão de Deus é o que desce do céu e dá vida ao mundo.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>ὁ γὰρ ἄρτος τοῦ θεοῦ – <i>ho gar artos tou theou</i> – &quot;pois o pão de Deus&quot; – definição não verificada em léxico</li><li>καταβαίνων – <i>katabainōn</i> – &quot;descendente&quot; – definição não verificada em léxico</li><li>ζωὴν – <i>zōēn</i> – &quot;vida&quot; – definição não verificada em léxico</li><li>τῷ κόσμῳ – <i>tō kosmō</i> – &quot;ao mundo&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Variantes observadas: [[γὰρ]] (SBLGNT) vs γαρ (TR); [[ζωὴν]] (SBLGNT) vs ζωην (TR); [[διδοὺς]] (SBLGNT) vs διδους (TR). Sem outras diferenças.</p><p><b>Síntese Exegética</b><br>O autor identifica o pão celestial como fonte de vida universal, apontando à missão salvadora de Cristo.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "<i>Então lhe disseram: Senhor, dá-nos sempre esse pão.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>εἶπον οὖν – <i>eipon oun</i> – &quot;então disseram&quot; – definição não verificada em léxico</li><li>Κύριε – <i>Kyrie</i> – &quot;Senhor&quot; – definição não verificada em léxico</li><li>πάντοτε δὸς – <i>pantote dos</i> – &quot;dá sempre&quot; – definição não verificada em léxico</li><li>τὸν ἄρτον τοῦτον – <i>ton arton touton</i> – &quot;este pão&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Sem variante verificada entre SBLGNT e TR além de acentuação e pontuação: [[Κύριε]] (SBLGNT) vs κυριε (TR).</p><p><b>Síntese Exegética</b><br>Os ouvintes reconhecem a necessidade contínua do pão divino e pedem a Jesus que o conceda perpetuamente.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "<i>Disse-lhes Jesus: Eu sou o pão da vida; quem vem a mim nunca terá fome, e quem crê em mim nunca terá sede.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>Ἐγώ εἰμι – <i>Ego eimi</i> – &quot;Eu sou&quot; – definição não verificada em léxico</li><li>ὁ ἄρτος τῆς ζωῆς – <i>ho artos tēs zōēs</i> – &quot;o pão da vida&quot; – definição não verificada em léxico</li><li>ὁ ἐρχόμενος πρὸς ἐμὲ – <i>ho erchomenos pros eme</i> – &quot;o que vem a mim&quot; – definição não verificada em léxico</li><li>οὐ μὴ πεινάσῃ – <i>ou mē peinasē</i> – &quot;não terá fome&quot; – definição não verificada em léxico</li><li>ὁ πιστεύων εἰς ἐμὲ – <i>ho pisteuōn eis eme</i> – &quot;o que crê em mim&quot; – definição não verificada em léxico</li><li>οὐ μὴ διψήσει – <i>ou mē dipsēsei</i> – &quot;não terá sede&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Diferenças: [[δε]] (SBLGNT) ausente no TR; [[Ἐγώ]] (SBLGNT) vs εγω (TR); [[πείνασῃ]] (SBLGNT) vs πειναση (TR); [[διψήσει]] (SBLGNT) vs διψηση (TR). Também variações de artigos e acentuação.</p><p><b>Síntese Exegética</b><br>Jesus se apresenta como a fonte suprema de sustento espiritual; quem o aceita jamais experimentará necessidade interior.</p>"
+      },
+      {
+        "verse": 36,
+        "text": "<i>Mas eu vos disse que ainda me tendes visto e não credes.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br><ul><li>ἀλλʼ εἶπον – <i>all&#x27; eipon</i> – &quot;mas eu disse&quot; – definição não verificada em léxico</li><li>ὑμῖν – <i>humin</i> – &quot;a vós&quot; – definição não verificada em léxico</li><li>ὅτι – <i>hoti</i> – &quot;que&quot; – definição não verificada em léxico</li><li>ἑωράκατέ – <i>heōrakate</i> – &quot;tendes visto&quot; – definição não verificada em léxico</li><li>οὐ πιστεύετε – <i>ou pisteuete</i> – &quot;não credes&quot; – definição não verificada em léxico</li></ul></p><p><b>Crítica Textual</b><br>Variantes: [[ἀλλʼ]] (SBLGNT) vs αλλ (TR); [[εἶπον]] (SBLGNT) vs ειπον (TR); [[ὑμῖν]] (SBLGNT) vs υμιν (TR); [[ὅτι]] (SBLGNT) vs οτι (TR); [[ἑωράκατέ]] (SBLGNT) vs εωρακατε (TR). Sem outras diferenças.</p><p><b>Síntese Exegética</b><br>Jesus reprova a incredulidade dos que, embora o tenham visto, não reconhecem sua identidade salvadora.</p>"
+      },
+      {
+        "verse": 37,
+        "text": "<i>Todo o que o Pai me dá virá a mim, e quem vier a mim não o lançarei fora.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>πᾶν (pan) <i>todo</i> – definição não verificada em léxico;<br>ὃ (ho) <i>que</i> – definição não verificada em léxico;<br>δίδωσίν (didōsin) <i>da</i> – definição não verificada em léxico;<br>πατὴρ (patēr) <i>pai</i> – definição não verificada em léxico;<br>ἐμὲ (eme) <i>a mim</i> – definição não verificada em léxico;<br>ἥξει (hēxei) <i>virá</i> – definição não verificada em léxico;<br>τὸν ἐρχόμενον (ton erchomenon) <i>aquele que vem</i> – definição não verificada em léxico;<br>οὐ μὴ (ou mē) <i>não</i> – definição não verificada em léxico;<br>ἐκβάλω (ekbalō) <i>lançar fora</i> – definição não verificada em léxico;<br>ἔξω (exō) <i>fora</i> – definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[πᾶν ὃ]] vs [[παν]]; [[ὁ πατὴρ]] vs [[ο πατηρ]]; [[πρὸς ἐμὲ]] vs [[προς εμε]]; [[ἥξει]] vs [[ηξει]]; [[τὸν ἐρχόμενον πρός με]] vs [[τον ερχομενον προς με]]; [[οὐ μὴ]] vs [[ου μη]]; [[ἐκβάλω ἔξω]] vs [[εκβαλω εξω]]. Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b><br>Jesus assegura que todo o que o Pai lhe confere chegará a Ele, e que ninguém que se aproxime será rejeitado. O verbo “lançar fora” indica exclusão definitiva, sublinhando a segurança da salvação conferida pelo Pai.</p>"
+      },
+      {
+        "verse": 38,
+        "text": "<i>Porque eu desci do céu não para fazer a minha própria vontade, mas a vontade daquele que me enviou.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>ὅτι (hoti) <i>porque</i> – definição não verificada em léxico;<br>καταβέβηκα (katabebēka) <i>desci</i> – definição não verificada em léxico;<br>ἀπὸ (apo) <i>de</i> – definição não verificada em léxico;<br>οὐχ (ouch) <i>não</i> – definição não verificada em léxico;<br>ἵνα (hina) <i>para que</i> – definição não verificada em léxico;<br>ποιῶ (poiō) <i>faça</i> – definição não verificada em léxico;<br>τὸ θέλημα (to thelēma) <i>a vontade</i> – definição não verificada em léxico;<br>τὸ ἐμὸν (to emon) <i>minha</i> – definição não verificada em léxico;<br>τὸ θέλημα τοῦ πέμψαντός με (to thelēma tou pempsantos me) <i>a vontade daquele que me enviou</i> – definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[ἀπὸ]] vs [[εκ]]; [[οὐχ]] vs [[ουχ]]; [[ποιῶ]] vs [[ποιω]]; [[τὸ θέλημα τὸ ἐμὸν]] vs [[το θελημα το εμον]]. Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b><br>Jesus declara que sua missão não é auto‑suficiente; Ele cumpre o propósito divino, obedecendo à vontade daquele que O enviou do céu.</p>"
+      },
+      {
+        "verse": 39,
+        "text": "<i>Esta é a vontade daquele que me enviou: que todo o que me deu não pereça, mas eu o ressuscitarei no último dia.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>τοῦτο (touto) <i>isto</i> – definição não verificada em léxico;<br>δέ (de) <i>mas</i> – definição não verificada em léxico;<br>ἐστιν (estin) <i>é</i> – definição não verificada em léxico;<br>τὸ θέλημα (to thelēma) <i>a vontade</i> – definição não verificada em léxico;<br>τοῦ πέμψαντός με (tou pempsantos me) <i>de quem me enviou</i> – definição não verificada em léxico;<br>ἵνα (hina) <i>para que</i> – definição não verificada em léxico;<br>πᾶν ὃ δέδωκέν μοι (pan ho dedōken moi) <i>todo o que me deu</i> – definição não verificada em léxico;<br>μὴ ἀπολέσω (mē apolēsō) <i>não pereça</i> – definição não verificada em léxico;<br>ἀναστήσω (anastēsō) <i>ressuscitarei</i> – definição não verificada em léxico;<br>τῇ ἐσχάτῃ ἡμέρᾳ (tē eschati hēmera) <i>no último dia</i> – definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[πατρός]] inserido em SBLGNT mas ausente no TR; [[αὐτὸ]] aparece em SBLGNT como pronome, enquanto o TR tem apenas “αὐτὸν”; [[ἐν]] presente no SBLGNT após “τῇ ἐσχάτῃ” e ausente no TR. Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b><br>O propósito divino é a preservação daqueles que foram confiados a Cristo; Ele garante a ressurreição daqueles que permanecem nele, culminando no juízo final.</p>"
+      },
+      {
+        "verse": 40,
+        "text": "<i>Pois esta é a vontade do meu Pai, de que todo aquele que vê o Filho e crê nele tenha a vida eterna, e eu o ressuscitarei na última dia.</i>",
+        "commentary": "<p><b>Análise Léxica</b><br>τοῦτο (touto) <i>isto</i> – definição não verificada em léxico;<br>γάρ (gar) <i>pois</i> – definição não verificada em léxico;<br>ἐστιν (estin) <i>é</i> – definição não verificada em léxico;<br>τὸ θέλημα (to thelēma) <i>a vontade</i> – definição não verificada em léxico;<br>τοῦ πατρός μου (tou patros mou) <i>do meu Pai</i> – definição não verificada em léxico;<br>ἵνα (hina) <i>para que</i> – definição não verificada em léxico;<br>πᾶς ὁ θεωρῶν τὸν υἱὸν (pas ho theōrōn ton huion) <i>todo aquele que vê o Filho</i> – definição não verificada em léxico;<br>καὶ πιστεύων εἰς αὐτὸν (kai pisteuōn eis auton) <i>e crê nele</i> – definição não verificada em léxico;<br>ἔχῃ (echē) <i>tenha</i> – definição não verificada em léxico;<br>ζωὴν αἰώνιον (zōēn aiōnion) <i>vida eterna</i> – definição não verificada em léxico;<br>ἀναστήσω (anastēsō) <i>ressuscitarei</i> – definição não verificada em léxico;<br>ἐγώ (egō) <i>eu</i> – definição não verificada em léxico;<br>τῇ ἐσχάτῃ ἡμέρᾳ (tē eschati hēmera) <i>na última dia</i> – definição não verificada em léxico.</p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[γάρ]] aparece em SBLGNT como “γάρ” e no TR como “δε”; [[πατρός μου]] está presente em SBLGNT, enquanto o TR tem “του πεμψαντος με”; [[ἐγὼ]] está em SBLGNT, ausente no TR; [[ἐν]] após “τῇ ἐσχάτῃ” aparece em SBLGNT, ausente no TR. Sem outras variantes relevantes.</p><p><b>Síntese Exegética</b><br>Jesus declara que a vontade do Pai é que todo aquele que reconhece o Filho e crê nele receba a vida eterna, e que Ele mesmo o ressuscitará no dia final, confirmando a esperança escatológica da redenção.</p>"
       }
     ]
   },
@@ -1140,59 +1347,67 @@
     },
     {
       "chapter": 5,
+      "verse_from": 47,
+      "verse_to": 47,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:30:55+00:00"
+    },
+    {
+      "chapter": 6,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:31:01+00:00"
+    },
+    {
+      "chapter": 6,
       "verse_from": 7,
       "verse_to": 12,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:26:27+00:00"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:31:13+00:00"
     },
     {
-      "chapter": 5,
+      "chapter": 6,
       "verse_from": 13,
       "verse_to": 18,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:26:36+00:00"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:32:09+00:00"
     },
     {
-      "chapter": 5,
+      "chapter": 6,
       "verse_from": 19,
       "verse_to": 24,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:26:44+00:00"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:32:57+00:00"
     },
     {
-      "chapter": 5,
+      "chapter": 6,
       "verse_from": 25,
       "verse_to": 30,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:26:51+00:00"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:33:48+00:00"
     },
     {
-      "chapter": 5,
+      "chapter": 6,
       "verse_from": 31,
       "verse_to": 36,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:26:58+00:00"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:34:21+00:00"
     },
     {
-      "chapter": 5,
+      "chapter": 6,
       "verse_from": 37,
-      "verse_to": 42,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:27:03+00:00"
-    },
-    {
-      "chapter": 5,
-      "verse_from": 43,
-      "verse_to": 46,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "generated_at_utc": "2026-11-17T03:27:08+00:00"
+      "verse_to": 40,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-17T04:35:04+00:00"
     }
   ],
   "sources": {

@@ -1,2 +1,17 @@
-- 2026-11-17T03:26:38+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/3).
-- 2026-11-17T03:27:08+00:00 — Ciclo 1: +40 versículos, +0 capítulos em João 5 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 40 versículos, 7 pedidos. A seguir: João 5.
+- 2026-11-17T04:30:41+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.1s (1/3).
+- 2026-11-17T04:30:42+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.7s (2/3).
+- 2026-11-17T04:30:52+00:00 — **AVISO** gemini: HTTP 503; esgotadas 3 tentativas.
+- 2026-11-17T04:30:52+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-17T04:30:55+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-17T04:31:02+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 3.0s (1/3).
+- 2026-11-17T04:31:14+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 35.0s (1/3).
+- 2026-11-17T04:31:49+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 12.0s (2/3).
+- 2026-11-17T04:32:10+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 38.0s (1/3).
+- 2026-11-17T04:32:58+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 16.0s (1/3).
+- 2026-11-17T04:33:15+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 26.0s (2/3).
+- 2026-11-17T04:33:49+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 20.0s (1/3).
+- 2026-11-17T04:34:10+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 3.0s (2/3).
+- 2026-11-17T04:34:22+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 8.0s (1/3).
+- 2026-11-17T04:34:30+00:00 — **AVISO** groq: HTTP 429; nova tentativa em 27.0s (2/3).
+- 2026-11-17T04:35:04+00:00 — Módulos recompilados (PARCIAL): 6/1189 capítulos, 238 versículos.
+- 2026-11-17T04:35:04+00:00 — Ciclo 1: +41 versículos, +1 capítulos em João 6 (groq/openai/gpt-oss-120b; 6 versículos/pedido). Hoje: 41 versículos, 8 pedidos. A seguir: João 6.
