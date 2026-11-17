@@ -73,8 +73,13 @@ class OrdemDosProvedoresTest(unittest.TestCase):
         self.assertEqual(self._ordem('gemini')[0], 'gemini')
         self.assertEqual(self._ordem('groq')[0], 'groq')
 
+    def test_fila_da_producao_gemini_principal(self):
+        """Ordem na GitHub Action: gemini (480/dia) -> groq (66/dia) -> ovh (2/min)."""
+        self.assertEqual(self._ordem('gemini'), ['gemini', 'groq', 'ovh'])
+
     def test_variavel_desconhecida_e_ignorada(self):
-        self.assertEqual(self._ordem('inventado')[0], 'ovh')
+        """Valor inválido cai na ordem por omissão, sem erro."""
+        self.assertEqual(self._ordem('inventado'), self._ordem())
 
 
 class OrcamentoPorProvedorTest(unittest.TestCase):

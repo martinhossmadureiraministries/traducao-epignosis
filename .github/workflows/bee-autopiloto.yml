@@ -82,9 +82,12 @@ env:
   # a ~66 pedidos/dia por causa dos 200.000 tokens/dia do plano gratuito. O
   # Gemini fica com os 480 dele quando a Groq esgota.
   BEE_PEDIDOS_POR_DIA: '600'
-  # Quem responde primeiro. A Groq passou a principal em 17/11: o Gemini deu
-  # 503 em rajada durante horas. Para inverter, mude para 'gemini'.
-  BEE_PROVEDOR_PRINCIPAL: 'groq'
+  # Quem abre a fila. O Gemini tem a maior quota diária gratuita (~480
+  # pedidos) e é rápido; a Groq fica como reserva (~66 pedidos/dia); a
+  # OVHcloud anónima (2 ped/min) fecha a fila como última reserva. Para
+  # inverter, mude para 'groq'. A OVHcloud só abre a fila quando não há
+  # chave nenhuma.
+  BEE_PROVEDOR_PRINCIPAL: 'gemini'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
   BEE_TIMEOUT: '180'
@@ -202,10 +205,9 @@ jobs:
           # Dizer no resumo que serviços entraram: uma chave em falta é a causa
           # mais comum de a produção ficar mais lenta do que o esperado.
           echo "### Provedores nesta execução" >> "$GITHUB_STEP_SUMMARY"
-          echo "- OVHcloud AI Endpoints: **sem chave** (nível anónimo, 2 ped/min)" \
-            >> "$GITHUB_STEP_SUMMARY"
           faltam=""
-          for par in "GEMINI_API_KEY:Gemini" \
+          for par in "OVH_API_KEY:OVHcloud" \
+                     "GEMINI_API_KEY:Gemini" \
                      "GROQ_API_KEY:Groq" "OPENROUTER_API_KEY:OpenRouter"; do
             nome="${par%%:*}"; rotulo="${par##*:}"
             if [ -n "${!nome}" ]; then
@@ -216,7 +218,7 @@ jobs:
             fi
           done
           if [ -n "$faltam" ]; then
-            echo "Sem chave para:$faltam. A produção continua pela OVHcloud (2 ped/min ~ 2.880 versículos/dia)." >> "$GITHUB_STEP_SUMMARY"
+            echo "Sem chave para:$faltam — a produção continua na mesma: a OVHcloud anónima (2 ped/min ~ 2.880 versículos/dia) está sempre na fila como última reserva." >> "$GITHUB_STEP_SUMMARY"
           fi
           python nuvem.py
 
