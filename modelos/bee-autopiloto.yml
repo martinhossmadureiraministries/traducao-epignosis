@@ -2,10 +2,9 @@ name: BEE — produção automática
 
 # Modelo de produção automática na nuvem (GitHub Actions).
 #
-# Este ficheiro está em modelos/ porque o agente que preparou o projeto não tem
-# permissão para criar workflows. Para o ativar, copie-o para
-# .github/workflows/bee-autopiloto.yml (pelo site do GitHub ou depois de fazer
-# clone do repositório). Ver AUTOMACAO.md, secção 4.
+# Este ficheiro vive em modelos/ e o ativo em .github/workflows/bee-autopiloto.yml;
+# têm de ser IGUAIS (o teste test_modelo_e_workflow_ativo_sao_iguais vigia isto).
+# Ao alterar um, copie-o para o outro no mesmo commit. Ver AUTOMACAO.md, secção 4.
 #
 # Cada execução produz um bloco pequeno de versículos e termina. É o agendador
 # do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
@@ -34,7 +33,7 @@ on:
       versos_por_ciclo:
         description: 'Versículos a produzir nesta execução'
         required: false
-        default: '120'
+        default: '240'
       livros:
         description: 'Só estes book_number (ex.: 640,500); vazio = fila das oito fases'
         required: false
@@ -65,7 +64,7 @@ env:
   # 240 versículos por execução: o arranque (checkout, python, cache) custa
   # ~1 min fixo. Com minutos ilimitados, blocos maiores rendem mais por
   # execução e reduzem o número de arranques.
-  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '120' }}
+  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '240' }}
   BEE_LIVROS: ${{ github.event.inputs.livros }}
   BEE_MODELO: ${{ github.event.inputs.modelo }}
   # 6 versículos por pedido. Os 10 que aqui estiveram em 17/11 produziram JSON
@@ -190,8 +189,9 @@ jobs:
           # A OVHcloud não precisa de chave nenhuma (nível anónimo, 2 pedidos
           # por minuto): está sempre na fila. A chave é opcional e só serve
           # para subir o limite de 2 para 400 pedidos/minuto.
-          OVH_API_KEY: ${{ secrets.OVH_API_KEY }} O Mistral saiu a 17/11/2026 — o
-          # plano Free deixou de activar chaves de API.
+          # O Mistral saiu a 17/11/2026 — o plano Free deixou de activar
+          # chaves de API.
+          OVH_API_KEY: ${{ secrets.OVH_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

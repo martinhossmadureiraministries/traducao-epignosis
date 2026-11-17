@@ -2,10 +2,9 @@ name: BEE — produção automática
 
 # Modelo de produção automática na nuvem (GitHub Actions).
 #
-# Este ficheiro está em modelos/ porque o agente que preparou o projeto não tem
-# permissão para criar workflows. Para o ativar, copie-o para
-# .github/workflows/bee-autopiloto.yml (pelo site do GitHub ou depois de fazer
-# clone do repositório). Ver AUTOMACAO.md, secção 4.
+# Este ficheiro vive em modelos/ e o ativo em .github/workflows/bee-autopiloto.yml;
+# têm de ser IGUAIS (o teste test_modelo_e_workflow_ativo_sao_iguais vigia isto).
+# Ao alterar um, copie-o para o outro no mesmo commit. Ver AUTOMACAO.md, secção 4.
 #
 # Cada execução produz um bloco pequeno de versículos e termina. É o agendador
 # do GitHub que volta a chamar o trabalho, por isso a produção continua mesmo
@@ -27,6 +26,10 @@ on:
     types: [labeled]
   workflow_dispatch:
     inputs:
+      pular_teste:
+        description: 'Saltar o teste das ligações (sim/nao)'
+        required: false
+        default: 'nao'
       versos_por_ciclo:
         description: 'Versículos a produzir nesta execução'
         required: false
@@ -64,20 +67,24 @@ env:
   BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '240' }}
   BEE_LIVROS: ${{ github.event.inputs.livros }}
   BEE_MODELO: ${{ github.event.inputs.modelo }}
-  # 10 versículos por pedido: com o TPM agora respeitado, cada pedido pode ser
-  # maior. Menos pedidos = menos 429 = mais versículos por hora. O programa
-  # divide o lote sozinho se a resposta vier cortada.
-  BEE_LOTE: '10'
+  # 6 versículos por pedido. Os 10 que aqui estiveram em 17/11 produziram JSON
+  # cortado (o Gemini não fechou a resposta) e HTTP 413 na Groq. 6 é o maior
+  # lote que os dois serviços aceitam de forma consistente; o programa continua
+  # a dividir sozinho se uma resposta vier truncada.
+  BEE_LOTE: '6'
   # 8 tentativas por lote: com o Gemini instável, 1 tentativa de 3 + 1 da
   # reserva não bastava para guardar um único lote por execução.
   BEE_TENTATIVAS_CICLO: '8'
   BEE_ESPERA_ENTRE_TENTATIVAS: '20'
   BEE_TENTATIVAS: '3'
-  # Teto de segurança, não de ambição: o Gemini Flash-Lite dá ~480 pedidos/dia
-  # e a Groq ~1.000; juntos dão ~1.500. O programa reparte pelos dois, por
-  # isso 1.200 não esgota um serviço sozinho. Se aparecer 429, BAIXE este
-  # número — é o único sítio que corta a produção diária.
-  BEE_PEDIDOS_POR_DIA: '1200'
+  # Teto GLOBAL de pedidos por dia (soma dos serviços). Cada serviço tem também
+  # o seu próprio tecto, calculado a partir da quota real: a Groq está limitada
+  # a ~66 pedidos/dia por causa dos 200.000 tokens/dia do plano gratuito. O
+  # Gemini fica com os 480 dele quando a Groq esgota.
+  BEE_PEDIDOS_POR_DIA: '600'
+  # Quem responde primeiro. A Groq passou a principal em 17/11: o Gemini deu
+  # 503 em rajada durante horas. Para inverter, mude para 'gemini'.
+  BEE_PROVEDOR_PRINCIPAL: 'groq'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
   BEE_TIMEOUT: '180'
@@ -150,22 +157,66 @@ jobs:
             echo "dentro=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Passo 0: perguntar a cada serviço se responde, antes de produzir.
+      # Sem isto, um endpoint novo só se revela partido ao fim de 20 minutos
+      # de trabalho — e o erro aparece como "resposta inválida", que esconde
+      # a causa. Uma chave em falta deixava de ser visível.
+      - name: Testar as ligações (não produz nada)
+        if: github.event.inputs.pular_teste != 'sim'
+        continue-on-error: true
+        env:
+          OVH_API_KEY: ${{ secrets.OVH_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python autopiloto.py --testar 2>&1 | tee /tmp/teste.txt || true
+          {
+            echo "### Teste das ligações"
+            echo '```'
+            cat /tmp/teste.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Produzir um bloco, compilar e publicar
         if: github.event_name != 'schedule' || steps.janela.outputs.dentro == 'true'
         env:
           BEE_REMOTO: /tmp/bee-remoto/livros_json
           BEE_UNIR: '1'
+          # A fila é montada só com as chaves que chegarem. Cada serviço tem o
+          # seu próprio orçamento diário: esgotar um não cala os outros.
+          #
+          # A OVHcloud não precisa de chave nenhuma (nível anónimo, 2 pedidos
+          # por minuto): está sempre na fila. A chave é opcional e só serve
+          # para subir o limite de 2 para 400 pedidos/minuto.
+          # O Mistral saiu a 17/11/2026 — o plano Free deixou de activar
+          # chaves de API.
+          OVH_API_KEY: ${{ secrets.OVH_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # A reserva configurada pelo responsável. Se o Gemini estiver
-          # indisponível (5xx) ou sem quota, a Groq assume automaticamente.
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # A Cerebras passou a exigir cartão no plano de teste: fica de fora
+          # por omissão. Se um dia tiver chave, basta preenchê-la.
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
         run: |
-          if [ -n "$GROQ_API_KEY" ]; then
-            echo "Provedores disponíveis: Gemini (principal) + Groq (reserva)."
-          else
-            echo "Aviso: sem GROQ_API_KEY; só o Gemini está disponível."
+          # Dizer no resumo que serviços entraram: uma chave em falta é a causa
+          # mais comum de a produção ficar mais lenta do que o esperado.
+          echo "### Provedores nesta execução" >> "$GITHUB_STEP_SUMMARY"
+          echo "- OVHcloud AI Endpoints: **sem chave** (nível anónimo, 2 ped/min)" \
+            >> "$GITHUB_STEP_SUMMARY"
+          faltam=""
+          for par in "GEMINI_API_KEY:Gemini" \
+                     "GROQ_API_KEY:Groq" "OPENROUTER_API_KEY:OpenRouter"; do
+            nome="${par%%:*}"; rotulo="${par##*:}"
+            if [ -n "${!nome}" ]; then
+              echo "- $rotulo: chave presente" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "- $rotulo: **sem chave**" >> "$GITHUB_STEP_SUMMARY"
+              faltam="$faltam $rotulo"
+            fi
+          done
+          if [ -n "$faltam" ]; then
+            echo "Sem chave para:$faltam. A produção continua pela OVHcloud (2 ped/min ~ 2.880 versículos/dia)." >> "$GITHUB_STEP_SUMMARY"
           fi
           python nuvem.py
 
@@ -174,10 +225,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           echo "### Diagnóstico rápido" >> "$GITHUB_STEP_SUMMARY"
-          if [ -z "${GEMINI_API_KEY}${GROQ_API_KEY}" ]; then
-            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY e GROQ_API_KEY." >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "${GEMINI_API_KEY}${GROQ_API_KEY}${OPENROUTER_API_KEY}" ]; then
+            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY e GROQ_API_KEY. Só a OVHcloud (nível anónimo) está a produzir." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- Chaves presentes. Se o erro for HTTP 5xx, o serviço estava instável: o próximo ciclo tenta de novo." >> "$GITHUB_STEP_SUMMARY"
             echo "- Se for HTTP 404, o serviço retirou esse modelo: basta voltar a correr, o programa escolhe outro sozinho." >> "$GITHUB_STEP_SUMMARY"
