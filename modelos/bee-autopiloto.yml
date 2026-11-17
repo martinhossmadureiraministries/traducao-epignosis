@@ -30,7 +30,7 @@ on:
       versos_por_ciclo:
         description: 'Versículos a produzir nesta execução'
         required: false
-        default: '240'
+        default: '120'
       livros:
         description: 'Só estes book_number (ex.: 640,500); vazio = fila das oito fases'
         required: false
@@ -61,13 +61,14 @@ env:
   # 240 versículos por execução: o arranque (checkout, python, cache) custa
   # ~1 min fixo. Com minutos ilimitados, blocos maiores rendem mais por
   # execução e reduzem o número de arranques.
-  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '240' }}
+  BEE_VERSOS_POR_CICLO: ${{ github.event.inputs.versos_por_ciclo || '120' }}
   BEE_LIVROS: ${{ github.event.inputs.livros }}
   BEE_MODELO: ${{ github.event.inputs.modelo }}
-  # 10 versículos por pedido: com o TPM agora respeitado, cada pedido pode ser
-  # maior. Menos pedidos = menos 429 = mais versículos por hora. O programa
-  # divide o lote sozinho se a resposta vier cortada.
-  BEE_LOTE: '10'
+  # 6 versículos por pedido. Os 10 que aqui estiveram em 17/11 produziram JSON
+  # cortado (o Gemini não fechou a resposta) e HTTP 413 na Groq. 6 é o maior
+  # lote que os dois serviços aceitam de forma consistente; o programa continua
+  # a dividir sozinho se uma resposta vier truncada.
+  BEE_LOTE: '6'
   # 8 tentativas por lote: com o Gemini instável, 1 tentativa de 3 + 1 da
   # reserva não bastava para guardar um único lote por execução.
   BEE_TENTATIVAS_CICLO: '8'

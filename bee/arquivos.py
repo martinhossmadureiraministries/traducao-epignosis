@@ -29,10 +29,74 @@ def _constante_invalida(valor: str) -> None:
     raise DadosInvalidos(f'Constante JSON não permitida: {valor}.')
 
 
+def _fechar_json(texto: str) -> str:
+    """Fecha aspas, chaves e parênteses que o modelo deixou abertos."""
+    em_texto = False
+    escape = False
+    pilha: list[str] = []
+    for caracter in texto:
+        if em_texto:
+            if escape:
+                escape = False
+            elif caracter == '\\':
+                escape = True
+            elif caracter == '"':
+                em_texto = False
+            continue
+        if caracter == '"':
+            em_texto = True
+        elif caracter in '{[':
+            pilha.append('}' if caracter == '{' else ']')
+        elif caracter in '}]' and pilha:
+            pilha.pop()
+    partes = [texto]
+    if em_texto:
+        partes.append('"')
+    partes.append(''.join(reversed(pilha)))
+    return ''.join(partes)
+
+
+def _corte_valido(texto: str) -> Any:
+    """Recupera os elementos completos de uma resposta cortada no fim.
+
+    Tenta fechar o JSON tal como está; se o último objecto ficou a meio (sem
+    `text` ou `commentary`), recua até ao último `}` e tenta de novo. Assim
+    recuperam-se os versículos inteiros e descarta-se só o que ficou cortado.
+    """
+    candidatos = [_fechar_json(texto)]
+    for posicao in range(len(texto) - 1, max(len(texto) - 4000, 0), -1):
+        if texto[posicao] == '}':
+            candidatos.append(_fechar_json(texto[:posicao + 1]))
+    for candidato in candidatos:
+        try:
+            raiz = json.loads(
+                candidato,
+                object_pairs_hook=_sem_chaves_repetidas,
+                parse_constant=_constante_invalida,
+            )
+        except (json.JSONDecodeError, UnicodeError):
+            continue
+        if isinstance(raiz, dict) and isinstance(raiz.get('verses'), list) and raiz['verses']:
+            completos = [
+                v for v in raiz['verses']
+                if isinstance(v, dict) and v.get('text') and v.get('commentary')
+            ]
+            if completos:
+                raiz['verses'] = completos
+                return raiz
+    return None
+
+
 def carregar_json(texto: str) -> Any:
     try:
         return json.loads(texto, object_pairs_hook=_sem_chaves_repetidas, parse_constant=_constante_invalida)
     except (json.JSONDecodeError, UnicodeError) as exc:
+        # Uma resposta cortada no fim ainda contém versículos completos: em
+        # 17/11 o Gemini cortou um lote a meio de uma chave e o ciclo morreu,
+        # deitando fora 10 capítulos já gerados nessa execução.
+        recuperado = _corte_valido(texto.strip())
+        if recuperado is not None:
+            return recuperado
         raise DadosInvalidos(f'JSON inválido: {exc}') from exc
 
 

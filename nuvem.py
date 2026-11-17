@@ -363,7 +363,11 @@ def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
     horas. Aqui compila-se sempre que apareceu, desde a última compilação,
     pelo menos um capítulo completo novo.
     """
-    if resultado.acao != 'gerado' or resultado.resumo_compilacao:
+    # Compila sempre que valha a pena, mesmo quando o ciclo terminou como
+    # 'nada' ou 'parar': o ciclo pode ter gravado versículos antes de falhar.
+    # Em 17/11 o ciclo 3 morreu com um JSON inválido e esta condição deitou
+    # fora 9 capítulos completos que já estavam no disco.
+    if resultado is not None and resultado.resumo_compilacao:
         return
     if _env('BEE_COMPILAR', '1') == '0':  # respeita BEE_COMPILAR=0
         return
@@ -373,12 +377,14 @@ def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
         resumo = compilar(dados, saida)
     except Exception as exc:  # a compilação nunca deve estragar a produção
         diario.escrever(f'A compilação do fim do ciclo falhou; módulos anteriores preservados: {exc}', 'aviso')
-        return
-    resultado.resumo_compilacao = resumo
+        return None
+    if resultado is not None:
+        resultado.resumo_compilacao = resumo
     diario.escrever(
         f'Módulos recompilados no fim do ciclo: {resumo["capitulos"]}/1189 capítulos, '
         f'{resumo["versiculos"]} versículos.'
     )
+    return resumo
 
 
 LEIA_ME = (
@@ -477,6 +483,8 @@ def main() -> int:
         reparacao = f'não foi possível reparar ({type(exc).__name__})'
         print(f'Aviso: {reparacao}', file=sys.stderr, flush=True)
     antes_cap, antes_versos = _progresso(dados)
+    falha: str | None = None
+    resultado = None
 
     try:
         with trava(dados):
@@ -506,9 +514,6 @@ def main() -> int:
                 extra -= 1
                 resultado = agendador.ciclo(livros)
                 salvar_estado(estado_caminho, estado)
-            # Depois de todas as tentativas: compilar uma única vez, com tudo o
-            # que ficou guardado (dentro e depois das repetições).
-            _compilar_no_fim(resultado, dados, saida, diario)
             # Uma falha passageira (5xx, rede) não deve contar como "código
             # avariado": se o serviço estiver em baixo 6 ciclos seguidos, o
             # agendador desistia e a produção só voltava quando alguém corresse
@@ -530,9 +535,18 @@ def main() -> int:
         _resumo(f'### {ROTULO}\n\nOutra execução está a usar os dados: {exc}. Nada foi feito.')
         return 0
     except (DadosInvalidos, ErroCompilacao, ErroFonte, ErroRede, ValueError, OSError) as exc:
-        _resumo(f'### {ROTULO}\n\nFalha: `{type(exc).__name__}` — {exc}')
-        return 1
+        # Uma falha a meio do ciclo não pode deitar fora o trabalho já feito.
+        # Em 17/11 o ciclo 3 morreu com um JSON inválido em João 15 e os 10
+        # capítulos gerados nessa execução nunca foram compilados nem
+        # publicados: o artifact saiu vazio e o ramo de dados ficou atrasado.
+        falha = f'{type(exc).__name__}: {exc}'
+        print(f'AVISO: o ciclo falhou; o trabalho já gravado vai ser compilado e '
+              f'publicado na mesma. Causa: {falha}', file=sys.stderr, flush=True)
+        diario.escrever(f'Ciclo interrompido: {falha}', 'erro')
 
+    # A partir daqui o trabalho feito é preservado mesmo com falha: compilar,
+    # publicar e empacotar não dependem de o ciclo ter terminado bem.
+    resumo_compilacao = _compilar_no_fim(resultado, dados, saida, diario)
     depois_cap, depois_versos = _progresso(dados)
     if recuperado or reparados:
         origem = (
@@ -587,6 +601,12 @@ def main() -> int:
             '- Isto é normal e não é uma falha: o horário está nas variáveis '
             '`BEE_HORA_INICIO` e `BEE_HORA_FIM` do workflow.'
         )
+    elif resultado is None:
+        linhas.append(f'- Ação: **interrompida** — {falha}')
+        linhas.append(
+            '- **O trabalho feito antes da falha foi guardado** (compilado e '
+            'publicado). O próximo ciclo continua a partir dele.'
+        )
     elif resultado.acao == 'parar':
         linhas.append(f'- Ação: **parado até amanhã** — {resultado.detalhe or "orçamento diário atingido"}.')
         if 'orçamento' in (resultado.detalhe or ''):
@@ -639,8 +659,8 @@ def main() -> int:
             'diária) ou recusaram a chave. O próximo ciclo tenta de novo; se durar mais de '
             'um dia, corra `python autopiloto.py --testar` (configuração da chave).'
         )
-    if resultado.resumo_compilacao:
-        resumo = resultado.resumo_compilacao
+    if resumo_compilacao:
+        resumo = resumo_compilacao
         em_curso = max(0, depois_versos - resumo['versiculos'])
         extra = (
             f' Mais {em_curso} versículos num capítulo ainda em curso, que o MyBible '
@@ -657,8 +677,21 @@ def main() -> int:
         linhas.append(
             '- Módulos: sem capítulos novos nesta execução; os de antes continuam válidos.'
         )
+    elif depois_cap:
+        # Havia capítulos completos mas a compilação não aconteceu: dizê-lo
+        # com o nome do próximo capítulo a fechar, em vez da frase fixa
+        # "precisa de fechar João 5" que apareceu com 15 capítulos completos.
+        proximo = (
+            f'{trabalho[0].nome} {estado.lote_capitulo}'
+            if trabalho and estado.lote_capitulo else 'o capítulo em curso'
+        )
+        linhas.append(
+            f'- Módulos: **não recompilados nesta execução** (havia {depois_cap} '
+            f'capítulos completos). Os módulos de antes continuam válidos; '
+            f'este ciclo não conseguiu gerar. A seguir: {proximo}.'
+        )
     else:
-        linhas.append('- Módulos: ainda não há capítulos completos (precisa de fechar João 5)')
+        linhas.append('- Módulos: ainda não há capítulos completos.')
     linhas.append(f'- Dados: {publicado} (ramo `{ramo}`)')
     if pacote:
         linhas.append(
@@ -670,7 +703,11 @@ def main() -> int:
     # quando a causa é o serviço estar em baixo (5xx): isso não é um defeito do
     # projeto e o próximo ciclo agendado volta a tentar. Falhas de configuração
     # continuam a marcar a execução como falhada, para não passarem em claro.
-    if resultado.acao == 'nada' and estado.falhas_seguidas:
+    if falha:
+        # A execução fica vermelha — o autor tem de saber — mas o resumo já
+        # explicou que o trabalho ficou guardado.
+        return 1
+    if resultado is not None and resultado.acao == 'nada' and estado.falhas_seguidas:
         if _parece_transitorio(estado.ultimo_erro or ''):
             return 0
         return 1

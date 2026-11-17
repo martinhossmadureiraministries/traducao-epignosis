@@ -191,6 +191,24 @@ def _gerar_capitulo(
             try:
                 estilo = _contexto_estilo(dados, capitulo, parcial) if config.estilo else None
                 versiculos = motor.gerar(livro, capitulo, selecionadas, estilo)
+                # Uma resposta cortada no fim pode trazer menos versículos do
+                # que os pedidos; os que vieram completos são válidos. Guardar
+                # o que veio e continuar do seguinte evita repetir (e pagar)
+                # o mesmo trecho até esgotar as tentativas.
+                numeros = sorted({v['verse'] for v in versiculos})
+                if numeros and numeros[0] == inicio:
+                    esperados = list(range(inicio, inicio + len(numeros)))
+                    if numeros != esperados:
+                        raise RespostaInvalida('versículos fora de ordem')
+                    if len(numeros) < tamanho:
+                        print(
+                            f'  Resposta parcial: {len(numeros)} de {tamanho} versículos; '
+                            'a guardar os que vieram e a continuar do seguinte.',
+                            file=sys.stderr, flush=True,
+                        )
+                    tamanho = len(numeros)
+                    validar_versiculos(versiculos, range(inicio, inicio + tamanho), f'{livro.nome} {capitulo}')
+                    break
                 validar_versiculos(versiculos, range(inicio, inicio + tamanho), f'{livro.nome} {capitulo}')
                 break
             except RespostaInvalida as exc:
