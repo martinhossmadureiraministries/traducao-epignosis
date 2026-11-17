@@ -197,7 +197,7 @@ A prévia real de Filemom 1 e João 1–4 foi aberta programaticamente com o lei
 
 ## 7. Testes
 
-Os testes normais (143) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores, o orçamento diário e a recuperação de progresso sem sobrescrever revisões locais. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
+Os testes normais (145) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores, o orçamento diário e a recuperação de progresso sem sobrescrever revisões locais. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
 
 ```bash
 python -m unittest discover -s tests -v

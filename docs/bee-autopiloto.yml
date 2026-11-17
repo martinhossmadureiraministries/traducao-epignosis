@@ -1,7 +1,3 @@
-# PROPOSTA PARA A ETAPA 1 — copiar para `modelos/bee-autopiloto.yml` e para
-# `.github/workflows/bee-autopiloto.yml` (têm de ficar iguais). O GitHub recusa
-# o push de ficheiros em `.github/workflows/` quando a integração não tem a
-# permissão `workflows`; por isso a alteração viaja aqui até ser aplicada.
 name: BEE — produção automática
 
 # Modelo de produção automática na nuvem (GitHub Actions).

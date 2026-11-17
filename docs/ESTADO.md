@@ -85,7 +85,7 @@ sem autorização explícita.
 
 ### Testes
 
-`python3 -m unittest discover -s tests` → **143 testes, 2 skipped, OK**.
+`python3 -m unittest discover -s tests` → **145 testes, 2 skipped, OK**.
 Foram acrescentados testes para o 429 sem espera, o limite de 45 s, a contagem
 de tentativas, o prazo do ciclo, o orçamento com o Gemini sozinho e o
 relatório sem módulos.
