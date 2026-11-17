@@ -16,7 +16,7 @@ class SimularHTTP:
     def __init__(self, *args, **kwargs):
         self.requests = []
 
-    def obter(self, requisicao, descricao, limite=None, log=None):
+    def obter(self, requisicao, descricao, limite=None, log=None, provedor=None):
         if requisicao.data is None:  # listagem de modelos (GET)
             return json.dumps({'data': []}).encode()
         self.requests.append(requisicao)

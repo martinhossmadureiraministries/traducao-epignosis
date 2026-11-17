@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 import sys
+import time
 from typing import Any, Callable, Protocol
 
 from .arquivos import DadosInvalidos, ler_livro, ler_todos, salvar_livro, validar_versiculos
@@ -62,6 +63,9 @@ class Progresso:
     # (marcação inválida). Repetir com o mesmo pedido não resolve: o lote é
     # dividido de imediato em vez de gastar tentativas.
     lote_defeituoso: bool = False
+    # O prazo interno do ciclo foi atingido: o que está gravado é válido e o
+    # ciclo termina para o nuvem.py poder publicar antes de o job ser morto.
+    tempo_esgotado: bool = False
 
     def somar(self, outro: 'Progresso') -> None:
         self.versos += outro.versos
@@ -69,6 +73,7 @@ class Progresso:
         self.pedidos += outro.pedidos
         self.concluido = outro.concluido
         self.alterado = self.alterado or outro.alterado
+        self.tempo_esgotado = self.tempo_esgotado or outro.tempo_esgotado
         self.livro, self.capitulo = outro.livro, outro.capitulo
         self.motivos.extend(outro.motivos)
 
@@ -83,6 +88,8 @@ class ConfigGeracao:
     # Falhas já acumuladas no mesmo lote em execuções anteriores.
     falhas_anteriores: int = 0
     lote_retomar: int | None = None
+    # Prazo em segundos para esta fatia (None = sem prazo). Ver nuvem.py.
+    max_segundos: float | None = None
 
 
 def _placeholder_ausente(verso: int) -> dict[str, Any]:
@@ -151,8 +158,15 @@ def _contexto_estilo(
 def _gerar_capitulo(
     livro: Livro, capitulo: int, caminho: Path, dados: dict[str, Any],
     fontes_capitulo: list[dict[str, Any]], motor: Motor, config: ConfigGeracao,
-    progresso: Progresso,
+    progresso: Progresso, prazo: float | None = None,
 ) -> None:
+    def sem_tempo() -> bool:
+        if prazo is None or time.monotonic() < prazo:
+            return False
+        progresso.tempo_esgotado = True
+        progresso.motivos.append('prazo do ciclo atingido')
+        return True
+
     chave = str(capitulo)
     total = livro.versos_por_capitulo[capitulo - 1]
     parcial = list(dados.get('in_progress', {}).get(chave, []))
@@ -162,6 +176,8 @@ def _gerar_capitulo(
         print(f'A gerar {livro.nome} {capitulo} ({total} versículos)...', flush=True)
     limite_lote = min(config.versos_por_pedido, total)
     while len(parcial) < total:
+        if sem_tempo():
+            return
         if config.max_versos is not None and progresso.versos >= config.max_versos:
             progresso.motivos.append('orçamento de versículos desta fatia atingido')
             return
@@ -190,6 +206,8 @@ def _gerar_capitulo(
             tamanho = 1
         falhas_unitarias = 0
         while True:
+            if sem_tempo():
+                return
             selecionadas = fontes_capitulo[inicio - 1:inicio - 1 + tamanho]
             try:
                 estilo = _contexto_estilo(dados, capitulo, parcial) if config.estilo else None
@@ -283,6 +301,11 @@ def _percorrer(
     livros: list[Livro], diretorio: Path, fontes: FontesOriginais, motor: Motor,
     config: ConfigGeracao, existentes: dict[int, Any], progresso: Progresso,
 ) -> Progresso:
+    prazo = (
+        time.monotonic() + config.max_segundos
+        if config.max_segundos and config.max_segundos > 0
+        else None
+    )
     for livro in livros:
         caminho = diretorio / livro.nome_arquivo
         if livro.numero in existentes and not caminho.exists():
@@ -300,6 +323,11 @@ def _percorrer(
         dados['sources'] = versoes
         progresso.livro = livro
         for capitulo in pendentes:
+            if prazo is not None and time.monotonic() >= prazo:
+                progresso.tempo_esgotado = True
+                progresso.motivos.append('prazo do ciclo atingido')
+                progresso.concluido = False
+                return progresso
             if config.max_versos is not None and progresso.versos >= config.max_versos:
                 progresso.motivos.append('orçamento de versículos desta fatia atingido')
                 progresso.concluido = False
@@ -310,7 +338,13 @@ def _percorrer(
                 return progresso
             progresso.capitulo = capitulo
             fontes_capitulo = fontes.capitulo(livro, capitulo)
-            _gerar_capitulo(livro, capitulo, caminho, dados, fontes_capitulo, motor, config, progresso)
+            _gerar_capitulo(
+                livro, capitulo, caminho, dados, fontes_capitulo, motor, config,
+                progresso, prazo,
+            )
+            if progresso.tempo_esgotado:
+                progresso.concluido = False
+                return progresso
         progresso.capitulo = None
     progresso.concluido = True
     return progresso

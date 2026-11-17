@@ -25,7 +25,7 @@ python autopiloto.py --uma-vez                 # primeiro teste real (6 versícu
 python autopiloto.py --horas 6 --fuso Africa/Luanda
 ```
 
-Para continuar **com o computador desligado**, o modelo de workflow [`modelos/bee-autopiloto.yml`](modelos/bee-autopiloto.yml) (copie-o para `.github/workflows/`) corre `nuvem.py` numa GitHub Action a cada 15 minutos, publica os JSON no ramo `bee-dados` e deixa o `BEE-modulos.zip` como artefato descarregável. O programa não depende do GitHub: `autopiloto.py` faz o mesmo localmente ou num `cron`.
+Para continuar **com o computador desligado**, o workflow corre `nuvem.py` numa GitHub Action a cada 20 minutos; o programa limita cada execução a 11 minutos e o job tem `timeout-minutes: 12` depois de aplicar `docs/bee-autopiloto.yml` (`./scripts/aplicar_workflow.sh`). Publica os JSON no ramo de dados e deixa o `BEE-modulos.zip` e o `RELATORIO.txt` como artefactos descarregáveis. O programa não depende do GitHub: `autopiloto.py` faz o mesmo localmente ou num `cron`.
 
 Limites honestos: os planos gratuitos não são ilimitados. Com quota gratuita, 300–800 versículos por dia é realista; a Bíblia inteira leva semanas a meses, não dias, e continua a exigir revisão humana. Os textos automáticos entram marcados como rascunho, e o prompt automático proíbe atribuir consultas a BDB/Thayer/Nestle-Aland que não aconteceram. Detalhes, tabelas de quota e estimativas em [AUTOMACAO.md](AUTOMACAO.md).
 
@@ -197,7 +197,7 @@ A prévia real de Filemom 1 e João 1–4 foi aberta programaticamente com o lei
 
 ## 7. Testes
 
-Os testes normais (71) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores, o orçamento diário e a recuperação de progresso sem sobrescrever revisões locais. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
+Os testes normais (143) não usam credenciais nem rede; simulam as respostas das APIs, interrupção, retomada, validação, compilação, o autopiloto, o rodízio de provedores, o orçamento diário e a recuperação de progresso sem sobrescrever revisões locais. Não foram feitas chamadas reais às APIs; disponibilidade, preços e permissões do modelo devem ser verificados na sua conta:
 
 ```bash
 python -m unittest discover -s tests -v

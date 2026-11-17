@@ -17,6 +17,14 @@ class ErroRede(RuntimeError):
     pass
 
 
+# Nenhuma espera de rede pode bloquear um ciclo por mais do que isto. Em 17/11
+# a Groq devolveu Retry-After de 523 s, 1176 s, 989 s e 1542 s; o programa
+# dormiu esses valores e a execução do GitHub foi cancelada aos 50 minutos.
+# Um 429 passa imediatamente ao provedor seguinte; a espera longa é decisão do
+# agendador, não de uma única chamada HTTP.
+ESPERA_MAXIMA = 45.0
+
+
 class CotaExcedida(ErroRede):
     """HTTP 429 persistente: a quota do serviço (ou da chave) está esgotada por agora."""
 
@@ -60,6 +68,14 @@ class ClienteHTTP:
         self._gasto: dict[str, list[tuple[float, int]]] = {}
         self._pedidos: dict[str, list[float]] = {}
         self._esperas: dict[str, float] = {}
+        # Contagem de tentativas HTTP por provedor, incluindo as que falharam.
+        # O orçamento diário tem de contar o que foi realmente gasto, não só
+        # os lotes que produziram versículos.
+        self.contagem_pedidos: dict[str, int] = {}
+
+    def pedidos_por_provedor(self) -> dict[str, int]:
+        """Tentativas HTTP feitas nesta execução, por provedor."""
+        return dict(self.contagem_pedidos)
 
     def reservar_pedido(self, provedor: str) -> float:
         """Espera o necessário para não exceder os pedidos/minuto do serviço."""
@@ -124,9 +140,12 @@ class ClienteHTTP:
     def obter(
         self, requisicao: urllib.request.Request, descricao: str,
         limite: int = 64 * 1024 * 1024, log: Callable[[str], None] | None = None,
+        provedor: str | None = None,
     ) -> bytes:
         """Nunca imprime a chave, o corpo da resposta ou o texto enviado à API."""
         for tentativa in range(1, self.tentativas + 1):
+            if provedor:
+                self.contagem_pedidos[provedor] = self.contagem_pedidos.get(provedor, 0) + 1
             self._esperar_pausa()
             retry_after = 0.0
             try:
@@ -139,7 +158,16 @@ class ClienteHTTP:
                 codigo = exc.code
                 retry_after = _retry_after(exc.headers.get('Retry-After')) if exc.headers else 0.0
                 exc.close()
-                transitorio = codigo in (408, 409, 425, 429) or 500 <= codigo <= 599
+                if codigo == 429:
+                    # Não dormir: o rodízio passa ao provedor seguinte. Uma
+                    # espera de 20 minutos é pior do que perder este lote e
+                    # voltar no ciclo seguinte.
+                    espera = f' (Retry-After {retry_after:.0f}s)' if retry_after else ''
+                    raise CotaExcedida(
+                        f'{descricao}: HTTP 429{espera}; limite de ritmo/quota atingido, '
+                        'a tentar outro provedor.'
+                    ) from None
+                transitorio = codigo in (408, 409, 425) or 500 <= codigo <= 599
                 if not transitorio:
                     dica = {
                         400: 'verifique os parâmetros e a compatibilidade do modelo',
@@ -156,9 +184,7 @@ class ClienteHTTP:
                 # A pausa é medida após o fim da chamada, não apenas entre inícios.
                 self._ultima_requisicao = time.monotonic()
             if tentativa == self.tentativas:
-                if motivo == 'HTTP 429':
-                    classe = CotaExcedida
-                elif motivo.startswith('HTTP 5'):
+                if motivo.startswith('HTTP 5'):
                     classe = ServicoIndisponivel
                 else:
                     classe = ErroRede
@@ -166,7 +192,7 @@ class ClienteHTTP:
                 if log:
                     log(texto)
                 raise classe(texto) from None
-            atraso = max(retry_after, min(60.0, 2 ** (tentativa - 1) + random.random()))
+            atraso = min(ESPERA_MAXIMA, max(retry_after, min(60.0, 2 ** (tentativa - 1) + random.random())))
             aviso = f'{descricao}: {motivo}; nova tentativa em {atraso:.1f}s ({tentativa}/{self.tentativas}).'
             print(aviso, file=sys.stderr)
             if log:

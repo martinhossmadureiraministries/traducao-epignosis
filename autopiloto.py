@@ -236,9 +236,14 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
         for nome, config in PROVEDORES.items():
             valor = os.environ.get(config.variavel) or ''
             if config.sem_chave:
-                # Nível anónimo: entra na fila sem chave nenhuma. Basta uma
-                # variável posta a '0' para o desligar sem tocar no código.
-                if constante_ligada(os.environ.get(config.variavel + '_ATIVO', '1')):
+                # Nível anónimo: só entra com chave ou com opt-in explícito.
+                # Antes entrava sempre, mesmo quando a listagem de modelos
+                # falhava; a fila ficava presa num serviço que não respondia e
+                # o resumo dizia que ele estava a produzir.
+                ativo = bool(valor.strip()) or constante_ligada(
+                    os.environ.get(config.variavel + '_ATIVO', '0')
+                )
+                if ativo:
                     configurados.append((nome, valor))
             elif valor and ler_chaves(valor):
                 configurados.append((nome, valor))
@@ -249,6 +254,21 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
             raise SystemExit(
                 f'Nenhuma chave para {config.rotulo}. Defina {config.variavel} ou use --chaves.'
             )
+    # Lista branca opcional: produção com Gemini e Groq não deve incluir um
+    # serviço extra só porque alguém deixou uma chave no ambiente. Ex.:
+    # BEE_PROVEDORES=gemini,groq
+    permitidos = {
+        nome.strip().lower()
+        for nome in os.environ.get('BEE_PROVEDORES', '').split(',')
+        if nome.strip()
+    }
+    if permitidos:
+        configurados = [(n, c) for n, c in configurados if n in permitidos]
+        if not configurados:
+            raise SystemExit(
+                'Nenhum provedor de BEE_PROVEDORES está configurado. '
+                f'Pedidos: {", ".join(sorted(permitidos))}.'
+            )
     if not configurados:
         disponiveis = ', '.join(f'{p.variavel} ({p.rotulo})' for p in PROVEDORES.values() if p.pedidos_por_dia)
         raise SystemExit(
@@ -257,18 +277,14 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     # Provedores gratuitos primeiro; os pagos só entram se o utilizador os
     # configurar.
     #
-    # O Gemini respondeu 503 em rajada a 17/11, mas tem a maior quota diária
-    # gratuita (~480 pedidos) e é rápido; a Groq é pequena (~66 pedidos/dia
-    # pelos 200.000 tokens) mas fiável. `BEE_PROVEDOR_PRINCIPAL` escolhe quem
-    # abre a fila sem tocar no código.
-    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'ovh').strip().lower()
-    # A OVHcloud anónima vai por ÚLTIMO quando há chaves: aceita 2 pedidos/
-    # minuto, e ficar à frente de um serviço com quota desperdiçava-o — o
-    # rodízio fica preso no primeiro que responde. Sem chave nenhuma, é a
-    # única da fila e o `principal` por omissão volta a pô-la à frente.
+    # O Gemini tem a maior quota diária gratuita (~480 pedidos) e é rápido; a
+    # Groq é pequena (~66 pedidos/dia pelos 200.000 tokens) mas fiável. A OVH
+    # anónima é opcional (2 pedidos/minuto) e só entra com opt-in.
+    # `BEE_PROVEDOR_PRINCIPAL` escolhe quem abre a fila sem tocar no código.
+    principal = (os.environ.get('BEE_PROVEDOR_PRINCIPAL') or 'gemini').strip().lower()
     ordem_nomes = ['gemini', 'groq', 'openrouter', 'cerebras', 'openai', 'ovh']
     if principal not in ordem_nomes:
-        principal = 'ovh'
+        principal = 'gemini'
     ordem_nomes.remove(principal)
     ordem_nomes.insert(0, principal)
     ordem = {nome: i for i, nome in enumerate(ordem_nomes)}
@@ -291,7 +307,7 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     return motores
 
 
-def _tectos_por_provedor(lote: int) -> dict[str, int]:
+def _tectos_por_provedor(lote: int | None) -> dict[str, int]:
     """Quantos pedidos por dia cada serviço aguenta, pela sua própria quota.
 
     O tecto global (`BEE_PEDIDOS_POR_DIA`) é uma média; este é o limite real de
@@ -299,13 +315,14 @@ def _tectos_por_provedor(lote: int) -> dict[str, int]:
     inteiro mesmo com o Gemini disponível.
     """
     tectos: dict[str, int] = {}
-    if not lote:
-        return tectos
+    # Sem --lote, usa o tamanho padrão de 6 para não desligar os tectos por
+    # provedor (antes, `args.lote=None` devolvia um dicionário vazio).
+    base = lote or 6
     for nome, config in PROVEDORES.items():
         if config.tokens_por_dia:
             # ~3.000 tokens por pedido com lote de 6 (1.500 de entrada + 1.500
             # de saída); pedidos maiores gastam proporcionalmente mais.
-            tectos[nome] = max(1, config.tokens_por_dia // (lote * 500))
+            tectos[nome] = max(1, config.tokens_por_dia // (base * 500))
     return tectos
 
 
