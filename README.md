@@ -50,12 +50,15 @@ computador desligado, o mesmo trabalho corre em `nuvem.py` numa GitHub Action
 
 ## Estado actual (17/11/2026)
 
-- **18 capítulos estruturalmente completos:** João 1–17 e Filemom 1.
-- **785 versículos guardados:** 766 nos capítulos completos + João 18:1–19 em
+- **19 capítulos estruturalmente completos:** João 1–18 e Filemom 1.
+- **818 versículos guardados:** 806 nos capítulos completos + João 19:1–12 em
   `in_progress`.
-- A fila retoma em **João 18:20**.
-- A execução `44109642278` produziu artefactos e actualizou o release
-  `bee-previa`, mas falhou no fim por causa do workflow ativo corrompido.
+- A fila retoma em **João 19:13**.
+- A execução `44115508985` produziu os artefactos `BEE-modulos-15` e
+  `BEE-capitulos-15` e actualizou o release `bee-previa`, mas ficou vermelha
+  porque o workflow ativo tenta criar os mesmos artefactos duas vezes (HTTP
+  409). O passo a passo para corrigir está em
+  [docs/OPERACAO.md](docs/OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
   A correcção tem de ser colada na UI; o passo a passo está em
   [docs/OPERACAO.md](docs/OPERACAO.md#aplicar-a-versão-correcta-do-workflow).
 - Tudo é provisório e precisa de revisão especializada.
