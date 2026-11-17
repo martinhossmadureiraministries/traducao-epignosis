@@ -3944,9 +3944,7 @@
         "text": "Então todos clamaram novamente, dizendo: Não a este, mas a Barrabás! Ora, Barrabás era salteador.",
         "commentary": "<p><b>Análise Léxica:</b> ἐκραύγασαν (ekraugasan, Strong: não verificado) - clamaram, gritaram; λῃστής (lēstēs, Strong: não verificado) - ladrão, salteador, insurgente. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O Textus Receptus e a edição de Tregelles incluem o termo <i>πάντες</i> (todos), ausente na SBLGNT e NA28. Além disso, a SBLGNT traz <i>πάλιν</i> enquanto o TR possui a variante combinada com <i>πάντες</i>.</p><p><b>Síntese Exegética:</b> A multidão rejeita Jesus de forma veemente, preferindo a soltura de Barrabás, um criminoso qualificado como salteador, evidenciando a rejeição pública do Messias.</p>"
       }
-    ]
-  },
-  "in_progress": {
+    ],
     "19": [
       {
         "verse": 1,
@@ -4007,6 +4005,220 @@
         "verse": 12,
         "text": "Por causa disso, Pilatos procurava soltar-lhe; mas os judeus [[clamavam]], dizendo: Se a este soltas, não és amigo de César; todo aquele que se faz rei opõe-se a César.",
         "commentary": "<p><b>Análise Léxica:</b> ἐκ τούτου (ek toutou - por causa disso), ἐζήtyei (ezētei - Strong G2212: procurava), ἀπολυσαι (apolysai - Strong G630: soltar), Ἰουδαῖοι (Ioudaioi - Strong G2453: judeus), [[ἐκραύγασαν]] (ekraugasan - Strong G2810: clamaram / TR: ἔκραζον - clamavam), λέγοντες (legontes - Strong G3004: dizendo), φίλος (philos - Strong G5384: amigo), Καίσαρος (Kaisaros - Strong G2541: de César), βασιλέα (basilea - Strong G935: rei), ἀντιλέγει (antilegei - Strong G473: opõe-se). Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a ordem <i>ὁ Πιλᾶτος ἐζήτει</i>, ao passo que o TR apresenta <i>ἐζήτει ὁ Πιλâτος</i>. Além disso, o SBLGNT utiliza o verbo no aoristo <i>ἐκραύγασαν</i>, enquanto o TR utiliza o imperfeito <i>ἔκραζον</i>.</p><p><b>Síntese Exegética:</b> Diante da postura de Jesus, Pilatos tenta novamente libertá-lo, mas é acuado por uma ameaça política direta dos judeus, que questionam a sua lealdade ao imperador romano ao defender alguém que se autoproclama rei.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Pilatos, pois, ouvindo [[estas palavras]], trouxe para fora a Jesus, e assentou-se [[sobre]] o tribunal, no lugar chamado Pavimento de Pedra, e em hebraico, Gabatá.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>λόγος</i> (logos, Strong: 3056) - palavra, discurso; <i>βῆμα</i> (bema, Strong: 968) - tribunal, estrado. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta <i>τῶν λόγων τούτων</i>, enquanto o Textus Receptus traz <i>τοῦτον τὸν λόγον</i>. O SBLGNT traz <i>ἐπὶ</i>, enquanto o Textus Receptus acrescenta <i>τοῦ</i> antes de <i>βήματος</i>.</p><p><b>Síntese Exegética:</b> Pilatos cede à pressão pública e assume formalmente o assento de julgamento para proferir a sentença final contra Jesus.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E era a preparação da Páscoa, e era [[cerca da]] sexta hora. E disse aos judeus: Eis o rei de vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>παρασκευή</i> (paraskeve, Strong: 3904) - preparação; <i>ώρα</i> (hora, Strong: 5610) - hora. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἦν ὡς</i>, ao passo que o Textus Receptus registra <i>δὲ ὡσεὶ</i>.</p><p><b>Síntese Exegética:</b> O evangelista aponta o momento solene da preparação para a Páscoa, confrontando a nação judaica com a figura humilhada de seu verdadeiro Rei.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "[[Então aqueles clamaram]]: Fora, fora, crucifica-o! Disse-lhes Pilatos: Hei de crucificar o rei de vocês? Responderam os principais dos sacerdotes: Não temos rei senão a César.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>κραυγάζω</i> (kraugazo, Strong: 2896) - clamar, gritar; <i>ἀρχιερεύς</i> (archiereus, Strong: 749) - sumo sacerdote. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἐκραύγασαν οὖν ἐκεῖνοι</i>, enquanto o Textus Receptus apresenta <i>Οἱ δὲ ἐκραύγασαν</i>.</p><p><b>Síntese Exegética:</b> A rejeição completa do Messias atinge o ápice quando os líderes religiosos declaram submissão política a César em detrimento da soberania divina.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Então, pois, entregou-lhes a ele para que fosse crucificado. E [[então]] tomarão a [[Jesus]];",
+        "commentary": "<p><b>Análise Léxica:</b> <i>παραδίδωμι</i> (paradidomi, Strong: 3860) - entregar; <i>σταυρόω</i> (stauroo, Strong: 4717) - crucificar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>οὖν</i> e <i>Ἰησοῦν</i>, enquanto o Textus Receptus traz <i>δὲ</i> e acrescenta <i>καὶ ἤγαγον</i>.</p><p><b>Síntese Exegética:</b> A sentença é executada e as autoridades tomam a custódia de Jesus para dar início ao suplício da cruz.</p><p><i>Nota de Revisão: O versículo 16 está dividido no fluxo da tradução; assegure a continuidade com o trecho seguinte.</i></p>"
+      },
+      {
+        "verse": 17,
+        "text": "e, levando [[para si mesmo a cruz]], exorou para [[o]] lugar chamado Caveira, o qual é chamado em hebraico Gólgota,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>βαστάζω</i> (bastazo, Strong: 941) - carregar, levar; <i>σταυρός</i> (stauros, Strong: 4716) - cruz. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>αὑτῷ τὸν σταυρὸν</i>, o NA28 traz <i>ἑαυτῷ τὸν σταυρὸν</i>, e o Textus Receptus traz <i>τὸν σταυρὸν αὐτοῦ</i>. Há também variação entre <i>τὸν</i> e <i>τόπον</i>, bem como <i>ὃ</i> e <i>ὅς</i>.</p><p><b>Síntese Exegética:</b> Jesus carrega o madeiro rumo ao local da execução, cumprindo o doloroso caminho rumo à colina da Caveira.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "onde o crucificaram, e com ele outros dois, de um e de outro lado, e Jesus no meio.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>μέσον</i> (meson, Strong: 3319) - no meio, centro. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O relato culmina na crucificação de Jesus no centro, ladeado por malfeitores, consumando o sacrifício vicário.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "E escreveu também um título Pilatos, e o pôs sobre a cruz; e estava escrito: Jesus, o Nazareno, o Rei dos Judeus.",
+        "commentary": "<p><b>Análise Léxica:</b> ἔγραψεν (egrapsen - definições não verificadas em léxico), τίτλον (titlon - título), Πιλᾶτος (Pilatos - Pilatos), σταυροῦ (staurou - cruz), Ἰησοῦς (Iēsous - Jesus), Ναζωραῖος (Nazōraios - Nazareno), βασιλεύς (basileus - rei), Ἰουδαίων (Ioudaiōn - dos judeus).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Pilatos redige pessoalmente o letreiro oficial que proclama a acusação e identidade do crucificado, fixando-o no alto do madeiro em três línguas, proclamando sem o saber a verdadeira realeza do Messias.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Portanto, este título muitos dos judeus leram, porque o lugar onde Jesus foi crucificado era perto da cidade; e estava escrito em hebraico, [[em latim, em grego]].",
+        "commentary": "<p><b>Análise Léxica:</b> ἀνέγνωσan (anegnosan - leram), τόπος (topos - lugar), πόλεως (poleōs - cidade), ἐσταυρώθη (estaurōthē - foi crucificado), Ἑβραϊστί (Hebraisti - em hebraico), Ῥωμαϊστί (Rhōmaisti - em latim), Ἑλληνιστί (Hellēnistē - em grego).</p><p><b>Crítica Textual:</b> Há variação na ordem dos termos para as línguas: o SBLGNT e manuscritos como WH, Treg e NA28 trazem <i>Ῥωμαϊστί, Ἑλληνιστί</i>, enquanto o Textus Receptus e o RP trazem a ordem invertida <i>Ἑλληνιστί Ῥωμαϊστί</i>.</p><p><b>Síntese Exegética:</b> A proximidade do local de execução com Jerusalém e a proclamação multilíngue garantem que uma multidão heterogênea leia a inscrição, gerando imediato incômodo nas lideranças religiosas.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Diziam, pois, a Pilatos os principais sacerdotes dos judeus: Não escrevas: O Rei dos Judeus, mas que ele disse: Rei [[dos Judeus sou eu]].",
+        "commentary": "<p><b>Análise Léxica:</b> ἀρχιερεῖς (archiereis - principais sacerdotes), γράφε (graphe - escreves), ἐκεῖνος (ekeinos - aquele), εἶπεν (eipen - disse), βασιλεύς (basileus - rei), εἰμί (eimi - sou).</p><p><b>Crítica Textual:</b> O SBLGNT com WH e Treg traz a ordem <i>τῶν Ἰουδαίων εἰμί</i>, ao passo que NA28 e o Textus Receptus (com RP) trazem <i>εἰμι τῶν Ἰουδαίων</i>.</p><p><b>Síntese Exegética:</b> Os líderes judaicos protestam contra a formulação direta do título, desejando que conste apenas como pretensão ou alegação infundada do próprio réu, e não como um fato reconhecido.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Respondeu Pilatos: O que tenho escrito, escrito tenho.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπεκρίθη (apekrithē - respondeu), γέγραφα (gegrapha - tenho escrito / escrevi).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Com firmeza inflexível e irredutível, o governador romano rejeita a petição sacerdotal, encerrando o debate e mantendo soberanamente o decreto afixado sobre a cruz.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Os soldados, pois, quando crucificaram a Jesus, tomaram as vestes dele e fizeram quatro partes, para cada soldado uma parte, e também a túnica. E a túnica era sem costura, de alto a baixo tecida por inteiro;",
+        "commentary": "<p><b>Análise Léxica:</b> στρατιῶται (stratiōtai - soldados), ἐσταύρωσαν (estaurōsan - crucificaram), ἱμάτια (himatia - vestes), τέσσαρα (tessara - quatro), μέρη (merē - partes), χιτῶνα (chitōna - túnica), ἄραφος (araphos - sem costura), ὑφανtός (hyphantos - tecido).</p><p><b>Crítica Textual:</b> O Textus Receptus apresenta a grafia <i>αρραφος</i> com dois &#x27;r&#x27;, ao passo que o SBLGNT registra <i>ἄραφος</i> com um &#x27;r&#x27;, mantendo o mesmo sentido de peça sem costura.</p><p><b>Síntese Exegética:</b> Os executores dividem os bens comuns do condenado, mas reservam especial atenção à túnica inteiriça e sem costura, obra de fino lavor que evitam rasgar, cumprindo-se incidentalmente detalhes de profecias antigas.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Disseram, pois, uns aos outros: Não a rasguemos, mas deitem-nos sortes sobre ela, de quem será, para que a Escritura se cumpra [[que diz]]: Dividiram as minhas vestes entre si, e sobre a minha vestimenta lançaram sorte. Os soldados, pois, fizeram estas coisas.",
+        "commentary": "<p><b>Análise Léxica:</b> εἶπαν (eipän) - disseram / definição não verificada em léxico; σχίσωμεν (schisömen) - rasguemos / definição não verificada em léxico; λάχωμεν (lachömen) - lancemos sortes / definição não verificada em léxico; ἱμάτιά (himatia) - vestes / definição não verificada em léxico; κλῆρον (klēron) - sorte / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra uma variante na inclusão da expressão [[ἡ λέγουσα]] (que diz), omitida por WH, mas presente em Treg, NA28 e RP, concordando com o texto adotado.</p><p><b>Síntese Exegética:</b> A recusa dos soldados em rasgar a túnica inconsútil e a decisão de lançar sortes cumpre literalmente o Salmo 22:18, demonstrando a soberania divina operando mesmo através da inconsciência dos executores romanos.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Estavam, pois, junto à cruz de Jesus a mãe dele, e a irmã da mãe dele, Maria, <i>mulher</i> de Clopas, e Maria Madalena.",
+        "commentary": "<p><b>Análise Léxica:</b> Eἱστήκεισαν (histēkeisan) - estavam em pé / definição não verificada em léxico; σταυρῷ (staurō) - cruz / definição não verificada em léxico; μήτηρ (mētēr) - mãe / definição não verificada em léxico; ἀδελφὴ (adelphē) - irmã / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A presença firme das mulheres fiéis e da mãe de Jesus junto ao patíbulo evidencia a coragem e a devoção inabalável em contraste com o abandono generalizado dos discípulos homens, exceto pelo discípulo amado.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Jesus, pois, vendo a mãe e o discípulo a quem amava presente, diz à <i>sua</i> mãe: Mulher, <i>eis</i> aí o teu filho.",
+        "commentary": "<p><b>Análise Léxica:</b> ἰδὼν (idōn) - vendo / definição não verificada en léxico; ἀγαπά_(agapā) - amava / definição não verificada em léxico; Γύναι (gynai) - mulher / definição não verificada en léxico; ἴδε (ide) - eis / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <b>μητρί</b> sem o pronome, enquanto o Textus Receptus acrescenta αὐτοῦ. Quanto a <b>ἴδε</b>, o TR traz a forma ἰδοὺ.</p><p><b>Síntese Exegética:</b> Em meio ao seu sofrimento extremo, Jesus demonstra profundo cuidado filial, constituindo uma nova relação familiar espiritual ao confiar Maria aos cuidados do discípulo amado.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "Depois diz ao discípulo: <i>Eis</i> aí a tua mãe. E desde aquela hora o discípulo a levou para os seus próprios <i>lugares</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> εἶτα (eita) - depois / definição não verificada em léxico; Ἴδε (ide) - eis / definição não verificada em léxico; ὥρας (hōras) - hora / definição não verificada em léxico; ἔλαβεν (elaben) - tomou / recebeu / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a forma <b>Ἴδε</b>, ao passo que o Textus Receptus apresenta Ἰδοὺ.</p><p><b>Síntese Exegética:</b> A pronta obediência do discípulo ao acolher Maria reflete a nova ética da comunidade da aliança, onde os laços da fé superam os laços estritamente biológicos.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Depois disso, sabendo Jesus que todas as coisas já estavam consumadas, para que a Escritura se cumprisse, diz: Tenho sede.",
+        "commentary": "<p><b>Análise Léxica:</b> εἰδὼς (eidōs) - sabendo / definição não verificada em léxico; τετέλεσται (tetelestai) - está consumado / definição não verificada em léxico; τελειωθῇ (teleiōthē) - seja consumado / cumprido / definição não verificada em léxico; Διψῶ (dipsō) - tenho sede / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <b>εἰδὼς</b>, enquanto o TR possui ἰδὼν. Na ordem seguinte, o SBLGNT traz [[ἤδη πάντα]], ao passo que o TR traz πάντα ἤδη.</p><p><b>Síntese Exegética:</b> A declaração da sede física sublinha a humanidade real de Cristo e serve ao propósito deliberado de cumprir as Escrituras proféticas relativas aos sofrimentos do Messias.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Estava ali um vaso cheio de vinagre. [[Eles, pois, enchimento de um esponja com vinagre]] e, pondo-a em um hissope, lha ofereceram à boca.",
+        "commentary": "<p><b>Análise Léxica:</b> σκεῦος (skeuos) - vaso / definição não verificada em léxico; ὄξους (oxous) - vinagre / definição não verificada em léxico; μεστόν (meston) - cheio / definição não verificada em léxico; σπόγγον (spongon) - esponja / definição não verificada em léxico; ὑσσώπῳ (hyssōpō) - hissopo / definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <b>σκεῦος</b> (sem οὖν), [[σπόγγον οὖν μεστὸν τοῦ]] em contraste com o TR (οἱ δέ πλήσαντες σπόγγον), e [[ὑσσώπῳ]] sem a conjunção presente no TR (καὶ ὑσσώπῳ).</p><p><b>Síntese Exegética:</b> O uso do hissopo remonta ao simbolismo da Páscoa (o sangue nos umbrais), ligando a consumação do sacrifício de Cristo ao grande evento redentor do êxodo.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "Quando, pois, Jesus tomou o vinagre, disse: Está consumado; e, inclinando a cabeça, entregou o espírito.",
+        "commentary": "<p><b>Análise Léxica:</b> ὅτε (hote - quando), οὖν (oun - logo, pois), ἔλαβεν (elaben - tomou, de λαμβάνω), τὸ ὄξος (to oxos - o vinagre), ὁ Ἰησοῦς (ho Iēsous - Jesus), εἶπεν (eipen - disse, de λέγω), Τετέλεσται (tetelestai - está consumado, terminado, de τελέω), καὶ (kai - e), κλίνας (klinas - inclinando, de κλίνω), τὴν κεφαλὴν (tēn kephalēn - a cabeça), παρέδωκεν (paredōken - entregou, de παραδίδωμι), τὸ πνεῦμα (to pneuma - o espírito). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A palavra final de Jesus, &#x27;Está consumado&#x27; (Tetelestai), proclama a completa realização da obra redentora que o Pai lhe confiara. A submissão voluntária na morte é evidenciada pelo inclinar da cabeça e pela entrega do espírito, mostrando que a sua vida não lhe foi arrebatada à força, mas entregue por amor e obediência.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Os judeus, pois, visto que era a preparação, para que os corpos não ficassem sobre a cruz no sábado — porque era grande o dia daquele sábado —, pediram a Pilatos que lhes fossem quebradas as pernas e fossem tirados.",
+        "commentary": "<p><b>Análise Léxica:</b> Οἱ ἰουδαῖοι (hoi ioudaioi - os judeus), ἐπεὶ (epei - visto que, já que), παρασκευὴ ἦν (paraskeuē ἦν - era a preparação), ἵνα μὴ μείνῃ (hina mē meinē - para que não fique), ἐπὶ τοῦ σταυροῦ (epi tou staurou - sobre a cruz), τὰ σώματα (ta sōmata - os corpos), ἐν τῷ σαββάτῳ (en tō sabbatō - no sábado), ἦν γὰρ μεγάλη ἡ ἡμέρα (hēn gar megalē hē hēmera - pois era grande o dia), ἐκείνου τοῦ σαββάτου (ekeinou tou sabbatou - daquele sábado), ἠρώτησαν (ērōtēsan - pediram), τὸν Πιλᾶτον (ton Pilaton - a Pilatos), ἵνα κατεαγωσιν (hina kateagōsin - que fossem quebradas), αὐτῶν τὰ σκέλη (autōn ta skelē - as pernas deles), καὶ ἀρθῶσιν (kai arthōsin - e fossem retirados). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> O aparato do SBLGNT registra variação na ordem das palavras para a oração subordinada <i>ἵνα μὴ μείνῃ...</i> em relação ao Textus Receptus (RP), sem alterar o sentido essencial do texto.</p><p><b>Síntese Exegética:</b> A urgência dos líderes religiosos em apurar a morte dos crucificados decorria da proximidade do sábado, que naquele ano coincidiam com uma festividade solene (um &#x27;grande dia&#x27;). A quebra das pernas (crurifrágio) acelerava a morte por sufocamento, evitando a profanação do preceito sabático pela presença de cadáveres expostos.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "Foram, pois, os soldados e, do primeiro, certamente, quebraram as pernas, e do outro que fora crucificado com ele;",
+        "commentary": "<p><b>Análise Léxica:</b> ἦλθον (ēlthon - vieram), οἱ στρατιῶται (hoi stratiōtai - os soldados), καὶ τοῦ μὲν πρώτου (kai tou men prōtou - e do primeiro certamente), κατέαξαν (kateaxan - quebraram), τὰ σκέλη (ta skelē - as pernas), καὶ τοῦ ἄλλου (kai tou allou - e do outro), τοῦ συσταυρωθέντος αὐτῷ (tou systaurōthentos autō - do que fora crucificado com ele). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Os soldados executam as ordens e aplicam o suplício complementar aos dois malfeitores que ladeavam a Jesus, cumprindo rigorosamente os procedimentos romanos de aceleração da morte antes do início do período sagrado.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "mas, chegando-se a Jesus e vendo que já estava morto, não lhe quebraram as pernas;",
+        "commentary": "<p><b>Análise Léxica:</b> ἐπὶ δὲ τὸν Ἰησοῦν ἐλθόντες (epi de ton Iēsoun elthontes - e chegando-se a Jesus), ὡς εἶδον (hōs eidon - como viram), ἤδη αὐτὸν τεθνηκότα (ēdē auton tethnēkota - que ele já estava morto), οὐ κατέαξαν αὐτοῦ τὰ σκέλη (ou kateaxan autou ta skelē - não quebraram as pernas dele). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> O SBLGNT e a tradição crítica trazem <i>ἤδη αὐτὸν</i>, enquanto o Textus Receptus apresenta <i>αὐτὸν ἤδη</i>, constituindo uma sutil variação de ordem sem impacto exegético relevante.</p><p><b>Síntese Exegética:</b> Ao constatarem que Jesus já havia expirado, os soldados abstiveram-se de quebrar-lhe os ossos. Este fato histórico cumpre tipologicamente as prescrições veterotestamentárias acerca do Cordeiro Páscoa, cujos ossos não deveriam ser quebrados.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "contudo, um dos soldados feriu-lhe o lado com uma lança, e logo saiu sangue e água.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀλλʼ εἷς τῶν στρατιωτῶν (all&#x27; heis tōn stratiōtōn - mas um dos soldados), λόγχῃ αὐτοῦ τὴν πλευρὰν (logchē autou tēn pleuran - com uma lança o lado dele), ἔνυξεν (enyxen - feriu, traspassou), καὶ ἐξῆλθεν εὐθὺς (kai exēlthen euthys - e logo saiu), αἷμα καὶ ὕδωρ (haima kai hydōr - sangue e água). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta <i>ἐξῆλθεν εὐθὺς</i>, ao passo que o Textus Receptus (RP) traz <i>εὐθέως ἐξῆλθεν</i>, variando a posição e a forma do advérbio de tempo (imediatamente).</p><p><b>Síntese Exegética:</b> O golpe de lança serve como prova irrefutável da morte física de Jesus. A emissão concomitante de sangue e água possui profunda densidade teológica e sacramental na narrativa joanina, atestando tanto a humanidade real de Cristo quanto a eficácia purificadora e vivificante da sua morte.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "E aquele que viu testificou, e o seu testemunho é verdadeiro; e ele sabe que diz a verdade, para que também vocês creiam.",
+        "commentary": "<p><b>Análise Léxica:</b> καὶ ὁ ἑωρακὼς μεμαρτύρηκεν (kai ho hōrakōs memartyrēken - e aquele que viu testificou), καὶ ἀληθινὴ αὐτοῦ ἐστιν ἡ μαρτυρία (kai alēthinē autou estin hē martyria - e o testemunho dele é verdadeiro), καὶ ἐκεῖνος οἶδεν ὅτι ἀληθῆ λέγει (kai ekeinos oiden hoti alēthē legei - e aquele sabe que diz a verdade), ἵνα καὶ ὑμεῖς πιστεύητε (hina kai hymeis pisteuēte - para que também vocês creiam). Definições não verificadas em léxico impresso.</p><p><b>Crítica Textual:</b> O aparato registra divergências pontuais: o SBLGNT traz <i>αὐτοῦ ἐστιν</i> (enquanto o TR traz <i>ἐστιν αὐτοῦ</i>), inclui a partícula <i>καὶ</i> antes de <i>ὑμεῖς</i> (omitida no TR), e utiliza o subjuntivo presente <i>πιστεύητε</i> (SBLGNT/Treg) em contraste com o aoristo <i>πιστεύσητε</i> (NA28/TR).</p><p><b>Síntese Exegética:</b> O apóstolo (a testemunha ocular) ratifica solenemente a veracidade dos fatos narrados. O objetivo primordial deste testemunho apostólico não é apenas registrar um evento histórico, mas suscitar e consolidar a fé dos leitores na identidade e na obra salvífica do Filho de Deus.</p>"
+      },
+      {
+        "verse": 36,
+        "text": "Pois estas coisas aconteceram para que a Escritura se cumprisse: <i>Nenhum</i> osso dele será quebrado.",
+        "commentary": "<p><b>Análise Léxica:</b> ὀστοῦν (ostoun) - osso; οὐ (ou) - não; συντριβήσεται (syntribēsetai) - será quebrado; αὐτοῦ (autou) - dele. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT registra αὐτοῦ, enquanto o aparato indica a variante ἀπʼ αὐτοῦ em algumas edições (RP). O Textus Receptus concorda com a leitura principal do SBLGNT.</p><p><b>Síntese Exegética:</b> O apóstolo aponta que a preservação dos ossos do Messias cumpre as ordenanças veterotestamentárias acerca do Cordeiro Páscoa, demonstrando o perfeito alinhamento dos eventos da cruz com o decreto divino.</p>"
+      },
+      {
+        "verse": 37,
+        "text": "E outra Escritura diz também: Olharão para aquele a quem traspassaram.",
+        "commentary": "<p><b>Análise Léxica:</b> πάλιν (palin) - novamente; ἑτέρα (hetaira/heterē) - outra; γραφὴ (graphē) - escritura; λέγει (legei) - diz; ὄψονται (opsontai) - olharão; εἰς (eis) - para; ὃν (hon) - quem; ἐξεκέντησαν (exekentēsan) - traspassaram. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A citação profética de Zacarias conecta o ferimento físico infligido no Calvário ao reconhecimento futuro e universal da identidade daquele que foi traspassado.</p>"
+      },
+      {
+        "verse": 38,
+        "text": "Depois disso, José de Arimateia, que era discípulo de Jesus, embora oculto por medo dos judeus, rogou a Pilatos que lhe permitisse tirar o corpo de Jesus; e Pilatos permitiu. Então foi e tirou o corpo <i>dele</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> μετὰ (meta) - depois; δέ (de) - mas/e; ἠρώτησεν (ērōtēsen) - pediu; Πιλᾶτον (Pilaton) - Pilatos; Ἰωσὴφ (Iōsēph) - José; μαθητὴς (mathētēs) - discípulo; σῶμα (sōma) - corpo. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT possui αὐτοῦ no final, enquanto o Textus Receptus traz τοῦ Ἰησοῦ. SBLGNT traz ἀπὸ Ἁριμαθαίας enquanto RP possui o artigo ὁ ἀπὸ.</p><p><b>Síntese Exegética:</b> A coragem súbita de José de Arimateia rompe o segredo anterior para garantir um sepultamento digno ao Mestre, providencialmente autorizado pelo governador romano.</p>"
+      },
+      {
+        "verse": 39,
+        "text": "E foi também Nicodemos — aquele que anteriormente fora ter com ele de noite —, levando uma mistura de mirra e aloés de cerca de cem libras.",
+        "commentary": "<p><b>Análise Léxica:</b> Νικόδημος (Nikodēmos) - Nicodemos; νυκτός (nyktos) - de noite; φέρων (pherōn) - trazendo; μίγμα (migma) - mistura; σμύρνης (smyrnēs) - de mirra; ἀλόης (alōēs) - de aloés; λίτρας (litras) - libras. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT traz αὐτὸν, ao passo que o Textus Receptus traz τὸν Ἰησοῦν. Há divergência entre μίγμα (SBLGNT, Treg, NA28) e ἕλιγμα (WH).</p><p><b>Síntese Exegética:</b> Nicodemos manifesta sua devoção a Jesus abertamente no momento da morte, contribuindo com uma quantidade extraordinária de especiarias aromáticas para o ritual fúnebre.</p>"
+      },
+      {
+        "verse": 40,
+        "text": "Tomaram, pois, o corpo de Jesus e o envolveram em lençóis com as especiarias, como os judeus têm por costume sepultar.",
+        "commentary": "<p><b>Análise Léxica:</b> ἔλαβον (elabon) - tomaram; σῶμα (sōma) - corpo; ἔδησαν (edēsan) - amarraram/envolveram; ὀθονίοις (othoniois) - lençóis de linho; ἀρωμάτων (aromatōn) - especiarias; ἐνταφιάζειν (entaphiazein) - sepultar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT traz αὐτὸ, enquanto o Textus Receptus adiciona ἐν em certas instâncias do aparato comparativo.</p><p><b>Síntese Exegética:</b> Os discípulos prepararam o corpo de Jesus estritamente de acordo com os costumes judaicos de sepultamento, validando a realidade física da morte e do cuidado mortuário.</p>"
+      },
+      {
+        "verse": 41,
+        "text": "E havia um jardim no lugar onde foi crucificado, e no jardim um sepulcro novo, em que <i>ninguém</i> ainda havia sido posto.",
+        "commentary": "<p><b>Análise Léxica:</b> τόπῳ (topō) - lugar; ἐσταυρώθη (estaurōthē) - foi crucificado; κῆπος (kēpos) - jardim; μνημεῖον (mnēmeion) - sepulcro; καινόν (kainon) - novo; τεθειμένος (tetheimenos) - posto. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT e WH trazem ἦν τεθειμένος, enquanto o Textus Receptus e Tregelles registram ἐτέθη.</p><p><b>Síntese Exegética:</b> A localização do sepulcro num jardim próximo ao Gólgota, sendo um túmulo totalmente novo onde ninguém jamais fora sepultado, resguarda a singularidade da futura ressurreição.</p>"
+      },
+      {
+        "verse": 42,
+        "text": "Ali, pois, por causa da preparação dos judeus, visto que o sepulcro estava perto, puseram a Jesus.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐκεῖ</i> (ekeî - ali, definição não verificada em léxico); <i>οὖν</i> (oûn - pois, portanto, definição não verificada em léxico); <i>δια</i> (dia - por causa de, definição não verificada em léxico); <i>τὴν</i> (tėn - a, definição não verificada em léxico); <i>παρασκευὴν</i> (paraskeuėn - preparação, dia da preparação, definição não verificada em léxico); <i>τῶν</i> (tōn - dos, definição não verificada em léxico); <i>Ἰουδαίων</i> (Ioudaíōn - judeus, definição não verificada em léxico); <i>ὅτι</i> (hoti - porque, visto que, definição não verificada em léxico); <i>ἐγγὺς</i> (engýs - perto, próximo, definição não verificada em léxico); <i>ἦν</i> (ėn - era, estava, definição não verificada em léxico); <i>τὸ</i> (to - o, definição não verificada em léxico); <i>μνημεῖον</i> (mnėmeîon - sepulcro, túmulo, definição não verificada em léxico); <i>ἔθηκαν</i> (éthėkan - puseram, colocaram, definição não verificada em léxico); <i>τὸν</i> (ton - o, definição não verificada em léxico); <i>Ἰησοῦν</i> (Iēsoûn - Jesus, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido para este versículo.</p><p><b>Síntese Exegética:</b> O sepultamento de Jesus é concluído de maneira apressada, porém digna, em virtude da iminência do sábado judaico (a preparação). A proximidade do sepulcro novo evitou o labor excessivo no transporte do corpo, permitindo que os discípulos cumprissem os preceitos rituais da época antes do repouso sabático.</p>"
+      }
+    ]
+  },
+  "in_progress": {
+    "20": [
+      {
+        "verse": 1,
+        "text": "No primeiro dia dos sábados, Maria Madalena vem ao sepulcro de manhã, sendo ainda escuro, e vê a pedra tirada do sepulcro.",
+        "commentary": "<p><b>Análise Léxica:</b> μιᾷ (mia - Strong não verificado): uma, primeiro; σαββάτων (sabbaton - Strong não verificado): sábados, semana; πρωῒ (proi - Strong não verificado): de manhã, cedo; σκοτίας (skotias - Strong não verificado): escuridão, trevas; μνημεῖον (mneimeion - Strong não verificado): sepulcro, túmulo. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> Maria Madalena chega ao sepulcro ainda na penumbra da madrugada do primeiro dia da semana, constatando o afastamento da pedra que vedava a entrada.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Corre, pois, e vem a Simão Pedro e ao outro discípulo a quem Jesus amava, e diz-lhes: Tiraram o Senhor do sepulcro, e não sabemos onde o puseram.",
+        "commentary": "<p><b>Análise Léxica:</b> τρέχει (trechei - Strong não verificado): corre; μαθητὴν (matheten - Strong não verificado): discípulo; ἐφίλει (ephilei - Strong não verificado): amava; Ἦραν (heran - Strong não verificado): tiraram, levaram; οἴδαμεν (oidamen - Strong não verificado): sabemos. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> Diante do túmulo aberto, Maria corre para alertar Pedro e o discípulo amado, expressando a angústia coletiva pelo desaparecimento do corpo do Senhor.</p><p>Nota de tradução: o verbo &#x27;oídamen&#x27; foi traduzido no plural (&#x27;sabemos&#x27;), refletindo a apreensão compartilhada por Maria e os demais.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Saiu, pois, Pedro e o outro discípulo, e iam ao sepulcro.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐξῆλθεν (exelthen - Strong não verificado): saiu; ἤρχοντο (erchento - Strong não verificado): iam, dirigiam-se; μνημεῖον (mneimeion - Strong não verificado): sepulcro. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A notícia impulsiona Pedro e o discípulo amado a deixarem o local onde estavam e correrem em direção ao sepulcro para verificar os fatos.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "E os dois corria<i>m</i> juntos; mas o outro discípulo correu mais depressa do que Pedro, e chegou primeiro ao sepulcro;",
+        "commentary": "<p><b>Análise Léxica:</b> ἔτρεχον (etrechon - Strong não verificado): corriam; ὁμοῦ (homou - Strong não verificado): juntos; προέδραμεν (proedramen - Strong não verificado): correu adiante, antecipou-se; τάχιον (tachion - Strong não verificado): mais depressa, mais rápido. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A corrida conjunta revela o ímpeto dos discípulos; a juventude ou o vigor do discípulo amado permite-lhe chegar antes ao destino.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "e, inclinando-se, vê os lençóis de linho postos ali; contudo, não entrou.",
+        "commentary": "<p><b>Análise Léxica:</b> παρακύψας (parakypsas - Strong não verificado): inclinando-se para olhar; βλέπει (blepei - Strong não verificado): vê; κείμενα (keimena - Strong não verificado): postos, deitados; ὀθόνια (othonia - Strong não verificado): lençóis de linho, faixas; μέντοι (mentoi - Strong não verificado): contudo, todavia. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> Ao alcançar o sepulcro, o discípulo amado inclina-se para o interior e observa as ataduras de linho abandonadas, hesitando em entrar de imediato por reverência ou temor.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Vem, pois, Simão Pedro, que o seguia, e entrou no sepulcro; e contempla os lençóis postos,",
+        "commentary": "<p><b>Análise Léxica:</b> ἀκολουθῶν (akoluthon - Strong não verificado): seguindo; εἰσῆλθεν (eiselthen - Strong não verificado): entrou; θεωρεῖ (theorei - Strong não verificado): contempla, observa atentamente; κείμενα (keimena - Strong não verificado): postos, estendidos. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT inclui a conjunção [[καὶ]] antes de Simão Pedro, corroborada por WH, Treg e NA28, enquanto o Textus Receptus (RP) omite esta partícula, sem alterar substancialmente o sentido da narrativa.</p><p><b>Síntese Exegética:</b> Pedro, demonstrando sua habitual ousadia ao chegar, entra resolutamente no sepulcro e examina com atenção as faixas de linho que atestam a ordem no local do sepultamento.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "E o sudário, que estivera sobre a cabeça dele, não posto com os lençóis de linho, mas enrolado à parte em um lugar.",
+        "commentary": "<p><b>Análise Léxica:</b> σουδάριον (soudarion, Strong não verificado) - lençol, sudário; κεφαλῆς (kephales, Strong não verificado) - cabeça; ὀθονίων (othonion, Strong não verificado) - lençóis de linho; ἐντετυλιγμένον (entetyligmenon, Strong não verificado) - enrolado, dobrado. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> O texto destaca o estado ordenado das vestes funerárias, especialmente o sudário dobrado à parte, evidenciando que não houve pressa ou roubo do corpo, mas uma saída deliberada e pacífica.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Então entrou também o outro discípulo, que chegara primeiro ao sepulcro, e viu, e creu.",
+        "commentary": "<p><b>Análise Léxica:</b> εἰσῆλθεν (eiselthen, Strong não verificado) - entrou; μαθητής (mathetes, Strong não verificado) - discípulo; εἶδen (eiden, Strong não verificado) - viu; ἐπίστευσεν (episteusen, Strong não verificado) - creu. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A entrada do discípulo amado no sepulcro e sua visão dos sinais físicos resultam em fé imediata na ressurreição, mesmo antes de compreenderem plenamente as Escrituras.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Porque ainda não tinham compreendido a Escritura, que era necessário que ele ressuscitasse dentre os mortos.",
+        "commentary": "<p><b>Análise Léxica:</b> οὐδέπω (oudepo, Strong não verificado) - ainda não; γραφὴν (graphen, Strong não verificado) - escritura; δεῖ (dei, Strong não verificado) - é necessário; ἀναστῆναι (anastenai, Strong não verificado) - ressuscitar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> O narrador explica a ignorância anterior dos discípulos quanto ao plano profético das Escrituras a respeito da necessidade da ressurreição de Cristo.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Tornaram, pois, os discípulos para junto de si mesmos.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπῆλθον (aphelthon, Strong não verificado) - retiraram-se, foram; πάλιν (palin, Strong não verificado) - novamente; μαθηταí (mathitai, Strong não verificado) - discípulos. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variação ortográfica e pronominal entre αὑτοὺς (SBLGNT/WH/Treg/NA28) e ἑαυτοὺς (RP) / αὐτοὺς (Treg NA28); o Textus Receptus apresenta ἑαυτους.</p><p><b>Síntese Exegética:</b> Diante do mistério do sepulcro vazio, os discípulos retornam às suas próprias moradas ou convívio, meditantes e perplexos com os acontecimentos.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Maria, porém, estava em pé junto ao sepulcro, fora, chorando. Enquanto chorava, inclinou-se para o sepulcro.",
+        "commentary": "<p><b>Análise Léxica:</b> εἱστήκει (heistikei, Strong não verificado) - estava em pé; κλαίουσα (klaiousa, Strong não verificado) - chorando; παρέκυψεν (parekupsen, Strong não verificado) - inclinou-se para olhar. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz τῷ μνημείῳ ἔξω κλαίουσα, enquanto o Textus Receptus e a edição RP ordenam τὸ μνημεῖον κλαίουσα ἔξω.</p><p><b>Síntese Exegética:</b> Maria Madalena permanece no local externamente, consumida pelo luto, mas seu impulso de olhar para o interior do sepulcro a conduz ao encontro com o divino.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "E vê dois anjos vestidos de branco, assentados, um à cabeceira e outro aos pés, onde o corpo de Jesus jazera.",
+        "commentary": "<p><b>Análise Léxica:</b> θεωρεῖ (theorei, Strong não verificado) - observa, vê; ἀγγέλους (angelous, Strong não verificado) - anjos; λευκοῖς (leukois, Strong não verificado) - branco; καθεζομένους (kathezomenous, Strong não verificado) - assentados; κεφαλή (kephale, Strong não verificado) - cabeça. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A aparição dos anjos celestiais nos extremos do local onde repousava o corpo de Jesus simboliza a guarda divina e a santidade do espaço da ressurreição.</p>"
       }
     ]
   },
@@ -4238,6 +4450,70 @@
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
       "generated_at_utc": "2026-11-17T15:35:44+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 13,
+      "verse_to": 18,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:10+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 19,
+      "verse_to": 23,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:26+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 24,
+      "verse_to": 29,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:32+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 30,
+      "verse_to": 35,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:40+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 36,
+      "verse_to": 41,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:46+00:00"
+    },
+    {
+      "chapter": 19,
+      "verse_from": 42,
+      "verse_to": 42,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:49+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:39:54+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-17T21:40:00+00:00"
     }
   ],
   "sources": {

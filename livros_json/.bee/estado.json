@@ -1,18 +1,18 @@
 {
-  "ciclos": 7,
+  "ciclos": 9,
   "criado_utc": "2026-11-17T05:36:21+00:00",
   "dias": {
     "2026-11-17": {
       "aberto": true,
       "capitulos": 0,
-      "falhas": 7,
+      "falhas": 9,
       "fechado_em_utc": null,
-      "pedidos": 36,
-      "pedidos_ok": 10,
+      "pedidos": 48,
+      "pedidos_ok": 18,
       "por_provedor": {
         "gemini": {
-          "pedidos": 24,
-          "versos": 27
+          "pedidos": 36,
+          "versos": 69
         },
         "groq": {
           "pedidos": 12,
@@ -33,7 +33,7 @@
   "lote_versiculo": null,
   "ultima_compilacao_build": null,
   "ultima_compilacao_utc": null,
-  "ultimo_ciclo_utc": "2026-11-17T15:58:28+00:00",
+  "ultimo_ciclo_utc": "2026-11-17T21:40:20+00:00",
   "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
   "versos_total": 766
 }
