@@ -242,7 +242,7 @@ class ConfigAgenda:
 # Fila de trabalho
 
 
-# As oito fases do PLANO_BEE.md, na ordem editorial aprovada.
+# As oito fases do docs/EDITORIAL.md, na ordem editorial aprovada.
 FASES = [
     [640, 500],
     [480, 470, 490, 510],
@@ -263,7 +263,7 @@ POR_NUMERO = {livro.numero: livro for livro in LIVROS}
 def livros_na_fila(apenas: list[int] | None = None, ordem: str = 'plano') -> list[Any]:
     """Ordem de produção.
 
-    - 'plano': as oito fases do PLANO_BEE.md (Filemom primeiro).
+    - 'plano': as oito fases do docs/EDITORIAL.md (Filemom primeiro).
     - 'canonica': Génesis a Apocalipse.
     - 'curtos': livros com menos capítulos primeiro (empate pela ordem do plano).
     - `apenas`: mantém a ordem pedida pelo utilizador.

@@ -1,6 +1,6 @@
 # Plano de trabalho — Bíblia de Estudo Epignósis
 
-**Estado:** o responsável aprovou editorialmente a amostra de Salmos 23 e Filemom 1:1–3 em 14 de novembro de 2026; a revisão especializada continua pendente. A redação e o comentário originais de Filemom 1:2 foram preservados, mas a nova sinalização de variante e o adendo ao comentário são posteriores e aguardam revisão. O responsável autorizou a continuação sem pedir aprovação a cada bloco e pretende rever os textos no aplicativo; isso não aprova automaticamente os trechos ainda não examinados. Filemom 1 e João 1–4 estão estruturalmente completos em `livros_json`, com 191 versículos e comentários. Filemom 1:4–25 e João 1–4 são provisórios. Salmos 23, por ser amostra isolada, continua fora dos módulos. O contador operacional é 5/1.189 capítulos estruturalmente completos; não representa aprovação editorial.
+**Estado (17/11/2026):** 18 capítulos estruturalmente completos — João 1–17 e Filemom 1 — e João 18:1–19 já guardado em `in_progress`; total de 785 versículos guardados. O responsável aprovou editorialmente a amostra de Salmos 23 e Filemom 1:1–3 e autorizou a produção contínua sem aprovação a cada bloco; isso não aprova os trechos ainda não examinados. Tudo continua provisório e precisa de revisão especializada. O contador operacional é 18/1.189 capítulos completos; não representa aprovação editorial.
 
 ## 1. Objetivo e forma de trabalho
 
@@ -85,4 +85,10 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-Prosseguir em João a partir do capítulo 5 (o autopiloto já aponta para João 5 na fila das oito fases) sem solicitar aprovação por bloco e atualizar as prévias conforme novos capítulos forem concluídos. João 5:4 não consta no SBLGNT fixado e requer tratamento explícito da versificação e da evidência se for apresentado como suplemento. Os textos novos permanecem provisórios e precisam de revisão especializada. A amostra anterior de Salmos 23 não estava disponível integralmente para comparação linha a linha; se o responsável quiser esse cotejo específico, poderá reenviá-la. O momento da revisão de Romanos 12:2 e a ordem das fases posteriores podem ser ajustados.
+Continuar João a partir de **18:20** (o capítulo 18 tem 40 versículos; os
+primeiros 19 já estão guardados), sem pedir aprovação a cada bloco e
+actualizando as prévias quando o capítulo fechar. João 5:4 não consta no SBLGNT
+fixado e exige tratamento explícito da versificação e da evidência se for
+apresentado como suplemento. Os textos novos continuam provisórios e precisam
+de revisão especializada. A ordem das fases posteriores e o momento da revisão
+de Romanos 12:2 podem ser ajustados.

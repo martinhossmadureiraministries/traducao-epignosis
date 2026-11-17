@@ -1,3 +1,7 @@
+> **Experimental.** Este worker Mistral não faz parte do fluxo principal e
+> não é usado pelo GitHub Actions nem pelo `autopiloto.py`. O caminho de
+> produção actual está em [../docs/OPERACAO.md](../docs/OPERACAO.md).
+
 # Worker BEE — workflow durável `bee-producao`
 
 Produção contínua da Bíblia de Estudo Epignósis com modelos Mistral, num
@@ -45,7 +49,7 @@ Executar (Console ou API), com entrada opcional:
 ```
 
 Todos os campos têm padrão: sem entrada, produz pela ordem das oito fases do
-`PLANO_BEE.md` com 24 versículos por fatia e até 60 fatias por execução (uma
+`docs/EDITORIAL.md` com 24 versículos por fatia e até 60 fatias por execução (uma
 execução nova retoma donde a anterior ficou, porque o estado vive nos JSON do
 ramo de dados).
 
