@@ -33,6 +33,20 @@ O estado fica em `livros_json/.bee/estado.json` e o diário em `livros_json/.bee
 
 ---
 
+## 1b. A janela horária — para que serve e como se muda
+
+A produção só corre entre `BEE_HORA_INICIO` e `BEE_HORA_FIM` (por omissão
+05:00–23:00 em `Africa/Luanda`). Serve para **não gastar os 2.000 minutos
+mensais de Actions de madrugada** enquanto dorme, e para o trabalho pesado
+acontecer na altura em que pode ler o resultado.
+
+- Uma execução **manual** (*Run workflow*) produz a qualquer hora, mesmo de
+  madrugada — a janela só se aplica às execuções agendadas.
+- Fora da janela, a execução termina em segundos e o resumo diz
+  `Fora da janela (03 UTC): a produção retoma às 04:00 UTC`. Não é falha.
+- Para produzir 24 horas: mude `BEE_HORA_INICIO: '0'` e `BEE_HORA_FIM: '24'`
+  no workflow (e conte com mais minutos de Actions).
+
 ## 2. Plano gratuito: o que é possível de verdade
 
 Os números abaixo são **referências de 2026 que mudam sem aviso**; confirme-os na sua conta antes de confiar neles. O programa já vem com tetos conservadores e nunca tenta esgotar a quota.

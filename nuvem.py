@@ -82,9 +82,18 @@ def _progresso(dados: Path) -> tuple[int, int]:
     return capitulos, versos
 
 
+def _repo() -> Path:
+    """Repositório onde os ramos de dados são lidos/publicados.
+
+    Em produção é a raiz do checkout (cwd). Nos testes é possível apontar para
+    outro repositório com BEE_REPO, sem mexer no diretório de trabalho.
+    """
+    return Path(_env('BEE_REPO', '') or '.').resolve()
+
+
 def _git(*comandos: str, verificar: bool = True, env: dict[str, str] | None = None) -> subprocess.CompletedProcess:
     return subprocess.run(
-        ('git',) + comandos, check=verificar, text=True, env=env,
+        ('git', '-C', str(_repo())) + comandos, check=verificar, text=True, env=env,
         capture_output=True,
     )
 
@@ -117,12 +126,51 @@ def _commit_dados(ramo: str, mensagem: str, pastas: list[str]) -> str:
         arvore_anterior = _git('rev-parse', f'{pai.splitlines()[0]}^{{tree}}').stdout.strip()
         if arvore == arvore_anterior:
             return 'sem alterações nos JSON'
+        perdidos = _regressao(pai.splitlines()[0], arvore, pastas)
+        if perdidos:
+            raise ValueError(
+                f'a publicação foi cancelada para não perder {perdidos} versículo(s) que já '
+                'estavam publicados; os dados locais não substituíram os do ramo'
+            )
     comando = ['commit-tree', arvore, '-m', mensagem]
     if pai:
         comando[2:2] = ['-p', pai.splitlines()[0]]
     novo = _git(*comando, env=env).stdout.strip()
     _git('push', 'origin', f'{novo}:refs/heads/{ramo}')
     return 'JSON publicados' if pai else 'ramo de dados criado'
+
+
+def _versiculos_de_arvore(arvore: str, pastas: list[str]) -> dict[str, int]:
+    """Quantos versículos cada ficheiro de dados tem numa árvore do git."""
+    contagem: dict[str, int] = {}
+    listagem = _git('ls-tree', '-r', '--name-only', arvore, *pastas, verificar=False)
+    for nome in listagem.stdout.splitlines():
+        if not nome.endswith('.json'):
+            continue
+        try:
+            texto = _git('show', f'{arvore}:{nome}').stdout
+            dados = json.loads(texto)
+        except (ValueError, subprocess.CalledProcessError):
+            continue
+        if not isinstance(dados, dict):
+            continue
+        contagem[nome] = sum(
+            len(v) for lado in ('chapters', 'in_progress') for v in dados.get(lado, {}).values()
+        )
+    return contagem
+
+
+def _regressao(pai: str, arvore: str, pastas: list[str]) -> int:
+    """Versículos que existiam no ramo e desapareceriam com esta publicação.
+
+    Aconteceu depois de o utilizador ter copiado o workflow para `.github/`:
+    esse commit em `main` não trouxe o ramo de dados, a recuperação falhou em
+    silêncio e a execução publicou uma árvore sem João 5:7-46 — trabalho pago em
+    quota, perdido, com o resumo a dizer "versículos guardados".
+    """
+    antes = _versiculos_de_arvore(pai, pastas)
+    depois = _versiculos_de_arvore(arvore, pastas)
+    return sum(max(0, quantidade - depois.get(nome, 0)) for nome, quantidade in antes.items())
 
 
 def _json_local(caminho: Path) -> dict | None:
@@ -243,6 +291,59 @@ def _modulos_desatualizados(dados: Path, saida: Path) -> bool:
     return modulos < mais_recente
 
 
+def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool) -> tuple[str, int]:
+    """Recupera do ramo de dados os versículos que faltam localmente.
+
+    Foi o que aconteceu em 17/11: a execução arrancou sem o ramo de dados (o
+    commit do workflow em `main` não o trouxe), o agendador achou João 5 em
+    curso a partir do versículo 1 e 46 versículos já pagos em quota ficaram
+    fora do ficheiro. Devolve (mensagem, versículos acrescentados).
+    """
+    anterior = _git('rev-parse', '--verify', f'refs/remotes/origin/{ramo}', verificar=False)
+    if anterior.returncode != 0 or not anterior.stdout.strip():
+        return 'sem ramo de dados publicado', 0
+    revisao = anterior.stdout.strip()
+    alvo = Path(os.environ.get('RUNNER_TEMP', '/tmp')) / 'bee-reparo'
+    shutil.rmtree(alvo, ignore_errors=True)
+    alvo.mkdir(parents=True)
+    encontrados = 0
+    listagem = _git('ls-tree', '-r', '--name-only', revisao, 'livros_json', verificar=False)
+    for nome in listagem.stdout.splitlines():
+        # Só ficheiros de livros: `livros_json/.bee/estado.json` e o diário
+        # viajam no ramo mas não são livros.
+        if not nome.endswith('.json') or '/.' in nome:
+            continue
+        destino = alvo / Path(nome).name
+        try:
+            destino.write_bytes(_git('show', f'{revisao}:{nome}').stdout.encode('utf-8'))
+            encontrados += 1
+        except subprocess.CalledProcessError:
+            continue
+    if not encontrados:
+        shutil.rmtree(alvo, ignore_errors=True)
+        return 'sem dados no ramo', 0
+    antes = _progresso(dados)[1]
+    mantidos = _unir_progresso(dados, alvo)
+    shutil.rmtree(alvo, ignore_errors=True)
+    acrescentados = max(0, _progresso(dados)[1] - antes)
+    if not acrescentados:
+        return 'nada a recuperar', 0
+    diario.escrever(
+        f'Recuperados {acrescentados} versículo(s) do ramo `{ramo}` que faltavam localmente.',
+        'aviso',
+    )
+    if publicar and _env('BEE_PUBLICAR', '1') != '0':
+        try:
+            _commit_dados(
+                ramo,
+                f'BEE: reparação de {acrescentados} versículos recuperados do ramo',
+                ['livros_json'],
+            )
+        except (ValueError, subprocess.CalledProcessError):
+            pass
+    return f'{acrescentados} versículo(s) recuperados do ramo `{ramo}`', acrescentados
+
+
 def _compilar_no_fim(resultado, dados: Path, saida: Path, diario) -> None:
     """Compila quando há capítulos completos novos, mesmo em fim de ciclo parcial.
 
@@ -323,10 +424,18 @@ def main() -> int:
         print(f'Aviso: fuso {fuso_nome!r} desconhecido; a usar UTC.', file=sys.stderr)
 
     remoto = _caminho_remoto(_env('BEE_REMOTO', ''))
+    recuperado = False
     if _env('BEE_UNIR', '1') != '0' and remoto is not None and remoto.is_dir():
+        recuperado = any(remoto.glob('*.json'))
         mantidos = _unir_progresso(dados, remoto)
         if mantidos:
             print(f'Progresso recuperado sem sobrescrever {mantidos} versículo(s) já existentes localmente.')
+    if remoto is not None and not recuperado:
+        print(
+            'AVISO: não foi possível recuperar o ramo de dados; esta execução começou '
+            'do zero e só pode publicar versículos que produzir agora.',
+            file=sys.stderr, flush=True,
+        )
         _apagar_recuperado(remoto)
 
     estado_caminho = dados / '.bee' / 'estado.json'
@@ -344,6 +453,15 @@ def main() -> int:
         config.hora_inicio, config.hora_fim = 0, 24
 
     livros = livros_na_fila(argumentos.livros, argumentos.ordem)
+    ramo = _env('BEE_BRAMO_DADOS', 'bee-dados')
+    reparacao, reparados = '', 0
+    try:
+        reparacao, reparados = _reparar_dados(
+            dados, ramo, diario, publicar=_env('BEE_PUBLICAR', '1') != '0',
+        )
+    except Exception as exc:  # nunca impedir a produção por causa da reparação
+        reparacao = f'não foi possível reparar ({type(exc).__name__})'
+        print(f'Aviso: {reparacao}', file=sys.stderr, flush=True)
     antes_cap, antes_versos = _progresso(dados)
 
     try:
@@ -359,7 +477,6 @@ def main() -> int:
             )
             resultado = agendador.ciclo(livros)
             salvar_estado(estado_caminho, estado)
-            _compilar_no_fim(resultado, dados, saida, diario)
             # O serviço de IA às vezes responde 5xx em rajada (foi o que
             # aconteceu na primeira execução real). Em vez de gastar uma
             # execução inteira do cron, tenta-se de novo aqui.
@@ -375,6 +492,9 @@ def main() -> int:
                 extra -= 1
                 resultado = agendador.ciclo(livros)
                 salvar_estado(estado_caminho, estado)
+            # Depois de todas as tentativas: compilar uma única vez, com tudo o
+            # que ficou guardado (dentro e depois das repetições).
+            _compilar_no_fim(resultado, dados, saida, diario)
             # Uma falha passageira (5xx, rede) não deve contar como "código
             # avariado": se o serviço estiver em baixo 6 ciclos seguidos, o
             # agendador desistia e a produção só voltava quando alguém corresse
@@ -400,7 +520,20 @@ def main() -> int:
         return 1
 
     depois_cap, depois_versos = _progresso(dados)
-    ramo = _env('BEE_BRAMO_DADOS', 'bee-dados')
+    if recuperado or reparados:
+        origem = (
+            f'recuperados do ramo `{ramo}`'
+            if recuperado else f'reparados a partir do ramo `{ramo}`'
+        )
+        linhas_recuperacao = (
+            f'- Dados de partida: {origem} '
+            f'({antes_cap} capítulos completos, {antes_versos} versículos).'
+        )
+    else:
+        linhas_recuperacao = (
+            f'- **Dados de partida: nenhum** — o ramo `{ramo}` não pôde ser recuperado nesta '
+            'execução. Se já havia versículos publicados, esta é a razão pela qual não aparecem.'
+        )
     publicado = 'não configurado'
     if _env('BEE_PUBLICAR', '1') != '0':
         try:
@@ -413,6 +546,10 @@ def main() -> int:
         except subprocess.CalledProcessError as exc:
             publicado = f'falha ao publicar ({exc})'
             print(f'Aviso: {publicado}', file=sys.stderr)
+        except ValueError as exc:
+            publicado = f'publicação recusada: {exc}'
+            diario.escrever(publicado, 'erro')
+            print(f'AVISO: {publicado}', file=sys.stderr)
 
     pacote = _empacotar(saida)
     env = (saida / 'BEE.SQLite3')
@@ -454,7 +591,10 @@ def main() -> int:
                       'agendado (15 min) volta a tentar sozinho; não precisa de fazer nada.')
     else:
         linhas.append(f'- Ação: **nada** — {resultado.detalhe or "—"}')
-    linhas.append(f'- Progresso: **{depois_cap}/1189 capítulos completos**, '
+    linhas.append(linhas_recuperacao)
+    if reparados:
+        linhas.append(f'- **Trabalho recuperado:** {reparacao}.')
+    linhas.append(f'- Progresso nesta execução: **{depois_cap}/1189 capítulos completos**, '
                   f'{depois_versos}/31102 versículos guardados')
     if (
         estado.lote_capitulo and estado.lote_versiculo
@@ -487,10 +627,16 @@ def main() -> int:
         )
     if resultado.resumo_compilacao:
         resumo = resultado.resumo_compilacao
+        em_curso = max(0, depois_versos - resumo['versiculos'])
+        extra = (
+            f' Mais {em_curso} versículos num capítulo ainda em curso, que o MyBible '
+            'só mostra quando o capítulo fechar.'
+            if em_curso else ''
+        )
         linhas.append(
             f'- Módulos: {"Bíblia completa" if resumo["completo"] else "parciais"}, '
             f'{resumo["capitulos"]} capítulos completos e {resumo["versiculos"]} versículos '
-            f'(recompilados nesta execução; o MyBible só aceita capítulos inteiros).'
+            f'visíveis no MyBible (recompilados nesta execução).{extra}'
         )
     elif env.exists():
         # Não houve capítulo novo, mas os módulos de antes continuam válidos.

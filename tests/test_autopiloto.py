@@ -407,6 +407,88 @@ class IndisponibilidadeTest(Base):
         self.assertIn('04:17', saida.getvalue())
         self.assertIn('05:00', saida.getvalue())
 
+    def test_publicacao_recusa_perder_versiculos(self):
+        """O caso real: recuperação falhou e a publicação apagou João 5:7-46."""
+        import subprocess
+        import nuvem
+        repo = self.raiz / 'repo'
+        repo.mkdir(parents=True)
+        subprocess.run(['git', 'init', '-q', str(repo)], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.email', 't@e'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.name', 't'], check=True)
+        dados = repo / 'livros_json'
+        dados.mkdir()
+        livro = LIVROS_POR_NUMERO[640]
+
+        def escrever(quantidade: int) -> None:
+            conteudo = {'chapters': {}, 'in_progress': {'1': [
+                {'verse': n, 'text': f'T{n}.',
+                 'commentary': '<p>Análise Léxica: a</p><p>Crítica Textual: b</p>'
+                               '<p>Síntese Exegética: c</p>'}
+                for n in range(1, quantidade + 1)]}}
+            (dados / livro.nome_arquivo).write_text(json.dumps(conteudo), encoding='utf-8')
+
+        escrever(10)
+        subprocess.run(['git', '-C', str(repo), 'add', '-A'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'commit', '-qm', 'inicial'], check=True)
+        escrever(2)  # a árvore local perdeu 8 versículos
+
+        pai = subprocess.run(['git', '-C', str(repo), 'rev-parse', 'HEAD'],
+                             capture_output=True, text=True).stdout.strip()
+        # Árvore que a execução tentaria publicar agora (2 versículos).
+        subprocess.run(['git', '-C', str(repo), 'add', '-A'], check=True)
+        arvore_local = subprocess.run(['git', '-C', str(repo), 'write-tree'],
+                                      capture_output=True, text=True).stdout.strip()
+        with patch.dict(os.environ, {'BEE_REPO': str(repo)}, clear=False):
+            self.assertEqual(
+                nuvem._regressao(pai, arvore_local, ['livros_json']), 8,
+                'a publicação tem de recusar perder 8 versículos já publicados',
+            )
+
+    def test_reparacao_recupera_versiculos_do_ramo(self):
+        """17/11: arrancou sem o ramo de dados e 46 versículos ficaram de fora."""
+        import subprocess
+        import nuvem
+        repo = self.raiz / 'repo2'
+        repo.mkdir(parents=True)
+        subprocess.run(['git', 'init', '-q', str(repo)], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.email', 't@e'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'config', 'user.name', 't'], check=True)
+        dados = self.raiz / 'locais'
+        dados.mkdir()
+        livro = LIVROS_POR_NUMERO[640]
+
+        from bee.arquivos import novo_livro, salvar_livro
+
+        def escrever(caminho: Path, quantidade: int) -> None:
+            conteudo = novo_livro(livro)
+            conteudo['in_progress']['1'] = [
+                {'verse': n, 'text': f'T{n}.',
+                 'commentary': '<p>Análise Léxica: a</p><p>Crítica Textual: b</p>'
+                               '<p>Síntese Exegética: c</p>'}
+                for n in range(1, quantidade + 1)]
+            salvar_livro(caminho, conteudo, livro)
+
+        no_ramo = repo / 'livros_json'
+        no_ramo.mkdir()
+        escrever(no_ramo / livro.nome_arquivo, 10)
+        subprocess.run(['git', '-C', str(repo), 'add', '-A'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'commit', '-qm', 'ramo de dados'], check=True)
+        subprocess.run(['git', '-C', str(repo), 'update-ref', 'refs/remotes/origin/bee-dados', 'HEAD'],
+                       check=True)
+        escrever(dados / livro.nome_arquivo, 3)  # o local perdeu 7
+
+        with patch.dict(os.environ, {'BEE_REPO': str(repo), 'BEE_PUBLICAR': '0',
+                                     'RUNNER_TEMP': str(self.raiz)}, clear=False):
+            mensagem, recuperados = nuvem._reparar_dados(
+                dados, 'bee-dados',
+                type('D', (), {'escrever': staticmethod(lambda *a, **k: None)})(),
+                publicar=False,
+            )
+        self.assertEqual(recuperados, 7, mensagem)
+        self.assertIn('recuperados', mensagem)
+        self.assertEqual(nuvem._progresso(dados)[1], 10)
+
     def test_compila_no_fim_mesmo_sem_fechar_capitulo(self):
         """João 5 tem 47 versículos: 8 ciclos não podem ficar sem módulos novos."""
         import nuvem
