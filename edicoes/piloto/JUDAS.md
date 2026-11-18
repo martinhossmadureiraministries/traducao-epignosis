@@ -10,7 +10,7 @@
 
 **3.** Queridos irmãos, eu estava empenhado em escrever-lhes sobre a salvação que temos em comum. Mas vi que precisava escrever para exortá-los a lutar pela fé entregue aos santos de uma vez por todas.
 
-**4.** Pois certas pessoas se infiltraram entre vocês. São gente ímpia, há muito assinalada para esta condenação. Transformam a graça do nosso Deus em libertinagem e negam Jesus Cristo, nosso único Soberano e Senhor.
+**4.** Pois certas pessoas se infiltraram entre vocês. São ímpios, há muito assinalados para esta condenação. Transformam a graça do nosso Deus em libertinagem e negam Jesus Cristo, nosso único Soberano e Senhor.
 
 **5.** Quero recordar-lhes algo, embora já saibam tudo isso: [[Jesus]] salvou um povo, tirando-o da terra do Egito, e depois destruiu os que não creram.
 
