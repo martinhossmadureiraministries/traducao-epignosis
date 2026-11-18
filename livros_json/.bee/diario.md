@@ -124,3 +124,4 @@
 - 2026-11-18T08:14:09+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
 - 2026-11-18T08:14:39+00:00 — Módulos recompilados (PARCIAL): 35/1189 capítulos, 1443 versículos.
 - 2026-11-18T08:14:39+00:00 — Ciclo 13: +240 versículos, +5 capítulos em Marcos 14 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 640 versículos, 152 pedidos. A seguir: Marcos 14.
+- 2026-11-18T08:14:41+00:00 — Capítulos exportados para leitura: 36 (6 mudaram nesta execução).
