@@ -84,3 +84,6 @@
 - 2026-11-18T03:09:58+00:00 — Módulos recompilados (PARCIAL): 22/1189 capítulos, 904 versículos.
 - 2026-11-18T03:09:58+00:00 — Ciclo 10: +80 versículos, +2 capítulos em Marcos 1 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 80 versículos, 24 pedidos. A seguir: Marcos 1.
 - 2026-11-18T03:10:00+00:00 — Capítulos exportados para leitura: 23 (3 mudaram nesta execução).
+- 2026-11-18T03:45:02+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-18T03:46:35+00:00 — Módulos recompilados (PARCIAL): 25/1189 capítulos, 1012 versículos.
+- 2026-11-18T03:46:35+00:00 — Ciclo 11: +80 versículos, +3 capítulos em Marcos 4 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 160 versículos, 40 pedidos. A seguir: Marcos 4.

@@ -3,8 +3,7 @@
   "book_number": 480,
   "book_name": "Marcos",
   "chapter_count": 16,
-  "chapters": {},
-  "in_progress": {
+  "chapters": {
     "1": [
       {
         "verse": 1,
@@ -185,6 +184,414 @@
         "verse": 36,
         "text": "E Simão e os que com ele estavam perseguiram-no,",
         "commentary": "<p><b>Análise Léxica</b>: κατεδίωξen (katediōxen), verbo aoristo de καταδιώκw, &quot;perseguir, ir em busca de&quot;; Σίμων (Simōn), nome próprio, &quot;Simão&quot;; μετʼ (met&#x27;), preposição, &quot;com&quot;. Definição não verificada em léxico.</p><p><b>Crítica Textual</b>: O SBLGNT e WH/NA28 trazem o verbo no singular κατεδίωξεν, enquanto Treg e RP trazem o plural κατεδίωξαν. O SBLGNT traz Σίμων, enquanto Treg e RP trazem ὁ Σίμων. [[Diferença de número verbal e presença do artigo entre as edições]].</p><p><b>Síntese Exegética</b>: Simão e seus companheiros saem à procura do Senhor, refletindo a urgência humana de reivindicar a presença d&#x27;Aquele cujo poder havia cativado a multidão.</p>"
+      },
+      {
+        "verse": 37,
+        "text": "E acharam-<i>o</i> e dizem-lhe: Todos te busc<i>am</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> εὗρον (heuron) - forma verbal aoristo indicativa ativa de εὑρίσκω, encontrar, com definição não verificada em léxico; λέγουσιν (legousin) - forma verbal presente indicativa ativa de λέγω, dizer, com definição não verificada em léxico; ζητοῦσίν (zētousin) - forma verbal presente indicativa ativa de ζητέω, buscar, procurar, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a lição <i>καὶ εὗρον αὐτὸν καὶ λέγουσιν</i>, enquanto o Textus Receptus apresenta <i>και ευροντες αυτον λεγουσιν</i> (com particípio <i>ευροντες</i>). Em relação à posição do pronome e do verbo, o SBLGNT lê <i>ζητοῦσίν σε</i>, ao passo que o Textus Receptus apresenta <i>σε ζητουσιν</i>.</p><p><b>Síntese Exegética:</b> Os discípulos encontram Jesus e transmitem-lhe a urgência da multidão que o procura incansavelmente, evidenciando a crescente repercussão de seu ministério.</p>"
+      },
+      {
+        "verse": 38,
+        "text": "E diz-lhe: Vamos para outros lugares, às povoações vizinhas, para que também ali pregue, porque para isto exigi <i>saído</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> Ἄγωμεν (agōmen) - forma verbal presente subjuntivo ativa de ἄγω, ir, conduzir, com definição não verificada em léxico; ἀλλαχοῦ (allachou) - advérbio, em outro lugar, com definição não verificada em léxico; κωμοπόλεις (kōmopoleis) - substantivo feminino acusativo plural, aldeias-cidades, povoações, com definição não verificada em léxico; ἐξῆλθον (exelthon) - forma verbal aoristo indicativa ativa de ἐξέρχομαι, sair, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἀλλαχοῦ</i>, que é omitido no Textus Receptus. Na última palavra, o SBLGNT registra o aoristo <i>ἐξῆλθον</i> («saí»), enquanto o Textus Receptus utiliza o perfeito <i>ἐξελήλυθα</i> («tenho saído»).</p><p><b>Síntese Exegética:</b> Jesus recusa limitar seu ministério a um único local, declarando que sua missão primordial é pregar a palavra também em outras povoações.</p>"
+      },
+      {
+        "verse": 39,
+        "text": "E veio pregando nas sinagogas deles por toda a Galileia, e expelindo os demônios.",
+        "commentary": "<p><b>Análise Léxica:</b> ἦλθεν (ēlthen) - forma verbal aoristo indicativa ativa de ἔρχομαι, vir, ir, com definição não verificada em léxico; κηρύσσων (kēryssōn) - particípio presente ativo nominativo singular de κηρύσσω, pregoar, pregar, com definição não verificada em léxico; συναγωγὰς (synagōgas) - substantivo feminino acusativo plural de συναγωγή, sinagoga, assembleia, com definição não verificada em léxico; ἐκβάλλων (ekballōn) - particípio presente ativo nominativo singular de ἐκβάλλω, expulsar, lançar fora, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra <i>ἦλθεν ... εἰς τὰς συναγωγὰς</i>, enquanto o Textus Receptus apresenta <i>ην κηρυσσων εν ταις συναγωγαις</i> (empregando o verbo auxiliar <i>ην</i> e a preposição <i>εν</i> com o dativo).</p><p><b>Síntese Exegética:</b> O ministério itinerante de Jesus expande-se por toda a região da Galileia, caracterizando-se pela proclamação nas sinagogas e pela libertação dos oprimidos por demônios.</p>"
+      },
+      {
+        "verse": 40,
+        "text": "E chega-se a ele um leproso, rogando-lhe e, de joelhos, dizendo-lhe: Se quiseres, podes purificar-me.",
+        "commentary": "<p><b>Análise Léxica:</b> λεπρὸς (lepros) - adjetivo/substantivo nominativo singular masculino, leproso, com definição não verificada em léxico; παρακαλῶν (parakalōn) - particípio presente ativo nominativo singular de παρακαλέω, rogar, suplicar, com definição não verificada em léxico; γονυπετῶν (gonypetōn) - particípio presente ativo nominativo singular de γονυπετέω, ajoelhar-se, prostrar-se de joelhos, com definição não verificada em léxico; καθαρίσ καθαρίσαι (katharisai) - infinitivo aoristo ativo de καθαρίζω, purificar, limpar, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta o pronome <i>αυτον</i> após o particípio <i>γονυπετων</i>, o qual não consta no texto crítico principal do SBLGNT.</p><p><b>Síntese Exegética:</b> Um homem acometido de lepra aproxima-se com profunda reverência e confiança inabalável na soberania e compaixão de Jesus para alcançar a cura.</p>"
+      },
+      {
+        "verse": 41,
+        "text": "E, <i>tendo-se</i> compadecido, estendendo a mão, tocou-<i>o</i> e disse-lhe: Quero, sê purificado!",
+        "commentary": "<p><b>Análise Léxica:</b> σπλαγχνισθεὶς (splanchnistheis) - particípio aoristo passivo (depoente) nominativo singular de σπλαγχνίζομαι, compadecer-se, com definição não verificada em léxico; ἐκτείνας (ekteinas) - particípio aoristo ativo nominativo singular de ἐκτείνω, estender, com definição não verificada em léxico; ἥψατο (hēpsato) - forma verbal aoristo indicativa média de ἅπτω, tocar, com definição não verificada em léxico; καθαρίσθητι (katharisthēti) - forma verbal aoristo imperativo passivo de καθαρίζω, purificar, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Há uma variante notável no início do versículo: o SBLGNT adota a lição <i>καὶ ὀργισθεὶς</i> («tendo-se irado», com apoio em manuscritos antigos como Codex Bezae), enquanto o Textus Receptus e a maioria dos manuscritos trazem <i>ο δε ιησους σπλαγχνισθεις</i> («e Jesus, compadecendo-se»). Adotamos a lição do aparato crítico principal conforme a base SBLGNT fornecida, registrando a compaixão conforme a leitura majoritária e a nota do aparato.</p><p><b>Síntese Exegética:</b> Movido por profunda compaixão — que quebra as barreiras rituais da impureza legal —, Jesus estende a mão, toca o leproso e decreta sua imediata purificação.</p>"
+      },
+      {
+        "verse": 42,
+        "text": "E logo a lepra apartou-se dele, e ficou purificado.",
+        "commentary": "<p><b>Análise Léxica:</b> εὐθὺς (euthys) - advérbio ou conjunção, imediatamente, logo, com definição não verificada em léxico; ἀπῆλθεν (apēlthen) - forma verbal aoristo indicativa ativa de ἀπέρχομαι, afastar-se, retirar-se, com definição não verificada em léxico; λέπρα (lepra) - substantivo feminino nominativo singular, lepra, com definição não verificada em léxico; ἐκαθαρίσθη (ekatharisthē) - forma verbal aoristo indicativa passiva de καθαρίζω, ser purificado, com definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>καὶ εὐθὺς ἀπῆλθεν</i>, enquanto o Textus Receptus expande com <i>και ειποντος αυτου ευθεως απηλθεν</i> («e, tendo ele falado, imediatamente apartou-se...»).</p><p><b>Síntese Exegética:</b> A palavra e o toque de Jesus produzem um efeito instantâneo: a enfermidade immunda desaparece por completo, restabelecendo a saúde e a dignidade do homem.</p>"
+      },
+      {
+        "verse": 43,
+        "text": "E, tendo-o advertido asperamente, logo o expulsou,",
+        "commentary": "<p><b>Análise Léxica:</b> ἐμβριμησάμενος (embrimēsamenos) - particípio aoristo médio nominativo masculino singular de ἐμβριμάομαι, significando mugir, resmungar, indignar-se ou advertir com veemência (definição não verificada em léxico); αὐτῷ (autō) - pronome pessoal, dativo masculino singular, a ele; εὐθὺς (euthys) - advérbio, imediatamente, logo; ἐξέβalεν (exebalen) - verbo aoristo ativo indicativo terceira pessoa singular de ἐκβάλλω, lançar fora, expulsar.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra a variante [[εὐθὺς]] (adotada por WH, Treg, NA28) em contraste com [[εὐθέως]] presente no Textus Receptus (RP).</p><p><b>Síntese Exegética:</b> O texto descreve a severa advertência e o imediato envio do homem recém-purificado, sublinhando a urgência e a sobriedade com que o ato milagroso devia ser tratado, sem alarde prematuro.</p>"
+      },
+      {
+        "verse": 44,
+        "text": "e diz-lhe: Olha, não digas nada a ninguém; mas vai, mostra-te ao sacerdote e oferece pela tua purificação o que Moisés determinou, em testemunho a eles.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei) - verbo presente ativo indicativo terceira pessoa singular de λέγω, dizer; Ὅρα (hora) - imperativo presente ativo segunda pessoa singular de ὁράω, ver, atentar, olha; μηδενὶ (mēdeni) - dativo singular neutro/masculino de μηδείς, a ninguém; μηδὲν (mēden) - acusativo singular neutro de μηδείς, nada; εἴπῃς (eipēs) - aoristo ativo subjuntivo segunda pessoa singular de εἶπον, digas; ὕπαγε (hypage) - imperativo presente ativo segunda pessoa singular de ὑπάγω, vai; δεῖξον (deixon) - aoristo ativo imperativo segunda pessoa singular de δείκνυμι, mostra; ἱερεῖ (hierei) - dativo singular de ἱερεύς, sacerdote; προσένεγκε (prosenegke) - aoristo ativo imperativo segunda pessoa singular de προσφέρω, oferece; καθαρισμοῦ (katharismou) - genitivo singular de καθαρισμός, purificação; Μωϋσῆς (Mōysēs) - nominativo singular, Moisés; μαρτύριον (martyrion) - acusativo singular, testemunho.</p><p><b>Crítica Textual:</b> Sem variante verificada de relevância crítica principal entre o texto base e o Textus Receptus, com variações ortográficas menores no nome de Moisés (Μωϋσῆς versus μωσης).</p><p><b>Síntese Exegética:</b> Jesus ordena estrito silêncio para cumprir a Lei mosaica, enviando o homem ao sacerdote competente para atestar a cura e validar o testemunho perante a sociedade conforme as ordenanças.</p>"
+      },
+      {
+        "verse": 45,
+        "text": "Ele, porém, tendo saído, começou a pregoar muito e a divulgar a palavra, de modo que ele já não podia entrar publicamente em nenhuma cidade, mas estava fora, em lugares desertos; e vinham a ele de toda parte.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐξελθὼν (exelthōn) - particípio aoristo ativo nominativo masculino singular de ἐξέρχομαι, tendo saído; ἤρξατο (hōrxato) - aoristo médio indicativo terceira pessoa singular de ἄρχομαι, começou; κηρύσσειν (kēryssein) - infinitivo presente ativo de κηρύσσω, pregoar, proclamar; διαφημίζειν (diaphemizein) - infinitivo presente ativo de διαφημίζω, espalhar, divulgar; λόγον (logon) - acusativo singular de λόγος, palavra, assunto; ὥسته (hōste) - conjunção consecutiva, de modo que; δύνασθαι (dynasthai) - infinitivo presente médio/passivo de δύναμαι, poder; φανερῶς (phanerōs) - advérbio, manifestamente, publicamente; πόλιν (polin) - acusativo singular de πόλις, cidade; ἐρήμοις (erēmois) - adjetivo dativo plural masculino/feminino/neutro de ἔρημος, deserto, ermo; τόποις (topois) - dativo plural de τόπος, lugar; πάντοθεν (pantothen) - advérbio, de toda parte.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra [[ἐπʼ]] (WH, Treg, NA28) contra [[ἐν]] (RP); e também [[πάντοθεν]] (WH, Treg, NA28) em contraste com [[πανταχόθεν]] no Textus Receptus (RP).</p><p><b>Síntese Exegética:</b> A desobediência à ordem de silêncio resulta na ampla difusão da obra de Jesus, restringindo Seus movimentos físicos aos desertos devido às multidões que convergiam de todas as direções.</p>}]}"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "E, tendo entrado novamente em Cafarnaum após <i>alguns</i> dias, ouviu-se que ele estava em <i>uma</i> casa.",
+        "commentary": "<p><b>Análise Léxica:</b> εἰσελθὼν (eiselthōn) - particípio aoristo ativo de eiserchomai, significando &#x27;entrando&#x27;; Καφαρναοὺμ (Kapharnaoum) - Cafarnaum, topônimo; ἡμερῶν (hēmerōn) - genitivo plural de hēmera, significando &#x27;dias&#x27;; οἴκῳ (oikō) - dativo singular de oikos, significando &#x27;casa&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[εἰσελθὼν]] enquanto o Textus Receptus emprega [[εἰσῆλθεν]]. O SBLGNT omite o [[καὶ]] antes de ἡμερῶν, presente no Textus Receptus. O SBLGNT traz [[ἐν οἴκῳ]] enquanto o Textus Receptus apresenta [[εἰς οἶκόν]].</p><p><b>Síntese Exegética:</b> O retorno de Jesus a Cafarnaum marca o reinício de Seu ministério público na região da Galileia, atraindo imediatamente grandes multidões que se aglomeravam no espaço doméstico onde Ele se encontrava.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E logo se ajuntaram muitos, de maneira que já não cabiam nem mesmo junto à porta; e ele lhes anunciava a palavra.",
+        "commentary": "<p><b>Análise Léxica:</b> συνήχθησαν (synēchthēsan) - aoristo passivo indicativo de synagō, significando &#x27;foram ajuntados&#x27;; χωρεῖν (chōrein) - infinitivo presente ativo de chōreō, significando &#x27;conter&#x27; ou &#x27;caber&#x27;; θύραν (thyran) - acusativo singular de thyra, significando &#x27;porta&#x27;; λόγον (logon) - acusativo singular de logos, significando &#x27;palavra&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT não possui [[εὐθέως]] no início do versículo, termo este que se encontra presente no Textus Receptus.</p><p><b>Síntese Exegética:</b> A intensidade da multidão demonstra o impacto imediato da pregação de Jesus, impedindo o acesso físico à casa e criando o cenário para a ousada intervenção dos portadores do paralítico.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E vêm trazendo a ele um paralítico, carregado por quatro.",
+        "commentary": "<p><b>Análise Léxica:</b> ἔρχονται (erchontai) - presente indicativo de erchomai, significando &#x27;vêm&#x27;; φέροντες (pherontes) - particípio presente ativo de pherō, significando &#x27;trazendo&#x27;; παραλυτικὸν (paralytikon) - acusativo singular de paralytikos, significando &#x27;paralítico&#x27;; αἰρόμενον (airomenon) - particípio presente passivo de airō, significando &#x27;sendo carregado&#x27;; τεσσάρων (tessarōn) - genitivo plural, significando &#x27;quatro&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Há variação na ordem das palavras: o SBLGNT apresenta [[φέροντες πρὸς αὐτὸν παραλυτικὸν]], enquanto o Textus Receptus traz a ordem [[προς αυτον παραλυτικον φεροντες]].</p><p><b>Síntese Exegética:</b> A determinação dos quatro homens em conduzir o paralítico até a presença de Jesus ilustra uma fé ativa e comunitária, disposta a transpor obstáculos intransponíveis.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "E, não podendo aproximar-se dele por causa da multidão, descobriram o teto onde ele estava e, tendo feito uma abertura, baixam a cama em que o paralítico jazia.",
+        "commentary": "<p><b>Análise Léxica:</b> δυνάμενοι (dynamenoi) - particípio presente de dynamai, significando &#x27;podendo&#x27;; ὄχλον (ochlon) - acusativo singular de ochlos, significando &#x27;multidão&#x27;; ἀπεστέγασαν (apestegasan) - aoristo ativo de apestegazō, significando &#x27;descobriram&#x27;; στέγην (stegēn) - acusativo singular de stegē, significando &#x27;teto&#x27;; χαλῶσι (chalōsi) - presente indicativo de chaláō, significando &#x27;baixam&#x27;; κράβαττον (krabhatton) - acusativo singular de krabbatos, significando &#x27;cama&#x27; ou &#x27;leito&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[προσενέγκαι]] e [[ὅπου]], enquanto o Textus Receptus apresenta [[προσεγγίσαι]] e [[ἐφʼ ᾧ]]. O Textus Receptus também dobra a consoante em [[κραββατον]].</p><p><b>Síntese Exegética:</b> Diante da impossibilidade de entrar pela porta, a persistência dos amigos os leva a modificar a estrutura arquitetônica da casa para depositar o enfermo diretamente diante do Mestre.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "E Jesus, vendo a fé deles, diz ao paralítico: Filho, perdoadas estão as tuas <i>[[</i>pecados<i>]]</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> ἰδὼν (idōn) - particípio aoristo de horaō, significando &#x27;vendo&#x27;; πίστιν (pistin) - acusativo singular de pistis, significando &#x27;fé&#x27;; λέγει (legei) - presente indicativo de legō, significando &#x27;diz&#x27;; Τέκνον (teknon) - vocativo singular, significando &#x27;filho&#x27;; ἀφίενταί (aphientai) - presente passivo indicativo de aphiēmi, significando &#x27;são perdoadas&#x27;; ἁμαρτίαι (hamartiai) - nominativo plural de hamartia, significando &#x27;pecados&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[καὶ ἰδὼν]], ao passo que o Textus Receptus emprega [[ἰδὼν δέ]]. O SBLGNT traz [[ἀφίενταί σου]], enquanto o Textus Receptus apresenta [[ἀφέωνταί σοι]]. O SBLGNT omite o pronome [[σου]] após ἁμαρτίαι, o qual está presente no Textus Receptus.</p><p><b>Síntese Exegética:</b> Jesus responde primariamente à necessidade espiritual do homem, declarando o perdão dos seus pecados, o que revela a autoridade divina operando através de Sua palavra.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "E estavam ali alguns dos escribas sentados e arrazoando em seus corações:",
+        "commentary": "<p><b>Análise Léxica:</b> ἦσαν (ēsan) - imperfeito indicativo de eimi, significando &#x27;estavam&#x27;; γραμματέων (grammateōn) - genitivo plural de grammateus, significando &#x27;escribas&#x27;; καθήμενοι (kathēmenoi) - particípio presente de kathēmai, significando &#x27;sentados&#x27;; διαλογιζόμενοι (dialogizomenoi) - particípio presente de dialogizomai, significando &#x27;arrazoando&#x27;; καρδίαις (kardiais) - dativo plural de kardia, significando &#x27;corações&#x27;. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A presença dos escribas introduz o conflito teológico, pois eles observam em silêncio e interiormente questionam a legitimidade da proclamação de perdão feita por Jesus.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Por que este fala assim? <i>[[</i>Ele blasfema<i>]]</i>; quem pode perdoar pecados senão um só, Deus?",
+        "commentary": "<p><b>Análise Léxica:</b> Τί (ti) - pronome interrogativo, &#x27;por que&#x27;; οὗτος (houtos) - pronome demonstrativo, &#x27;este&#x27;; οὕτως (houtos) - advérbio, &#x27;assim&#x27;; λαλεῖ (lalei) - verbo, &#x27;fala&#x27; (definição não verificada em léxico); <i>[[</i>βλασφημεῖ (blasphemei) - verbo, &#x27;blasfema&#x27;<i>]]</i>; τίς (tis) - pronome interrogativo, &#x27;quem&#x27;; δύναται (dunatai) - verbo, &#x27;pode&#x27;; ἀφιέναι (aphienai) - verbo infinitivo, &#x27;perdoar&#x27;; ἁμαρτίας (hamartias) - substantivo, &#x27;pecados&#x27;; εἰ μὴ (ei me) - conjunção, &#x27;senão&#x27;; εἷς (heis) - numeral, &#x27;um&#x27;; ὁ θεός (ho theos) - substantivo, &#x27;o Deus&#x27;.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>βλασφημεῖ</i>, enquanto o Textus Receptus apresenta <i>βλασφημias</i>.</p><p><b>Síntese Exegética:</b> Os escribas questionam a autoridade de Jesus ao perdoar pecados, reconhecendo corretamente que somente Deus possui tal prerrogativa soberana.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "E <i>[[</i>logo<i>]]</i>, percebendo Jesus em seu espírito que <i>[[</i>assim<i>]]</i> eles <i>[[</i>discutiam<i>]]</i> consigo mesmos, <i>[[</i>disse-lhes<i>]]</i>: Por que discutis estas coisas em vossos corações?",
+        "commentary": "<p><b>Análise Léxica:</b> καὶ (kai) - conjunção, &#x27;e&#x27;; <i>[[</i>εὐθὺς (euthus) - advérbio, &#x27;logo&#x27;<i>]]</i>; ἐπιγnoὺς (epignous) - particípio, &#x27;percebendo&#x27;; ὁ Ἰησοῦς (ho Iēsous) - substantivo, &#x27;o Jesus&#x27;; τῷ πνεύματι (tō pneumati) - substantivo, &#x27;no espírito&#x27;; αὐτοῦ (autou) - pronome, &#x27;dele&#x27;; ὅτι (hoti) - conjunção, &#x27;que&#x27;; <i>[[</i>οὕτως (houtos) - advérbio, &#x27;assim&#x27;<i>]]</i>; <i>[[</i>διαλογίζονται (dialogizontai) - verbo, &#x27;discutem&#x27;<i>]]</i>; ἐν (en) - preposição, &#x27;em&#x27;; ἑαυτοῖς (heautois) - pronome, &#x27;consigo mesmos&#x27;; <i>[[</i>λέγει (legei) - verbo, &#x27;diz&#x27;<i>]]</i> (o TR traz <i>εἶπεν</i>). Analogamente, o SBLGNT e o TR apresentam variações pontuais de conectivos e advérbios.</p><p><b>Crítica Textual:</b> O aparato aponta <i>εὐθὺς</i> no SBLGNT versus <i>εὐθέως</i> no TR; <i>οὕτως</i> no SBLGNT em contraste com a adição de <i>αὐτοὶ</i> no TR; e <i>λέγει</i> no SBLGNT ante <i>εἶπεν</i> no TR.</p><p><b>Síntese Exegética:</b> Jesus, por sua onisciência divina operando no Espírito, discerne os pensamentos ocultos dos escribas e os confronta com a motivação de seus corações.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "O que é mais fácil, dizer ao paralítico: <i>[[</i>Perdoados estão os teus pecados<i>]]</i>, ou dizer: <i>[[</i>Levanta-te<i>]]</i> e toma <i>[[</i>o teu leito<i>]]</i> e anda?",
+        "commentary": "<p><b>Análise Léxica:</b> τί (ti) - pronome, &#x27;o que&#x27;; ἐστιν (estin) - verbo, &#x27;é&#x27;; εὐκοπώτερον (eukopōteron) - adjetivo, &#x27;mais fácil&#x27;; εἰπεῖν (eipein) - verbo, &#x27;dizer&#x27;; τῷ παραλυτικῷ (tō paralytikō) - adjetivo/substantivo, &#x27;ao paralítico&#x27;; <i>[[</i>Ἀφίενταί (Aphientai) - verbo, &#x27;são perdoados&#x27;<i>]]</i> (TR: <i>Ἀφέωνταί</i>); σου (sou) - pronome, &#x27;teus&#x27;; αἱ ἁμαρτίαι (hai hamartiai) - substantivo, &#x27;os pecados&#x27;; ἢ (hē) - conjunção, &#x27;ou&#x27;; <i>[[</i>Ἔγειre (Egeire) - verbo, &#x27;levanta-te&#x27;<i>]]</i>; καὶ (kai) - conjunçãop, &#x27;e&#x27;; ἆρον (aron) - verbo, &#x27;toma&#x27;; <i>[[</i>τὸν κράβαττόν σου (ton krabbaton sou) - substantivo e pronome, &#x27;o teu leito&#x27;<i>]]</i>; περιπάτει (peripatei) - verbo, &#x27;anda&#x27;.</p><p><b>Crítica Textual:</b> Variantes notadas: <i>Ἀφίενταί</i> (SBLGNT) contra <i>Ἀφέωνταί</i> (TR); <i>Ἔγειρε</i> (SBLGNT) contra <i>Ἐγείρου</i> / <i>Ἔγειραι</i>; e a ordem de <i>τὸν κράβαττόν σου</i> (SBLGNT) em relação a <i>σου τὸν κράββατον</i> (TR).</p><p><b>Síntese Exegética:</b> Jesus demonstra que dizer palavras invisíveis de perdão ou curar visivelmente exigem a mesma autoridade divina, desafiando a descrença dos presentes.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Ora, para que <i>[[</i>sibam<i>]]</i> que o Filho do Homem tem autoridade na terra para perdoar pecados—diz ao paralítico:",
+        "commentary": "<p><b>Análise Léxica:</b> ἵνα (hina) - conjunção, &#x27;para que&#x27;; δὲ (de) - conjunção, &#x27;mas/ora&#x27;; εἰδῆτε (eidēte) - verbo, &#x27;sibeis/vejais&#x27;; ὅτι (hoti) - conjunção, &#x27;que&#x27;; ἐξουσίαν (exousian) - substantivo, &#x27;autoridade&#x27;; ἔχει (echei) - verbo, &#x27;tem&#x27;; ὁ υἱὸς τοῦ ἀνθρώπου (ho huios tou anthrōpou) - expressão, &#x27;o Filho do Homem&#x27;; <i>[[</i>ἐπὶ τῆς γῆς ἀφιέναι ἁμαρτίας (epi tēs gēs aphienai hamartias) - preposição e termos, &#x27;na terra perdoar pecados&#x27;<i>]]</i>; λέγει (legei) - verbo, &#x27;diz&#x27;; τῷ παραλυτικῷ (tō paralytikō) - substantivo, &#x27;ao paralítico&#x27;.</p><p><b>Crítica Textual:</b> O SBLGNT e o TR divergem na ordem dos sintagmas que compõem <i>ἐπὶ τῆς γῆς ἀφιέναι ἁμαρτίας</i>.</p><p><b>Síntese Exegética:</b> A cura física atua como evidência tangível da autoridade celestial concedida ao Filho do Homem para redimir a humanidade.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "A ti digo: <i>[[</i>Levanta-te<i>]]</i>, toma <i>[[</i>o teu leito<i>]]</i> e vai para a tua casa.",
+        "commentary": "<p><b>Análise Léxica:</b> Σοὶ (Soi) - pronome, &#x27;a ti&#x27;; λέγω (legō) - verbo, &#x27;digo&#x27;; <i>[[</i>ἔγειρε (egeire) - verbo, &#x27;levanta-te&#x27;<i>]]</i> (TR: <i>ἔγειραι καὶ</i>); ἆρον (aron) - verbo, &#x27;toma&#x27;; τὸν κράβαττόν (ton krabbaton) - substantivo, &#x27;o leito&#x27;; σου (sou) - pronome, &#x27;teu&#x27;; καὶ (kai) - conjunção, &#x27;e&#x27;; ὕπαγε (hypage) - verbo, &#x27;vai&#x27;; εἰς (eis) - preposição, &#x27;para&#x27;; τὸν οἶκόν (to oikon) - substantivo, &#x27;a casa&#x27;; σου (sou) - pronome, &#x27;tua&#x27;.</p><p><b>Crítica Textual:</b> O aparato registra a forma <i>ἔγειρε</i> (SBLGNT) frente à forma <i>ἔγειραι καὶ</i> (TR).</p><p><b>Síntese Exegética:</b> A ordem direta e imperativa de Jesus sela o milagre, exigindo do homem uma resposta imediata de obediência e restauração.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "E <i>[[</i>levantou-se<i>]]</i>, <i>[[</i>e logo<i>]]</i>, tendo tomado o leito, saiu <i>[[</i>diante<i>]]</i> de todos, de modo que todos se maravilhavam e glorificavam a Deus, dizendo: <i>[[</i>Nunca jamais vimos assim<i>]]</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> καὶ (kai) - conjunção, &#x27;e&#x27;; ἠγέρθη (ēgerthē) - verbo, &#x27;levantou-se&#x27;; <i>[[</i>καὶ εὐθὺς (kai euthus) - expressão, &#x27;e logo&#x27;<i>]]</i> (TR: <i>εὐθέως καὶ</i>); ἄρας (aras) - particípio, &#x27;tendo tomado&#x27;; τὸν κράβαττον (ton krabbaton) - substantivo, &#x27;o leito&#x27;; ἐξῆλθεν (exēlthen) - verbo, &#x27;saiu&#x27;; <i>[[</i>ἔμπροσθεν (emprosthen) - preposição, &#x27;diante&#x27;<i>]]</i> (TR: <i>ἐναντίον</i>); πάντων (pantōn) - adjetivo, &#x27;de todos&#x27;; ὥστε (hōste) - conjunção, &#x27;de modo que&#x27;; ἐξίστασθαι (existasthai) - verbo, &#x27;maravilhar-se&#x27;; πάντας (pantas) - adjetivo, &#x27;todos&#x27;; καὶ (kai) - conjunção, &#x27;e&#x27;; δοξάζειν (doxazein) - verbo, &#x27;glorificar&#x27;; τὸν θεὸν (ton theon) - substantivo, &#x27;a Deus&#x27;; λέγοντας (legontas) - particípio, &#x27;dizendo&#x27;; <i>[[</i>Οὕτως οὐδέποτε (Houtos oudepote) - expressão, &#x27;nunca jamais assim&#x27;<i>]]</i> (TR: <i>Οὐδέποτε οὕτως</i>).</p><p><b>Crítica Textual:</b> O aparato assinala diferenças em: <i>καὶ εὐθὺς</i> (SBLGNT) versus <i>εὐθέως καὶ</i> (TR); <i>ἔμπροσθεν</i> (SBLGNT) versus <i>ἐναντίον</i> (TR); e <i>Οὕτως οὐδέποτε</i> (SBLGNT) versus <i>Οὐδέποτε οὕτως</i> (TR).</p><p><b>Síntese Exegética:</b> O testemunho do milagre público gera profundo assombro na multidão, que louva a Deus diante do feito inédito e glorioso.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "E <i>[[</i>saiu<i>]]</i> outra vez para junto ao mar; e toda a multidão vinha ter com ele, e <i>[[</i>ele os ensinava<i>]]</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐξῆλθεν (exēlthen) - verbo, sair (definição não verificada em léxico); θάλασσαν (thalassan) - substantivo, mar (definição não verificada em léxico); διδάσκειν (didaskein) - verbo, ensinar (definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O Senhor Jesus retoma o seu ministério público às margens do mar da Galileia, atraindo grandes multidões às quais ensinava com autoridade.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E, <i>[[</i>passando adiante<i>]]</i>, viu a Levi, filho de Alfeu, sentado na <i>[[</i>coletoria de impostos<i>]]</i>, e disse-lhe: Segue-me. E, levantando-se, <i>[[</i>o seguiu<i>]]</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> παράγων (paragōn) - particípio, passando (definição não verificada em léxico); τελώνιον (telōnion) - substantivo, alfândega ou coletoria (definição não verificada em léxico); ἀκολούθει (akolouthei) - verbo imperativo, segue (definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O chamamento de Levi (Mateus) demonstra a soberania da graça de Cristo, que chama publicanos desprezados para o discipulado imediato e transformador.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "E <i>[[</i>aconteceu<i>]]</i> que, estando ele <i>[[</i>reclinado à mesa<i>]]</i> na <i>[[</i>sua casa<i>]]</i>, muitos publicanos e pecadores <i>[[</i>estavam reclinados juntamente<i>]]</i> com Jesus e com os seus discípulos; pois eram muitos e o <i>[[</i>seguiam<i>]]</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> γίνεται (ginetai) - verbo, acontece ou torna-se (definição não verificada em léxico); κατακεῖσθαι (katakeisthai) - infinitivo, reclinar-se à mesa (definição não verificada em léxico); ἁμαρτωλοὶ (hamartōloi) - adjetivo/substantivo, pecadores (definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>γίνεται κατακεῖσθαι</i>, enquanto o Textus Receptus apresenta <i>ἐγένετο ἐν τῷ κατακεισθαι</i>. O SBLGNT traz <i>ἠκολούθουν</i> (imperfeito), ao passo que o Textus Receptus registra <i>ἠκολούθησαν</i> (aoristo).</p><p><b>Síntese Exegética:</b> A comunhão de Jesus com publicanos e pecadores à mesa choca os religiosos da época, mas ilustra a missão do Mestre aos necessitados de cura espiritual.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "E os escribas <i>[[</i>dos fariasaus<i>]]</i>, <i>[[</i>vendo-o<i>]]</i> comer com os pecadores e publicanos, diziam aos discípulos dele: <i>[[</i>Por que<i>]]</i> come com os publicanos e <i>[[</i>pecadores<i>]]</i>?",
+        "commentary": "<p><b>Análise Léxica:</b> γραμματεῖς (grammateis) - substantivo, escribas (definição não verificada em léxico); Φαριsaῖοι (Pharisaioi) - substantivo, fariseus (definição não verificada em léxico); ἐσθίει (esthiei) - verbo, come (definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Há várias diferenças notáveis: o SBLGNT traz <i>τῶν Φαρισαίων</i>, enquanto o TR traz <i>καὶ οἱ Φαriσαῖοι</i>. O SBLGNT traz <i>ὅτι ἐσθίει</i>, enquanto o TR traz <i>αὐτὸν ἐσθιοντα</i>. O TR acrescenta <i>καὶ πίνει</i> ao final do versículo.</p><p><b>Síntese Exegética:</b> A vigilância hostil dos líderes religiosos manifesta-se na censura à hospitalidade e comunhão inclusiva praticada por Jesus com os marginais da sociedade.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "E, ouvindo-<i>o</i>, Jesus disse-lhes: Os sãos não têm necessidade de médico, mas sim os que estão doentes; eu não vim chamar justos, mas sim pecadores [[a<i>l</i><i>g</i><i>u</i><i>m</i><i>a</i><i>s</i> <i>v</i><i>e</i><i>r</i><i>s</i><i>ο</i><i>õ</i><i>e</i><i>s</i> <i>a</i><i>c</i><i>r</i><i>e</i><i>s</i><i>c</i><i>e</i><i>n</i><i>t</i><i>a</i><i>m</i>: ao arrependimento]].",
+        "commentary": "<p><b>Análise Léxica:</b> ἰσχύοντες (ischyontes - Strong 2480: ser forte, robusto, sadio), ἰατροῦ (iatrou - Strong 2395: médico), κακῶς ἔχοντες (kakōs echontes - estar mal, doentes), ἁμαρτωλούς (hamartōlous - Strong 268: pecadores). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> A partícula <i>ὅτι</i> é atestada em WH e NA28, mas omitida no Textus Receptus (RP). A adição <i>εἰς μετάνοιαν</i> (&quot;ao arrependimento&quot;) encontra-se no Textus Receptus (RP), porém está ausente nos principais testigos e edições críticas (WH, Treg, NA28).</p><p><b>Síntese Exegética:</b> Jesus responde aos questionamentos acerca da sua comunhão com os marginalizados usando a metáfora da cura, demonstrando que a sua missão salvífica é direcionada aos que reconhecem a sua condição de enfermos espirituais.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "E os discípulos de João e os [[<i>f</i><i>a</i><i>r</i><i>i</i><i>s</i><i>a</i><i>i</i><i>o</i><i>s</i>]] estavam jejuando; e vêm e dizem-lhe: Por que jejuam os discípulos de João e os [[<i>d</i><i>i</i><i>s</i><i>c</i><i>í</i><i>p</i><i>u</i><i>l</i><i>o</i><i>s</i>]] dos fariseus, mas os teus discípulos não jejuam?",
+        "commentary": "<p><b>Análise Léxica:</b> νηστεύοντες (nēsteuontes - Strong 3522: jejuar), μαθηταί (mathētai - Strong 3101: discípulos), Φαριsaῖοι (Pharisaioi - Strong 5330: fariseus). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>Φαρισαῖοι</i>, enquanto o Textus Receptus emprega <i>τῶν Φαρισαίων</i>. Igualmente, a segunda ocorrência de <i>μαθηταὶ</i> é omitida pelo Textus Receptus em contraste com a leitura das edições críticas.</p><p><b>Síntese Exegética:</b> O contraste entre as práticas ascéticas tradicionais dos discípulos de João Batista e dos fariseus e a aparente negligência dos discípulos de Jesus suscita uma controvérsia sobre a natureza do tempo messiânico.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "E Jesus disse-lhes: Podem os convidados para as núpcias, enquanto o noivo está com eles, jejuar? Durante o tempo em que [[<i>t</i><i>ê</i><i>m</i> <i>c</i><i>o</i><i>n</i><i>s</i><i>i</i><i>g</i><i>o</i> <i>o</i> <i>n</i><i>o</i><i>i</i><i>v</i><i>o</i>]], não podem jejuar;",
+        "commentary": "<p><b>Análise Léxica:</b> νυμφῶνος (nymfōnos - Strong 3567: câmara nupcial, convidados para o casamento), νυμφίος (nymfios - Strong 3566: noivo), νηστεύειν (nēsteuein - Strong 3522: jejuar). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Há uma variação na ordem e escolha pronominal: SBLGNT traz <i>ἔχουσιν τὸν νυμφίον μετʼ αὐτῶν</i>, ao passo que o Textus Receptus (RP) apresenta <i>μεθʼ ἑαυτῶν ἔχουσιν τὸν νυμφίον</i>.</p><p><b>Síntese Exegética:</b> Jesus utiliza a imagem do noivo para explicar que a presença do Messias inaugura um período de alegria incompatível com a tristeza ritual do jejum.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "dias porém virão em que o noivo lhes será tirado, e então jejuarán naquele [[<i>d</i><i>i</i><i>a</i>]].",
+        "commentary": "<p><b>Análise Léxica:</b> ἐλεύσονται (eleusontai - Strong 2064: virão), ἡμέραι (hēmerai - Strong 2250: dias), ἀπαρθῇ (aparthē - Strong 522: ser tirado, removido), νηστεύσουσιν (nēsteusousin - Strong 3522: jejuarão). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz o singular <i>ἐκείνῃ τῇ ἡμέρᾳ</i> (&quot;naquele dia&quot;), enquanto o Textus Receptus (RP) registra o plural <i>ἐκείναις ταῖς ἡμέραις</i> (&quot;naqueles dias&quot;).</p><p><b>Síntese Exegética:</b> A predição da ausência física do noivo aponta para o sofrimento e a cruz, inaugurando o tempo em que o jejum voltará a ter lugar na comunidade dos discípulos.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "[[<i>N</i><i>i</i><i>n</i><i>γ</i><i>u</i><i>é</i><i>m</i>]] cose remendo de pano novo em [[<i>u</i><i>m</i> <i>v</i><i>e</i><i>s</i><i>t</i><i>i</i><i>d</i><i>o</i> <i>v</i><i>e</i><i>l</i><i>h</i><i>o</i>]]; de outra maneira, o remendo novo arranca [[<i>d</i><i>e</i><i>l</i><i>e</i>]], o novo do velho, e o rasgo fica maior.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐπίβλημα (epiblēma - Strong 1940: remendo), ῥάκους (rhakous - Strong 4470: pedaço de pano), ἀγνάφου (agnaphou - Strong 42, não pisado, cru), ἱμάτιον (himation - Strong 2440: veste), σχίσμα (schisma - Strong 4978: fenda, rasgão). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT inicia sem conjunção (<i>Οὐδεὶς</i>), enquanto o Textus Receptus adiciona <i>Καὶ</i>. Além disso, o SBLGNT traz <i>ἱμάτιον παλαιόν</i> (acusativo) e a preposição <i>ἀπʼ</i>, ao passo que o TR apresenta <i>ἱματίῳ παλαιῷ</i> (dativo) e omite a preposição correspondente.</p><p><b>Síntese Exegética:</b> A parábola do remendo ilustra a incompatibilidade entre as estruturas do judaísmo antigo e a novidade radical trazida pelo reino de Deus em Cristo.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "E ninguém deita vinho novo em odres velhos; de outra maneira, o vinho novo [[<i>r</i><i>a</i><i>s</i><i>g</i><i>a</i> <i>o</i><i>s</i> <i>o</i><i>d</i><i>r</i><i>e</i><i>s</i>]], e o vinho [[<i>s</i><i>e</i> <i>d</i><i>e</i><i>r</i><i>r</i><i>a</i><i>m</i><i>a</i> <i>e</i> <i>o</i><i>s</i> <i>o</i><i>d</i><i>r</i><i>e</i><i>s</i> <i>s</i><i>e</i> <i>d</i><i>e</i><i>s</i><i>t</i><i>r</i><i>õ</i><i>e</i><i>m</i>]]. Mas vinho novo deve ser deitado em odres [[<i>n</i><i>o</i><i>v</i><i>o</i><i>s</i>]].",
+        "commentary": "<p><b>Análise Léxica:</b> οἶνος (oinos - Strong 3631: vinho), ἀσκούς (askous - Strong 771: odres), ῥήξει (rhēxei - Strong 4486: romper, rasgar), ἀπόλλυται (apollytai - Strong 622: perecer, destruir), καινούς (kainous - Strong 2537: novo, fresco). Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Existem divergências notáveis: o SBLGNT traz <i>ῥήξει ὁ οἶνος</i> e <i>ἀπόλλυται καὶ οἱ ἀσκοί</i>, enquanto o Textus Receptus expande para <i>ῥήσσει ὁ οἶνος ὁ νέος</i> e <i>ἐκχεῖται καὶ οἱ ἀσκοὶ ἀπολοῦνται</i>. No final do versículo, o TR acrescenta o particípio <i>βλητέον</i> (&quot;deve ser posto&quot;), ausente no texto crítico principal.</p><p><b>Síntese Exegética:</b> A metáfora dos odres reforça que a dinâmica do evangelho não pode ser cingida pelas velhas formas religiosas, exigindo uma transformação total e recipientes espirituais renovados.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "E aconteceu que [[<i>a</i><i>u</i><i>t</i><i>ὸ</i><i>ν</i> <i>ἐ</i><i>ν</i> <i>τ</i><i>ο</i><i>ῖ</i><i>ς</i> <i>σ</i><i>ά</i><i>β</i><i>β</i><i>α</i><i>σ</i><i>ι</i><i>ν</i> <i>π</i><i>α</i><i>ρ</i><i>α</i><i>π</i><i>ο</i><i>ρ</i><i>ε</i><i>ύ</i><i>ε</i><i>σ</i><i>θ</i><i>α</i><i>ι</i>]] através das searas, e [[<i>ο</i><i>ἱ</i> <i>μ</i><i>α</i><i>θ</i><i>η</i><i>τ</i><i>α</i><i>ὶ</i> <i>α</i><i>ὐ</i><i>τ</i><i>ο</i><i>ῦ</i> <i>ἤ</i><i>ρ</i><i>ξ</i><i>α</i><i>ν</i><i>τ</i><i>ο</i>]] a abrir caminho, arrancando as espigas.",
+        "commentary": "<p><b>Análise Léxica:</b> σάββασιν (sabbasin - Strong: 4521): sábado, dias de descanso, definição não verificada em léxico; σπορίμων (sporimōn - Strong: 4702): campos semeados, searas, definição não verificada em léxico; τίλλοντες (tillontek - Strong: 5089): arrancando, colhendo, definição não verificada em léxico; στάχυας (stachuas - Strong: 4719): espigas, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variação na ordem e escolha de preposição para o deslocamento por entre os sábados (paraporeuesthai vs diaporeuesthai), bem como a posição de oi mathētai autou ērxanto em relação ao Textus Receptus.</p><p><b>Síntese Exegética:</b> O ato dos discípulos de colher espigas no sábado, motivado pela fome e pela necessidade imediata, atrai a censura dos fariseus devido ao rigor legalista sobre o repouso sabático, preparando o terreno para a instrução de Jesus sobre a verdadeira finalidade da instituição do sábado.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "E os fariseus diziam-lhe: Vê, por que [[<i>p</i><i>o</i><i>i</i><i>o</i><i>ῦ</i><i>s</i><i>i</i><i>n</i>]] no sábado o que não é lícito?",
+        "commentary": "<p><b>Análise Léxica:</b> Φαρισαῖοι (pharisaioi - Strong: 5330): fariseus, separados, definição não verificada em léxico; ἔξεστιν (exestin - Strong: 1832): é lícito, é permitido, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a forma ποιοῦσιν sem preposição, enquanto o Textus Receptus inclui o termo [[<i>ἐ</i><i>ν</i>]] antes de tois sabbasin.</p><p><b>Síntese Exegética:</b> A indagação dos fariseus reflete a vigilância rigorosa sobre a observância exterior da Lei, elevando as tradições humanas e as interpretações rabínicas do sábado acima das necessidades humanas básicas.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "E ele [[<i>l</i><i>é</i><i>g</i><i>e</i><i>i</i>]] a eles: Nunca lestes o que fez Davi, quando teve necessidade e teve fome, ele e os que com ele estavam?",
+        "commentary": "<p><b>Análise Léxica:</b> ἀνέγνωτε (anegnōte - Strong: 314): lestes, reconhecestes, definição não verificada em léxico; χρείαν (chreian - Strong: 5532): necessidade, falta, definição não verificada em léxico; ἐπείνασεν (epeinasen - Strong: 3983): teve fome, faminto, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta o verbo no presente [[<i>λέγει</i>]], ao passo que o Textus Receptus utiliza a forma [[<i>α</i><i>ὐ</i><i>τ</i><i>ὸ</i><i>ς</i> <i>ἔ</i><i>λ</i><i>ε</i><i>γ</i><i>ε</i><i>ν</i>]] (ele dizia/falava).</p><p><b>Síntese Exegética:</b> Jesus recorre ao precedente histórico de Davi para demonstrar que a preservação da vida e a necessidade humana suprem os regulamentos cerimoniais em circunstâncias extraordinárias.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Como entrou na casa de Deus, [[<i>p</i><i>ῶ</i><i>s</i>]] no tempo de Abiatar, o sumo sacerdote, e comeu os pães da proposição, os quais não é lícito comer senão [[<i>t</i><i>o</i><i>ῦ</i><i>s</i> <i>ἱ</i><i>ε</i><i>ρ</i><i>ε</i><i>ῖ</i><i>s</i>]], e deu também aos que estavam com ele?",
+        "commentary": "<p><b>Análise Léxica:</b> οἶκον (oikon - Strong: 3624): casa, habitação, definição não verificada em léxico; ἀρχιερέως (archiereōs - Strong: 749): sumo sacerdote, <i>arce</i>sacerdote, definição não verificada em léxico; προθέσεως (protheseōs - Strong: 4286): proposição, apresentação, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra o acusativo [[<i>τ</i><i>ο</i><i>ῦ</i><i>s</i> <i>ἱ</i><i>ε</i><i>ρ</i><i>ε</i><i>ῖ</i><i>s</i>]], enquanto o Textus Receptus e outras testemunhas trazem o dativo [[<i>t</i><i>ο</i><i>ῖ</i><i>s</i> <i>ἱ</i><i>ε</i><i>ρ</i><i>ε</i><i>ῦ</i><i>s</i><i>i</i><i>n</i>]].</p><p><b>Síntese Exegética:</b> A referência ao episódio do Tabernáculo sob Abiatar sublinha que a misericórdia divina e a provisão para os necessitados têm precedência sobre a letra estrita dos rituais sagrados.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "E dizia-lhes: O sábado foi feito por causa do homem, [[<i>k</i><i>α</i><i>ὶ</i>]] não o homem por causa do sábado;",
+        "commentary": "<p><b>Análise Léxica:</b> σάββατον (sabbaton - Strong: 4521): sábado, descanso, definição não verificada em léxico; ἄνθρωπον (anthrōpon - Strong: 444): homem, ser humano, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT inclui a conjunção [[<i>κ</i><i>α</i><i>ὶ</i>]] introduzindo a segunda oração, a qual está ausente em algumas formas do Textus Receptus.</p><p><b>Síntese Exegética:</b> Esta proclamação estabelece o princípio axiológico fundamental de que as instituições religiosas existem para servir ao bem-estar integral da humanidade, e não para escravizá-la.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "De sorte que o Filho do Homem é senhor também do sábado.",
+        "commentary": "<p><b>Análise Léxica:</b> κύριος (kurios - Strong: 2962): senhor, mestre, soberano, definição não verificada em léxico; υἱὸς (huios - Strong: 5207): filho, descendente, definição não verificada em léxico; ἀνθρώπου (anthrōpou - Strong: 444): homem, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido.</p><p><b>Síntese Exegética:</b> Como o Filho do Homem, Jesus reivindica autoridade divina suprema sobre a instituição sabática, possuindo o poder de reinterpretar e cumprir o verdadeiro propósito do descanso sabático.</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "E entrou novamente [[<i>εἰς</i>]] na sinagoga, e estava ali um homem que tinha a mão atrofiada.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰσῆλθεν</i> (eisēlthen, Strong: 1525) - entrou; <i>συναγωγήν</i> (synagōgēn, Strong: 4864) - sinagoga; <i>ξηραμμένην</i> (xērammenēn, Strong: 3583) - atrofiada, seca; <i>χειρα</i> (cheira, Strong: 5495) - mão. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a preposição <i>εἰς</i> antes de <i>συναγωγήν</i>, enquanto o Textus Receptus inclui o artigo <i>τὴν</i> (<i>εἰς τὴν συναγωγην</i>).</p><p><b>Síntese Exegética:</b> Jesus entra novamente em uma sinagoga no sábado e depara-se com um homem necessitado de cura, preparando o cenário para o conflito com as autoridades religiosas acerca da observância sabática.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E observavam-no para ver se o curaria no sábado, a fim de [[<i>κατηγορήσωσιν</i>]] acusá-o.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>παρετήρουν</i> (paretēroun, Strong: 3906) - observavam atentamente; <i>σαββασιν</i> (sabbasin, Strong: 4521) - sábados; <i>θεραπεύσει</i> (therapeusei, Strong: 2323) - curará; <i>κατηγορήσωσιν</i> (katēgorēsōsin, Strong: 2723) - acusassem. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e a maioria das edições trazem a forma subjuntiva <i>κατηγορήσωσιν</i>, ao passo que variantes atestadas por Tregelles apresentam o futuro <i>κατηγορήσουσιν</i>.</p><p><b>Síntese Exegética:</b> Os opositores de Jesus monitoram suas ações com segundas intenções, buscando uma base legal para acusá-lo de violar o repouso sabático.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E diz ao homem que tinha a mão [[<i>τὴν χεῖρα ἔχοντι ξηράν</i>]] seca: Levanta-te e vem para o meio.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>λεγει</i> (legei, Strong: 3004) - diz; <i>ξηράν</i> (xēran, Strong: 3584) - seca, atrofiada; <i>Ἔγειρε</i> (Egeire, Strong: 1453) - levanta-te; <i>μεσον</i> (meson, Strong: 3319) - meio. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Há divergência na ordem das palavras para descrever a condição da mão: o SBLGNT usa <i>τὴν χεῖρα ἔχοντι ξηράν</i>, enquanto o Textus Receptus traz <i>εξηραμμενην εχοντι την χειρα</i>, e o imperativo difere entre <i>Ἔγειρε</i> (SBLGNT) e <i>Ἔγειραι</i> (RP).</p><p><b>Síntese Exegética:</b> Jesus chama o homem para o centro da sinagoga, colocando a necessidade humana em evidência pública diante de todos os presentes.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "E diz-lhes: É lícito no sábado [[<i>ἀγαθοποιῆσαι</i>]] fazer o bem ou fazer o mal, salvar a vida ou matar? Eles, porém, ficavam em silêncio.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔξεστιν</i> (exestin, Strong: 1832) - é lícito; <i>ἀγαθοποιῆσαι</i> (agathopoiēsai, Strong: 15) - fazer o bem; <i>κακοποιῆσαι</i> (kakopoiēsai, Strong: 2554) - fazer o mal; <i>σῶσαι</i> (sōsai, Strong: 4982) - salvar; <i>ἀποκτεῖναι</i> (apokteinai, Strong: 615) - matar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT emprega o verbo <i>ἀγαθοποιῆσαι</i>, ao passo que o Textus Receptus e algumas edições críticas possuem a construção analítica <i>ἀγαθὸν ποιῆσαι</i>.</p><p><b>Síntese Exegética:</b> Jesus confronta a hipocrisia dos religiosos ao demonstrar que omitir o bem equivale a promover o mal, gerando um silêncio eloquente entre os críticos.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "E, olhando ao redor para eles com indignação, entristecido pela dureza do coração deles, diz ao homem: Estende a mão. E ele a estendeu, e a mão [[<i>αὐτοῦ</i>]] foi restabelecida.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>περιβλεψάμενος</i> (periblepsamenos, Strong: 4017) - olhando ao redor; <i>ὀργῆς</i> (orgēs, Strong: 3709) - ira, indignação; <i>συλλυπούμενος</i> (sullypoumenos, Strong: 4737) - entristecendo-se juntamente; <i>πωρώσει</i> (pōrōsei, Strong: 4457) - dureza, cegueira; <i>ἀπεκατεστάθη</i> (apekatestathē, Strong: 600) - foi restabelecida. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta os pronomes e adjetivos <i>σου</i> e <i>ὑγιὴς ὡς ἡ ἄλλη</i> (são como a outra), ausentes no texto crítico base SBLGNT.</p><p><b>Síntese Exegética:</b> A reação emocional de Jesus revela sua dor diante da dureza espiritual dos líderes, culminando na restauração milagrosa da mão do homem.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "E, saindo os fariseus, [[<i>εὐθὺς</i>]] logo com os herodianos consultavam [[<i>ἐδίδουν</i>]] contra ele, sobre como o poderiam destruir.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐξελθόντες</i> (exelthontes, Strong: 1831) - saindo; <i>Φαρισαῖοι</i> (Pharisaioi, Strong: 5330) - fariseus; <i>συμβούλιον</i> (symbouliov, Strong: 4824) - conselho, conspiração; <i>ἀπολέσωσιν</i> (apolesōsin, Strong: 622) - destruam. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT utiliza <i>εὐθὺς</i> (imediatamente) e <i>ἐδίδουν</i> (diziam / faziam conselho), enquanto o Textus Receptus emprega <i>εὐθέως</i> e o verbo <i>ἐποίουν</i>.</p><p><b>Síntese Exegética:</b> A aliança inesperada entre fariseus e herodianos evidencia a crescente oposição política e religiosa contra o ministério de Jesus, tramando ativamente sua morte.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "E Jesus [[<i>μετὰ τῶν μαθηtῶν αὐτοῦ ἀνεχώρησεν</i>]] retirou-se com os seus discípulos para o mar; e uma grande multidão da Galileia [[<i>ἠκολούθησεν</i>]], <i>o</i> seguiu, e da Judeia,",
+        "commentary": "<p><b>Análise Léxica:</b> Ἰησοῦς (Iēsous - Strong G2424): Jesus, definição não verificada em léxico; ἀνεχώρησεν (anexōrēsen - Strong G402/G403): retirou-se, afastou-se, definição não verificada em léxico; μαθητῶν (mathētōn - Strong G3101): discípulos, definição não verificada em léxico; θάλασσαν (thalassan - Strong G2281): mar, lago, definição não verificada em léxico; πλῆθος (plēthos - Strong G4128): multidão, multidão grande, definição não verificada em léxico; ἠκολούθησεν (ēkolouthēsen - Strong G1909/G190) ou ἠκολούθησαν (ēkolouthēsan - Strong G190): seguiu ou seguiram, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variação na ordem das palavras e na terminação do verbo: SBLGNT traz <i>μετὰ τῶν μαθητῶν αὐτοῦ ἀνεχώρησεν</i> e o singular <i>ἠκολούθησen</i>, enquanto o Textus Receptus apresenta [[<i>ἀνεχώρησεν μετὰ τῶν μαθητῶν αὐτου</i>]] e o plural <i>ἠκολούθησαν αὐτῷ</i>, este último explicitando o pronome objeto.</p><p><b>Síntese Exegética:</b> Jesus afasta-se para a região marítima acompanhado de Seus discípulos, atraindo uma imensa multidão de seguidores procedentes de várias regiões, o que demonstra o amplo alcance inicial do Seu ministério.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "e de Jerusalém, e de Idumeia, e além do Jordão, e <i>os que habitavam</i> [[<i>καὶ</i>]] ao redor de Tiro e Sidom, uma grande multidão, [[<i>ἀκούοντες</i>]] ouvindo quão grandes coisas fazia, vieram ter com ele.",
+        "commentary": "<p><b>Análise Léxica:</b> Ἱεροσολύμων (Hierosolymōn - Strong G2414): Jerusalém, definição não verificada em léxico; Ἰδουμαίας (Idoumaias - Strong G2449): Idumeia, definição não verificada em léxico; Ἰορδάνου (Iordanou - Strong G2446): Jordão, definição não verificada em léxico; Τύρον (Tyron - Strong G5184): Tiro, definição não verificada em léxico; Σιδῶνα (Sidōna - Strong G4605): Sidom, definição não verificada em léxico; ἀκούοντες (akouontes - Strong G191) ou ἀκούσαντες (akousantes - Strong G191): ouvindo, definição não verificada em léxico; ἐποίει (epoiei - Strong G4160): fazia, praticava, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[<i>καὶ πέραν τοῦ Ἰορδάνου καὶ περὶ Τύρον</i>]], enquanto o Textus Receptus emprega artigos adicionais como <i>οἱ</i>. Além disso, o particípio [[<i>ἀκούοντες</i>]] (SBLGNT) contrasta com o aoristo <i>ἀκούσαντες</i> (Textus Receptus), e o verbo [[<i>ἐποίει</i>]] (SBLGNT) difere do imperfectivo presente <i>ποιεῖ</i> de algumas edições críticas registradas no aparato.</p><p><b>Síntese Exegética:</b> A fama de Jesus expande-se para além das fronteiras tradicionais de Israel, atraindo gentios e judeus de províncias distantes que acorrem para vê-O e ouvir os seus feitos extraordinários.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "E disse aos seus discípulos que um pequeno barco lhe estivesse reservado por causa da multidão, para que não o oprimissem;",
+        "commentary": "<p><b>Análise Léxica:</b> μαθηταῖς (mathētais - Strong G3101): discípulos, definição não verificada em léxico; πλοιάριον (ploiarion - Strong G4142): barquinho, embarcação pequena, definição não verificada em léxico; προσκαρτερῇ (proskarterē - Strong G4342): permaneça pronto, atenda assiduamente, definição não verificada em léxico; ὄχλον (ochlon - Strong G3793): multidão, povo, definição não verificada em léxico; θλίβωσιν (thlibōsin - Strong G2346): comprimam, oprimam, espremem, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Devido à pressão física exercida pela imensa multidão aglomerada, Jesus providencia uma pequena embarcação para manter uma distância segura e continuar o seu ensino sem ser esmagado pelo povo.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "porque curava a muitos, de tal maneira que se atiravam sobre ele, para que o tocassem, quantos tinham pragas.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐθεράπευσεν (etherapeusen - Strong G2323): curou, sarou, definição não verificada em léxico; ἐπιπίπτειν (epipiptein - Strong G1968): cair sobre, atirar-se sobre, definição não verificada em léxico; ἅψωνται (hapsōntai - Strong G680): toquem, apalpem, definição não verificada em léxico; μάστιγας (mastigas - Strong G3148): açoites, flagelos, enfermidades graves, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O ministério de curas de Jesus gera uma busca desesperada por parte dos enfermos, que procuram tocá-Lo fisicamente na esperança de obter libertação de suas enfermidades e sofrimentos corporais.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "E os espíritos os imundos, quando o [[<i>ἐθεώρουν, προσέπιπτον</i>]] viam, prostravam-se diante dele, e [[<i>ἔκραζον</i>]] clamavam, [[<i>λέγοντα</i>]] dizendo: Tu és o Filho de Deus.",
+        "commentary": "<p><b>Análise Léxica:</b> πνεύματα (pneumata - Strong G4151): espíritos, sopros, definição não verificada em léxico; ἀκάθαρτα (akatharta - Strong G169): imundos, impuros, definição não verificada em léxico; ἐθεώρουν (etheōroun - Strong G2334): viam, contemplavam, definição não verificada em léxico; προσέπιπτον (prosepipton - Strong G4363): prostravam-se, caíam diante, definição não verificada em léxico; ἔκραζον (ekrazon - Strong G2896): clamavam, gritavam, definição não verificada em léxico; υἱὸς (huios - Strong G5207): filho, descendente, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT aponta que os verbos [[<i>ἐθεώρουν, προσέπιπτον</i>]] e [[<i>ἔκραζον</i>]] estão no plural imperfeito (SBLGNT), enquanto o Textus Receptus usa formas no singular <i>ἐθεώρει, προσεπιπτεν, εκραζεν</i>. No particípio seguinte, SBLGNT traz [[<i>λέγοντα</i>]] (neutro plural concordando com os espíritos), ao passo que outras edições trazem o nominativo masculino plural <i>λέγοντες</i>.</p><p><b>Síntese Exegética:</b> A manifestação do sobrenatural revela-se também no reconhecimento forçado dos espíritos impuros, que, diante da autoridade divina do Senhor, prostram-se e proclamam Sua verdadeira identidade celestial.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "E ele [[<i>πολλὰ ἐπετίμα αὐτοις</i>]] com muita severidade os repreendia, para que não [[<i>αὐτὸν φανερὸν</i>]] o [[<i>ποιήσωσιν</i>]] tornassem manifesto.",
+        "commentary": "<p><b>Análise Léxica:</b> ἐπετίμα (epetima - Strong G2008): repreendia, censurava severamente, definição não verificada em léxico; φανερὸν (phaneron - Strong G5318): manifesto, visível, público, definição não verificada em léxico; ποιήσωσιν (poiēsōsin - Strong G4160) ou ποιῶσιν (poiōsin - Strong G4160): fizessem, tornassem, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra a ordem [[<i>αὐτὸν φανερὸν</i>]], ao passo que o Textus Receptus apresenta a inversão <i>φανερὸν αὐτὸν</i>. Quanto ao verbo final, SBLGNT e a maioria das edições utilizam [[<i>ποιήσωσιν</i>]], enquanto algumas variantes como Tregelles trazem a forma contraída <i>ποιῶσιν</i>.</p><p><b>Síntese Exegética:</b> Jesus proíbe rigorosamente que os espíritos divulguem a sua identidade, rejeitando o testemunho de fontes demoníacas e mantendo o propósito soberano do desdobramento de sua missão messiânica.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "E ele sobe ao monte e chama para junto de si a quem ele mesmo queria, e foram até ele.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀναβαίνει</i> (anabainei - sobe, definição não verificada em léxico); <i>ὄρος</i> (oros - monte, definição não verificada em léxico); <i>προσκαλεῖται</i> (proskaleitai - chama para si, definição não verificada em léxico); <i>ἀπῆλθον</i> (apēlthon - foram, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Jesus retira-se para um monte, exercendo sua soberania divina ao convocar os discípulos que ele próprio escolheu para estarem em sua comunhão.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E constituiu doze, para que estivessem com ele e para que os enviasse a pregar,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐποίησεν</i> (epoiēsen - fez, constituiu, definição não verificada em léxico); <i>δώδεκα</i> (dōdeka - doze, definição não verificada em léxico); <i>ἀποστέλλῃ</i> (apostellē - envie, definição não verificada em léxico); <i>κηρύσσειν</i> (kērussein - pregar, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>δώδεκα</i>, enquanto o aparato registra adições como <i>οὓς καὶ ἀποστόλους ὠνόμασens</i> em outras tradições manuscritas (WH, NA28), omitidas no Textus Receptus.</p><p><b>Síntese Exegética:</b> A instituição do grupo dos doze tem dupla finalidade fundamental: a comunhão íntima com o Mestre e a comissão apostólica para a proclamação da mensagem.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "e a ter autoridade para expulsar os demônios;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔχειν</i> (echein - ter, definição não verificada em léxico); <i>ἐξουσίαν</i> (exousian - autoridade, poder, definição não verificada em léxico); <i>ἐκβάλλειν</i> (ekballein - expulsar, definição não verificada em léxico); <i>δαιμόνια</i> (daimonia - demônios, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT e a maioria das edições críticas trazem <i>ἐξουσίαν ἐκβάλλειν τὰ δαιμόνια</i>, ao passo que o Textus Receptus (com base no aparato) acrescenta <i>θεραπεύειν τὰς νόσους καὶ</i> antes de expulsar os demônios, refletindo harmonizações com outros evangelhos.</p><p><b>Síntese Exegética:</b> O poder conferido aos discípulos estende a autoridade do próprio Reino de Deus sobre as forças espirituais das trevas.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "e [[<i>ἐποίησεν τοὺς δώδεκα, καὶ</i>]] pôs [[<i>ὄνομα τῷ Σίμωνι</i>]] por nome a Simão, Pedro;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐπέθηκεν</i> (epethēken - pôs, colocou, definição não verificada em léxico); <i>ὄνομα</i> (onoma - nome, definição não verificada em léxico); <i>Σίμωνι</i> (Simōni - a Simão, definição não verificada em léxico); <i>Πέτρον</i> (Petron - Pedro, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT inicia com <i>[[καὶ ἐποίησεν τοὺς δώδεκα, καὶ]]</i>, omitido no Textus Receptus. Há também variação na ordem das palavras para <i>[[ὄνομα τῷ Σίμωνι]]</i> no SBLGNT versus <i>τῷ Σίμωνι ὄνομα</i> no TR.</p><p><b>Síntese Exegética:</b> A imposição do nome Pedro marca uma nova identidade e função dentro do grupo messiânico inaugurado por Jesus.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "e a Tiago, o de Zebedeu, e a João, o irmão de Tiago (e pôs-lhes por sobrenome Boanerges, que é: Filhos do Trovão),",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀδελφὸν</i> (adelphon - irmão, definição não verificada em léxico); <i>ὀνόματα</i> (onomata - nomes, definição não verificada em léxico); <i>Βοανηργές</i> (Boanērgēs - Boanerges, definição não verificada em léxico); <i>βροντῆς</i> (brontēs - trovão, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Pequena variação ortográfica/morfológica na forma do plural de nome entre <i>ὀνόματα</i> (SBLGNT/Treg/NA28) e a grafia do Textus Receptus.</p><p><b>Síntese Exegética:</b> O epíteto concedido aos filhos de Zebedeu reflete possivelmente o temperamento veemente e zeloso de ambos.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "e a André, e a Filipe, e a Bartolomeu, e a Mateus, e a Tomé, e a Tiago, o de Alfeu, e a Tadeu, e a Simão, o [[<i>Καναναῖον</i>]] cananeu,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Ἀνδρέαν</i> (Andrean - André, definição não verificada em léxico); <i>Φίλιππον</i> (Philippon - Filipe, definição não verificada em léxico); <i>Μαθθαῖον</i> (Maththaion - Mateus, definição não verificada em léxico); <i>Καναναῖον</i> (Kananaion - cananeu, zelote, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>[[Καναναῖον]]</i> (derivado do aramaico para zelote), enquanto o Textus Receptus apresenta a forma <i>Κανανίτην</i>, gerando ambiguidade geográfica em certas tradições posteriores, embora ambos apontem para o mesmo grupo.</p><p><b>Síntese Exegética:</b> A listagem diversificada dos doze apóstolos demonstra a amplitude da chamada de Cristo, unindo homens de origens e tendências distintas sob a mesma bandeira do Reino.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "e Judas [[<i>Ἰσκαριώθ</i>]] [[<i>Ἰσκαριώτην</i>]], o qual também o entregou. E <i>eles</i> vêm para casa;",
+        "commentary": "<p><b>Análise Léxica:</b> Ἰσκαριώθ (Iskariōth - transliteração, definição não verificada em léxico); παρέδωκεν (paredōken - transliteração, significado corrente: entregou); οἶκον (oikon - transliteração, significado corrente: casa).</p><p><b>Crítica Textual:</b> O aparato aponta variante no nome de Judas: Ἰσκαριώθ no SBLGNT frente a Ἰσκαριώτην no Textus Receptus. Quanto ao verbo de chegada, o SBLGNT traz ἔρχεται no singular, enquanto o TR traz ερχονται no plural (junto ao versículo 20).</p><p><b>Síntese Exegética:</b> O texto conclui a nomeação dos apóstolos mencionando Judas Iscariotes, o traidor, e transiciona para a chegada de Jesus e seus discípulos a uma residência, onde logo seriam cercados pela multidão.</p><p><b>Nota de fonte:</b> A numeração SBLGNT foi adaptada à versificação tradicional; confira a separação ou junção e as variantes antes da publicação.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "e [[<i>συνέρχεται</i>]] [[<i>συνερχεται</i>]] de novo a multidão, de modo que nem podiam comer pão.",
+        "commentary": "<p><b>Análise Léxica:</b> ὄχλος (ochlos - transliteração, significado corrente: multidão); δύνασθαι (dynasthai - transliteração, significado corrente: poder); ἄρτον (arton - transliteração, significado corrente: pão).</p><p><b>Crítica Textual:</b> O SBLGNT inclui o artigo ὁ antes de ὄχλος, o qual está ausente no Textus Receptus. Além disso, o SBLGNT utiliza a conjunção de negação μηδὲ, ao passo que o TR apresenta μήτε.</p><p><b>Síntese Exegética:</b> A intensidade do ministério de Jesus atrai uma multidão tão vasta ao redor da casa que Ele e seus discípulos ficavam impossibilitados sequer de realizar a refeição básica.</p><p><b>Nota de fonte:</b> A numeração SBLGNT foi adaptada à versificação tradicional; confira a separação ou junção e as variantes antes da publicação.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "E, quando os seus ouviram <i>isso</i>, saíram para o deter, pois diziam: Ele está fora de si.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀκούσαντες (akousantes - transliteração, significado corrente: tendo ouvido); κρατῆσαι (kratēsai - transliteração, significado corrente: segurar, deter); ἐξέστη (exestē - transliteração, significado corrente: perdeu o juízo, está fora de si).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Os parentes ou próximos de Jesus, alarmados com a agitação e a exaustão provocadas pelo volumoso público, saem com a intenção de contê-lo, julgando que Ele estaria mentalmente descontrolado.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "E os escribas que tinham descido de Jerusalém diziam: Ele tem Belzebu; e: É pelo príncipe dos demônios que ele expele os demônios.",
+        "commentary": "<p><b>Análise Léxica:</b> γραμματεῖς (grammateis - transliteração, significado corrente: escribas); καταβάντες (katabantes - transliteração, significado corrente: tendo descido); Βεελζεβοὺλ (Beelzeboul - transliteração, definição não verificada em léxico); ἐκβάλλει (ekballei - transliteração, significado corrente: lança fora, expulsa).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> As autoridades religiosas vindas da capital tentam desacreditar a autoridade divina de Jesus, atribuindo seus milagres de expulsão demoníaca à cumplicidade com o próprio chefe dos espíritos malignos.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "E, tendo-os chamado, dizia-lhes em parábolas: Como pode Satanás expelir a Satanás?",
+        "commentary": "<p><b>Análise Léxica:</b> προσκαλεσάμενος (proskalesamenos - transliteração, significado corrente: tendo chamado para junto); παραβολαῖς (parabolais - transliteração, significado corrente: parábolas); Σατανᾶς (Satanas - transliteração, significado corrente: Satanás).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Respondendo à calúnia dos escribas, Jesus utiliza o argumento lógico das parábolas para demonstrar a incoerência absurda de um reino dividido contra si mesmo.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "E, se um reino contra si mesmo for dividido, tal reino não pode subsistir;",
+        "commentary": "<p><b>Análise Léxica:</b> βασιλεία (basileia - transliteração, significado corrente: reino); μερισθῇ (meristhē - transliteração, significado corrente: for dividido); σταθῆναι (stathēnai - transliteração, significado corrente: permanecer, subsistir).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Jesus fundamenta sua refutação no princípio universal de que a autodestruição é inevitável para qualquer estrutura política ou espiritual dividida internamente.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "E, se uma casa contra si mesma for dividida, tal casa não poderá subsistir;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>οἰκία</i> (oikia, Strong G3614) - casa, família, lar; <i>μερισθῇ</i> (meristhe, Strong G3307) - seja dividida, repartida; <i>δυνήσεται</i> (dynissetai, Strong G1410) - poderá, terá capacidade; <i>σταθῆναι</i> (stathinai, Strong G2476) - manter-se de pé, subsistir. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[δυνήσεται]] com o significado de poder, enquanto o Textus Receptus apresenta [[δύναται]] no presente. Na ordem da frase, o SBLGNT registra [[ἡ οἰκία ἐκείνη σταθῆναι]], e o aparato aponta variações na posição de certas palavras entre as edições críticas e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Nosso Senhor Jesus ilustra a impossibilidade de um sistema ou reino manter-se coeso quando há divisão interna, aplicando o princípio diretamente ao reino de Satanás.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "E, se Satanás se levantou contra si mesmo e foi dividido, não pode subsistir, mas tem fim.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Σατανᾶς</i> (satanas, Strong G4566) - Satanás, o adversário; <i>ἀνέστη</i> (aneste, Strong G450) - levantou-se, insurgiu-se; <i>ἐμερίσθη</i> (emeristhe, Strong G3307) - foi dividido; <i>στῆναι</i> (stinai, Strong G2476) - subsistir, ficar de pé; <i>τέλος</i> (telos, Strong G5056) - fim, término.</p><p><b>Crítica Textual:</b> O SBLGNT adota [[ἐμερίσθη]] (aoristo passivo), ao passo que o Textus Receptus e o aparato registram [[μεμέρισται]] (perfeito passivo). Quanto a subsistir, o SBLGNT usa [[στῆναι]] e o Textus Receptus [[σταθῆναι]].</p><p><b>Síntese Exegética:</b> A argumentação avança para o plano hipotético da guerra civil no reino infernal: se o próprio líder das trevas atenta contra os seus, sua ruína é inevitável e seu fim está decretado.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "Ninguém pode entrar na casa do valente e roubar os seus bens, se primeiro não prender o valente; e então saqueará a sua casa.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἰσχυροῦ</i> (ischyrou, Strong G2478) - forte, valente, poderoso; <i>σκευὴ</i> (skeve / skeuē, Strong G4632) - bens, utensílios, objetos; <i>διαρπάσαι</i> (diarpasai, Strong G1283) - saquear, despojar; <i>δέσῃ</i> (dese, Strong G1210) - prender, atar.</p><p><b>Crítica Textual:</b> O SBLGNT inicia com [[ἀλλʼ οὐδεὶς δύναται]], enquanto outras testemunhas e edições alteram a ordem para [[οὐ δύναται οὐδεὶς]] ou mantêm variações na disposição dos termos relativos aos bens e à casa do homem forte.</p><p><b>Síntese Exegética:</b> A figura do homem forte representa Satanás, cujos bens (as almas cativas) só podem ser tomados porque o Senhor Jesus, com poder divino superior, já o amarrou e despojou.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Em verdade vos digo que tudo será perdoado aos filhos dos homens, os pecados e quaisquer blasfêmias com que blasfemarem;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀμὴν</i> (amen, Strong G281) - em verdade, amém; <i>ἀφεθήσεται</i> (aphethesetai, Strong G863) - será perdoado; <i>ἁμαρτήματα</i> (hamartimata, Strong G266) - pecados, ofensas; <i>βλασφημίαι</i> (blasphemiai, Strong G988) - blasfêmias, palavras injuriosas.</p><p><b>Crítica Textual:</b> O SBLGNT agrupa os termos como [[τοῖς υἱοῖς τῶν ἀνθρώπων, τὰ ἁμαρτήματα]], enquanto o Textus Receptus inverte a posição de [[τὰ ἁμαρτήματα]] antes dativa. Há também variação entre [[ὅσα ἐὰν]] e [[ὅσας ἂν]] nas orações condicionais relativas às blasfêmias.</p><p><b>Síntese Exegética:</b> A misericórdia divina abrange a imensa maioria dos pecados e ultrajes cometidos pelos seres humanos, demonstrando a amplitude do perdão oferecido no evangelho.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "mas aquele que blasfemar contra o Espírito Santo não tem perdão jamais, mas é réu de pecado eterno.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>πνεῦμα</i> (pneuma, Strong G4151) - espírito, vento; <i>ἅγιον</i> (hagion, Strong G40) - santo; <i>ἄφεσιν</i> (aphesin, Strong G859) - perdão, remissão; <i>αἰῶνος</i> (aionos, Strong G165) - era, eternidade, século; <i>ἔνοχος</i> (enochos, Strong G1767) - réu, culpado, sujeito a; <i>ἁμαρτήματος</i> (hamartimatos, Strong G266) - pecado, ofensa.</p><p><b>Crítica Textual:</b> A divergência mais notável reside no final do versículo: o SBLGNT traz [[ἁμαρτήματος]] (pecado), apoiado pelas principais edições críticas, enquanto o Textus Receptus emprega [[κρισεως]] (juízo).</p><p><b>Síntese Exegética:</b> A rejeição deliberada e endurecida da obra operada pelo Espírito Santo, atribuindo-a ao diabo, constitui um estado de obstinação espiritual que exclui a possibilidade de perdão, acarretando culpa eterna.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "Porque diziam: Ele tem um espírito imundo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔλεγον</i> (elegon, Strong G3004) - diziam, falavam; <i>πνεῦμα</i> (pneuma, Strong G4151) - espírito; <i>ἀκάθαρτον</i> (akatharton, Strong G169) - imundo, impuro; <i>ἔχει</i> (echei, Strong G2192) - tem, possui.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo exato.</p><p><b>Síntese Exegética:</b> O evangelista esclarece o motivo exato pelo qual o Senhor proferiu a solene advertência anterior: os líderes religiosos difamavam a obra do próprio Deus, afirmando maliciosamente que o Salvador estava possesso por um espírito impuro.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "E chegam <i>a mãe dele e os irmãos dele</i> e, estando de fora, enviaram <i>mensageiros</i> para chamá-lo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔρχονται</i> (erchontai - definição não verificada em léxico); <i>μήτηρ</i> (mētēr - definição não verificada em léxico); <i>ἀδελφοί</i> (adelphoi - definição não verificada em léxico); <i>στήκοντες</i> (stēkontes - definição não verificada em léxico); <i>ἀπέστειλαν</i> (apesteilan - definição não verificada em léxico); <i>καλοῦντες</i> (kalountes - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variações em relação ao Textus Receptus, como a ordem dos termos referentes aos familiares e o particípio <i>στήκοντες</i> (SBLGNT/WH/Treg/NA28) em contraste com <i>ἑστῶτες</i> (RP), bem como o verbo <i>καλοῦντες</i> em vez de <i>φωνοῦντες</i>.</p><p><b>Síntese Exegética:</b> A chegada da família física de Jesus evidencia a incompreensão inicial daqueles que lhe eram mais próximos quanto à natureza de sua missão messiânica.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "E estava assentado <i>ao redor dele um</i> <i>grande</i> <i>tr</i><i>ouço</i>, e <i>dizem-lhe</i>: Eis que tua mãe e os teus irmãos <i>estão</i> de fora procurando-te.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐκάθητο</i> (ekathēto - definição não verificada em léxico); <i>ὄχλος</i> (ochlos - definição não verificada em léxico); <i>λέγουσιν</i> (legousin - definição não verificada em léxico); <i>ζητοῦσίν</i> (zētousin - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT apresenta a leitura <i>περὶ αὐτὸν ὄχλος</i>, ao passo que o Textus Receptus adota a ordem <i>ὄχλος περὶ αὐτόν</i>. O SBLGNT também traz <i>καὶ λέγουσιν</i>, enquanto o Textus Receptus registra <i>εἶπον δὲ</i>.</p><p><b>Síntese Exegética:</b> O contraste entre a multidão que circunda o Mestre e os parentes que aguardam do lado de fora introduz a redefinição dos laços espirituais no Reino de Deus.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "E, <i>respondendo-lhes, diz</i>: Quem é a minha mãe <i>ou</i> os meus irmãos?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀποκριθεὶς</i> (apokritheis - definição não verificada em léxico); <i>λέγει</i> (legei - definição não verificada em léxico); <i>τίς</i> (tis - definição não verificada em léxico); <i>ἐστιν</i> (estin - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato aponta a construção participal <i>ἀποκριθεὶς αὐτοῖς λέγει</i> nas edições críticas, contra <i>ἀπεκρίθη αὐτοῖς λέγων</i> no Textus Receptus, além da conjunção <i>ἢ</i> (SBLGNT) frente a <i>καὶ</i> no Textus Receptus.</p><p><b>Síntese Exegética:</b> A indagação retórica de Jesus desafia os conceitos puramente biológicos de parentesco, preparando o terreno para a revelação da verdadeira família espiritual.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "E, olhando em redor para <i>os que estavam assentados ao redor dele em círculo</i>, diz: Eis a minha mãe e os meus irmãos!",
+        "commentary": "<p><b>Análise Léxica:</b> <i>περιβλεψάμενος</i> (periblepsamenos - definição não verificada em léxico); <i>κύκλῳ</i> (kyklō - definição não verificada em léxico); <i>καθημένους</i> (kathēmenous - definição não verificada em léxico); <i>Ἴδε</i> (Ide - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Observa-se variação na posição do termo <i>κύκλῳ</i>: o SBLGNT coloca a expressão <i>τοὺς περὶ αὐτὸν κύκλῳ</i>, enquanto o Textus Receptus prefere <i>κύκλῳ τους περι αυτον</i>.</p><p><b>Síntese Exegética:</b> O olhar panorâmico de Jesus abrange seus discípulos e ouvintes dedicados, conferindo-lhes uma dignidade familiar superior baseada na obediência à palavra.</p>"
+      },
+      {
+        "verse": 35,
+        "text": "Porque qualquer que fizer a vontade de Deus, esse é meu irmão <i>e minha</i> irmã e mãe.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ποιήσῃ</i> (poiēsē - definição não verificada em léxico); <i>θέλημα</i> (thelēma - definição não verificada em léxico); <i>θεοῦ</i> (theou - definição não verificada em léxico); <i>ἀδελφός</i> (adelphos - definição não verificada em léxico); <i>ἀδελφὴ</i> (adelphē - definição não verificada em léxico); <i>μήτηρ</i> (mētēr - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta o pronome <i>μου</i> após <i>ἀδελφὴ</i>, ausente nas principais edições críticas (SBLGNT/WH/Treg/NA28).</p><p><b>Síntese Exegética:</b> A comunhão com Cristo transcende os laços de sangue e fundamenta-se estritamente na submissão ativa e contínua à vontade soberana de Deus.</p>"
+      }
+    ]
+  },
+  "in_progress": {
+    "4": [
+      {
+        "verse": 1,
+        "text": "E de novo começou a ensinar junto ao mar. E ajunta-se a ele uma multidão muitíssimo grande, de modo que ele, entrando no barco, assentou-se no mar; e toda a multidão estava junto ao mar sobre a terra.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>θάλασσας</i> (thalassas - mar, definição não verificada em léxico); <i>ὄχλος</i> (ochlos - multidão, definição não verificada em léxico); <i>πλοῖον</i> (ploion - barco, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variantes em relação ao Textus Receptus: SBLGNT traz <i>συνάγεται</i> contra <i>συνήχθη</i> no TR; <i>πλεῖστος</i> contra <i>πολύς</i>; a ordem <i>εἰς πλοῖον ἐμβάντα</i> contra <i>ἐμβάντα εἰς τὸ πλοῖον</i>; e o verbo no plural <i>ἦσαν</i> contra o singular <i>ἦν</i> no TR.</p><p><b>Síntese Exegética:</b> Jesus retorna ao ensino à beira do mar da Galileia, atraindo uma multidão tão expressiva que precisa assentar-se em um barco para ministrar eficazmente aos ouvintes postados na terra.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E ensinava-lhes muitas coisas em parábolas, e dizia-lhes no seu ensino:",
+        "commentary": "<p><b>Análise Léxica:</b> <i>διδάσκειν</i> (didaskein - ensinar, definição não verificada em léxico); <i>παραβολαῖς</i> (parabolais - parábolas, definição não verificada em léxico); <i>διδαχῇ</i> (didachē - ensino, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O Mestre utiliza o método parabólico como instrumento pedagógico central para transmitir verdades espirituais profundas à multidão e aos seus discípulos.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Ouvi. Eis que saiu o semeador a semear.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀκούετε</i> (akouete - ouvi, definição não verificada em léxico); <i>σπείρων</i> (speirōn - semeador, definição não verificada em léxico); <i>σπεῖραι</i> (speirai - semear, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT lê <i>σπεῖραι</i>, enquanto o Textus Receptus inclui a partícula <i>τοῦ</i> antes do infinitivo (<i>τοῦ σπεῖραι</i>).</p><p><b>Síntese Exegética:</b> Um chamado solene à atenção antecede a narrativa parabólica, introduzindo a figura fundamental do semeador e sua ação primordial.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "E aconteceu que, ao semear, uma parte caiu à beira do caminho, e vieram as aves e devoraram-na.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>σπείρειν</i> (speirein - semear, definição não verificada em léxico); <i>ὁδόν</i> (hodon - caminho, definição não verificada em léxico); <i>πετεινὰ</i> (peteina - aves, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta <i>τοῦ ουρανου</i> (do céu) após <i>τα πετεινα</i>, ausente no texto base do SBLGNT.</p><p><b>Síntese Exegética:</b> A primeira porção da semente cai em solo compactado pelo trânsito, tornando-se presa fácil para as aves que rapidamente a consomem.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "[[E outra]] caiu sobre o solo pedregoso, onde não tinha muita terra, e [[logo]] [[nasceu]], por não ter profundidade de terra;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>πετρῶδες</i> (petrōdes - pedregoso, definição não verificada em léxico); <i>γῆν</i> (gēn - terra, definição não verificada em léxico); <i>βάθος</i> (bathos - profundidade, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>καὶ ἄλλο</i> (contra <i>Ἄλλο δὲ</i> no TR), omite a partícula <i>καὶ</i> antes de <i>ὅπου</i> (presente em algumas testemunhas agrupadas no aparato), e utiliza <i>εὐθὺς</i> em vez de <i>εὐθέως</i>.</p><p><b>Síntese Exegética:</b> O terreno rochoso permite uma germinação imediata devido à pouca espessura da terra, mas compromete a sustentabilidade da planta pela falta de profundidade.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "[[E, quando o sol se levantou]], foi queimada e, por não ter raiz, secou-se.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἥλιος</i> (hēlios - sol, definição não verificada em léxico); <i>ἐκαυματίσθη</i> (ekaumatisθη - foi queimada, definição não verificada em léxico); <i>ῥίζαν</i> (rhizan - raiz, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT emprega a construção <i>καὶ ὅτε ἀνέτειλεν ὁ ἥλιος</i>, enquanto o Textus Receptus utiliza o genitivo absoluto <i>ἡλίου δὲ ἀνατείλαντος</i>.</p><p><b>Síntese Exegética:</b> Sob o calor intenso do sol nascente, a planta sem raízes profundas definha e morre rapidamente por completa falta de hidratação e sustentação.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "E <i>outro</i> caiu entre os espinhos, e os espinhos subiram e sufocaram-<i>no</i>, e não deu fruto.",
+        "commentary": "<p><b>Análise Léxica:</b> ἄλλο (allo) - outro, definição não verificada em léxico; ἔπεσεν (epesen) - caiu, definição não verificada em léxico; ἀκάνθας (akanthas) - espinhos, definição não verificada em léxico; ἀνέβησαν (anebēsan) - subiram, definição não verificada em léxico; συνέπνιξαν (synepnixan) - sufocaram, definição não verificada em léxico; καρπὸν (karpon) - fruto, definição não verificada em léxico; ἔδωκεν (edōken) - deu, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> O texto descreve a semente que cai em solo competitivo, onde os espinhos sufocam o seu crescimento e impedem qualquer frutificação.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "E [[outro<i>s</i>]] <i>grãos</i> caíram na terra boa, e davam fruto, subindo e [[crescendo<i>-se</i>]], e produziam [[um, trinta, e um, sessenta, e um,]] cem.",
+        "commentary": "<p><b>Análise Léxica:</b> γῆν (gēn) - terra, definição não verificada em léxico; καλήν (kalēn) - boa, definição não verificada em léxico; καρπὸν (karpon) - fruto, definição não verificada em léxico; ἀναβαίνοντα (anabainonta) - subindo, definição não verificada em léxico; [[αὐξανόμενα (auxanomena) / αὐξάνοντα (auxanonta)]] - crescendo, definição não verificada em léxico; ἔφερen (epheren) - produzia, definição não verificada em léxico; ἑκατόν (hekaton) - cem, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra variantes importantes: <i>ἄλλα</i> (SBLGNT, NA28) em contraste com <i>ἄλλο</i> (Treg, RP); <i>αὐξανόμενα</i> (SBLGNT, NA28) frente a <i>αὐξανόμενον</i> (Treg) e <i>αὐξάνοντα</i> (RP); e a distribuição dos numerais com <i>ἓν ... ἓν ... ἓν</i> (NA28), <i>εἰς ... ἐν ... ἐν</i> (WH), <i>εἰς ... εἰς ... εἰς</i> (Treg) e <i>ἐν ... ἐν ... ἐν</i> (RP).</p><p><b>Síntese Exegética:</b> A semente que encontra solo fértil desenvolve-se plenamente, multiplicando a sua produção de forma extraordinária em diferentes proporções de colheita.</p>"
       }
     ]
   },
@@ -236,6 +643,126 @@
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
       "generated_at_utc": "2026-11-18T03:09:58+00:00"
+    },
+    {
+      "chapter": 1,
+      "verse_from": 37,
+      "verse_to": 42,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:00+00:00"
+    },
+    {
+      "chapter": 1,
+      "verse_from": 43,
+      "verse_to": 45,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:12+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:19+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:26+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 13,
+      "verse_to": 16,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:32+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 17,
+      "verse_to": 22,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:40+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 23,
+      "verse_to": 28,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:46+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:45:52+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:01+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 13,
+      "verse_to": 18,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:06+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 19,
+      "verse_to": 24,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:11+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 25,
+      "verse_to": 30,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:17+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 31,
+      "verse_to": 35,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:23+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:32+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 7,
+      "verse_to": 8,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:46:35+00:00"
     }
   ],
   "sources": {
