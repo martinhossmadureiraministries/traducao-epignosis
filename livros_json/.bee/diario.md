@@ -71,3 +71,15 @@
 - 2026-11-17T21:40:33+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-17T21:40:33+00:00 — Módulos recompilados no fim do ciclo: 20/1189 capítulos, 848 versículos.
 - 2026-11-17T21:40:33+00:00 — Capítulos exportados para leitura: 21 (2 mudaram nesta execução).
+- 2026-11-18T03:07:58+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T03:08:05+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T03:08:14+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T03:08:21+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T03:08:22+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-18T03:08:27+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T03:09:17+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T03:09:24+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T03:09:32+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (2/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-18T03:09:38+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T03:09:58+00:00 — Módulos recompilados (PARCIAL): 22/1189 capítulos, 904 versículos.
+- 2026-11-18T03:09:58+00:00 — Ciclo 10: +80 versículos, +2 capítulos em Marcos 1 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 80 versículos, 24 pedidos. A seguir: Marcos 1.

@@ -4156,9 +4156,7 @@
         "text": "Ali, pois, por causa da preparação dos judeus, visto que o sepulcro estava perto, puseram a Jesus.",
         "commentary": "<p><b>Análise Léxica:</b> <i>ἐκεῖ</i> (ekeî - ali, definição não verificada em léxico); <i>οὖν</i> (oûn - pois, portanto, definição não verificada em léxico); <i>δια</i> (dia - por causa de, definição não verificada em léxico); <i>τὴν</i> (tėn - a, definição não verificada em léxico); <i>παρασκευὴν</i> (paraskeuėn - preparação, dia da preparação, definição não verificada em léxico); <i>τῶν</i> (tōn - dos, definição não verificada em léxico); <i>Ἰουδαίων</i> (Ioudaíōn - judeus, definição não verificada em léxico); <i>ὅτι</i> (hoti - porque, visto que, definição não verificada em léxico); <i>ἐγγὺς</i> (engýs - perto, próximo, definição não verificada em léxico); <i>ἦν</i> (ėn - era, estava, definição não verificada em léxico); <i>τὸ</i> (to - o, definição não verificada em léxico); <i>μνημεῖον</i> (mnėmeîon - sepulcro, túmulo, definição não verificada em léxico); <i>ἔθηκαν</i> (éthėkan - puseram, colocaram, definição não verificada em léxico); <i>τὸν</i> (ton - o, definição não verificada em léxico); <i>Ἰησοῦν</i> (Iēsoûn - Jesus, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido para este versículo.</p><p><b>Síntese Exegética:</b> O sepultamento de Jesus é concluído de maneira apressada, porém digna, em virtude da iminência do sábado judaico (a preparação). A proximidade do sepulcro novo evitou o labor excessivo no transporte do corpo, permitindo que os discípulos cumprissem os preceitos rituais da época antes do repouso sabático.</p>"
       }
-    ]
-  },
-  "in_progress": {
+    ],
     "20": [
       {
         "verse": 1,
@@ -4219,9 +4217,232 @@
         "verse": 12,
         "text": "E vê dois anjos vestidos de branco, assentados, um à cabeceira e outro aos pés, onde o corpo de Jesus jazera.",
         "commentary": "<p><b>Análise Léxica:</b> θεωρεῖ (theorei, Strong não verificado) - observa, vê; ἀγγέλους (angelous, Strong não verificado) - anjos; λευκοῖς (leukois, Strong não verificado) - branco; καθεζομένους (kathezomenous, Strong não verificado) - assentados; κεφαλή (kephale, Strong não verificado) - cabeça. Definições não verificadas em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A aparição dos anjos celestiais nos extremos do local onde repousava o corpo de Jesus simboliza a guarda divina e a santidade do espaço da ressurreição.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "E dizem-lhe eles: Mulher, por que choras? Diz-lhes ela: Porque tiraram o meu Senhor, e não sei onde o puseram.",
+        "commentary": "<p><b>Análise Léxica:</b> <ul><li>λέγουσιν (legousin): de λέγω, dizer; definição não verificada em léxico.</li><li>Γύναι (gynai): de γυνή, mulher; definição não verificada em léxico.</li><li>κλαίεις (klaieis): de κλαίω, chorar; definição não verificada em léxico.</li><li>κύριόν (kyrion): de κύριος, senhor; definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual:</b> Comparando o SBLGNT e o Textus Receptus, não há divergências textuais significativas ou variantes observadas neste versículo.</p><p><b>Síntese Exegética:</b> Os anjos questionam Maria sobre a causa de seu pranto, demonstrando a gravidade e o mistério da ausência do corpo. A resposta de Maria evidencia sua profunda devoção pessoal a Jesus, a quem ainda enxerga sob a perspectiva estritamente humana e terrena, chamando-o de &quot;meu Senhor&quot;.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Tendo dito <i>estas coisas</i>, voltou-se para trás, e vê a Jesus em pé, mas não sabia que era Jesus.",
+        "commentary": "<p><b>Análise Léxica:</b> <ul><li>εἰποῦσα (eipousa): de λέγω, dizer; definição não verificada em léxico.</li><li>ἐστράφη (estraphē): de στρέφω, virar; definição não verificada em léxico.</li><li>θεωρεῖ (theōrei): de θεωρέω, contemplar/ver; definição não verificada em léxico.</li><li>ἑστῶτα (hestōta): de ἵστημι, estar em pé; definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual:</b> O aparato do SBLGNT registra a variante na capitalização inicial do particípio <i>ταῦτα</i> (SBLGNT, WH, Treg, NA28 iniciam com minúscula, enquanto o Textus Receptus e o RP iniciam com maiúscula <i>Καὶ ταῦτα</i>). Adicionalmente, o Textus Receptus inclui o artigo <i>ὁ</i> antes de <i>Ἰησοῦς</i>.</p><p><b>Síntese Exegética:</b> Ao virar-se, Maria depara-se com o Cristo ressurreto, mas a sua dor e o véu da incredulidade momentânea impedem-na de reconhecer imediatamente a identidade daquele que está diante dela.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Diz-lhe Jesus: Mulher, por que choras? Quem buscas? Ela, cuidando que era o hortelão, diz-lhe: Senhor, se tu o the <i>levaste</i>, dize-me onde o puseste, e eu o levarei.",
+        "commentary": "<p><b>Análise Léxica:</b> <ul><li>ζητεῖς (zēteis): de ζητέω, buscar; definição não verificada em léxico.</li><li>δοκοῦσα (dokousa): de δοκέω, parecer/julgar; definição não verificada em léxico.</li><li>κηπουρός (kēpouros): de κηπουρός, jardineiro/hortelão; definição não verificada em léxico.</li><li>ἐβάστασας (ebastasas): de βαστάζω, carregar/levar; definição não verificada em léxico.</li></ul></p><p><b>Crítica Textual:</b> O SBLGNT traz <i>αὐτῇ</i>, enquanto o Textus Receptus inclui o artigo e o nome próprio <i>αὐτῇ ὁ Ἰησοῦς</i>. Além disso, há pequena variação na ordem das palavras <i>ποῦ αὐτον εθηκας</i> no Textus Receptus em comparação a <i>ποῦ ἔθηκας αὐτόν</i> no SBLGNT.</p><p><b>Síntese Exegética:</b> Jesus repete a mesma pergunta feita pelos anjos, adicionando uma indagação sobre quem ela busca. A suposição de que ele seria o hortelão reflete a lógica humana diante da tumba vazia, e a prontidão de Maria em carregar o corpo revela um amor abnegado e destemido.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "<i>Jesus</i> lhe diz: <i>Maria</i>. Voltando, ela lhe responde em hebraico: <i>Rabboni</i> (que significa “Mestre”).",
+        "commentary": "<p><b>Análise Léxica</b><br>λέγει – legei – “diz” (Strong G3004) – definição não verificada em léxico.<br>αὐτῇ – autē – “a ela” (G846).<br>Ἰησοῦς – Iēsous – “Jesus” (G2424).<br>Μαριάμ – Mariam – “Maria” (G3134).<br>στραφεῖσα – stratheisa – “voltando” (G4735).<br>ἐκείνη – ekeine – “ela” (G1580).<br>Ἑβραϊστί – Hebraisti – “em hebraico” (G2195).<br>Ραββουνι – Rabbouni – “Mestre” (G4531).<br>Διδάσκαλε – Didaskale – “Professor” (G1325).<br></p><p><b>Crítica Textual</b><br>Comparação SBLGNT × Textus Receptus revela diferenças de ortografia e pontuação: [[Ἑβραϊστί]] aparece apenas no SBLGNT; o TR omite a palavra e apresenta “μαρια” sem acento. Não há variante substantiva que altere o sentido.<br></p><p><b>Síntese Exegética</b><br>Jesus reconhece Maria Magdalene pelo nome, e ela, ao perceber que Ele fala em hebraico, o chama de “Rabboni”, título de respeito que indica reconhecimento de Sua autoridade como Mestre.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "<i>Jesus</i> lhe diz: <i>Não me toques</i>, pois ainda não subi ao Pai; vai, porém, aos meus irmãos e dize-lhes: <i>Subo ao meu Pai e ao vosso Pai, ao meu Deus e ao vosso Deus</i>.",
+        "commentary": "<p><b>Análise Léxica</b><br>λέγει – legei – “diz” (G3004).<br>αὐτῇ – autē – “a ela” (G846).<br>Ἰησοῦς – Iēsous – “Jesus” (G2424).<br>Μή – mē – “não” (G3361).<br>μου – mou – “meu” (G1473).<br>ἅπτου – haptou – “toques” (G24).<br>οὔπω – oupō – “ainda não” (G3765).<br>ἀναβέβηκα – anabebēka – “subi” (G352).<br>πατέρα – patera – “Pai” (G3962).<br>πορεύου – poreuou – “vai” (G4183).<br>ἀδελφούς – adelphous – “irmãos” (G80).<br>εἶπὲ – eipe – “dize” (G2036).<br>Ἀναβαίνω – anabaínō – “subo” (G352).<br>θεόν – theon – “Deus” (G2316).<br></p><p><b>Crítica Textual</b><br>Diferenças entre SBLGNT e Textus Receptus: [[Μή μου ἅπτου]] (SBLGNT) versus “μη μου απτου” (TR); [[οὔπω]] (SBLGNT) versus “ουπω” (TR); [[ἀναβέβηκα]] (SBLGNT) versus “αναβεβηκα” (TR). As variações são ortográficas/accentuais, sem impacto significativo no sentido.<br></p><p><b>Síntese Exegética</b><br>Jesus instrui Maria a não agarrar-se a Ele, pois ainda não completou a ascensão ao Pai. Ela deve comunicar aos discípulos que Ele está a caminho do Pai, revelando a união entre o Pai de Cristo e o Pai dos crentes, bem como a identidade de Cristo como Deus.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "<i>Maria</i> Madalena vem anunciando aos discípulos que <i>vêu o Senhor</i> e lhes relata tudo o que Ele lhe disse.",
+        "commentary": "<p><b>Análise Léxica</b><br>ἔρχεται – erchetai – “vem” (G2064).<br>Μαριὰμ – Mariam – “Maria” (G3134).<br>ἡ – hē – artigo definido (G3588).<br>Μαγδαληνὴ – Magdalēnē – “Madalena” (G3115).<br>ἀγγέλλουσα – angelousa – “anunciando” (G165).<br>τοῖς – tois – “aos” (G3588).<br>μαθηταῖς – mathētais – “discípulos” (G3100).<br>ὅτι – hoti – “que” (G3754).<br>Ἑώρακα – Heōraka – “vi” (G2192).<br>τὸν – ton – artigo (G3588).<br>κύριον – kyrion – “Senhor” (G2962).<br>ταῦτα – tauta – “estas coisas” (G5042).<br>εἶπεν – eipen – “disse” (G2036).<br>αὐτῇ – autē – “a ela” (G846).<br></p><p><b>Crítica Textual</b><br>Comparação SBLGNT × TR mostra variantes: [[ἀγγέλλουσα]] (SBLGNT) versus “απαγγέλλουσα” (TR); [[Ἑώρακα]] (SBLGNT) versus “εωρακεν” (TR); [[αὐτῇ]] (SBLGNT) versus “αυτη” (TR). As diferenças são de ortografia e forma verbal, sem alteração do sentido.<br></p><p><b>Síntese Exegética</b><br>Maria, tendo encontrado o Ressuscitado, corre aos discípulos para testemunhar que viu o Senhor ressuscitado e relata as palavras que Ele lhe dirigiu, cumprindo o papel de primeira mensageira da ressurreição.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Sendo pois tarde, naquele dia, o primeiro [[dos]] sábados, e estando as portas fechadas onde os <i>discípulos</i> estavam, por causa do temor dos judeus, veio <i>Jesus</i> e esteve em pé no meio, e diz-lhes: <i>Paz a vocês</i>.",
+        "commentary": "<p><b>Análise Léxica:</b> ὀψίας (opsias - tarde, G3798, definição não verificada em léxico); σαββάτων (sabbaton - sábados/semana, G4521, definição não verificada em léxico); κεκλεισμένων (kekleismenon - fechadas, G2808, definição não verificada em léxico); φόβον (fobon - temor, G5401, definição não verificada em léxico); εἰρήνη (eirene - paz, G1515, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> No SBLGNT lê-se τῇ μιᾷ σαββάτων enquanto o Textus Receptus acrescenta τῶν, resultando em τῇ μιᾷ τῶν σαββάτων. Quanto aos discípulos, o SBLGNT traz οἱ μαθηταὶ, ao passo que o Textus Receptus inclui συνηγμένοι (reunidos) após o termo.</p><p><b>Síntese Exegética:</b> No cair da tarde daquele primeiro dia da semana, os discípulos encontravam-se reclusos por medo das autoridades judaicas. Nesse cenário de apreensão, <i>Jesus</i> manifesta-se no meio deles, rompendo as barreiras físicas, e saúda-os com a proclamação da paz messiana.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "E, tendo dito isto, <i>mostrou-lhes</i> as mãos e o lado. <i>Regozijaram-se</i>, portanto, os discípulos, vendo o Senhor.",
+        "commentary": "<p><b>Análise Léxica:</b> ἔδειξεν (edeixen - mostrou, G1166, definição não verificada em léxico); χεῖρας (cheiras - mãos, G5495, definição não verificada em léxico); πλευρὰν (pleuran - lado, G4125, definição não verificada em léxico); ἐχάρησαν (echarisan - regozijaram-se, G5463, definição não verificada em léxico); ἰδόντες (idontes - vendo, G3708, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Há variação na ordem e na presença de pronomes e conjunções. O SBLGNT apresenta ἔδειξεν τὰς χεῖρας καὶ τὴν πλευρὰν αὐτοῖς, enquanto o Textus Receptus traz εδειξεν αυτοις τας χειρας και την πλευραν αυτου, alterando a posição do pronome dativo e do possessivo.</p><p><b>Síntese Exegética:</b> Para dissipar qualquer dúvida e confirmar sua identidade corpórea ressurreta, o Mestre exibe as marcas de sua paixão nas mãos e no costado. A constatação visual da presença do Senhor transforma o temor inicial em grande júbilo para os discípulos.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Disse-lhes, pois, <i>Jesus</i> de novo: <i>Paz a vocês</i>; assim como <i>o Pai</i> me enviou, também eu <i>vos</i> envio.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπέσταλκέν (apestalken - enviou, G649, definição não verificada em léxico); πατήρ (pater - pai, G3962, definição não verificada em léxico); πέμπω (pempo - envio, G3992, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT e a maioria dos testemunhos incluem a designação <i>ὁ Ἰησοῦς</i>, que foi omitida em algumas leituras criticamente avaliadas por Tregelles, mas mantida no Textus Receptus e nas edições modernas principais.</p><p><b>Síntese Exegética:</b> A saudação da paz repete-se como fundamento para o envio apostólico. Assim como <i>o Pai</i> delegou autoridade e missão ao Filho, <i>Jesus</i> comissiona os seus seguidores, conferindo-lhes continuidade ministerial no mundo sob a mesma égide divina.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "E, tendo dito isto, soprou sobre <i>eles</i> e diz-lhes: <i>Recebei o</i> Espírito Santo;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰπὼν</i> (eipōn, particípio aoristo ativo de εἶπō, dizer, definição não verificada em léxico); <i>ἐνεφύσησεν</i> (enephysēsen, aoristo indicativo ativo de ἐμφυσάω, soprar, definição não verificada em léxico); <i>λάβετε</i> (labete, imperativo aoristo ativo de λαμβάνω, receber/tomar, definição não verificada em léxico); <i>πνεῦμα</i> (pneuma, substantivo acusativo neutro singular, espírito/vento/sopro, definição não verificada em léxico); <i>ἅγιον</i> (hagion, adjetivo acusativo neutro singular, santo, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido para este versículo.</p><p><b>Síntese Exegética:</b> O ato de soprar sobre os discípulos evoca a recriação da vida no Éden (Gênesis 2:7) e a visão de Ezequiel sobre os ossos secos, simbolizando a transmissão da nova vida espiritual e a capacitação ministerial conferida pelo Senhor ressurreto.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "se de alguém perdoardes os pecados, <i>são-lhes</i> perdoados; se de alguém <i>os</i> retiverdes, <i>estão</i> retidos.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀφῆτε</i> (aphēte, subjuntivo aoristo ativo de ἀφίημι, perdoar/deixar, definição não verificada em léxico); <i>ἁμαρτίας</i> (hamartias, substantivo acusativo feminino plural, pecados, definição não verificada em léxico); <i>ἀφέωνται</i> / <i>ἀφιένται</i> (apheōntai / aphientai, indicativo presente passivo ou perfeito passivo, são perdoados, definição não verificada em léxico); <i>κρατῆτε</i> (kratēte, subjuntivo presente ativo de κρατέω, segurar/reter, definição não verificada em léxico); <i>κεκράτηνται</i> (kekratēntai, indicativo perfeito passivo de κρατέω, estão retidos, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Há uma variação na forma verbal da segunda cláusula: o SBLGNT traz <i>ἀφέωνται</i> (perfeito passivo), enquanto o Textus Receptus apresenta <i>ἀφιένται</i> (presente passivo). O aparato SBLGNT registra que <i>ἀφέωνται</i> é apoiado por [[WH Treg NA28]], ao passo que [[RP]] adota <i>ἀφιένται</i>.</p><p><b>Síntese Exegética:</b> A autoridade para declarar o perdão ou a retenção dos pecados é conferida à comunidade dos discípulos com base na proclamação do evangelho e na obra redentora de Cristo, refletindo a realidade celeste do que já foi efetuado pelo arrependimento e pela fé.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Tomé, porém, um dos doze, chamado Dídimo, não estava com <i>eles</i> quando <i>Jesus</i> veio.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Θωμᾶς</i> (Thōmas, nome próprio nominativo masculino, Tomé, definição não verificada em léxico); <i>δώδεκα</i> (dōdeka, numeral genitivo masculino plural, doze, definição não verificada em léxico); <i>Δίδυμος</i> (Didymos, adjetivo/cognome nominativo masculino singular, Dídimo/Gêmeo, definição não verificada em léxico); <i>ἦν</i> (ēn, imperfeito indicativo ativo de εἰμί, era/estava, definição não verificada em léxico); <i>ἦλθεν</i> (ēlthen, aoristo indicativo ativo de ἔρχομαι, veio, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT registra apenas <i>ἦλθεν</i>, enquanto o Textus Receptus inclui o artigo e o nome <i>ὁ ἰησοῦς</i>. O aparato SBLGNT indica a ausência do artigo e do nome em [[WH Treg NA28]], figurando a adição de <i>ὁ</i> em [[RP]].</p><p><b>Síntese Exegética:</b> A ausência de Tomé no momento da primeira aparição coletiva do Senhor ressurreto serve como introdução dramática ao episódio subsequente de sua dúvida e posterior confissão de fé inequívoca na divindade de Cristo.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Diziam-lhe, pois, os outros discípulos: Vimos o Senhor. Ele, porém, disse-lhes: Se eu não vir nas mãos dele a marca dos pregos, e não puser o meu dedo no lugar dos pregos, e não puser <i>a</i> minha mão no lado dele, de modo algum creirei.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔλεγον</i> (elegon - diziam, imperfeito de λέγω, definição não verificada em léxico); <i>ἑωράκαμεν</i> (heōrakamen - vimos, perfeito de ὁράω, definição não verificada em léxico); <i>κύριον</i> (kyrion - Senhor, substantivo, definição não verificada em léxico); <i>τύπον</i> (typon - marca/sinal, substantivo, definição não verificada em léxico); <i>ἥλων</i> (hēlōn - pregos, substantivo, definição não verificada em léxico); <i>δάκτυλον</i> (daktylon - dedo, substantivo, definição não verificada em léxico); <i>χειρα</i> (cheira - mão, substantivo, definição não verificada em léxico); <i>πλευρὰν</i> (pleuran - lado, substantivo, definição não verificada em léxico); <i>πιστεύσω</i> (pisteusō - creirei, futuro de πιστεύω, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Observa-se a seguinte variante na ordem das palavras: [[μου τὴν χεῖρα SBLGNT, WH, Treg, NA28]] em contraposição a [[τὴν χεῖρά μου RP (Textus Receptus)]]. O sentido global permanece inalterado.</p><p><b>Síntese Exegética:</b> Tomé reluta em aceitar o testemunho unânime dos demais discípulos acerca da ressurreição de Jesus, impondo exigências físicas estritas e tangíveis para a sua fé, o que evidencia o ceticismo humano diante do evento miraculoso antes da revelação pessoal do Mestre.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "E, após oito dias, estavam outra vez os discípulos dele dentro, e Tomé com eles. Vem Jesus, estando as portas fechadas, e stou no meio e disse: Paz <i>seja</i> a vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἡμέρας</i> (hēmeras - dias, substantivo, definição não verificada em léxico); <i>ὀκτὼ</i> (oktō - oito, numeral, definição não verificada em léxico); <i>ἔσω</i> (esō - dentro, advérbio, definição não verificada em léxico); <i>μαθηταὶ</i> (mathētai - discípulos, substantivo, definição não verificada em léxico); <i>κεκλεισμένων</i> (kekleismenōn - fechadas, particípio de κλείω, definição não verificada em léxico); <i>μέσον</i> (meson - meio, substantivo/advérbio, definição não verificada em léxico); <i>εἰρήνη</i> (eirēnē - paz, substantivo, definição não verificada em léxico); <i>ὑμῖν</i> (hymin - a vocês, pronome pessoal, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido para este versículo.</p><p><b>Síntese Exegética:</b> Passada uma semana, Jesus manifesta-se novamente aos discípulos reunidos, superando barreiras físicas com seu corpo ressurreto e concedendo-lhes a saudação tradicional de paz, agora revestida de plenitude soteriológica.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "Então diz a Tomé: Traz o teu dedo aqui e vê as minhas mãos; e traz a tua mão e põe <i>a</i> no meu lado; e não sejas incrédulo, mas crente.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>φέρει</i> (phere - traze/traz, imperativo de φέρω, definição não verificada em léxico); <i>δάκτυλον</i> (daktylon - dedo, substantivo, definição não verificada em léxico); <i>ὧδε</i> (hōde - aqui, advérbio, definição não verificada em léxico); <i>ἴδε</i> (ide - vê, imperativo de εἶδον, definição não verificada em léxico); <i>χείρας</i> (cheiras - mãos, substantivo, definição não verificada em léxico); <i>βάλε</i> (bale - põe/joga, imperativo de βάλλω, definição não verificada em léxico); <i>πλευράν</i> (pleuran - lado, substantivo, definição não verificada em léxico); <i>γίνου</i> (ginou - sê/torna-te, imperativo médio de γίνομαι, definição não verificada em léxico); <i>ἄπιστος</i> (apistos - incrédulo, adjetivo, definição não verificada em léxico); <i>πιστός</i> (pistos - crente/fiel, adjetivo, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus fornecido para este versículo.</p><p><b>Síntese Exegética:</b> Jesus confronta diretamente o ceticismo de Tomé, oferecendo-lhe exatamente as provas que havia exigido, e ao mesmo tempo exorta-o a abandonar a incredulidade para abraçar a fé verdadeira.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Respondeu Tomé e disse-lhe: O meu Senhor e o meu Deus!",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπεκρίθη (apekrithē - definição não verificada em léxico), Θωμᾶς (Thōmas - Tomé), κύριός (kyrios - Senhor), θεός (theos - Deus).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra a variação inicial entre [[ἀπεκρίθη]] (SBLGNT, WH, Treg, NA28) e [[Καὶ ἀπεκρίθη]] (RP).</p><p><b>Síntese Exegética:</b> A confissão de Tomé proclama explicitamente a divindade de Cristo, unindo os títulos de Senhor e Deus em adoração direta ao Ressuscitado.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Diz-lhe Jesus: Porque me viste, creste? Bem-aventurados os que não viram e creram.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei - diz), Ἰησοῦς (Iēsous - Jesus), ἑώρακάς (heōrakas - viste), πεπίστευκας (pepisteukas - creste), μακάριοι (makarioi - bem-aventurados), πιστεύσαντες (pisteusantes - os que creram).</p><p><b>Crítica Textual:</b> Não há variante principal registrada no aparato SBLGNT para este versículo, embora o Textus Receptus acrescente o vocativo &quot;θωμα&quot; (Tomé) após &quot;με&quot;.</p><p><b>Síntese Exegética:</b> Jesus elogia a fé fundamentada na visão, mas exalta ainda mais aqueles cuja fé transcende o visível, alcançando a bem-aventurança espiritual.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "Muitos outros sinais, pois, fez Jesus diante dos <i>seus</i> discípulos, que não estão escritos neste livro;",
+        "commentary": "<p><b>Análise Léxica:</b> Πολλὰ (polla - muitos), σημεῖα (sēmeia - sinais), ἐποίησεν (epoiēsen - fez), μαθητῶν (mathētōn - discípulos), βιβλίῳ (bibliō - livro).</p><p><b>Crítica Textual:</b> O aparato SBLGNT indica a presença ou ausência do pronome [[αὐτοῦ]] após μαθητῶν, sendo omitido em WH e Treg, mas presente em NA28 e RP.</p><p><b>Síntese Exegética:</b> O evangelista conclui ressaltando que a seleção dos milagres relatados visa à fé, embora a extensão da obra terrena de Jesus tenha sido muito maior do que o registrado.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Estes <i>sinais</i> porém foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, crendo, tenham vida em <i>seu</i> nome.",
+        "commentary": "<p><b>Análise Léxica:</b> ταῦτα (tauta - estes, definição não verificada em léxico); δὲ (de - porém, definição não verificada em léxico); γέγραπται (gegraptai - foram escritos, definição não verificada em léxico); ἵνα (hina - para que, definição não verificada em léxico); πιστεύητε (pisteuete - creiam, definição não verificada em léxico); ὅτι (hoti - que, definição não verificada em léxico); Ἰησοῦς (Iēsous - Jesus, definição não verificada em léxico); ἐστιν (estin - é, definição não verificada em léxico); ὁ (ho - o, definição não verificada em léxico); χριστὸς (christos - Cristo, definição não verificada em léxico); υἱὸς (huios - Filho, definição não verificada em léxico); θεοῦ (theou - de Deus, definição não verificada em léxico); ζωὴν (zōēn - vida, definição não verificada em léxico); ἔχητε (echēte - tenham, definição não verificada em léxico); ὀνόματι (onomati - nome, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra uma variante no verbo relativo à crença: o texto SBLGNT traz <i>πιστεύητε</i> (presente subjuntivo, ideia de continuidade), enquanto o Textus Receptus e outras edições como Tregelles e NA28 trazem <i>πιστεύσητε</i> (aoristo subjuntivo, ênfase no início da ação de crer). A tradução adota o sentido verbal adequado ao contexto.</p><p><b>Síntese Exegética:</b> O propósito central do registro evangélico é declarado explicitamente: levar os leitores a crerem que Jesus é o Messias prometido e o Filho de Deus, assegurando assim que, por meio dessa fé, alcancem a vida eterna em seu nome.</p>"
+      }
+    ],
+    "21": [
+      {
+        "verse": 1,
+        "text": "Depois destas <i>coisas</i>, manifestou-se Jesus outra vez aos discípulos junto ao mar de Tiberíades; e manifestou-se assim:",
+        "commentary": "<p><b>Análise Léxica:</b> μετὰ (metá, Strong não verificado) - depois; ταῦτα (taûta, Strong não verificado) - estas coisas; ἐφανέρωσεν (ephanerōsen, Strong não verificado) - ele manifestou; ἑαυτὸν (heauton, Strong não verificado) - a si mesmo; πάλin (palin, Strong não verificado) - outra vez; Ἰησοῦς (Iēsoûs, Strong não verificado) - Jesus; μαθηταῖς (mathētais, Strong não verificado) - discípulos. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz o artigo <i>ὁ</i> antes de <i>Ἰησοῦς</i>, o qual possui variantes em testemunhos antigos conforme indicado no aparato (omitido por WH Treg, presente em NA28 e RP). O Textus Receptus concorda com a presença do artigo.</p><p><b>Síntese Exegética:</b> O evangelista introduz uma nova aparição do Ressuscitado, situando a cena nas margens do mar de Tiberíades, demonstrando a continuidade da revelação de Jesus aos seus seguidores após a ressurreição.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Estavam juntos Simão Pedro, e Tomé, chamado Dídimo, e Natanael, o de Caná da Galileia, e os de Zebedeu, e outros dois dos seus discípulos.",
+        "commentary": "<p><b>Análise Léxica:</b> ἦσαν (ēsan, Strong não verificado) - eles estavam; ὁμοῦ (homou, Strong não verificado) - juntos; Σίμων (Simōn, Strong não verificado) - Simão; Πέτρος (Petros, Strong não verificado) - Pedro; Θωμᾶς (Thōmas, Strong não verificado) - Tomé; Δίδυμος (Didymos, Strong não verificado) - Dídimo; Ναθαναὴλ (Nathanaēl, Strong não verificado) - Natanael. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A enumeração dos discípulos presentes estabelece a veracidade histórica do testemunho ocular, reunindo figuras proeminentes do grupo apostólico em um momento de expectativa comum.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Diz-lhes Simão Pedro: Vou pescar. Dizem-lhe eles: Também nós vamos contigo. Saíram e entraram no barco, e naquela noite não apanharam nada.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei, Strong não verificado) - ele diz; Σίμων (Simōn, Strong não verificado) - Simão; Πέτρος (Petros, Strong não verificado) - Pedro; ὑπάγω (hypagō, Strong não verificado) - eu vou; ἁλιεύειν (halieuein, Strong não verificado) - pescar; πλοῖον (ploion, Strong não verificado) - barco; νυκτὶ (nykti, Strong não verificado) - noite. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e o aparato registram a ausência da palavra <i>εὐθύς</i> (imediatamente) antes de <i>καὶ ἐν ἐκείνῃ</i>, enquanto o Textus Receptus (com o subscrito RP) inclui o termo.</p><p><b>Síntese Exegética:</b> A iniciativa de Pedro em retornar à pesca reflete a incerteza do momento intermediário dos discípulos, culminando em um labor infrutífero durante toda a noite, ecoando a dependência total da intervenção do Mestre.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Sendo já manhã, Jesusveio e pôs-se na praia; os discípulos, todavia, não sabiam que era Jesus.",
+        "commentary": "<p><b>Análise Léxica:</b> πρωΐας (prōias, Strong não verificado) - manhã; γενομένης (gēromenēs / genomenēs, Strong não verificado) - tendo chegado / feito; ἔστη (estē, Strong não verificado) - ele pôs-se; αἰγιαλόν (aigialon, Strong não verificado) - praia; ᾔδεισαν (ēdeisan, Strong não verificado) - eles sabiam. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT apresenta a particípio <i>γενομένης</i> (com variantes entre NA28/RP e WH/Treg quanto a <i>γινομένης</i>) e o verbo <i>ἔστη</i> (com acréscimo de <i>ὁ</i> em RP). O Textus Receptus inclui explicitamente o artigo <i>ὁ Ἰησοῦς</i>.</p><p><b>Síntese Exegética:</b> O romper do dia traz a presença de Jesus, ainda não reconhecida pelos discípulos, simbolizando o alvorecer de uma nova etapa na comunhão com o Senhor ressuscitado.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Disse-lhes, pois, Jesus: Rapazes, tendes alguma coisa para comer? Responderam-lhe: Não.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei, Strong não verificado) - diz; παιδία (paidia, Strong não verificado) - rapazes / crianças; προσφάγιον (prosphagion, Strong não verificado) - algo para comer / mistura para o pão; ἀπεκρίθησαν (apekrisēsan, Strong não verificado) - responderam. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz o artigo <i>ὁ</i> antes de <i>Ἰησοῦς</i>, o qual é omitido em WH conforme o aparato, enquanto Treg, NA28 e RP o mantêm. O Textus Receptus inclui o artigo.</p><p><b>Síntese Exegética:</b> Jesus aborda os discípulos com uma terna familiaridade, sondando a necessidade imediata deles e expondo a total falta de provisão obtida pelos próprios esforços humanos.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "E ele lhes disse: Lançai a rede à direita do barco e achareis. Lançaram-na, pois, e já não a podiam puxar, por causa da multidão dos peixes.",
+        "commentary": "<p><b>Análise Léxica:</b> βάλετε (balete, Strong não verificado) - lança-i; δεξιὰ (dexia, Strong não verificado) - direita; μέρη (merē, Strong não verificado) - partes; δίκτυον (diktyon, Strong não verificado) - rede; εὑρήσετε (heurēsete, Strong não verificado encontrareis; ἴσχυον (ischuon, Strong não verificado) - tinham força / podiam; πλήθους (plēthous, Strong não verificado) - multidão. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e as edições críticas (WH, Treg, NA28) utilizam o imperfeito <i>ἴσχυον</i>, ao passo que o Textus Receptus (juntamente com o grupo RP) emprega o aoristo <i>ἴσχυσαν</i>.</p><p><b>Síntese Exegética:</b> A obediência à palavra de Jesus resulta em uma pesca miraculosa e transbordante, ilustrando a eficácia da direção divina e antecipando a abundante colheita ministerial confiada aos discípulos.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Disse, pois, aquele discípulo a quem Jesus amava a Pedro: É o Senhor. Simão Pedro, pois, ouvindo que era o Senhor, cingiu-se com a túnica, porque estava nu, e lançou-se ao mar;",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei - diz, definição não verificada em léxico), οὖν (oun - portanto, definição não verificada em léxico), μαθητὴς (mathētēs - discípulo, definição não verificada em léxico), ἠγάπα (ēgapa - amava, definição não verificada em léxico), ἐπενδύτην (ependutēn - capa ou túnica exterior, definição não verificada em léxico), γυμνός (gumnos - nu ou com roupas leves, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> O reconhecimento imediato do Senhor por parte do discípulo amado revela a perspicácia espiritual, enquanto a atitude precipitada e fervorosa de Pedro em atirar-se à água espelha o seu temperamento impulsivo e ardente diante da presença do Mestre ressurreto.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "mas os outros discípulos vieram no barquinho, pois não estavam longe da terra, senão a cerca de duzentos côvados, arrastando a rede dos peixes.",
+        "commentary": "<p><b>Análise Léxica:</b> ἄλλοι (alloi - outros, definição não verificada em léxico), πλοιαρίῳ (ploiariō - barquinho, definição não verificada em léxico), ἦλθον (hēlthon - vieram, definição não verificada em léxico), μακρὰν (makran - longe, definição não verificada em léxico), πηχῶν (pēchōn - côvados, definição não verificada em léxico), σύροντες (surontes - arrastando, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Enquanto Pedro avança nadando, os demais discípulos conduzem a pequena embarcação rebocando a pesada carga de pescada, mantendo-se próximos à margem, numa demonstração de esforço conjunto na faina confiada por Jesus.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Ora, assim que desembarcaram na terra, veem uma brasa posta, e um peixe colocado sobre ela, e pão.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπέβησαν (apebēsan - desembarcaram, definição não verificada em léxico), γῆν (gēn - terra, definição não verificada em léxico), βλέπουσιν (blepousin - veem, definição não verificada em léxico), ἀνθρακιὰν (anthrakian - brasa ou fogo de carvão, definição não verificada em léxico), ὀψάριον (opsarion - peixe, definição não verificada em léxico), ἄρτον (arton - pão, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A provisão milagrosa preparada diretamente por Jesus destaca o cuidado providencial do Senhor, que antecipa as necessidades físicas dos seus discípulos antes mesmo de recolherem o fruto do próprio trabalho.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Disse-lhes Jesus: Trazei dos peixes que apanhastes agora.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei - diz, definição não verificada em léxico), αὐτοῖς (autois - a eles, definição não verificada em léxico), Ἐνέγκατε (enekate - trazei, definição não verificada em léxico), ὀψαρίων (opsariōn - dos peixes, definição não verificada em léxico), ἐπιάσατε (epiasate - apanhastes, definição não verificada em léxico), νῦν (nun - agora, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Ao convidar os discípulos a trazerem parte dos peixes recém-pescados, Jesus demonstra a comunhão e a cooperação entre a obra humana e a provisão divina na edificação do reino.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Subiu, pois, Simão Pedro, e puxou a rede [[para a terra]] cheia de grandes peixes, cento e cinquenta e três; e sendo tantos, não se rompeu a rede.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀνέβη (anebē - subiu, definição não verificada em léxico), εἵλκυσεν (heilkusen - puxou ou arrastou, definição não verificada em léxico), δίκτυον (diktuon - rede, definição não verificada em léxico), μεστὸν (meston - cheio, definição não verificada em léxico), μεγάλων (megalōn - grandes, definição não verificada em léxico), ἐσχίσθη (eschisthē - rompeu-se, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>οὖν</i> e a preposição <i>εἰς τὴν γῆν</i>, ao passo que o Textus Receptus omite a partícula <i>οὖν</i> e utiliza <i>ἐπὶ τῆς γῆς</i> no lugar de <i>εἰς τὴν γῆν</i>.</p><p><b>Síntese Exegética:</b> A menção minuciosa da quantidade exata de peixes grandes e o fato de a rede não se romper sublinham tanto a veracidade histórica do evento quanto o caráter cabal e transbordante da bênção conferida por Jesus aos seus seguidores.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Disse-lhes Jesus: Vinde, ciai por vossa mesa. E nenhum dos discípulos ousava interrogá-lo: Tu quem és?; sabendo que era o Senhor.",
+        "commentary": "<p><b>Análise Léxica:</b> Δεῦτε (Deute - vinde, definição não verificada em léxico), ἀριστήσατε (aristēsate - ciai por vossa mesa / desayunai / comei, definição não verificada em léxico), ἐτόλμα (etolma - ousava, definição não verificada em léxico), ἐξετάσαι (exetasai - interrogar ou examinar, definição não verificada em léxico), εἰδότες (eidotes - sabendo, definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O SBLGNT inclui a partícula <i>δὲ</i> após <i>οὐδεὶς</i>, a qual está ausente em algumas edições secundárias, embora presente no Textus Receptus conforme repassado.</p><p><b>Síntese Exegética:</b> O convite íntimo para ciar à mesa evidencia a restauração da comunhão, ao passo que o silêncio reverente dos discípulos reflete o profundo temor e a certeza absoluta da divindade do Mestre.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "[[Vem]] <i>então</i> Jesus, e toma o pão, e dá-lhes, e o peixe igualmente.",
+        "commentary": "<p><b>Análise Léxica:</b> ἔρχεται (erchetai) - forma verbal, transliteração: erchetai, significado corrente: vem, definição não verificada em léxico; ὁ (ho) - artigo, transliteração: ho, significado corrente: o, definição não verificada em léxico; Ἰησοῦς (Iēsous) - substantivo próprio, transliteração: Iēsous, significado corrente: Jesus, definição não verificada em léxico; λαμβάνει (lambanei) - verbo, transliteração: lambanei, significado corrente: toma, definição não verificada em léxico; ἄρτον (arton) - substantivo, transliteração: aron, significado corrente: pão, definição não verificada em léxico; δίδωσιν (didōsin) - verbo, transliteração: didōsin, significado corrente: dá, definição não verificada em léxico; ὀψάριον (opsarion) - substantivo, transliteração: opsarion, significado corrente: peixe pequeno, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>ἔρχεται ὁ Ἰησοῦς</i>, enquanto o Textus Receptus emprega a conjunção <i>οὖν</i> e omite o artigo antes do nome, lendo <i>ερχεται ουν ο ιησους</i>. A variante afeta a conexão sintática imediata com a narrativa anterior.</p><p><b>Síntese Exegética:</b> Jesus assume novamente o papel de anfitrião e provedor, distribuindo o alimento aos discípulos em um ato que evoca comunhão e restauração espiritual.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Isto já pela terceira vez manifestou-se Jesus [[aos discípulos]], tendo ressuscitado dentre os mortos.",
+        "commentary": "<p><b>Análise Léxica:</b> τοῦτο (touto) - pronome, transliteração: touto, significado corrente: isto, definição não verificada em léxico; ἤδη (hēdē) - advérbio, transliteração: hēdē, significado corrente: já, definição não verificada em léxico; τρίτον (triton) - numeral, transliteração: triton, significado corrente: terceira vez, definição não verificada em léxico; ἐφανερώθη (ephanerōthē) - verbo, transliteração: ephanerōthē, significado corrente: foi manifestado, definição não verificada em léxico; μαθηταῖς (mathētais) - substantivo, transliteração: mathētais, significado corrente: discípulos, definição não verificada em léxico; ἐγερθεὶς (egertheis) - particípio, transliteração: egertheis, significado corrente: tendo ressuscitado, definição não verificada em léxico; νεκρῶν (nekrōn) - adjetivo/substantivo, transliteração: nekrōn, significado corrente: mortos, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT omite o pronome <i>αὐτοῦ</i> após <i>μαθηταῖς</i>, o qual está presente no Textus Receptus (<i>τοις μαθηταις αυτου</i>), embora o sentido permaneça idêntico pelo contexto.</p><p><b>Síntese Exegética:</b> O evangelista destaca a terceira aparição coletiva do Ressuscitado aos seus seguidores, consolidando a veracidade corpórea da ressurreição frente ao grupo apostólico.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Quando, pois, comeram, diz a Simão Pedro Jesus: Simão, [[filho de João]], amas-me mais do que a estes? Diz-lhe: Sim, Senhor, tu sabes que te amo. Diz-lhe: Apascenta os meus cordeiros.",
+        "commentary": "<p><b>Análise Léxica:</b> ἠρίστησαν (hēristēsan) - verbo, transliteração: hēristēsan, significado corrente: cearam/comeram, definição não verificada em léxico; λέγει (legei) - verbo, transliteração: legei, significado corrente: diz, definição não verificada em léxico; Σίμωνι (Simōni) - substantivo próprio, transliteração: Simōni, significado corrente: a Simão, definição não verificada em léxico; Πέτρῳ (Petrō) - substantivo próprio, transliteração: Petrō, significado corrente: a Pedro, definição não verificada em léxico; Ἰωάννου (Iōannou) - substantivo próprio, transliteração: Iōannou, significado corrente: de João, definição não verificada em léxico; ἀγαπᾷς (agapās) - verbo, transliteração: agapās, significado corrente: amas, definição não verificada em léxico; φιλῶ (philō) - verbo, transliteração: philō, significado corrente: amo, definição não verificada em léxico; ἀρνία (arnia) - substantivo, transliteração: arnia, significado corrente: cordeiros, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra <i>Ἰωάννου</i> (João), ao passo que o Textus Receptus apresenta <i>Ἰωνᾶ</i> (Jonas), refletindo uma variação antiga na forma patronímica de Pedro.</p><p><b>Síntese Exegética:</b> Jesus confronta Pedro com uma tríplice pergunta para restaurar o discípulo que o negara três vezes, utilizando a entrega do pastoreio dos fiéis como prova de amor genuíno.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Diz-lhe outra vez, segunda vez: Simão, [[filho de João]], amas-me? Diz-lhe: Sim, Senhor, tu sabes que te amo. Diz-lhe: Pastoreia as minhas ovelhas.",
+        "commentary": "<p><b>Análise Léxica:</b> πάλιν (palin) - advérbio, transliteração: palin, significado corrente: outra vez, definição não verificada em léxico; δεύτερον (deuteron) - advérbio, transliteração: deuteron, significado corrente: pela segunda vez, definição não verificada em léxico; πρόβατά (probatá) - substantivo, transliteração: probata, significado corrente: ovelhas, definição não verificada em léxico; ποιμαινε (poimaine) - verbo, transliteração: poimaine, significado corrente: pastoreia, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Assim como no versículo anterior, o SBLGNT traz <i>Ἰωάννου</i>, enquanto o Textus Receptus opta por <i>Ἰωνᾶ</i>.</p><p><b>Síntese Exegética:</b> A segunda exortação aprofunda o exame da fidelidade de Pedro, renovando o seu encargo pastoral sobre o rebanho do Senhor.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Diz-lhe a terceira vez: Simão, [[filho de João]], amas-me? Entristeceu-se Pedro porque lhe disse pela terceira vez: Amas-me? E disse-lhe: Senhor, tu sabes todas as coisas; tu sabes que te amo. Diz-lhe Jesus: Apascenta as minhas [[ovelhas]].",
+        "commentary": "<p><b>Análise Léxica:</b> τρίτον (triton) - advérbio, transliteração: triton, significado corrente: terceira vez, definição não verificada em léxico; φιλεῖς (phileis) - verbo, transliteração: phileis, significado corrente: tens amizade/amas, definição não verificada em léxico; ἐλυπήθη (elypēthē) - verbo, transliteração: elypēthē, significado corrente: entristeceu-se, definição não verificada em léxico; γινώσκεις (ginōskeis) - verbo, transliteração: ginōskeis, significado corrente: conheces/sabes, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Há divergências na ordem e escolha de vocábulos: o SBLGNT traz <i>πάντα σὺ</i> enquanto o Textus Receptus tem <i>συ παντα</i>; além disso, na última palavra, o SBLGNT e a maioria trazem <i>πρόβατά</i>, enquanto alguns testemunhos trazem <i>προβάτιά</i>.</p><p><b>Síntese Exegética:</b> A dor de Pedro ao ser questionado pela terceira vez espelha a profundidade de sua cura interior, culminando na submissão total à onisciência de Cristo e na confirmação do seu apostolado.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Em verdade, em verdade te digo: quando eras mais jovem, te cingias a ti mesmo, e andavas onde querias; quando porém envelhecerás, estenderás as tuas mãos, e outro [[te cingirá]] e levará onde não queres.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀμὴν (amēn) - advérbio, transliteração: amēn, significado corrente: em verdade, definição não verificada em léxico; νεώτερος (neōteros) - adjetivo, transliteração: neōteros, significado corrente: mais jovem, definição não verificada em léxico; ἐζώννυες (ezōnnyes) - verbo, transliteração: ezōnnyes, significado corrente: cingias, definição não verificada em léxico; περιεπάτεις (periepateis) - verbo, transliteração: periepateis, significado corrente: andavas, definição não verificada em léxico; γηράσῃς (gērasēs) - verbo, transliteração: gērasēs, significado kontrastante: envelheceres, definição não verificada em léxico; ἐκτενεῖς (ekteneis) - verbo, transliteração: ekteneis, significado corrente: estenderás, definição não verificada em léxico; χεῖράς (cheiras) - substantivo, transliteração: cheiras, significado corrente: mãos, definição não verificada em léxico.</p><p><b>Crítica Textual:</b> No SBLGNT a ordem da inversão verbal é <i>σε ζώσει</i>, ao passo que o Textus Receptus (juntamente com outras fontes) registra <i>ζώσει σε</i>.</p><p><b>Síntese Exegética:</b> Jesus profetiza o tipo de morte pela qual Pedro glorificará a Deus, contrastando a liberdade da juventude com o sacrifício supremo da maturidade espiritual.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Ora, isto disse, significando com que morte glorificaria a Deus. E, tendo dito isto, diz-lhe: Segue-me.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>σημαίνων</i> (semaivnon - Strong não verificado): significando, indicando; <i>θανάτῳ</i> (thanatō - Strong não verificado): morte; <i>δοξάσει</i> (doxasei - Strong não verificado): glorificará; <i>ἀκολούθει</i> (akolouthei - Strong não verificado): segue. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> O evangelista esclarece o sentido profético das palavras anteriores dirigidas a Pedro, indicando que o martírio do apóstolo serviria para glorificar a Deus, culminando no solene chamado imperativo para segui-lo até o fim.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Voltando-se Pedro, vê que o segue o discípulo a quem Jesus amava, o qual também na ceia se havia reclinado sobre o peito dele e dito: Senhor, quem é o que te trai?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Ἐπιστραφεὶς</i> (epistrapheis - Strong não verificado): tendo-se voltado; <i>βλέπει</i> (blepei - Strong não verificado): vê; <i>ἠγάπα</i> (ēgapa - Strong não verificado): amava; <i>ἀνεπεσεν</i> (anepesen - Strong não verificado): reclinou-se. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz Ἐπιστραφεὶς enquanto o Textus Receptus acrescenta a conjunção [[δὲ]] após o particípio, resultando em ἐπιστραφεις δε.</p><p><b>Síntese Exegética:</b> Pedro, ao receber a indicação de seu próprio destino, volta-se e observa a presença do discípulo amado, remetendo à cena íntima da última ceia onde este fizera a pergunta acerca do traidor.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Ora, vendo-o, Pedro diz a Jesus: Senhor, e este, que fará?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἰδὼν</i> (idōn - Strong não verificado): tendo visto; <i>λέγει</i> (legei - Strong não verificado): diz; <i>τί</i> (ti - Strong não verificado): que / quê. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT inclui a partícula [[οὖν]] após τοῦτον, ausente no Textus Receptus, que apresenta apenas τουτον ιδων.</p><p><b>Síntese Exegética:</b> Movido por curiosidade fraternal ou natural preocupação diante do futuro anunciado, Pedro inquire o Senhor a respeito do destino que aguardava o outro discípulo.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Responde-lhe Jesus: Se quero que ele permaneça até que eu venha, que te importa a ti? Tu, [[segue-me]].",
+        "commentary": "<p><b>Análise Léxica:</b> <i>θέλω</i> (thelō - Strong não verificado): quero; <i>μένειν</i> (menein - Strong não verificado): permanecer; <i>ἔρχομαι</i> (erchomai - Strong não verificado): venho; <i>ἀκολούθει</i> (akolouthei - Strong não verificado): segue. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT e as edições críticas trazem a ordem invertida dos pronomes e verbo [[μοι ἀκολούθει]], ao passo que o Textus Receptus mantém a sequência acoplada como ακολουθει μοι.</p><p><b>Síntese Exegética:</b> A resposta de Jesus desvia o foco da especulação sobre terceiros e reafirma a exigência da obediência pessoal e intransigente ao chamado divino.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Disseminou-se, [[pois]], entre os irmãos este [[termo]], que aquele discípulo não morreria. Jesus, [[porém]], não lhe disse que não morreria, mas: Se quero que ele permaneça até que eu venha, que te importa a ti?",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐξῆλθεν</i> (exēlthen - Strong não verificado): saiu / disseminou-se; <i>ἀδελφοὺς</i> (adelphous - Strong não verificado): irmãos; <i>ἀποθνῄσκει</i> (apothnēskei - Strong não verificado): morre. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT registra [[οὗτος ὁ λόγος]] e [[οὐκ εἶπεν δὲ]], enquanto o Textus Receptus apresenta a inversão de sintaxe com ὁ λόγος οὗτος e o uso da conjunção aditiva e contrastiva [[καὶ]] οὐκ εἶπεν.</p><p><b>Síntese Exegética:</b> O texto corrige um mal-entendido popular gerado entre os discípulos sobre a suposta imortalidade daquele seguidor, clarificando os exatos limites da declaração condicional feita por Jesus.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Este é o discípulo que dá testemunho acerca destas coisas e [[o]] que escreveu estas coisas; e sabemos que [[o seu testemunho é verdadeiro]].",
+        "commentary": "<p><b>Análise Léxica:</b> <i>μαρτυρῶν</i> (martyrōn - Strong não verificado): testemunhando; <i>γράφας</i> (grafas / γράψας - Strong não verificado): tendo escrito; <i>ἀληθὴς</i> (alēthēs - Strong não verificado): verdadeiro; <i>μαρτυρία</i> (martyria - Strong não verificado): testemunho. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT inclui o artigo [[ὁ]] antes de γράψας e a ordem nominal [[αὐτοῦ ἡ μαρτυρία ἐστίν]], enquanto o Textus Receptus omite o artigo e altera a ordem final para ἐστὶν ἡ μαρτυρια αὐτου.</p><p><b>Síntese Exegética:</b> O versículo encerra atestando a autenticidade apostólica e ocular do relato evangélico, fundamentando a veracidade absoluta das verdades consignadas neste testemunho escrito.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Há, [[porém]], muitas outras coisas que Jesus fez, as quais, se fossem escritas uma a uma, nem [[o]] próprio mundo, penso eu, [[poderia conter]] os livros que seriam escritos[[.]]",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔστιν</i> (estin - definição não verificada em léxico), <i>δὲ</i> (de - definição não verificada em léxico), <i>καὶ</i> (kai - definição não verificada em léxico), <i>ἄλλα</i> (alla - definição não verificada em léxico), <i>πολλὰ</i> (polla - definição não verificada em léxico), <i>ἐποίησεν</i> (epoiēsen - definição não verificada em léxico), <i>ὁ</i> (ho - definição não verificada em léxico), <i>Ἰησοῦς</i> (Iēsous - definição não verificada em léxico), <i>γραφηται</i> (graphētai - definição não verificada em léxico), <i>κόσμον</i> (kosmon - definição não verificada em léxico), <i>βιβλία</i> (biblia - definição não verificada em léxico).</p><p><b>Crítica Textual:</b> O aparato SBLGNT registra as seguintes variantes em relação ao Textus Receptus: SBLGNT lê <i>ἃ</i> enquanto RP lê <i>ὅσα</i>; SBLGNT traz o infinitivo futuro <i>χωρήσειν</i>, enquanto a edição crítica NA28 e RP trazem o aoristo <i>χωρῆσαι</i>; o Textus Receptus acrescenta a palavra <i>Ἀμήν</i> ao final do versículo, ausente nas edições críticas principais.</p><p><b>Síntese Exegética:</b> O evangelista encerra sua narrativa com uma hipérbole expressiva, enfatizando a imensidão dos feitos de Jesus Cristo, cuja obra completa excede a capacidade de registro de toda a literatura humana.</p>"
       }
     ]
   },
+  "in_progress": {},
   "history": [
     {
       "event": "redação e comentários provisórios preparados nesta conversa",
@@ -4514,6 +4735,102 @@
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite",
       "generated_at_utc": "2026-11-17T21:40:00+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 13,
+      "verse_to": 15,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:10+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 16,
+      "verse_to": 18,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-18T03:08:21+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 19,
+      "verse_to": 21,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:27+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 22,
+      "verse_to": 24,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:31+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 25,
+      "verse_to": 27,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:36+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 28,
+      "verse_to": 30,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:40+00:00"
+    },
+    {
+      "chapter": 20,
+      "verse_from": 31,
+      "verse_to": 31,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:43+00:00"
+    },
+    {
+      "chapter": 21,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:49+00:00"
+    },
+    {
+      "chapter": 21,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:08:55+00:00"
+    },
+    {
+      "chapter": 21,
+      "verse_from": 13,
+      "verse_to": 18,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:09:03+00:00"
+    },
+    {
+      "chapter": 21,
+      "verse_from": 19,
+      "verse_to": 24,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:09:09+00:00"
+    },
+    {
+      "chapter": 21,
+      "verse_from": 25,
+      "verse_to": 25,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-18T03:09:11+00:00"
     }
   ],
   "sources": {
