@@ -1,10 +1,10 @@
 # Tito — roteiro para receber e rever a próxima carta da BEE
 
-**Estado:** Tito ainda não está disponível como livro da nova BEE. O fluxo agendado legado não é o fluxo editorial do piloto. Não o despaches para tentar obter esta edição de Tito.
+**Estado:** [Tito já está disponível para leitura](../edicoes/piloto/TITO.md) como prévia da nova BEE. O fluxo agendado legado não foi alterado.
 
 ## Como receber a prévia
 
-1. Aguardar a entrega de **Tito completo**, com três capítulos e 46 versículos. A entrega deve trazer uma versão de leitura (Markdown), um JSON integral e um pacote com os módulos de texto e comentários MyBible (`.SQLite3`). A carta vai identificada como prévia editorial, não como publicação definitiva.
+1. O piloto inclui **Tito completo**, com três capítulos e 46 versículos. A entrega deve trazer uma versão de leitura (Markdown), um JSON integral e um pacote com os módulos de texto e comentários MyBible (`.SQLite3`). A carta vai identificada como prévia editorial, não como publicação definitiva.
 2. Abrir primeiro o Markdown: permite ler sem instalar nada e mantém as notas fora da primeira leitura. Para ler no MyBible, extrair os dois módulos do ZIP para a pasta de módulos usada pelo aplicativo; guardar uma cópia dos módulos BEE anteriores se os ficheiros tiverem os mesmos nomes.
 3. Verificar se o pacote recebido é o da **nova BEE** e se Tito 1–3 aparece inteiro. Se a entrega estiver no repositório, mas sem ZIP, a compilação é offline: `python gerar_bee.py --compilar --dados edicoes/piloto/dados --saida entregas/piloto`. Esse comando **não traduz Tito**; só compila o que já existe.
 
