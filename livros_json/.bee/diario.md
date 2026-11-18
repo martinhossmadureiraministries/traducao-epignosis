@@ -101,3 +101,4 @@
 - 2026-11-18T07:52:48+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
 - 2026-11-18T07:52:57+00:00 — Módulos recompilados (PARCIAL): 30/1189 capítulos, 1227 versículos.
 - 2026-11-18T07:52:57+00:00 — Ciclo 12: +240 versículos, +5 capítulos em Marcos 9 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 400 versículos, 93 pedidos. A seguir: Marcos 9.
+- 2026-11-18T07:52:58+00:00 — Capítulos exportados para leitura: 31 (6 mudaram nesta execução).
