@@ -155,3 +155,17 @@
 - 2026-11-18T08:27:58+00:00 — **ERRO** Ciclo 17 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: quota esgotada
 - 2026-11-18T08:27:58+00:00 — Módulos recompilados no fim do ciclo: 39/1189 capítulos, 1607 versículos.
 - 2026-11-18T08:27:58+00:00 — Capítulos exportados para leitura: 40 (4 mudaram nesta execução).
+- 2026-11-18T12:13:18+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.7s (1/2).
+- 2026-11-18T12:13:57+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.1s (1/2).
+- 2026-11-18T12:14:33+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-18T12:14:37+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T12:14:37+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-18T12:14:37+00:00 — **ERRO** Ciclo 18 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T12:14:37+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
+- 2026-11-18T12:15:09+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T12:15:11+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T12:15:11+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-18T12:15:11+00:00 — **ERRO** Ciclo 19 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T12:15:11+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
+- 2026-11-18T12:15:11+00:00 — Módulos recompilados no fim do ciclo: 42/1189 capítulos, 1672 versículos.
+- 2026-11-18T12:15:11+00:00 — Capítulos exportados para leitura: 43 (4 mudaram nesta execução).

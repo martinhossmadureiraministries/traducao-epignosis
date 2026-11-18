@@ -1,5 +1,5 @@
 {
-  "ciclos": 17,
+  "ciclos": 19,
   "criado_utc": "2026-11-17T05:36:21+00:00",
   "dias": {
     "2026-11-17": {
@@ -24,14 +24,14 @@
     "2026-11-18": {
       "aberto": true,
       "capitulos": 15,
-      "falhas": 4,
+      "falhas": 6,
       "fechado_em_utc": null,
-      "pedidos": 192,
-      "pedidos_ok": 148,
+      "pedidos": 210,
+      "pedidos_ok": 160,
       "por_provedor": {
         "gemini": {
-          "pedidos": 177,
-          "versos": 762
+          "pedidos": 195,
+          "versos": 824
         },
         "groq": {
           "pedidos": 15,
@@ -45,14 +45,14 @@
     "groq"
   ],
   "exaustos_em": "2026-11-18",
-  "falhas_seguidas": 2,
+  "falhas_seguidas": 0,
   "lote_capitulo": null,
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
   "ultima_compilacao_build": "35f79976009146bca90975e55325f9f6",
   "ultima_compilacao_utc": "2026-11-18T08:14:39+00:00",
-  "ultimo_ciclo_utc": "2026-11-18T08:26:48+00:00",
-  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: quota esgotada",
+  "ultimo_ciclo_utc": "2026-11-18T12:14:52+00:00",
+  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
   "versos_total": 1406
 }
