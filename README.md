@@ -123,3 +123,5 @@ Para gerar os módulos isolados do piloto: `python gerar_bee.py --compilar --dad
 **Próximas cartas:** [2 João e 3 João — texto e notas para análise](edicoes/piloto/2_E_3_JOAO.md).
 
 **Leia também:** [Judas — carta completa e notas exegéticas](edicoes/piloto/JUDAS.md).
+
+**Nova carta:** [Tito — texto integral e notas exegéticas](edicoes/piloto/TITO.md).
