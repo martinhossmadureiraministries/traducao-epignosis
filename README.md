@@ -112,3 +112,10 @@ revisão humana especializada e confira direitos e licenças. O projeto não é 
 produto oficial ou aprovado pelo MyBible.
 
 Referências, licenças e detalhes ficam nos JSON e nos metadados dos módulos.
+
+### Nova edição: proposta de voz
+
+Veja o [guia de estilo da BEE](docs/ESTILO_BEE.md), com amostras, ordem de tradução e plano para preservar a automação durante a transição editorial.
+
+**Leia já:** [Filemom — piloto completo](edicoes/piloto/FILEMOM.md) · [Conheça a base grega SBLGNT](docs/SBLGNT.md).
+Para gerar os módulos isolados do piloto: `python gerar_bee.py --compilar --dados edicoes/piloto/dados --saida entregas/piloto`.
