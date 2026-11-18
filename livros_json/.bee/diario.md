@@ -88,3 +88,16 @@
 - 2026-11-18T03:46:35+00:00 — Módulos recompilados (PARCIAL): 25/1189 capítulos, 1012 versículos.
 - 2026-11-18T03:46:35+00:00 — Ciclo 11: +80 versículos, +3 capítulos em Marcos 4 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 160 versículos, 40 pedidos. A seguir: Marcos 4.
 - 2026-11-18T03:46:37+00:00 — Capítulos exportados para leitura: 26 (4 mudaram nesta execução).
+- 2026-11-18T07:47:11+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.2s (1/2).
+- 2026-11-18T07:47:17+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T07:47:17+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-18T07:47:23+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T07:47:30+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T07:47:38+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T07:49:24+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.0s (1/2).
+- 2026-11-18T07:50:18+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-18T07:51:36+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.7s (1/2).
+- 2026-11-18T07:52:37+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.4s (1/2).
+- 2026-11-18T07:52:48+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T07:52:57+00:00 — Módulos recompilados (PARCIAL): 30/1189 capítulos, 1227 versículos.
+- 2026-11-18T07:52:57+00:00 — Ciclo 12: +240 versículos, +5 capítulos em Marcos 9 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 400 versículos, 93 pedidos. A seguir: Marcos 9.
