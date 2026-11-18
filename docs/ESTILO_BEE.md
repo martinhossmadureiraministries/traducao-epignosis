@@ -161,3 +161,5 @@ Mateus 5:3–12 foi aprovado como amostra de voz («Bem-aventurados» e repetiç
 Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto; isso não equivale a revisão especializada. 2 João e 3 João foram preparados para análise editorial, mantendo o SBLGNT fixado e a produção isolada. Em 3 João, a saudação final integra o v. 14 na numeração tradicional do JSON e dos módulos (v. 15 no SBLGNT).
 
 2 João e 3 João foram aprovados pelo responsável para a calibração da voz. Judas foi acrescentado como prévia para análise editorial; não houve ativação da automação da nova edição.
+
+**Judas:** carta aprovada como amostra editorial, incluindo a redação final «São ímpios, há muito assinalados para esta condenação» no v. 4. A alteração é de estilo, não de variante textual. A aprovação não substitui revisão especializada.
