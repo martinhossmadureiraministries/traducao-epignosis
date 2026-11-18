@@ -102,3 +102,25 @@
 - 2026-11-18T07:52:57+00:00 — Módulos recompilados (PARCIAL): 30/1189 capítulos, 1227 versículos.
 - 2026-11-18T07:52:57+00:00 — Ciclo 12: +240 versículos, +5 capítulos em Marcos 9 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 400 versículos, 93 pedidos. A seguir: Marcos 9.
 - 2026-11-18T07:52:58+00:00 — Capítulos exportados para leitura: 31 (6 mudaram nesta execução).
+- 2026-11-18T08:09:33+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.1s (1/2).
+- 2026-11-18T08:09:53+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T08:10:18+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T08:10:24+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T08:10:32+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-18T08:10:37+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T08:10:47+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.0s (1/2).
+- 2026-11-18T08:11:12+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T08:12:07+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-18T08:13:20+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.1s (1/2).
+- 2026-11-18T08:13:25+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T08:13:25+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-18T08:13:32+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T08:13:33+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (2/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-18T08:13:40+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T08:13:48+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.9s (1/2).
+- 2026-11-18T08:13:54+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T08:14:02+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-18T08:14:03+00:00 — Quota de Groq · openai/gpt-oss-120b esgotada 3 vezes; fica de fora até ao próximo dia.
+- 2026-11-18T08:14:09+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-18T08:14:39+00:00 — Módulos recompilados (PARCIAL): 35/1189 capítulos, 1443 versículos.
+- 2026-11-18T08:14:39+00:00 — Ciclo 13: +240 versículos, +5 capítulos em Marcos 14 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 640 versículos, 152 pedidos. A seguir: Marcos 14.

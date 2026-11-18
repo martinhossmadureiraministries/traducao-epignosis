@@ -1,5 +1,5 @@
 {
-  "ciclos": 12,
+  "ciclos": 13,
   "criado_utc": "2026-11-17T05:36:21+00:00",
   "dias": {
     "2026-11-17": {
@@ -23,34 +23,36 @@
     },
     "2026-11-18": {
       "aberto": true,
-      "capitulos": 10,
+      "capitulos": 15,
       "falhas": 0,
       "fechado_em_utc": null,
-      "pedidos": 93,
-      "pedidos_ok": 78,
+      "pedidos": 152,
+      "pedidos_ok": 124,
       "por_provedor": {
         "gemini": {
-          "pedidos": 85,
-          "versos": 400
+          "pedidos": 137,
+          "versos": 640
         },
         "groq": {
-          "pedidos": 8,
+          "pedidos": 15,
           "versos": 0
         }
       },
-      "versos": 400
+      "versos": 640
     }
   },
-  "exaustos": [],
+  "exaustos": [
+    "groq"
+  ],
   "exaustos_em": "2026-11-18",
   "falhas_seguidas": 0,
   "lote_capitulo": null,
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
-  "ultima_compilacao_build": "e332f850a15f430b82158b24484dc5be",
-  "ultima_compilacao_utc": "2026-11-18T07:52:57+00:00",
-  "ultimo_ciclo_utc": "2026-11-18T07:46:54+00:00",
+  "ultima_compilacao_build": "35f79976009146bca90975e55325f9f6",
+  "ultima_compilacao_utc": "2026-11-18T08:14:39+00:00",
+  "ultimo_ciclo_utc": "2026-11-18T08:08:47+00:00",
   "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
-  "versos_total": 1166
+  "versos_total": 1406
 }
