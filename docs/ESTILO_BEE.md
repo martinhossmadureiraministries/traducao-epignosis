@@ -155,3 +155,7 @@ Em textos apocalípticos e proféticos, preservar imagens, números, e ambiguida
 ## Última ronda de calibração proposta
 
 Mateus 5:3–12 foi aprovado como amostra de voz («Bem-aventurados» e repetição preservados). Para concluir a calibração, testar Filemom 1:8–21 (argumento e apelo pessoal), Salmo 22:1–3,16–18 (lamento e dificuldade textual), Deuteronómio 6:4–9 (lei, recitação e ambiguidade sintática) e Lucas 15:25–32 (diálogo e final aberto). Filemom é o primeiro piloto de livro inteiro, não um teste a descartar; os restantes são amostras, não uma reordenação da produção.
+
+## Piloto de cartas curtas
+
+Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto; isso não equivale a revisão especializada. 2 João e 3 João foram preparados para análise editorial, mantendo o SBLGNT fixado e a produção isolada. Em 3 João, a saudação final integra o v. 14 na numeração tradicional do JSON e dos módulos (v. 15 no SBLGNT).

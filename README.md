@@ -119,3 +119,5 @@ Veja o [guia de estilo da BEE](docs/ESTILO_BEE.md), com amostras, ordem de tradu
 
 **Leia já:** [Filemom — piloto completo](edicoes/piloto/FILEMOM.md) · [Conheça a base grega SBLGNT](docs/SBLGNT.md).
 Para gerar os módulos isolados do piloto: `python gerar_bee.py --compilar --dados edicoes/piloto/dados --saida entregas/piloto`.
+
+**Próximas cartas:** [2 João e 3 João — texto e notas para análise](edicoes/piloto/2_E_3_JOAO.md).
