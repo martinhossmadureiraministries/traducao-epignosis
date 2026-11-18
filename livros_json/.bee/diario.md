@@ -169,3 +169,22 @@
 - 2026-11-18T12:15:11+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-18T12:15:11+00:00 — Módulos recompilados no fim do ciclo: 42/1189 capítulos, 1672 versículos.
 - 2026-11-18T12:15:11+00:00 — Capítulos exportados para leitura: 43 (4 mudaram nesta execução).
+- 2026-11-18T13:13:27+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-18T13:13:42+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-18T13:14:15+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-18T13:14:26+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T13:14:40+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T13:15:06+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.9s (1/2).
+- 2026-11-18T13:15:12+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T13:15:12+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-18T13:15:12+00:00 — **ERRO** Ciclo 20 falhou: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-18T13:15:12+00:00 — **AVISO** Falha transitória do serviço; nova tentativa no mesmo trabalho.
+- 2026-11-18T13:15:29+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.8s (1/2).
+- 2026-11-18T13:16:28+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.6s (1/2).
+- 2026-11-18T13:16:55+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-18T13:17:12+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.5s (1/2).
+- 2026-11-18T13:17:46+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-18T13:17:50+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.2s (1/2).
+- 2026-11-18T13:18:56+00:00 — Módulos recompilados (PARCIAL): 45/1189 capítulos, 1783 versículos.
+- 2026-11-18T13:18:56+00:00 — Ciclo 21: +80 versículos, +2 capítulos em Mateus 8 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 720 versículos, 249 pedidos. A seguir: Mateus 8.
+- 2026-11-18T13:18:56+00:00 — Capítulos exportados para leitura: 46 (4 mudaram nesta execução).
