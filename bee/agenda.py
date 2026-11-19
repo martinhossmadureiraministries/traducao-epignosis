@@ -598,10 +598,21 @@ class Agendador:
         if resolver_perfil().nome != 'nova':
             return  # o legado não tem revisão de voz
         from . import revisor
+        # P3 opcional: com métricas gravadas, os provedores com menos deriva
+        # revista primeiro (o cache vem de scripts/metricas_provedores.py, que
+        # o workflow corre em cada produção).
+        pontos = None
+        if os.environ.get('BEE_PRIORIDADES', '').strip().lower() == 'metricas':
+            from . import metricas
+            pontos = metricas.carregar_pontuacoes(self.dados)
+            if pontos is None:
+                self.diario.escrever(
+                    'BEE_PRIORIDADES=metricas mas sem cache .bee/metricas.json; '
+                    'a usar a prioridade padrão dos papéis.')
         try:
             resumo = revisor.rever_capitulos_fechados(
                 self.dados, progresso.capitulos_fechados, self.motores,
-                diario=self.diario.escrever,
+                diario=self.diario.escrever, pontuacoes=pontos,
             )
         except Exception as exc:
             self.diario.escrever(
