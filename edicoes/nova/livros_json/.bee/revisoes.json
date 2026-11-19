@@ -1,0 +1,167 @@
+{
+  "entries": [
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 3,
+      "texto": "Devemos dar sempre graças a Deus por vocês, irmãos, como é justo, porque a fé que vocês têm está crescendo muito, e o amor de cada um de vocês pelos outros transborda.",
+      "razao": "concordância verbal e pontuação",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 5,
+      "texto": "Isso é prova evidente do justo juízo de Deus, para que vocês sejam considerados dignos do reino de Deus, por causa do qual também padecem.",
+      "razao": "pontuação",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 6,
+      "texto": "Visto que é justo diante de Deus retribuir tribulação aos que lhes causam tribulação.",
+      "razao": "pontuação",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 7,
+      "texto": "E a vocês, que passam tribulação, alívio juntamente connosco, na revelação do Senhor Jesus do céu, com os anjos do seu poder.",
+      "razao": "pontuação e ajuste de preposição",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 8,
+      "texto": "Em chama de fogo, dando retribuição aos que não conhecem a Deus e aos que não obedecem ao evangelho do nosso Senhor Jesus.",
+      "razao": "pontuação",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 9,
+      "texto": "Os quais sofrerão a pena de destruição eterna, afastados da presença do Senhor e da sua glória poderosa.",
+      "razao": "corrigir cadeia genitiva",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 10,
+      "texto": "Quando ele vier naquele dia para ser glorificado entre os santos e ser admirado por todos os que creram, porquanto o nosso testemunho foi crido entre vocês.",
+      "razao": "remover pontuação inadequada e ajustar expressão",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 11,
+      "texto": "Por isso também oramos sempre por vocês, para que o nosso Deus os considere dignos da vocação e cumpra, com poder, todo o desejo de bondade e toda obra de fé.",
+      "razao": "pontuação",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 1,
+      "verse": 12,
+      "texto": "Para que o nome do nosso Senhor Jesus seja glorificado em vocês, e que vocês nele, segundo a graça do nosso Deus e do Senhor Jesus Cristo.",
+      "razao": "corrigir ortografia e clareza",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 1,
+      "texto": "Irmãos, a respeito da vinda do nosso Senhor Jesus Cristo e da nossa reunião com ele, pedimos a vocês",
+      "razao": "Corrigir grafia arcaica de Christo para Cristo e garantir uniformidade com o padrão.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 3,
+      "texto": "Não deixem que ninguém os engane de modo algum; pois, se não vier antes a apostasia e se revelar o ímpio, o filho da perdição,",
+      "razao": "Ajustar inicial maiúscula na abertura da frase após ponto e vírgula, conforme regras ortográficas vigentes.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 5,
+      "texto": "Não se lembram de que, ainda estando entre vocês, eu já lhes dizia estas coisas?",
+      "razao": "Ajustar inicial maiúscula na abertura da frase.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 6,
+      "texto": "E agora vocês sabem quem o detém, para que ele seja revelado no seu próprio tempo.",
+      "razao": "Ajustar inicial maiúscula na abertura da frase.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 7,
+      "texto": "Pois o mistério da impiedade já está em ação; somente o que o detém ainda pode impedir que ele apareça.",
+      "razao": "Ajustar inicial maiúscula e resolver a ordem natural da expressão 'mistério da impiedade' sem empilhamento pesado.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 2,
+      "verse": 8,
+      "texto": "E então o ímpio será revelado, a quem o Senhor Jesus destruirá com o sopro da sua boca e aniquilará na manifestação da sua vinda;",
+      "razao": "Ajustar inicial maiúscula na abertura da frase.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 3,
+      "verse": 9,
+      "texto": "Não porque não tivéssemos o direito de fazê-lo, mas para oferecer a nós mesmos como modelo a ser imitado por vocês.",
+      "razao": "correção gramatical",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:12:01+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 3,
+      "verse": 14,
+      "texto": "Se alguém não obedece à nossa palavra por esta carta, notem essa pessoa e não se misturem com ela, para que se envergonhe.",
+      "razao": "espaço faltando após vírgula",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:12:01+00:00"
+    },
+    {
+      "book": 600,
+      "chapter": 3,
+      "verse": 17,
+      "texto": "Esta saudação é do meu próprio punho, de Paulo, o qual é o sinal em cada carta; é assim que escrevo.",
+      "razao": "correção de concordância e pronome possessivo",
+      "reviewer": "groq",
+      "at_utc": "2026-11-19T13:12:01+00:00"
+    }
+  ],
+  "updated_at_utc": "2026-11-19T13:12:01+00:00"
+}

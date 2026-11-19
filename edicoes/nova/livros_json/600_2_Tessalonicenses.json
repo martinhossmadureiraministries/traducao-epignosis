@@ -3,7 +3,352 @@
   "book_number": 600,
   "book_name": "2 Tessalonicenses",
   "chapter_count": 3,
-  "chapters": {},
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "Paulo, Silvano e Timóteo, à igreja dos tessalonicenses, em Deus, nosso Pai, e no Senhor Jesus Cristo;",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Παῦλος</i> (Paulos — Paulo), <i>Σιλουανός</i> (Silouanos — Silvano), <i>Τιμόθεος</i> (Timotheos — Timóteo), <i>ἐκκλησία</i> (ekklēsia — igreja, assembleia), <i>θεός</i> (theos — Deus), <i>πατήρ</i> (patēr — pai), <i>κύριος</i> (kurios — Senhor), <i>Ἰησοῦς</i> (Iēsous — Jesus), <i>Χριστός</i> (Christos — Cristo). A designação dos remetentes e destinatários segue o padrão epistolar paulino.</p><p><b>Crítica Textual:</b> Sem variante significativa nas edições fornecidas entre SBLGNT e Textus Receptus para esta abertura.</p><p><b>Síntese Exegética:</b> A carta abre com a autoria conjunta de Paulo, Silvano e Timóteo, estabelecendo a identidade da comunidade de Tessalónica como estando enraizada relacionalmente em Deus Pai e no Senhor Jesus Cristo.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Graça e paz a vocês, da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>χάρις</i> (charis — graça, favor imerecido), <i>εἰρήνη</i> (eirēnē — paz, bem-estar integral), <i>πατήρ</i> (patēr — pai). Fórmula de saudação epistolar consolidada nos escritos apostólicos.</p><p><b>Crítica Textual:</b> [[πατρὸς WH, NIV]] contra [[πατρὸς ἡμῶν Treg, RP, NA28]]. O SBLGNT omite o possessivo <i>ἡμῶν</i> (nossos) após <i>πατρὸς</i> com base em testemunhos antigos importantes.</p><p><b>Síntese Exegética:</b> A saudação une o favor divino (graça) e o bem-estar messiânico (paz), tendo como fonte conjunta e igualitária o Pai e o Senhor Jesus Cristo, mantendo a fórmula consensual da BEE.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Devemos dar sempre graças a Deus por vocês, irmãos, como é justo, porque a fé que vocês têm está crescendo muito, e o amor de cada um de vocês pelos outros transborda.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ὀφείλομεν</i> (opheilomen — devemos, é dever), <i>εὐχαριστεῖν</i> (eucharistein — dar graças), <i>ὑπεραυξάνει</i> (hyperauxanei — cresce grandemente, supera o crescimento habitual), <i>πίστις</i> (pistis — fé), <i>πλεονάζει</i> (pleonazei — transborda, multiplica-se).</p><p><b>Crítica Textual:</b> Sem variante relevante entre o SBLGNT e o Textus Receptus no corpo principal do versículo.</p><p><b>Síntese Exegética:</b> O apóstolo expressa obrigação moral e alegria espiritual ao notar o progresso concreto da comunidade: uma fé que avança vigorosamente e um amor mútuo que transborda em gestos práticos, apesar do contexto adverso.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "de maneira que nós mesmos nos gloriamos em vocês entre as igrejas de Deus, por causa da perseverança e da fé que vocês demonstram em todas as perseguições e tribulações que suportam.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐγκαυχᾶσθαι / καυχᾶσθαι</i> (enkauchesthai / kauchesthai — gloriar-se, orgulhar-se), <i>ὑπομονή</i> (hypomonē — perseverança, firmeza sob pressão), <i>διωγμός</i> (diōgmos — perseguição), <i>θλῖψις</i> (thlipsis — tribulação, aperto), <i>ἀνέχεσθε</i> (anechesthe — suportais, resistis).</p><p><b>Crítica Textual:</b> [[αὐτοὺς ἡμᾶς WH, Treg, NA28]] frente a [[ἡμᾶς αὐτοὺς RP]]. O SBLGNT e as principais edições críticas adotam a ordem em que o pronome intensificador precede o acusativo. Na segunda variação, o SBLGNT traz [[ἐγκαυχᾶσθαι]] enquanto o Textus Receptus usa [[καυχᾶσθαι]], sem alteração substancial do sentido.</p><p><b>Síntese Exegética:</b> A firmeza dos tessalonicenses sob perseguição severa torna-se motivo de louvor público por parte dos obreiros perante as demais comunidades, evidenciando que a resistência na fé valida a genuinidade da obra de Deus ali.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Isso é prova evidente do justo juízo de Deus, para que vocês sejam considerados dignos do reino de Deus, por causa do qual também padecem.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἔνδειγμα</i> (endeigma — prova evidente, sinal claro), <i>δikaia krisis</i> (justo juízo), <i>καταξιωθῆναι</i> (kataxiōthēnai — serem julgados dignos, alcançarem dignidade por graça), <i>βασιλεία</i> (basileia — reino), <i>πάσχετε</i> (paschete — sofreis, padeceis).</p><p><b>Crítica Textual:</b> Sem diferenças textuais notáveis entre SBLGNT e o Textus Receptus nesta seçao.</p><p><b>Síntese Exegética:</b> As tribulações atuais suportadas pelos crentes não são sinal de abandono, mas a própria evidência de que o juízo justo de Deus opera para qualificá-los ao Seu reino, participando dos mesmos sofrimentos do Messias.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Visto que é justo diante de Deus retribuir tribulação aos que lhes causam tribulação.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἴπερ</i> (eiper — visto que, já que de facto), <i>δίκαιον</i> (dikaion — justo, reto), <i>παρὰ θεῷ</i> (para theō — diante de Deus), <i>ἀνταποδοῦναι</i> (antapodounai — retribuir, pagar de volta), <i>θλίβουσιν</i> (thlibousin — os que oprimem ou causam tribulação), <i>θλῖψιν</i> (thlipsin — tribulação, aperto).</p><p><b>Crítica Textual:</b> Sem divergências textuais entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> O argumento avança para a justiça retributiva de Deus: a retribuição recíproca faz parte do caráter reto de Deus, que há de vindicar os oprimidos trazendo tribulação sobre os opressores no tempo devido.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "E a vocês, que passam tribulação, alívio juntamente connosco, na revelação do Senhor Jesus do céu, com os anjos do seu poder.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἄνεσις</i> (anesis) — alívio, descanso ou relaxamento da pressão; <i>ἀποκάλυψις</i> (apokalysis) — revelação ou desvendamento. O termo <i>ἄνεσις</i> indica a cessação da opressão vivida pelos crentes.</p><p><b>Crítica Textual:</b> Sem divergências significativas entre as edições fornecidas no que afeta a tradução principal deste versículo.</p><p><b>Síntese Exegética:</b> O alívio prometido aos perseguidos não é imediato nem terreno, mas está indissociavelmente ligado à manifestação escatológica do Senhor Jesus com o seu poder executivo.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Em chama de fogo, dando retribuição aos que não conhecem a Deus e aos que não obedecem ao evangelho do nosso Senhor Jesus.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>φλογὶ πυρός</i> (flogi pyros) — chama de fogo (com variante formal em [[<i>πυρὶ φλογός</i>]] em alguns testemunhos); <i>ἐκδίκησις</i> (ekdikēsis) — retribuição justa ou justiça aplicada. O verbo <i>ὑπακούουσιν</i> denota obediência ativa à mensagem.</p><p><b>Crítica Textual:</b> [[<i>φλογὶ πυρός</i>]] (SBLGNT, Tregelles) versus [[<i>πυρὶ φλογός</i>]] (WH, NA28, Textus Receptus). A inversão de substantivo e adjetivo altera a ordem mas mantém o mesmo referente visual. O TR acrescenta <i>Χριστοῦ</i> após <i>Ἰησοῦ</i>.</p><p><b>Síntese Exegética:</b> A vinda do Senhor traz juízo dual: julgamento punitivo sobre os ignorantes voluntários e sobre os rebeldes que rejeitam a autoridade do evangelho.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Os quais sofrerão a pena de destruição eterna, afastados da presença do Senhor e da sua glória poderosa.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>δίκην</i> (dikē) — penalidade ou castigo judicial; <i>ὄλεθρος</i> (olethros) — ruína ou destruição (não aniquilação total, mas perda funcional irreversível); <i>ἰσχύος</i> (ischys) — força ou vigor.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A essência da punição eterna consiste na separação radical da fonte da vida — a face do Senhor — e na perda irremediável de acesso à sua majestade operante.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Quando ele vier naquele dia para ser glorificado entre os santos e ser admirado por todos os que creram, porquanto o nosso testemunho foi crido entre vocês.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐνδοξασθῆναι</i> (endoxasthēnai) — ser glorificado ou manifestar esplendor; <i>μαρτύριον</i> (martyrion) — testemunho ou proclamação fidedigna.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>πιστεύσασιν</i> (os que creram, no particípio aoristo), enquanto o Textus Receptus emprega <i>πιστεύουσιν</i> (os que creem, no presente).</p><p><b>Síntese Exegética:</b> O clímax da história redentora ocorre quando a glória inerente a Cristo encontra reflexo e admiração coletiva na comunidade daqueles que acolheram a pregação.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Por isso também oramos sempre por vocês, para que o nosso Deus os considere dignos da vocação e cumpra, com poder, todo o desejo de bondade e toda obra de fé.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀξιωσῃ</i> (axiōsē) — considere digno ou faça jus; <i>εὐδοκίαν</i> (eudokian) — desejo bom, benevolência ou propósito favorável; <i>ἀγαθωσύνης</i> (agathōsynēs) — bondade moral ativa.</p><p><b>Crítica Textual:</b> Sem divergência substancial entre o texto crítico e o Textus Receptus nesta secção.</p><p><b>Síntese Exegética:</b> A intercessão apostólica foca-se na congruência prática entre a chamada divina recebida pelos crentes e a capacitação enérgica para o bem e para a fé.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Para que o nome do nosso Senhor Jesus seja glorificado em vocês, e que vocês nele, segundo a graça do nosso Deus e do Senhor Jesus Cristo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ὅπως</i> (hopōs) — de modo que, com o propósito de; <i>ἐνδοξασθῇ</i> (endoxasthē) — seja glorificado.</p><p><b>Crítica Textual:</b> O Textus Receptus acrescenta <i>Χριστοῦ</i> após <i>Ἰησοῦ</i> na primeira menção ao nome do Senhor, enquanto o SBLGNT omite.</p><p><b>Síntese Exegética:</b> O alvo último da perseverança cristã e da capacitação espiritual é a exaltação mútua e recíproca entre Cristo e os seus remidos, fundamentada inteiramente na graça soberana.</p>"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Irmãos, a respeito da vinda do nosso Senhor Jesus Cristo e da nossa reunião com ele, pedimos a vocês",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐρωτῶμεν</i> (erōtōmen) — pedimos, rogamos; <i>παρουσίας</i> (parousias) — presença, vinda, chegada; <i>ἐπισυναγωγῆς</i> (episynagōgēs) — reunião, ajuntamento. A preposição <i>ὑπέρ</i> aqui introduz o tema em questão (<b>Crítica Textual:</b> não devolvida pelo modelo nesta geração; não verificada. Assinalado para revisão.</p><p><b>Síntese Exegética:</b> não devolvida pelo modelo nesta geração; não verificada. Assinalado para revisão.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "para que não sejam rapidamente abalados de entendimento, nem enganados, nem por espírito, nem por palavra, nem por carta, como nós, como se o dia do SENHOR já estivesse aqui.",
+        "commentary": "<p><b>Análise Léxica</b> – εἰς (eis, “para”), τὸ μὴ (to mē, “não”), ταχέως (tachéōs, “rapidamente”), σαλευθῆναι (saleuthēnai, “ser abalado”), ὑμᾶς (humas, “vocês”), ἀπὸ (apo, “de”), τοῦ νοὸς (tou noos, “da mente”), μηδὲ (mēde, “nem”), θροεῖσθαι (throeistai, “ser enganado”), μήτε (mēte, “nem”), διὰ (dia, “por”) πνεύματος (pneumatos, “espírito”), λόγου (logou, “palavra”), ἐπιστολῆς (epistolēs, “carta”), ὡς (hōs, “como”), ἡμέρα (hēmera, “dia”), κυρίου (kyriou, “do SENHOR”).</p><p><b>Crítica Textual</b> – sem variante verificada entre SBLGNT e Textus Receptus; o aparato indica apenas leituras de apoio (WH, Treg, NA28) sem diferença textual relevante.</p><p><b>Síntese Exegética</b> – Paulo adverte os crentes a não serem perturbados ou iludidos por falsos ensinamentos, ressaltando que ainda não chegou o dia do SENHOR.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Não deixem que ninguém os engane de modo algum; pois, se não vier antes a apostasia e se revelar o ímpio, o filho da perdição,",
+        "commentary": "<p><b>Análise Léxica</b> – μή (mē, “não”), τις (tis, “alguém”), ὑμᾶς (humas, “vocês”), ἐξαπατήσῃ (exapatēsei, “engane”), ὅτι (hoti, “pois”), ἐὰν (ean, “se”), μὴ (mē, “não”), ἔλθῃ (elthē, “vier”), ἀποστασία (apostasia, “apostasia”), πρῶτον (prōton, “primeiro”), ἀποκαλυφθῇ (apokalyphthē, “se revelar”), ἄνθρωπος (anthrōpos, “homem”), ἀνομίας (anomias, “ímpio”), υἱὸς (huios, “filho”), ἀπωλείας (apōleias, “perdição”).</p><p><b>Crítica Textual</b> – variante em SBLGNT: ἀνομίας (ânomias) versus o Textus Receptus que tem ἁμαρτίας (hamartias). [[ἀνομίας ↔ ἁμαρτίας]] – a leitura de SBLGNT “ímpio” é adotada aqui.</p><p><b>Síntese Exegética</b> – O texto alerta contra engano, indicando que a revelação do “ímpio” ocorrerá somente após a apostasia.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "o que se opõe e se exalta sobre tudo que se chama deus ou objeto de adoração, de modo que se coloca no templo de Deus, proclamando‑se deus.",
+        "commentary": "<p><b>Análise Léxica</b> – ὁ (ho, “o”), ἀντικείμενος (antikeimenos, “oposto”), καὶ (kai, “e”), ὑπεραιρόμενος (hyperairōmenos, “se exalta”), ἐπὶ (epi, “sobre”), πάντα (panta, “tudo”), λεγόμενον (legomenon, “que se chama”), θεὸν (theon, “deus”), σέβασμα (sebasma, “objeto de adoração”), ὥστε (hōste, “de modo que”), εἰς (eis, “para”), ναὸν (naon, “templo”), θεοῦ (theou, “de Deus”), καθίσαι (kathisai, “sentar‑se”), ἀποδεικνύντα (apodeikynnta, “proclamando”), ἑαυτὸν (heauton, “a si mesmo”), ἔστιν (estin, “é”), θεός (theos, “deus”).</p><p><b>Crítica Textual</b> – o aparato registra variante «ὡς θεὸν» (como deus). [[ὡς θεὸν ↔ θεός]] – a leitura de SBLGNT mantém “θεός” sem o comparativo.</p><p><b>Síntese Exegética</b> – Descreve o “ímpio” que se coloca como divindade no santuário, reivindicando divindade própria.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Não se lembram de que, ainda estando entre vocês, eu já lhes dizia estas coisas?",
+        "commentary": "<p><b>Análise Léxica</b> – οὐ (ou, “não”), μνημονεύετε (mnēmonete, “lembram”), ὅτι (hoti, “que”), ἔτι (eti, “ainda”), ὢν (ōn, “estando”), πρὸς (pros, “entre”), ὑμᾶς (humas, “vocês”), ταῦτα (tauta, “estas coisas”), ἔλεγον (elegon, “eu dizia”), ὑμῖν (humin, “a vocês”).</p><p><b>Crítica Textual</b> – sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética</b> – Paulo relembra que já havia anunciado estas advertências enquanto ainda estava presente.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "E agora vocês sabem quem o detém, para que ele seja revelado no seu próprio tempo.",
+        "commentary": "<p><b>Análise Léxica</b> – καὶ (kai, “e”), νῦν (nyn, “agora”), τὸ (to, “o”), κατέχον (katechon, “detentor”), οἴδατε (oidate, “vocês sabem”), εἰς (eis, “para”), τὸ (to, “o”), ἀποκαλυφθῆναι (apokalyphthēnai, “ser revelado”), αὐτὸν (auton, “ele”), ἐν (en, “em”), τῷ (tō, “o”), ἑαυτοῦ (heautou, “seu próprio”), καιρῷ (kairō, “tempo”).</p><p><b>Crítica Textual</b> – o aparato indica variante «αὐτοῦ» (autou) no TR; SBLGNT tem «ἑαυτοῦ». [[ἑαυτοῦ ↔ αὐτοῦ]] – adotamos a forma de SBLGNT.</p><p><b>Síntese Exegética</b> – Paulo afirma que os crentes reconhecem quem está restringindo a revelação do ímpio, aguardando o tempo determinado.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Pois o mistério da impiedade já está em ação; somente o que o detém ainda pode impedir que ele apareça.",
+        "commentary": "<p><b>Análise Léxica</b> – τὸ (to, “o”), γὰρ (gar, “pois”), μυστήριον (mystērion, “mistério”), ἤδη (ēdē, “já”), ἐνεργεῖται (energeitai, “está em ação”), τῆς (tēs, “da”), ἀνομίας (anomias, “impiedade”), μόνον (monon, “somente”), ὁ (ho, “o”), κατέχων (katechon, “detentor”), ἄρτι (arti, “agora”), ἕως (heōs, “até”), ἐκ (ek, “de”), μέσου (mesou, “meio”), γένηται (genētai, “se torne”).</p><p><b>Crítica Textual</b> – sem variante verificada entre as edições fornecidas.</p><p><b>Síntese Exegética</b> – O “mistério” da impiedade já opera, mas ainda há um “detentor” que impede a manifestação completa do ímpio.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "E então o ímpio será revelado, a quem o Senhor Jesus destruirá com o sopro da sua boca e aniquilará na manifestação da sua vinda;",
+        "commentary": "<p><b>Análise Léxica:</b> ἄνομος (anomos) — substantivo ou adjetivo, «ímpio», aquele que transgride ou rejeita a lei; ἀνελεῖ (anelei) — verbo, «destruir» ou «matar»; ἐπιφανεια (epiphaneia) — substantivo, «manifestação» ou «aparição brilhante»; παρουσία (parousia) — substantivo, «vinda» ou «presença». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> No SBLGNT lê-se Ἰησοῦς [[WH Treg NA28]] face à omissão em partes do Textus Receptus; e ἀνελεῖ [[WH Treg NA28]] face a ἀναλώσει [[RP]]. A forma adotada segue os melhores testemunhos alexandrinos na linha do SBLGNT.</p><p><b>Síntese Exegética:</b> A revelação do ímpio culmina na intervenção soberana e direta do Senhor Jesus, cuja simples presença e palavra bastam para aniquilar o poder opositor, demonstrando a superioridade absoluta da sua vinda gloriosa sobre qualquer manifestação de engano.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "a vinda dele acontece segundo a ação de Satanás, com todo o poder, e com sinais e prodígios de mentira,",
+        "commentary": "<p><b>Análise Léxica:</b> παρουσία (parousia) — substantivo, «vinda» ou «presença»; ἐνέργεια (energeia) — substantivo, «ação» ou «operação eficaz»; δύναμις (dynamis) — substantivo, «poder» ou «potência»; τέρας (teras) — substantivo, «prodígio» ou «maravilha». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A atividade do ímpio não é autónoma, mas modelada e impulsionada pela operação enérgica de Satanás, validada externamente por demonstrações enganosas que imitam o poder divino para desviar os incautos.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "e com todo o engano da injustiça para os que se perdem, porque não acolheram o amor da verdade para serem salvos.",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπάτη (apatē) — substantivo, «engano» ou «sedução»; ἀδικία (adikia) — substantivo, «injustiça» ou «inexistência de retidão»; ἀπόλλυμι (apolymi) — particípio, «os que se perdem» ou «os que caminham para a perdição». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> Presença de ἀδικίας [[WH Treg NA28]] frente à adição do artigo τῆς ἀδικίας ἐν [[RP]] no Textus Receptus.</p><p><b>Síntese Exegética:</b> A perdição dos que rejeitam a mensagem não decorre de um fado cego, mas da recusa deliberada em amar a verdade, abrindo espaço para a sedução da injustiça que cega o entendimento.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Por isso, Deus lhes envia uma força operante de erro, para que creiam na mentira,",
+        "commentary": "<p><b>Análise Léxica:</b> πέμπει (pempei) — verbo, «envia»; ἐνέργεια (energeia) — substantivo, «força operante» ou «ação eficaz»; πλάνη (planē) — substantivo, «erro» ou «desvio»; ψεῦδος (pseudos) — substantivo, «mentira» ou «falsidade». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> O SBLGNT traz o presente πέμπει [[WH Treg NA28]], enquanto o Textus Receptus apresenta o futuro πέμψει [[RP]].</p><p><b>Síntese Exegética:</b> Como juízo judicial face à rejeição da verdade, Deus entrega os rebeldes à eficácia do próprio erro, selando o seu envolvimento voluntário com a mentira.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "para que sejam julgados todos os que não deram crédito à verdade, antes tiveram prazer na injustiça.",
+        "commentary": "<p><b>Análise Léxica:</b> κρίνω (krinō) — verbo, «julgar» ou «condenar»; πιστεύω (pisteuō) — verbo, «crer» ou «dar crédito»; ευδοκέω (eudokeō) — verbo, «ter prazer», «comprazer-se» ou «achar agrado». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> O SBLGNT traz πάντες [[WH Treg NA28]] face a ἅπαντες [[RP]]; e a omissão de ἐν antes de τῇ ἀδικίᾳ [[WH Treg NA28]] face à inclusão [[RP]].</p><p><b>Síntese Exegética:</b> O propósito final deste desdobramento é a condenação justa de quantos optaram por rejeitar a verdade revelada, encontrando complacência moral na prática da injustiça.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Nós, porém, devemos dar sempre graças a Deus por vocês, irmãos amados pelo Senhor, porque Deus os escolheu desde o princípio para a salvação, em santificação do Espírito e fé na verdade,",
+        "commentary": "<p><b>Análise Léxica:</b> εὐχαριστέω (eucharisteō) — verbo, «dar graças»; αἱρέομαι (haireomai) — verbo médio, «escolher» ou «eleger»; ἀπαρχή (aparchē) — substantivo, «primícias» (com variante textual relevante); ἁγιασμός (hagiasmos) — substantivo, «santificação» ou «consagração». Definições não verificadas em léxico fora do contexto imediato.</p><p><b>Crítica Textual:</b> Variante importante: ἀπαρχὴν [[NA28]] (escolheu como primícias) face a ἀπʼ ἀρχῆς [[WH Treg NIV RP]] (escolheu desde o princípio). A tradução adota a lição de base do SBLGNT / NA28 (primícias), mantendo a integridade do texto crítico fornecido.</p><p><b>Síntese Exegética:</b> Em nítido contraste com os condenados ao erro, os crentes são objeto de ação de graças constante por parte dos apóstolos, pois a sua condição de salvos fundamenta-se na eleição divina operada pelo Espírito e acolhida pela fé.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Para isso ele os chamou por meio do nosso evangelho, para alcançarem a glória do nosso Senhor Jesus Cristo.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>εἰς</i> (eis) — para, com vista a; <i>καλέω</i> (kaleō) — chamar; <i>περιποίησις</i> (peripoiēsis) — aquisição, obtenção ou salvamento; <i>δόξα</i> (doxa) — glória. O termo <i>περιποίησις</i> indica aqui o ato de alcançar ou adquirir algo excelente.</p><p><b>Crítica Textual:</b> SBLGNT e WH/Treg trazem o relativo <i>ὃ</i> (o qual / para isso), enquanto o NA28 e o Textus Receptus comumente acrescentam a conjunção <i>καὶ</i> antes (<i>καὶ εἰς ὃ</i>), sem alterar substancialmente o sentido da cláusula final.</p><p><b>Síntese Exegética:</b> A vocação divina através da pregação apostólica (o evangelho proclamado por Paulo e seus companheiros) tem um alvo soteriológico específico: a participação na glória do Senhor Jesus Cristo, conectando diretamente a eleição mencionada no versículo anterior com o destino escatológico dos crentes.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Portanto, irmãos, mantenham-se firmes e apeguem-se às tradições que lhes foram ensinadas, seja por palavra, seja por carta nossa.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἄρα οὖν</i> (ara oun) — portanto, por conseguinte; <i>στήκω</i> (stēkō) — manter-se firme, estar em pé; <i>κρατέω</i> (krateō) — agarrar, reter com firmeza; <i>παράδοσις</i> (paradosis) — ensinamento transmitido, tradição. O verbo <i>στήκω</i> expressa firmeza inabalável diante da oposição.</p><p><b>Crítica Textual:</b> Sem variante significativa entre o SBLGNT e o Textus Receptus neste versículo; a estrutura dos imperativos e o substantivo <i>παραδόσεις</i> encontram-se atestados de maneira uniforme nas principais edições.</p><p><b>Síntese Exegética:</b> A exortação baseia-se na solidez da vocação divina para instar os destinatários à firmeza moral e doutrinária. As «tradições» não se opõem à revelação divina, mas referem-se ao corpo de ensinamentos apostólicos transmitidos oralmente na pregação ou por escrito através de cartas.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "E que o próprio Senhor nosso Jesus Cristo e Deus, nosso Pai, que nos amou e nos deu eterna consolação e boa esperança pela graça,",
+        "commentary": "<p><b>Análise Léxica:</b> <i>αὐτός</i> (autos) — o próprio; <i>παράκλησις</i> (paraklēsis) — consolação, encorajamento; <i>αἰώνιος</i> (aiōnios) — eterno, perpétuo; <i>ἐλπίς</i> (elpis) — esperança; <i>χάρις</i> (charis) — graça. O particípio <i>ἀγαπήσας</i> («que nos amou») aponta para o amor histórico demonstrado na obra salvadora.</p><p><b>Crítica Textual:</b> O SBLGNT e WH adotam a leitura <i>θεὸς ὁ πατὴρ ἡμῶν</i> («Deus, nosso Pai»), enquanto o Textus Receptus e o aparato de algumas testemunhas trazem <i>ὁ θεὸς καὶ πατὴρ ἡμῶν</i> («o Deus e Pai nosso»). A construção gramatical associa o Senhor Jesus Cristo e o Pai como a fonte única da bênção.</p><p><b>Síntese Exegética:</b> Esta abertura de oração subordinada une Cristo e o Pai na concessão da consolação e da esperança firmadas na graça. O particípio do passado («que nos amou») fundamenta as dádivas contínuas de conforto e expectativa segura para os crentes.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "console o coração de vocês e os confirme em toda boa obra e palavra.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>παρακαλέω</i> (parakaleō) — consolar, animar; <i>καρδία</i> (kardia) — coração, centro da vida interior e afetiva; <i>στηρίζω</i> (stērizō) — confirmar, estabelecer, firmar; <i>ἔργον</i> (ergon) — obra; <i>λόγος</i> (logos) — palavra. A escolha de <i>καρδία</i> traduz o centro íntimo da pessoa onde a consolação divina opera.</p><p><b>Crítica Textual:</b> O SBLGNT omite o pronome <i>ὑμᾶς</i> após <i>στηρίξαι</i>, diferindo do Textus Receptus que o inclui. Quanto à ordem final, o SBLGNT traz <i>ἔργῳ καὶ λόγῳ</i> («obra e palavra»), ao passo que o Textus Receptus inverte para <i>λόγῳ καὶ ἔργῳ</i> («palavra e obra»).</p><p><b>Síntese Exegética:</b> O encerramento da unidade epistolar funciona como uma prece de intercessão pastoral. A consolação interior do coração está intrinsecamente ligada à solidez prática na conduta diária, expressa tanto em atos («boa obra») quanto no testemunho verbal («boa palavra»).</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Quanto ao mais, irmãos, orem por nós, para que a palavra do Senhor se propague rapidamente e seja glorificada, assim como aconteceu entre vocês;",
+        "commentary": "<p><b>Análise Léxica</b> — <i>τὸ λοιπὸν</i> (to loipon): quanto ao mais, expressão de transição; <i>προσεύχεσθε</i> (proseuchesthe): orem, imperativo presente; <i>τρέχῃ</i> (trechē): corra, propague-se rapidamente, metáfora atlética; <i>δοξάζηται</i> (doxazētai): seja glorificada, honrada.</p><p><b>Crítica Textual</b> — Sem variante verificada entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — Paulo pede a intercessão da comunidade para que a mensagem do evangelho avance sem impedimentos e receba a devida honra entre os ouvintes, espelhando a recepção que os próprios tessalonicenses lhe deram.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "e para que sejamos livres de pessoas perversas e más, pois a fé não pertence a todos.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>ῥυσθῶμεν</i> (rhysthōmen): sejamos livres, rescatados; <i>ἀτόπων</i> (atopōn): perversos, impróprios, fora do lugar; <i>πονηρῶν</i> (pōnerōn): maus, malignos; <i>πίστις</i> (pistis): fé, fidelidade.</p><p><b>Crítica Textual</b> — Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética</b> — O pedido de oração estende-se à proteção física e moral contra opositores malintencionados, reconhecendo o realismo pastoral de que nem todos acolhem a fé salvadora.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Mas o Senhor é fiel; ele os confirmará e guardará do maligno.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>πιστός</i> (pistos): fiel, confiável; <i>στηρίξει</i> (stērixei): confirmará, fortalecerá; <i>φυλάξει</i> (phylaxei): guardará, protegerá; <i>πονηροῦ</i> (pōnerou): o maligno (ou o mal).</p><p><b>Crítica Textual</b> — Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética</b> — Diante da oposição humana, o apóstolo aponta para a fidelidade inabalável de Deus, que sustenta os crentes e os defende contra o poder do mal.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Quanto a vocês, temos confiança no Senhor de que fazem e continuarão a fazer o que ordenamos.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>πεποίθαμεν</i> (pepoithamen): temos confiança, perfazendo estado de convicção; <i>παραγγέλλομεν</i> (paraggellomen): ordenamos, instruímos com autoridade; <i>ποιείτε</i> (poieite): fazem, praticam.</p><p><b>Crítica Textual</b> — O SBLGNT omite o pronome <i>ὑμῖν</i> após <i>παραγγέλλομεν</i> com WH, Treg, NA28, enquanto o Textus Receptus e o RP o mantêm [[παραγγέλλομεν WH Treg NA28 ] + ὑμῖν RP]. A tradução abrange ambas as construções sem alteração de sentido.</p><p><b>Síntese Exegética</b> — A segurança de Paulo baseia-se na atuação do Senhor na vida da comunidade, expressa na obediência contínua às instruções apostólicas transmitidas.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "E que o Senhor conduza o coração de vocês ao amor de Deus e à perseverança de Cristo.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>κατευθύναι</i> (kateuthynai): conduza diretamente, endireite, optativo a expressar desejo; <i>καρδίας</i> (kardias): coração, centro da vontade e dos afetos; <i>ὑπομονὴν</i> (hypomonēn): perseverança, paciência sob provação.</p><p><b>Crítica Textual</b> — Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética</b> — A petição final da oração direciona a vida dos crentes para duas âncoras divinas: o amor que vem de Deus e a constância demonstrada por Cristo em seu percurso.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Ora, ordenamos a vocês, irmãos, em nome do Senhor nosso Jesus Cristo, que se afaste todo irmão que vive de maneira desordenada e não segundo a tradição que receberam de nós.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>στέλλεσθαι</i> (stellesthe): que se afastem, mantenham distância, evitem; <i>ἀτάκτως</i> (ataktōs): desordenadamente, de forma indisciplinada; <i>περιπατοῦντος</i> (peripatountos): que anda, vive; <i>παράδοσιν</i> (paradosin): tradição, ensino transmitido.</p><p><b>Crítica Textual</b> — O SBLGNT traz <i>ἡμῶν</i> com Treg, RP, NA28, omitido em WH e NIV [[ἡμῶν Treg RP NA28 ] – WH NIV]. No final, o SBLGNT adota <i>παρελάβοσαν</i> (NA28), enquanto o Textus Receptus tem <i>παρέλαβον</i> e variantes antigas trazem <i>παρελάβετε</i> [[παρελάβοσαν NA28 ] parelabete WH Treg NIV; παρέλαβον RP]. A tradução adota o sentido verbal da recepção da tradição sem discrepância doutrinária.</p><p><b>Síntese Exegética</b> — A autoridade apostólica intervém com firmeza para disciplinar a desordem comunitária, exigindo o afastamento daqueles que rejeitam o padrão de conduta ensinado pelos apóstolos.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Pois vocês mesmos sabem como devem imitar-nos, visto que não andamos desordenadamente entre vocês,",
+        "commentary": "<p><b>Análise Léxica</b> — <b>οἴδατε</b> (<i>oidate</i>): perfeito com sentido de presente, saber, conhecer; <b>μιμεῖσθαι</b> (<i>mimeisthai</i>): infinitivo presente médio, imitar, seguir o exemplo; <b>ἠτακτήσαμεν</b> (<i>ētaktēsamen</i>): aoristo ativo, agir de forma desordenada, rebelar-se contra a ordem estabelecida. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — Sem variante significativa entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — O apóstolo lembra aos tessalonicenses o comportamento exemplar que demonstraram conhecer quando conviveram com eles, estabelecendo a conduta pessoal de Paulo e dos seus companheiros como norma prática de vida comunitária.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "nem comemos de graça o pão de ninguém. Pelo contrário, trabalhamos arduamente, com esforço e fadiga, noite e dia, para não sermos fardo para nenhum de vocês.",
+        "commentary": "<p><b>Análise Léxica</b> — <b>δωρεὰν</b> (<i>dōrean</i>): advérbio, de graça, sem pagar; <b>κόπῳ</b> (<i>kopō</i>): substantivo masculino, labor extenuante, fadiga; <b>μόχθῳ</b> (<i>mochthō</i>): substantivo masculino, esforço penoso, trabalho duríssimo; <b>ἐπιβαρῆσαι</b> (<i>epibarēsai</i>): aoristo ativo infinitivo, sobrecarregar, pesar sobre alguém. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — [[νυκτὸς καὶ ἡμέρας]] no SBLGNT e WH, Treg, NA28, em contraste com a ordem inversa [[νύκτα καὶ ἡμέραν]] no Textus Receptus (RP).</p><p><b>Síntese Exegética</b> — Paulo contrasta a recusa em viver à custa alheia com o esforço físico intenso que empregou para garantir o próprio sustento, ilustrando concretamente a independência financeira como ética pastoral e garantia de idoneidade.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Não porque não tivéssemos o direito de fazê-lo, mas para oferecer a nós mesmos como modelo a ser imitado por vocês.",
+        "commentary": "<p><b>Análise Léxica</b> — <b>ἐξουσίαν</b> (<i>exousian</i>): substantivo feminino, direito, autoridade legítima; <b>τύπον</b> (<i>typon</i>): substantivo masculino, modelo, padrão, exemplo a ser seguido. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — Sem variante significativa entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — Embora os apóstolos tivessem pleno direito legítimo ao sustento material por parte da comunidade, abriram mão desse privilégio de forma deliberada para se constituírem em norma comportamental viva para os crentes.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "De fato, quando estávamos com vocês, ordenamos isto: se alguém não quer trabalhar, também não coma.",
+        "commentary": "<p><b>Análise Léxica</b> — <b>παρηγγέλλομεν</b> (<i>parēngellomen</i>): imperfeito ativo, ordenar, dar instruções formais de autoridade; <b>ἐργάζεσθαι</b> (<i>ergazesthai</i>): infinitivo presente, trabalhar, ocupar-se; <b>ἐσθιέτω</b> (<i>esthietow</i>): imperativo presente, coma. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — Sem variante significativa entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — A instrução anterior é reiterada como princípio absoluto e severo da ordem comunitária: a recusa deliberada ao trabalho manual priva o indivíduo do direito ao sustento partilhado pela comunidade.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Pois ouvimos que alguns entre vocês vivem de maneira desordenada, não fazendo nada, mas intrometendo-se no que não devem.",
+        "commentary": "<p><b>Análise Léxica</b> — <b>ἀτάκτως</b> (<i>ataktōs</i>): advérbio, de maneira desordenada, indisciplinada; <b>περιεργαζομένους</b> (<i>periergazomenous</i>): particípio presente, agitar-se inutilmente, intrometer-se na vida alheia, ser bisbilhoteiro. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — Sem variante significativa entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — Paulo relata o desvio prático de membros da comunidade que abandonaram o trabalho produtivo e passaram a ocupar-se de atividades inúteis e intrusivas, rompendo com a disciplina ensinada.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "A tais pessoas, porém, ordenamos e exortamos no Senhor Jesus Cristo que, trabalhando com tranquilidade, comam o seu próprio pão.",
+        "commentary": "<p><b>Análise Léxica</b> — <b>παραγγέλλομεν</b> (<i>parangellomen</i>): presente ativo, ordenamos; <b>παρακαλοῦμεν</b> (<i>parakaloumen</i>): presente ativo, exortamos, apelamos; <b>ἡσυχίας</b> (<i>hēsychias</i>): substantivo feminino, tranquilidade, sossego, silêncio produtivo; <b>ἐσθίωσιν</b> (<i>esthiōsin</i>): presente subjuntivo, comam. Definição não verificada em léxico além do contexto.</p><p><b>Crítica Textual</b> — [[ἐν κυρίῳ Ἰησοῦ Χριστῷ]] (no SBLGNT, WH, Treg, NA28) contrasta com a fórmula mais extensa [[διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ]] (no Textus Receptus, RP).</p><p><b>Síntese Exegética</b> — A exortação final apela à autoridade de Cristo para que os ociosos abandonem a agitação inútil, reassumindo o trabalho pacífico e honesto necessário para o próprio sustento.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Quanto a vocês, irmãos, não desanimem de fazer o bem.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>ἐγκακήσητε</b> (egkakēsēte) — de egkakéō, «desanimar», «falhar na coragem»; <b>καλοποιοῦντες</b> (kalopoiountes) — particípio presente, «fazendo o bem», «praticando o que é nobre». A definição exata é sustentada no contexto de perseverança nas obras boas apesar das tribulações e da ociosidade alheia.</p><p><b>Crítica Textual</b>: Há divergência entre as edições: <i>ἐγκακήσητε</i> (WH, Treg, NA28) contra <i>ἐκκακήσητε</i> (RP). A forma adotada segue os melhores testemunhos alexandrinos, mantendo o sentido de esmorecer ou perder o ânimo na prática do bem.</p><p><b>Síntese Exegética</b>: O apóstolo dirige-se diretamente à comunidade usando «vocês», mantendo a coerência de tratamento no capítulo. O imperativo negativo com o particípio exorta os crentes a persistirem na conduta reta, sem ceder ao cansaço causado pelas desordens na igreja.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Se alguém não obedece à nossa palavra por esta carta, notem essa pessoa e não se misturem com ela, para que se envergonhe.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>ὑπακούει</b> (hypakouei) — «obedece», «ouve com submissão»; <b>σημειοῦσθε</b> (sēmeiousthe) — «notem», «marquem para observação»; <b>συναναμίγνυσθαι</b> (synanamignysthai) — «misturar-se», «associar-se intimamente»; <b>ἐντραπῇ</b> (entrapē) — «se envergonhe», «seja tomado de vergonha».</p><p><b>Crítica Textual</b>: O SBLGNT traz <i>μὴ συναναμίγνυσθαι</i> (infinitivo com valor imperativo), enquanto o Textus Receptus (RP) regista <i>καὶ μὴ συναναμιγνύσθε</i> (imperativo finito plural). Adota-se o texto crítico por forte apoio manuscrito.</p><p><b>Síntese Exegética</b>: A disciplina eclesiástica requer discernimento e distanciamento seletivo face à desobediência persistente à instrução apostólica, visando não a exclusão definitiva, mas a correção através da vergonha construtiva.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Contudo, não o considerem como inimigo, mas admoestem-no como irmão.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>ἐχθρὸν</b> (echthron) — «inimigo», «adversário hostil»; <b>νουθετεῖτε</b> (noutheteite) — «admoestem», «aconselhem com correção», «repreendam com instrução».</p><p><b>Crítica Textual</b>: Sem variante significativa nas edições principais comparadas.</p><p><b>Síntese Exegética</b>: O limite da disciplina é o próprio vínculo fraterno. A recusa de associação íntima (versículo 14) não rompe a filiação comum em Cristo, exigindo uma postura de correção educativa e não de inimizade pessoal.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "O próprio Senhor da paz lhes dê a paz em todo o tempo e de todas as maneiras. O Senhor esteja com todos vocês.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>κύριος τῆς εἰρήνης</b> (kyrios tēs eirēnēs) — «Senhor da paz», a fonte soberana da tranquilidade e integridade espiritual; <b>δῴη</b> (dōē) — «dê», optativo com sentido de desejo ou súplica; <b>διὰ παντός</b> (dia pantos) — «em todo o tempo», «continuamente».</p><p><b>Crítica Textual</b>: Sem variante de relevo no aparato entre SBLGNT e RP, exceto pequenas nuances ortográficas de pontuação e cópia.</p><p><b>Síntese Exegética</b>: A bênção final invoca a presença e a ação do Senhor para conceder paz integral à comunidade, fechando as exortações éticas com a garantia da comunhão divina contínua.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Esta saudação é do meu próprio punho, de Paulo, o qual é o sinal em cada carta; é assim que escrevo.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>ἀσπασμός</b> (aspasmos) — «saudação»; <b>χειρί</b> (cheiri) — literalmente «mão», usado aqui no sentido de punho ou letra própria; <b>σημεῖον</b> (sēmeion) — «sinal», «marca de autenticidade».</p><p><b>Crítica Textual</b>: Sem variante verificada nas fontes textuais principais.</p><p><b>Síntese Exegética</b>: Paulo autentica pessoalmente a carta com a sua própria letra no final, prevenindo a circulação de epístolas falsas em seu nome, um cuidado pastoral evidente nas cartas paulinas.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "A graça do nosso Senhor Jesus Cristo esteja com todos vocês.",
+        "commentary": "<p><b>Análise Léxica</b>: <b>χάρις</b> (charis) — «graça», o favor imerecido e a força operativa divina; <b>κυρίου ἡμῶν Ἰησοῦ Χριστοῦ</b> (kyriou hēmon Iēsou Christou) — fórmula consolidada para designar o Senhor Jesus Cristo.</p><p><b>Crítica Textual</b>: O SBLGNT encerra com <i>ὑμῶν</i>, enquanto o Textus Receptus acrescenta <i>Ἀμήν</i> no final. A opção seguida omite o amén por corresponder aos testemunhos textuais mais antigos do SBLGNT.</p><p><b>Síntese Exegética</b>: A fórmula de encerramento sela a carta com a invocação da graça salvífica e sustentadora sobre toda a comunidade reunida, mantendo o tom solene e conciso característico das conclusões apostólicas.</p>"
+      }
+    ]
+  },
   "in_progress": {},
-  "history": []
+  "history": [
+    {
+      "chapter": 1,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:10:16+00:00"
+    },
+    {
+      "chapter": 1,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:10:33+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 1,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:10:41+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 2,
+      "verse_to": 7,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-19T13:11:02+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 8,
+      "verse_to": 13,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:14+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 14,
+      "verse_to": 17,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:25+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:34+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 7,
+      "verse_to": 12,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:45+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 13,
+      "verse_to": 18,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:51+00:00"
+    },
+    {
+      "chapter": 1,
+      "verse_from": 3,
+      "verse_to": 12,
+      "provider": "revisao:groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-19T13:11:55+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 8,
+      "provider": "revisao:gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-19T13:11:58+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 9,
+      "verse_to": 17,
+      "provider": "revisao:groq",
+      "model": "openai/gpt-oss-120b",
+      "generated_at_utc": "2026-11-19T13:12:01+00:00"
+    }
+  ],
+  "sources": {
+    "versification": "KJV/tradicional",
+    "alignment_version": 1,
+    "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678"
+  }
 }

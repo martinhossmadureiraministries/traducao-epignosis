@@ -16,3 +16,14 @@
 - 2026-11-19T11:26:42+00:00 — Nada pendente nesta fila de 1 livro(s). Se quiser continuar, acrescente mais livros à fila.
 - 2026-11-19T11:26:42+00:00 — Módulos recompilados no fim do ciclo: 10/1189 capítulos, 170 versículos.
 - 2026-11-19T11:26:42+00:00 — Capítulos exportados para leitura: 10 (0 mudaram nesta execução).
+- 2026-11-19T13:10:21+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.0s (1/2).
+- 2026-11-19T13:10:54+00:00 — Deriva de estilo em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T13:11:02+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T13:11:03+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-19T13:11:14+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T13:11:55+00:00 — Revisão de 2 Tessalonicenses 1 por groq/openai/gpt-oss-120b: 9 emenda(s) aplicada(s).
+- 2026-11-19T13:11:58+00:00 — Revisão de 2 Tessalonicenses 2 por gemini/gemini-3.5-flash-lite: 6 emenda(s) aplicada(s).
+- 2026-11-19T13:12:01+00:00 — Revisão de 2 Tessalonicenses 3 por groq/openai/gpt-oss-120b: 3 emenda(s) aplicada(s).
+- 2026-11-19T13:12:01+00:00 — Revisão de voz: 3 capítulo(s) revistos, 18 emenda(s) aplicada(s).
+- 2026-11-19T13:12:01+00:00 — Módulos recompilados (PARCIAL): 10/1189 capítulos, 170 versículos.
+- 2026-11-19T13:12:01+00:00 — Ciclo 4: +47 versículos, +3 capítulos em 2 Tessalonicenses (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 119 versículos, 33 pedidos.

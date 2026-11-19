@@ -1,25 +1,26 @@
 {
-  "ciclos": 3,
+  "ciclos": 4,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
       "aberto": true,
-      "capitulos": 4,
+      "capitulos": 7,
+      "emendas_revisao": 18,
       "falhas": 0,
       "fechado_em_utc": null,
-      "pedidos": 21,
-      "pedidos_ok": 16,
+      "pedidos": 33,
+      "pedidos_ok": 25,
       "por_provedor": {
         "gemini": {
-          "pedidos": 17,
-          "versos": 25
+          "pedidos": 27,
+          "versos": 72
         },
         "groq": {
-          "pedidos": 4,
+          "pedidos": 6,
           "versos": 47
         }
       },
-      "versos": 72
+      "versos": 119
     }
   },
   "exaustos": [],
@@ -29,9 +30,9 @@
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
-  "ultima_compilacao_build": "3ff29ea9977d489fadc2453a635d7246",
-  "ultima_compilacao_utc": "2026-11-19T10:18:01+00:00",
-  "ultimo_ciclo_utc": "2026-11-19T11:26:42+00:00",
+  "ultima_compilacao_build": "dea6b829dfb2423985cd017098762be2",
+  "ultima_compilacao_utc": "2026-11-19T13:12:01+00:00",
+  "ultimo_ciclo_utc": "2026-11-19T13:10:03+00:00",
   "ultimo_erro": null,
-  "versos_total": 72
+  "versos_total": 119
 }
