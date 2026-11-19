@@ -27,3 +27,4 @@
 - 2026-11-19T13:12:01+00:00 — Revisão de voz: 3 capítulo(s) revistos, 18 emenda(s) aplicada(s).
 - 2026-11-19T13:12:01+00:00 — Módulos recompilados (PARCIAL): 10/1189 capítulos, 170 versículos.
 - 2026-11-19T13:12:01+00:00 — Ciclo 4: +47 versículos, +3 capítulos em 2 Tessalonicenses (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 119 versículos, 33 pedidos.
+- 2026-11-19T13:12:02+00:00 — Capítulos exportados para leitura: 10 (3 mudaram nesta execução).
