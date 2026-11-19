@@ -84,12 +84,13 @@ env:
   # quota real (Groq ~66/dia pelos 200.000 tokens/dia; Gemini ~480/dia).
   BEE_PEDIDOS_POR_DIA: '500'
   BEE_PROVEDOR_PRINCIPAL: 'gemini'
-  # Fila alargada com os serviços gratuitos acrescentados: Gemini abre (maior
-  # quota), Cerebras/OpenRouter/NVIDIA/Cohere reforçam débito e servem de queda
-  # quando o Gemini devolve 503; Groq fecha como reserva. Um provedor sem chave
-  # configurada é simplesmente saltado — não precisa de ativar todos.
+  # CALIBRAÇÃO DA VOZ: poucos provedores = voz mais constante. Vários modelos
+  # têm "sotaques" diferentes e foi isso que espalhou o «vós» em 2 Tessalonicenses.
+  # Durante a calibração usa-se só Gemini (+ Groq de reserva); quando a voz
+  # agradar, alargar para 'gemini,cerebras,openrouter,nvidia,cohere,groq'. As
+  # chaves continuam injetadas nos passos; basta editar esta lista para as usar.
   # (Cloudflare Workers AI ainda não suportado: exige CF_ACCOUNT_ID.)
-  BEE_PROVEDORES: 'gemini,cerebras,openrouter,nvidia,cohere,groq'
+  BEE_PROVEDORES: 'gemini,groq'
   OVH_API_KEY_ATIVO: '0'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
@@ -181,6 +182,28 @@ jobs:
           fi
           tail -n 25 "$BEE_DADOS/.bee/diario.md" 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || echo "- (ainda sem diário)" >> "$GITHUB_STEP_SUMMARY"
 
+      # Guarda anti-deriva: sinaliza arcaísmos («vós»), hesitação no verso e
+      # marcadores tipo Almeida nos capítulos gerados. Não bloqueia a publicação
+      # (continue-on-error), mas deixa o relatório visível no resumo da execução.
+      # Para travar mesmo a execução em caso de falha dura, tire o continue-on-error.
+      - name: Verificar o estilo (guarda anti-deriva)
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          python3 scripts/verificar_estilo.py --dados "$BEE_DADOS" | tee /tmp/estilo.txt
+          codigo=$?
+          {
+            echo "### Guarda de estilo (edição nova)"
+            echo '```'
+            cat /tmp/estilo.txt
+            echo '```'
+            if [ "$codigo" -ne 0 ]; then
+              echo "> ⚠️ Há versículos com falhas duras (arcaísmos/hesitação). Reveja antes de publicar."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 0
+
       - name: Verificar os pacotes
         if: always()
         run: |
@@ -249,10 +272,6 @@ jobs:
                  --notes "Capítulos em HTML e pacotes ZIP da edição nova (voz ESTILO_BEE). Conteúdo gerado por IA e NÃO revisto. Não misturar com a prévia da linha legada (release bee-previa)."
           if [ ${#capitulos[@]} -gt 0 ]; then
             gh release upload "bee-previa-nova" "${capitulos[@]}" --clobber --repo "$GITHUB_REPOSITORY"
-          fi
-          if [ ${#pacotes[@]} -gt 0 ]; then
-            gh release upload "bee-previa-nova" "${pacotes[@]}" --clobber --repo "$GITHUB_REPOSITORY"
-          fi   gh release upload "bee-previa-nova" "${capitulos[@]}" --clobber --repo "$GITHUB_REPOSITORY"
           fi
           if [ ${#pacotes[@]} -gt 0 ]; then
             gh release upload "bee-previa-nova" "${pacotes[@]}" --clobber --repo "$GITHUB_REPOSITORY"
