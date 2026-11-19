@@ -231,3 +231,13 @@
 - 2026-11-19T02:49:37+00:00 — Módulos recompilados (PARCIAL): 49/1189 capítulos, 1927 versículos.
 - 2026-11-19T02:49:37+00:00 — Ciclo 26: +80 versículos, +2 capítulos em Mateus 12 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 80 versículos, 20 pedidos. A seguir: Mateus 12.
 - 2026-11-19T02:49:38+00:00 — Capítulos exportados para leitura: 50 (3 mudaram nesta execução).
+- 2026-11-19T03:40:59+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T03:41:06+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T03:41:13+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T03:41:19+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T03:41:43+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T03:41:49+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T03:41:50+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-19T03:41:57+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T03:42:18+00:00 — Módulos recompilados (PARCIAL): 50/1189 capítulos, 1977 versículos.
+- 2026-11-19T03:42:18+00:00 — Ciclo 27: +80 versículos, +1 capítulos em Mateus 13 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 160 versículos, 38 pedidos. A seguir: Mateus 13.
