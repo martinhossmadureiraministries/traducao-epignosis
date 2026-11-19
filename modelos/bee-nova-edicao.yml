@@ -212,6 +212,24 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           exit "$codigo"
 
+      # Métricas de qualidade por provedor (P3): quem deriva mais da voz, quem é
+      # mais revisto, ordem de confiança. Informativo; também atualiza o cache
+      # `.bee/metricas.json` que `BEE_PRIORIDADES=metricas` usa para ordenar os
+      # revisores (menos deriva revista primeiro).
+      - name: Métricas por provedor (P3)
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          python3 scripts/metricas_provedores.py --dados "$BEE_DADOS" | tee /tmp/metricas.txt
+          {
+            echo "### Métricas por provedor"
+            echo '```'
+            cat /tmp/metricas.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 0
+
       - name: Verificar os pacotes
         if: always()
         run: |

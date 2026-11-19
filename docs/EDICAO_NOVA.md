@@ -229,6 +229,44 @@ Auditoria: entradas `revisao:<provedor>` na `history` do livro e caderno própri
 Desliga-se numa corrida com `BEE_REVISAO=desligado` (o modelo do fluxo traz
 `sempre`). O legado não usa nada disto.
 
+## Métricas por provedor e prioridades (P3 da convergência)
+
+[`bee/metricas.py`](../bee/metricas.py) recolhe, do que está gravado, o
+desempenho de cada provedor: versículos gerados (`history`), chumbos da porta
+(quarentena `chumbado-estilo`, contados pelas marcas e atribuídos a TODOS os que
+tentaram o lote), emendas recebidas do revisor (caderno `revisoes.json`) e
+capítulos revistos. O número comparável é **chumbos/100 versos**.
+
+```bash
+python3 scripts/metricas_provedores.py                # tabela + ordem de confiança
+python3 scripts/metricas_provedores.py --json m.json  # exportar tudo
+```
+
+O passo «Métricas por provedor» do workflow põe a tabela no resumo da execução e
+atualiza o cache `.bee/metricas.json` (pasta ignorada pelo Git). Com
+`BEE_PRIORIDADES=metricas`, o agendador ordena os revisores pela taxa de chumbo
+(menos deriva revista primeiro; sem medição vale a ordem dos papéis). A métrica
+nunca bloqueia produção — é sinal para decidir, como afinar filas ou chaves.
+
+## Crescer a memória com aprovações (P3)
+
+A memória é viva: aprovações humanas entram nela mecanicamente, sempre validadas
+contra o schema (uma alteração inválida é recusada antes de tocar no ficheiro):
+
+```bash
+# registar uma aprovação (entra em aprovacoes)
+python3 scripts/aprovar_voz.py capitulos 600 1 2 3 --nota "registo equilibrado"
+# fixar/acrescentar decisão lexical (dedup pela forma grega ou termo)
+python3 scripts/aprovar_voz.py glossario --grego μακροθυμία --transliteracao makrothymía \
+    --usar "«paciência»" --sentido "esperança ativa."
+# promover um versículo aprovado a âncora de voz do género
+python3 scripts/aprovar_voz.py amostra --referencia "2 Tessalonicenses 1:3" \
+    --texto "Devemos dar sempre graças a Deus por vocês…" --porque "ação de graças coesa"
+```
+
+(`--dry-run` mostra sem escrever.) É assim que glossário e âncoras crescem com os
+pilotos novos, mantendo a fonte única válida.
+
 ## Memória de estilo (fonte única da voz)
 
 Vários provedores só convergem na mesma voz se receberem **exatamente as mesmas
@@ -278,5 +316,7 @@ montagem do perfil `nova` a partir da memória e a coerência lista negra ↔ gu
 quarentena com proveniência, exclusões). `tests/test_revisor_voz.py` cobre a
 revisão por segunda IA (autor excluído, emendas validadas pela porta, falhas
 preservam o original, lotes de 40 versículos).
+`tests/test_metricas_p3.py` cobre as métricas por provedor (recolha, confiança,
+cache), prioridades com pontuações e a CLI de aprovações sobre uma cópia da memória.
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

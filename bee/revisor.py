@@ -164,6 +164,7 @@ def rever_capitulos_fechados(
     motores: list[Any],
     diario: Diario | None = None,
     memoria: dict[str, Any] | None = None,
+    pontuacoes: dict[str, float] | None = None,
 ) -> dict[str, Any]:
     """Revê cada (livro, capítulo) fechado com uma segunda IA. Nunca perde texto.
 
@@ -201,7 +202,8 @@ def rever_capitulos_fechados(
             autores = _autores_do_capitulo(historia, capitulo)
             autor_unico = next(iter(autores)) if len(autores) == 1 else None
             ativos = [m.provedor for m in motores if getattr(m, 'provedor', None)]
-            ordem = papeis.revisores_disponiveis(ativos, autor_unico)
+            # Com métricas P3 (BEE_PRIORIDADES=metricas), menos deriva vai à frente.
+            ordem = papeis.revisores_disponiveis(ativos, autor_unico, pontuacoes=pontuacoes)
             candidatos: list[Any] = []
             vistos: set[str] = set()
             for nome in ordem:
