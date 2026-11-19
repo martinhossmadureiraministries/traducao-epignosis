@@ -1,29 +1,31 @@
 {
-  "ciclos": 4,
+  "ciclos": 6,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
       "aberto": true,
       "capitulos": 7,
       "emendas_revisao": 18,
-      "falhas": 0,
+      "falhas": 2,
       "fechado_em_utc": null,
-      "pedidos": 33,
-      "pedidos_ok": 25,
+      "pedidos": 45,
+      "pedidos_ok": 27,
       "por_provedor": {
         "gemini": {
-          "pedidos": 27,
+          "pedidos": 34,
           "versos": 72
         },
         "groq": {
-          "pedidos": 6,
-          "versos": 47
+          "pedidos": 11,
+          "versos": 59
         }
       },
       "versos": 119
     }
   },
-  "exaustos": [],
+  "exaustos": [
+    "groq"
+  ],
   "exaustos_em": "2026-11-19",
   "falhas_seguidas": 0,
   "lote_capitulo": null,
@@ -32,7 +34,7 @@
   "lote_versiculo": null,
   "ultima_compilacao_build": "dea6b829dfb2423985cd017098762be2",
   "ultima_compilacao_utc": "2026-11-19T13:12:01+00:00",
-  "ultimo_ciclo_utc": "2026-11-19T13:10:03+00:00",
-  "ultimo_erro": null,
+  "ultimo_ciclo_utc": "2026-11-19T17:38:47+00:00",
+  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Groq · openai/gpt-oss-120b: quota esgotada; Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
   "versos_total": 119
 }
