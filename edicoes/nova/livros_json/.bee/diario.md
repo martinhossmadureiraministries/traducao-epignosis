@@ -1,0 +1,8 @@
+- 2026-11-19T08:36:46+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 2.0s (1/2).
+- 2026-11-19T08:36:48+00:00 — **AVISO** gemini: HTTP 503; esgotadas 2 tentativas.
+- 2026-11-19T08:36:48+00:00 — Falha de rede em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor.
+- 2026-11-19T08:36:54+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T08:37:00+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-19T08:37:09+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T08:37:26+00:00 — Módulos recompilados (PARCIAL): 1/1189 capítulos, 25 versículos.
+- 2026-11-19T08:37:26+00:00 — Ciclo 1: +25 versículos, +1 capítulos em João (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 25 versículos, 8 pedidos. A seguir: João 1.
