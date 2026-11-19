@@ -75,7 +75,7 @@ class FicheiroTest(unittest.TestCase):
             with open('/dev/null', 'w') as nada:
                 antigo, sys.stdout = sys.stdout, nada
                 try:
-                    codigo = va.main(['--json', str(ficheiro)])
+                    codigo = va.main(['--json', str(ficheiro)], agora=AGORA)
                 finally:
                     sys.stdout = antigo
         self.assertEqual(codigo, 0)
@@ -88,7 +88,7 @@ class FicheiroTest(unittest.TestCase):
             with open('/dev/null', 'w') as nada:
                 antigo, sys.stdout = sys.stdout, nada
                 try:
-                    codigo = va.main(['--json', str(ficheiro)])
+                    codigo = va.main(['--json', str(ficheiro)], agora=AGORA)
                 finally:
                     sys.stdout = antigo
         self.assertEqual(codigo, 1)

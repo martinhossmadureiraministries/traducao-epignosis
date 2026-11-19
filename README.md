@@ -23,6 +23,7 @@ MyBible `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 | [docs/ARQUITETURA.md](docs/ARQUITETURA.md) | Módulos, fluxo, formato dos JSON e compilação. |
 | [docs/EDITORIAL.md](docs/EDITORIAL.md) | Directrizes editoriais, variantes e revisão. |
 | [AUTOMACAO.md](docs/AUTOMACAO.md) | Quotas gratuitas, provedores, ritmo e resolução de problemas. |
+| [EDICAO_NOVA.md](docs/EDICAO_NOVA.md) | Produzir na voz do ESTILO_BEE (`BEE_EDICAO=nova`) com dados isolados, sem ativar a automação. |
 | [PLANO_ORGANIZACAO.md](docs/PLANO_ORGANIZACAO.md) | Plano da reorganização, etapa por etapa. |
 | [docs/arquivo/](docs/arquivo/) | Guias e pacotes antigos, só para consulta. |
 
@@ -49,25 +50,21 @@ O comando de produção é **`autopiloto.py`**. Para correr sozinho com o
 computador desligado, o mesmo trabalho corre em `nuvem.py` numa GitHub Action
 (ver [docs/OPERACAO.md](docs/OPERACAO.md)).
 
-## Estado actual (17/11/2026)
+## Estado actual (verificado em 19/11/2026)
 
-- **19 capítulos estruturalmente completos:** João 1–18 e Filemom 1.
-- **818 versículos guardados:** 806 nos capítulos completos + João 19:1–12 em
-  `in_progress`.
-- A fila retoma em **João 19:13**.
-- O workflow ativo já está corrigido e igual a `docs/bee-autopiloto.yml`; a
-  execução manual **16** (`44120273655`) terminou verde e criou
-  `BEE-modulos-16` e `BEE-capitulos-16`.
-- A execução 16 não somou versículos porque o Gemini devolveu **HTTP 503** e a
-  quota da Groq estava esgotada: é disponibilidade dos serviços, não falta de
-  agendamento.
-- **O cron ainda não dispara:** às 21:23 UTC de 17/11 havia 1 execução (manual)
-  e **0 agendadas** em 5 h 30. O cron foi reduzido a horário (`23 * * * *`) e
-  há um segundo relógio; os dois ficheiros têm de ser colados na UI. Passo a
-  passo, com diagnóstico e alternativa externa:
-  [docs/AGENDADOR.md](docs/AGENDADOR.md). Verificação rápida:
-  `python3 scripts/verificar_agendador.py`.
-- Tudo é provisório e precisa de revisão especializada.
+- **Linha legada:** 50 capítulos estruturalmente completos; ao todo há
+  2033 versículos guardados (1.977 nos capítulos completos + 56 em
+  `in_progress`). Números conferidos por `python3 scripts/verificar_dados.py`.
+- **Linha nova (voz do ESTILO_BEE):** isolada em `edicoes/nova/`, com workflow
+  próprio em [`.github/workflows/bee-nova-edicao.yml`](.github/workflows/bee-nova-edicao.yml)
+  e prévia no release `bee-previa-nova` — ver [docs/EDICAO_NOVA.md](docs/EDICAO_NOVA.md).
+- O progresso só conta capítulos completos; versículos de capítulos em curso
+  ficam separados em `autopiloto.py --status`.
+- Para confirmar se o agendador dispara sozinho:
+  `python3 scripts/verificar_agendador.py` (passo a passo em
+  [docs/AGENDADOR.md](docs/AGENDADOR.md)).
+- Tudo é provisório (RASCUNHO gerado por IA) e precisa de revisão humana
+  especializada antes de qualquer publicação.
 
 Números de referência: **1.189 capítulos**, **31.102 versículos**. O progresso
 só conta capítulos completos; versículos de capítulos em curso aparecem

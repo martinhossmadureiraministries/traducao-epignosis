@@ -216,7 +216,16 @@ def _contexto_estilo(
     dados: dict[str, Any], capitulo: int, parcial: list[dict[str, Any]],
 ) -> dict[str, str]:
     """Memória curta: últimos versículos já escritos, para coerência de vocabulário."""
-    estilo: dict[str, str] = {'glossario': GLOSSARIO_PADRAO}
+    # O glossário vem do perfil de edição ativo. Sem BEE_EDICAO definido, o
+    # perfil é o legado e devolve exatamente GLOSSARIO_PADRAO (sem mudança).
+    # Importado aqui dentro para não fechar o ciclo gerador -> perfil -> gerador.
+    from .perfil import resolver_perfil
+    perfil = resolver_perfil()
+    estilo: dict[str, str] = {'glossario': perfil.glossario}
+    # Âncoras few-shot só existem no perfil novo; no legado a chave fica de fora
+    # e o pedido enviado é exatamente o antigo.
+    if perfil.amostras:
+        estilo['amostras'] = perfil.amostras
     anteriores = parcial[-3:] if parcial else []
     if not anteriores:
         for anterior in range(capitulo - 1, 0, -1):

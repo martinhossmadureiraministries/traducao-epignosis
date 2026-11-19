@@ -150,7 +150,9 @@ def _commit_dados(ramo: str, mensagem: str, pastas: list[str]) -> str:
     for pasta in pastas:
         _git('add', '-A', '-f', pasta, env=env)
     # A trava é um descritor do sistema operativo, não um dado do projeto.
-    _git('update-index', '--force-remove', 'livros_json/.bee.lock', env=env, verificar=False)
+    # Generalizado sobre as pastas publicadas para servir qualquer edição.
+    for pasta in pastas:
+        _git('update-index', '--force-remove', f'{pasta}/.bee.lock', env=env, verificar=False)
     arvore = _git('write-tree', env=env).stdout.strip()
     if pai:
         arvore_anterior = _git('rev-parse', f'{pai.splitlines()[0]}^{{tree}}').stdout.strip()
@@ -325,13 +327,18 @@ def _modulos_desatualizados(dados: Path, saida: Path) -> bool:
     return modulos < mais_recente
 
 
-def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool) -> tuple[str, int]:
+def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool,
+                   pasta_ramo: str = 'livros_json') -> tuple[str, int]:
     """Recupera do ramo de dados os versículos que faltam localmente.
 
     Foi o que aconteceu em 17/11: a execução arrancou sem o ramo de dados (o
     commit do workflow em `main` não o trouxe), o agendador achou João 5 em
     curso a partir do versículo 1 e 46 versículos já pagos em quota ficaram
     fora do ficheiro. Devolve (mensagem, versículos acrescentados).
+
+    `pasta_ramo` é o caminho dos dados DENTRO do ramo (onde `_commit_dados`
+    publica). É distinto de `dados` (a pasta de trabalho local), cujo nome não
+    tem de coincidir. Produção passa o caminho configurado em `BEE_DADOS`.
     """
     referencia = f'refs/remotes/origin/{ramo}'
     anterior = _git('rev-parse', '--verify', referencia, verificar=False)
@@ -351,9 +358,9 @@ def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool) -> tuple[str,
     shutil.rmtree(alvo, ignore_errors=True)
     alvo.mkdir(parents=True)
     encontrados = 0
-    listagem = _git('ls-tree', '-r', '--name-only', revisao, 'livros_json', verificar=False)
+    listagem = _git('ls-tree', '-r', '--name-only', revisao, pasta_ramo, verificar=False)
     for nome in listagem.stdout.splitlines():
-        # Só ficheiros de livros: `livros_json/.bee/estado.json` e o diário
+        # Só ficheiros de livros: `<pasta_ramo>/.bee/estado.json` e o diário
         # viajam no ramo mas não são livros.
         if not nome.endswith('.json') or '/.' in nome:
             continue
@@ -381,7 +388,7 @@ def _reparar_dados(dados: Path, ramo: str, diario, publicar: bool) -> tuple[str,
             _commit_dados(
                 ramo,
                 f'BEE: reparação de {acrescentados} versículos recuperados do ramo',
-                ['livros_json'],
+                [pasta_ramo],
             )
         except (ValueError, subprocess.CalledProcessError):
             pass
@@ -741,6 +748,7 @@ def main() -> int:
     try:
         reparacao, reparados = _reparar_dados(
             dados, ramo, diario, publicar=_env('BEE_PUBLICAR', '1') != '0',
+            pasta_ramo=dados.as_posix(),
         )
     except Exception as exc:  # nunca impedir a produção por causa da reparação
         reparacao = f'não foi possível reparar ({type(exc).__name__})'
@@ -788,7 +796,7 @@ def main() -> int:
                         ramo,
                         f'BEE: checkpoint de {resultado.progresso.versos} versículos '
                         f'({cap_checkpoint}/1189 capítulos completos)',
-                        ['livros_json'],
+                        [dados.as_posix()],
                     )
                     print(f'Checkpoint publicado: {publicado_cedo}', flush=True)
                 except Exception as exc:  # a publicação final ainda tenta
@@ -868,7 +876,7 @@ def main() -> int:
             publicado = _commit_dados(
                 ramo,
                 f'BEE: +{produzidos} versículos ({depois_cap}/1189 capítulos completos)',
-                ['livros_json'],
+                [dados.as_posix()],
             )
         except subprocess.CalledProcessError as exc:
             publicado = f'falha ao publicar ({exc})'
