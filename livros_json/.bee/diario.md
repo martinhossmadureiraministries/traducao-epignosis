@@ -241,3 +241,4 @@
 - 2026-11-19T03:41:57+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
 - 2026-11-19T03:42:18+00:00 — Módulos recompilados (PARCIAL): 50/1189 capítulos, 1977 versículos.
 - 2026-11-19T03:42:18+00:00 — Ciclo 27: +80 versículos, +1 capítulos em Mateus 13 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 160 versículos, 38 pedidos. A seguir: Mateus 13.
+- 2026-11-19T03:42:20+00:00 — Capítulos exportados para leitura: 51 (2 mudaram nesta execução).
