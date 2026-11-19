@@ -157,6 +157,23 @@ execução (sem bloquear a publicação; tire `continue-on-error` para travar em
 dura). Os pilotos aprovados passam limpos — se um texto aprovado der aviso, o
 marcador está agressivo demais e deve ser afinado.
 
+**Ciclo de calibração (correr → guarda → repetir).** O motor não refaz capítulos
+completos; por isso um livro chumbado pelo guarda tem de ser reposto na fila com
+[`scripts/limpar_livro.py`](../scripts/limpar_livro.py) antes de voltar a correr:
+
+```bash
+python3 scripts/limpar_livro.py 600 --dry-run    # vê o que limpa
+python3 scripts/limpar_livro.py 600              # repõe 2 Tessalonicenses na fila
+# depois: Run workflow com livros=600; repetir até o guarda dar limpo
+```
+
+Foi assim que 2 Tessalonicenses (escrito pelo Groq num momento em que o Gemini
+devolveu conteúdo inválido, daí o «vós» tipo Almeida) foi limpo para regenerar com
+a voz endurecida. Manter o Groq como reserva dá disponibilidade quando o Gemini
+falha (503/conteúdo inválido); a qualidade garante-se repetindo o que o guarda
+chumbar. Se preferir uma só voz durante a calibração, use `BEE_PROVEDORES='gemini'`
+aceitando progresso mais lento quando o Gemini estiver instável.
+
 ## Testes
 
 `tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz,
