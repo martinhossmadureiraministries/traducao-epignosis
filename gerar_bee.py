@@ -136,11 +136,14 @@ def main(argv: list[str] | None = None) -> int:
                     raise ValueError(f'Defina a variável {nome} (ou API_KEY) para gerar novos capítulos; '
                                      'veja autopiloto.py para a produção automática.')
                 from bee.ia import resolver_modelos
+                from bee.perfil import resolver_perfil
                 modelos = resolver_modelos(
                     args.provedor, [chave], rede, pedido=args.modelo,
                     log=lambda texto: print(f'  {texto}', flush=True),
                 )
-                return MotorIA(args.provedor, modelos, chave, rede, args.max_tokens)
+                # Voz da edição ativa (BEE_EDICAO); padrão legado = sem mudança.
+                return MotorIA(args.provedor, modelos, chave, rede, args.max_tokens,
+                               perfil=resolver_perfil())
 
             gerar_livros(
                 selecionados, args.dados, fontes, obter_motor,

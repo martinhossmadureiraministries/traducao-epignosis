@@ -34,6 +34,7 @@ from bee.catalogo import LIVROS, POR_NUMERO
 from bee.compilador import ErroCompilacao
 from bee.fontes import ErroFonte, FontesOriginais
 from bee.ia import PROVEDORES, VERSOS_POR_PEDIDO_PADRAO, MotorIA, resolver_modelos
+from bee.perfil import VARIAVEL_AMBIENTE as EDICAO_VAR, resolver_perfil
 from bee.rede import ClienteHTTP, ErroRede, ler_chaves
 from bee.trava import EmExecucao, trava
 
@@ -292,6 +293,9 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
     if args.modelo and len(configurados) > 1:
         print('  Aviso: --modelo só se aplica quando há um provedor; aqui o modelo é descoberto '
               'em cada serviço.', flush=True)
+    # A voz da edição vem do perfil ativo (BEE_EDICAO). Padrão = legado, que é
+    # idêntico ao comportamento anterior; a linha nova só entra com BEE_EDICAO=nova.
+    perfil_ativo = resolver_perfil()
     motores = []
     for nome, valor in configurados:
         chaves = ler_chaves(valor)
@@ -303,6 +307,7 @@ def _motores(args: argparse.Namespace, rede: ClienteHTTP) -> list[MotorIA]:
         motores.append(MotorIA(
             nome, modelos, chaves, rede, args.max_tokens,
             aplicar_revisao=not args.sem_revisao_prompt,
+            perfil=perfil_ativo,
         ))
     return motores
 
@@ -369,6 +374,12 @@ def _descrever_motores(motores: list[MotorIA], args: argparse.Namespace) -> None
 
 def _doctor(args: argparse.Namespace, estado: Estado, dados: Path) -> int:
     print(f'{ROTULO} — diagnóstico\n')
+    perfil = resolver_perfil()
+    if perfil.nome == 'legado':
+        print('Edição: legado (voz original; para a nova voz use BEE_EDICAO=nova e uma pasta --dados separada).')
+    else:
+        print(f'Edição: {perfil.nome} — voz de docs/ESTILO_BEE.md. '
+              f'Confirme que --dados aponta para uma pasta isolada desta edição.')
     print('Ficheiros:')
     print(f'  dados: {dados.resolve()}')
     print(f'  módulos: {args.saida.resolve()}')

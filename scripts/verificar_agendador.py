@@ -167,7 +167,9 @@ def ler_da_api(repo: str) -> list[dict]:
     return json.loads(saida.stdout).get('workflow_runs', [])
 
 
-def main(argv: list[str] | None = None) -> int:
+def main(argv: list[str] | None = None, agora: datetime | None = None) -> int:
+    # `agora` só existe para os testes poderem fixar o relógio; em produção é
+    # sempre None e vale o instante atual (comportamento inalterado).
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--repo', default=REPO_PADRAO)
     parser.add_argument('--json', type=Path, help='ficheiro com a resposta da API (para uso offline)')
@@ -182,7 +184,7 @@ def main(argv: list[str] | None = None) -> int:
     else:
         execucoes = ler_da_api(args.repo)
 
-    resumo = analisar(execucoes)
+    resumo = analisar(execucoes, agora)
     imprimir(resumo)
     return 0 if resumo['veredicto'] == 'a-funcionar' else 1
 
