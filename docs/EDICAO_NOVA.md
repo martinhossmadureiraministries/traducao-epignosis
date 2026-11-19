@@ -92,8 +92,49 @@ exigidas (texto, transcrição, morfologia e aparato conferidos separadamente).
   estados — cobertura (rascunho/parcial/completo), revisão editorial e revisão
   especializada — nos artefactos e no diário (`edicoes/nova/livros_json/.bee/diario.md`).
 
+## Semente dos livros já aprovados
+
+Uma execução automática reproduziu Filemom **abaixo** do piloto aprovado («Apfia»,
+«a tua amor», «entranhas», vv. 8–9 achatados). Os pilotos em `edicoes/piloto/`
+foram aprovados pelo responsável, portanto são eles o texto de partida da edição
+nova — não algo a regenerar por cima. O script
+[`scripts/importar_piloto.py`](../scripts/importar_piloto.py) copia-lhes o TEXTO
+aprovado para os JSON de `edicoes/nova/livros_json`:
+
+```bash
+python3 scripts/importar_piloto.py --dry-run     # confere contagens antes
+python3 scripts/importar_piloto.py               # escreve (sobrescreve com cuidado)
+```
+
+- Filemom, Tito, Judas, 2 João e 3 João ficam como capítulos **completos**; a
+  produção automática não os volta a gerar (já estão ao nível aprovado).
+- O comentário é reconstruído com as três secções obrigatórias usando as notas
+  exegéticas do piloto quando existem; onde faltam, fica marcado como rascunho a
+  migrar. Continua RASCUNHO até revisão especializada.
+- Um capítulo só vira completo se o número de versículos igualar o catálogo;
+  senão vai para `in_progress` com aviso (nunca marcamos lacunas como completas).
+
+## Provedores e resiliência (erros 503)
+
+O workflow novo usa uma **fila alargada** de serviços gratuitos:
+`gemini,cerebras,openrouter,nvidia,cohere,groq` (Gemini abre, Groq fecha como
+reserva). As chaves vêm dos secrets `CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`,
+`NVIDIA_API_KEY` e `COHERE_API_KEY`, além das antigas. **Um provedor sem chave é
+simplesmente saltado** — não precisa de ativar todos. NVIDIA NIM e Cohere entram
+pelos seus endpoints compatíveis com OpenAI. A **Cloudflare Workers AI ainda não
+é suportada** (exige `CF_ACCOUNT_ID` e rota `@cf/...` no URL).
+
+Sobre o HTTP 503 do Gemini (sobrecarga temporária, não bloqueio de chave): o motor
+**já** o trata como transitório — nova tentativa com espera curta e *backoff*, e,
+se persistir, passa ao provedor seguinte no próprio ciclo (o 429 salta de
+imediatamente). Lotes pequenos (4–6 versículos/pedido) reduzem respostas cortadas
+e a probabilidade de 503 em capítulos longos. O limite real de velocidade continua
+a ser a **quota diária** de cada serviço, não os minutos de Actions.
+
 ## Testes
 
-`tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz e
-glossário próprios, argumento explícito sobrepõe o ambiente, nome inválido é erro,
-e `_contexto_estilo` acompanha o perfil ativo.
+`tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz,
+glossário e âncoras próprios, argumento explícito sobrepõe o ambiente, nome
+inválido é erro, e `_contexto_estilo` acompanha o perfil ativo.
+`tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
+de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

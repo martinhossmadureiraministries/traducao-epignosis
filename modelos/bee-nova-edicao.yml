@@ -84,7 +84,12 @@ env:
   # quota real (Groq ~66/dia pelos 200.000 tokens/dia; Gemini ~480/dia).
   BEE_PEDIDOS_POR_DIA: '500'
   BEE_PROVEDOR_PRINCIPAL: 'gemini'
-  BEE_PROVEDORES: 'gemini,groq'
+  # Fila alargada com os serviços gratuitos acrescentados: Gemini abre (maior
+  # quota), Cerebras/OpenRouter/NVIDIA/Cohere reforçam débito e servem de queda
+  # quando o Gemini devolve 503; Groq fecha como reserva. Um provedor sem chave
+  # configurada é simplesmente saltado — não precisa de ativar todos.
+  # (Cloudflare Workers AI ainda não suportado: exige CF_ACCOUNT_ID.)
+  BEE_PROVEDORES: 'gemini,cerebras,openrouter,nvidia,cohere,groq'
   OVH_API_KEY_ATIVO: '0'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
@@ -136,6 +141,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
         run: |
           python autopiloto.py --testar --dados "$BEE_DADOS" 2>&1 | tee /tmp/teste.txt || true
           {
@@ -149,6 +158,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
         run: |
           python nuvem.py
 
