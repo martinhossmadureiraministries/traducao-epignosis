@@ -152,10 +152,11 @@ python3 scripts/verificar_estilo.py 600             # só 2 Tessalonicenses
 python3 scripts/verificar_estilo.py --rigoroso      # avisos também chumbam
 ```
 
-O modelo do workflow corre-o no fim da produção e põe o relatório no resumo da
-execução (sem bloquear a publicação; tire `continue-on-error` para travar em falha
-dura). Os pilotos aprovados passam limpos — se um texto aprovado der aviso, o
-marcador está agressivo demais e deve ser afinado.
+O modelo do workflow corre-o no fim da produção como AUDITORIA BLOQUEANTE dos
+dados gravados (desde o P1): o relatório vai para o resumo da execução e a
+corrida falha se uma falha dura chegar ao disco — nenhuma regressão segue
+discretamente para os módulos. Os pilotos aprovados passam limpos — se um texto
+aprovado der aviso, o marcador está agressivo demais e deve ser afinado.
 
 **Ciclo de calibração (correr → guarda → repetir).** O motor não refaz capítulos
 completos; por isso um livro chumbado pelo guarda tem de ser reposto na fila com
@@ -173,6 +174,60 @@ a voz endurecida. Manter o Groq como reserva dá disponibilidade quando o Gemini
 falha (503/conteúdo inválido); a qualidade garante-se repetindo o que o guarda
 chumbar. Se preferir uma só voz durante a calibração, use `BEE_PROVEDORES='gemini'`
 aceitando progresso mais lento quando o Gemini estiver instável.
+
+## Porta obrigatória do motor (P1 da convergência)
+
+Desde o P1, a guarda anti-deriva não é só auditoria final: é uma PORTA dentro do
+próprio motor. O núcleo de análise vive em [`bee/inspetor.py`](../bee/inspetor.py)
+(a CLI e o motor usam a mesma fonte das proibições).
+
+Fluxo por lote gerado (só na edição nova; o legado fica exatamente igual):
+
+1. Um provedor devolve um lote válido → [`bee/porta.py`](../bee/porta.py)
+   inspeciona cada versículo. Falhas duras (arcaísmos/hesitação) levantam
+   `DerivaEstilo`; **o texto mau nunca chega ao disco**.
+2. O rodízio roda automaticamente para OUTRO provedor no mesmo lote — quem dériva
+   não escreve a passagem, outro tenta.
+3. Se nenhum provedor limpar o lote após as rondas, o versículo fica como marcador
+   `[Versículo pendente: deriva de estilo…]` (o livro avança com um buraco
+   explícito) e a entrada vai para `livros_json/.bee/quarentena.json` com
+   proveniência completa: `status: "chumbado-estilo"`, `provider`,
+   `providers_tried` (todos os autores da deriva), `style_marks` verso a verso.
+4. Na repetição do capítulo, o agendador lê a quarentena e EVITA esses provedores
+   naquele capítulo — **mas a disponibilidade vem sempre primeiro**: se o filtro
+   excluir todos os motores disponíveis, ignora-se nesse pedido.
+
+O marcador guardado NÃO cita as formas proibidas (cita-as a quarentena), para a
+auditoria não sinalizar o próprio marcador. Avisos (marcadores de Almeida) não
+bloqueiam a porta — são sinal de revisão, tal como na CLI.
+
+Para regenerar um capítulo chumbado depois de afinar a memória ou as chaves:
+`python3 scripts/limpar_livro.py <numero>` e correr de novo; a repetição já evita
+os provedores que escreveram mal.
+
+## Revisão por segunda IA (P2 da convergência)
+
+Escolha confirmada: revisão **sempre, automática**. Cada capítulo fechado na
+edição nova é revisto por um provedor DIFERENTE do autor ([`bee/papeis.py`](../bee/papeis.py)
+define a prioridade — Cerebras, Gemini, Groq, OpenRouter…; o autor só revê se for
+o único disponível, porque produção revista vale mais do que nenhuma revisão).
+Implementação em [`bee/revisor.py`](../bee/revisor.py); o pedido viaja pelo método
+`MotorIA.rever()`, com o system prompt do REVISOR e toda a resiliência de rede
+existente (rodízio de chaves/modelos em 404/5xx/quota).
+
+Proteções de quota decididas:
+
+- só os TEXTOS viajam no pedido (comentários ficam de fora), em lotes de 40 versículos;
+- o revisor devolve apenas `{"emendas":[{verse,texto,razao}]}` — mínimas, ou lista vazia;
+- cada emenda passa pela PORTA de estilo antes de entrar: uma "correção" que
+  introduzisse «vós» seria rejeitada;
+- primeiro revisor que responde fecha a revisão; falhas passam ao seguinte;
+  se todos falharem, o original fica intacto (a revisão nunca perde uma tradução).
+
+Auditoria: entradas `revisao:<provedor>` na `history` do livro e caderno próprio
+`livros_json/.bee/revisoes.json` (verso, texto aplicado, razão, revisor, data).
+Desliga-se numa corrida com `BEE_REVISAO=desligado` (o modelo do fluxo traz
+`sempre`). O legado não usa nada disto.
 
 ## Memória de estilo (fonte única da voz)
 
@@ -219,5 +274,9 @@ inválido é erro, e `_contexto_estilo` acompanha o perfil ativo.
 `tests/test_memoria_estilo.py` valida o schema do JSON de estilo, os
 renderizadores (marcas da voz, reuso por livro, fórmulas = texto do piloto), a
 montagem do perfil `nova` a partir da memória e a coerência lista negra ↔ guarda.
+`tests/test_porta_estilo.py` cobre a porta obrigatória (rotação por deriva,
+quarentena com proveniência, exclusões). `tests/test_revisor_voz.py` cobre a
+revisão por segunda IA (autor excluído, emendas validadas pela porta, falhas
+preservam o original, lotes de 40 versículos).
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

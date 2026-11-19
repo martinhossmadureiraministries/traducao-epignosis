@@ -19,7 +19,7 @@ from typing import Any, Callable, Protocol
 from .arquivos import DadosInvalidos, ler_livro, ler_todos, salvar_livro, validar_versiculos
 from .catalogo import Livro
 from .fontes import ALINHAMENTO_VERSAO, FontesOriginais, MORPH_COMMIT, SBL_COMMIT, TR_COMMIT
-from .ia import RespostaInvalida, RespostaTruncada
+from .ia import DerivaEstilo, RespostaInvalida, RespostaTruncada
 
 
 # Vocabulário fixo pedido em todos os pedidos: evita que a mesma palavra grega
@@ -49,6 +49,9 @@ class Progresso:
     versos: int = 0
     capitulos: int = 0
     pedidos: int = 0
+    # Capítulos (livro, capítulo) concluídos nesta fatia: a revisão por segunda
+    # IA (P2) percorre exatamente esta lista depois da produção.
+    capitulos_fechados: list[tuple[int, int]] = field(default_factory=list)
     livro: Livro | None = None
     capitulo: int | None = None
     concluido: bool = False        # não há mais trabalho em nenhum livro da fila
@@ -78,6 +81,7 @@ class Progresso:
         self.versos += outro.versos
         self.capitulos += outro.capitulos
         self.pedidos += outro.pedidos
+        self.capitulos_fechados.extend(outro.capitulos_fechados)
         self.concluido = outro.concluido
         self.alterado = self.alterado or outro.alterado
         self.tempo_esgotado = self.tempo_esgotado or outro.tempo_esgotado
@@ -128,9 +132,15 @@ def _placeholder_pendente(verso: int, motivo: str) -> dict[str, Any]:
 
 def _registar_quarentena(
     caminho: Path, livro: Livro, capitulo: int, verso: int,
-    motor: Motor, erro: str,
+    motor: Motor, erro: str, status: str = 'pendente',
+    marcas: dict[str, list[str]] | None = None,
+    tentados: list[str] | None = None,
 ) -> None:
-    """Acrescenta uma entrada a `livros_json/.bee/quarentena.json` de forma atómica."""
+    """Acrescenta uma entrada a `livros_json/.bee/quarentena.json` de forma atómica.
+
+    ``status='chumbado-estilo'`` + ``marcas`` identificam os versos que a porta
+    de estilo recusou; o agendador usa isto para evitar repetir o provedor no
+    mesmo capítulo (P1 da convergência multi-provedor)."""
     pasta = caminho.parent / '.bee'
     pasta.mkdir(parents=True, exist_ok=True)
     destino = pasta / 'quarentena.json'
@@ -148,7 +158,7 @@ def _registar_quarentena(
                 os.replace(destino, destino.with_suffix('.json.invalido'))
             except OSError:
                 pass
-    dados['entries'].append({
+    entrada = {
         'reference': f'{livro.nome} {capitulo}:{verso}',
         'book': livro.numero,
         'chapter': capitulo,
@@ -157,8 +167,15 @@ def _registar_quarentena(
         'model': getattr(motor, 'modelo', None),
         'error': erro,
         'at_utc': datetime.now(timezone.utc).isoformat(timespec='seconds'),
-        'status': 'pendente',
-    })
+        'status': status,
+    }
+    if marcas:
+        entrada['style_marks'] = marcas
+    if tentados:
+        # Todos os provedores que escreveram texto chumbado (não só o último):
+        # é esta lista que a repetição do capítulo usa para os evitar a todos.
+        entrada['providers_tried'] = list(tentados)
+    dados['entries'].append(entrada)
     dados['updated_at_utc'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
     temporario = destino.with_suffix('.json.tmp')
     temporario.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -263,6 +280,10 @@ def _gerar_capitulo(
     else:
         print(f'A gerar {livro.nome} {capitulo} ({total} versículos)...', flush=True)
     limite_lote = min(config.versos_por_pedido, total)
+    # Derivas de estilo vistas nas rondas deste capítulo: alimentam o motivo e o
+    # registo de quarentena quando nenhum provedor passa na porta.
+    acumulo_deriva: dict[int, set[str]] = {}
+    autores_deriva: set[str] = set()   # provedores que escreveram texto chumbado
     while len(parcial) < total:
         if sem_tempo():
             return
@@ -322,10 +343,21 @@ def _gerar_capitulo(
                 validar_versiculos(versiculos, range(inicio, inicio + tamanho), f'{livro.nome} {capitulo}')
                 break
             except RespostaInvalida as exc:
+                # Deriva de estilo NÃO se resolve dividindo o lote — a voz está
+                # errada, o tamanho certo. Registam-se as marcas para a quarentena
+                # guardar proveniência; o rodízio já rodou os provedores todos
+                # internamente antes de isto chegar aqui.
+                marcas_estilo = getattr(exc, 'marcas', None)
+                if marcas_estilo:
+                    for numero, marcas in marcas_estilo.items():
+                        acumulo_deriva.setdefault(numero, set()).update(marcas)
+                    tentados = getattr(exc, 'tentados', None) or []
+                    ultimo = getattr(exc, 'provedor', None)
+                    autores_deriva.update(p for p in list(tentados) + [ultimo] if p)
                 # Resposta cortada por limite de tokens: dividir sempre resolve.
                 # Conteúdo inválido (marcação, números): dividir uma vez e, se
                 # voltar a falhar, não repetir o mesmo pedido.
-                dividir = tamanho > 1 and (
+                dividir = not marcas_estilo and tamanho > 1 and (
                     isinstance(exc, RespostaTruncada) or not progresso.lote_defeituoso
                 )
                 if dividir:
@@ -344,12 +376,40 @@ def _gerar_capitulo(
                         # Nenhum provedor/modelo produziu este versículo. Em vez de
                         # bloquear o capítulo inteiro (e a fila), grava um marcador
                         # explícito, regista a quarentena e segue para o seguinte.
-                        motivo = (
-                            f'resposta inválida após {falhas_unitarias} tentativa(s): {exc}'
-                        )
+                        if acumulo_deriva:
+                            # O registo completo (versos e marcas) fica na
+                            # quarentena; o marcador gravado no livro NÃO cita as
+                            # formas proibidas, senão a guarda sinalizava o próprio
+                            # marcador e chumbava para sempre.
+                            resumo = '; '.join(
+                                f'v.{n}: ' + ', '.join(sorted(marca))
+                                for n, marca in sorted(acumulo_deriva.items())
+                            )
+                            erro_completo = (
+                                f'deriva de estilo após {falhas_unitarias} ronda(s) '
+                                f'pelos provedores ({resumo})'
+                            )
+                            motivo = (
+                                f'deriva de estilo após {falhas_unitarias} ronda(s) '
+                                'pelos provedores — versos e marcas em '
+                                '.bee/quarentena.json (status chumbado-estilo)'
+                            )
+                            estado_quarentena = 'chumbado-estilo'
+                            marcas_quarentena = {
+                                str(n): sorted(marca) for n, marca in acumulo_deriva.items()
+                            }
+                        else:
+                            erro_completo = motivo = (
+                                f'resposta inválida após {falhas_unitarias} tentativa(s): {exc}'
+                            )
+                            estado_quarentena = 'pendente'
+                            marcas_quarentena = None
                         parcial.append(_placeholder_pendente(inicio, motivo))
                         _registrar(dados, capitulo, inicio, inicio, 'local', 'quarentena')
-                        _registar_quarentena(caminho, livro, capitulo, inicio, motor, motivo)
+                        _registar_quarentena(caminho, livro, capitulo, inicio, motor,
+                                             erro_completo, status=estado_quarentena,
+                                             marcas=marcas_quarentena,
+                                             tentados=sorted(autores_deriva) or None)
                         _salvar_lote(caminho, dados, livro, capitulo, parcial, total)
                         progresso.alterado = True
                         progresso.quarentenados += 1
@@ -388,6 +448,7 @@ def _gerar_capitulo(
         _salvar_lote(caminho, dados, livro, capitulo, parcial, total)
         print(f'  Guardados {livro.nome} {capitulo}:{inicio}-{inicio + tamanho - 1}.', flush=True)
     progresso.capitulos += 1
+    progresso.capitulos_fechados.append((livro.numero, capitulo))
     print(f'Capítulo concluído: {livro.nome} {capitulo}.', flush=True)
 
 
