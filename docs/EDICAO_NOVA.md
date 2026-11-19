@@ -152,10 +152,11 @@ python3 scripts/verificar_estilo.py 600             # só 2 Tessalonicenses
 python3 scripts/verificar_estilo.py --rigoroso      # avisos também chumbam
 ```
 
-O modelo do workflow corre-o no fim da produção e põe o relatório no resumo da
-execução (sem bloquear a publicação; tire `continue-on-error` para travar em falha
-dura). Os pilotos aprovados passam limpos — se um texto aprovado der aviso, o
-marcador está agressivo demais e deve ser afinado.
+O modelo do workflow corre-o no fim da produção como AUDITORIA BLOQUEANTE dos
+dados gravados (desde o P1): o relatório vai para o resumo da execução e a
+corrida falha se uma falha dura chegar ao disco — nenhuma regressão segue
+discretamente para os módulos. Os pilotos aprovados passam limpos — se um texto
+aprovado der aviso, o marcador está agressivo demais e deve ser afinado.
 
 **Ciclo de calibração (correr → guarda → repetir).** O motor não refaz capítulos
 completos; por isso um livro chumbado pelo guarda tem de ser reposto na fila com
@@ -173,6 +174,36 @@ a voz endurecida. Manter o Groq como reserva dá disponibilidade quando o Gemini
 falha (503/conteúdo inválido); a qualidade garante-se repetindo o que o guarda
 chumbar. Se preferir uma só voz durante a calibração, use `BEE_PROVEDORES='gemini'`
 aceitando progresso mais lento quando o Gemini estiver instável.
+
+## Porta obrigatória do motor (P1 da convergência)
+
+Desde o P1, a guarda anti-deriva não é só auditoria final: é uma PORTA dentro do
+próprio motor. O núcleo de análise vive em [`bee/inspetor.py`](../bee/inspetor.py)
+(a CLI e o motor usam a mesma fonte das proibições).
+
+Fluxo por lote gerado (só na edição nova; o legado fica exatamente igual):
+
+1. Um provedor devolve um lote válido → [`bee/porta.py`](../bee/porta.py)
+   inspeciona cada versículo. Falhas duras (arcaísmos/hesitação) levantam
+   `DerivaEstilo`; **o texto mau nunca chega ao disco**.
+2. O rodízio roda automaticamente para OUTRO provedor no mesmo lote — quem dériva
+   não escreve a passagem, outro tenta.
+3. Se nenhum provedor limpar o lote após as rondas, o versículo fica como marcador
+   `[Versículo pendente: deriva de estilo…]` (o livro avança com um buraco
+   explícito) e a entrada vai para `livros_json/.bee/quarentena.json` com
+   proveniência completa: `status: "chumbado-estilo"`, `provider`,
+   `providers_tried` (todos os autores da deriva), `style_marks` verso a verso.
+4. Na repetição do capítulo, o agendador lê a quarentena e EVITA esses provedores
+   naquele capítulo — **mas a disponibilidade vem sempre primeiro**: se o filtro
+   excluir todos os motores disponíveis, ignora-se nesse pedido.
+
+O marcador guardado NÃO cita as formas proibidas (cita-as a quarentena), para a
+auditoria não sinalizar o próprio marcador. Avisos (marcadores de Almeida) não
+bloqueiam a porta — são sinal de revisão, tal como na CLI.
+
+Para regenerar um capítulo chumbado depois de afinar a memória ou as chaves:
+`python3 scripts/limpar_livro.py <numero>` e correr de novo; a repetição já evita
+os provedores que escreveram mal.
 
 ## Memória de estilo (fonte única da voz)
 

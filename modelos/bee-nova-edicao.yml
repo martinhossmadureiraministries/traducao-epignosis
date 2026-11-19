@@ -182,13 +182,13 @@ jobs:
           fi
           tail -n 25 "$BEE_DADOS/.bee/diario.md" 2>/dev/null >> "$GITHUB_STEP_SUMMARY" || echo "- (ainda sem diário)" >> "$GITHUB_STEP_SUMMARY"
 
-      # Guarda anti-deriva: sinaliza arcaísmos («vós»), hesitação no verso e
-      # marcadores tipo Almeida nos capítulos gerados. Não bloqueia a publicação
-      # (continue-on-error), mas deixa o relatório visível no resumo da execução.
-      # Para travar mesmo a execução em caso de falha dura, tire o continue-on-error.
-      - name: Verificar o estilo (guarda anti-deriva)
+      # Porta obrigatória (P1): o próprio motor já recusa versículos derivados no
+      # momento da geração (roda para outro provedor no mesmo lote e manda para
+      # quarentena o que nenhum provedor limpar). Este passo AUDITA o que ficou
+      # gravado e BLOQUEIA a execução se uma falha dura chegar aqui — nenhuma
+      # regressão pode seguir discretamente para os módulos.
+      - name: Verificar o estilo (porta obrigatória)
         if: always()
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/verificar_estilo.py --dados "$BEE_DADOS" | tee /tmp/estilo.txt
@@ -199,10 +199,11 @@ jobs:
             cat /tmp/estilo.txt
             echo '```'
             if [ "$codigo" -ne 0 ]; then
-              echo "> ⚠️ Há versículos com falhas duras (arcaísmos/hesitação). Reveja antes de publicar."
+              echo "> 🛑 Falhas duras nos dados gravados (arcaísmos/hesitação)."
+              echo "> A porta do motor deveria tê-las impedido; investigue antes de repetir a corrida."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
-          exit 0
+          exit "$codigo"
 
       - name: Verificar os pacotes
         if: always()
