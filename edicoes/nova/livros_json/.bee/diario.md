@@ -7,3 +7,8 @@
 - 2026-11-19T08:37:26+00:00 — Módulos recompilados (PARCIAL): 1/1189 capítulos, 25 versículos.
 - 2026-11-19T08:37:26+00:00 — Ciclo 1: +25 versículos, +1 capítulos em João (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 25 versículos, 8 pedidos. A seguir: João 1.
 - 2026-11-19T08:37:27+00:00 — Capítulos exportados para leitura: 1 (1 mudaram nesta execução).
+- 2026-11-19T10:17:35+00:00 — **AVISO** gemini: HTTP 503; nova tentativa em 1.3s (1/2).
+- 2026-11-19T10:17:58+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T10:18:01+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T10:18:01+00:00 — Módulos recompilados (PARCIAL): 10/1189 capítulos, 170 versículos.
+- 2026-11-19T10:18:01+00:00 — Ciclo 2: +47 versículos, +3 capítulos em 2 Tessalonicenses (groq/openai/gpt-oss-120b; 6 versículos/pedido). Hoje: 72 versículos, 21 pedidos.
