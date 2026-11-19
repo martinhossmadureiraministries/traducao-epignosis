@@ -372,6 +372,29 @@ class RespostaTruncada(RespostaInvalida):
     pass
 
 
+class DerivaEstilo(RespostaInvalida):
+    """O texto está bem formado mas chumbou na porta de estilo (P1).
+
+    Levantada pelo ``Rodizio`` quando o inspetor encontra falhas duras
+    (arcaísmos/hesitação) num lote válido: por ser uma ``RespostaInvalida``, o
+    rodízio roda automaticamente para outro provedor no mesmo lote — quem dériva
+    não guarda o texto, e outro provedor tenta a mesma passagem.
+
+    Atributos: ``marcas`` {nº do versículo: [falhas duras]} e ``provedor`` que
+    escreveu o lote chumbado (para o registo de quarentena e as exclusões).
+    """
+
+    def __init__(self, mensagem: str, marcas: dict[int, list[str]] | None = None,
+                 provedor: str | None = None):
+        super().__init__(mensagem)
+        self.marcas: dict[int, list[str]] = marcas or {}
+        self.provedor = provedor
+        # Provedores que escreveram texto chumbado durante a varredura do
+        # rodízio (o último fica em `provedor`). Preenchido pelo Rodizio antes
+        # de relançar; serve à quarentena para evitar TODOS os autores na repetição.
+        self.tentados: list[str] = []
+
+
 def _objeto_api(corpo: bytes, nome: str) -> dict[str, Any]:
     try:
         resposta = carregar_json(corpo.decode('utf-8'))
@@ -775,12 +798,22 @@ class Rodizio:
 
     QUOTA_PARA_DESISTIR = 3
 
-    def __init__(self, motores: list[MotorIA], registar: Any = None):
+    def __init__(self, motores: list[MotorIA], registar: Any = None,
+                 inspetor: Callable[[list[dict[str, Any]]], dict[int, list[str]]] | None = None,
+                 filtro_provedores: Callable[[Livro, int], set[str] | frozenset[str]] | None = None):
         if not motores:
             raise ValueError('Nenhum provedor configurado.')
         self._motores = motores
         self._indice = 0
         self.registar = registar
+        # Porta de estilo (P1): chama-se sobre cada lote aceite; falhas duras
+        # levantam DerivaEstilo e o rodízio tenta outro provedor no mesmo lote.
+        # None => comportamento anterior, byte-idêntico (é o caso do legado).
+        self.inspetor = inspetor
+        # {livro, capítulo} -> provedores a evitar (deriva anterior gravada na
+        # quarentena). A disponibilidade vem primeiro: se o filtro excluir todos
+        # os motores ativos, ignora-se nesse pedido.
+        self.filtro_provedores = filtro_provedores
         self.exaustos: set[int] = set()
         # Um HTTP 429 costuma ser o limite por minuto, não a quota do dia:
         # desistir do provedor ao primeiro 429 foi o que deixou a produção sem
@@ -809,11 +842,32 @@ class Rodizio:
               estilo: dict[str, str] | None = None) -> list[dict[str, Any]]:
         erros: list[str] = []
         ultimo_conteudo: RespostaInvalida | None = None
+        derivadores: list[str] = []   # quem escreveu texto chumbado nesta varredura
+        # Provedores a evitar NESTE capítulo (deriva anterior). Se o filtro os
+        # excluir a todos, ignora-se: produção possível vale mais do que esperar.
+        evitados: set[str] = set()
+        if self.filtro_provedores is not None:
+            try:
+                pedidos = set(self.filtro_provedores(livro, capitulo) or ())
+            except Exception:  # um filtro partido nunca impede a produção
+                pedidos = set()
+            ativos = {self._motores[i].provedor for i in range(len(self._motores))
+                      if i not in self.exaustos}
+            sobram = ativos - pedidos
+            if sobram:
+                evitados = pedidos & ativos
+                if evitados and self.registar:
+                    self.registar(
+                        f'{livro.nome} {capitulo}: a evitar '
+                        f'{", ".join(sorted(evitados))} (deriva de estilo anterior).'
+                    )
         for passo in range(len(self._motores)):
             indice = (self._indice + passo) % len(self._motores)
             if indice in self.exaustos:
                 continue
             motor = self._motores[indice]
+            if motor.provedor in evitados:
+                continue
             try:
                 resultado = motor.gerar(livro, capitulo, fontes, estilo)
             except CotaExcedida:
@@ -850,6 +904,25 @@ class Rodizio:
                         'para o mesmo lote.'
                     )
                 continue
+            # Porta de estilo (P1): o lote é válido mas a voz dériva? Roda para
+            # outro provedor no mesmo lote; o texto mau nunca segue em frente.
+            if self.inspetor is not None:
+                marcas = self.inspetor(resultado)
+                if marcas:
+                    exc = DerivaEstilo(
+                        f'{_rotulo(motor)}: deriva de estilo em '
+                        f'{len(marcas)} versículo(s).',
+                        marcas=marcas, provedor=motor.provedor,
+                    )
+                    erros.append(str(exc))
+                    ultimo_conteudo = exc
+                    derivadores.append(motor.provedor)
+                    if self.registar:
+                        self.registar(
+                            f'Deriva de estilo em {_rotulo(motor)}; a tentar outro '
+                            'provedor para o mesmo lote.'
+                        )
+                    continue
             if indice != self._indice:
                 self._indice = indice
                 if self.registar:
@@ -858,5 +931,7 @@ class Rodizio:
         if ultimo_conteudo is not None:
             # Preserva o tipo para o gerador poder dividir/repetir o lote em vez
             # de tratar isto como uma falha de rede sem recuperação.
+            if isinstance(ultimo_conteudo, DerivaEstilo) and derivadores:
+                ultimo_conteudo.tentados = derivadores
             raise ultimo_conteudo
         raise ErroRede('Nenhum provedor conseguiu responder: ' + '; '.join(erros or ['nenhum disponível']))

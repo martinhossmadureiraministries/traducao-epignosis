@@ -344,7 +344,25 @@ class Agendador:
         for motor in ativos:
             # Avisos de rede (novas tentativas, 503, 429) ficam no diário com data.
             motor.log = lambda texto: self.diario.escrever(texto, 'aviso')
-        self._rodizio = Rodizio(ativos, registar=self.diario.escrever)
+        rodizio = Rodizio(ativos, registar=self.diario.escrever)
+        # Porta obrigatória (P1): na edição nova, cada lote é inspecionado antes
+        # de ser aceite (deriva → outro provedor no mesmo lote) e os provedores
+        # já chumbados num capítulo ficam evitados na repetição. O legado não
+        # liga nada disto — comportamento exatamente igual ao anterior.
+        from .perfil import resolver_perfil
+        if resolver_perfil().nome == 'nova':
+            from . import porta
+            rodizio.inspetor = porta.inspecionar_versos
+            mapa = porta.exclusoes_de_estilo(self.dados / '.bee' / 'quarentena.json')
+            if mapa:
+                rodizio.filtro_provedores = (
+                    lambda livro, capitulo: mapa.get((livro.numero, capitulo), frozenset())
+                )
+                self.diario.escrever(
+                    f'Porta de estilo ativa; {len(mapa)} capítulo(s) com provedores '
+                    'evitados por deriva anterior.'
+                )
+        self._rodizio = rodizio
         return self._rodizio
 
     def _registar_lote(self, progresso: Progresso | None) -> None:

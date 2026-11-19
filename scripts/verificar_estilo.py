@@ -6,6 +6,10 @@ perfil proíbe, ANTES de chegar ao leitor.
 para a Almeida ou misture registos, este verificador sinaliza. Corre offline, sem
 rede nem chaves, sobre os JSON de qualquer edição.
 
+O núcleo de análise vive em ``bee/inspetor.py`` (usado também como porta
+obrigatória dentro do próprio motor de geração — P1); este script é a CLI de
+auditoria sobre dados gravados e reexporta os mesmos símbolos.
+
 Procura três categorias:
   * ARCAÍSMOS (falha dura) — «vós/vos/convosco», «sois/sejais/sabeis/padeceis…»;
     a voz BEE usa sempre «vocês».
@@ -26,9 +30,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import re
 import sys
-import unicodedata
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -36,69 +38,16 @@ sys.path.insert(0, str(RAIZ))
 
 from bee.arquivos import ler_todos  # noqa: E402
 from bee.catalogo import POR_NUMERO  # noqa: E402
-
-
-def _norm(texto: str) -> str:
-    """Minúsculas e sem acentos, para casar formas independentemente do acento."""
-    sem_acentos = ''.join(
-        c for c in unicodedata.normalize('NFD', texto) if not unicodedata.combining(c)
-    )
-    return sem_acentos.casefold()
-
-
-# Falhas duras: nunca podem aparecer no texto aprovado.
-ARCAISMOS = (
-    'vós', 'vos', 'vosso', 'vossa', 'vossos', 'vossas', 'convosco',
-    'sois', 'sejais', 'estais', 'estejais', 'tendes', 'tenhais', 'sabeis',
-    'sabíeis', 'padeceis', 'quereis', 'deveis', 'fazeis', 'dizeis', 'vedes',
-    'rogamos-vos', 'tornai-vos', 'lembrai-vos',
+# Núcleo único das listas de proibição (o motor de geração usa o mesmo).
+from bee.inspetor import (  # noqa: E402,F401  (reexportados para testes/CLI)
+    ARCAISMOS,
+    HEDGE_FRASES,
+    HEDGE_PADROES,
+    MARCADORES_ALMEIDA,
+    _HEDGE_FRASES_NORM,
+    _norm,
+    analisar_texto,
 )
-
-# Hesitação/glosa dentro do versículo (frases e padrões).
-HEDGE_FRASES = ('ou seja', 'ou melhor', 'isto é,', 'dito de outro modo', 'em outras palavras')
-# O texto é comparado sem acentos (_norm), logo as frases também têm de ser
-# comparadas normalizadas — senão «isto é,» (com acento) nunca casaria. O
-# rótulo acrescentado aos achados continua a ser a forma original legível.
-_HEDGE_FRASES_NORM = tuple(_norm(f) for f in HEDGE_FRASES)
-# Cada entrada é (rótulo legível, padrão) para o relatório não mostrar regex cru.
-HEDGE_PADROES = (
-    ('hesitação em parênteses', re.compile(r'\([^)]*\bou\b[^)]*\)')),
-    ('hesitação com travessão', re.compile(r'—\s*ou\s', re.IGNORECASE)),
-    ('metalinguagem "grego:"', re.compile(r'\bgrego:\b', re.IGNORECASE)),
-    ('"literalmente:" no texto', re.compile(r'\bliteralmente[: ]', re.IGNORECASE)),
-)
-
-# Avisos: cheiram a Almeida; reescrever salvo razão contextual forte. Ficam de
-# fora expressões que os pilotos aprovados mantiveram legitimamente («em verdade»,
-# «Eis que» numa citação profética), para não sinalizar o padrão-ouro.
-MARCADORES_ALMEIDA = (
-    'sobremaneira', 'deveras', 'porventura', 'outrossim', 'dar-se-á', 'sucedeu que',
-    'aconteceu que', 'o sem lei', 'para com os outros', 'glória da sua força',
-    'manifestação da sua vinda', 'filho da perdição',
-)
-
-_RE_ARCAICO = {
-    termo: re.compile(r'(?<![a-zà-ÿ])' + re.escape(_norm(termo)) + r'(?![a-zà-ÿ])')
-    for termo in ARCAISMOS
-}
-
-
-def analisar_texto(texto: str) -> dict[str, list[str]]:
-    """Classifica um texto de versículo. Devolve {'duros': […], 'avisos': […]}."""
-    baixo = _norm(texto)
-    orig_baixo = texto.casefold()
-    duros: list[str] = []
-    for termo, padrao in _RE_ARCAICO.items():
-        if padrao.search(baixo):
-            duros.append(termo)
-    for frase, norma in zip(HEDGE_FRASES, _HEDGE_FRASES_NORM):
-        if norma in baixo:
-            duros.append(frase)
-    for rotulo, padrao in HEDGE_PADROES:
-        if padrao.search(orig_baixo):
-            duros.append(rotulo)
-    avisos = [m for m in MARCADORES_ALMEIDA if m in baixo]
-    return {'duros': sorted(set(duros)), 'avisos': sorted(set(avisos))}
 
 
 def analisar_dados(dados: dict) -> list[tuple[int, int, str, dict]]:
