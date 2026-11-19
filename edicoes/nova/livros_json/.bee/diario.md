@@ -48,3 +48,26 @@
 - 2026-11-19T17:39:25+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-19T17:39:25+00:00 — Módulos recompilados no fim do ciclo: 10/1189 capítulos, 170 versículos.
 - 2026-11-19T17:39:25+00:00 — Capítulos exportados para leitura: 11 (1 mudaram nesta execução).
+- 2026-11-19T23:47:09+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:47:17+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T23:47:18+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-19T23:47:28+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T23:48:01+00:00 — Deriva de estilo em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:48:06+00:00 — A usar agora Groq · openai/gpt-oss-120b.
+- 2026-11-19T23:48:07+00:00 — Limite por minuto em Groq · openai/gpt-oss-120b (2/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-19T23:48:16+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:48:17+00:00 — Quota de Groq · openai/gpt-oss-120b esgotada 3 vezes; fica de fora até ao próximo dia.
+- 2026-11-19T23:48:20+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-19T23:48:35+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:48:42+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:48:49+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:49:39+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:49:46+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:49:53+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:50:06+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:50:15+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:50:23+00:00 — Conteúdo inválido em Google Gemini (AI Studio) · gemini-3.5-flash-lite; a tentar outro provedor para o mesmo lote.
+- 2026-11-19T23:50:34+00:00 — Revisão de João 1 por gemini/gemini-3.5-flash-lite: 2 emenda(s) aplicada(s).
+- 2026-11-19T23:50:34+00:00 — Revisão de voz: 1 capítulo(s) revistos, 2 emenda(s) aplicada(s).
+- 2026-11-19T23:50:34+00:00 — Módulos recompilados (PARCIAL): 11/1189 capítulos, 221 versículos.
+- 2026-11-19T23:50:34+00:00 — Ciclo 7: +57 versículos, +1 capítulos em João 2 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 57 versículos, 29 pedidos. A seguir: João 2.

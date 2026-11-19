@@ -161,7 +161,25 @@
       "razao": "correção de concordância e pronome possessivo",
       "reviewer": "groq",
       "at_utc": "2026-11-19T13:12:01+00:00"
+    },
+    {
+      "book": 500,
+      "chapter": 1,
+      "verse": 41,
+      "texto": "Ele encontra primeiro o seu próprio irmão, Simão, e diz-lhe: «Encontramos o Messias» (que traduzido é Cristo).",
+      "razao": "Remover travessões com equivalente explicativo conforme regra anti-hesitação.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T23:50:34+00:00"
+    },
+    {
+      "book": 500,
+      "chapter": 1,
+      "verse": 42,
+      "texto": "Levou-o a Jesus. Olhando para ele, Jesus disse: «Tu és Simão, filho de João; tu serás chamado Cefas» (que se traduz por Pedro).",
+      "razao": "Remover travessões com equivalente explicativo conforme regra anti-hesitação.",
+      "reviewer": "gemini",
+      "at_utc": "2026-11-19T23:50:34+00:00"
     }
   ],
-  "updated_at_utc": "2026-11-19T13:12:01+00:00"
+  "updated_at_utc": "2026-11-19T23:50:34+00:00"
 }

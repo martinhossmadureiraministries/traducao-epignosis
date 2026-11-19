@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "reference": "João 2:7",
+      "book": 500,
+      "chapter": 2,
+      "verse": 7,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): João 2:7-9: O objeto deve conter a lista verses.",
+      "at_utc": "2026-11-19T23:48:49+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 2:17",
+      "book": 500,
+      "chapter": 2,
+      "verse": 17,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): João 2:17-19: O objeto deve conter a lista verses.",
+      "at_utc": "2026-11-19T23:49:53+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 2:21",
+      "book": 500,
+      "chapter": 2,
+      "verse": 21,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): João 2:21-23: O objeto deve conter a lista verses.",
+      "at_utc": "2026-11-19T23:50:23+00:00",
+      "status": "pendente"
+    }
+  ],
+  "updated_at_utc": "2026-11-19T23:50:23+00:00"
+}
