@@ -71,3 +71,4 @@
 - 2026-11-19T23:50:34+00:00 — Revisão de voz: 1 capítulo(s) revistos, 2 emenda(s) aplicada(s).
 - 2026-11-19T23:50:34+00:00 — Módulos recompilados (PARCIAL): 11/1189 capítulos, 221 versículos.
 - 2026-11-19T23:50:34+00:00 — Ciclo 7: +57 versículos, +1 capítulos em João 2 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 57 versículos, 29 pedidos. A seguir: João 2.
+- 2026-11-19T23:50:35+00:00 — Capítulos exportados para leitura: 12 (2 mudaram nesta execução).
