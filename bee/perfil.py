@@ -124,6 +124,10 @@ _GLOSSARIO_NOVO = (
     'ἐπίγνωσις (epignōsis) → «pleno conhecimento» ou «conhecimento pleno», com minúsculas no corpo do '
     'texto; a regra NÃO se estende automaticamente a γνῶσις nem a verbos aparentados — a nota explica a '
     'função no contexto, sem tratar o prefixo como prova de intensidade idêntica em todos os usos. '
+    'σπλάγχνα (splanchna) → «coração» (ou «afeto»/«entranhas de misericórdia» só se o contexto exigir); '
+    'NUNCA traduzir literalmente por «entranhas» no corpo do texto; a nota regista a imagem anatómica. '
+    'κοινωνία (koinōnia) → «partilha» ou «comunhão» conforme o contexto (em Filemom 1:6, «partilha»). '
+    'συστρατιώτης (systratiōtēs) → «companheiro de luta» (não «companheiro de campanha», que é ambíguo). '
     'SENHOR (maiúsculas) para o Tetragrama יהוה; Senhor para Adonai; Cristo para Χριστός. '
     'Manter «consumado» quando o contexto sustenta o peso da palavra; preferir «paciente» a «longânimo» '
     'quando o termo corrente comunica melhor o contraste. '
@@ -131,6 +135,24 @@ _GLOSSARIO_NOVO = (
     'corrente quando a forma memorizada já não comunica bem, explicando a diferença em nota se for substantiva. '
     'Tratar הֶבֶל (hevel) por contexto, como imagem de sopro/vapor, sem converter toda ocorrência em '
     '"a vida não tem valor". Manter «vocês» no plural e «tu» apenas em oração direta.'
+)
+
+# Regras duras acrescentadas à voz nova, nascidas de regressões vistas numa
+# execução automática (nomes deturpados, erros de género, «vós», achatamento
+# do argumento). Entram no fim do system prompt para terem peso.
+_REGRAS_DURAS_NOVAS = (
+    '\n\nREGRESSÕES PROIBIDAS (erros já observados; não repetir): '
+    '(1) NOMES PRÓPRIOS: manter exatamente as formas portuguesas consagradas — Filemom, Áfia (não '
+    '"Apfia"), Arquipo, Onésimo, Paulo, Timóteo, Apolo, Prisca/Priscila, etc. Não inventar variantes '
+    'de transliteração; em caso de dúvida, usar a forma do piloto aprovado e assinalar na nota. '
+    '(2) GÉNERO E CONCORDÂNCIA: respeitar escrupulosamente o género dos substantivos portugueses — '
+    '"o teu amor" (amor é masculino), nunca "a tua amor"; conferir artigo/adjetivo com o nome. '
+    '(3) REGISTO: português contemporâneo; NUNCA usar "vós/as vós" — usar «vocês» (plural) ou «tu» '
+    '(tratamento direto), com coerência ao longo da passagem. '
+    '(4) ARGUMENTO: conservar as relações lógicas do original — concessivas («embora… tenha liberdade»), '
+    'preferenciais («prefiro pedir»), finais e causais. Não achatar uma cláusula subordinada numa '
+    'afirmação simples (foi o que estragou Filemom 1:8–9). '
+    '(5) ANATOMIA/IDIOMAS: não verter imagens corporais ao pé da letra no texto (ver σπλάγχνα no glossário).'
 )
 
 # Âncoras de voz tiradas das cartas que o responsável já aprovou como piloto
@@ -145,21 +167,30 @@ _AMOSTRAS_NOVAS = (
     'Filemom, nosso colaborador» — abertura natural, títulos sem grandiloquência.\n'
     '- Filemom 1:6 «…pelo pleno conhecimento de todo o bem que há em nós, para Cristo» — '
     'ἐπίγνωσις → «pleno conhecimento».\n'
+    '- Filemom 1:2 «e também a Áfia, nossa irmã, a Arquipo, nosso companheiro de luta, e à igreja '
+    'que se reúne em tua casa» — nomes exatos (Áfia, Arquipo); «companheiro de luta», não «de campanha».\n'
     '- Filemom 1:7 «O teu amor trouxe-me muita alegria e consolo, irmão, porque, por meio de ti, '
-    'o coração dos santos encontrou descanso» — afeto sem sentimentalismo; σπλάγχνα → «coração».\n'
+    'o coração dos santos encontrou descanso» — afeto sem sentimentalismo; σπλάγχνα → «coração»; '
+    '«o teu amor» (masculino), nunca «a tua amor».\n'
+    '- Filemom 1:8 «Por isso, embora em Cristo eu tenha liberdade para te ordenar o que convém,» — '
+    'preservar a concessiva «embora… tenha liberdade»; não a reduzir a «ordeno-te».\n'
+    '- Filemom 1:9 «prefiro pedir-te por amor. Sou Paulo, já idoso e agora também prisioneiro de '
+    'Cristo Jesus.» — conservar o preferencial «prefiro pedir»; cadência natural, sem «vós».\n'
     '- Tito 1:1 «servo de Deus e apóstolo de Jesus Cristo, para servir à fé dos escolhidos de Deus '
     'e ao pleno conhecimento da verdade…» — teológico sem jargão gratuito.\n'
     '- Judas 1:4 «São ímpios, há muito assinalados para esta condenação. Transformam a graça do '
     'nosso Deus em libertinagem…» — firmeza sem dramatização.\n'
     '- 2 João 1:1 «Do presbítero à senhora eleita e aos seus filhos, a quem amo na verdade.» — '
     'intimidade sóbria.\n'
+    'EVITAR (regressões vistas): «entranhas», «vós/convosco», «a tua amor», «companheiro de campanha», '
+    'nomes deturpados («Apfia»), achatar cláusulas subordinadas em frases simples.\n'
     'Mantenha este nível de naturalidade e cadência nos versículos pedidos; uma imagem clara vale '
     'mais do que uma explicação embutida no versículo.'
 )
 
 _PERFIL_NOVO = PerfilEdicao(
     nome='nova',
-    system_prompt=_SISTEMA_NOVO,
+    system_prompt=_SISTEMA_NOVO + _REGRAS_DURAS_NOVAS,
     prompt_revisao=_REVISAO_NOVA,
     glossario=_GLOSSARIO_NOVO,
     amostras=_AMOSTRAS_NOVAS,

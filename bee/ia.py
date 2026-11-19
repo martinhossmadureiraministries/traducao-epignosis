@@ -200,7 +200,31 @@ PROVEDORES: dict[str, Provedor] = {
         'Sem plano gratuito permanente.',
         'https://api.openai.com/v1/models',
     ),
+    'nvidia': Provedor(
+        'nvidia', 'NVIDIA NIM', 'https://integrate.api.nvidia.com/v1/chat/completions',
+        'NVIDIA_API_KEY', 'openai',
+        # Modelos servidos pelo catálogo NIM; confirme a disponibilidade real na
+        # sua conta (um 404 faz o programa saltar para o modelo/provedor seguinte).
+        ('meta/llama-3.1-70b-instruct', 'nvidia/llama-3.1-nemotron-70b-instruct',
+         'meta/llama-3.3-70b-instruct'),
+        40,
+        'Plano gratuito por créditos; API compatível com OpenAI. Lotes pequenos.',
+        'https://integrate.api.nvidia.com/v1/models',
+    ),
+    'cohere': Provedor(
+        'cohere', 'Cohere', 'https://api.cohere.com/compatibility/v1/chat/completions',
+        'COHERE_API_KEY', 'openai',
+        # A Cohere expõe um endpoint compatível com OpenAI em /compatibility/v1,
+        # o que dispensa um formato de pedido próprio aqui.
+        ('command-r', 'command-r-plus', 'c4ai-aya-expanse-8b'),
+        40,
+        'Plano de teste gratuito limitado; usar como reserva, não como principal.',
+        'https://api.cohere.com/compatibility/v1/models',
+    ),
 }
+# Nota: a Cloudflare Workers AI ainda NÃO está ligada — exige um id de conta
+# (CF_ACCOUNT_ID) e uma rota de modelo (@cf/...) no URL, que este motor ainda
+# não parametriza. Acrescentar quando houver suporte a URL dinâmico por conta.
 
 # Modelos retirados que já causaram 404 em produção: nunca voltar a usá-los
 # sem que o serviço o confirme na sua própria lista.
@@ -218,7 +242,7 @@ VERSOS_POR_PEDIDO_PADRAO = {
     # Lotes grandes truncam e gastam quota a repetir. Valores revistos com os
     # limites reais dos serviços gratuitos.
     'gemini': 8, 'groq': 6, 'cerebras': 4, 'openrouter': 4,
-    'ovh': 4, 'openai': 8,
+    'ovh': 4, 'openai': 8, 'nvidia': 4, 'cohere': 4,
 }
 
 
