@@ -12,3 +12,4 @@
 - 2026-11-19T10:18:01+00:00 — A usar agora Groq · openai/gpt-oss-120b.
 - 2026-11-19T10:18:01+00:00 — Módulos recompilados (PARCIAL): 10/1189 capítulos, 170 versículos.
 - 2026-11-19T10:18:01+00:00 — Ciclo 2: +47 versículos, +3 capítulos em 2 Tessalonicenses (groq/openai/gpt-oss-120b; 6 versículos/pedido). Hoje: 72 versículos, 21 pedidos.
+- 2026-11-19T10:18:02+00:00 — Capítulos exportados para leitura: 10 (3 mudaram nesta execução).
