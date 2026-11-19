@@ -152,7 +152,44 @@ _REGRAS_DURAS_NOVAS = (
     '(4) ARGUMENTO: conservar as relações lógicas do original — concessivas («embora… tenha liberdade»), '
     'preferenciais («prefiro pedir»), finais e causais. Não achatar uma cláusula subordinada numa '
     'afirmação simples (foi o que estragou Filemom 1:8–9). '
-    '(5) ANATOMIA/IDIOMAS: não verter imagens corporais ao pé da letra no texto (ver σπλάγχνα no glossário).'
+    '(5) ANATOMIA/IDIOMAS: não verter imagens corporais ao pé da letra no texto (ver σπλάγχνα no glossário). '
+    '(6) SEM HESITAÇÃO NO TEXTO: escolher UMA redação para cada expressão. É proibido oferecer '
+    'alternativas dentro do versículo — nada de «ou seja», «isto é» a glosar a própria tradução, '
+    'parênteses explicativos ou travessões com equivalente («A vós — ou seja, a vocês —»). As '
+    'alternativas e nuances vão SÓ para o comentário. '
+    '(7) NADA DE ARCAÍSMOS — LISTA NEGRA (proibidos no texto): vós/vos/vosso/vossa/convosco; sois, '
+    'sejais, tendes, sabeis, padeceis, rogamos-vos; terminações verbais de 2.ª pessoa do plural em '
+    '-eis/-des fora do uso corrente. TODO o tratamento plural é «vocês», coerente do primeiro ao '
+    'último versículo do MESMO capítulo (nada de misturar «vocês» com «vos» no mesmo versículo). '
+    'Antes de devolver, repassar cada versículo e substituir qualquer forma desta lista. '
+    '(8) VOZ PRÓPRIA, NÃO PARÁFRASE DA ALMEIDA: construir a frase A PARTIR da estrutura das cláusulas '
+    'gregas, como um autor português contemporâneo e claro a escreveria; se soar eclesiástico/antigo '
+    '(«sobremaneira», «para com os outros transborda», «glória da sua força», «o sem lei»), reescrever '
+    'em português corrente sem perder o sentido. Não arrancar de nenhuma versão portuguesa memorizada. '
+    '(9) REVISÃO FINAL OBRIGATÓRIA: ortografia vigente, acentuação, concordância de número/género '
+    '(imperativos e pronomes) e ZERO gralhas (palavras malformadas, como «quej»). Um versículo com '
+    'erro gramatical é inaceitável.'
+)
+
+# Contrastes mau→bom tirados de regressões reais observadas na calibração, mais
+# fórmulas consolidadas para manter todos os livros coesos com os pilotos.
+# Viajam em cada pedido (campo `amostras`) porque são o sinal de estilo mais
+# forte contra a cópia da Almeida e a mistura de registos.
+_CONTRASTES_NOVOS = (
+    'CONTRASTES (mau → bom; calibrar por eles, NÃO os copiar):\n'
+    '- MAU 2Ts 1:2 «A vós — ou seja, a vocês — graça e paz…» → BOM «Graça e paz a vocês, da parte '
+    'de Deus Pai e do Senhor Jesus Cristo.» (uma só forma; saudação idêntica à de Filemom 1:3).\n'
+    '- MAU 2Ts 1:3 «…a vossa fé cresce sobremaneira e o amor de cada um de vós para com os outros '
+    'transborda» → BOM «…a fé que vocês têm está a crescer muito, e o amor de cada um de vocês pelos '
+    'outros transborda.» (sem «vós» nem arcaísmos; verbo natural).\n'
+    '- MAU 2Ts 2:8 «o sem lei… aniquilará pela manifestação da sua vinda» → BOM «o ímpio… a quem o '
+    'Senhor Jesus destruirá com o sopro da sua boca e aniquilará na manifestação da sua vinda.» '
+    '(«ímpio» para ἄνομος; a nota regista «homem da iniquidade»).\n'
+    'FÓRMULAS CONSOLIDADAS (repetir estas formas iguais em todos os livros, pela coerência com os '
+    'pilotos aprovados):\n'
+    '- Saudação: «Graça e paz a vocês, da parte de Deus Pai e do Senhor Jesus Cristo.»\n'
+    '- Ação de graças paulina: «Devemos dar sempre graças a Deus por vocês, irmãos, como é justo…»\n'
+    '- Bênção de paz: «O próprio Senhor da paz lhes dê a paz em todo o tempo e de todas as maneiras.»'
 )
 
 # Âncoras de voz tiradas das cartas que o responsável já aprovou como piloto
@@ -193,7 +230,7 @@ _PERFIL_NOVO = PerfilEdicao(
     system_prompt=_SISTEMA_NOVO + _REGRAS_DURAS_NOVAS,
     prompt_revisao=_REVISAO_NOVA,
     glossario=_GLOSSARIO_NOVO,
-    amostras=_AMOSTRAS_NOVAS,
+    amostras=_AMOSTRAS_NOVAS + '\n\n' + _CONTRASTES_NOVOS,
 )
 
 

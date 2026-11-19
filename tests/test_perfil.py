@@ -40,6 +40,20 @@ class PerfilTest(unittest.TestCase):
             self.assertIn(carta, amostras)
         self.assertIn('pleno conhecimento', amostras)
 
+    def test_nova_proibe_hesitacao_arcaismos_e_copia_da_almeida(self):
+        sp = PERFIS['nova'].system_prompt
+        for marca in ('SEM HESITAÇÃO', 'NADA DE ARCAÍSMOS', 'VOZ PRÓPRIA', 'REVISÃO FINAL'):
+            self.assertIn(marca, sp)
+        # formas arcaicas explicitamente vedadas no texto da instrução
+        self.assertIn('vós/vos/vosso/vossa/convosco', sp)
+
+    def test_nova_traz_contrastes_e_formulas_consolidadas(self):
+        amostras = PERFIS['nova'].amostras
+        self.assertIn('CONTRASTES', amostras)
+        self.assertIn('FÓRMULAS CONSOLIDADAS', amostras)
+        self.assertIn('Graça e paz a vocês', amostras)   # saudação igual aos pilotos
+        self.assertIn('→', amostras)                      # pares mau→bom
+
     def test_ambiente_seleciona_perfil(self):
         with mock.patch.dict(os.environ, {VARIAVEL_AMBIENTE: 'nova'}):
             self.assertEqual(resolver_perfil().nome, 'nova')
