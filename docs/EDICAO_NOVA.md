@@ -205,6 +205,30 @@ Para regenerar um capítulo chumbado depois de afinar a memória ou as chaves:
 `python3 scripts/limpar_livro.py <numero>` e correr de novo; a repetição já evita
 os provedores que escreveram mal.
 
+## Revisão por segunda IA (P2 da convergência)
+
+Escolha confirmada: revisão **sempre, automática**. Cada capítulo fechado na
+edição nova é revisto por um provedor DIFERENTE do autor ([`bee/papeis.py`](../bee/papeis.py)
+define a prioridade — Cerebras, Gemini, Groq, OpenRouter…; o autor só revê se for
+o único disponível, porque produção revista vale mais do que nenhuma revisão).
+Implementação em [`bee/revisor.py`](../bee/revisor.py); o pedido viaja pelo método
+`MotorIA.rever()`, com o system prompt do REVISOR e toda a resiliência de rede
+existente (rodízio de chaves/modelos em 404/5xx/quota).
+
+Proteções de quota decididas:
+
+- só os TEXTOS viajam no pedido (comentários ficam de fora), em lotes de 40 versículos;
+- o revisor devolve apenas `{"emendas":[{verse,texto,razao}]}` — mínimas, ou lista vazia;
+- cada emenda passa pela PORTA de estilo antes de entrar: uma "correção" que
+  introduzisse «vós» seria rejeitada;
+- primeiro revisor que responde fecha a revisão; falhas passam ao seguinte;
+  se todos falharem, o original fica intacto (a revisão nunca perde uma tradução).
+
+Auditoria: entradas `revisao:<provedor>` na `history` do livro e caderno próprio
+`livros_json/.bee/revisoes.json` (verso, texto aplicado, razão, revisor, data).
+Desliga-se numa corrida com `BEE_REVISAO=desligado` (o modelo do fluxo traz
+`sempre`). O legado não usa nada disto.
+
 ## Memória de estilo (fonte única da voz)
 
 Vários provedores só convergem na mesma voz se receberem **exatamente as mesmas
@@ -250,5 +274,9 @@ inválido é erro, e `_contexto_estilo` acompanha o perfil ativo.
 `tests/test_memoria_estilo.py` valida o schema do JSON de estilo, os
 renderizadores (marcas da voz, reuso por livro, fórmulas = texto do piloto), a
 montagem do perfil `nova` a partir da memória e a coerência lista negra ↔ guarda.
+`tests/test_porta_estilo.py` cobre a porta obrigatória (rotação por deriva,
+quarentena com proveniência, exclusões). `tests/test_revisor_voz.py` cobre a
+revisão por segunda IA (autor excluído, emendas validadas pela porta, falhas
+preservam o original, lotes de 40 versículos).
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

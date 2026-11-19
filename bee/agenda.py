@@ -552,6 +552,7 @@ class Agendador:
         self._registar_consumo(chave, antes_rede, progresso)
         self.estado.versos_total += progresso.versos
         self._registar_exaustos()
+        self._rever_fechados(progresso, dia)
 
         alvo = 'livro completo'
         if progresso.livro:
@@ -580,6 +581,38 @@ class Agendador:
         )
         salvar_estado(self.dados / '.bee' / 'estado.json', self.estado)
         return ResultadoCiclo('gerado', alvo, progresso=progresso, resumo_compilacao=resumo)
+
+    def _rever_fechados(self, progresso: Progresso, dia: dict[str, Any]) -> None:
+        """P2: revisão por segunda IA dos capítulos fechados nesta fatia.
+
+        Só na edição nova e sempre ligada (desliga-se com BEE_REVISAO=desligado).
+        Uma falha da revisão NUNCA toca no que foi traduzido: regista-se o aviso
+        e segue — perder produção por causa do revisor seria pior do que não rever.
+        """
+        if not progresso.capitulos_fechados:
+            return
+        if os.environ.get('BEE_REVISAO', 'sempre').strip().lower() == 'desligado':
+            self.diario.escrever('Revisão por segunda IA desligada (BEE_REVISAO=desligado).')
+            return
+        from .perfil import resolver_perfil
+        if resolver_perfil().nome != 'nova':
+            return  # o legado não tem revisão de voz
+        from . import revisor
+        try:
+            resumo = revisor.rever_capitulos_fechados(
+                self.dados, progresso.capitulos_fechados, self.motores,
+                diario=self.diario.escrever,
+            )
+        except Exception as exc:
+            self.diario.escrever(
+                f'Revisão por segunda IA falhou; original preservado: {exc}', 'aviso')
+            return
+        dia['emendas_revisao'] = dia.get('emendas_revisao', 0) + resumo['emendas']
+        self.diario.escrever(
+            f'Revisão de voz: {resumo["capitulos_revistos"]} capítulo(s) revistos, '
+            f'{resumo["emendas"]} emenda(s) aplicada(s).'
+            + (f' Saltados: {"; ".join(resumo["saltados"])}.' if resumo['saltados'] else '')
+        )
 
     def _compilar(self, chave: str) -> dict[str, Any] | None:
         existentes = ler_todos(self.dados)

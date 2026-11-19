@@ -49,6 +49,9 @@ class Progresso:
     versos: int = 0
     capitulos: int = 0
     pedidos: int = 0
+    # Capítulos (livro, capítulo) concluídos nesta fatia: a revisão por segunda
+    # IA (P2) percorre exatamente esta lista depois da produção.
+    capitulos_fechados: list[tuple[int, int]] = field(default_factory=list)
     livro: Livro | None = None
     capitulo: int | None = None
     concluido: bool = False        # não há mais trabalho em nenhum livro da fila
@@ -78,6 +81,7 @@ class Progresso:
         self.versos += outro.versos
         self.capitulos += outro.capitulos
         self.pedidos += outro.pedidos
+        self.capitulos_fechados.extend(outro.capitulos_fechados)
         self.concluido = outro.concluido
         self.alterado = self.alterado or outro.alterado
         self.tempo_esgotado = self.tempo_esgotado or outro.tempo_esgotado
@@ -444,6 +448,7 @@ def _gerar_capitulo(
         _salvar_lote(caminho, dados, livro, capitulo, parcial, total)
         print(f'  Guardados {livro.nome} {capitulo}:{inicio}-{inicio + tamanho - 1}.', flush=True)
     progresso.capitulos += 1
+    progresso.capitulos_fechados.append((livro.numero, capitulo))
     print(f'Capítulo concluído: {livro.nome} {capitulo}.', flush=True)
 
 

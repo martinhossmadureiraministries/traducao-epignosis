@@ -59,6 +59,13 @@ env:
   BEE_EDICAO: nova
   BEE_DADOS: edicoes/nova/livros_json
   BEE_SAIDA: edicoes/nova/entregas/auto
+  # ---- Revisão por segunda IA (P2) -------------------------------------------
+  # Sempre ligada na edição nova: cada capítulo fechado é revisto por UM PROVEDOR
+  # DIFERENTE do autor. Proteções de quota: só os textos viajam no pedido (sem
+  # comentários), em lotes de 40 versículos; o revisor devolve emendas mínimas,
+  # e cada emenda passa pela porta de estilo antes de ser aplicada. Falhas do
+  # revisor preservam o original. Use 'desligado' para dispensar numa corrida.
+  BEE_REVISAO: sempre
   # ---- Restantes parâmetros (espelham a linha legada validada) -------------
   BEE_BRAMO_DADOS: main
   BEE_FUSO: Africa/Luanda

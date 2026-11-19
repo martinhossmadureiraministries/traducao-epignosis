@@ -483,12 +483,16 @@ class MotorIA:
             return SYSTEM_PROMPT + (PROMPT_REVISAO if self.aplicar_revisao else '')
         return self.perfil.sistema(self.aplicar_revisao)
 
-    def _corpo(self, mensagem: str, chave: str) -> tuple[str, dict[str, Any], dict[str, str]]:
+    def _corpo(self, mensagem: str, chave: str,
+               sistema: str | None = None) -> tuple[str, dict[str, Any], dict[str, str]]:
+        # ``sistema`` substitui o prompt do perfil nos pedidos de revisão (P2):
+        # o revisor de voz recebe a identidade própria, não a do tradutor.
+        texto_sistema = sistema if sistema is not None else self._system()
         config = PROVEDORES[self.provedor]
         if config.formato == 'gemini':
             url = f'{config.url}{self.modelo}:generateContent'
             payload: dict[str, Any] = {
-                'systemInstruction': {'parts': [{'text': self._system()}]},
+                'systemInstruction': {'parts': [{'text': texto_sistema}]},
                 'contents': [{'role': 'user', 'parts': [{'text': mensagem}]}],
                 'generationConfig': {
                     'responseMimeType': 'application/json',
@@ -503,7 +507,7 @@ class MotorIA:
             payload = {
                 'model': self.modelo,
                 'messages': [
-                    {'role': 'system', 'content': self._system()},
+                    {'role': 'system', 'content': texto_sistema},
                     {'role': 'user', 'content': mensagem},
                 ],
                 'max_tokens': self.max_tokens,
@@ -608,14 +612,14 @@ class MotorIA:
         """Quanto a resposta deve ocupar: 6 versículos com comentário ≈ 1.500."""
         return 2_000
 
-    def _requisicao(self, mensagem: str) -> str:
+    def _requisicao(self, mensagem: str, sistema: str | None = None) -> str:
         """Tenta todas as chaves configuradas antes de desistir."""
         ultimo: ErroRede | None = None
         self._reservar(mensagem)
         # Sem chave (nível anónimo) tem de haver na mesma uma tentativa.
         for tentativa in range(max(1, len(self._chaves))):
             chave = self._chaves[self._indice_chave] if self._chaves else None
-            url, payload, headers = self._corpo(mensagem, chave)
+            url, payload, headers = self._corpo(mensagem, chave, sistema=sistema)
             requisicao = urllib.request.Request(
                 url, data=json.dumps(payload, ensure_ascii=False).encode('utf-8'),
                 headers=headers, method='POST',
@@ -627,7 +631,7 @@ class MotorIA:
             except ErroRede as exc:
                 if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
                     # Modelo retirado ou inexistente: não gasta mais tentativas nele.
-                    return self._requisicao(mensagem)
+                    return self._requisicao(mensagem, sistema=sistema)
                 if 'HTTP 413' in str(exc):
                     # Pedido maior do que o serviço aceita. Aconteceu com o
                     # lote de 10 na Groq: 413 e o provedor dado como perdido.
@@ -640,11 +644,11 @@ class MotorIA:
                     # provedor inteiro: outro modelo do mesmo serviço pode
                     # responder. Em 17/11 foram 3 tentativas perdidas no mesmo
                     # modelo instável antes de desistir do Gemini.
-                    return self._requisicao(mensagem)
+                    return self._requisicao(mensagem, sistema=sistema)
                 if isinstance(exc, CotaExcedida) and self._proximo_modelo('quota esgotada'):
                     # A quota é por modelo/chave: outro modelo do mesmo serviço
                     # pode ainda responder, sem gastar as tentativas restantes.
-                    return self._requisicao(mensagem)
+                    return self._requisicao(mensagem, sistema=sistema)
                 # Rode a chave: pode ser quota individual ou chave revogada.
                 # Num provedor sem chave não há nada a rodar.
                 self._indice_chave = (self._indice_chave + 1) % max(1, len(self._chaves))
@@ -689,6 +693,15 @@ class MotorIA:
         if not isinstance(texto, str) or not texto.strip():
             raise RespostaInvalida(f'{self.provedor}: resposta de texto vazia.')
         return texto
+
+    def rever(self, sistema: str, mensagem: str) -> str:
+        """Um pedido de revisão com o system prompt do REVISOR, não do tradutor.
+
+        Reutiliza toda a resiliência de ``_requisicao`` (rodízio de chaves,
+        404/5xx/quota rodam modelo). Devolve o texto cru; quem chama valida o
+        JSON e as emendas. É assim que a segunda IA do P2 fala com os serviços.
+        """
+        return self._requisicao(mensagem, sistema=sistema)
 
     def gerar(
         self, livro: Livro, capitulo: int, fontes: list[dict[str, Any]],
