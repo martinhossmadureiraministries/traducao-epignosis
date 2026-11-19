@@ -221,7 +221,13 @@ def _contexto_estilo(
     # Importado aqui dentro para não fechar o ciclo gerador -> perfil -> gerador.
     from .perfil import resolver_perfil
     perfil = resolver_perfil()
-    estilo: dict[str, str] = {'glossario': perfil.glossario}
+    # Glossário por pedido: no legado é o texto fixo herdado (sem mudança); na
+    # edição nova vem da memória de estilo e assinala as decisões já aprovadas
+    # NO livro em tradução, para o provedor repetir a mesma palavra escolhida.
+    numero = dados.get('book_number')
+    estilo: dict[str, str] = {
+        'glossario': perfil.glossario_pedido(int(numero) if numero is not None else None)
+    }
     # Âncoras few-shot só existem no perfil novo; no legado a chave fica de fora
     # e o pedido enviado é exatamente o antigo.
     if perfil.amostras:
