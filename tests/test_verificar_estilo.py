@@ -20,6 +20,14 @@ class AnalisarTextoTest(unittest.TestCase):
         self.assertIn('ou seja', res['duros'])
         self.assertIn('hesitação com travessão', res['duros'])
 
+    def test_hedge_com_acento_tambem_e_falha_dura(self):
+        # «isto é,» tem acento: o texto é comparado sem acentos (_norm), por
+        # isso as frases de hesitação também se comparam normalizadas.
+        res = ve.analisar_texto('Ele veio, isto é, chegou ontem.')
+        self.assertIn('isto é,', res['duros'])
+        limpo = ve.analisar_texto('Isto é bom para todos.')
+        self.assertNotIn('isto é,', limpo['duros'], 'sem vírgula não é glosa')
+
     def test_marcador_almeida_e_apenas_aviso(self):
         res = ve.analisar_texto('a fé cresce sobremaneira')
         self.assertEqual(res['duros'], [])

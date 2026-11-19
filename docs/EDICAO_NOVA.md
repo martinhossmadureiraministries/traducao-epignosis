@@ -174,10 +174,50 @@ falha (503/conteúdo inválido); a qualidade garante-se repetindo o que o guarda
 chumbar. Se preferir uma só voz durante a calibração, use `BEE_PROVEDORES='gemini'`
 aceitando progresso mais lento quando o Gemini estiver instável.
 
+## Memória de estilo (fonte única da voz)
+
+Vários provedores só convergem na mesma voz se receberem **exatamente as mesmas
+regras**. Por isso a edição nova deixou de ter regras de estilo espalhadas pelo
+código: tudo vive em [`modelos/estilo_bee.json`](../modelos/estilo_bee.json),
+renderizado nos prompts por [`bee/memoria_estilo.py`](../bee/memoria_estilo.py).
+Gemini, Groq ou qualquer reserva recebem o mesmo bloco — a memória é o P0 do
+sistema de convergência multi-provedor (P1 será o guarda como porta obrigatória
+com quarentena e repetição noutro provedor; P2 a revisão por segunda IA).
+
+O JSON guarda, com dados reais dos pilotos aprovados:
+
+| Secção | Conteúdo |
+|---|---|
+| `registro` | plural «vocês» obrigatório + lista negra de arcaísmos (espelho exato do que a guarda chumba) |
+| `regras_duras`, `aperto` | as 9 regressões proibidas e os 6 apertos de calibração, numerados |
+| `glossario` | decisões por termo grego com `usar`, `contexto_reuso`, `livros_reuso`, `rejeitar` e exemplo aprovado (ex.: σπλάγχνα → «coração», mantido igual nos vv. 7/12/20 de Filemom) |
+| `rejeitados` | palavras/formulações vetadas com motivo e alternativa («ou seja» no verso, «sobremaneira», «o sem lei», «entranhas») |
+| `formulas_consolidadas` | saudação/ação de graças/bênção repetidas iguais em todos os livros (a saudação é letra a letra Filemom 1:3) |
+| `ancoras` | livros-base (Fm, Tt, Jd, 2Jo, 3Jo), amostras por género e lista EVITAR |
+| `contrastes` | pares mau→bom nascidos das regressões reais de 2Ts |
+| `aprovacoes` | em que assenta esta voz (pilotos, ESTILO_BEE v0.5, PR #50–#52) |
+
+**Como o pedido recebe a memória.** O system prompt do perfil `nova` = contrato
+operacional (formato/rigor/comentário, no código) + `system_fragment()`; o campo
+`glossario` vem de `glossario_para_pedido()`, e `_contexto_estilo` passa-lhe o
+`book_number` do livro em tradução para marcar as decisões **JÁ APROVADAS nesse
+livro** (coesão intra-livro: o provedor repete a mesma palavra escolhida); o
+campo `amostras` = âncoras do género + contrastes + fórmulas.
+
+**Como evoluir a voz.** Editar o JSON e correr `python3 -m unittest
+tests.test_memoria_estilo` — o schema valida-se no arranque (um JSON malformado
+falha alto nos testes, nunca em corrida) e há um teste que garante que toda a
+lista negra da memória continua coberta pela guarda. Novas aprovações (mais
+pilotos) entram em `ancoras`/`aprovacoes`; novos vetos em `rejeitados`. O perfil
+legado não usa nada daqui — permanece byte-idêntico.
+
 ## Testes
 
 `tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz,
 glossário e âncoras próprios, argumento explícito sobrepõe o ambiente, nome
 inválido é erro, e `_contexto_estilo` acompanha o perfil ativo.
+`tests/test_memoria_estilo.py` valida o schema do JSON de estilo, os
+renderizadores (marcas da voz, reuso por livro, fórmulas = texto do piloto), a
+montagem do perfil `nova` a partir da memória e a coerência lista negra ↔ guarda.
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

@@ -56,6 +56,10 @@ ARCAISMOS = (
 
 # Hesitação/glosa dentro do versículo (frases e padrões).
 HEDGE_FRASES = ('ou seja', 'ou melhor', 'isto é,', 'dito de outro modo', 'em outras palavras')
+# O texto é comparado sem acentos (_norm), logo as frases também têm de ser
+# comparadas normalizadas — senão «isto é,» (com acento) nunca casaria. O
+# rótulo acrescentado aos achados continua a ser a forma original legível.
+_HEDGE_FRASES_NORM = tuple(_norm(f) for f in HEDGE_FRASES)
 # Cada entrada é (rótulo legível, padrão) para o relatório não mostrar regex cru.
 HEDGE_PADROES = (
     ('hesitação em parênteses', re.compile(r'\([^)]*\bou\b[^)]*\)')),
@@ -87,8 +91,8 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
     for termo, padrao in _RE_ARCAICO.items():
         if padrao.search(baixo):
             duros.append(termo)
-    for frase in HEDGE_FRASES:
-        if frase in baixo:
+    for frase, norma in zip(HEDGE_FRASES, _HEDGE_FRASES_NORM):
+        if norma in baixo:
             duros.append(frase)
     for rotulo, padrao in HEDGE_PADROES:
         if padrao.search(orig_baixo):
