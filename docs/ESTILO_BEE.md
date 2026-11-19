@@ -163,3 +163,5 @@ Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto
 2 João e 3 João foram aprovados pelo responsável para a calibração da voz. Judas foi acrescentado como prévia para análise editorial; não houve ativação da automação da nova edição.
 
 **Judas:** carta aprovada como amostra editorial, incluindo a redação final «São ímpios, há muito assinalados para esta condenação» no v. 4. A alteração é de estilo, não de variante textual. A aprovação não substitui revisão especializada.
+
+**Tito:** carta aprovada como referência de voz, incluindo «escravas do vinho» (2:3) e «conciliadores» (3:2). As notas explicam as nuances das duas escolhas. A aprovação editorial não substitui revisão especializada.

@@ -44,7 +44,7 @@
 
 **2.** Os homens mais velhos devem ser sóbrios, dignos, sensatos e sadios na fé, no amor e na perseverança.
 
-**3.** Da mesma forma, as mulheres mais velhas devem ter uma conduta reverente, não ser caluniadoras nem escravas de muito vinho, mas ensinar o que é bom.
+**3.** Da mesma forma, as mulheres mais velhas devem ter uma conduta reverente, não ser caluniadoras nem escravas do vinho, mas ensinar o que é bom.
 
 **4.** Assim poderão orientar as mais jovens a amar os maridos e os filhos,
 
@@ -74,7 +74,7 @@
 
 **1.** Lembra-lhes que se sujeitem aos governantes e às autoridades, que sejam obedientes e estejam prontos para toda boa obra.
 
-**2.** Que não difamem ninguém, evitem brigas, sejam cordatos e mostrem toda mansidão para com todas as pessoas.
+**2.** Que não difamem ninguém, evitem brigas, sejam conciliadores e mostrem toda mansidão para com todas as pessoas.
 
 **3.** Pois nós também éramos insensatos, desobedientes e enganados, escravizados por desejos e prazeres de todo tipo. Vivíamos na maldade e na inveja, detestáveis, odiando-nos uns aos outros.
 
@@ -144,7 +144,7 @@
 
 **2:2.** πρεσβύτας indica idade aqui, ao contrário de πρεσβυτέρους em 1:5. ὑπομονή é perseverança, não mera espera passiva.
 
-**2:3.** ἱεροπρεπής é conduta apropriada ao que é sagrado. «Escravas» mantém a metáfora de δεδουλωμένας, sem fazer dela uma referência à condição social dessas mulheres.
+**2:3.** ἱεροπρεπής é conduta apropriada ao que é sagrado. «Escravas do vinho» conserva a metáfora de δεδουλωμένας. O grego diz literalmente «de muito vinho»; nesta redação, a ideia de excesso fica implícita na imagem de escravidão.
 
 **2:4.** σωφρονίζω pode indicar formar bom senso ou orientar. Os amores familiares são o conteúdo expresso dessa orientação.
 
@@ -174,7 +174,7 @@
 
 **3:1.** ἀρχαῖς ἐξουσίαις designa instâncias de governo ou autoridade. O contexto fala da conduta pública e inclui prontidão para o bem.
 
-**3:2.** ἐπιεικής é «cordato» ou «moderado»; πραΰτης é mansidão. A frase distingue evitar contendas de tratar os outros com brandura.
+**3:2.** ἐπιεικής admite «cordato», «moderado» ou «atencioso». «Conciliadores» destaca a disposição de não ser inflexível no trato; πραΰτης, traduzido «mansidão», destaca a brandura.
 
 **3:3.** O «nós também» liga o passado do próprio grupo à mansidão pedida no v. 2. «Escravizados» conserva a força de δουλεύοντες.
 
