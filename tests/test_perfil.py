@@ -54,6 +54,12 @@ class PerfilTest(unittest.TestCase):
         self.assertIn('Graça e paz a vocês', amostras)   # saudação igual aos pilotos
         self.assertIn('→', amostras)                      # pares mau→bom
 
+    def test_nova_tem_aperto_de_calibracao_fina(self):
+        sp = PERFIS['nova'].system_prompt
+        for marca in ('CONSISTÊNCIA DE TRATAMENTO', 'CORRENTES DE GENITIVOS',
+                      'CONCISÃO CONCRETA', 'COERÊNCIA ENTRE LIVROS', 'SEM METALINGUAGEM'):
+            self.assertIn(marca, sp)
+
     def test_ambiente_seleciona_perfil(self):
         with mock.patch.dict(os.environ, {VARIAVEL_AMBIENTE: 'nova'}):
             self.assertEqual(resolver_perfil().nome, 'nova')

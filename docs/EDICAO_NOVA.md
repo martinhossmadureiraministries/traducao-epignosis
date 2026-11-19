@@ -116,13 +116,19 @@ python3 scripts/importar_piloto.py               # escreve (sobrescreve com cuid
 
 ## Provedores e resiliência (erros 503)
 
-O workflow novo usa uma **fila alargada** de serviços gratuitos:
-`gemini,cerebras,openrouter,nvidia,cohere,groq` (Gemini abre, Groq fecha como
-reserva). As chaves vêm dos secrets `CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`,
-`NVIDIA_API_KEY` e `COHERE_API_KEY`, além das antigas. **Um provedor sem chave é
-simplesmente saltado** — não precisa de ativar todos. NVIDIA NIM e Cohere entram
-pelos seus endpoints compatíveis com OpenAI. A **Cloudflare Workers AI ainda não
-é suportada** (exige `CF_ACCOUNT_ID` e rota `@cf/...` no URL).
+O motor **suporta** uma fila alargada de serviços gratuitos:
+`gemini,cerebras,openrouter,nvidia,cohere,groq`. As chaves vêm dos secrets
+`CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`, `NVIDIA_API_KEY` e `COHERE_API_KEY`, além
+das antigas; um provedor sem chave é simplesmente saltado. NVIDIA NIM e Cohere
+entram pelos seus endpoints compatíveis com OpenAI. A **Cloudflare Workers AI ainda
+não é suportada** (exige `CF_ACCOUNT_ID` e rota `@cf/...`).
+
+**Atenção à deriva:** modelos diferentes têm "sotaques" diferentes — foi isso que
+espalhou o «vós» em 2 Tessalonicenses quando vários provedores escreveram o mesmo
+livro. Por isso o **modelo atual do workflow calibra com poucos provedores**
+(`BEE_PROVEDORES='gemini,groq'`). Quando a voz agradar de forma consistente, alarga-se
+a fila editando essa linha. Vários livros gerados por um só provedor soam muito mais
+coesos.
 
 Sobre o HTTP 503 do Gemini (sobrecarga temporária, não bloqueio de chave): o motor
 **já** o trata como transitório — nova tentativa com espera curta e *backoff*, e,
@@ -130,6 +136,26 @@ se persistir, passa ao provedor seguinte no próprio ciclo (o 429 salta de
 imediatamente). Lotes pequenos (4–6 versículos/pedido) reduzem respostas cortadas
 e a probabilidade de 503 em capítulos longos. O limite real de velocidade continua
 a ser a **quota diária** de cada serviço, não os minutos de Actions.
+
+## Guarda de estilo (anti-deriva)
+
+[`scripts/verificar_estilo.py`](../scripts/verificar_estilo.py) é uma rede de
+segurança independente do modelo: varre os versículos gerados e sinaliza
+
+- **falhas duras** — arcaísmos («vós/vos/sois/sejais/sabeis/padeceis…») e hesitação
+  dentro do verso («ou seja», travessão com alternativa); fazem o script sair com 1;
+- **avisos** — marcadores tipo Almeida («sobremaneira», «porventura», «o sem lei»…).
+
+```bash
+python3 scripts/verificar_estilo.py                 # edição nova inteira
+python3 scripts/verificar_estilo.py 600             # só 2 Tessalonicenses
+python3 scripts/verificar_estilo.py --rigoroso      # avisos também chumbam
+```
+
+O modelo do workflow corre-o no fim da produção e põe o relatório no resumo da
+execução (sem bloquear a publicação; tire `continue-on-error` para travar em falha
+dura). Os pilotos aprovados passam limpos — se um texto aprovado der aviso, o
+marcador está agressivo demais e deve ser afinado.
 
 ## Testes
 

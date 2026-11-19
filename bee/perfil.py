@@ -225,9 +225,29 @@ _AMOSTRAS_NOVAS = (
     'mais do que uma explicação embutida no versículo.'
 )
 
+# Calibração fina acrescentada depois do teste de 2 Tessalonicenses: trava as
+# oscilações de registo dentro do capítulo e os tiques sintáticos da Almeida.
+_APERTO_NOVO = (
+    '\n\nAPERTO ADICIONAL (calibração fina): '
+    '(A) CONSISTÊNCIA DE TRATAMENTO: decidir no início do capítulo se o auditório é '
+    '«vocês» ou «tu» e NUNCA alternar; todos os imperativos e pronomes seguem a forma '
+    'escolhida (ex.: «mantenham-se firmes e apeguem-se», nunca «mantenham-se… apegue-se»). '
+    '(B) CORRENTES DE GENITIVOS: desfazer empilhamentos tipo Almeida («da glória da sua '
+    'força», «a manifestação da sua vinda») em português natural («da sua glória poderosa», '
+    '«quando ele se manifestar na sua vinda»), preservando o sentido. '
+    '(C) CONCISÃO CONCRETA: preferir a formulação mais curta e concreta quando o sentido o '
+    'permitir; não acrescentar palavras de realce que o original não traz. '
+    '(D) VERBOS VIVOS: usar verbos concretos e ativos; evitar nominalizações pesadas e '
+    'passivas desnecessárias. '
+    '(E) COERÊNCIA ENTRE LIVROS: nas fórmulas recorrentes (saudação, ação de graças, bênção), '
+    'repetir EXATAMENTE as FÓRMULAS CONSOLIDADAS, para um livro soar como os outros. '
+    '(F) SEM METALINGUAGEM NO VERSO: «literalmente», «grego:», siglas de manuscritos e notas '
+    'de variante pertencem ao comentário, nunca ao texto traduzido.'
+)
+
 _PERFIL_NOVO = PerfilEdicao(
     nome='nova',
-    system_prompt=_SISTEMA_NOVO + _REGRAS_DURAS_NOVAS,
+    system_prompt=_SISTEMA_NOVO + _REGRAS_DURAS_NOVAS + _APERTO_NOVO,
     prompt_revisao=_REVISAO_NOVA,
     glossario=_GLOSSARIO_NOVO,
     amostras=_AMOSTRAS_NOVAS + '\n\n' + _CONTRASTES_NOVOS,
