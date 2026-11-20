@@ -52,7 +52,196 @@
       "providers_tried": [
         "gemini"
       ]
+    },
+    {
+      "reference": "João 4:29",
+      "book": 500,
+      "chapter": 4,
+      "verse": 29,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.29: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, vedes; v.30: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.31: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.32: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.33: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.34: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas)",
+      "at_utc": "2026-11-20T10:04:07+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "29": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "vedes"
+        ],
+        "30": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "31": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "32": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "33": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "34": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ]
+      },
+      "providers_tried": [
+        "cerebras",
+        "gemini"
+      ]
+    },
+    {
+      "reference": "João 4:30",
+      "book": 500,
+      "chapter": 4,
+      "verse": 30,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.29: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, vedes; v.30: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.31: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.32: forma verbal de «vós» (-eis), nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas, vos, vós; v.33: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.34: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.35: dizeis, forma verbal de «vós» (-eis), nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, vos, vossos, vós, «estar a» + infinitivo (a casa usa o gerúndio))",
+      "at_utc": "2026-11-20T10:05:22+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "29": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "vedes"
+        ],
+        "30": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "31": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "32": [
+          "forma verbal de «vós» (-eis)",
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas",
+          "vos",
+          "vós"
+        ],
+        "33": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "34": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "35": [
+          "dizeis",
+          "forma verbal de «vós» (-eis)",
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "vos",
+          "vossos",
+          "vós",
+          "«estar a» + infinitivo (a casa usa o gerúndio)"
+        ]
+      },
+      "providers_tried": [
+        "cerebras",
+        "gemini"
+      ]
+    },
+    {
+      "reference": "João 4:31",
+      "book": 500,
+      "chapter": 4,
+      "verse": 31,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.29: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, vedes; v.30: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.31: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.32: forma verbal de «vós» (-eis), nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas, vos, vós; v.33: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.34: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, ponto fora das aspas; v.35: dizeis, forma verbal de «vós» (-eis), nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, vos, vossos, vós, «estar a» + infinitivo (a casa usa o gerúndio); v.36: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
+      "at_utc": "2026-11-20T10:06:28+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "29": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "vedes"
+        ],
+        "30": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "31": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "32": [
+          "forma verbal de «vós» (-eis)",
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas",
+          "vos",
+          "vós"
+        ],
+        "33": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "34": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "ponto fora das aspas"
+        ],
+        "35": [
+          "dizeis",
+          "forma verbal de «vós» (-eis)",
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "vos",
+          "vossos",
+          "vós",
+          "«estar a» + infinitivo (a casa usa o gerúndio)"
+        ],
+        "36": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ]
+      },
+      "providers_tried": [
+        "cerebras",
+        "gemini"
+      ]
     }
   ],
-  "updated_at_utc": "2026-11-20T07:44:30+00:00"
+  "updated_at_utc": "2026-11-20T10:06:28+00:00"
 }
