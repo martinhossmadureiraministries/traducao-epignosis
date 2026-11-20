@@ -204,9 +204,10 @@ PROVEDORES: dict[str, Provedor] = {
         'nvidia', 'NVIDIA NIM', 'https://integrate.api.nvidia.com/v1/chat/completions',
         'NVIDIA_API_KEY', 'openai',
         # Modelos servidos pelo catálogo NIM; confirme a disponibilidade real na
-        # sua conta (um 404 faz o programa saltar para o modelo/provedor seguinte).
-        ('meta/llama-3.1-70b-instruct', 'nvidia/llama-3.1-nemotron-70b-instruct',
-         'meta/llama-3.3-70b-instruct'),
+        # sua conta (um 404/410 faz o programa saltar para o modelo seguinte).
+        # O llama-3.1-70b foi retirado (HTTP 410 em 2026-11-20; está em
+        # RETIRADOS): abre o 3.3, que continua no catálogo.
+        ('meta/llama-3.3-70b-instruct', 'nvidia/llama-3.1-nemotron-70b-instruct'),
         40,
         'Plano gratuito por créditos; API compatível com OpenAI. Lotes pequenos.',
         'https://integrate.api.nvidia.com/v1/models',
@@ -215,8 +216,11 @@ PROVEDORES: dict[str, Provedor] = {
         'cohere', 'Cohere', 'https://api.cohere.com/compatibility/v1/chat/completions',
         'COHERE_API_KEY', 'openai',
         # A Cohere expõe um endpoint compatível com OpenAI em /compatibility/v1,
-        # o que dispensa um formato de pedido próprio aqui.
-        ('command-r', 'command-r-plus', 'c4ai-aya-expanse-8b'),
+        # o que dispensa um formato de pedido próprio aqui. Os command-r
+        # antigos devolveram 404 nesta conta em 2026-11-20: abrem os da
+        # geração actual e os antigos ficam atrás para a rotação 404/410.
+        ('command-a-03-2025', 'command-r7b-12-2024', 'command-r', 'command-r-plus',
+         'c4ai-aya-expanse-8b'),
         40,
         'Plano de teste gratuito limitado; usar como reserva, não como principal.',
         'https://api.cohere.com/compatibility/v1/models',
@@ -233,6 +237,8 @@ RETIRADOS = frozenset({
     'llama3-8b-8192', 'mixtral-8x7b-32768', 'gemma2-9b-it', 'gemma-7b-it',
     'llama-3.1-70b-versatile', 'meta-llama/llama-4-scout-17b-16e-instruct',
     'qwen/qwen3-32b', 'meta-llama/llama-4-maverick-17b-128e-instruct',
+    # NVIDIA NIM, 2026-11-20: respondeu HTTP 410 (retirado do catálogo).
+    'meta/llama-3.1-70b-instruct',
 })
 
 MODELOS_PADRAO = {nome: p.modelo_padrao for nome, p in PROVEDORES.items()}
@@ -358,10 +364,33 @@ def resolver_modelos(
         if descoberto:
             if log and descoberto != PROVEDORES[provedor].modelos[0]:
                 log(f'{provedor}: modelo disponível nesta conta: {descoberto}.')
-            return [descoberto]
+            # O descoberto abre, mas a lista curada fica atrás como
+            # suplente: deitá-la fora deixava o motor sem próximo modelo
+            # quando o descoberto esgotava a quota ou era retirado (foi o
+            # que matou a OpenRouter em 2026-11-20: um `:free` obscuro
+            # sem quota e nenhum plano B no mesmo provedor).
+            return [descoberto] + [
+                m for m in PROVEDORES[provedor].modelos
+                if m != descoberto and m not in RETIRADOS
+            ]
     if log:
         log(f'{provedor}: não foi possível listar os modelos; a usar os nomes de reserva do código.')
     return list(PROVEDORES[provedor].modelos)
+
+
+def _motivo_sem_modelo(exc: BaseException) -> str | None:
+    """'HTTP 404'/'HTTP 410' quando o serviço diz que o modelo não existe.
+
+    404 é o clássico; a NVIDIA respondeu 410 (Gone) pelo
+    `meta/llama-3.1-70b-instruct`, retirado do catálogo NIM, em
+    2026-11-20 — e o motor dava o provedor inteiro como perdido em vez
+    de rodar para o modelo seguinte da lista.
+    """
+    texto = str(exc)
+    for codigo in ('HTTP 404', 'HTTP 410'):
+        if codigo in texto:
+            return codigo
+    return None
 
 
 class RespostaInvalida(RuntimeError):
@@ -568,7 +597,8 @@ class MotorIA:
                     self.rede.obter(requisicao, self.provedor, log=self.log, provedor=self.provedor), self.provedor
                 )
             except ErroRede as exc:
-                if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
+                motivo = _motivo_sem_modelo(exc)
+                if motivo and self._proximo_modelo(motivo):
                     return self.testar_ligacao()
                 # Provedor sem chave (nível anónimo): só há uma tentativa.
                 self._indice_chave = (self._indice_chave + 1) % max(1, len(self._chaves))
@@ -629,7 +659,8 @@ class MotorIA:
                     self.rede.obter(requisicao, self.provedor, log=self.log, provedor=self.provedor), self.provedor
                 )
             except ErroRede as exc:
-                if 'HTTP 404' in str(exc) and self._proximo_modelo('HTTP 404'):
+                motivo = _motivo_sem_modelo(exc)
+                if motivo and self._proximo_modelo(motivo):
                     # Modelo retirado ou inexistente: não gasta mais tentativas nele.
                     return self._requisicao(mensagem, sistema=sistema)
                 if 'HTTP 413' in str(exc):
@@ -944,6 +975,11 @@ class Rodizio:
                 self._indice = indice
                 if self.registar:
                     self.registar(f'A usar agora {_rotulo(motor)}.')
+            # Um sucesso limpa os limites-por-minuto que este provedor
+            # sofreu antes: três 429 espaçados por trabalho feito não são
+            # a quota do dia esgotada. Sem isto, a Groq (TPM baixo) era
+            # encostada o dia inteiro por rajadas curtas (2026-11-20).
+            self.falhas_quota.pop(indice, None)
             return resultado
         if ultimo_conteudo is not None:
             # Preserva o tipo para o gerador poder dividir/repetir o lote em vez

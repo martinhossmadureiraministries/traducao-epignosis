@@ -48,6 +48,28 @@ class IATest(unittest.TestCase):
         self.assertEqual(req.get_header('Authorization'), 'Bearer SEGREDO')
         self.assertNotIn('SEGREDO', req.full_url)
         self.assertNotIn('SEGREDO', json.dumps(payload))
+    def test_modelo_retirado_410_passa_ao_seguinte(self):
+        """HTTP 410 (modelo retirado) roda para o seguinte, como o 404.
+
+        A NVIDIA respondeu 410 pelo llama-3.1-70b retirado do catálogo
+        NIM em 2026-11-20 e o motor dava o provedor como perdido.
+        """
+        class Rede410:
+            def obter(self, req, descricao, limite=None, log=None, provedor=None):
+                if json.loads(req.data)['model'] == 'retirado':
+                    raise ErroRede(
+                        'nvidia: HTTP 410; verifique a configuração do serviço.')
+                return json.dumps({'choices': [{
+                    'finish_reason': 'stop',
+                    'message': {'content': json.dumps(retorno([1]))},
+                }]}).encode()
+
+        motor = MotorIA('nvidia', ['retirado', 'atual'], 'CHAVE',
+                        Rede410(), 8192, aplicar_revisao=False)
+        resultado = motor.gerar(POR_NUMERO[500], 1, [{'verse': 1, 'base': []}])
+        self.assertEqual(resultado[0]['verse'], 1)
+        self.assertEqual(motor.modelo, 'atual')
+
     def test_descoberta_de_modelos_e_cacheada_por_execucao(self):
         from bee.ia import descobrir_modelo
         http = HTTPFalso({'data': [{'id': 'openai/gpt-oss-120b'}]})

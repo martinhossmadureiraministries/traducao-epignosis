@@ -59,9 +59,7 @@
       "versos": 57
     }
   },
-  "exaustos": [
-    "groq"
-  ],
+  "exaustos": [],
   "exaustos_em": "2026-11-20",
   "falhas_seguidas": 2,
   "lote_capitulo": null,
