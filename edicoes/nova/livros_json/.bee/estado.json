@@ -1,5 +1,5 @@
 {
-  "ciclos": 11,
+  "ciclos": 12,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
@@ -24,51 +24,51 @@
     },
     "2026-11-20": {
       "aberto": true,
-      "capitulos": 1,
+      "capitulos": 2,
       "emendas_revisao": 2,
       "falhas": 4,
       "fechado_em_utc": null,
-      "pedidos": 58,
-      "pedidos_ok": 22,
+      "pedidos": 76,
+      "pedidos_ok": 28,
       "por_provedor": {
         "cerebras": {
-          "pedidos": 2,
+          "pedidos": 6,
           "versos": 1
         },
         "cohere": {
-          "pedidos": 3,
+          "pedidos": 4,
           "versos": 0
         },
         "gemini": {
-          "pedidos": 45,
-          "versos": 93
+          "pedidos": 50,
+          "versos": 123
         },
         "groq": {
-          "pedidos": 5,
+          "pedidos": 6,
           "versos": 0
         },
         "nvidia": {
-          "pedidos": 1,
+          "pedidos": 3,
           "versos": 0
         },
         "openrouter": {
-          "pedidos": 2,
+          "pedidos": 7,
           "versos": 0
         }
       },
-      "versos": 57
+      "versos": 87
     }
   },
   "exaustos": [],
   "exaustos_em": "2026-11-20",
-  "falhas_seguidas": 2,
+  "falhas_seguidas": 0,
   "lote_capitulo": null,
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
-  "ultima_compilacao_build": "d8b55fe613b04a93b9f393dd78a3d674",
-  "ultima_compilacao_utc": "2026-11-19T23:50:34+00:00",
-  "ultimo_ciclo_utc": "2026-11-20T08:40:31+00:00",
+  "ultima_compilacao_build": "91cb5e56483d4e5385725a879c875795",
+  "ultima_compilacao_utc": "2026-11-20T08:54:29+00:00",
+  "ultimo_ciclo_utc": "2026-11-20T08:53:40+00:00",
   "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Cerebras · gpt-oss-120b: quota esgotada; NVIDIA NIM · meta/llama-3.1-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · c4ai-aya-expanse-8b: cohere: HTTP 404; verifique o endereço ou o nome do modelo.; OpenRouter · inclusionai/ling-3.2-flash:free: quota esgotada",
-  "versos_total": 176
+  "versos_total": 206
 }

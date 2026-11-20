@@ -112,3 +112,24 @@
 - 2026-11-20T08:40:42+00:00 — **ERRO** Ciclo 11 falhou: Nenhum provedor conseguiu responder: Cerebras · gpt-oss-120b: quota esgotada; NVIDIA NIM · meta/llama-3.1-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · c4ai-aya-expanse-8b: cohere: HTTP 404; verifique o endereço ou o nome do modelo.; OpenRouter · inclusionai/ling-3.2-flash:free: quota esgotada
 - 2026-11-20T08:40:42+00:00 — Módulos recompilados no fim do ciclo: 12/1189 capítulos, 246 versículos.
 - 2026-11-20T08:40:42+00:00 — Capítulos exportados para leitura: 13 (1 mudaram nesta execução).
+- 2026-11-20T08:53:40+00:00 — Porta de estilo ativa; 1 capítulo(s) com provedores evitados por deriva anterior.
+- 2026-11-20T08:53:40+00:00 — João 3: a evitar gemini (deriva de estilo anterior).
+- 2026-11-20T08:53:41+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T08:53:43+00:00 — **AVISO** openrouter: o modelo 'inclusionai/ling-3.2-flash:free' não está disponível nesta conta (quota esgotada); a usar 'openai/gpt-oss-120b:free'.
+- 2026-11-20T08:53:44+00:00 — **AVISO** openrouter: o modelo 'openai/gpt-oss-120b:free' não está disponível nesta conta (HTTP 404); a usar 'qwen/qwen3-235b-a22b:free'.
+- 2026-11-20T08:53:45+00:00 — **AVISO** openrouter: o modelo 'qwen/qwen3-235b-a22b:free' não está disponível nesta conta (HTTP 404); a usar 'deepseek/deepseek-chat-v3-0324:free'.
+- 2026-11-20T08:53:46+00:00 — **AVISO** openrouter: o modelo 'deepseek/deepseek-chat-v3-0324:free' não está disponível nesta conta (HTTP 404); a usar 'google/gemini-2.5-flash:free'.
+- 2026-11-20T08:53:47+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T08:53:50+00:00 — A usar agora Cerebras · gpt-oss-120b.
+- 2026-11-20T08:53:51+00:00 — **AVISO** cerebras: o modelo 'gpt-oss-120b' não está disponível nesta conta (quota esgotada); a usar 'qwen-3-32b'.
+- 2026-11-20T08:53:52+00:00 — **AVISO** cerebras: o modelo 'qwen-3-32b' não está disponível nesta conta (HTTP 404); a usar 'llama3.1-8b'.
+- 2026-11-20T08:53:53+00:00 — Falha de rede em Cerebras · llama3.1-8b; a tentar outro provedor.
+- 2026-11-20T08:53:54+00:00 — **AVISO** nvidia: o modelo 'meta/llama-3.3-70b-instruct' não está disponível nesta conta (HTTP 410); a usar 'nvidia/llama-3.1-nemotron-70b-instruct'.
+- 2026-11-20T08:53:55+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T08:53:56+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T08:54:02+00:00 — A usar agora Google Gemini (AI Studio) · gemini-3.5-flash-lite.
+- 2026-11-20T08:54:27+00:00 — **AVISO** Revisor cerebras falhou em João 3 (ErroRede); a tentar outro.
+- 2026-11-20T08:54:29+00:00 — Revisão de João 3 por gemini/gemini-3.5-flash-lite: capítulo aprovado sem emendas.
+- 2026-11-20T08:54:29+00:00 — Revisão de voz: 1 capítulo(s) revistos, 0 emenda(s) aplicada(s).
+- 2026-11-20T08:54:29+00:00 — Módulos recompilados (PARCIAL): 13/1189 capítulos, 282 versículos.
+- 2026-11-20T08:54:29+00:00 — Ciclo 12: +30 versículos, +1 capítulos em João 4 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 87 versículos, 76 pedidos. A seguir: João 4.
