@@ -277,18 +277,19 @@ Gemini, Groq ou qualquer reserva recebem o mesmo bloco — a memória é o P0 do
 sistema de convergência multi-provedor (P1 será o guarda como porta obrigatória
 com quarentena e repetição noutro provedor; P2 a revisão por segunda IA).
 
-O JSON guarda, com dados reais dos pilotos aprovados:
+A memória é v1.1. O JSON guarda, com dados reais dos pilotos aprovados e da
+regeneração editorial de 2 Tessalonicenses:
 
 | Secção | Conteúdo |
 |---|---|
-| `registro` | plural «vocês» obrigatório + lista negra de arcaísmos (espelho exato do que a guarda chumba) |
-| `regras_duras`, `aperto` | as 9 regressões proibidas e os 6 apertos de calibração, numerados |
+| `registro` | plural «vocês» obrigatório, `ortografia` (norma pt-PT: «connosco», «de facto», «registo») + lista negra de arcaísmos (espelho exato do que a guarda chumba) |
+| `regras_duras`, `aperto` | as 12 regressões proibidas e os 6 apertos de calibração, numerados. As três últimas vêm da crítica textual: pontuação e maiúscula inicial, SENHOR e Senhor, crítica textual só com evidência colacionada |
 | `glossario` | decisões por termo grego com `usar`, `contexto_reuso`, `livros_reuso`, `rejeitar` e exemplo aprovado (ex.: σπλάγχνα → «coração», mantido igual nos vv. 7/12/20 de Filemom) |
 | `rejeitados` | palavras/formulações vetadas com motivo e alternativa («ou seja» no verso, «sobremaneira», «o sem lei», «entranhas») |
 | `formulas_consolidadas` | saudação/ação de graças/bênção repetidas iguais em todos os livros (a saudação é letra a letra Filemom 1:3) |
 | `ancoras` | livros-base (Fm, Tt, Jd, 2Jo, 3Jo), amostras por género e lista EVITAR |
 | `contrastes` | pares mau→bom nascidos das regressões reais de 2Ts |
-| `aprovacoes` | em que assenta esta voz (pilotos, ESTILO_BEE v0.5, PR #50–#52) |
+| `aprovacoes` | em que assenta esta voz (pilotos, ESTILO_BEE v0.5, PR #50–#52, ESTILO_BEE v0.6) |
 
 **Como o pedido recebe a memória.** O system prompt do perfil `nova` = contrato
 operacional (formato/rigor/comentário, no código) + `system_fragment()`; o campo
@@ -304,6 +305,36 @@ lista negra da memória continua coberta pela guarda. Novas aprovações (mais
 pilotos) entram em `ancoras`/`aprovacoes`; novos vetos em `rejeitados`. O perfil
 legado não usa nada daqui — permanece byte-idêntico.
 
+## Proveniência e revisão declaradas no JSON
+
+Um livro que cita manuscritos tem de dizer **de onde veio** e **até onde foi
+revisto**. Os dois campos existem no JSON de cada livro e são validados por
+`bee/arquivos.py`; o compilador (`bee/compilador.py`) leva-os para a base
+`BEE.commentaries.SQLite3`, onde `info.source` fica a ser o texto de atribuição
+completo das fontes do lote.
+
+`bibliography` — uma entrada por fonte **efetivamente consultada**, com:
+
+| Campo | O que fixa |
+|---|---|
+| `name` | identificação da fonte, suficiente para a encontrar |
+| `revision` | o commit exato (para fontes de um repositório Git) |
+| `url` | de onde veio |
+| `license` | a licença declarada pelo fornecedor |
+| `attribution` | o que se fez com ela, quem é o autor e o que **não** se pode afirmar a partir dela |
+
+`review` — três estados por trecho (`rascunho`, `em_revisao`, `revisado`), em
+`editorial_blocks` e `specialist`, cada um com `verse_from`, `verse_to` e `nota`.
+Cobertura **não** é revisão: um bloco pode cobrir os 47 versículos de um livro e
+continuar `rascunho`. É exatamente isso que 2 Tessalonicenses declara, com a
+nota a nomear as duas unidades de nível C que pedem leitura especializada.
+
+Licenças com obrigação de partilha (o acervo CNTR é CC BY-SA 4.0) não impedem a
+citação: impedem a redistribuição. A regra do projeto é **custódia**, não
+incorporação — o acervo fica em `.bee-cache/` (fora do Git, ver `.gitignore`), o
+que se versiona é o nosso relatório de colação em `docs/colacao/`. O protocolo
+está em [`CRITICA_TEXTUAL.md`](CRITICA_TEXTUAL.md), §8.
+
 ## Testes
 
 `tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz,
@@ -318,5 +349,8 @@ revisão por segunda IA (autor excluído, emendas validadas pela porta, falhas
 preservam o original, lotes de 40 versículos).
 `tests/test_metricas_p3.py` cobre as métricas por provedor (recolha, confiança,
 cache), prioridades com pontuações e a CLI de aprovações sobre uma cópia da memória.
+`tests/test_manuscritos.py` cobre o analisador MES e a colação (40 testes);
+`tests/test_critica_textual.py` confronta o protocolo com os dados reais de
+2 Tessalonicenses (44 testes).
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

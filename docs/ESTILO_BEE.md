@@ -165,3 +165,48 @@ Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto
 **Judas:** carta aprovada como amostra editorial, incluindo a redação final «São ímpios, há muito assinalados para esta condenação» no v. 4. A alteração é de estilo, não de variante textual. A aprovação não substitui revisão especializada.
 
 **Tito:** carta aprovada como referência de voz, incluindo «escravas do vinho» (2:3) e «conciliadores» (3:2). As notas explicam as nuances das duas escolhas. A aprovação editorial não substitui revisão especializada.
+
+## v0.6 — crítica textual, pontuação e arquivologia (20/11/2026)
+
+A voz continua a mesma; o que muda é a **exigência de prova** por detrás de cada
+nota e a coerência gráfica entre versículos. O protocolo completo está em
+[CRITICA_TEXTUAL.md](CRITICA_TEXTUAL.md); aqui ficam as consequências para a
+redação, que são as que um revisor precisa de ter à mão.
+
+**Três secções obrigatórias, três condicionais.** Cada nota tem Análise Léxica,
+Crítica Textual e Síntese Exegética. A elas juntam-se, quando a passagem o pede,
+Hermenêutica e Contexto, Geografia e História e Nota de redação — esta última só
+para registar uma decisão que se afasta de uma redação anterior já aprovada.
+
+**Só se cita o que se colacionou.** O aparato do SBLGNT nomeia edições (WH, Treg,
+NA28, RP), nunca códices; por isso «o Sinaiticus lê X» só pode escrever-se onde
+existe colação (`docs/colacao/`). Uma edição impressa não é um manuscrito, uma
+tradução moderna não é evidência textual e «o Textus Receptus» não é um texto
+único. Idade e número de cópias são indícios, não critério: decide-se por
+evidência externa e interna, e diz-se o nível de certeza (A, B ou C).
+
+**Pontuação e maiúscula inicial.** Um versículo que continua a frase do anterior
+termina em vírgula (ou ponto e vírgula) e o seguinte começa em minúscula; um
+versículo que abre frase nova termina em ponto e o seguinte começa em maiúscula.
+Nunca minúscula depois de ponto, nunca maiúscula depois de vírgula, e nenhum
+versículo fica sem pontuação final.
+
+**SENHOR e Senhor.** As maiúsculas são do Tetragrama יהוה no texto hebraico. No
+grego do NT κύριος está escrito por extenso: escreve-se «Senhor». «O dia do
+SENHOR» em 2Ts 2:2 afirmava do texto grego algo que ele não diz; a ligação à
+fórmula profética (Jl 2:1; Am 5:18; Sf 1:14) pertence à nota.
+
+**Norma ortográfica.** Português europeu, sem oscilar: «connosco», «de facto»,
+«registo», «secção», «aspeto». Está em `modelos/estilo_bee.json` →
+`registro.ortografia` e chega a todos os provedores.
+
+**Proveniência.** Cada livro declara em `bibliography` as fontes efetivamente
+consultadas, com revisão (commit), URL, licença e o que se consultou nelas; e em
+`review` os estados de revisão editorial e especializada, que nunca se confundem
+com cobertura. O acervo CNTR é CC BY-SA: é consultado e citado, nunca
+redistribuído — vive em `.bee-cache/`, fora do Git.
+
+**2 Tessalonicenses** foi o primeiro livro regenerado sob este protocolo
+(47 versículos, 30 unidades de variação decididas, duas de nível C). A redação é
+editorial, não saída de modelo, e o livro continua RASCUNHO: a voz da versão
+anterior tinha sido aprovada, esta redação ainda não foi lida pelo responsável.

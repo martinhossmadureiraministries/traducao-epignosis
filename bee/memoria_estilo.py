@@ -60,6 +60,11 @@ def validar(dados: Any) -> list[str]:
         for campo in ('tratamento_plural', 'tu_oracao_direta'):
             if not isinstance(registro.get(campo), str) or not registro[campo].strip():
                 erros.append(f'registro.{campo} deve ser texto não vazio')
+        ortografia = registro.get('ortografia')
+        if ortografia is not None and (
+            not isinstance(ortografia, str) or not ortografia.strip()
+        ):
+            erros.append('registro.ortografia deve ser texto não vazio')
         proibidos = registro.get('arcaismos_proibidos')
         if not isinstance(proibidos, list) or not proibidos:
             erros.append('registro.arcaismos_proibidos deve ser lista não vazia')
@@ -164,6 +169,7 @@ def system_fragment(dados: dict) -> str:
     partes.append(
         '\n\nVOZ E REGISTO: ' + registro['tratamento_plural'] + ' '
         + registro['tu_oracao_direta'] + ' ' + registro.get('nota_connosco', '')
+        + ' ' + registro.get('ortografia', '')
     )
     regras = ' '.join(
         f'({i}) {regra["rotulo"]}: {regra["texto"]}'

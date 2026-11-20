@@ -1,8 +1,8 @@
 {
   "meta": {
-    "versao": "1.0",
-    "atualizado_em": "2026-11-19",
-    "fonte_de_autoridade": "docs/ESTILO_BEE.md (v0.5)",
+    "versao": "1.1",
+    "atualizado_em": "2026-11-20",
+    "fonte_de_autoridade": "docs/ESTILO_BEE.md (v0.5) e docs/CRITICA_TEXTUAL.md",
     "descricao": "Memória de estilo da edição nova da BEE. Fonte única enviada a TODOS os provedores, para que Gemini, Groq, Cerebras e os demais convirjam na mesma voz. O código não contém regras de estilo próprias da edição nova: bee/memoria_estilo.py renderiza este ficheiro nos prompts.",
     "como_alterar": "Editar este JSON e correr `python3 -m pytest tests/test_memoria_estilo.py` — o schema é validado automaticamente. Aprovações e âncoras crescem com pilotos aprovados pelo responsável."
   },
@@ -24,7 +24,8 @@
       "sabíeis", "padeceis", "quereis", "deveis", "fazeis", "dizeis", "vedes",
       "rogamos-vos", "tornai-vos", "lembrai-vos"
     ],
-    "nota_connosco": "A forma «connosco» é aceite quando soar natural (os pilotos aprovados de 2 João a mantêm); o que está proibido é «convosco» e o paradigma completo do «vós»."
+    "nota_connosco": "A forma «connosco» é aceite quando soar natural (os pilotos aprovados de 2 João a mantêm); o que está proibido é «convosco» e o paradigma completo do «vós».",
+    "ortografia": "Português europeu, sem hesitação entre normas: «connosco» (nunca «conosco»), «de facto» (nunca «de fato»), «registo» (nunca «registro»), «secção», «aspeto», «ação», «facto». A norma não é capricho regional — é o que faz o texto soar ao mesmo livro de ponta a ponta; os pilotos aprovados e 2 Tessalonicenses seguem-na."
   },
   "regras_duras": [
     {
@@ -62,6 +63,18 @@
     {
       "rotulo": "REVISÃO FINAL OBRIGATÓRIA",
       "texto": "ortografia vigente, acentuação, concordância de número/género (imperativos e pronomes) e ZERO gralhas (palavras malformadas, como «quej»). Um versículo com erro gramatical é inaceitável."
+    },
+    {
+      "rotulo": "PONTUAÇÃO E MAIÚSCULA INICIAL",
+      "texto": "a relação sintática entre versículos nunca é apagada: se um versículo continua a frase do anterior, termina em vírgula (ou ponto e vírgula) e o seguinte começa em minúscula; se abre frase nova, termina em ponto e o seguinte começa em maiúscula. Nunca minúscula depois de ponto, nunca maiúscula depois de vírgula, e nenhum versículo fica sem pontuação final. Onde o grego tem uma relativa que o português não consegue pendurar no antecedente sem ambiguidade, abre-se frase nova e a nota regista-o."
+    },
+    {
+      "rotulo": "SENHOR E Senhor",
+      "texto": "«SENHOR» em maiúsculas só para o Tetragrama יהוה no texto hebraico; «Senhor» para אֲדֹנָי (Adonai) e para κύριος no grego, onde nenhuma edição crítica imprime o Tetragrama. Escrever «SENHOR» sobre κύριος afirma do texto grego algo que ele não diz."
+    },
+    {
+      "rotulo": "CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA",
+      "texto": "na nota, citar apenas as edições e as testemunhas que constem do aparato ou do relatório de colação fornecido (docs/colacao/). Uma edição impressa não é um manuscrito; uma tradução moderna não é evidência textual, é consequência de uma decisão alheia; «o Textus Receptus» não é um texto único (Scrivener, Stephanus, RP e KJTR divergem entre si). Idade e número de cópias são indícios, não critério: decidir por evidência externa e interna e dizer o nível de certeza (A segura, B provável, C disputa real que exige revisão especializada). Sem colação para o livro, não atribuir nenhuma leitura a um códice."
     }
   ],
   "aperto": [
@@ -101,7 +114,8 @@
     "Separar tradução de nota: o versículo traduz, a nota explica; oração, declaração e aplicação devocional ficam fora de ambos.",
     "Zero gralhas: palavra malformada ou erro de concordância chumba o versículo.",
     "Palavras acrescentadas apenas para clareza ficam entre <i>...</i>; nada de grandiloquência adicionada.",
-    "Nenhuma metalinguagem no versículo: «ou seja», «isto é», «grego:», «literalmente» e siglas pertencem à nota."
+    "Nenhuma metalinguagem no versículo: «ou seja», «isto é», «grego:», «literalmente» e siglas pertencem à nota.",
+    "Não misturar níveis de evidência: o que uma edição impressa diz, o que um manuscrito colacionado diz e o que uma tradução moderna faz são três coisas diferentes e não se citam umas pelas outras."
   ],
   "glossario": [
     {
@@ -166,6 +180,92 @@
       "termo": "הֶבֶל (hevel)",
       "usar": "tratar por contexto, como imagem de sopro/vapor",
       "sentido": "sem converter toda ocorrência em «a vida não tem valor»."
+    },
+    {
+      "grego": "ἀνομία · ἄνομος",
+      "transliteracao": "anomía · ánomos",
+      "usar": "«rebelião» para ἀνομία e «ímpio» para ἄνομος no corpo do texto",
+      "sentido": "ausência de lei, rebeldia contra a ordem de Deus. A família percorre 2Ts 2 (ἀνομία em 2:3 e 2:7, ἄνομος em 2:8) e por isso a mesma palavra tem de se repetir dentro do parágrafo.",
+      "rejeitar": "Não usar «iniquidade» (arcaísmo) nem o calque «o sem lei»; «homem do pecado» só na nota, como leitura bizantina de 2:3",
+      "contexto_reuso": "sempre que a família ἀνομ- aparecer no mesmo livro",
+      "livros_reuso": [
+        600
+      ],
+      "exemplo_aprovado": "2Ts 2:3 «o homem da rebelião»; 2Ts 2:8 «Então será revelado o ímpio»"
+    },
+    {
+      "grego": "ἀπώλεια · υἱὸς τῆς ἀπωλείας",
+      "transliteracao": "apṓleia · huiòs tēs apōleías",
+      "usar": "«ruína»; no título de 2Ts 2:3, «o filho da ruína»",
+      "sentido": "hebraísmo (ben-): «filho de» diz carácter e destino, não filiação biológica. O mesmo título identifica Judas em Jo 17:12.",
+      "rejeitar": "«filho da perdição» (corrente de genitivos à Almeida, vetada) e «o perdido» (afirma um estado final que o genitivo não afirma)",
+      "contexto_reuso": "2Ts 2:3 e Jo 17:12 — manter o mesmo título nos dois",
+      "livros_reuso": [
+        600
+      ]
+    },
+    {
+      "grego": "ἀτάκτως · ἀτακτέω",
+      "transliteracao": "atáktōs · ataktéō",
+      "usar": "«desordenadamente» e «viver desordenadamente»",
+      "sentido": "fora de fila, sem cumprir o seu papel; em 2Ts 3 é não trabalhar e meter-se no que não é seu (3:6-11).",
+      "rejeitar": "«ocioso» (traduz outra coisa) e a repetição de «de maneira desordenada» em versículos seguidos",
+      "livros_reuso": [
+        600
+      ],
+      "exemplo_aprovado": "2Ts 3:11 «vivem desordenadamente, sem trabalhar, mas se metendo em tudo»"
+    },
+    {
+      "grego": "παράδοσις",
+      "transliteracao": "parádosis",
+      "usar": "«tradição»",
+      "sentido": "o que foi transmitido; palavra neutra em si — positiva em 2Ts 2:15 e 3:6, negativa em Mc 7:3-13.",
+      "nao_estender_a": "o sentido pejorativo de Mc 7:3-13, nem «costume» quando o texto fala de ensino recebido",
+      "livros_reuso": [
+        600
+      ]
+    },
+    {
+      "grego": "ἀπαρχή",
+      "transliteracao": "aparchḗ",
+      "usar": "«primícias»",
+      "sentido": "primeira porção da colheita ou da massa, oferecida a Deus e que garante o resto (Rm 16:5; 1Co 16:15; Tg 1:18).",
+      "nao_estender_a": "ἀπʼ ἀρχῆς («desde o princípio»), que é outra leitura e não outra tradução da mesma palavra — em 2Ts 2:13 é variante de nível C e pertence à nota",
+      "livros_reuso": [
+        600
+      ],
+      "exemplo_aprovado": "2Ts 2:13 «Deus os escolheu como primícias para a salvação»"
+    },
+    {
+      "grego": "παρουσία",
+      "transliteracao": "parousía",
+      "usar": "«vinda»; «presença» quando o contexto é de estar presente",
+      "sentido": "presença e, por extensão técnica, a vinda de um soberano; no NT, a vinda de Cristo.",
+      "livros_reuso": [
+        600
+      ],
+      "exemplo_aprovado": "2Ts 2:1 «a vinda do nosso Senhor Jesus Cristo»"
+    },
+    {
+      "grego": "ἐπιφάνεια",
+      "transliteracao": "epipháneia",
+      "usar": "«esplendor» quando qualifica a vinda de Cristo",
+      "sentido": "manifestação visível e gloriosa.",
+      "rejeitar": "«manifestação da sua vinda», que empilha dois genitivos (aperto B) e está na lista de marcadores de Almeida",
+      "livros_reuso": [
+        600
+      ],
+      "exemplo_aprovado": "2Ts 2:8 «aniquilará com o esplendor da sua vinda»"
+    },
+    {
+      "grego": "ὑπομονή",
+      "transliteracao": "hypomonḗ",
+      "usar": "«perseverança»",
+      "sentido": "permanecer de pé sob pressão, não desistir; não é paciência passiva.",
+      "nao_estender_a": "μακροθυμία («longânimo»), que é demora voluntária em irar-se",
+      "livros_reuso": [
+        600
+      ]
     }
   ],
   "rejeitados": [
@@ -193,6 +293,21 @@
       "item": "«convosco», «vosso/vossa», «rogamos-vos»",
       "motivo": "paradigma do «vós» proibido na LISTA NEGRA; observado nas regressões de 2Ts.",
       "alternativa": "«vocês», «de vocês», «pedimos a vocês»."
+    },
+    {
+      "item": "«SENHOR» em maiúsculas por κύριος do grego",
+      "motivo": "as maiúsculas estão reservadas ao Tetragrama יהוה; usá-las sobre κύριος afirma do texto grego algo que ele não diz (regressão observada em 2Ts 2:2).",
+      "alternativa": "«Senhor»; «SENHOR» só onde o hebraico traz יהוה."
+    },
+    {
+      "item": "«de fato», «conosco», «registro» e demais formas do português do Brasil",
+      "motivo": "o projeto escreve português europeu e a mistura de normas quebra a coerência entre livros.",
+      "alternativa": "«de facto», «connosco», «registo» (ver registro.ortografia)."
+    },
+    {
+      "item": "hífen não separável U+2011 («proclamando‑se»)",
+      "motivo": "carácter invisível que quebra a pesquisa, a comparação e a normalização dos dados; entrou em 2Ts 2:4 sem que ninguém o visse.",
+      "alternativa": "hífen ASCII U+002D; scripts/regenerar_2ts.py chumba o U+2011."
     }
   ],
   "formulas_consolidadas": {
@@ -275,7 +390,12 @@
       "«vós/convosco»",
       "«a tua amor»",
       "«companheiro de campanha»",
-      "nomes deturpados («Apfia»)"
+      "nomes deturpados («Apfia»)",
+      "«o dia do SENHOR» por κύριος grego",
+      "«filho da perdição»",
+      "«manifestação da sua vinda»",
+      "«para oferecer a nós mesmos como modelo»",
+      "hífen U+2011 e outras marcas invisíveis"
     ]
   },
   "contrastes": [
@@ -288,19 +408,26 @@
     {
       "mau_referencia": "2Ts 1:3",
       "mau": "…a vossa fé cresce sobremaneira e o amor de cada um de vós para com os outros transborda",
-      "bom": "…a fé que vocês têm está a crescer muito, e o amor de cada um de vocês pelos outros transborda.",
-      "licao": "sem «vós» nem arcaísmos; verbo natural"
+      "bom": "…a fé que vocês têm está crescendo muito, e o amor de cada um de vocês pelos outros transborda,",
+      "licao": "sem «vós» nem arcaísmos; verbo natural; vírgula final porque 1:4 continua a mesma frase"
     },
     {
       "mau_referencia": "2Ts 2:8",
       "mau": "o sem lei… aniquilará pela manifestação da sua vinda",
-      "bom": "o ímpio… a quem o Senhor Jesus destruirá com o sopro da sua boca e aniquilará na manifestação da sua vinda.",
-      "licao": "«ímpio» para ἄνομος; a nota regista «homem da iniquidade»"
+      "bom": "Então será revelado o ímpio, a quem o Senhor Jesus destruirá com o sopro da sua boca e aniquilará com o esplendor da sua vinda;",
+      "licao": "«ímpio» para ἄνομος; «esplendor» desfaz a cadeia ἐπιφανείᾳ τῆς παρουσίας (aperto B); o ponto e vírgula final avisa que 2:9 continua a falar da mesma vinda"
+    },
+    {
+      "mau_referencia": "2Ts 2:2",
+      "mau": "…nem por carta, como nós, como se o dia do SENHOR já estivesse aqui.",
+      "bom": "…seja por carta que pareça vir de nós, como se o dia do Senhor já tivesse chegado.",
+      "licao": "«Senhor» sem maiúsculas (κύριος grego não é Tetragrama); um só comparativo por vez; ἐνέστηκεν é perfeito — «já tivesse chegado», não «já estivesse aqui»"
     }
   ],
   "aprovacoes": [
     "Pilotos aprovados pelo responsável: Filemom, Tito, Judas, 2 João e 3 João (edicoes/nova/livros_json)",
     "docs/ESTILO_BEE.md (v0.5) — documento de autoridade da voz",
-    "Regras duras, aperto de calibração e guarda anti-deriva consolidados nos PR #50–#52"
+    "Regras duras, aperto de calibração e guarda anti-deriva consolidados nos PR #50–#52",
+    "2 Tessalonicenses: voz aprovada pelo responsável a 2026-11-19 («parece a ARC sem ser a ARC, com traços próprios») e livro regenerado a 2026-11-20 sob docs/CRITICA_TEXTUAL.md; continua RASCUNHO, com revisão editorial e especializada pendentes no campo review do JSON."
   ]
 }

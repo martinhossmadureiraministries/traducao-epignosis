@@ -195,6 +195,44 @@ preserva os 18 capítulos/766 versículos.
 - `entregas/BEE-previa.zip` foi regenerado a partir dos **19 capítulos/806
   versículos completos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
 
+## Etapa 10 — crítica textual aplicada (20/11/2026)
+
+A proposta do responsável («estudo de crítica textual, manuscritos,
+manuscritologia… os mais antigos e com mais cópias devem ser priorizados») foi
+transformada em procedimento e aplicada a um livro inteiro.
+
+- **Protocolo:** `docs/CRITICA_TEXTUAL.md` — convicção doutrinária e o que ela
+  exige do método, por que a regra dos «mais antigos e com mais cópias» não se
+  aplica como slogan (com 2Ts 2:13 como caso real), quatro níveis de evidência e
+  três proibições, registo de testemunhas com as pendências, procedimento de sete
+  passos por unidade, exegese/hermenêutica, geografia bíblica, arquivologia e a
+  tabela de decisões do livro.
+- **Evidência:** `bee/manuscritos.py` lê as transcrições MES do acervo CNTR
+  (revisão `4e743a4`, CC BY-SA, em `.bee-cache/` fora do Git) e `scripts/colar.py`
+  produz `docs/colacao/2_Tessalonicenses.json` e `.md`: 47 versículos contra 01,
+  02, 03, P30 e P92 e os textos WH, RP, ST, KJTR, SR e Scrivener, com o estado
+  físico do suporte (lacuna, texto suprido, mão corrigida, letra ilegível).
+- **Livro regenerado:** `edicoes/nova/livros_json/600_2_Tessalonicenses.json`, a
+  partir de `scripts/regenerar_2ts.py` (`--verificar` valida sem escrever). A
+  versão anterior aprovada foi guardada em
+  `rascunhos/600_2_Tessalonicenses_aprovado_2026-11-19.json` e o histórico de
+  geração dos provedores foi conservado na íntegra.
+- **Guarda corrigida:** `bee/inspetor.py` comparava marcadores acentuados contra
+  texto sem acentos, por isso «filho da perdição», «manifestação da sua vinda»,
+  «glória da sua força» e «dar-se-á» nunca eram assinalados — o falso negativo que
+  deixou passar 2Ts 2:3 e 2:8.
+- **Memória de estilo v1.1:** três regras duras novas (pontuação e maiúscula
+  inicial; SENHOR e Senhor; crítica textual só com evidência colacionada),
+  `registro.ortografia`, oito entradas de glossário e três vetos novos.
+- **Testes:** `tests/test_manuscritos.py` (40) e `tests/test_critica_textual.py`
+  (49). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
+  testemunha sem registo de colação naquele versículo, e que as âncoras da
+  memória de estilo citam o texto aprovado em vez de o reescreverem. Total:
+  350 testes.
+
+Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
+especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
+
 ## Próximas etapas
 
 | Etapa | Estado |
@@ -208,3 +246,4 @@ preserva os 18 capítulos/766 versículos.
 | 7. Diagnóstico do cron | feito: `schedule` nunca correu; hora+cron reduzidos, relógio e pinger documentados |
 | 8. Limpeza física | feita: raiz curta e antigos em `docs/arquivo/` |
 | 9. Verificação final | por fazer |
+| 10. Crítica textual aplicada | feita para 2 Tessalonicenses; falta colacionar os outros livros da edição nova e rever as duas unidades de nível C |
