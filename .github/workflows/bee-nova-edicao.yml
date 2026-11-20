@@ -97,7 +97,7 @@ env:
   # agradar, alargar para 'gemini,cerebras,openrouter,nvidia,cohere,groq'. As
   # chaves continuam injetadas nos passos; basta editar esta lista para as usar.
   # (Cloudflare Workers AI ainda não suportado: exige CF_ACCOUNT_ID.)
-  BEE_PROVEDORES: 'gemini,groq'
+  BEE_PROVEDORES: 'gemini,cerebras,openrouter,nvidia,cohere,mistral,groq'
   OVH_API_KEY_ATIVO: '0'
   BEE_VERSOS_POR_DIA: '0'
   BEE_PROVEDOR: auto
