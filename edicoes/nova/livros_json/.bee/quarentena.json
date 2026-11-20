@@ -32,7 +32,27 @@
       "error": "resposta inválida após 3 tentativa(s): João 2:21-23: O objeto deve conter a lista verses.",
       "at_utc": "2026-11-19T23:50:23+00:00",
       "status": "pendente"
+    },
+    {
+      "reference": "João 3:9",
+      "book": 500,
+      "chapter": 3,
+      "verse": 9,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.12: vos, vós)",
+      "at_utc": "2026-11-20T07:44:30+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "12": [
+          "vos",
+          "vós"
+        ]
+      },
+      "providers_tried": [
+        "gemini"
+      ]
     }
   ],
-  "updated_at_utc": "2026-11-19T23:50:23+00:00"
+  "updated_at_utc": "2026-11-20T07:44:30+00:00"
 }

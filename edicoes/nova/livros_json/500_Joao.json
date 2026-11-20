@@ -260,9 +260,303 @@
         "text": "E diz-lhe: «Amém, amém, digo a vocês: verão o céu aberto e os anjos de Deus subindo e descendo sobre o Filho do Homem.»",
         "commentary": "<p><b>Análise Léxica:</b> καὶ (kai) «e»; λέγει (legei) «diz»; αὐτῷ (autō) «a ele»; Ἀμὴν ἀμὴν (amēn amēn) «amém, amém»; λέγω (legō) «digo»; ὑμῖν (humin) «a vocês»; ὄψεσθε (opsethe) «verão» (2ª pers. pl. futuro do indicativo de ὁράω); τὸν οὐρανὸν (ton ouranon) «o céu»; ἀνεῳγότα (aneōgóta) «aberto» (particípio aoristo passivo de ἀνοίγω); τοὺς ἀγγέλους (tous angelous) «os anjos»; τοῦ θεοῦ (tou theou) «de Deus»; ἀναβαίνοντας (anabaínontas) «subindo» (particípio presente ativo de ἀναβαίνω); καὶ (kai) «e»; καταβαίνοντας (katabaínontas) «descendo» (particípio presente ativo de καταβαίνω); ἐπὶ τὸν υἱὸν τοῦ ἀνθρώπου (epi ton huion tou anthrōpou) «sobre o Filho do Homem».</p><p><b>Crítica Textual:</b> O texto base SBLGNT contém a leitura «ὑμῖν» com apoio de WH, Treg, NA28. O Textus Receptus apresenta «απʼ ἄρτι» (apʼ arti) ao invés de «ἀπʼ ἄρτι»; a variante «απʼ ἄρτι» não aparece nas testemunhas citadas. [[diferença: Textus Receptus tem «απʼ ἄρτι» enquanto SBLGNT tem «ἀπʼ ἄρτι» (sem o acento inicial)]]; não há outras variantes relevantes para este versículo.</p><p><b>Síntese Exegética:</b> Jesus promete uma visão escatológica: o céu será aberto e os anjos de Deus se moverão livremente sobre o Filho do Homem, indicando a revelação plena da sua missão e a participação divina na história humana.</p>"
       }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "No terceiro dia, houve um casamento em Caná da Galileia, e a mãe de Jesus estava ali.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἡμέρᾳ</i> (hēmera) — dia; <i>γάμος</i> (gamos) — casamento, festa de casamento; <i>μήτηρ</i> (mētēr) — mãe. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> [[ἡμέρᾳ τῇ τρίτῃ WH, NA28, RP ]] vs [[τρίτῃ ἡμέρᾳ Treg ]]. A ordem adotada segue SBLGNT e a maioria dos grandes testemunhos.</p><p><b>Síntese Exegética:</b> O texto introduz um novo episódio cronologicamente situado no terceiro dia, marcando o cenário com a presença da mãe de Jesus na localidade galileia de Caná.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Jesus e os seus discípulos também tinham sido convidados para o casamento.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐκλήθη</i> (eklēthē) — foi chamado, foi convidado; <i>μαθηταὶ</i> (mathētai) — discípulos. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A inclusão de Jesus e dos seus discípulos na lista de convidados estabelece o contexto social imediato do milagre que se seguirá na narrativa joanina.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Como o vinho se esgotou, a mãe de Jesus disse-lhe: «Eles não têm vinho.»",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ὑστερήσαντος</i> (hysterēsantos) — tendo faltado, tendo acabado, tendo ficado em falta; <i>οἴνου</i> (oinou) — vinho. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> A escassez do vinho é apresentada de forma concisa, motivando a intervenção direta da mãe de Jesus junto dele com uma constatação objetiva da falta.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Jesus disse-lhe: «Mulher, que temos nós em comum? A minha hora ainda não chegou.»",
+        "commentary": "<p><b>Análise Léxica:</b> <i>λέγει</i> (legei) — diz; <i>γύναι</i> (gynai) — mulher, tratamento respeitoso mas distante, sem conotação pejorativa; <i>ὥρα</i> (hōra) — hora, momento determinado por Deus.</p><p><b>Crítica Textual:</b> Sem variante significativa entre as edições fornecidas, à exceção de acréscimos pontuais de partículas no Textus Receptus que não alteram o sentido global da interpelação.</p><p><b>Síntese Exegética:</b> A resposta de Jesus marca uma transição na sua autoridade face aos laços familiares terrenos, subordinando o seu agir estritamente ao tempo determinado pelo Pai.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "A mãe dele disse aos serventes: «Façam tudo o que ele lhes disser.»",
+        "commentary": "<p><b>Análise Léxica:</b> <i>μήτηρ</i> (mētēr) — mãe; <i>διακόνοις</i> (diakonis) — serventes, diáconos no sentido funcional de atendimento à mesa; <i>ποιήσατε</i> (poiēsate) — façam.</p><p><b>Crítica Textual:</b> A variante [[Ὅ τι]] (SBLGNT, Treg, NA28) versus [[Ὅτι]] (WH) divide-se entre «tudo o que» ou «que o que», mantendo equivalência prática na instrução dada aos serventes.</p><p><b>Síntese Exegética:</b> Demonstrando confiança plena na direção de Jesus, Maria cede a iniciativa da ação aos serventes, preparando o cenário para o primeiro sinal.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Estavam ali seis talhas de pedra, postas segundo o rito de purificação dos judeus, que comportavam duas ou três medidas cada uma.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ὑδρίαι</i> (hydriai) — talhas ou potes de água; <i>λίθιναι</i> (lithinai) — de pedra; <i>καθαρισμόν</i> (katharismon) — purificação; <i>μετρητάς</i> (metrētas) — medidas (metretas, cerca de 40 litros cada).</p><p><b>Crítica Textual:</b> Pequena variação na ordem das palavras entre [[λίθιναι ὑδρίαι]] e [[ὑδρίαι λίθιναι]] (RP), bem como na posição da cláusula relativa à purificação, sem impacto na tradução.</p><p><b>Síntese Exegética:</b> Os recipientes de pedra, associados às rigorosas exigências de pureza ritual do judaísmo, servem de base material para a transformação operada por Jesus, apontando para a substituição do antigo sistema.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): João 2:7-9: O objeto deve conter a lista verses..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "E disse-lhes: «Agora, tirem um pouco e levem ao encarregado da festa.» E eles levaram.",
+        "commentary": "<p><b>Análise Léxica:</b> λέγει (legei) — forma verbal presente do indicativo, «diz» ou «disse» (narrativo); Ἀντλήσατε (antlēsate) — imperativo aoristo, «tirem água» ou «retirem líquido de um recipiente»; φέρετε (pherete) — imperativo presente, «levem» ou «conduzam»; ἀρχιτρικλίνῳ (architriklinō) — substantivo dativo masculino, «encarregado do triclínio» ou diretor de mesa/banquete.</p><p><b>Crítica Textual:</b> No final do versículo, o SBLGNT traz <i>οἱ δὲ</i> (com suporte de WH, Treg, NA28), enquanto o Textus Receptus apresenta <i>καὶ</i> antes de <i>ἤνεγκαν</i>. A alteração entre a conjunção aditiva e o pronome demonstrativo com valor conectivo não altera o sentido narrativo do ato de levar a água transformada.</p><p><b>Síntese Exegética:</b> Jesus comanda os serventes a retirarem a água que agora se tornara vinho e a apresentarem ao responsável pelo banquete. A ação ocorre sem alarde, demonstrando submissão imediata às instruções dadas no versículo anterior.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Quando o encarregado da festa provou a água tornada vinho — sem saber de onde vinha, embora os serventes que tinham tirado a água soubessem —, chamou o noivo",
+        "commentary": "<p><b>Análise Léxica:</b> ἐγεύσατο (egeusato) — verbo aoristo médio, «provou» ou «experimentou»; οἶνον γεγενημένον (oinon gegenēmenon) — acusativo com particípio perfeito, «vinho que se havia tornado» ou «vinho feito»; ᾔδεισαν (ēdeisan) — verbo no mais-que-perfeito com sentido de particípio passado, «sabiam»; διάκονοι (diakonoi) — substantivo nominativo plural, «serventes» ou «ministros/diáconos» no contexto de serviço à mesa.</p><p><b>Crítica Textual:</b> Sem variante significativa nas edições principais entre SBLGNT e Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A ignorância do mestre-sala quanto à origem do vinho contrasta diretamente com o conhecimento direto dos serventes que realizaram a retirada da água. Esse detalhe ressalta a objetividade do milagre, constatado de forma imparcial por quem liderava a mesa antes de qualquer explicação.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "e disse-lhe: «Todo homem serve primeiro o vinho bom e, quando já estão embriagados, o inferior. Tu, porém, guardaste o vinho bom até agora.»",
+        "commentary": "<p><b>Análise Léxica:</b> μεθυσθῶσιν (methysthōsin) — verbo subjuntivo aoristo passivo, «embriaguem-se» ou «fiquem alcoolizados»; ἐλάσσω (elassō) — adjetivo comparativo no acusativo neutro, «o menor», «inferior» ou «pior»; τετήρηκας (tetērēkas) — verbo perfeito ativo, «téns guardado» ou «reservaste». </p><p><b>Crítica Textual:</b> O SBLGNT omite o advérbio <i>τότε</i> (tote, «então») antes de <i>τὸν ἐλάσσω</i>, o qual está presente no Textus Receptus e em testemunhas do tipo Treg e RP. A ausência de <i>τότε</i> no texto crítico não altera a progressão temporal da frase.</p><p><b>Síntese Exegética:</b> O discurso do mestre-sala expõe o costume comum dos banquetes de servir o melhor vinho no início e o de menor qualidade quando os convidados já perderam a sensibilidade gustativa. A observação pontua o paradoxo da ação de Jesus, que reserva o produto superior para o desfecho da festa.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Jesus realizou este primeiro sinal em Caná da Galileia e manifestou a sua glória; e os seus discípulos creram nele.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀρχή</i> (archē) — princípio, início, aqui funcionando como o primeiro de uma série; <i>σημεῖον</i> (sēmeion) — sinal, marco milagroso que aponta para uma realidade maior; <i>φανερόω</i> (phaneroō) — tornar manifesto, revelar o que estava oculto; <i>δόξα</i> (doxa) — glória, esplendor revelador da identidade divina.</p><p><b>Crítica Textual:</b> SBLGNT e WH/Treg/NA28 trazem <i>ἐποίησεν ἀρχὴν</i>, enquanto o Textus Receptus com o Textus Receptus (RP) acrescenta o artigo <i>τὴν</i> antes de <i>ἀρχὴν</i> («τὴν ἀρχὴν»). A adoção sem artigo segue os manuscritos alexandrinos principais.</p><p><b>Síntese Exegética:</b> O primeiro sinal em Caná não serve apenas como demonstração de poder, mas como epifania («manifestou a sua glória») que provoca a resposta de fé por parte dos discípulos.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Depois disso, desceu para Cafarnaum, ele, a sua mãe, os seus irmãos e os seus discípulos, e ali ficaram não muitos dias.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>καταβαίνω</i> (katabainō) — descer geograficamente de uma região mais alta (Caná) para o nível do mar ou margem do lago (Cafarnaum); <i>ἀδελφός</i> (adelphos) — irmão, parentes próximos; <i>μένω</i> (menō) — ficar, permanecer.</p><p><b>Crítica Textual:</b> O SBLGNT omite o pronome <i>αὐτοῦ</i> após <i>ἀδελφοὶ</i> («os irmãos»), seguindo testemunhos como א e B, ao passo que o Textus Receptus e o NA28 incluem o possessivo («os irmãos dele»).</p><p><b>Síntese Exegética:</b> O deslocamento para Cafarnaum funciona como uma transição narrativa imediata após o casamento, reunindo o círculo familiar e os discípulos numa breve estadia antes da subida para Jerusalém.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Estava próxima a Páscoa dos judeus, e Jesus subiu a Jerusalém.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἐγγύς</i> (eggys) — perto, próximo no tempo ou no espaço; <i>πάσχα</i> (pascha) — Páscoa, festa judaica da libertação; <i>ἀναβαίνω</i> (anabainō) — subir, termo geográfico e ritual usado para as viagens a Jerusalém, situada em região montanhosa.</p><p><b>Crítica Textual:</b> Sem variante verificada de relevo entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A proximidade da Páscoa judaica enquadra cronológica e teologicamente a primeira grande acção de Jesus no templo, ligando a sua pessoa ao significado sacrificial da festa.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E encontrou no templo os que vendiam bois, ovelhas e pombas, e os cambistas sentados.",
+        "commentary": "<p><b>Análise Léxica:</b> εὗρεν (<i>heuren</i>) de εὑρίσκω — encontrar, achar; ἱερῷ (<i>hierō</i>) — templo, o recinto sagrado; πωλοῦντας (<i>pōlountas</i>) — vendedores, os que vendentem; βόας (<i>boas</i>) — bois; πρόβατα (<i>probatata</i>) — ovelhas; περιστερὰς (<i>peristeras</i>) — pombas; κερματιστὰς (<i>kermatistas</i>) — cambistas, trocadores de moedas; καθημένους (<i>kathemenous</i>) — sentados. Definições verificadas no contexto narrativa do Evangelho.</p><p><b>Crítica Textual:</b> Sem variante significativa entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Jesus depara-se com o comércio instalado no espaço do templo, destinado às ofertas prescritas pela Lei, o que motivou a sua forte reação imediata contra a exploração económica do culto.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "E, tendo feito um chicote de cordas, expulsou todos do templo, tanto as ovelhas como os bois, espalhou as moedas dos cambistas e derrubou as mesas,",
+        "commentary": "<p><b>Análise Léxica:</b> ποιήσας (<i>poiēsas</i>) — tendo feito; φραγέλλιον (<i>fragellion</i>) — chicote, azorrague; σχοινίων (<i>schoinion</i>) — cordas, juncos; ἐξέβαλen (<i>exebalen</i>) — expulsou, lançou para fora; κολλυβιστῶν (<i>kollybistōn</i>) — cambistas, prestamistas; ἐξέχεεν (<i>execheen</i>) — derramou, espalhou; κέρματα (<i>kermata</i>) — moedas, trocos; τραπέζας (<i>trapezas</i>) — mesas; ἀνέστρεψεν (<i>anestrepsen</i>) — virou, derrubou. Definições no contexto do ato profético de purificação do templo.</p><p><b>Crítica Textual:</b> [[τὰ κέρματα]] (SBLGNT, WH, Treg) em contraste com [[τὸ κέρμα]] (NA28, TR); [[ἀνέστρεψεν]] (SBLGNT, Treg, RP) em contraste com [[ἀνέτρεψεν]] (WH, NA28). A adoção no SBLGNT reflecte a pluralidade das moedas espalhadas.</p><p><b>Síntese Exegética:</b> A ação deliberada de Jesus constitui um ato profético de juízo contra a instrumentalização comercial do espaço sagrado, demonstrando autoridade direta sobre o culto sacrificial.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "e disse aos que vendiam as pombas: «Tirai isto daqui; não façam da casa de meu Pai uma casa de comércio.»",
+        "commentary": "<p><b>Análise Léxica:</b> πωλοῦσιν (<i>pōlousin</i>) — aos que vendem; εἶπεν (<i>eipen</i>) — disse; Ἄρατε (<i>arate</i>) — tirai, levai; ἐντεῦθεν (<i>enteuthen</i>) — daqui; ποιεῖτε (<i>poieite</i>) — façam; οἶκον (<i>oikon</i>) — casa; πατρός (<i>patros</i>) — pai; ἐμπορίου (<i>emporiou</i>) — comércio, mercado. Termos correntes no discurso directo de confronto.</p><p><b>Crítica Textual:</b> Sem variante relevante entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> Jesus fundamenta a sua ordem na relação filial exclusiva com Deus («meu Pai»), redefinindo a destinação do templo contra a mercantilização que desvirtuava a oração e a comunhão com o Criador.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): João 2:17-19: O objeto deve conter a lista verses..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Os judeus perguntaram-lhe então: «Que sinal nos mostras para fazeres estas coisas?»",
+        "commentary": "<p><b>Análise Léxica:</b> ἀπεκρίθησαν (apekrisēan) — forma de 3.ª pessoa do plural do aoristo passivo de ἀποκρίνομαι, significando «responderam»; σημεῖον (sēmeion) — substantivo neutro, «sinal» ou «marco miraculoso»; δεικνύεις (deiknyeis) — presente ativo de δείκνυμι, «mostras» ou «apresentas». Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus, exceto por detalhes ortográficos menores na desinência verbal (εἶπαν vs ειπον).</p><p><b>Síntese Exegética:</b> As autoridades judaicas exigem uma legitimação em forma de sinal sobrenatural para a ação autoritária de Jesus no templo, questionando a sua autoridade profética e régia.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Jesus respondeu-lhes: «Destruí este santuário, e em três dias eu o levantarei.»",
+        "commentary": "<p><b>Análise Léxica:</b> Λύσατε (lysamate/lysate) — imperativo aoristo ativo de λύω, «destruí» ou «desatai»; ναὸν (naon) — substantivo masculino, «santuário» ou «templo» (referindo-se ao complexo ou ao santuário interior); ἐγερῶ (egerō) — futuro ativo de ἐγείρω, «levantarei» ou «ergueré». Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O Textus Receptus inclui o artigo ὁ antes de Ἰησοῦς (ὁ ἰησοῦς), ausente no SBLGNT. A escolha do SBLGNT omite o artigo, mantendo o nome de forma direta.</p><p><b>Síntese Exegética:</b> Jesus responde com uma metáfora enigmática sobre a destruição e a ressurreição do seu próprio corpo, que os ouvintes interpretam de forma estritamente material e arquitetónica.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Os judeus disseram então: «Este santuário foi construído em quarenta e seis anos, e tu vais levantá-lo em três dias?»",
+        "commentary": "<p><b>Análise Léxica:</b> Τεσσεράκοντα (tesserakonta) — numeral, «quarenta»; ἔτεσιν (etesin) — dativo plural de ἔτος, «anos»; οἰκοδομήθη (oikodomēthē) — aoristo passivo de oikodomē, «foi construído» ou «edificado». Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> O SBLGNT traz a grafia <i>Τεσσεράκοντα</i>, enquanto o Textus Receptus apresenta a forma <i>τεσσαρακοντα</i>; o TR também acrescenta o prefixo aumentativo em <i>ωκοδομηθη</i> em contraste com o augmento em oikodomēthē, sem alterar o sentido de construção.</p><p><b>Síntese Exegética:</b> A reação dos judeus baseia-se na desproporção temporal entre o esforço monumental de décadas na reconstrução herodiana do templo e a pretensão de Jesus de o reerguer em três dias.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): João 2:21-23: O objeto deve conter a lista verses..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Portanto, quando ele ressuscitou dentre os mortos, os seus discípulos lembraram-se de que ele dissera isso, e creram na Escritura e na palavra que Jesus dissera.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>ἠγέρθη</i> (ēgerthē): aoristo passivo de ἐγείρω, levantar, ressuscitar; <i>ἐμνήσθησαν</i> (emnēsthēsan): aoristo passivo de μιμνῄσκομαι, lembrar-se, vir à memória; <i>γραφῇ</i> (graphē): substantivo feminino, escrito, Escritura.</p><p><b>Crítica Textual</b> — No final do versículo, SBLGNT, WH, Treg. e NA28 adotam o acusativo <i>ὃν</i> (relativo direto), enquanto o Textus Receptus (RP) traz o dativo <i>ᾧ</i>, concordando com o substantivo anterior (τῷ λόγῳ). A adoção de <i>ὃν</i> mantém o objeto direto do verbo dizer.</p><p><b>Síntese Exegética</b> — A ressurreição funciona como o evento hermenêutico definitivo. Só após a morte e o reerguimento de Jesus os discípulos conseguem conectar as ações enigmáticas do templo às Escrituras e à palavra do próprio Mestre.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Enquanto ele estava em Jerusalém, durante a festa da Páscoa, muitos creram no seu nome, ao contemplarem os sinais que ele fazia.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>πάσχα</i> (pascha): substantivo indeclinável, Páscoa; <i>θεωροῦντες</i> (theorountes): particípio presente de θεωρέω, contemplar, observar atentamente; <i>σημεῖα</i> (sēmeia): substantivo neutro plural, sinais, milagres com significado revelador.</p><p><b>Crítica Textual</b> — Sem divergências relevantes entre o SBLGNT e o Textus Receptus neste versículo, à exceção de grafias menores sem impacto tradutório.</p><p><b>Síntese Exegética</b> — A estada de Jesus em Jerusalém por ocasião da Páscoa é marcada por uma adesão popular baseada na observação de sinais. O particípio presente aponta para a contemplação contínua das obras realizadas por ele durante a festa.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Mas o próprio Jesus não se confiava a eles, porque conhecia a todos,",
+        "commentary": "<p><b>Análise Léxica</b> — <i>ἐπίστευεν</i> (episteuen): imperfeito de πιστεύω, aqui com o sentido reflexivo ou de entrega pessoal, confiar-se; <i>γινώσκειν</i> (ginōskein): infinitivo presente de γινώσκω, conhecer, compreender em profundidade.</p><p><b>Crítica Textual</b> — O SBLGNT e WH trazem a contração <i>αὑτὸν</i>, enquanto Treg. e NA28 leem <i>αὐτὸν</i> e o Textus Receptus (RP) usa a forma explícita <i>ἑαυτὸν</i>. Além disso, o SBLGNT omite o artigo <i>ὁ</i> antes de Ἰησοῦς, presente no Textus Receptus.</p><p><b>Síntese Exegética</b> — Há um contraste deliberado com o versículo anterior: embora muitos cressem em Jesus com base nos sinais, Jesus mantinha reserva e não se entregava à confiança deles, pois conhecia perfeitamente a natureza humana.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "e não precisava de que alguém desse testemunho a respeito do ser humano, pois ele mesmo sabia o que estava no ser humano.",
+        "commentary": "<p><b>Análise Léxica</b> — <i>χρείαν</i> (chreian): substantivo feminino, necessidade, falta; <i>μαρτυρήσῃ</i> (marturēsē): aoristo subjuntivo ativo de μαρτυρέω, testemunhar, dar provas; <i>ἐγίνωσκεν</i> (eginōsken): imperfeito de γινώσκω, conhecia intimamente.</p><p><b>Crítica Textual</b> — Sem variantes significativas entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b> — O conhecimento de Jesus sobre o homem é absoluto e imediato. Ele dispensava intermediários, informantes ou avaliações externas, porque penetrava diretamente na realidade interior de cada pessoa.</p>"
+      }
     ]
   },
   "in_progress": {
+    "3": [
+      {
+        "verse": 1,
+        "text": "Havia um homem entre os fariseus, chamado Nicodemos, líder dos judeus.",
+        "commentary": "<p><b>Análise Léxica:</b> ἄνθρωπος (anthrōpos) — homem, ser humano; Φαρισαῖος (pharisaios) — fariseu, membro de um grupo religioso judaico estrito; ἄρχων (archōn) — líder, governante, autoridade (aqui especificamente membro do Sinédrio).</p><p><b>Crítica Textual:</b> Sem variante significativa entre SBLGNT e Textus Receptus neste versículo.</p><p><b>Síntese Exegética:</b> A narrativa introduz Nicodemos identificando a sua origem social e religiosa: um fariseu e uma autoridade judaica, preparando o contraste entre o prestígio exterior e a necessidade de transformação espiritual.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Ele veio ter com Jesus de noite e disse-lhe: «Mestre, sabemos que vieste da parte de Deus como mestre, pois ninguém pode fazer estes sinais que tu fazes, se Deus não estiver com ele».",
+        "commentary": "<p><b>Análise Léxica:</b> νυκτός (nyktos) — de noite, indicando o momento da visita; Ῥαββί (rhabbi) — mestre, título de respeito dado a mestres religiosos; σημεῖα (sēmeia) — sinais, milagres que apontam para uma realidade maior.</p><p><b>Crítica Textual:</b> O SBLGNT traz <i>δύναται ταῦta τὰ σημεῖα</i>, enquanto o Textus Receptus inverte a ordem para <i>ταῦta τὰ σημεῖα δύναται</i>, sem alteração de sentido.</p><p><b>Síntese Exegética:</b> Nicodemos aproxima-se de Jesus na obscuridade da noite, reconhecendo a origem divina dos seus atos com base nos sinais realizados, o que demonstra uma abertura inicial, embora ainda limitada ao nível dos prodígios.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Jesus respondeu-lhe: «Em verdade, em verdade te digo: se alguém não nascer de novo, não pode ver o reino de Deus».",
+        "commentary": "<p><b>Análise Léxica:</b> ἀμὴν ἀμὴν (amēn amēn) — em verdade, em verdade, fórmula de solene afirmação; ἄνωθεν (anōthen) — de novo ou do alto, carregando uma ambiguidade intencional que aponta para uma origem celestial do novo nascimento; βασιλείαν (basileian) — reino, soberania ou domínio.</p><p><b>Crítica Textual:</b> O SBLGNT omite o artigo <i>ὁ</i> antes de Ἰησοῦς, presente no Textus Receptus (<i>ἀπεκρίθη ὁ ἰησοῦς</i>), sem impacto tradutório.</p><p><b>Síntese Exegética:</b> Jesus confronta Nicodemos com a exigência absoluta de uma origem espiritual totalmente nova para a participação no reino de Deus, deslocando o foco dos sinais visíveis para a renovação interior.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Nicodemos perguntou-lhe: «Como pode um homem nascer, sendo velho? Poderá entrar segunda vez no ventre de sua mãe e nascer?».",
+        "commentary": "<p><b>Análise Léxica:</b> γέρων (gerōn) — velho, idoso; κοιλίαν (koilian) — ventre, cavidade corporal, aqui usado no sentido de útero materno; δεύτερον (deuteron) — pela segunda vez.</p><p><b>Crítica Textual:</b> O SBLGNT traz o artigo <i>ὁ</i> antes de Nicodemos (<i>ὁ Νικόδημος</i>), omitido em algumas testemunhas do Textus Receptus, sem diferença semântica.</p><p><b>Síntese Exegética:</b> Nicodemos interpreta a exigência de Jesus em termos estritamente físicos e biológicos, revelando a incompreensão inicial diante da profundidade da linguagem espiritual.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Jesus respondeu: «Em verdade, em verdade te digo: se alguém não nascer da água e do Espírito, não pode entrar no reino de Deus».",
+        "commentary": "<p><b>Análise Léxica:</b> ὕδατος (hydatos) — água; πνεύματος (pneumatos) — Espírito, sopro vital ou vento associado à ação divina; εἰσελθεῖν (eiselthein) — entrar.</p><p><b>Crítica Textual:</b> Pequenas variações de inclusão do artigo antes de Ἰησοῦς entre os testemunhos, sem alteração de substância.</p><p><b>Síntese Exegética:</b> Jesus esclarece a natureza do nascimento exigido, associando a água e o Espírito como elementos indispensáveis para a entrada no reino de Deus, numa alusão à limpeza e à recriação espiritual.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "O que nasceu da carne é carne, e o que nasceu do Espírito é espírito.",
+        "commentary": "<p><b>Análise Léxica:</b> σάρξ (sarx) — carne, a condição humana limitada e mortal; πνεῦμα (pneuma) — espírito, a esfera da vida gerada por Deus.</p><p><b>Crítica Textual:</b> Sem variante textual verificada entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> Jesus estabelece a distinção intransponível entre as ordens da existência: a origem puramente humana gera apenas realidade humana, enquanto a vida do reino requer a intervenção geradora do Espírito de Deus.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Não te andes a admirar por eu te ter dito: «convém que vocês nasçam do alto»<i>.</i>",
+        "commentary": "<p><b>Análise Léxica:</b> <i>θαυμάσῃς</i> (thaumasēs) — do verbo <i>θαυμάζω</i>, admirar-se, espantar-se; <i>ἄνωθεν</i> (anōthen) — do alto, de cima, ou de novo. No contexto, carrega dupla nuance (origem celestial e renovação), mantendo o sentido vertical.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus no trecho essencial.</p><p><b>Síntese Exegética:</b> Jesus confronta a incredulidade de Nicodemos diante da necessidade de um nascimento de origem celestial, expandindo o imperativo da regeneração do plano individual para o coletivo (vocês).</p>"
+      },
+      {
+        "verse": 8,
+        "text": "O vento sopra onde quer, e ouves a sua voz, mas não sabes de onde vem nem para onde vai. Assim é todo aquele que nasceu do Espírito.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>πνεῦμα</i> (pneuma) — vento ou espírito; o termo grego joga com a ambivalência natural que serve de metáfora para a ação soberana e invisível do Espírito de Deus.</p><p><b>Crítica Textual:</b> Sem diferença relevante entre as edições textuais comparadas.</p><p><b>Síntese Exegética:</b> A soberania do Espírito divino é comparada ao movimento livre e incontrolável do vento, cuja realidade se constata pelos efeitos audíveis, mas cuja origem escapa ao controle humano.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Jesus respondeu-lhe: «Tu és o mestre de Israel e não compreendes estas coisas?»",
+        "commentary": "<p><b>Análise Léxica</b>: <i>ἀπεκρίθη</i> (apekridhē) — respondeu; <i>διδάσκαλος</i> (didaskalos) — mestre, o que ensina; <i>γινώσκεις</i> (ginōskeis) — sabes, compreendes, conheces.</p><p><b>Crítica Textual</b>: Sem variante significativa entre o SBLGNT e o Textus Receptus neste versículo.</p><p><b>Síntese Exegética</b>: Jesus confronta Nicodemos diretamente sobre o seu papel de destaque como mestre oficial de Israel contrastada com a sua incapacidade de compreender realidades espirituais elementares acerca do novo nascimento.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Em verdade, em verdade te digo que dizemos o que sabemos e testemunhamos o que vimos, mas vocês não aceitam o nosso testemunho.",
+        "commentary": "<p><b>Análise Léxica</b>: <i>ἀμὴν</i> (amēn) — em verdade, certamente; <i>οἴδαμεν</i> (oidamen) — sabemos; <i>μαρτυροῦμεν</i> (marturoumen) — testemunhamos; <i>λαμβάνετε</i> (lambanete) — aceitais, recebeis.</p><p><b>Crítica Textual</b>: Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética</b>: Jesus desloca o foco da autoridade pessoal para a veracidade coletiva da revelação divina trazida por Ele e pelos que com ele testemunham, apontando a recusa por parte dos líderes religiosos em aceitar tal testemunho.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Se lhes falei de coisas terrestres e não acreditam, como acreditarão se lhes falar de coisas celestiais?",
+        "commentary": "<p><b>Análise Léxica</b>: <i>ἐπίγεια</i> (epigeia) — coisas terrestres, da terra; <i>πιστεύετε</i> (pisteuete) — acreditais, confiais; <i>ἐπουράνια</i> (epourania) — coisas celestiais, dos céus.</p><p><b>Crítica Textual</b>: Sem variante verificada entre SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética</b>: O contraste estabelecido por Jesus entre o visível e o terreno (ilustrado pelo exemplo do vento e do nascimento) e a esfera celeste sublinha a dificuldade de compreensão humana sem a intervenção do alto.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Ninguém subiu ao céu senão aquele que desceu do céu, o Filho do Homem.",
+        "commentary": "<p><b>Análise Léxica</b>: <i>ἀναβέβηκεν</i> (anabebēken) — subiu; <i>καταβάς</i> (katabas) — o que desceu; <i>υἱὸς τοῦ ἀνθρώπου</i> (huios tou anthrōpou) — o Filho do Homem.</p><p><b>Crítica Textual</b>: O SBLGNT e WH/NA28 trazem apenas <i>ὁ υἱὸς τοῦ ἀνθρώπου</i>, enquanto o Textus Receptus e Treg/RP acrescentam <i>ὁ ὢν ἐν τῷ οὐρανῷ</i> («que está no céu»). O SBLGNT foi adotado por ser a leitura atestada nos manuscritos mais antigos.</p><p><b>Síntese Exegética</b>: Jesus afirma a sua origem celestial única e a sua autoridade exclusiva para revelar as coisas de cima, pois é o único que veio do Pai e a Ele pertence.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E, assim como Moisés ergueu a serpente no deserto, assim também é necessário que o Filho do Homem seja erguido,",
+        "commentary": "<p><b>Análise Léxica</b>: <i>ὕψωσεν</i> (hypsōsen) — ergueu, levantou; <i>ὄφιν</i> (ophin) — serpente; <i>ὑψωθῆναι</i> (hypsōthēnai) — ser erguido, exaltado; <i>δει</i> (dei) — é necessário.</p><p><b>Crítica Textual</b>: Sem divergências textuais de relevo entre as bases comparadas.</p><p><b>Síntese Exegética</b>: Jesus recorre ao episódio do deserto (Números 21) como tipo profético do seu próprio destino na cruz, unindo a exaltação dolorosa do sofrimento à salvação concedida.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "para que todo o que nele crê tenha vida eterna.",
+        "commentary": "<p><b>Análise Léxica</b>: <i>πιστεύων</i> (pisteuōn) — o que crê; <i>ἔχῃ</i> (echē) — tenha; <i>ζωὴν αἰώνιον</i> (zōēn aiōnion) — vida eterna.</p><p><b>Crítica Textual</b>: O SBLGNT lê <i>ἐν αὐτῷ</i> («nele»), enquanto o Textus Receptus lê <i>εἰς αὐτὸν μὴ ἀπόληται ἀλλ&#x27;</i> («nele não pereça, mas...»). Adota-se a lição do SBLGNT por solidez crítica.</p><p><b>Síntese Exegética</b>: O propósito final do levantamento do Filho do Homem é universalizado pelo termo «todo o que crê», garantindo a posse imediata e duradoura da vida eterna.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Porque Deus amou tanto o mundo que deu o seu Filho único, para que todo o que nele crê não pereça, mas tenha vida eterna.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀγαπάω</i> (agapaō) — amar, estimar; <i>μονογενής</i> (monogenēs) — único, gerado como único; <i>ἀπόλλυμι</i> (apollumi) — perecer, perder-se. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT e NA28 omitem <i>αὐτοῦ</i> após <i>υἱὸν</i>, enquanto Tregelles e Textus Receptus incluem o pronome («o seu Filho único»). Marcou-se a variação conforme o aparato.</p><p><b>Síntese Exegética:</b> O versículo resume o ápice do amor divino manifestado na entrega redentora do Filho, estabelecendo a fé como único meio de evitar a perdição e alcançar a vida eterna.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Pois Deus não enviou o Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por meio dele.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀποστέλλω</i> (apostellō) — enviar com propósito; <i>κρίνω</i> (krinō) — julgar, condenar; <i>σῴζω</i> (sōzō) — salvar, preservar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> SBLGNT e NA28 omitem <i>αὐτοῦ</i> após <i>υἱὸν</i>, presente em Tregelles e no Textus Receptus. Sem variante verificada que altere a base principal.</p><p><b>Síntese Exegética:</b> A vinda do Filho define-se primariamente pela salvação e não pela condenação imediata, redirecionando o foco da missão messiânica para a redenção do mundo.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Quem crê nele não é julgado; quem não crê já está julgado, porque não creu no nome do Filho único de Deus.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>κρίνω</i> (krinō) — julgar; <i>κατακρίνω</i> (implícito no contexto de condenação); <i>πιστεύω</i> (pisteuō) — crer, confiar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> A partícula <i>δὲ</i> é omitida pelo WH, mas mantida por Tregelles, NA28 e pelo Textus Receptus. A oposição lógica permanece inalterada.</p><p><b>Síntese Exegética:</b> O julgamento não é um evento futuro hipotético para o incrédulo, mas uma condição presente decorrente da recusa em confiar no Filho único de Deus.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "E o julgamento é este: a luz veio ao mundo, e os homens amaram mais as trevas do que a luz, porque as suas obras eram más.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>κρίσις</i> (krisis) — julgamento, critério; <i>φῶς</i> (phōs) — luz; <i>σκότος</i> (skotos) — trevas; <i>πονηρός</i> (ponēros) — mau, perverso. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> A ordem <i>αὐτῶν πονηρὰ</i> (SBLGNT, Treg, NA28) contrasta com a inversão <i>πονηρὰ αὐτῶν</i> no Textus Receptus, sem alteração significativa de sentido.</p><p><b>Síntese Exegética:</b> A reação humana diante da revelação da luz expõe a corrupção moral intrínseca, pois a preferência pelas trevas fundamenta-se na prática de obras más.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Porque todo o que pratica o mal odeia a luz e não vem para a luz, para que as suas obras não sejam expostas.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>φαῦλος</i> (phaulos) — vil, imprestável, mau; <i>πράσσω</i> (prassō) — praticar, cometer; <i>μισέω</i> (miseō) — odiar; <i>ἐλέγχω</i> (elenchō) — expor, repreender, reprovar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> A inimizade contra a luz é inerente à prática do mal, cuja motivação defensiva é evitar o escrutínio e a condenação moral das próprias ações.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Mas quem pratica a verdade vem para a luz, para que se manifeste que as suas obras foram feitas em Deus.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀλήθεια</i> (alētheia) — verdade; <i>φανερόω</i> (phaneroō) — manifestar, tornar visible; <i>ἐργάζομαι</i> (ergazomai) — realizar, trabalhar. Definição não verificada em léxico.</p><p><b>Crítica Textual:</b> Sem variante verificada entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> A conduta guiada pela verdade busca a transparência da luz, demonstrando que a origem e a sustentação das ações humanas encontram-se em Deus.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Depois disto, Jesus foi com os seus discípulos para a região da Judeia; e ali permaneceu com eles e batizava.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>μετὰ ταῦτα</i> (meta tauta) — «depois disto», marcador temporal comum; <i>διέτριβen</i> (dietriben) — de διατρίβω, permanecer, passar o tempo; <i>ἐβάπτιζεν</i> (ebaptizen) — batizava, com o imperfeito a indicar ação duradoura ou habitual.</p><p><b>Crítica Textual:</b> Sem variante verificada entre SBLGNT e Textus Receptus nesta unidade.</p><p><b>Síntese Exegética:</b> Jesus deixa a Judeia em direção ao campo onde os seus discípulos realizam batismos semelhantes aos de João, marcando uma transição geográfica e ministerial na narrativa.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "João também estava a batizar em Enom, perto de Salim, porque havia ali muita água; e o povo ia ter com ele e era batizado.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Aἰνὼν</i> (Ainōn) — Enom, topónimo associado a mananciais; <i>ὕδατα πολλὰ</i> (hydata polla) — muita água, detalhe geográfico que explica a escolha do local para imersão; <i>παρεγίνοντο</i> (pareginonto) — chegavam, vinham.</p><p><b>Crítica Textual:</b> Presença do artigo [[ὁ]] antes de Ἰωάννης no SBLGNT (com WH e NA28) omitido em parte do aparato (Treg e RP).</p><p><b>Síntese Exegética:</b> O ministério de João continua ativo paralelamente ao de Jesus, aproveitando a abundância de água na região para a prática contínua do batismo.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Pois João ainda não tinha sido lançado na prisão.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>οὔπω</i> (oupō) — ainda não; <i>βεβλημένος</i> (beblēmenos) — particípio perfeito passivo de βάλλω, lançado, atirado.</p><p><b>Crítica Textual:</b> O artigo [[ὁ]] antes de Ἰωάννης está presente em Treg, NA28 e RP, mas ausente em WH no SBLGNT.</p><p><b>Síntese Exegética:</b> O narrador esclarece a cronologia dos eventos, situando os ministérios de Jesus e de João num momento anterior à detenção deste último por Herodes.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "Surgiu então uma discussão entre os discípulos de João e um judeu a respeito da purificação.",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ζήτησις</i> (zētēsis) — discussão, controvérsia, debate; <i>καθαρισμοῦ</i> (katharismou) — purificação, termo associado aos ritos de lavagem e purificação religiosa da época.</p><p><b>Crítica Textual:</b> O SBLGNT traz o singular <i>Ἰουδαίου</i> («de um judeu»), enquanto o Textus Receptus apresenta o plural <i>Ἰουδαίων</i> («dos judeus»).</p><p><b>Síntese Exegética:</b> O debate sobre rituais de purificação serve de catalisador para a tensão entre a prática batismal de João e o surgimento do ministério de Jesus.</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Foram ter com João e disseram-lhe: «Rabi, aquele que estava contigo do outro lado do Jordão, de quem tens dado testemunho, olha, ele está a batizar e todos vão ter com ele.»",
+        "commentary": "<p><b>Análise Léxica:</b> <i>Ῥαββί</i> (Rabbi) — meu mestre, título de respeito; <i>μεμαρτύρηκας</i> (memarturēkas) — tens dado testemunho, perfeito com valor duradouro; <i>ἴδε</i> (ide) — olha, eis.</p><p><b>Crítica Textual:</b> Sem variante significativa relevante entre SBLGNT e Textus Receptus.</p><p><b>Síntese Exegética:</b> Os discípulos de João manifestam preocupação com a perda de protagonismo do seu mestre face ao sucesso crescente do ministério de Jesus.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "João respondeu: «O homem não pode receber coisa alguma se não lhe for dada do céu.»",
+        "commentary": "<p><b>Análise Léxica:</b> <i>ἀπεκρίθη</i> (apekrihē) — respondeu; <i>δύναται</i> (dynatai) — pode, é capaz; <i>δεδομένον</i> (dedomenon) — dado, particípio perfeito passivo.</p><p><b>Crítica Textual:</b> O SBLGNT traz [[οὐδὲ ἓν]] («nem sequer uma coisa / coisa alguma»), enquanto o Textus Receptus traz a contração <i>οὐδέν</i> («nada»).</p><p><b>Síntese Exegética:</b> João reconhece a soberania divina e aceita os limites do seu próprio papel e autoridade, sublinhando que todo o êxito ou missão provém exclusivamente de Deus.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "Vocês mesmos são testemunhas de que eu disse: «Eu não sou o Cristo, mas fui enviado adiante dele.»",
+        "commentary": "<p><b>Análise Léxica:</b> αὐτοὶ (autoi) — «vocês mesmos», pronome enfático; μαρτυρεῖτε (martyreite) — «são testemunhas» ou «testemunham»; Ἀπεσταλμένος (apestalmenos) — «enviado», particípio perfeito passivo de ἀποστέλλω.</p><p><b>Crítica Textual:</b> Há uma variação na inclusão de <b>μοι</b> (a mim) e <b>ἐγώ</b> ou <b>ὅτι</b> após o verbo eîpon entre os principais manuscritos refletidos no SBLGNT e Textus Receptus, sem alteração substancial do sentido global.</p><p><b>Síntese Exegética:</b> João Batista recorda aos seus próprios discípulos o testemunho público que já tinham ouvido dele, reafirmando com clareza a sua posição estipulada de subordinado e precursor face ao Messias.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Quem tem a noiva é o noivo; o amigo do noivo, que está de pé e o ouve, enche-se de alegria por causa da voz do noivo. Portanto, esta minha alegria já está completa.",
+        "commentary": "<p><b>Análise Léxica:</b> νυμφίος (nymphios) — «noivo»; φίλος τοῦ νυμφίου (philos tou nymphiou) — «amigo do noivo»; χαρᾷ χαίρει (charai chairei) — «alegra-se com alegria» ou «enche-se de grande alegria», figura idiomática de intensidade; πεπλήρωται (peplērōtai) — «está preenchida» ou «completa».</p><p><b>Crítica Textual:</b> Sem divergências textuais significativas entre o SBLGNT e o Textus Receptus para este versículo.</p><p><b>Síntese Exegética:</b> Utilizando a metáfora nupcial comum na cultura da época, João afasta qualquer sombra de rivalidade: a sua satisfação plena reside exatamente em ouvir a voz do noivo que chega para reclamar a noiva.</p>"
+      },
+      {
+        "verse": 30,
+        "text": "É necessário que ele cresça e que eu diminua.",
+        "commentary": "<p><b>Análise Léxica:</b> δεῖ (dei) — «é necessário», verbo que expressa inevitabilidade divina ou moral; αὐξάνειν (auxanein) — «crescer», «aumentar»; ἐλαττοῦσθαι (elattousthai) — «diminuir», «tornar-se menor».</p><p><b>Crítica Textual:</b> Sem divergências textuais entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Esta sentença resume a teologia do precursor: a proeminência absoluta pertence a Cristo, enquanto o ministério de João atinge o seu cume justamente ao desvanecer-se perante o crescimento daquele a quem anuncia.</p>"
+      },
+      {
+        "verse": 31,
+        "text": "Aquele que vem de cima está acima de todos; quem é da terra pertence à terra e fala das coisas da terra. Aquele que vem do céu está acima de todos.",
+        "commentary": "<p><b>Análise Léxica:</b> ἄνωθεν (anōthen) — «de cima» ou «do alto»; ἐπάνω (epanō) — «acima de», «sobre»; γῆς (gēs) — «terra»; οὐρανοῦ (ouranou) — «céu».</p><p><b>Crítica Textual:</b> O Textus Receptus omite a segunda ocorrência da frase <i>ὁ ἐκ τοῦ οὐρανοῦ ἐρχόμενος ἐπάνω πάντων ἐστίν</i> em algumas impressões tradicionais secundárias, mas o SBLGNT a mantém com base em fortes testemunhos alexandrinos e antigos.</p><p><b>Síntese Exegética:</b> O contraste estabelece-se entre a origem celestial de Jesus, que traz autoridade suprema e universal, e a condição terrena de qualquer ser humano, cujas origens e palavras estão limitadas ao plano terrestre.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "Ele testemunha aquilo que viu e ouviu, mas ninguém aceita o seu testemunho.",
+        "commentary": "<p><b>Análise Léxica:</b> ἑώρακεν (heōraken) — «viu», do verbo ὁράω; ἤκουσεν (ēkousen) — «ouviu»; μαρτυρίαν (martyrian) — «testemunho»; λαμβάνει (lambanei) — «aceita» ou «recebe».</p><p><b>Crítica Textual:</b> O SBLGNT traz <b>ὃ</b> (o que), enquanto o Textus Receptus utiliza <b>καὶ ὅ</b> (e o que), sem alterar o sentido de que o conteúdo do testemunho de Jesus provém da sua experiência direta junto do Pai.</p><p><b>Síntese Exegética:</b> Jesus relata a verdade absoluta baseada na sua percepção divina direta, mas o evangelista regista o paradoxo trágico da incredulidade humana generalizada diante dessa revelação.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "Quem aceitou o testemunho dele confirmou que Deus é verdadeiro.",
+        "commentary": "<p><b>Análise Léxica:</b> λαβὼν (labōn) — «aquele que aceitou» ou «recebeu»; ἐσφράγισεν (esphragisen) — «selou», usado figuradamente no sentido de certificar, confirmar ou atestar com firmeza; ἀληθής (alēthēs) — «verdadeiro».</p><p><b>Crítica Textual:</b> Sem divergências textuais entre o SBLGNT e o Textus Receptus.</p><p><b>Síntese Exegética:</b> Acolher a mensagem trazida por Jesus não é apenas concordar com um homem, mas validar e reconhecer na prática a veracidade absoluta do próprio Deus, que enviou o seu Filho.</p>"
+      }
+    ],
     "2": [
       {
         "verse": 1,
@@ -747,6 +1041,70 @@
       "provider": "local",
       "model": "editorial:migracao-notas-cinco-livros",
       "generated_at_utc": "2026-11-20T12:30:00+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 22,
+      "verse_to": 25,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:43:28+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 6,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:43:33+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 7,
+      "verse_to": 8,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:43:53+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 9,
+      "verse_to": 9,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T07:44:30+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 10,
+      "verse_to": 15,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:44:41+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 16,
+      "verse_to": 21,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:44:46+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 22,
+      "verse_to": 27,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:45:14+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 28,
+      "verse_to": 33,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "generated_at_utc": "2026-11-20T07:45:20+00:00"
     }
   ],
   "sources": {
