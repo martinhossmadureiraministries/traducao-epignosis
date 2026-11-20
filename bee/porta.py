@@ -20,7 +20,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .inspetor import analisar_texto
+from .inspetor import analisar_comentario, analisar_texto
 
 
 def inspecionar_versos(versiculos: list[dict[str, Any]]) -> dict[int, list[str]]:
@@ -33,12 +33,15 @@ def inspecionar_versos(versiculos: list[dict[str, Any]]) -> dict[int, list[str]]
     chumbados: dict[int, list[str]] = {}
     for verso in versiculos:
         resultado = analisar_texto(str(verso.get('text', '')))
-        if resultado['duros']:
+        duros = sorted(set(
+            resultado['duros']
+            + analisar_comentario(str(verso.get('commentary') or ''))))
+        if duros:
             try:
                 numero = int(verso.get('verse', 0))
             except (TypeError, ValueError):
                 numero = 0
-            chumbados[numero] = resultado['duros']
+            chumbados[numero] = duros
     return chumbados
 
 

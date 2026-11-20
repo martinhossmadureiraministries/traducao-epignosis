@@ -27,8 +27,9 @@ def _verso(numero: int, texto: str) -> dict:
     return {
         'verse': numero,
         'text': texto,
-        'commentary': ('<p>Análise Léxica x</p><p>Crítica Textual y</p>'
-                       '<p>Síntese Exegética z</p>'),
+        'commentary': ('<p><b>Análise Léxica:</b> x</p>'
+                       '<p><b>Crítica Textual:</b> y</p>'
+                       '<p><b>Síntese Exegética:</b> z</p>'),
     }
 
 
@@ -68,6 +69,39 @@ class InspecionarVersosTest(unittest.TestCase):
         # «sobremaneira» é aviso (revê-se), não bloqueia a produção.
         avisoso = [_verso(3, 'a fé cresce sobremaneira entre vocês.')]
         self.assertEqual(porta.inspecionar_versos(avisoso), {})
+
+    def test_forma_eis_fora_da_lista_chumba(self):
+        # Regressão 2026-11-20: «adorareis»/«conheceis» passaram porque a
+        # lista de arcaísmos só tinha formas fixas.
+        resultado = porta.inspecionar_versos(
+            [_verso(21, 'Vocês adoram o que não conheceis.')])
+        self.assertIn(21, resultado)
+        self.assertTrue(any('-eis' in m for m in resultado[21]))
+
+    def test_eis_acentuado_e_excecoes_nao_chumbam(self):
+        texto = ('Os fiéis seguram os papéis difíceis; são seis leis '
+                 'dos reis de antigamente.')
+        self.assertEqual(porta.inspecionar_versos([_verso(1, texto)]), {})
+
+    def test_estar_a_infinitivo_chumba(self):
+        # A casa usa o gerúndio («estava batizando»).
+        resultado = porta.inspecionar_versos(
+            [_verso(1, 'Ele estava a fazer discípulos.')])
+        self.assertIn(1, resultado)
+
+    def test_ponto_fora_das_aspas_chumba(self):
+        resultado = porta.inspecionar_versos(
+            [_verso(7, '«Dá-me de beber».')])
+        self.assertIn(7, resultado)
+
+    def test_nota_fora_do_formato_chumba(self):
+        # Regressão 2026-11-20: «<b>Análise Léxica</b> —» passou na porta e
+        # só falhou nos testes depois do capítulo fechado.
+        verso = _verso(34, 'Ele não dá o Espírito por medida.')
+        verso['commentary'] = ('<p><b>Análise Léxica</b> — x</p>'
+                               '<p><b>Crítica Textual</b> — y</p>'
+                               '<p><b>Síntese Exegética</b> — z</p>')
+        self.assertIn(34, porta.inspecionar_versos([verso]))
 
     def test_resumo_marcas_e_legivel(self):
         resumo = porta.resumo_marcas({2: ['vós'], 7: ['ou seja']})
