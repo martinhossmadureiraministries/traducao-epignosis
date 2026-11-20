@@ -274,7 +274,40 @@
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:11:23+00:00",
       "status": "pendente"
+    },
+    {
+      "reference": "João 4:35",
+      "book": 500,
+      "chapter": 4,
+      "verse": 35,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
+      "at_utc": "2026-11-20T10:16:29+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 4:36",
+      "book": 500,
+      "chapter": 4,
+      "verse": 36,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
+      "at_utc": "2026-11-20T10:16:41+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 4:37",
+      "book": 500,
+      "chapter": 4,
+      "verse": 37,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
+      "at_utc": "2026-11-20T10:16:54+00:00",
+      "status": "pendente"
     }
   ],
-  "updated_at_utc": "2026-11-20T10:11:23+00:00"
+  "updated_at_utc": "2026-11-20T10:16:54+00:00"
 }
