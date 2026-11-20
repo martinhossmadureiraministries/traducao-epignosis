@@ -727,6 +727,21 @@
         "verse": 31,
         "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
         "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 32,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 33,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       }
     ]
   },
@@ -1282,6 +1297,30 @@
       "provider": "local",
       "model": "quarentena",
       "generated_at_utc": "2026-11-20T10:06:28+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 32,
+      "verse_to": 32,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T10:10:57+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 33,
+      "verse_to": 33,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T10:11:10+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 34,
+      "verse_to": 34,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T10:11:23+00:00"
     }
   ],
   "sources": {

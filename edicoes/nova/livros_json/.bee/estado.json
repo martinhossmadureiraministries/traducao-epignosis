@@ -1,5 +1,5 @@
 {
-  "ciclos": 13,
+  "ciclos": 14,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
@@ -28,7 +28,7 @@
       "emendas_revisao": 2,
       "falhas": 4,
       "fechado_em_utc": null,
-      "pedidos": 136,
+      "pedidos": 185,
       "pedidos_ok": 28,
       "por_provedor": {
         "cerebras": {
@@ -36,7 +36,7 @@
           "versos": 1
         },
         "cohere": {
-          "pedidos": 13,
+          "pedidos": 24,
           "versos": 0
         },
         "gemini": {
@@ -44,15 +44,15 @@
           "versos": 123
         },
         "groq": {
-          "pedidos": 15,
+          "pedidos": 26,
           "versos": 0
         },
         "nvidia": {
-          "pedidos": 13,
+          "pedidos": 25,
           "versos": 0
         },
         "openrouter": {
-          "pedidos": 20,
+          "pedidos": 35,
           "versos": 0
         }
       },
@@ -68,7 +68,7 @@
   "lote_versiculo": null,
   "ultima_compilacao_build": "91cb5e56483d4e5385725a879c875795",
   "ultima_compilacao_utc": "2026-11-20T08:54:29+00:00",
-  "ultimo_ciclo_utc": "2026-11-20T10:03:19+00:00",
+  "ultimo_ciclo_utc": "2026-11-20T10:10:30+00:00",
   "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Cerebras · gpt-oss-120b: quota esgotada; NVIDIA NIM · meta/llama-3.1-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · c4ai-aya-expanse-8b: cohere: HTTP 404; verifique o endereço ou o nome do modelo.; OpenRouter · inclusionai/ling-3.2-flash:free: quota esgotada",
   "versos_total": 206
 }
