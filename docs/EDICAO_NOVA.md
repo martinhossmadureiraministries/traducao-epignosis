@@ -277,13 +277,14 @@ Gemini, Groq ou qualquer reserva recebem o mesmo bloco — a memória é o P0 do
 sistema de convergência multi-provedor (P1 será o guarda como porta obrigatória
 com quarentena e repetição noutro provedor; P2 a revisão por segunda IA).
 
-A memória é v1.1. O JSON guarda, com dados reais dos pilotos aprovados e da
-regeneração editorial de 2 Tessalonicenses:
+A memória é v1.2. O JSON guarda, com dados reais dos pilotos aprovados, da
+regeneração editorial de 2 Tessalonicenses e da passagem de lapidação de
+20/11/2026 (`docs/OFICINA_TRADUCAO.md`):
 
 | Secção | Conteúdo |
 |---|---|
 | `registro` | plural «vocês» obrigatório, `ortografia` (norma pt-PT: «connosco», «de facto», «registo») + lista negra de arcaísmos (espelho exato do que a guarda chumba) |
-| `regras_duras`, `aperto` | as 12 regressões proibidas e os 6 apertos de calibração, numerados. As três últimas vêm da crítica textual: pontuação e maiúscula inicial, SENHOR e Senhor, crítica textual só com evidência colacionada |
+| `regras_duras`, `aperto` | as 14 regressões proibidas e os 6 apertos de calibração, numerados. As cinco últimas vêm da crítica textual e da lapidação: pontuação e maiúscula inicial, SENHOR e Senhor, crítica textual só com evidência colacionada, ênclise com gerúndio, uniformidade só onde o grego é igual |
 | `glossario` | decisões por termo grego com `usar`, `contexto_reuso`, `livros_reuso`, `rejeitar` e exemplo aprovado (ex.: σπλάγχνα → «coração», mantido igual nos vv. 7/12/20 de Filemom) |
 | `rejeitados` | palavras/formulações vetadas com motivo e alternativa («ou seja» no verso, «sobremaneira», «o sem lei», «entranhas») |
 | `formulas_consolidadas` | saudação/ação de graças/bênção repetidas iguais em todos os livros (a saudação é letra a letra Filemom 1:3) |
@@ -351,6 +352,7 @@ preservam o original, lotes de 40 versículos).
 cache), prioridades com pontuações e a CLI de aprovações sobre uma cópia da memória.
 `tests/test_manuscritos.py` cobre o analisador MES e a colação (40 testes);
 `tests/test_critica_textual.py` confronta o protocolo com os dados reais de
-2 Tessalonicenses (44 testes).
+2 Tessalonicenses (60 testes, dos quais uma classe de lapidação corre sobre os
+sete livros da edição nova).
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.

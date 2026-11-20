@@ -248,11 +248,20 @@ diz que precisa delas.
 | Marca | Uso | Exemplo |
 |---|---|---|
 | `[[ … ]]` | leitura assinalada: adotada pela base mas ausente noutros testemunhos; alternativa substantiva; ou suplemento do Scrivener ausente do SBLGNT | Marcos 16:9-20 |
-| `<i>…</i>` | palavra acrescentada pela tradução para clareza, sem correspondente no original | 2Ts 2:3 `<i>esse dia não virá</i>` |
+| `<i>…</i>` | palavra acrescentada pela tradução para clareza, sem correspondente no original | 2Ts 2:3 `<i>esse dia não virá</i>`; 1:5 `<i>Isso é</i>`; 2:9 `<i>acontece</i>` |
 | `SENHOR` (maiúsculas) | **só** o Tetragrama יהוה no AT | Sl 23:1 |
 | `Senhor` | κύριος/אֲדֹנָי, inclusive no NT | 2Ts 2:2 «o dia do Senhor» |
 | vírgula no fim do versículo + minúscula no seguinte | o versículo continua a frase do anterior | 2Ts 1:11 → 1:12; 2:16 → 2:17; 3:1 → 3:2 |
 | ponto (ou ponto e vírgula) + maiúscula | o versículo abre frase nova | 2Ts 2:8 `;` → 2:9 |
+
+**Onde vai o itálico.** Marcam-se verbo, sujeito ou oração que o português exige e
+o grego não tem — 1:5 é um fragmento nominal (*ἔνδειγμα τῆς δικαίας κρίσεως*) e
+precisa de «*Isso é*»; 2:9 é uma relativa sem verbo (*οὗ ἐστιν ἡ παρουσία*) e
+precisa de «*acontece*»; 3:9 tem um *ἀλλʼ ἵνα* elíptico e precisa de «*fizemos
+assim*». **Não** se marcam artigo, pronome e preposição meramente gramaticais
+(«ele os chamou», «o nome do nosso Senhor»): marcar tudo torna o texto ilegível e
+não marca nada esconde do leitor onde o português acrescentou. O critério é: o
+leitor consegue apontar para o grego e não encontrar a palavra? Se sim, itálico.
 
 **Pontuação e maiúscula inicial.** A relação sintática entre versículos nunca é
 apagada: se um versículo continua a frase do anterior, termina em vírgula (ou
@@ -438,7 +447,7 @@ plausível; **C** = texto difícil, decisão provisória, exige revisão especia
 
 | Ref. | Unidade | Base (adotada) | Alternativa e apoio | Decisão | Nível |
 |---|---|---|---|---|---|
-| 1:2 | θεοῦ πατρὸς [ἡμῶν] | πατρὸς (sem ἡμῶν) | + ἡμῶν: 01, 02, RP, ST, KJTR, Scrivener; NA28 e Treg têm ἡμῶν | segue a base; sem impacto de sentido | A |
+| 1:2 | θεοῦ πατρὸς [ἡμῶν] | πατρὸς (sem ἡμῶν) | + ἡμῶν: 01, 02, RP, ST, KJTR, SR, Scrivener; NA28 e Treg têm ἡμῶν; 03 e WH não | **segue a base**: «da parte de Deus Pai», sem «nosso». O argumento transcricional aponta todo num sentido — o v. 1 tem πατρὶ ἡμῶν, a fórmula paulina corrente é «Deus, nosso Pai», e em 1Ts 1:1 o RP acrescenta a fórmula inteira; um escriba tinha três razões para escrever ἡμῶν e nenhuma para o omitir. A tradução anterior seguia a expansão bizantina enquanto a nota registava a divergência | B |
 | 1:3 | πάντων ὑμῶν | ὑμῶν presente | 01 omite o segundo ὑμῶν; lê ὀφίλομεν (itacismo) | segue a base | A |
 | 1:4 | αὐτοὺς ἡμᾶς / ἐγκαυχᾶσθαι | ordem αὐτοὺς ἡμᾶς; composto ἐγκαυχᾶσθαι | ἡμᾶς αὐτοὺς e καυχᾶσθαι: RP, ST, KJTR, Scrivener; ἐνκαυχᾶσθαι (sem γ): 02, 03 | segue a base; «gloriamo-nos» cobre as duas | A |
 | 1:8 | φλογὶ πυρός / πυρὶ φλογός | **φλογὶ πυρός** (SBL com Tregelles) | πυρὶ φλογός: 01, 02, WH, NA28, RP, ST, KJTR, Scrivener, SR | **segue a base mesmo com apoio minoritário**: só 03 (Vaticanus) sustenta φλογὶ πυρός entre as testemunhas colacionadas; a ordem das palavras não muda o sentido («chama de fogo» / «fogo em chama»). Registado como decisão da base, não nossa | B |
@@ -492,8 +501,9 @@ permite afirmar com o suporte à vista:
 - **02 (Alexandrinus) 2:10** — a mão original tem uma lacuna ilegível; a
   sequência «οὐκ ἐδέξαντο εἰς τὸ σωθῆναι» é restituída.
 - **02 (Alexandrinus) 3:16** — **τόπῳ → τρόπῳ**: a mão original escreveu «em
-  todo o *lugar*» e um corretor escreveu «de toda a *maneira*». Um único par de
-  letras (π/ρ) decide entre «em todo o lugar» e «de todas as maneiras».
+  todo o *lugar*» e um corretor escreveu «de toda a *maneira*». Uma só letra decide
+  entre as duas leituras: o *ρ* de τρόπος, ausente de τόπος. É o achado mais
+  económico do livro — uma letra entre «em todo o lugar» e «de todas as maneiras».
 - **03 (Vaticanus) 2:8** — omite Ἰησοῦς: «ὃν ὁ κύριος ἀνελεῖ».
 - **03 (Vaticanus) 3:4** — acrescenta «καὶ ἐποιήσατε»: «o que ordenamos **e
   fizestes** e fazeis e fareis».
@@ -519,7 +529,8 @@ permite afirmar com o suporte à vista:
 | [`bee/ia.py`](../bee/ia.py) | a verificação de cabeçalhos assinala (sem rejeitar o lote) só as três secções obrigatórias; as condicionais pertencem ao pedido |
 | [`scripts/regenerar_2ts.py`](../scripts/regenerar_2ts.py) | ficheiro editorial de 2 Tessalonicenses: os 47 versículos e notas redigidos sobre a colação, mais `montar()` (JSON do livro com `bibliography` e `review`) e `conferir()` (schema, guarda anti-deriva, vetos, secções, pontuação, NFC, U+2011). `--verificar` valida sem escrever; correr duas vezes não duplica o histórico |
 | [`tests/test_manuscritos.py`](../tests/test_manuscritos.py) | 40 testes do analisador MES: referência de 8 dígitos, quebras dentro de palavras, ligadura KAI, camadas de correção e precedência, nomina sacra por família, abreviaturas por barra só quando a base começa por elas |
-| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados: nenhuma testemunha citada sem colação naquele versículo, 2:13 e 3:16 conferidos contra o relatório, regeneração reproduzível, proveniência e estados de revisão declarados |
+| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados (60 testes): nenhuma testemunha citada sem colação naquele versículo, 2:13 e 3:16 conferidos contra o relatório, regeneração reproduzível, proveniência e estados de revisão declarados, âncoras da memória coerentes com o texto aprovado, e uma classe de lapidação que corre sobre **os sete livros** da edição nova (ênclise, marcas equilibradas, itálicos dos verbos supridos, famílias lexicais, πᾶς anártrico) |
+| [`docs/OFICINA_TRADUCAO.md`](OFICINA_TRADUCAO.md) | a camada prática: como decidir sem ser especialista, recomendação fundamentada das duas unidades C, a passagem de lapidação de 20/11 verso a verso, as doze regras de ofício, o que o responsável pode rever e as perguntas a levar a um especialista |
 | `docs/colacao/` | relatórios de colação versionados (obra nossa; as transcrições CNTR ficam fora do Git) |
 
 Fluxo por livro: `scripts/colar.py --livro N` → decisões em `docs/CRITICA_TEXTUAL.md`

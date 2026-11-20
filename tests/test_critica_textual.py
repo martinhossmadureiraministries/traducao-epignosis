@@ -68,7 +68,8 @@ def _carregar(caminho: Path) -> dict:
 
 
 def _sem_marcas(html: str) -> str:
-    return re.sub(r'<[^>]+>', ' ', html)
+    """Texto legível de um campo com HTML: sem etiquetas e com espaços normais."""
+    return ' '.join(re.sub(r'<[^>]+>', ' ', html).split())
 
 
 class ProtocoloTest(unittest.TestCase):
@@ -443,19 +444,34 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
                 else:
                     self.assertEqual(bom, verso)
 
-    def test_formulas_consolidadas_estao_no_livro(self):
-        for nome, formula in self.memoria['formulas_consolidadas'].items():
-            base = formula.split('…')[0]
+    def test_formulas_consolidadas_estao_onde_o_grego_as_tem(self):
+        # A saudação consolidada É Filemom 1:3, cuja base traz πατρὸς ἡμῶν. A base
+        # de 2Ts 1:2 não traz ἡμῶν: por isso as duas saudações diferem, e é isso
+        # mesmo que a regra UNIFORMIDADE SÓ ONDE O GREGO É IGUAL manda fazer.
+        formulas = self.memoria['formulas_consolidadas']
+        filemom = _carregar(RAIZ / 'edicoes/nova/livros_json/640_Filemom.json')
+        self.assertEqual(filemom['chapters']['1'][2]['text'], formulas['saudacao'])
+        self.assertNotIn('nosso Pai', self.textos['2Ts 1:2'])
+        self.assertIn('da parte de Deus Pai', self.textos['2Ts 1:2'])
+        for nome in ('acao_de_gracas', 'bencao_de_paz'):
+            base = formulas[nome].split('…')[0]
             with self.subTest(nome):
-                self.assertTrue(
-                    any(t.startswith(base) or base in t for t in self.textos.values()),
-                    f'{nome} não casa com nenhum versículo de 2 Tessalonicenses')
+                self.assertTrue(any(base in t for t in self.textos.values()),
+                                f'{nome} não casa com 2 Tessalonicenses')
+
+    def test_1_2_regista_a_divergencia_de_emos(self):
+        nota = _sem_marcas(self.livro['chapters']['1'][1]['commentary'])
+        self.assertIn('sem ἡμῶν', nota)
+        self.assertIn('Nível de certeza B', nota)
+        self.assertIn('Filemom 1:3', nota)
 
     def test_regras_duras_da_critica_textual_existem(self):
         rotulos = [r['rotulo'] for r in self.memoria['regras_duras']]
-        self.assertEqual(len(rotulos), 12, 'número de regras duras mudou')
+        self.assertEqual(len(rotulos), 14, 'número de regras duras mudou')
         for regra in ('PONTUAÇÃO E MAIÚSCULA INICIAL', 'SENHOR E Senhor',
-                      'CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA'):
+                      'CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA',
+                      'ÊNCLISE COM GERÚNDIO E PRONOME',
+                      'UNIFORMIDADE SÓ ONDE O GREGO É IGUAL'):
             with self.subTest(regra):
                 self.assertIn(regra, rotulos)
 
@@ -471,6 +487,121 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
         self.assertNotIn(600, numeros)
         estados = {b['status'] for b in self.livro['review']['editorial_blocks']}
         self.assertEqual(estados, {'rascunho'})
+
+
+class LapidacaoTest(unittest.TestCase):
+    """Defeitos que uma leitura atenta apanha e que nenhum verificador apanhava.
+
+    Todos os testes desta classe nasceram de um achado real na passagem de
+    lapidação de 2026-11-20 (docs/OFICINA_TRADUCAO.md). Ficam aqui para que o
+    mesmo defeito não volte noutro livro.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pasta = RAIZ / 'edicoes' / 'nova' / 'livros_json'
+        cls.livros = {p.stem: _carregar(p) for p in sorted(cls.pasta.glob('*.json'))}
+        cls.dois_ts = cls.livros['600_2_Tessalonicenses']
+
+    def versos(self, dados):
+        for capitulo, versiculos in dados['chapters'].items():
+            for verso in versiculos:
+                yield f'{capitulo}:{verso["verse"]}', verso
+
+    def test_sem_proclise_em_gerundio_em_toda_a_edicao(self):
+        # Gerúndio português termina em -ando/-endo/-indo; «mundo», «quando» e
+        # «segundo» terminam em -ndo sem o serem, e «o mundo» não é próclise.
+        padrao = re.compile(
+            r'\b(?:se|me|te|nos|vos|lhe|lhes) \w+(?:ando|endo|indo)\b')
+        for nome, dados in self.livros.items():
+            for referencia, verso in self.versos(dados):
+                alvos = [('text', verso['text'])]
+                # A nota cita formas defeituosas para as corrigir; o que está entre
+                # «…» é citação, não redação.
+                nota = _sem_marcas(verso.get('commentary', ''))
+                alvos.append(('commentary', re.sub(r'«[^»]*»', '', nota)))
+                for campo, texto in alvos:
+                    for achado in padrao.findall(texto):
+                        self.fail(f'{nome} {referencia} {campo}: próclise «{achado}»')
+
+    def test_marcacao_equilibrada_em_toda_a_edicao(self):
+        # Aspas e itálicos podem atravessar versículos (Jd 14-15 cita 1 Enoque a
+        # cavalgamento); o que não podem é abrir e não fechar dentro do capítulo.
+        for nome, dados in self.livros.items():
+            for capitulo, versiculos in dados['chapters'].items():
+                texto = ' '.join(v['text'] + ' ' + v.get('commentary', '')
+                                 for v in versiculos)
+                for abrir, fechar in (('«', '»'), ('<i>', '</i>'), ('<b>', '</b>')):
+                    with self.subTest(f'{nome} cap. {capitulo} {abrir}'):
+                        self.assertEqual(texto.count(abrir), texto.count(fechar))
+
+    def test_verbos_supridos_vao_em_italico(self):
+        esperados = {'1:5': '<i>Isso é</i>', '2:9': '<i>acontece</i>',
+                     '3:9': '<i>fizemos assim</i>', '1:7': '<i>dar</i>',
+                     '2:3': '<i>esse dia não virá</i>',
+                     '2:7': '<i>continuará a fazê-lo</i>'}
+        for referencia, marca in esperados.items():
+            capitulo, verso = referencia.split(':')
+            texto = self.dois_ts['chapters'][capitulo][int(verso) - 1]['text']
+            with self.subTest(referencia):
+                self.assertIn(marca, texto)
+
+    def test_familia_atakt_e_coerente(self):
+        # ἀτάκτως / ἀτακτέω nos vv. 6, 7 e 11: um só verbo português, «viver».
+        achados = []
+        for referencia, verso in self.versos(self.dois_ts):
+            achados += [(referencia, m) for m in
+                        re.findall(r'\w+ desordenadamente', verso['text'])]
+        self.assertEqual(len(achados), 3, achados)
+        for referencia, forma in achados:
+            with self.subTest(referencia):
+                self.assertIn(forma.split()[0], ('vive', 'vivem', 'vivemos'))
+
+    def test_pas_anaritrico_sem_artigo(self):
+        texto = ' '.join(v['text'] for _, v in self.versos(self.dois_ts))
+        for errado in ('todo o desejo', 'toda a obra de fé', 'todo o irmão'):
+            self.assertNotIn(errado, texto)
+        for certo in ('todo desejo de bondade', 'toda obra de fé', 'todo irmão'):
+            self.assertIn(certo, texto)
+
+    def test_relativa_de_1_9_e_virgula_de_1_8(self):
+        cap = self.dois_ts['chapters']['1']
+        self.assertTrue(cap[7]['text'].endswith(','), '1:8 deve fechar com vírgula')
+        self.assertTrue(cap[8]['text'].startswith('os quais sofrerão'))
+
+    def test_notas_sem_palavras_que_nao_sao_portuguesas(self):
+        # «pererergoso» foi inventado para explicar περίεργος; «introduce» é
+        # italiano/inglês (o português é «introduz»). Palavras que existem com
+        # e sem acento — «evidencia», «sequencia», «apostasia» — são formas
+        # verbais ou substantivos legítimos e não se apanham assim.
+        for nome, dados in self.livros.items():
+            for referencia, verso in self.versos(dados):
+                nota = _sem_marcas(verso.get('commentary', ''))
+                for defeito in ('pererergoso', 'introduce', 'pererérgico'):
+                    with self.subTest(f'{nome} {referencia} {defeito}'):
+                        self.assertNotIn(defeito, nota)
+
+    def test_acento_nas_formas_que_o_exigem(self):
+        # «advérbio», «evidência», «sequência» têm acento; as formas sem acento que
+        # apareciam nas notas eram gralhas, não variantes ortográficas.
+        nota_3_6 = _sem_marcas(self.dois_ts['chapters']['3'][5]['commentary'])
+        self.assertIn('é advérbio de', nota_3_6)
+        nota_1_12 = _sem_marcas(self.dois_ts['chapters']['1'][11]['commentary'])
+        self.assertIn('introduz a finalidade', nota_1_12)
+
+    def test_uma_letra_separa_topo_de_tropo(self):
+        nota = _sem_marcas(self.dois_ts['chapters']['3'][15]['commentary'])
+        self.assertIn('Uma só letra separa as duas leituras', nota)
+        self.assertNotIn('Duas letras', nota)
+
+    def test_nota_e_versiculo_nao_se_contradizem(self):
+        # 1:2 era o caso: a nota dizia que a base não tem ἡμῶν e o texto traduzia-o
+        # na mesma. Quando a nota regista uma divergência, o texto segue a base.
+        verso = self.dois_ts['chapters']['1'][1]
+        nota = _sem_marcas(verso['commentary'])
+        self.assertIn('sem ἡμῶν', nota)
+        self.assertIn('Decisão: seguir a base', nota)
+        self.assertNotIn('nosso Pai', verso['text'])
 
 
 class ConferenciaDoFicheiroEditorialTest(unittest.TestCase):

@@ -200,6 +200,36 @@ fórmula profética (Jl 2:1; Am 5:18; Sf 1:14) pertence à nota.
 «registo», «secção», «aspeto». Está em `modelos/estilo_bee.json` →
 `registro.ortografia` e chega a todos os provedores.
 
+**Colocação pronominal.** Ênclise, como o português europeu a faz: «metendo-se»,
+«admoestem-no», «gloria-se», «ouvindo-o». A próclise em início de oração («se
+metendo») é brasileira e está vetada. O gerúndio é a forma da casa para o
+particípio presente grego — os sete livros aprovados não têm uma única construção
+«estar a + infinitivo» em seu lugar.
+
+**Uniformidade só onde o grego é igual.** As fórmulas consolidadas repetem-se
+letra a letra entre livros **quando as bases coincidem**. Filemom 1:3 tem
+*πατρὸς ἡμῶν* e 2Ts 1:2 não tem: por isso a saudação de Filemom diz «Deus, nosso
+Pai» e a de 2 Tessalonicenses diz «Deus Pai». Uniformidade fabricada é
+infidelidade disfarçada de coerência.
+
+**πᾶς com e sem artigo.** Anártrico, distribui: «todo desejo de bondade e toda
+obra de fé» (= cada desejo, cada obra). Com artigo, totaliza: «todos os que
+creram», «todas as perseguições». «Todo o desejo» diria «o desejo inteiro», que
+não é o que está escrito. Exceção documentada: «com todo o poder» (2:9), porque
+«com todo poder» se leria como onipotência.
+
+**Famílias lexicais coerentes.** Uma família grega tem uma família portuguesa no
+livro inteiro: *ἀτακτ-* → «viver desordenadamente» nos vv. 6, 7 e 11 do capítulo 3;
+*ἀνομ-* → «rebelião»/«ímpio». E um só adversativo por frase: se o grego tem
+*καί* … *ἀλλά*, o *καί* é continuativo e o contraste fica todo no «mas».
+
+**Nota não inventa.** Nem etimologias, nem derivadas portuguesas que não existem,
+nem «todas as edições» quando se consultaram seis. E, acima de tudo, **a nota não
+pode contradizer o versículo**: se a nota regista que a base não tem uma palavra,
+o texto não a traduz. A passagem de lapidação de 2 Tessalonicenses — verso a
+verso, com a regra reutilizável de cada correção — está em
+[OFICINA_TRADUCAO.md](OFICINA_TRADUCAO.md).
+
 **Proveniência.** Cada livro declara em `bibliography` as fontes efetivamente
 consultadas, com revisão (commit), URL, licença e o que se consultou nelas; e em
 `review` os estados de revisão editorial e especializada, que nunca se confundem
@@ -207,6 +237,9 @@ com cobertura. O acervo CNTR é CC BY-SA: é consultado e citado, nunca
 redistribuído — vive em `.bee-cache/`, fora do Git.
 
 **2 Tessalonicenses** foi o primeiro livro regenerado sob este protocolo
-(47 versículos, 30 unidades de variação decididas, duas de nível C). A redação é
+(47 versículos, 30 unidades de variação decididas, duas de nível C) e o primeiro a
+levar uma passagem de lapidação completa: doze versículos e catorze notas revistos
+sobre a colação, mais duas aspas de citação reabertas em João 1:31 e 1:34, que o
+teste transversal de marcas apanhou. A redação é
 editorial, não saída de modelo, e o livro continua RASCUNHO: a voz da versão
 anterior tinha sido aprovada, esta redação ainda não foi lida pelo responsável.

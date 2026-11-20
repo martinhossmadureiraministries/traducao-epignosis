@@ -157,7 +157,7 @@
       },
       {
         "verse": 31,
-        "text": "Eu tampouco o conhecia, mas vim a batizar com água para que ele fosse revelado a Israel.»",
+        "text": "«Eu tampouco o conhecia, mas vim a batizar com água para que ele fosse revelado a Israel.»",
         "commentary": "<p><b>Análise Léxica</b> — <i>οὐκ ᾔδειν</i> (ouk ēdein): verbo eidō, no sentido de saber ou conhecer, aqui com o significado de não o reconhecer plenamente na sua identidade messiânica antes do sinal divino; <i>φανερωθῇ</i> (phanerōthē): de phaneroō, tornar manifesto, revelar; <i>βαπτίζων</i> (baptizōn): batizar, imergir.</p><p><b>Crítica Textual</b> — A SBLGNT traz <i>ἐν ὕδατι</i>, enquanto o Textus Receptus acrescenta o artigo <i>τῷ</i> (<i>ἐν τῷ ὑδατι</i>), variante sem impacto significativo no sentido da imersão com água.</p><p><b>Síntese Exegética</b> — João Batista declara que a sua missão de batizar não tinha origem em iniciativa própria, mas visava especificamente preparar o caminho e manifestar o Messias ao povo de Israel.</p>"
       },
       {
@@ -172,7 +172,7 @@
       },
       {
         "verse": 34,
-        "text": "Eu já vi e dou testemunho de que este é o escolhido de Deus.»",
+        "text": "«Eu já vi e dou testemunho de que este é o escolhido de Deus.»",
         "commentary": "<p><b>Análise Léxica</b> — <i>ἑώρακα</i> (eōraka): tenho visto, perfeito com valor de estado atual; <i>μεμαρτύρηκα</i> (memarturēka): tenho dado testemunho; <i>ἐκλεκτός</i> (eklektos): escolhido, eleito.</p><p><b>Crítica Textual</b> — A SBLGNT regista <i>ἐκλεκτὸς</i> (seguindo manuscritos como P66c, P75, B), enquanto o Textus Receptus e outras testemunhas trazem <i>υἱὸς</i> (filho). A opção por «escolhido» reflete o texto crítico adotado.</p><p><b>Síntese Exegética</b> — Com base na visão do Espírito, o Batista sela o seu testemunho afirmando formalmente a identidade única de Jesus perante os ouvintes.</p>"
       },
       {
@@ -531,6 +531,14 @@
       "provider": "revisao:gemini",
       "model": "gemini-3.5-flash-lite",
       "generated_at_utc": "2026-11-19T23:50:34+00:00"
+    },
+    {
+      "chapter": 1,
+      "verse_from": 31,
+      "verse_to": 34,
+      "provider": "local",
+      "model": "editorial:higiene-aspas",
+      "generated_at_utc": "2026-11-20T00:40:00+00:00"
     }
   ],
   "sources": {

@@ -84,21 +84,35 @@ CAP1 = [
      'a esta missão. A identificação de «Silvano» com «Silas» é inferência corrente '
      'a partir do nome, não afirmação do texto.</p>'),
     (2,
-     'Graça e paz a vocês, da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.',
+     'Graça e paz a vocês, da parte de Deus Pai e do Senhor Jesus Cristo.',
      '<p><b>Análise Léxica:</b> <i>χάρις</i> (cháris) substitui a saudação grega '
      '<i>χαίρειν</i>, e <i>εἰρήνη</i> (eirēnē) traduz o hebraico <i>שָׁלוֹם</i> '
      '(shalom): a fórmula une o cumprimento helénico e a bênção semita. '
      '<i>ἀπό</i> com genitivo indica proveniência: a graça vem <i>de</i> Deus, não é '
      'um desejo vazio.</p>'
-     '<p><b>Crítica Textual:</b> A base lê <i>θεοῦ πατρὸς</i>, sem <i>ἡμῶν</i>; o '
-     'aparato SBLGNT regista <i>+ ἡμῶν</i> em Tregelles, RP e NA28. Na colação, o '
+     '<p><b>Crítica Textual:</b> Unidade com decisão de texto. A base lê '
+     '<i>θεοῦ πατρὸς</i>, sem <i>ἡμῶν</i>; o aparato SBLGNT regista <i>+ ἡμῶν</i> '
+     'em Tregelles, RP e NA28, e <i>πατρὸς</i> sem ele em WH e NIV. Na colação, o '
      'Sinaiticus (01) e o Alexandrinus (02) têm <i>ἡμῶν</i>; o Vaticanus (03) não o '
-     'tem, e o Textus Receptus de Scrivener, Stephanus, KJTR, RP e SR o incluem. '
-     'Divergência de fórmula epistolar, sem efeito de sentido.</p>'
-     '<p><b>Síntese Exegética:</b> A saudação é idêntica à de 1 Tessalonicenses 1:1, '
-     'o que reforça a leitura das duas cartas como escritas na mesma sequência e no '
-     'mesmo círculo. É também a fórmula consolidada da edição BEE: repete-se igual em '
-     'Filemom 1:3 para manter a coerência editorial entre livros.</p>'),
+     'tem, tal como WH; o Textus Receptus de Scrivener, Stephanus, KJTR, RP e SR '
+     'incluem-no. <b>Decisão: seguir a base</b> — «da parte de Deus Pai», sem '
+     '«nosso». O argumento transcricional aponta todo num sentido: o v. 1 desta carta '
+     'tem <i>πατρὶ ἡμῶν</i> na base, a fórmula paulina corrente é «Deus, nosso Pai», '
+     'e em 1 Tessalonicenses 1:1 o RP acrescenta a fórmula inteira a um texto que na '
+     'base só diz «graça e paz a vocês». Um escriba tinha várias razões para escrever '
+     '<i>ἡμῶν</i> aqui e nenhuma para o omitir; a leitura mais curta explica a mais '
+     'longa, não o contrário. <b>Nível de certeza B.</b></p>'
+     '<p><b>Síntese Exegética:</b> A saudação é próxima da de Filemom 1:3, mas não é '
+     'idêntica, e a diferença é instrutiva: na base de Filemom 1:3 a fórmula traz '
+     '<i>πατρὸς ἡμῶν</i>; aqui não traz. Por isso a fórmula consolidada da edição BEE '
+     'vale onde o grego a tem, e neste versículo a fidelidade à base vem antes da '
+     'uniformidade entre livros. O v. 1 já disse «nosso Pai»; repeti-lo aqui seria '
+     'acrescentar ao texto o que ele não repete.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «da parte de Deus, nosso '
+     'Pai», harmonizando com Filemom 1:3 e com o v. 1. O <i>ἡμῶν</i> não está na base '
+     'fixada, e a nota registava a divergência enquanto o texto a ignorava — '
+     'contradição entre nota e versículo, que é o pior dos dois erros. Retirado do '
+     'texto: uniformidade entre livros não é fidelidade ao texto de cada um.</p>'),
     (3,
      'Devemos dar sempre graças a Deus por vocês, irmãos, como é justo, porque a fé '
      'que vocês têm está crescendo muito, e o amor de cada um de vocês pelos outros '
@@ -126,8 +140,8 @@ CAP1 = [
      'parágrafo. Não é ornamento.</p>'),
     (4,
      'de maneira que nós mesmos nos gloriamos em vocês entre as igrejas de Deus, por '
-     'causa da perseverança e da fé que vocês demonstram em todas as perseguições e '
-     'tribulações que suportam.',
+     'causa da perseverança e da fé de vocês em todas as perseguições e tribulações '
+     'que suportam.',
      '<p><b>Análise Léxica:</b> <i>ἐγκαυχᾶσθαι</i> (enkauchásthai) é o composto de '
      '<i>καυχάομαι</i> com <i>ἐν</i>: gabar-se <i>em</i> alguém. '
      '<i>ὑπομονή</i> (hypomonē) é resistência ativa sob pressão, não passividade; a '
@@ -146,15 +160,21 @@ CAP1 = [
      'resistência dos tessalonicenses tornou-se matéria de orgulho apostólico '
      '<i>entre as igrejas</i>. O versículo inverte a lógica esperada — a '
      'perseguição não é sinal de abandono, é sinal de que a fé e o amor do v. 3 são '
-     'reais. Note-se que Paulo se gloria <i>em</i> eles, não <i>deles</i> como '
-     'troféu: a preposição é <i>ἐν</i>.</p>'
+     'reais. Note-se a preposição <i>ἐν</i> («em»): Paulo gloria-se <i>neles</i>, '
+     'não <i>deles</i> como de um troféu.</p>'
      '<p><b>Hermenêutica e Contexto:</b> O texto não afirma que o sofrimento seja '
      'bom em si, nem que Deus o envie para provar valor. Afirma que a perseverança '
      'sob perseguição evidencia uma fé que cresce, e que essa evidência serve de '
      'encorajamento a outras igrejas. Qualquer leitura que transforme o versículo em '
-     'promessa de recompensa por sofrimento vai além do que ele diz.</p>'),
+     'promessa de recompensa por sofrimento vai além do que ele diz.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior dizia «a perseverança e a fé <i>que '
+     'vocês demonstram</i> em todas as perseguições»: «demonstram» não tem '
+     'correspondente no grego e entrava no texto sem itálico, contra a convenção de '
+     'docs/CRITICA_TEXTUAL.md §5.1. O genitivo <i>ὑμῶν</i> e o <i>ἐν</i> já dizem de '
+     'quem é a perseverança e onde ela se exerce; sem o verbo acrescentado o '
+     'versículo fica tão sóbrio como o original.</p>'),
     (5,
-     'Isso é prova evidente do justo juízo de Deus, para que vocês sejam considerados '
+     '<i>Isso é</i> prova do justo juízo de Deus, para que vocês sejam considerados '
      'dignos do reino de Deus, por causa do qual também padecem.',
      '<p><b>Análise Léxica:</b> <i>ἔνδειγμα</i> (éndeigma) é sinal demonstrativo, '
      'evidência que aponta para algo. <i>καταξιωθῆναι</i> (kataxiōthênai) é '
@@ -172,7 +192,14 @@ CAP1 = [
      'os vv. 4 e 5: a perseguição é prova de que Deus julgará com justiça (e, '
      'portanto, de que haverá compensação), ou é prova de que os perseguidos '
      'pertencem ao reino. A gramática permite ambas; a tradução mantém a frase '
-     'aberta como o original e não escolhe por conta do leitor.</p>'),
+     'aberta como o original e não escolhe por conta do leitor.</p>'
+     '<p><b>Nota de redação:</b> Duas correções. «Prova evidente» traduzia '
+     '<i>ἔνδειγμα</i> por «prova» e acrescentava-lhe «evidente», intensidade que o '
+     'grego não tem: fica «prova». E o sujeito e a cópula que o português exige — o '
+     'grego é um fragmento nominal — passam a ir em itálico, como já iam o '
+     '<i>dar</i> de 1:7 e o <i>continuará a fazê-lo</i> de 2:7. Regra: verbo ou '
+     'oração suprida vai em itálico; artigo e pronome meramente gramaticais, '
+     'não.</p>'),
     (6,
      'Visto que é justo diante de Deus retribuir com tribulação aos que atribulam '
      'vocês,',
@@ -222,7 +249,7 @@ CAP1 = [
      'contrário.</p>'),
     (8,
      'em chama de fogo, dando retribuição aos que não conhecem a Deus e aos que não '
-     'obedecem ao evangelho do nosso Senhor Jesus.',
+     'obedecem ao evangelho do nosso Senhor Jesus,',
      '<p><b>Análise Léxica:</b> <i>ἐκδίκησις</i> (ekdíkēsis) é fazer justiça a '
      'alguém, e daí vingança legítima; não é <i>ὀργή</i> (ira) nem sadismo. '
      '<i>τοῖς μὴ εἰδόσι θεόν</i> («aos que não conhecem a Deus») usa o perfeito de '
@@ -248,8 +275,8 @@ CAP1 = [
      'versículo a quem nunca ouviu o evangelho é forçar o texto. O versículo também '
      'não descreve a natureza do castigo; descreve quem o aplica e a que se opõe.</p>'),
     (9,
-     'Eles sofrerão a pena de destruição eterna, afastados da presença do Senhor e da '
-     'sua glória poderosa,',
+     'os quais sofrerão a pena de destruição eterna, afastados da presença do Senhor '
+     'e da sua glória poderosa,',
      '<p><b>Análise Léxica:</b> <i>δίκην τίσουσιν</i> (díkhen tísousin) é fórmula '
      'jurídica: pagar a pena. <i>ὄλεθρος</i> (ólethros) é ruína, destruição — não '
      '<i>ἀνυπαρξία</i> (inexistência) nem <i>βασανισμός</i> (tormento); o texto '
@@ -273,7 +300,13 @@ CAP1 = [
      'linguagem de Isaías 2:10-21 sobre a presença do Senhor. Leituras '
      'condicionalistas, eternalistas e aniquilacionistas discutem este texto há '
      'séculos; a BEE mantém a imagem do original e não resolve o debate na '
-     'tradução.</p>'),
+     'tradução.</p>'
+     '<p><b>Nota de redação:</b> O versículo começa por <i>οἵτινες</i>, relativo '
+     'plural: são os mesmos do v. 8, não um sujeito novo. A versão anterior fechava o '
+     'v. 8 com ponto e abria este com «Eles sofrerão», apagando a subordinação; a '
+     'aprovada em 19/11 escrevia «Os quais», com maiúscula depois de ponto. Fica o '
+     'melhor dos dois: vírgula no fim do v. 8 e relativa em minúscula, «os quais '
+     'sofrerão», que conserva o <i>οἵτινες</i> sem soar a Almeida.</p>'),
     (10,
      'quando ele vier, naquele dia, para ser glorificado entre os seus santos e '
      'admirado por todos os que creram, pois o nosso testemunho foi crido entre '
@@ -304,14 +337,18 @@ CAP1 = [
      'tradução mantém o aspeto da base e a nota regista a alternativa.</p>'),
     (11,
      'Por isso também oramos sempre por vocês, para que o nosso Deus os considere '
-     'dignos da vocação e cumpra, com poder, todo o desejo de bondade e toda obra de '
+     'dignos da vocação e cumpra, com poder, todo desejo de bondade e toda obra de '
      'fé,',
      '<p><b>Análise Léxica:</b> <i>εἰς ὃ</i> («para o que», «por isso») retoma o '
      'destino descrito no v. 5. <i>ἀξιώσῃ</i> (axiṓsē) é aqui <b>ativo</b> — Deus '
      'é o agente nomeado, ao contrário da passiva de 1:5. <i>κλῆσις</i> (klêsis) é '
      'chamamento, vocação. <i>εὐδοκία ἀγαθωσύνης</i> («todo desejo de bondade») e '
      '<i>ἔργον πίστεως</i> («obra de fé») são dois genitivos que a tradução mantém '
-     'distintos. <i>πληρώσῃ</i> é completar, levar a cumprimento.</p>'
+     'distintos. <i>πληρώσῃ</i> é completar, levar a cumprimento. Os dois '
+     '<i>πᾶν</i> são anártricos, e por isso a tradução os dá sem artigo: «todo '
+     'desejo», «toda obra», no sentido de <i>cada</i> desejo e <i>cada</i> obra. Com '
+     'artigo, «todo o desejo» diria «o desejo inteiro», que não é o que está escrito. '
+     'É a mesma razão de «toda boa obra» em 2:17 e de «todo irmão» em 3:6.</p>'
      '<p><b>Crítica Textual:</b> Sem variante verificada. O Alexandrinus (02) lê '
      '<i>πληρώσει</i> (futuro) por <i>πληρώσῃ</i> (subjuntivo) — diferença de modo '
      'que a subordinada <i>ἵνα</i> exige; não é variante de conteúdo.</p>'
@@ -324,7 +361,7 @@ CAP1 = [
     (12,
      'para que o nome do nosso Senhor Jesus seja glorificado em vocês, e vocês nele, '
      'segundo a graça do nosso Deus e do Senhor Jesus Cristo.',
-     '<p><b>Análise Léxica:</b> <i>ὅπως</i> introduce a finalidade da oração do v. '
+     '<p><b>Análise Léxica:</b> <i>ὅπως</i> introduz a finalidade da oração do v. '
      '11. <i>ἐνδοξασθῇ</i> retoma o verbo do v. 10, agora aplicado ao <b>nome</b>. '
      '<i>κατὰ τὴν χάριν</i> («segundo a graça») é a base de tudo: a glorificação '
      'mútua não é conquista, é graça.</p>'
@@ -593,8 +630,8 @@ CAP2 = [
      'genitivos (<i>ἐπιφανείᾳ τῆς παρουσίας</i>) ao modo de Almeida. O conteúdo '
      'mantém-se: <i>ἐπιφάνεια</i> é o aparecimento glorioso.</p>'),
     (9,
-     'A vinda dele acontece segundo a ação de Satanás, com todo o poder, e com sinais '
-     'e prodígios de mentira,',
+     'A vinda dele <i>acontece</i> segundo a ação de Satanás, com todo o poder, e com '
+     'sinais e prodígios de mentira,',
      '<p><b>Análise Léxica:</b> <i>κατʼ ἐνέργειαν τοῦ Σατανᾶ</i> («segundo a ação '
      'de Satanás») usa <i>ἐνέργεια</i>, operação eficaz, palavra que Paulo reserva '
      'para ação real e não meramente aparente (cf. Ef 1:19; Cl 2:12). '
@@ -621,7 +658,10 @@ CAP2 = [
      'vinda» a seguir a «o esplendor da sua vinda» tomaria «vinda» como antecedente '
      'e ficaria ambíguo. A tradução abre frase nova e fecha o v. 8 com ponto e '
      'vírgula, marcando que a subordinação grega não foi apagada: a vinda de que se '
-     'fala é a dele, o ímpio.</p>'),
+     'fala é a dele, o ímpio. «Acontece» vai agora em itálico: <i>οὗ ἐστιν ἡ '
+     'παρουσία</i> é «cuja vinda <b>é</b>», e o verbo que a frase nova precisa não '
+     'está no grego. É a convenção de §5.1 — verbo suprido em itálico, artigo e '
+     'pronome gramaticais não.</p>'),
     (10,
      'e com todo o engano da injustiça, para os que se perdem, porque não acolheram o '
      'amor da verdade para serem salvos.',
@@ -932,7 +972,7 @@ CAP3 = [
      'de todo irmão que vive desordenadamente e não segundo a tradição que receberam '
      'de nós.',
      '<p><b>Análise Léxica:</b> <i>στέλλεσθαι ἀπό</i> é médio: «afastar-se de», '
-     'manter distância — não expulsar. <i>ἀτάκτως</i> (atáktōs) é adverbio de '
+     'manter distância — não expulsar. <i>ἀτάκτως</i> (atáktōs) é advérbio de '
      '<i>ἄτακτος</i>, fora de fila, sem ordem, indisciplinado; no contexto é viver '
      'sem cumprir o seu papel. <i>περιπατέω</i> é andar, e daí viver, comportar-se. '
      '<i>παράδοσις</i> retoma 2:15. <i>ἀδελφός</i> é usado tanto dos que se afastam '
@@ -955,7 +995,7 @@ CAP3 = [
      'Tregelles/RP/NA28 contra a sua ausência em WH e NIV.</p>'
      '<p><b>Síntese Exegética:</b> A ordem tem três elementos: quem ordena (os '
      'remetentes, em nome do Senhor Jesus Cristo), a quem (a comunidade inteira, '
-     '«irmãos») e o quê (afastar-se de <b>todo</b> irmão que anda desordenadamente). '
+     '«irmãos») e o quê (afastar-se de <b>todo</b> irmão que vive desordenadamente). '
      'A direção da ação é decisiva: <i>στέλλεσθαι ὑμᾶς ἀπὸ παντὸς '
      'ἀδελφοῦ</i> — são <b>eles</b>, os ordenados, que se afastam do irmão '
      'desordenado; não é o irmão que se afasta. O <i>ἀτάκτως</i> liga-se ao que o '
@@ -972,7 +1012,7 @@ CAP3 = [
      'faz o irmão desordenado afastar-se a si mesmo. Corrigido para «que se afastem '
      'de todo irmão…».</p>'),
     (7,
-     'Pois vocês mesmos sabem como devem imitar-nos, visto que não andamos '
+     'Pois vocês mesmos sabem como devem imitar-nos, visto que não vivemos '
      'desordenadamente entre vocês,',
      '<p><b>Análise Léxica:</b> <i>μιμέομαι</i> (miméomai) é imitar, tomar como '
      'modelo — verbo que deu «mímica». <i>ἠτακτήσαμεν</i> é aoristo de '
@@ -984,7 +1024,12 @@ CAP3 = [
      '<p><b>Síntese Exegética:</b> O argumento é exemplar: os destinatários sabem como '
      'imitar porque viram. O <i>ὅτι</i> dá a razão do modelo — os remetentes não '
      'viveram desordenadamente entre eles. O exemplo apostólico precede a ordem: o '
-     'capítulo não impõe um fardo que os apóstolos não tenham carregado (v. 8).</p>'),
+     'capítulo não impõe um fardo que os apóstolos não tenham carregado (v. 8).</p>'
+     '<p><b>Nota de redação:</b> «Não andamos desordenadamente» passou a «não vivemos '
+     'desordenadamente»: a família <i>ἀτακτ-</i> fica com o mesmo verbo nos vv. 6, 7 '
+     'e 11, como esta Síntese já dizia, e o leitor vê que é a mesma palavra grega nos '
+     'três sítios. <i>περιπατέω</i> é andar e, daí, viver; o glossário da memória de '
+     'estilo fixa «viver» para esta família.</p>'),
     (8,
      'nem comemos de graça o pão de ninguém. Pelo contrário, trabalhamos com esforço e '
      'fadiga, noite e dia, para não sermos fardo para nenhum de vocês.',
@@ -1008,8 +1053,8 @@ CAP3 = [
      'um advérbio que o grego não tem. O par <i>κόπος</i>/<i>μόχθος</i> já carrega a '
      'intensidade.</p>'),
     (9,
-     'Não é que não tenhamos esse direito, mas fizemos assim para nos darmos a vocês '
-     'como modelo a ser imitado.',
+     'Não é que não tenhamos esse direito, mas <i>fizemos assim</i> para nos darmos a '
+     'vocês como modelo a ser imitado.',
      '<p><b>Análise Léxica:</b> <i>ἐξουσία</i> (exousía) é autoridade, direito '
      'legítimo — o mesmo termo de 1 Co 9:4-6 sobre o sustento dos apóstolos. '
      '<i>τύπος</i> (týpos) é marca, forma impressa e, daqui, modelo, padrão a '
@@ -1056,30 +1101,38 @@ CAP3 = [
      'uso.</p>'),
     (11,
      'Pois ouvimos que alguns entre vocês vivem desordenadamente, sem trabalhar, mas '
-     'se metendo em tudo.',
+     'metendo-se em tudo.',
      '<p><b>Análise Léxica:</b> <i>ἀκούομεν</i> é presente: «ouvimos» como notícia '
      'que continua a chegar. <i>ἀτάκτως</i> retoma o advérbio do v. 6. O par '
      '<i>μηδὲν ἐργαζομένους ἀλλὰ περιεργαζομένους</i> é <b>jogo de palavras</b>: '
      '<i>ἐργάζομαι</i> (trabalhar) contra <i>περιεργάζομαι</i> (trabalhar em volta '
      'de, meter-se no que não é seu); o segundo é o mesmo radical do primeiro com '
-     '<i>περι-</i>. <i>περίεργος</i> deu o português «pererergoso» e o sentido de '
-     'curioso intrometido (cf. At 19:19; 1 Tm 5:13).</p>'
+     '<i>περι-</i>. <i>περίεργος</i> é quem se ocupa do que não lhe diz respeito: em '
+     'At 19:19 qualifica as artes mágicas e em 1 Tm 5:13 as mulheres que «andam de '
+     'casa em casa» — o mesmo campo semântico deste versículo. Não há derivado '
+     'português corrente da palavra, e por isso o jogo se regista aqui em vez de se '
+     'forçar no texto.</p>'
      '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Alexandrinus (02) tem '
      'lacuna e escreve <i>περιπατουτας</i> por <i>περιπατοῦντας</i>.</p>'
      '<p><b>Síntese Exegética:</b> A desordem é definida com precisão: não é pobreza '
      'nem descanso, é ausência de trabalho combinada com atividade indevida. O jogo '
      'de palavras grego é intraduzível literalmente; a tradução preserva o contraste '
-     'com «sem trabalhar, mas se metendo em tudo» e regista o par aqui. A ordem dos '
+     'com «sem trabalhar, mas metendo-se em tudo» e regista o par aqui. A ordem dos '
      'dois particípios é importante: primeiro a omissão, depois a intromissão.</p>'
      '<p><b>Hermenêutica e Contexto:</b> O texto não explica a origem do problema. As '
      'hipóteses usuais — expectativa da vinda iminente que levou a abandonar o '
      'trabalho, dependência de patronos ou de apoio comunitário, clientela '
      'helenística — são reconstruções históricas, não afirmações do versículo. A '
      'tradução e a nota não adotam nenhuma; e é significativo que Paulo corrija o '
-     'comportamento sem endossar uma explicação escatológica para ele.</p>'),
+     'comportamento sem endossar uma explicação escatológica para ele.</p>'
+     '<p><b>Nota de redação:</b> «Se metendo» passou a «metendo-se»: com gerúndio, a '
+     'colocação portuguesa é a ênclise, e a próclise («se metendo») é brasileira. Os '
+     'livros já aprovados só têm ênclise — «ouvindo-o», «voltando-se», '
+     '«sujeitando-se», «tirando-o», «arrancando-os» — e este versículo era a única '
+     'exceção do corpus. Regra acrescentada à memória de estilo.</p>'),
     (12,
-     'A tais pessoas, porém, ordenamos e exortamos no Senhor Jesus Cristo que '
-     'trabalhem em tranquilidade e comam o seu próprio pão.',
+     'A essas pessoas, porém, ordenamos e exortamos no Senhor Jesus Cristo que, '
+     'trabalhando com tranquilidade, comam o seu próprio pão.',
      '<p><b>Análise Léxica:</b> <i>τοῖς τοιούτοις</i> («a tais») retoma o grupo do '
      'v. 11, não indivíduos nomeados. <i>παραγγέλλω</i> e <i>παρακαλέω</i> '
      'combinam ordem e apelo — autoridade e persuasão na mesma frase. <i>μετὰ '
@@ -1090,11 +1143,19 @@ CAP3 = [
      '«no Senhor» contra «pelo nosso Senhor». A diferença é de preposição e de um '
      'possessivo; o sentido — a autoridade em nome da qual se ordena — mantém-se. '
      'Decisão: seguir a base.</p>'
-     '<p><b>Síntese Exegética:</b> A ordem é dupla e positiva: trabalhar e comer o '
-     'próprio pão. O segundo membro não é consequência do primeiro por necessidade '
-     'económica apenas: comer o próprio pão é o sinal visível de que a tranquilidade '
-     'foi recuperada. O contraste com o v. 11 é exato — em vez de se meterem em tudo, '
-     'ocupam-se do seu trabalho.</p>'),
+     '<p><b>Síntese Exegética:</b> A ordem tem uma só forma verbal — «comam o seu '
+     'próprio pão» — e o trabalho vem no particípio, que dá o modo: <i>μετὰ ἡσυχίας '
+     'ἐργαζόμενοι</i>, «trabalhando com tranquilidade». Comer o próprio pão não é só '
+     'consequência económica: é o sinal visível de que a tranquilidade foi '
+     'recuperada. O contraste com o v. 11 é exato — em vez de se meterem em tudo, '
+     'ocupam-se do seu trabalho.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior punha os dois verbos em paralelo '
+     '(«que trabalhem em tranquilidade e comam»), o que achatava o particípio de modo '
+     'que a própria Análise Léxica descreve. Repõe-se a estrutura da versão aprovada '
+     'em 19/11, com «com tranquilidade» em vez de «em tranquilidade», que é a '
+     'regência corrente para <i>μετά</i> de modo. «A tais pessoas» deu lugar a «a '
+     'essas pessoas»: <i>τοιοῦτος</i> retoma o grupo do v. 11, e «tais» a abrir '
+     'frase é registo jurídico, não o tom da carta.</p>'),
     (13,
      'Quanto a vocês, irmãos, não desanimem de fazer o bem.',
      '<p><b>Análise Léxica:</b> <i>ἐγκακέω</i> (egkakéō) é desfalecer, perder o '
@@ -1144,7 +1205,7 @@ CAP3 = [
      'o mesmo verbo aparece com alcance diferente (ali inclui não comer com o tal); a '
      'diferença de contexto exige leitura própria, não harmonização automática.</p>'),
     (15,
-     'Contudo, não o considerem como inimigo, mas admoestem-no como irmão.',
+     'Não o considerem como inimigo, mas admoestem-no como irmão.',
      '<p><b>Análise Léxica:</b> <i>ἡγέομαι</i> (hēgéomai) é considerar, reputar — '
      'verbo de juízo sobre alguém. <i>ἐχθρός</i> (echthrós) é inimigo. '
      '<i>νουθετέω</i> (nouthetéō) é advertir colocando na mente, corrigir com '
@@ -1155,26 +1216,33 @@ CAP3 = [
      '<p><b>Síntese Exegética:</b> É o limite interpretativo de todo o parágrafo: a '
      'disciplina dos vv. 6-14 não reclassifica a pessoa. O contraste não é entre '
      'tratar bem e tratar mal, é entre tratar como inimigo e tratar como irmão — e '
-     'admoestar é ato de irmão. O <i>καί</i> adversativo («contudo», «e não») '
-     'prende-se diretamente ao «não se misturem» do v. 14.</p>'
+     'admoestar é ato de irmão. O <i>καί</i> é aqui continuativo, não adversativo: '
+     'prende o versículo ao «não se misturem» do v. 14, e o contraste fica todo no '
+     '<i>ἀλλά</i> que vem a seguir — o português «mas».</p>'
      '<p><b>Hermenêutica e Contexto:</b> A sequência dos vv. 13-15 forma uma unidade '
      'de tom: não desanimar de fazer o bem, marcar sem hostilizar, admoestar como '
      'irmão. Qualquer prática disciplinar que suprima o v. 15 lê o texto contra si '
-     'mesmo.</p>'),
+     'mesmo.</p>'
+     '<p><b>Nota de redação:</b> O versículo abria com «Contudo», que traduzia o '
+     '<i>καί</i> como adversativo e antecipava um contraste que o <i>ἀλλά</i> já faz '
+     'na segunda metade: ficavam dois adversativos na mesma frase. Sem o «Contudo», o '
+     'versículo começa pela ordem e o contraste aparece uma só vez, onde o grego o '
+     'põe.</p>'),
     (16,
      'O próprio Senhor da paz lhes dê a paz em todo o tempo e de todas as maneiras. O '
      'Senhor esteja com todos vocês.',
      '<p><b>Análise Léxica:</b> <i>δῴη</i> (doíē) é aoristo optativo de '
      '<i>δίδωμι</i>, forma de desejo: «queira ele dar». <i>ὁ κύριος τῆς '
      'εἰρήνης</i> é genitivo de atributo: o Senhor que é a fonte da paz. <i>διὰ '
-     'παντός</i> («continuamente», «em todo o tempo») e <i>ἐν παντὶ τρόπῳ» («de '
+     'παντός</i> («continuamente», «em todo o tempo») e <i>ἐν παντὶ τρόπῳ</i> («de '
      'toda a maneira», «em todo o modo») são dois universais que se somam. '
      '<i>εἰρήνη</i> traduz <i>שָׁלוֹם</i>: integridade, bem-estar, reconciliação, '
      'não apenas ausência de conflito.</p>'
      '<p><b>Crítica Textual:</b> <b>Achado manuscritológico do capítulo.</b> O '
      '<b>Alexandrinus (02)</b> escreveu <i>ἐν παντὶ τόπῳ</i> («em todo o '
      '<b>lugar</b>») na mão original e foi <b>corrigido para <i>τρόπῳ</i></b> («de '
-     'toda a <b>maneira</b>») por mão posterior. Duas letras distinguem as leituras. '
+     'toda a <b>maneira</b>») por mão posterior. Uma só letra separa as duas '
+     'leituras: o <i>ρ</i> de <i>τρόπος</i>, ausente de <i>τόπος</i>. '
      'Base, Sinaiticus, Vaticanus e todas as edições colacionadas leem '
      '<i>τρόπῳ</i>. Decisão: seguir a base; o <i>τόπῳ</i> de 02* fica registado '
      'porque mostra como um corretor bizantino ou alexandrino alinhou o texto com a '
@@ -1191,8 +1259,8 @@ CAP3 = [
      'promessa incondicional de ausência de conflito. Num livro que acaba de falar de '
      'perseguição, tribulação e disciplina, prometer paz «em todo o tempo e de todas '
      'as maneiras» não pode significar ausência de sofrimento — o capítulo 1 diz o '
-     'contrário. A fórmula é a bênção consolidada da edição BEE e repete-se igual nos '
-     'outros livros.</p>'),
+     'contrário. É esta a fórmula consolidada da bênção de paz na edição BEE: os '
+     'outros livros que a tenham de dar dão-na assim, letra a letra.</p>'),
     (17,
      'A saudação é do meu próprio punho, de Paulo. Este é o sinal em cada carta; é '
      'assim que escrevo.',

@@ -225,13 +225,44 @@ transformada em procedimento e aplicada a um livro inteiro.
   inicial; SENHOR e Senhor; crítica textual só com evidência colacionada),
   `registro.ortografia`, oito entradas de glossário e três vetos novos.
 - **Testes:** `tests/test_manuscritos.py` (40) e `tests/test_critica_textual.py`
-  (49). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
-  testemunha sem registo de colação naquele versículo, e que as âncoras da
-  memória de estilo citam o texto aprovado em vez de o reescreverem. Total:
-  350 testes.
+  (60). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
+  testemunha sem registo de colação naquele versículo, que as âncoras da
+  memória de estilo citam o texto aprovado em vez de o reescreverem, e — na classe
+  de lapidação — que nenhum dos sete livros tem próclise com gerúndio, marcas
+  desequilibradas, verbos supridos sem itálico ou famílias lexicais incoerentes.
+  Total: 361 testes.
+
+### Lapidação (mesmo dia)
+
+Doze versículos e catorze notas revistos sobre a colação, com a regra reutilizável
+de cada correção. Os achados que mais pesam:
+
+- **1:2 traduzia contra a base.** A nota registava que a base lê *θεοῦ πατρὸς* sem
+  *ἡμῶν*, e o texto escrevia «Deus, nosso Pai» por uniformidade com Filemom 1:3,
+  cuja base **tem** *ἡμῶν*. Nota e versículo a contradizerem-se é o pior dos dois
+  erros; ficou «da parte de Deus Pai», nível B, e a regra «uniformidade só onde o
+  grego é igual» entrou na memória de estilo.
+- **1:8-9 apagava uma relativa.** *οἵτινες* liga o v. 9 ao v. 8; o texto fechava o
+  v. 8 com ponto e abria o v. 9 com «Eles». Fica vírgula e «os quais sofrerão».
+- **Gralhas nas notas:** *introduce* por «introduz» (1:12), «adverbio» sem acento
+  (3:6), «pererergoso» — palavra portuguesa inventada para explicar *περίεργος*
+  (3:11), um itálico nunca fechado (3:16) e «duas letras» onde é uma só, o *ρ* de
+  *τρόπος* (3:16).
+- **Dois `»` sem `«` em João 1:31 e 1:34**: o discurso de João Batista continuava
+  fora de citação. Apanhado porque o teste de marcas equilibradas corre sobre os
+  sete livros da edição nova, não só sobre 2 Tessalonicenses.
+- **Próclise brasileira** («se metendo», 3:11) num corpus que só tem ênclise.
+
+Regras novas na memória de estilo (v1.2): ênclise com gerúndio, uniformidade só
+onde o grego é igual, *πᾶς* anártrico no glossário, verbo suprido em itálico, e
+dois vetos (próclise, derivação inventada). Guia prático em
+`docs/OFICINA_TRADUCAO.md`: como decidir sem ser especialista, recomendação
+fundamentada das duas unidades C, e o que o responsável pode rever sem saber grego.
 
 Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
 especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
+37 dos 47 versículos diferem da versão de 19/11, cuja voz foi aprovada; esta
+redação não foi lida pelo responsável.
 
 ## Próximas etapas
 
