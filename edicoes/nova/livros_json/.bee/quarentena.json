@@ -439,7 +439,40 @@
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T17:14:28+00:00",
       "status": "pendente"
+    },
+    {
+      "reference": "João 4:50",
+      "book": 500,
+      "chapter": 4,
+      "verse": 50,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
+      "at_utc": "2026-11-20T23:21:42+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 4:51",
+      "book": 500,
+      "chapter": 4,
+      "verse": 51,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
+      "at_utc": "2026-11-20T23:21:54+00:00",
+      "status": "pendente"
+    },
+    {
+      "reference": "João 4:52",
+      "book": 500,
+      "chapter": 4,
+      "verse": 52,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
+      "at_utc": "2026-11-20T23:22:04+00:00",
+      "status": "pendente"
     }
   ],
-  "updated_at_utc": "2026-11-20T17:14:28+00:00"
+  "updated_at_utc": "2026-11-20T23:22:04+00:00"
 }
