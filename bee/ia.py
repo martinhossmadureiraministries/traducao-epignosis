@@ -542,6 +542,15 @@ class MotorIA:
                 'max_tokens': self.max_tokens,
                 'temperature': 0.4,
             }
+            if self.provedor == 'groq':
+                # A reserva de saída também conta no limite por pedido: pedir
+                # 12.000 tokens num plano de 8.000 TPM falha até para um verso.
+                # Estimativa conservadora para português e fontes em grego.
+                entrada = (len(texto_sistema.encode()) + len(mensagem.encode())) // 3 + 256
+                disponivel = config.tokens_por_minuto - entrada
+                if disponivel < 256:
+                    raise RespostaTruncada('groq: entrada demasiado grande; a reduzir o lote.')
+                payload['max_tokens'] = min(self.max_tokens, disponivel)
             if self.provedor == 'openai':
                 # A API da OpenAI mudou o nome do parâmetro.
                 payload['max_completion_tokens'] = payload.pop('max_tokens')
