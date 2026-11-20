@@ -449,3 +449,66 @@
 - 2026-11-20T14:30:05+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
 - 2026-11-20T14:30:05+00:00 — Módulos recompilados no fim do ciclo: 13/1189 capítulos, 282 versículos.
 - 2026-11-20T14:30:05+00:00 — Capítulos exportados para leitura: 14 (1 mudaram nesta execução).
+- 2026-11-20T14:35:59+00:00 — Porta de estilo ativa; 2 capítulo(s) com provedores evitados por deriva anterior.
+- 2026-11-20T14:35:59+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:35:59+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:00+00:00 — **AVISO** openrouter: o modelo 'inclusionai/ling-3.2-flash:free' não está disponível nesta conta (quota esgotada); a usar 'openai/gpt-oss-120b:free'.
+- 2026-11-20T14:36:01+00:00 — **AVISO** openrouter: o modelo 'openai/gpt-oss-120b:free' não está disponível nesta conta (HTTP 404); a usar 'qwen/qwen3-235b-a22b:free'.
+- 2026-11-20T14:36:02+00:00 — **AVISO** openrouter: o modelo 'qwen/qwen3-235b-a22b:free' não está disponível nesta conta (HTTP 404); a usar 'deepseek/deepseek-chat-v3-0324:free'.
+- 2026-11-20T14:36:03+00:00 — **AVISO** openrouter: o modelo 'deepseek/deepseek-chat-v3-0324:free' não está disponível nesta conta (HTTP 404); a usar 'google/gemini-2.5-flash:free'.
+- 2026-11-20T14:36:04+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:05+00:00 — **AVISO** nvidia: o modelo 'meta/llama-3.3-70b-instruct' não está disponível nesta conta (HTTP 410); a usar 'nvidia/llama-3.1-nemotron-70b-instruct'.
+- 2026-11-20T14:36:06+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:07+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:07+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:07+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:08+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:09+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:10+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:10+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:10+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:11+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:12+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:14+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:14+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:14+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:15+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:16+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:17+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:17+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:17+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:18+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:19+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:20+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:20+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:20+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:21+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:22+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:23+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:23+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:23+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:24+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:25+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:26+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:26+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:26+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:27+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:29+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:30+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:30+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:30+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:31+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:32+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:33+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:33+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:33+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:34+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:35+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:36+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:36+00:00 — João 4: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-20T14:36:36+00:00 — Conteúdo inválido em Groq · openai/gpt-oss-120b; a tentar outro provedor para o mesmo lote.
+- 2026-11-20T14:36:37+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-20T14:36:38+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-20T14:36:39+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-20T14:36:39+00:00 — Módulos recompilados no fim do ciclo: 13/1189 capítulos, 282 versículos.
+- 2026-11-20T14:36:40+00:00 — Capítulos exportados para leitura: 14 (1 mudaram nesta execução).
