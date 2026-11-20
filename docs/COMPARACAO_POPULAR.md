@@ -195,3 +195,35 @@ Em resumo: quem conhece as passagens populares reconhece-as aqui — com a
 grafia e a gramática de Portugal, o registo direto da NVI nas frases
 correntes, e duas ou três divergências de fundo que são decisões de crítica
 textual documentadas, não acidentes de redação.
+
+## Decisão: manter (2026-11-20)
+
+Medido sobre os 221 versículos dos sete livros, a BEE partilha com a ARC
+~62% do vocabulário e ~58% da construção das frases; só 3 versículos são
+idênticos palavra por palavra. **Decisão do responsável, por recomendação
+da oficina: não mexer neste equilíbrio.**
+
+Razões:
+
+1. **A percentagem é um sintoma, não uma meta.** Ela resulta de traduzir o
+   mesmo grego para a mesma língua. Persegui-la em qualquer direção
+   corrompe o trabalho: afastar por sistema obriga a sinónimos forçados
+   (trocar «Eis o Cordeiro de Deus» só para diferir seria vandalismo, não
+   estilo); aproximar por sistema importa leituras do Textus Receptus
+   contra a base e aproxima-se de cópia de tradução alheia.
+2. **A distância cresce onde deve crescer: onde o grego manda.** João 1:18
+   (*μονογενὴς θεός*) e Judas 1:5 (*Ἰησοῦς*, NA28) já nos afastam de todas
+   as Almeida — por fidelidade, não por gosto. Se futuros livros tiverem
+   mais unidades destas, a percentagem desce sozinha.
+3. **A proximidade fica onde deve ficar: nas fórmulas consagradas** que os
+   leitores sabem de cor e que o grego sustenta (João 1:1; 1:29; a saudação
+   de Filemom 1:3). É aí que João 1 chega aos 71–75% — e está certo.
+4. **A zona natural de uma tradução independente e fiel é esta** (50–75%
+   conforme o livro). Tito e Judas a ~50% mostram independência onde a ARC
+   é mais arcaica; nenhum livro precisa de ser «corrigido» na direção dela
+   ou para longe dela.
+
+Regra prática que fica: **nenhum versículo se edita para subir ou descer a
+percentagem** — edita-se apenas por fidelidade ao texto, clareza e português
+europeu. A semelhança com a ARC é consequência bem-vinda, nunca objetivo
+nem problema.
