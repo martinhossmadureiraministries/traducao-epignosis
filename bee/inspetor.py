@@ -124,16 +124,26 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
     return {'duros': sorted(set(duros)), 'avisos': sorted(set(avisos))}
 
 
+_GREGO = re.compile(r'[Ͱ-Ͽἀ-῿]')
+
+
 def analisar_comentario(comentario: str) -> list[str]:
-    """Falhas duras da NOTA: as três secções têm de estar no formato da casa.
+    """Falhas duras da NOTA: secções no formato da casa e grego sem mistura.
 
     A produção de 2026-11-20 gravou 30 notas com «<b>Análise Léxica</b> —»
     em vez de «<b>Análise Léxica:</b>»: o texto passava na porta e o
     formato errado só apareceu nos testes sobre o capítulo já fechado.
+    As palavras greco-latinas mistas («ἄνδra», com letras latinas dentro
+    da palavra grega) são gralha mecânica inequívoca: também chumbam.
     """
     nota = comentario or ''
-    return [
+    falhas = [
         f'nota sem «{seccao}:» no formato da casa'
         for seccao in SECCOES_CASA
         if f'<b>{seccao}:</b>' not in nota
     ]
+    limpo = re.sub(r'<[^>]+>', ' ', nota)
+    if any(_GREGO.search(tok) and re.search(r'[A-Za-z]', tok)
+           for tok in limpo.split()):
+        falhas.append('palavra greco-latina mista na nota')
+    return falhas

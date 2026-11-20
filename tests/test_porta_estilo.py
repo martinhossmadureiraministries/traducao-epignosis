@@ -94,6 +94,18 @@ class InspecionarVersosTest(unittest.TestCase):
             [_verso(7, '«Dá-me de beber».')])
         self.assertIn(7, resultado)
 
+    def test_grego_misto_na_nota_chumba(self):
+        # «ἄνδra» tem letras latinas dentro da palavra grega: gralha
+        # mecânica que a produção real cometeu (João 4:16).
+        verso = _verso(16, 'Ele disse-lhe: «Vai.»')
+        verso['commentary'] = (
+            '<p><b>Análise Léxica:</b> <b>ἄνδra</b> (andra): marido.</p>'
+            '<p><b>Crítica Textual:</b> y</p>'
+            '<p><b>Síntese Exegética:</b> z</p>')
+        marcas = porta.inspecionar_versos([verso])
+        self.assertIn(16, marcas)
+        self.assertTrue(any('mista' in m for m in marcas[16]))
+
     def test_nota_fora_do_formato_chumba(self):
         # Regressão 2026-11-20: «<b>Análise Léxica</b> —» passou na porta e
         # só falhou nos testes depois do capítulo fechado.

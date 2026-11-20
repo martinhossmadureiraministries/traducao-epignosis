@@ -225,6 +225,23 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           exit "$codigo"
 
+      # Ortografia (alerta, nunca bloqueia): palavras a 1–2 letras de uma
+      # palavra real são a assinatura da gralha («vendentem»). A lapidação
+      # mecânica já corre dentro do motor ao fechar cada capítulo
+      # (bee/lapidador.py); este passo só fiscaliza o que ficou gravado.
+      - name: Verificar a ortografia (alerta)
+        if: always()
+        continue-on-error: true
+        run: |
+          pip install --quiet pyspellchecker
+          python3 scripts/verificar_ortografia.py --dados "$BEE_DADOS" | tee /tmp/ortografia.txt
+          {
+            echo "### Ortografia (alerta)"
+            echo '```'
+            cat /tmp/ortografia.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       # Métricas de qualidade por provedor (P3): quem deriva mais da voz, quem é
       # mais revisto, ordem de confiança. Informativo; também atualiza o cache
       # `.bee/metricas.json` que `BEE_PRIORIDADES=metricas` usa para ordenar os
