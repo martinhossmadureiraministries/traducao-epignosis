@@ -1,6 +1,6 @@
 {
   "meta": {
-    "versao": "1.3",
+    "versao": "1.4",
     "atualizado_em": "2026-11-20",
     "fonte_de_autoridade": "docs/ESTILO_BEE.md (v0.5) e docs/CRITICA_TEXTUAL.md",
     "descricao": "Memória de estilo da edição nova da BEE. Fonte única enviada a TODOS os provedores, para que Gemini, Groq, Cerebras e os demais convirjam na mesma voz. O código não contém regras de estilo próprias da edição nova: bee/memoria_estilo.py renderiza este ficheiro nos prompts.",
@@ -103,6 +103,10 @@
     {
       "rotulo": "CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA",
       "texto": "na nota, citar apenas as edições e as testemunhas que constem do aparato ou do relatório de colação fornecido (docs/colacao/). Uma edição impressa não é um manuscrito; uma tradução moderna não é evidência textual, é consequência de uma decisão alheia; «o Textus Receptus» não é um texto único (Scrivener, Stephanus, RP e KJTR divergem entre si). Idade e número de cópias são indícios, não critério: decidir por evidência externa e interna e dizer o nível de certeza (A segura, B provável, C disputa real que exige revisão especializada). Sem colação para o livro, não atribuir nenhuma leitura a um códice."
+    },
+    {
+      "rotulo": "DESEMPATE NA28",
+      "texto": "quando as edições comparadas se dividirem, segue-se NA28 (decisão do responsável de 2026-11-20) e regista-se a alternativa com o nível de certeza; nunca se traduz contra a base em silêncio — divergência inevitável leva Nota de redação. Judas 1:5: «[[Jesus]]»."
     }
   ],
   "aperto": [
@@ -529,5 +533,14 @@
     "docs/ESTILO_BEE.md (v0.5) — documento de autoridade da voz",
     "Regras duras, aperto de calibração e guarda anti-deriva consolidados nos PR #50–#52",
     "2 Tessalonicenses: voz da versão de 2026-11-19 aprovada pelo responsável («parece a ARC sem ser a ARC, com traços próprios»); livro regenerado a 2026-11-20 sob docs/CRITICA_TEXTUAL.md e lapidado no mesmo dia (12 versículos e 14 notas revistos sobre a colação — ver docs/OFICINA_TRADUCAO.md). A redação atual NÃO foi lida pelo responsável: continua RASCUNHO, com revisão editorial e especializada pendentes no campo review do JSON, e por isso 600 não é livro-base."
+  ],
+  "protocolo": [
+    "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",
+    "DESEMPATE NA28 (decisão do responsável, 2026-11-20): quando as edições comparadas se dividirem numa unidade de variação, segue-se NA28; regista-se a alternativa rejeitada e declara-se o nível de certeza (A segura, B provável, C disputa real). Exemplo em vigor: Judas 1:5 lê «[[Jesus]]» com NA28, contra «o Senhor» de WH/Tregelles/RP.",
+    "COLAÇÃO ANTES DE CITAR: nenhuma testemunha (códice, papiro, versão antiga, Padre) é nomeada numa nota sem constar do aparato SBLGNT ou do relatório de colação do próprio livro (docs/colacao/, scripts/colar.py). O aparato nomeia edições, nunca manuscritos. Sem colação fornecida, escreva «sem variante verificada».",
+    "TRÊS SECÇÕES VERDADEIRAS, SEMPRE: Análise Léxica do texto real (forma, transliteração, sentido no contexto), Crítica Textual da evidência real com nível de certeza, Síntese Exegética do argumento da passagem. Texto de enchimento, etimologia inventada, código Strong não fornecido ou variante não observada chumbam o capítulo.",
+    "LAPIDAÇÃO MECÂNICA ao fechar o capítulo: ênclise portuguesa (nunca próclise com gerúndio), marcas «», <i> e <b> equilibradas ao nível do capítulo, verbos supridos pelo português em itálico, pontuação que preserva a relação sintática entre versículos (CRITICA_TEXTUAL.md §5.1), ortografia europeia (unigénito) e artigo obrigatório depois de «todo/toda» no singular — «todo o desejo»: o anártrico grego regista-se na nota, não se apaga o artigo.",
+    "PROTEGER O QUE JÁ FOI APROVADO: texto de piloto aprovado pelo responsável não se reescreve em corrida automática. Correção indispensável entra com <b>Nota de redação</b> explicando a mudança e fica assinalada para leitura dele.",
+    "ESTATUTO HONESTO: todo o livro nasce RASCUNHO (review editorial «rascunho», revisão especializada «pendente») e só o responsável o promove. Nível C é sempre assinalado como prioridade de revisão especializada. Idade e número de cópias de um manuscrito são indícios, nunca o critério de decisão."
   ]
 }

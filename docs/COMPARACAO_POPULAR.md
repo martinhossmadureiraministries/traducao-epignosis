@@ -157,7 +157,7 @@ Registo próximo da NVI/NTLH (frases curtas, sem inversão «procurando eu
 escrever-vos»), conservando as fórmulas conhecidas: «a salvação que temos em
 comum» (NTLH) e «de uma vez por todas» (NVI) por *ἅπαξ*.
 
-### Judas 1:5 — a diferença que o responsável tem de aprovar
+### Judas 1:5 — a diferença decidida: seguir NA28
 
 | ALM1911 / ARC / ACF | …que, havendo o Senhor salvo um povo, tirando-o da terra do Egito, destruiu depois os que não creram; |
 | NVI | …quero lembrá-los de que o Senhor libertou um povo do Egito mas, posteriormente, destruiu os que não creram. |
@@ -167,10 +167,10 @@ comum» (NTLH) e «de uma vez por todas» (NVI) por *ἅπαξ*.
 Nenhuma das versões populares lê «Jesus»: todas seguem *κύριος* («o Senhor»).
 A base fixada imprime *Ἰησοῦς* com NA28, mas WH e Tregelles leem *κύριος* e,
 das testemunhas colacionadas, só 03 e SR acompanham a base (01 e 04 leem
-*κύριος*; P72 lê *θεὸς Χριστός*). É **nível de certeza C**, está assinalado
-com `[[ ]]` no texto e com prioridade de revisão especializada na nota.
-Se o responsável preferir «o Senhor», a troca é de uma palavra — mas faz-se
-aqui, à vista, não em silêncio.
+*κύριος*; P72 lê *θεὸς Χριστός*). É **nível de certeza C** como registo da
+dificuldade, assinalado com `[[ ]]` no texto — e **o responsável decidiu em
+2026-11-20: segue-se NA28**. «Jesus» fica; a pendência está encerrada e só
+reabre com evidência nova.
 
 ## Veredito
 

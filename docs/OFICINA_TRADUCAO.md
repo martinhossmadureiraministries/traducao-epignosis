@@ -283,5 +283,5 @@ palavra — e a nota já diz qual.
   conservadas; as nossas são `provider: local`, `model: editorial:critica-textual`.
 - **Reprodução:** `python3 scripts/regenerar_2ts.py --verificar` valida sem
   escrever; correr o escritor duas vezes não duplica o histórico.
-- **Testes:** 366, todos verdes. Os de lapidação correm sobre os sete livros da
+- **Testes:** 370, todos verdes. Os de lapidação correm sobre os sete livros da
   edição nova, não só sobre este.

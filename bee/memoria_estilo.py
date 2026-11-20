@@ -46,6 +46,13 @@ def validar(dados: Any) -> list[str]:
     if erros:
         return erros  # sem as chaves, as verificações seguintes não fazem sentido
 
+    protocolo = dados.get('protocolo')
+    if protocolo is not None and (
+        not isinstance(protocolo, list) or not protocolo
+        or any(not isinstance(p, str) or not p.strip() for p in protocolo)
+    ):
+        erros.append('protocolo deve ser lista não vazia de passos em texto')
+
     if not isinstance(dados['identidade'], str) or not dados['identidade'].strip():
         erros.append('identidade deve ser texto não vazio')
     if not isinstance(dados['metodo'], list) or not dados['metodo']:
@@ -164,6 +171,12 @@ def system_fragment(dados: dict) -> str:
     """
     partes: list[str] = ['\n\nMEMÓRIA DE ESTILO (fonte única: modelos/estilo_bee.json). ']
     partes.append(dados['identidade'])
+    if dados.get('protocolo'):
+        passos = ' '.join(
+            f'({i}) {passo}' for i, passo in enumerate(dados['protocolo'], start=1)
+        )
+        partes.append(
+            '\n\nPROTOCOLO DE TRABALHO (o ritmo da oficina, por esta ordem): ' + passos)
     partes.append('\n\nMÉTODO POR UNIDADE: ' + ' '.join(dados['metodo']))
     registro = dados['registro']
     partes.append(

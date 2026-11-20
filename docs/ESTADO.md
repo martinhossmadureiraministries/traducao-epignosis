@@ -225,12 +225,12 @@ transformada em procedimento e aplicada a um livro inteiro.
   inicial; SENHOR e Senhor; crítica textual só com evidência colacionada),
   `registro.ortografia`, oito entradas de glossário e três vetos novos.
 - **Testes:** `tests/test_manuscritos.py` (40) e `tests/test_critica_textual.py`
-  (61). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
+  (69). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
   testemunha sem registo de colação naquele versículo, que as âncoras da
   memória de estilo citam o texto aprovado em vez de o reescreverem, e — na classe
   de lapidação — que nenhum dos sete livros tem próclise com gerúndio, marcas
   desequilibradas, verbos supridos sem itálico ou famílias lexicais incoerentes.
-  Total: 366 testes.
+  Total: 370 testes.
 
 ### Lapidação (mesmo dia)
 

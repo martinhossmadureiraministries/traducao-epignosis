@@ -467,11 +467,12 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
 
     def test_regras_duras_da_critica_textual_existem(self):
         rotulos = [r['rotulo'] for r in self.memoria['regras_duras']]
-        self.assertEqual(len(rotulos), 14, 'número de regras duras mudou')
+        self.assertEqual(len(rotulos), 15, 'número de regras duras mudou')
         for regra in ('PONTUAÇÃO E MAIÚSCULA INICIAL', 'SENHOR E Senhor',
                       'CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA',
                       'ÊNCLISE COM GERÚNDIO E PRONOME',
-                      'UNIFORMIDADE SÓ ONDE O GREGO É IGUAL'):
+                      'UNIFORMIDADE SÓ ONDE O GREGO É IGUAL',
+                      'DESEMPATE NA28'):
             with self.subTest(regra):
                 self.assertIn(regra, rotulos)
 
@@ -747,6 +748,50 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
         for nome in (*self.LIVROS.values(), 'João', '2_Tessalonicenses'):
             self.assertTrue(
                 (RAIZ / 'docs' / 'colacao' / f'{nome}.json').exists(), nome)
+
+
+class ProtocoloDasIAsTest(unittest.TestCase):
+    """O ritmo da oficina tem de chegar às IAs de geração e de revisão.
+
+    O protocolo (base fixa → desempate NA28 → colação antes de citar → três
+    secções verdadeiras → lapidação mecânica → proteger o aprovado → estatuto
+    RASCUNHO) vive na memória de estilo e é renderizado por `system_fragment`,
+    que alimenta o tradutor (bee/perfil.py) e o revisor (bee/revisor.py).
+    Estes testes chumbam se alguma destas instruções deixar de chegar lá.
+    """
+
+    def test_memoria_tem_protocolo_e_desempate_na28(self):
+        from bee import memoria_estilo as ms
+        dados = ms.carregar()
+        self.assertEqual(ms.validar(dados), [])
+        self.assertGreaterEqual(len(dados.get('protocolo') or []), 6)
+        regras = ' '.join(r['rotulo'] for r in dados['regras_duras'])
+        self.assertIn('DESEMPATE NA28', regras)
+
+    def test_protocolo_no_prompt_do_tradutor(self):
+        from bee.perfil import resolver_perfil
+        sistema = resolver_perfil('nova').sistema()
+        for marca in ('PROTOCOLO DE TRABALHO', 'DESEMPATE NA28',
+                      'docs/colacao/', 'RASCUNHO', 'todo o desejo',
+                      'Judas 1:5'):
+            self.assertIn(marca, sistema)
+
+    def test_protocolo_no_prompt_do_revisor(self):
+        from bee.memoria_estilo import carregar
+        from bee.revisor import sistema_revisor
+        sistema = sistema_revisor(carregar())
+        self.assertIn('PROTOCOLO DE TRABALHO', sistema)
+        self.assertIn('NUNCA emende contra a base', sistema)
+        self.assertIn('NA28', sistema)
+
+    def test_judas_1_5_segue_na28_por_decisao_do_responsavel(self):
+        livro = json.loads(
+            (RAIZ / 'edicoes' / 'nova' / 'livros_json' / '720_Judas.json')
+            .read_text(encoding='utf-8'))
+        verso5 = livro['chapters']['1'][4]
+        self.assertIn('[[Jesus]]', verso5['text'])
+        self.assertIn('seguir NA28',
+                      livro['review']['specialist'][0]['nota'])
 
 
 if __name__ == '__main__':
