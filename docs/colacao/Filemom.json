@@ -1,0 +1,5989 @@
+{
+ "livro": "Filemom",
+ "livro_bee": 640,
+ "livro_cntr": 57,
+ "gerado_por": "scripts/colar.py",
+ "fontes": {
+  "base": {
+   "nome": "SBL Greek New Testament (base fixada do projeto)",
+   "revisao": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+   "licenca": "CC BY 4.0",
+   "papel": "texto traduzido; o aparato compara EDIÇÕES"
+  },
+  "comparacao": {
+   "nome": "Textus Receptus de Scrivener 1894 (M. A. Robinson)",
+   "revisao": "6049a43b135ed870f843b83eb6a04764fc796678",
+   "licenca": "domínio público segundo o fornecedor",
+   "papel": "comparação/suplemento identificado"
+  },
+  "cntr": {
+   "nome": "CNTR Electronic Transcriptions (Alan Bunning)",
+   "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+   "revisao": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+   "licenca": "CC BY-SA 4.0",
+   "papel": "testemunhas manuscritas e textos críticos",
+   "redistribuicao": "não redistribuído; cópia local em .bee-cache/ (ignorada)",
+   "manuscritos": [
+    "01",
+    "02",
+    "04",
+    "P139",
+    "P87"
+   ],
+   "edicoes": [
+    "KJTR",
+    "RP",
+    "SR",
+    "ST",
+    "WH"
+   ]
+  }
+ },
+ "versiculos": {
+  "1:1": {
+   "base": {
+    "sblgnt": "Παῦλος δέσμιος Χριστοῦ Ἰησοῦ καὶ Τιμόθεος ὁ ἀδελφὸς Φιλήμονι τῷ ἀγαπητῷ καὶ συνεργῷ ἡμῶν",
+    "sblgnt_norm": [
+     "παυλοσ",
+     "δεσμιοσ",
+     "χριστου",
+     "ιησου",
+     "και",
+     "τιμοθεοσ",
+     "ο",
+     "αδελφοσ",
+     "φιλημονι",
+     "τω",
+     "αγαπητω",
+     "και",
+     "συνεργω",
+     "ημων"
+    ],
+    "scrivener": "παυλος δεσμιος χριστου ιησου και τιμοθεος ο αδελφος φιλημονι τω αγαπητω και συνεργω ημων",
+    "scrivener_norm": [
+     "παυλοσ",
+     "δεσμιοσ",
+     "χριστου",
+     "ιησου",
+     "και",
+     "τιμοθεοσ",
+     "ο",
+     "αδελφοσ",
+     "φιλημονι",
+     "τω",
+     "αγαπητω",
+     "και",
+     "συνεργω",
+     "ημων"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "χριστου → χυ",
+     "leitura": "παυλοσ δεσμιοσ χυ ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "‹abrev:ημω=ημων›",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημω",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "παυλοσ δεσμιοσ χυ ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χυ ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "|παυλοσ δεσμιοσ /=χυ =ιυ και τιμοθεοσ /ο αδελφοσ φιλη/μονι τω αγαπη/τω και συνεργω /ημων",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημω",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημω",
+     "cru": "\\π^α^υ^λ^ο^σ δεσμιοσ =χυ =ιυ και τιμο/θ^ε^ο^σ^ ο% αδελφοσ φιλημονι /~τω α^γ^α%πητω και συνεργω ημω¯",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χυ",
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": null,
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "¶Παῦλος, δέσμιος Χριστοῦ Ἰησοῦ, καὶ Τιμόθεος ὁ ἀδελφὸς, Φιλήμονι τῷ ἀγαπητῷ, καὶ συνεργῷ ἡμῶν,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "¶Παῦλος δέσμιος χριστοῦ Ἰησοῦ, καὶ Τιμόθεος ὁ ἀδελφός, Φιλήμονι τῷ ἀγαπητῷ καὶ συνεργῷ ἡμῶν,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "¶Παῦλος, δέσμιος ˚Χριστοῦ ˚Ἰησοῦ, καὶ Τιμόθεος, ὁ ἀδελφὸς, Φιλήμονι, τῷ ἀγαπητῷ καὶ συνεργῷ ἡμῶν,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "¶Παῦλος δέσμιος Χριστοῦ Ἰησοῦ, καὶ Τιμόθεος ὁ ἀδελφὸς, Φιλήμονι τῷ ἀγαπητῷ καὶ συνεργῷ ἡμῶν,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "original": "παυλοσ δεσμιοσ χριστου ιησου και τιμοθεοσ ο αδελφοσ φιλημονι τω αγαπητω και συνεργω ημων",
+     "cru": "¶Παῦλος δέσμιος Χριστοῦ Ἰησοῦ καὶ Τιμόθεος ὁ ἀδελφὸς Φιλήμονι τῷ ἀγαπητῷ καὶ συνεργῷ ἡμῶν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:2": {
+   "base": {
+    "sblgnt": "καὶ Ἀπφίᾳ τῇ ⸀ἀδελφῇ καὶ Ἀρχίππῳ τῷ συστρατιώτῃ ἡμῶν καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ·",
+    "sblgnt_norm": [
+     "και",
+     "απφια",
+     "τη",
+     "αδελφη",
+     "και",
+     "αρχιππω",
+     "τω",
+     "συστρατιωτη",
+     "ημων",
+     "και",
+     "τη",
+     "κατ",
+     "οικον",
+     "σου",
+     "εκκλησια"
+    ],
+    "scrivener": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+    "scrivener_norm": [
+     "και",
+     "απφια",
+     "τη",
+     "αγαπητη",
+     "και",
+     "αρχιππω",
+     "τω",
+     "συστρατιωτη",
+     "ημων",
+     "και",
+     "τη",
+     "κατ",
+     "οικον",
+     "σου",
+     "εκκλησια"
+    ],
+    "aparato_sblgnt": [
+     "1:2 ἀδελφῇ WH Treg NA28 ] ἀγαπητῇ RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "‹abrev:ημω=ημων›",
+     "leitura": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημω και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "συστρατιωτη → συνστρατιωτη",
+     "leitura": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "αδελφη → αγαπητη",
+     "leitura": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "αδελφη → αγαπητη",
+     "leitura": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "αδελφη → αγαπητη",
+     "leitura": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "divergente",
+     "diferenca": "συστρατιωτη → συνστρατιωτη",
+     "leitura": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "αδελφη → αγαπητη",
+     "leitura": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημω και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημω και τη κατ οικον σου εκκλησια",
+     "cru": "και απφι/α τη αδελφη και /αρχιππω τω συ¯/στρατιωτη ημω¯ /και τη κατ οικον /σου εκκλησια",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "/~και α^π^φια τη αδελφη και αρχιπ/π^ω^ τ^ω συνστρατιωτη ημων /~και τ^η κατ οικον σου εκκλησια",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": null,
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "Καὶ Ἀπφίᾳ τῇ ἀγαπητῇ, καὶ Ἀρχίππῳ τῷ συστρατιώτῃ ἡμῶν, καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "καὶ Ἀπφίᾳ τῇ ἀγαπητῇ, καὶ Ἀρχίππῳ τῷ συστρατιώτῃ ἡμῶν, καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αδελφη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "καὶ Ἀπφίᾳ, τῇ ἀδελφῇ, καὶ Ἀρχίππῳ, τῷ συστρατιώτῃ ἡμῶν, καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αγαπητη και αρχιππω τω συστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "καὶ Ἀπφίᾳ τῇ ἀγαπητῇ, καὶ Ἀρχίππῳ τῷ συστρατιώτῃ ἡμῶν, καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "original": "και απφια τη αδελφη και αρχιππω τω συνστρατιωτη ημων και τη κατ οικον σου εκκλησια",
+     "cru": "καὶ Ἀπφίᾳ τῇ ἀδελφῇ καὶ Ἀρχίππῳ τῷ συνστρατιώτῃ ἡμῶν καὶ τῇ κατʼ οἶκόν σου ἐκκλησίᾳ·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:3": {
+   "base": {
+    "sblgnt": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ Χριστοῦ.",
+    "sblgnt_norm": [
+     "χαρισ",
+     "υμιν",
+     "και",
+     "ειρηνη",
+     "απο",
+     "θεου",
+     "πατροσ",
+     "ημων",
+     "και",
+     "κυριου",
+     "ιησου",
+     "χριστου"
+    ],
+    "scrivener": "χαρις υμιν και ειρηνη απο θεου πατρος ημων και κυριου ιησου χριστου",
+    "scrivener_norm": [
+     "χαρισ",
+     "υμιν",
+     "και",
+     "ειρηνη",
+     "απο",
+     "θεου",
+     "πατροσ",
+     "ημων",
+     "και",
+     "κυριου",
+     "ιησου",
+     "χριστου"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "-[ημων]; κυριου → κυ ‹ns:πατηρ=πατροσ›",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ και κυ ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "‹ns:πατηρ=πατροσ›",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "‹ns:πατηρ=πατροσ›",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατηρ και κυ ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατηρ και κυ ιησου χριστου",
+     "cru": "χα/ρισ υμιν και ειρη/νη απο =θυ =πρσ και /=κυ =ιυ =χυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θυ",
+      "=πρσ",
+      "=ιυ",
+      "=χυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "cru": "/~χαρισ υμιν και ειρηνη απο =θυ =πρσ /η^μ^ω%ν και =κυ =ιυ =χυ",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θυ",
+      "=πρσ",
+      "=κυ",
+      "=ιυ",
+      "=χυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατηρ ημων και κυριου ιησου χριστου",
+     "cru": "\\/3χαρισ υμιν και ειρηνη απο =θυ =πρσ ημων και =κυ =ιυ =χυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θυ",
+      "=πρσ",
+      "=κυ",
+      "=ιυ",
+      "=χυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "cru": "Χάρις ὑμῖν, καὶ εἰρήνη, ἀπὸ Θεοῦ Πατρὸς ἡμῶν καὶ Κυρίου Ἰησοῦ Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "cru": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "cru": "χάρις ὑμῖν καὶ εἰρήνη, ἀπὸ ˚Θεοῦ Πατρὸς ἡμῶν καὶ ˚Κυρίου ˚Ἰησοῦ ˚Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "cru": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ Θεοῦ πατρὸς ἡμῶν, καὶ Κυρίου Ἰησοῦ Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "original": "χαρισ υμιν και ειρηνη απο θεου πατροσ ημων και κυριου ιησου χριστου",
+     "cru": "χάρις ὑμῖν καὶ εἰρήνη ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:4": {
+   "base": {
+    "sblgnt": "Εὐχαριστῶ τῷ θεῷ μου πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+    "sblgnt_norm": [
+     "ευχαριστω",
+     "τω",
+     "θεω",
+     "μου",
+     "παντοτε",
+     "μνειαν",
+     "σου",
+     "ποιουμενοσ",
+     "επι",
+     "των",
+     "προσευχων",
+     "μου"
+    ],
+    "scrivener": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενος επι των προσευχων μου",
+    "scrivener_norm": [
+     "ευχαριστω",
+     "τω",
+     "θεω",
+     "μου",
+     "παντοτε",
+     "μνειαν",
+     "σου",
+     "ποιουμενοσ",
+     "επι",
+     "των",
+     "προσευχων",
+     "μου"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "μνειαν → μνιαν",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνιαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "‹abrev:τω=των›",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι τω προσευχων μου",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνιαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνιαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "/ευχαριστω τω =θω /μου παντοτε /μνιαν σου ποιου/μενοσ επι των /προσευχων μου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι τω προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι τω προσευχων μου",
+     "cru": "/ε^υ^χ^αριστω τω =θω μου παντοτε /μ^ν^ειαν σου ποιουμενοσ επι τω¯ /π^ρ^οσευχων μου",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "/ευχαριστω τω =θω μου παντοτε μνειαν σου ποιουμε/νοσ επι των προσευχων μου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=θω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "Εὐχαριστῶ τῷ Θεῷ μου, πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "¶Εὐχαριστῶ τῷ θεῷ μου, πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "¶Εὐχαριστῶ τῷ ˚Θεῷ μου πάντοτε, μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "¶Εὐχαριστῶ τῷ Θεῷ μου, πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "original": "ευχαριστω τω θεω μου παντοτε μνειαν σου ποιουμενοσ επι των προσευχων μου",
+     "cru": "¶Εὐχαριστῶ τῷ θεῷ μου πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:5": {
+   "base": {
+    "sblgnt": "ἀκούων σου τὴν ἀγάπην καὶ τὴν πίστιν ἣν ἔχεις ⸀πρὸς τὸν κύριον Ἰησοῦν καὶ εἰς πάντας τοὺς ἁγίους,",
+    "sblgnt_norm": [
+     "ακουων",
+     "σου",
+     "την",
+     "αγαπην",
+     "και",
+     "την",
+     "πιστιν",
+     "ην",
+     "εχεισ",
+     "προσ",
+     "τον",
+     "κυριον",
+     "ιησουν",
+     "και",
+     "εισ",
+     "παντασ",
+     "τουσ",
+     "αγιουσ"
+    ],
+    "scrivener": "ακουων σου την αγαπην και την πιστιν ην εχεις προς τον κυριον ιησουν και εις παντας τους αγιους",
+    "scrivener_norm": [
+     "ακουων",
+     "σου",
+     "την",
+     "αγαπην",
+     "και",
+     "την",
+     "πιστιν",
+     "ην",
+     "εχεισ",
+     "προσ",
+     "τον",
+     "κυριον",
+     "ιησουν",
+     "και",
+     "εισ",
+     "παντασ",
+     "τουσ",
+     "αγιουσ"
+    ],
+    "aparato_sblgnt": [
+     "5 πρὸς NA28 RP ] εἰς WH Treg"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "προσ → εισ",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "προσ → εισ",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "divergente",
+     "diferenca": "προσ → εισ",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "divergente",
+     "diferenca": "προσ → εισ",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "/ακουων σου την /αγαπην και την /πιστιν ην εχεισ /προσ τον =κν =ιν /και εισ παντασ τουσ /αγιουσ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κν",
+      "=ιν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ακουων σου /τ^η%ν αγαπην και την πιστιν ην /ε^χεισ εισ τον =κν =ιν και εισ παν/τ%ασ τουσ αγιουσ",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κν",
+      "=ιν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ακουων σου την αγα/πην και την πιστιν ην εχεισ εισ τον =κν =ιν και εισ παν/τασ τουσ αγιουσ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κν",
+      "=ιν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "Ἀκούων σου τὴν ἀγάπην καὶ τὴν πίστιν, ἣν ἔχεις πρὸς τὸν Κύριον Ἰησοῦν, καὶ εἰς πάντας τοὺς ἁγίους·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ἀκούων σου τὴν ἀγάπην, καὶ τὴν πίστιν ἣν ἔχεις πρὸς τὸν κύριον Ἰησοῦν καὶ εἰς πάντας τοὺς ἁγίους,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ἀκούων σου τὴν ἀγάπην καὶ τὴν πίστιν, ἣν ἔχεις εἰς τὸν ˚Κύριον ˚Ἰησοῦν, καὶ εἰς πάντας τοὺς ἁγίους,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ προσ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ἀκούων σου τὴν ἀγάπην καὶ τὴν πίστιν ἣν ἔχεις πρὸς τὸν Κύριον Ἰησοῦν καὶ εἰς πάντας τοὺς ἁγίους,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "original": "ακουων σου την αγαπην και την πιστιν ην εχεισ εισ τον κυριον ιησουν και εισ παντασ τουσ αγιουσ",
+     "cru": "ἀκούων σου τὴν ἀγάπην καὶ τὴν πίστιν ἣν ἔχεις εἰς τὸν κύριον Ἰησοῦν καὶ εἰς πάντας τοὺς ἁγίους,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:6": {
+   "base": {
+    "sblgnt": "ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ ⸀τοῦ ἐν ἡμῖν εἰς ⸀Χριστόν·",
+    "sblgnt_norm": [
+     "οπωσ",
+     "η",
+     "κοινωνια",
+     "τησ",
+     "πιστεωσ",
+     "σου",
+     "ενεργησ",
+     "γενηται",
+     "εν",
+     "επιγνωσει",
+     "παντοσ",
+     "αγαθου",
+     "του",
+     "εν",
+     "ημιν",
+     "εισ",
+     "χριστον"
+    ],
+    "scrivener": "οπως η κοινωνια της πιστεως σου ενεργης γενηται εν επιγνωσει παντος αγαθου του εν υμιν εις χριστον ιησουν",
+    "scrivener_norm": [
+     "οπωσ",
+     "η",
+     "κοινωνια",
+     "τησ",
+     "πιστεωσ",
+     "σου",
+     "ενεργησ",
+     "γενηται",
+     "εν",
+     "επιγνωσει",
+     "παντοσ",
+     "αγαθου",
+     "του",
+     "εν",
+     "υμιν",
+     "εισ",
+     "χριστον",
+     "ιησουν"
+    ],
+    "aparato_sblgnt": [
+     "6 τοῦ WH NA28 RP ] – Treg",
+     "• Χριστόν WH Treg NA28 ] + Ἰησοῦν RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "επιγνωσει → επιγνωσι; ημιν → υμιν",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσι παντοσ αγαθου του εν υμιν εισ χριστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "-[του]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "-[του]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "divergente",
+     "diferenca": "-[οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει]; -[του]; ημιν → υμειν",
+     "leitura": "παντοσ αγαθου εν υμειν εισ χριστον",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "ημιν → υμιν; +[ιησουν]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "+[ιησουν]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον ιησουν",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "ημιν → υμιν; +[ιησουν]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "fisico": [
+      "texto_duvidoso"
+     ]
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "ημιν → υμιν; +[ιησουν]",
+     "leitura": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσι παντοσ αγαθου του εν υμιν εισ χριστον",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσι παντοσ αγαθου του εν υμιν εισ χριστον",
+     "cru": "οπωσ η /κοινωνια τησ πι/στεωσ σου ενερ/γησ γενηται εν ε/πιγνωσι παντοσ /αγαθου του εν υ/μιν εισ =χν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "cru": "οπωσ η κοινω/νια τησ πιστεωσ σου ενεργησ /γενηται εν επιγνωσει παντοσ /αγαθου εν ημιν εισ =χν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου εν ημιν εισ χριστον",
+     "cru": "οπωσ η κοινωνια τησ πιστεωσ /σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου /εν ημιν εισ =χν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χν"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "παντοσ αγαθου εν υμειν εισ χριστον",
+     "original": "παντοσ αγαθου εν υμειν εισ χριστον",
+     "cru": "\\/0&*π%αν%τ^ο^σ^ /~αγαθου* ~εν υ%μ%ε%ιν ε^ι%σ% =χ%ν%",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χ%ν%"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "cru": "Ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ τοῦ ἐν ὑμῖν εἰς Χριστόν Ἰησοῦν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον ιησουν",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον ιησουν",
+     "cru": "ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ τοῦ ἐν ἡμῖν εἰς χριστὸν Ἰησοῦν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "cru": "ὅπως ἡ κοινωνία τῆς πίστεώς σου, ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ τοῦ ἐν ἡμῖν εἰς ˚Χριστόν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν υμιν εισ χριστον ιησουν",
+     "cru": "ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ τοῦ ἐν ὑμῖν εἰς Χριστὸν Ἰησοῦν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "original": "οπωσ η κοινωνια τησ πιστεωσ σου ενεργησ γενηται εν επιγνωσει παντοσ αγαθου του εν ημιν εισ χριστον",
+     "cru": "ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ [τοῦ] ἐν ἡμῖν εἰς Χριστόν·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:7": {
+   "base": {
+    "sblgnt": "⸀χαρὰν γὰρ ⸂πολλὴν ἔσχον⸃ καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+    "sblgnt_norm": [
+     "χαραν",
+     "γαρ",
+     "πολλην",
+     "εσχον",
+     "και",
+     "παρακλησιν",
+     "επι",
+     "τη",
+     "αγαπη",
+     "σου",
+     "οτι",
+     "τα",
+     "σπλαγχνα",
+     "των",
+     "αγιων",
+     "αναπεπαυται",
+     "δια",
+     "σου",
+     "αδελφε"
+    ],
+    "scrivener": "χαραν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+    "scrivener_norm": [
+     "χαραν",
+     "γαρ",
+     "εχομεν",
+     "πολλην",
+     "και",
+     "παρακλησιν",
+     "επι",
+     "τη",
+     "αγαπη",
+     "σου",
+     "οτι",
+     "τα",
+     "σπλαγχνα",
+     "των",
+     "αγιων",
+     "αναπεπαυται",
+     "δια",
+     "σου",
+     "αδελφε"
+    ],
+    "aparato_sblgnt": [
+     "7 χαρὰν WH Treg NA28 ] Χάριν RP",
+     "• πολλὴν ἔσχον WH Treg NA28 ] ἔχομεν πολλὴν RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "-[και παρακλησιν]",
+     "leitura": "χαραν γαρ πολλην εσχον επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "+[εχομεν]; -[εσχον]",
+     "leitura": "χαραν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "χαραν → χαριν; +[εχομεν]; -[εσχον]",
+     "leitura": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "χαραν → χαριν; +[εχομεν]; -[εσχον]",
+     "leitura": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "+[εχομεν]; -[εσχον]",
+     "leitura": "χαραν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "χαραν γαρ πολλην εσχον επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "/χαραν γαρ πολλην /εσχον επι τη αγα/πη σου οτι τα σπλαγ/χνα των αγιων /αναπεπαυται δι/α σου αδελφε",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "/χαραν γαρ πολλην εσχον και πα/ρακλησιν επι τη αγαπη σου οτι /τα σπλαγχνα των αγιων αναπε/παυται δια σου αδελφε",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "/χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη /σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια /σου αδελφε",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "/~χαραν ~γαρ π^ο^λ%λην εσχον /+και π^α^ρ^α^κ^λ%ησιν επι /~τη ~αγαπη σ^ου οτι τα /~σπλαγχνα τ%ων αγιων /α^ν^α^π^ε^π^α^υ%ται δια σου /~αδελφε",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "χαραν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "Χαρὰν γὰρ ἔχομεν πολλὴν καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "Χάριν γὰρ ἔχομεν πολλὴν καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "Χαρὰν γὰρ πολλὴν ἔσχον καὶ παράκλησιν, ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαριν γαρ εχομεν πολλην και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "χάριν γὰρ ἔχομεν πολλὴν καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "original": "χαραν γαρ πολλην εσχον και παρακλησιν επι τη αγαπη σου οτι τα σπλαγχνα των αγιων αναπεπαυται δια σου αδελφε",
+     "cru": "χαρὰν γὰρ πολλὴν ἔσχον καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:8": {
+   "base": {
+    "sblgnt": "Διό, πολλὴν ἐν Χριστῷ παρρησίαν ἔχων ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+    "sblgnt_norm": [
+     "διο",
+     "πολλην",
+     "εν",
+     "χριστω",
+     "παρρησιαν",
+     "εχων",
+     "επιτασσειν",
+     "σοι",
+     "το",
+     "ανηκον"
+    ],
+    "scrivener": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+    "scrivener_norm": [
+     "διο",
+     "πολλην",
+     "εν",
+     "χριστω",
+     "παρρησιαν",
+     "εχων",
+     "επιτασσειν",
+     "σοι",
+     "το",
+     "ανηκον"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "επιτασσειν → επιτασσιν ‹abrev:εχω=εχων›",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσιν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "divergente",
+     "diferenca": "χριστω → χω",
+     "leitura": "διο πολλην εν χω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχω επιτασσιν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχω επιτασσιν σοι το ανηκον",
+     "cru": "/διο πολλην εν =χω /παρρησιαν εχω¯ /επιτασσιν σοι το /ανηκον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "διο πολ/λην εν =χω παρρησιαν εχων /επιτασσειν σοι το ανηκον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "διο πολλην εν =χω παρρησιαν εχων ε/πιτασσειν σοι το ανηκον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "διο πολλην εν χω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "δ^ι%ο πο%λλην εν /~=χω ~παρρησιαν εχων ε/π^ι^τ^α^σ^σ^ε^ι^ν^ ~σοι ~το α^ν%ηκ^/ο^ν^*&/0",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "Διό, πολλὴν ἐν Χριστῷ παρρησίαν ἔχων ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "¶Διὸ πολλὴν ἐν χριστῷ παρρησίαν ἔχων ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "¶Διό, πολλὴν ἐν ˚Χριστῷ παρρησίαν ἔχων, ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "Διὸ πολλὴν ἐν Χριστῷ παῤῥησίαν ἔχων ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "original": "διο πολλην εν χριστω παρρησιαν εχων επιτασσειν σοι το ανηκον",
+     "cru": "¶Διό, πολλὴν ἐν Χριστῷ παρρησίαν ἔχων ἐπιτάσσειν σοι τὸ ἀνῆκον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:9": {
+   "base": {
+    "sblgnt": "διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης νυνὶ δὲ καὶ δέσμιος ⸂Χριστοῦ Ἰησοῦ⸃—",
+    "sblgnt_norm": [
+     "δια",
+     "την",
+     "αγαπην",
+     "μαλλον",
+     "παρακαλω",
+     "τοιουτοσ",
+     "ων",
+     "ωσ",
+     "παυλοσ",
+     "πρεσβυτησ",
+     "νυνι",
+     "δε",
+     "και",
+     "δεσμιοσ",
+     "χριστου",
+     "ιησου"
+    ],
+    "scrivener": "δια την αγαπην μαλλον παρακαλω τοιουτος ων ως παυλος πρεσβυτης νυνι δε και δεσμιος ιησου χριστου",
+    "scrivener_norm": [
+     "δια",
+     "την",
+     "αγαπην",
+     "μαλλον",
+     "παρακαλω",
+     "τοιουτοσ",
+     "ων",
+     "ωσ",
+     "παυλοσ",
+     "πρεσβυτησ",
+     "νυνι",
+     "δε",
+     "και",
+     "δεσμιοσ",
+     "ιησου",
+     "χριστου"
+    ],
+    "aparato_sblgnt": [
+     "9 Χριστοῦ Ἰησοῦ WH Treg NA28 ] Ἰησοῦ Χριστοῦ RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "αγαπην → αναγκην; νυνι → νυν; χριστου → χυ",
+     "leitura": "δια την αναγκην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυν δε και δεσμιοσ χυ ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "+[ιησου]; -[ιησου]",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "+[ιησου]; -[ιησου]",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "+[ιησου]; -[ιησου]",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "+[ιησου]; -[ιησου]",
+     "leitura": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "cru": "δια την /αγαπην μαλλον /παρακαλω τοιου/τοσ ων ωσ παυ/λοσ πρεσβυτησ /νυνι δε και δεσμι/οσ =χυ =ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χυ",
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "δια την αναγκην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυν δε και δεσμιοσ χυ ιησου",
+     "original": "δια την αναγκην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυν δε και δεσμιοσ χυ ιησου",
+     "cru": "δια /την αναγκην μαλλον παρακα/λω τοιουτοσ ων ωσ παυλοσ /πρεσβυτησ νυν δε και δεσμιοσ /=χυ =ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "cru": "δια την αγαπην μαλλον /παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυ/νι δε και δεσμιοσ =χυ =ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χυ",
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "cru": "Διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης, νυνὶ δὲ καὶ δέσμιος Ἰησοῦ Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "cru": "διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης, νυνὶ δὲ καὶ δέσμιος Ἰησοῦ χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "cru": "διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ τοιοῦτος ὢν, ὡς Παῦλος (πρεσβύτης νυνὶ δὲ καὶ δέσμιος ˚Χριστοῦ ˚Ἰησοῦ),",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ ιησου χριστου",
+     "cru": "διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης, νυνὶ δὲ καὶ δέσμιος Ἰησοῦ Χριστοῦ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "original": "δια την αγαπην μαλλον παρακαλω τοιουτοσ ων ωσ παυλοσ πρεσβυτησ νυνι δε και δεσμιοσ χριστου ιησου",
+     "cru": "διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης νυνὶ δὲ καὶ δέσμιος Χριστοῦ Ἰησοῦ,–",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:10": {
+   "base": {
+    "sblgnt": "παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς ⸀δεσμοῖς Ὀνήσιμον,",
+    "sblgnt_norm": [
+     "παρακαλω",
+     "σε",
+     "περι",
+     "του",
+     "εμου",
+     "τεκνου",
+     "ον",
+     "εγεννησα",
+     "εν",
+     "τοισ",
+     "δεσμοισ",
+     "ονησιμον"
+    ],
+    "scrivener": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοις δεσμοις μου ονησιμον",
+    "scrivener_norm": [
+     "παρακαλω",
+     "σε",
+     "περι",
+     "του",
+     "εμου",
+     "τεκνου",
+     "ον",
+     "εγεννησα",
+     "εν",
+     "τοισ",
+     "δεσμοισ",
+     "μου",
+     "ονησιμον"
+    ],
+    "aparato_sblgnt": [
+     "10 δεσμοῖς WH Treg NA28 ] + μου RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "+[εγω]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγω εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "+[μου]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "+[μου]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "+[μου]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "+[μου]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "+[μου]",
+     "leitura": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "cru": "/παρακαλω σε περι \\του εμου τεκνου /ον εγεννησα εν /τοισ δεσμοισ ονη/σιμον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγω εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγω εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "cru": "παρακαλω σε περι του εμου /τεκνου ον εγω εγεννησα /εν τοισ δεσμοισ ονησιμον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "cru": "/παρακαλω σε περι του εμου τεκνου ον εγεννησα /εν τοισ δεσμοισ μου ονησιμον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "cru": "Παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου ὃν ἐγέννησα ἐν τοῖς δεσμοῖς μου, Ὀνήσιμον:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "cru": "Παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς δεσμοῖς μου, Ὀνήσιμον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "cru": "παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς δεσμοῖς, Ὀνήσιμον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ μου ονησιμον",
+     "cru": "¶Παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς δεσμοῖς μου, Ὀνήσιμον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "original": "παρακαλω σε περι του εμου τεκνου ον εγεννησα εν τοισ δεσμοισ ονησιμον",
+     "cru": "παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς δεσμοῖς Ὀνήσιμον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:11": {
+   "base": {
+    "sblgnt": "τόν ποτέ σοι ἄχρηστον νυνὶ ⸀δὲ σοὶ καὶ ἐμοὶ εὔχρηστον,",
+    "sblgnt_norm": [
+     "τον",
+     "ποτε",
+     "σοι",
+     "αχρηστον",
+     "νυνι",
+     "δε",
+     "σοι",
+     "και",
+     "εμοι",
+     "ευχρηστον"
+    ],
+    "scrivener": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+    "scrivener_norm": [
+     "τον",
+     "ποτε",
+     "σοι",
+     "αχρηστον",
+     "νυνι",
+     "δε",
+     "σοι",
+     "και",
+     "εμοι",
+     "ευχρηστον"
+    ],
+    "aparato_sblgnt": [
+     "11 δὲ WH Treg RP ] + καὶ NA28"
+    ],
+    "aviso": "O Textus Receptus foi repartido entre referências para comparação; confira os limites."
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "+[και]",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε και σοι και εμοι ευχρηστον",
+     "fisico": [
+      "lacuna",
+      "corrigido",
+      "ilegivel_original"
+     ]
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "‹abrev:αχρηστο=αχρηστον›",
+     "leitura": "τον ποτε σοι αχρηστο νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε και σοι και εμοι ευχρηστον",
+     "original": "τ ποτε σοι αχρηστον νυνι δε και σοι και εμοι ευχρηστον",
+     "cru": "x{τ��} {τον} ποτε /σο%ι αχρηστον νυ¯/νι δε και σοι και ε/μοι ευχρηστον",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": true,
+     "ilegivel_original": true,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "/τον ποτε σοι αχρηστον νυνι /δε σοι και εμοι ευχρηστον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "τον ποτε σοι αχρηστο νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστο νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "τον ποτε σοι αχρηστο¯ /νυνι δε σοι και εμοι ευχρηστον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "Τόν ποτέ σοι ἄχρηστον, νυνὶ δὲ σοὶ καὶ ἐμοὶ εὔχρηστον:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "τόν ποτέ σοι ἄχρηστον, νυνὶ δὲ σοὶ καὶ ἐμοὶ εὔχρηστον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "τόν ποτέ σοι ἄχρηστον, νυνὶ δὲ σοὶ καὶ ἐμοὶ εὔχρηστον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "τὸν ποτέ σοι ἄχρηστον, νυνὶ δέ σοι καὶ ἐμοὶ εὔχρηστον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "original": "τον ποτε σοι αχρηστον νυνι δε σοι και εμοι ευχρηστον",
+     "cru": "τόν ποτέ σοι ἄχρηστον νυνὶ δὲ σοὶ καὶ ἐμοὶ εὔχρηστον,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:12": {
+   "base": {
+    "sblgnt": "ὃν ἀνέπεμψά ⸂σοι αὐτόν, τοῦτʼ ἔστιν τὰ ἐμὰ σπλάγχνα⸃·",
+    "sblgnt_norm": [
+     "ον",
+     "ανεπεμψα",
+     "σοι",
+     "αυτον",
+     "τουτ",
+     "εστιν",
+     "τα",
+     "εμα",
+     "σπλαγχνα"
+    ],
+    "scrivener": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+    "scrivener_norm": [
+     "ον",
+     "ανεπεμψα",
+     "συ",
+     "δε",
+     "αυτον",
+     "τουτ",
+     "εστιν",
+     "τα",
+     "εμα",
+     "σπλαγχνα",
+     "προσλαβου"
+    ],
+    "aparato_sblgnt": [
+     "12 σοι αὐτόν … σπλάγχνα WH Treg NA28 ] σὺ δὲ αὐτόν … σπλάγχνα προσλαβοῦ RP"
+    ],
+    "aviso": "O Textus Receptus foi repartido entre referências para comparação; confira os limites."
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "‹abrev:εστι=εστιν›",
+     "leitura": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "εστιν → εστι; +[προσλαβου]",
+     "leitura": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα προσλαβου",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "σοι → συ δε; +[προσλαβου]",
+     "leitura": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "σοι → συ δε; +[προσλαβου]",
+     "leitura": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "fisico": [
+      "divisao_alternativa"
+     ]
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "σοι → συ δε; τουτ εστιν → τουτεστι; +[προσλαβου]",
+     "leitura": "ον ανεπεμψα συ δε αυτον τουτεστι τα εμα σπλαγχνα προσλαβου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "σοι → συ δε; +[προσλαβου]",
+     "leitura": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα",
+     "original": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα",
+     "cru": "/ον ανεπεμψα σοι /αυτον τουτ εστι¯ /τα εμα σπλαγχνα",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "original": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "cru": "/ον ανεπεμψα σοι αυτον τουτ /εστιν τα εμα σπλαγχνα",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα προσλαβου",
+     "original": "ον ανεπεμψα σοι αυτον τουτ εστι τα εμα σπλαγχνα προσλαβου",
+     "cru": "ον ανεπεμψα σοι αυ^/τον τουτ εστι τα εμα σπλαγχνα προσλαβου",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "original": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "cru": "Ὃν ἀνέπεμψά: συ δὲ αὐτόν, τοῦτʼ ἔστιν, τὰ ἐμὰ σπλάγχνα πρὸσλαβοῦ:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "original": "ον ανεπεμψα συ δε αυτον τουτ εστιν τα εμα σπλαγχνα προσλαβου",
+     "cru": "ὃν ἀνέπεμψα· ⋄12σὺ δὲ αὐτόν, τοῦτʼ ἔστιν τὰ ἐμὰ σπλάγχνα, προσλαβοῦ·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": true,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "original": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "cru": "ὃν ἀνέπεμψά σοι αὐτόν, τοῦτʼ ἔστιν τὰ ἐμὰ σπλάγχνα,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ον ανεπεμψα συ δε αυτον τουτεστι τα εμα σπλαγχνα προσλαβου",
+     "original": "ον ανεπεμψα συ δε αυτον τουτεστι τα εμα σπλαγχνα προσλαβου",
+     "cru": "ὃν ἀνέπεμψα. Σὺ δὲ αὐτὸν, (τουτέστι τὰ ἐμὰ σπλάγχνα,) προσλαβοῦ,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "original": "ον ανεπεμψα σοι αυτον τουτ εστιν τα εμα σπλαγχνα",
+     "cru": "ὃν ἀνέπεμψά σοι αὐτόν, τοῦτʼ ἔστιν τὰ ἐμὰ σπλάγχνα·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:13": {
+   "base": {
+    "sblgnt": "ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ ⸂μοι διακονῇ⸃ ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου,",
+    "sblgnt_norm": [
+     "ον",
+     "εγω",
+     "εβουλομην",
+     "προσ",
+     "εμαυτον",
+     "κατεχειν",
+     "ινα",
+     "υπερ",
+     "σου",
+     "μοι",
+     "διακονη",
+     "εν",
+     "τοισ",
+     "δεσμοισ",
+     "του",
+     "ευαγγελιου"
+    ],
+    "scrivener": "ον εγω εβουλομην προς εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοις δεσμοις του ευαγγελιου",
+    "scrivener_norm": [
+     "ον",
+     "εγω",
+     "εβουλομην",
+     "προσ",
+     "εμαυτον",
+     "κατεχειν",
+     "ινα",
+     "υπερ",
+     "σου",
+     "διακονη",
+     "μοι",
+     "εν",
+     "τοισ",
+     "δεσμοισ",
+     "του",
+     "ευαγγελιου"
+    ],
+    "aparato_sblgnt": [
+     "13 μοι διακονῇ WH Treg NA28 ] διακονῇ μοι RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "εβουλομην → ηβουλομην; κατεχειν → κατεχιν",
+     "leitura": "ον εγω ηβουλομην προσ εμαυτον κατεχιν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "divergente",
+     "diferenca": "-[ον εγω εβουλομην προσ εμαυτον κατεχειν]",
+     "leitura": "ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "+[διακονη]; -[διακονη]",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "+[διακονη]; -[διακονη]",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "+[διακονη]; -[διακονη]",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "+[διακονη]; -[διακονη]",
+     "leitura": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ον εγω ηβουλομην προσ εμαυτον κατεχιν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω ηβουλομην προσ εμαυτον κατεχιν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "/ον εγω ηβουλο/μην προσ εμαυ/τον κατεχιν ινα /υπερ σου μοι δια/κονη εν τοισ δε/σμοισ του ευαγγε/λιου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ον εγω /εβουλομην προσ εμαυτον /κατεχειν ινα υπερ σου μοι δι/ακονη εν τοισ δεσμοισ του /ευαγγελιου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ον εγω ε/βουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι /διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": {
+     "texto": "ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "\\/0&*ι^να υ%περ σου μο^ι^ +διακο/νη ~εν τοισ δεσμο^ι^σ^ ~του ~ευαγγε/λιου",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "KJTR": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "Ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ διακονῇ μοι ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου:",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ διακονῇ μοι ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ μοι διακονῇ ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου διακονη μοι εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ διακονῇ μοι ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "original": "ον εγω εβουλομην προσ εμαυτον κατεχειν ινα υπερ σου μοι διακονη εν τοισ δεσμοισ του ευαγγελιου",
+     "cru": "ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ μοι διακονῇ ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:14": {
+   "base": {
+    "sblgnt": "χωρὶς δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ ἀλλὰ κατὰ ἑκούσιον·",
+    "sblgnt_norm": [
+     "χωρισ",
+     "δε",
+     "τησ",
+     "σησ",
+     "γνωμησ",
+     "ουδεν",
+     "ηθελησα",
+     "ποιησαι",
+     "ινα",
+     "μη",
+     "ωσ",
+     "κατα",
+     "αναγκην",
+     "το",
+     "αγαθον",
+     "σου",
+     "η",
+     "αλλα",
+     "κατα",
+     "εκουσιον"
+    ],
+    "scrivener": "χωρις δε της σης γνωμης ουδεν ηθελησα ποιησαι ινα μη ως κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+    "scrivener_norm": [
+     "χωρισ",
+     "δε",
+     "τησ",
+     "σησ",
+     "γνωμησ",
+     "ουδεν",
+     "ηθελησα",
+     "ποιησαι",
+     "ινα",
+     "μη",
+     "ωσ",
+     "κατα",
+     "αναγκην",
+     "το",
+     "αγαθον",
+     "σου",
+     "η",
+     "αλλα",
+     "κατα",
+     "εκουσιον"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "χωρισ → χωρεισ ‹abrev:εκουσιο=εκουσιον›",
+     "leitura": "χωρεισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρισ δε τησ /σησ γνωμησ ου/δεν ηθελησα ποι/ησαι ινα μη ωσ /κατα αναγκην το /αγαθον σου η αλ/λα κατα εκουσιον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "χωρεισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιο",
+     "original": "χωρεισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιο",
+     "cru": "χωρεισ δε τησ σησ^ /γνωμησ ουδεν ηθελησα ποιησαι /ινα μη ωσ κατα αναγκην το αγα/θον σου η αλλα κατα εκουσιο¯",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρισ δε /τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ /κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρισ δε τησ^ ~σησ ~γνω/μησ ο^υδεν ηθελησ^α^ ~ποιη/σαι ι^ν^α% μη ωσ κατα ~αναγκην /~το α^γ^α^θον σου η αλλ^α^ ~κατα ~εκουσιον",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "KJTR": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "Χωρὶς δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι· ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ, ἀλλὰ κατὰ ἑκούσιον.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρὶς δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ, ἀλλὰ κατὰ ἑκούσιον.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρὶς δὲ τῆς σῆς γνώμης, οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ, ἀλλὰ κατὰ ἑκούσιον.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρὶς δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ, ἀλλὰ κατὰ ἑκούσιον.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "original": "χωρισ δε τησ σησ γνωμησ ουδεν ηθελησα ποιησαι ινα μη ωσ κατα αναγκην το αγαθον σου η αλλα κατα εκουσιον",
+     "cru": "χωρὶς δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ ἀλλὰ κατὰ ἑκούσιον.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:15": {
+   "base": {
+    "sblgnt": "τάχα γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν ἵνα αἰώνιον αὐτὸν ἀπέχῃς,",
+    "sblgnt_norm": [
+     "ταχα",
+     "γαρ",
+     "δια",
+     "τουτο",
+     "εχωρισθη",
+     "προσ",
+     "ωραν",
+     "ινα",
+     "αιωνιον",
+     "αυτον",
+     "απεχησ"
+    ],
+    "scrivener": "ταχα γαρ δια τουτο εχωρισθη προς ωραν ινα αιωνιον αυτον απεχης",
+    "scrivener_norm": [
+     "ταχα",
+     "γαρ",
+     "δια",
+     "τουτο",
+     "εχωρισθη",
+     "προσ",
+     "ωραν",
+     "ινα",
+     "αιωνιον",
+     "αυτον",
+     "απεχησ"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "εχωρισθη → εχρισθη",
+     "leitura": "ταχα γαρ δια τουτο εχρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "divergente",
+     "diferenca": "-[αιωνιον αυτον απεχησ]",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "/ταχα γαρ δια τουτο /εχωρισθη προσ /ωραν ινα αιωνι/ον αυτον απεχησ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "/ταχα γαρ δια τουτο εχωρισθη προσ /ωραν ινα αιωνιον αυτον απεχησ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ταχα γαρ δια τουτο εχρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "/ταχα γαρ δια τουτο^ ε^χ^ρισθη προσ ωραν ινα αιωνιον /αυτον απεχησ",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα",
+     "cru": "/~ταχα ~γαρ δια τουτο^ ~εχωρισθη /~προσ ω^ρ^αν ιν^α^*/0",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "KJTR": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "Τάχα γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν, ἵνα αἰώνιον αὐτὸν ἀπέχῃς·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "Τάχα γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν, ἵνα αἰώνιον αὐτὸν ἀπέχῃς·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "Τάχα γὰρ διὰ τοῦτο, ἐχωρίσθη πρὸς ὥραν, ἵνα αἰώνιον αὐτὸν ἀπέχῃς,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "Τάχα γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν, ἵνα αἰώνιον αὐτὸν ἀπέχῃς,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "original": "ταχα γαρ δια τουτο εχωρισθη προσ ωραν ινα αιωνιον αυτον απεχησ",
+     "cru": "τάχα γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν ἵνα αἰώνιον αὐτὸν ἀπέχῃς,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:16": {
+   "base": {
+    "sblgnt": "οὐκέτι ὡς δοῦλον ἀλλὰ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν, μάλιστα ἐμοί, πόσῳ δὲ μᾶλλον σοὶ καὶ ἐν σαρκὶ καὶ ἐν κυρίῳ.",
+    "sblgnt_norm": [
+     "ουκετι",
+     "ωσ",
+     "δουλον",
+     "αλλα",
+     "υπερ",
+     "δουλον",
+     "αδελφον",
+     "αγαπητον",
+     "μαλιστα",
+     "εμοι",
+     "ποσω",
+     "δε",
+     "μαλλον",
+     "σοι",
+     "και",
+     "εν",
+     "σαρκι",
+     "και",
+     "εν",
+     "κυριω"
+    ],
+    "scrivener": "ουκετι ως δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+    "scrivener_norm": [
+     "ουκετι",
+     "ωσ",
+     "δουλον",
+     "αλλ",
+     "υπερ",
+     "δουλον",
+     "αδελφον",
+     "αγαπητον",
+     "μαλιστα",
+     "εμοι",
+     "ποσω",
+     "δε",
+     "μαλλον",
+     "σοι",
+     "και",
+     "εν",
+     "σαρκι",
+     "και",
+     "εν",
+     "κυριω"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "-[αδελφον] ‹abrev:ε=εν›",
+     "leitura": "ουκετι ωσ δουλον αλλα υπερ δουλον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ ‹abrev:μαλλο=μαλλον›",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ ‹abrev:δουλο=δουλον›",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ουκετι ωσ δουλον αλλα υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "αλλα → αλλ",
+     "leitura": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ουκετι ωσ δουλον αλλα υπερ δουλον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και ε σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλα υπερ δουλον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και ε σαρκι και εν κυριω",
+     "cru": "/ουκετι ωσ δουλον /αλλα υπερ δουλον /αγαπητον μαλι/στα εμοι ποσω δε /μαλλον σοι και ε¯ /σαρκι και εν =κω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλο σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλο σοι και εν σαρκι και εν κυριω",
+     "cru": "/ουκετι ωσ δουλον αλλ υπερ /δουλον αδελφον αγαπητον /μαλιστα εμοι ποσω δε μαλλο¯ /σοι και εν σαρκι και εν =κω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλο αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλο αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "ουκετι ωσ δουλον αλλ υπερ δουλο¯ /αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλ/λον σοι και εν σαρκι και εν =κω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "Οὐκέτι ὡς δοῦλον, ἀλλʼ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν, μάλιστα ἐμοί, πόσῳ δὲ μᾶλλον σοὶ, καὶ ἐν σαρκὶ, καὶ ἐν Κυρίῳ;",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "οὐκέτι ὡς δοῦλον, ἀλλʼ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν, μάλιστα ἐμοί, πόσῳ δὲ μᾶλλον σοὶ καὶ ἐν σαρκὶ καὶ ἐν κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "οὐκέτι ὡς δοῦλον, ἀλλʼ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν, μάλιστα ἐμοί πόσῳ δὲ μᾶλλον σοὶ, καὶ ἐν σαρκὶ καὶ ἐν ˚Κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλ υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "οὐκέτι ὡς δοῦλον, ἀλλʼ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητὸν, μάλιστα ἐμοὶ, πόσῳ δὲ μᾶλλόν σοι, καὶ ἐν σαρκὶ καὶ ἐν Κυρίῳ;",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ουκετι ωσ δουλον αλλα υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "original": "ουκετι ωσ δουλον αλλα υπερ δουλον αδελφον αγαπητον μαλιστα εμοι ποσω δε μαλλον σοι και εν σαρκι και εν κυριω",
+     "cru": "οὐκέτι ὡς δοῦλον ἀλλὰ ὑπὲρ δοῦλον, ἀδελφὸν ἀγαπητόν, μάλιστα ἐμοί, πόσῳ δὲ μᾶλλον σοὶ καὶ ἐν σαρκὶ καὶ ἐν κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:17": {
+   "base": {
+    "sblgnt": "Εἰ οὖν με ἔχεις κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+    "sblgnt_norm": [
+     "ει",
+     "ουν",
+     "με",
+     "εχεισ",
+     "κοινωνον",
+     "προσλαβου",
+     "αυτον",
+     "ωσ",
+     "εμε"
+    ],
+    "scrivener": "ει ουν εμε εχεις κοινωνον προσλαβου αυτον ως εμε",
+    "scrivener_norm": [
+     "ει",
+     "ουν",
+     "εμε",
+     "εχεισ",
+     "κοινωνον",
+     "προσλαβου",
+     "αυτον",
+     "ωσ",
+     "εμε"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "‹abrev:κοινωνο=κοινωνον›",
+     "leitura": "ει ουν με εχεισ κοινωνο προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "εμε → με",
+     "leitura": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ με",
+     "fisico": [
+      "lacuna"
+     ]
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "με → εμε",
+     "leitura": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "με → εμε",
+     "leitura": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "με → εμε",
+     "leitura": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "/ει ουν με εχεισ κοι/νωνον προσλα/βου αυτον ωσ εμε",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ει ουν με εχεισ κοινωνο προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν με εχεισ κοινωνο προσλαβου αυτον ωσ εμε",
+     "cru": "/ει ουν με εχεισ κοινωνο¯ /προσλαβου αυτον ωσ εμε",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ με",
+     "original": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ με",
+     "cru": "/ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ με^",
+     "presente": true,
+     "lacuna": true,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "Εἰ οὖν ἐμέ ἔχεις κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "Εἰ οὖν με ἔχεις κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "¶Εἰ οὖν με ἔχεις κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν εμε εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "Εἰ οὖν ἐμὲ ἔχεις κοινωνὸν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "original": "ει ουν με εχεισ κοινωνον προσλαβου αυτον ωσ εμε",
+     "cru": "εἰ οὖν με ἔχεις κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:18": {
+   "base": {
+    "sblgnt": "εἰ δέ τι ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ ⸀ἐλλόγα·",
+    "sblgnt_norm": [
+     "ει",
+     "δε",
+     "τι",
+     "ηδικησεν",
+     "σε",
+     "η",
+     "οφειλει",
+     "τουτο",
+     "εμοι",
+     "ελλογα"
+    ],
+    "scrivener": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+    "scrivener_norm": [
+     "ει",
+     "δε",
+     "τι",
+     "ηδικησεν",
+     "σε",
+     "η",
+     "οφειλει",
+     "τουτο",
+     "εμοι",
+     "ελλογει"
+    ],
+    "aparato_sblgnt": [
+     "18 ἐλλόγα WH Treg NA28 ] ἐλλόγει RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "οφειλει → οφιλει",
+     "leitura": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "οφειλει → οφιλει",
+     "leitura": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "divergente",
+     "diferenca": "-[ει δε τι]; οφειλει → οφειλετο",
+     "leitura": "ηδικησεν σε η οφειλετο τουτο εμοι ελλογα",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "ελλογα → ελλογει",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "ελλογα → ελλογει",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "ηδικησεν → ηδικησε; ελλογα → ελλογει",
+     "leitura": "ει δε τι ηδικησε σε η οφειλει τουτο εμοι ελλογει",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "ελλογα → ελλογει",
+     "leitura": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "original": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "cru": "/ει δε τι ηδικησεν /σε η οφιλει του/το εμοι ελλογα",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "original": "ει δε τι ηδικησεν σε η οφιλει τουτο εμοι ελλογα",
+     "cru": "ει δε /τι ηδικησεν σε η οφιλει τουτο /εμοι ελλογα",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "original": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "cru": "+ει /δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "ηδικησεν σε η οφειλετο τουτο εμοι ελλογα",
+     "original": "ηδικησεν σε η οφειλετο τουτο εμοι ελλογα",
+     "cru": "\\/0η^δ^ι^κ%η%σ^ε^ν^ ~σε ~η ο^φ^ε^ι^λ^ε^/το τ^ουτο ε%μ^ο^ι^ ~ελλογα",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "original": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "cru": "Εἰ δέ τι ἠδίκησέν σε, ἢ ὀφείλει, τοῦτο ἐμοὶ ἐλλόγει·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "original": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογει",
+     "cru": "Εἰ δέ τι ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ ἐλλόγει·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "original": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "cru": "Εἰ δέ τι ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ ἐλλόγα.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ει δε τι ηδικησε σε η οφειλει τουτο εμοι ελλογει",
+     "original": "ει δε τι ηδικησε σε η οφειλει τουτο εμοι ελλογει",
+     "cru": "Εἰ δέ τι ἠδίκησέ σε ἢ ὀφείλει, τοῦτο ἐμοὶ ἐλλόγει.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "original": "ει δε τι ηδικησεν σε η οφειλει τουτο εμοι ελλογα",
+     "cru": "εἰ δέ τι ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ ἐλλόγα·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:19": {
+   "base": {
+    "sblgnt": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+    "sblgnt_norm": [
+     "εγω",
+     "παυλοσ",
+     "εγραψα",
+     "τη",
+     "εμη",
+     "χειρι",
+     "εγω",
+     "αποτισω",
+     "ινα",
+     "μη",
+     "λεγω",
+     "σοι",
+     "οτι",
+     "και",
+     "σεαυτον",
+     "μοι",
+     "προσοφειλεισ"
+    ],
+    "scrivener": "εγω παυλος εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεις",
+    "scrivener_norm": [
+     "εγω",
+     "παυλοσ",
+     "εγραψα",
+     "τη",
+     "εμη",
+     "χειρι",
+     "εγω",
+     "αποτισω",
+     "ινα",
+     "μη",
+     "λεγω",
+     "σοι",
+     "οτι",
+     "και",
+     "σεαυτον",
+     "μοι",
+     "προσοφειλεισ"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "προσοφειλεισ → προσοφιλεισ",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "προσοφειλεισ → προσοφιλεισ",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "divergente",
+     "diferenca": "χειρι → χειρει; σεαυτον → εαυτον; προσοφειλεισ → προσοφιλεισ",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρει εγω αποτισω ινα μη λεγω σοι οτι και εαυτον μοι προσοφιλεισ",
+     "fisico": [
+      "lacuna",
+      "suprido",
+      "corrigido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "cru": "/εγω παυλοσ εγρα/ψα τη εμη χειρι ε/γω αποτισω ινα /μη λεγω σοι οτι ϗ /σεαυτον μοι προσ/οφιλεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφιλεισ",
+     "cru": "|εγω παυλοσ εγραψα τη εμη χειρι /εγω αποτισω ινα μη λεγω σοι /οτι και σεαυτον μοι προσοφιλεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "εγω /παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λε/γω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρει εγω αποτισω ινα μη λεγω σοι οτι και εαυτον μοι προσοφιλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρει εγω αποτισω ινα μη λεγω σοι οτι και αυτον μοι προσοφιλεισ",
+     "cru": "/εγω παυλο^σ^ ~εγραψα ~τη /εμη χε%ιρε%ι^ ~εγω α^π^ο^τ^ι^/σω ινα μη% ~λεγω ~σοι ο^/τι και x{αυτο%ν^} {εαυτο%ν^} ~μοι ~προσ/οφιλεισ",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": true,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "Ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω: ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "Ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρὶ, Ἐγὼ ἀποτίσω. ἵνα μὴ λέγω σοι, ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "original": "εγω παυλοσ εγραψα τη εμη χειρι εγω αποτισω ινα μη λεγω σοι οτι και σεαυτον μοι προσοφειλεισ",
+     "cru": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι προσοφείλεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:20": {
+   "base": {
+    "sblgnt": "ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα ἐν ⸀Χριστῷ.",
+    "sblgnt_norm": [
+     "ναι",
+     "αδελφε",
+     "εγω",
+     "σου",
+     "οναιμην",
+     "εν",
+     "κυριω",
+     "αναπαυσον",
+     "μου",
+     "τα",
+     "σπλαγχνα",
+     "εν",
+     "χριστω"
+    ],
+    "scrivener": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+    "scrivener_norm": [
+     "ναι",
+     "αδελφε",
+     "εγω",
+     "σου",
+     "οναιμην",
+     "εν",
+     "κυριω",
+     "αναπαυσον",
+     "μου",
+     "τα",
+     "σπλαγχνα",
+     "εν",
+     "κυριω"
+    ],
+    "aparato_sblgnt": [
+     "20 Χριστῷ WH Treg NA28 ] κυρίῳ RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "χριστω → χω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χω",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "‹abrev:οναιμη=οναιμην›",
+     "leitura": "ναι αδελφε εγω σου οναιμη εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "divergente",
+     "diferenca": "κυριω αναπαυσον μου τα σπλαγχνα εν χριστω → χρω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν χρω",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "χριστω → κυριω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "χριστω → κυριω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "χριστω → κυριω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "χριστω → κυριω",
+     "leitura": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χω",
+     "cru": "/ναι αδελφε εγω σου /οναιμην εν =κω |αναπαυσον μου /τα σπλαγχνα εν /=χω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ναι αδελφε εγω σου οναιμη εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "original": "ναι αδελφε εγω σου οναιμη εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "cru": "/ναι αδελφε εγω σου οναιμη¯ /εν =κω αναπαυσον μου τα σπλα/γχνα εν =χω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω",
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "cru": "ναι αδελ/φε εγω σου οναιμην εν =κω αναπαυσον μου τα σπλα/γχνα εν =χω",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κω",
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν χρω",
+     "original": "ναι αδελφε εγω σου οναιμην εν χρω",
+     "cru": "να^ι^ ~αδελφε /εγω% σου ~οναιμην ~εν /=χρ%ω%*&/0",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P87": null,
+    "KJTR": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "cru": "Ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν Κυρίῳ: ἀνάπαυσόν μου τὰ σπλάγχνα ἐν Κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "cru": "Ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα ἐν κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "cru": "Ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν ˚Κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα ἐν ˚Χριστῷ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν κυριω",
+     "cru": "Ναὶ, ἀδελφέ. ἐγώ σου ὀναίμην ἐν Κυρίῳ. ἀνάπαυσόν μου τὰ σπλάγχνα ἐν Κυρίῳ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "original": "ναι αδελφε εγω σου οναιμην εν κυριω αναπαυσον μου τα σπλαγχνα εν χριστω",
+     "cru": "ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα ἐν Χριστῷ.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:21": {
+   "base": {
+    "sblgnt": "πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ⸀ἃ λέγω ποιήσεις.",
+    "sblgnt_norm": [
+     "πεποιθωσ",
+     "τη",
+     "υπακοη",
+     "σου",
+     "εγραψα",
+     "σοι",
+     "ειδωσ",
+     "οτι",
+     "και",
+     "υπερ",
+     "α",
+     "λεγω",
+     "ποιησεισ"
+    ],
+    "scrivener": "πεποιθως τη υπακοη σου εγραψα σοι ειδως οτι και υπερ ο λεγω ποιησεις",
+    "scrivener_norm": [
+     "πεποιθωσ",
+     "τη",
+     "υπακοη",
+     "σου",
+     "εγραψα",
+     "σοι",
+     "ειδωσ",
+     "οτι",
+     "και",
+     "υπερ",
+     "ο",
+     "λεγω",
+     "ποιησεισ"
+    ],
+    "aparato_sblgnt": [
+     "21 ἃ WH Treg NA28 ] ὃ RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "α → ο",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "α → ο",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "α → ο",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "α → ο",
+     "leitura": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "cru": "/πεποιθωσ τη υπα/κοη σου εγραψα σοι /ειδωσ οτι και υ/περ α λεγω ποιη/σεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "cru": "/πεποιθωσ τη υπακοη σου εγρα/ψα σοι ειδωσ οτι και υπερ α λεγω /ποιησεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "cru": "πεποιθωσ τη υπακοη σου εγραψα σοι ει/δωσ οτι και υπερ α λεγω ποιησεισ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "cru": "Πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ὃ λέγω ποιήσεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "cru": "Πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ὃ λέγω ποιήσεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "cru": "Πεποιθὼς τῇ ὑπακοῇ σου, ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ἃ λέγω, ποιήσεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ ο λεγω ποιησεισ",
+     "cru": "πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ὃ λέγω, ποιήσεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "original": "πεποιθωσ τη υπακοη σου εγραψα σοι ειδωσ οτι και υπερ α λεγω ποιησεισ",
+     "cru": "¶Πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ἃ λέγω ποιήσεις.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:22": {
+   "base": {
+    "sblgnt": "ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν, ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.",
+    "sblgnt_norm": [
+     "αμα",
+     "δε",
+     "και",
+     "ετοιμαζε",
+     "μοι",
+     "ξενιαν",
+     "ελπιζω",
+     "γαρ",
+     "οτι",
+     "δια",
+     "των",
+     "προσευχων",
+     "υμων",
+     "χαρισθησομαι",
+     "υμιν"
+    ],
+    "scrivener": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+    "scrivener_norm": [
+     "αμα",
+     "δε",
+     "και",
+     "ετοιμαζε",
+     "μοι",
+     "ξενιαν",
+     "ελπιζω",
+     "γαρ",
+     "οτι",
+     "δια",
+     "των",
+     "προσευχων",
+     "υμων",
+     "χαρισθησομαι",
+     "υμιν"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "‹abrev:προσευχω=προσευχων›",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχω υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχω υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχω υμων χαρισθησομαι υμιν",
+     "cru": "/αμα δε και ετοιμα/ζε μοι ξενιαν ελ/πιζω γαρ οτι δια /των προσευχω¯ /υμων χαρισθη/σομαι υμιν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "αμα δε και ετοιμα/ζε μοι ξενιαν ελπιζω γαρ οτι /δια των προσευχων υμων χα/ρισθησομαι υμιν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "αμα δε και ετοι/μαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευ/χων υμων χαρισθησομαι υμιν",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "Ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν: ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "Ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν· ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "Ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν, ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν, χαρισθήσομαι ὑμῖν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν· ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "original": "αμα δε και ετοιμαζε μοι ξενιαν ελπιζω γαρ οτι δια των προσευχων υμων χαρισθησομαι υμιν",
+     "cru": "ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν, ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:23": {
+   "base": {
+    "sblgnt": "⸀Ἀσπάζεταί σε Ἐπαφρᾶς ὁ συναιχμάλωτός μου ἐν Χριστῷ Ἰησοῦ,",
+    "sblgnt_norm": [
+     "ασπαζεται",
+     "σε",
+     "επαφρασ",
+     "ο",
+     "συναιχμαλωτοσ",
+     "μου",
+     "εν",
+     "χριστω",
+     "ιησου"
+    ],
+    "scrivener": "ασπαζονται σε επαφρας ο συναιχμαλωτος μου εν χριστω ιησου",
+    "scrivener_norm": [
+     "ασπαζονται",
+     "σε",
+     "επαφρασ",
+     "ο",
+     "συναιχμαλωτοσ",
+     "μου",
+     "εν",
+     "χριστω",
+     "ιησου"
+    ],
+    "aparato_sblgnt": [
+     "23 Ἀσπάζεταί WH Treg NA28 ] Ἀσπάζονταί RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "ιησου → ιυ",
+     "leitura": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιυ",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "χριστω → χω ‹abrev:ε=εν›",
+     "leitura": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "ασπαζεται → ασπαζονται",
+     "leitura": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "ασπαζεται → ασπαζονται",
+     "leitura": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "ασπαζεται → ασπαζονται",
+     "leitura": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "ασπαζεται → ασπαζονται",
+     "leitura": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιυ",
+     "original": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιυ",
+     "cru": "/ασπαζεται σε επα/φρασ ο συναιχμα/λωτοσ μου εν =χω /=ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χω"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "/ασπαζεται σε επαφρασ ο συναιχμα/λωτοσ μου εν =χω =ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=χω",
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου ε χω ιησου",
+     "original": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου ε χω ιησου",
+     "cru": "/ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου ε¯ /=χω =ιυ",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=ιυ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": null,
+    "KJTR": {
+     "texto": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "Ἀσπάζονταί σε Ἐπαφρᾶς, ὁ συναιχμάλωτός μου ἐν Χριστῷ Ἰησοῦ·",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "¶Ἀσπάζονταί σε Ἐπαφρᾶς ὁ συναιχμάλωτός μου ἐν χριστῷ Ἰησοῦ,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "¶Ἀσπάζεταί σε Ἐπαφρᾶς, ὁ συναιχμάλωτός μου ἐν ˚Χριστῷ ˚Ἰησοῦ,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζονται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "Ἀσπάζονταί σε Ἐπαφρᾶς ὁ συναιχμάλωτός μου ἐν Χριστῷ Ἰησοῦ,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "original": "ασπαζεται σε επαφρασ ο συναιχμαλωτοσ μου εν χριστω ιησου",
+     "cru": "¶Ἀσπάζεταί σε Ἐπαφρᾶς ὁ συναιχμάλωτός μου ἐν Χριστῷ Ἰησοῦ,",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:24": {
+   "base": {
+    "sblgnt": "Μᾶρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+    "sblgnt_norm": [
+     "μαρκοσ",
+     "αρισταρχοσ",
+     "δημασ",
+     "λουκασ",
+     "οι",
+     "συνεργοι",
+     "μου"
+    ],
+    "scrivener": "μαρκος αρισταρχος δημας λουκας οι συνεργοι μου",
+    "scrivener_norm": [
+     "μαρκοσ",
+     "αρισταρχοσ",
+     "δημασ",
+     "λουκασ",
+     "οι",
+     "συνεργοι",
+     "μου"
+    ],
+    "aparato_sblgnt": [],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "divergente",
+     "diferenca": "-[μαρκοσ αρισταρχοσ δημασ]",
+     "leitura": "λουκασ οι συνεργοι μου",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "μαρκοσ αρι/σταρχοσ δημασ /λουκασ οι συνερ/γοι μου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "μαρκοσ /αρισταρχοσ δημασ λουκασ /οι συνεργοι μου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι /μου",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": {
+     "texto": "λουκασ οι συνεργοι μου",
+     "original": "λουκασ οι συνεργοι μου",
+     "cru": "\\/0*λ^ο^υ^κ^ασ οι συνεργ%ο^ι^ ~μου",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "KJTR": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "Μᾶρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "Μάρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "Μᾶρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "Μάρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "original": "μαρκοσ αρισταρχοσ δημασ λουκασ οι συνεργοι μου",
+     "cru": "Μάρκος, Ἀρίσταρχος, Δημᾶς, Λουκᾶς, οἱ συνεργοί μου.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  },
+  "1:25": {
+   "base": {
+    "sblgnt": "Ἡ χάρις τοῦ ⸀κυρίου Ἰησοῦ Χριστοῦ μετὰ τοῦ πνεύματος ⸀ὑμῶν.",
+    "sblgnt_norm": [
+     "η",
+     "χαρισ",
+     "του",
+     "κυριου",
+     "ιησου",
+     "χριστου",
+     "μετα",
+     "του",
+     "πνευματοσ",
+     "υμων"
+    ],
+    "scrivener": "η χαρις του κυριου ημων ιησου χριστου μετα του πνευματος υμων αμην",
+    "scrivener_norm": [
+     "η",
+     "χαρισ",
+     "του",
+     "κυριου",
+     "ημων",
+     "ιησου",
+     "χριστου",
+     "μετα",
+     "του",
+     "πνευματοσ",
+     "υμων",
+     "αμην"
+    ],
+    "aparato_sblgnt": [
+     "25 κυρίου WH NA28 ] + ἡμῶν Treg RP",
+     "• ὑμῶν WH Treg NA28 ] + Ἀμήν RP"
+    ],
+    "aviso": ""
+   },
+   "divergencias": [
+    {
+     "testemunha": "01",
+     "estado": "divergente",
+     "diferenca": "χριστου → χυ; πνευματοσ → πνεματοσ; +[αμην]",
+     "leitura": "η χαρισ του κυριου ιησου χυ μετα του πνεματοσ υμων αμην",
+     "fisico": []
+    },
+    {
+     "testemunha": "02",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; πνευματοσ → πνεματοσ",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων",
+     "fisico": []
+    },
+    {
+     "testemunha": "04",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; πνευματοσ → πνεματοσ; +[αμη]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων αμη",
+     "fisico": []
+    },
+    {
+     "testemunha": "P139",
+     "estado": "ausente",
+     "diferenca": "",
+     "leitura": "",
+     "fisico": []
+    },
+    {
+     "testemunha": "P87",
+     "estado": "divergente",
+     "diferenca": "του κυριου ιησου χριστου μετα του πνευματοσ → μεθ",
+     "leitura": "η χαρισ μεθ υμων",
+     "fisico": [
+      "lacuna",
+      "suprido"
+     ]
+    },
+    {
+     "testemunha": "KJTR",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; +[αμην]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "fisico": []
+    },
+    {
+     "testemunha": "RP",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; +[αμην]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "fisico": []
+    },
+    {
+     "testemunha": "SR",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; +[αμην]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "fisico": []
+    },
+    {
+     "testemunha": "ST",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; +[αμην]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "fisico": []
+    },
+    {
+     "testemunha": "WH",
+     "estado": "identica",
+     "diferenca": "",
+     "leitura": "η χαρισ του κυριου ιησου χριστου μετα του πνευματοσ υμων",
+     "fisico": []
+    },
+    {
+     "testemunha": "Scrivener",
+     "estado": "divergente",
+     "diferenca": "+[ημων]; +[αμην]",
+     "leitura": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "fisico": []
+    }
+   ],
+   "leituras": {
+    "01": {
+     "texto": "η χαρισ του κυριου ιησου χυ μετα του πνεματοσ υμων αμην",
+     "original": "η χαρισ του κυριου ιησου χυ μετα του πνεματοσ υμων αμην",
+     "cru": "/η χαρισ του =κυ =ιυ /=χυ μετα του =πνσ /υμων αμην|2",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κυ",
+      "=ιυ",
+      "=πνσ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "02": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων",
+     "cru": "/η χαρισ του =κυ ημων =ιυ =χυ με/τα του =πνσ υμων",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κυ",
+      "=ιυ",
+      "=χυ",
+      "=πνσ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "04": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων αμη",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνεματοσ υμων αμη",
+     "cru": "η χαρισ του =κυ ημων =ιυ =χυ μετα του =πνσ υμων /αμη¯",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [
+      "=κυ",
+      "=ιυ",
+      "=χυ",
+      "=πνσ"
+     ],
+     "expansao_duvidosa": []
+    },
+    "P139": null,
+    "P87": {
+     "texto": "η χαρισ μεθ υμων",
+     "original": "η χαρισ μεθ υμων",
+     "cru": "~η ~χα/ρισ μ^εθ υμων*",
+     "presente": true,
+     "lacuna": true,
+     "suprido": true,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "KJTR": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "cru": "Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ μετὰ τοῦ πνεύματος ὑμῶν. Ἀμήν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "RP": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "cru": "¶Ἡ χάρις τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ μετὰ τοῦ πνεύματος ὑμῶν. Ἀμήν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "SR": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "cru": "¶Ἡ χάρις τοῦ ˚Κυρίου ἡμῶν, ˚Ἰησοῦ ˚Χριστοῦ, μετὰ τοῦ πνεύματος ὑμῶν. Ἀμήν!",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "ST": {
+     "texto": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "original": "η χαρισ του κυριου ημων ιησου χριστου μετα του πνευματοσ υμων αμην",
+     "cru": "Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ μετὰ τοῦ πνεύματος ὑμῶν. Ἀμήν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    },
+    "WH": {
+     "texto": "η χαρισ του κυριου ιησου χριστου μετα του πνευματοσ υμων",
+     "original": "η χαρισ του κυριου ιησου χριστου μετα του πνευματοσ υμων",
+     "cru": "¶Ἡ χάρις τοῦ κυρίου Ἰησοῦ Χριστοῦ μετὰ τοῦ πνεύματος ὑμῶν.",
+     "presente": true,
+     "lacuna": false,
+     "suprido": false,
+     "corrigido": false,
+     "ilegivel_original": false,
+     "divisao_alternativa": false,
+     "nomina_sacra": [],
+     "expansao_duvidosa": []
+    }
+   }
+  }
+ }
+}

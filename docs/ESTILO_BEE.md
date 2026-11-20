@@ -165,3 +165,90 @@ Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto
 **Judas:** carta aprovada como amostra editorial, incluindo a redação final «São ímpios, há muito assinalados para esta condenação» no v. 4. A alteração é de estilo, não de variante textual. A aprovação não substitui revisão especializada.
 
 **Tito:** carta aprovada como referência de voz, incluindo «escravas do vinho» (2:3) e «conciliadores» (3:2). As notas explicam as nuances das duas escolhas. A aprovação editorial não substitui revisão especializada.
+
+## v0.6 — crítica textual, pontuação e arquivologia (20/11/2026)
+
+A voz continua a mesma; o que muda é a **exigência de prova** por detrás de cada
+nota e a coerência gráfica entre versículos. O protocolo completo está em
+[CRITICA_TEXTUAL.md](CRITICA_TEXTUAL.md); aqui ficam as consequências para a
+redação, que são as que um revisor precisa de ter à mão.
+
+**Três secções obrigatórias, três condicionais.** Cada nota tem Análise Léxica,
+Crítica Textual e Síntese Exegética. A elas juntam-se, quando a passagem o pede,
+Hermenêutica e Contexto, Geografia e História e Nota de redação — esta última só
+para registar uma decisão que se afasta de uma redação anterior já aprovada.
+
+**Só se cita o que se colacionou.** O aparato do SBLGNT nomeia edições (WH, Treg,
+NA28, RP), nunca códices; por isso «o Sinaiticus lê X» só pode escrever-se onde
+existe colação (`docs/colacao/`). Uma edição impressa não é um manuscrito, uma
+tradução moderna não é evidência textual e «o Textus Receptus» não é um texto
+único. Idade e número de cópias são indícios, não critério: decide-se por
+evidência externa e interna, e diz-se o nível de certeza (A, B ou C).
+
+**Pontuação e maiúscula inicial.** Um versículo que continua a frase do anterior
+termina em vírgula (ou ponto e vírgula) e o seguinte começa em minúscula; um
+versículo que abre frase nova termina em ponto e o seguinte começa em maiúscula.
+Nunca minúscula depois de ponto, nunca maiúscula depois de vírgula, e nenhum
+versículo fica sem pontuação final.
+
+**SENHOR e Senhor.** As maiúsculas são do Tetragrama יהוה no texto hebraico. No
+grego do NT κύριος está escrito por extenso: escreve-se «Senhor». «O dia do
+SENHOR» em 2Ts 2:2 afirmava do texto grego algo que ele não diz; a ligação à
+fórmula profética (Jl 2:1; Am 5:18; Sf 1:14) pertence à nota.
+
+**Norma ortográfica.** Português europeu, sem oscilar: «connosco», «de facto»,
+«registo», «secção», «aspeto». Está em `modelos/estilo_bee.json` →
+`registro.ortografia` e chega a todos os provedores.
+
+**Colocação pronominal.** Ênclise, como o português europeu a faz: «metendo-se»,
+«admoestem-no», «gloria-se», «ouvindo-o». A próclise em início de oração («se
+metendo») é brasileira e está vetada. O gerúndio é a forma da casa para o
+particípio presente grego — os sete livros aprovados não têm uma única construção
+«estar a + infinitivo» em seu lugar.
+
+**Uniformidade só onde o grego é igual.** As fórmulas consolidadas repetem-se
+letra a letra entre livros **quando as bases coincidem**. Filemom 1:3 tem
+*πατρὸς ἡμῶν* e 2Ts 1:2 não tem: por isso a saudação de Filemom diz «Deus, nosso
+Pai» e a de 2 Tessalonicenses diz «Deus Pai». Uniformidade fabricada é
+infidelidade disfarçada de coerência.
+
+**πᾶς com e sem artigo — correção de 2026-11-20.** O artigo depois de «todo» no
+singular é obrigatório em português europeu e **não traduz o artigo grego**: «todo
+o desejo de bondade e toda a obra de fé» (2Ts 1:11), «todo o irmão» (2Ts 3:6),
+«toda a boa obra» (2Ts 2:17), «todo o homem» (João 1:9), «toda a iniquidade»
+(Tito 2:14). A distinção grega regista-se na Análise Léxica, não no artigo:
+*πᾶς* anártrico distribui (cada desejo, cada obra); *πᾶς* com artigo pode
+totalizar («todos os que creram», «todas as perseguições»). A redação anterior
+desta regra mandava suprimir o artigo para marcar o anártrico; foi revertida no
+mesmo dia, porque a distinção em que se apoiava («todo o desejo» = «o desejo
+inteiro») é do português do Brasil e não do europeu. Prova de língua, não de
+texto: a Almeida de 1911, impressa em Portugal e em domínio público, escreve
+«todo o desejo» e «todo o irmão» para grego anártrico, e a ARC brasileira escreve
+«todo desejo». «Com todo o poder» (2Ts 2:9) já seguia esta forma e deixa de ser
+exceção.
+
+**Famílias lexicais coerentes.** Uma família grega tem uma família portuguesa no
+livro inteiro: *ἀτακτ-* → «viver desordenadamente» nos vv. 6, 7 e 11 do capítulo 3;
+*ἀνομ-* → «rebelião»/«ímpio». E um só adversativo por frase: se o grego tem
+*καί* … *ἀλλά*, o *καί* é continuativo e o contraste fica todo no «mas».
+
+**Nota não inventa.** Nem etimologias, nem derivadas portuguesas que não existem,
+nem «todas as edições» quando se consultaram seis. E, acima de tudo, **a nota não
+pode contradizer o versículo**: se a nota regista que a base não tem uma palavra,
+o texto não a traduz. A passagem de lapidação de 2 Tessalonicenses — verso a
+verso, com a regra reutilizável de cada correção — está em
+[OFICINA_TRADUCAO.md](OFICINA_TRADUCAO.md).
+
+**Proveniência.** Cada livro declara em `bibliography` as fontes efetivamente
+consultadas, com revisão (commit), URL, licença e o que se consultou nelas; e em
+`review` os estados de revisão editorial e especializada, que nunca se confundem
+com cobertura. O acervo CNTR é CC BY-SA: é consultado e citado, nunca
+redistribuído — vive em `.bee-cache/`, fora do Git.
+
+**2 Tessalonicenses** foi o primeiro livro regenerado sob este protocolo
+(47 versículos, 30 unidades de variação decididas, duas de nível C) e o primeiro a
+levar uma passagem de lapidação completa: doze versículos e catorze notas revistos
+sobre a colação, mais duas aspas de citação reabertas em João 1:31 e 1:34, que o
+teste transversal de marcas apanhou. A redação é
+editorial, não saída de modelo, e o livro continua RASCUNHO: a voz da versão
+anterior tinha sido aprovada, esta redação ainda não foi lida pelo responsável.

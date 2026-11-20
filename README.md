@@ -22,6 +22,9 @@ MyBible `BEE.SQLite3` e `BEE.commentaries.SQLite3`.
 | [docs/AGENDADOR.md](docs/AGENDADOR.md) | Pôr a produção a correr sozinha (cron, relógio de segurança e pinger externo). |
 | [docs/ARQUITETURA.md](docs/ARQUITETURA.md) | Módulos, fluxo, formato dos JSON e compilação. |
 | [docs/EDITORIAL.md](docs/EDITORIAL.md) | Directrizes editoriais, variantes e revisão. |
+| [docs/CRITICA_TEXTUAL.md](docs/CRITICA_TEXTUAL.md) | Protocolo de crítica textual, manuscritologia, exegese, hermenêutica, geografia e arquivologia. |
+| [docs/OFICINA_TRADUCAO.md](docs/OFICINA_TRADUCAO.md) | Como decidir uma variante sem ser especialista, regras de ofício e o que rever. |
+| [docs/colacao/](docs/colacao/) | Relatórios de colação por livro: a evidência verificável de cada nota (`scripts/colar.py`). |
 | [AUTOMACAO.md](docs/AUTOMACAO.md) | Quotas gratuitas, provedores, ritmo e resolução de problemas. |
 | [EDICAO_NOVA.md](docs/EDICAO_NOVA.md) | Produzir na voz do ESTILO_BEE (`BEE_EDICAO=nova`) com dados isolados, sem ativar a automação. |
 | [PLANO_ORGANIZACAO.md](docs/PLANO_ORGANIZACAO.md) | Plano da reorganização, etapa por etapa. |

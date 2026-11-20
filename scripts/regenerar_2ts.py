@@ -1,0 +1,1576 @@
+#!/usr/bin/env python3
+"""Regenera 2 Tessalonicenses sob o protocolo de docs/CRITICA_TEXTUAL.md.
+
+Não é um gerador de IA: é o ficheiro de trabalho editorial. O texto e as notas
+abaixo foram redigidos a partir da base fixada (SBLGNT d7f35ad), do aparato
+SBLGNT, do Textus Receptus de Scrivener (6049a43) e da colação das testemunhas
+CNTR (4e743a4) produzida por ``scripts/colar.py --livro 600``. Cada afirmação de
+crítica textual corresponde a uma linha verificável de
+``docs/colacao/2_Tessalonicenses.json``.
+
+    python3 scripts/regenerar_2ts.py            # escreve o JSON do livro
+    python3 scripts/regenerar_2ts.py --verificar # valida sem escrever
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+import re
+import sys
+import unicodedata
+
+RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ))
+sys.path.insert(0, str(RAIZ / 'scripts'))
+
+from bee.arquivos import DadosInvalidos, validar_livro  # noqa: E402
+from bee.catalogo import POR_NUMERO  # noqa: E402
+from bee.fontes import ALINHAMENTO_VERSAO, SBL_COMMIT, TR_COMMIT  # noqa: E402
+from bee.inspetor import analisar_texto  # noqa: E402
+# A revisão do acervo CNTR é fixada num só sítio: o cabeçalho de scripts/colar.py.
+from colar import CNTR_REVISAO, CNTR_URL  # noqa: E402
+
+DADOS = RAIZ / 'edicoes' / 'nova' / 'livros_json'
+ALVO = DADOS / '600_2_Tessalonicenses.json'
+LIVRO = POR_NUMERO[600]
+
+GERADO_EM = '2026-11-20T00:40:00+00:00'
+# Provedor 'local' = redação editorial humana/assistida, não saída de um
+# modelo de IA: bee/metricas.py não a contabiliza como geração de provedor.
+MODELO_EDITORIAL = 'editorial:critica-textual'
+
+PROVENIENCIA_EDITORIAL = (
+    'Redação editorial (não é saída de modelo) feita sobre a base fixada '
+    '(SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener '
+    '(6049a43) e a colação das testemunhas CNTR (4e743a4) em '
+    'docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. '
+    'A voz da versão anterior foi aprovada pelo autor; esta redação ainda não '
+    'foi lida por ele, por isso continua RASCUNHO.'
+)
+
+# --------------------------------------------------------------------------
+# Capítulo 1 — vv. 1-12
+# --------------------------------------------------------------------------
+CAP1 = [
+    (1,
+     'Paulo, Silvano e Timóteo, à igreja dos tessalonicenses, em Deus, nosso Pai, e no '
+     'Senhor Jesus Cristo;',
+     '<p><b>Análise Léxica:</b> <i>Σιλουανός</i> (Silouanós) é a forma latinizada do '
+     'nome que Atos escreve <i>Σίλας</i> (Silas); a carta usa a forma mais solene, '
+     'como em 1 Pedro 5:12. <i>ἐκκλησία</i> (ekklēsia) designa a assembleia '
+     'convocada, não um edifício. A construção <i>ἐν θεῷ πατρὶ ἡμῶν καὶ κυρίῳ '
+     'Ἰησοῦ Χριστῷ</i> («em Deus, nosso Pai, e no Senhor Jesus Cristo») coordena '
+     'os dois nomes num só <i>ἐν</i>: a igreja não está «em» dois lugares, está em '
+     'Deus e em Cristo como uma só realidade. Sentido contextual, não verificado '
+     'em léxico (nenhum léxico está integrado ao projeto).</p>'
+     '<p><b>Crítica Textual:</b> Sem variante que mude o sentido. O Sinaiticus (01) '
+     'escreveu <i>ἐν θεῷ καὶ πατρὶ ἡμῶν</i> na mão original; uma mão posterior '
+     'apagou o <i>καί</i>, e o códice hoje coincide com a base. O Vaticanus (03) lê '
+     '<i>Σειλουανός</i>, <i>Τειμοθεος</i> e <i>Θεσσαλονεικέων</i> (itacismos de '
+     'escriba, não variantes de leitura); o Alexandrinus (02) tem <i>Θεσσαλονικέω</i> '
+     'no singular. Colação: docs/colacao/2_Tessalonicenses.json, 1:1.</p>'
+     '<p><b>Síntese Exegética:</b> A abertura é mais breve do que em outras cartas '
+     'paulinas: falta a autodescrição apostólica de Romanos ou de Tito 1:1. Os três '
+     'remetentes aparecem em pé de igualdade nominal, o que reforça o argumento do '
+     'capítulo 3 — a autoridade invocada não é só a de Paulo. A ausência de «nosso '
+     'Pai» depois de «Senhor Jesus Cristo» (que as edições bizantinas acrescentam em '
+     '1:2) mantém o paralelismo assimétrico da base.</p>'
+     '<p><b>Geografia e História:</b> Tessalónica era cidade da Macedónia, com '
+     'sinagoga judaica, segundo Atos 17:1-5. O tumulto descrito em Atos 17:5-9 e a '
+     'hospitalidade de Jasom situam a fundação da comunidade; a saída noturna para '
+     'Bereia (At 17:10) explica por que Paulo e Silas não voltaram à cidade. '
+     'Silvano e Timóteo são os dois companheiros que Atos 17:14-15 e 18:5 associam '
+     'a esta missão. A identificação de «Silvano» com «Silas» é inferência corrente '
+     'a partir do nome, não afirmação do texto.</p>'),
+    (2,
+     'Graça e paz a vocês, da parte de Deus Pai e do Senhor Jesus Cristo.',
+     '<p><b>Análise Léxica:</b> <i>χάρις</i> (cháris) substitui a saudação grega '
+     '<i>χαίρειν</i>, e <i>εἰρήνη</i> (eirēnē) traduz o hebraico <i>שָׁלוֹם</i> '
+     '(shalom): a fórmula une o cumprimento helénico e a bênção semita. '
+     '<i>ἀπό</i> com genitivo indica proveniência: a graça vem <i>de</i> Deus, não é '
+     'um desejo vazio.</p>'
+     '<p><b>Crítica Textual:</b> Unidade com decisão de texto. A base lê '
+     '<i>θεοῦ πατρὸς</i>, sem <i>ἡμῶν</i>; o aparato SBLGNT regista <i>+ ἡμῶν</i> '
+     'em Tregelles, RP e NA28, e <i>πατρὸς</i> sem ele em WH e NIV. Na colação, o '
+     'Sinaiticus (01) e o Alexandrinus (02) têm <i>ἡμῶν</i>; o Vaticanus (03) não o '
+     'tem, tal como WH; o Textus Receptus de Scrivener, Stephanus, KJTR, RP e SR '
+     'incluem-no. <b>Decisão: seguir a base</b> — «da parte de Deus Pai», sem '
+     '«nosso». O argumento transcricional aponta todo num sentido: o v. 1 desta carta '
+     'tem <i>πατρὶ ἡμῶν</i> na base, a fórmula paulina corrente é «Deus, nosso Pai», '
+     'e em 1 Tessalonicenses 1:1 o RP acrescenta a fórmula inteira a um texto que na '
+     'base só diz «graça e paz a vocês». Um escriba tinha várias razões para escrever '
+     '<i>ἡμῶν</i> aqui e nenhuma para o omitir; a leitura mais curta explica a mais '
+     'longa, não o contrário. <b>Nível de certeza B.</b></p>'
+     '<p><b>Síntese Exegética:</b> A saudação é próxima da de Filemom 1:3, mas não é '
+     'idêntica, e a diferença é instrutiva: na base de Filemom 1:3 a fórmula traz '
+     '<i>πατρὸς ἡμῶν</i>; aqui não traz. Por isso a fórmula consolidada da edição BEE '
+     'vale onde o grego a tem, e neste versículo a fidelidade à base vem antes da '
+     'uniformidade entre livros. O v. 1 já disse «nosso Pai»; repeti-lo aqui seria '
+     'acrescentar ao texto o que ele não repete.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «da parte de Deus, nosso '
+     'Pai», harmonizando com Filemom 1:3 e com o v. 1. O <i>ἡμῶν</i> não está na base '
+     'fixada, e a nota registava a divergência enquanto o texto a ignorava — '
+     'contradição entre nota e versículo, que é o pior dos dois erros. Retirado do '
+     'texto: uniformidade entre livros não é fidelidade ao texto de cada um.</p>'),
+    (3,
+     'Devemos dar sempre graças a Deus por vocês, irmãos, como é justo, porque a fé '
+     'que vocês têm está crescendo muito, e o amor de cada um de vocês pelos outros '
+     'transborda,',
+     '<p><b>Análise Léxica:</b> <i>ὀφείλομεν</i> (opheílomen) é dívida, não '
+     'cortesia: «somos devedores de dar graças». <i>ὑπεραυξάνει</i> (hypérauxánei) '
+     'é um composto intensivo raro — «cresce sobremaneira», «cresce em excesso»; a '
+     'tradução usa «está crescendo muito» para não importar o arcaísmo. '
+     '<i>πλεονάζει</i> (pleonázei) é o segundo verbo de crescimento, aplicado ao '
+     'amor. <i>ἑνὸς ἑκάστου πάντων ὑμῶν εἰς ἀλλήλους</i> («de cada um de todos '
+     'vocês uns para com os outros») é deliberadamente acumulativo: o amor não é '
+     'coletivo e abstrato, é de cada um para com os outros.</p>'
+     '<p><b>Crítica Textual:</b> O Sinaiticus (01) omite o segundo <i>ὑμῶν</i> (lê '
+     '<i>πάντων εἰς ἀλλήλους</i>) e escreve <i>ὀφίλομεν</i> por itacismo. Base e '
+     'Vaticanus mantêm <i>πάντων ὑμῶν</i>. Sem efeito de sentido.</p>'
+     '<p><b>Síntese Exegética:</b> A ação de graças abre o corpo da carta e fixa o '
+     'diagnóstico positivo: a comunidade cresce em fé e em amor mútuo sob '
+     'perseguição. O que Paulo corrigirá nos capítulos 2 e 3 não é a fé nem o amor, '
+     'mas uma expectativa escatológica mal informada e um comportamento '
+     'desordenado. Ler o capítulo 3 sem o versículo 3 converte uma correção pastoral '
+     'em condenação.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> <i>καθὼς ἄξιόν ἐστιν</i> («como é justo») '
+     'liga a ação de graças à justiça de Deus que domina 1:5-10: o mesmo vocabulário '
+     'de justiça (<i>ἄξιον</i>, <i>δίκαιον</i>, <i>δικαίας κρίσεως</i>) percorre o '
+     'parágrafo. Não é ornamento.</p>'),
+    (4,
+     'de maneira que nós mesmos nos gloriamos em vocês entre as igrejas de Deus, por '
+     'causa da perseverança e da fé de vocês em todas as perseguições e tribulações '
+     'que suportam.',
+     '<p><b>Análise Léxica:</b> <i>ἐγκαυχᾶσθαι</i> (enkauchásthai) é o composto de '
+     '<i>καυχάομαι</i> com <i>ἐν</i>: gabar-se <i>em</i> alguém. '
+     '<i>ὑπομονή</i> (hypomonē) é resistência ativa sob pressão, não passividade; a '
+     'tradução mantém «perseverança». <i>διωγμός</i> (diōgmós) é perseguição '
+     'movida contra alguém; <i>θλῖψις</i> (thlîpsis) é a pressão exercida — o '
+     'versículo usa os dois, e o v. 6 retoma o verbo correspondente.</p>'
+     '<p><b>Crítica Textual:</b> Duas divergências. (a) Ordem: a base lê <i>αὐτοὺς '
+     'ἡμᾶς</i>; RP, Stephanus, KJTR e Scrivener leem <i>ἡμᾶς αὐτοὺς</i> — '
+     'transposição sem efeito de sentido. (b) Verbo: a base tem o composto '
+     '<i>ἐγκαυχᾶσθαι</i>; RP, Stephanus, KJTR e Scrivener leem o simples '
+     '<i>καυχᾶσθαι</i>, e o Alexandrinus (02) e o Vaticanus (03) escrevem '
+     '<i>ἐνκαυχᾶσθαι</i> (grafia sem o gama). O Alexandrinus lê ainda '
+     '<i>ἀνέχεσθαι</i> (infinitivo) por <i>ἀνέχεσθε</i>. Nenhuma diferença muda a '
+     'tradução: «gloriamo-nos» serve o composto e o simples.</p>'
+     '<p><b>Síntese Exegética:</b> A consequência (<i>ὥστε</i>) é pública: a '
+     'resistência dos tessalonicenses tornou-se matéria de orgulho apostólico '
+     '<i>entre as igrejas</i>. O versículo inverte a lógica esperada — a '
+     'perseguição não é sinal de abandono, é sinal de que a fé e o amor do v. 3 são '
+     'reais. Note-se a preposição <i>ἐν</i> («em»): Paulo gloria-se <i>neles</i>, '
+     'não <i>deles</i> como de um troféu.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto não afirma que o sofrimento seja '
+     'bom em si, nem que Deus o envie para provar valor. Afirma que a perseverança '
+     'sob perseguição evidencia uma fé que cresce, e que essa evidência serve de '
+     'encorajamento a outras igrejas. Qualquer leitura que transforme o versículo em '
+     'promessa de recompensa por sofrimento vai além do que ele diz.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior dizia «a perseverança e a fé <i>que '
+     'vocês demonstram</i> em todas as perseguições»: «demonstram» não tem '
+     'correspondente no grego e entrava no texto sem itálico, contra a convenção de '
+     'docs/CRITICA_TEXTUAL.md §5.1. O genitivo <i>ὑμῶν</i> e o <i>ἐν</i> já dizem de '
+     'quem é a perseverança e onde ela se exerce; sem o verbo acrescentado o '
+     'versículo fica tão sóbrio como o original.</p>'),
+    (5,
+     '<i>Isso é</i> prova do justo juízo de Deus, para que vocês sejam considerados '
+     'dignos do reino de Deus, por causa do qual também padecem.',
+     '<p><b>Análise Léxica:</b> <i>ἔνδειγμα</i> (éndeigma) é sinal demonstrativo, '
+     'evidência que aponta para algo. <i>καταξιωθῆναι</i> (kataxiōthênai) é '
+     '<b>passiva</b> de <i>καταξιόω</i>: «serem considerados dignos», «serem tidos '
+     'por dignos». <i>ὑπὲρ ἧς</i> («por causa da qual») retoma <i>βασιλείας</i>, '
+     'não <i>κρίσεως</i>: é pelo reino que padecem.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante verificada entre base, testemunhas e '
+     'edições colacionadas. O Sinaiticus escreve <i>ἔνδιγμα</i> por itacismo.</p>'
+     '<p><b>Síntese Exegética:</b> A passiva importa: o texto não diz que os '
+     'tessalonicenses <i>se tornam</i> dignos pelo sofrimento, mas que <i>são '
+     'considerados</i> dignos — o agente da avaliação não é nomeado, e a tradução '
+     'não o acrescenta. O sofrimento funciona como <i>ἔνδειγμα</i> do justo juízo: '
+     'antecipa o juízo de 1:6-10 sem o substituir.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> Há duas leituras legítimas da ligação entre '
+     'os vv. 4 e 5: a perseguição é prova de que Deus julgará com justiça (e, '
+     'portanto, de que haverá compensação), ou é prova de que os perseguidos '
+     'pertencem ao reino. A gramática permite ambas; a tradução mantém a frase '
+     'aberta como o original e não escolhe por conta do leitor.</p>'
+     '<p><b>Nota de redação:</b> Duas correções. «Prova evidente» traduzia '
+     '<i>ἔνδειγμα</i> por «prova» e acrescentava-lhe «evidente», intensidade que o '
+     'grego não tem: fica «prova». E o sujeito e a cópula que o português exige — o '
+     'grego é um fragmento nominal — passam a ir em itálico, como já iam o '
+     '<i>dar</i> de 1:7 e o <i>continuará a fazê-lo</i> de 2:7. Regra: verbo ou '
+     'oração suprida vai em itálico; artigo e pronome meramente gramaticais, '
+     'não.</p>'),
+    (6,
+     'Visto que é justo diante de Deus retribuir com tribulação aos que atribulam '
+     'vocês,',
+     '<p><b>Análise Léxica:</b> <i>εἴπερ</i> (eíper) introduz uma condição tida '
+     'como real: «visto que», «se é que de facto» — não uma dúvida. '
+     '<i>ἀνταποδοῦναι</i> (antapodoûnai) é retribuir na mesma moeda: o prefixo '
+     '<i>ἀντι-</i> marca correspondência. O versículo constrói um poliptoto com a '
+     'mesma raiz: <i>τοῖς θλίβουσιν ὑμᾶς θλῖψιν</i>, literalmente «aos que '
+     'atribulam vocês, tribulação». A tradução conserva o jogo com «retribuir com '
+     'tribulação aos que atribulam vocês».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante verificada. O Alexandrinus (02) '
+     'acrescenta <i>τῷ</i>; o Sinaiticus e o Vaticanus apresentam itacismos '
+     '(<i>θλιβουσι</i>, <i>θλειβουσιν</i>).</p>'
+     '<p><b>Síntese Exegética:</b> É a primeira metade de uma frase que só termina no '
+     'v. 10: a retribuição tem dois lados, tribulação para os que atribulam (vv. '
+     '6-9) e alívio para os atribulados (v. 7). Separar os versículos em sentenças '
+     'independentes desfaz a antítese. O juízo é apresentado como <i>justo</i> '
+     '(<i>δίκαιον παρὰ θεῷ</i>), o que o distingue de vingança privada: é Deus quem '
+     'retribui.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto <b>não</b> autoriza o leitor a '
+     'desejar nem a provocar o mal dos perseguidores, e não nomeia quem são eles. '
+     'A linguagem é de teofania e juízo divino (cf. Is 66:6; Sl 94:1-2), não um '
+     'programa de ação humana. Confundir o versículo com imprecação pessoal é ler '
+     'contra o argumento: quem age é Deus, no tempo dele (v. 7).</p>'),
+    (7,
+     'e, a vocês que sofrem tribulação, <i>dar</i> alívio connosco, quando o Senhor '
+     'Jesus se revelar do céu com os anjos do seu poder,',
+     '<p><b>Análise Léxica:</b> <i>ἄνεσις</i> (ánesis) é afrouxamento da pressão, '
+     'descanso, alívio — o contrário exato de <i>θλῖψις</i>, que vem da ideia de '
+     'espremer. <i>ἀποκάλυψις</i> (apokálypsis) é descobrimento, tirar o véu: não é '
+     'sinónimo de «segunda vinda», é o momento em que o que já existe se torna '
+     'visível. <i>μετʼ ἀγγέλων δυνάμεως αὐτοῦ</i> («com anjos do poder dele») é '
+     'genitivo de qualidade.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante que mude o sentido. O Sinaiticus (01) '
+     'lê <i>ὑμῶν</i> por <i>ἡμῶν</i> («alívio com vocês» em vez de «connosco»); o '
+     'Vaticanus tem itacismo em <i>θλιβομένοις</i>.</p>'
+     '<p><b>Síntese Exegética:</b> O verbo está subentendido desde o v. 6 '
+     '(<i>ἀνταποδοῦναι</i>); a tradução assinala o acréscimo com itálico porque o '
+     'português não sustenta a elipse. O <i>μεθʼ ἡμῶν</i> («connosco») é decisivo: o '
+     'alívio não é individual, é partilhado com os apóstolos — quem persegue e quem é '
+     'perseguido ficam diante do mesmo acontecimento, com desfechos opostos.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A cena é teofania: céu, anjos, fogo (v. 8), '
+     'glória (v. 9). É linguagem de Salmo 50:3, Isaías 66:15 e Daniel 7:9-10, não '
+     'descrição jornalística. A reserva hermenêutica aqui é dupla: não converter a '
+     'imagem em cronograma, e não extrair do «alívio» a promessa de que a '
+     'perseguição terminará antes daquele dia — o texto diz exatamente o '
+     'contrário.</p>'),
+    (8,
+     'em chama de fogo, dando retribuição aos que não conhecem a Deus e aos que não '
+     'obedecem ao evangelho do nosso Senhor Jesus,',
+     '<p><b>Análise Léxica:</b> <i>ἐκδίκησις</i> (ekdíkēsis) é fazer justiça a '
+     'alguém, e daí vingança legítima; não é <i>ὀργή</i> (ira) nem sadismo. '
+     '<i>τοῖς μὴ εἰδόσι θεόν</i> («aos que não conhecem a Deus») usa o perfeito de '
+     '<i>οἶδα</i> com valor de estado: não conhecer por não ter chegado a conhecer. '
+     '<i>ὑπακούω</i> com dativo é obedecer a, ouvir sob autoridade.</p>'
+     '<p><b>Crítica Textual:</b> Duas unidades. (a) <i>ἐν φλογὶ πυρός</i> (base, com '
+     'Tregelles) / <i>ἐν πυρὶ φλογός</i> (WH, NA28, RP, Stephanus, KJTR, SR e '
+     'Scrivener). Na colação, <b>apenas o Vaticanus (03)</b> sustenta a ordem da '
+     'base; o Sinaiticus e o Alexandrinus leem <i>πυρὶ φλογός</i>. A BEE traduz a '
+     'base fixada e regista que aqui ela se apoia numa única testemunha antiga: é '
+     'decisão da edição, não nossa, e a ordem não muda o sentido («chama de fogo» / '
+     '«fogo em chama»). (b) A base termina em <i>τοῦ κυρίου ἡμῶν Ἰησοῦ</i>; '
+     'Sinaiticus, Alexandrinus, Stephanus, KJTR, SR e Scrivener acrescentam '
+     '<i>Χριστοῦ</i>. Expansão litúrgica habitual; a base é mais curta.</p>'
+     '<p><b>Síntese Exegética:</b> Os dois grupos descritos podem coincidir: quem '
+     'não conhece a Deus é quem não obedece ao evangelho. O paralelismo hebraico '
+     'sugere leitura complementar, não duas categorias estanques. O fogo pertence à '
+     'cena de teofania iniciada no v. 7 (cf. Is 66:15), e o v. 9 define o conteúdo '
+     'da pena: afastamento da presença do Senhor.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> «Não conhecer a Deus» não é aqui ignorância '
+     'involuntária nem falta de informação: no argumento, é a mesma recusa que o '
+     'capítulo 2 descreve como não acolher o amor da verdade (2:10). Aplicar o '
+     'versículo a quem nunca ouviu o evangelho é forçar o texto. O versículo também '
+     'não descreve a natureza do castigo; descreve quem o aplica e a que se opõe.</p>'),
+    (9,
+     'os quais sofrerão a pena de destruição eterna, afastados da presença do Senhor '
+     'e da sua glória poderosa,',
+     '<p><b>Análise Léxica:</b> <i>δίκην τίσουσιν</i> (díkhen tísousin) é fórmula '
+     'jurídica: pagar a pena. <i>ὄλεθρος</i> (ólethros) é ruína, destruição — não '
+     '<i>ἀνυπαρξία</i> (inexistência) nem <i>βασανισμός</i> (tormento); o texto '
+     'nomeia o resultado, não o mecanismo. <i>αἰώνιος</i> (aiṓnios) qualifica a '
+     'duração. <i>ἀπὸ προσώπου τοῦ κυρίου</i> («da face do Senhor») usa '
+     '<i>πρόσωπον</i> no sentido hebraico de presença. <i>δόξης τῆς ἰσχύος '
+     'αὐτοῦ</i> é cadeia de genitivos: «a glória da força dele».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante verificada entre as edições '
+     'colacionadas. O Alexandrinus (02) lê <i>ὄλεθριον</i> em vez de '
+     '<i>ὄλεθρον</i> — forma adjetival rara, atestada só por esta testemunha na '
+     'nossa colação; o Vaticanus tem itacismo em <i>τίσουσιν</i>.</p>'
+     '<p><b>Síntese Exegética:</b> A pena é definida por duas preposições '
+     '<i>ἀπό</i>: separação da presença do Senhor e da glória do seu poder. É o '
+     'inverso exato do v. 10, onde Cristo é glorificado <i>entre</i> os seus. A '
+     'tradução diz «da sua glória poderosa» em vez de «da glória da sua força» para '
+     'desfazer a cadeia de genitivos sem alterar o conteúdo; a forma literal fica '
+     'aqui registada.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O versículo descreve; não sistematiza. Não '
+     'afirma aniquilação (a separação pressupõe alguém separado), nem descreve '
+     'sofrimento consciente em detalhe, nem fixa uma doutrina do inferno — ecoa a '
+     'linguagem de Isaías 2:10-21 sobre a presença do Senhor. Leituras '
+     'condicionalistas, eternalistas e aniquilacionistas discutem este texto há '
+     'séculos; a BEE mantém a imagem do original e não resolve o debate na '
+     'tradução.</p>'
+     '<p><b>Nota de redação:</b> O versículo começa por <i>οἵτινες</i>, relativo '
+     'plural: são os mesmos do v. 8, não um sujeito novo. A versão anterior fechava o '
+     'v. 8 com ponto e abria este com «Eles sofrerão», apagando a subordinação; a '
+     'aprovada em 19/11 escrevia «Os quais», com maiúscula depois de ponto. Fica o '
+     'melhor dos dois: vírgula no fim do v. 8 e relativa em minúscula, «os quais '
+     'sofrerão», que conserva o <i>οἵτινες</i> sem soar a Almeida.</p>'),
+    (10,
+     'quando ele vier, naquele dia, para ser glorificado entre os seus santos e '
+     'admirado por todos os que creram, pois o nosso testemunho foi crido entre '
+     'vocês.',
+     '<p><b>Análise Léxica:</b> <i>ἐνδοξασθῆναι</i> (endoxasthênai) e '
+     '<i>θαυμασθῆναι</i> (thaumasthênai) são ambos <b>passivos</b> aoristos: ser '
+     'glorificado, ser admirado. <i>ἅγιος</i> (hágios) é separado para Deus; aqui '
+     'designa os que pertencem a ele, sem implicar perfeição moral alcançada. '
+     '<i>πιστεύσασιν</i> é aoristo — o ato de ter crido. <i>ἐπιστεύθη τὸ '
+     'μαρτύριον</i> («o testemunho foi crido») é passivo de novo: a fé dos '
+     'destinatários é resposta a um testemunho que lhes chegou.</p>'
+     '<p><b>Crítica Textual:</b> A base lê o aoristo <i>πιστεύσασιν</i> («os que '
+     'creram»); Stephanus, KJTR e o Textus Receptus de Scrivener leem o presente '
+     '<i>πιστεύουσιν</i> («os que creem»). Note-se que <b>RP (Robinson–Pierpont) '
+     'não</b> acompanha Scrivener aqui: a tradição bizantina não é um texto único. '
+     'A base e a generalidade das testemunhas antigas (01, 02, 03) apoiam o '
+     'aoristo, que a tradução segue.</p>'
+     '<p><b>Síntese Exegética:</b> O versículo fecha a frase longa iniciada no v. 6 e '
+     'inverte o quadro dos vv. 8-9: os mesmos «santos» que agora padecem serão o '
+     'lugar onde Cristo é glorificado. <i>ἐν πᾶσιν τοῖς πιστεύσασιν</i> alarga o '
+     'círculo para além de Tessalónica — todos os que creram, e não só eles. A '
+     'última cláusula explica por que os tessalonicenses estão incluídos: o '
+     'testemunho apostólico foi crido entre eles.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A diferença entre «os que creram» (aoristo) '
+     'e «os que creem» (presente) é de aspeto, não de doutrina: o aoristo olha para '
+     'o ato de fé que os constituiu crentes, o presente para o estado contínuo. '
+     'Nenhum dos dois restringe a salvação a um momento nem a um processo. A '
+     'tradução mantém o aspeto da base e a nota regista a alternativa.</p>'),
+    (11,
+     'Por isso também oramos sempre por vocês, para que o nosso Deus os considere '
+     'dignos da vocação e cumpra, com poder, todo o desejo de bondade e toda a obra '
+     'de fé,',
+     '<p><b>Análise Léxica:</b> <i>εἰς ὃ</i> («para o que», «por isso») retoma o '
+     'destino descrito no v. 5. <i>ἀξιώσῃ</i> (axiṓsē) é aqui <b>ativo</b> — Deus '
+     'é o agente nomeado, ao contrário da passiva de 1:5. <i>κλῆσις</i> (klêsis) é '
+     'chamamento, vocação. <i>εὐδοκία ἀγαθωσύνης</i> («todo o desejo de bondade») e '
+     '<i>ἔργον πίστεως</i> («toda a obra de fé») são dois genitivos que a tradução '
+     'mantém distintos. <i>πληρώσῃ</i> é completar, levar a cumprimento. Os dois '
+     '<i>πᾶν</i> são anártricos e distribuem: cada desejo, cada obra. O artigo que o '
+     'português lhes acrescenta é da gramática europeia e não traduz artigo grego '
+     'nenhum — a Almeida impressa em Portugal em 1911 escreve «todo o desejo» '
+     'exatamente aqui, onde o grego não tem artigo, e a brasileira escreve «todo '
+     'desejo». É a mesma razão de «toda a boa obra» em 2:17 e de «todo o irmão» em '
+     '3:6.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante verificada. O Alexandrinus (02) lê '
+     '<i>πληρώσει</i> (futuro) por <i>πληρώσῃ</i> (subjuntivo) — diferença de modo '
+     'que a subordinada <i>ἵνα</i> exige; não é variante de conteúdo.</p>'
+     '<p><b>Síntese Exegética:</b> A oração de Paulo não pede o fim da perseguição: '
+     'pede que Deus complete neles o que já começou. A sequência é a mesma do v. 3 — '
+     'bondade desejada e fé que obra — e o <i>ἐν δυνάμει</i> («com poder») mostra '
+     'que o cumprimento é obra divina, não esforço humano. É a resposta pastoral à '
+     'tensão dos vv. 5-10: se Deus julga com justiça, os que padecem podem pedir que '
+     'ele complete a sua obra.</p>'
+     '<p><b>Nota de redação:</b> A redação de 2026-11-20 de manhã escrevia «todo '
+     'desejo de bondade e toda obra de fé», sem artigo, para marcar o anártrico '
+     'grego. A decisão foi revertida no mesmo dia, por duas razões. Primeira: o '
+     'artigo depois de <i>todo</i> no singular é obrigatório no português europeu e '
+     'não traduz o artigo grego — é gramática, não exegese; suprimi-lo importava uma '
+     'intuição do português do Brasil, onde «todo o desejo» se lê como «o desejo '
+     'inteiro». Segunda: a evidência de língua está ao alcance do responsável — a '
+     'Almeida de 1911, impressa em Portugal e em domínio público, escreve «todo o '
+     'desejo» e «todo o irmão» (3:6) para grego anártrico, e a ARC brasileira escreve '
+     '«todo desejo». O facto grego passa a estar registado na nota, que é onde o '
+     'leitor o pode verificar. Ver <i>docs/ESTILO_BEE.md</i>, πᾶς com e sem '
+     'artigo.</p>'),
+    (12,
+     'para que o nome do nosso Senhor Jesus seja glorificado em vocês, e vocês nele, '
+     'segundo a graça do nosso Deus e do Senhor Jesus Cristo.',
+     '<p><b>Análise Léxica:</b> <i>ὅπως</i> introduz a finalidade da oração do v. '
+     '11. <i>ἐνδοξασθῇ</i> retoma o verbo do v. 10, agora aplicado ao <b>nome</b>. '
+     '<i>κατὰ τὴν χάριν</i> («segundo a graça») é a base de tudo: a glorificação '
+     'mútua não é conquista, é graça.</p>'
+     '<p><b>Crítica Textual:</b> A base lê <i>τοῦ κυρίου ἡμῶν Ἰησοῦ</i> sem '
+     '<i>Χριστοῦ</i>; Stephanus, KJTR e Scrivener acrescentam <i>Χριστοῦ</i>. O '
+     'Alexandrinus (02) lê <i>καὶ ἡμεῖς ἐν αὐτῷ</i> («e nós nele») em vez de '
+     '<i>καὶ ὑμεῖς</i> («e vocês nele») — mudança de pessoa, registada por não '
+     'alterar a estrutura da frase. O P92 conserva o fim do versículo com lacuna e '
+     'texto suprido.</p>'
+     '<p><b>Síntese Exegética:</b> A segunda metade é <b>elíptica</b>: <i>καὶ ὑμεῖς '
+     'ἐν αὐτῷ</i> («e vocês nele») não tem verbo, que se subentende do primeiro '
+     'membro — sejam glorificados. A tradução conserva a elipse («e vocês nele») em '
+     'vez de completá-la, porque completar é escolher uma leitura. A reciprocidade é '
+     'o ponto: o nome é glorificado nos crentes e os crentes nele.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior deste versículo trazia «e que '
+     'vocês nele», que em português não fecha a frase e soava a gralha. A elipse foi '
+     'reposta sem o «que».</p>'),
+]
+
+
+# --------------------------------------------------------------------------
+# Capítulo 2 — vv. 1-17
+# --------------------------------------------------------------------------
+CAP2 = [
+    (1,
+     'Pedimos a vocês, irmãos, a respeito da vinda do nosso Senhor Jesus Cristo e da '
+     'nossa reunião com ele,',
+     '<p><b>Análise Léxica:</b> <i>ἐρωτάω</i> (erōtáō) é pedir com insistência, '
+     'mais forte que o simples <i>αἰτέω</i>; no grego helenístico aproxima-se de '
+     '«rogar». <i>παρουσία</i> (parousía) é presença e, por extensão técnica, a '
+     'vinda de um soberano — no NT, a vinda de Cristo. <i>ἐπισυναγωγή</i> '
+     '(episynagōgḗ) é reunião para junto de alguém, hapax no NT com este sentido; a '
+     'preposição <i>ἐπί</i> indica o ponto de encontro: «reunião com ele».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) tem o '
+     'início do versículo danificado na mão original; a palavra <i>ἐρωτῶμεν</i> é '
+     'restituída pela transcrição, pelo que esta testemunha não pode ser citada como '
+     'legível na primeira palavra. O Vaticanus (03) omite o primeiro <i>ἡμῶν</i>; o '
+     'Alexandrinus (02) escreve <i>ἡμῶς</i> e <i>αὐτό</i>.</p>'
+     '<p><b>Síntese Exegética:</b> O versículo abre a secção e só se completa no v. 2: '
+     '«pedimos… que não se deixem abalar». Os dois temas anunciados — a '
+     '<i>παρουσία</i> e a <i>ἐπισυναγωγή</i> — são o assunto do capítulo inteiro. A '
+     'ordem importa: primeiro a vinda do Senhor, depois a reunião dos crentes com '
+     'ele; a reunião é consequência, não evento autónomo.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior começava por «Irmãos, a respeito '
+     'da vinda…», deslocando o vocativo. A ordem grega põe o pedido primeiro '
+     '(<i>Ἐρωτῶμεν δὲ ὑμᾶς, ἀδελφοί</i>) e foi reposta.</p>'),
+    (2,
+     'que não se deixem abalar tão depressa no entendimento nem se assustem, seja por '
+     'espírito, seja por palavra, seja por carta que pareça vir de nós, como se o dia '
+     'do Senhor já tivesse chegado.',
+     '<p><b>Análise Léxica:</b> <i>σαλευθῆναι ἀπὸ τοῦ νοός</i> é imagem náutica ou '
+     'de edifício: ser sacudido <b>para fora</b> do entendimento, perder a firmeza '
+     'mental. <i>θροέομαι</i> (thréomai) é ser alarmado, ficar perturbado — no NT '
+     'aparece em contextos escatológicos (Mt 24:6; Mc 13:7). <i>ὡς διʼ ἡμῶν</i> '
+     '(«como se por meio de nós») aponta para uma autoridade apostólica falsamente '
+     'invocada. <i>ἐνέστηκεν</i> é <b>perfeito</b> de <i>ἐνίστημι</i>: estar já '
+     'instalado, ter chegado e permanecer.</p>'
+     '<p><b>Crítica Textual:</b> Duas unidades. (a) <i>μηδὲ</i> (base, WH, NA28) / '
+     '<i>μήτε</i> (RP, Stephanus, KJTR, Scrivener): conjunções equivalentes, sem '
+     'efeito de sentido. (b) <b><i>τῆς ἡμέρας τοῦ κυρίου</i></b> (base) / '
+     '<i>τοῦ Χριστοῦ</i> (RP, Stephanus, KJTR, Scrivener). Na colação, Sinaiticus, '
+     'Alexandrinus e Vaticanus apoiam <i>κυρίου</i>, e o P30 não conserva o '
+     'versículo. A base é bem atestada; a leitura «o dia de Cristo» é característica '
+     'da tradição bizantina. Decisão: seguir a base, «o dia do Senhor».</p>'
+     '<p><b>Síntese Exegética:</b> O problema concreto da carta está aqui: alguém '
+     'afirmava que o dia do Senhor <b>já tinha chegado</b>, e a afirmação circulava '
+     'por três canais — espírito (manifestação profética), palavra (pregação oral) e '
+     'carta falsamente atribuída a Paulo. Os três canais estão em pé de igualdade na '
+     'negação: nenhum deles autentica a alegação. O perfeito <i>ἐνέστηκεν</i> '
+     'indica que se dizia que o dia já estava em curso, não que estava iminente.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A fórmula «o dia do Senhor» vem do AT '
+     '(Jl 2:1; Am 5:18; Sf 1:14; Is 2:12), onde é dia de juízo e não de festa. No '
+     'grego do NT κύριος está escrito por extenso: <b>não há Tetragrama</b>, e por '
+     'isso a BEE escreve «Senhor» e não «SENHOR» — as maiúsculas estão reservadas a '
+     'יהוה no texto hebraico. A versão anterior trazia «o dia do SENHOR», o que '
+     'afirmava sobre o texto grego algo que ele não diz. A ligação com a fórmula '
+     'profética é real e pertence aqui.</p>'),
+    (3,
+     'Não deixem que ninguém os engane de modo algum, porque <i>esse dia não virá</i> '
+     'sem que antes venha a apostasia e seja revelado o homem da rebelião, o filho da '
+     'ruína,',
+     '<p><b>Análise Léxica:</b> <i>ἐξαπατάω</i> (exapatáō) é enganar '
+     'completamente, verbo mais forte que <i>ἀπατάω</i>. <i>ἀποστασία</i> '
+     '(apostasía) é afastamento, revolta, abandono de uma posição assumida — deu o '
+     'português «apostasia». <i>ἀνομία</i> (anomía) é ausência de lei, rebeldia; a '
+     'BEE traduz por «rebelião» para evitar tanto o arcaísmo «iniquidade» como o '
+     'calque «o sem lei». <i>ἀπώλεια</i> (apṓleia) é ruína, destruição, perdição; '
+     'a BEE glosa por «ruína». <i>υἱὸς τῆς ἀπωλείας</i> é hebraísmo '
+     '(<i>ben-</i>): «filho de» diz carácter e destino, não filiação biológica — '
+     'caracterizado pela ruína e a ela destinado. A mesma expressão identifica Judas '
+     'em Jo 17:12.</p>'
+     '<p><b>Crítica Textual:</b> <b><i>ὁ ἄνθρωπος τῆς ἀνομίας</i></b> (base, WH, '
+     'NA28) / <i>τῆς ἁμαρτίας</i> (RP, Stephanus, KJTR, Scrivener). Na colação, o '
+     'Alexandrinus (02) apoia <i>ἁμαρτίας</i>; o Sinaiticus (01) e o Vaticanus (03) '
+     'apoiam <i>ἀνομίας</i>. As duas leituras são antigas; a base segue '
+     '<i>ἀνομίας</i>, que o contexto confirma — a família <i>ἀνομ-</i> percorre o '
+     'parágrafo (<i>ἄνομος</i> no v. 8, <i>ἀνομία</i> no v. 7). Decisão: seguir a '
+     'base; «homem do pecado» fica registado aqui como leitura bizantina.</p>'
+     '<p><b>Síntese Exegética:</b> A construção <i>ὅτι ἐὰν μὴ ἔλθῃ…</i> depende de '
+     'uma cláusula principal subentendida desde o v. 2: o dia não vem sem que isto '
+     'aconteça primeiro. A tradução assinala o suprimento com itálico, porque é '
+     'exigido pelo português e não está escrito no grego. Os dois sinais são '
+     'sequenciais e anteriores: a apostasia e a revelação do homem da rebelião. '
+     '<i>πρῶτον</i> («primeiro») é o eixo: qualquer alegação de que o dia já chegou '
+     'é refutada pela ausência destes sinais.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A «apostasia» não é definida no texto: pode '
+     'ser revolta contra a fé, abandono em massa, ou rebelião contra Deus em sentido '
+     'amplo. A tradução mantém a palavra transliterada em vez de escolher. O versículo '
+     'não fornece um cronograma e não identifica o homem da rebelião com nenhuma '
+     'figura histórica nomeada; qualquer identificação é leitura posterior, não '
+     'sentido do texto.</p>'
+     '<p><b>Nota de redação:</b> A forma consagrada «o filho da perdição» está vetada '
+     'pela memória de estilo (corrente de genitivos à Almeida) e foi substituída por '
+     '«o filho da ruína», que conserva <i>υἱός</i> como título e glosa '
+     '<i>ἀπώλεια</i> por «ruína». As alternativas ponderadas («destinado à '
+     'perdição», «que vai para a ruína») perdem o estatuto de título ou '
+     'acrescentam determinismo que o genitivo hebraico não afirma. A decisão está '
+     'registada em docs/CRITICA_TEXTUAL.md e em modelos/estilo_bee.json.</p>'),
+    (4,
+     'que se opõe e se exalta acima de tudo o que se chama deus ou objeto de culto, a '
+     'ponto de se assentar no templo de Deus, proclamando-se deus.',
+     '<p><b>Análise Léxica:</b> <i>ἀντικείμενος</i> (antikeímenos) é particípia '
+     'perfeita com valor de substantivo: o que está posto contra, o adversário. '
+     '<i>ὑπεραιρόμενος</i> (hyperairómenos) é elevar-se acima de. <i>σέβασμα</i> '
+     '(sébasma) é objeto de reverência ou de culto — templo, imagem, altar; a '
+     'tradução usa «objeto de culto». <i>ναός</i> (naós) é o santuário propriamente '
+     'dito, não o recinto (<i>ἱερόν</i>). <i>ἀποδεικνύντα ἑαυτὸν ὅτι ἔστιν '
+     'θεός</i> é «apresentando-se a si mesmo como sendo Deus».</p>'
+     '<p><b>Crítica Textual:</b> A base não tem <i>ὡς θεόν</i> antes de '
+     '<i>καθίσαι</i>; RP, Stephanus, KJTR e Scrivener acrescentam «como Deus», e o '
+     'Scrivener lê ainda <i>ἐπὶ πᾶν τὸ λεγόμενον</i> por <i>ἐπὶ πάντα</i>. A '
+     'adição é redundante: o versículo já termina com <i>ἀποδεικνύντα ἑαυτὸν ὅτι '
+     'ἔστιν θεός</i>. Decisão: seguir a base, mais curta. O Sinaiticus (01) é aqui '
+     'um caso de três camadas: a mão original omitiu <i>καὶ ὑπεραιρόμενος</i>; a '
+     'camada seguinte escreveu <i>ϗ ὑπεραμενος</i> (com itacismo); o corretor a '
+     'escreveu <i>ϗ ὑπεραιρόμενος</i>, coincidindo com a base.</p>'
+     '<p><b>Síntese Exegética:</b> O movimento é de oposição → autoexaltação → '
+     'entronização. O alvo é «tudo o que se chama deus ou objeto de culto», ou seja, '
+     'não apenas o Deus de Israel: a figura põe-se acima de qualquer objeto de '
+     'reverência. O <i>ὥστε</i> («de modo que», «a ponto de») marca consequência '
+     'extrema. Sentar-se no santuário é gesto de entronização, não de simples '
+     'presença.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> «O templo de Deus» <b>não é identificado</b> '
+     'pelo texto. As leituras principais — o templo de Jerusalém, um templo '
+     'escatológico, a comunidade como templo (cf. 1 Co 3:16), ou linguagem figurada '
+     'de autoentronização — são todas posteriores ao texto. A tradução não localiza, '
+     'não escolhe e não acrescenta artigo ou possessivo que decidam a questão. '
+     'O fundo provável é Daniel 11:36 e Isaías 14:13-14; a nota regista o eco sem o '
+     'converter em identificação.</p>'
+     '<p><b>Nota de redação:</b> O versículo não abre frase nova: no grego, '
+     '<i>ὁ ἀντικείμενος καὶ ὑπεραιρόμενος</i> são particípios com artigo que '
+     'continuam a caracterizar «o homem da rebelião» de 2:3, e por isso a tradução '
+     'usa a relativa «que se opõe…». Dar-lhe sujeito próprio («Ele se opõe…») '
+     'transformaria uma caracterização subordinada em afirmação autónoma e '
+     'quebraria a sequência 2:3-4.</p>'),
+    (5,
+     'Não se lembram de que, quando eu ainda estava com vocês, já lhes dizia estas '
+     'coisas?',
+     '<p><b>Análise Léxica:</b> <i>μνημονεύετε</i> (mnēmoneúete) é lembrar-se de, '
+     'ter na memória; a pergunta espera resposta afirmativa. <i>ἔτι ὢν πρὸς ὑμᾶς</i> '
+     '(«estando ainda com vocês») é particípio presente com <i>ἔτι</i>. '
+     '<i>ταῦτα ἔλεγον</i> usa imperfeito de <i>λέγω</i> no plural: «eu dizia '
+     'repetidamente» — o plural pode ser plural de majestade, plural autoral (os três '
+     'remetentes) ou plural deliberado.</p>'
+     '<p><b>Crítica Textual:</b> O Alexandrinus (02) lê <i>μνημονεύεται</i> e '
+     '<i>ὑμῖν</i> por <i>ὑμῖν</i> com formas abreviadas; sem variante de conteúdo '
+     'entre base e edições colacionadas.</p>'
+     '<p><b>Síntese Exegética:</b> Este versículo é a chave hermenêutica do '
+     'parágrafo: o ensino sobre o homem da rebelião não é novidade revelada agora, é '
+     'repetição do que Paulo já tinha dito presencialmente. Isso tem duas '
+     'consequências: (a) a comunidade não deveria ter sido apanhada de surpresa pela '
+     'alegação do v. 2; (b) o que lemos é um resumo de um ensino oral mais amplo, '
+     'não o ensino completo. A carta pressupõe mais do que diz.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O <i>ἔλεγον</i> plural na boca de um só '
+     'autor é indício de que os três remetentes do v. 1 se entendem como uma só voz. '
+     'Não é argumento para coautoria literária, mas confirma a autoridade conjunta '
+     'invocada contra a «carta que pareça vir de nós» (v. 2) e a assinatura de '
+     '3:17.</p>'),
+    (6,
+     'E agora vocês sabem o que o detém, para que ele seja revelado no seu próprio '
+     'tempo.',
+     '<p><b>Análise Léxica:</b> <i>τὸ κατέχον</i> é particípio presente '
+     '<b>neutro</b> substantivado com artigo: «o que detém», «aquilo que retém». '
+     '<i>κατέχω</i> é segurar com força, reter, impedir. <i>οἴδατε</i> é perfeito '
+     'com valor de presente: «vocês sabem». <i>καιρός</i> (kairós) é o momento '
+     'oportuno e determinado, distinto de <i>χρόνος</i> (tempo corrido).</p>'
+     '<p><b>Crítica Textual:</b> <i>ἐν τῷ ἑαυτοῦ καιρῷ</i> (base, NA28, RP) / '
+     '<i>αὐτοῦ</i> (WH, Tregelles, SR). Na colação, Sinaiticus e Alexandrinus leem '
+     '<i>αὐτοῦ</i>; a diferença é de pronome reflexivo ou possessivo e não muda o '
+     'referente (o tempo dele). O Sinaiticus apresenta ainda uma forma própria, '
+     '<i>τὸ κατέχω οἴδαται</i>, com abreviatura por barra: a leitura exata desta '
+     'testemunha aqui fica <b>por verificar</b> e não é usada para decidir.</p>'
+     '<p><b>Síntese Exegética:</b> O <b>neutro</b> <i>τὸ κατέχον</i> é decisivo e a '
+     'tradução preserva-o: «o que o detém», não «quem o detém». O v. 7 passa ao '
+     '<b>masculino</b> <i>ὁ κατέχων</i> («aquele que o detém»). A alternância está '
+     'no texto e é o motivo pelo qual a identidade do detentor continua em debate: '
+     'uma força neutra e uma pessoa masculina são nomeadas sem explicação. O '
+     '<i>εἰς τὸ ἀποκαλυφθῆναι αὐτόν</i> exprime finalidade ou resultado: a detenção '
+     'existe até ao momento fixado para a revelação.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A BEE não identifica o detentor. As leituras '
+     'legítimas em discussão incluem o império e o imperador romanos, o Espírito '
+     'Santo, o evangelho e a sua pregação, um anjo, a autoridade civil em geral '
+     '(cf. Rm 13:1-7) e uma figura escatológica ainda não revelada. Neutralizar o '
+     'neutro/masculino na tradução seria escolher uma delas à revelia do leitor; '
+     'por isso a tradução reproduz a distinção e a lista fica aqui. O texto afirma '
+     'que a revelação tem um tempo determinado por Deus (<i>ἑαυτοῦ καιρῷ</i>), o '
+     'que basta para refutar a alegação do v. 2.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior traduzia <i>τὸ κατέχον</i> por '
+     '«quem o detém», apagando o neutro do original.</p>'),
+    (7,
+     'Pois o mistério da rebelião já está em ação. Somente aquele que agora o detém '
+     '<i>continuará a fazê-lo</i> até ser afastado.',
+     '<p><b>Análise Léxica:</b> <i>μυστήριον</i> (mystḗrion) no NT não é enigma '
+     'indecifrável, é desígnio divino escondido e agora revelado; aqui, aplicado ao '
+     'mal, é um uso irónico. <i>ἐνεργέομαι</i> (energéomai) é estar em operação, '
+     'agir eficazmente — presente: já opera agora. <i>μόνον</i> pode ser advérbio '
+     '(«somente») ou acusativo de <i>μόνος</i>. <i>ἄρτι</i> é «agora mesmo». '
+     '<i>ἕως ἐκ μέσου γένηται</i> é literalmente «até que se torne de fora do meio», '
+     '«até ser tirado do meio».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) '
+     'apresenta um <i>γάρ</i> adicional; o Alexandrinus (02) escreve '
+     '<i>ἐνεργεῖτε</i>.</p>'
+     '<p><b>Síntese Exegética:</b> Há dois tempos em paralelo: o mistério da rebelião '
+     '<b>já</b> opera (presente), e a detenção durará <b>até</b> ser removida. A '
+     'frase final é elíptica — falta o verbo de <i>ὁ κατέχων ἄρτι</i> — e a tradução '
+     'assinala o suprimento em itálico. A leitura mais natural é: aquele que detém '
+     'agora continuará a deter até ser afastado do meio. O masculino <i>ὁ '
+     'κατέχων</i> corresponde ao neutro do v. 6 sem o explicar.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> Este é um dos textos mais difíceis de Paulo '
+     'e a BEE não o resolve: mantém a elipse, mantém o masculino e não acrescenta o '
+     'agente nem o modo do afastamento. A tradução anterior escrevia «o que o detém '
+     'ainda pode impedir que ele apareça», que substitui o <i>ἕως ἐκ μέσου '
+     'γένηται</i> («até ser afastado») por uma inferência. Retirar a cláusula final é '
+     'retirar o único dado temporal explícito do versículo.</p>'),
+    (8,
+     'Então será revelado o ímpio, a quem o Senhor Jesus destruirá com o sopro da sua '
+     'boca e aniquilará com o esplendor da sua vinda;',
+     '<p><b>Análise Léxica:</b> <i>ὁ ἄνομος</i> (ho ánomos) é o substantivado da '
+     'família de <i>ἀνομία</i>: o sem-lei, o rebelde. A BEE traduz o título por «o '
+     'ímpio» e regista aqui a forma literal. <i>ἀναιρέω</i> (anairéō) é levantar, '
+     'tirar, matar; <i>καταργέω</i> (katargéō) é tornar inoperante, anular, reduzir '
+     'a nada. <i>πνεύματι τοῦ στόματος</i> é «sopro da boca», imagem de Is 11:4. '
+     '<i>ἐπιφάνεια</i> (epipháneia) é manifestação visível e gloriosa; '
+     '<i>παρουσία</i> é a vinda.</p>'
+     '<p><b>Crítica Textual:</b> Duas unidades. (a) <i>ὃν ὁ κύριος Ἰησοῦς</i> '
+     '(base, WH, NA28) — o <b>Vaticanus (03) omite <i>Ἰησοῦς</i></b> e lê só «o '
+     'Senhor». Decisão: seguir a base, que é apoiada por Sinaiticus e '
+     'Alexandrinus. (b) <i>ἀνελεῖ</i> (base, WH, NA28) / <i>ἀναλώσει</i> (RP, '
+     'Stephanus, KJTR, Scrivener): «destruirá/tirará a vida» contra «consumirá». O '
+     'Sinaiticus escreve <i>ἀναλοῖ</i> e o Alexandrinus <i>ἀναιρεῖ</i> — formas '
+     'próximas que mostram que a diferença pode ter origem em leitura e pronúncia. '
+     'Decisão: seguir a base.</p>'
+     '<p><b>Síntese Exegética:</b> Os dois verbos descrevem uma só ação em dois '
+     'aspetos: o sopro da boca (força da palavra) e o esplendor da vinda (força da '
+     'presença). O combate não é descrito como luta: a figura é aniquilada sem '
+     'resistência, por um sopro e por uma manifestação. O <i>καί</i> entre os dois '
+     'verbos coordena, não sequencia obrigatoriamente.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O eco de Isaías 11:4 (o Messias fere a terra '
+     'com a vara da sua boca e mata o ímpio com o sopro dos seus lábios) é a chave '
+     'mais segura do versículo, e situa a cena na linguagem profética e não na '
+     'crónica de um acontecimento político. O texto não descreve o modo nem a duração '
+     'da destruição, e não autoriza identificar o <i>ἄνομος</i> com uma pessoa ou '
+     'instituição nomeada.</p>'
+     '<p><b>Nota de redação:</b> «Aniquilará com o esplendor da sua vinda» substitui a '
+     'formulação anterior «na manifestação da sua vinda», que empilhava dois '
+     'genitivos (<i>ἐπιφανείᾳ τῆς παρουσίας</i>) ao modo de Almeida. O conteúdo '
+     'mantém-se: <i>ἐπιφάνεια</i> é o aparecimento glorioso.</p>'),
+    (9,
+     'A vinda dele <i>acontece</i> segundo a ação de Satanás, com todo o poder, e com '
+     'sinais e prodígios de mentira,',
+     '<p><b>Análise Léxica:</b> <i>κατʼ ἐνέργειαν τοῦ Σατανᾶ</i> («segundo a ação '
+     'de Satanás») usa <i>ἐνέργεια</i>, operação eficaz, palavra que Paulo reserva '
+     'para ação real e não meramente aparente (cf. Ef 1:19; Cl 2:12). '
+     '<i>σημεῖον</i> é sinal que aponta para algo; <i>τέρας</i> (téras) é prodígio '
+     'que provoca assombro; os dois aparecem juntos como fórmula no NT (At 2:22). '
+     '<i>ψεῦδος</i> qualifica-os: são de mentira.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O P30 conserva apenas '
+     '<i>τέρασιν ψεύδους</i> em lacuna suprida. Sinaiticus e Vaticanus apresentam '
+     'itacismos.</p>'
+     '<p><b>Síntese Exegética:</b> O versículo descreve a origem e os meios da '
+     'atividade da figura: a origem é a ação de Satanás, os meios são poder, sinais e '
+     'prodígios. O genitivo <i>ψεύδους</i> distribui-se pelos dois últimos termos: os '
+     'sinais são falsos quanto ao seu sentido, não necessariamente quanto ao seu '
+     'efeito. O texto não diz que nada acontece; diz que o que acontece é enganoso '
+     'quanto à sua origem e ao que significa.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> Consequência prática, e é a que o contexto '
+     'exige: sinais e prodígios não autenticam uma mensagem. O critério do capítulo é '
+     'a verdade do que se afirma sobre o dia do Senhor (v. 2) e o amor à verdade '
+     '(v. 10), não a potência do sinal. Ler o versículo como prova de que «sinal '
+     'verdadeiro vem sempre de Deus» é o contrário do que ele diz.</p>'
+     '<p><b>Nota de redação:</b> No grego, este versículo é uma relativa dependente '
+     'de <i>ὁ ἄνομος</i> (v. 8): <i>οὗ ἐστιν ἡ παρουσία κατʼ ἐνέργειαν τοῦ '
+     'Σατανᾶ</i>, «cuja vinda é segundo a ação de Satanás». Em português, «cuja '
+     'vinda» a seguir a «o esplendor da sua vinda» tomaria «vinda» como antecedente '
+     'e ficaria ambíguo. A tradução abre frase nova e fecha o v. 8 com ponto e '
+     'vírgula, marcando que a subordinação grega não foi apagada: a vinda de que se '
+     'fala é a dele, o ímpio. «Acontece» vai agora em itálico: <i>οὗ ἐστιν ἡ '
+     'παρουσία</i> é «cuja vinda <b>é</b>», e o verbo que a frase nova precisa não '
+     'está no grego. É a convenção de §5.1 — verbo suprido em itálico, artigo e '
+     'pronome gramaticais não.</p>'),
+    (10,
+     'e com todo o engano da injustiça, para os que se perdem, porque não acolheram o '
+     'amor da verdade para serem salvos.',
+     '<p><b>Análise Léxica:</b> <i>ἀπάτη</i> (apátē) é engano que seduz, não simples '
+     'erro intelectual. <i>ἀδικία</i> (adikía) é injustiça, iniquidade — o oposto '
+     'exato de <i>ἀλήθεια</i> neste parágrafo. <i>ἀπόλλυμι</i> no médio/passivo '
+     '(<i>ἀπολλυμένοις</i>) é estar em processo de perdição: particípio presente. '
+     '<i>δέχομαι</i> é receber, acolher. <i>ἀγάπη τῆς ἀληθείας</i> é genitivo '
+     'objetivo ou subjetivo: amor <b>pela</b> verdade ou amor <b>que a verdade</b> '
+     'inspira; a tradução mantém a ambiguidade com «o amor da verdade».</p>'
+     '<p><b>Crítica Textual:</b> A base lê <i>πάσῃ ἀπάτῃ ἀδικίας τοῖς '
+     'ἀπολλυμένοις</i>; RP, Stephanus, KJTR e Scrivener leem <i>τῆς ἀδικίας ἐν '
+     'τοῖς ἀπολλυμένοις</i> (artigo e preposição). O Alexandrinus (02) tem aqui uma '
+     'lacuna na mão original, preenchida depois com «οὐκ ἐδέξαντο εἰς τὸ σωθῆναι». '
+     'Divergência de construção sem efeito de sentido.</p>'
+     '<p><b>Síntese Exegética:</b> <i>ἀνθʼ ὧν</i> («porque», «em troca do que») '
+     'estabelece causalidade: o engano alcança os que já recusaram acolher o amor da '
+     'verdade. A ordem é importante — a recusa vem primeiro, o engano depois. O '
+     '<i>εἰς τὸ σωθῆναι αὐτούς</i> liga o acolhimento à salvação como finalidade, '
+     'não como efeito automático do próprio acolhimento.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto responsabiliza a recusa dos '
+     'destinatários do engano e <b>não</b> afirma que Deus os tenha impedido de '
+     'acolher a verdade antes do v. 11. Ler o versículo como rejeição arbitrária '
+     'inverte a sequência causal que ele próprio marca. Também não identifica quem são '
+     '«os que se perdem».</p>'),
+    (11,
+     'Por isso Deus lhes envia um poder que os leva ao erro, para que creiam na '
+     'mentira,',
+     '<p><b>Análise Léxica:</b> <i>ἐνέργεια πλάνης</i> («ação de erro») repete o '
+     'par de <i>ἐνέργεια</i> do v. 9: o que antes era operação de Satanás aparece '
+     'agora como envio divino. <i>πλάνη</i> (plánē) é desvio, erro que faz '
+     'extraviar. <i>πέμπει</i> é <b>presente</b>: envia, está a enviar. '
+     '<i>ψεύδος</i> retoma o v. 9.</p>'
+     '<p><b>Crítica Textual:</b> <b><i>πέμπει</i></b> (presente; base, WH, NA28) / '
+     '<b><i>πέμψει</i></b> (futuro; RP, Stephanus, KJTR, Scrivener). O P30 conserva '
+     'o presente <i>πέμπει</i> em lacuna suprida. Decisão: seguir a base — «envia», '
+     'não «enviará». A diferença é de aspeto e tempo: o presente descreve uma ação em '
+     'curso, coerente com o «já está em ação» do v. 7.</p>'
+     '<p><b>Síntese Exegética:</b> Deus é o sujeito do verbo: é ele quem envia. O '
+     'texto não apresenta isto como contradição do amor de Deus nem como arbitrariedade '
+     '— o <i>διὰ τοῦτο</i> («por isso») prende-o à recusa do v. 10. O conteúdo do '
+     'envio é uma <i>ἐνέργεια πλάνης</i>, um poder de desvio, e a finalidade é '
+     'expressa por <i>εἰς τὸ πιστεῦσαι</i> («para que creiam»): o engano é crido '
+     'como se fosse verdade.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> Este versículo é um dos textos difíceis sobre '
+     'a ação divina no endurecimento, ao lado de Rm 1:24-28 e 11:8 e de Êx 4:21. A '
+     'BEE conserva o verbo e o sujeito do original sem suavizar («permite» por '
+     '«envia») e sem acrescentar qualificações teológicas que o texto não tem. O '
+     'paralelo de Rm 1 — Deus «entregando» os que o rejeitaram ao que escolheram — é '
+     'a linha de leitura mais próxima do contexto imediato, mas o versículo não cita '
+     'Romanos e a nota não converte o paralelo em explicação fechada.</p>'),
+    (12,
+     'para que sejam julgados todos os que não creram na verdade, mas tiveram prazer '
+     'na injustiça.',
+     '<p><b>Análise Léxica:</b> <i>κριθῶσιν</i> é passivo aoristo de <i>κρίνω</i>: '
+     'sejam julgados. <i>εὐδοκέω</i> com dativo é ter prazer em, aprovar com '
+     'satisfação — não apenas tolerar. <i>ἀδικία</i> opõe-se a <i>ἀλήθεια</i> no '
+     'par, como no v. 10.</p>'
+     '<p><b>Crítica Textual:</b> <i>πάντες</i> (base, WH, NA28) / <i>ἅπαντες</i> '
+     '(RP, SR): formas equivalentes de «todos». <i>τῇ ἀδικίᾳ</i> (base) / <i>ἐν τῇ '
+     'ἀδικίᾳ</i> (RP, Stephanus, KJTR, Scrivener): dativo simples ou com preposição, '
+     'sem efeito de sentido. O Sinaiticus (01) escreve <i>ἀδικεία</i>.</p>'
+     '<p><b>Síntese Exegética:</b> O segundo <i>ἵνα</i> («para que») repete o do v. '
+     '11: crer na mentira e ser julgado são apresentados como duas finalidades do '
+     'mesmo envio. O julgamento não incide sobre a ignorância, mas sobre a recusa '
+     'registada no v. 10 e sobre o prazer na injustiça. A sequência dos dois '
+     'particípios aoristos (<i>μὴ πιστεύσαντες</i>, <i>εὐδοκήσαντες</i>) descreve '
+     'posições tomadas, não estados permanentes.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «antes tiveram prazer na '
+     'injustiça»; o «antes» adversativo em português atual é ambíguo (pode ler-se '
+     'como «anteriormente»). Substituiu-se por «mas», que corresponde a <i>ἀλλά</i>. '
+     'Manteve-se «creram» para conservar a repetição intencional de '
+     '<i>πιστεύσαντες</i>/<i>πιστεῦσαι</i> dos vv. 11-12.</p>'),
+    (13,
+     'Mas nós devemos dar sempre graças a Deus por vocês, irmãos amados pelo Senhor, '
+     'porque Deus os escolheu como primícias para a salvação, pela santificação do '
+     'Espírito e pela fé na verdade.',
+     '<p><b>Análise Léxica:</b> <i>ἀπαρχή</i> (aparchḗ) é <b>primícias</b>: a '
+     'primeira porção da colheita ou da massa, oferecida a Deus e que garante o resto '
+     '(cf. Rm 16:5; 1 Co 16:15; Tg 1:18). <i>ἀπʼ ἀρχῆς</i>, a leitura alternativa, '
+     'significa «desde o princípio». As duas formas diferem por uma letra e por uma '
+     'divisão de palavras. <i>ἁγιασμός</i> (hagiasmós) é santificação, separação '
+     'para Deus. <i>εἵλατο</i> é aoristo médio de <i>αἱρέομαι</i>: escolheu para '
+     'si.</p>'
+     '<p><b>Crítica Textual:</b> <b>A variante mais importante do livro.</b> '
+     '<i>ἀπαρχὴν</i> (base SBLGNT e NA28) / <i>ἀπʼ ἀρχῆς</i> (WH, Tregelles, NIV, '
+     'RP, Stephanus, KJTR, SR e o Textus Receptus de Scrivener). Colação efetiva: o '
+     '<b>Vaticanus (03)</b> e o <b>Alexandrinus (02)</b> leem <i>ἀπαρχήν</i>; o '
+     '<b>Sinaiticus (01)</b> lê <i>ἀπʼ ἀρχῆς</i>; a tradição bizantina lê '
+     '<i>ἀπʼ ἀρχῆς</i>. As três testemunhas mais antigas dividem-se 2 × 1 e a '
+     'maioria numérica está do lado de <i>ἀπʼ ἀρχῆς</i>: nenhum dos dois critérios '
+     'isolados decide. Adota-se a base por probabilidade transcricional e '
+     'intrínseca — <i>ἀπαρχήν</i> é a leitura mais difícil e é vocabulário paulino '
+     'atestado, enquanto «desde o princípio» é fórmula banal que um escriba tenderia '
+     'a substituir ao contrário não. Registo completo e raciocínio em '
+     'docs/CRITICA_TEXTUAL.md, §2.1 e §9. <b>Nível de certeza C: revisão '
+     'especializada necessária.</b> O Alexandrinus lê este trecho com lacuna e texto '
+     'suprido, o que enfraquece ligeiramente o seu apoio.</p>'
+     '<p><b>Síntese Exegética:</b> O <i>ἡμεῖς δέ</i> («mas nós») opõe a ação de '
+     'graças ao quadro dos vv. 10-12: enquanto uns se perdem, estes foram escolhidos. '
+     'Lendo <i>ἀπαρχήν</i>, a imagem é de oferta inicial que antecipa e garante a '
+     'colheita — os tessalonicenses são as primícias, não a totalidade. A salvação '
+     'vem com dois meios coordenados: santificação do Espírito e fé na verdade. Não '
+     'são etapas cronológicas nem alternativas; o texto coordena-os com <i>καί</i>.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O versículo fala de escolha divina e, no '
+     'mesmo fôlego, de fé humana, sem harmonizar os dois nem subordinar um ao outro. '
+     'A BEE não introduz «fé prevista», «eleição irresistível» nem qualquer '
+     'qualificação de sistema teológico: conserva os verbos e as relações do original '
+     'e deixa a discussão na nota. Se a leitura adotada for <i>ἀπʼ ἀρχῆς</i>, o '
+     'sentido passa a ser escolha «desde o princípio» — temporal e não '
+     'ofertório — e a nota é o lugar onde o leitor encontra a alternativa.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior traduzia «porque Deus os escolheu '
+     '<i>desde o princípio</i> para a salvação», ou seja, seguia a leitura bizantina '
+     'sem dizer que a base fixada lê outra coisa. Foi corrigido para «como '
+     'primícias».</p>'),
+    (14,
+     'Para isso ele os chamou por meio do nosso evangelho, para alcançarem a glória do '
+     'nosso Senhor Jesus Cristo.',
+     '<p><b>Análise Léxica:</b> <i>εἰς ὃ</i> («para o que») retoma a salvação do v. '
+     '13. <i>καλέω</i> é chamar com eficácia no uso paulino. <i>περιποίησις</i> '
+     '(peripoíēsis) é aquisição, posse obtida — «para aquisição de glória», isto é, '
+     'para alcançarem a glória. <i>δόξα</i> aqui é a glória de Cristo, participada '
+     'pelos chamados.</p>'
+     '<p><b>Crítica Textual:</b> A base lê <i>ἐκάλεσεν ὑμᾶς</i> («vos chamou»); o '
+     '<b>Alexandrinus (02)</b> e o <b>Vaticanus (03)</b> leem <i>ἡμᾶς</i> («nos '
+     'chamou»), e o Sinaiticus (01) foi corrigido de <i>ὑμῶν</i> para <i>ἡμῶν</i> no '
+     '«evangelho» anterior. O aparato regista ainda <i>+ καί</i> em NA28. Decisão: '
+     'seguir a base (<i>ὑμᾶς</i>), apoiada pela correção de 01 e pelo sentido — mas '
+     'a leitura de primeira pessoa é antiga e está aqui registada. <b>Nível B.</b></p>'
+     '<p><b>Síntese Exegética:</b> O meio do chamamento é o evangelho pregado: «por '
+     'meio do nosso evangelho». A cadeia dos vv. 13-14 é escolha → chamamento → '
+     'glória, com o evangelho como instrumento e a glória como destino. O v. 14 não '
+     'acrescenta condição à escolha do v. 13; descreve como ela chegou aos '
+     'destinatários.</p>'),
+    (15,
+     'Portanto, irmãos, mantenham-se firmes e apeguem-se às tradições que lhes foram '
+     'ensinadas, seja por palavra, seja por carta nossa.',
+     '<p><b>Análise Léxica:</b> <i>ἄρα οὖν</i> («portanto», «assim pois») conclui. '
+     '<i>στήκω</i> (stḗkō) é estar de pé com firmeza, perfeito com valor de '
+     'presente. <i>κρατέω</i> (kratéō) é segurar com força, reter. '
+     '<i>παράδοσις</i> (parádosis) é o que foi transmitido, tradição — palavra '
+     'neutra em si; o NT usa-a tanto em sentido positivo (aqui; 1 Co 11:2) como '
+     'negativo (Mc 7:3-13). <i>ἐδιδάχθητε</i> é <b>passivo</b>: «vocês foram '
+     'ensinados».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo entre base, testemunhas e '
+     'edições colacionadas.</p>'
+     '<p><b>Síntese Exegética:</b> A conclusão prática do capítulo é conservação, não '
+     'novidade: segurar o que já foi recebido. Os dois canais — palavra oral e carta '
+     '— correspondem exatamente aos dois canais falsificados no v. 2 (palavra e '
+     'carta). O que distingue a tradição verdadeira não é o canal, é a origem '
+     'apostólica declarada (<i>ἡμῶν</i>, «nossa»).</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A passiva <i>ἐδιδάχθητε</i> foi conservada: '
+     'dizer «que nós lhes ensinamos» nomearia um agente que o verbo não nomeia, e '
+     'deslocaria a ênfase de quem recebe para quem transmite. Quanto ao conteúdo das '
+     '«tradições», o texto não o lista aqui; o contexto imediato indica o ensino '
+     'escatológico do v. 5 e, no capítulo 3, a conduta de trabalho. Extrair daqui uma '
+     'lista de tradições extra-escriturísticas vai além do versículo.</p>'),
+    (16,
+     'Que o próprio nosso Senhor Jesus Cristo e Deus, nosso Pai, que nos amou e nos '
+     'deu consolação eterna e boa esperança pela graça,',
+     '<p><b>Análise Léxica:</b> <i>Αὐτός</i> em posição inicial é enfático: «ele '
+     'mesmo», «o próprio». <i>παράκλησις</i> (paráklēsis) é consolação e '
+     'encorajamento ao mesmo tempo — a mesma raiz de <i>παρακαλέω</i> do v. 17. '
+     '<i>αἰωνίαν</i> qualifica a consolação como pertencente à era vindoura. '
+     '<i>ἐλπίς ἀγαθή</i> é «boa esperança». <i>ἐν χάριτι</i> («pela graça», «em '
+     'graça») governa os dois dons.</p>'
+     '<p><b>Crítica Textual:</b> A base lê <i>καὶ θεὸς ὁ πατὴρ ἡμῶν</i>; RP, '
+     'Stephanus, KJTR e Scrivener leem <i>καὶ ὁ θεὸς καὶ πατὴρ ἡμῶν</i> (dois '
+     'artigos e outra conjunção). O aparato SBLGNT regista ainda <i>θεὸς</i> em '
+     'Tregelles contra <i>ὁ θεὸς</i> em WH, NA28 e RP. O Sinaiticus (01) omitiu '
+     '<i>καί</i> e «ὁ ἀγαπήσας ἡμᾶς» na mão original; ambas as omissões foram '
+     'preenchidas por mão posterior. <b>Nível B.</b></p>'
+     '<p><b>Síntese Exegética:</b> A frase só se completa no v. 17: sujeito duplo '
+     '(Cristo e Deus Pai), dois particípios (<i>ἀγαπήσας</i>, <i>δοὺς</i>) e um só '
+     'pedido (<i>παρακαλέσαι</i>, <i>στηρίξαι</i>). A ordem grega põe Cristo '
+     'primeiro, o que é notável numa doxologia; algumas edições invertem para «Deus '
+     'nosso Pai e o Senhor Jesus Cristo». A base não inverte e a tradução não '
+     'inverte. Os dois dons dados são descritos como já concedidos (particípios '
+     'aoristos) antes do pedido.</p>'
+     '<p><b>Nota de redação:</b> «Eterna consolação» foi corrigido para «consolação '
+     'eterna»: em português o adjetivo anteposto sugere leitura poética que o texto '
+     'não pede.</p>'),
+    (17,
+     'console o coração de vocês e os confirme em toda a boa obra e palavra.',
+     '<p><b>Análise Léxica:</b> <i>παρακαλέσαι</i> (parakalésai) é consolar, '
+     'encorajar, exortar — o verbo de <i>παράκλησις</i> do v. 16. <i>στηρίξαι</i> '
+     '(stēríxai) é firmar, estabelecer; retoma <i>στήκετε</i> do v. 15 como pedido '
+     'de que Deus faça o que foi ordenado aos crentes. <i>καρδία</i> é o centro da '
+     'pessoa, não apenas a emoção. <i>ἐν παντὶ ἔργῳ καὶ λόγῳ ἀγαθῷ</i> — '
+     '<i>ἀγαθῷ</i> concorda com os dois termos.</p>'
+     '<p><b>Crítica Textual:</b> Duas unidades. (a) <i>στηρίξαι</i> (base, WH, NA28) '
+     '/ <i>+ ὑμᾶς στηρίξαι</i> (RP, Stephanus, KJTR, Scrivener): a adição do '
+     'pronome é explicitação. (b) Ordem: <i>ἔργῳ καὶ λόγῳ</i> (base, WH, NA28) / '
+     '<i>λόγῳ καὶ ἔργῳ</i> (RP, Stephanus, KJTR, Scrivener). Decisão: seguir a '
+     'base nas duas; nenhuma altera o sentido.</p>'
+     '<p><b>Síntese Exegética:</b> O pedido é duplo e cobre a pessoa inteira: o '
+     'coração (consolo) e a conduta (firmeza em obra e palavra). A ordem «obra e '
+     'palavra» da base é menos habitual do que «palavra e obra», o que sugere que a '
+     'inversão bizantina pode ser harmonização a uma fórmula corrente (cf. Lc 24:19; '
+     'At 7:22). A tradução mantém a ordem da base.</p>'
+     '<p><b>Nota de redação:</b> «toda boa obra e palavra» deu «toda a boa obra e '
+     'palavra»: em português europeu o artigo depois de <i>toda</i> no singular é '
+     'gramatical. <i>πᾶν</i> é anártrico e distribui — cada obra, cada palavra — e '
+     'isso fica registado na Análise Léxica, não no artigo. É a mesma correção de '
+     '1:11.</p>'),
+]
+
+
+# --------------------------------------------------------------------------
+# Capítulo 3 — vv. 1-18
+# --------------------------------------------------------------------------
+CAP3 = [
+    (1,
+     'Quanto ao mais, irmãos, orem por nós, para que a palavra do Senhor se propague '
+     'rapidamente e seja glorificada, assim como aconteceu entre vocês,',
+     '<p><b>Análise Léxica:</b> <i>τὸ λοιπόν</i> («quanto ao mais») marca transição '
+     'para a parte final, não conclusão lógica. <i>τρέχῃ</i> é literalmente '
+     '«corra», imagem de velocidade sem obstáculo; a tradução usa «se propague '
+     'rapidamente». <i>δοξάζηται</i> é passivo: seja glorificada. <i>καθὼς καὶ '
+     'πρὸς ὑμᾶς</i> («assim como também para/com vocês») compara a experiência dos '
+     'destinatários.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) escreve '
+     '<i>προσεύχεσθαι</i>; o Alexandrinus (02) <i>δοξάζητε</i> (ativo) por '
+     '<i>δοξάζηται</i>.</p>'
+     '<p><b>Síntese Exegética:</b> O pedido de oração é pela palavra, não pelos '
+     'apóstolos: que ela corra e seja glorificada. A palavra é tratada como agente '
+     'que se move — a mesma personificação de 1 Ts 1:6-9 e 2:13. O modelo invocado é '
+     'a experiência dos próprios tessalonicenses: a oração pede que aconteça noutros '
+     'lugares o que já aconteceu entre eles.</p>'),
+    (2,
+     'e para que sejamos livres de pessoas perversas e más, pois a fé não é de todos.',
+     '<p><b>Análise Léxica:</b> <i>ῥυσθῶμεν</i> (rysthômen) é aoristo passivo de '
+     '<i>ῥύομαι</i>: ser arrancado, livrar-se — verbo de resgate, não de simples '
+     'proteção. <i>ἄτοπος</i> (átopos) é literalmente «fora do lugar»; daí '
+     'deslocado, inconveniente, absurdo e, em sentido moral, sem escrúpulos. '
+     '<i>πονηρός</i> (ponērós) é ativamente mau. <i>οὐ γὰρ πάντων ἡ πίστις</i> é '
+     'frase nominal elíptica: «pois a fé não é de todos», isto é, nem todos têm '
+     'fé.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) e o '
+     'Vaticanus (03) escrevem <i>πάτων</i> por <i>πάντων</i>; o Alexandrinus (02) '
+     '<i>ἀνθρώπον</i> no singular.</p>'
+     '<p><b>Síntese Exegética:</b> O pedido anterior era positivo (que a palavra '
+     'corra); este é negativo (que sejamos livrados). A cláusula final explica por '
+     'que o pedido é necessário: o evangelho encontra resistência porque nem todos '
+     'creem. A frase é constatação, não juízo sobre pessoas nomeadas, e não '
+     'identifica quem são os «perversos e maus» — podem ser os que movem a '
+     'perseguição de 1:6 ou opositores locais.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «pois a fé não pertence a '
+     'todos», que em português sugere posse de um objeto. «A fé não é de todos» '
+     'conserva a elipse grega e é idiomático.</p>'),
+    (3,
+     'Mas o Senhor é fiel; ele os confirmará e guardará do maligno.',
+     '<p><b>Análise Léxica:</b> <i>πιστός</i> (pistós) aqui é fiável, digno de '
+     'confiança — não «crente». <i>στηρίξει</i> (stēríxei) é o futuro do verbo que '
+     'apareceu como pedido em 2:17: o que se pediu, ele fará. <i>φυλάξει</i> é '
+     'guardar, vigiar. <i>ἀπὸ τοῦ πονηροῦ</i> tem artigo neutro/masculino de forma '
+     'idêntica no grego: pode ser «do mal» ou «do maligno».</p>'
+     '<p><b>Crítica Textual:</b> A base lê <i>ὁ κύριος</i>; o <b>Alexandrinus (02) '
+     'lê <i>ὁ θεός</i></b> e acrescenta <i>καί</i> antes de <i>στηρίξει</i>, com uma '
+     'letra danificada nesse verbo. Decisão: seguir a base, apoiada por Sinaiticus e '
+     'Vaticanus e por todas as edições colacionadas. <b>Nível B.</b></p>'
+     '<p><b>Síntese Exegética:</b> O versículo responde ao pedido do v. 2: a '
+     'segurança não vem da ausência de opositores, mas da fidelidade do Senhor. Os '
+     'dois verbos futuros cobrem os dois perigos: instabilidade (confirmará) e ataque '
+     '(guardará). A estrutura é a mesma de 2:16-17, o que sugere que a confiança '
+     'expressa ali é a base desta.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A ambiguidade de <i>τοῦ πονηροῦ</i> é real '
+     'e a tradução escolheu «do maligno» (leitura pessoal) em vez de «do mal» '
+     '(leitura abstrata). Razão: o capítulo 2 apresentou Satanás como agente '
+     '(2:9) e o paralelo de Mt 6:13 usa a mesma construção em contexto pessoal. A '
+     'alternativa «do mal» é legítima e fica aqui registada; a escolha não é imposta '
+     'pelo texto.</p>'),
+    (4,
+     'Quanto a vocês, temos confiança no Senhor de que fazem e continuarão a fazer o '
+     'que ordenamos.',
+     '<p><b>Análise Léxica:</b> <i>πεποίθαμεν</i> (pepóithamen) é perfeito com '
+     'valor de presente: estar persuadido, confiar. <i>ἐν κυρίῳ</i> localiza a '
+     'confiança: no Senhor, não nos destinatários. <i>παραγγέλλω</i> '
+     '(parangéllō) é transmitir ordem com autoridade, mandar — verbo-chave do '
+     'capítulo (vv. 4, 6, 10, 12).</p>'
+     '<p><b>Crítica Textual:</b> A base não tem <i>ὑμῖν</i> depois de '
+     '<i>παραγγέλλομεν</i>; RP, Stephanus, KJTR e Scrivener acrescentam-no. O '
+     '<b>Vaticanus (03)</b> apresenta uma leitura mais longa, <i>ἃ '
+     'παραγγέλλομεν καὶ ἐποιήσατε καὶ ποιεῖτε καὶ ποιήσετε</i> («o que ordenamos '
+     'e fizestes, e fazeis, e fareis»), com três verbos em vez de dois. Decisão: '
+     'seguir a base; a expansão de 03 fica registada.</p>'
+     '<p><b>Síntese Exegética:</b> A confiança tem objeto preciso: a obediência às '
+     'ordens que se seguem. Os dois verbos (presente e futuro) dizem que a obediência '
+     'já existe e continuará. É preparação para o contraste do v. 6, onde a ordem se '
+     'dirige aos que <b>não</b> obedecem: a maioria obedece, alguns não.</p>'),
+    (5,
+     'E que o Senhor conduza o coração de vocês ao amor de Deus e à perseverança de '
+     'Cristo.',
+     '<p><b>Análise Léxica:</b> <i>κατευθύναι</i> (kateuthýnai) é aoristo optativo '
+     'com valor de desejo: «queira ele dirigir», «que ele conduza»; é o verbo de 1 Ts '
+     '3:11 na mesma construção. <i>ὑπομονή</i> (hypomonē) é perseverança sob '
+     'pressão, como em 1:4. O genitivo <i>τοῦ Χριστοῦ</i> é objetivo, subjetivo ou '
+     'de origem: a perseverança que Cristo dá, que se dirige a Cristo, ou que Cristo '
+     'demonstrou.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. Stephanus omite o artigo '
+     '<i>τήν</i>; Sinaiticus e Vaticanus usam nomina sacra.</p>'
+     '<p><b>Síntese Exegética:</b> A oração pede duas direções do coração: amor de '
+     'Deus e perseverança de Cristo. O par ecoa 1:3 (fé que cresce e amor que '
+     'transborda) e prepara 3:13 (não desanimar de fazer o bem). O optativo é forma '
+     'de desejo e não de ordem: não é imperativo ao leitor.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A ambiguidade do genitivo <i>τοῦ '
+     'Χριστοῦ</i> foi conservada na tradução («perseverança de Cristo») em vez de '
+     'resolvida como «perseverança que Cristo dá» ou «perseverança em Cristo». '
+     'Resolver seria escolher uma teologia da oração que o texto não fixa. A '
+     'ambiguidade é do original e pertence à nota.</p>'),
+    (6,
+     'Ordenamos a vocês, irmãos, em nome do nosso Senhor Jesus Cristo, que se afastem '
+     'de todo o irmão que vive desordenadamente e não segundo a tradição que '
+     'receberam '
+     'de nós.',
+     '<p><b>Análise Léxica:</b> <i>στέλλεσθαι ἀπό</i> é médio: «afastar-se de», '
+     'manter distância — não expulsar. <i>ἀτάκτως</i> (atáktōs) é advérbio de '
+     '<i>ἄτακτος</i>, fora de fila, sem ordem, indisciplinado; no contexto é viver '
+     'sem cumprir o seu papel. <i>περιπατέω</i> é andar, e daí viver, comportar-se. '
+     '<i>παράδοσις</i> retoma 2:15. <i>ἀδελφός</i> é usado tanto dos que se afastam '
+     'como de quem está desordenado: o disciplinado continua irmão.</p>'
+     '<p><b>Crítica Textual:</b> <b>Unidade difícil.</b> A base lê <i>ἣν '
+     'παρελάβοσαν</i> (3ª pessoa do plural, «que <b>eles</b> receberam»), seguindo '
+     'NA28; o aparato regista <i>παρελάβετε</i> (2ª pessoa do plural, «que '
+     '<b>vocês</b> receberam») em WH, Tregelles e NIV, e <i>παρέλαβον</i> em RP. Na '
+     'colação, o <b>Vaticanus (03)</b> lê <i>παρελάβετε ἀφʼ ἡμῶν</i> (2ª pessoa e '
+     '<i>ἀπό</i> em vez de <i>παρά</i>), o Textus Receptus de Scrivener lê '
+     '<i>παρελαβεν</i> (3ª pessoa do <b>singular</b>, «que ele recebeu»), e Stephanus '
+     'e KJTR leem <i>παρελαβε</i>. As três pessoas gramaticais estão atestadas e o '
+     'referente muda com cada uma. Decisão: seguir a base (3ª pessoa do plural) e '
+     '<b>marcar a passagem como nível C</b> — a tradução portuguesa «que receberam de '
+     'nós» é deliberadamente ambígua entre a 2ª e a 3ª pessoa do plural, o que '
+     'conserva a abertura do texto sem escolher; a alternativa do Scrivener («que ele '
+     'recebeu») exigiria um sujeito que o contexto não dá. <b>Nível de certeza C: '
+     'revisão especializada necessária.</b> Registo completo em '
+     'docs/CRITICA_TEXTUAL.md, §9. O aparato regista ainda <i>ἡμῶν</i> em '
+     'Tregelles/RP/NA28 contra a sua ausência em WH e NIV.</p>'
+     '<p><b>Síntese Exegética:</b> A ordem tem três elementos: quem ordena (os '
+     'remetentes, em nome do Senhor Jesus Cristo), a quem (a comunidade inteira, '
+     '«irmãos») e o quê (afastar-se de <b>todo</b> irmão que vive desordenadamente). '
+     'A direção da ação é decisiva: <i>στέλλεσθαι ὑμᾶς ἀπὸ παντὸς '
+     'ἀδελφοῦ</i> — são <b>eles</b>, os ordenados, que se afastam do irmão '
+     'desordenado; não é o irmão que se afasta. O <i>ἀτάκτως</i> liga-se ao que o '
+     'capítulo desenvolverá nos vv. 7-12 (não trabalhar) e o segundo membro '
+     '(<i>μὴ κατὰ τὴν παράδοσιν</i>) define a desordem como desvio da tradição '
+     'recebida, não como mera excentricidade.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O versículo é instrução de disciplina '
+     'comunitária, não de exclusão definitiva: o mesmo que manda afastar-se manda '
+     'tratá-lo como irmão no v. 15. O objetivo declarado do processo aparece no v. 14 '
+     '(«para que se envergonhe») e é corretivo. Ler o versículo como expulsão ou como '
+     'ruptura de comunhão contradiz o v. 15.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «que se afaste todo '
+     'irmão que vive de maneira desordenada», que em português inverte o sujeito e '
+     'faz o irmão desordenado afastar-se a si mesmo. Corrigido para «que se afastem '
+     'de todo o irmão…».</p>'
+     '<p><b>Nota de redação:</b> «todo irmão» deu «todo o irmão», pela regra do '
+     'artigo depois de <i>todo</i> no singular em português europeu. '
+     '<i>παντὸς ἀδελφοῦ</i> é anártrico: é cada irmão, não «o irmão inteiro». '
+     'Ver 1:11 e <i>docs/ESTILO_BEE.md</i>.</p>'),
+    (7,
+     'Pois vocês mesmos sabem como devem imitar-nos, visto que não vivemos '
+     'desordenadamente entre vocês,',
+     '<p><b>Análise Léxica:</b> <i>μιμέομαι</i> (miméomai) é imitar, tomar como '
+     'modelo — verbo que deu «mímica». <i>ἠτακτήσαμεν</i> é aoristo de '
+     '<i>ἀτακτέω</i>, o verbo correspondente ao advérbio do v. 6: «não fomos '
+     'desordenados». <i>οἴδατε</i> é perfeito com valor de presente: vocês sabem.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) escreve '
+     '<i>οἴδαται</i> e <i>μιμίσθαι</i>; o Alexandrinus (02) lê <i>δεῖ '
+     'μιμεῖσθε</i>; o Vaticanus (03) <i>μειμείσθαι</i>. São grafias, não leituras.</p>'
+     '<p><b>Síntese Exegética:</b> O argumento é exemplar: os destinatários sabem como '
+     'imitar porque viram. O <i>ὅτι</i> dá a razão do modelo — os remetentes não '
+     'viveram desordenadamente entre eles. O exemplo apostólico precede a ordem: o '
+     'capítulo não impõe um fardo que os apóstolos não tenham carregado (v. 8).</p>'
+     '<p><b>Nota de redação:</b> «Não andamos desordenadamente» passou a «não vivemos '
+     'desordenadamente»: a família <i>ἀτακτ-</i> fica com o mesmo verbo nos vv. 6, 7 '
+     'e 11, como esta Síntese já dizia, e o leitor vê que é a mesma palavra grega nos '
+     'três sítios. <i>περιπατέω</i> é andar e, daí, viver; o glossário da memória de '
+     'estilo fixa «viver» para esta família.</p>'),
+    (8,
+     'nem comemos de graça o pão de ninguém. Pelo contrário, trabalhamos com esforço e '
+     'fadiga, noite e dia, para não sermos fardo para nenhum de vocês.',
+     '<p><b>Análise Léxica:</b> <i>δωρεάν</i> (dōreán) é gratuitamente, sem pagar — '
+     'a mesma palavra de Mt 10:8. <i>κόπος</i> (kópos) é trabalho que cansa, '
+     'fadiga; <i>μόχθος</i> (móchthos) é labuta, esforço penoso: os dois juntos '
+     'formam par reforçado, não dois trabalhos distintos. <i>ἐπιβαρέω</i> é pesar '
+     'sobre, ser encargo a alguém.</p>'
+     '<p><b>Crítica Textual:</b> <i>νυκτὸς καὶ ἡμέρας</i> (genitivos; base, WH, '
+     'NA28) / <i>νύκτα καὶ ἡμέραν</i> (acusativos; RP, Stephanus, KJTR, Scrivener e '
+     'Alexandrinus). Diferença de caso na expressão de duração, sem efeito de sentido: '
+     '«noite e dia» serve as duas construções. Decisão: seguir a base.</p>'
+     '<p><b>Síntese Exegética:</b> O ponto não é ascetismo nem desprezo pelo apoio: o '
+     'v. 9 afirma explicitamente que havia direito. O motivo declarado é não pesar '
+     'sobre ninguém e oferecer modelo (v. 9). A expressão «o pão de ninguém» é '
+     'negativa e absoluta: nem de um só. O paralelo de 1 Ts 2:9 usa as mesmas '
+     'palavras, o que confirma que se trata de um facto recordado e não de argumento '
+     'ocasional.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «trabalhamos arduamente, '
+     'com esforço e fadiga», redundância que duplica <i>ἐν κόπῳ καὶ μόχθῳ</i> com '
+     'um advérbio que o grego não tem. O par <i>κόπος</i>/<i>μόχθος</i> já carrega a '
+     'intensidade.</p>'),
+    (9,
+     'Não é que não tenhamos esse direito, mas <i>fizemos assim</i> para nos darmos a '
+     'vocês como modelo a ser imitado.',
+     '<p><b>Análise Léxica:</b> <i>ἐξουσία</i> (exousía) é autoridade, direito '
+     'legítimo — o mesmo termo de 1 Co 9:4-6 sobre o sustento dos apóstolos. '
+     '<i>τύπος</i> (týpos) é marca, forma impressa e, daqui, modelo, padrão a '
+     'copiar. <i>δίδομι ἑαυτόν τύπον</i> é «dar-se como modelo».</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) escreve '
+     '<i>δῶμε</i>; o Alexandrinus (02) <i>μιμεῖσθε</i>; o Vaticanus (03) '
+     '<i>μειμείσθαι</i>.</p>'
+     '<p><b>Síntese Exegética:</b> A concessiva é importante: o direito existia e é '
+     'afirmado. A renúncia é voluntária e tem finalidade pedagógica — dar-se como '
+     'modelo. O <i>ἵνα</i> («para que») marca propósito, não consequência '
+     'acidental.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O versículo impede duas leituras abusivas do '
+     'v. 8: que trabalhar seja obrigação para todos os que pregam (o direito existe) e '
+     'que receber sustento seja errado (o direito existe e é de Paulo). A norma dada '
+     'aqui é o comportamento desordenado dos vv. 6-11, não o sustento ministerial. '
+     '1 Coríntios 9:14 afirma o princípio oposto em contexto diferente, e os dois '
+     'textos não se harmonizam à força.</p>'
+     '<p><b>Nota de redação:</b> «Não porque não tivéssemos o direito de fazê-lo» foi '
+     'corrigido para o presente «Não é que não tenhamos esse direito»: <i>οὐχ ὅτι οὐκ '
+     'ἔχομεν</i> é presente do indicativo. «Oferecer a nós mesmos» era calque de '
+     '<i>ἑαυτοὺς τύπον δῶμεν</i>.</p>'),
+    (10,
+     'De facto, quando estávamos com vocês, ordenamos isto: se alguém não quer '
+     'trabalhar, também não coma.',
+     '<p><b>Análise Léxica:</b> <i>καὶ γάρ</i> («pois também», «de facto») reforça. '
+     '<i>παρηγγέλλομεν</i> é imperfeito: «ordenávamos», ordem dada e repetida durante '
+     'a estada. <i>θέλει</i> é querer — não «poder»: a condição é de vontade, não de '
+     'capacidade. <i>ἐσθιέτω</i> é imperativo presente de 3ª pessoa: «coma», '
+     '«continue a comer» negado por <i>μηδέ</i>.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) omite '
+     '<i>τοῦτο</i>; o Vaticanus (03) escreve <i>ἐργάζεσθε</i> e '
+     '<i>παρηγγέλομεν</i>.</p>'
+     '<p><b>Síntese Exegética:</b> É a formulação mais citada do capítulo e é '
+     'condicional e individual: «se alguém não quer trabalhar». O sujeito é '
+     'indefinido, o verbo de vontade é presente e a consequência é proporcional. O '
+     'versículo pressupõe capacidade de trabalhar (v. 11 fala dos que «não trabalham '
+     'nada» por escolha, não por impossibilidade).</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto <b>não</b> se aplica a quem não pode '
+     'trabalhar — doentes, crianças, idosos, desempregados involuntários. Aplicá-lo '
+     'a eles é inverter a condição declarada (<i>οὐ θέλει</i>, «não quer»). Também '
+     'não é lei civil nem princípio económico geral: é instrução de disciplina dentro '
+     'de uma comunidade que sustentava alguns dos seus membros. A fórmula tornou-se '
+     'provérbio e foi usada fora deste contexto; o versículo não autoriza esse '
+     'uso.</p>'),
+    (11,
+     'Pois ouvimos que alguns entre vocês vivem desordenadamente, sem trabalhar, mas '
+     'metendo-se em tudo.',
+     '<p><b>Análise Léxica:</b> <i>ἀκούομεν</i> é presente: «ouvimos» como notícia '
+     'que continua a chegar. <i>ἀτάκτως</i> retoma o advérbio do v. 6. O par '
+     '<i>μηδὲν ἐργαζομένους ἀλλὰ περιεργαζομένους</i> é <b>jogo de palavras</b>: '
+     '<i>ἐργάζομαι</i> (trabalhar) contra <i>περιεργάζομαι</i> (trabalhar em volta '
+     'de, meter-se no que não é seu); o segundo é o mesmo radical do primeiro com '
+     '<i>περι-</i>. <i>περίεργος</i> é quem se ocupa do que não lhe diz respeito: em '
+     'At 19:19 qualifica as artes mágicas e em 1 Tm 5:13 as mulheres que «andam de '
+     'casa em casa» — o mesmo campo semântico deste versículo. Não há derivado '
+     'português corrente da palavra, e por isso o jogo se regista aqui em vez de se '
+     'forçar no texto.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Alexandrinus (02) tem '
+     'lacuna e escreve <i>περιπατουτας</i> por <i>περιπατοῦντας</i>.</p>'
+     '<p><b>Síntese Exegética:</b> A desordem é definida com precisão: não é pobreza '
+     'nem descanso, é ausência de trabalho combinada com atividade indevida. O jogo '
+     'de palavras grego é intraduzível literalmente; a tradução preserva o contraste '
+     'com «sem trabalhar, mas metendo-se em tudo» e regista o par aqui. A ordem dos '
+     'dois particípios é importante: primeiro a omissão, depois a intromissão.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto não explica a origem do problema. As '
+     'hipóteses usuais — expectativa da vinda iminente que levou a abandonar o '
+     'trabalho, dependência de patronos ou de apoio comunitário, clientela '
+     'helenística — são reconstruções históricas, não afirmações do versículo. A '
+     'tradução e a nota não adotam nenhuma; e é significativo que Paulo corrija o '
+     'comportamento sem endossar uma explicação escatológica para ele.</p>'
+     '<p><b>Nota de redação:</b> «Se metendo» passou a «metendo-se»: com gerúndio, a '
+     'colocação portuguesa é a ênclise, e a próclise («se metendo») é brasileira. Os '
+     'livros já aprovados só têm ênclise — «ouvindo-o», «voltando-se», '
+     '«sujeitando-se», «tirando-o», «arrancando-os» — e este versículo era a única '
+     'exceção do corpus. Regra acrescentada à memória de estilo.</p>'),
+    (12,
+     'A essas pessoas, porém, ordenamos e exortamos no Senhor Jesus Cristo que, '
+     'trabalhando com tranquilidade, comam o seu próprio pão.',
+     '<p><b>Análise Léxica:</b> <i>τοῖς τοιούτοις</i> («a tais») retoma o grupo do '
+     'v. 11, não indivíduos nomeados. <i>παραγγέλλω</i> e <i>παρακαλέω</i> '
+     'combinam ordem e apelo — autoridade e persuasão na mesma frase. <i>μετὰ '
+     'ἡσυχίας</i> (ēsuchía) é quietude, tranquilidade, vida sem alvoroço; não é '
+     'silêncio literal. <i>ἐργαζόμενοι</i> é particípio presente de modo.</p>'
+     '<p><b>Crítica Textual:</b> <i>ἐν κυρίῳ Ἰησοῦ Χριστῷ</i> (base, WH, NA28) / '
+     '<i>διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ</i> (RP, Stephanus, KJTR, Scrivener): '
+     '«no Senhor» contra «pelo nosso Senhor». A diferença é de preposição e de um '
+     'possessivo; o sentido — a autoridade em nome da qual se ordena — mantém-se. '
+     'Decisão: seguir a base.</p>'
+     '<p><b>Síntese Exegética:</b> A ordem tem uma só forma verbal — «comam o seu '
+     'próprio pão» — e o trabalho vem no particípio, que dá o modo: <i>μετὰ ἡσυχίας '
+     'ἐργαζόμενοι</i>, «trabalhando com tranquilidade». Comer o próprio pão não é só '
+     'consequência económica: é o sinal visível de que a tranquilidade foi '
+     'recuperada. O contraste com o v. 11 é exato — em vez de se meterem em tudo, '
+     'ocupam-se do seu trabalho.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior punha os dois verbos em paralelo '
+     '(«que trabalhem em tranquilidade e comam»), o que achatava o particípio de modo '
+     'que a própria Análise Léxica descreve. Repõe-se a estrutura da versão aprovada '
+     'em 19/11, com «com tranquilidade» em vez de «em tranquilidade», que é a '
+     'regência corrente para <i>μετά</i> de modo. «A tais pessoas» deu lugar a «a '
+     'essas pessoas»: <i>τοιοῦτος</i> retoma o grupo do v. 11, e «tais» a abrir '
+     'frase é registo jurídico, não o tom da carta.</p>'),
+    (13,
+     'Quanto a vocês, irmãos, não desanimem de fazer o bem.',
+     '<p><b>Análise Léxica:</b> <i>ἐγκακέω</i> (egkakéō) é desfalecer, perder o '
+     'ânimo, desistir sob fadiga — o verbo de Ef 3:13; a base tem a forma com '
+     '<i>ἐν-</i>. <i>καλοποιέω</i> (kalopoiéō) é fazer o bem, hapax no NT; '
+     'relaciona-se com <i>καλός</i>, o bom que também é digno e belo. O particípio '
+     '<i>καλοποιοῦντες</i> é presente: «continuando a fazer o bem».</p>'
+     '<p><b>Crítica Textual:</b> <i>ἐγκακήσητε</i> (base, WH, NA28) / '
+     '<i>ἐκκακήσητε</i> (RP, Stephanus, KJTR, Scrivener); o Vaticanus (03) escreve '
+     '<i>ἐνκακήσητε</i>. São três grafias do mesmo verbo: a forma com <i>ἐκ-</i> '
+     'intensifica, mas nenhuma edição altera o sentido. Decisão: seguir a base.</p>'
+     '<p><b>Síntese Exegética:</b> A mudança de destinatário é marcada por <i>ὑμεῖς '
+     'δέ</i> («quanto a vocês»): depois de falar aos desordenados, Paulo fala aos '
+     'que estão a fazer o bem. O risco que ele vê para estes não é a desordem, é o '
+     'cansaço — provavelmente o cansaço de sustentar e suportar os do v. 11. O '
+     'particípio presente indica que o bem já está em curso: o pedido é para não '
+     'parar.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O versículo impede a leitura rigorista do '
+     'parágrafo anterior: a disciplina não autoriza amargura nem suspensão da '
+     'benevolência. Ligado ao v. 15 («admoestem-no como irmão»), define o tom de '
+     'toda a secção. Não é exortação genérica a ser bondoso: é instrução a uma '
+     'comunidade concreta que está a lidar com irmãos desordenados.</p>'),
+    (14,
+     'Se alguém não obedece ao que dizemos nesta carta, marquem essa pessoa e não se '
+     'misturem com ela, para que se envergonhe.',
+     '<p><b>Análise Léxica:</b> <i>ὑπακούει</i> com dativo (<i>τῷ λόγῳ ἡμῶν</i>) é '
+     'obedecer à nossa palavra, isto é, ao que a carta diz. <i>σημειόομαι</i> '
+     '(sēmeióomai) é marcar, assinalar, tomar nota de — hapax no NT; deu a ideia de '
+     '«pôr uma marca». <i>συναναμίγνυμαι</i> (synanamígnymai) é misturar-se com, '
+     'conviver intimamente — verbo composto forte, mais do que simples contacto. '
+     '<i>ἐντρέπομαι</i> (entrépomai) é envergonhar-se, sentir vergonha que leva a '
+     'mudar.</p>'
+     '<p><b>Crítica Textual:</b> <i>μὴ συναναμίγνυσθαι</i> (infinitivo; base, WH, '
+     'NA28) / <i>καὶ μὴ συναναμίγνυσθε</i> (imperativo com <i>καί</i>; RP, '
+     'Stephanus, KJTR, Scrivener). A diferença é de construção: com o infinitivo a '
+     'ordem depende de <i>σημειοῦσθε</i>; com o imperativo são duas ordens '
+     'coordenadas. O sentido prático é o mesmo. Decisão: seguir a base. O Sinaiticus '
+     '(01) escreve <i>σημιοῦσθαι</i>.</p>'
+     '<p><b>Síntese Exegética:</b> A condição é precisa: não obediência <b>à palavra '
+     'desta carta</b>. O processo tem três passos — marcar, não conviver, esperar a '
+     'vergonha — e a finalidade é o último: <i>ἵνα ἐντραπῇ</i>. A vergonha é '
+     'instrumento de restauração, não humilhação gratuita. O objeto da marcação é a '
+     'pessoa, não a sua expulsão.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O alcance de «não se misturem» é limitado '
+     'pelo v. 15: continua a ser irmão, e por isso continua a ser admoestado. Não é '
+     'ruptura de relação nem tratamento como inimigo. Comparar com 1 Co 5:9-11, onde '
+     'o mesmo verbo aparece com alcance diferente (ali inclui não comer com o tal); a '
+     'diferença de contexto exige leitura própria, não harmonização automática.</p>'),
+    (15,
+     'Não o considerem como inimigo, mas admoestem-no como irmão.',
+     '<p><b>Análise Léxica:</b> <i>ἡγέομαι</i> (hēgéomai) é considerar, reputar — '
+     'verbo de juízo sobre alguém. <i>ἐχθρός</i> (echthrós) é inimigo. '
+     '<i>νουθετέω</i> (nouthetéō) é advertir colocando na mente, corrigir com '
+     'palavra; é o verbo de 1 Ts 5:12.14 e de At 20:31. <i>ὡς ἀδελφόν</i> é '
+     'comparativo de modo: como se adverte um irmão.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. O Sinaiticus (01) escreve '
+     '<i>νουθετίται</i>; o Alexandrinus (02) <i>ἀδελφοῦ</i>.</p>'
+     '<p><b>Síntese Exegética:</b> É o limite interpretativo de todo o parágrafo: a '
+     'disciplina dos vv. 6-14 não reclassifica a pessoa. O contraste não é entre '
+     'tratar bem e tratar mal, é entre tratar como inimigo e tratar como irmão — e '
+     'admoestar é ato de irmão. O <i>καί</i> é aqui continuativo, não adversativo: '
+     'prende o versículo ao «não se misturem» do v. 14, e o contraste fica todo no '
+     '<i>ἀλλά</i> que vem a seguir — o português «mas».</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A sequência dos vv. 13-15 forma uma unidade '
+     'de tom: não desanimar de fazer o bem, marcar sem hostilizar, admoestar como '
+     'irmão. Qualquer prática disciplinar que suprima o v. 15 lê o texto contra si '
+     'mesmo.</p>'
+     '<p><b>Nota de redação:</b> O versículo abria com «Contudo», que traduzia o '
+     '<i>καί</i> como adversativo e antecipava um contraste que o <i>ἀλλά</i> já faz '
+     'na segunda metade: ficavam dois adversativos na mesma frase. Sem o «Contudo», o '
+     'versículo começa pela ordem e o contraste aparece uma só vez, onde o grego o '
+     'põe.</p>'),
+    (16,
+     'O próprio Senhor da paz lhes dê a paz em todo o tempo e de todas as maneiras. O '
+     'Senhor esteja com todos vocês.',
+     '<p><b>Análise Léxica:</b> <i>δῴη</i> (doíē) é aoristo optativo de '
+     '<i>δίδωμι</i>, forma de desejo: «queira ele dar». <i>ὁ κύριος τῆς '
+     'εἰρήνης</i> é genitivo de atributo: o Senhor que é a fonte da paz. <i>διὰ '
+     'παντός</i> («continuamente», «em todo o tempo») e <i>ἐν παντὶ τρόπῳ</i> («de '
+     'toda a maneira», «em todo o modo») são dois universais que se somam. '
+     '<i>εἰρήνη</i> traduz <i>שָׁלוֹם</i>: integridade, bem-estar, reconciliação, '
+     'não apenas ausência de conflito.</p>'
+     '<p><b>Crítica Textual:</b> <b>Achado manuscritológico do capítulo.</b> O '
+     '<b>Alexandrinus (02)</b> escreveu <i>ἐν παντὶ τόπῳ</i> («em todo o '
+     '<b>lugar</b>») na mão original e foi <b>corrigido para <i>τρόπῳ</i></b> («de '
+     'toda a <b>maneira</b>») por mão posterior. Uma só letra separa as duas '
+     'leituras: o <i>ρ</i> de <i>τρόπος</i>, ausente de <i>τόπος</i>. '
+     'Base, Sinaiticus, Vaticanus e todas as edições colacionadas leem '
+     '<i>τρόπῳ</i>. Decisão: seguir a base; o <i>τόπῳ</i> de 02* fica registado '
+     'porque mostra como um corretor bizantino ou alexandrino alinhou o texto com a '
+     'tradição dominante — e porque «em todo o lugar» seria sentido plausível e '
+     'diferente. O Alexandrinus omite ainda o artigo <i>τήν</i> antes de '
+     '<i>εἰρήνην</i>.</p>'
+     '<p><b>Síntese Exegética:</b> A bênção retoma a paz que a carta inteira '
+     'pressupõe: paz sob perseguição (cap. 1), paz diante de alegações perturbadoras '
+     '(cap. 2) e paz numa comunidade com conflito interno (cap. 3). Os dois '
+     'universais («em todo o tempo», «de todas as maneiras») excluem a leitura de que '
+     'a paz prometida é circunstancial. A segunda frase («O Senhor esteja com todos '
+     'vocês») inclui <i>πάντων</i>: todos, inclusive o irmão do v. 14.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> A bênção é desejo expresso em optativo, não '
+     'promessa incondicional de ausência de conflito. Num livro que acaba de falar de '
+     'perseguição, tribulação e disciplina, prometer paz «em todo o tempo e de todas '
+     'as maneiras» não pode significar ausência de sofrimento — o capítulo 1 diz o '
+     'contrário. É esta a fórmula consolidada da bênção de paz na edição BEE: os '
+     'outros livros que a tenham de dar dão-na assim, letra a letra.</p>'),
+    (17,
+     'A saudação é do meu próprio punho, de Paulo. Este é o sinal em cada carta; é '
+     'assim que escrevo.',
+     '<p><b>Análise Léxica:</b> <i>ἀσπασμός</i> (aspasmós) é saudação, aqui a '
+     'saudação final manuscrita. <i>τῇ ἐμῇ χειρί</i> é dativo de instrumento: «com '
+     'a minha mão». <i>σημεῖον</i> (sēmeîon) é sinal distintivo, marca de '
+     'autenticidade. <i>ἐν πάσῃ ἐπιστολῇ</i> é «em cada carta», «em toda carta». '
+     '<i>οὕτως γράφω</i> é presente: «é assim que escrevo», com amostra da própria '
+     'letra.</p>'
+     '<p><b>Crítica Textual:</b> Sem variante de conteúdo. Stephanus escreve '
+     '<i>ἔστι</i> e <i>οὕτω</i>; o Sinaiticus (01) <i>σημίον</i>. O genitivo '
+     '<i>Παύλου</i> depende de <i>ἀσπασμός</i> («a saudação de Paulo») e não de '
+     '<i>χειρί</i>.</p>'
+     '<p><b>Síntese Exegética:</b> O versículo tem função prática e jurídica dentro '
+     'da carta: é o mecanismo de autenticação. Se no cap. 2:2 circulava uma carta '
+     '«como se fosse nossa», aqui Paulo dá à comunidade um critério material de '
+     'verificação — a sua letra. A mudança da 1ª pessoa do plural (vv. 1-15) para o '
+     'singular («meu», «escrevo») confirma que os três remetentes falavam como uma só '
+     'voz e que um deles escreve e assina.</p>'
+     '<p><b>Hermenêutica e Contexto:</b> O texto não diz que todas as cartas paulinas '
+     'eram inteiramente escritas por Paulo: diz que a saudação final era do seu punho '
+     'e que isso era o sinal em cada carta. Comparar com 1 Co 16:21, Cl 4:18, Gl 6:11 '
+     'e Fm 1:19. Inferir daqui uma teoria geral de composição epistolar vai além do '
+     'versículo.</p>'
+     '<p><b>Nota de redação:</b> A versão anterior escrevia «o qual é o sinal em cada '
+     'carta», relativo sem antecedente claro em português. Substituído por «Este é o '
+     'sinal».</p>'),
+    (18,
+     'A graça do nosso Senhor Jesus Cristo esteja com todos vocês.',
+     '<p><b>Análise Léxica:</b> <i>χάρις</i> retoma a saudação de 1:2 e fecha a '
+     'carta em inclusão com ela. <i>μετά</i> com genitivo é «com», companhia. O '
+     'verbo está subentendido (optativo de desejo), como é habitual nas bênçãos '
+     'finais.</p>'
+     '<p><b>Crítica Textual:</b> A base termina em <i>μετὰ πάντων ὑμῶν</i>, sem '
+     '<i>ἀμήν</i>. <b>Alexandrinus (02)</b>, RP, Stephanus, KJTR e o Textus Receptus '
+     'de Scrivener acrescentam <i>ἀμήν</i>; o Sinaiticus (01) e o Vaticanus (03) não '
+     'o têm. Decisão: seguir a base. O <i>ἀμήν</i> não é marcado com <i>[[ ]]</i> '
+     'porque não é texto traduzido em disputa: é fecho litúrgico acrescentado pela '
+     'tradição bizantina e por uma testemunha antiga, e o seu registo aqui basta. O '
+     '<i>πάντων</i> («todos») repete o do v. 16. <b>Nível A.</b></p>'
+     '<p><b>Síntese Exegética:</b> O fecho é breve e inclui todos: também o irmão '
+     'marcado no v. 14 está abrangido pela graça e pela paz. A carta que começou com '
+     '«graça e paz» (1:2) termina com «graça», e o <i>πάντων</i> final é a última '
+     'palavra do argumento pastoral: ninguém fica fora.</p>'),
+]
+
+
+# --------------------------------------------------------------------------
+# Montagem do livro
+# --------------------------------------------------------------------------
+CAPITULOS = (CAP1, CAP2, CAP3)
+
+BIBLIOGRAFIA = [
+    {
+        'name': 'SBLGNT — The Greek New Testament, SBL Edition',
+        'revision': SBL_COMMIT,
+        'url': 'https://github.com/Faithlife/SBLGNT',
+        'text_url': f'https://codeload.github.com/Faithlife/SBLGNT/zip/{SBL_COMMIT}',
+        'license': 'CC BY 4.0',
+        'attribution': (
+            'Base fixada do projeto. Texto de data/sblgnt/text/2Thess.txt e aparato '
+            'de data/sblgntapp/xml/2Thess.xml na revisão indicada. O aparato nomeia '
+            'apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações '
+            'sobre manuscritos vêm da colação CNTR.'
+        ),
+        'papel': 'base',
+    },
+    {
+        'name': 'Textus Receptus — edição de Scrivener (Robinson)',
+        'revision': TR_COMMIT,
+        'url': 'https://github.com/byztxt/greektext-scrivener',
+        'text_url': (
+            f'https://codeload.github.com/byztxt/greektext-scrivener/zip/{TR_COMMIT}'
+        ),
+        'license': 'domínio público segundo o fornecedor',
+        'attribution': (
+            'Comparação, não base. Convertido de ASCII para Unicode por '
+            'bee/fontes.py. «O Textus Receptus» não é um texto único: esta edição '
+            'difere de RP, de Stephanus e do KJTR (ex.: πιστεύουσιν em 1:10, que RP '
+            'não lê).'
+        ),
+        'papel': 'comparação',
+    },
+    {
+        'name': 'CNTR Transcriptions (Center for New Testament Restoration)',
+        'revision': CNTR_REVISAO,
+        'url': CNTR_URL,
+        'license': 'CC BY-SA 4.0',
+        'attribution': (
+            'Alan Bunning / Center for New Testament Restoration. Testemunhas de '
+            '2 Tessalonicenses (livro CNTR 53) consultadas: 01 Sinaiticus, 02 '
+            'Alexandrinus, 03 Vaticanus, P30 e P92 (classe 1) e os textos críticos '
+            'WH, RP, ST, KJTR e SR. Custódia: o acervo vive em .bee-cache/ '
+            '(excluída pelo .gitignore) — é consultado e citado, nunca '
+            'redistribuído; só o nosso relatório de colação é versionado.'
+        ),
+        'papel': 'testemunhas e textos críticos',
+    },
+    {
+        'name': 'Relatório de colação de 2 Tessalonicenses (obra do projeto)',
+        'url': 'docs/colacao/2_Tessalonicenses.json',
+        'attribution': (
+            'Gerado por scripts/colar.py --livro 600 com bee/manuscritos.py. É a '
+            'evidência verificável de cada afirmação de crítica textual destas '
+            'notas: uma linha do relatório por leitura citada. O protocolo está em '
+            'docs/CRITICA_TEXTUAL.md (§9 regista as ~30 unidades de variação do '
+            'livro com nível de certeza A/B/C).'
+        ),
+        'papel': 'evidência',
+    },
+]
+
+REVISAO = {
+    'editorial_blocks': [
+        {'chapter': 1, 'verse_from': 1, 'verse_to': 12, 'status': 'rascunho',
+         'nota': PROVENIENCIA_EDITORIAL},
+        {'chapter': 2, 'verse_from': 1, 'verse_to': 17, 'status': 'rascunho',
+         'nota': PROVENIENCIA_EDITORIAL},
+        {'chapter': 3, 'verse_from': 1, 'verse_to': 18, 'status': 'rascunho',
+         'nota': PROVENIENCIA_EDITORIAL},
+    ],
+    'specialist': [
+        {'chapter': 1, 'verse_from': 1, 'verse_to': 12, 'status': 'pendente'},
+        {'chapter': 2, 'verse_from': 1, 'verse_to': 17, 'status': 'pendente',
+         'nota': 'Prioridade: 2:13 (ἀπαρχήν / ἀπʼ ἀρχῆς), nível de certeza C.'},
+        {'chapter': 3, 'verse_from': 1, 'verse_to': 18, 'status': 'pendente',
+         'nota': 'Prioridade: 3:6 (παρελάβοσαν / παρελάβετε / παρέλαβον), nível C.'},
+    ],
+}
+
+
+def _versiculos(capitulo: list[tuple[int, str, str]]) -> list[dict[str, str]]:
+    return [{'verse': numero, 'text': texto, 'commentary': nota}
+            for numero, texto, nota in capitulo]
+
+
+def montar(anterior: dict[str, object] | None) -> dict[str, object]:
+    """Monta o JSON do livro conservando o que já está fixado e a história."""
+    anterior = anterior or {}
+    dados: dict[str, object] = {
+        'format_version': 1,
+        'book_number': LIVRO.numero,
+        'book_name': LIVRO.nome,
+        'chapter_count': LIVRO.capitulos,
+        'chapters': {
+            str(indice): _versiculos(capitulo)
+            for indice, capitulo in enumerate(CAPITULOS, start=1)
+        },
+        'in_progress': {},
+        # O histórico anterior conserva-se inteiro (nada se apaga), exceto as
+        # entradas desta mesma regeneração — sem isso, cada execução somaria três
+        # e o rasto deixaria de ser reproduzível.
+        'history': [
+            entrada for entrada in (anterior.get('history') or [])
+            if not (isinstance(entrada, dict)
+                    and entrada.get('model') == MODELO_EDITORIAL)
+        ],
+    }
+    fontes = dict(anterior.get('sources') or {
+        'versification': 'KJV/tradicional',
+        'alignment_version': ALINHAMENTO_VERSAO,
+        'sblgnt_commit': SBL_COMMIT,
+        'textus_receptus_commit': TR_COMMIT,
+    })
+    fontes['cntr_transcriptions_commit'] = CNTR_REVISAO
+    fontes['collation_report'] = 'docs/colacao/2_Tessalonicenses.json'
+    dados['sources'] = fontes
+    dados['review'] = REVISAO
+    dados['bibliography'] = BIBLIOGRAFIA
+    for capitulo, versiculos in enumerate(CAPITULOS, start=1):
+        dados['history'].append({
+            'chapter': capitulo,
+            'verse_from': versiculos[0][0],
+            'verse_to': versiculos[-1][0],
+            'provider': 'local',
+            'model': MODELO_EDITORIAL,
+            'generated_at_utc': GERADO_EM,
+        })
+    return dados
+
+
+# --------------------------------------------------------------------------
+# Conferência antes de gravar
+# --------------------------------------------------------------------------
+SECCOES_OBRIGATORIAS = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
+# O protocolo (docs/CRITICA_TEXTUAL.md §6.2) exige as três acima e permite estas
+# quando se aplicam. O verificador só garante que nenhum cabeçalho aparece sem o
+# marcador <b>…:</b> e que nada além disto é inventado.
+SECCOES_OPCIONAIS = ('Hermenêutica e Contexto', 'Geografia e História',
+                     'Nota de redação')
+VETADOS_NO_TEXTO = re.compile(
+    r'\b(vós|vos|vosso|vossa|vossos|vossas|convosco|conosco|SENHOR|perdição|'
+    r'iniquidade|sobremaneira|deveras|outrossim|porventura|de fato|registr\w+)\b')
+
+
+def conferir(dados: dict[str, object]) -> list[str]:
+    """Erros que impedem a gravação. Lista vazia = pronto a escrever."""
+    erros: list[str] = []
+    try:
+        validar_livro(dados, LIVRO)
+    except DadosInvalidos as exc:
+        erros.append(f'validar_livro: {exc}')
+    capitulos = dados['chapters']
+    for chave, esperados in zip(sorted(capitulos), LIVRO.versos_por_capitulo):
+        versiculos = capitulos[chave]
+        if len(versiculos) != esperados:
+            erros.append(f'{chave}: {len(versiculos)} versos, esperados {esperados}')
+        for verso in versiculos:
+            numero, texto, nota = verso['verse'], verso['text'], verso['commentary']
+            rotulo = f'{chave}:{numero}'
+            achado = analisar_texto(texto)
+            if achado['duros']:
+                erros.append(f'{rotulo}: falhas duras — {", ".join(achado["duros"])}')
+            if achado['avisos']:
+                erros.append(f'{rotulo}: marcadores de Almeida — {", ".join(achado["avisos"])}')
+            for proibido in set(VETADOS_NO_TEXTO.findall(texto)):
+                erros.append(f'{rotulo}: termo vetado no versículo — {proibido!r}')
+            if '\u2011' in texto or '\u2011' in nota:
+                erros.append(f'{rotulo}: hífen não separável U+2011')
+            if unicodedata.normalize('NFC', texto) != texto:
+                erros.append(f'{rotulo}: texto não está em NFC')
+            faltam = [s for s in SECCOES_OBRIGATORIAS if f'<b>{s}:</b>' not in nota]
+            if faltam:
+                erros.append(f'{rotulo}: secções obrigatórias em falta — {faltam}')
+            marcadas = re.findall(r'<b>([^<]{3,40}):</b>', nota)
+            for cabecalho in marcadas:
+                if (cabecalho not in SECCOES_OBRIGATORIAS
+                        and cabecalho not in SECCOES_OPCIONAIS):
+                    erros.append(f'{rotulo}: cabeçalho não previsto — {cabecalho!r}')
+            if 'não verificada' in nota and 'léxico' not in nota:
+                erros.append(f'{rotulo}: «não verificada» sem dizer o quê')
+            if not texto.rstrip().endswith(('.', ',', ';', '?', '!')):
+                erros.append(f'{rotulo}: sem pontuação final')
+        # Política de pontuação e maiúscula inicial (docs/CRITICA_TEXTUAL.md §5.1):
+        # um versículo que continua a frase do anterior começa em minúscula e o
+        # anterior termina em vírgula ou ponto e vírgula; um versículo que abre
+        # frase nova começa em maiúscula. As duas coisas não se misturam.
+        for anterior, seguinte in zip(versiculos, versiculos[1:]):
+            fim = anterior['text'].rstrip()[-1]
+            inicio = seguinte['text'].lstrip()[0]
+            rotulo = f'{chave}:{seguinte["verse"]}'
+            if inicio.islower() and fim not in ',;':
+                erros.append(f'{rotulo}: começa em minúscula mas {anterior["verse"]} '
+                             f'termina em {fim!r}')
+            if fim == ',' and inicio.isupper():
+                erros.append(f'{rotulo}: começa em maiúscula mas {anterior["verse"]} '
+                             'termina em vírgula')
+    return erros
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument('--verificar', action='store_true',
+                        help='valida e confere sem escrever o ficheiro')
+    parser.add_argument('--saida', type=Path, default=ALVO,
+                        help=f'caminho do JSON (padrão: {ALVO.relative_to(RAIZ)})')
+    args = parser.parse_args()
+
+    anterior = None
+    if ALVO.exists():
+        anterior = json.loads(ALVO.read_text(encoding='utf-8'))
+    dados = montar(anterior)
+
+    erros = conferir(dados)
+    if erros:
+        print(f'{len(erros)} problema(s):', file=sys.stderr)
+        for erro in erros:
+            print(f'  - {erro}', file=sys.stderr)
+        return 1
+
+    versos = sum(len(c) for c in dados['chapters'].values())
+    if args.verificar:
+        print(f'Conferido sem escrever: {versos} versículos, '
+              f'{len(dados["history"])} entradas de history, '
+              f'{len(dados["bibliography"])} referências.')
+        return 0
+
+    temporario = args.saida.with_suffix('.json.tmp')
+    temporario.write_text(
+        json.dumps(dados, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    temporario.replace(args.saida)
+    print(f'Escrito {args.saida.relative_to(RAIZ)}: {versos} versículos.')
+    print('Estado: RASCUNHO. Revisão editorial e especializada pendentes '
+          '(campo review).')
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

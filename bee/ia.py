@@ -771,6 +771,10 @@ class MotorIA:
                     if not unicodedata.combining(c)
                 )
                 texto_comentario = ' '.join(texto_comentario.split())
+                # Só as três secções obrigatórias de docs/CRITICA_TEXTUAL.md §6.2.
+                # As condicionais — Hermenêutica e Contexto, Geografia e História e
+                # Nota de redação — dependem da passagem e por isso não são exigidas
+                # aqui (o pedido, em bee/perfil.py, é que as descreve).
                 for secao, titulo in (
                     ('analise lexica', 'Análise Léxica'),
                     ('critica textual', 'Crítica Textual'),

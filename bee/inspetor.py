@@ -60,6 +60,12 @@ MARCADORES_ALMEIDA = (
     'aconteceu que', 'o sem lei', 'para com os outros', 'glória da sua força',
     'manifestação da sua vinda', 'filho da perdição',
 )
+# O texto é comparado sem acentos (_norm), logo os marcadores também têm de ser
+# comparados normalizados — sem isto, «filho da perdição», «glória da sua força»,
+# «manifestação da sua vinda» e «dar-se-á» nunca casavam (tinham acento) e a
+# auditoria devolvia «Estilo limpo» a livros que os contêm. Foi o falso negativo
+# que deixou passar as regressões de 2 Tessalonicenses 2:3 e 2:8.
+_MARCADORES_ALMEIDA_NORM = tuple((_norm(m), m) for m in MARCADORES_ALMEIDA)
 
 _RE_ARCAICO = {
     termo: re.compile(r'(?<![a-zà-ÿ])' + re.escape(_norm(termo)) + r'(?![a-zà-ÿ])')
@@ -81,5 +87,5 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
     for rotulo, padrao in HEDGE_PADROES:
         if padrao.search(orig_baixo):
             duros.append(rotulo)
-    avisos = [m for m in MARCADORES_ALMEIDA if m in baixo]
+    avisos = [rotulo for norma, rotulo in _MARCADORES_ALMEIDA_NORM if norma in baixo]
     return {'duros': sorted(set(duros)), 'avisos': sorted(set(avisos))}

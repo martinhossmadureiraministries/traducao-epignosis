@@ -195,6 +195,89 @@ preserva os 18 capítulos/766 versículos.
 - `entregas/BEE-previa.zip` foi regenerado a partir dos **19 capítulos/806
   versículos completos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
 
+## Etapa 10 — crítica textual aplicada (20/11/2026)
+
+A proposta do responsável («estudo de crítica textual, manuscritos,
+manuscritologia… os mais antigos e com mais cópias devem ser priorizados») foi
+transformada em procedimento e aplicada a um livro inteiro.
+
+- **Protocolo:** `docs/CRITICA_TEXTUAL.md` — convicção doutrinária e o que ela
+  exige do método, por que a regra dos «mais antigos e com mais cópias» não se
+  aplica como slogan (com 2Ts 2:13 como caso real), quatro níveis de evidência e
+  três proibições, registo de testemunhas com as pendências, procedimento de sete
+  passos por unidade, exegese/hermenêutica, geografia bíblica, arquivologia e a
+  tabela de decisões do livro.
+- **Evidência:** `bee/manuscritos.py` lê as transcrições MES do acervo CNTR
+  (revisão `4e743a4`, CC BY-SA, em `.bee-cache/` fora do Git) e `scripts/colar.py`
+  produz `docs/colacao/2_Tessalonicenses.json` e `.md`: 47 versículos contra 01,
+  02, 03, P30 e P92 e os textos WH, RP, ST, KJTR, SR e Scrivener, com o estado
+  físico do suporte (lacuna, texto suprido, mão corrigida, letra ilegível).
+- **Livro regenerado:** `edicoes/nova/livros_json/600_2_Tessalonicenses.json`, a
+  partir de `scripts/regenerar_2ts.py` (`--verificar` valida sem escrever). A
+  versão anterior aprovada foi guardada em
+  `rascunhos/600_2_Tessalonicenses_aprovado_2026-11-19.json` e o histórico de
+  geração dos provedores foi conservado na íntegra.
+- **Guarda corrigida:** `bee/inspetor.py` comparava marcadores acentuados contra
+  texto sem acentos, por isso «filho da perdição», «manifestação da sua vinda»,
+  «glória da sua força» e «dar-se-á» nunca eram assinalados — o falso negativo que
+  deixou passar 2Ts 2:3 e 2:8.
+- **Memória de estilo v1.1:** três regras duras novas (pontuação e maiúscula
+  inicial; SENHOR e Senhor; crítica textual só com evidência colacionada),
+  `registro.ortografia`, oito entradas de glossário e três vetos novos.
+- **Testes:** `tests/test_manuscritos.py` (40) e `tests/test_critica_textual.py`
+  (69). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
+  testemunha sem registo de colação naquele versículo, que as âncoras da
+  memória de estilo citam o texto aprovado em vez de o reescreverem, e — na classe
+  de lapidação — que nenhum dos sete livros tem próclise com gerúndio, marcas
+  desequilibradas, verbos supridos sem itálico ou famílias lexicais incoerentes.
+  Total: 370 testes.
+
+### Lapidação (mesmo dia)
+
+Doze versículos e catorze notas revistos sobre a colação, com a regra reutilizável
+de cada correção. Os achados que mais pesam:
+
+- **1:2 traduzia contra a base.** A nota registava que a base lê *θεοῦ πατρὸς* sem
+  *ἡμῶν*, e o texto escrevia «Deus, nosso Pai» por uniformidade com Filemom 1:3,
+  cuja base **tem** *ἡμῶν*. Nota e versículo a contradizerem-se é o pior dos dois
+  erros; ficou «da parte de Deus Pai», nível B, e a regra «uniformidade só onde o
+  grego é igual» entrou na memória de estilo.
+- **1:8-9 apagava uma relativa.** *οἵτινες* liga o v. 9 ao v. 8; o texto fechava o
+  v. 8 com ponto e abria o v. 9 com «Eles». Fica vírgula e «os quais sofrerão».
+- **Gralhas nas notas:** *introduce* por «introduz» (1:12), «adverbio» sem acento
+  (3:6), «pererergoso» — palavra portuguesa inventada para explicar *περίεργος*
+  (3:11), um itálico nunca fechado (3:16) e «duas letras» onde é uma só, o *ρ* de
+  *τρόπος* (3:16).
+- **Dois `»` sem `«` em João 1:31 e 1:34**: o discurso de João Batista continuava
+  fora de citação. Apanhado porque o teste de marcas equilibradas corre sobre os
+  sete livros da edição nova, não só sobre 2 Tessalonicenses.
+- **Próclise brasileira** («se metendo», 3:11) num corpus que só tem ênclise.
+
+Regras novas na memória de estilo (v1.3): ênclise com gerúndio, uniformidade só
+onde o grego é igual, o artigo depois de «todo» como facto do português e não do
+grego, verbo suprido em itálico, e dois vetos (próclise, derivação inventada). Guia prático em
+`docs/OFICINA_TRADUCAO.md`: como decidir sem ser especialista, recomendação
+fundamentada das duas unidades C, e o que o responsável pode rever sem saber grego.
+
+### Seis livros lapidados e notas migradas (ainda 2026-11-20)
+
+- A lapidação chegou a João 1, Tito e Judas (`scripts/lapidar_seis.py`) e a
+  regra de *πᾶς* foi corrigida no mesmo dia: artigo depois de «todo», como a
+  Almeida de 1911 impressa em Portugal.
+- Os cinco livros curtos foram colacionados (`docs/colacao/`) e as 123 notas
+  de enchimento foram substituídas por Análise Léxica do piloto aprovado e
+  Crítica Textual do aparato + colação, com nível de certeza por versículo
+  (`scripts/migrar_notas_cinco.py`). Decisões registadas em
+  `docs/CRITICA_TEXTUAL.md` §10; nível C em Judas 1:5 e 1:22–23.
+- Os sete livros têm agora `bibliography` e `review` em **RASCUNHO**.
+- Comparação com ARC/ACF/NVI/NTLH/ALM1911, incluindo Hebreus 11:1 como
+  demonstração fora da edição: `docs/COMPARACAO_POPULAR.md`.
+
+Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
+especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
+37 dos 47 versículos diferem da versão de 19/11, cuja voz foi aprovada; esta
+redação não foi lida pelo responsável.
+
 ## Próximas etapas
 
 | Etapa | Estado |
@@ -208,3 +291,4 @@ preserva os 18 capítulos/766 versículos.
 | 7. Diagnóstico do cron | feito: `schedule` nunca correu; hora+cron reduzidos, relógio e pinger documentados |
 | 8. Limpeza física | feita: raiz curta e antigos em `docs/arquivo/` |
 | 9. Verificação final | por fazer |
+| 10. Crítica textual aplicada | feita para 2 Tessalonicenses; falta colacionar os outros livros da edição nova e rever as duas unidades de nível C |
