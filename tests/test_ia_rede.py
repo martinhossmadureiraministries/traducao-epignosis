@@ -33,6 +33,15 @@ class HTTPFalso:
 
 
 class IATest(unittest.TestCase):
+    def test_groq_reserva_espaco_para_entrada_no_teto_de_8000(self):
+        motor = MotorIA('groq', 'openai/gpt-oss-120b', 'CHAVE', HTTPFalso({}), 12000)
+        _, curto, _ = motor._corpo('texto', 'CHAVE')
+        _, longo, _ = motor._corpo('texto' * 300, 'CHAVE')
+        self.assertLess(curto['max_tokens'], 8000)
+        self.assertLess(longo['max_tokens'], curto['max_tokens'])
+        with self.assertRaises(RespostaTruncada):
+            motor._corpo('texto' * 5000, 'CHAVE')
+
     def test_openai_json_e_system_prompt_incluem_fontes_e_chave_em_header(self):
         response = {'choices': [{'finish_reason': 'stop', 'message': {'content': json.dumps(retorno([1,2]))}}]}
         http = HTTPFalso(response)
