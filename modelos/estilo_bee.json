@@ -1,6 +1,6 @@
 {
   "meta": {
-    "versao": "1.2",
+    "versao": "1.3",
     "atualizado_em": "2026-11-20",
     "fonte_de_autoridade": "docs/ESTILO_BEE.md (v0.5) e docs/CRITICA_TEXTUAL.md",
     "descricao": "Memória de estilo da edição nova da BEE. Fonte única enviada a TODOS os provedores, para que Gemini, Groq, Cerebras e os demais convirjam na mesma voz. O código não contém regras de estilo próprias da edição nova: bee/memoria_estilo.py renderiza este ficheiro nos prompts.",
@@ -19,10 +19,30 @@
     "tratamento_plural": "Todo o tratamento plural é «vocês», coerente do primeiro ao último versículo do MESMO capítulo — nada de misturar «vocês» com formas antigas num só versículo. Decidir no início do capítulo se o auditório é «vocês» ou «tu» e nunca alternar.",
     "tu_oracao_direta": "«tu» apenas em oração direta (dirigida a Deus), com imperativos e pronomes coerentes com essa escolha.",
     "arcaismos_proibidos": [
-      "vós", "vos", "vosso", "vossa", "vossos", "vossas", "convosco",
-      "sois", "sejais", "estais", "estejais", "tendes", "tenhais", "sabeis",
-      "sabíeis", "padeceis", "quereis", "deveis", "fazeis", "dizeis", "vedes",
-      "rogamos-vos", "tornai-vos", "lembrai-vos"
+      "vós",
+      "vos",
+      "vosso",
+      "vossa",
+      "vossos",
+      "vossas",
+      "convosco",
+      "sois",
+      "sejais",
+      "estais",
+      "estejais",
+      "tendes",
+      "tenhais",
+      "sabeis",
+      "sabíeis",
+      "padeceis",
+      "quereis",
+      "deveis",
+      "fazeis",
+      "dizeis",
+      "vedes",
+      "rogamos-vos",
+      "tornai-vos",
+      "lembrai-vos"
     ],
     "nota_connosco": "A forma «connosco» é aceite quando soar natural (os pilotos aprovados de 2 João a mantêm); o que está proibido é «convosco» e o paradigma completo do «vós».",
     "ortografia": "Português europeu, sem hesitação entre normas: «connosco» (nunca «conosco»), «de facto» (nunca «de fato»), «registo» (nunca «registro»), «secção», «aspeto», «ação», «facto». A norma não é capricho regional — é o que faz o texto soar ao mesmo livro de ponta a ponta; os pilotos aprovados e 2 Tessalonicenses seguem-na."
@@ -133,7 +153,10 @@
       "sentido": "conhecimento profundo e relacional no argumento da passagem; a nota regista o alcance contextual sem tratar o prefixo como prova de intensidade idêntica em todos os usos.",
       "nao_estender_a": "γνῶσις nem a verbos aparentados",
       "contexto_reuso": "reutilizável sempre que o contexto trouxer o composto ἐπίγνωσις;",
-      "livros_reuso": [640, 630],
+      "livros_reuso": [
+        640,
+        630
+      ],
       "exemplo_aprovado": "Filemom 1:6 «…pelo pleno conhecimento de todo o bem que há em nós, para Cristo.»; Tito 1:1 «…ao pleno conhecimento da verdade…»"
     },
     {
@@ -143,7 +166,9 @@
       "sentido": "o valor afetivo da imagem comunica-se em português sem importar a anatomia; a nota regista a imagem anatómica original.",
       "rejeitar": "NUNCA traduzir literalmente por «entranhas» no corpo do texto",
       "contexto_reuso": "manter a MESMA palavra escolhida ao longo da carta inteira (em Filemom, vv. 7, 12 e 20), para a carta ficar coesa;",
-      "livros_reuso": [640],
+      "livros_reuso": [
+        640
+      ],
       "exemplo_aprovado": "Filemom 1:7 «…por meio de ti, o coração dos santos encontrou descanso.»"
     },
     {
@@ -151,7 +176,9 @@
       "transliteracao": "koinōnia",
       "usar": "«partilha» ou «comunhão» conforme o contexto",
       "sentido": "em Filemom 1:6 o movimento é o da fé partilhada que se torna eficaz.",
-      "livros_reuso": [640],
+      "livros_reuso": [
+        640
+      ],
       "exemplo_aprovado": "Filemom 1:6 «Peço que a partilha da tua fé se torne eficaz…»"
     },
     {
@@ -159,7 +186,9 @@
       "transliteracao": "systratiōtēs",
       "usar": "«companheiro de luta»",
       "rejeitar": "«companheiro de campanha», que é ambíguo em português",
-      "livros_reuso": [640],
+      "livros_reuso": [
+        640
+      ],
       "exemplo_aprovado": "Filemom 1:2 «…a Arquipo, nosso companheiro de luta…»"
     },
     {
@@ -268,13 +297,15 @@
     {
       "grego": "πᾶς",
       "transliteracao": "pãs",
-      "usar": "«todo/toda» SEM artigo quando o grego é anártrico (= cada um): «todo desejo de bondade e toda obra de fé» (2Ts 1:11), «todo irmão» (2Ts 3:6), «toda boa obra» (2Ts 2:17)",
-      "sentido": "πᾶς sem artigo distribui (cada); πᾶς com o artigo totaliza (o inteiro, todos os). «Todo o desejo» diria «o desejo inteiro», que não é o que está escrito.",
-      "contexto_reuso": "exceção: quando o português sem artigo ficaria ambíguo, mantém-se o artigo e a nota justifica — 2Ts 2:9 «com todo o poder» (ἐν πάσῃ δυνάμει), porque «com todo poder» se leria como onipotência.",
+      "usar": "«todo o / toda a» com singular e «todos os / todas as» com plural, haja ou não artigo no grego: o artigo português depois de «todo» é gramatical e não traduz o artigo grego",
+      "sentido": "πᾶς anártrico distribui (cada um); πᾶς com artigo pode totalizar (o inteiro). A diferença regista-se na Análise Léxica, nunca no artigo português. Suprimir o artigo é importar o português do Brasil: lá «todo desejo» e «todo o desejo» distinguem-se, em Portugal não.",
+      "contexto_reuso": "evidência de língua, não de texto: a Almeida de 1911, impressa em Portugal e em domínio público, escreve «todo o desejo» (2Ts 1:11) e «todo o irmão» (3:6) para grego anártrico; a ARC brasileira escreve «todo desejo». 2Ts 2:9 «com todo o poder» já seguia esta forma e deixa de ser exceção.",
       "livros_reuso": [
-        600
+        600,
+        500,
+        630
       ],
-      "exemplo_aprovado": "2Ts 1:11 «cumpra, com poder, todo desejo de bondade e toda obra de fé»"
+      "exemplo_aprovado": "2Ts 1:11 «cumpra, com poder, todo o desejo de bondade e toda a obra de fé»"
     },
     {
       "grego": "ὑπομονή",
@@ -346,16 +377,38 @@
   },
   "ancoras": {
     "livros_base": [
-      {"numero": 640, "nome": "Filemom"},
-      {"numero": 630, "nome": "Tito"},
-      {"numero": 720, "nome": "Judas"},
-      {"numero": 700, "nome": "2 João"},
-      {"numero": 710, "nome": "3 João"}
+      {
+        "numero": 640,
+        "nome": "Filemom"
+      },
+      {
+        "numero": 630,
+        "nome": "Tito"
+      },
+      {
+        "numero": 720,
+        "nome": "Judas"
+      },
+      {
+        "numero": 700,
+        "nome": "2 João"
+      },
+      {
+        "numero": 710,
+        "nome": "3 João"
+      }
     ],
     "por_genero": {
       "carta": [
-        "Filemom 1:1", "Filemom 1:2", "Filemom 1:6", "Filemom 1:7",
-        "Filemom 1:8", "Filemom 1:9", "Tito 1:1", "Judas 1:4", "2 João 1:1"
+        "Filemom 1:1",
+        "Filemom 1:2",
+        "Filemom 1:6",
+        "Filemom 1:7",
+        "Filemom 1:8",
+        "Filemom 1:9",
+        "Tito 1:1",
+        "Judas 1:4",
+        "2 João 1:1"
       ]
     },
     "amostras": [
@@ -460,9 +513,9 @@
     },
     {
       "mau_referencia": "2Ts 1:11",
-      "mau": "…cumpra, com poder, todo o desejo de bondade e toda obra de fé,",
-      "bom": "…cumpra, com poder, todo desejo de bondade e toda obra de fé,",
-      "licao": "πᾶσαν e ἔργον são anártricos: «cada desejo», «cada obra». «Todo o desejo» diria «o desejo inteiro». E numa mesma frase não se mistura «todo o» com «toda»"
+      "mau": "…cumpra, com poder, todo desejo de bondade e toda obra de fé,",
+      "bom": "…cumpra, com poder, todo o desejo de bondade e toda a obra de fé,",
+      "licao": "πᾶσαν e ἔργον são anártricos e distribuem (cada desejo, cada obra), mas o artigo português depois de «todo» no singular é gramatical e não traduz o artigo grego. Sem ele a frase soa a português do Brasil, onde «todo o desejo» se lê como «o desejo inteiro». O facto grego vai na nota, que é onde o leitor o pode verificar."
     },
     {
       "mau_referencia": "2Ts 3:11",

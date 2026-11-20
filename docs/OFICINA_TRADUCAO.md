@@ -131,7 +131,7 @@ de mudar — muda só a nota, que passa a dizer «que vocês receberam».
 
 Doze versículos e catorze notas revistos sobre a colação. A coluna «regra» é o
 que fica para os outros livros; todas as regras estão em
-[`modelos/estilo_bee.json`](../modelos/estilo_bee.json) (v1.2) e são verificadas
+[`modelos/estilo_bee.json`](../modelos/estilo_bee.json) (v1.3) e são verificadas
 por [`tests/test_critica_textual.py`](../tests/test_critica_textual.py).
 
 | Verso | Antes | Depois | Porquê | Regra que fica |
@@ -140,7 +140,7 @@ por [`tests/test_critica_textual.py`](../tests/test_critica_textual.py).
 | 1:4 | «a fé **que vocês demonstram** em todas as perseguições» | «a fé de vocês em todas as perseguições» | «demonstram» não está no grego e não ia em itálico | acréscimo ou sai, ou vai marcado |
 | 1:5 | «**Isso é** prova **evidente**» | «*Isso é* prova» | «evidente» é intensidade acrescentada; o verbo suprido não estava marcado | **verbo suprido vai em itálico** |
 | 1:8-9 | «…nosso Senhor Jesus**.** / **Eles** sofrerão…» | «…nosso Senhor Jesus**,** / **os quais** sofrerão…» | *οἵτινες* é relativo plural: são os mesmos do v. 8 | **relativa entre versículos não se apaga** |
-| 1:11 | «**todo o** desejo… e **toda** obra» | «todo desejo… e toda obra» | *πᾶσαν* e *ἔργον* são anártricos; e a mesma frase misturava as duas construções | **πᾶς sem artigo = «cada»** |
+| 1:11 | «**todo o** desejo… e **toda** obra» | «todo **o** desejo… e toda **a** obra» | *πᾶσαν* e *ἔργον* são anártricos, mas o artigo português é gramatical e não traduz o grego; a nota regista o anártrico | **artigo depois de «todo» é português, não grego** (regra corrigida no mesmo dia) |
 | 2:9 | «A vinda dele acontece…» | «A vinda dele *acontece*…» | o grego não tem verbo aqui (*οὗ ἐστιν ἡ παρουσία*) | verbo suprido vai em itálico |
 | 3:7 | «não **andamos** desordenadamente» | «não **vivemos** desordenadamente» | vv. 6 e 11 já diziam «viver»; a própria nota dizia «viveram» | **família lexical coerente** |
 | 3:9 | «mas fizemos assim para…» | «mas *fizemos assim* para…» | o *ἀλλʼ ἵνα* grego é elíptico: falta a oração principal | verbo suprido vai em itálico |
@@ -188,11 +188,14 @@ venha a traduzir os outros livros, e todas têm teste.
 3. **Gerúndio é a forma da casa** para o particípio presente grego. Os sete livros
    aprovados não têm uma única construção «estar a + infinitivo» em lugar de
    gerúndio; «continuará a fazê-lo» só entra como aspetual.
-4. **πᾶς sem artigo = «cada»; πᾶς com artigo = «o inteiro».** «todo desejo de
-   bondade e toda obra de fé» (1:11), «todo irmão» (3:6), «toda boa obra» (2:17).
-   Exceção documentada: onde o português sem artigo fosse ambíguo, mantém-se o
-   artigo e a nota justifica — «com todo o poder» (2:9), porque «com todo poder»
-   se leria como onipotência.
+4. **O artigo depois de «todo» no singular é português, não grego.** «todo o
+   desejo de bondade e toda a obra de fé» (1:11), «todo o irmão» (3:6), «toda a
+   boa obra» (2:17). *πᾶς* anártrico distribui (cada desejo, cada obra) e isso
+   vai na Análise Léxica; suprimir o artigo português só distingue «cada» de «o
+   inteiro» no português do Brasil. A Almeida de 1911, impressa em Portugal,
+   escreve «todo o desejo» e «todo o irmão» para grego anártrico. A regra foi
+   escrita de manhã sem artigo e corrigida à tarde, quando a lapidação chegou a
+   João 1:9 («todo homem») e a Tito 2:14 («toda iniquidade»).
 5. **Verbo, sujeito ou oração suprida vai em `<i>…</i>`.** Artigo, pronome e
    preposição meramente gramaticais não se marcam. Marcar tudo torna o texto
    ilegível; não marcar nada esconde do leitor onde o português acrescentou.
@@ -280,5 +283,5 @@ palavra — e a nota já diz qual.
   conservadas; as nossas são `provider: local`, `model: editorial:critica-textual`.
 - **Reprodução:** `python3 scripts/regenerar_2ts.py --verificar` valida sem
   escrever; correr o escritor duas vezes não duplica o histórico.
-- **Testes:** 361, todos verdes. Os de lapidação correm sobre os sete livros da
+- **Testes:** 366, todos verdes. Os de lapidação correm sobre os sete livros da
   edição nova, não só sobre este.

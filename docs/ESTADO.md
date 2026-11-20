@@ -225,12 +225,12 @@ transformada em procedimento e aplicada a um livro inteiro.
   inicial; SENHOR e Senhor; crítica textual só com evidência colacionada),
   `registro.ortografia`, oito entradas de glossário e três vetos novos.
 - **Testes:** `tests/test_manuscritos.py` (40) e `tests/test_critica_textual.py`
-  (60). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
+  (61). O segundo verifica, entre outras coisas, que nenhuma nota cita uma
   testemunha sem registo de colação naquele versículo, que as âncoras da
   memória de estilo citam o texto aprovado em vez de o reescreverem, e — na classe
   de lapidação — que nenhum dos sete livros tem próclise com gerúndio, marcas
   desequilibradas, verbos supridos sem itálico ou famílias lexicais incoerentes.
-  Total: 361 testes.
+  Total: 366 testes.
 
 ### Lapidação (mesmo dia)
 
@@ -253,11 +253,25 @@ de cada correção. Os achados que mais pesam:
   sete livros da edição nova, não só sobre 2 Tessalonicenses.
 - **Próclise brasileira** («se metendo», 3:11) num corpus que só tem ênclise.
 
-Regras novas na memória de estilo (v1.2): ênclise com gerúndio, uniformidade só
-onde o grego é igual, *πᾶς* anártrico no glossário, verbo suprido em itálico, e
-dois vetos (próclise, derivação inventada). Guia prático em
+Regras novas na memória de estilo (v1.3): ênclise com gerúndio, uniformidade só
+onde o grego é igual, o artigo depois de «todo» como facto do português e não do
+grego, verbo suprido em itálico, e dois vetos (próclise, derivação inventada). Guia prático em
 `docs/OFICINA_TRADUCAO.md`: como decidir sem ser especialista, recomendação
 fundamentada das duas unidades C, e o que o responsável pode rever sem saber grego.
+
+### Seis livros lapidados e notas migradas (ainda 2026-11-20)
+
+- A lapidação chegou a João 1, Tito e Judas (`scripts/lapidar_seis.py`) e a
+  regra de *πᾶς* foi corrigida no mesmo dia: artigo depois de «todo», como a
+  Almeida de 1911 impressa em Portugal.
+- Os cinco livros curtos foram colacionados (`docs/colacao/`) e as 123 notas
+  de enchimento foram substituídas por Análise Léxica do piloto aprovado e
+  Crítica Textual do aparato + colação, com nível de certeza por versículo
+  (`scripts/migrar_notas_cinco.py`). Decisões registadas em
+  `docs/CRITICA_TEXTUAL.md` §10; nível C em Judas 1:5 e 1:22–23.
+- Os sete livros têm agora `bibliography` e `review` em **RASCUNHO**.
+- Comparação com ARC/ACF/NVI/NTLH/ALM1911, incluindo Hebreus 11:1 como
+  demonstração fora da edição: `docs/COMPARACAO_POPULAR.md`.
 
 Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
 especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.

@@ -117,8 +117,10 @@ class RenderizacaoTest(unittest.TestCase):
         # σπλάγχνα, κοινωνία, συστρατιώτης e ἐπίγνωσις têm Filemom aprovado
         self.assertGreaterEqual(filemom.count('JÁ APROVADA'), 4)
         tito = ms.glossario_para_pedido(self.dados, livro_numero=630)
-        # Tito só tem ἐπίγνωσις aprovada
-        self.assertEqual(tito.count('JÁ APROVADA'), 1)
+        # Tito tem ἐπίγνωσις e, desde a lapidação de 2026-11-20, πᾶς: o artigo
+        # depois de «todo» no singular passou a ser regra em 500, 600 e 630.
+        self.assertEqual(tito.count('JÁ APROVADA'), 2)
+        self.assertIn('todo o / toda a', tito)
         self.assertIn('NUNCA traduzir literalmente por «entranhas»', filemom)
         self.assertIn('epignōsis', filemom)
         self.assertIn('PALAVRAS E FORMULAÇÕES REJEITADAS', filemom)

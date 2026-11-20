@@ -516,7 +516,44 @@ permite afirmar com o suporte à vista:
 
 ---
 
-## 10. Ligação à infraestrutura (o que muda no código)
+## 10. Decisões registadas para os cinco livros curtos e João 1 (2026-11-20)
+
+Os cinco livros do piloto aprovado (Tito, Filemom, 2 João, 3 João, Judas)
+foram colacionados com o mesmo acervo e a mesma revisão CNTR de
+2 Tessalonicenses (`scripts/colar.py --livro N`; relatórios em
+`docs/colacao/`). Em todos, **o texto segue a base fixada**; as Críticas
+Textuais das notas foram geradas por `scripts/migrar_notas_cinco.py` do
+aparato (edições) e dos relatórios (manuscritos), com nível de certeza
+declarado versículo a versículo: **A** quando a variante é apenas bizantina
+(RP) e WH/Tregelles/NA28 apoiam a base; **B** quando as edições críticas se
+dividem; **C** nos dois casos abaixo. O registo completo é a nota de cada
+versículo mais o relatório do livro; aqui ficam as decisões de consequência.
+
+| Ref. | Unidade | Decisão | Nível |
+|---|---|---|---|
+| Jd 1:5 | *Ἰησοῦς* (NA28) / *κύριος* (WH, Tregelles) / *ὁ κύριος* (RP) | segue a base: «[[Jesus]] salvou um povo». Das testemunhas colacionadas, 03 e SR leem com a base; 01 e 04 leem *κύριος*; P72 lê *θεὸς Χριστός*. Prioridade máxima de revisão especializada: é a divergência mais visível da edição face a todas as versões populares | **C** |
+| Jd 1:22–23 | *ἐλεᾶτε* (WH, NA28) / *ἐλεεῖτε* (RP) / *ἐλέγχετε* (Tregelles), com três arranjos das cláusulas | segue a base; o arranjo RP desloca «em temor» para junto de «salvai» | **C** |
+| Fm 1:6 | *τοῦ* (WH, NA28, RP) / omissão (Tregelles, 02, 04); *ἡμῖν* / *ὑμῖν* (01, TR) | segue a base: «o bem que há em nós» | B |
+| 2 Jo 1:8 | *εἰργασάμεθα* «nós trabalhámos» / *εἰργάσασθε* «vocês trabalharam» (Tregelles, NIV; 02, SR) | segue a base; a pessoa dos três verbos fica registada na nota | B |
+| 2 Jo 1:12 | *ὑμῶν* «a vossa alegria» (WH, Tregelles; 01) / *ἡμῶν* (NA28, RP) | segue a base com WH/Tregelles contra NA28 | B |
+| Tt 2:13; Fm 1:5; 3 Jo 1:4–5; Jd 1:15–16, 18 | edições críticas divididas em pormenor (ordem, artigo, sinónimos) | segue a base em todos; pormenor na nota de cada versículo | B |
+
+Leituras de manuscritos que nenhuma edição imprime, registadas nas notas a
+partir dos relatórios (não mudam o texto): Jd 1:12 *ἀπάταις* «enganos» em 02
+e 04 (assimilação provável a 2 Pedro 2:13); 3 Jo 1:8 *τῇ ἐκκλησίᾳ* em 01 e
+02; Jd 1:14 «santos anjos» em 01 e P72; Jd 1:21 subjuntivo *τηρήσωμεν* em 03,
+04 e P72; Fm 1:16 omissão de *ἀδελφόν* em 01; Fm 1:3 omissão de *ἡμῶν* em 01
+(a base mantém «nosso Pai», ao contrário de 2Ts 1:2 — ver §9); Tt 1:9
+leitura singular de 02. 3 João 1:14: a aparente falta da saudação final nas
+testemunhas é numeração (v. 15), não texto.
+
+João 1 (capítulo lapidado na mesma data por `scripts/lapidar_seis.py`): as
+notas citam o aparato e o relatório `docs/colacao/João.json`. Decisões de
+consequência: 1:18 *μονογενὴς θεός* contra *ὁ μονογενὴς υἱός* (RP) — a
+redação anterior seguia RP; 1:34 *ἐκλεκτός* (Holmes, WHmarg) contra *υἱός*
+(WH, Tregelles, NA28, RP), nível **C**.
+
+## 11. Ligação à infraestrutura (o que muda no código)
 
 | Onde | O quê |
 |---|---|
@@ -528,8 +565,10 @@ permite afirmar com o suporte à vista:
 | [`bee/perfil.py`](../bee/perfil.py) | contrato operacional do prompt da edição nova: três secções obrigatórias + Hermenêutica e Contexto, Geografia e História e Nota de redação quando se aplicam; proíbe citar códice, papiro ou edição que não esteja na colação nem no aparato; explicita as três proibições de §3 e os níveis de certeza |
 | [`bee/ia.py`](../bee/ia.py) | a verificação de cabeçalhos assinala (sem rejeitar o lote) só as três secções obrigatórias; as condicionais pertencem ao pedido |
 | [`scripts/regenerar_2ts.py`](../scripts/regenerar_2ts.py) | ficheiro editorial de 2 Tessalonicenses: os 47 versículos e notas redigidos sobre a colação, mais `montar()` (JSON do livro com `bibliography` e `review`) e `conferir()` (schema, guarda anti-deriva, vetos, secções, pontuação, NFC, U+2011). `--verificar` valida sem escrever; correr duas vezes não duplica o histórico |
+| [`scripts/lapidar_seis.py`](../scripts/lapidar_seis.py) | lapidação de 2026-11-20 sobre João 1, Tito e Judas (textos pontuais + notas refeitas do aparato real) e registo da reversão da regra de *πᾶς* (o artigo depois de «todo» é gramática europeia, não traduz o grego; memória v1.3). `--verificar` confere sem escrever |
+| [`scripts/migrar_notas_cinco.py`](../scripts/migrar_notas_cinco.py) | substitui as notas de enchimento dos cinco livros curtos: Análise Léxica das notas do piloto aprovado, Crítica Textual gerada do aparato + colação CNTR com nível de certeza, e acrescenta `sources`/`bibliography`/`review` (RASCUNHO) aos cinco livros e a João 1. `--prova` imprime antes de aplicar; `--verificar` confere invariantes |
 | [`tests/test_manuscritos.py`](../tests/test_manuscritos.py) | 40 testes do analisador MES: referência de 8 dígitos, quebras dentro de palavras, ligadura KAI, camadas de correção e precedência, nomina sacra por família, abreviaturas por barra só quando a base começa por elas |
-| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados (60 testes): nenhuma testemunha citada sem colação naquele versículo, 2:13 e 3:16 conferidos contra o relatório, regeneração reproduzível, proveniência e estados de revisão declarados, âncoras da memória coerentes com o texto aprovado, e uma classe de lapidação que corre sobre **os sete livros** da edição nova (ênclise, marcas equilibradas, itálicos dos verbos supridos, famílias lexicais, πᾶς anártrico) |
+| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados (65 testes): nenhuma testemunha citada sem colação naquele versículo, 2:13 e 3:16 conferidos contra o relatório, regeneração reproduzível, proveniência e estados de revisão declarados, âncoras da memória coerentes com o texto aprovado, uma classe de lapidação que corre sobre **os sete livros** da edição nova (ênclise, marcas equilibradas, itálicos dos verbos supridos, famílias lexicais, artigo depois de «todo») e uma classe de migração (sem notas de enchimento, três secções, `bibliography`/`review` em RASCUNHO, testemunhas citadas dentro do acervo do próprio livro) |
 | [`docs/OFICINA_TRADUCAO.md`](OFICINA_TRADUCAO.md) | a camada prática: como decidir sem ser especialista, recomendação fundamentada das duas unidades C, a passagem de lapidação de 20/11 verso a verso, as doze regras de ofício, o que o responsável pode rever e as perguntas a levar a um especialista |
 | `docs/colacao/` | relatórios de colação versionados (obra nossa; as transcrições CNTR ficam fora do Git) |
 
@@ -537,7 +576,7 @@ Fluxo por livro: `scripts/colar.py --livro N` → decisões em `docs/CRITICA_TEX
 → tradução e notas → `scripts/verificar_estilo.py` → `scripts/verificar_dados.py`
 → `gerar_bee.py --compilar` → revisão editorial → revisão especializada.
 
-## 11. O que este protocolo não é
+## 12. O que este protocolo não é
 
 Não é uma afirmação de que o texto está perdido, nem de que a igreja se enganou
 durante séculos, nem de que cada versículo precisa de uma dúvida. É o contrário:

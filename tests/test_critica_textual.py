@@ -557,12 +557,39 @@ class LapidacaoTest(unittest.TestCase):
             with self.subTest(referencia):
                 self.assertIn(forma.split()[0], ('vive', 'vivem', 'vivemos'))
 
-    def test_pas_anaritrico_sem_artigo(self):
-        texto = ' '.join(v['text'] for _, v in self.versos(self.dois_ts))
-        for errado in ('todo o desejo', 'toda a obra de fé', 'todo o irmão'):
-            self.assertNotIn(errado, texto)
-        for certo in ('todo desejo de bondade', 'toda obra de fé', 'todo irmão'):
-            self.assertIn(certo, texto)
+    def test_artigo_depois_de_todo_e_obrigatorio_em_portugues(self):
+        """πᾶς: o artigo depois de «todo» no singular é gramática portuguesa.
+
+        A regra de 2026-11-20 de manhã mandava suprimir o artigo quando o grego
+        era anártrico. Foi revertida no mesmo dia: essa distinção existe no
+        português do Brasil («todo desejo» = cada; «todo o desejo» = o inteiro)
+        e não no europeu, onde o artigo é obrigatório e não traduz nada. A
+        Almeida de 1911, impressa em Portugal, escreve «todo o desejo» e «todo o
+        irmão» para grego anártrico. O facto grego fica na nota, não no artigo.
+        """
+        substantivos = ('desejo', 'obra', 'irmão', 'homem', 'iniquidade',
+                        'mansidão', 'boa obra', 'boa palavra', 'tipo')
+        for nome, dados in self.livros.items():
+            for referencia, verso in self.versos(dados):
+                texto = verso['text']
+                for subst in substantivos:
+                    padrao = re.compile(
+                        r'\btod[oa]\s+' + re.escape(subst), re.IGNORECASE)
+                    with self.subTest(f'{nome} {referencia} {subst}'):
+                        self.assertIsNone(
+                            padrao.search(texto),
+                            f'«todo {subst}» sem artigo é brasileiro; falta «todo o/'
+                            f'toda a»')
+
+    def test_pas_anaritrico_registado_nas_notas(self):
+        """Onde o artigo português foi acrescentado, a nota diz que o grego é anártrico."""
+        notas = ' '.join(v.get('commentary', '') for _, v in self.versos(self.dois_ts))
+        self.assertIn('anártrico', notas)
+        self.assertIn('todo o desejo de bondade e toda a obra',
+                      self.dois_ts['chapters']['1'][10]['text'])
+        self.assertIn('todo o irmão', self.dois_ts['chapters']['3'][5]['text'])
+        self.assertIn('toda a boa obra e palavra',
+                      self.dois_ts['chapters']['2'][16]['text'])
 
     def test_relativa_de_1_9_e_virgula_de_1_8(self):
         cap = self.dois_ts['chapters']['1']
@@ -645,6 +672,81 @@ class ConferenciaDoFicheiroEditorialTest(unittest.TestCase):
         dados['chapters']['2'][14]['text'] = 'Portanto, irmãos, mantende-vos firmes.'
         erros = regenerar.conferir(dados)
         self.assertTrue(any('falhas duras' in e for e in erros))
+
+
+class MigracaoNotasCincoLivrosTest(unittest.TestCase):
+    """As notas dos cinco livros curtos já não são texto de enchimento.
+
+    `scripts/importar_piloto.py` deixou em Tito, Filemom, 2 João, 3 João e
+    Judas duas frases-promessa («migração lexical pendente de verificação»,
+    «colação direta não repetida aqui») nas 123 notas. A migração de
+    2026-11-20 substituiu-as por conteúdo verificável; estes testes impedem
+    a regressão e garantem que nenhuma testemunha é citada fora do acervo
+    colacionado para o próprio livro.
+    """
+
+    LIVROS = {630: 'Tito', 640: 'Filemom', 700: '2_João',
+              710: '3_João', 720: 'Judas'}
+    ENCHIMENTO = ('migração lexical pendente de verificação',
+                  'colação direta não repetida aqui',
+                  'rascunho a migrar das notas do piloto')
+
+    def _livro(self, caminho: Path) -> dict:
+        return json.loads(caminho.read_text(encoding='utf-8'))
+
+    def _comentarios(self, numero: int):
+        ficheiro = next((RAIZ / 'edicoes' / 'nova' / 'livros_json').glob(
+            f'{numero}_*.json'))
+        livro = self._livro(ficheiro)
+        for cap, versos in livro['chapters'].items():
+            for v in versos:
+                yield f"{cap}:{v['verse']}", v.get('commentary', '') or ''
+
+    def test_sem_enchimento_em_livro_nenhum(self):
+        pasta = RAIZ / 'edicoes' / 'nova' / 'livros_json'
+        for ficheiro in sorted(pasta.glob('*.json')):
+            livro = self._livro(ficheiro)
+            for cap, versos in livro['chapters'].items():
+                for v in versos:
+                    comentario = v.get('commentary', '') or ''
+                    for frase in self.ENCHIMENTO:
+                        self.assertNotIn(
+                            frase, comentario,
+                            f'{ficheiro.name} {cap}:{v["verse"]}')
+
+    def test_tres_seccoes_e_metadados_nos_sete_livros(self):
+        pasta = RAIZ / 'edicoes' / 'nova' / 'livros_json'
+        for ficheiro in sorted(pasta.glob('*.json')):
+            livro = self._livro(ficheiro)
+            self.assertTrue(livro.get('bibliography'), ficheiro.name)
+            self.assertTrue(livro.get('review'), ficheiro.name)
+            estados = {b['status'] for b in
+                       livro['review']['editorial_blocks']}
+            self.assertEqual(estados, {'rascunho'}, ficheiro.name)
+            for cap, versos in livro['chapters'].items():
+                for v in versos:
+                    comentario = v.get('commentary', '') or ''
+                    for seccao in ('Análise Léxica', 'Crítica Textual',
+                                   'Síntese Exegética'):
+                        self.assertIn(f'<b>{seccao}:</b>', comentario,
+                                      f'{ficheiro.name} {cap}:{v["verse"]}')
+
+    def test_testemunhas_citadas_existem_na_colacao_do_livro(self):
+        sigla = re.compile(r'\b(0[1-4]|0232|P\d+)\b')
+        for numero, nome in self.LIVROS.items():
+            relatorio = self._livro(RAIZ / 'docs' / 'colacao' / f'{nome}.json')
+            manuscritos = set(relatorio['fontes']['cntr']['manuscritos'])
+            for ref, comentario in self._comentarios(numero):
+                m = re.search(r'<b>Crítica Textual:</b>(.*?)</p>', comentario)
+                self.assertIsNotNone(m, f'{numero} {ref}')
+                for citada in set(sigla.findall(m.group(1))):
+                    self.assertIn(citada, manuscritos,
+                                  f'{numero} {ref} cita {citada}')
+
+    def test_relatorios_de_colacao_versionados(self):
+        for nome in (*self.LIVROS.values(), 'João', '2_Tessalonicenses'):
+            self.assertTrue(
+                (RAIZ / 'docs' / 'colacao' / f'{nome}.json').exists(), nome)
 
 
 if __name__ == '__main__':

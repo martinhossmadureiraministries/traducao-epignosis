@@ -337,18 +337,20 @@ CAP1 = [
      'tradução mantém o aspeto da base e a nota regista a alternativa.</p>'),
     (11,
      'Por isso também oramos sempre por vocês, para que o nosso Deus os considere '
-     'dignos da vocação e cumpra, com poder, todo desejo de bondade e toda obra de '
-     'fé,',
+     'dignos da vocação e cumpra, com poder, todo o desejo de bondade e toda a obra '
+     'de fé,',
      '<p><b>Análise Léxica:</b> <i>εἰς ὃ</i> («para o que», «por isso») retoma o '
      'destino descrito no v. 5. <i>ἀξιώσῃ</i> (axiṓsē) é aqui <b>ativo</b> — Deus '
      'é o agente nomeado, ao contrário da passiva de 1:5. <i>κλῆσις</i> (klêsis) é '
-     'chamamento, vocação. <i>εὐδοκία ἀγαθωσύνης</i> («todo desejo de bondade») e '
-     '<i>ἔργον πίστεως</i> («obra de fé») são dois genitivos que a tradução mantém '
-     'distintos. <i>πληρώσῃ</i> é completar, levar a cumprimento. Os dois '
-     '<i>πᾶν</i> são anártricos, e por isso a tradução os dá sem artigo: «todo '
-     'desejo», «toda obra», no sentido de <i>cada</i> desejo e <i>cada</i> obra. Com '
-     'artigo, «todo o desejo» diria «o desejo inteiro», que não é o que está escrito. '
-     'É a mesma razão de «toda boa obra» em 2:17 e de «todo irmão» em 3:6.</p>'
+     'chamamento, vocação. <i>εὐδοκία ἀγαθωσύνης</i> («todo o desejo de bondade») e '
+     '<i>ἔργον πίστεως</i> («toda a obra de fé») são dois genitivos que a tradução '
+     'mantém distintos. <i>πληρώσῃ</i> é completar, levar a cumprimento. Os dois '
+     '<i>πᾶν</i> são anártricos e distribuem: cada desejo, cada obra. O artigo que o '
+     'português lhes acrescenta é da gramática europeia e não traduz artigo grego '
+     'nenhum — a Almeida impressa em Portugal em 1911 escreve «todo o desejo» '
+     'exatamente aqui, onde o grego não tem artigo, e a brasileira escreve «todo '
+     'desejo». É a mesma razão de «toda a boa obra» em 2:17 e de «todo o irmão» em '
+     '3:6.</p>'
      '<p><b>Crítica Textual:</b> Sem variante verificada. O Alexandrinus (02) lê '
      '<i>πληρώσει</i> (futuro) por <i>πληρώσῃ</i> (subjuntivo) — diferença de modo '
      'que a subordinada <i>ἵνα</i> exige; não é variante de conteúdo.</p>'
@@ -357,7 +359,19 @@ CAP1 = [
      'bondade desejada e fé que obra — e o <i>ἐν δυνάμει</i> («com poder») mostra '
      'que o cumprimento é obra divina, não esforço humano. É a resposta pastoral à '
      'tensão dos vv. 5-10: se Deus julga com justiça, os que padecem podem pedir que '
-     'ele complete a sua obra.</p>'),
+     'ele complete a sua obra.</p>'
+     '<p><b>Nota de redação:</b> A redação de 2026-11-20 de manhã escrevia «todo '
+     'desejo de bondade e toda obra de fé», sem artigo, para marcar o anártrico '
+     'grego. A decisão foi revertida no mesmo dia, por duas razões. Primeira: o '
+     'artigo depois de <i>todo</i> no singular é obrigatório no português europeu e '
+     'não traduz o artigo grego — é gramática, não exegese; suprimi-lo importava uma '
+     'intuição do português do Brasil, onde «todo o desejo» se lê como «o desejo '
+     'inteiro». Segunda: a evidência de língua está ao alcance do responsável — a '
+     'Almeida de 1911, impressa em Portugal e em domínio público, escreve «todo o '
+     'desejo» e «todo o irmão» (3:6) para grego anártrico, e a ARC brasileira escreve '
+     '«todo desejo». O facto grego passa a estar registado na nota, que é onde o '
+     'leitor o pode verificar. Ver <i>docs/ESTILO_BEE.md</i>, πᾶς com e sem '
+     'artigo.</p>'),
     (12,
      'para que o nome do nosso Senhor Jesus seja glorificado em vocês, e vocês nele, '
      'segundo a graça do nosso Deus e do Senhor Jesus Cristo.',
@@ -845,7 +859,7 @@ CAP2 = [
      'eterna»: em português o adjetivo anteposto sugere leitura poética que o texto '
      'não pede.</p>'),
     (17,
-     'console o coração de vocês e os confirme em toda boa obra e palavra.',
+     'console o coração de vocês e os confirme em toda a boa obra e palavra.',
      '<p><b>Análise Léxica:</b> <i>παρακαλέσαι</i> (parakalésai) é consolar, '
      'encorajar, exortar — o verbo de <i>παράκλησις</i> do v. 16. <i>στηρίξαι</i> '
      '(stēríxai) é firmar, estabelecer; retoma <i>στήκετε</i> do v. 15 como pedido '
@@ -861,7 +875,12 @@ CAP2 = [
      'coração (consolo) e a conduta (firmeza em obra e palavra). A ordem «obra e '
      'palavra» da base é menos habitual do que «palavra e obra», o que sugere que a '
      'inversão bizantina pode ser harmonização a uma fórmula corrente (cf. Lc 24:19; '
-     'At 7:22). A tradução mantém a ordem da base.</p>'),
+     'At 7:22). A tradução mantém a ordem da base.</p>'
+     '<p><b>Nota de redação:</b> «toda boa obra e palavra» deu «toda a boa obra e '
+     'palavra»: em português europeu o artigo depois de <i>toda</i> no singular é '
+     'gramatical. <i>πᾶν</i> é anártrico e distribui — cada obra, cada palavra — e '
+     'isso fica registado na Análise Léxica, não no artigo. É a mesma correção de '
+     '1:11.</p>'),
 ]
 
 
@@ -969,7 +988,8 @@ CAP3 = [
      'ambiguidade é do original e pertence à nota.</p>'),
     (6,
      'Ordenamos a vocês, irmãos, em nome do nosso Senhor Jesus Cristo, que se afastem '
-     'de todo irmão que vive desordenadamente e não segundo a tradição que receberam '
+     'de todo o irmão que vive desordenadamente e não segundo a tradição que '
+     'receberam '
      'de nós.',
      '<p><b>Análise Léxica:</b> <i>στέλλεσθαι ἀπό</i> é médio: «afastar-se de», '
      'manter distância — não expulsar. <i>ἀτάκτως</i> (atáktōs) é advérbio de '
@@ -1010,7 +1030,11 @@ CAP3 = [
      '<p><b>Nota de redação:</b> A versão anterior escrevia «que se afaste todo '
      'irmão que vive de maneira desordenada», que em português inverte o sujeito e '
      'faz o irmão desordenado afastar-se a si mesmo. Corrigido para «que se afastem '
-     'de todo irmão…».</p>'),
+     'de todo o irmão…».</p>'
+     '<p><b>Nota de redação:</b> «todo irmão» deu «todo o irmão», pela regra do '
+     'artigo depois de <i>todo</i> no singular em português europeu. '
+     '<i>παντὸς ἀδελφοῦ</i> é anártrico: é cada irmão, não «o irmão inteiro». '
+     'Ver 1:11 e <i>docs/ESTILO_BEE.md</i>.</p>'),
     (7,
      'Pois vocês mesmos sabem como devem imitar-nos, visto que não vivemos '
      'desordenadamente entre vocês,',

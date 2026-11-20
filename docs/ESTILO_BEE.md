@@ -212,11 +212,20 @@ letra a letra entre livros **quando as bases coincidem**. Filemom 1:3 tem
 Pai» e a de 2 Tessalonicenses diz «Deus Pai». Uniformidade fabricada é
 infidelidade disfarçada de coerência.
 
-**πᾶς com e sem artigo.** Anártrico, distribui: «todo desejo de bondade e toda
-obra de fé» (= cada desejo, cada obra). Com artigo, totaliza: «todos os que
-creram», «todas as perseguições». «Todo o desejo» diria «o desejo inteiro», que
-não é o que está escrito. Exceção documentada: «com todo o poder» (2:9), porque
-«com todo poder» se leria como onipotência.
+**πᾶς com e sem artigo — correção de 2026-11-20.** O artigo depois de «todo» no
+singular é obrigatório em português europeu e **não traduz o artigo grego**: «todo
+o desejo de bondade e toda a obra de fé» (2Ts 1:11), «todo o irmão» (2Ts 3:6),
+«toda a boa obra» (2Ts 2:17), «todo o homem» (João 1:9), «toda a iniquidade»
+(Tito 2:14). A distinção grega regista-se na Análise Léxica, não no artigo:
+*πᾶς* anártrico distribui (cada desejo, cada obra); *πᾶς* com artigo pode
+totalizar («todos os que creram», «todas as perseguições»). A redação anterior
+desta regra mandava suprimir o artigo para marcar o anártrico; foi revertida no
+mesmo dia, porque a distinção em que se apoiava («todo o desejo» = «o desejo
+inteiro») é do português do Brasil e não do europeu. Prova de língua, não de
+texto: a Almeida de 1911, impressa em Portugal e em domínio público, escreve
+«todo o desejo» e «todo o irmão» para grego anártrico, e a ARC brasileira escreve
+«todo desejo». «Com todo o poder» (2Ts 2:9) já seguia esta forma e deixa de ser
+exceção.
 
 **Famílias lexicais coerentes.** Uma família grega tem uma família portuguesa no
 livro inteiro: *ἀτακτ-* → «viver desordenadamente» nos vv. 6, 7 e 11 do capítulo 3;

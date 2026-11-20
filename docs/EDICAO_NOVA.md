@@ -277,7 +277,7 @@ Gemini, Groq ou qualquer reserva recebem o mesmo bloco — a memória é o P0 do
 sistema de convergência multi-provedor (P1 será o guarda como porta obrigatória
 com quarentena e repetição noutro provedor; P2 a revisão por segunda IA).
 
-A memória é v1.2. O JSON guarda, com dados reais dos pilotos aprovados, da
+A memória é v1.3. O JSON guarda, com dados reais dos pilotos aprovados, da
 regeneração editorial de 2 Tessalonicenses e da passagem de lapidação de
 20/11/2026 (`docs/OFICINA_TRADUCAO.md`):
 
@@ -352,7 +352,7 @@ preservam o original, lotes de 40 versículos).
 cache), prioridades com pontuações e a CLI de aprovações sobre uma cópia da memória.
 `tests/test_manuscritos.py` cobre o analisador MES e a colação (40 testes);
 `tests/test_critica_textual.py` confronta o protocolo com os dados reais de
-2 Tessalonicenses (60 testes, dos quais uma classe de lapidação corre sobre os
+2 Tessalonicenses (65 testes, dos quais uma classe de lapidação corre sobre os
 sete livros da edição nova).
 `tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
 de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.
