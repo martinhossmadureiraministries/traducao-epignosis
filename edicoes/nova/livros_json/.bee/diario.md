@@ -133,3 +133,4 @@
 - 2026-11-20T08:54:29+00:00 — Revisão de voz: 1 capítulo(s) revistos, 0 emenda(s) aplicada(s).
 - 2026-11-20T08:54:29+00:00 — Módulos recompilados (PARCIAL): 13/1189 capítulos, 282 versículos.
 - 2026-11-20T08:54:29+00:00 — Ciclo 12: +30 versículos, +1 capítulos em João 4 (gemini/gemini-3.5-flash-lite; 6 versículos/pedido). Hoje: 87 versículos, 76 pedidos. A seguir: João 4.
+- 2026-11-20T08:54:31+00:00 — Capítulos exportados para leitura: 14 (2 mudaram nesta execução).
