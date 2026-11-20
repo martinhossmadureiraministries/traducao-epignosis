@@ -144,6 +144,28 @@ class WorkflowTest(unittest.TestCase):
                 self.gerar(motor)
         self.assertEqual(motor.calls, [])
 
+    def test_proveniencia_extra_nas_fontes_nao_bloqueia(self):
+        """Chaves extra em `sources` (colação CNTR) não são mistura de edições.
+
+        Reproduz a paragem de produção de 2026-11-20 (ciclo 10): a
+        migração das notas acrescentou `cntr_transcriptions_commit` e
+        `collation_report` a `sources` dos sete livros e a igualdade
+        estrita do dicionário recusou gerar qualquer um deles.
+        """
+        with self.assertRaises(KeyboardInterrupt):
+            self.gerar(MotorFalso(interromper_na_chamada=2))
+        caminho = self.dados / self.livro.nome_arquivo
+        dados = ler_livro(caminho, self.livro)
+        dados['sources']['cntr_transcriptions_commit'] = 'abc123'
+        dados['sources']['collation_report'] = 'docs/colacao/Filemom.json'
+        salvar_livro(caminho, dados, self.livro)
+        self.assertEqual(self.gerar(MotorFalso()), 1)
+        dados = ler_livro(caminho, self.livro)
+        # A proveniência extra sobrevive à geração; as canónicas impõem-se.
+        self.assertEqual(dados['sources']['cntr_transcriptions_commit'], 'abc123')
+        self.assertEqual(dados['sources']['collation_report'],
+                         'docs/colacao/Filemom.json')
+
     def test_divide_saida_truncada_e_mantem_lotes_menores(self):
         motor = MotorFalso(tamanho_max=2)
         self.gerar(motor)
