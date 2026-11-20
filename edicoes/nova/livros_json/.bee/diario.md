@@ -94,3 +94,7 @@
 - 2026-11-20T07:45:40+00:00 — **AVISO** Serviço de IA indisponível (5xx) e reserva esgotada; o próximo ciclo volta a tentar.
 - 2026-11-20T07:45:40+00:00 — Módulos recompilados no fim do ciclo: 12/1189 capítulos, 246 versículos.
 - 2026-11-20T07:45:40+00:00 — Capítulos exportados para leitura: 13 (2 mudaram nesta execução).
+- 2026-11-20T08:24:10+00:00 — Porta de estilo ativa; 1 capítulo(s) com provedores evitados por deriva anterior.
+- 2026-11-20T08:24:10+00:00 — **ERRO** Ciclo 10 falhou: João: as versões das fontes diferem do checkpoint; revise antes de misturar edições.
+- 2026-11-20T08:24:10+00:00 — Módulos recompilados no fim do ciclo: 12/1189 capítulos, 246 versículos.
+- 2026-11-20T08:24:10+00:00 — Capítulos exportados para leitura: 13 (0 mudaram nesta execução).

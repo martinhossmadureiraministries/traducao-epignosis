@@ -1,5 +1,5 @@
 {
-  "ciclos": 9,
+  "ciclos": 10,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
@@ -26,7 +26,7 @@
       "aberto": true,
       "capitulos": 1,
       "emendas_revisao": 2,
-      "falhas": 2,
+      "falhas": 3,
       "fechado_em_utc": null,
       "pedidos": 50,
       "pedidos_ok": 21,
@@ -47,14 +47,14 @@
     "groq"
   ],
   "exaustos_em": "2026-11-20",
-  "falhas_seguidas": 0,
+  "falhas_seguidas": 1,
   "lote_capitulo": 3,
   "lote_falhas": 1,
   "lote_livro": 500,
   "lote_versiculo": 34,
   "ultima_compilacao_build": "d8b55fe613b04a93b9f393dd78a3d674",
   "ultima_compilacao_utc": "2026-11-19T23:50:34+00:00",
-  "ultimo_ciclo_utc": "2026-11-20T07:45:10+00:00",
-  "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Google Gemini (AI Studio) · gemini-3.5-flash-lite: gemini: HTTP 503; esgotadas 2 tentativas.",
+  "ultimo_ciclo_utc": "2026-11-20T08:24:10+00:00",
+  "ultimo_erro": "DadosInvalidos: João: as versões das fontes diferem do checkpoint; revise antes de misturar edições.",
   "versos_total": 176
 }
