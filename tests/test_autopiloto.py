@@ -711,7 +711,11 @@ class DescobertaDeModeloTest(unittest.TestCase):
                     {'id': 'openai/gpt-oss-120b'},
                 ]}).encode()
         modelos = resolver_modelos('groq', ['chave'], ListaOK())
-        self.assertEqual(modelos, ['openai/gpt-oss-120b'])
+        self.assertEqual(modelos[0], 'openai/gpt-oss-120b')
+        # A lista curada fica atrás como suplente (rotação 404/410/quota);
+        # devolvê-la sozinha deixava o motor sem próximo modelo.
+        self.assertGreater(len(modelos), 1)
+        self.assertNotIn(modelos[0], modelos[1:])
 
     def test_gpt_oss_da_groq_pede_esforco_de_raciocinio_baixo(self):
         """Os GPT-OSS gastam max_tokens a pensar; sem isto os lotes truncam."""
@@ -905,6 +909,33 @@ class RodizioTest(unittest.TestCase):
         self.assertEqual(rodizio.provedor, segundo.provedor)
         self.assertEqual(rodizio.esgotados(), [], 'um 429 isolado não é quota do dia')
         self.assertTrue(any('Limite por minuto' in n for n in notas))
+
+    def test_limites_por_minuto_espacados_nao_esgotam(self):
+        """429 separados por sucessos não contam para o castigo do dia.
+
+        A Groq tem TPM baixo e devolve 429 em rajadas curtas, recuperando
+        em minutos. Em 2026-11-20, três 429 espaçados encostaram-na o dia
+        inteiro via `estado.exaustos`, sem a quota diária estar esgotada.
+        """
+        class Rajada(MotorFalso):
+            provedor = 'groq'
+
+            def __init__(self):
+                self.chamadas = 0
+
+            def gerar(self, *a, **k):
+                self.chamadas += 1
+                if self.chamadas % 2 == 1:
+                    raise CotaExcedida('HTTP 429')
+                return [{'verse': 1, 'text': 'x', 'commentary': 'y'}]
+
+        rodizio = Rodizio([Rajada()])
+        for _ in range(Rodizio.QUOTA_PARA_DESISTIR):
+            with self.assertRaises(ErroRede):
+                rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+            versos = rodizio.gerar(LIVROS_POR_NUMERO[640], 1, [{'verse': 1}])
+            self.assertEqual(versos[0]['verse'], 1)
+        self.assertEqual(rodizio.esgotados(), [])
 
     def test_429_repetido_marca_o_provedor_como_esgotado(self):
         notas = []
