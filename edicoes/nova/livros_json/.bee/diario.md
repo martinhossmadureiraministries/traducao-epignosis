@@ -98,3 +98,17 @@
 - 2026-11-20T08:24:10+00:00 — **ERRO** Ciclo 10 falhou: João: as versões das fontes diferem do checkpoint; revise antes de misturar edições.
 - 2026-11-20T08:24:10+00:00 — Módulos recompilados no fim do ciclo: 12/1189 capítulos, 246 versículos.
 - 2026-11-20T08:24:10+00:00 — Capítulos exportados para leitura: 13 (0 mudaram nesta execução).
+- 2026-11-20T08:40:31+00:00 — Porta de estilo ativa; 1 capítulo(s) com provedores evitados por deriva anterior.
+- 2026-11-20T08:40:31+00:00 — João 3: a evitar gemini (deriva de estilo anterior).
+- 2026-11-20T08:40:32+00:00 — Limite por minuto em OpenRouter · inclusionai/ling-3.2-flash:free (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-20T08:40:35+00:00 — A usar agora Cerebras · gpt-oss-120b.
+- 2026-11-20T08:40:35+00:00 — João 3: a evitar gemini (deriva de estilo anterior).
+- 2026-11-20T08:40:36+00:00 — Limite por minuto em Cerebras · gpt-oss-120b (1/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-20T08:40:37+00:00 — Falha de rede em NVIDIA NIM · meta/llama-3.1-70b-instruct; a tentar outro provedor.
+- 2026-11-20T08:40:38+00:00 — **AVISO** cohere: o modelo 'command-r' não está disponível nesta conta (HTTP 404); a usar 'command-r-plus'.
+- 2026-11-20T08:40:40+00:00 — **AVISO** cohere: o modelo 'command-r-plus' não está disponível nesta conta (HTTP 404); a usar 'c4ai-aya-expanse-8b'.
+- 2026-11-20T08:40:41+00:00 — Falha de rede em Cohere · c4ai-aya-expanse-8b; a tentar outro provedor.
+- 2026-11-20T08:40:42+00:00 — Limite por minuto em OpenRouter · inclusionai/ling-3.2-flash:free (2/3); a tentar outro provedor e a voltar a este em breve.
+- 2026-11-20T08:40:42+00:00 — **ERRO** Ciclo 11 falhou: Nenhum provedor conseguiu responder: Cerebras · gpt-oss-120b: quota esgotada; NVIDIA NIM · meta/llama-3.1-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · c4ai-aya-expanse-8b: cohere: HTTP 404; verifique o endereço ou o nome do modelo.; OpenRouter · inclusionai/ling-3.2-flash:free: quota esgotada
+- 2026-11-20T08:40:42+00:00 — Módulos recompilados no fim do ciclo: 12/1189 capítulos, 246 versículos.
+- 2026-11-20T08:40:42+00:00 — Capítulos exportados para leitura: 13 (1 mudaram nesta execução).

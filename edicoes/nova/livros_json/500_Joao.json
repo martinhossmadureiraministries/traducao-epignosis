@@ -555,6 +555,11 @@
         "verse": 33,
         "text": "Quem aceitou o testemunho dele confirmou que Deus é verdadeiro.",
         "commentary": "<p><b>Análise Léxica:</b> λαβὼν (labōn) — «aquele que aceitou» ou «recebeu»; ἐσφράγισεν (esphragisen) — «selou», usado figuradamente no sentido de certificar, confirmar ou atestar com firmeza; ἀληθής (alēthēs) — «verdadeiro».</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto.</p><p><b>Síntese Exegética:</b> Acolher a mensagem trazida por Jesus não é apenas concordar com um homem, mas validar e reconhecer na prática a veracidade absoluta do próprio Deus, que enviou o seu Filho.</p>"
+      },
+      {
+        "verse": 34,
+        "text": "Pois aquele que Deus enviou fala as palavras de Deus, pois não dão o Espírito segundo medida.",
+        "commentary": "<p><b>Análise Léxica</b> ὃν (pronome relativo acusativo masc. singular, “aquele que”), ἀπέστειλεν (aoristo ativo 3ª pers. sg. de ἀποστέλλω, “enviou”), ὁ θεὸς (“o Deus”), τὰ ῥήματα (“as palavras”), τοῦ θεοῦ (genitivo de “Deus”, “de Deus”), λαλεῖ (presente indicativo 3ª pers. sg. de λαλέω, “fala”), οὐ γὰρ (“não, pois”), ἐκ μέτρου (“de medida, segundo medida”), διδῶσιν (presente 3ª pers. pl. de διδόω, “dão”), τὸ πνεῦμα (“o Espírito”).</p><p><b>Crítica Textual</b> O texto base SBLGNT segue a leitura de NA28, que tem διδῶσιν. O aparato indica que WH e NA28 sustentam διδῶσιν, enquanto Treg e RP apresentam ὁ θεὸς. Como a decisão de desempate NA28 foi adotada, a leitura διδῶσιν é mantida. Nível de certeza: A segura.</p><p><b>Síntese Exegética</b> O versículo afirma que o enviado por Deus fala as palavras divinas e que o Espírito não é distribuído arbitrariamente, mas segundo medida, sublinhando a autoridade divina da mensagem e a limitação da distribuição do Espírito.</p><p><b>Hermenêutica e Contexto</b> A expressão “não dão o Espírito segundo medida” refere‑se à capacidade humana de conceder o Espírito, indicando que somente Deus tem autoridade plena para isso; o versículo reforça a identidade do enviado como porta‑voz de Deus.</p>"
       }
     ]
   },
@@ -1014,6 +1019,14 @@
       "provider": "local",
       "model": "editorial:lapidacao-joao-2-3",
       "generated_at_utc": "2026-11-20T12:00:00+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 34,
+      "verse_to": 34,
+      "provider": "cerebras",
+      "model": "gpt-oss-120b",
+      "generated_at_utc": "2026-11-20T08:40:35+00:00"
     }
   ],
   "sources": {
