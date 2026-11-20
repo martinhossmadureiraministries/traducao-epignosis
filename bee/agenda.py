@@ -552,6 +552,7 @@ class Agendador:
         self._registar_consumo(chave, antes_rede, progresso)
         self.estado.versos_total += progresso.versos
         self._registar_exaustos()
+        self._lapidar_fechados(progresso)
         self._rever_fechados(progresso, dia)
 
         alvo = 'livro completo'
@@ -581,6 +582,69 @@ class Agendador:
         )
         salvar_estado(self.dados / '.bee' / 'estado.json', self.estado)
         return ResultadoCiclo('gerado', alvo, progresso=progresso, resumo_compilacao=resumo)
+
+    def _lapidar_fechados(self, progresso: Progresso) -> None:
+        """Lapidação automática (mecânica) dos capítulos fechados nesta fatia.
+
+        Corre na edição nova, antes da revisão por segunda IA: normaliza a
+        forma das notas, regenera a Crítica Textual do aparato e da
+        colação e corrige a pontuação mecânica (`bee/lapidador.py`). Uma
+        falha aqui NUNCA perde produção: regista-se o aviso e o capítulo
+        segue para a revisão tal como foi gerado.
+        """
+        if not progresso.capitulos_fechados:
+            return
+        from .perfil import resolver_perfil
+        if resolver_perfil().nome != 'nova':
+            return
+        from . import lapidador
+        from .arquivos import salvar_livro
+        raiz = Path(__file__).resolve().parent.parent
+        for numero, capitulo in progresso.capitulos_fechados:
+            livro = next((l for l in LIVROS if l.numero == numero), None)
+            caminho = next(self.dados.glob(f'{numero}_*.json'), None)
+            if livro is None or caminho is None or not caminho.exists():
+                continue
+            try:
+                dados = json.loads(caminho.read_text(encoding='utf-8'))
+                versiculos = dados.get('chapters', {}).get(str(capitulo))
+                if not versiculos:
+                    continue
+                colacao = None
+                relatorio_col = raiz / 'docs' / 'colacao' / f'{livro.nome}.json'
+                if relatorio_col.exists():
+                    colacao = json.loads(relatorio_col.read_text(encoding='utf-8'))
+                novos, relatorio, problemas = lapidador.lapidar_versos(
+                    versiculos, capitulo, colacao)
+                if colacao is not None:
+                    alertas = lapidador.alertas_grego(novos, capitulo, colacao)
+                    if alertas:
+                        self.diario.escrever(
+                            f'Lapidação automática de {livro.nome} {capitulo}: '
+                            f'{sum(len(f) for f in alertas.values())} forma(s) '
+                            f'grega(s) fora da base em {len(alertas)} '
+                            'versículo(s) — alerta de amostragem (lemas de '
+                            'léxico são legítimos).', 'aviso')
+                if novos != versiculos:
+                    dados['chapters'][str(capitulo)] = novos
+                    dados.setdefault('history', []).append({
+                        'chapter': capitulo, 'verse_from': 1,
+                        'verse_to': len(novos), 'provider': 'local',
+                        'model': 'editorial:lapidacao-automatica',
+                        'generated_at_utc': _iso(_agora()),
+                    })
+                    salvar_livro(caminho, dados, livro)
+                    self.diario.escrever(
+                        f'Lapidação automática de {livro.nome} {capitulo}: '
+                        f'{len(relatorio)} normalização(ões).')
+                for problema in problemas:
+                    self.diario.escrever(
+                        f'Lapidação automática de {livro.nome}: {problema}',
+                        'aviso')
+            except Exception as exc:  # a lapidação nunca pode parar a produção
+                self.diario.escrever(
+                    f'Lapidação automática de {livro.nome if livro else numero} '
+                    f'{capitulo} falhou; original preservado: {exc}', 'aviso')
 
     def _rever_fechados(self, progresso: Progresso, dia: dict[str, Any]) -> None:
         """P2: revisão por segunda IA dos capítulos fechados nesta fatia.

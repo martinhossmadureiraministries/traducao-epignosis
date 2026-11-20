@@ -72,6 +72,33 @@ _RE_ARCAICO = {
     for termo in ARCAISMOS
 }
 
+# Falhas duras POR FORMA, que a lista de palavras não consegue enumerar
+# (qualquer verbo pode ser conjugado na 2.ª pessoa do plural de «vós»).
+# A produção de 2026-11-20 deixou passar «adorareis» e «conheceis»
+# misturados com «vocês» porque a lista só tinha algumas formas fixas.
+#
+# «-eis» sem acento: as formas verbais (conheceis, adorareis, sabeis) não
+# têm acento; os nomes/adjetivos legítimos em -eis ou o têm (fiéis,
+# papéis, difíceis, anéis) ou estão na lista de excepções (seis, leis,
+# reis). O padrão corre sobre o texto dobrado (casefold) mas SEM tirar
+# acentos, e exige fronteira de palavra dos dois lados.
+_EXCECOES_EIS = frozenset({'seis', 'leis', 'reis'})
+_RE_EIS = re.compile(r'(?<![a-zà-ÿ])[a-z]+eis(?![a-zà-ÿ])')
+# «estar/andar a» + infinitivo: a casa usa o gerúndio («estava batizando»,
+# decisão de João 1:28). «estava a fazer»/«estava a batizar» é a deriva
+# que a produção nova trouxe em João 4:1 e 4:27.
+_RE_ESTAR_A = re.compile(
+    r'\b(?:estou|estás|está|estamos|estão|estava|estavas|estávamos|estavam|'
+    r'estivesse|estivesses|estivéssemos|estivessem|estiver|estiverem|'
+    r'anda|andas|andam|andava|andavas|andávamos|andavam)\s+a\s+'
+    r'[a-záéíóúâêôãõç]+(?:ar|er|ir)\b',
+    re.IGNORECASE)
+# Pontuação dentro das aspas é a forma da casa («Segue-me.»): «beber». é
+# a pontuação de Almeida que a produção nova usou em João 4.
+_RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
+
+SECCOES_CASA = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
+
 
 def analisar_texto(texto: str) -> dict[str, list[str]]:
     """Classifica um texto de versículo. Devolve {'duros': […], 'avisos': […]}."""
@@ -87,5 +114,36 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
     for rotulo, padrao in HEDGE_PADROES:
         if padrao.search(orig_baixo):
             duros.append(rotulo)
+    if any(tok not in _EXCECOES_EIS for tok in _RE_EIS.findall(orig_baixo)):
+        duros.append('forma verbal de «vós» (-eis)')
+    if _RE_ESTAR_A.search(orig_baixo):
+        duros.append('«estar a» + infinitivo (a casa usa o gerúndio)')
+    if _RE_PONTO_FORA.search(texto):
+        duros.append('ponto fora das aspas')
     avisos = [rotulo for norma, rotulo in _MARCADORES_ALMEIDA_NORM if norma in baixo]
     return {'duros': sorted(set(duros)), 'avisos': sorted(set(avisos))}
+
+
+_GREGO = re.compile(r'[Ͱ-Ͽἀ-῿]')
+
+
+def analisar_comentario(comentario: str) -> list[str]:
+    """Falhas duras da NOTA: secções no formato da casa e grego sem mistura.
+
+    A produção de 2026-11-20 gravou 30 notas com «<b>Análise Léxica</b> —»
+    em vez de «<b>Análise Léxica:</b>»: o texto passava na porta e o
+    formato errado só apareceu nos testes sobre o capítulo já fechado.
+    As palavras greco-latinas mistas («ἄνδra», com letras latinas dentro
+    da palavra grega) são gralha mecânica inequívoca: também chumbam.
+    """
+    nota = comentario or ''
+    falhas = [
+        f'nota sem «{seccao}:» no formato da casa'
+        for seccao in SECCOES_CASA
+        if f'<b>{seccao}:</b>' not in nota
+    ]
+    limpo = re.sub(r'<[^>]+>', ' ', nota)
+    if any(_GREGO.search(tok) and re.search(r'[A-Za-z]', tok)
+           for tok in limpo.split()):
+        falhas.append('palavra greco-latina mista na nota')
+    return falhas

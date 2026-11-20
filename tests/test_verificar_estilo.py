@@ -60,6 +60,25 @@ class AnalisarDadosTest(unittest.TestCase):
         self.assertIn('vossa', res['duros'])
         self.assertIn('sobremaneira', res['avisos'])
 
+    def test_formato_da_nota_so_com_incluir_comentario(self):
+        # A linha legada usa outro formato de nota: por omissão a CLI não
+        # chumba por ele; na edição nova o formato é falha dura.
+        dados = {'chapters': {'3': [{
+            'verse': 34, 'text': 'Ele não dá o Espírito por medida.',
+            'commentary': '<p><b>Análise Léxica</b> — x</p>',
+        }]}}
+        self.assertEqual(ve.analisar_dados(dados), [])
+        achados = ve.analisar_dados(dados, incluir_comentario=True)
+        self.assertEqual(len(achados), 1)
+        self.assertTrue(any('formato da casa' in d
+                            for d in achados[0][3]['duros']))
+
+    def test_so_a_pasta_da_edicao_nova_liga_as_notas(self):
+        raiz = ve.RAIZ
+        self.assertTrue(
+            ve._eh_edicao_nova(raiz / 'edicoes' / 'nova' / 'livros_json'))
+        self.assertFalse(ve._eh_edicao_nova(raiz / 'livros_json'))
+
 
 if __name__ == '__main__':
     unittest.main()

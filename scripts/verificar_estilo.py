@@ -17,6 +17,9 @@ Procura três categorias:
     com alternativa; as nuances pertencem à nota, não ao versículo.
   * MARCADORES DE ALMEIDA (aviso) — léxico eclesiástico/antigo («sobremaneira»,
     «porventura», «outrossim», «o sem lei»…) a merecer reescrita.
+  * NOTAS FORA DO FORMATO (falha dura, só na edição nova) — as três secções
+    têm de vir como «<b>Análise Léxica:</b>» etc.; a linha legada, que usa
+    outro formato de nota, não é sujeita a esta verificação.
 
 Código de saída: 1 se houver FALHAS duras (ou também avisos com --rigoroso);
 0 caso contrário. Serve tanto para leitura manual como para um passo de CI.
@@ -46,22 +49,43 @@ from bee.inspetor import (  # noqa: E402,F401  (reexportados para testes/CLI)
     MARCADORES_ALMEIDA,
     _HEDGE_FRASES_NORM,
     _norm,
+    analisar_comentario,
     analisar_texto,
 )
 
 
-def analisar_dados(dados: dict) -> list[tuple[int, int, str, dict]]:
-    """Percorre capítulos completos e em curso; devolve achados por versículo."""
+def analisar_dados(dados: dict,
+                   incluir_comentario: bool = False,
+                   ) -> list[tuple[int, int, str, dict]]:
+    """Percorre capítulos completos e em curso; devolve achados por versículo.
+
+    ``incluir_comentario`` liga a verificação do formato das notas, que só
+    se aplica à edição nova: a linha legada usa outro formato de nota e
+    não pode chumbar por ele.
+    """
     achados: list[tuple[int, int, str, dict]] = []
     for capitulo, versiculos in sorted({**dados.get('chapters', {}),
                                         **dados.get('in_progress', {})}.items(),
                                        key=lambda kv: int(kv[0])):
         for verso in versiculos:
             resultado = analisar_texto(str(verso.get('text', '')))
+            if incluir_comentario:
+                resultado['duros'] = sorted(set(
+                    resultado['duros']
+                    + analisar_comentario(str(verso.get('commentary') or ''))))
             if resultado['duros'] or resultado['avisos']:
                 achados.append((int(capitulo), int(verso.get('verse', 0)),
                                 str(verso.get('text', '')), resultado))
     return achados
+
+
+def _eh_edicao_nova(pasta: Path) -> bool:
+    """A verificação das notas só se aplica à pasta da edição nova."""
+    try:
+        return pasta.resolve() == (
+            RAIZ / 'edicoes' / 'nova' / 'livros_json').resolve()
+    except OSError:
+        return False
 
 
 def relatorio(pasta: Path, livros_filtro: set[int] | None, rigoroso: bool) -> int:
@@ -72,7 +96,8 @@ def relatorio(pasta: Path, livros_filtro: set[int] | None, rigoroso: bool) -> in
             continue
         livro = POR_NUMERO.get(numero)
         nome = livro.nome if livro else str(numero)
-        achados = analisar_dados(todos[numero])
+        achados = analisar_dados(todos[numero],
+                                 incluir_comentario=_eh_edicao_nova(pasta))
         if not achados:
             continue
         print(f'\n## {nome} ({numero})')
