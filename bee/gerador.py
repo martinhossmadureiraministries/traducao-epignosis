@@ -494,9 +494,17 @@ def _percorrer(
             continue
         versoes = versoes_fonte(livro)
         anterior = dados.get('sources')
-        if anterior is not None and anterior != versoes:
+        # A guarda compara só as chaves canónicas de `versoes_fonte`. Os
+        # dados podem trazer proveniência extra registada por outras
+        # ferramentas (a migração das notas acrescenta a revisão CNTR e o
+        # relatório de colação a `sources`), e isso não é «misturar
+        # edições». A igualdade estrita do dicionário parou a produção em
+        # 2026-11-20: nenhum livro gerava, com este mesmo erro.
+        if anterior is not None and any(
+            anterior.get(chave) != valor for chave, valor in versoes.items()
+        ):
             raise DadosInvalidos(f'{livro.nome}: as versões das fontes diferem do checkpoint; revise antes de misturar edições.')
-        dados['sources'] = versoes
+        dados['sources'] = {**(anterior or {}), **versoes}
         progresso.livro = livro
         for capitulo in pendentes:
             if prazo is not None and time.monotonic() >= prazo:

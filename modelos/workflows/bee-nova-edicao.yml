@@ -93,13 +93,13 @@ env:
   BEE_PROVEDOR_PRINCIPAL: 'gemini'
   # CALIBRAÇÃO DA VOZ: poucos provedores = voz mais constante. Vários modelos
   # têm "sotaques" diferentes e foi isso que espalhou o «vós» em 2 Tessalonicenses.
-  # Durante a calibração usou-se só Gemini (+ Groq de reserva). A 2026-11-20,
-  # com a voz aprovada pelo responsável e a memória v1.4 (protocolo + desempate
+  # A 2026-11-20, com a voz aprovada e a memória v1.4 (protocolo + desempate
   # NA28) a viajar em todos os pedidos, a lista foi alargada: o Gemini continua
   # autor principal (BEE_PROVEDOR_PRINCIPAL) e os restantes entram como reserva
-  # de tradução e, sobretudo, como REVISORRES diferentes do autor (bee/papeis.py).
-  # Provedor sem chave nos Secrets é ignorado automaticamente — editar a lista
-  # não quebra nada. OpenAI fica de fora (pago). OVH continua desligada.
+  # de tradução e, sobretudo, como REVISORES diferentes do autor
+  # (bee/papeis.py). Provedor sem chave nos Secrets é ignorado
+  # automaticamente — editar a lista não quebra nada. OpenAI fica de fora
+  # (pago). OVH continua desligada.
   # (Cloudflare Workers AI ainda não suportado: exige CF_ACCOUNT_ID.)
   BEE_PROVEDORES: 'gemini,cerebras,openrouter,nvidia,cohere,mistral,groq'
   OVH_API_KEY_ATIVO: '0'
@@ -154,10 +154,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          # Aceita os dois nomes: o da conta (OPENROUTER_KEY) e o da API.
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY || secrets.OPENROUTER_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY || secrets.NVIDIA_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || secrets.MISTRAL_KEY }}
         run: |
           python autopiloto.py --testar --dados "$BEE_DADOS" 2>&1 | tee /tmp/teste.txt || true
           {
@@ -172,10 +173,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          # Aceita os dois nomes: o da conta (OPENROUTER_KEY) e o da API.
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY || secrets.OPENROUTER_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY || secrets.NVIDIA_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || secrets.MISTRAL_KEY }}
         run: |
           python nuvem.py
 
@@ -184,10 +186,15 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY || secrets.OPENROUTER_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY || secrets.NVIDIA_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || secrets.MISTRAL_KEY }}
         run: |
           echo "### Diagnóstico rápido (edição nova)" >> "$GITHUB_STEP_SUMMARY"
-          if [ -z "${GEMINI_API_KEY}${GROQ_API_KEY}" ]; then
-            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY e GROQ_API_KEY." >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "${GEMINI_API_KEY}${GROQ_API_KEY}${CEREBRAS_API_KEY}${OPENROUTER_API_KEY}${NVIDIA_API_KEY}${COHERE_API_KEY}${MISTRAL_API_KEY}" ]; then
+            echo "- Nenhuma chave chegou ao trabalho: confirme os secrets GEMINI_API_KEY, GROQ_API_KEY, CEREBRAS_API_KEY, COHERE_API_KEY, OPENROUTER_KEY (ou OPENROUTER_API_KEY), NVIDIA_KEY (ou NVIDIA_API_KEY) e MISTRAL_API_KEY." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "- HTTP 5xx: serviço instável; o próximo ciclo tenta de novo." >> "$GITHUB_STEP_SUMMARY"
             echo "- HTTP 404: modelo retirado; o programa escolhe outro sozinho." >> "$GITHUB_STEP_SUMMARY"
