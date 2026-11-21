@@ -125,3 +125,5 @@ Para gerar os módulos isolados do piloto: `python gerar_bee.py --compilar --dad
 **Leia também:** [Judas — carta completa e notas exegéticas](edicoes/piloto/JUDAS.md).
 
 **Nova carta:** [Tito — texto integral e notas exegéticas](edicoes/piloto/TITO.md).
+
+**Apresentação da BEE:** [documento de referência em Word](docs/APRESENTACAO_BEE.docx). As versões para apresentação pública (PDF, PPTX e outros formatos) ficam para o encerramento do projeto.

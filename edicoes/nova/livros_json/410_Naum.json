@@ -261,19 +261,19 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 15,
-        "status": "rascunho"
+        "status": "aprovado editorialmente"
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 13,
-        "status": "rascunho"
+        "status": "aprovado editorialmente"
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 19,
-        "status": "rascunho"
+        "status": "aprovado editorialmente"
       }
     ]
   }
