@@ -1,6 +1,6 @@
 # Rute · Bíblia de Estudo Epignósis
 
-Edição nova · leitura editorial dos quatro capítulos. Rascunho ainda não aprovado, não incluído no MyBible.
+Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Revisão especializada pendente.
 
 ## Capítulo 1
 
@@ -124,7 +124,7 @@ Edição nova · leitura editorial dos quatro capítulos. Rascunho ainda não ap
 
 **13** Passa aqui a noite. De manhã, se ele quiser exercer esse direito em teu favor, está bem, que o exerça. Se não quiser, tão certo como vive o SENHOR, eu mesmo o farei. Fica deitada até de manhã.»
 
-**14** Ela ficou aos pés dele até de manhã, mas levantou-se antes que houvesse luz para uma pessoa reconhecer outra. Boaz tinha dito: «Que não se saiba que veio uma mulher à eira.»
+**14** Ela ficou deitada aos pés dele até de manhã. Levantou-se antes que uma pessoa pudesse reconhecer outra. Boaz disse: «Que não se saiba que uma mulher veio à eira.»
 
 **15** Disse-lhe ainda: «Traz o manto que tens sobre ti e segura-o bem.» Ela segurou-o; ele mediu seis porções de cevada e pôs-lhe a carga às costas. Depois ele entrou na cidade.
 
@@ -184,13 +184,19 @@ Edição nova · leitura editorial dos quatro capítulos. Rascunho ainda não ap
 
 **1:8–18 · Voltar.** O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
 
+**1:14–15 · A despedida.** O v. 14 contrapõe o beijo de Orfa ao apego de Rute. Só no v. 15 Noemi diz explicitamente que Orfa voltou ao seu povo.
+
 **1:20–21 · Os nomes.** Noemi associa o seu nome à doçura e pede outro, Mara, que exprime amargura. A afirmação de que regressou vazia é da própria Noemi. O narrador não a corrige: acaba o capítulo mostrando Rute ao seu lado e a cevada pronta para a colheita.
 
 **2:3, 7 · O campo.** «Por acaso» conta como Rute chegou à parcela de Boaz; não pretende decidir se a história é ou não providencial. A última oração de 2:7 é difícil; a menção a uma breve paragem no abrigo é interpretativa.
 
 **2:12 e 3:9 · As asas e o manto.** A palavra hebraica כנף liga as duas cenas. No campo, Boaz fala das asas do Deus de Israel; na eira, Rute pede a Boaz que estenda sobre ela a aba do seu próprio manto. Em vez de explicar o gesto no diálogo, deixamos aqui o elo entre os versos.
 
-**2:20 · Quem mostrou bondade?** A bênção nomeia Boaz e o SENHOR. O hebraico não torna inequívoco a qual deles se refere a oração seguinte; a tradução não introduz um novo nome para resolver a ambiguidade.
+**2:14 · À mesa.** O hebraico ḥómeṣ indica vinagre ou vinho avinagrado. Boaz convida Rute a molhar o seu pedaço de pão; o narrador não diz que todos o fizeram.
+
+**2:20 · Quem mostrou bondade?** A bênção nomeia Boaz e o SENHOR. O hebraico não torna inequívoco a qual deles se refere a oração seguinte; a tradução não introduz um novo nome para resolver a ambiguidade. Amparar as viúvas honra também os familiares falecidos. Boaz é um dos parentes com direito de resgate, não necessariamente o primeiro.
+
+**3:14 · Antes de amanhecer.** A frase hebraica diz que Boaz falou, sem exigir o mais-que-perfeito «tinha dito». O que ele pede que não se divulgue é a visita à eira; o narrador não afirma que houve relações sexuais nem explica a motivação de Boaz.
 
 **3:15–17 · Seis porções.** O hebraico não dá a unidade da medida. «Porções» evita converter o presente numa quantidade moderna exata. A ordem de não voltar «de mãos vazias» responde às palavras de Noemi em 1:21.
 
