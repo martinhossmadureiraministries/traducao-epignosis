@@ -1,6 +1,6 @@
 # Malaquias · Bíblia de Estudo Epignósis
 
-Lote 2 · 4 capítulos, 55 versículos. Proposta integral para leitura editorial; ainda não aprovada. Notas depois do texto.
+Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
 
 ## Capítulo 1
 
@@ -88,7 +88,7 @@ Lote 2 · 4 capítulos, 55 versículos. Proposta integral para leitura editorial
 
 **9** Uma maldição pesa sobre vocês, pois é a mim que roubam, a nação inteira.
 
-**10** Tragam o dízimo todo à casa dos depósitos para que haja alimento na minha casa. Ponham-me à prova nisso», diz o SENHOR dos Exércitos. «Vejam se não lhes abro as comportas dos céus e não derramo sobre vocês bênção em abundância.
+**10** Tragam o dízimo todo à casa dos depósitos para que haja alimento na minha casa. Ponham-me à prova nisso», diz o SENHOR dos Exércitos. «Vejam se não lhes abro as janelas do céu e não derramo sobre vocês bênção em abundância.
 
 **11** Por vocês repreenderei o devorador, para que não destrua o fruto da terra. A vinha no campo não perderá o fruto antes do tempo», diz o SENHOR dos Exércitos.
 
@@ -126,7 +126,7 @@ Lote 2 · 4 capítulos, 55 versículos. Proposta integral para leitura editorial
 
 **2:15–16** · O sujeito da primeira oração de 2:16 é disputado. ARC, NVI e NVT entendem que Deus odeia o repúdio. Nesta leitura, a forma hebraica de terceira pessoa refere-se ao marido que odeia e despede a mulher; o SENHOR denuncia o seu ato. A segunda leitura é proposta editorial, não uma variante comprovada. Em ambas, a ordem final é não trair. Também a ligação de «um» e «espírito» no v. 15 requer revisão especializada.
 
-**3:10** · O próprio versículo liga depósito, dízimo e alimento na casa. A nota não converte o desafio dirigido à comunidade numa promessa individual de riqueza.
+**3:10** · אֲרֻבּוֹת הַשָּׁמַיִם designa as aberturas do céu. «Janelas» preserva a imagem; «comportas» realça aquilo que por elas se derrama. O próprio versículo liga depósito, dízimo e alimento na casa. A nota não converte o desafio dirigido à comunidade numa promessa individual de riqueza.
 
 **4:1–6** · Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
 

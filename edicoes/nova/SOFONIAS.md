@@ -1,6 +1,6 @@
 # Sofonias · Bíblia de Estudo Epignósis
 
-Lote 2 · 3 capítulos, 53 versículos. Proposta integral para leitura editorial; ainda não aprovada. Notas depois do texto.
+Lote 2 · 3 capítulos, 53 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
 
 ## Capítulo 1
 

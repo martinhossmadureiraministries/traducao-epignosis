@@ -1,6 +1,6 @@
 # Miqueias · Bíblia de Estudo Epignósis
 
-Lote 2 · 7 capítulos, 105 versículos. Proposta integral para leitura editorial; ainda não aprovada. Notas depois do texto.
+Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
 
 ## Capítulo 1
 

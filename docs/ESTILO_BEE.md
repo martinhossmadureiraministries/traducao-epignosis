@@ -254,3 +254,5 @@ sobre a colação, mais duas aspas de citação reabertas em João 1:31 e 1:34, 
 teste transversal de marcas apanhou. A redação é
 editorial, não saída de modelo, e o livro continua RASCUNHO: a voz da versão
 anterior tinha sido aprovada, esta redação ainda não foi lida pelo responsável.
+
+**Gente / pessoas.** Usar «gente» quando se ouve ou vê um conjunto (Mq 2:12); preferir «pessoas» quando se contam indivíduos (Jn 4:11). Não trocar «povo» por «gente» quando está em causa a identidade de uma comunidade. Evitar «essa gente» se introduzir desprezo que não vem do texto.
