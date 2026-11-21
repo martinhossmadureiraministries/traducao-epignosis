@@ -54,8 +54,12 @@ class PerfilEdicao:
     # devolve o glossário fixo, byte-idêntico ao de sempre.
     render_glossario: Callable[[int | None], str] | None = None
 
-    def sistema(self, aplicar_revisao: bool = True) -> str:
-        return self.system_prompt + (self.prompt_revisao if aplicar_revisao else '')
+    sistema_curto: str = ''
+    glossario_curto: str = ''
+
+    def sistema(self, aplicar_revisao: bool = True, compacto: bool = False) -> str:
+        base = (self.sistema_curto or self.system_prompt) if compacto else self.system_prompt
+        return base + (self.prompt_revisao if aplicar_revisao else '')
 
     def glossario_pedido(self, livro_numero: int | None = None) -> str:
         """Glossário enviado num pedido concreto.
@@ -106,6 +110,8 @@ _SISTEMA_NOVO = (
     'repetições intencionais e ambiguidades cuja explicação pertence à nota. Não '
     'acrescente grandiloquência, conclusão doutrinária ou aplicação devocional ao versículo. '
     'Palavras adicionadas apenas para clareza ficam entre <i>...</i>. '
+    'Quando a fonte trouxer a indicação musical סֶלָה, conserve <i>[Selá]</i> no lugar: '
+    'a marca não se pronuncia na leitura pública. Não a acrescente onde não ocorre. '
     '\n\nMÉTODO POR UNIDADE: '
     'Antes de fechar versículos, identifique quem fala, a quem, em que situação e com que '
     'propósito; preserve conectores decisivos. Divida frases longas só quando isso não '
@@ -174,6 +180,10 @@ _MEMORIA_ESTILO = _memoria_estilo.carregar()
 
 _PERFIL_NOVO = PerfilEdicao(
     nome='nova',
+    sistema_curto=_SISTEMA_NOVO,
+    glossario_curto='\n'.join(
+        f"{e.get('grego') or e['termo']} → {e['usar']}" for e in _MEMORIA_ESTILO['glossario']
+    ),
     system_prompt=_SISTEMA_NOVO + _memoria_estilo.system_fragment(_MEMORIA_ESTILO),
     prompt_revisao=_REVISAO_NOVA,
     glossario=_memoria_estilo.glossario_para_pedido(_MEMORIA_ESTILO),
