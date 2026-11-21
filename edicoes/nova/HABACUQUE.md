@@ -1,6 +1,6 @@
 # Habacuque · Bíblia de Estudo Epignósis
 
-Leitura integral para decisão editorial · 3 capítulos, 56 versículos. Tradução de trabalho, não edição aprovada. As notas vêm depois da oração.
+Edição de leitura aprovada pelo responsável editorial · 3 capítulos, 56 versículos. Revisão especializada pendente. As notas vêm depois da oração.
 
 **Leitura em voz alta:** a marca *[Selá]* vê-se, mas não se pronuncia.
 
