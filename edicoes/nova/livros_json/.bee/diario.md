@@ -730,3 +730,17 @@
 - 2026-11-21T04:18:08+00:00 — Módulos recompilados (PARCIAL): 30/1189 capítulos, 610 versículos.
 - 2026-11-21T04:18:08+00:00 — Ciclo 21: +0 versículos, +1 capítulos em João 5 (gemini/gemini-3.1-flash-lite; 6 versículos/pedido). Hoje: 0 versículos, 109 pedidos. A seguir: João 5.
 - 2026-11-21T04:18:08+00:00 — Capítulos exportados para leitura: 31 (2 mudaram nesta execução).
+- 2026-11-21T12:58:23+00:00 — Porta de estilo ativa; 3 capítulo(s) com provedores evitados por deriva anterior.
+- 2026-11-21T12:58:23+00:00 — João 5: a evitar cerebras, gemini (deriva de estilo anterior).
+- 2026-11-21T12:58:29+00:00 — Falha de rede em Groq · openai/gpt-oss-120b; a tentar outro provedor.
+- 2026-11-21T12:58:31+00:00 — **AVISO** openrouter: o modelo 'inclusionai/ling-3.2-flash:free' não está disponível nesta conta (quota esgotada); a usar 'openai/gpt-oss-120b:free'.
+- 2026-11-21T12:58:32+00:00 — **AVISO** openrouter: o modelo 'openai/gpt-oss-120b:free' não está disponível nesta conta (HTTP 404); a usar 'qwen/qwen3-235b-a22b:free'.
+- 2026-11-21T12:58:33+00:00 — **AVISO** openrouter: o modelo 'qwen/qwen3-235b-a22b:free' não está disponível nesta conta (HTTP 404); a usar 'deepseek/deepseek-chat-v3-0324:free'.
+- 2026-11-21T12:58:34+00:00 — **AVISO** openrouter: o modelo 'deepseek/deepseek-chat-v3-0324:free' não está disponível nesta conta (HTTP 404); a usar 'google/gemini-2.5-flash:free'.
+- 2026-11-21T12:58:35+00:00 — Falha de rede em OpenRouter · google/gemini-2.5-flash:free; a tentar outro provedor.
+- 2026-11-21T12:58:36+00:00 — **AVISO** nvidia: o modelo 'meta/llama-3.3-70b-instruct' não está disponível nesta conta (HTTP 410); a usar 'nvidia/llama-3.1-nemotron-70b-instruct'.
+- 2026-11-21T12:58:37+00:00 — Falha de rede em NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct; a tentar outro provedor.
+- 2026-11-21T12:58:38+00:00 — Falha de rede em Cohere · command-a-03-2025; a tentar outro provedor.
+- 2026-11-21T12:58:38+00:00 — **ERRO** Ciclo 22 falhou: Nenhum provedor conseguiu responder: Groq · openai/gpt-oss-120b: groq: HTTP 400; verifique os parâmetros e a compatibilidade do modelo.; OpenRouter · google/gemini-2.5-flash:free: openrouter: HTTP 404; verifique o endereço ou o nome do modelo.; NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · command-a-03-2025: cohere: HTTP 400; verifique os parâmetros e a compatibilidade do modelo.
+- 2026-11-21T12:58:38+00:00 — Módulos recompilados no fim do ciclo: 49/1189 capítulos, 912 versículos.
+- 2026-11-21T12:58:38+00:00 — Capítulos exportados para leitura: 50 (0 mudaram nesta execução).
