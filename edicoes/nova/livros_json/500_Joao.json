@@ -802,6 +802,36 @@
         "verse": 46,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
         "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 47,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 48,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 49,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 50,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 51,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 52,
+        "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       }
     ]
   },
@@ -1477,6 +1507,54 @@
       "provider": "local",
       "model": "quarentena",
       "generated_at_utc": "2026-11-20T14:36:39+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 47,
+      "verse_to": 47,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T17:14:07+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 48,
+      "verse_to": 48,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T17:14:17+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 49,
+      "verse_to": 49,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T17:14:28+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 50,
+      "verse_to": 50,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T23:21:42+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 51,
+      "verse_to": 51,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T23:21:54+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 52,
+      "verse_to": 52,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-20T23:22:04+00:00"
     }
   ],
   "sources": {
