@@ -539,7 +539,9 @@
     "Naum (410), livro integral aprovado pelo responsável.",
     "Sofonias: aprovação editorial integral do lote 2; revisão especializada pendente.",
     "Miqueias: aprovação editorial integral do lote 2; revisão especializada pendente.",
-    "Malaquias: aprovação editorial integral do lote 2; revisão especializada pendente."
+    "Malaquias: aprovação editorial integral do lote 2; revisão especializada pendente.",
+    "Oseias: aprovação editorial integral do lote 3; revisão especializada pendente.",
+    "Joel: aprovação editorial integral do lote 3; revisão especializada pendente."
   ],
   "protocolo": [
     "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",

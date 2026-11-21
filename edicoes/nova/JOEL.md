@@ -1,6 +1,6 @@
 # Joel · Bíblia de Estudo Epignósis
 
-Lote 3 · 3 capítulos, 73 versículos. Edição de leitura em revisão; ainda não aprovada. Notas depois do texto.
+Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente; revisão especializada pendente. Notas depois do texto.
 
 ## Capítulo 1
 
@@ -155,6 +155,8 @@ Lote 3 · 3 capítulos, 73 versículos. Edição de leitura em revisão; ainda n
 **21** Vingarei o sangue que ainda não vinguei.» E o SENHOR habita em Sião.
 
 ## Notas para depois da leitura
+
+**1:5** · «Bêbedos» significa «embriagados». O primeiro apelo dirige-se a quem se embriaga; o segundo, a todos os que bebem vinho.
 
 **1:4** · Os quatro termos hebraicos distinguem os devastadores; os nomes portugueses são descritivos, não identificação zoológica de quatro espécies ou fases certas. O efeito é cumulativo: o que um deixa, outro come.
 

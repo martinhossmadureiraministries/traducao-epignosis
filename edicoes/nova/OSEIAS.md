@@ -1,6 +1,6 @@
 # Oseias · Bíblia de Estudo Epignósis
 
-Lote 3 · 14 capítulos, 197 versículos. Edição de leitura em revisão; ainda não aprovada. Notas depois do texto.
+Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmente; revisão especializada pendente. Notas depois do texto.
 
 ## Capítulo 1
 
