@@ -1,6 +1,6 @@
 # 1 Tessalonicenses · Bíblia de Estudo Epignósis
 
-Primeira leitura editorial da nova tradução. Os colchetes duplos assinalam uma decisão textual documentada na nota. Publicação para revisão, não aprovação editorial.
+Primeira leitura editorial da nova tradução. Publicação para revisão, não aprovação editorial.
 
 ## Capítulo 1
 
@@ -38,7 +38,7 @@ Primeira leitura editorial da nova tradução. Os colchetes duplos assinalam uma
 
 **6** Também não procurámos honra junto das pessoas, nem de vocês nem de outros, embora, como apóstolos de Cristo, pudéssemos ter feito valer a nossa autoridade.
 
-**7** Antes, fomos [[gentis]] no meio de vocês. Como uma mãe que amamenta cuida com ternura dos próprios filhos,
+**7** Antes, fomos gentis no meio de vocês. Como uma mãe que amamenta cuida com ternura dos próprios filhos,
 
 **8** assim também, pela afeição que lhes tínhamos, quisemos partilhar com vocês não só o evangelho de Deus, mas a nossa própria vida, porque se tornaram queridos para nós.
 
