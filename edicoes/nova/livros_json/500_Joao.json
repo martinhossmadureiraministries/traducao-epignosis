@@ -569,9 +569,7 @@
         "text": "Quem crê no Filho tem vida eterna; quem desobedece ao Filho não verá a vida, mas a ira de Deus permanece sobre ele.",
         "commentary": "<p><b>Análise Léxica:</b> ὁ πιστεύων (ho pisteuōn) – «o que crê» (particípio presente); εἰς τὸν υἱὸν (eis ton huion) – «no filho»; ἔχει (echei) – «tem»; ζωήν (zōēn) – «vida»; αἰώνιον (aiōnion) – «eterna»; ὁ δὲ ἀπειθῶν (ho de apeithōn) – «mas o que desobedece» (particípio presente de ἀπειθέω, «desobedecer»); τῷ υἱῷ (tō huō) – «ao filho»; οὐκ ὄψεται (ouk opsetai) – «não verá»; <i>ἡ ὀργή</i> (hē orgḗ) — a ira; τοῦ θεοῦ (tou theou) – «de Deus»; μένει (menei) – «permanece»; <i>ἐπʼ αὐτόν</i> (ep' autón) — sobre ele.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> O versículo contrasta duas respostas ao Filho: a fé conduz à vida eterna, enquanto a desobediência resulta na exclusão da vida e na permanência da ira divina, sublinhando a importância da aceitação do Filho para a salvação.</p><p><b>Nota de redação:</b> «quem se recusa a obedecer ao filho» deu «quem desobedece ao Filho»: é o que <i>ἀπειθῶν</i> diz, sem rodeio, e «Filho» leva maiúscula como em 3:16–18. As secções de enchimento saíram como em 3:35.</p>"
       }
-    ]
-  },
-  "in_progress": {
+    ],
     "4": [
       {
         "verse": 1,
@@ -716,121 +714,140 @@
       {
         "verse": 29,
         "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ὅσα» (Tregelles, NA28, RP) contra «ἃ» (WH). O texto segue a base (nível de certeza B: as edições críticas não são unânimes).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 30,
         "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener diverge da base neste versículo; a divergência está registada no mesmo relatório. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 31,
         "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «Ἐν» (WH, Tregelles, NA28) contra «acréscimo de δὲ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 32,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 33,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 34,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ποιήσω» (WH, Tregelles, NA28) contra «ποιῶ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 35,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener diverge da base neste versículo; a divergência está registada no mesmo relatório. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 36,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ὁ» (WH, Tregelles, NA28) contra «Καὶ ὁ» (RP); «ἵνα» (WH, Tregelles, NA28) contra «acréscimo de καὶ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 37,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ἐστὶν» (WH, Tregelles, NA28) contra «acréscimo de ὁ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 38,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 39,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ἃ» (WH, Tregelles, NA28) contra «ὅσα» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 40,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener diverge da base neste versículo; a divergência está registada no mesmo relatório. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 41,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 42,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «κόσμου» (WH, Tregelles, NA28) contra «acréscimo de ὁ χριστός» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 43,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ἐκεῖθεν» (WH, Tregelles, NA28) contra «acréscimo de καὶ ἀπῆλθεν» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 44,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «γὰρ» (WH, Tregelles, NA28) contra «acréscimo de ὁ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 45,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ὅσα» (WH, Tregelles, NA28) contra «ἃ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 46,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «πάλιν» (WH, Tregelles, NA28) contra «acréscimo de ὁ Ἰησοῦς» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 47,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ἠρώτα» (WH, Tregelles, NA28) contra «acréscimo de αὐτὸν» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 48,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 49,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) as divergências são de ortografia, abreviaturas de nomes sagrados, ordem de palavras ou leituras que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener lê o mesmo texto. O texto segue a base (nível de certeza A: o aparato não regista variante neste versículo).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 50,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ἐπίστευσεν» (WH, Tregelles, NA28) contra «καὶ ἐπίστευσεν» (RP); «ὃν» (WH, Tregelles, NA28) contra «ᾧ» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 51,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
-        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ὑπήντησαν» (WH, Tregelles, NA28) contra «ἀπήντησαν» (RP); «αὐτῷ» (WH, NA28) contra «acréscimo de καὶ ἀπήγγειλαν» (Tregelles, RP); «αὐτοῦ» (WH, Tregelles, NA28) contra «σου» (RP). O texto segue a base (nível de certeza B: as edições críticas não são unânimes).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       },
       {
         "verse": 52,
         "text": "[Versículo pendente: tradução ainda não produzida — resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote..]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «τὴν ὥραν παρʼ αὐτῶν» (WH, Tregelles, NA28) contra «παρʼ αὐτῶν τὴν ὥραν» (RP); «εἶπαν οὖν» (WH, Tregelles, NA28) contra «Καὶ εἶπον» (RP); «Ἐχθὲς» (WH, Tregelles, NA28) contra «Χθὲς» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 53,
+        "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «ὅτι» (WH) contra «acréscimo de ἐν» (Tregelles, NA28, RP); «Ἰησοῦς» (WH, Tregelles, NA28) contra «acréscimo de ὅτι» (RP). O texto segue a base (nível de certeza B: as edições críticas não são unânimes).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      },
+      {
+        "verse": 54,
+        "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
+        "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O aparato da SBLGNT (que compara edições, não manuscritos) regista «δὲ» (WH, Tregelles, NA28) contra «omissão desta leitura» (RP). O texto segue a base (nível de certeza A: a variante é bizantina (RP) e as edições críticas apoiam a base).</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
+      }
+    ]
+  },
+  "in_progress": {
+    "5": [
+      {
+        "verse": 1,
+        "text": "[Versículo pendente: tradução ainda não produzida — deriva de estilo após 3 ronda(s) pelos provedores — versos e marcas em .bee/quarentena.json (status chumbado-estilo).]",
         "commentary": "<p><b>Análise Léxica:</b> Pendente: o provedor devolveu conteúdo inválido para este versículo.</p><p><b>Crítica Textual:</b> O texto-base existe; falta a tradução e o comentário. Versículo registado em quarentena para revisão.</p><p><b>Síntese Exegética:</b> Pendente de nova tentativa ou revisão humana.</p>"
       }
     ]
@@ -1555,6 +1572,38 @@
       "provider": "local",
       "model": "quarentena",
       "generated_at_utc": "2026-11-20T23:22:04+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 53,
+      "verse_to": 53,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-21T04:16:33+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 54,
+      "verse_to": 54,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-21T04:16:53+00:00"
+    },
+    {
+      "chapter": 5,
+      "verse_from": 1,
+      "verse_to": 1,
+      "provider": "local",
+      "model": "quarentena",
+      "generated_at_utc": "2026-11-21T04:18:03+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 54,
+      "provider": "local",
+      "model": "editorial:lapidacao-automatica",
+      "generated_at_utc": "2026-11-21T04:18:03+00:00"
     }
   ],
   "sources": {
