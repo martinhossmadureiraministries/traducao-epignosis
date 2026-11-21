@@ -1,6 +1,6 @@
 # Ageu · Bíblia de Estudo Epignósis
 
-Prévia de leitura integral · 2 capítulos, 38 versículos. A voz de 1:1–11 foi aprovada; o restante aguarda a tua leitura. Revisão especializada pendente em todo o livro.
+Leitura integral aprovada editorialmente pelo responsável · 2 capítulos, 38 versículos. Revisão especializada pendente em todo o livro.
 
 ## Capítulo 1
 
