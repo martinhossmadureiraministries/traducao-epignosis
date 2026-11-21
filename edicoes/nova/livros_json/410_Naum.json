@@ -1,0 +1,280 @@
+{
+  "format_version": 1,
+  "book_number": 410,
+  "book_name": "Naum",
+  "chapter_count": 3,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "Oráculo acerca de Nínive. Livro da visão de Naum, de Elcós.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.1. מַשָּׂ֖א נִֽינְוֵ֑ה סֵ֧פֶר חֲז֛וֹן נַח֖וּם הָאֶלְקֹשִֽׁי ׃</p>"
+      },
+      {
+        "verse": 2,
+        "text": "O SENHOR é Deus zeloso, Deus que faz vingança. O SENHOR faz vingança e tem poder para se irar. O SENHOR faz vingança contra os seus adversários e guarda a ira para os seus inimigos.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.2. אֵ֣ל קַנּ֤וֹא וְנֹקֵם֙ יְהוָ֔ה נֹקֵ֥ם יְהוָ֖ה וּבַ֣עַל חֵמָ֑ה נֹקֵ֤ם יְהוָה֙ לְצָרָ֔יו וְנוֹטֵ֥ר ה֖וּא לְאֹיְבָֽיו ׃</p>"
+      },
+      {
+        "verse": 3,
+        "text": "O SENHOR é lento para a ira e grande em poder; de modo algum deixa o culpado impune. O seu caminho passa pelo vendaval e pela tempestade; as nuvens são a poeira dos seus pés.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.3. יְהֹוָ֗ה אֶ֤רֶךְ אַפַּ֨יִם֙ 〔ketiv: וגדול〕 〔qere: וּגְדָל〕 ־ כֹּ֔חַ וְנַקֵּ֖ה לֹ֣א יְנַקֶּ֑ה יְהוָ֗ה בְּסוּפָ֤ה וּבִשְׂעָרָה֙ דַּרְכּ֔וֹ וְעָנָ֖ן אֲבַ֥ק רַגְלָֽיו ׃</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Repreende o mar e seca-o; faz secar todos os rios. Basã e o Carmelo murcham, e murcha a flor do Líbano.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.4. גּוֹעֵ֤ר בַּיָּם֙ וַֽיַּבְּשֵׁ֔הוּ וְכָל ־ הַנְּהָר֖וֹת הֶֽחֱרִ֑יב אֻמְלַ֤ל בָּשָׁן֙ וְכַרְמֶ֔ל וּפֶ֥רַח לְבָנ֖וֹן אֻמְלָֽל ׃</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Os montes tremem diante dele, as colinas desfazem-se. A terra ergue-se na sua presença, o mundo e todos os que nele vivem.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.5. הָרִים֙ רָעֲשׁ֣וּ מִמֶּ֔נּוּ וְהַגְּבָע֖וֹת הִתְמֹגָ֑גוּ וַתִּשָּׂ֤א הָאָ֨רֶץ֙ מִפָּנָ֔יו וְתֵבֵ֖ל וְכָל ־ יֹ֥שְׁבֵי בָֽהּ ׃</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Quem fica de pé diante da sua indignação? Quem resiste ao ardor da sua ira? O seu furor derrama-se como fogo, e diante dele as rochas se partem.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.6. לִפְנֵ֤י זַעְמוֹ֙ מִ֣י יַֽעֲמ֔וֹד וּמִ֥י יָק֖וּם בַּחֲר֣וֹן אַפּ֑וֹ חֲמָתוֹ֙ נִתְּכָ֣ה כָאֵ֔שׁ וְהַצֻּרִ֖ים נִתְּצ֥וּ מִמֶּֽנּוּ ׃</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Bom é o SENHOR, refúgio no dia da angústia. Conhece os que nele se abrigam.",
+        "commentary": "<p>«Conhece» mantém o verbo, como na ARC e na NVI. A NVT explicita proximidade. O contexto é o de procurar abrigo, não de apenas possuir informação.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.1.7. ט֣וֹב יְהוָ֔ה לְמָע֖וֹז בְּי֣וֹם צָרָ֑ה וְיֹדֵ֖עַ חֹ֥סֵי בֽוֹ ׃</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Mas com uma inundação que tudo arrasta dará fim ao lugar dela e perseguirá os seus inimigos até às trevas.",
+        "commentary": "<p>O feminino remete, nesta leitura, à cidade anunciada no título; o nome não é repetido aqui.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.1.8. וּבְשֶׁ֣טֶף עֹבֵ֔ר כָּלָ֖ה יַעֲשֶׂ֣ה מְקוֹמָ֑הּ וְאֹיְבָ֖יו יְרַדֶּף ־ חֹֽשֶׁךְ ׃</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Que tramam vocês contra o SENHOR? Ele dará fim a tudo; a angústia não se levantará duas vezes.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.9. מַה ־ תְּחַשְּׁבוּן֙ אֶל ־ יְהוָ֔ה כָּלָ֖ה ה֣וּא עֹשֶׂ֑ה לֹֽא ־ תָק֥וּם פַּעֲמַ֖יִם צָרָֽה ׃</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Mesmo emaranhados como espinhos, embriagados com a sua bebida, serão consumidos como palha inteiramente seca.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.10. כִּ֚י עַד ־ סִירִ֣ים סְבֻכִ֔ים וּכְסָבְאָ֖ם סְבוּאִ֑ים אֻ֨כְּל֔וּ כְּקַ֥שׁ יָבֵ֖שׁ מָלֵֽא ׃</p>"
+      },
+      {
+        "verse": 11,
+        "text": "De ti saiu quem maquina o mal contra o SENHOR, quem dá conselhos perversos.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.11. מִמֵּ֣ךְ יָצָ֔א חֹשֵׁ֥ב עַל ־ יְהוָ֖ה רָעָ֑ה יֹעֵ֖ץ בְּלִיָּֽעַל ׃ ס</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Assim diz o SENHOR: «Mesmo que estejam em pleno vigor e sejam numerosos, serão ceifados e passarão. Eu te afligi, mas não voltarei a afligir-te.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.12. כֹּ֣ה ׀ אָמַ֣ר יְהוָ֗ה אִם ־ שְׁלֵמִים֙ וְכֵ֣ן רַבִּ֔ים וְכֵ֥ן נָגֹ֖זּוּ וְעָבָ֑ר וְעִ֨נִּתִ֔ךְ לֹ֥א אֲעַנֵּ֖ךְ עֽוֹד ׃</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Agora quebrarei o jugo que ele te pôs e romperei as tuas amarras.»",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.13. וְעַתָּ֕ה אֶשְׁבֹּ֥ר מֹטֵ֖הוּ מֵֽעָלָ֑יִךְ וּמוֹסְרֹתַ֖יִךְ אֲנַתֵּֽק ׃</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Quanto a ti, o SENHOR deu esta ordem: «O teu nome não terá descendência. Da casa dos teus deuses eliminarei as imagens talhadas e as de metal. Prepararei a tua sepultura, pois nada vales.»",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.1.14. וְצִוָּ֤ה עָלֶ֨יךָ֙ יְהוָ֔ה לֹֽא ־ יִזָּרַ֥ע מִשִּׁמְךָ֖ ע֑וֹד מִבֵּ֨ית אֱלֹהֶ֜יךָ אַכְרִ֨ית פֶּ֧סֶל וּמַסֵּכָ֛ה אָשִׂ֥ים קִבְרֶ֖ךָ כִּ֥י קַלּֽוֹתָ ׃ פ</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Olha! Sobre os montes vêm os pés de quem traz boas notícias, de quem anuncia paz. Celebra as tuas festas, Judá; cumpre os teus votos. O perverso não voltará a passar por ti; foi inteiramente eliminado.",
+        "commentary": "<p>Na edição hebraica, o mensageiro abre o capítulo 2. A numeração aqui usada é a do módulo português.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.2.1. הִנֵּ֨ה עַל ־ הֶהָרִ֜ים רַגְלֵ֤י מְבַשֵּׂר֙ מַשְׁמִ֣יעַ שָׁל֔וֹם חָגִּ֧י יְהוּדָ֛ה חַגַּ֖יִךְ שַׁלְּמִ֣י נְדָרָ֑יִךְ כִּי֩ לֹ֨א יוֹסִ֥יף ע֛וֹד 〔ketiv: לעבור〕 〔qere: לַֽעֲבָר〕 ־ בָּ֥ךְ בְּלִיַּ֖עַל כֻּלֹּ֥ה נִכְרָֽת ׃</p>"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Quem dispersa já avança contra ti! Guarda a fortificação, vigia a estrada, aperta o cinto e reúne toda a tua força.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.2. עָלָ֥ה מֵפִ֛יץ עַל ־ פָּנַ֖יִךְ נָצ֣וֹר מְצֻרָ֑ה צַפֵּה ־ דֶ֨רֶךְ֙ חַזֵּ֣ק מָתְנַ֔יִם אַמֵּ֥ץ כֹּ֖חַ מְאֹֽד ׃</p>"
+      },
+      {
+        "verse": 2,
+        "text": "O SENHOR restaura o esplendor de Jacó como o de Israel, pois saqueadores os saquearam e arruinaram os seus ramos.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.3. כִּ֣י שָׁ֤ב יְהוָה֙ אֶת ־ גְּא֣וֹן יַעֲקֹ֔ב כִּגְא֖וֹן יִשְׂרָאֵ֑ל כִּ֤י בְקָקוּם֙ בֹּֽקְקִ֔ים וּזְמֹרֵיהֶ֖ם שִׁחֵֽתוּ ׃</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Os escudos dos seus guerreiros são vermelhos, os combatentes vestem escarlate. No dia em que se preparam, os carros cintilam como fogo e as hastes de cipreste agitam-se.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.4. מָגֵ֨ן גִּבֹּרֵ֜יהוּ מְאָדָּ֗ם אַנְשֵׁי ־ חַ֨יִל֙ מְתֻלָּעִ֔ים בְּאֵשׁ ־ פְּלָד֥וֹת הָרֶ֖כֶב בְּי֣וֹם הֲכִינ֑וֹ וְהַבְּרֹשִׁ֖ים הָרְעָֽלוּ ׃</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Os carros disparam pelas ruas, precipitam-se pelas praças. Parecem tochas, correm como relâmpagos.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.5. בַּֽחוּצוֹת֙ יִתְהוֹלְל֣וּ הָרֶ֔כֶב יִֽשְׁתַּקְשְׁק֖וּן בָּרְחֹב֑וֹת מַרְאֵיהֶן֙ כַּלַּפִּידִ֔ם כַּבְּרָקִ֖ים יְרוֹצֵֽצוּ ׃</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Ele chama os seus oficiais. Eles tropeçam na marcha, apressam-se em direção à muralha. Já está montada a proteção do cerco.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.6. יִזְכֹּר֙ אַדִּירָ֔יו יִכָּשְׁל֖וּ 〔ketiv: בהלכותם〕 〔qere: בַּהֲלִֽיכָתָ֑ם〕 יְמַֽהֲרוּ֙ חֽוֹמָתָ֔הּ וְהֻכַ֖ן הַסֹּכֵֽךְ ׃</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Abrem-se as portas dos rios; o palácio desaba.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.7. שַׁעֲרֵ֥י הַנְּהָר֖וֹת נִפְתָּ֑חוּ וְהַֽהֵיכָ֖ל נָמֽוֹג ׃</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Está decidido: ela é despida e levada. As suas servas gemem como pombas e batem no peito.",
+        "commentary": "<p>A construção inicial é obscura. «Está decidido» lê a forma como verbo; não se introduz um nome de rainha nem se identifica a mulher com uma pessoa histórica.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.2.8. וְהֻצַּ֖ב גֻּלְּתָ֣ה הֹֽעֲלָ֑תָה וְאַמְהֹתֶ֗יהָ מְנַֽהֲגוֹת֙ כְּק֣וֹל יוֹנִ֔ים מְתֹפְפֹ֖ת עַל ־ לִבְבֵהֶֽן ׃</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Desde os seus primeiros dias, Nínive era como uma lagoa. Agora fogem! «Parem! Parem!» Mas ninguém se volta.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.9. וְנִינְוֵ֥ה כִבְרֵֽכַת ־ מַ֖יִם מִ֣ימֵי הִ֑יא וְהֵ֣מָּה נָסִ֔ים עִמְד֥וּ עֲמֹ֖דוּ וְאֵ֥ין מַפְנֶֽה ׃</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Saqueiem a prata! Saqueiem o ouro! Não há fim para o tesouro, para o peso de tantos objetos preciosos.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.10. בֹּ֥זּוּ כֶ֖סֶף בֹּ֣זּוּ זָהָ֑ב וְאֵ֥ין קֵ֨צֶה֙ לַתְּכוּנָ֔ה כָּבֹ֕ד מִכֹּ֖ל כְּלִ֥י חֶמְדָּֽה ׃</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Vazia, esvaziada, devastada! O coração derrete, os joelhos vacilam, todos sentem dores nos quadris, todos os rostos perdem a cor.",
+        "commentary": "<p>Três palavras hebraicas de som semelhante exprimem a devastação; a sequência portuguesa procura recuperar parte desse efeito.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.2.11. בּוּקָ֥ה וּמְבוּקָ֖ה וּמְבֻלָּקָ֑ה וְלֵ֨ב נָמֵ֜ס וּפִ֣ק בִּרְכַּ֗יִם וְחַלְחָלָה֙ בְּכָל ־ מָתְנַ֔יִם וּפְנֵ֥י כֻלָּ֖ם קִבְּצ֥וּ פָארֽוּר ׃</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Onde está o covil dos leões, o lugar onde se alimentavam os leõezinhos? Por ali andavam o leão, a leoa e as crias, sem que ninguém os assustasse.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.12. אַיֵּה֙ מְע֣וֹן אֲרָי֔וֹת וּמִרְעֶ֥ה ה֖וּא לַכְּפִרִ֑ים אֲשֶׁ֣ר הָלַךְ֩ אַרְיֵ֨ה לָבִ֥יא שָׁ֛ם גּ֥וּר אַרְיֵ֖ה וְאֵ֥ין מַחֲרִֽיד ׃</p>"
+      },
+      {
+        "verse": 12,
+        "text": "O leão despedaçava presas para as crias e estrangulava para as leoas. Enchia de caça as suas tocas, de carne despedaçada os seus covis.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.13. אַרְיֵ֤ה טֹרֵף֙ בְּדֵ֣י גֹֽרוֹתָ֔יו וּמְחַנֵּ֖ק לְלִבְאֹתָ֑יו וַיְמַלֵּא ־ טֶ֣רֶף חֹרָ֔יו וּמְעֹֽנֹתָ֖יו טְרֵפָֽה ׃</p>"
+      },
+      {
+        "verse": 13,
+        "text": "«Aqui estou, contra ti», declara o SENHOR dos Exércitos. «Queimarei os teus carros até virarem fumo; a espada devorará os teus leõezinhos. Farei desaparecer da terra as tuas presas, e nunca mais se ouvirá a voz dos teus mensageiros.»",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.2.14. הִנְנִ֣י אֵלַ֗יִךְ נְאֻם֙ יְהוָ֣ה צְבָא֔וֹת וְהִבְעַרְתִּ֤י בֶֽעָשָׁן֙ רִכְבָּ֔הּ וּכְפִירַ֖יִךְ תֹּ֣אכַל חָ֑רֶב וְהִכְרַתִּ֤י מֵאֶ֨רֶץ֙ טַרְפֵּ֔ךְ וְלֹֽא ־ יִשָּׁמַ֥ע ע֖וֹד ק֥וֹל מַלְאָכֵֽכֵה ׃ ס</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Ai da cidade de sangue! Toda ela é mentira, está cheia de despojos; nunca lhe falta presa.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.1. ה֖וֹי עִ֣יר דָּמִ֑ים כֻּלָּ֗הּ כַּ֤חַשׁ פֶּ֨רֶק֙ מְלֵאָ֔ה לֹ֥א יָמִ֖ישׁ טָֽרֶף ׃</p>"
+      },
+      {
+        "verse": 2,
+        "text": "O estalo do chicote, o estrondo das rodas, cavalos a galope, carros aos saltos!",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.2. ק֣וֹל שׁ֔וֹט וְק֖וֹל רַ֣עַשׁ אוֹפָ֑ן וְס֣וּס דֹּהֵ֔ר וּמֶרְכָּבָ֖ה מְרַקֵּדָֽה ׃</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Cavaleiros avançam, espadas flamejam, lanças reluzem. Tantos mortos, montes de corpos, cadáveres sem fim! Tropeçam nos cadáveres.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.3. פָּרָ֣שׁ מַעֲלֶ֗ה וְלַ֤הַב חֶ֨רֶב֙ וּבְרַ֣ק חֲנִ֔ית וְרֹ֥ב חָלָ֖ל וְכֹ֣בֶד פָּ֑גֶר וְאֵ֥ין קֵ֨צֶה֙ לַגְּוִיָּ֔ה 〔ketiv: יכשלו〕 〔qere: וְכָשְׁל֖וּ〕 בִּגְוִיָּתָֽם ׃</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Tudo por causa das muitas prostituições da prostituta sedutora, senhora de feitiços, que vende nações com a sua prostituição e povos com os seus feitiços.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.4. מֵרֹב֙ זְנוּנֵ֣י זוֹנָ֔ה ט֥וֹבַת חֵ֖ן בַּעֲלַ֣ת כְּשָׁפִ֑ים הַמֹּכֶ֤רֶת גּוֹיִם֙ בִּזְנוּנֶ֔יהָ וּמִשְׁפָּח֖וֹת בִּכְשָׁפֶֽיהָ ׃</p>"
+      },
+      {
+        "verse": 5,
+        "text": "«Aqui estou, contra ti», declara o SENHOR dos Exércitos. «Levantarei as tuas saias sobre o teu rosto. Mostrarei às nações a tua nudez, aos reinos a tua vergonha.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.5. הִנְנִ֣י אֵלַ֗יִךְ נְאֻם֙ יְהוָ֣ה צְבָא֔וֹת וְגִלֵּיתִ֥י שׁוּלַ֖יִךְ עַל ־ פָּנָ֑יִךְ וְהַרְאֵיתִ֤י גוֹיִם֙ מַעְרֵ֔ךְ וּמַמְלָכ֖וֹת קְלוֹנֵֽךְ ׃</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Lançarei imundícies sobre ti, tratarei de ti com desprezo e farei de ti um espetáculo.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.6. וְהִשְׁלַכְתִּ֥י עָלַ֛יִךְ שִׁקֻּצִ֖ים וְנִבַּלְתִּ֑יךְ וְשַׂמְתִּ֖יךְ כְּרֹֽאִי ׃</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Quem te vir fugirá de ti, dizendo: “Nínive foi devastada! Quem a lamentará?” Onde procurarei quem te console?»",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.7. וְהָיָ֤ה כָל ־ רֹאַ֨יִךְ֙ יִדּ֣וֹד מִמֵּ֔ךְ וְאָמַר֙ שָׁדְּדָ֣ה נִֽינְוֵ֔ה מִ֖י יָנ֣וּד לָ֑הּ מֵאַ֛יִן אֲבַקֵּ֥שׁ מְנַחֲמִ֖ים לָֽךְ ׃</p>"
+      },
+      {
+        "verse": 8,
+        "text": "És melhor que Nô-Amom, instalada entre os canais do Nilo, com águas à sua volta? O mar era a sua defesa, as águas eram a sua muralha.",
+        "commentary": "<p>Nô-Amom é Tebas, no Egito. O poema chama «mar» à água que defendia a cidade.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.3.8. הֲתֵֽיטְבִי֙ מִנֹּ֣א אָמ֔וֹן הַיֹּֽשְׁבָה֙ בַּיְאֹרִ֔ים מַ֖יִם סָבִ֣יב לָ֑הּ אֲשֶׁר ־ חֵ֣יל יָ֔ם מִיָּ֖ם חוֹמָתָֽהּ ׃</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Cuxe e o Egito eram a sua força, e esta não tinha fim. Pute e os líbios vieram em seu auxílio.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.9. כּ֥וּשׁ עָצְמָ֛ה וּמִצְרַ֖יִם וְאֵ֣ין קֵ֑צֶה פּ֣וּט וְלוּבִ֔ים הָי֖וּ בְּעֶזְרָתֵֽךְ ׃</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Mesmo assim, ela foi para o exílio, levada em cativeiro. Os seus filhos pequenos foram despedaçados nas esquinas de todas as ruas. Lançaram sortes sobre os seus nobres e prenderam com correntes todos os seus grandes.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.10. גַּם ־ הִ֗יא לַגֹּלָה֙ הָלְכָ֣ה בַשֶּׁ֔בִי גַּ֧ם עֹלָלֶ֛יהָ יְרֻטְּשׁ֖וּ בְּרֹ֣אשׁ כָּל ־ חוּצ֑וֹת וְעַל ־ נִכְבַּדֶּ֨יהָ֙ יַדּ֣וּ גוֹרָ֔ל וְכָל ־ גְּדוֹלֶ֖יהָ רֻתְּק֥וּ בַזִּקִּֽים ׃</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Também tu ficarás embriagada, também tu te esconderás; também tu procurarás refúgio diante do inimigo.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.11. גַּם ־ אַ֣תְּ תִּשְׁכְּרִ֔י תְּהִ֖י נַֽעֲלָמָ֑ה גַּם ־ אַ֛תְּ תְּבַקְשִׁ֥י מָע֖וֹז מֵאוֹיֵֽב ׃</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Todas as tuas fortalezas são figueiras com os primeiros figos maduros: basta sacudi-las, e os figos caem na boca de quem os vai comer.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.12. כָּ֨ל ־ מִבְצָרַ֔יִךְ תְּאֵנִ֖ים עִם ־ בִּכּוּרִ֑ים אִם ־ יִנּ֕וֹעוּ וְנָפְל֖וּ עַל ־ פִּ֥י אוֹכֵֽל ׃</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Olha para as tuas tropas: no teu meio são mulheres! As portas da tua terra estão escancaradas aos inimigos; o fogo consumiu as tuas trancas.",
+        "commentary": "<p>A provocação dirige-se às tropas de Nínive na linguagem de escárnio do oráculo; não constitui um juízo geral do tradutor sobre as mulheres.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.3.13. הִנֵּ֨ה עַמֵּ֤ךְ נָשִׁים֙ בְּקִרְבֵּ֔ךְ לְאֹ֣יְבַ֔יִךְ פָּת֥וֹחַ נִפְתְּח֖וּ שַׁעֲרֵ֣י אַרְצֵ֑ךְ אָכְלָ֥ה אֵ֖שׁ בְּרִיחָֽיִך ׃</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Tira água para o cerco, reforça as fortificações! Entra na lama, pisa a argila, pega no molde dos tijolos!",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.14. מֵ֤י מָצוֹר֙ שַֽׁאֲבִי ־ לָ֔ךְ חַזְּקִ֖י מִבְצָרָ֑יִךְ בֹּ֧אִי בַטִּ֛יט וְרִמְסִ֥י בַחֹ֖מֶר הַחֲזִ֥יקִי מַלְבֵּֽן ׃</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Ali o fogo te devorará e a espada te cortará; devorar-te-á como o gafanhoto. Multiplica-te como os gafanhotos, multiplica-te como as suas nuvens!",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.15. שָׁ֚ם תֹּאכְלֵ֣ךְ אֵ֔שׁ תַּכְרִיתֵ֣ךְ חֶ֔רֶב תֹּאכְלֵ֖ךְ כַּיָּ֑לֶק הִתְכַּבֵּ֣ד כַּיֶּ֔לֶק הִֽתְכַּבְּדִ֖י כָּאַרְבֶּֽה ׃</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Multiplicaste os teus mercadores mais do que as estrelas do céu. O gafanhoto estende as asas e voa.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.16. הִרְבֵּית֙ רֹֽכְלַ֔יִךְ מִכּוֹכְבֵ֖י הַשָּׁמָ֑יִם יֶ֥לֶק פָּשַׁ֖ט וַיָּעֹֽף ׃</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Os teus guardas são como gafanhotos, os teus oficiais como enxames que pousam nos muros em dia de frio. Nasce o sol, levantam voo, e ninguém sabe para onde foram.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.17. מִנְּזָרַ֨יִךְ֙ כָּֽאַרְבֶּ֔ה וְטַפְסְרַ֖יִךְ כְּג֣וֹב גֹּבָ֑י הַֽחוֹנִ֤ים בַּגְּדֵרוֹת֙ בְּי֣וֹם קָרָ֔ה שֶׁ֤מֶשׁ זָֽרְחָה֙ וְנוֹדַ֔ד וְלֹֽא ־ נוֹדַ֥ע מְקוֹמ֖וֹ אַיָּֽם ׃</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Os teus pastores adormeceram, rei da Assíria. Os teus nobres repousam. O teu povo anda disperso pelos montes, sem ninguém que o reúna.",
+        "commentary": "<p><b>Base hebraica:</b> WLC/OSHB, Nah.3.18. נָמ֤וּ רֹעֶ֨יךָ֙ מֶ֣לֶךְ אַשּׁ֔וּר יִשְׁכְּנ֖וּ אַדִּירֶ֑יךָ נָפֹ֧שׁוּ עַמְּךָ֛ עַל ־ הֶהָרִ֖ים וְאֵ֥ין מְקַבֵּֽץ ׃</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Não há alívio para a tua fratura; a tua ferida é incurável. Todos os que ouvem notícias de ti batem palmas. Sobre quem não passou, sem descanso, a tua maldade?",
+        "commentary": "<p>O livro termina com uma pergunta aos que ouviram as notícias, não com uma ordem para aplaudir.</p><p><b>Base hebraica:</b> WLC/OSHB, Nah.3.19. אֵין ־ כֵּהָ֣ה לְשִׁבְרֶ֔ךָ נַחְלָ֖ה מַכָּתֶ֑ךָ כֹּ֣ל ׀ שֹׁמְעֵ֣י שִׁמְעֲךָ֗ תָּ֤קְעוּ כַף֙ עָלֶ֔יךָ כִּ֗י עַל ־ מִ֛י לֹֽא ־ עָבְרָ֥ה רָעָתְךָ֖ תָּמִֽיד ׃</p>"
+      }
+    ]
+  },
+  "in_progress": {},
+  "history": [],
+  "bibliography": [
+    {
+      "name": "Open Scriptures Hebrew Bible / WLC",
+      "url": "https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Nah.xml",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "review": {
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 15,
+        "status": "rascunho"
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 13,
+        "status": "rascunho"
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 19,
+        "status": "rascunho"
+      }
+    ]
+  }
+}

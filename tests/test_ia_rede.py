@@ -33,6 +33,18 @@ class HTTPFalso:
 
 
 class IATest(unittest.TestCase):
+    def test_groq_gera_com_memoria_real_da_edicao_nova(self):
+        from bee.perfil import resolver_perfil
+        perfil = resolver_perfil('nova')
+        http = HTTPFalso({'choices': [{'finish_reason': 'stop', 'message': {
+            'content': json.dumps(retorno([29]))}}]})
+        motor = MotorIA('groq', 'openai/gpt-oss-120b', 'CHAVE', http, 12000, perfil=perfil)
+        motor.gerar(POR_NUMERO[500], 4, [{'verse': 29, 'base': 'Δεῦτε ἴδετε'}],
+                    {'glossario': perfil.glossario_pedido(500), 'amostras': perfil.amostras})
+        pedido = json.loads(http.requisicoes[0][0].data)
+        self.assertIn('Δεῦτε ἴδετε', pedido['messages'][1]['content'])
+        self.assertGreaterEqual(pedido['max_tokens'], 2000)
+
     def test_groq_reserva_espaco_para_entrada_no_teto_de_8000(self):
         motor = MotorIA('groq', 'openai/gpt-oss-120b', 'CHAVE', HTTPFalso({}), 12000)
         _, curto, _ = motor._corpo('texto', 'CHAVE')

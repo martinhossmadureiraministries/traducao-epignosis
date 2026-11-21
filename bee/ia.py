@@ -510,7 +510,7 @@ class MotorIA:
         # antigas não mudam). Com perfil, a voz vem de bee.perfil.
         if self.perfil is None:
             return SYSTEM_PROMPT + (PROMPT_REVISAO if self.aplicar_revisao else '')
-        return self.perfil.sistema(self.aplicar_revisao)
+        return self.perfil.sistema(self.aplicar_revisao, compacto=self.provedor == 'groq')
 
     def _corpo(self, mensagem: str, chave: str,
                sistema: str | None = None) -> tuple[str, dict[str, Any], dict[str, str]]:
@@ -761,6 +761,10 @@ class MotorIA:
             'O aparato pode abranger apenas uma parte do versículo.'
         ]
         estilo = estilo or {}
+        if self.provedor == 'groq' and self.perfil and self.perfil.glossario_curto and estilo:
+            # Compactar apenas a memória editorial, nunca as fontes do versículo.
+            estilo = {**estilo, 'glossario': self.perfil.glossario_curto,
+                      'amostras': '\n'.join(estilo.get('amostras', '').splitlines()[:3])}
         if estilo.get('anterior'):
             partes.append(
                 'Para coerência de vocabulário, eis a tradução BEE dos versículos imediatamente '
