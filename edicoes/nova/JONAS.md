@@ -1,6 +1,6 @@
 # Jonas · Bíblia de Estudo Epignósis
 
-Primeiro lote · rascunho integral para leitura. Incluído na prévia MyBible para revisão, não aprovado.
+Primeiro lote · leitura integral aprovada editorialmente. Revisão especializada pendente.
 
 ## Capítulo 1
 
