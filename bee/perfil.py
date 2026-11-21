@@ -106,6 +106,8 @@ _SISTEMA_NOVO = (
     'repetições intencionais e ambiguidades cuja explicação pertence à nota. Não '
     'acrescente grandiloquência, conclusão doutrinária ou aplicação devocional ao versículo. '
     'Palavras adicionadas apenas para clareza ficam entre <i>...</i>. '
+    'Quando a fonte trouxer a indicação musical סֶלָה, conserve <i>[Selá]</i> no lugar: '
+    'a marca não se pronuncia na leitura pública. Não a acrescente onde não ocorre. '
     '\n\nMÉTODO POR UNIDADE: '
     'Antes de fechar versículos, identifique quem fala, a quem, em que situação e com que '
     'propósito; preserve conectores decisivos. Divida frases longas só quando isso não '

@@ -23,6 +23,8 @@ Não combinar frases dessas versões nem as usar como texto de partida. A redaç
 4. **Separar tradução e nota exegética.** O versículo traduz. A nota apresenta a expressão original, explica a escolha no contexto, indica alternativas plausíveis e compara traduções identificadas quando houver diferenças úteis. Oração, declaração e aplicação devocional não entram nas notas.
 5. **Justificar escolhas que mudam a leitura.** Registar referência, edição e revisão, expressão original, opção adotada, alternativa relevante e razão contextual. Distinguir análise gramatical, divergência entre edições e interpretação. Não listar léxicos ou comentários como consultados se não foram; Strong é índice, não prova de sentido.
 
+**Convenção para toda a BEE — Selá.** Quando o original trouxer a indicação musical סֶלָה, mantê-la no lugar como *[Selá]* (no módulo MyBible: `<i>[Selá]</i>`). Na leitura pública a marca não se pronuncia. Não a acrescentar por sugestão de pausa nem aplicar a convenção a nomes de lugar.
+
 ## Três testes de voz
 
 Exercícios de redação a partir das expressões gregas indicadas. Não constituem uma colação de edições nem uma revisão lexical especializada.
