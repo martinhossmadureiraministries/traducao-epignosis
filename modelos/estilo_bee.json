@@ -533,7 +533,7 @@
     "docs/ESTILO_BEE.md (v0.5) — documento de autoridade da voz",
     "Regras duras, aperto de calibração e guarda anti-deriva consolidados nos PR #50–#52",
     "2 Tessalonicenses: voz da versão de 2026-11-19 aprovada pelo responsável («parece a ARC sem ser a ARC, com traços próprios»); livro regenerado a 2026-11-20 sob docs/CRITICA_TEXTUAL.md e lapidado no mesmo dia (12 versículos e 14 notas revistos sobre a colação — ver docs/OFICINA_TRADUCAO.md). A redação atual NÃO foi lida pelo responsável: continua RASCUNHO, com revisão editorial e especializada pendentes no campo review do JSON, e por isso 600 não é livro-base.",
-    "Ageu (440), caps. 1, 2, aprovado pelo responsável em 2026-11-21 — Leitura integral de Ageu; revisão especializada pendente."
+    "Ageu (440), caps. 1, 2, aprovado pelo responsável em 2026-11-20 — Leitura integral de Ageu; revisão especializada pendente."
   ],
   "protocolo": [
     "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",
