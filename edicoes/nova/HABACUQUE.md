@@ -2,6 +2,8 @@
 
 Leitura integral para decisão editorial · 3 capítulos, 56 versículos. Tradução de trabalho, não edição aprovada. As notas vêm depois da oração.
 
+**Leitura em voz alta:** a marca *[Selá]* vê-se, mas não se pronuncia.
+
 ## Capítulo 1
 
 **1** Oráculo que o profeta Habacuque recebeu em visão.
@@ -86,7 +88,7 @@ Leitura integral para decisão editorial · 3 capítulos, 56 versículos. Tradu�
 
 **2** SENHOR, ouvi o que se conta de ti, e tive medo. SENHOR, no decorrer dos anos, aviva a tua obra; no decorrer dos anos, dá-a a conhecer. Na ira, lembra-te de ter compaixão.
 
-**3** Deus vem de Temã, o Santo vem do monte Parã. Selá. A sua majestade cobre os céus, e o seu louvor enche a terra.
+**3** Deus vem de Temã, o Santo vem do monte Parã. *[Selá]* A sua majestade cobre os céus, e o seu louvor enche a terra.
 
 **4** O seu brilho é como a luz. Da sua mão saem raios, e é ali que se esconde a sua força.
 
@@ -98,7 +100,7 @@ Leitura integral para decisão editorial · 3 capítulos, 56 versículos. Tradu�
 
 **8** Foi contra os rios, SENHOR, que se acendeu a tua ira? Contra os rios o teu furor? Contra o mar a tua fúria, quando montaste os teus cavalos e subiste aos teus carros de vitória?
 
-**9** Pões a descoberto o teu arco. Juramentos, varas, palavra. Selá. Com rios fendes a terra.
+**9** Pões a descoberto o teu arco. Juramentos, varas, palavra. *[Selá]* Com rios fendes a terra.
 
 **10** Os montes veem-te e contorcem-se. Passa uma torrente de águas; o abismo solta a sua voz e levanta bem alto as mãos.
 
@@ -106,7 +108,7 @@ Leitura integral para decisão editorial · 3 capítulos, 56 versículos. Tradu�
 
 **12** Com indignação percorres a terra, com ira debulhas as nações.
 
-**13** Saíste para salvar o teu povo, para salvar o teu ungido. Esmagaste a cabeça da casa do perverso, deixando-a descoberta desde os alicerces até ao pescoço. Selá.
+**13** Saíste para salvar o teu povo, para salvar o teu ungido. Esmagaste a cabeça da casa do perverso, deixando-a descoberta desde os alicerces até ao pescoço. *[Selá]*
 
 **14** Com as próprias lanças dele trespassaste a cabeça dos seus guerreiros. Vieram como um vendaval para me dispersar; era uma festa para eles devorar o pobre às escondidas.
 

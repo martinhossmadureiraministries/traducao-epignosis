@@ -291,3 +291,5 @@ palavra — e a nota já diz qual.
 Redigir primeiro a partir da base hebraica ou grega; só depois confrontar o trecho com **ARC, NVI e NVT**, indicando as edições efetivamente consultadas. Na ficha, distinguir coincidência exigida pelo original (nome, fórmula, imagem) de coincidência de redação livre (ordem, cadência, explicitação). Neste último caso, reler o original e experimentar outra construção em voz alta. Não trocar palavras corretas por sinónimos apenas para soar diferente, nem combinar frases das três versões. Registar divergências de sentido e submeter emendas à redação aprovada a nova leitura editorial.
 
 Como referências de voz, privilegiar a cadência da tradição King James e a clareza da NVT. O texto hebraico ou grego continua a decidir o sentido; identificar sempre a edição comparada e não confundir a KJV inglesa com uma adaptação portuguesa.
+
+**Leitura pública — Selá:** conservar a palavra hebraica no lugar em que ocorre, em itálico e entre colchetes simples: *[Selá]*. Incluir uma legenda antes da leitura: a marca não se pronuncia. Esta convenção editorial não fixa o significado musical do termo nem a duração de uma pausa.

@@ -2,6 +2,8 @@
 
 Proposta para ler em voz alta antes de traduzir o livro. Não aprovada nem integrada no MyBible.
 
+**Leitura em voz alta:** a marca *[Selá]* vê-se, mas não se pronuncia.
+
 ### A queixa · 1:2
 
 **2** Até quando, SENHOR? Peço socorro, e tu não ouves. Grito a ti: «Violência!», e tu não salvas.
@@ -32,7 +34,7 @@ Proposta para ler em voz alta antes de traduzir o livro. Não aprovada nem integ
 
 ### O arco e os rios · 3:9
 
-**9** Pões a descoberto o teu arco. Juramentos, varas, palavra. Selá. Com rios fendes a terra.
+**9** Pões a descoberto o teu arco. Juramentos, varas, palavra. *[Selá]* Com rios fendes a terra.
 
 ### Quando nada resta nos campos · 3:17–19
 
