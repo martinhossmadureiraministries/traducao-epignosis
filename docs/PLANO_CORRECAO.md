@@ -227,3 +227,24 @@ Não apagar `main` nem `arena/b6fccf92-traducao-epignosis`.
 ### Piloto: cópias e fonte
 
 `edicoes/piloto/dados/` é mantido como snapshot histórico do texto aprovado: o README (`gerar_bee.py --dados edicoes/piloto/dados`) e os scripts `migrar_notas_cinco.py` e `lapidar_seis.py` usam-no como origem. Tito e Judas na edição nova já diferem deste snapshot (A1); a diferença está listada nas notas.
+
+---
+
+## Decisões escolhidas pela equipa técnica (delegação do responsável, 2026-11-22)
+
+O responsável pediu que escolhêssemos o melhor para a BEE nas decisões pendentes. As escolhas abaixo podem ser revistas; ficam registadas aqui e no estado de execução.
+
+| # | Escolha | Razão |
+|---|---|---|
+| D3 | Não produzir o JSON de Oseias, Joel, Amós, Obadias e Zacarias agora. Ficam como pendência documentada. | Produção só depois do fecho (Etapa 9). Criar JSON agora misturaria produção com limpeza. |
+| D4 | Arquivar a linha legada (`livros_json/`) fora dos defaults, quando o fluxo legado `bee-autopiloto.yml` for desativado. | A legada tem 330 falhas de «vós» e 17 decisões abertas; não deve ser a fonte de nenhum comando por defeito. Mover só depois de desativar o fluxo, para não o partir. |
+| D8 | Retirar o `[[ ]]` de Filemom 1:2 se a nota da CT confirmar que a leitura tem apoio nos testemunhos (nível A). Se a nota disser o contrário, baixar o nível para B. | O protocolo reserva `[[ ]]` para leituras sem apoio noutro testemunho. A combinação com nível A não é coerente. A verificação é feita na Etapa 5. |
+| D9 | Canónico: edição nova, para Filemom e para João (caps. 1–4 já fechados; 5 em curso). A legada só se mantém como arquivo. | A edição nova é a que segue as regras atuais. |
+| D10 | Rubricas (Habacuque 3:19) numa linha própria, como no MD. | É legível e já é a forma dos MD. A regra fica escrita em `docs/ESTILO_BEE.md`. |
+| D12 | Manter as citações em inglês nas notas (ESV em Judas 1:7, KJV em Tito 3:10), com atribuição. | São citações explícitas para mostrar o termo grego em contraste; sem atribuição a leitura não se compreende. |
+| D13 | 3 João 1:14: seguir a numeração KJV, que é a da casa. A nota de versificação fica visível. | A BEE segue a KJV. A diferença com o SBLGNT é de numeração, e a confirmação contra a colação fica na Etapa 5. |
+| D11 | **Manter `.bee/` no `main` por agora.** Não sair do Git. Migrar para um ramo de dados dedicado quando houver permissão `workflows` e um teste de execução completo. | Produção ativa depende deste ramo. Tirar agora sem o ramo novo deixa a próxima execução sem estado. A migração é um passo com risco e precisa de permissão. Ver nota abaixo. |
+
+**Nota sobre D11.** O comentário de `bee/agenda.py` diz que o estado «vive ao lado dos dados, nunca no Git», e isso está errado face ao `RAMO_DADOS = 'main'` de `nuvem.py`. Corrigir o comentário faz parte da Etapa 1 (ver secção de bloqueios). A decisão de manter o estado no `main` é provisória, até existir o ramo de dados.
+
+**Próximo passo.** Com estas escolhas, a Etapa 5 pode avançar. Começa pelo que já tem decisão: D7 (itálico no grego das notas, aplicado pelo gerador e reforçado pelo verificador), M1 (2 Tessalonicenses em `scripts/regenerar_2ts.py`), D8, M15 e M16. D6 (leitura caso a caso dos 9 capítulos) é a parte mais demorada e fica para depois.
