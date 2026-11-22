@@ -82,7 +82,7 @@
 
 **13.** ἐπαφρίζοντα liga ondas e espuma. «Vergonha» traduz o que as ondas põem a descoberto; não é preciso enumerar as ações. «Está reservada» retoma o motivo de guardar.
 
-**14.** A passagem tem um paralelo em 1 Enoque 1:9. «Veio» mantém o passado de ἦλθεν na visão profética; «virá» explicitaria a perspectiva futura da cena. μυριάσιν pode ser «dezenas de milhares» ou uma multidão incontável.
+**14.** A passagem tem um paralelo em 1 Enoque 1:9. «Veio» mantém o passado de ἦλθεν na visão profética; «virá» explicitaria a perspetiva futura da cena. μυριάσιν pode ser «dezenas de milhares» ou uma multidão incontável.
 
 **15.** ἐλέγξαι pode ser «convencer da culpa» ou «demonstrar a culpa». Mantive a repetição de ímpios e impiedade. O aparato regista «toda pessoa» em NA28 onde o SBLGNT lê «todos os ímpios».
 
