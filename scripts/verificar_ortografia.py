@@ -134,8 +134,10 @@ def _conhecidas() -> set[str]:
 def relatorio(pasta: Path, rigoroso: bool) -> int:
     corretor = _carregar_corretor()
     if corretor is None:
-        print('pyspellchecker não instalado; verificação ortográfica saltada.')
-        return 0
+        # Sair com 0 aqui fazia parecer verificado o que não foi verificado.
+        print('ERRO: pyspellchecker não instalado; a verificação ortográfica NÃO correu. '
+              'Instalar com: pip install pyspellchecker', file=sys.stderr)
+        return 2
     conhecidas = _conhecidas()
     total = 0
     for numero, dados in sorted(ler_todos(pasta).items()):

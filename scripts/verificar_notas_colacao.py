@@ -42,6 +42,20 @@ RESIDUOS = (
      'nota de redação que conta uma versão anterior'),
 )
 SIGLAS = ('WH', 'Treg', 'NA28', 'RP', 'NIV')
+# Nomes por extenso que as CT usam no lugar da sigla («Tregelles» não é «Treg»).
+ALIAS = {
+    'WH': ('WH', 'Westcott-Hort', 'Westcott e Hort', 'Westcott', 'Hort'),
+    'Treg': ('Treg', 'Tregelles'),
+    'NA28': ('NA28', 'Nestle-Aland', 'Nestle–Aland'),
+    'RP': ('RP', 'Robinson-Pierpont', 'Robinson'),
+    'NIV': ('NIV',),
+}
+
+
+def _cita(sigla: str, texto: str) -> bool:
+    """A CT cita a sigla, pela sigla ou por extenso."""
+    return any(re.search(rf'(?<!\w){re.escape(a)}(?!\w)', texto)
+               for a in ALIAS[sigla])
 TEM_SEM_VARIANTE = re.compile(
     r'sem variante|nada regista|sem unidade de variação|não regista variante|'
     r'não há variante|sem variação', re.I)
@@ -57,7 +71,7 @@ def _ct(comentario: str) -> str | None:
 def _lados(entrada: str) -> tuple[set[str], set[str]]:
     """Siglas da leitura da base (antes de «]») e das leituras alternativas."""
     base, _, alternativas = entrada.partition(']')
-    siglas = lambda s: {x for x in SIGLAS if re.search(rf'\b{x}\b', s)}
+    siglas = lambda s: {x for x in SIGLAS if _cita(x, s)}
     return siglas(base), siglas(alternativas)
 
 
@@ -69,9 +83,14 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
             ref = f"{cap}:{verso.get('verse')}"
             com = verso.get('commentary') or ''
             texto = verso.get('text') or ''
+            # O «[[ ]]» é marca legítima no texto (leitura assinalada); as
+            # regras de resíduo aplicam-se só ao comentário. No texto, só
+            # se procura marcador de produção (pendente/quarentena).
             for regex, nome in RESIDUOS:
-                if regex.search(com) or regex.search(texto):
+                if regex.search(com):
                     problemas.append(f'{ref}: {nome}')
+            if RESIDUOS[1][0].search(texto):
+                problemas.append(f'{ref}: {RESIDUOS[1][1]} (no texto do versículo)')
             if '<b>' in com and not com.count('<b>'):
                 problemas.append(f'{ref}: comentário sem rótulos')
             if re.search(r'<b>[^<]*[\u0370-\u03ff\u1f00-\u1fff][^<]*</b>', com):
@@ -95,7 +114,7 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                 for entrada in aparato:
                     # Basta uma sigla de cada lado: a CT não tem de repetir a lista.
                     for lado in _lados(entrada):
-                        if lado and not any(re.search(rf'\b{s}\b', ct) for s in lado):
+                        if lado and not any(_cita(s, ct) for s in lado):
                             problemas.append(f'{ref}: CT não cita {sorted(lado)} do aparato')
             else:
                 if not TEM_SEM_VARIANTE.search(ct) and re.search(r'omite|acrescenta|diverg|variante', ct, re.I) \

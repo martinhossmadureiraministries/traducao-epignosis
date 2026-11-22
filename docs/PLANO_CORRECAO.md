@@ -1,0 +1,177 @@
+# Plano de correção e reorganização
+
+Base: `docs/REVISAO_GERAL.md` (primeira varredura, commit `f507104`). Este plano transforma os achados A1–A9, M1–M16 e B1–B4 em etapas com critério de saída.
+
+**Regra de ordem.** A produção de livros e cartas só retoma depois da Etapa 9. As etapas 1 a 8 tiram do caminho o que atrapalha: ferramentas que dão falsos resultados, estados errados, texto aprovado alterado, ficheiros mortos.
+
+**Regra de segurança.** Nada é apagado sem estar no histórico do Git. Ficheiros removidos ficam recuperáveis por commit. Ações irreversíveis fora do repositório (apagar branches remotos) são indicadas ao utilizador, não executadas.
+
+---
+
+## Decisões que bloqueiam etapas
+
+Estas decisões precisam do responsável. Sem elas, a etapa indicada fica parada.
+
+| # | Decisão | Bloqueia |
+|---|---|---|
+| D1 | Texto de referência de Tito e Judas: restaurar o piloto ou aceitar a versão nova com reaprovação | Etapa 4 |
+| D2 | 1 e 2 Tessalonicenses: registar como aprovados editorialmente (voz), com revisão especializada pendente | Etapa 3 |
+| D4 | Linha legada (Mateus, Marcos, João, Filemom): arquivar em pasta própria, ou apagar, ou manter como está | Etapa 6 |
+| D5 | ZIP `entregas/BEE-previa.zip` e `docs/arquivo/BEE-gerador.zip`: remover, marcar obsoleto, ou manter | Etapa 8 |
+| D6 | Regra de tratamento «tu»/«vocês»: regra escrita ou prática aprovada | Etapa 5 |
+| D7 | Convenção do grego nas notas: itálico ou texto corrido | Etapa 5 |
+
+**Por defeito, sem resposta:** D3 (cinco livros só em MD) fica como pendência documentada, sem produzir JSON agora; D10, D12 e D13 seguem a recomendação da Etapa 5; D11 (`.bee/`) é tratado na Etapa 1 como ficheiro operacional fora do Git.
+
+---
+
+## Etapa 1 — Higiene do repositório (sem decisões)
+
+**Ações**
+
+1. Remover `scripts/fechar_joao4.py`. É um script de uma vez, com o texto de João 4:29–54 escrito no código. O conteúdo já vive no JSON; confirmar antes de apagar.
+2. `.bee/` operacional (`livros_json/.bee/*` e `edicoes/nova/livros_json/.bee/*`): sair do Git. Acrescentar ao `.gitignore` a regra `**/.bee/` (a atual só cobre a raiz). Os ficheiros ficam no disco local; o histórico mantém-se.
+3. Quarentena (`edicoes/nova/livros_json/.bee/quarentena.json`): fechar as 24 entradas `pendente` de João 2 e 4 que já têm texto no JSON. Cada entrada fecha com a referência ao versículo e a data. Não se apaga nenhuma entrada, para manter o registo.
+4. Estado de João 5 (`in_progress`, 5:1): deixar como está; é trabalho em curso.
+
+**Critério de saída:** `git ls-files` sem `.bee/`; `git status` limpo; quarentena com zero `pendente` obsoletos; suíte de testes OK.
+
+---
+
+## Etapa 2 — Ferramentas que dão falsos resultados (bloqueante)
+
+Esta etapa vem antes de qualquer correção de texto, porque sem ela os verificadores não provam nada.
+
+**Ações**
+
+1. `scripts/verificar_ortografia.py`: sair com erro (código ≠ 0) quando `pyspellchecker` falta. Instalar a dependência no workflow `bee-nova-edicao.yml`, num passo que bloqueia. Teste: sem a dependência, o script falha.
+2. Defaults `livros_json` → edição nova:
+   - `gerar_bee.py`: `--dados` por defeito aponta para `edicoes/nova/livros_json`.
+   - `scripts/verificar_dados.py`: idem.
+   - Legada só com `--dados livros_json` explícito.
+   - `bee-autopiloto.yml` linha 145: passar `--dados` explícito.
+   - Teste: o default resolve para a edição nova.
+3. `scripts/verificar_notas_colacao.py`:
+   - `[[ ]]` verificado só nas notas, nunca no texto dos versículos (corrige o falso positivo de Judas 1:5 e Filemom 1:2 na verificação).
+   - Reconhecer nomes por extenso das edições («Tregelles», «Westcott-Hort», «Nestle-Aland») além das siglas.
+   - Suportar Filipenses e 1 Tessalonicenses quando houver colação (ver Etapa 5).
+   - Teste para cada caso.
+4. `verificar_estilo.py`: acrescentar a verificação de «você» com fronteira de palavra (já feita à mão). A regra de tratamento e a do grego entram depois de D6 e D7 (Etapa 5).
+5. Workflows com `|| true` nos testes (`bee-nova-edicao.yml` linha 163, `bee-autopiloto.yml` linha 185): documentar porquê, ou tornar o passo bloqueante. Por defeito, documentar.
+
+**Critério de saída:** suíte OK com os testes novos; cada falso positivo da varredura passa a ser ignorado pelo código, não à mão; `verificar_ortografia` falha sem a dependência.
+
+---
+
+## Etapa 3 — Fonte de verdade e estados (depois de D2)
+
+**Ações**
+
+1. Alinhar `review` no JSON com a decisão de D2 para Tito, Judas, 2 João, 3 João, Filemom, 1 e 2 Tessalonicenses. Cada estado diz exatamente o que foi aprovado (voz) e o que está pendente (revisão especializada).
+2. Alinhar os cabeçalhos MD (`1_TESSALONICENSES.md`, `2_TESSALONICENSES.md` e os pilotos) com o JSON.
+3. Alinhar `LOTE_01.md`, `LOTE_05.md`, `LOTE_06.md`, `LOTE_07.md`, `docs/ESTADO.md` e `docs/EDICAO_NOVA.md` com o JSON. Corrigir a frase «a legada retoma-se em João 19:13».
+4. Declaração de LOTE_03 sobre Oseias e Joel: confirmar que diz «leitura MD aprovada; JSON pendente».
+5. Cópias `edicoes/piloto/dados/`: são cópias de JSON que divergem da edição nova. Depois de D1, apagar as que ficam por substituir, ou gerá-las a partir da edição nova. Uma só fonte.
+6. 2 e 3 João: separar `edicoes/piloto/2_E_3_JOAO.md` em dois ficheiros de leitura, cada um com a sua ligação (regra do projeto).
+
+**Critério de saída:** para cada livro, um só estado em JSON, MD e lotes; `verificar_dados` sem contradições; cada livro com uma só cópia de texto.
+
+---
+
+## Etapa 4 — Texto aprovado (depois de D1)
+
+**Ações**
+
+1. Tito e Judas (A1):
+   - Se D1 = restaurar: repor o texto do piloto em `630_Tito.json` e `720_Judas.json` (sete versículos de Tito; Judas 1:7). Regenerar MD. Verificar que as notas continuam coerentes com o texto restaurado.
+   - Se D1 = aceitar: deixar o texto novo, registar a alteração no `LOTE_*` com a lista de versículos, e pedir reaprovação ao responsável antes de fechar o estado.
+2. Filemom 1:2 (A9): decidir `[[ ]]` com nível A (D8). Recomendação: retirar a marca se a leitura é adotada pela base sem apoio noutro testemunho; baixar o nível se a marca fica. A escolha vai para a CT.
+
+**Critério de saída:** texto aprovado igual ao piloto aprovado, ou alteração aprovada com registo; `[[ ]]` coerente com o nível da CT.
+
+---
+
+## Etapa 5 — Conteúdo técnico e estilo
+
+**Ações**
+
+1. **2 Tessalonicenses (M1):** corrigir em `scripts/regenerar_2ts.py` (não no JSON, para não quebrar o teste de reprodutibilidade):
+   - retirar o histórico de versão das 20 notas (15 «conta uma versão anterior» e 5 «história de correções»);
+   - corrigir as 9 CT que não citam o aparato e as 4 que falam de variante sem entrada (1:3, 1:12, 3:3, 3:16), após ler a colação;
+   - nota: a contagem de hoje é 33; o resumo anterior dizia 15. Confirmar antes de fechar.
+2. **Grafias (M5):** `acção` → `ação` (João 2:13), `directo` → `direto` (João 2:16). Confirmar primeiro a norma em `modelos/estilo_bee.json`. `lêem`/`leem`: escolher uma forma pela norma e uniformizar (108 e 26 ocorrências). `facto` fica como está.
+3. **Grego fora de itálico (M7, D7):** aplicar a convenção decidida. Se D7 = itálico, aplicar a todas as notas e acrescentar teste no verificador. Se D7 = texto corrido, documentar essa regra e acrescentar o teste no sentido inverso.
+4. **Tratamento (M6, D6):** decidir a regra. Depois ler os nove capítulos medidos (Rute 2 e 4; Jonas 1; Habacuque 1; Malaquias 2; João 1, 3 e 4; Filemom 1) e corrigir só o que for erro. Verificador com teste.
+5. **Aspas (M16):** 120 versículos com «» desequilibrado. Classificar caso a caso: diálogo que atravessa versículos (legítimo) ou erro. Corrigir só os erros.
+6. **3 João 1:14 (M15, D13):** confirmar contra a colação se a saudação final pertence ao v. 14 (numeração KJV) ou ao v. 15 (SBLGNT). Recomendação: manter a numeração KJV, que é a da casa, e fazer uma nota de versificação visível no texto da colação.
+7. **Citações em inglês (B2, D12):** Judas 1:7 (ESV) e Tito 3:10 (KJV). Recomendação: manter, com atribuição; traduzir só se o responsável preferir.
+8. **Habacuque 3:19 (M4, D10):** rubrica numa linha própria, como no MD. Recomendação: linha própria, com regra escrita.
+9. **Colação de Filipenses e 1 Tessalonicenses (M12):** criar `docs/colacao/Filipenses.json` e `1_Tessalonicenses.json` a partir do SBLGNT (pin `d7f35ad`); correr o verificador; ler os sete candidatos de Filipenses e os três de 1 Tessalonicenses.
+
+**Critério de saída:** verificadores de notas, ortografia e estilo sem falhas em todos os livros com colação; regras escritas com teste; decisões D6, D7, D10, D12, D13 registadas em `modelos/estilo_bee.json` ou em `docs/ESTILO_BEE.md`.
+
+---
+
+## Etapa 6 — Linha legada (depois de D4)
+
+**Ações**
+
+- Se D4 = arquivar: mover `livros_json/` para `legado/` (ou `docs/arquivo/legado/`), fora dos defaults. Verificar que nenhum script aponta para o caminho antigo.
+- Se D4 = retomar: fechar as 17 `pending_decisions` de João legado, uma a uma, e corrigir as 330 falhas de «vós» (96 em Mateus, 76 em Marcos, 158 em João).
+- Se D4 = manter: documentar no `README` que a legada não é fonte e que não é usada pelos defaults.
+- Em qualquer caso: Filemom legado e Filemom novo ficam com um só canónico (D9 em `REVISAO_GERAL.md`; recomendação: edição nova).
+
+**Critério de saída:** nenhum comando por defeito lê a legada; decisão registada.
+
+---
+
+## Etapa 7 — Cinco livros só em Markdown (D3 por defeito)
+
+**Ações**
+
+- Não produzir JSON agora. São produção, e a produção só retoma na Etapa 9.
+- Registar em `docs/ESTADO.md` e em `LOTE_03.md`: Oseias e Joel com leitura MD aprovada e revisão especializada pendente; Amós, Obadias e Zacarias sem aprovação. Dizer que o JSON não existe.
+- Acrescentar ao `verificar_documentacao.py` uma regra que falha se um livro for declarado «entregue» sem JSON.
+
+**Critério de saída:** nenhuma declaração de entrega sem JSON; pendência registada.
+
+---
+
+## Etapa 8 — Limpeza do repositório (depois de D5)
+
+**Ações no repositório**
+
+1. ZIP (D5): se remover, `git rm` de `entregas/BEE-previa.zip` e `docs/arquivo/BEE-gerador.zip`. Se marcar, acrescentar aviso no `README` da pasta. Nenhum ZIP novo sem pedido expresso.
+2. `docs/APRESENTACAO_BEE.docx`: preservar (ligado no README).
+3. Procurar duplicados e restos: ficheiros fora de qualquer caminho usado pelo README, pelos scripts ou pelos testes. Remover o que for resto e não tiver referências. Lista e motivo antes de apagar.
+4. Confirmar que `out/`, `*.SQLite3` e outros artefactos gerados estão no `.gitignore`.
+
+**Ações fora do repositório (para o utilizador)**
+
+Os branches remotos `arena/*` seguintes têm PR fundido (#56–#68) e podem ser apagados. Não os apaguei: esta sessão não pode enviar alterações para outros branches.
+
+- `arena/6ff2ad51-traducao-epignosis` (#56), `arena/9249dcf6-traducao-epignosis` (#57), `arena/384105cc-traducao-epignosis` (#58), `arena/e33ee8a2-traducao-epignosis` (#59), `arena/a8d06f4d-traducao-epignosis` (#60), `arena/5c26c1e4-traducao-epignosis` (#61), `arena/c8266cc9-traducao-epignosis` (#62), `arena/614e2f59-traducao-epignosis` (#63), `arena/ccdcbc43-traducao-epignosis` (#64), `arena/e9dbcb1e-traducao-epignosis` (#65), `arena/40e0b67d-traducao-epignosis` (#66), `arena/6089a33a-traducao-epignosis` (#67), `arena/32f77979-traducao-epignosis` (#68).
+- Comando: `git push origin --delete <nome>` para cada um, depois de confirmar que os PR estão fundidos.
+- Não apagar `main` nem o branch desta sessão (`arena/b6fccf92-traducao-epignosis`).
+
+**Critério de saída:** `git ls-files` só com ficheiros usados; repositório sem ZIP sem decisão; lista de branches entregue ao utilizador.
+
+---
+
+## Etapa 9 — Verificação completa e fecho
+
+1. Documentação coerente: `docs/ESTADO.md`, `LOTE_*.md`, `EDICAO_NOVA.md`, `README.md`.
+2. Verificação completa: suíte de testes, `verificar_estilo`, `verificar_dados`, `verificar_documentacao`, `verificar_notas_colacao` (todos os livros com colação), `verificar_ortografia` (com a dependência), compilação de controlo (`gerar_bee.py --compilar`).
+3. Atualizar `docs/REVISAO_GERAL.md`: marcar cada achado como resolvido com o commit, ou como pendente com a razão.
+4. Abrir PR para `main` e fundir quando as verificações estiverem verdes.
+5. Só depois: retomar produção em João 5, ou no próximo livro/carta, segundo `LOTE_04.md`.
+
+**Critério de saída:** nenhum achado A ou M por resolver sem razão escrita; PR fundido; produção retomada a partir de `ESTADO.md`.
+
+---
+
+## Resumo de ordem
+
+1 higiene → 2 ferramentas → 3 estados → 4 texto aprovado → 5 conteúdo → 6 legada → 7 cinco MD → 8 limpeza → 9 fecho → produção.
+
+Etapas 1 e 2 começam já, porque não dependem de decisões. Etapas 3 a 8 esperam pelas decisões indicadas.
