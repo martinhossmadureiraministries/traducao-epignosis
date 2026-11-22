@@ -83,11 +83,14 @@ class InspecionarVersosTest(unittest.TestCase):
                  'dos reis de antigamente.')
         self.assertEqual(porta.inspecionar_versos([_verso(1, texto)]), {})
 
-    def test_estar_a_infinitivo_chumba(self):
-        # A casa usa o gerúndio («estava batizando»).
-        resultado = porta.inspecionar_versos(
-            [_verso(1, 'Ele estava a fazer discípulos.')])
-        self.assertIn(1, resultado)
+    def test_estar_a_infinitivo_passa(self):
+        # Decisão de 2026-11-22: «estar a + infinitivo» é a perífrase da casa
+        # (Portugal e Angola); o gerúndio progressivo é variante aceite. Nenhum
+        # dos dois chumba, e a ênclise continua a ser exigida.
+        self.assertEqual(porta.inspecionar_versos(
+            [_verso(1, 'Ele estava a fazer discípulos.')]), {})
+        self.assertEqual(porta.inspecionar_versos(
+            [_verso(2, 'Ele estava fazendo discípulos.')]), {})
 
     def test_ponto_fora_das_aspas_chumba(self):
         resultado = porta.inspecionar_versos(

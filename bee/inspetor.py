@@ -84,15 +84,13 @@ _RE_ARCAICO = {
 # acentos, e exige fronteira de palavra dos dois lados.
 _EXCECOES_EIS = frozenset({'seis', 'leis', 'reis'})
 _RE_EIS = re.compile(r'(?<![a-zà-ÿ])[a-z]+eis(?![a-zà-ÿ])')
-# «estar/andar a» + infinitivo: a casa usa o gerúndio («estava batizando»,
-# decisão de João 1:28). «estava a fazer»/«estava a batizar» é a deriva
-# que a produção nova trouxe em João 4:1 e 4:27.
-_RE_ESTAR_A = re.compile(
-    r'\b(?:estou|estás|está|estamos|estão|estava|estavas|estávamos|estavam|'
-    r'estivesse|estivesses|estivéssemos|estivessem|estiver|estiverem|'
-    r'anda|andas|andam|andava|andavas|andávamos|andavam)\s+a\s+'
-    r'[a-záéíóúâêôãõç]+(?:ar|er|ir)\b',
-    re.IGNORECASE)
+# «estar/andar a» + infinitivo NÃO é falha. A regra que a proibia partia de
+# uma premissa que o corpus desmentiu (Rute 2:9, Rute 4:3, Habacuque 1:5, todos
+# aprovados) e contradizia a norma europeia que a casa segue na ortografia e na
+# colocação dos pronomes: «está a fazer» é a perífrase de Portugal e de Angola,
+# «está fazendo» é a do Brasil. Decisão do responsável de 2026-11-22: a
+# perífrase é a forma da casa para o progressivo; o gerúndio progressivo fica
+# como variante aceite e o gerúndio continua a verter o particípio grego.
 # Pontuação dentro das aspas é a forma da casa («Segue-me.»): «beber». é
 # a pontuação de Almeida que a produção nova usou em João 4.
 _RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
@@ -124,8 +122,6 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
             duros.append(rotulo)
     if any(tok not in _EXCECOES_EIS for tok in _RE_EIS.findall(orig_baixo)):
         duros.append('forma verbal de «vós» (-eis)')
-    if _RE_ESTAR_A.search(orig_baixo):
-        duros.append('«estar a» + infinitivo (a casa usa o gerúndio)')
     if _RE_PONTO_FORA.search(texto):
         duros.append('ponto fora das aspas')
     avisos = [rotulo for norma, rotulo in _MARCADORES_ALMEIDA_NORM if norma in baixo]

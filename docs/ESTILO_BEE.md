@@ -202,11 +202,16 @@ fórmula profética (Jl 2:1; Am 5:18; Sf 1:14) pertence à nota.
 «registo», «secção», «aspeto». Está em `modelos/estilo_bee.json` →
 `registro.ortografia` e chega a todos os provedores.
 
-**Colocação pronominal.** Ênclise, como o português europeu a faz: «metendo-se»,
-«admoestem-no», «gloria-se», «ouvindo-o». A próclise em início de oração («se
-metendo») é brasileira e está vetada. O gerúndio é a forma da casa para o
-particípio presente grego — os sete livros aprovados não têm uma única construção
-«estar a + infinitivo» em seu lugar.
+**Colocação pronominal e progressivo.** Ênclise, como o português europeu a
+faz: «metendo-se», «admoestem-no», «gloria-se», «ouvindo-o». A próclise em
+início de oração («se metendo») é brasileira e está vetada. O progressivo faz-se
+com «estar a + infinitivo» — «estava a batizar», «estão a ceifar», «estou a
+fazer» —, que é a forma de Portugal e de Angola; «está fazendo» é brasileira.
+O gerúndio simples verte o particípio presente grego («dizendo», «ouvindo-o»), e
+«continuará a fazê-lo» entra como aspetual. Um progressivo com gerúndio já
+aprovado não se reescreve só por causa da regra: mantém-se como variante. Esta
+é a decisão do responsável de 22/11/2026, tomada quando o corpus mostrou as duas
+formas em livros aprovados (Rute 2:9, Habacuque 1:5 contra João 1:28, 2Ts 1:3).
 
 **Uniformidade só onde o grego é igual.** As fórmulas consolidadas repetem-se
 letra a letra entre livros **quando as bases coincidem**. Filemom 1:3 tem

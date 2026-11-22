@@ -189,7 +189,8 @@ reabre com evidência nova.
    C), onde a BEE segue a base crítica contra todas as Almeida.
 5. **O sotaque é europeu**: «unigénito», «todo o desejo» como a Almeida de
    1911 impressa em Portugal, ênclise e «estar a + infinitivo» onde o grego
-   pede duração (João 1:28–29).
+   pede duração (Rute 2:9, Habacuque 1:5). João 1:28 e 2Ts 1:3 conservam o
+   progressivo com gerúndio que já tinham: as duas formas são aceites.
 
 Em resumo: quem conhece as passagens populares reconhece-as aqui — com a
 grafia e a gramática de Portugal, o registo direto da NVI nas frases
