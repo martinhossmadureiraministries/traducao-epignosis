@@ -99,6 +99,14 @@ _RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
 
 SECCOES_CASA = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
 
+# Livros que a migração de 2026-11-20 deixou no formato da casa, com as três
+# secções em cada nota: os cinco curtos, João e 2 Tessalonicenses. Os lotes
+# posteriores da edição nova foram aprovados com notas BEE em prosa, onde a
+# Crítica Textual aparece só quando há variante. O auditor não lhes pede
+# rótulos que nunca tiveram; o motor (bee/porta.py) continua a exigi-los a todo
+# o texto NOVO, e um livro entra nesta lista quando as notas forem harmonizadas.
+LIVROS_FORMATO_CASA = frozenset({500, 600, 630, 640, 700, 710, 720})
+
 
 def analisar_texto(texto: str) -> dict[str, list[str]]:
     """Classifica um texto de versículo. Devolve {'duros': […], 'avisos': […]}."""
