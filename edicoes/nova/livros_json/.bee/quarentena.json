@@ -565,7 +565,158 @@
       "providers_tried": [
         "cerebras"
       ]
+    },
+    {
+      "reference": "João 5:2",
+      "book": 500,
+      "chapter": 5,
+      "verse": 2,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
+      "at_utc": "2026-11-22T07:26:47+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "2": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "3": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "4": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "palavra greco-latina mista na nota"
+        ],
+        "5": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "6": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "7": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ]
+      },
+      "providers_tried": [
+        "groq"
+      ]
+    },
+    {
+      "reference": "João 5:3",
+      "book": 500,
+      "chapter": 5,
+      "verse": 3,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.8: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
+      "at_utc": "2026-11-22T07:27:18+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "2": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "3": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "4": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "palavra greco-latina mista na nota"
+        ],
+        "5": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "6": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "7": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "8": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ]
+      },
+      "providers_tried": [
+        "groq"
+      ]
+    },
+    {
+      "reference": "João 5:4",
+      "book": 500,
+      "chapter": 5,
+      "verse": 4,
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.8: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
+      "at_utc": "2026-11-22T07:27:31+00:00",
+      "status": "chumbado-estilo",
+      "style_marks": {
+        "2": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "3": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "4": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa",
+          "palavra greco-latina mista na nota"
+        ],
+        "5": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "6": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "7": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ],
+        "8": [
+          "nota sem «Análise Léxica:» no formato da casa",
+          "nota sem «Crítica Textual:» no formato da casa",
+          "nota sem «Síntese Exegética:» no formato da casa"
+        ]
+      },
+      "providers_tried": [
+        "groq"
+      ]
     }
   ],
-  "updated_at_utc": "2026-11-21T04:18:03+00:00"
+  "updated_at_utc": "2026-11-22T07:27:31+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "ciclos": 24,
+  "ciclos": 25,
   "criado_utc": "2026-11-19T08:36:45+00:00",
   "dias": {
     "2026-11-19": {
@@ -99,11 +99,11 @@
       "capitulos": 0,
       "falhas": 1,
       "fechado_em_utc": null,
-      "pedidos": 9,
+      "pedidos": 62,
       "pedidos_ok": 0,
       "por_provedor": {
         "cohere": {
-          "pedidos": 1,
+          "pedidos": 12,
           "versos": 0
         },
         "gemini": {
@@ -111,15 +111,15 @@
           "versos": 0
         },
         "groq": {
-          "pedidos": 1,
+          "pedidos": 16,
           "versos": 0
         },
         "nvidia": {
-          "pedidos": 2,
+          "pedidos": 14,
           "versos": 0
         },
         "openrouter": {
-          "pedidos": 5,
+          "pedidos": 20,
           "versos": 0
         }
       },
@@ -128,14 +128,14 @@
   },
   "exaustos": [],
   "exaustos_em": "2026-11-22",
-  "falhas_seguidas": 1,
+  "falhas_seguidas": 0,
   "lote_capitulo": null,
   "lote_falhas": 0,
   "lote_livro": null,
   "lote_versiculo": null,
   "ultima_compilacao_build": "19374cb47dce4fec89974370fc42fd9e",
   "ultima_compilacao_utc": "2026-11-21T04:18:08+00:00",
-  "ultimo_ciclo_utc": "2026-11-22T00:39:15+00:00",
+  "ultimo_ciclo_utc": "2026-11-22T07:26:16+00:00",
   "ultimo_erro": "ErroRede: Nenhum provedor conseguiu responder: Groq · openai/gpt-oss-120b: groq: HTTP 400; verifique os parâmetros e a compatibilidade do modelo.; OpenRouter · google/gemini-2.5-flash:free: openrouter: HTTP 404; verifique o endereço ou o nome do modelo.; NVIDIA NIM · nvidia/llama-3.1-nemotron-70b-instruct: nvidia: HTTP 410; verifique a configuração do serviço.; Cohere · command-a-03-2025: cohere: HTTP 400; verifique os parâmetros e a compatibilidade do modelo.",
   "versos_total": 206
 }
