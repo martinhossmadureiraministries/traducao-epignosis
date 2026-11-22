@@ -38,7 +38,7 @@ RESIDUOS = (
     (re.compile(r'Versículo pendente|quarentena|lapidaç', re.I), 'texto de produção automática (quarentena/lapidação)'),
     (re.compile(r'(redação|nota|texto|tradução|Crítica Textual) anterior\b|\bdeu «|Três correções|Duas correções', re.I),
      'história de correções no comentário (resíduo de processo)'),
-    (re.compile(r'<b>Nota de redação:</b>[^<]*(?:anterior|correç|dizia|lia\b)', re.I),
+    (re.compile(r'<b>Nota de redação:</b>[^<]*(?:anterior|correç|dizia|\blia\b)', re.I),
      'nota de redação que conta uma versão anterior'),
 )
 SIGLAS = ('WH', 'Treg', 'NA28', 'RP', 'NIV')
@@ -117,7 +117,12 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                         if lado and not any(_cita(s, ct) for s in lado):
                             problemas.append(f'{ref}: CT não cita {sorted(lado)} do aparato')
             else:
-                if not TEM_SEM_VARIANTE.search(ct) and re.search(r'omite|acrescenta|diverg|variante', ct, re.I) \
+                # O aparato é o da SBLGNT, só de edições. Variantes de testemunhas
+                # (manuscritos) constam das divergências da colação: não são falta.
+                tem_divergencia = any(d.get('estado') == 'divergente'
+                                      for d in facto.get('divergencias') or [])
+                if not tem_divergencia and not TEM_SEM_VARIANTE.search(ct) \
+                        and re.search(r'omite|acrescenta|diverg|variante', ct, re.I) \
                         and not TR_DIVERGE.search(ct) and not re.search(r'Textus', ct):
                     problemas.append(f'{ref}: CT fala de variante sem entrada no aparato')
             iguais = base.get('sblgnt_norm') == base.get('scrivener_norm')

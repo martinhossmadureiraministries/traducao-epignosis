@@ -85,5 +85,44 @@ class DependenciaOrtograficaTest(unittest.TestCase):
             self.assertEqual(vo.relatorio(Path(tmp), False), 2)
 
 
+class RegressoesDaEtapa5(unittest.TestCase):
+    """Duas regras que davam falsos avisos em 2 Tessalonicenses (M1, Etapa 5)."""
+
+    def _verificar(self, comentario, colacao):
+        dados = {'chapters': {'1': [{'verse': 8, 'text': 'x',
+                                     'commentary': comentario}]}}
+        return vnc.verificar(dados, colacao)
+
+    def test_variante_de_testemunha_registada_nao_e_falta(self):
+        # O aparato é só de edições: uma variante de manuscrito consta das
+        # divergências da colação e a CT pode descrevê-la.
+        base = {'sblgnt_norm': ['a'], 'scrivener_norm': ['a'], 'aparato_sblgnt': [],
+                'aviso': ''}
+        colacao = {'versiculos': {'1:8': {
+            'base': base,
+            'divergencias': [{'testemunha': '02', 'estado': 'divergente'}]}}}
+        comentario = SECCOES_OK.format(ct='O Alexandrinus (02) omite o artigo.')
+        self.assertEqual(self._verificar(comentario, colacao), [])
+
+    def test_sem_divergencia_nem_aparato_a_falta_continua(self):
+        base = {'sblgnt_norm': ['a'], 'scrivener_norm': ['a'], 'aparato_sblgnt': [],
+                'aviso': ''}
+        colacao = {'versiculos': {'1:8': {'base': base, 'divergencias': []}}}
+        comentario = SECCOES_OK.format(ct='O Alexandrinus (02) omite o artigo.')
+        problemas = self._verificar(comentario, colacao)
+        self.assertTrue(any('sem entrada no aparato' in p for p in problemas))
+
+    def test_familia_nao_e_historia_de_redacao(self):
+        # «família» termina em «lia»: a regex de resíduo exige fronteira de palavra.
+        base = {'sblgnt_norm': ['a'], 'scrivener_norm': ['a'], 'aparato_sblgnt': [],
+                'aviso': ''}
+        colacao = {'versiculos': {'1:8': {'base': base, 'divergencias': []}}}
+        comentario = ('<p><b>Nota de redação:</b> A família ἀτακτ- fica com o mesmo verbo.</p>'
+                      + SECCOES_OK.format(ct='Sem variante.'))
+        problemas = self._verificar(comentario, colacao)
+        self.assertFalse(any('versão anterior' in p for p in problemas))
+        self.assertFalse(any('nota de redação' in p.lower() for p in problemas))
+
+
 if __name__ == '__main__':
     unittest.main()
