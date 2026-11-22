@@ -320,6 +320,13 @@
       "livros_reuso": [
         600
       ]
+    },
+    {
+      "grego": "τροφός",
+      "transliteracao": "trofós",
+      "usar": "«mãe que amamenta»",
+      "sentido": "A mulher que amamenta e cria; não é μήτηρ, a palavra comum para mãe. O possessivo «os seus próprios filhos» (1Ts 2:7) fixa a imagem na mãe, não na ama assalariada; «ama» lê-se hoje mal em português.",
+      "exemplo_aprovado": "Antes, fomos gentis no meio de vocês. Como uma mãe que amamenta cuida com ternura dos próprios filhos"
     }
   ],
   "rejeitados": [
@@ -541,7 +548,9 @@
     "Miqueias: aprovação editorial integral do lote 2; revisão especializada pendente.",
     "Malaquias: aprovação editorial integral do lote 2; revisão especializada pendente.",
     "Oseias: aprovação editorial integral do lote 3; revisão especializada pendente.",
-    "Joel: aprovação editorial integral do lote 3; revisão especializada pendente."
+    "Joel: aprovação editorial integral do lote 3; revisão especializada pendente.",
+    "1 Tessalonicenses (590), caps. 1, 2, 3, 4, 5, aprovado pelo responsável em 2026-11-22 — Nova tradução lida na íntegra pelo responsável; revisão especializada pendente",
+    "2 Tessalonicenses (600), caps. 1, 2, 3, aprovado pelo responsável em 2026-11-22 — Leitura integral do texto regenerado entregue no LOTE 06; aprovação de voz e legibilidade, revisão especializada pendente"
   ],
   "protocolo": [
     "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",
