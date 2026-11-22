@@ -309,12 +309,33 @@ redação não foi lida pelo responsável.
   (`500_Joao.json 4:29-54`). Não chumba — o compilador já impede edição final
   com pendentes —, mas a contagem de capítulos deixa de poder esconder 26
   marcadores dados como texto.
-- **Fila de decisão — «estar a + infinitivo».** A memória manda usar gerúndio,
-  mas três versículos já aprovados usam a perífrase europeia (Rute 2:9 «estão a
-  ceifar», Rute 4:3 «está a vender», Habacuque 1:5 «estou a fazer»), contra
-  cinco progressivos com gerúndio (João 1:28, 3:23, 3:26; 2Ts 1:3; 3Jo 1:10).
-  Ou se alinha o texto à memória, ou se aceita a perífrase como forma da casa.
-  Pendente do responsável.
+- **Decidido — «estar a + infinitivo» é a forma da casa.** A regra antiga
+  proibia a perífrase e mandava usar gerúndio, mas três versículos já aprovados
+  usavam-na (Rute 2:9 «estão a ceifar», Rute 4:3 «está a vender», Habacuque 1:5
+  «estou a fazer») e a proibição contradizia a norma europeia que a casa segue
+  na ortografia e na ênclise. Decisão do responsável de 22/11/2026: a perífrase
+  passa a ser a forma normal do progressivo; os cinco progressivos com gerúndio
+  (João 1:28, 3:23, 3:26; 2Ts 1:3; 3Jo 1:10) ficam como variante aceite e
+  **nenhum texto aprovado muda**. A guarda deixou de os assinalar
+  (`bee/inspetor.py`), a memória de estilo, `ESTILO_BEE.md` e
+  `OFICINA_TRADUCAO.md` foram atualizados.
+
+### Lote 7 — Filipenses (2026-11-22)
+
+- **4 capítulos, 104 versículos** de primeira redação BEE a partir do SBLGNT
+  (`d7f35ad`) e do seu aparato: 91 notas de trabalho e 35 variantes explicadas no
+  JSON; leitura em [`edicoes/nova/FILIPENSES.md`](../edicoes/nova/FILIPENSES.md) e
+  registo em [`LOTE_07.md`](../edicoes/nova/LOTE_07.md).
+- **Decisões de fundo:** 2:6 ἁρπαγμός, «algo a que se agarrasse» (a ARC e a ARA
+  dizem «usurpação», a NVI «usar como vantagem»); 2:7 μορφή/σχῆμα; 3:8 σκύβαλα,
+  «lixo»; 3:9 πίστις Χριστοῦ, «fé em Cristo», com a leitura «fidelidade de Cristo»
+  registada na nota; 4:13 sem o «em Cristo» que a tradição bizantina acrescenta.
+- **Estado:** `rascunho` nos quatro capítulos, revisão editorial e especializada
+  pendentes; a voz ainda não foi lida pelo responsável.
+- **Compilação de controlo:** 17/66 livros, 53/1.189 capítulos, 1.016 versículos,
+  build PARCIAL. Achado a decidir: os 26 marcadores de João 4:29-54 entram no
+  módulo como texto (contados em `bee_pending_verses`), e o compilador ainda não
+  os omite.
 
 ## Próximas etapas
 

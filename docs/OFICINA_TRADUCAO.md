@@ -185,9 +185,12 @@ venha a traduzir os outros livros, e todas têm teste.
    não incoerência.
 2. **Ênclise com gerúndio e com o imperativo.** «metendo-se», «admoestem-no»,
    «gloria-se». A próclise («se metendo») é brasileira.
-3. **Gerúndio é a forma da casa** para o particípio presente grego. Os sete livros
-   aprovados não têm uma única construção «estar a + infinitivo» em lugar de
-   gerúndio; «continuará a fazê-lo» só entra como aspetual.
+3. **O progressivo é «estar a + infinitivo»** («estava a batizar», «estão a
+   ceifar»): é a perífrase de Portugal e de Angola, coerente com a ortografia e a
+   ênclise da casa. «Está fazendo» é brasileira. O gerúndio simples verte o
+   particípio presente grego («dizendo», «ouvindo-o»), e «continuará a fazê-lo»
+   entra como aspetual. Um progressivo com gerúndio já aprovado fica como
+   variante e não se reescreve (decisão de 22/11/2026).
 4. **O artigo depois de «todo» no singular é português, não grego.** «todo o
    desejo de bondade e toda a obra de fé» (1:11), «todo o irmão» (3:6), «toda a
    boa obra» (2:17). *πᾶς* anártrico distribui (cada desejo, cada obra) e isso
