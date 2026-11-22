@@ -55,6 +55,7 @@ from bee.inspetor import (  # noqa: E402,F401  (reexportados para testes/CLI)
     _norm,
     analisar_comentario,
     analisar_texto,
+    grego_sem_italico,
 )
 
 
@@ -76,7 +77,8 @@ def analisar_dados(dados: dict,
             if incluir_comentario:
                 resultado['duros'] = sorted(set(
                     resultado['duros']
-                    + analisar_comentario(str(verso.get('commentary') or ''))))
+                    + analisar_comentario(str(verso.get('commentary') or ''))
+                    + grego_sem_italico(str(verso.get('commentary') or ''))))
             if resultado['duros'] or resultado['avisos']:
                 achados.append((int(capitulo), int(verso.get('verse', 0)),
                                 str(verso.get('text', '')), resultado))

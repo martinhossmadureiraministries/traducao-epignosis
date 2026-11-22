@@ -27,6 +27,7 @@ sys.path.insert(0, str(RAIZ / 'scripts'))
 from bee.arquivos import DadosInvalidos, validar_livro  # noqa: E402
 from bee.catalogo import POR_NUMERO  # noqa: E402
 from bee.fontes import ALINHAMENTO_VERSAO, SBL_COMMIT, TR_COMMIT  # noqa: E402
+from bee.grego import italico_grego  # noqa: E402
 from bee.inspetor import analisar_texto  # noqa: E402
 # A revisão do acervo CNTR é fixada num só sítio: o cabeçalho de scripts/colar.py.
 from colar import CNTR_REVISAO, CNTR_URL  # noqa: E402
@@ -1417,7 +1418,7 @@ REVISAO = {
 
 
 def _versiculos(capitulo: list[tuple[int, str, str]]) -> list[dict[str, str]]:
-    return [{'verse': numero, 'text': texto, 'commentary': nota}
+    return [{'verse': numero, 'text': texto, 'commentary': italico_grego(nota)}
             for numero, texto, nota in capitulo]
 
 

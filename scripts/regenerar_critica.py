@@ -34,6 +34,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from bee.grego import italico_grego  # noqa: E402
+
 SIGLAS_CRITICAS = ('WH', 'Treg', 'NA28')
 SIGLAS = ('WH', 'Treg', 'NA28', 'RP', 'NIV', 'ST', 'SR', 'KJTR', 'Scrivener')
 SEP = '\xa0]\xa0'
@@ -182,7 +185,7 @@ def main(argv: list[str] | None = None) -> int:
                 raise SystemExit(f'{ref} sem registo na colação')
             com = _sem_residuos(verso.get('commentary') or '')
             ct, _nivel_ref = critica(ref, colacao[ref])
-            novo = _substituir_ct(com, ct)
+            novo = italico_grego(_substituir_ct(com, ct))
             if novo != verso.get('commentary'):
                 alterados += 1
                 verso['commentary'] = novo

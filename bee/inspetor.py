@@ -131,6 +131,18 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
 _GREGO = re.compile(r'[Ͱ-Ͽἀ-῿]')
 
 
+def grego_sem_italico(comentario: str) -> list[str]:
+    """Falha da auditoria (D7): grego numa nota fora de itálico.
+
+    Fica só no verificador de estilo (scripts/verificar_estilo.py) e não na
+    porta do gerador (`analisar_comentario`), para não chumbar a produção
+    enquanto a instrução do modelo não pedir o itálico.
+    """
+    from .grego import grego_fora_de_italico
+    return ['grego fora de itálico na nota (convenção D7)'] \
+        if grego_fora_de_italico(comentario or '') else []
+
+
 def analisar_comentario(comentario: str) -> list[str]:
     """Falhas duras da NOTA: secções no formato da casa e grego sem mistura.
 
