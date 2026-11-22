@@ -1,6 +1,6 @@
 # 2 Tessalonicenses · Bíblia de Estudo Epignósis
 
-Releitura da redação regenerada já existente. Texto dos versículos preservado; a aprovação de voz da versão anterior não constitui aprovação desta redação. Publicação para revisão, não aprovação editorial.
+Releitura da redação regenerada já existente. Texto dos versículos preservado; a voz da versão anterior foi aprovada, e esta redação foi lida pelo responsável e aprovada editorialmente (voz). Revisão especializada pendente.
 
 ## Capítulo 1
 

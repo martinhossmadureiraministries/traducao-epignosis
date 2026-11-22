@@ -175,3 +175,55 @@ Os branches remotos `arena/*` seguintes têm PR fundido (#56–#68) e podem ser 
 1 higiene → 2 ferramentas → 3 estados → 4 texto aprovado → 5 conteúdo → 6 legada → 7 cinco MD → 8 limpeza → 9 fecho → produção.
 
 Etapas 1 e 2 começam já, porque não dependem de decisões. Etapas 3 a 8 esperam pelas decisões indicadas.
+
+---
+
+## Estado de execução
+
+Atualizado em 2026-11-22, depois das decisões do responsável (D1 aceitar e reaprovar; D2 sim; D6 caso a caso; D7 itálico; D4 arquivar; D5 remover; D11 sair do Git).
+
+| Etapa | Estado | Notas |
+|---|---|---|
+| 1 Higiene | **Parcial** | Quarentena: 24 entradas `pendente` marcadas `resolvida` (texto verificado; nenhuma apagada). `scripts/fechar_joao4.py` removido (26 versículos conferidos antes). **D11 bloqueada**: ver «Bloqueio D11». |
+| 2 Ferramentas | **Parcial** | Feito: `verificar_notas_colacao` (`[[ ]]` só nas notas; nomes por extenso), `verificar_ortografia` sai com 2 sem a dependência, 6 testes novos. Por fazer: defaults `--dados` e passo de ortografia nos workflows (**bloqueado por permissão**, ver abaixo). |
+| 3 Estados | **Feito** | 1 e 2 Tessalonicenses, 2 João, 3 João, Filemom e 1 Tessalonicenses: `aprovado editorialmente`, revisão especializada pendente na nota. Cabeçalhos MD e lotes atualizados. Por fazer: separar `2_E_3_JOAO.md` em dois ficheiros. |
+| 4 Texto aprovado | **Feito (D1)** | Tito e Judas: texto novo mantido, `rascunho`, com a lista dos versículos alterados em cada nota e reaprovação pendente. Por fazer: Filemom 1:2 `[[ ]]` (D8). |
+| 5 Conteúdo | **Por fazer** | D6 (caso a caso em 9 capítulos), D7 (itálico no grego em todas as notas), M1 (20 notas de histórico e 13 CT em 2Ts, agora 31 avisos), M5 (`acção`, `directo`), M12 (colação de Filipenses e 1 Tessalonicenses), M15 (3 João 1:14), M16 (120 versículos com aspas), D10 e D12. |
+| 6 Legada | **Bloqueada** | D4 (arquivar) depende de desativar o fluxo legado `bee-autopiloto.yml`, que lê `livros_json/`. Sem alteração ao workflow, mover a pasta parte esse fluxo. |
+| 7 Cinco MD | **Por fazer** | Sem JSON; sem decisão pedida para produzir agora. Falta a regra em `verificar_documentacao.py` e a declaração em `LOTE_03.md`. |
+| 8 Limpeza | **Parcial** | ZIPs removidos (D5): `entregas/BEE-previa.zip`, `entregas/BEE-previa/LEIA-ME.txt` e `docs/arquivo/BEE-gerador.zip`; índice do arquivo atualizado. Branches remotos: ver abaixo. Tags `arquivo-bee-dados-2026-11-17`, `bee-previa`, `bee-previa-nova` continuam; decisão do responsável. |
+| 9 Fecho | **Por fazer** | Verificação completa, PR para `main`, e só depois produção. |
+
+### Bloqueio: permissão `workflows`
+
+O GitHub recusou o push de alterações a `.github/workflows/*` com a mensagem «refusing to allow a GitHub App to create or update workflow ... without `workflows` permission». A ligação atual não tem essa permissão. Para desbloquear, o responsável deve reconectar o GitHub na Arena com permissão de workflows. Enquanto isso, não há alterações a workflows nem aos defaults abaixo.
+
+### Bloqueio D11: `.bee/` e a produção
+
+`bee/agenda.py` diz que o estado «nunca» vive no Git, mas `nuvem.py` define `RAMO_DADOS = 'main'`, e os workflows usam `BEE_BRAMO_DADOS: main`. Ou seja, o estado de produção (`estado.json`, `quarentena.json`, `revisoes.json`, `diario.md`) vive **no próprio `main`**. Tirar o `.bee/` do índice faria a próxima execução arrancar sem estado. Não foi feito. Para avançar, é preciso primeiro mudar o ramo de dados (por exemplo, um ramo `bee-dados` próprio, com `RAMO_DADOS` e os workflows atualizados). Isto também exige a permissão `workflows`.
+
+### Pendente de permissão: alterações exatas a aplicar
+
+Aplicar na ordem indicada, com os três ficheiros de workflow iguais (`tests/test_workflow_sincronizado.py` exige sincronia entre `.github/workflows/`, `docs/` e `modelos/`):
+
+1. `.github/workflows/bee-autopiloto.yml`, `docs/bee-autopiloto.yml`, `modelos/bee-autopiloto.yml`, linha 145: `verificar_dados.py --minimo 18` → `verificar_dados.py --dados livros_json --minimo 18`. Obrigatório antes do passo 2.
+2. `docs/ci.yml`, `modelos/ci.yml`, linha 30: idem.
+3. `.github/workflows/bee-nova-edicao.yml` e `modelos/workflows/bee-nova-edicao.yml`, linha 237: `... | tee /tmp/ortografia.txt` → `... > /tmp/ortografia.txt` seguido de `cat /tmp/ortografia.txt` (o `tee` mascarava o código de saída).
+4. `gerar_bee.py`: `--dados` por defeito `edicoes/nova/livros_json`.
+5. `scripts/verificar_dados.py`: `--dados` por defeito `edicoes/nova/livros_json`. Só depois do passo 1.
+
+Depois de aplicar: `python3 -m unittest discover -s tests -q` deve continuar a passar, e `tests/test_workflow_sincronizado.py` também.
+
+### Branches remotos (para o responsável)
+
+Os 13 branches `arena/*` com PR fundido (#56–#68) podem ser apagados. Esta sessão não pode enviar alterações para outros branches, por isso não os apaguei:
+
+```
+git push origin --delete arena/6ff2ad51-traducao-epignosis arena/9249dcf6-traducao-epignosis arena/384105cc-traducao-epignosis arena/e33ee8a2-traducao-epignosis arena/a8d06f4d-traducao-epignosis arena/5c26c1e4-traducao-epignosis arena/c8266cc9-traducao-epignosis arena/614e2f59-traducao-epignosis arena/ccdcbc43-traducao-epignosis arena/e9dbcb1e-traducao-epignosis arena/40e0b67d-traducao-epignosis arena/6089a33a-traducao-epignosis arena/32f77979-traducao-epignosis
+```
+
+Não apagar `main` nem `arena/b6fccf92-traducao-epignosis`.
+
+### Piloto: cópias e fonte
+
+`edicoes/piloto/dados/` é mantido como snapshot histórico do texto aprovado: o README (`gerar_bee.py --dados edicoes/piloto/dados`) e os scripts `migrar_notas_cinco.py` e `lapidar_seis.py` usam-no como origem. Tito e Judas na edição nova já diferem deste snapshot (A1); a diferença está listada nas notas.

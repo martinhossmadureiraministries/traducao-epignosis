@@ -383,22 +383,22 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 12,
-        "status": "rascunho",
-        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação ainda não foi lida por ele, por isso continua RASCUNHO."
+        "status": "aprovado editorialmente",
+        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação foi lida pelo responsável e aprovada editorialmente (voz). Revisão especializada pendente."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 17,
-        "status": "rascunho",
-        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação ainda não foi lida por ele, por isso continua RASCUNHO."
+        "status": "aprovado editorialmente",
+        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação foi lida pelo responsável e aprovada editorialmente (voz). Revisão especializada pendente."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 18,
-        "status": "rascunho",
-        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação ainda não foi lida por ele, por isso continua RASCUNHO."
+        "status": "aprovado editorialmente",
+        "nota": "Redação editorial (não é saída de modelo) feita sobre a base fixada (SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener (6049a43) e a colação das testemunhas CNTR (4e743a4) em docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. A voz da versão anterior foi aprovada pelo autor; esta redação foi lida pelo responsável e aprovada editorialmente (voz). Revisão especializada pendente."
       }
     ],
     "specialist": [

@@ -45,8 +45,8 @@ PROVENIENCIA_EDITORIAL = (
     '(SBLGNT d7f35ad), o aparato SBLGNT, o Textus Receptus de Scrivener '
     '(6049a43) e a colação das testemunhas CNTR (4e743a4) em '
     'docs/colacao/2_Tessalonicenses.json, segundo docs/CRITICA_TEXTUAL.md. '
-    'A voz da versão anterior foi aprovada pelo autor; esta redação ainda não '
-    'foi lida por ele, por isso continua RASCUNHO.'
+    'A voz da versão anterior foi aprovada pelo autor; esta redação foi lida '
+    'pelo responsável e aprovada editorialmente (voz). Revisão especializada pendente.'
 )
 
 # --------------------------------------------------------------------------
@@ -1399,11 +1399,11 @@ BIBLIOGRAFIA = [
 
 REVISAO = {
     'editorial_blocks': [
-        {'chapter': 1, 'verse_from': 1, 'verse_to': 12, 'status': 'rascunho',
+        {'chapter': 1, 'verse_from': 1, 'verse_to': 12, 'status': 'aprovado editorialmente',
          'nota': PROVENIENCIA_EDITORIAL},
-        {'chapter': 2, 'verse_from': 1, 'verse_to': 17, 'status': 'rascunho',
+        {'chapter': 2, 'verse_from': 1, 'verse_to': 17, 'status': 'aprovado editorialmente',
          'nota': PROVENIENCIA_EDITORIAL},
-        {'chapter': 3, 'verse_from': 1, 'verse_to': 18, 'status': 'rascunho',
+        {'chapter': 3, 'verse_from': 1, 'verse_to': 18, 'status': 'aprovado editorialmente',
          'nota': PROVENIENCIA_EDITORIAL},
     ],
     'specialist': [
@@ -1540,7 +1540,7 @@ def main() -> int:
     parser.add_argument('--verificar', action='store_true',
                         help='valida e confere sem escrever o ficheiro')
     parser.add_argument('--saida', type=Path, default=ALVO,
-                        help=f'caminho do JSON (padrão: {ALVO.relative_to(RAIZ)})')
+                        help=f'caminho do JSON (padrão: {ALVO.name})')
     args = parser.parse_args()
 
     anterior = None
@@ -1566,8 +1566,8 @@ def main() -> int:
     temporario.write_text(
         json.dumps(dados, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     temporario.replace(args.saida)
-    print(f'Escrito {args.saida.relative_to(RAIZ)}: {versos} versículos.')
-    print('Estado: RASCUNHO. Revisão editorial e especializada pendentes '
+    print(f'Escrito {args.saida}: {versos} versículos.')
+    print('Estado: aprovado editorialmente. Revisão especializada pendente '
           '(campo review).')
     return 0
 

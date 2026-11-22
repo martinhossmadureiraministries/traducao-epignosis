@@ -364,7 +364,7 @@ redação não foi lida pelo responsável.
 
 ### Pendências abertas (não tocadas nesta correção)
 
-- **2 Tessalonicenses** (`rascunho`): 21 notas de redação com histórico de
+- **2 Tessalonicenses** (aprovada editorialmente, voz; revisão especializada pendente): 21 notas de redação com histórico de
   correções. Como o JSON é reconstruído de `scripts/regenerar_2ts.py`, a
   limpeza tem de ser feita nesse script; editar só o JSON faz o teste de
   reprodutibilidade falhar. Há também 15 avisos de CT (siglas do aparato em

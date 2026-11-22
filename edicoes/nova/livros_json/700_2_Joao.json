@@ -131,8 +131,8 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 13,
-        "status": "rascunho",
-        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Continua RASCUNHO até leitura do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Voz aprovada pelo responsável no piloto; texto igual ao piloto aprovado. Revisão especializada pendente."
       }
     ],
     "specialist": [

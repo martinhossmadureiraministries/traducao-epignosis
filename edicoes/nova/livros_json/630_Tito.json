@@ -373,21 +373,21 @@
         "verse_from": 1,
         "verse_to": 16,
         "status": "rascunho",
-        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Continua RASCUNHO até leitura do responsável."
+        "nota": "Texto alterado em relação ao piloto aprovado: 1:13 (vírgula). Reaprovação do responsável pendente (decisão D1). Continua RASCUNHO até essa reaprovação."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 15,
         "status": "rascunho",
-        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Continua RASCUNHO até leitura do responsável."
+        "nota": "Texto alterado em relação ao piloto aprovado: 2:7 e 2:9 (vírgulas), 2:14 (artigo «a»). Reaprovação do responsável pendente (decisão D1). Continua RASCUNHO até essa reaprovação."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 15,
         "status": "rascunho",
-        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Continua RASCUNHO até leitura do responsável."
+        "nota": "Texto alterado em relação ao piloto aprovado: 3:1 e 3:2 (artigo «a»), 3:3 («variados» em vez de «de todo tipo»). Reaprovação do responsável pendente (decisão D1). Continua RASCUNHO até essa reaprovação."
       }
     ],
     "specialist": [
