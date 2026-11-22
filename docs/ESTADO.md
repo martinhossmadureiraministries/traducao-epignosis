@@ -278,6 +278,24 @@ especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
 37 dos 47 versículos diferem da versão de 19/11, cuja voz foi aprovada; esta
 redação não foi lida pelo responsável.
 
+### Marcas de citação desequilibradas (2026-11-22)
+
+- **João 4, linha legada.** Cinco versículos (12, 20, 22, 23, 24) fechavam a
+  citação e não a abriam: o discurso da samaritana e o de Jesus vieram cortados
+  verso a verso e cada continuação perdeu o « de entrada. Reabre-se em cada um;
+  o capítulo fecha a zero. É o mesmo remédio que já tinha sido aplicado a João
+  1:31 e 1:34 e a mesma família de defeito.
+- **Malaquias 3–4.** A fala que abre em 3:17 só fechava em 4:1 («diz o SENHOR
+  dos Exércitos»), a cavalgar a divisão de capítulo, que o teste de marcas não
+  admite. Fecha-se em 3:18 e reabre-se em 4:1: mudam duas marcas de pontuação,
+  não muda nenhuma palavra, e o MD e o JSON continuam iguais versículo a
+  versículo.
+- **Teste de migração com âmbito corrigido.** As três secções e o estado
+  RASCUNHO valem para os sete livros que a migração de 2026-11-20 tocou (os
+  cinco curtos, João e 2 Tessalonicenses). Os lotes posteriores foram aprovados
+  com notas BEE de outra forma; para eles exige-se proveniência declarada e
+  estados editoriais conhecidos, não o formato migrado.
+
 ## Próximas etapas
 
 | Etapa | Estado |

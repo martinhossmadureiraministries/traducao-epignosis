@@ -104,11 +104,11 @@ Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente
 
 **17** «Serão meus», diz o SENHOR dos Exércitos, «um bem precioso no dia em que eu agir. Terei compaixão deles como um pai tem compaixão do filho que o serve.
 
-**18** Então voltarão a ver a diferença entre o justo e o perverso, entre quem serve a Deus e quem não o serve.
+**18** Então voltarão a ver a diferença entre o justo e o perverso, entre quem serve a Deus e quem não o serve.»
 
 ## Capítulo 4
 
-**1** Pois aí vem o dia, ardente como um forno. Todos os arrogantes e todos os que praticam o mal serão palha. O dia que vem há de os queimar», diz o SENHOR dos Exércitos. «Não lhes deixará raiz nem ramo.
+**1** «Pois aí vem o dia, ardente como um forno. Todos os arrogantes e todos os que praticam o mal serão palha. O dia que vem há de os queimar», diz o SENHOR dos Exércitos. «Não lhes deixará raiz nem ramo.
 
 **2** Mas para vocês que temem o meu nome nascerá o sol da justiça, trazendo cura nas suas asas. Sairão aos saltos como bezerros soltos do curral.
 

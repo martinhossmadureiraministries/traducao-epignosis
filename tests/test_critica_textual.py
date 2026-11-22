@@ -688,6 +688,11 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
 
     LIVROS = {630: 'Tito', 640: 'Filemom', 700: '2_João',
               710: '3_João', 720: 'Judas'}
+    # Livros tocados pela migração de notas de 2026-11-20 (os cinco curtos,
+    # João 1 e 2 Tessalonicenses), no formato da casa de três secções.
+    LIVROS_MIGRADOS = (500, 600, 630, 640, 700, 710, 720)
+    # Estados editoriais em uso; a revisão especializada é sempre «pendente».
+    ESTADOS_EDITORIAIS = {'rascunho', 'aprovado editorialmente'}
     ENCHIMENTO = ('migração lexical pendente de verificação',
                   'colação direta não repetida aqui',
                   'rascunho a migrar das notas do piloto')
@@ -695,10 +700,12 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
     def _livro(self, caminho: Path) -> dict:
         return json.loads(caminho.read_text(encoding='utf-8'))
 
-    def _comentarios(self, numero: int):
-        ficheiro = next((RAIZ / 'edicoes' / 'nova' / 'livros_json').glob(
+    def _ficheiro(self, numero: int) -> Path:
+        return next((RAIZ / 'edicoes' / 'nova' / 'livros_json').glob(
             f'{numero}_*.json'))
-        livro = self._livro(ficheiro)
+
+    def _comentarios(self, numero: int):
+        livro = self._livro(self._ficheiro(numero))
         for cap, versos in livro['chapters'].items():
             for v in versos:
                 yield f"{cap}:{v['verse']}", v.get('commentary', '') or ''
@@ -716,8 +723,14 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
                             f'{ficheiro.name} {cap}:{v["verse"]}')
 
     def test_tres_seccoes_e_metadados_nos_sete_livros(self):
-        pasta = RAIZ / 'edicoes' / 'nova' / 'livros_json'
-        for ficheiro in sorted(pasta.glob('*.json')):
+        # A migração de 2026-11-20 tocou sete livros (os cinco curtos, João 1 e
+        # 2 Tessalonicenses) e é neles que o formato da casa vale: três secções
+        # por nota e tudo em RASCUNHO. Os lotes posteriores da edição nova
+        # (Rute, profetas, Tessalonicenses) foram aprovados com notas BEE de
+        # outra forma e outro estado, por isso não entram nesta verificação —
+        # o que se lhes exige está no teste seguinte.
+        for numero in self.LIVROS_MIGRADOS:
+            ficheiro = self._ficheiro(numero)
             livro = self._livro(ficheiro)
             self.assertTrue(livro.get('bibliography'), ficheiro.name)
             self.assertTrue(livro.get('review'), ficheiro.name)
@@ -731,6 +744,23 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
                                    'Síntese Exegética'):
                         self.assertIn(f'<b>{seccao}:</b>', comentario,
                                       f'{ficheiro.name} {cap}:{v["verse"]}')
+
+    def test_metadados_de_proveniencia_em_todos_os_livros(self):
+        # Fora do formato migrado, o que não pode faltar é a proveniência: cada
+        # livro declara fontes, e cada bloco declara um estado conhecido. Um
+        # estado inventado (ou vazio) é deriva, não progresso.
+        pasta = RAIZ / 'edicoes' / 'nova' / 'livros_json'
+        for ficheiro in sorted(pasta.glob('*.json')):
+            livro = self._livro(ficheiro)
+            self.assertTrue(livro.get('bibliography'), ficheiro.name)
+            self.assertTrue(livro.get('review'), ficheiro.name)
+            blocos = livro['review']['editorial_blocks']
+            self.assertTrue(blocos, ficheiro.name)
+            for bloco in blocos:
+                self.assertIn(bloco['status'].strip(), self.ESTADOS_EDITORIAIS,
+                              f'{ficheiro.name} cap. {bloco["chapter"]}')
+            for bloco in livro['review'].get('specialist', []):
+                self.assertEqual(bloco['status'], 'pendente', ficheiro.name)
 
     def test_testemunhas_citadas_existem_na_colacao_do_livro(self):
         sigla = re.compile(r'\b(0[1-4]|0232|P\d+)\b')
