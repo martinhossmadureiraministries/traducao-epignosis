@@ -4,6 +4,10 @@
 Corre sem rede e sem chaves. Sai com código 1 se encontrar um problema que
 possa fazer desaparecer versículos já produzidos (a causa da execução #12).
 
+Além das regressões, relata os versículos ainda marcados como pendentes: um
+capítulo com marcadores conta como fechado para não se perder o que já existe,
+mas não é texto para ler — e a contagem não deve fazer esquecer isso.
+
 Uso:
     python3 scripts/verificar_dados.py
     python3 scripts/verificar_dados.py --minimo 18
@@ -69,6 +73,46 @@ def verificar(dados: Path) -> tuple[int, int, list[str]]:
     return capitulos, versiculos, problemas
 
 
+PENDENTE_PREFIXO = '[Versículo pendente:'
+
+
+def _intervalos(numeros: list[int]) -> str:
+    """«29-54», «2, 5-7»: as sequências aparecem comprimidas no relatório."""
+    partes: list[str] = []
+    inicio = anterior = None
+    for numero in numeros:
+        if inicio is None:
+            inicio = anterior = numero
+        elif numero == anterior + 1:
+            anterior = numero
+        else:
+            partes.append(f'{inicio}-{anterior}' if anterior != inicio else str(inicio))
+            inicio = anterior = numero
+    if inicio is not None:
+        partes.append(f'{inicio}-{anterior}' if anterior != inicio else str(inicio))
+    return ', '.join(partes)
+
+
+def pendentes(dados: Path) -> list[tuple[str, str, str]]:
+    """Versículos por traduzir em capítulos dados como fechados."""
+    achados: list[tuple[str, str, str]] = []
+    for caminho in sorted(dados.glob('*.json')):
+        try:
+            livro = json.loads(caminho.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            continue
+        for chave, lista in (livro.get('chapters') or {}).items():
+            if not isinstance(lista, list):
+                continue
+            marcados = [v.get('verse') for v in lista
+                        if isinstance(v, dict)
+                        and str(v.get('text') or '').startswith(PENDENTE_PREFIXO)]
+            marcados = [n for n in marcados if isinstance(n, int)]
+            if marcados:
+                achados.append((caminho.name, str(chave), _intervalos(sorted(marcados))))
+    return achados
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dados', default='livros_json')
@@ -81,6 +125,13 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     capitulos, versiculos, problemas = verificar(dados)
     print(f'{dados}: {capitulos} capítulos completos, {versiculos} versículos')
+    marcados = pendentes(dados)
+    for ficheiro, capitulo, intervalos in marcados:
+        print(f'  pendente: {ficheiro} {capitulo}:{intervalos}')
+    if marcados:
+        quantos = len(marcados)
+        print(f'{quantos} bloco{"s" if quantos > 1 else ""} de versículos pendentes: '
+              'o capítulo conta como fechado, mas não é texto final.')
     if capitulos < args.minimo:
         problemas.append(
             f'regressão: {capitulos} capítulos, abaixo do mínimo de {args.minimo}'

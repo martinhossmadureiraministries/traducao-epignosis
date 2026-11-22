@@ -73,6 +73,17 @@ class AnalisarDadosTest(unittest.TestCase):
         self.assertTrue(any('formato da casa' in d
                             for d in achados[0][3]['duros']))
 
+    def test_formato_da_casa_so_nos_livros_da_migracao(self):
+        # O formato de três secções é o da migração de 2026-11-20. Os lotes
+        # aprovados depois usam notas em prosa e não podem chumbar por rótulos
+        # que nunca tiveram: isso gerava centenas de alarmes falsos.
+        raiz = ve.RAIZ
+        nova = raiz / 'edicoes' / 'nova' / 'livros_json'
+        self.assertTrue(ve._auditar_notas(nova, 600))
+        self.assertTrue(ve._auditar_notas(nova, 720))
+        self.assertFalse(ve._auditar_notas(nova, 460))
+        self.assertFalse(ve._auditar_notas(raiz / 'livros_json', 640))
+
     def test_so_a_pasta_da_edicao_nova_liga_as_notas(self):
         raiz = ve.RAIZ
         self.assertTrue(

@@ -17,9 +17,12 @@ Procura três categorias:
     com alternativa; as nuances pertencem à nota, não ao versículo.
   * MARCADORES DE ALMEIDA (aviso) — léxico eclesiástico/antigo («sobremaneira»,
     «porventura», «outrossim», «o sem lei»…) a merecer reescrita.
-  * NOTAS FORA DO FORMATO (falha dura, só na edição nova) — as três secções
-    têm de vir como «<b>Análise Léxica:</b>» etc.; a linha legada, que usa
-    outro formato de nota, não é sujeita a esta verificação.
+  * NOTAS FORA DO FORMATO (falha dura, só na edição nova) — nos livros da
+    migração as três secções têm de vir como «<b>Análise Léxica:</b>» etc.
+    A linha legada e os lotes aprovados com notas em prosa não são sujeitos a
+    esta verificação: pedir-lhes rótulos que nunca tiveram produziria centenas
+    de alarmes falsos e esconderia os verdadeiros. O âmbito está declarado em
+    ``bee.inspetor.LIVROS_FORMATO_CASA``.
 
 Código de saída: 1 se houver FALHAS duras (ou também avisos com --rigoroso);
 0 caso contrário. Serve tanto para leitura manual como para um passo de CI.
@@ -44,6 +47,7 @@ from bee.catalogo import POR_NUMERO  # noqa: E402
 # Núcleo único das listas de proibição (o motor de geração usa o mesmo).
 from bee.inspetor import (  # noqa: E402,F401  (reexportados para testes/CLI)
     ARCAISMOS,
+    LIVROS_FORMATO_CASA,
     HEDGE_FRASES,
     HEDGE_PADROES,
     MARCADORES_ALMEIDA,
@@ -88,6 +92,11 @@ def _eh_edicao_nova(pasta: Path) -> bool:
         return False
 
 
+def _auditar_notas(pasta: Path, numero: int) -> bool:
+    """O formato da casa só se exige aos livros que o adotaram."""
+    return _eh_edicao_nova(pasta) and numero in LIVROS_FORMATO_CASA
+
+
 def relatorio(pasta: Path, livros_filtro: set[int] | None, rigoroso: bool) -> int:
     todos = ler_todos(pasta)
     falhas = avisos_total = 0
@@ -97,7 +106,7 @@ def relatorio(pasta: Path, livros_filtro: set[int] | None, rigoroso: bool) -> in
         livro = POR_NUMERO.get(numero)
         nome = livro.nome if livro else str(numero)
         achados = analisar_dados(todos[numero],
-                                 incluir_comentario=_eh_edicao_nova(pasta))
+                                 incluir_comentario=_auditar_notas(pasta, numero))
         if not achados:
             continue
         print(f'\n## {nome} ({numero})')

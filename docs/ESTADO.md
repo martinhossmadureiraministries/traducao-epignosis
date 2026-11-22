@@ -296,6 +296,26 @@ redação não foi lida pelo responsável.
   com notas BEE de outra forma; para eles exige-se proveniência declarada e
   estados editoriais conhecidos, não o formato migrado.
 
+### Guardas com âmbito declarado (2026-11-22)
+
+- **`verificar_estilo.py`** exigia as três secções da casa a todos os livros da
+  edição nova: 576 versículos chumbavam por não terem rótulos que nunca
+  tiveram. O âmbito passou a estar declarado em
+  `bee.inspetor.LIVROS_FORMATO_CASA` (os sete livros da migração); a linha
+  legada e os lotes em prosa ficam de fora. O motor (`bee/porta.py`) continua a
+  exigir as secções a todo o texto **novo**. Restam três achados reais, na fila
+  abaixo.
+- **`verificar_dados.py`** relata agora os versículos marcados como pendentes
+  (`500_Joao.json 4:29-54`). Não chumba — o compilador já impede edição final
+  com pendentes —, mas a contagem de capítulos deixa de poder esconder 26
+  marcadores dados como texto.
+- **Fila de decisão — «estar a + infinitivo».** A memória manda usar gerúndio,
+  mas três versículos já aprovados usam a perífrase europeia (Rute 2:9 «estão a
+  ceifar», Rute 4:3 «está a vender», Habacuque 1:5 «estou a fazer»), contra
+  cinco progressivos com gerúndio (João 1:28, 3:23, 3:26; 2Ts 1:3; 3Jo 1:10).
+  Ou se alinha o texto à memória, ou se aceita a perífrase como forma da casa.
+  Pendente do responsável.
+
 ## Próximas etapas
 
 | Etapa | Estado |
