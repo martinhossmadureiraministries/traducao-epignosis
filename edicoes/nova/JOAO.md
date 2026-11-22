@@ -1,6 +1,6 @@
 # João · Bíblia de Estudo Epignósis
 
-Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 396 versículos.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 479 versículos.
 
 **Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
@@ -14,6 +14,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 6 | rascunho | 71 |
 | 7 | rascunho | 53 |
 | 8 | rascunho | 59 |
+| 9 | rascunho | 41 |
+| 10 | rascunho | 42 |
 
 ## Texto
 
@@ -824,6 +826,176 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **58** Jesus disse-lhes: «Em verdade, em verdade digo a vocês: antes que Abraão existisse, eu sou.»
 
 **59** Então pegaram pedras para as atirar contra ele. Jesus, porém, escondeu-se e saiu do templo.
+
+### Capítulo 9
+
+**1** Ao passar, Jesus viu um homem cego de nascença.
+
+**2** Os seus discípulos perguntaram-lhe: «Rabi, quem pecou, este homem ou os pais dele, para que nascesse cego?»
+
+**3** Jesus respondeu: «Nem este pecou, nem os pais dele; foi para que as obras de Deus se manifestassem nele.»
+
+**4** Temos de fazer as obras daquele que me enviou enquanto é dia; vem a noite, em que ninguém pode trabalhar.
+
+**5** Enquanto estiver no mundo, sou a luz do mundo.
+
+**6** Dito isto, cuspiu no chão, fez lodo com a saliva e untou com o lodo os olhos do cego.
+
+**7** Disse-lhe: «Vai lavar-te no tanque de Siloé», que quer dizer: «Enviado.» Ele foi, lavou-se e voltou a ver.
+
+**8** Os vizinhos e os que antes o viam, porque era mendigo, diziam: «Não é este o que se sentava a pedir?»
+
+**9** Uns diziam: «É ele»; outros: «Não, é parecido com ele.» Ele dizia: «Sou eu.»
+
+**10** Perguntaram-lhe: «Então, como se abriram os teus olhos?»
+
+**11** Ele respondeu: «O homem chamado Jesus fez lodo, untou-me os olhos e disse-me: “Vai ao Siloé e lava-te.” Fui, lavei-me e recuperei a vista.»
+
+**12** Perguntaram-lhe: «Onde está ele?» Respondeu: «Não sei.»
+
+**13** Levaram-no aos fariseus, o homem que antes era cego.
+
+**14** Ora, era sábado quando Jesus fez o lodo e lhe abriu os olhos.
+
+**15** Os fariseus perguntaram-lhe de novo como recuperara a vista. Ele disse-lhes: «Pôs-me lodo nos olhos, lavei-me e vejo.»
+
+**16** Alguns dos fariseus diziam: «Este homem não vem de Deus, porque não guarda o sábado.» Outros: «Como pode um pecador fazer tais sinais?» E havia divisão entre eles.
+
+**17** Perguntaram outra vez ao cego: «Que dizes tu dele, já que te abriu os olhos?» Ele respondeu: «É profeta.»
+
+**18** Os judeus não acreditaram que ele tivesse sido cego e recuperado a vista, até chamarem os pais dele.
+
+**19** Perguntaram-lhes: «Este é o filho de vocês, que dizem ter nascido cego? Como vê agora?»
+
+**20** Os pais responderam: «Sabemos que este é o nosso filho e que nasceu cego.»
+
+**21** Como vê agora, não sabemos; quem lhe abriu os olhos também não sabemos. Perguntem a ele: tem idade, ele que fale por si.
+
+**22** Os pais falaram assim porque tinham medo dos judeus; os judeus já tinham combinado que quem o reconhecesse como Cristo seria expulso da sinagoga.
+
+**23** Por isso os pais disseram: «Tem idade; perguntem a ele.»
+
+**24** Chamaram de novo o homem que tinha sido cego e disseram-lhe: «Dá glória a Deus! Nós sabemos que este homem é pecador.»
+
+**25** Ele respondeu: «Se é pecador, não sei. Uma coisa sei: eu era cego e agora vejo.»
+
+**26** Perguntaram-lhe de novo: «Que te fez? Como te abriu os olhos?»
+
+**27** Ele respondeu: «Já disse a vocês e não ouviram. Por que querem ouvir outra vez? Querem também ser discípulos dele?»
+
+**28** Insultaram-no e disseram: «Tu é que és discípulo dele! Nós somos discípulos de Moisés.»
+
+**29** Nós sabemos que Deus falou a Moisés; quanto a este, não sabemos de onde vem.
+
+**30** O homem respondeu: «Nisto está o espantoso: vocês não sabem de onde ele é, e ele abriu-me os olhos.»
+
+**31** Sabemos que Deus não ouve os pecadores; mas, se alguém é piedoso e faz a sua vontade, esse ele ouve.
+
+**32** Desde o princípio do mundo nunca se ouviu dizer que alguém tivesse aberto os olhos a um cego de nascença.
+
+**33** Se este não viesse de Deus, não poderia fazer nada.
+
+**34** Responderam: «Tu nasceste todo em pecado, e queres ensinar-nos?» E expulsaram-no.
+
+**35** Jesus ouviu que o tinham expulsado; encontrou-o e perguntou: «Crês no Filho do Homem?»
+
+**36** Ele respondeu: «Quem é, Senhor, para que eu creia nele?»
+
+**37** Jesus disse-lhe: «Já o viste, e quem fala contigo é ele.»
+
+**38** Ele disse: «Creio, Senhor.» E adorou-o.
+
+**39** Jesus disse: «Vim a este mundo para um juízo: para que os que não veem vejam, e os que veem fiquem cegos.»
+
+**40** Alguns fariseus que estavam com ele ouviram isto e disseram: «Acaso também nós somos cegos?»
+
+**41** Jesus respondeu: «Se fossem cegos, não teriam pecado; mas, como dizem: “Vemos”, o pecado de vocês permanece.»
+
+### Capítulo 10
+
+**1** Em verdade, em verdade digo a vocês: quem não entra pela porta no curral das ovelhas, mas sobe por outro lado, esse é ladrão e salteador.
+
+**2** Quem entra pela porta é o pastor das ovelhas.
+
+**3** O porteiro abre-lhe, as ovelhas ouvem a voz dele; ele chama pelo nome as suas ovelhas e leva-as para fora.
+
+**4** Quando leva para fora todas as suas, vai à frente delas, e as ovelhas seguem-no, porque conhecem a voz dele.
+
+**5** Mas não seguirão um estranho; fogem dele, porque não conhecem a voz dos estranhos.
+
+**6** Jesus disse-lhes esta comparação, mas eles não perceberam o que lhes dizia.
+
+**7** Jesus disse outra vez: «Em verdade, em verdade digo a vocês: eu sou a porta das ovelhas.»
+
+**8** Todos os que vieram antes de mim são ladrões e salteadores; mas as ovelhas não os ouviram.
+
+**9** Eu sou a porta: quem entrar por mim será salvo; entrará, sairá e encontrará pastagem.
+
+**10** O ladrão só vem para roubar, matar e destruir; eu vim para que tenham vida e a tenham em abundância.
+
+**11** Eu sou o bom pastor. O bom pastor dá a sua vida pelas ovelhas.
+
+**12** O assalariado, que não é pastor e a quem as ovelhas não pertencem, vê o lobo chegar, deixa as ovelhas e foge; e o lobo arrebata-as e dispersa-as.
+
+**13** Foge porque é assalariado e não se importa com as ovelhas.
+
+**14** Eu sou o bom pastor, conheço as minhas, e as minhas me conhecem.
+
+**15** Assim como o Pai me conhece e eu conheço o Pai, dou a minha vida pelas ovelhas.
+
+**16** Tenho ainda outras ovelhas que não são deste curral; também essas preciso de trazer; elas ouvirão a minha voz, e haverá um só rebanho e um só pastor.
+
+**17** Por isto o Pai me ama: porque dou a minha vida, para a tornar a receber.
+
+**18** Ninguém ma tira; eu dou-a por mim mesmo. Tenho poder para a dar e tenho poder para a tornar a receber. Este mandamento recebi do meu Pai.
+
+**19** Voltou a haver divisão entre os judeus por causa destas palavras.
+
+**20** Muitos deles diziam: «Tem demónio e está louco; por que o ouvem?»
+
+**21** Outros diziam: «Estas não são palavras de um endemoninhado. Pode um demónio abrir os olhos aos cegos?»
+
+**22** Celebrava-se então em Jerusalém a festa da Dedicação; era inverno.
+
+**23** Jesus andava no templo, no pórtico de Salomão.
+
+**24** Os judeus cercaram-no e disseram: «Até quando nos deixas em suspenso? Se és tu o Cristo, diz-nos claramente.»
+
+**25** Jesus respondeu: «Já disse a vocês, e não acreditam. As obras que faço em nome do meu Pai dão testemunho de mim.»
+
+**26** Mas vocês não acreditam, porque não são das minhas ovelhas.
+
+**27** As minhas ovelhas ouvem a minha voz, eu conheço-as, e elas seguem-me.
+
+**28** Eu dou-lhes vida eterna; não se perderão para sempre, e ninguém as arrebatará da minha mão.
+
+**29** O Pai, que mas deu, é maior do que todos; e ninguém pode arrebatá-las da mão do Pai.
+
+**30** Eu e o Pai somos um.
+
+**31** Os judeus pegaram outra vez em pedras para o apedrejar.
+
+**32** Jesus respondeu: «Mostrei a vocês muitas obras boas da parte do Pai; por qual dessas obras me apedrejam?»
+
+**33** Os judeus responderam: «Não te apedrejamos por obra boa, mas por blasfémia: porque tu, sendo homem, fazes-te Deus.»
+
+**34** Jesus respondeu: «Não está escrito na lei de vocês: “Eu disse: vocês são deuses”?»
+
+**35** Se chamou deuses àqueles a quem a palavra de Deus foi dirigida, e a Escritura não pode ser anulada,
+
+**36** a mim, que o Pai santificou e enviou ao mundo, vocês dizem: «Blasfemas?» Porque disse: «Sou Filho de Deus.»
+
+**37** Se não faço as obras do meu Pai, não me creiais.
+
+**38** Mas se as faço, ainda que não me creiais a mim, crede nas obras, para que saibais e reconheçais que o Pai está em mim, e eu no Pai.
+
+**39** Procuraram outra vez prendê-lo, mas ele escapou das mãos deles.
+
+**40** Jesus voltou para o outro lado do Jordão, para o lugar onde João tinha batizado no início, e ficou ali.
+
+**41** Muitos vieram ter com ele e diziam: «João não fez nenhum sinal; mas tudo o que João disse deste homem era verdade.»
+
+**42** E muitos creram nele ali.
 
 ## Notas
 
@@ -3218,6 +3390,508 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 - **Análise Léxica.** *ἐκρύβη* (ekrybē) — escondeu-se; *ἐξῆλθεν* (exēlthen) — saiu.
 - **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἱεροῦ*»; RP acrescenta «*διελθὼν διὰ μέσου αὐτῶν καὶ παρῆγεν οὕτως*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*διελθων δια μεσου αυτων και παρηγεν ουτωσ*»). O texto segue a base SBLGNT. Nível de certeza A.
 - **Síntese Exegética.** A reação é violenta, e Jesus escapa. O capítulo termina.
+
+### Notas do capítulo 9
+
+**9:1**
+
+- **Análise Léxica.** *παράγων* (paragōn) — passando; *τυφλόν* (tuphlon) — cego; *ἐκ γενετῆς* (ek genetēs) — desde o nascimento.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O milagre começa com um homem que nunca viu. O texto não diz quem ele é antes da cura.
+
+**9:2**
+
+- **Análise Léxica.** *Ῥαββί* (Rhabbi) — Rabi, mestre; *ἥμαρτεν* (hēmarten) — pecou; *γεννηθῇ* (gennēthēi) — nascesse.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A pergunta supõe que o sofrimento é castigo por pecado. Jesus rejeita essa ligação direta.
+
+**9:3**
+
+- **Análise Léxica.** *φανερωθῇ* (phanerōthēi) — se manifestassem; *ἔργα* (erga) — obras.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ο*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A cegueira torna-se o lugar onde a obra de Deus aparece. O texto não explica a causa do sofrimento.
+
+**9:4**
+
+- **Análise Léxica.** *δεῖ* (dei) — é necessário, convém; *ἐργάζεσθαι* (ergazesthai) — trabalhar, fazer obras; *νὺξ* (nyx) — noite. RP lê «eu» (*ἐμέ*) em vez de «nós» (*ἡμᾶς*); a tradução segue a base.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἡμᾶς*»; RP lê «*Ἐμὲ*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*εμε*» onde a base lê «*ημασ*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A urgência da missão é a do dia que acaba. A tradução mantém a primeira pessoa do plural da base.
+
+**9:5**
+
+- **Análise Léxica.** *ὅταν ... ὦ* (hotan ... ō) — enquanto eu estiver; *φῶς* (phōs) — luz.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Liga a cura ao tema da luz de 8:12.
+
+**9:6**
+
+- **Análise Léxica.** *ἔπτυσεν* (eptysen) — cuspiu; *πηλόν* (pēlon) — lodo; *ἐπέχρισεν* (epechrisen) — untou. WH lê «pôs» (*ἐπέθηκεν*) em vez de «untou».
+- **Crítica Textual.** Aparato SBLGNT: (1) Treg, NA28 e RP leem «*ἐπέχρισεν*»; WH lê «*ἐπέθηκεν*». (2) WH, Treg e NA28 leem «*αὐτοῦ*»; RP omite. (3) WH, Treg e NA28 leem «*ὀφθαλμούς*»; RP acrescenta «*τοῦ τυφλοῦ*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR omite «*αυτου*»; TR acrescenta «*του τυφλου*»). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** O gesto é concreto e fora do comum. A nota regista que a cura usa meios materiais, como em 9:15.
+
+**9:7**
+
+- **Análise Léxica.** *κολυμβήθραν* (kolymbēthran) — tanque; *Σιλωάμ* (Silōam) — Siloé; *Ἀπεσταλμένος* (apestalmenos) — enviado; *βλέπων* (blepōn) — vendo.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O nome do tanque é lido como «Enviado», o que liga a cura a Jesus, o enviado do Pai.
+
+**9:8**
+
+- **Análise Léxica.** *γείτονες* (geitones) — vizinhos; *προσαίτης* (prosaitēs) — mendigo; *προσαιτῶν* (prosaitōn) — pedindo. WH e NA28 leem «mendigo»; RP lê «cego».
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*προσαίτης*»; RP lê «*τυφλὸς*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*τυφλοσ*» onde a base lê «*προσαιτησ*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A reação das pessoas que o conheciam é de dúvida sobre a sua identidade.
+
+**9:9**
+
+- **Análise Léxica.** *ὅμοιος* (homoios) — semelhante, parecido; *Ἐγώ εἰμι* (egō eimi) — sou eu.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἔλεγον Οὐχί ἀλλὰ*»; RP lê «*δὲ ὅτι*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*δε οτι*» onde a base lê «*ελεγον ουχι αλλα*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O próprio homem confirma a sua identidade. A fórmula «*Ἐγώ εἰμι*» aparece aqui com o sentido simples de «sou eu».
+
+**9:10**
+
+- **Análise Léxica.** *ἠνεῴχθησάν* (ēneōchthēsan) — abriram-se.
+- **Crítica Textual.** Aparato SBLGNT: Treg e RP leem «*Πῶς*»; WH e NA28 acrescentam «*οὖν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ανεωχθησαν*» onde a base lê «*ηνεωχθησαν*»). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A pergunta pede o relato da cura.
+
+**9:11**
+
+- **Análise Léxica.** *λεγόμενος* (legomenos) — chamado; *ἀνέβλεψα* (aneblepsa) — recuperei a vista, passei a ver.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ἐκεῖνος*»; RP acrescenta «*καὶ εἶπεν*». (2) WH, Treg e NA28 leem «*Ὁ ἄνθρωπος ὁ*»; RP lê «*Ἄνθρωπος*». (3) WH, Treg e NA28 leem «*ὅτι*»; RP omite. (4) WH, Treg e NA28 leem «*τὸν*»; RP lê «*τὴν κολυμβήθραν τοῦ*». (5) WH, Treg e NA28 leem «*οὖν*»; RP lê «*δὲ*». O Textus Receptus de Scrivener diverge da base em 5 ponto(s) (formas sem acento, como na colação: TR «*και ειπεν*» onde a base lê «*ο*»; TR omite «*ο*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O homem relata a cura com simplicidade. Ainda não sabe quem é Jesus.
+
+**9:12**
+
+- **Análise Léxica.** *ἐκεῖνος* (ekeinos) — aquele.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*καὶ εἶπαν*»; RP lê «*Εἶπον οὖν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ειπον ουν*» onde a base lê «*και ειπαν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A resposta é curta: o homem não sabe onde está Jesus.
+
+**9:13**
+
+- **Análise Léxica.** *Φαρισαίους* (Pharisaious) — fariseus; *τυφλόν* (tuphlon) — cego.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A cena passa para as autoridades religiosas.
+
+**9:14**
+
+- **Análise Léxica.** *σάββατον* (sabbaton) — sábado; *ἀνέῳξεν* (aneōxen) — abriu. RP lê «quando» (*ὅτε*) em vez de «em que dia» (*ἐν ᾗ ἡμέρᾳ*).
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἐν ᾗ ἡμέρᾳ*»; RP lê «*ὅτε*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*οτε*» onde a base lê «*εν η ημερα*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O sábado é o ponto de conflito. O narrador explica a razão da controvérsia.
+
+**9:15**
+
+- **Análise Léxica.** *πάλιν* (palin) — de novo; *ἐπέθηκέν* (epethēken) — pôs; *βλέπω* (blepō) — vejo.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR omite «*μου*»; TR acrescenta «*μου*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A resposta repete o relato de forma mais curta, sem acrescentar o nome de Jesus.
+
+**9:16**
+
+- **Análise Léxica.** *παρὰ θεοῦ* (para theou) — de Deus; *τηρεῖ* (tērei) — guarda; *ἁμαρτωλὸς* (hamartōlos) — pecador; *σχίσμα* (schisma) — divisão.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*Οὐκ ἔστιν οὗτος παρὰ θεοῦ ὁ ἄνθρωπος*»; RP lê «*Οὗτος ὁ ἄνθρωπος οὐκ ἔστιν παρὰ τοῦ θεοῦ*». (2) Treg e RP leem «*ἄλλοι*»; WH e NA28 acrescentam «*δὲ*». O Textus Receptus de Scrivener diverge da base em 4 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ουτοσ ο ανθρωποσ*»; TR omite «*ουτοσ*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A divisão repete o que se vê em 7:43 e 10:19. Os fariseus não estão de acordo entre si.
+
+**9:17**
+
+- **Análise Léxica.** *προφήτης* (prophētēs) — profeta.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*οὖν*»; RP omite. (2) WH, Treg e NA28 leem «*Τί σὺ*»; RP lê «*Σὺ τί*». O Textus Receptus de Scrivener diverge da base em 4 ponto(s) (formas sem acento, como na colação: TR omite «*ουν*»; TR acrescenta «*συ*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O homem dá o primeiro juízo sobre Jesus: é profeta.
+
+**9:18**
+
+- **Análise Léxica.** *ἐπίστευσαν* (episteusan) — acreditaram; *ἀναβλέψαντος* (anablepsantos) — que recuperou a vista.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ἦν τυφλὸς*»; RP lê «*τυφλὸς ἦν*». (2) WH, Treg, RP e NA28 leem «*τοῦ ἀναβλέψαντος*»; NIV omite. O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR acrescenta «*τυφλοσ*»; TR omite «*τυφλοσ*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** «Os judeus» aqui são as autoridades que duvidam do milagre, como em 7:11.
+
+**9:19**
+
+- **Análise Léxica.** *υἱὸς* (huios) — filho; *βλέπει ἄρτι* (blepei arti) — vê agora.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*βλέπει ἄρτι*»; RP lê «*ἄρτι βλέπει*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR acrescenta «*αρτι*»; TR omite «*αρτι*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** As autoridades procuram provar que a cura não aconteceu.
+
+**9:20**
+
+- **Análise Léxica.** *ἐγεννήθη* (egennēthē) — nasceu.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*οὖν*»; RP lê «*δὲ αὐτοῖς*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR «*αυτοισ*» onde a base lê «*ουν*»; TR «*ειπον*» onde a base lê «*ειπαν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Os pais confirmam a identidade do filho e a sua cegueira de nascença.
+
+**9:21**
+
+- **Análise Léxica.** *ἡλικίαν ἔχει* (hēlikian echei) — tem idade, é adulto; *λαλήσει* (lalēsei) — falará.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*αὐτὸν ἐρωτήσατε ἡλικίαν ἔχει*»; RP lê «*αὐτὸς ἡλικίαν ἔχει αὐτὸν ἐρωτήσατε*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*αυτοσ ηλικιαν εχει*»; TR omite «*ηλικιαν εχει*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Os pais respondem com cuidado, sem assumir o que o filho pode dizer.
+
+**9:22**
+
+- **Análise Léxica.** *ἐφοβοῦντο* (ephobounto) — tinham medo; *συνετέθειντο* (synetetheinto) — tinham combinado; *ἀποσυνάγωγος* (aposynagōgos) — expulso da sinagoga.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ειπον*» onde a base lê «*ειπαν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A expulsão da sinagoga era a pena para quem professava Jesus como Cristo. O texto liga-a a este caso.
+
+**9:23**
+
+- **Análise Léxica.** *ἐπερωτήσατε* (eperōtēsate) — perguntem.
+- **Crítica Textual.** Aparato SBLGNT: WH e NA28 leem «*ἐπερωτήσατε*»; Treg e RP leem «*ἐρωτήσατε*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR «*ειπον*» onde a base lê «*ειπαν*»; TR «*ερωτησατε*» onde a base lê «*επερωτησατε*»). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** Os pais repetem a resposta e deixam o filho sozinho diante das autoridades.
+
+**9:24**
+
+- **Análise Léxica.** *Δὸς δόξαν τῷ θεῷ* (Dos doxan tōi theōi) — dá glória a Deus; *ἁμαρτωλός* (hamartōlos) — pecador.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*τὸν ἄνθρωπον ἐκ δευτέρου*»; RP lê «*ἐκ δευτέρου τὸν ἄνθρωπον*». (2) WH e NA28 leem «*οὗτος ὁ ἄνθρωπος*»; Treg e RP leem «*ὁ ἄνθρωπος οὗτος*». O Textus Receptus de Scrivener diverge da base em 5 ponto(s) (formas sem acento, como na colação: TR acrescenta «*εκ δευτερου*»; TR omite «*εκ δευτερου*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A fórmula «dá glória a Deus» pede que o homem diga a verdade diante de Deus.
+
+**9:25**
+
+- **Análise Léxica.** *ἓν* (hen) — uma coisa; *ἄρτι* (arti) — agora; *βλέπω* (blepō) — vejo.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἐκεῖνος*»; RP acrescenta «*καὶ εἶπεν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*και ειπεν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A resposta do homem é a prova da sua experiência, que não depende de teoria.
+
+**9:26**
+
+- **Análise Léxica.** *ἐποίησέν* (epoiēsen) — fez.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*οὖν αὐτῷ*»; RP lê «*δὲ αὐτῷ πάλιν*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR «*δε*» onde a base lê «*ουν*»; TR acrescenta «*παλιν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Repetem a pergunta para encontrar uma contradição.
+
+**9:27**
+
+- **Análise Léxica.** *μαθηταί* (mathētai) — discípulos.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A ironia do homem é clara: as autoridades querem ser discípulos de quem ele seguiu.
+
+**9:28**
+
+- **Análise Léxica.** *ἐλοιδόρησαν* (eloidorēsan) — insultaram; *μαθητὴς εἶ* (mathētēs ei) — és discípulo.
+- **Crítica Textual.** Aparato SBLGNT: (1) RP lê «*ἐλοιδόρησαν*»; WH e NA28 leem «*καὶ ἐλοιδόρησαν*»; Treg lê «*οἱ δὲ ἐλοιδόρησαν*». (2) WH, Treg e NA28 leem «*μαθητὴς εἶ*»; RP lê «*εἶ μαθητὴς*». O Textus Receptus de Scrivener diverge da base em 4 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ουν*»; TR acrescenta «*ει*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O insulto marca a separação entre os fariseus e o homem curado.
+
+**9:29**
+
+- **Análise Léxica.** *λελάληκεν* (lelalēken) — falou; *πόθεν* (pothen) — de onde.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*μωση*» onde a base lê «*μωυσει*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A origem é o tema central da discussão, como em 7:27.
+
+**9:30**
+
+- **Análise Léxica.** *θαυμαστόν* (thaumaston) — espantoso, admirável.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*τούτῳ γὰρ τὸ*»; RP lê «*γὰρ τούτῳ*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*γαρ*»; TR omite «*γαρ το*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O homem vira o argumento contra as autoridades: a origem é ignorada por elas, e o milagre é evidente.
+
+**9:31**
+
+- **Análise Léxica.** *θεοσεβὴς* (theosebēs) — piedoso, temente a Deus; *θέλημα* (thelēma) — vontade.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*οἴδαμεν*»; RP acrescenta «*δὲ*». (2) NA28 e RP leem «*ἁμαρτωλῶν ὁ θεὸς*»; WH e Treg leem «*ὁ θεὸς ἁμαρτωλῶν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*δε*»). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** O homem usa o critério da piedade para afirmar que Jesus não é pecador.
+
+**9:32**
+
+- **Análise Léxica.** *ἐκ τοῦ αἰῶνος* (ek tou aiōnos) — desde sempre, desde o início do mundo.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ηνοιξεν*» onde a base lê «*ηνεωξεν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A cura é inédita. O homem usa a novidade como argumento.
+
+**9:33**
+
+- **Análise Léxica.** *παρὰ θεοῦ* (para theou) — de Deus; *ἠδύνατο* (ēdynato) — podia.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A lógica é direta: quem faz um milagre tem de vir de Deus.
+
+**9:34**
+
+- **Análise Léxica.** *ἐν ἁμαρτίαις* (en hamartiais) — em pecados; *ἐξέβαλον* (exebalon) — expulsaram.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ειπον*» onde a base lê «*ειπαν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A resposta desprezível mostra que a discussão terminou sem argumentos. A expulsão é a consequência da sua defesa.
+
+**9:35**
+
+- **Análise Léxica.** *τοῦ ἀνθρώπου* (tou anthrōpou) — do homem; *υἱόν* (huion) — filho.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH e NA28 leem «*Ἤκουσεν*»; Treg e RP acrescentam «*ὁ*». (2) WH e NA28 leem «*εἶπεν*»; Treg e RP acrescentam «*αὐτῷ*». (3) WH e NA28 leem «*ἀνθρώπου*»; Treg e RP leem «*θεοῦ*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ο*»; TR acrescenta «*αυτω*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A base lê «Filho do Homem» (WH, NA28); Treg e RP leem «Filho de Deus». A tradução segue a base.
+
+**9:36**
+
+- **Análise Léxica.** *κύριε* (kyrie) — Senhor; *πιστεύσω* (pisteusō) — crer.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR omite «*και*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O homem está pronto a crer, mas precisa de saber quem é.
+
+**9:37**
+
+- **Análise Léxica.** *ἑώρακας* (heōrakas) — viste; *λαλῶν* (lalōn) — que fala.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*εἶπεν*»; RP acrescenta «*δὲ*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*δε*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Jesus revela-se diretamente a quem foi expulso.
+
+**9:38**
+
+- **Análise Léxica.** *προσεκύνησεν* (prosekynēsen) — adorou, prostrou-se em adoração; *πιστεύω* (pisteuō) — creio.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A adoração é a resposta da fé. O verbo é o de adoração a Deus e não apenas o de saudação.
+
+**9:39**
+
+- **Análise Léxica.** *κρίμα* (krima) — juízo; *βλέποντες* (blepontes) — que veem; *τυφλοὶ* (tuphloi) — cegos.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A vinda de Jesus separa os que reconhecem a sua falta de visão dos que se julgam capazes de ver.
+
+**9:40**
+
+- **Análise Léxica.** *μετʼ αὐτοῦ ὄντες* (met' autou ontes) — que estavam com ele.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ἤκουσαν*»; RP lê «*Καὶ ἤκουσαν*». (2) WH, Treg e NA28 leem «*μετʼ αὐτοῦ ὄντες*»; RP lê «*ὄντες μετʼ αὐτοῦ*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*και*»; TR acrescenta «*οντεσ*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A pergunta dos fariseus mostra que perceberam a acusação.
+
+**9:41**
+
+- **Análise Léxica.** *τυφλοὶ ἦτε* (tuphloi ēte) — fossem cegos; *ἁμαρτίαν* (hamartian) — pecado; *μένει* (menei) — permanece.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἡ*»; RP acrescenta «*οὖν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ουν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A cegueira que se reconhece não é pecado. O pecado está em afirmar que se vê.
+
+### Notas do capítulo 10
+
+**10:1**
+
+- **Análise Léxica.** *αὐλὴν* (aulēn) — curral, pátio; *κλέπτης* (kleptēs) — ladrão; *λῃστής* (lēstēs) — salteador.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Início de uma comparação sobre pastores. A entrada pela porta distingue o pastor verdadeiro do ladrão.
+
+**10:2**
+
+- **Análise Léxica.** *ποιμήν* (poimēn) — pastor.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A porta é a entrada legítima. O pastor entra por ela.
+
+**10:3**
+
+- **Análise Léxica.** *θυρωρὸς* (thyrōros) — porteiro; *φωνεῖ* (phōnei) — chama; *κατʼ ὄνομα* (kat' onoma) — pelo nome. RP lê «chama» (*καλεῖ*).
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*φωνεῖ*»; RP lê «*καλεῖ*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*καλει*» onde a base lê «*φωνει*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O pastor conhece cada ovelha pelo nome. A relação é pessoal.
+
+**10:4**
+
+- **Análise Léxica.** *ἐκβάλῃ* (ekbalēi) — leva para fora; *ἔμπροσθεν* (emprosthen) — à frente; *οἴδασιν* (oidasin) — conhecem.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ὅταν*»; RP lê «*Καὶ ὅταν*». (2) WH, Treg e NA28 leem «*πάντα*»; RP lê «*πρόβατα*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR acrescenta «*και*»; TR «*προβατα*» onde a base lê «*παντα*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A imagem mostra que o pastor conduz e as ovelhas seguem.
+
+**10:5**
+
+- **Análise Léxica.** *ἀλλοτρίῳ* (allotriōi) — estranho; *φεύξονται* (pheuxontai) — fogem.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἀκολουθήσουσιν*»; RP lê «*ἀκολουθήσωσιν*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR «*ακολουθησωσιν*» onde a base lê «*ακολουθησουσιν*»; TR «*οιδασιν*» onde a base lê «*οιδασι*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Conhecer a voz é o critério para seguir.
+
+**10:6**
+
+- **Análise Léxica.** *παροιμίαν* (paroimian) — comparação, figura, alegoria; *ἔγνωσαν* (egnōsan) — perceberam.
+- **Crítica Textual.** Aparato SBLGNT: WH, NA28 e RP leem «*ἦν*»; Treg lê «*ᾖ*». O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** O texto assinala a incompreensão dos ouvintes, como em 8:27.
+
+**10:7**
+
+- **Análise Léxica.** *ἡ θύρα* (hē thyra) — a porta.
+- **Crítica Textual.** Aparato SBLGNT: (1) Treg e RP leem «*αὐτοῖς*»; WH e NA28 omitem. (2) NA28 e RP leem «*ὅτι*»; WH e Treg omitem. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A imagem muda: Jesus é a própria porta.
+
+**10:8**
+
+- **Análise Léxica.** *πρὸ ἐμοῦ* (pro emou) — antes de mim; *ἤκουσαν* (ēkousan) — ouviram. RP omite «antes de mim».
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*πρὸ ἐμοῦ*»; RP omite. O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR omite «*ηλθον*»; TR acrescenta «*ηλθον*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A frase é dura para com os que se apresentaram antes de Jesus. O texto fala de quem se pôs como guia sem legitimidade.
+
+**10:9**
+
+- **Análise Léxica.** *σωθήσεται* (sōthēsetai) — será salvo; *νομὴν* (nomēn) — pastagem.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A porta dá entrada e saída. A salvação e o sustento estão em Jesus.
+
+**10:10**
+
+- **Análise Léxica.** *κλέψῃ* (klepsēi) — roubar; *θύσῃ* (thysēi) — matar; *ζωὴν* (zōēn) — vida; *περισσὸν* (perisson) — em abundância.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O contraste é entre a ação do ladrão e a vida trazida por Jesus.
+
+**10:11**
+
+- **Análise Léxica.** *καλός* (kalos) — bom, belo; *τίθησιν* (tithēsin) — dá, põe; *ψυχὴν* (psychēn) — vida.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** «Bom» é o pastor que dá a vida. A expressão é repetida no v. 14.
+
+**10:12**
+
+- **Análise Léxica.** *μισθωτὸς* (misthōtos) — assalariado; *λύκον* (lykon) — lobo; *ἁρπάζει* (harpazei) — arrebata; *σκορπίζει* (skorpizei) — dispersa.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH e NA28 leem «*μισθωτὸς*»; Treg e RP acrescentam «*δέ*». (2) WH, Treg e NA28 leem «*ἔστιν*»; RP lê «*εἰσιν*». (3) WH, Treg e NA28 leem «*σκορπίζει*»; RP acrescenta «*τὰ πρόβατα*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*δε*»; TR «*εισιν*» onde a base lê «*εστιν*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** O assalariado foge por não ter interesse nas ovelhas. A diferença é o interesse.
+
+**10:13**
+
+- **Análise Léxica.** *μέλει* (melei) — importa-se.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ὅτι*»; RP lê «*Ὁδὲ μισθωτὸς φεύγει ὅτι*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ο δε μισθωτοσ φευγει*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A razão da fuga está no interesse próprio.
+
+**10:14**
+
+- **Análise Léxica.** *γινώσκω* (ginōskō) — conheço; *γινώσκουσί* (ginōskousi) — conhecem. RP lê «sou conhecido pelas minhas» (*γινώσκομαι ὑπὸ τῶν ἐμῶν*).
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*γινώσκουσί με τὰ ἐμά*»; RP lê «*γινώσκομαι ὑπὸ τῶν ἐμῶν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*γινωσκομαι υπο των εμων*» onde a base lê «*γινωσκουσι με τα εμα*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O conhecimento é mútuo, como em 10:27.
+
+**10:15**
+
+- **Análise Léxica.** *καθὼς* (kathōs) — assim como; *τίθημι* (tithēmi) — dou.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O conhecimento entre Jesus e o Pai é o modelo do conhecimento entre o pastor e as ovelhas.
+
+**10:16**
+
+- **Análise Léxica.** *δεῖ με ἀγαγεῖν* (dei me agagein) — preciso de trazer; *ποίμνη* (poimnē) — rebanho; *ποιμήν* (poimēn) — pastor. RP lê «preciso» (*με δεῖ*) na outra ordem.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*δεῖ με*»; RP lê «*με δεῖ*». (2) WH, Treg e NA28 leem «*γενήσονται*»; RP lê «*γενήσεται*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*με*»; TR omite «*με*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A promessa de um só rebanho é a de uma comunidade reunida. A nota não a identifica com um grupo concreto.
+
+**10:17**
+
+- **Análise Léxica.** *ἀγαπᾷ* (agapa) — ama; *λάβω* (labō) — receber.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*με ὁ πατὴρ*»; RP lê «*ὁ πατήρ με*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR omite «*με*»; TR acrescenta «*με*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O amor do Pai está ligado à entrega da vida e à sua recuperação.
+
+**10:18**
+
+- **Análise Léxica.** *αἴρει* (airei) — tira; *ἀπʼ ἐμαυτοῦ* (ap' emautou) — por mim mesmo; *ἐξουσίαν* (exousian) — poder, autoridade; *ἐντολὴν* (entolēn) — mandamento.
+- **Crítica Textual.** Aparato SBLGNT: Treg, NA28 e RP leem «*αἴρει*»; WH lê «*ἦρεν*». O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A entrega da vida é livre e está em conformidade com a vontade do Pai.
+
+**10:19**
+
+- **Análise Léxica.** *σχίσμα* (schisma) — divisão.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*Σχίσμα*»; RP acrescenta «*οὖν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ουν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A divisão repete a de 7:43 e 9:16.
+
+**10:20**
+
+- **Análise Léxica.** *δαιμόνιον* (daimonion) — demónio; *μαίνεται* (mainetai) — está louco.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A acusação de possessão e loucura repete a de 7:20 e 8:48.
+
+**10:21**
+
+- **Análise Léxica.** *δαιμονιζομένου* (daimonizomenou) — de um endemoninhado; *τυφλῶν* (tuphlōn) — dos cegos; *ἀνοῖξαι* (anoixai) — abrir. RP lê «abrir» (*ἀνοίγειν*) noutra forma.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg, RP e NA28 leem «*ἄλλοι*»; NIV acrescenta «*δὲ*». (2) WH, Treg e NA28 leem «*ἀνοῖξαι*»; RP lê «*ἀνοίγειν*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ανοιγειν*» onde a base lê «*ανοιξαι*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A pergunta responde à acusação: a cura não é obra de demónio.
+
+**10:22**
+
+- **Análise Léxica.** *τὰ ἐγκαίνια* (ta enkainia) — a festa da Dedicação (Hanucá); *χειμών* (cheimōn) — inverno.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH e NA28 leem «*τότε*»; Treg e RP leem «*δὲ*». (2) WH, Treg e NA28 leem «*τοῖς*»; RP omite. (3) WH, Treg e NA28 leem «*χειμὼν*»; RP lê «*καὶ χειμὼν*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR «*δε*» onde a base lê «*τοτε*»; TR acrescenta «*και*»). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A festa, que recorda a purificação do templo no século II antes de Cristo, marca o ponto do capítulo no tempo.
+
+**10:23**
+
+- **Análise Léxica.** *στοᾷ* (stoai) — pórtico, colunata; *Σολομῶνος* (Solomōnos) — de Salomão.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*τοῦ*»; RP omite. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*σολομωντοσ*» onde a base lê «*σολομωνοσ*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O pórtico de Salomão é um lugar de encontro público.
+
+**10:24**
+
+- **Análise Léxica.** *ἐκύκλωσαν* (ekyklōsan) — cercaram; *αἴρεις* (airēis) — tiras, deixas; *παρρησίᾳ* (parrēsia) — claramente, abertamente.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A pergunta é uma pressão. Jesus já respondeu, mas eles querem uma declaração sem ambiguidade.
+
+**10:25**
+
+- **Análise Léxica.** *μαρτυρεῖ* (martyrei) — dá testemunho; *ὀνόματι* (onomati) — nome.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** As obras são a prova que Jesus oferece, como em 5:36.
+
+**10:26**
+
+- **Análise Léxica.** *ἐστὲ ἐκ τῶν προβάτων* (este ek tōn probatōn) — são das ovelhas. RP lê «pois não» e acrescenta «como disse a vocês».
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ὅτι οὐκ*»; RP lê «*οὐ γάρ*». (2) WH, Treg e NA28 leem «*ἐμῶν*»; RP acrescenta «*καθὼς εἶπον ὑμῖν*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR «*αλλ*» onde a base lê «*αλλα*»; TR «*ου γαρ*» onde a base lê «*οτι ουκ*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A incredulidade mostra a quem não pertence o rebanho.
+
+**10:27**
+
+- **Análise Léxica.** *ἀκούουσιν* (akouousin) — ouvem; *ἀκολουθοῦσίν* (akolouthousin) — seguem.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ἀκούουσιν*»; RP lê «*ἀκούει*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR «*ακουει*» onde a base lê «*ακουουσιν*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Ouvir, conhecer e seguir são os três verbos da comunidade.
+
+**10:28**
+
+- **Análise Léxica.** *ζωὴν αἰώνιον* (zōēn aiōnion) — vida eterna; *ἀπόλωνται* (apolōntai) — perderão-se; *ἁρπάσει* (harpasei) — arrebatará.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*δίδωμι αὐτοῖς ζωὴν αἰώνιον*»; RP lê «*ζωὴν αἰώνιον δίδωμι αὐτοῖς*». O Textus Receptus de Scrivener diverge da base em 2 ponto(s) (formas sem acento, como na colação: TR acrescenta «*ζωην αιωνιον*»; TR omite «*ζωην αιωνιον*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A segurança das ovelhas está nas mãos de Jesus.
+
+**10:29**
+
+- **Análise Léxica.** *δέδωκέν* (dedōken) — deu; *μεῖζων* (meizōn) — maior; *ἁρπάζειν* (harpazein) — arrebatar.
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*ὃ*»; NIV e RP leem «*ὃς*». (2) WH, Treg, RP e NA28 leem «*μοι*»; NIV acrescenta «*αὐτὰ*». (3) Holmes e WHmarg leem «*πάντων μεῖζων*»; WH, Treg e NA28 leem «*πάντων μεῖζόν*»; NIV e RP leem «*μείζων πάντων*». (4) WH e NA28 leem «*πατρός*»; Treg e RP acrescentam «*μου*». O Textus Receptus de Scrivener diverge da base em 4 ponto(s) (formas sem acento, como na colação: TR «*οσ*» onde a base lê «*ο*»; TR acrescenta «*μειζων*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A segurança vem da mão do Pai, que é maior do que tudo.
+
+**10:30**
+
+- **Análise Léxica.** *ἕν ἐσμεν* (hen esmen) — somos uma coisa só, neutro.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O neutro «*ἕν*» diz unidade de natureza ou de ação, não a identidade de uma só pessoa. O versículo é o centro da controvérsia de 10:31–38.
+
+**10:31**
+
+- **Análise Léxica.** *ἐβάστασαν* (ebastasan) — pegaram; *λιθάσωσιν* (lithasōsin) — apedrejassem.
+- **Crítica Textual.** Aparato SBLGNT: Treg e RP leem «*οὖν*»; WH e NA28 omitem. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** A reação é a mesma de 8:59.
+
+**10:32**
+
+- **Análise Léxica.** *ἔργα καλὰ* (erga kala) — obras boas; *λιθάζετε* (lithazete) — apedrejam.
+- **Crítica Textual.** Aparato SBLGNT: (1) NA28 lê «*ἔργα καλὰ ἔδειξα ὑμῖν*»; Treg e RP leem «*καλὰ ἔργα ἔδειξα ὑμῖν*»; WH lê «*ἔργα ἔδειξα ὑμῖν καλὰ*». (2) WH e NA28 leem «*πατρός*»; Treg e RP acrescentam «*μου*». (3) WH, Treg e NA28 leem «*ἐμὲ λιθάζετε*»; RP lê «*λιθάζετε ἐμὲ*». O Textus Receptus de Scrivener diverge da base em 5 ponto(s) (formas sem acento, como na colação: TR acrescenta «*καλα*»; TR omite «*καλα*»; …). O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** Jesus pede que nomeiem a obra que os leva a apedrejá-lo.
+
+**10:33**
+
+- **Análise Léxica.** *βλασφημίας* (blasphēmias) — blasfémia; *ποιεῖς* (poieis) — fazes.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*Ἰουδαῖοι*»; RP acrescenta «*λέγοντες*». O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR acrescenta «*λεγοντεσ*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A acusação é de blasfémia: um homem que se faz Deus.
+
+**10:34**
+
+- **Análise Léxica.** *γεγραμμένον* (gegrammenon) — escrito; *θεοί* (theoi) — deuses. A citação é do Salmo 82:6.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*ὅτι*»; RP omite. O Textus Receptus de Scrivener diverge da base em 1 ponto(s) (formas sem acento, como na colação: TR omite «*οτι*»). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Jesus argumenta a partir da lei dos próprios interlocutores, citando a Escritura.
+
+**10:35**
+
+- **Análise Léxica.** *ἐγένετο* (egeneto) — foi dirigida; *λυθῆναι* (lythēnai) — ser anulada.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A Escritura não pode ser anulada. O argumento assenta nessa autoridade.
+
+**10:36**
+
+- **Análise Léxica.** *ἡγίασεν* (hēgiasen) — santificou; *ἀπέστειλεν* (apesteilen) — enviou; *Υἱὸς τοῦ θεοῦ* (Huios tou theou) — Filho de Deus.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A distinção é de origem: a quem o Pai santificou e enviou não se pode chamar blasfemo por dizer a verdade.
+
+**10:37**
+
+- **Análise Léxica.** *ποιῶ* (poiō) — faço.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** Jesus pede que o julguem pelas obras.
+
+**10:38**
+
+- **Análise Léxica.** *πιστεύετε* (pisteuete) — crede; *γνῶτε* (gnōte) — saibais; *γινώσκητε* (ginōskēte) — reconheçais. RP lê «crede» no imperativo aoristo (*πιστεύσατε*).
+- **Crítica Textual.** Aparato SBLGNT: (1) WH, Treg e NA28 leem «*πιστεύετε*»; RP lê «*πιστεύσατε*». (2) WH, Treg e NA28 leem «*γινώσκητε*»; RP lê «*πιστεύσητε*». (3) WH, Treg e NA28 leem «*τῷ πατρί*»; RP lê «*αὐτῷ*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR «*πιστευσατε*» onde a base lê «*πιστευετε*»; TR «*πιστευσητε*» onde a base lê «*γινωσκητε*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A fé nas obras leva ao conhecimento da unidade entre Jesus e o Pai.
+
+**10:39**
+
+- **Análise Léxica.** *ἐζήτουν* (ezētoun) — procuravam; *πιάσαι* (piasai) — prender; *ἐξῆλθεν* (exēlthen) — saiu.
+- **Crítica Textual.** Aparato SBLGNT: Treg e RP leem «*πάλιν αὐτὸν*»; WH e NA28 leem «*αὐτὸν πάλιν*». O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza B.
+- **Síntese Exegética.** Jesus escapa outra vez, como em 8:59.
+
+**10:40**
+
+- **Análise Léxica.** *πέραν τοῦ Ἰορδάνου* (peran tou Iordanou) — do outro lado do Jordão; *βαπτίζων* (baptizōn) — batizando; *τὸ πρῶτον* (to prōton) — no início.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O lugar é o da primeira atividade de João, como em 1:28.
+
+**10:41**
+
+- **Análise Léxica.** *σημεῖον* (sēmeion) — sinal; *ἀληθῆ* (alēthē) — verdadeiro.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante neste versículo. O Textus Receptus de Scrivener coincide com a base. O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** A comparação com João Batista é favorável a Jesus.
+
+**10:42**
+
+- **Análise Léxica.** *ἐπίστευσαν* (episteusan) — creram.
+- **Crítica Textual.** Aparato SBLGNT: WH, Treg e NA28 leem «*πολλοὶ ἐπίστευσαν εἰς αὐτὸν ἐκεῖ*»; RP lê «*ἐπίστευσαν πολλοὶ ἐκεῖ εἰς αὐτόν*». O Textus Receptus de Scrivener diverge da base em 3 ponto(s) (formas sem acento, como na colação: TR acrescenta «*επιστευσαν*»; TR «*εκει*» onde a base lê «*επιστευσαν*»; …). O texto segue a base SBLGNT. Nível de certeza A.
+- **Síntese Exegética.** O capítulo termina com a fé de muitos, como em 8:30.
 
 ---
 
