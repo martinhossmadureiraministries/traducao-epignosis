@@ -14,4 +14,4 @@
 - **3:9 — πίστις Χριστοῦ.** «Fé em Cristo» é a leitura adoptada, com a ARC, ARA, NVI e NVT; a leitura «fidelidade de Cristo» fica registada na nota como proposta séria, não como erro.
 - **4:13.** A base imprime «naquele que me fortalece», sem o nome; a tradição bizantina acrescenta «em Cristo». A nota diz também que o versículo pertence ao contexto do contentamento, não é promessa de êxito em qualquer projeto.
 
-**O que este lote não é.** Não é aprovação editorial nem revisão especializada: os quatro capítulos estão declarados `rascunho` no `review` do JSON, com revisão pendente nos dois planos. A voz ainda não foi lida pelo responsável. Não se criou ZIP nem pacote: a entrega é a leitura individual acima, e a compilação continua a ser feita só a pedido.
+**Estado.** O responsável aprovou a voz e a legibilidade do livro. Essa aprovação não é certificação de fidelidade: a revisão especializada está pendente e fica registada como tal no `review` do JSON. Não se criou ZIP nem pacote: a entrega é a leitura individual acima, e a compilação continua a ser feita só a pedido.

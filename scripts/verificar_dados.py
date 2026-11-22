@@ -113,6 +113,40 @@ def pendentes(dados: Path) -> list[tuple[str, str, str]]:
     return achados
 
 
+def pendentes_em_aprovados(dados: Path) -> list[str]:
+    """Versículos pendentes dentro de um bloco de revisão já aprovado.
+
+    Um rascunho pode ter pendentes e só é relatado. Um bloco «aprovado…» com
+    versículos por traduzir é um erro: a aprovação foi dada sobre texto que
+    não existe. Este caso chumba.
+    """
+    erros: list[str] = []
+    for caminho in sorted(dados.glob('*.json')):
+        try:
+            livro = json.loads(caminho.read_text(encoding='utf-8'))
+        except (OSError, ValueError):
+            continue
+        blocos = [b for b in (livro.get('review') or {}).get('editorial_blocks') or []
+                  if isinstance(b, dict) and str(b.get('status') or '').startswith('aprovado')]
+        if not blocos:
+            continue
+        for chave, lista in (livro.get('chapters') or {}).items():
+            if not isinstance(lista, list):
+                continue
+            for verso in lista:
+                if not isinstance(verso, dict):
+                    continue
+                if not str(verso.get('text') or '').startswith(PENDENTE_PREFIXO):
+                    continue
+                n = verso.get('verse')
+                for b in blocos:
+                    if (str(b.get('chapter')) == str(chave)
+                            and isinstance(n, int)
+                            and b.get('verse_from', 0) <= n <= b.get('verse_to', -1)):
+                        erros.append(f'{caminho.name} {chave}:{n} pendente dentro de bloco aprovado')
+                        break
+    return erros
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dados', default='livros_json')
@@ -132,6 +166,7 @@ def main(argv: list[str] | None = None) -> int:
         quantos = len(marcados)
         print(f'{quantos} bloco{"s" if quantos > 1 else ""} de versículos pendentes: '
               'o capítulo conta como fechado, mas não é texto final.')
+    problemas.extend(pendentes_em_aprovados(dados))
     if capitulos < args.minimo:
         problemas.append(
             f'regressão: {capitulos} capítulos, abaixo do mínimo de {args.minimo}'
