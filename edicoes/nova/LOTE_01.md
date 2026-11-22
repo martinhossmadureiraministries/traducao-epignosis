@@ -7,7 +7,7 @@
 ## O que contém o ZIP
 
 - **Aprovação editorial integral registada:** [Ageu](AGEU.md), [Habacuque](HABACUQUE.md), [Rute](RUTE.md), [Jonas](JONAS.md) e [Naum](NAUM.md).
-- **Livros-piloto com voz aprovada:** Filemom, Tito, Judas, 2 João e 3 João (Tito e Judas: reaprovação pendente desde a correção de texto, ver `docs/PLANO_CORRECAO.md`). O estado de revisão dos textos e notas de cada módulo não equivale a revisão especializada concluída.
+- **Livros-piloto com voz aprovada:** Filemom, Tito, Judas, 2 João e 3 João (Tito, Judas e Filemom: reaprovação pendente depois de alterações de texto, ver `docs/PLANO_CORRECAO.md`). O estado de revisão dos textos e notas de cada módulo não equivale a revisão especializada concluída.
 - **Material adicional de leitura, não confundido com aprovação:** 2 Tessalonicenses (a voz anterior foi aprovada; a versão regenerada foi lida e aprovada editorialmente pelo responsável, ver LOTE_06; revisão especializada pendente) e João 1–3. João 4 continua parcial e não entra no módulo. A linha legada não é misturada com a edição nova.
 - **Total:** 556 versículos e 556 entradas de comentário, 29 capítulos, 12 livros representados. As notas variam em extensão e cobertura.
 

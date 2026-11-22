@@ -43,6 +43,7 @@ PILOTOS = [
     ('FILEMOM.md', 640),
     ('TITO.md', 630),
     ('JUDAS.md', 720),
+    # 2_E_3_JOAO.md foi dividido em 2_JOAO.md e 3_JOAO.md (2026-11-22); origem: git show de2f6af:edicoes/piloto/2_E_3_JOAO.md
     ('2_E_3_JOAO.md', 700),
 ]
 

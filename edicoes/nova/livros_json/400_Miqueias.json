@@ -563,7 +563,8 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 16,
-        "status": "aprovado editorialmente"
+        "status": "aprovado editorialmente",
+        "nota": "Leitura integral aprovada pelo responsável; revisão especializada pendente."
       },
       {
         "chapter": 2,

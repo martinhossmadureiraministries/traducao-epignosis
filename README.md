@@ -118,9 +118,9 @@ Referências, licenças e detalhes ficam nos JSON e nos metadados dos módulos.
 Veja o [guia de estilo da BEE](docs/ESTILO_BEE.md), com amostras, ordem de tradução e plano para preservar a automação durante a transição editorial.
 
 **Leia já:** [Filemom — piloto completo](edicoes/piloto/FILEMOM.md) · [Conheça a base grega SBLGNT](docs/SBLGNT.md).
-Para gerar os módulos isolados do piloto: `python gerar_bee.py --compilar --dados edicoes/piloto/dados --saida entregas/piloto`.
+Para gerar os módulos a partir da edição nova (parcial enquanto houver livros em curso): `python gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
 
-**Próximas cartas:** [2 João e 3 João — texto e notas para análise](edicoes/piloto/2_E_3_JOAO.md).
+**Próximas cartas:** [2 João — texto e notas para análise](edicoes/piloto/2_JOAO.md) · [3 João — texto e notas para análise](edicoes/piloto/3_JOAO.md).
 
 **Leia também:** [Judas — carta completa e notas exegéticas](edicoes/piloto/JUDAS.md).
 

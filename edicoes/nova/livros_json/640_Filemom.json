@@ -83,7 +83,7 @@
       {
         "verse": 16,
         "text": "já não como escravo, mas como mais do que escravo: como irmão amado. Ele o é especialmente para mim, e quanto mais para ti, tanto na convivência humana como no Senhor.",
-        "commentary": "<p><b>Análise Léxica:</b> <i>δοῦλος</i> (doulos) é «escravo», não apenas «servo». «Na convivência humana» interpreta <i>ἐν σαρκί</i> como a convivência humana concreta; Paulo não especifica aqui um procedimento jurídico.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) só há ortografia, abreviaturas de nomes sagrados ou leituras singulares que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener diverge da base apenas em pormenor de forma ou de ordem, registado no mesmo relatório. Na colação, 01 (Sinaiticus) omite <i>ἀδελφόν</i> («irmão»), ficando só «amado»: omissão singular, sem apoio de edição.</p><p><b>Síntese Exegética:</b> <i>δοῦλος</i> (doulos) é «escravo», não apenas «servo». «Na convivência humana» interpreta <i>ἐν σαρκί</i> como a convivência humana concreta; «na carne», como na KJV, é mais literal. O singular fica: <i>σοί</i> é «para ti». Paulo não especifica aqui um procedimento jurídico.</p>"
+        "commentary": "<p><b>Análise Léxica:</b> <i>δοῦλος</i> (doulos) é «escravo», não apenas «servo». «Na convivência humana» traduz <i>ἐν σαρκί</i> no sentido da vida concreta entre pessoas; «na carne», como na KJV, é mais literal. Paulo não especifica aqui um procedimento jurídico.</p><p><b>Crítica Textual:</b> Sem unidade de variação adotada por qualquer edição: o aparato da SBLGNT nada regista neste versículo. Nas testemunhas colacionadas (CNTR) só há ortografia, abreviaturas de nomes sagrados ou leituras singulares que nenhuma edição imprime (relatório de colação do livro). O Textus Receptus de Scrivener diverge da base apenas em pormenor de forma ou de ordem, registado no mesmo relatório. Na colação, 01 (Sinaiticus) omite <i>ἀδελφόν</i> («irmão»), ficando só «amado»: omissão singular, sem apoio de edição.</p><p><b>Síntese Exegética:</b> <i>δοῦλος</i> (doulos) é «escravo», não apenas «servo». O singular fica: <i>σοί</i> é «para ti». Paulo não especifica aqui um procedimento jurídico.</p>"
       },
       {
         "verse": 17,
@@ -191,8 +191,8 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "aprovado editorialmente",
-        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Voz aprovada pelo responsável no piloto; texto igual ao piloto aprovado. Revisão especializada pendente."
+        "status": "rascunho",
+        "nota": "Texto do piloto aprovado pelo responsável, importado por scripts/importar_piloto.py. Em 2026-11-20 as notas foram migradas por scripts/migrar_notas_cinco.py: a Análise Léxica vem das notas do piloto e a Crítica Textual foi escrita da base fixada (SBLGNT d7f35ad), do seu aparato e da colação CNTR do livro. Voz aprovada pelo responsável no piloto. Alterações de texto depois do piloto: 1:2 (colchetes de «[[irmã]]» retirados, decisão D8) e 1:16 («na vida de vocês» → «na convivência humana», singular do original, decisão D6). Texto alterado: reaprovação do responsável pendente (decisão D1); continua RASCUNHO até essa reaprovação. Revisão especializada pendente."
       }
     ],
     "specialist": [

@@ -738,10 +738,12 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
             self.assertTrue(livro.get('review'), ficheiro.name)
             estados = {b['status'] for b in
                        livro['review']['editorial_blocks']}
-            # 2 Tessalonicenses, Filemom, 2 e 3 João: aprovados editorialmente
-            # (decisão D2 e voz do piloto). Os outros continuam rascunho.
+            # 2 Tessalonicenses, 2 e 3 João: aprovados editorialmente (decisão
+            # D2 e voz do piloto). Filemom voltou a rascunho em 2026-11-22: o
+            # texto mudou depois da aprovação (1:2, 1:16), e a regra D1 pede
+            # reaprovação. Os outros continuam rascunho.
             esperado = ({'aprovado editorialmente'}
-                        if numero in (600, 640, 700, 710) else {'rascunho'})
+                        if numero in (600, 700, 710) else {'rascunho'})
             self.assertEqual(estados, esperado, ficheiro.name)
             for cap, versos in livro['chapters'].items():
                 for v in versos:

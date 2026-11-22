@@ -48,7 +48,7 @@ python3 autopiloto.py --status   --dados "$pasta"    # progresso, sem gastar quo
 
 Com a pasta nova **vazia**, a fila começa do início do plano editorial — e a
 fase 1 abre precisamente com **Filemom (640)**, o piloto de livro inteiro
-aprovado. A linha legada (`livros_json/`, a retomar em João 19:13) não é tocada.
+aprovado. A linha legada (`livros_json/`, com texto em João 1–21 e 17 decisões pendentes) não é tocada.
 
 Verificar e compilar de forma independente:
 

@@ -1,6 +1,6 @@
 # Judas — Bíblia de Estudo Epignósis
 
-**Carta completa · prévia para análise editorial.** [Base grega e licença](../../docs/SBLGNT.md). O aparato compara edições; não houve cotejo direto de manuscritos.
+**Carta completa · rascunho até reaprovação do responsável (decisão D1): texto alterado em 1:7. Revisão especializada pendente.** [Base grega e licença](../../docs/SBLGNT.md). O aparato compara edições; não houve cotejo direto de manuscritos.
 
 ## Texto
 
@@ -16,7 +16,7 @@
 
 **6.** Quanto aos anjos que não conservaram a sua posição de autoridade, mas abandonaram a própria morada, ele os mantém presos em correntes eternas, na escuridão, para o juízo do grande dia.
 
-**7.** Assim também Sodoma, Gomorra e as cidades vizinhas se entregaram à imoralidade sexual e foram atrás de uma carne diferente, de modo semelhante a esses. Elas ficam como exemplo, sofrendo a pena do fogo eterno.
+**7.** Assim também Sodoma, Gomorra e as cidades vizinhas se entregaram à imoralidade sexual e foram atrás de uma carne diferente, tal como aqueles. Estão postas como exemplo, sofrendo a pena do fogo eterno.
 
 **8.** Apesar disso, estes sonhadores também contaminam o corpo, rejeitam a autoridade e insultam seres gloriosos.
 
