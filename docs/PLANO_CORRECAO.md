@@ -194,6 +194,14 @@ Atualizado em 2026-11-22, depois das decisões do responsável (D1 aceitar e rea
 | 8 Limpeza | **Feito (2026-11-22), exceto branches** | ZIP removidos (D5): `entregas/BEE-previa.zip`, `entregas/BEE-previa/LEIA-ME.txt`, `docs/arquivo/BEE-gerador.zip`. Removidos também: `docs/LER_TITO.md` (roteiro de uma entrega com ZIP), `scripts/lapidar_mistos.py` (correção única já aplicada: 0 tokens mistos nos JSON), `rascunhos/440_Ageu_1_1-6.md`, `rascunhos/440_Ageu_1_7-11.md`, `rascunhos/HABACUQUE_amostra.md`, `rascunhos/Joao_4_29-32.md` (rascunhos superados, sem referências). Mantidos: `rascunhos/230_Salmos_23.json` e `640_Filemom_1.json` (usados por `tests/test_conteudo_colaborativo.py`) e `600_2_Tessalonicenses_aprovado_2026-11-19.json` (arquivo do texto aprovado anterior). Mantidos também os `lapidar_*` de João e 2Ts, que as notas dos JSON citam como proveniência. `out/` acrescentado ao `.gitignore`, com `*.zip`. Branches remotos: ver abaixo. Tags `arquivo-bee-dados-2026-11-17`, `bee-previa`, `bee-previa-nova` continuam; decisão do responsável. |
 | 9 Fecho | **Verificação feita (2026-11-22); PR e produção por fazer** | Verificação: 448 testes OK (2 saltados); `verificar_dados`, `verificar_estilo`, `verificar_documentacao` limpos; notas de João, 1Ts, 2Ts, Filipenses, Tito, Filemom, 2 e 3 João e Judas conferem com a colação; módulo parcial compila (17 livros); ortografia com `pyspellchecker` sai 0 com 80 alertas para confirmar à mão (nomes hebraicos, transliterações e citações em inglês; sem erro conhecido). Corrigido: «lêem» → «leem» nas notas (AO90, 162 ocorrências, só notas) e «perspectiva» → «perspetiva» (Judas 1:14). Bloqueado: PR para `main` e produção dependem da Etapa 6 (D4) e da permissão `workflows`. Sem PR e sem produção nesta sessão. |
 
+### Decisões do utilizador (2026-11-22, depois do plano)
+
+- **Workflows desativados.** Os três fluxos (`BEE — produção automática`, `BEE — edição nova`, `BEE — relógio de segurança`) estão `disabled_manually` no GitHub, confirmado com `gh workflow list --all`. A produção de texto passa a ser feita passo a passo, sem IA no workflow.
+- **Aprovação por bloco.** O utilizador aprova em blocos de vários capítulos, não por capítulo. O bloco pode ser João 5–6, por exemplo.
+- **Markdown acrescentado, não recriado.** A leitura MD de cada livro cresce capítulo a capítulo no mesmo ficheiro. Não se cria um ficheiro novo por bloco.
+- **Ritmo.** Dois capítulos por turno como regra, com verificação após cada capítulo. Capítulos grandes (João 6, 71 versículos) podem ir sozinhos.
+- **Worker** (`worker/`, `Dockerfile`): experimental, fora do fluxo; o utilizador não o vai implementar.
+
 ### Bloqueio: permissão `workflows` (2026-11-22, ainda ativo no envio)
 
 O utilizador indicou que deu a permissão, mas o envio continuou recusado nesta sessão. Solução provisória: ficheiros completos em `para_colar/.github/workflows/` para copiar à mão.
