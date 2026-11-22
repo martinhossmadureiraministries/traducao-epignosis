@@ -29,6 +29,10 @@ import re
 import sys
 from pathlib import Path
 
+RAIZ_REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ_REPO))
+from bee.inspetor import LIVROS_FORMATO_CASA  # noqa: E402
+
 SECCOES = ('Análise Léxica:', 'Crítica Textual:', 'Síntese Exegética:')
 # Resíduos de processo: o histórico de correções e a produção automática não
 # pertencem ao comentário publicado. A secção «Nota de redação» em si é legítima
@@ -78,6 +82,8 @@ def _lados(entrada: str) -> tuple[set[str], set[str]]:
 def verificar(dados: dict, colacao: dict) -> list[str]:
     problemas: list[str] = []
     versiculos = colacao.get('versiculos', {})
+    livro = colacao.get('livro_bee')
+    formato_casa = True if livro is None else livro in LIVROS_FORMATO_CASA
     for cap, lista in sorted(dados.get('chapters', {}).items(), key=lambda kv: int(kv[0])):
         for verso in lista:
             ref = f"{cap}:{verso.get('verse')}"
@@ -97,10 +103,15 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                 problemas.append(f'{ref}: palavra grega em negrito (use itálico)')
             rotulos = [r for r in re.findall(r'<b>([^<]+)</b>', com)]
             pedidos = [r for r in rotulos if r in SECCOES]
-            if pedidos != list(SECCOES):
+            if formato_casa and pedidos != list(SECCOES):
                 problemas.append(f'{ref}: secções da casa em falta ou fora de ordem ({pedidos})')
             ct = _ct(com)
             if ct is None:
+                # Nota em prosa (livros fora do formato da casa): a CT só aparece
+                # quando há variante, mas toda a variante do aparato tem de ter CT.
+                if not formato_casa and (versiculos.get(ref, {}).get('base', {})
+                                         .get('aparato_sblgnt') or []):
+                    problemas.append(f'{ref}: variante do aparato sem Crítica Textual')
                 continue
             facto = versiculos.get(ref)
             if facto is None:

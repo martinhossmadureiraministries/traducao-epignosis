@@ -124,5 +124,34 @@ class RegressoesDaEtapa5(unittest.TestCase):
         self.assertFalse(any('nota de redação' in p.lower() for p in problemas))
 
 
+class FormatoDeNotaPorLivro(unittest.TestCase):
+    """Notas em prosa (fora do formato da casa) não pedem secções, mas toda a
+    variante do aparato tem de ter Crítica Textual. Política em bee/inspetor.py."""
+
+    PROSA = '<p>Nota corrida, sem secções.</p>'
+
+    def _colacao(self, livro, aparato):
+        base = {'sblgnt_norm': ['a'], 'scrivener_norm': ['a'],
+                'aparato_sblgnt': aparato, 'aviso': ''}
+        return {'livro_bee': livro, 'versiculos': {'1:8': {'base': base,
+                                                          'divergencias': []}}}
+
+    def _verificar(self, livro, comentario, aparato=()):
+        dados = {'chapters': {'1': [{'verse': 8, 'text': 'x',
+                                     'commentary': comentario}]}}
+        return vnc.verificar(dados, self._colacao(livro, list(aparato)))
+
+    def test_prosa_sem_variante_nao_pede_secoes(self):
+        self.assertEqual(self._verificar(570, self.PROSA), [])
+
+    def test_prosa_com_variante_sem_ct_e_falta(self):
+        problemas = self._verificar(570, self.PROSA, ['1 a WH Treg NA28 ] b RP'])
+        self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
+
+    def test_formato_da_casa_pede_as_tres_secoes(self):
+        problemas = self._verificar(500, self.PROSA)
+        self.assertTrue(any('secções da casa' in p for p in problemas))
+
+
 if __name__ == '__main__':
     unittest.main()
