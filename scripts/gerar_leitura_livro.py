@@ -110,7 +110,7 @@ def gerar(dados: dict) -> str:
         '',
         f'Base grega: [SBLGNT]({"../../docs/SBLGNT.md"}) (revisão `{dados["sources"]["sblgnt_commit"][:8]}`, CC BY 4.0). '
         'Textus Receptus de Scrivener para comparação. Colação: `docs/colacao/João.json` '
-        '(capítulos 1–4) e colação completa gerada por `scripts/colar.py`. '
+        '(capítulos 1–4); os capítulos seguintes foram conferidos com a colação gerada por `scripts/colar.py`, que não é versionada por tamanho. '
         'Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente.',
         '',
     ]
