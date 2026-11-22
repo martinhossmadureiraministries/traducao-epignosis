@@ -196,7 +196,7 @@ Primeira leitura editorial da nova tradução. Publicação para revisão, não 
 
 **1:3** · A fé aparece no que fazem, o amor no esforço que lhes custa, a esperança na sua perseverança. Os três termos voltam como armadura em 5:8.
 
-**2:7** · A base imprime ἤπιοι, «gentis». O aparato atribui a WH e NA28 νήπιοι, «crianças pequenas». Diferença real de uma letra, não duas maneiras de traduzir a mesma palavra. Conservamos provisoriamente a base; a decisão requer revisão textual. A imagem de quem amamenta pertence à frase seguinte.
+**2:7** · τροφός é «ama»: a mulher que amamenta e cria. Não é a palavra comum para mãe (μήτηρ), mas o texto diz «os seus próprios filhos» (τὰ ἑαυτῆς τέκνα), e uma ama assalariada não fala assim dos filhos alheios; a imagem é a da mãe que amamenta, como traduzimos. «Ama» lê-se hoje mal, quase como forma do verbo amar. θάλπῃ é «aquece, aconchega»: o calor de quem traz o filho ao peito. A ARC diz «como a ama que cria seus filhos»; a ARA, «qual ama que acaricia os próprios filhos»; a NVI, a NAA e a NVT dizem «mãe». A base imprime ἤπιοι, «gentis»; o aparato atribui a WH e NA28 νήπιοι, «crianças pequenas». É diferença real de uma letra, não duas maneiras de traduzir a mesma palavra: com νήπιοι a frase passa a dizer que Paulo se fez criança no meio deles. Conservamos provisoriamente a base; a decisão requer revisão textual.
 
 **2:14** · A comparação incide em comunidades concretas e nos seus perseguidores. O texto não atribui culpa coletiva a um povo através das gerações.
 
@@ -214,4 +214,4 @@ Primeira leitura editorial da nova tradução. Publicação para revisão, não 
 
 **5:23** · A enumeração «espírito, alma e corpo» está dentro de uma oração pela pessoa inteira, não de um tratado sobre as suas partes.
 
-[Base grega SBLGNT](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgnt/text/1Thess.txt) e [aparato de edições](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgntapp/xml/1Thess.xml), CC BY 4.0. [Cotejo português de 4:4](https://www.bible.com/pt/bible/compare/1TH.4.4). Revisão especializada pendente.
+[Base grega SBLGNT](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgnt/text/1Thess.txt) e [aparato de edições](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgntapp/xml/1Thess.xml), CC BY 4.0. [Cotejo português de 2:7](https://www.bible.com/pt/bible/compare/1TH.2.7) e de [4:4](https://www.bible.com/pt/bible/compare/1TH.4.4). Revisão especializada pendente.
