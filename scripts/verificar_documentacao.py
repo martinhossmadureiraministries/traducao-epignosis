@@ -5,7 +5,9 @@ Corre sem rede e sem chaves. É usado no CI proposto em `docs/ci.yml`.
 """
 from __future__ import annotations
 
+import re
 import sys
+import unicodedata
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -20,6 +22,54 @@ def numeros_reais() -> tuple[int, int, int, int]:
     completos = sum(len(v) for item in livros.values() for v in item['chapters'].values())
     em_curso = sum(len(v) for item in livros.values() for v in item.get('in_progress', {}).values())
     return capitulos, completos, em_curso, completos + em_curso
+
+
+def _sem_acentos(texto: str) -> str:
+    return ''.join(c for c in unicodedata.normalize('NFKD', texto)
+                   if not unicodedata.combining(c)).lower()
+
+
+def livros_sem_json() -> list[str]:
+    """Chaves (sem acentos) dos livros com MD na edição nova mas sem JSON."""
+    nova = RAIZ / 'edicoes' / 'nova'
+    com_json = {_sem_acentos(p.stem.split('_', 1)[1])
+                for p in (nova / 'livros_json').glob('*.json')}
+    sem = []
+    for md in sorted(nova.glob('*.md')):
+        if md.stem.upper().startswith(('LOTE_', 'CALIBRACAO')):
+            continue
+        chave = _sem_acentos(md.stem)
+        if chave not in com_json:
+            sem.append(chave)
+    return sem
+
+
+def entregas_sem_json() -> list[str]:
+    """Um livro sem JSON não pode ser declarado «entregue» nos registos.
+
+    Só se apanha o particípio («entregue», «entregues»): a palavra «entrega»
+    como plano futuro ou processo não é uma declaração. A entrega de um livro
+    pressupõe o JSON, de onde sai o módulo; os MD sem JSON podem ser lidos e
+    revistos, mas não entregues.
+    """
+    sem = livros_sem_json()
+    if not sem:
+        return []
+    alvos = [RAIZ / 'docs' / 'ESTADO.md', RAIZ / 'docs' / 'EDICAO_NOVA.md']
+    alvos += sorted((RAIZ / 'edicoes' / 'nova').glob('LOTE_*.md'))
+    problemas = []
+    for ficheiro in alvos:
+        for numero, linha in enumerate(ficheiro.read_text(encoding='utf-8').splitlines(), 1):
+            n = _sem_acentos(linha)
+            if not re.search(r'\bentregues?\b', n):
+                continue
+            for chave in sem:
+                if re.search(rf'\b{re.escape(chave)}\b', n):
+                    problemas.append(
+                        f'{ficheiro.relative_to(RAIZ)}:{numero}: «entregue» para '
+                        f'{chave} sem JSON (ver docs/PLANO_CORRECAO.md, Etapa 7).')
+                    break
+    return problemas
 
 
 def verificar() -> list[str]:
@@ -58,6 +108,7 @@ def verificar() -> list[str]:
             problemas.append(f'{nome}: não menciona o cron real do modelo ({cron}).')
     if not (RAIZ / 'scripts' / 'verificar_agendador.py').is_file():
         problemas.append('falta scripts/verificar_agendador.py, indicado em docs/AGENDADOR.md.')
+    problemas += entregas_sem_json()
     return problemas
 
 

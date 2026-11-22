@@ -392,7 +392,12 @@ redação não foi lida pelo responsável.
 | 3 João (1 cap.) | aprovado editorialmente | pendente |
 | Judas (1 cap.) | rascunho | pendente |
 
-Livros só em Markdown, sem JSON (Oseias, Joel, Amós, Obadias, Zacarias): ver `edicoes/nova/LOTE_03.md`, `LOTE_04.md` e `LOTE_05.md`. Revisão especializada pendente em todos.
+Livros só em Markdown, sem JSON (a produção do JSON fica para a Etapa 9; ver `edicoes/nova/LOTE_03.md`, `LOTE_04.md` e `LOTE_05.md`):
+
+- **Oseias** (197 vv) e **Joel** (73 vv): leitura MD aprovada editorialmente; JSON pendente; revisão especializada pendente.
+- **Amós** (146 vv), **Obadias** (21 vv) e **Zacarias** (211 vv): sem aprovação; JSON inexistente; revisão especializada pendente.
+
+A verificação `scripts/verificar_documentacao.py` falha se um destes livros for declarado «entregue» nos registos.
 
 ## Próximas etapas
 

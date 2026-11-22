@@ -1,6 +1,6 @@
 # Lote 4 · conclusão dos Doze e primeira etapa pública
 
-[Amós](AMOS.md), 9 capítulos, 146 versículos; [Obadias](OBADIAS.md), 1 capítulo, 21 versículos. Entregues para leitura; não aprovados. Em Amós, ler a sequência de 1:3 a 2:6 sem antecipar quem será o último acusado. Em Obadias, acompanhar as referências a Jacó como irmão de Edom. As notas de 5:24 e 1:11, respetivamente, documentam duas decisões de sentido. Zacarias continua pendente e terá entrega própria; os Doze ainda não estão fechados.
+[Amós](AMOS.md), 9 capítulos, 146 versículos; [Obadias](OBADIAS.md), 1 capítulo, 21 versículos. Lidos para revisão, sem JSON; não aprovados. Em Amós, ler a sequência de 1:3 a 2:6 sem antecipar quem será o último acusado. Em Obadias, acompanhar as referências a Jacó como irmão de Edom. As notas de 5:24 e 1:11, respetivamente, documentam duas decisões de sentido. Zacarias continua pendente e terá entrega própria; os Doze ainda não estão fechados.
 
 ## Ordem editorial acordada
 
