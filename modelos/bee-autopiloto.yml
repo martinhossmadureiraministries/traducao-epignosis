@@ -142,7 +142,7 @@ jobs:
       - name: Verificar os dados versionados
         # Barreira contra a regressão que apagou João 5:7–46. O mínimo sobe
         # quando entra um capítulo novo; nunca desce.
-        run: python3 scripts/verificar_dados.py --minimo 18
+        run: python3 scripts/verificar_dados.py --dados livros_json --minimo 18
 
       - name: Reutilizar as fontes originais (~22 MB)
         uses: actions/cache@v6
@@ -182,6 +182,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
+          # O teste das ligações é alerta, não gate: um provedor fora do ar não pode parar a produção.
           python autopiloto.py --testar 2>&1 | tee /tmp/teste.txt || true
           {
             echo "### Teste das ligações"

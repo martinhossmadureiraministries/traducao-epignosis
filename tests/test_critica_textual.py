@@ -375,13 +375,15 @@ class LivroRegeneradoTest(unittest.TestCase):
         self.assertEqual(fontes['cntr_transcriptions_commit'], CNTR_REVISAO)
         self.assertTrue(fontes['collation_report'].endswith('.json'))
 
-    def test_estados_de_revisao_declarados_como_rascunho(self):
+    def test_estados_de_revisao_aprovada_com_especialista_pendente(self):
+        # Decisão D2 (plano de correção): 2 Tessalonicenses fica aprovada
+        # editorialmente (voz). A revisão especializada continua pendente.
         revisao = self.dados['review']
         cobertos = sum(b['verse_to'] - b['verse_from'] + 1
                        for b in revisao['editorial_blocks'])
         self.assertEqual(cobertos, 47)
         for bloco in revisao['editorial_blocks']:
-            self.assertEqual(bloco['status'], 'rascunho')
+            self.assertEqual(bloco['status'], 'aprovado editorialmente')
         especialistas = sum(b['verse_to'] - b['verse_from'] + 1
                             for b in revisao['specialist'])
         self.assertEqual(especialistas, 47)
@@ -481,13 +483,13 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
         for forma in ('connosco', 'de facto', 'registo'):
             self.assertIn(forma, ortografia)
 
-    def test_2ts_nao_e_livro_base_enquanto_for_rascunho(self):
-        # Os livros-base são os aprovados pelo responsável. 2 Tessalonicenses foi
-        # regenerado por mão editorial e continua RASCUNHO: não ancora ninguém.
+    def test_2ts_nao_ancora_a_memoria_com_revisao_especializada_pendente(self):
+        # 2 Tessalonicenses está aprovada editorialmente (voz), mas a revisão
+        # especializada está pendente: não entra como livro-base da memória.
         numeros = {l['numero'] for l in self.memoria['ancoras']['livros_base']}
         self.assertNotIn(600, numeros)
         estados = {b['status'] for b in self.livro['review']['editorial_blocks']}
-        self.assertEqual(estados, {'rascunho'})
+        self.assertEqual(estados, {'aprovado editorialmente'})
 
 
 class LapidacaoTest(unittest.TestCase):
@@ -736,7 +738,13 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
             self.assertTrue(livro.get('review'), ficheiro.name)
             estados = {b['status'] for b in
                        livro['review']['editorial_blocks']}
-            self.assertEqual(estados, {'rascunho'}, ficheiro.name)
+            # 2 Tessalonicenses, 2 e 3 João: aprovados editorialmente (decisão
+            # D2 e voz do piloto). Filemom voltou a rascunho em 2026-11-22: o
+            # texto mudou depois da aprovação (1:2, 1:16), e a regra D1 pede
+            # reaprovação. Os outros continuam rascunho.
+            esperado = ({'aprovado editorialmente'}
+                        if numero in (600, 700, 710) else {'rascunho'})
+            self.assertEqual(estados, esperado, ficheiro.name)
             for cap, versos in livro['chapters'].items():
                 for v in versos:
                     comentario = v.get('commentary', '') or ''

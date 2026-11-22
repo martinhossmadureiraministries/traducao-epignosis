@@ -1,6 +1,6 @@
 # 1 Tessalonicenses · Bíblia de Estudo Epignósis
 
-Primeira leitura editorial da nova tradução. Publicação para revisão, não aprovação editorial.
+Leitura integral aprovada editorialmente pelo responsável (voz); revisão especializada pendente.
 
 ## Capítulo 1
 

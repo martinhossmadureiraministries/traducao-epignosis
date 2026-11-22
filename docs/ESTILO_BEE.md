@@ -25,6 +25,8 @@ Não combinar frases dessas versões nem as usar como texto de partida. A redaç
 
 **Convenção para toda a BEE — Selá.** Quando o original trouxer a indicação musical סֶלָה, mantê-la no lugar como *[Selá]* (no módulo MyBible: `<i>[Selá]</i>`). Na leitura pública a marca não se pronuncia. Não a acrescentar por sugestão de pausa nem aplicar a convenção a nomes de lugar.
 
+**Convenção para toda a BEE — rubricas de título.** Quando o original trouxer uma indicação dirigida ao regente ou aos instrumentos (por exemplo, «Ao mestre de música. Com os meus instrumentos de cordas.», Hab. 3:19), a leitura em Markdown dá-lhe uma linha própria, em itálico, depois do versículo. No JSON da edição nova a rubrica fica em `<i>` no fim do texto do versículo, porque o formato não tem quebra de parágrafo dentro de `text`. Não é texto do versículo em disputa e não leva `[[ ]]`.
+
 ## Três testes de voz
 
 Exercícios de redação a partir das expressões gregas indicadas. Não constituem uma colação de edições nem uma revisão lexical especializada.

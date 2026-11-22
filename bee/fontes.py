@@ -264,6 +264,66 @@ def _hebraico(livro: Livro, xml: bytes, mapa: dict[str, list[tuple[str, str, str
     return resultado
 
 
+_SIGLAS_APARATO = frozenset({'WH', 'Treg', 'NA28', 'RP', 'NIV', 'ST', 'SR', 'KJTR', 'Scrivener'})
+
+
+def _forma_comparavel(texto: str) -> str:
+    """Minúsculas, sem acentos nem pontuação do aparato (⸀ ⸂ ⸃ · ‹ ›)."""
+    import unicodedata
+    decomposto = unicodedata.normalize('NFD', texto.casefold())
+    sem_acentos = ''.join(c for c in decomposto if not unicodedata.combining(c))
+    return re.sub(r'[^\w ]+', ' ', sem_acentos)
+
+
+def _nota_pertence_ao_verso(nota: str, texto_verso: str) -> bool:
+    """Uma nota do aparato pertence ao versículo BEE que contém a sua palavra-base.
+
+    O aparato da SBLGNT é indexado pelo versículo SBLGNT. Quando a BEE junta o
+    início de um versículo SBLGNT ao anterior (ex.: 1 Tessalonicenses 2:6–7),
+    a nota do versículo seguinte chegava a ambos. A palavra-base é a primeira
+    do lado esquerdo de «]» (o texto da base), sem número, sigla nem sinal.
+    Sem palavra-base (adição «+» ou omissão «–») e nas notas de intervalo
+    («16–17»), a nota mantém-se como antes.
+    """
+    limpa = nota.replace('\xa0', ' ')
+    # Notas de intervalo («16–17 …») abrangem vários versículos: não se decide por lema.
+    if re.match(r'^[\s•]*\d+\s*[–-]\s*\d+', limpa):
+        return True
+    corpo = re.sub(r'^[\s•]*\d*\s*', '', limpa)
+    base = corpo.split(']', 1)[0]
+    if corpo.lstrip().startswith(('+', '–', '-')):
+        return True
+    siglas = {x.casefold() for x in _SIGLAS_APARATO}
+    palavras = [
+        w for w in _forma_comparavel(base).split()
+        if w not in siglas and not w.isdigit()
+    ]
+    if not palavras:
+        return True
+    contexto = ' ' + _forma_comparavel(texto_verso) + ' '
+    return f' {palavras[0]} ' in contexto
+
+
+def _filtrar_notas_do_verso(notas: list[str], texto_verso: str) -> list[str]:
+    """Decide por grupo: uma nota numerada e as linhas «•» que se lhe seguem.
+
+    Um grupo de intervalo («16–17») fica sempre como estava. Um grupo de um
+    versículo só fica se a sua palavra-base estiver no versículo BEE.
+    """
+    grupos: list[list[str]] = []
+    for nota in notas:
+        if re.match(r'^\s*\d', nota.replace('\xa0', ' ')) or not grupos:
+            grupos.append([nota])
+        else:
+            grupos[-1].append(nota)
+    resultado: list[str] = []
+    for grupo in grupos:
+        cabeca = grupo[0].replace('\xa0', ' ')
+        if re.match(r'^\s*\d+\s*[–-]\s*\d+', cabeca) or _nota_pertence_ao_verso(cabeca, texto_verso):
+            resultado.extend(grupo)
+    return resultado
+
+
 def _aparato(xml: bytes) -> dict[tuple[int, int], list[str]]:
     try:
         raiz = ET.fromstring(xml)
@@ -422,8 +482,9 @@ def _grego(livro: Livro, texto: str, aparato: dict[tuple[int, int], list[str]], 
                 ]
                 item['textus_receptus'] = comparacao
                 notas = []
+                texto_verso = ' '.join(conteudo for _, conteudo in sbl)
                 for ref, _ in sbl:
-                    notas.extend(aparato.get(ref, []))
+                    notas.extend(_filtrar_notas_do_verso(aparato.get(ref, []), texto_verso))
                 if notas:
                     item['aparato_sblgnt'] = notas
                 avisos = []

@@ -36,6 +36,8 @@ from typing import Any
 
 RAIZ = Path(__file__).resolve().parent.parent
 DADOS = RAIZ / 'edicoes/nova' / 'livros_json'
+# Nota (2026-11-22): execução única já feita. `edicoes/piloto/dados/` e `2_E_3_JOAO.md` foram removidos;
+# para recuperar a origem: `git show de2f6af:edicoes/piloto/dados/<ficheiro>`.
 PILOTO = RAIZ / 'edicoes' / 'piloto' / 'dados'
 
 MODELO_EDITORIAL = 'editorial:lapidacao-seis-livros'

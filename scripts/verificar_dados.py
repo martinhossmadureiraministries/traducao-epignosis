@@ -149,7 +149,7 @@ def pendentes_em_aprovados(dados: Path) -> list[str]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--dados', default='livros_json')
+    parser.add_argument('--dados', default='edicoes/nova/livros_json')
     parser.add_argument('--minimo', type=int, default=0,
                         help='mínimo de capítulos completos (protege contra regressões)')
     args = parser.parse_args(argv)

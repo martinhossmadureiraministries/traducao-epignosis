@@ -1,5 +1,7 @@
 # Plano de organização e correção da BEE
 
+> **Nota (2026-11-22):** os ZIP referidos neste plano saíram do repositório (decisão D5 de `docs/PLANO_CORRECAO.md`; recuperáveis no histórico). Os itens marcados como feitos descrevem o estado em 17/11/2026; o estado atual está em `docs/ESTADO.md`.
+
 > **Estado:** plano proposto em 17/11/2026, depois de auditar o repositório, o ramo
 > `bee-dados`, o workflow e as duas execuções do GitHub Actions.
 > **Nada em produção foi alterado.** Nenhum ficheiro de dados, módulo, ramo ou

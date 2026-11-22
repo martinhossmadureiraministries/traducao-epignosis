@@ -29,6 +29,10 @@ import re
 import sys
 from pathlib import Path
 
+RAIZ_REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ_REPO))
+from bee.inspetor import LIVROS_FORMATO_CASA  # noqa: E402
+
 SECCOES = ('Análise Léxica:', 'Crítica Textual:', 'Síntese Exegética:')
 # Resíduos de processo: o histórico de correções e a produção automática não
 # pertencem ao comentário publicado. A secção «Nota de redação» em si é legítima
@@ -38,10 +42,24 @@ RESIDUOS = (
     (re.compile(r'Versículo pendente|quarentena|lapidaç', re.I), 'texto de produção automática (quarentena/lapidação)'),
     (re.compile(r'(redação|nota|texto|tradução|Crítica Textual) anterior\b|\bdeu «|Três correções|Duas correções', re.I),
      'história de correções no comentário (resíduo de processo)'),
-    (re.compile(r'<b>Nota de redação:</b>[^<]*(?:anterior|correç|dizia|lia\b)', re.I),
+    (re.compile(r'<b>Nota de redação:</b>[^<]*(?:anterior|correç|dizia|\blia\b)', re.I),
      'nota de redação que conta uma versão anterior'),
 )
 SIGLAS = ('WH', 'Treg', 'NA28', 'RP', 'NIV')
+# Nomes por extenso que as CT usam no lugar da sigla («Tregelles» não é «Treg»).
+ALIAS = {
+    'WH': ('WH', 'Westcott-Hort', 'Westcott e Hort', 'Westcott', 'Hort'),
+    'Treg': ('Treg', 'Tregelles'),
+    'NA28': ('NA28', 'Nestle-Aland', 'Nestle–Aland'),
+    'RP': ('RP', 'Robinson-Pierpont', 'Robinson'),
+    'NIV': ('NIV',),
+}
+
+
+def _cita(sigla: str, texto: str) -> bool:
+    """A CT cita a sigla, pela sigla ou por extenso."""
+    return any(re.search(rf'(?<!\w){re.escape(a)}(?!\w)', texto)
+               for a in ALIAS[sigla])
 TEM_SEM_VARIANTE = re.compile(
     r'sem variante|nada regista|sem unidade de variação|não regista variante|'
     r'não há variante|sem variação', re.I)
@@ -57,31 +75,43 @@ def _ct(comentario: str) -> str | None:
 def _lados(entrada: str) -> tuple[set[str], set[str]]:
     """Siglas da leitura da base (antes de «]») e das leituras alternativas."""
     base, _, alternativas = entrada.partition(']')
-    siglas = lambda s: {x for x in SIGLAS if re.search(rf'\b{x}\b', s)}
+    siglas = lambda s: {x for x in SIGLAS if _cita(x, s)}
     return siglas(base), siglas(alternativas)
 
 
 def verificar(dados: dict, colacao: dict) -> list[str]:
     problemas: list[str] = []
     versiculos = colacao.get('versiculos', {})
+    livro = colacao.get('livro_bee')
+    formato_casa = True if livro is None else livro in LIVROS_FORMATO_CASA
     for cap, lista in sorted(dados.get('chapters', {}).items(), key=lambda kv: int(kv[0])):
         for verso in lista:
             ref = f"{cap}:{verso.get('verse')}"
             com = verso.get('commentary') or ''
             texto = verso.get('text') or ''
+            # O «[[ ]]» é marca legítima no texto (leitura assinalada); as
+            # regras de resíduo aplicam-se só ao comentário. No texto, só
+            # se procura marcador de produção (pendente/quarentena).
             for regex, nome in RESIDUOS:
-                if regex.search(com) or regex.search(texto):
+                if regex.search(com):
                     problemas.append(f'{ref}: {nome}')
+            if RESIDUOS[1][0].search(texto):
+                problemas.append(f'{ref}: {RESIDUOS[1][1]} (no texto do versículo)')
             if '<b>' in com and not com.count('<b>'):
                 problemas.append(f'{ref}: comentário sem rótulos')
             if re.search(r'<b>[^<]*[\u0370-\u03ff\u1f00-\u1fff][^<]*</b>', com):
                 problemas.append(f'{ref}: palavra grega em negrito (use itálico)')
             rotulos = [r for r in re.findall(r'<b>([^<]+)</b>', com)]
             pedidos = [r for r in rotulos if r in SECCOES]
-            if pedidos != list(SECCOES):
+            if formato_casa and pedidos != list(SECCOES):
                 problemas.append(f'{ref}: secções da casa em falta ou fora de ordem ({pedidos})')
             ct = _ct(com)
             if ct is None:
+                # Nota em prosa (livros fora do formato da casa): a CT só aparece
+                # quando há variante, mas toda a variante do aparato tem de ter CT.
+                if not formato_casa and (versiculos.get(ref, {}).get('base', {})
+                                         .get('aparato_sblgnt') or []):
+                    problemas.append(f'{ref}: variante do aparato sem Crítica Textual')
                 continue
             facto = versiculos.get(ref)
             if facto is None:
@@ -95,10 +125,15 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                 for entrada in aparato:
                     # Basta uma sigla de cada lado: a CT não tem de repetir a lista.
                     for lado in _lados(entrada):
-                        if lado and not any(re.search(rf'\b{s}\b', ct) for s in lado):
+                        if lado and not any(_cita(s, ct) for s in lado):
                             problemas.append(f'{ref}: CT não cita {sorted(lado)} do aparato')
             else:
-                if not TEM_SEM_VARIANTE.search(ct) and re.search(r'omite|acrescenta|diverg|variante', ct, re.I) \
+                # O aparato é o da SBLGNT, só de edições. Variantes de testemunhas
+                # (manuscritos) constam das divergências da colação: não são falta.
+                tem_divergencia = any(d.get('estado') == 'divergente'
+                                      for d in facto.get('divergencias') or [])
+                if not tem_divergencia and not TEM_SEM_VARIANTE.search(ct) \
+                        and re.search(r'omite|acrescenta|diverg|variante', ct, re.I) \
                         and not TR_DIVERGE.search(ct) and not re.search(r'Textus', ct):
                     problemas.append(f'{ref}: CT fala de variante sem entrada no aparato')
             iguais = base.get('sblgnt_norm') == base.get('scrivener_norm')

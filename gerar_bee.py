@@ -59,7 +59,7 @@ def argumentos(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument('--max-tokens', type=_positivo, default=8192, metavar='N', help='limite de tokens de saída por chamada (padrão: 8192, mínimo: 256)')
     parser.add_argument('--max-capitulos', type=_positivo, metavar='N', help='limita os novos capítulos nesta execução; útil para controlar custos')
     parser.add_argument('--sem-compilar', action='store_true', help='não compila automaticamente após a geração')
-    parser.add_argument('--dados', type=Path, default=Path('livros_json'), metavar='PASTA', help='pasta de JSON e checkpoints (padrão: livros_json)')
+    parser.add_argument('--dados', type=Path, default=Path('edicoes/nova/livros_json'), metavar='PASTA', help='pasta de JSON e checkpoints (padrão: edição nova, edicoes/nova/livros_json; a legada livros_json só com --dados explícito)')
     parser.add_argument('--saida', type=Path, default=Path('.'), metavar='PASTA', help='pasta dos módulos SQLite3 (padrão: atual)')
     parser.add_argument('--cache-fontes', type=Path, default=Path('.bee-cache'), metavar='PASTA', help='cache local das fontes originais')
     args = parser.parse_args(argv)

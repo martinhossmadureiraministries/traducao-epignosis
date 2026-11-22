@@ -1,7 +1,8 @@
 """Agendador da produção automática: ritmo, janela diária, orçamento e diário.
 
-O estado vive ao lado dos dados (`livros_json/.bee/`), nunca no Git, e é escrito
-de forma atómica. Um ciclo é: gerar uma fatia com orçamento → compilar → registar.
+O estado vive ao lado dos dados (`livros_json/.bee/`) e é escrito de forma
+atómica. Esse `.bee/` está versionado no Git, no ramo de dados `main`
+(`RAMO_DADOS` em `nuvem.py`); retirá-lo do Git é a decisão D11, bloqueada. Um ciclo é: gerar uma fatia com orçamento → compilar → registar.
 Se algo falhar, o ciclo seguinte tenta de novo; nada é apagado.
 """
 from __future__ import annotations

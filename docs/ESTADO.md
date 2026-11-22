@@ -194,6 +194,7 @@ preserva os 18 capítulos/766 versículos.
   Mistral); o fluxo principal continua só com a biblioteca padrão.
 - `entregas/BEE-previa.zip` foi regenerado a partir dos **19 capítulos/806
   versículos completos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
+  Em 2026-11-22 os ZIP saíram do repositório (decisão D5; ver `docs/arquivo/README.md`).
 
 ## Etapa 10 — crítica textual aplicada (20/11/2026)
 
@@ -269,14 +270,15 @@ fundamentada das duas unidades C, e o que o responsável pode rever sem saber gr
   Crítica Textual do aparato + colação, com nível de certeza por versículo
   (`scripts/migrar_notas_cinco.py`). Decisões registadas em
   `docs/CRITICA_TEXTUAL.md` §10; nível C em Judas 1:5 e 1:22–23.
-- Os sete livros têm agora `bibliography` e `review` em **RASCUNHO**.
+- Naquela data, os sete livros tinham `bibliography` e `review` em **RASCUNHO**; o estado atual de cada livro está na tabela «Estado atual dos livros» abaixo.
 - Comparação com ARC/ACF/NVI/NTLH/ALM1911, incluindo Hebreus 11:1 como
   demonstração fora da edição: `docs/COMPARACAO_POPULAR.md`.
 
-Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
-especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
-37 dos 47 versículos diferem da versão de 19/11, cuja voz foi aprovada; esta
-redação não foi lida pelo responsável.
+Estado atual (2026-11-22): **aprovado editorialmente**, quanto à voz e à
+legibilidade (ver LOTE_06), com a revisão especializada pendente e as duas
+unidades de nível C (2:13 e 3:6) nomeadas. 37 dos 47 versículos diferem da
+versão de 19/11, cuja voz foi aprovada anteriormente; a redação atual é a que
+o responsável leu e aprovou.
 
 ### Marcas de citação desequilibradas (2026-11-22)
 
@@ -348,7 +350,7 @@ redação não foi lida pelo responsável.
 ### Correção de João (2026-11-20)
 
 - **João 1–4 fechado**: 166 versículos, 0 pendentes. João 4:29–54 escrito com
-  `scripts/fechar_joao4.py` (texto, Análise Léxica e Síntese).
+  `scripts/fechar_joao4.py` (script removido em 2026-11-22; recuperável no histórico) (texto, Análise Léxica e Síntese).
 - **Greek conferido com a fonte**: os 166 versículos de `base.sblgnt` coincidem
   com `John.txt` do SBLGNT no pin `d7f35ad`, em bruto, sem diferença nem após
   normalização.
@@ -362,15 +364,42 @@ redação não foi lida pelo responsável.
 - **Estado de João:** continua `rascunho` (sem aprovação do responsável) e a
   revisão especializada está pendente.
 
-### Pendências abertas (não tocadas nesta correção)
+### Pendências abertas (atualizado em 2026-11-22)
 
-- **2 Tessalonicenses** (`rascunho`): 21 notas de redação com histórico de
-  correções. Como o JSON é reconstruído de `scripts/regenerar_2ts.py`, a
-  limpeza tem de ser feita nesse script; editar só o JSON faz o teste de
-  reprodutibilidade falhar. Há também 15 avisos de CT (siglas do aparato em
-  falta, uma variante sem entrada) que o verificador aponta.
-- **Tito e Judas** (`rascunho`): histórico retirado (3 e 1 frases), sem script
-  gerador; a revisão continua pendente.
+- **2 Tessalonicenses** (aprovada editorialmente, voz; revisão especializada pendente): 47 versículos, 0 avisos do verificador de notas. A redação é regenerada por `scripts/regenerar_2ts.py`; não se edita o JSON à mão.
+- **Tito, Judas e Filemom** (`rascunho`): texto alterado depois da aprovação do piloto. Reaprovação do responsável pendente (decisão D1); revisão especializada pendente. Filemom: 1:2 (colchetes retirados) e 1:16 (singular do original).
+- **2 e 3 João** (aprovados editorialmente, voz; revisão especializada pendente). Cada carta tem o seu MD de leitura (`edicoes/piloto/2_JOAO.md`, `3_JOAO.md`).
+- **João 1–4** (`rascunho`): sem aprovação do responsável; revisão especializada pendente.
+- **Notas dos MD de piloto** (Filemom, Tito, Judas): o texto dos versículos já coincide com o JSON; as notas dos MD são a versão anterior à migração de 2026-11-20 e ainda não foram sincronizadas.
+
+### Estado atual dos livros (edição nova, JSON)
+
+| Livro | Estado nos blocos editoriais | Revisão especializada |
+|---|---|---|
+| Rute (4 cap.) | aprovado editorialmente | pendente |
+| Jonas (4 cap.) | aprovado editorialmente | pendente |
+| Miqueias (7 cap.) | aprovado editorialmente | pendente |
+| Naum (3 cap.) | aprovado editorialmente | pendente |
+| Habacuque (3 cap.) | aprovado editorialmente | pendente |
+| Sofonias (3 cap.) | aprovado editorialmente | pendente |
+| Ageu (2 cap.) | aprovado editorialmente | pendente |
+| Malaquias (4 cap.) | aprovado editorialmente | pendente |
+| João (6 cap.; 1–6 em `rascunho`, bloco A = 5–6) | rascunho | pendente |
+| Filipenses (4 cap.) | aprovado editorialmente | pendente |
+| 1 Tessalonicenses (5 cap.) | aprovado editorialmente | pendente |
+| 2 Tessalonicenses (3 cap.) | aprovado editorialmente | pendente |
+| Tito (3 cap.) | rascunho | pendente |
+| Filemom (1 cap.) | rascunho | pendente |
+| 2 João (1 cap.) | aprovado editorialmente | pendente |
+| 3 João (1 cap.) | aprovado editorialmente | pendente |
+| Judas (1 cap.) | rascunho | pendente |
+
+Livros só em Markdown, sem JSON (a produção do JSON fica para a Etapa 9; ver `edicoes/nova/LOTE_03.md`, `LOTE_04.md` e `LOTE_05.md`):
+
+- **Oseias** (197 vv) e **Joel** (73 vv): leitura MD aprovada editorialmente; JSON pendente; revisão especializada pendente.
+- **Amós** (146 vv), **Obadias** (21 vv) e **Zacarias** (211 vv): sem aprovação; JSON inexistente; revisão especializada pendente.
+
+A verificação `scripts/verificar_documentacao.py` falha se um destes livros for declarado «entregue» nos registos.
 
 ## Próximas etapas
 

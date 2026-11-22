@@ -9,7 +9,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): João 2:7-9: O objeto deve conter a lista verses.",
       "at_utc": "2026-11-19T23:48:49+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 2:17",
@@ -20,7 +22,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): João 2:17-19: O objeto deve conter a lista verses.",
       "at_utc": "2026-11-19T23:49:53+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 2:21",
@@ -31,7 +35,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): João 2:21-23: O objeto deve conter a lista verses.",
       "at_utc": "2026-11-19T23:50:23+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 3:9",
@@ -251,7 +257,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:10:57+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:33",
@@ -262,7 +270,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:11:10+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:34",
@@ -273,7 +283,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:11:23+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:35",
@@ -284,7 +296,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:16:29+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:36",
@@ -295,7 +309,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:16:41+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:37",
@@ -306,7 +322,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T10:16:54+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:38",
@@ -317,7 +335,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:24:43+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:39",
@@ -328,7 +348,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:24:56+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:40",
@@ -339,7 +361,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:25:09+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:41",
@@ -350,7 +374,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:29:38+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:42",
@@ -361,7 +387,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:29:51+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:43",
@@ -372,7 +400,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: pedido demasiado grande (HTTP 413); a reduzir o lote.",
       "at_utc": "2026-11-20T14:30:05+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:44",
@@ -383,7 +413,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T14:36:20+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:45",
@@ -394,7 +426,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T14:36:30+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:46",
@@ -405,7 +439,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T14:36:39+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:47",
@@ -416,7 +452,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T17:14:07+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:48",
@@ -427,7 +465,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T17:14:17+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:49",
@@ -438,7 +478,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T17:14:28+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:50",
@@ -449,7 +491,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T23:21:42+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:51",
@@ -460,7 +504,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T23:21:54+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:52",
@@ -471,7 +517,9 @@
       "model": "gemini-3.5-flash-lite",
       "error": "resposta inválida após 3 tentativa(s): groq: entrada demasiado grande; a reduzir o lote.",
       "at_utc": "2026-11-20T23:22:04+00:00",
-      "status": "pendente"
+      "status": "resolvida",
+      "resolvida_em_utc": "2026-11-22T04:16:00Z",
+      "resolucao": "versículo com texto válido no JSON (verificado na Etapa 1 do plano de correção)"
     },
     {
       "reference": "João 4:53",
@@ -565,158 +613,7 @@
       "providers_tried": [
         "cerebras"
       ]
-    },
-    {
-      "reference": "João 5:2",
-      "book": 500,
-      "chapter": 5,
-      "verse": 2,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
-      "at_utc": "2026-11-22T07:26:47+00:00",
-      "status": "chumbado-estilo",
-      "style_marks": {
-        "2": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "3": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "4": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa",
-          "palavra greco-latina mista na nota"
-        ],
-        "5": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "6": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "7": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ]
-      },
-      "providers_tried": [
-        "groq"
-      ]
-    },
-    {
-      "reference": "João 5:3",
-      "book": 500,
-      "chapter": 5,
-      "verse": 3,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.8: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
-      "at_utc": "2026-11-22T07:27:18+00:00",
-      "status": "chumbado-estilo",
-      "style_marks": {
-        "2": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "3": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "4": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa",
-          "palavra greco-latina mista na nota"
-        ],
-        "5": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "6": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "7": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "8": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ]
-      },
-      "providers_tried": [
-        "groq"
-      ]
-    },
-    {
-      "reference": "João 5:4",
-      "book": 500,
-      "chapter": 5,
-      "verse": 4,
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite",
-      "error": "deriva de estilo após 3 ronda(s) pelos provedores (v.2: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.3: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.4: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa, palavra greco-latina mista na nota; v.5: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.6: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.7: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa; v.8: nota sem «Análise Léxica:» no formato da casa, nota sem «Crítica Textual:» no formato da casa, nota sem «Síntese Exegética:» no formato da casa)",
-      "at_utc": "2026-11-22T07:27:31+00:00",
-      "status": "chumbado-estilo",
-      "style_marks": {
-        "2": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "3": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "4": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa",
-          "palavra greco-latina mista na nota"
-        ],
-        "5": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "6": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "7": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ],
-        "8": [
-          "nota sem «Análise Léxica:» no formato da casa",
-          "nota sem «Crítica Textual:» no formato da casa",
-          "nota sem «Síntese Exegética:» no formato da casa"
-        ]
-      },
-      "providers_tried": [
-        "groq"
-      ]
     }
   ],
-  "updated_at_utc": "2026-11-22T07:27:31+00:00"
+  "updated_at_utc": "2026-11-22T04:16:00Z"
 }

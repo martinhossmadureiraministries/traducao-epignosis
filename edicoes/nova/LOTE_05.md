@@ -4,8 +4,8 @@
 
 ## Ponto de partida para o NT da edição nova
 
-- Cartas com voz de piloto aprovada: Filemom, Tito, Judas, 2 João e 3 João. Preservar o trabalho existente; não atribuir revisão especializada às notas.
-- 2 Tessalonicenses: a voz de uma redação anterior foi aprovada, mas o texto regenerado aguarda releitura. Não o classificar automaticamente como aprovado.
+- Cartas com voz de piloto aprovada: Filemom, Tito, Judas, 2 João e 3 João (Tito, Judas e Filemom: reaprovação pendente depois de alterações de texto, ver `docs/PLANO_CORRECAO.md`). Preservar o trabalho existente; não atribuir revisão especializada às notas.
+- 2 Tessalonicenses: a voz de uma redação anterior foi aprovada, mas o texto regenerado aguarda releitura. Não o classificar automaticamente como aprovado. [Atualizado: ver LOTE_06; aprovado editorialmente pelo responsável, revisão especializada pendente.]
 - **Próximo lote proposto:** 1 Tessalonicenses (cinco capítulos, redação nova) junto de 2 Tessalonicenses (três capítulos, releitura da redação existente). Permite verificar a linguagem comum, sem fundir as duas cartas ou refazer o piloto. Base de trabalho para o NT: SBLGNT; diferenças de edição e cotejo de testemunhos identificados nas notas.
 - João 1–3 já tem material; João 4 está parcial. Depois das cartas, completar Evangelhos, Atos e Apocalipse. O marco mantém-se: **27 livros do NT concluídos, AT ainda em curso**. Não é uma alteração à execução automática.
 

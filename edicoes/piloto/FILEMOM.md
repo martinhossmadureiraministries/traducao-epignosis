@@ -1,12 +1,12 @@
 # Filemom — Bíblia de Estudo Epignósis
 
-**Piloto da nova edição · prévia para revisão.** [Base grega e licença](../../docs/SBLGNT.md). Os colchetes no v. 2 assinalam uma diferença de leitura.
+**Piloto da nova edição · rascunho até reaprovação do responsável (decisão D1): voz aprovada no piloto; texto alterado depois, em 1:2 e 1:16. Revisão especializada pendente.** [Base grega e licença](../../docs/SBLGNT.md).
 
 ## Texto
 
 **1.** Paulo, prisioneiro de Cristo Jesus, e Timóteo, nosso irmão, ao querido Filemom, nosso colaborador,
 
-**2.** e também a Áfia, nossa [[irmã]], a Arquipo, nosso companheiro de luta, e à igreja que se reúne em tua casa:
+**2.** e também a Áfia, nossa irmã, a Arquipo, nosso companheiro de luta, e à igreja que se reúne em tua casa:
 
 **3.** Graça e paz a vocês, da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.
 
@@ -34,7 +34,7 @@
 
 **15.** Talvez tenha sido por isso que ele ficou separado de ti por algum tempo: para que o tenhas de volta para sempre,
 
-**16.** já não como escravo, mas como mais do que escravo: como irmão amado. Ele o é especialmente para mim, e quanto mais para ti, tanto na vida de vocês como no Senhor.
+**16.** já não como escravo, mas como mais do que escravo: como irmão amado. Ele o é especialmente para mim, e quanto mais para ti, tanto na convivência humana como no Senhor.
 
 **17.** Portanto, se me consideras teu companheiro, recebe-o como receberias a mim.
 
@@ -86,7 +86,7 @@
 
 **15.** τάχα (tacha), «talvez», mantém a cautela de Paulo. «Ficou separado» não afirma se Onésimo fugiu nem nomeia um agente para a separação.
 
-**16.** δοῦλος (doulos) é «escravo», não apenas «servo». «Na vida de vocês» interpreta ἐν σαρκί como a convivência humana concreta; «na carne», como na KJV, é mais literal. Paulo não especifica aqui um procedimento jurídico.
+**16.** δοῦλος (doulos) é «escravo», não apenas «servo». «Na convivência humana» traduz ἐν σαρκί no sentido da vida concreta entre pessoas; «na carne», como na KJV, é mais literal. Paulo não especifica aqui um procedimento jurídico.
 
 **17.** κοινωνός (koinōnos) significa «companheiro» ou «parceiro» e retoma a família de κοινωνία no v. 6. O apelo exige acolhimento, não apenas a ausência de punição.
 

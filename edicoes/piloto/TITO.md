@@ -1,6 +1,6 @@
 # Tito — Bíblia de Estudo Epignósis
 
-**Carta completa · prévia para revisão editorial.** [Base grega e licença](../../docs/SBLGNT.md). A comparação textual usa o aparato de edições do SBLGNT; não houve cotejo direto de manuscritos.
+**Carta completa · rascunho até reaprovação do responsável (decisão D1): texto alterado em relação ao piloto. Revisão especializada pendente.** [Base grega e licença](../../docs/SBLGNT.md). A comparação textual usa o aparato de edições do SBLGNT; não houve cotejo direto de manuscritos.
 
 ## Texto
 
@@ -30,7 +30,7 @@
 
 **12.** Um deles, profeta do seu próprio povo, disse: «Os cretenses são sempre mentirosos, feras más, ventres preguiçosos.»
 
-**13.** Esse testemunho é verdadeiro. Por isso, repreende-os com firmeza, para que sejam sadios na fé
+**13.** Esse testemunho é verdadeiro. Por isso, repreende-os com firmeza, para que sejam sadios na fé,
 
 **14.** e não deem atenção a mitos judaicos nem a mandamentos de pessoas que rejeitam a verdade.
 
@@ -52,11 +52,11 @@
 
 **6.** Exorta também os mais jovens a serem sensatos.
 
-**7.** Em tudo, apresenta-te como exemplo de boas obras. No teu ensino, mostra integridade, seriedade
+**7.** Em tudo, apresenta-te como exemplo de boas obras. No teu ensino, mostra integridade, seriedade,
 
 **8.** e usa palavras sadias, que não possam ser censuradas. Assim, quem se opõe ficará envergonhado, sem ter nada de mau a dizer a nosso respeito.
 
-**9.** Quanto aos escravos, que se sujeitem aos próprios senhores em tudo, procurando agradar-lhes, sem responder com insolência
+**9.** Quanto aos escravos, que se sujeitem aos próprios senhores em tudo, procurando agradar-lhes, sem responder com insolência,
 
 **10.** nem se apropriar do que não é deles. Pelo contrário, mostrem-se inteiramente dignos de confiança, para que em tudo tornem atraente o ensino de Deus, nosso Salvador.
 
@@ -66,17 +66,17 @@
 
 **13.** enquanto aguardamos a bendita esperança: a manifestação da glória do nosso grande Deus e Salvador, Jesus Cristo.
 
-**14.** Ele se entregou por nós para nos resgatar de toda iniquidade e purificar para si um povo que lhe pertence, dedicado às boas obras.
+**14.** Ele se entregou por nós para nos resgatar de toda a iniquidade e purificar para si um povo que lhe pertence, dedicado às boas obras.
 
 **15.** Ensina essas coisas, exorta e repreende com toda a autoridade. Ninguém te despreze.
 
 ### Capítulo 3
 
-**1.** Lembra-lhes que se sujeitem aos governantes e às autoridades, que sejam obedientes e estejam prontos para toda boa obra.
+**1.** Lembra-lhes que se sujeitem aos governantes e às autoridades, que sejam obedientes e estejam prontos para toda a boa obra.
 
-**2.** Que não difamem ninguém, evitem brigas, sejam conciliadores e mostrem toda mansidão para com todas as pessoas.
+**2.** Que não difamem ninguém, evitem brigas, sejam conciliadores e mostrem toda a mansidão para com todas as pessoas.
 
-**3.** Pois nós também éramos insensatos, desobedientes e enganados, escravizados por desejos e prazeres de todo tipo. Vivíamos na maldade e na inveja, detestáveis, odiando-nos uns aos outros.
+**3.** Pois nós também éramos insensatos, desobedientes e enganados, escravizados por desejos e prazeres variados. Vivíamos na maldade e na inveja, detestáveis, odiando-nos uns aos outros.
 
 **4.** Mas, quando se manifestaram a bondade de Deus, nosso Salvador, e o seu amor pela humanidade,
 
