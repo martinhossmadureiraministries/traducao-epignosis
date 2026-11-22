@@ -1,6 +1,6 @@
 # Filipenses · Bíblia de Estudo Epignósis
 
-Primeira leitura editorial da nova tradução. Publicação para revisão, não aprovação editorial.
+Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializada pendente: não é certificação de fidelidade textual.
 
 ## Capítulo 1
 

@@ -48,6 +48,28 @@ class PendentesTest(unittest.TestCase):
         self.assertEqual(vd.main(['--dados', str(pasta)]), 0)
 
 
+    def test_pendente_em_bloco_aprovado_chumba(self):
+        # Aprovar um intervalo com versículos por traduzir é dar a aprovação
+        # sobre texto que não existe: isto tem de falhar, não só ser relatado.
+        pendente = '[Versículo pendente: tradução ainda não produzida.]'
+        conteudo = _livro([(28, 'A mulher deixou o cântaro.'), (29, pendente)])
+        conteudo['review'] = {'editorial_blocks': [
+            {'chapter': 4, 'verse_from': 28, 'verse_to': 29,
+             'status': 'aprovado editorialmente'}]}
+        pasta = self._pasta(conteudo)
+        self.assertEqual(len(vd.pendentes_em_aprovados(pasta)), 1)
+
+    def test_pendente_em_rascunho_nao_chumba(self):
+        pendente = '[Versículo pendente: tradução ainda não produzida.]'
+        conteudo = _livro([(28, 'A mulher deixou o cântaro.'), (29, pendente)])
+        conteudo['review'] = {'editorial_blocks': [
+            {'chapter': 4, 'verse_from': 28, 'verse_to': 29, 'status': 'rascunho'}]}
+        pasta = self._pasta(conteudo)
+        # Só a regra de bloco aprovado é testada aqui; a sequência de versículos
+        # da fixture não começa em 1 e não é o objeto deste teste.
+        self.assertEqual(vd.pendentes_em_aprovados(pasta), [])
+
+
 class IntervalosTest(unittest.TestCase):
     def test_comprime_sequencias(self):
         self.assertEqual(vd._intervalos([2, 3, 4, 7, 9, 10]), '2-4, 7, 9-10')

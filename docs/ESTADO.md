@@ -305,10 +305,18 @@ redação não foi lida pelo responsável.
   legada e os lotes em prosa ficam de fora. O motor (`bee/porta.py`) continua a
   exigir as secções a todo o texto **novo**. Restam três achados reais, na fila
   abaixo.
-- **`verificar_dados.py`** relata agora os versículos marcados como pendentes
-  (`500_Joao.json 4:29-54`). Não chumba — o compilador já impede edição final
-  com pendentes —, mas a contagem de capítulos deixa de poder esconder 26
-  marcadores dados como texto.
+- **`verificar_dados.py`** relata os versículos marcados como pendentes. Num
+  rascunho não chumba (o compilador já impede edição final com pendentes), mas
+  um versículo pendente dentro de um bloco `aprovado…` **chumba**
+  (`pendentes_em_aprovados`): aprovar texto que não existe não passa.
+- **`verificar_notas_colacao.py`** (novo) confere as notas de cada versículo
+  com a colação: siglas do aparato, «sem variante» sobre aparato não vazio,
+  TR que coincide ou diverge contra as formas normalizadas, `[[ ]]` soltos,
+  histórico de correções e texto de quarentena. Sai com erro (código 1) a
+  qualquer problema listado; em João não há nenhum.
+- **`limpar_historico_notas.py`** (novo) retira o histórico de correções das
+  «Notas de redação» (frase a frase, mantendo a justificação) e recusa
+  qualquer livro com bloco aprovado.
 - **Decidido — «estar a + infinitivo» é a forma da casa.** A regra antiga
   proibia a perífrase e mandava usar gerúndio, mas três versículos já aprovados
   usavam-na (Rute 2:9 «estão a ceifar», Rute 4:3 «está a vender», Habacuque 1:5
@@ -330,12 +338,39 @@ redação não foi lida pelo responsável.
   dizem «usurpação», a NVI «usar como vantagem»); 2:7 μορφή/σχῆμα; 3:8 σκύβαλα,
   «lixo»; 3:9 πίστις Χριστοῦ, «fé em Cristo», com a leitura «fidelidade de Cristo»
   registada na nota; 4:13 sem o «em Cristo» que a tradição bizantina acrescenta.
-- **Estado:** `rascunho` nos quatro capítulos, revisão editorial e especializada
-  pendentes; a voz ainda não foi lida pelo responsável.
+- **Estado:** `aprovado editorialmente` nos quatro capítulos, pelo responsável,
+  **só quanto à voz e à legibilidade**. A revisão especializada está
+  **pendente** e não é certificação de fidelidade textual.
 - **Compilação de controlo:** 17/66 livros, 53/1.189 capítulos, 1.016 versículos,
-  build PARCIAL. Achado a decidir: os 26 marcadores de João 4:29-54 entram no
-  módulo como texto (contados em `bee_pending_verses`), e o compilador ainda não
-  os omite.
+  build PARCIAL. Os 26 marcadores de João 4:29–54 que estavam aqui como
+  pendentes já estão fechados (ver a correção de João abaixo).
+
+### Correção de João (2026-11-20)
+
+- **João 1–4 fechado**: 166 versículos, 0 pendentes. João 4:29–54 escrito com
+  `scripts/fechar_joao4.py` (texto, Análise Léxica e Síntese).
+- **Greek conferido com a fonte**: os 166 versículos de `base.sblgnt` coincidem
+  com `John.txt` do SBLGNT no pin `d7f35ad`, em bruto, sem diferença nem após
+  normalização.
+- **Notas regeneradas** a partir da colação (`scripts/regenerar_critica.py`):
+  o diário de correções, os `[[ ]]`, a quarentena e as siglas em falta saíram.
+  `verificar_notas_colacao.py` passa em João.
+- **Texto corrigido em 1:43** (`<i>Jesus</i>` → `Jesus`), 4:27 («estivesse a
+  falar» → «estivesse falando», pela forma da casa) e 4:35–38 (aspas «“…”»).
+- **Fora do âmbito e por fazer:** João 5 (1 versículo em curso); a Análise
+  Léxica de João 1:14 usa a palavra «redação» no sentido comum (não é resíduo).
+- **Estado de João:** continua `rascunho` (sem aprovação do responsável) e a
+  revisão especializada está pendente.
+
+### Pendências abertas (não tocadas nesta correção)
+
+- **2 Tessalonicenses** (`rascunho`): 21 notas de redação com histórico de
+  correções. Como o JSON é reconstruído de `scripts/regenerar_2ts.py`, a
+  limpeza tem de ser feita nesse script; editar só o JSON faz o teste de
+  reprodutibilidade falhar. Há também 15 avisos de CT (siglas do aparato em
+  falta, uma variante sem entrada) que o verificador aponta.
+- **Tito e Judas** (`rascunho`): histórico retirado (3 e 1 frases), sem script
+  gerador; a revisão continua pendente.
 
 ## Próximas etapas
 
