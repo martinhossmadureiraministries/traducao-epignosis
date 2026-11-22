@@ -257,7 +257,7 @@ Mencionadas em M5. `receção` está na forma correta e não deve ser alterada.
 
 ### B3 — Scripts one-off
 
-`scripts/fechar_joao4.py` contém o texto e as notas de João 4:29–54 como código. É um script de uma vez; o conteúdo devia viver só no JSON. `limpar_historico_notas.py` e `regenerar_critica.py` são ferramentas e ficam.
+`scripts/fechar_joao4.py` contém o texto e as notas de João 4:29–54 como código. É um script de uma vez; o conteúdo devia viver só no JSON. (Removido em 2026-11-22, Etapa 1; recuperável no histórico.) `limpar_historico_notas.py` e `regenerar_critica.py` são ferramentas e ficam.
 
 ### B4 — Passos sem efeito de gate
 

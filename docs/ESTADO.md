@@ -194,6 +194,7 @@ preserva os 18 capítulos/766 versículos.
   Mistral); o fluxo principal continua só com a biblioteca padrão.
 - `entregas/BEE-previa.zip` foi regenerado a partir dos **19 capítulos/806
   versículos completos** e o respectivo `LEIA-ME.txt` já não fala de cinco capítulos.
+  Em 2026-11-22 os ZIP saíram do repositório (decisão D5; ver `docs/arquivo/README.md`).
 
 ## Etapa 10 — crítica textual aplicada (20/11/2026)
 
@@ -269,14 +270,15 @@ fundamentada das duas unidades C, e o que o responsável pode rever sem saber gr
   Crítica Textual do aparato + colação, com nível de certeza por versículo
   (`scripts/migrar_notas_cinco.py`). Decisões registadas em
   `docs/CRITICA_TEXTUAL.md` §10; nível C em Judas 1:5 e 1:22–23.
-- Os sete livros têm agora `bibliography` e `review` em **RASCUNHO**.
+- Naquela data, os sete livros tinham `bibliography` e `review` em **RASCUNHO**; o estado atual de cada livro está na tabela «Estado atual dos livros» abaixo.
 - Comparação com ARC/ACF/NVI/NTLH/ALM1911, incluindo Hebreus 11:1 como
   demonstração fora da edição: `docs/COMPARACAO_POPULAR.md`.
 
-Estado do livro: **RASCUNHO**, com `review` a declarar revisão editorial e
-especializada pendentes e as duas unidades de nível C (2:13 e 3:6) nomeadas.
-37 dos 47 versículos diferem da versão de 19/11, cuja voz foi aprovada; esta
-redação não foi lida pelo responsável.
+Estado atual (2026-11-22): **aprovado editorialmente**, quanto à voz e à
+legibilidade (ver LOTE_06), com a revisão especializada pendente e as duas
+unidades de nível C (2:13 e 3:6) nomeadas. 37 dos 47 versículos diferem da
+versão de 19/11, cuja voz foi aprovada anteriormente; a redação atual é a que
+o responsável leu e aprovou.
 
 ### Marcas de citação desequilibradas (2026-11-22)
 

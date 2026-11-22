@@ -26,3 +26,7 @@ livros_json/.bee/
 entregas/auto/
 BEE-modulos.zip
 BEE-*.zip
+
+# Saídas de compilação e ZIP: só a pedido expresso do responsável
+out/
+*.zip
