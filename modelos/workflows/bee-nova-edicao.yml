@@ -160,6 +160,7 @@ jobs:
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || secrets.MISTRAL_KEY }}
         run: |
+          # O teste das ligações é alerta, não gate: um provedor fora do ar não pode parar a produção.
           python autopiloto.py --testar --dados "$BEE_DADOS" 2>&1 | tee /tmp/teste.txt || true
           {
             echo "### Teste das ligações"
@@ -234,7 +235,8 @@ jobs:
         continue-on-error: true
         run: |
           pip install --quiet pyspellchecker
-          python3 scripts/verificar_ortografia.py --dados "$BEE_DADOS" | tee /tmp/ortografia.txt
+          python3 scripts/verificar_ortografia.py --dados "$BEE_DADOS" > /tmp/ortografia.txt
+          cat /tmp/ortografia.txt
           {
             echo "### Ortografia (alerta)"
             echo '```'
