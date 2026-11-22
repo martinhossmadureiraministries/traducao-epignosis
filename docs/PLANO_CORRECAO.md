@@ -202,6 +202,17 @@ Atualizado em 2026-11-22, depois das decisões do responsável (D1 aceitar e rea
 - **Ritmo.** Dois capítulos por turno como regra, com verificação após cada capítulo. Capítulos grandes (João 6, 71 versículos) podem ir sozinhos.
 - **Worker** (`worker/`, `Dockerfile`): experimental, fora do fluxo; o utilizador não o vai implementar.
 
+### Bloco A (João 5–6) e leitura de João (2026-11-22)
+
+- **Redação manual, sem IA no workflow.** João 5 (47 vv.) e João 6 (71 vv.) foram escritos pelo agente a partir do SBLGNT, com a tradução, a Análise Léxica e a Síntese; a Crítica Textual saiu de `scripts/regenerar_critica.py`, com a colação completa (`colar.py --livro 500 --saida /tmp/colac`, que não é publicada).
+- **Estado:** `rascunho` em `review.editorial_blocks`, à espera da aprovação do responsável por bloco. Revisão especializada pendente em 5 e 6 (`review.specialist`).
+- **João 5:4** (fora da base SBLGNT, presente no Textus Receptus) fica entre colchetes, com nível de certeza C. A Crítica Textual foi escrita à mão a partir dos factos da colação. **Não regenerar 5:4** com `regenerar_critica.py`, que a reescreve.
+- **Leitura:** `edicoes/nova/JOAO.md`, gerada por `scripts/gerar_leitura_livro.py` a partir do JSON (João 1–6). Não se edita à mão; cresce com os capítulos novos.
+- **Grafia AO90:** `scripts/regenerar_critica.py` passa a escrever «leem» (antes «lêem»). Em 5–6 corrigiram-se «lêem» e «ruptura» → «rutura».
+- **Correção de estado:** a nota do capítulo 4 de João dizia «em curso» com 28 versículos; o capítulo está completo com 54 (sem marcadores).
+- **Alertas de ortografia rejeitados (falsos positivos):** «contêm», «denários», «barquinho», «durativo».
+- **Verificações:** `verificar_notas_colacao` (João), `verificar_dados`, `verificar_estilo` (João 500) limpos; suíte com 1 falha esperada (cópia do workflow pendente).
+
 ### Bloqueio: permissão `workflows` (2026-11-22, ainda ativo no envio)
 
 O utilizador indicou que deu a permissão, mas o envio continuou recusado nesta sessão. Solução provisória: ficheiros completos em `para_colar/.github/workflows/` para copiar à mão.

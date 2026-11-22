@@ -384,7 +384,7 @@ o responsável leu e aprovou.
 | Sofonias (3 cap.) | aprovado editorialmente | pendente |
 | Ageu (2 cap.) | aprovado editorialmente | pendente |
 | Malaquias (4 cap.) | aprovado editorialmente | pendente |
-| João (4 cap.) | rascunho | pendente |
+| João (6 cap.; 1–6 em `rascunho`, bloco A = 5–6) | rascunho | pendente |
 | Filipenses (4 cap.) | aprovado editorialmente | pendente |
 | 1 Tessalonicenses (5 cap.) | aprovado editorialmente | pendente |
 | 2 Tessalonicenses (3 cap.) | aprovado editorialmente | pendente |

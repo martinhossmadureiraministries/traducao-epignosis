@@ -78,7 +78,7 @@ def _descreve(txt: str, sig: list[str]) -> str:
         return f"{nomes} {'omitem' if plural else 'omite'}"
     if txt.startswith('+'):
         return f"{nomes} {'acrescentam' if plural else 'acrescenta'} «{txt.lstrip('+ ').strip()}»"
-    return f"{nomes} {'lêem' if plural else 'lê'} «{txt}»"
+    return f"{nomes} {'leem' if plural else 'lê'} «{txt}»"
 
 
 def _nivel(entradas: list[dict]) -> str:
