@@ -10,7 +10,7 @@ Três coisas são verificadas aqui, e todas nasceram de defeitos reais:
      2Ts 2:13 (ἀπαρχήν / ἀπʼ ἀρχῆς) e o achado de 2Ts 3:16 (τόπω → τρόπω) são
      conferidos contra o relatório, não contra a memória de quem os escreveu.
   3. **A regeneração de 2 Tessalonicenses é reproduzível e auditável.** O JSON
-     gravado é o que ``scripts/regenerar_2ts.py`` produz; a proveniência
+     gravado é o que o script de conversão de 2026-11-20 produziu; a proveniência
      (``bibliography``) fixa as revisões; os estados de revisão declaram
      RASCUNHO; e nada do histórico anterior foi apagado.
 """
@@ -27,7 +27,6 @@ sys.path.insert(0, str(RAIZ / 'scripts'))
 
 from bee.arquivos import DadosInvalidos, validar_livro  # noqa: E402
 from bee.catalogo import POR_NUMERO  # noqa: E402
-from bee.inspetor import formato_casa_do_capitulo  # noqa: E402
 from bee.fontes import SBL_COMMIT, TR_COMMIT  # noqa: E402
 
 RELATORIO = RAIZ / 'docs' / 'colacao' / '2_Tessalonicenses.json'
@@ -56,9 +55,6 @@ _MENCAO = re.compile(
     r'\b(sinaiticus|alexandrinus|vaticanus|westcott|hort|robinson|pierpont|'
     r'stephanus|estiv[ée]nne|scrivener|kjtr|p30|p92|wh|rp|st|sr|01|02|03)\b',
     re.IGNORECASE)
-
-SECCOES_OBRIGATORIAS = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
-
 
 def _carregar(caminho: Path) -> dict:
     return json.loads(caminho.read_text(encoding='utf-8'))
@@ -101,8 +97,11 @@ class ProtocoloTest(unittest.TestCase):
             self.assertTrue(marcador in self.texto, f'falta no protocolo: {marcador}')
 
     def test_niveis_de_certeza(self):
-        for nivel in ('Nível de certeza', '**A**', '**B**', '**C**'):
-            self.assertTrue(nivel in self.texto, f'falta no protocolo: {nivel}')
+        # Decisão de 2026-11-20: os níveis A/B/C de certeza não aparecem nas notas
+        # nem na documentação. O protocolo diz isso; nenhum marcador A/B/C fica impresso.
+        self.assertIn('sem notação de nível', self.texto)
+        for marca in ('**A**', '**B**', '**C**', '| A |', '| B |', '| C |'):
+            self.assertNotIn(marca, self.texto, f'nível de certeza impresso: {marca}')
 
     def test_tetragrama_reservado(self):
         for marcador in ('Tetragrama', 'o dia do Senhor'):
@@ -203,7 +202,9 @@ class Caso213Test(unittest.TestCase):
     def test_decisao_registada_no_livro(self):
         nota = _sem_marcas(_carregar(LIVRO_JSON)['chapters']['2'][12]['commentary'])
         self.assertIn('primícias', nota)
-        self.assertIn('Nível de certeza C', nota.replace('nível de certeza', 'Nível de certeza'))
+        # A leitura alternativa (ἀπʼ ἀρχῆς, «desde o princípio») fica registada na nota.
+        self.assertIn('desde o princípio', nota)
+        self.assertIn('seguir a base', nota)
 
 
 class Caso316Test(unittest.TestCase):
@@ -327,7 +328,7 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
     def test_1_2_regista_a_divergencia_de_emos(self):
         nota = _sem_marcas(self.livro['chapters']['1'][1]['commentary'])
         self.assertIn('sem ἡμῶν', nota)
-        self.assertIn('Nível de certeza B', nota)
+        self.assertIn('Decisão: seguir a base', nota)
         self.assertIn('Filemom 1:3', nota)
 
     def test_regras_duras_da_critica_textual_existem(self):
@@ -347,12 +348,14 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
             self.assertIn(forma, ortografia)
 
     def test_2ts_nao_ancora_a_memoria_com_revisao_especializada_pendente(self):
-        # 2 Tessalonicenses está aprovada editorialmente (voz), mas a revisão
-        # especializada está pendente: não entra como livro-base da memória.
+        # 2 Tessalonicenses não entra como livro-base da memória enquanto a revisão
+        # especializada estiver pendente. Os blocos foram reconvertidos em prosa e
+        # voltam a rascunho até leitura e aprovação do responsável: não se aprova
+        # em nome de ninguém.
         numeros = {l['numero'] for l in self.memoria['ancoras']['livros_base']}
         self.assertNotIn(600, numeros)
         estados = {b['status'] for b in self.livro['review']['editorial_blocks']}
-        self.assertEqual(estados, {'aprovado editorialmente'})
+        self.assertEqual(estados, {'rascunho'})
 
 
 class LapidacaoTest(unittest.TestCase):

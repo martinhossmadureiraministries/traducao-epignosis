@@ -369,26 +369,24 @@ def construir() -> Document:
 
     # ---------- 8 ----------
     titulo(doc, '8. As notas de estudo', 1)
-    p(doc, 'Cada versículo traz uma nota com três secções fixas — é este '
-           'formato que permite à oficina verificar automaticamente que '
-           'nenhuma nota sai incompleta:')
-    tabela(doc, ['Secção', 'Conteúdo'], [
-        ['Análise Léxica',
+    p(doc, 'Cada versículo traz uma nota em prosa, sem rótulos de secção e '
+           'sem níveis de certeza. Quando o aparato ou a colação registam '
+           'variante, a nota tem um parágrafo próprio de Crítica Textual. '
+           'É este formato que permite à oficina verificar automaticamente '
+           'que nenhuma nota sai incompleta:')
+    tabela(doc, ['Parte', 'Conteúdo'], [
+        ['Nota',
          'As palavras gregas (ou hebraicas) decisivas do versículo, com '
-         'transliteração e tradução: o que a palavra significa e porque '
-         'foi traduzida assim.'],
-        ['Crítica Textual',
+         'transliteração e tradução, o sentido no contexto e as ligações '
+         'com o resto do livro e da Escritura.'],
+        ['Crítica Textual (só com variante)',
          'As variantes do versículo: o que lê a base, o que leem as '
-         'edições comparadas e — só quando colacionados — os '
-         'manuscritos, com o nível de certeza A/B/C. Gerada a partir do '
-         'aparato e do relatório de colação, nunca de memória.'],
-        ['Síntese Exegética',
-         'O sentido do versículo no seu contexto: o argumento, as '
-         'imagens, as ligações com o resto do livro e da Escritura.'],
-        ['(Quando se aplicam)',
-         'Hermenêutica e Contexto, Geografia e História e Nota de '
-         'redação — esta última regista decisões editoriais e '
-         'pendências, para auditoria.'],
+         'edições comparadas e — só quando colacionados — os manuscritos. '
+         'Gerada a partir do aparato e do relatório de colação, nunca de '
+         'memória.'],
+        ['Nota de redação (quando se aplica)',
+         'Regista decisões editoriais e pendências, para auditoria. '
+         'Não faz parte da nota publicada.'],
     ])
 
     # ---------- 9 ----------

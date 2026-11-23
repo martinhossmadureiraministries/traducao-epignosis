@@ -1,3 +1,5 @@
+> **Documento histórico (arquivado em 2026-11-20).** Descreve um plano de etapas que já não é o estado atual do projeto. Para o estado atual, ver `docs/ESTADO.md` e `docs/EDICAO_NOVA.md`.
+
 # Revisão geral do projeto — primeira varredura
 
 **Estado: só anotação.** Nesta varredura não se alterou nenhum texto, nota, script ou dado. Os achados abaixo serão resolvidos depois de a lista ser lida e de as decisões da secção 5 serem tomadas. Só depois disso se segue para o próximo livro ou carta.

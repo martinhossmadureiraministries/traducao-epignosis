@@ -23,7 +23,7 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
 | [docs/EDITORIAL.md](docs/EDITORIAL.md) | Diretrizes editoriais, colchetes, variantes e revisão. |
 | [docs/colacao/](docs/colacao/) | Relatórios de colação por livro: a evidência verificável de cada nota (`scripts/colar.py`). |
 | [docs/ARQUITETURA.md](docs/ARQUITETURA.md) | Módulos, fluxo e formato dos dados. |
-| [docs/PLANO_CORRECAO.md](docs/PLANO_CORRECAO.md) | Plano de correção por etapas e decisões D1–D13. |
+| [docs/arquivo/PLANO_CORRECAO.md](docs/arquivo/PLANO_CORRECAO.md) | Plano de correção por etapas e decisões D1–D13 (arquivado). |
 | [docs/SBLGNT.md](docs/SBLGNT.md) | A base grega (SBLGNT) e como é usada. |
 
 ## Dados e módulos
@@ -62,4 +62,4 @@ Referências, licenças e detalhes ficam nos JSON e nos metadados dos módulos.
 
 **Leia:** [Filemom — piloto completo](edicoes/piloto/FILEMOM.md) · [Judas](edicoes/piloto/JUDAS.md) · [Tito](edicoes/piloto/TITO.md) · [2 João](edicoes/piloto/2_JOAO.md) · [3 João](edicoes/piloto/3_JOAO.md).
 
-**Apresentação da BEE:** [documento de referência em Word](docs/APRESENTACAO_BEE.docx). As versões para apresentação pública (PDF, PPTX e outros formatos) ficam para o encerramento do projeto.
+**Apresentação da BEE:** o documento de apresentação foi arquivado em [`docs/arquivo/APRESENTACAO_BEE.docx`](docs/arquivo/APRESENTACAO_BEE.docx) porque descreve uma arquitetura anterior; uma versão atualizada fica para o encerramento do projeto.

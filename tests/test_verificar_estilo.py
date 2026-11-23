@@ -61,8 +61,9 @@ class AnalisarDadosTest(unittest.TestCase):
         self.assertIn('sobremaneira', res['avisos'])
 
     def test_formato_da_nota_so_com_incluir_comentario(self):
-        # A linha legada usa outro formato de nota: por omissão a CLI não
-        # chumba por ele; na edição nova o formato é falha dura.
+        # Formato único em prosa: o rótulo antigo é falha dura quando a
+        # verificação das notas está ligada (edição nova). Sem ela, a função
+        # só verifica o texto traduzido e não olha às notas.
         dados = {'chapters': {'3': [{
             'verse': 34, 'text': 'Ele não dá o Espírito por medida.',
             'commentary': '<p><b>Análise Léxica</b> — x</p>',
@@ -70,19 +71,20 @@ class AnalisarDadosTest(unittest.TestCase):
         self.assertEqual(ve.analisar_dados(dados), [])
         achados = ve.analisar_dados(dados, incluir_comentario=True)
         self.assertEqual(len(achados), 1)
-        self.assertTrue(any('formato da casa' in d
+        self.assertTrue(any('formato antigo' in d
                             for d in achados[0][3]['duros']))
 
-    def test_formato_da_casa_so_nos_livros_da_migracao(self):
-        # O formato de três secções é o da migração de 2026-11-20. Os lotes
-        # aprovados depois usam notas em prosa e não podem chumbar por rótulos
-        # que nunca tiveram: isso gerava centenas de alarmes falsos.
-        raiz = ve.RAIZ
-        nova = raiz / 'edicoes' / 'nova' / 'livros_json'
-        self.assertTrue(ve._auditar_notas(nova, 600))
-        self.assertTrue(ve._auditar_notas(nova, 720))
-        self.assertFalse(ve._auditar_notas(nova, 460))
-        self.assertFalse(ve._auditar_notas(raiz / 'livros_json', 640))
+    def test_formato_unico_prosa_em_todo_o_livro(self):
+        # Desde 2026-11-23 a nota é prosa em todos os capítulos: a regra não
+        # depende do livro nem do capítulo. Níveis A/B/C também chumbam.
+        dados = {'chapters': {'11': [{
+            'verse': 1, 'text': 'Texto simples.',
+            'commentary': '<p>Nota corrida.</p><p>Nível de certeza A.</p>',
+        }]}}
+        achados = ve.analisar_dados(dados, incluir_comentario=True)
+        self.assertEqual(len(achados), 1)
+        self.assertTrue(any('nível de certeza' in d
+                            for d in achados[0][3]['duros']))
 
     def test_so_a_pasta_da_edicao_nova_liga_as_notas(self):
         raiz = ve.RAIZ

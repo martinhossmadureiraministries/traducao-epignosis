@@ -239,8 +239,7 @@ diz que precisa delas.
    argumento exige aqui.
 6. **Decidir e traduzir.** Se a base já decidiu, a BEE traduz a base e diz que a
    decisão é da base — não se apropria de uma decisão editorial alheia.
-7. **Registar.** Referência, leituras, apoio, decisão, razão, nível de certeza e
-   pendências. O registo vive em duas partes: a nota do versículo (para o
+7. **Registar.** Referência, leituras, apoio, decisão, razão e pendências. O registo vive em duas partes: a nota do versículo (para o
    leitor) e o campo `critica_textual` do JSON do livro (para auditoria).
 
 ### 5.1 Convenções de marcação
@@ -274,7 +273,7 @@ ambiguidade, abre-se frase nova e a nota regista-o — é o caso de 2Ts 2:9
 tomaria «vinda» como antecedente). A regra está em
 [`modelos/estilo_bee.json`](../modelos/estilo_bee.json) →
 `regras_duras` → «PONTUAÇÃO E MAIÚSCULA INICIAL» e é conferida
-mecanicamente por `scripts/regenerar_2ts.py --verificar` e por
+mecanicamente pelo verificador de pontuação e maiúscula, e por
 [`tests/test_critica_textual.py`](../tests/test_critica_textual.py).
 
 > **Correção aplicada em 2Ts 2:2.** O texto anterior trazia «o dia do SENHOR»,
@@ -321,75 +320,21 @@ mecanicamente por `scripts/regenerar_2ts.py --verificar` e por
 
 ### 6.2 Estrutura da nota de cada versículo
 
-Três secções obrigatórias (as que a infraestrutura já valida) mais duas quando o
-versículo o justifica:
+Forma vigente (desde 2026-11-23): **um parágrafo de prosa por versículo, sem
+rótulos e sem notação de nível.** A Crítica Textual é um parágrafo próprio, só
+quando há variante registada:
 
-1. **Análise Léxica** — forma original, transliteração, sentido no contexto.
-   Strong é índice, não prova; sem léxico integrado, escreve-se que a definição
-   é contextual e não verificada em léxico.
-2. **Crítica Textual** — só o que foi colacionado. Sem divergência: «sem
-   variante verificada». Com divergência: leituras, apoio, decisão, razão.
-3. **Síntese Exegética** — o argumento, o que a passagem diz e o que não diz.
-4. **Hermenêutica e Contexto** *(quando aplicável)* — género, situação, fundo do
-   AT, leituras legítimas concorrentes e o limite do que o texto afirma.
-5. **Geografia e História** *(quando aplicável)* — só o que o texto ou fonte
-   verificável sustenta.
+1. **Comentário** (um parágrafo) — o termo grego em itálico com transliteração,
+   as opções de tradução, a razão da escolha e a síntese do que a passagem diz e
+   do que não diz. Se a passagem pede, o parágrafo também traz o género, o fundo
+   do AT ou a leitura concorrente legítima.
+2. **«Crítica Textual:»** (parágrafo próprio, opcional) — só o que foi
+   colacionado ou está no aparato. Cita as siglas, diz as leituras, o apoio e a
+   decisão. Sem variante, não há parágrafo: não se escreve «sem variante
+   verificada» como enchimento.
 
-A nota não é oração, não é declaração de fé e não é aplicação devocional.
-
----
-
-## 7. Geografia bíblica
-
-Regra geral: **a geografia explica, nunca se acrescenta ao versículo.** Paulo não
-diz «Tessalónica, na Via Egnatia»; se a BEE o puser no versículo, acrescentou ao
-texto. Vai para a nota e para a introdução.
-
-Três proibições concretas: distâncias, durações de viagem, números de população
-e afirmações arqueológicas **não se inventam**. Sem fonte verificável acessível,
-escreve-se «a confirmar».
-
-Registo verificado a partir do próprio cânone (fontes: Atos 17:1-9; 18:5;
-1Ts 1:6-9; 3:1-6), que é evidência de primeira mão para este livro:
-
-| Dado | Base |
-|---|---|
-| Tessalónica fica na **Macedónia** | At 17:1-5 |
-| Havia nela **sinagoga judaica**, onde Paulo argumentou três sábados | At 17:2 |
-| Houve **tumulto** movido contra Paulo e Silas; **Jasom** hospedou-os | At 17:5-9 |
-| Paulo e Silas saíram **à noite, para Bereia** | At 17:10 |
-| Silas e Timóteo **juntaram-se a Paulo em Corinto**, vindos da Macedónia | At 18:5 |
-| Timóteo tinha acabado de chegar «de vocês» quando 1Ts foi escrita | 1Ts 3:6 |
-| A igreja de Tessalónica tornou-se **modelo para a Macedónia e a Acaia** | 1Ts 1:7-8 |
-
-Daqui saem as decisões geográficas e históricas da carta, com o seu estatuto:
-
-- **Remetentes.** Paulo, Silvano (a forma latina de Silas; At 15:22; 17:10) e
-  Timóteo. A co-autoria é declarada no v. 1 e a assinatura pessoal de 3:17 é o
-  mecanismo de autenticação contra cartas falsas em nome de Paulo (2:2).
-- **Local de composição provável: Corinto.** É uma inferência a partir de At
-  18:5 + 1Ts 3:6, **não** uma afirmação da carta. Regista-se como inferência bem
-  sustentada, não como facto do texto.
-- **Data provável: cerca de 50-51 d.C.** Depende da cronologia de Atos e do
-  proconsulado de Gálio (At 18:12), que não é verificável neste ambiente:
-  **pendência**.
-- **Destinatários.** Uma comunidade maioritariamente gentílica saída da
-  idolatria (1Ts 1:9), sob perseguição (2Ts 1:4-6), na capital da província.
-  A afirmação de que Tessalónica era cidade livre com politarcas é corroborada
-  pelo texto de At 17:6-8 («politarcas»), que é a nossa evidência canónica;
-  pormenores constitucionais e arqueológicos ficam **pendentes**.
-- **Geografia escatológica de 2:4.** «O templo de Deus» não é identificado pelo
-  texto. As leituras possíveis (templo de Jerusalém; um templo escatológico; a
-  comunidade como templo; linguagem figurada de auto-entronização) pertencem à
-  nota. Nenhuma é assumida no versículo, e nenhuma localização é afirmada.
-
----
-
-## 8. Arquivologia: proveniência e custódia dos dados
-
-Arquivologia, aqui, é a disciplina de tornar cada byte do projeto **rastreável a
-uma origem declarada**. Um texto traduzido sem cadeia de proveniência não é
-auditável; e o que não é auditável não pode ser revisto por especialistas.
+A redação anterior (Análise Léxica / Crítica Textual / Síntese Exegética) está arquivada no histórico: `git log` até `a80fa33`, e a
+conversão de 5–10 ainda está por fazer (ver `docs/EDITORIAL.md`).
 
 ### 8.1 O que cada fonte tem de declarar
 
@@ -442,42 +387,43 @@ sem revisão fixada não é reproduzível e, portanto, não é evidência.
 
 ## 9. Decisões de crítica textual registadas para 2 Tessalonicenses
 
-Nível de certeza: **A** = decisão segura; **B** = decisão provável, alternativa
-plausível; **C** = texto difícil, decisão provisória, exige revisão especializada.
+A nota diz a razão da escolha e a alternativa rejeitada, sem notação de nível de
+certeza. As passagens de decisão difícil ficam assinaladas em `review`, como
+prioridade de revisão especializada.
 
-| Ref. | Unidade | Base (adotada) | Alternativa e apoio | Decisão | Nível |
-|---|---|---|---|---|---|
-| 1:2 | θεοῦ πατρὸς [ἡμῶν] | πατρὸς (sem ἡμῶν) | + ἡμῶν: 01, 02, RP, ST, KJTR, SR, Scrivener; NA28 e Treg têm ἡμῶν; 03 e WH não | **segue a base**: «da parte de Deus Pai», sem «nosso». O argumento transcricional aponta todo num sentido — o v. 1 tem πατρὶ ἡμῶν, a fórmula paulina corrente é «Deus, nosso Pai», e em 1Ts 1:1 o RP acrescenta a fórmula inteira; um escriba tinha três razões para escrever ἡμῶν e nenhuma para o omitir. A tradução anterior seguia a expansão bizantina enquanto a nota registava a divergência | B |
-| 1:3 | πάντων ὑμῶν | ὑμῶν presente | 01 omite o segundo ὑμῶν; lê ὀφίλομεν (itacismo) | segue a base | A |
-| 1:4 | αὐτοὺς ἡμᾶς / ἐγκαυχᾶσθαι | ordem αὐτοὺς ἡμᾶς; composto ἐγκαυχᾶσθαι | ἡμᾶς αὐτοὺς e καυχᾶσθαι: RP, ST, KJTR, Scrivener; ἐνκαυχᾶσθαι (sem γ): 02, 03 | segue a base; «gloriamo-nos» cobre as duas | A |
-| 1:8 | φλογὶ πυρός / πυρὶ φλογός | **φλογὶ πυρός** (SBL com Tregelles) | πυρὶ φλογός: 01, 02, WH, NA28, RP, ST, KJTR, Scrivener, SR | **segue a base mesmo com apoio minoritário**: só 03 (Vaticanus) sustenta φλογὶ πυρός entre as testemunhas colacionadas; a ordem das palavras não muda o sentido («chama de fogo» / «fogo em chama»). Registado como decisão da base, não nossa | B |
-| 1:8 | τοῦ κυρίου ἡμῶν Ἰησοῦ [Χριστοῦ] | sem Χριστοῦ | + Χριστοῦ: 01, 02, ST, KJTR, SR, Scrivener | segue a base; expansão litúrgica habitual | A |
-| 1:10 | πιστεύσασιν / πιστεύουσιν | **aoristo** πιστεύσασιν | presente πιστεύουσιν: ST, KJTR, Scrivener (**RP não**) | segue a base: «os que creram» (ato de crer que já aconteceu). Note-se que RP e o TR de Scrivener divergem — «o Bizantino» não é um texto único | A |
-| 1:12 | κυρίου ἡμῶν Ἰησοῦ [Χριστοῦ] | sem Χριστοῦ (1ª ocorrência) | + Χριστοῦ: KJTR, ST, Scrivener; 02 lê ἡμεῖς por ὑμεῖς | segue a base; ἡμεῖς registado na nota | A |
-| 2:2 | μηδὲ / μήτε | μηδὲ | μήτε: RP, ST, KJTR, Scrivener | segue a base; conjunção equivalente | A |
-| 2:2 | ἡ ἡμέρα τοῦ **κυρίου** / τοῦ **Χριστοῦ** | κυρίου | Χριστοῦ: RP, ST, KJTR, Scrivener; 01, 02, 03 apoiam κυρίου | **segue a base**: «o dia do Senhor», com κύριος por extenso no grego (sem Tetragrama) e a ligação profética na nota | A |
-| 2:3 | ὁ ἄνθρωπος τῆς **ἀνομίας** / τῆς **ἁμαρτίας** | ἀνομίας | ἁμαρτίας: 02, RP, ST, KJTR, Scrivener; 01 e 03 apoiam ἀνομίας | segue a base: «o homem da rebelião»; a designação «homem do pecado» fica na nota. Para ὁ υἱὸς τῆς ἀπωλείας a tradução usa «o filho da ruína»: «filho da perdição» é corrente de genitivos à Almeida e está vetado na memória de estilo | B |
-| 2:4 | εἰς τὸν ναὸν τοῦ θεοῦ [ὡς θεόν] | sem ὡς θεόν | + ὡς θεόν: RP, ST, KJTR, Scrivener; Scrivener lê também πᾶν τὸ por πάντα | segue a base: o versículo já diz «proclamando-se deus» (ἀποδεικνύντα ἑαυτὸν ὅτι ἔστιν θεός) — a adição é duplicação | A |
-| 2:6 | ἐν τῷ **ἑαυτοῦ** καιρῷ / **αὐτοῦ** | ἑαυτοῦ | αὐτοῦ: 01, 02, WH, Treg, SR; NA28 e RP têm ἑαυτοῦ | segue a base; 01 lê ainda κατέχω/οἴδαται (registado como leitura própria, abreviatura a rever) | B |
-| 2:8 | ὃν ὁ κύριος **Ἰησοῦς** ἀνελεῖ | com Ἰησοῦς | 03 omite Ἰησοῦς; ἀναλώσει em RP, ST, KJTR, Scrivener | segue a base: «o Senhor Jesus… destruirá». ἀναιρέω («tirar a vida») vs ἀναλίσκω («consumir») registado | A |
-| 2:10 | πάσῃ ἀπάτῃ ἀδικίας [ἐν] τοῖς | ἀδικίας direto | τῆς ἀδικίας ἐν: RP, ST, KJTR, Scrivener | segue a base | A |
-| 2:11 | **πέμπει** / πέμψει | presente πέμπει | futuro πέμψει: RP, ST, KJTR, Scrivener | segue a base: «envia» (ação em curso), não «enviará» | B |
-| 2:12 | πάντες / ἅπαντες; τῇ ἀδικίᾳ / ἐν τῇ | πάντες; τῇ | ἅπαντες: SR, RP; + ἐν: RP, ST, KJTR, Scrivener | segue a base | A |
-| 2:13 | **ἀπαρχὴν** / ἀπʼ ἀρχῆς | **ἀπαρχὴν** («primícias») | ἀπʼ ἀρχῆs: 01, WH, RP, ST, KJTR, SR, Scrivener, NIV; 02 e 03 apoiam ἀπαρχήν | **segue a base**: ver §2.1. Tradução: «como primícias para a salvação»; «desde o princípio» fica na nota. A tradução anterior seguia a leitura bizantina sem o dizer | **C** |
-| 2:13 | εἵλατο / εἵλετο | εἵλατο | εἵλετο: RP, ST, KJTR, Scrivener | ortográfica; segue a base | A |
-| 2:14 | εἰς ὃ ἐκάλεσεν **ὑμᾶς** / ἡμᾶς | ὑμᾶς | ἡμᾶς: 02, 03; 01 foi corrigido de ὑμῶν para ἡμῶν no v. anterior; NA28 tem + καί | segue a base: «ele os chamou» | B |
-| 2:16 | θεὸς ὁ πατήρ / ὁ θεὸς καὶ πατήρ | καὶ θεὸς ὁ πατήρ | ὁ θεὸς καὶ πατήρ: RP, ST, KJTR, Scrivener; 01 recebeu καί e «ὁ ἀγαπήσας ἡμᾶς» por mão posterior | segue a base | B |
-| 2:17 | στηρίξαι [ὑμᾶς]; ἔργῳ καὶ λόγῳ | sem ὑμᾶς; ordem ἔργῳ καὶ λόγῳ | + ὑμᾶς e λόγῳ καὶ ἔργῳ: RP, ST, KJTR, Scrivener | segue a base; a ordem não muda o sentido | A |
-| 3:3 | πιστὸς δέ ἐστιν ὁ **κύριος** | κύριος | 02 lê ὁ θεός e acrescenta καί (com letra danificada em στηρίξει) | segue a base; leitura de 02 registada | B |
-| 3:4 | ἃ παραγγέλλομεν [ὑμῖν] | sem ὑμῖν | + ὑμῖν: RP, ST, KJTR, Scrivener; 03 acrescenta καὶ ἐποιήσατε | segue a base | A |
-| 3:6 | τὴν παράδοσιν ἣν **παρελάβοσαν** | παρελάβοσαν («que **eles** receberam») | παρελάβετε («que **vocês** receberam»): 03, WH, Treg, NIV; παρέλαβον: RP; παρέλαβεν: Scrivener; παρελαβεν + ἀφʼ ἡμῶν em 03 | **C**: segue a base (3ª pessoa do plural), mas a alternativa é forte e muda o referente. A tradução evita comprometer o referente («a tradição que receberam de nós») e a nota expõe as três leituras | **C** |
-| 3:6 | τοῦ κυρίου [ἡμῶν] Ἰησοῦ Χριστοῦ | com ἡμῶν (Treg/RP/NA28) | WH e NIV não têm ἡμῶν; 03 abrevia | segue a base | A |
-| 3:8 | νυκτὸς καὶ ἡμέρας / νύκτα καὶ ἡμέραν | genitivos | acusativos: 02, RP, ST, KJTR, Scrivener | segue a base; «noite e dia» serve as duas | A |
-| 3:12 | ἐν κυρίῳ Ἰησοῦ Χριστῷ / διὰ τοῦ κυρίου ἡμῶν | ἐν κυρίῳ | διὰ τοῦ κυρίου ἡμῶν: RP, ST, KJTR, Scrivener | segue a base: «no Senhor Jesus Cristo» | A |
-| 3:13 | ἐγκακήσητε / ἐκκακήσητε | ἐγκακήσητε | ἐκκακήσητε: RP, ST, KJTR, Scrivener; 03 lê ἐνκακήσητε | ortográfica; segue a base | A |
-| 3:14 | μὴ συναναμίγνυσθαι / καὶ μὴ συναναμίγνυσθε | infinitivo, sem καί | καὶ + imperativo: RP, ST, KJTR, Scrivener | segue a base | A |
-| 3:16 | ἐν παντὶ **τρόπῳ** | τρόπῳ («de todas as maneiras») | 02 escreveu **τόπῳ** («em todo o lugar») na mão original e foi corrigido para τρόπῳ | segue a base; a correção de 02 é o achado manuscritológico mais interessante do capítulo e vai na nota | B |
-| 3:18 | μετὰ πάντων ὑμῶν [ἀμήν] | sem ἀμήν | + ἀμήν: 02, RP, ST, KJTR, Scrivener; 01 e 03 não o têm | segue a base; não se marca com `[[ ]]` porque não é texto traduzido, é fecho litúrgico bizantino — registado na nota | A |
+| Ref. | Unidade | Base (adotada) | Alternativa e apoio | Decisão |
+|---|---|---|---|---|
+| 1:2 | θεοῦ πατρὸς [ἡμῶν] | πατρὸς (sem ἡμῶν) | + ἡμῶν: 01, 02, RP, ST, KJTR, SR, Scrivener; NA28 e Treg têm ἡμῶν; 03 e WH não | **segue a base**: «da parte de Deus Pai», sem «nosso». O argumento transcricional aponta todo num sentido — o v. 1 tem πατρὶ ἡμῶν, a fórmula paulina corrente é «Deus, nosso Pai», e em 1Ts 1:1 o RP acrescenta a fórmula inteira; um escriba tinha três razões para escrever ἡμῶν e nenhuma para o omitir. A tradução anterior seguia a expansão bizantina enquanto a nota registava a divergência |
+| 1:3 | πάντων ὑμῶν | ὑμῶν presente | 01 omite o segundo ὑμῶν; lê ὀφίλομεν (itacismo) | segue a base |
+| 1:4 | αὐτοὺς ἡμᾶς / ἐγκαυχᾶσθαι | ordem αὐτοὺς ἡμᾶς; composto ἐγκαυχᾶσθαι | ἡμᾶς αὐτοὺς e καυχᾶσθαι: RP, ST, KJTR, Scrivener; ἐνκαυχᾶσθαι (sem γ): 02, 03 | segue a base; «gloriamo-nos» cobre as duas |
+| 1:8 | φλογὶ πυρός / πυρὶ φλογός | **φλογὶ πυρός** (SBL com Tregelles) | πυρὶ φλογός: 01, 02, WH, NA28, RP, ST, KJTR, Scrivener, SR | **segue a base mesmo com apoio minoritário**: só 03 (Vaticanus) sustenta φλογὶ πυρός entre as testemunhas colacionadas; a ordem das palavras não muda o sentido («chama de fogo» / «fogo em chama»). Registado como decisão da base, não nossa |
+| 1:8 | τοῦ κυρίου ἡμῶν Ἰησοῦ [Χριστοῦ] | sem Χριστοῦ | + Χριστοῦ: 01, 02, ST, KJTR, SR, Scrivener | segue a base; expansão litúrgica habitual |
+| 1:10 | πιστεύσασιν / πιστεύουσιν | **aoristo** πιστεύσασιν | presente πιστεύουσιν: ST, KJTR, Scrivener (**RP não**) | segue a base: «os que creram» (ato de crer que já aconteceu). Note-se que RP e o TR de Scrivener divergem — «o Bizantino» não é um texto único |
+| 1:12 | κυρίου ἡμῶν Ἰησοῦ [Χριστοῦ] | sem Χριστοῦ (1ª ocorrência) | + Χριστοῦ: KJTR, ST, Scrivener; 02 lê ἡμεῖς por ὑμεῖς | segue a base; ἡμεῖς registado na nota |
+| 2:2 | μηδὲ / μήτε | μηδὲ | μήτε: RP, ST, KJTR, Scrivener | segue a base; conjunção equivalente |
+| 2:2 | ἡ ἡμέρα τοῦ **κυρίου** / τοῦ **Χριστοῦ** | κυρίου | Χριστοῦ: RP, ST, KJTR, Scrivener; 01, 02, 03 apoiam κυρίου | **segue a base**: «o dia do Senhor», com κύριος por extenso no grego (sem Tetragrama) e a ligação profética na nota |
+| 2:3 | ὁ ἄνθρωπος τῆς **ἀνομίας** / τῆς **ἁμαρτίας** | ἀνομίας | ἁμαρτίας: 02, RP, ST, KJTR, Scrivener; 01 e 03 apoiam ἀνομίας | segue a base: «o homem da rebelião»; a designação «homem do pecado» fica na nota. Para ὁ υἱὸς τῆς ἀπωλείας a tradução usa «o filho da ruína»: «filho da perdição» é corrente de genitivos à Almeida e está vetado na memória de estilo |
+| 2:4 | εἰς τὸν ναὸν τοῦ θεοῦ [ὡς θεόν] | sem ὡς θεόν | + ὡς θεόν: RP, ST, KJTR, Scrivener; Scrivener lê também πᾶν τὸ por πάντα | segue a base: o versículo já diz «proclamando-se deus» (ἀποδεικνύντα ἑαυτὸν ὅτι ἔστιν θεός) — a adição é duplicação |
+| 2:6 | ἐν τῷ **ἑαυτοῦ** καιρῷ / **αὐτοῦ** | ἑαυτοῦ | αὐτοῦ: 01, 02, WH, Treg, SR; NA28 e RP têm ἑαυτοῦ | segue a base; 01 lê ainda κατέχω/οἴδαται (registado como leitura própria, abreviatura a rever) |
+| 2:8 | ὃν ὁ κύριος **Ἰησοῦς** ἀνελεῖ | com Ἰησοῦς | 03 omite Ἰησοῦς; ἀναλώσει em RP, ST, KJTR, Scrivener | segue a base: «o Senhor Jesus… destruirá». ἀναιρέω («tirar a vida») vs ἀναλίσκω («consumir») registado |
+| 2:10 | πάσῃ ἀπάτῃ ἀδικίας [ἐν] τοῖς | ἀδικίας direto | τῆς ἀδικίας ἐν: RP, ST, KJTR, Scrivener | segue a base |
+| 2:11 | **πέμπει** / πέμψει | presente πέμπει | futuro πέμψει: RP, ST, KJTR, Scrivener | segue a base: «envia» (ação em curso), não «enviará» |
+| 2:12 | πάντες / ἅπαντες; τῇ ἀδικίᾳ / ἐν τῇ | πάντες; τῇ | ἅπαντες: SR, RP; + ἐν: RP, ST, KJTR, Scrivener | segue a base |
+| 2:13 | **ἀπαρχὴν** / ἀπʼ ἀρχῆς | **ἀπαρχὴν** («primícias») | ἀπʼ ἀρχῆs: 01, WH, RP, ST, KJTR, SR, Scrivener, NIV; 02 e 03 apoiam ἀπαρχήν | **segue a base**: ver §2.1. Tradução: «como primícias para a salvação»; «desde o princípio» fica na nota. A tradução anterior seguia a leitura bizantina sem o dizer |
+| 2:13 | εἵλατο / εἵλετο | εἵλατο | εἵλετο: RP, ST, KJTR, Scrivener | ortográfica; segue a base |
+| 2:14 | εἰς ὃ ἐκάλεσεν **ὑμᾶς** / ἡμᾶς | ὑμᾶς | ἡμᾶς: 02, 03; 01 foi corrigido de ὑμῶν para ἡμῶν no v. anterior; NA28 tem + καί | segue a base: «ele os chamou» |
+| 2:16 | θεὸς ὁ πατήρ / ὁ θεὸς καὶ πατήρ | καὶ θεὸς ὁ πατήρ | ὁ θεὸς καὶ πατήρ: RP, ST, KJTR, Scrivener; 01 recebeu καί e «ὁ ἀγαπήσας ἡμᾶς» por mão posterior | segue a base |
+| 2:17 | στηρίξαι [ὑμᾶς]; ἔργῳ καὶ λόγῳ | sem ὑμᾶς; ordem ἔργῳ καὶ λόγῳ | + ὑμᾶς e λόγῳ καὶ ἔργῳ: RP, ST, KJTR, Scrivener | segue a base; a ordem não muda o sentido |
+| 3:3 | πιστὸς δέ ἐστιν ὁ **κύριος** | κύριος | 02 lê ὁ θεός e acrescenta καί (com letra danificada em στηρίξει) | segue a base; leitura de 02 registada |
+| 3:4 | ἃ παραγγέλλομεν [ὑμῖν] | sem ὑμῖν | + ὑμῖν: RP, ST, KJTR, Scrivener; 03 acrescenta καὶ ἐποιήσατε | segue a base |
+| 3:6 | τὴν παράδοσιν ἣν **παρελάβοσαν** | παρελάβοσαν («que **eles** receberam») | παρελάβετε («que **vocês** receberam»): 03, WH, Treg, NIV; παρέλαβον: RP; παρέλαβεν: Scrivener; παρελαβεν + ἀφʼ ἡμῶν em 03 | segue a base (3ª pessoa do plural), mas a alternativa é forte e muda o referente. A tradução evita comprometer o referente («a tradição que receberam de nós») e a nota expõe as três leituras |
+| 3:6 | τοῦ κυρίου [ἡμῶν] Ἰησοῦ Χριστοῦ | com ἡμῶν (Treg/RP/NA28) | WH e NIV não têm ἡμῶν; 03 abrevia | segue a base |
+| 3:8 | νυκτὸς καὶ ἡμέρας / νύκτα καὶ ἡμέραν | genitivos | acusativos: 02, RP, ST, KJTR, Scrivener | segue a base; «noite e dia» serve as duas |
+| 3:12 | ἐν κυρίῳ Ἰησοῦ Χριστῷ / διὰ τοῦ κυρίου ἡμῶν | ἐν κυρίῳ | διὰ τοῦ κυρίου ἡμῶν: RP, ST, KJTR, Scrivener | segue a base: «no Senhor Jesus Cristo» |
+| 3:13 | ἐγκακήσητε / ἐκκακήσητε | ἐγκακήσητε | ἐκκακήσητε: RP, ST, KJTR, Scrivener; 03 lê ἐνκακήσητε | ortográfica; segue a base |
+| 3:14 | μὴ συναναμίγνυσθαι / καὶ μὴ συναναμίγνυσθε | infinitivo, sem καί | καὶ + imperativo: RP, ST, KJTR, Scrivener | segue a base |
+| 3:16 | ἐν παντὶ **τρόπῳ** | τρόπῳ («de todas as maneiras») | 02 escreveu **τόπῳ** («em todo o lugar») na mão original e foi corrigido para τρόπῳ | segue a base; a correção de 02 é o achado manuscritológico mais interessante do capítulo e vai na nota |
+| 3:18 | μετὰ πάντων ὑμῶν [ἀμήν] | sem ἀμήν | + ἀμήν: 02, RP, ST, KJTR, Scrivener; 01 e 03 não o têm | segue a base; não se marca com `[[ ]]` porque não é texto traduzido, é fecho litúrgico bizantino — registado na nota |
 
 ### 9.1 Achados manuscritológicos de 2 Tessalonicenses
 
@@ -522,21 +468,21 @@ Os cinco livros do piloto aprovado (Tito, Filemom, 2 João, 3 João, Judas)
 foram colacionados com o mesmo acervo e a mesma revisão CNTR de
 2 Tessalonicenses (`scripts/colar.py --livro N`; relatórios em
 `docs/colacao/`). Em todos, **o texto segue a base fixada**; as Críticas
-Textuais das notas foram geradas por `scripts/migrar_notas_cinco.py` do
-aparato (edições) e dos relatórios (manuscritos), com nível de certeza
-declarado versículo a versículo: **A** quando a variante é apenas bizantina
-(RP) e WH/Tregelles/NA28 apoiam a base; **B** quando as edições críticas se
-dividem; **C** nos dois casos abaixo. O registo completo é a nota de cada
+Textuais das notas foram geradas, em 2026-11-20, por um script de conversão não versionado, a partir do
+aparato (edições) e dos relatórios (manuscritos). Quando a variante é apenas
+bizantina (RP) e WH/Tregelles/NA28 apoiam a base, a nota regista-o; quando as
+edições críticas se dividem, regista-se a divisão. Os dois casos de decisão
+difícil são os abaixo. O registo completo é a nota de cada
 versículo mais o relatório do livro; aqui ficam as decisões de consequência.
 
-| Ref. | Unidade | Decisão | Nível |
-|---|---|---|---|
-| Jd 1:5 | *Ἰησοῦς* (NA28) / *κύριος* (WH, Tregelles) / *ὁ κύριος* (RP) | segue a base: «[[Jesus]] salvou um povo». Das testemunhas colacionadas, 03 e SR leem com a base; 01 e 04 leem *κύριος*; P72 lê *θεὸς Χριστός*. **Decisão do responsável (2026-11-20): seguir NA28** — a leitura mantém-se; o nível C fica registado como memória da dificuldade, não como pendência | **C** (resolvido por NA28) |
-| Jd 1:22–23 | *ἐλεᾶτε* (WH, NA28) / *ἐλεεῖτε* (RP) / *ἐλέγχετε* (Tregelles), com três arranjos das cláusulas | segue a base; o arranjo RP desloca «em temor» para junto de «salvai» | **C** |
-| Fm 1:6 | *τοῦ* (WH, NA28, RP) / omissão (Tregelles, 02, 04); *ἡμῖν* / *ὑμῖν* (01, TR) | segue a base: «o bem que há em nós» | B |
-| 2 Jo 1:8 | *εἰργασάμεθα* «nós trabalhámos» / *εἰργάσασθε* «vocês trabalharam» (Tregelles, NIV; 02, SR) | segue a base; a pessoa dos três verbos fica registada na nota | B |
-| 2 Jo 1:12 | *ὑμῶν* «a vossa alegria» (WH, Tregelles; 01) / *ἡμῶν* (NA28, RP) | segue a base com WH/Tregelles contra NA28 | B |
-| Tt 2:13; Fm 1:5; 3 Jo 1:4–5; Jd 1:15–16, 18 | edições críticas divididas em pormenor (ordem, artigo, sinónimos) | segue a base em todos; pormenor na nota de cada versículo | B |
+| Ref. | Unidade | Decisão |
+|---|---|---|
+| Jd 1:5 | *Ἰησοῦς* (NA28) / *κύριος* (WH, Tregelles) / *ὁ κύριος* (RP) | segue a base: «[[Jesus]] salvou um povo». Das testemunhas colacionadas, 03 e SR leem com a base; 01 e 04 leem *κύριος*; P72 lê *θεὸς Χριστός*. **Decisão do responsável (2026-11-20): seguir NA28** — a leitura mantém-se; a dificuldade fica registada na nota, não como pendência |
+| Jd 1:22–23 | *ἐλεᾶτε* (WH, NA28) / *ἐλεεῖτε* (RP) / *ἐλέγχετε* (Tregelles), com três arranjos das cláusulas | segue a base; o arranjo RP desloca «em temor» para junto de «salvai» |
+| Fm 1:6 | *τοῦ* (WH, NA28, RP) / omissão (Tregelles, 02, 04); *ἡμῖν* / *ὑμῖν* (01, TR) | segue a base: «o bem que há em nós» |
+| 2 Jo 1:8 | *εἰργασάμεθα* «nós trabalhámos» / *εἰργάσασθε* «vocês trabalharam» (Tregelles, NIV; 02, SR) | segue a base; a pessoa dos três verbos fica registada na nota |
+| 2 Jo 1:12 | *ὑμῶν* «a vossa alegria» (WH, Tregelles; 01) / *ἡμῶν* (NA28, RP) | segue a base com WH/Tregelles contra NA28 |
+| Tt 2:13; Fm 1:5; 3 Jo 1:4–5; Jd 1:15–16, 18 | edições críticas divididas em pormenor (ordem, artigo, sinónimos) | segue a base em todos; pormenor na nota de cada versículo |
 
 Leituras de manuscritos que nenhuma edição imprime, registadas nas notas a
 partir dos relatórios (não mudam o texto): Jd 1:12 *ἀπάταις* «enganos» em 02
@@ -547,35 +493,31 @@ e 04 (assimilação provável a 2 Pedro 2:13); 3 Jo 1:8 *τῇ ἐκκλησί�
 leitura singular de 02. 3 João 1:14: a aparente falta da saudação final nas
 testemunhas é numeração (v. 15), não texto.
 
-João 1 (capítulo lapidado na mesma data por `scripts/lapidar_seis.py`): as
+João 1 (capítulo revisto na mesma data, com o mesmo método): as
 notas citam o aparato e o relatório `docs/colacao/João.json`. Decisões de
 consequência: 1:18 *μονογενὴς θεός* contra *ὁ μονογενὴς υἱός* (RP) — a
 redação anterior seguia RP; 1:34 *ἐκλεκτός* (Holmes, WHmarg) contra *υἱός*
-(WH, Tregelles, NA28, RP), nível **C**.
+(WH, Tregelles, NA28, RP): decisão difícil, assinalada em `review`.
 
-## 11. Ligação à infraestrutura (o que muda no código)
+## 11. Ligação à infraestrutura (estado de 2026-11-20)
 
 | Onde | O quê |
 |---|---|
 | [`bee/manuscritos.py`](../bee/manuscritos.py) | analisador MES + colação: camadas de correção, lacunas, nomina sacra por família flexional, abreviaturas por barra |
 | [`scripts/colar.py`](../scripts/colar.py) | CLI: `--livro N` gera `docs/colacao/<livro>.json` e `.md`; `--verso 2:13` detalha uma unidade |
-| [`bee/inspetor.py`](../bee/inspetor.py) | guarda anti-deriva: os marcadores de Almeida eram comparados com acento contra texto sem acento e nunca casavam — «filho da perdição», «glória da sua força», «manifestação da sua vinda» e «dar-se-á» passaram despercebidos. Corrigido (comparação normalizada); é o falso negativo que deixou passar 2Ts 2:3 e 2:8 |
-| [`modelos/estilo_bee.json`](../modelos/estilo_bee.json) | memória de estilo v1.1: três regras duras novas (pontuação e maiúscula inicial; SENHOR e Senhor; crítica textual só com evidência colacionada), `registro.ortografia` (norma pt-PT), glossário da família ἀνομ-, de ἀπώλεια, ἀτακτ-, παράδοσις, ἀπαρχή, παρουσία, ἐπιφάνεια e ὑπομονή, três vetos novos e o contraste de 2Ts 2:2 |
-| [`bee/memoria_estilo.py`](../bee/memoria_estilo.py) | valida e renderiza `registro.ortografia` no bloco VOZ E REGISTO |
-| ``bee/perfil.py`` | contrato operacional do prompt da edição nova: três secções obrigatórias + Hermenêutica e Contexto, Geografia e História e Nota de redação quando se aplicam; proíbe citar códice, papiro ou edição que não esteja na colação nem no aparato; explicita as três proibições de §3 e os níveis de certeza |
-| ``bee/ia.py`` | a verificação de cabeçalhos assinala (sem rejeitar o lote) só as três secções obrigatórias; as condicionais pertencem ao pedido |
-| ``scripts/regenerar_2ts.py`` | ficheiro editorial de 2 Tessalonicenses: os 47 versículos e notas redigidos sobre a colação, mais `montar()` (JSON do livro com `bibliography` e `review`) e `conferir()` (schema, guarda anti-deriva, vetos, secções, pontuação, NFC, U+2011). `--verificar` valida sem escrever; correr duas vezes não duplica o histórico |
-| ``scripts/lapidar_seis.py`` | lapidação de 2026-11-20 sobre João 1, Tito e Judas (textos pontuais + notas refeitas do aparato real) e registo da reversão da regra de *πᾶς* (o artigo depois de «todo» é gramática europeia, não traduz o grego; memória v1.3). `--verificar` confere sem escrever |
-| ``scripts/migrar_notas_cinco.py`` | substitui as notas de enchimento dos cinco livros curtos: Análise Léxica das notas do piloto aprovado, Crítica Textual gerada do aparato + colação CNTR com nível de certeza, e acrescenta `sources`/`bibliography`/`review` (RASCUNHO) aos cinco livros e a João 1. `--prova` imprime antes de aplicar; `--verificar` confere invariantes |
-| ``scripts/lapidar_joao23.py`` | lapidação de 2026-11-20 sobre João 2 (fechado) e João 3 (em curso), produzidos na nuvem pelo código antigo: quatro versículos (2:7, 2:17, 2:21, 3:9) eram marcadores de quarentena dados como texto e foram traduzidos editorialmente da base; a Crítica Textual dos 58 versículos foi refeita do aparato e da colação (âmbito capítulos 1–3) com níveis A/B, sem citar testemunha fora do relatório; desvios da base repostos (2:12; 3:16), registo («vocês», gerúndio) e pontuação normalizados, cada decisão de fundo com Nota de redação. `--verificar` confere sem escrever |
-| [`tests/test_manuscritos.py`](../tests/test_manuscritos.py) | 40 testes do analisador MES: referência de 8 dígitos, quebras dentro de palavras, ligadura KAI, camadas de correção e precedência, nomina sacra por família, abreviaturas por barra só quando a base começa por elas |
-| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados (69 testes): nenhuma testemunha citada sem colação naquele versículo, 2:13 e 3:16 conferidos contra o relatório, regeneração reproduzível, proveniência e estados de revisão declarados, âncoras da memória coerentes com o texto aprovado, uma classe de lapidação que corre sobre **os sete livros** da edição nova (ênclise, marcas equilibradas, itálicos dos verbos supridos, famílias lexicais, artigo depois de «todo») e uma classe de migração (sem notas de enchimento em livro nenhum, três secções e `review` em RASCUNHO nos sete livros migrados, proveniência e estados editoriais conhecidos em todos os livros da edição nova, testemunhas citadas dentro do acervo do próprio livro) |
-| ``docs/OFICINA_TRADUCAO.md`` | a camada prática: como decidir sem ser especialista, recomendação fundamentada das duas unidades C, a passagem de lapidação de 20/11 verso a verso, as doze regras de ofício, o que o responsável pode rever e as perguntas a levar a um especialista |
+| [`scripts/verificar_notas_colacao.py`](../scripts/verificar_notas_colacao.py) | confere as Críticas Textuais das notas contra a colação do livro; toda a variante do aparato tem de ter CT no capítulo |
+| [`bee/inspetor.py`](../bee/inspetor.py) | guarda da voz: arcaísmos, marcas de Almeida, rótulos antigos, níveis de certeza impressos, grego fora de itálico |
+| [`modelos/estilo_bee.json`](../modelos/estilo_bee.json) | memória de estilo: regras, glossário, vetos e decisões lexicais |
+| [`tests/test_manuscritos.py`](../tests/test_manuscritos.py) | testes do analisador MES |
+| [`tests/test_critica_textual.py`](../tests/test_critica_textual.py) | o protocolo contra os dados: nenhuma testemunha citada sem colação naquele versículo, decisões registadas, proveniência e estados de revisão declarados |
 | `docs/colacao/` | relatórios de colação versionados (obra nossa; as transcrições CNTR ficam fora do Git) |
 
 Fluxo por livro: `scripts/colar.py --livro N` → decisões em `docs/CRITICA_TEXTUAL.md`
-→ tradução e notas → `scripts/verificar_estilo.py` → `scripts/verificar_dados.py`
-→ `gerar_bee.py --compilar` → revisão editorial → revisão especializada.
+→ tradução e notas → `scripts/verificar_estilo.py` → `scripts/verificar_notas_colacao.py`
+→ `scripts/verificar_dados.py` → `gerar_bee.py --compilar` → revisão editorial → revisão especializada.
+
+Os scripts de conversão usados em 2026-11-20 para passar as notas a prosa não estão no
+repositório; os JSON são a fonte. Ver [`EDICAO_NOVA.md`](EDICAO_NOVA.md), «Limitações conhecidas».
 
 ## 12. O que este protocolo não é
 

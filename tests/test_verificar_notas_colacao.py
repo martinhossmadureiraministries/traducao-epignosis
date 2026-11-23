@@ -22,14 +22,14 @@ def _carregar(nome):
 vnc = _carregar('verificar_notas_colacao')
 vo = _carregar('verificar_ortografia')
 
-SECCOES_OK = ('<p><b>Análise Léxica:</b> a.</p>'
-              '<p><b>Crítica Textual:</b> {ct}</p>'
-              '<p><b>Síntese Exegética:</b> b.</p>')
+# Nota no formato único: prosa, com a Crítica Textual num parágrafo próprio.
+NOTA_OK = ('<p>Nota corrida em prosa.</p>'
+           '<p><b>Crítica Textual:</b> {ct}</p>')
 
 
 def _dados(texto, ct):
     return {'chapters': {'1': [{'verse': 8, 'text': texto,
-                                'commentary': SECCOES_OK.format(ct=ct)}]}}
+                                'commentary': NOTA_OK.format(ct=ct)}]}}
 
 
 def _colacao(entradas):
@@ -101,14 +101,14 @@ class RegressoesDaEtapa5(unittest.TestCase):
         colacao = {'versiculos': {'1:8': {
             'base': base,
             'divergencias': [{'testemunha': '02', 'estado': 'divergente'}]}}}
-        comentario = SECCOES_OK.format(ct='O Alexandrinus (02) omite o artigo.')
+        comentario = NOTA_OK.format(ct='O Alexandrinus (02) omite o artigo.')
         self.assertEqual(self._verificar(comentario, colacao), [])
 
     def test_sem_divergencia_nem_aparato_a_falta_continua(self):
         base = {'sblgnt_norm': ['a'], 'scrivener_norm': ['a'], 'aparato_sblgnt': [],
                 'aviso': ''}
         colacao = {'versiculos': {'1:8': {'base': base, 'divergencias': []}}}
-        comentario = SECCOES_OK.format(ct='O Alexandrinus (02) omite o artigo.')
+        comentario = NOTA_OK.format(ct='O Alexandrinus (02) omite o artigo.')
         problemas = self._verificar(comentario, colacao)
         self.assertTrue(any('sem entrada no aparato' in p for p in problemas))
 
@@ -118,15 +118,15 @@ class RegressoesDaEtapa5(unittest.TestCase):
                 'aviso': ''}
         colacao = {'versiculos': {'1:8': {'base': base, 'divergencias': []}}}
         comentario = ('<p><b>Nota de redação:</b> A família ἀτακτ- fica com o mesmo verbo.</p>'
-                      + SECCOES_OK.format(ct='Sem variante.'))
+                      + NOTA_OK.format(ct='Sem variante.'))
         problemas = self._verificar(comentario, colacao)
         self.assertFalse(any('versão anterior' in p for p in problemas))
         self.assertFalse(any('nota de redação' in p.lower() for p in problemas))
 
 
 class FormatoDeNotaPorLivro(unittest.TestCase):
-    """Notas em prosa (fora do formato da casa) não pedem secções, mas toda a
-    variante do aparato tem de ter Crítica Textual. Política em bee/inspetor.py."""
+    """Notas em prosa não pedem secções, mas toda a variante do aparato tem de
+    ter Crítica Textual."""
 
     PROSA = '<p>Nota corrida, sem secções.</p>'
 
@@ -148,10 +148,9 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
         problemas = self._verificar(570, self.PROSA, ['1 a WH Treg NA28 ] b RP'])
         self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
 
-    def test_formato_da_casa_pede_as_tres_secoes(self):
-        # João 5 segue o formato da casa; João 1–4 já estão em prosa.
-        problemas = self._verificar(500, self.PROSA, capitulo='5')
-        self.assertTrue(any('secções da casa' in p for p in problemas))
+    def test_prosa_do_livro_inteiro_passa_sem_secoes(self):
+        # Desde 2026-11-23 não há capítulos fora da prosa: João 11 também.
+        self.assertEqual(self._verificar(500, self.PROSA, capitulo='11'), [])
 
     def test_joao_1_2_em_prosa_pedem_ct_so_com_variante(self):
         self.assertEqual(self._verificar(500, self.PROSA, capitulo='1'), [])
@@ -160,20 +159,42 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
         self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
 
 
-class FormatoPorCapitulo(unittest.TestCase):
-    """João 1–4 em prosa; o resto do livro segue a casa até ser convertido."""
+class FormatoUnico(unittest.TestCase):
+    """Um só formato para o livro inteiro: prosa, sem rótulos antigos nem níveis.
 
-    def test_joao_1_4_sao_prosa_e_5_em_diante_formato_da_casa(self):
-        from bee.inspetor import formato_casa_do_capitulo as f
-        self.assertFalse(f(500, 1))
-        self.assertFalse(f(500, 2))
-        self.assertFalse(f(500, 3))
-        self.assertFalse(f(500, 4))
-        self.assertTrue(f(500, 5))
-        self.assertTrue(f(500, 10))
-        self.assertFalse(f(570, 1))   # Filipenses: prosa desde sempre
-        self.assertTrue(f(None, 1))   # sem livro conhecido: regra antiga
+    Decisão de 2026-11-23: os rótulos «Análise Léxica» / «Síntese Exegética» e
+    os níveis de certeza A/B/C saíram de todas as notas.
+    """
 
+    def _problemas(self, comentario, capitulo='11'):
+        dados = {'chapters': {capitulo: [{'verse': 8, 'text': 'x',
+                                          'commentary': comentario}]}}
+        return vnc.verificar(dados, {'livro_bee': 500, 'versiculos': {}})
+
+    def test_prosa_passa_em_qualquer_capitulo(self):
+        for capitulo in ('1', '11', '21'):
+            self.assertEqual(self._problemas('<p>Nota corrida.</p>', capitulo), [])
+
+    def test_rotulo_antigo_chumba_em_qualquer_capitulo(self):
+        for capitulo in ('1', '11'):
+            problemas = self._problemas(
+                '<p><b>Análise Léxica:</b> a.</p><p>b.</p>', capitulo)
+            self.assertTrue(any('formato antigo' in p for p in problemas), problemas)
+
+    def test_sintese_exegetica_chumba(self):
+        problemas = self._problemas('<p>a.</p><p><b>Síntese Exegética:</b> b.</p>')
+        self.assertTrue(any('formato antigo' in p for p in problemas), problemas)
+
+    def test_nivel_de_certeza_chumba(self):
+        for texto in ('<p>Nível de certeza A. Nota.</p>',
+                      '<p>Nível B: nota.</p>',
+                      '<p>Texto com nível de certeza C.</p>'):
+            problemas = self._problemas(texto)
+            self.assertTrue(any('nível de certeza' in p for p in problemas), (texto, problemas))
+
+    def test_palavra_greco_latina_mista_chumba(self):
+        problemas = self._problemas('<p>O termo ἄνδra aparece aqui.</p>')
+        self.assertTrue(any('greco-latina' in p for p in problemas), problemas)
 
 
 if __name__ == '__main__':
