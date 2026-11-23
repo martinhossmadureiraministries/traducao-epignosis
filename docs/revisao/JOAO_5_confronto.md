@@ -2,6 +2,8 @@
 
 Estado: capítulo 5 já estava aprovado (23/11). Este documento confronta o texto e as notas com a base SBLGNT, o aparato e a colação CNTR, sem alterar o texto. Li os 47 versículos.
 
+**Aplicado (2026-11-23):** as notas de Crítica Textual em falta (5:6, 5:9, 5:25, 5:38, 5:40, 5:43, 5:44, 5:46, 5:47), a nota de 5:3 e de 5:4, e a sigla NIV (ver §3) foram corrigidas. Os pontos de texto (5:3 «paralíticos» e 5:33 «emissários») continuam por decidir.
+
 Os pontos estão ordenados por importância para a revisão.
 
 ---
@@ -28,7 +30,7 @@ As regras (`docs/EDITORIAL.md`) pedem «Crítica Textual» quando a colação mo
 | 5:25 | 01 omite «καὶ νῦν ἐστιν» | sem nota |
 | 5:38 | 02, 032 e P66 leem «ἔχεται» e «πιστεύεται» em lugar de «ἔχετε» e «πιστεύετε» | sem nota |
 | 5:40 | 032 e P66 leem «θέλεται» e «ἔχηται»; 05 acrescenta «αἰώνιον» | sem nota |
-| 5:43 | 02, 032 e P66 leem «λαμβάνεται» | sem nota |
+| 5:43 | 02 e 032 leem «λαμβάνεται» | sem nota |
 | 5:44 | 03, 032, P66 e P75 omitem «θεοῦ»; 01 lê «ζητοῦντες» | sem nota |
 | 5:46 | 01 lê «γεγραφεν» (perfeito) em lugar de «ἔγραψεν»; 02, 032 e P66 leem «πιστεύεται» | sem nota |
 | 5:47 | 01, 032 e P66 leem «πιστεύεται» | sem nota |

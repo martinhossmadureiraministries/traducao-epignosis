@@ -1502,7 +1502,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:19**
 
 - *Καὶ αὕτη ἐστὶν ἡ μαρτυρία*, «este é o testemunho», abre a série de depoimentos de João (vv. 19–34). *Ἀπέστειλαν* (apesteilan), «enviaram», é aoristo. *Οἱ Ἰουδαῖοι*, «os judeus», é o termo joanino para as autoridades de Jerusalém, e a BEE o conserva. *Λευίτας* (Leuitas), «levitas», são os auxiliares do culto. A pergunta *Σὺ τίς εἶ;* é direta, e a tradução usa «tu».
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:19: a base lê «*ἀπέστειλαν*» sem complemento, como NIV e RP; WH, Treg e NA28 acrescentam «*πρὸς αὐτὸν*» («a ele»). A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:19: a base lê «*ἀπέστειλαν*» sem complemento, como RP; WH, Treg e NA28 acrescentam «*πρὸς αὐτὸν*» («a ele»). A NIV segue a leitura de RP por escolha de tradução. A tradução segue a base.
 
 **1:20**
 
@@ -1535,7 +1535,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:26**
 
 - *Μέσος ὑμῶν* (mesos hymōn), «no meio de vocês»; *ἕστηκεν* (hesteken), «está de pé», é o perfeito de *ἵστημι*, uma presença firme. A imagem de «estar de pé» é a presença de quem já está no meio do povo, ainda que não seja reconhecido.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:26: WH, Treg e NA28 leem «*μέσος*» sem partícula, que NIV e RP acrescentam («*δέ*»). Em «*ἕστηκεν*», NA28 e RP leem a forma da base; WH e Treg leem «*στήκει*». A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:26: WH, Treg e NA28 leem «*μέσος*» sem partícula; RP acrescenta («*δέ*»). A NIV segue RP por escolha de tradução. Em «*ἕστηκεν*», NA28 e RP leem a forma da base; WH e Treg leem «*στήκει*». A tradução segue a base.
 
 **1:27**
 
@@ -1945,7 +1945,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:1**
 
 - *Ἔγνω* (égnō), «soube», é aoristo: o conhecimento chegou e foi tomado. *Ποιεῖ μαθητάς* (poiei mathētás), «faz discípulos», é expressão de gerar seguidores, e a tradução mantém o verbo fazer. O travessão marca que a frase continua no versículo seguinte, que corrige o que foi dito.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg, NIV e RP leem «*κύριος*» («o Senhor»). Na colação, «*κύριος*» aparece nos manuscritos 𝔓66, 𝔓75, 02, 03, 032 e 04, e nas edições do Textus Receptus KJTR, RP, ST, SR e Scrivener; 01 e 05 leem «*Ἰησοῦς*» com a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2). O testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg e RP leem «*κύριος*» («o Senhor»); a NIV segue essa leitura por escolha de tradução. Na colação, «*κύριος*» aparece nos manuscritos 𝔓66, 𝔓75, 02, 03, 032 e 04, e nas edições do Textus Receptus KJTR, RP, ST, SR e Scrivener; 01 e 05 leem «*Ἰησοῦς*» com a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2). O testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
 
 **4:2**
 
@@ -2205,17 +2205,17 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:2**
 
 - *Προβατικῇ κολυμβήθρα* (probatikē kolymbēthra), «tanque das ovelhas», dá o nome do lugar; *κολυμβήθρα* designa um tanque ou uma piscina de água. *Ἑβραϊστί* (Hebraïstí), «em hebraico», indica a língua local, que muitos entendem como aramaico. O nome *Βηθεσδά* (Bēthesdá) não tem sentido consensual, e a tradução «Betesda» transcreve-o. *πέντε στοάς* (pente stoas), «cinco pórticos», são colunatas cobertas. A descrição é de quem conhece o lugar e prepara o encontro com o doente que ali esperava há muito tempo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:2: a base lê «*Βηθεσδά*», com Treg, NIV e RP. WH e NA28 leem «*Βηθζαθά*». A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:2: a base lê «*Βηθεσδά*», com Treg e RP; a NIV segue essa leitura por escolha de tradução. WH e NA28 leem «*Βηθζαθά*». A tradução segue a base.
 
 **5:3**
 
-- *Κατέκειτο* (katekeito), «jazia», é imperfeito: um quadro contínuo, de gente deitada ali dia após dia. *ἀσθενούντων* (asthenountōn), «doentes»; *τυφλῶν* (typhlōn), «cegos»; *χωλῶν* (chōlōn), «coxos»; *ξηρῶν* (xērōn), «secos», isto é, pessoas com membros paralisados ou atrofiados. O quadro é de sofrimento coletivo, que o versículo seguinte particulariza num homem.
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:3: a base lê «*πλῆθος*» e «*ξηρῶν*», com WH, Treg e NA28. RP acrescenta «*πολύ*» depois de «*πλῆθος*», e, depois de «*ξηρῶν*», a frase «*ἐκδεχομένων τὴν τοῦ ὕδατος κίνησιν*» com o versículo 4 inteiro. A tradução segue a base.
+- *Κατέκειτο* (katekeito), «jazia», é imperfeito: um quadro contínuo, de gente deitada ali dia após dia. *ἀσθενούντων* (asthenountōn), «doentes»; *τυφλῶν* (typhlōn), «cegos»; *χωλῶν* (chōlōn), «coxos»; *ξηρῶν* (xērōn), «secos», isto é, pessoas com membros paralisados ou atrofiados; a tradução «paralíticos» é uma leitura desse sentido. O quadro é de sofrimento coletivo, que o versículo seguinte particulariza num homem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:3: a base lê «*πλῆθος*» e «*ξηρῶν*», com WH, Treg e NA28. RP, KJTR, ST e Scrivener acrescentam «*πολύ*» depois de «*πλῆθος*», e, depois de «*ξηρῶν*», a frase «*ἐκδεχομένων τὴν τοῦ ὕδατος κίνησιν*» com o versículo 4 inteiro. A tradução segue a base.
 
 **5:4**
 
 - Este versículo não está na base grega. A tradição do texto bizantino (RP) traz a explicação de que um anjo descia de tempos em tempos e agitava a água, e o primeiro que entrava ficava curado. A BEE mantém o versículo entre colchetes, como leitura tradicional, e não o usa como base de doutrina sobre anjos ou sobre a cura pela água. *ἄγγελος* (angelos), «mensageiro» ou «anjo»; *κατὰ καιρόν* (kata kairon), «de tempos em tempos»; *ταραχή* (tarachē), «agitação»; *ὑγιής* (hygiēs), «são».
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:4: o versículo não consta da base nem de WH, Treg ou NA28. Só RP o contém, como acréscimo que começa em 5:3 («*ἐκδεχομένων*…»). Por isso fica entre colchetes.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:4: o versículo não consta da base nem de WH, Treg ou NA28. RP o contém, e também KJTR, ST e Scrivener, que trazem o início do acréscimo em 5:3 («*ἐκδεχομένων*…»). Por isso fica entre colchetes.
 
 **5:5**
 
@@ -2225,6 +2225,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:6**
 
 - Jesus começa pela pergunta, e não pela ação. *κατακείμενον* (katakeimenon), «deitado»; *γνούς* (gnous), «tendo sabido»; *πολὺν ἤδη χρόνον* (polyn ēdē chronon), «já há muito tempo». A pergunta *Θέλεις ὑγιὴς γενέσθαι;* (theleis hygiēs genesthai), «queres ficar curado?», pressupõe que o homem pode ter perdido a esperança, e pede-lhe que diga o que deseja.
+- **Crítica Textual.** Na colação, 01 lê «*ἀνακείμενον*» em lugar de «*κατακείμενον*» e omite «*ἤδη*» («já»); a tradução segue a base.
 
 **5:7**
 
@@ -2238,6 +2239,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:9**
 
 - *Εὐθέως* (eutheōs), «imediatamente»; *ἦρε* (ēre), «pegou»; *περιεπάτει* (periepatei), «andava». A menção do sábado no fim do versículo é o ponto de tensão que o resto do capítulo desenvolve.
+- **Crítica Textual.** Na colação, 01 altera o início do versículo e lê «*ἠγέρθη καί*» em lugar de «*καὶ εὐθέως*»; 05 altera o começo da frase e omite «*ἐν ἐκείνῃ τῇ ἡμέρᾳ*» («naquele dia»). A tradução segue a base.
 
 **5:10**
 
@@ -2310,7 +2312,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:25**
 
 - *ἔρχεται ὥρα καὶ νῦν ἐστιν* (erchetai hōra kai nyn estin), «vem a hora, e já é agora». Há tensão entre o agora e o futuro: a voz do Filho já chama, e o efeito é a vida.
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:25: a base lê «*ἀκούσουσιν*» e «*ζήσουσιν*», com WH, Treg e NA28. RP lê «*ἀκούσονται*» e «*ζήσονται*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:25: a base lê «*ἀκούσουσιν*» e «*ζήσουσιν*», com WH, Treg e NA28. RP lê «*ἀκούσονται*» e «*ζήσονται*». Na colação, 01 omite «*καὶ νῦν ἐστιν*» («e já é agora»).
 
 **5:26**
 
@@ -2370,7 +2372,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:38**
 
 - *λόγον* (logon), «palavra»; *μένοντα* (menonta), «permanecendo»; *ἀπέστειλεν* (apesteilen), «enviou». A palavra do Pai não permanece nos que rejeitam o Filho.
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:38: a base lê «*ἐν ὑμῖν μένοντα*», com WH, Treg e NA28. RP lê «*μένοντα ἐν ὑμῖν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:38: a base lê «*ἐν ὑμῖν μένοντα*», com WH, Treg e NA28. RP lê «*μένοντα ἐν ὑμῖν*». Na colação, 02, 032 e P66 leem «*ἔχεται*» e «*πιστεύεται*» em lugar de «*ἔχετε*» e «*πιστεύετε*».
 
 **5:39**
 
@@ -2379,6 +2381,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:40**
 
 - *οὐ θέλετε* (ou thelete), «não querem»; *ἔχητε* (echēte), «tenham». A dificuldade não está na falta de textos, mas na falta de vontade de vir a Jesus.
+- **Crítica Textual.** Na colação, 032 e P66 leem «*θέλεται*» e «*ἔχηται*» em lugar de «*θέλετε*» e «*ἔχητε*»; 05 acrescenta «*αἰώνιον*» («eterna»). A tradução segue a base.
 
 **5:41**
 
@@ -2391,10 +2394,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:43**
 
 - *ἐλήλυθα* (elēlytha), «vim», com efeito de estar aqui; *ἰδίῳ* (idiō), «próprio»; *λήμψεσθε* (lēmpsesthe), «recebereis». Quem vem em nome próprio é recebido com mais facilidade. A crítica é à procura da honra própria.
+- **Crítica Textual.** Na colação, 02 e 032 leem «*λαμβάνεται*» em lugar de «*λαμβάνετε*»; a tradução segue a base.
 
 **5:44**
 
 - *πιστεῦσαι* (pisteusai), «crer»; *δόξαν παρʼ ἀλλήλων* (doxan par' allēlōn), «glória uns dos outros»; *μόνου θεοῦ* (monou theou), «único Deus». A busca da glória humana impede a fé. A glória que vem de Deus é a fonte correta.
+- **Crítica Textual.** Na colação, 03, 032, P66 e P75 omitem «*θεοῦ*» em «*τοῦ μόνου θεοῦ*»; 01 lê «*ζητοῦντες*» em lugar de «*ζητεῖτε*». A tradução segue a base.
 
 **5:45**
 
@@ -2403,10 +2408,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:46**
 
 - *ἐπιστεύετε* (episteuete), «creriam», condicional da frase; *ἔγραψεν* (egrapsen), «escreveu». Moisés escreveu a respeito de Jesus, e a fé em Moisés devia levar à fé em Jesus.
+- **Crítica Textual.** Na colação, 01 lê «*γεγραφεν*» (perfeito) em lugar de «*ἔγραψεν*» (aoristo); 02, 032 e P66 leem «*ἐπιστεύεται*» em lugar de «*ἐπιστεύετε*». A tradução segue a base.
 
 **5:47**
 
 - *γράμμασιν* (grammasin), «escritos»; *ῥήμασιν* (rhēmasin), «palavras». O argumento termina com uma pergunta: quem não crê no que está escrito não crerá nas palavras vivas de Jesus.
+- **Crítica Textual.** Na colação, 01, 032 e P66 leem «*πιστεύεται*» em lugar de «*πιστεύετε*»; a tradução segue a base.
 
 ### Notas do capítulo 6
 
