@@ -105,7 +105,7 @@ WH, Treg, NA28 e SBLGNT leem «μονογενὴς θεὸς» («Deus unigénit
 
 ### 5.2 O que dizem os testemunhos (colação)
 
-- **Leem «θεός»:** 01, 03, 04, **P66** e **P75**. Os papiros P66 e P75 são os mais antigos testemunhos de João que temos (início do século III). A nota atual não os menciona.
+- **Leem «θεός»:** 01, 03, 04, **P66** e **P75**. Os papiros P66 e P75 estão entre os testemunhos mais antigos de João (por volta dos anos 200). A nota atual não os menciona.
 - **Leem «υἱός»:** 02, 032, KJTR, ST, Scrivener e o RP.
 
 O aparato da NET reconhece que o apoio externo a «μονογενὴς θεός» é forte: [NET, nota sobre João 1:18](https://classic.net.bible.org/verse.php?book=john&chapter=1&search=John+1%3A18&verse=18). A UBS, na sua análise, afirma que «P66 e P75 leem θεός, e o apoio externo a esta leitura ficou notavelmente reforçado» ([UBS, ed. 1998, citada em BibleQ](https://bibleq.net/answer/1399/)).
