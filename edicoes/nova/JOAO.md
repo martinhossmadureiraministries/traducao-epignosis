@@ -6,7 +6,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | rascunho | 51 |
+| 1 | aprovado | 51 |
 | 2 | rascunho | 25 |
 | 3 | rascunho | 36 |
 | 4 | rascunho | 54 |
