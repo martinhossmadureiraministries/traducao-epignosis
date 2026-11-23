@@ -279,8 +279,8 @@
       },
       {
         "verse": 4,
-        "text": "Jesus disse-lhe: «Mulher, que temos nós em comum? A minha hora ainda não chegou.»",
-        "commentary": "<p><i>Τί ἐμοὶ καὶ σοί</i> (ti emoi kai soi), «que temos nós em comum?», é fórmula idiomática que separa os campos. <i>Γύναι</i> (gynai), «mulher», é o vocativo usado por Jesus também em 19:26; no português atual soa seco, mas não é grosseiro no grego. <i>Ἡ ὥρα μου</i>, «a minha hora», é a hora da glória, que o evangelho repete (cf. 7:30; 12:23; 17:1).</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: WH, Treg e NA28 leem «<i>καὶ</i>» no início da fala; RP omite-o. A tradução segue a base.</p>"
+        "text": "Jesus disse-lhe: «Mulher, o que há entre mim e ti? A minha hora ainda não chegou.»",
+        "commentary": "<p><i>Τί ἐμοὶ καὶ σοί</i> (ti emoi kai soi), «o que há entre mim e ti?», é fórmula idiomática de distância: pergunta o que há entre os dois, e não o que partilham. <i>Γύναι</i> (gynai), «mulher», é o vocativo usado por Jesus também em 19:26; no português atual soa seco, mas não é grosseiro no grego. <i>Ἡ ὥρα μου</i>, «a minha hora», é a hora da glória, que o evangelho repete (cf. 7:30; 12:23; 17:1).</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: WH, Treg e NA28 leem «<i>καὶ</i>» no início da fala; RP, KJTR, ST, 01 e P75 omitem-no. A tradução segue a base.</p>"
       },
       {
         "verse": 5,
@@ -309,7 +309,7 @@
       },
       {
         "verse": 10,
-        "text": "e disse-lhe: «Toda a pessoa serve primeiro o vinho bom e, quando já estão embriagados, o inferior. Tu, porém, guardaste o vinho bom até agora.»",
+        "text": "e disse-lhe: «Toda a pessoa serve primeiro o bom vinho e, quando já estão embriagados, o inferior. Tu, porém, guardaste o bom vinho até agora.»",
         "commentary": "<p><i>Πᾶς ἄνθρωπος</i> (pas anthrōpos), «toda a pessoa», apresenta um costume geral, e não uma regra religiosa. <i>Μεθυσθῶσιν</i> (methysthōsin), «embriagarem-se», é subjuntivo com sujeito indefinido. <i>Τετήρηκας</i> (tetērēkas), «guardaste», é perfeito: o vinho bom foi guardado até agora.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:10: WH e NA28 leem «<i>μεθυσθῶσιν</i>» sem mais nada; Treg e RP acrescentam «<i>τότε</i>» («então»). A tradução segue a base; a palavra não muda o sentido.</p>"
       },
       {
@@ -379,8 +379,8 @@
       },
       {
         "verse": 24,
-        "text": "Mas o próprio Jesus não se confiava a eles, porque conhecia a todos,",
-        "commentary": "<p><i>Αὐτὸς δὲ Ἰησοῦς</i>, «mas o próprio Jesus», dá o contraste com os que creram. <i>Ἐπίστευεν αὑτὸν αὐτοῖς</i>, «não se confiava a eles», é o verbo de 2:23 com reflexivo. O infinitivo <i>γινώσκειν πάντας</i>, «conhecia a todos», dá a causa.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:24: WH, Treg e NA28 leem «<i>αὐτὸς δὲ Ἰησοῦς</i>» sem artigo; RP acrescenta o artigo «<i>ὁ</i>». Em «<i>αὑτὸν</i>», a base lê o reflexivo com WH; Treg e NA28 leem «<i>αὐτὸν</i>», e RP lê «<i>ἑαυτὸν</i>». A tradução segue a base e dá o sentido de confiar-se, que vale para as três formas.</p>"
+        "text": "Mas o próprio Jesus não se fiava neles, porque conhecia a todos,",
+        "commentary": "<p><i>Αὐτὸς δὲ Ἰησοῦς</i>, «mas o próprio Jesus», dá o contraste com os que creram. <i>Ἐπίστευεν αὑτὸν αὐτοῖς</i>, «não se fiava neles», é o verbo de 2:23 com reflexivo. O infinitivo <i>γινώσκειν πάντας</i>, «conhecia a todos», dá a causa.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:24: WH, Treg e NA28 leem «<i>αὐτὸς δὲ Ἰησοῦς</i>» sem artigo; RP acrescenta o artigo «<i>ὁ</i>». Em «<i>αὑτὸν</i>», a base lê o reflexivo com WH; Treg e NA28 leem «<i>αὐτὸν</i>», e RP lê «<i>ἑαυτὸν</i>». A tradução segue a base e dá o sentido de confiar-se, que vale para as três formas.</p>"
       },
       {
         "verse": 25,
@@ -4352,6 +4352,15 @@
       "model": "aprovação do responsável 2026-11-24 (sem IA no workflow)",
       "generated_at_utc": "2026-11-24T00:00:00+00:00",
       "nota": "capítulo 1 aprovado pelo responsável"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 25,
+      "provider": "agente",
+      "model": "aprovação do responsável 2026-11-24 (sem IA no workflow)",
+      "generated_at_utc": "2026-11-24T00:00:00+00:00",
+      "nota": "capítulo 2 aprovado pelo responsável após alterações em 2:4 (tradução literal e aparato de καί), 2:10 (o bom vinho) e 2:24 (não se fiava neles); 2:19 sem alteração"
     }
   ],
   "sources": {
@@ -4417,8 +4426,8 @@
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "rascunho",
-        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Continua RASCUNHO até leitura e aprovação do responsável; revisão especializada pendente."
+        "status": "aprovado",
+        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Aprovado pelo responsável em 2026-11-24, após as alterações de 2:4, 2:10 e 2:24; revisão especializada pendente."
       },
       {
         "chapter": 3,

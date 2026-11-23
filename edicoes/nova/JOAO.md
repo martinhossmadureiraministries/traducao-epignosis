@@ -7,7 +7,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | Capítulo | Estado | Versículos |
 |---|---|---|
 | 1 | aprovado | 51 |
-| 2 | rascunho | 25 |
+| 2 | aprovado | 25 |
 | 3 | rascunho | 36 |
 | 4 | rascunho | 54 |
 | 5 | aprovado | 47 |
@@ -136,7 +136,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **3** Quando faltou vinho, a mãe de Jesus disse-lhe: «Não têm vinho.»
 
-**4** Jesus disse-lhe: «Mulher, que temos nós em comum? A minha hora ainda não chegou.»
+**4** Jesus disse-lhe: «Mulher, o que há entre mim e ti? A minha hora ainda não chegou.»
 
 **5** A mãe dele disse aos serventes: «Façam o que ele disser a vocês.»
 
@@ -148,7 +148,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **9** Quando o encarregado do banquete provou a água transformada em vinho — sem saber de onde vinha, mas os serventes que tinham tirado a água sabiam —, chamou o noivo,
 
-**10** e disse-lhe: «Toda a pessoa serve primeiro o vinho bom e, quando já estão embriagados, o inferior. Tu, porém, guardaste o vinho bom até agora.»
+**10** e disse-lhe: «Toda a pessoa serve primeiro o bom vinho e, quando já estão embriagados, o inferior. Tu, porém, guardaste o bom vinho até agora.»
 
 **11** Foi este o primeiro dos sinais de Jesus, feito em Caná da Galileia. Assim manifestou a sua glória, e os discípulos creram nele.
 
@@ -176,7 +176,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **23** Quando estava em Jerusalém, durante a festa da Páscoa, muitos creram no seu nome, ao verem os sinais que ele fazia.
 
-**24** Mas o próprio Jesus não se confiava a eles, porque conhecia a todos,
+**24** Mas o próprio Jesus não se fiava neles, porque conhecia a todos,
 
 **25** e não precisava de que alguém desse testemunho a respeito do ser humano, pois ele mesmo sabia o que estava no ser humano.
 
@@ -1672,8 +1672,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **2:4**
 
-- *Τί ἐμοὶ καὶ σοί* (ti emoi kai soi), «que temos nós em comum?», é fórmula idiomática que separa os campos. *Γύναι* (gynai), «mulher», é o vocativo usado por Jesus também em 19:26; no português atual soa seco, mas não é grosseiro no grego. *Ἡ ὥρα μου*, «a minha hora», é a hora da glória, que o evangelho repete (cf. 7:30; 12:23; 17:1).
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: WH, Treg e NA28 leem «*καὶ*» no início da fala; RP omite-o. A tradução segue a base.
+- *Τί ἐμοὶ καὶ σοί* (ti emoi kai soi), «o que há entre mim e ti?», é fórmula idiomática de distância: pergunta o que há entre os dois, e não o que partilham. *Γύναι* (gynai), «mulher», é o vocativo usado por Jesus também em 19:26; no português atual soa seco, mas não é grosseiro no grego. *Ἡ ὥρα μου*, «a minha hora», é a hora da glória, que o evangelho repete (cf. 7:30; 12:23; 17:1).
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: WH, Treg e NA28 leem «*καὶ*» no início da fala; RP, KJTR, ST, 01 e P75 omitem-no. A tradução segue a base.
 
 **2:5**
 
@@ -1762,7 +1762,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **2:24**
 
-- *Αὐτὸς δὲ Ἰησοῦς*, «mas o próprio Jesus», dá o contraste com os que creram. *Ἐπίστευεν αὑτὸν αὐτοῖς*, «não se confiava a eles», é o verbo de 2:23 com reflexivo. O infinitivo *γινώσκειν πάντας*, «conhecia a todos», dá a causa.
+- *Αὐτὸς δὲ Ἰησοῦς*, «mas o próprio Jesus», dá o contraste com os que creram. *Ἐπίστευεν αὑτὸν αὐτοῖς*, «não se fiava neles», é o verbo de 2:23 com reflexivo. O infinitivo *γινώσκειν πάντας*, «conhecia a todos», dá a causa.
 - **Crítica Textual.** Aparato de edições SBLGNT, 2:24: WH, Treg e NA28 leem «*αὐτὸς δὲ Ἰησοῦς*» sem artigo; RP acrescenta o artigo «*ὁ*». Em «*αὑτὸν*», a base lê o reflexivo com WH; Treg e NA28 leem «*αὐτὸν*», e RP lê «*ἑαυτὸν*». A tradução segue a base e dá o sentido de confiar-se, que vale para as três formas.
 
 **2:25**

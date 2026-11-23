@@ -1,6 +1,6 @@
 # João 2 — revisão (2026-11-24)
 
-Estado: capítulo 2 em `rascunho`. O capítulo 1 foi aprovado pelo responsável em 2026-11-24.
+Estado: capítulo 2 aprovado pelo responsável em 2026-11-24, após as alterações abaixo. O capítulo 1 foi aprovado no mesmo dia.
 
 Este documento responde a quatro perguntas e propõe opções. Nenhum texto do capítulo 2 foi alterado; cada proposta aguarda a sua decisão.
 
@@ -70,3 +70,12 @@ O texto atual diz **«Destruam este santuário, e em três dias eu o levantarei�
 4. **2:24:** A («não se fiava neles», recomendada) ou B?
 
 Depois da sua resposta, aplico as alterações ao capítulo 2, regenero o `JOAO.md` e volto a correr as verificações.
+
+---
+
+## Decisões registadas (2026-11-24)
+
+- **2:4:** «Mulher, o que há entre mim e ti?» (tradução literal de *Τί ἐμοὶ καὶ σοί*). A nota passa a dizer que RP, KJTR, ST, 01 e P75 omitem «καί».
+- **2:10:** «o bom vinho» nos dois lugares.
+- **2:24:** A, «Mas o próprio Jesus não se fiava neles, porque conhecia a todos,».
+- **2:19:** texto sem alteração. A nota («muitos leem como desafio») não foi alterada, por falta de verificação.
