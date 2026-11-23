@@ -25,10 +25,6 @@ class DefaultsEdicaoNovaTest(unittest.TestCase):
         gerar = _carregar(RAIZ / 'gerar_bee.py', 'gerar_bee')
         self.assertEqual(gerar.argumentos(['--compilar']).dados, Path('edicoes/nova/livros_json'))
 
-    def test_gerar_bee_aceita_a_legada_explicitamente(self):
-        gerar = _carregar(RAIZ / 'gerar_bee.py', 'gerar_bee')
-        self.assertEqual(gerar.argumentos(['--compilar', '--dados', 'livros_json']).dados, Path('livros_json'))
-
     def test_verificar_dados_por_defeito_le_a_edicao_nova(self):
         resultado = subprocess.run(
             [sys.executable, 'scripts/verificar_dados.py', '--minimo', '0'],

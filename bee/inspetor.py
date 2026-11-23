@@ -108,8 +108,8 @@ LIVROS_FORMATO_CASA = frozenset({500, 600, 630, 640, 700, 710, 720})
 # Capítulos já reescritos no formato das cartas e dos livros do AT aprovados
 # (2026-11-23): nota em prosa, sem rótulos, e Crítica Textual só quando há
 # variante no aparato. O resto do livro continua no formato da casa até ser
-# convertido capítulo a capítulo. João 1–2 são o primeiro bloco.
-CAPITULOS_EM_PROSA: dict[int, frozenset[int]] = {500: frozenset({1, 2})}
+# convertido capítulo a capítulo. João 1–2 são o primeiro bloco; 3–4, o segundo.
+CAPITULOS_EM_PROSA: dict[int, frozenset[int]] = {500: frozenset({1, 2, 3, 4})}
 
 
 def formato_casa_do_capitulo(livro: int | None, capitulo: int) -> bool:

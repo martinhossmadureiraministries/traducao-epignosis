@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifica a integridade dos dados versionados em `livros_json/`.
+"""Verifica a integridade dos dados versionados em `edicoes/nova/livros_json/`.
 
 Corre sem rede e sem chaves. Sai com código 1 se encontrar um problema que
 possa fazer desaparecer versículos já produzidos (a causa da execução #12).

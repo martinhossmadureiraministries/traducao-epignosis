@@ -149,8 +149,8 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
         self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
 
     def test_formato_da_casa_pede_as_tres_secoes(self):
-        # João 3 segue o formato da casa; João 1–2 já estão em prosa.
-        problemas = self._verificar(500, self.PROSA, capitulo='3')
+        # João 5 segue o formato da casa; João 1–4 já estão em prosa.
+        problemas = self._verificar(500, self.PROSA, capitulo='5')
         self.assertTrue(any('secções da casa' in p for p in problemas))
 
     def test_joao_1_2_em_prosa_pedem_ct_so_com_variante(self):
@@ -161,13 +161,15 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
 
 
 class FormatoPorCapitulo(unittest.TestCase):
-    """João 1–2 em prosa (2026-11-23); o resto do livro segue a casa."""
+    """João 1–4 em prosa; o resto do livro segue a casa até ser convertido."""
 
-    def test_joao_1_2_sao_prosa_e_3_em_diante_formato_da_casa(self):
+    def test_joao_1_4_sao_prosa_e_5_em_diante_formato_da_casa(self):
         from bee.inspetor import formato_casa_do_capitulo as f
         self.assertFalse(f(500, 1))
         self.assertFalse(f(500, 2))
-        self.assertTrue(f(500, 3))
+        self.assertFalse(f(500, 3))
+        self.assertFalse(f(500, 4))
+        self.assertTrue(f(500, 5))
         self.assertTrue(f(500, 10))
         self.assertFalse(f(570, 1))   # Filipenses: prosa desde sempre
         self.assertTrue(f(None, 1))   # sem livro conhecido: regra antiga

@@ -246,7 +246,7 @@ nem «todas as edições» quando se consultaram seis. E, acima de tudo, **a not
 pode contradizer o versículo**: se a nota regista que a base não tem uma palavra,
 o texto não a traduz. A passagem de lapidação de 2 Tessalonicenses — verso a
 verso, com a regra reutilizável de cada correção — está em
-[OFICINA_TRADUCAO.md](OFICINA_TRADUCAO.md).
+`OFICINA_TRADUCAO.md`.
 
 **Proveniência.** Cada livro declara em `bibliography` as fontes efetivamente
 consultadas, com revisão (commit), URL, licença e o que se consultou nelas; e em
