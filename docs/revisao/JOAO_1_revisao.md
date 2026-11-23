@@ -64,9 +64,20 @@ Um estudo de Paul Wyns, citando K. Aland, sustenta que o ponto antes de «ὃ γ
 
 A ARC, a NVI-PT e a NTLH seguem a Opção 1 no v. 3 e começam o v. 4 com «Nele estava a vida». Não encontrei nenhuma das três a seguir a NA28.
 
-### 2.5 Proposta
+### 2.5 Comparação com Hebreus 11:3
 
-Manter a Opção 1, que é a de base e a das três versões brasileiras. Acrescentar à nota de 1:3 a leitura da NA28 (Opção 2), como alternativa substantiva, e explicar em uma frase o efeito no sentido. Não é preciso um parágrafo de Crítica Textual, porque não há variante de manuscrito.
+A dificuldade de português é parecida com a de Hebreus 11:3. A NVI-PT traduz: «Pela fé entendemos que o universo foi formado pela palavra de Deus, de modo que aquilo que se vê não foi feito do que é visível». O grego é εἰς τὸ μὴ **ἐκ** φαινομένων τὸ βλεπόμενον γεγονέναι: a preposição **ἐκ** («de», «a partir de») está no grego.
+
+A semelhança está na frase em português: «não foi feito do que é visível» e «nada foi feito do que existe» têm a mesma forma. Em português, «feito do que» soa a «feito a partir de». Em Hebreus esse sentido está no grego (ἐκ). Em João 1:3 não está: o grego diz ὃ γέγονεν, «o que veio a existir», um relativo sem preposição. O leitor pode, por isso, entender «do que existe» como «a partir do que existe», e Hebreus 11:3 é o texto que esse leitor associa à ideia de criação a partir do nada. O sentido de João é outro: nada veio a existir sem ele.
+
+### 2.6 Proposta
+
+Manter a Opção 1, que é a de base e a das três versões brasileiras. Trocar a frase final por uma que não sugira origem material:
+
+- **A (recomendada):** «Todas as coisas foram feitas por meio dele, e sem ele nem uma só coisa veio a existir.»
+- **B:** «…e sem ele não foi feita nem uma só coisa das que existem.»
+
+A nota de 1:3 deve explicar que «ὃ γέγονεν» repete e reforça a negação, e que o grego não tem preposição de origem, ao contrário de Hebreus 11:3 (ἐκ φαινομένων). Acrescentar também a leitura da NA28 (Opção 2), como alternativa substantiva. Não é preciso um parágrafo de Crítica Textual, porque não há variante de manuscrito.
 
 ---
 
