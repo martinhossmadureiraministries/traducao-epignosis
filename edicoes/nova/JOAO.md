@@ -12,7 +12,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 4 | aprovado | 54 |
 | 5 | aprovado | 47 |
 | 6 | aprovado | 71 |
-| 7 | rascunho | 53 |
+| 7 | aprovado | 53 |
 | 8 | rascunho | 59 |
 | 9 | rascunho | 41 |
 | 10 | rascunho | 42 |
@@ -762,7 +762,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **24** Por isso eu disse a vocês que morreriam nos seus pecados; pois, se não crerem que eu sou, morrerão nos seus pecados.
 
-**25** Eles perguntaram: «Quem és tu?» Jesus respondeu: «Desde o princípio, sou aquilo que lhes digo.»
+**25** Eles perguntaram: «Quem és tu?» Jesus respondeu: «Desde o princípio, sou o que digo a vocês.»
 
 **26** Tenho muito a dizer e a julgar sobre vocês; mas aquele que me enviou é verdadeiro, e eu digo ao mundo o que ouvi dele.
 
@@ -800,7 +800,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **43** Por que não compreendem a minha linguagem? Porque não conseguem ouvir a minha palavra.
 
-**44** Vocês são do pai, o diabo, e querem fazer os desejos do pai de vocês. Ele foi homicida desde o princípio e não se manteve na verdade, porque nele não há verdade. Quando diz a mentira, fala do que é seu, pois é mentiroso e pai da mentira.
+**44** Vocês são do diabo, que é o pai de vocês, e querem fazer os desejos dele. Ele foi homicida desde o princípio e não ficou firme na verdade, porque nele não há verdade. Quando diz a mentira, fala do que é dele, porque é mentiroso e pai da mentira.
 
 **45** Mas, porque digo a verdade, vocês não me creem.
 
@@ -2718,6 +2718,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:64**
 
 - *ἐξ ἀρχῆς* (ex archēs), «desde o princípio»; *ᾔδει* (ēdei), «sabia»; *παραδώσων* (paradōsōn), «que entregaria». O narrador anuncia a traição antes de falar de Judas.
+- **Crítica Textual.** Na colação, 01 lê «*ὁ σωτήρ*» em lugar de «*ὁ Ἰησοῦς*», «*ἀπ᾽ ἀρχῆς*» em lugar de «*ἐξ ἀρχῆς*», «*οἱ πιστεύοντες*» em lugar de «*οἳ οὐ πιστεύουσιν*» e «*καὶ ἦν ὁ μέλλων αὐτὸν παραδιδόναι*» em lugar de «*καὶ τίς ἐστιν ὁ παραδώσων αὐτόν*».
 
 **6:65**
 
@@ -2766,7 +2767,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:3**
 
 - *ἀδελφοί* (adelphoi), «irmãos», são parentes de Jesus que não são discípulos (cf. 7:5). *μετάβηθι* (metabēthi), «sai, muda-te»; *θεωρήσουσιν* (theōrēsousin), «verão»; *ἔργα* (erga), «obras». Os irmãos falam como quem propõe uma exposição pública: pedem uma demonstração, não uma adesão.
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*». A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*», e a NIV lê «*τὰ ἔργα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*». A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*», ; a NIV segue «*τὰ ἔργα*» por escolha de tradução.
 
 **7:4**
 
@@ -2776,19 +2777,22 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:5**
 
 - *ἐπίστευον εἰς αὐτόν* (episteuon eis auton), «criam nele». O imperfeito mostra uma atitude prolongada, e a construção com «*εἰς*» indica confiança, não só assentimento. O narrador explica o convite: a família de Jesus não confia nele.
+- **Crítica Textual.** Na colação, 05 lê «*οἶδε*» em lugar de «*οὐδέ*», «*ἐπίστευσαν*» em lugar de «*ἐπίστευον*» e acrescenta «*τότε*».
 
 **7:6**
 
 - *καιρός* (kairos), «tempo oportuno, momento certo»; *πάρεστιν* (parestin), «está presente»; *ἕτοιμος* (hetoimos), «pronto, disponível». Jesus distingue o tempo que o Pai marca do tempo que os irmãos podem escolher.
+- **Crítica Textual.** Na colação, 01, 032 e 05 omitem «*οὖν*»; 01 omite «*ὁ*» e lê «*οὔ*» em lugar de «*οὔπω*»; 032 lê «*οὐδέπω*» em lugar de «*οὔπω*».
 
 **7:7**
 
 - *μισεῖν* (misein), «odiar»; *μαρτυρῶ* (martyrō), «dou testemunho»; *πονηρά* (ponēra), «más, malignas». O ódio do mundo é provocado pelo testemunho de Jesus. Os irmãos não são alvo desse ódio porque estão do lado do mundo.
+- **Crítica Textual.** Na colação, 01 omite «*ἐγὼ*» e «*περὶ αὐτοῦ*» e desloca «*ὁ κόσμος*».
 
 **7:8**
 
 - *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH, RP e a NIV dizem «ainda não». A frase parece contradizer o versículo 10, onde Jesus sobe depois. A nota não resolve a contradição: o texto distingue o tempo de Jesus do tempo dos irmãos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH, a NIV e RP leem «*οὔπω*» («ainda não»). A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» depois de «*ἑορτήν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH e RP leem «*οὔπω*» («ainda não»), e a NIV segue essa leitura por escolha de tradução. A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» depois de «*ἑορτήν*».
 
 **7:9**
 
@@ -2831,10 +2835,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:17**
 
 - *θέλῃ* (thelēi), «quiser»; *γνώσεται* (gnōsetai), «saberá, reconhecerá»; *ἀπʼ ἐμαυτοῦ* (ap' emautou), «por mim mesmo, por iniciativa própria» (cf. 5:19). Princípio de conhecimento pela prática: a disposição de fazer a vontade de Deus é o que permite reconhecer a origem do ensino.
+- **Crítica Textual.** Na colação, 032 omite «*θέλῃ*» e lê «*ποιῇ*» em lugar de «*ποιεῖν*»; 05 e P66 omitem «*τοῦ*»; P75 omite «*ποιεῖν*».
 
 **7:18**
 
 - *ἰδίαν* (idian), «própria»; *ἀληθής* (alēthēs), «verdadeiro»; *ἀδικία* (adikia), «injustiça, falta de retidão». Critério de verdade: quem busca a glória de quem o enviou não tem interesse próprio a servir.
+- **Crítica Textual.** Na colação, 01 lê «*ζητι καὶ*» em lugar de «*ζητεῖ*» e omite «*δὲ*»; P75 omite «*τὴν δόξαν*».
 
 **7:19**
 
@@ -2849,10 +2855,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:21**
 
 - *ἓν ἔργον* (hen ergon), «uma obra»; *θαυμάζετε* (thaumazete), «admiram-se» (cf. 5:20). A «obra» é a cura de 5. Jesus volta ao episódio de Betesda.
+- **Crítica Textual.** Na colação, 032 e 05 leem «*θαυμάζεται*» em lugar de «*θαυμάζετε*», e 05 omite «*αὐτοῖς*».
 
 **7:22**
 
 - *περιτομήν* (peritomēn), «circuncisão»; *ἐκ τῶν πατέρων* (ek tōn paterōn), «dos patriarcas»; *περιτέμνετε* (peritemnete), «circuncidam». O argumento é de precedente: circuncidar no sábado é admitido, e o texto usa isso para criticar a reação à cura no sábado.
+- **Crítica Textual.** Na colação, 01 lê «*ὁ*» em lugar de «*διὰ τοῦτο*» e acrescenta «*ὅτι*»; 05 lê «*ἔδωκεν ὑμῖν*» em lugar de «*δέδωκεν ὑμῖν*».
 
 **7:23**
 
@@ -2867,6 +2875,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:25**
 
 - *Ἱεροσολυμιτῶν* (Hierosolymitōn), «habitantes de Jerusalém»; *ζητοῦσιν ἀποκτεῖναι* (zētousin apokteinai), «procuram matar». Os habitantes de Jerusalém conhecem a conspiração, que a multidão de peregrinos ignorava.
+- **Crítica Textual.** Na colação, 01 omite «*ἐκ*».
 
 **7:26**
 
@@ -2876,6 +2885,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:27**
 
 - *πόθεν* (pothen), «de onde»; *ὅταν ἔρχηται* (hotan erchētai), «quando vier». O texto não identifica a fonte desta crença sobre a origem oculta do Messias, e a objeção dos habitantes assenta nela.
+- **Crítica Textual.** Na colação, 01 lê uma frase com «*πλείονα σημεῖα ποιήσει*», semelhante a 7:31, em lugar de «*ἔρχηται*» e «*οὐδεὶς*»; P66 lê «*ἔλθῃ*» em lugar de «*ἔρχηται*».
 
 **7:28**
 
@@ -2884,10 +2894,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:29**
 
 - *παρʼ αὐτοῦ* (par' autou), «de junto dele»; *ἀπέστειλεν* (apesteilen), «enviou». A origem e o envio ligam Jesus e o Pai. A origem que lhe atribuem não basta para o conhecer.
+- **Crítica Textual.** Na colação, 01, 05 e P66 leem «*ἀπέσταλκεν*» em lugar de «*ἀπέστειλεν*» e acrescentam «*δὲ*»; KJTR, ST e Scrivener acrescentam «*δὲ*»; 01 lê «*αὐτῷ*» em lugar de «*αὐτοῦ*».
 
 **7:30**
 
 - *πιάσαι* (piasai), «prender»; *ἐπέβαλεν* (epeballen), «pôs, lançou»; *ὥρα* (hōra), «hora». A «hora» é o momento fixado pelo Pai, como em 2:4. Por isso ninguém o prende.
+- **Crítica Textual.** Na colação, 01 acrescenta «*οἱ δὲ*» e omite «*οὖν*»; P66 lê «*οὐδέπω*» em lugar de «*οὔπω*».
 
 **7:31**
 
@@ -2912,6 +2924,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:35**
 
 - *διασπορά* (diasporā), «dispersão, comunidade judaica fora da terra»; *Ἑλλήνων* (Hellēnōn), «gregos, pessoas de língua e cultura gregas». Os interlocutores leem mal as palavras de Jesus e imaginam uma missão entre os gregos, ironia que o texto deixa em aberto.
+- **Crítica Textual.** Na colação, 01 omite «*πρὸς ἑαυτούς*» e «*ἡμεῖς*»; P66 lê «*εἶπαν*» em lugar de «*εἶπον*».
 
 **7:36**
 
@@ -2921,6 +2934,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:37**
 
 - *ἐσχάτῃ ἡμέρᾳ* (eschatēi hēmerāi), «último dia»; *διψᾷ* (dipsa), «tem sede»; *ἐρχέσθω* (erchesthō), «venha»; *πινέτω* (pinetō), «beba». O texto não descreve o rito da festa a que alude, e a nota não o supõe. O convite é público e universal, feito no último e grande dia da festa.
+- **Crítica Textual.** Na colação, 01 e 05 omitem «*πρὸς με*»; 032 omite «*τῇ μεγάλῃ*».
 
 **7:38**
 
@@ -2959,6 +2973,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:45**
 
 - *ἠγάγετε* (ēgagete), «trouxestes». A cena passa para o conselho das autoridades.
+- **Crítica Textual.** Na colação, P66 lê «*λέγουσιν*» em lugar de «*εἶπον*», e 032 e P66 leem «*ἠγάγεται*» em lugar de «*ἠγάγετε*».
 
 **7:46**
 
@@ -2968,6 +2983,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:47**
 
 - *πεπλάνησθε* (peplanēsthe), «deixaram-se enganar». Os fariseus culpam os guardas por terem ficado impressionados.
+- **Crítica Textual.** Na colação, 01 e 05 omitem «*οὖν*» e leem «*πεπλανῆσθαι*» em lugar de «*πεπλανῆσθε*».
 
 **7:48**
 
@@ -3106,7 +3122,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **8:25**
 
-- *Τὴν ἀρχὴν* (tēn archēn), «desde o princípio, em absoluto»; *ὅ τι* (ho ti), «o que». A frase grega é elíptica e tem várias leituras; a tradução escolhe «sou aquilo que lhes digo». A resposta foge à pergunta direta e reafirma a sua palavra como revelação.
+- *Τὴν ἀρχὴν* (tēn archēn), «desde o princípio, em absoluto»; *ὅ τι* (ho ti), «o que». A frase grega é elíptica e tem várias leituras; a tradução escolhe «sou o que digo a vocês», com o sujeito em Jesus e o «o que» a referir-se à sua própria palavra. A resposta foge à pergunta direta e reafirma a sua palavra como revelação.
 - **Crítica Textual.** Aparato de edições SBLGNT, 8:25: a base lê «*εἶπεν*», com WH, Treg e NA28; RP lê «*Καὶ εἶπεν*». A base lê «*ὅ τι*», com Treg, NA28 e RP; WH lê «*ὅτι*».
 
 **8:26**
@@ -3192,7 +3208,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **8:44**
 
-- *ἀνθρωποκτόνος* (anthrōpoktonos), «homicida»; *ἔστηκεν* (hestēken), «manteve-se, ficou de pé»; *ψεῦδος* (pseudos), «mentira»; *ἰδίων* (idiōn), «do que é seu». O texto é muito duro, e a tradução não o suaviza. A acusação é a mais forte do Evangelho contra adversários: liga a mentira e o homicídio ao diabo, que o texto não descreve.
+- *ἀνθρωποκτόνος* (anthrōpoktonos), «homicida»; *ἔστηκεν* (hestēken), «ficou firme»; *ψεῦδος* (pseudos), «mentira»; *ἰδίων* (idiōn), «do que é seu». O texto é muito duro, e a tradução não o suaviza. A acusação é a mais forte do Evangelho contra adversários: liga a mentira e o homicídio ao diabo, que o texto não descreve.
 - **Crítica Textual.** Aparato de edições SBLGNT, 8:44: a base lê «*οὐκ ἔστηκεν*», com WH e NA28; Treg e RP leem «*οὐχ ἕστηκεν*».
 
 **8:45**

@@ -1,6 +1,6 @@
 # João 5 — pontos de atenção na revisão
 
-Estado: capítulo 5 ainda não aprovado pelo responsável; as correções de notas estão em `cecc2aa` e a aprovação fica por confirmar. Este documento confronta o texto e as notas com a base SBLGNT, o aparato e a colação CNTR, sem alterar o texto. Li os 47 versículos.
+Estado: aprovação do capítulo 5 por confirmar pelo responsável. O registo do repositório marca-o como aprovado desde `7234c13`; ver `docs/ESTADO.md`. Este documento confronta o texto e as notas com a base SBLGNT, o aparato e a colação CNTR, sem alterar o texto. Li os 47 versículos.
 
 **Aplicado (2026-11-23):** as notas de Crítica Textual em falta (5:6, 5:9, 5:25, 5:38, 5:40, 5:43, 5:44, 5:46, 5:47), a nota de 5:3 e de 5:4, e a sigla NIV (ver §3) foram corrigidas. Os pontos de texto (5:3 «paralíticos» e 5:33 «emissários») continuam por decidir.
 
