@@ -65,9 +65,19 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   «μοι» / «αὐτὰ» (NIV); em 9:35 e 10:36 (e 1:51) a maiúscula de «υἱός» a meio da frase
   passa a minúscula. Todas as CT de 7–10 conferem com o aparato da colação. Pendente:
   leitura do responsável; só depois podem ser aprovados.
+- **11:** prosa em rascunho (bloco 1 do trabalho por capítulos, 2026-11-24). Gravado
+  com 57 versículos e 26 com CT. Registo: «vocês», com cadência elevada (decisão do
+  responsável, 2026-11-24); revisto nessa linha em 14 versículos. Pendente: leitura do responsável.
+- **12 e 13:** prosa em rascunho (bloco 2, 2026-11-24; registo elevado). 12 com 50
+  versículos e 27 com CT; 13 com 38 versículos e 26 com CT. Pendente: leitura do responsável.
+- **14 e 15:** prosa em rascunho (bloco 3, 2026-11-24; registo elevado). 14 com 31
+  versículos e 21 com CT; 15 com 27 versículos e 16 com CT. Pendente: leitura do responsável.
+- **16–21:** por escrever na edição. Há uma primeira redação não revista em
+  `arquivo/rascunhos_joao/500_Joao_12-21_nao_revisto.json` (16–21 no registo anterior,
+  sem a revisão de cadência); não entra na edição nem no `JOAO.md`. Cada capítulo será escrito e apresentado ao responsável um de cada vez.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
-- O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-20
+- O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
   (`scripts/gerar_leitura_livro.py --livro 500`).
 
 ## Cartas
