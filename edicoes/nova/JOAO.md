@@ -2424,12 +2424,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:2**
 
 - *ἠκολούθει* (ēkolouthei), «seguia»; *ἐθεώρουν* (etheōroun), «viam, observavam»; *σημεῖα* (sēmeia), «sinais»; *ἀσθενούντων* (asthenountōn), «doentes». A multidão segue por causa dos sinais, e não por causa do sentido deles. O texto prepara a crítica do versículo 26.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:2: a base lê «*ἠκολούθει δὲ*» e «*ἐθεώρουν*», com WH, Treg e NA28. RP lê «*καὶ ἠκολούθει*» e «*ἑώρων αὐτοῦ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:2: a base lê «*ἠκολούθει δὲ*» e «*ἐθεώρουν*», com WH, Treg e NA28. RP, KJTR, ST e Scrivener leem «*καὶ ἠκολούθει*» e «*ἑώρων αὐτοῦ*».
 
 **6:3**
 
 - *ἀνῆλθεν* (anēlthen), «subiu»; *ὄρος* (oros), «monte»; *ἐκάθητο* (ekathēto), «estava sentado». Jesus senta-se no monte, em posição de mestre, antes do sinal dos pães.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:3: a base lê «*ὄρος*», com WH, Treg e NA28. RP acrescenta o artigo «*ὁ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:3: a base lê «*ὄρος*», com WH, Treg e NA28. RP, KJTR, ST e Scrivener acrescentam o artigo «*ὁ*».
 
 **6:4**
 
@@ -2438,7 +2438,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:5**
 
 - *ἐπάρας* (eparas), «tendo erguido»; *θεασάμενος* (theasamenos), «tendo visto»; *πόθεν* (pothen), «de onde»; *ἀγοράσωμεν* (agorasōmen), «compraremos»; *φάγωσιν* (phagōsin), «comam». Jesus toma a iniciativa de perguntar, e a pergunta é um teste, como a nota seguinte explica.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:5: a base lê «*τοὺς ὀφθαλμοὺς ὁ Ἰησοῦς*», com WH, Treg e NA28; RP lê «*ὁ Ἰησοῦς τοὺς ὀφθαλμοὺς*». A base lê «*πρὸς*», com WH, Treg e NA28; RP acrescenta «*τὸν*». A base lê «*ἀγοράσωμεν*», com WH, Treg e NA28; RP lê «*ἀγοράσομεν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:5: a base lê «*τοὺς ὀφθαλμοὺς ὁ Ἰησοῦς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ὁ Ἰησοῦς τοὺς ὀφθαλμοὺς*». A base lê «*πρὸς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*τὸν*». A base lê «*ἀγοράσωμεν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἀγοράσομεν*».
 
 **6:6**
 
@@ -2447,7 +2447,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:7**
 
 - *δηναρίων* (denariōn), «denários», cada um o salário de um dia de trabalho; *ἕκαστος* (hekastos), «cada um»; *βραχύ τι* (brachy ti), «um pouco». A conta humana mostra a falta de recursos e a impossibilidade de atender a todos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:7: a base lê «*αὐτῷ*», com WH, Treg e RP; NA28 acrescenta o artigo «*ὁ*». A base lê «*ἕκαστος*», com WH, Treg e NA28; RP acrescenta «*αὐτῶν*». A base lê «*τι*», com NA28 e RP; WH e Treg omitem a palavra.
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:7: a base lê «*αὐτῷ*», com WH, Treg e RP; NA28 acrescenta o artigo «*ὁ*». A base lê «*ἕκαστος*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*αὐτῶν*». A base lê «*τι*», com NA28 e RP; WH e Treg omitem a palavra.
 
 **6:8**
 
@@ -2456,36 +2456,37 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:9**
 
 - *παιδάριον* (paidarion), «rapazinho»; *κριθίνους* (krithinous), «de cevada»; *ὀψάρια* (opsaria), «peixes pequenos»; *τοσούτους* (tosoutous), «tantos». A oferta do rapaz é pequena diante da necessidade, e a dificuldade está na desproporção.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:9: a base lê «*παιδάριον*», com WH, Treg e NA28; RP acrescenta «*ἓν*» (um). A base lê «*ὃς*», com WH, Treg e NA28; RP lê «*ὃ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:9: a base lê «*παιδάριον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ἓν*» (um). A base lê «*ὃς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ὃ*».
 
 **6:10**
 
 - *ἀναπεσεῖν* (anapeseīn), «reclinar-se à mesa»; *χόρτος* (chortos), «erva»; *ὡς* (hōs), «cerca de»; *πεντακισχίλιοι* (pentakischilioi), «cinco mil»; *ἄνδρες* (andres), «homens». A ordem de Jesus organiza a multidão. A contagem é só de homens, e o texto não conta as mulheres nem as crianças.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:10: a base lê «*εἶπεν*», com WH, Treg e NA28; RP acrescenta «*δέ*». A base lê «*ὡς*», com WH, Treg e NA28; RP lê «*ὡσεί*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:10: a base lê «*εἶπεν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*δέ*». A base lê «*ὡς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ὡσεί*». Na colação, 01 lê «*τόπος*» em lugar de «*χόρτος*» e «*τρισχίλιοι*» (três mil) em lugar de «*πεντακισχίλιοι*»; KJTR, RP, ST e Scrivener leem «*ἀνέπεσον*» em lugar de «*ἀνέπεσαν*»; a tradução segue a base.
 
 **6:11**
 
 - *εὐχαριστήσας* (eucharistēsas), «tendo dado graças»; *διέδωκεν* (diedōken), «distribuiu»; *ἀνακειμένοις* (anakeimenois), «aos que estavam reclinados»; *ὅσον ἤθελον* (oson ēthelon), «quanto queriam». O gesto de dar graças e partir será lido, mais tarde, como memória da ceia. O texto não o declara.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:11: a base lê «*οὖν*», com WH, Treg e NA28; RP lê «*δέ*». A base lê «*διέδωκεν*», com WH, Treg e NA28; RP acrescenta «*τοῖς μαθηταῖς οἱ δὲ μαθηταί*» (aos discípulos; e os discípulos).
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:11: a base lê «*οὖν*», com WH, Treg e NA28; RP, KJTR e Scrivener leem «*δέ*». A base lê «*διέδωκεν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*τοῖς μαθηταῖς οἱ δὲ μαθηταί*» (aos discípulos; e os discípulos).
 
 **6:12**
 
 - *ἐνεπλήσθησαν* (eneplēsthēsan), «ficaram saciados»; *κλάσματα* (klasmata), «pedaços»; *περισσεύσαντα* (perisseusanta), «que sobraram»; *ἀπόληται* (apolētai), «se perca». Nada é desperdiçado, e a abundância não é pretexto para perder.
+- **Crítica Textual.** Na colação, 05 acrescenta «*ἐξ αὐτῶν*» («deles»); 01 e 032 leem «*συναγάγεται*» em lugar de «*συναγάγετε*»; P28 omite a frase «*συναγάγετε τὰ περισσεύσαντα κλάσματα ἵνα μή τι ἀπόληται*».
 
 **6:13**
 
 - *κοφίνους* (kophinous), «cestos»; *ἐπερίσσευσαν* (eperisseusan), «sobraram»; *βεβρωκόσιν* (bebrōkosin), «que tinham comido». Os doze cestos são lidos muitas vezes em relação aos doze discípulos, mas o texto não o diz.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:13: a base lê «*ἐπερίσσευσαν*», com WH, Treg e NA28; RP lê «*ἐπερίσσευσεν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:13: a base lê «*ἐπερίσσευσαν*», com WH, Treg e NA28; RP, KJTR e Scrivener leem «*ἐπερίσσευσεν*», e ST lê «*ἐπερίσσευσε*».
 
 **6:14**
 
 - *ἰδόντες* (idontes), «tendo visto»; *σημεῖον* (sēmeion), «sinal»; *ἀληθῶς* (alēthōs), «verdadeiramente»; *ὁ ἐρχόμενος* (ho erchomenos), «que vem». A multidão reconhece em Jesus o profeta esperado, mas a leitura dela ainda é insuficiente.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:14: a base lê «*ὃ ἐποίησεν σημεῖον*», com Treg, NA28 e RP; WH lê «*ἃ ἐποίησεν σημεῖα*» (plural). A base lê «*ἔλεγον*», com WH, Treg e NA28; RP acrescenta «*ὁ Ἰησοῦς*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:14: a base lê «*ὃ ἐποίησεν σημεῖον*», com Treg, NA28 e RP; WH lê «*ἃ ἐποίησεν σημεῖα*» (plural). A base lê «*ἔλεγον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ὁ Ἰησοῦς*».
 
 **6:15**
 
 - *μέλλουσιν* (mellousin), «estavam para»; *ἁρπάζειν* (harpazein), «arrebatar à força»; *βασιλέα* (basilea), «rei»; *ἀνεχώρησεν* (anechōrēsen), «retirou-se». Jesus recusa a realeza que a multidão quer impor e retira-se sozinho.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:15: a base lê «*ποιήσωσιν*», com WH, Treg e NA28; RP acrescenta «*αὐτόν*». A base lê «*πάλιν*», com WH, Treg e NA28; RP omite.
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:15: a base lê «*ποιήσωσιν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*αὐτόν*». A base lê «*πάλιν*», com WH, Treg e NA28; RP e 032 omitem. Na colação, 01 lê «*καὶ ἀναδεικνύναι*» em lugar de «*ἵνα ποιήσωσιν*» e «*φεύγει*» em lugar de «*ἀνεχώρησεν*»; 05 acrescenta «*κακεῖ προσηύχετο*» («e ali orava»).
 
 **6:16**
 
@@ -2494,12 +2495,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:17**
 
 - *πλοῖον* (ploion), «barco»; *σκοτία* (skotia), «escuridão»; *οὔπω* (oupō), «ainda não»; *ἐληλύθει* (elēlythei), «tinha vindo». A escuridão e a ausência de Jesus preparam o sinal de andar sobre o mar.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:17: a base lê «*εἰς*», com WH, Treg e NA28; RP acrescenta o artigo «*τὸ*». A base lê «*οὔπω*», com WH, Treg e NA28; RP lê «*οὐκ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:17: a base lê «*εἰς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam o artigo «*τὸ*». A base lê «*οὔπω*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*οὐκ*». Na colação, 01 e 05 leem «*κατέλαβεν δὲ αὐτοὺς ἡ*» em lugar de «*καὶ*» e omitem «*ἤδη ἐγεγόνει*» («já era»).
 
 **6:18**
 
 - *πνέοντος* (pneontos), «soprando»; *διεγείρετο* (diegeireto), «agitava-se». O vento forte é a dificuldade dos discípulos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:18: a base lê «*διεγείρετο*», com WH, Treg e NA28; RP lê «*διηγείρετο*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:18: a base lê «*διεγείρετο*», com WH, Treg e NA28; RP, KJTR, SR, ST e Scrivener leem «*διηγείρετο*».
 
 **6:19**
 
@@ -2512,22 +2513,22 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:21**
 
 - *ἤθελον* (ēthelon), «queriam»; *λαβεῖν* (labein), «receber»; *εὐθέως* (eutheōs), «logo». O texto não explica como o barco chegou tão depressa; assinala apenas o resultado.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:21: a base lê «*ἐγένετο τὸ πλοῖον*», com WH, Treg e NA28; RP lê «*τὸ πλοῖον ἐγένετο*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:21: a base lê «*ἐγένετο τὸ πλοῖον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*τὸ πλοῖον ἐγένετο*». Na colação, 01 lê «*ἦλθον*» em lugar de «*ἤθελον*» e «*ὑπήντησεν*» em lugar de «*ὑπῆγον*».
 
 **6:22**
 
 - *πλοιάριον* (ploiarion), «barquinho»; *ἑστηκὼς* (hestēkōs), «que estava ali»; *συνεισῆλθεν* (syneiselthen), «entrara junto». A multidão conclui, a partir do barco, que Jesus não tinha partido com os discípulos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:22: a base lê «*εἶδον*», com WH, Treg e NA28; RP lê «*ἰδὼν*». A base lê «*ἕν*», com WH, Treg e NA28; RP acrescenta «*ἐκεῖνο εἰς ὃ ἐνέβησαν οἱ μαθηταὶ αὐτοῦ*». A base lê «*πλοῖον*», com WH, Treg e NA28; RP lê «*πλοιάριον*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:22: a base lê «*εἶδον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἰδὼν*». A base lê «*ἕν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ἐκεῖνο εἰς ὃ ἐνέβησαν οἱ μαθηταὶ αὐτοῦ*». A base lê «*πλοῖον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*πλοιάριον*».
 
 **6:23**
 
 - *πλοιάρια* (ploiaria), «barcos pequenos»; *ἐγγὺς* (engus), «perto»; *εὐχαριστήσαντος* (eucharistēsantos), «tendo dado graças»; *κυρίου* (kyriou), «Senhor». Os barcos de Tiberíades tornam possível a travessia, e o narrador lembra de novo o gesto de dar graças.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:23: a base lê «*ἀλλὰ*», com WH e Treg; NA28 lê «*ἄλλα*» e RP lê «*ἄλλα δὲ*». A base lê «*πλοιάρια*», com Treg, NA28 e RP; WH lê «*πλοῖα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:23: a base lê «*ἀλλὰ*», com WH e Treg; NA28 lê «*ἄλλα*» e RP, KJTR e Scrivener leem «*ἄλλα δὲ*». A base lê «*πλοιάρια*», com Treg, NA28 e RP; WH lê «*πλοῖα*».
 
 **6:24**
 
 - *ζητοῦντες* (zētountes), «procurando»; *ἐνέβησαν* (enebēsan), «embarcaram». A multidão procura Jesus, mas por razões que o diálogo revela.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:24: a base lê «*πλοιάρια*», com WH, Treg e NA28; RP lê «*πλοῖα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:24: a base lê «*πλοιάρια*», com WH, Treg e NA28; RP e KJTR leem «*πλοῖα*».
 
 **6:25**
 
@@ -2536,10 +2537,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:26**
 
 - *ζητεῖτέ* (zēteite), «procuram»; *σημεῖα* (sēmeia), «sinais»; *ἐχορτάσθητε* (echortasthēte), «ficaram saciados». Jesus diagnostica o motivo da procura: a comida, e não o sinal.
+- **Crítica Textual.** Na colação, 05 acrescenta «*καὶ τέρατα*» («e prodígios») depois de «*σημεῖα*»; 032 lê formas de terceira pessoa («*ἐφάγεται*», «*ἐχορτάσθηται*») em lugar das de segunda pessoa do plural.
 
 **6:27**
 
 - *ἐργάζεσθε* (ergazesthe), «trabalhem»; *βρῶσιν* (brōsin), «alimento»; *ἀπολλυμένην* (apollymenēn), «que perece»; *μένουσαν* (menousan), «que permanece»; *ἐσφράγισεν* (esphragisen), «selou, autenticou». O alimento que permanece é o dom do Filho do Homem, autenticado pelo Pai.
+- **Crítica Textual.** Na colação, 01, 032 e 05 leem «*ἐργάζεσθαι*» em lugar de «*ἐργάζεσθε*»; 01 omite «*τὴν βρῶσιν*» e lê «*διδῶσιν*» em lugar de «*δώσει*».
 
 **6:28**
 
@@ -2548,7 +2551,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:29**
 
 - *ἔργον* (ergon), «obra»; *πιστεύητε* (pisteuēte), «creiam», com presente durativo. O trabalho de Deus é crer. A fé aparece aqui como obra e como dom.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:29: a base lê «*ὁ*», com WH, Treg e NA28; RP omite o artigo. A base lê «*πιστεύητε*», com WH, Treg e NA28; RP lê «*πιστεύσητε*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:29: a base lê «*ὁ*», com WH, Treg e NA28; RP omite o artigo. A base lê «*πιστεύητε*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*πιστεύσητε*».
 
 **6:30**
 
@@ -2557,6 +2560,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:31**
 
 - *ἔφαγον* (ephagon), «comeram»; *μάννα* (manna), «maná»; *γεγραμμένον* (gegrammenon), «escrito». A citação não é literal de um só lugar; a formulação aproxima-se do Salmo 78:24 (LXX). Funciona como argumento: o pão do céu já foi dado no passado, e os ouvintes esperam um sinal igual.
+- **Crítica Textual.** Na colação, 01 e 032 leem «*δέδωκεν*» em lugar de «*ἔδωκεν*»; 01 omite «*ἄρτον*»; 05 acrescenta «*ἐστιν*».
 
 **6:32**
 
@@ -2574,7 +2578,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:35**
 
 - *Ἐγώ εἰμι ὁ ἄρτος τῆς ζωῆς* (egō eimi ho artos tēs zōēs), «eu sou o pão da vida»; *οὐ μὴ πεινάσῃ* (ou mē peinasēi), «de modo nenhum terá fome»; *διψήσει* (dipsēsei), «terá sede»; *πώποτε* (pōpote), «nunca». É a primeira das grandes afirmações «Eu sou» deste capítulo. Quem vem e crê fica plenamente saciado.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:35: a base lê «*Εἶπεν*», com WH, Treg e NA28; a NIV acrescenta «*οὖν*» e RP acrescenta «*δέ*». A base lê «*ἐμὲ*», com WH, Treg e NA28; RP lê «*με*». A base lê «*διψήσει*», com WH, Treg e NA28; RP lê «*διψήσῃ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:35: a base lê «*Εἶπεν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*δέ*», e a NIV, por escolha de tradução, acrescenta «*οὖν*». A base lê «*ἐμὲ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*με*». A base lê «*διψήσει*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*διψήσῃ*». P66 omite a sequência desde «*Εἶπεν αὐτοῖς ὁ Ἰησοῦς*» até «*καὶ ὁ πιστεύων*».
 
 **6:36**
 
@@ -2588,17 +2592,17 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:38**
 
 - *καταβέβηκα* (katabebēka), «desci», com efeito que permanece; *θέλημα* (thelēma), «vontade». A missão de Jesus é fazer a vontade do Pai.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:38: a base lê «*ἀπὸ*», com WH, Treg e NA28; RP lê «*ἐκ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:38: a base lê «*ἀπὸ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἐκ*». 01, 032 e 05 leem «*ποιήσω*» em lugar de «*ποιῶ*»; 01 omite «*οὐχ*»; 04 omite «*ὅτι καταβέβηκα ἀπὸ τοῦ οὐρανοῦ οὐχ ἵνα*».
 
 **6:39**
 
 - *μὴ ἀπολέσω* (mē apolesō), «não perca»; *ἀναστήσω* (anastēsō), «ressuscitarei»; *ἐσχάτῃ ἡμέρᾳ* (eschatēi hēmerāi), «último dia». A vontade do Pai garante a guarda dos que lhe pertencem até à ressurreição.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:39: a base lê «*με*», com WH, Treg e NA28; RP acrescenta «*πατρός*» (do Pai). A base lê «*αὐτὸ*», com WH, Treg e RP; NA28 acrescenta «*ἐν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:39: a base lê «*με*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*πατρός*» (do Pai). A base lê «*αὐτὸ*», com WH, Treg e RP; NA28 acrescenta «*ἐν*».
 
 **6:40**
 
 - *θεωρῶν* (theōrōn), «que contempla, que vê com atenção»; *πιστεύων* (pisteuōn), «que crê»; *ἔχῃ* (echēi), «tenha». Ver o Filho e crer são o mesmo caminho: olhar e confiar.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:40: a base lê «*γάρ*», com WH, Treg e NA28; RP lê «*δέ*». A base lê «*πατρός μου*», com WH, Treg e NA28; RP lê «*πέμψαντός με*». A base lê «*ἐγὼ*», com WH, Treg e RP; NA28 acrescenta «*ἐν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:40: a base lê «*γάρ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*δέ*». A base lê «*πατρός μου*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*πέμψαντός με*». A base lê «*ἐγὼ*», com WH, Treg e RP; NA28 acrescenta «*ἐν*».
 
 **6:41**
 
@@ -2607,12 +2611,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:42**
 
 - *υἱὸς Ἰωσήφ* (huios Iōsēph), «filho de José»; *οἴδαμεν* (oidamen), «sabemos»; *καταβέβηκα* (katabebēka), «desci». O argumento é de origem: conhecem-lhe o pai e a mãe.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:42: a base lê «*Οὐχ*», com NA28 e RP; WH e Treg leem «*Οὐχὶ*». A base lê «*νῦν*», com WH, Treg e NA28; RP lê «*οὖν*». A base lê «*λέγει*», com WH, Treg e NA28; RP acrescenta «*οὗτος*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:42: a base lê «*Οὐχ*», com NA28 e RP; WH e Treg leem «*Οὐχὶ*». A base lê «*νῦν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*οὖν*». A base lê «*λέγει*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*οὗτος*».
 
 **6:43**
 
 - *γογγύζετε* (gogguzete), «murmurem»; *μετʼ ἀλλήλων* (met' allēlōn), «uns com os outros». Jesus não responde à questão de origem, mas corta a murmuração.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:43: a base lê «*ἀπεκρίθη*», com WH, Treg e NA28; RP acrescenta «*οὖν ὁ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:43: a base lê «*ἀπεκρίθη*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*οὖν ὁ*».
 
 **6:44**
 
@@ -2622,17 +2626,17 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:45**
 
 - *διδακτοὶ θεοῦ* (didaktoi theou), «ensinados por Deus»; *ἀκούσας* (akousas), «tendo ouvido»; *μαθὼν* (mathōn), «tendo aprendido». A atração do Pai é ensino: quem ouve e aprende vem a Jesus. A citação não indica o lugar exato, e a Escritura alude a passagens como Isaías 54:13.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:45: a base lê «*πᾶς*», com WH, Treg e NA28; RP acrescenta «*οὖν*». A base lê «*ἀκούσας*», com WH, Treg e NA28; RP lê «*ἀκούων*». A base lê «*ἐμέ*», com WH, Treg e NA28; RP lê «*με*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:45: a base lê «*πᾶς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*οὖν*». A base lê «*ἀκούσας*», com WH, Treg e NA28; RP lê «*ἀκούων*». A base lê «*ἐμέ*», com WH, Treg e NA28; RP, KJTR, SR, ST e Scrivener leem «*με*».
 
 **6:46**
 
 - *ἑώρακέν* (heōrakén), «viu»; *ὁ ὢν παρὰ τοῦ θεοῦ* (ho ōn para tou theou), «aquele que é de Deus». Só quem vem de Deus viu o Pai, e esse é Jesus.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:46: a base lê «*ἑώρακέν τις*», com WH, Treg e NA28; RP lê «*τις ἑώρακεν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:46: a base lê «*ἑώρακέν τις*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*τις ἑώρακεν*». 01 e 05 leem «*θεόν*» em lugar de «*πατέρα*», e 01 lê «*πατρός*» em lugar de «*θεοῦ*».
 
 **6:47**
 
 - *ὁ πιστεύων* (ho pisteuōn), «o que crê»; *ἔχει* (echei), «tem». Crer já dá vida eterna, no presente.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:47: a base lê «*πιστεύων*», com WH e NA28; Treg e RP acrescentam «*εἰς ἐμέ*» (em mim).
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:47: a base lê «*πιστεύων*», com WH e NA28; Treg, RP, KJTR, ST e Scrivener acrescentam «*εἰς ἐμέ*» (em mim).
 
 **6:48**
 
@@ -2641,25 +2645,27 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:49**
 
 - *ἔφαγον* (ephagon), «comeram»; *ἀπέθανον* (apethanon), «morreram». O maná sustentou, mas não impediu a morte.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:49: a base lê «*ἐν τῇ ἐρήμῳ τὸ μάννα*», com WH, Treg e NA28; RP lê «*τὸ μάννα ἐν τῇ ἐρήμῳ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:49: a base lê «*ἐν τῇ ἐρήμῳ τὸ μάννα*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*τὸ μάννα ἐν τῇ ἐρήμῳ*».
 
 **6:50**
 
 - *καταβαίνων* (katabainōn), «que desce»; *φάγῃ* (phagēi), «coma»; *μὴ ἀποθάνῃ* (mē apothanēi), «não morra». O pão do céu dá uma vida que a morte não encerra.
+- **Crítica Textual.** Na colação, 02 omite a frase «*ἵνα τις ἐξ αὐτοῦ φάγῃ καὶ μὴ ἀποθάνῃ*» («para que quem dele comer não morra»); 03 e P75 leem «*ἀποθνῄσκῃ*» em lugar de «*ἀποθάνῃ*».
 
 **6:51**
 
 - *Ἐγώ εἰμι ὁ ἄρτος ὁ ζῶν* (egō eimi ho artos ho zōn), «eu sou o pão vivo»; *ζήσει* (zēsei), «viverá»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre»; *σάρξ* (sarx), «carne»; *ὑπὲρ* (hyper), «em favor de». Aparece o tema da entrega: o pão é a carne de Jesus, dada pela vida do mundo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:51: a base lê «*ζήσει*», com WH e NA28; Treg e RP leem «*ζήσεται*». A base lê «*ἐστιν*», com WH, Treg e NA28; RP acrescenta «*ἣν ἐγὼ δώσω*» (que eu darei).
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:51: a base lê «*ζήσει*», com WH e NA28; Treg, RP, KJTR, ST e Scrivener leem «*ζήσεται*». A base lê «*ἐστιν*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ἣν ἐγὼ δώσω*» (que eu darei).
 
 **6:52**
 
 - *ἐμάχοντο* (emachonto), «discutiam acaloradamente»; *φαγεῖν* (phagein), «comer»; *δοῦναι* (dounai), «dar». A dificuldade é literal, e o texto ainda não a explica.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:52: a base lê «*αὐτοῦ*», com WH e NA28; Treg e RP omitem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:52: a base lê «*αὐτοῦ*», com WH e NA28; Treg, RP, KJTR, ST e Scrivener omitem.
 
 **6:53**
 
 - *φάγητε* (phagēte), «comam»; *πίητε* (piēte), «bebam»; *οὐκ ἔχετε* (ouk echete), «não têm». A referência ao sangue é forte. A leitura eucarística é debatida, e o versículo não a identifica.
+- **Crítica Textual.** Na colação, 01, 03, 032 e P66 leem «*φάγηται*» em lugar de «*φάγητε*»; 05 lê «*λάβητε*»; 032 lê «*πίηται*» em lugar de «*πίητε*»; 032, 05 e P66 leem «*ἔχεται*» em lugar de «*ἔχετε*»; 05 e P66 invertem «*πίητε αὐτοῦ*» para «*αὐτοῦ πίητε*»; 01 acrescenta «*αἰώνιον*».
 
 **6:54**
 
@@ -2668,30 +2674,32 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:55**
 
 - *βρῶσις* (brōsis), «comida»; *πόσις* (posis), «bebida»; *ἀληθής* (alēthēs), «verdadeira». A carne e o sangue são alimento e bebida reais.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:55: a base lê «*ἀληθής*», nas duas ocorrências, com WH, Treg e NA28; RP lê «*ἀληθῶς*» em ambas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:55: a base lê «*ἀληθής*», nas duas ocorrências, com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἀληθῶς*» em ambas.
 
 **6:56**
 
 - *μένει* (menei), «permanece»; *ἐν ἐμοὶ μένει* (en emoi menei), «permanece em mim». Permanecer mútuo é o efeito da comunhão com Jesus.
+- **Crítica Textual.** Na colação, 032 repete depois deste versículo o texto dos versículos 54 e 55; 05 acrescenta uma frase que começa por «*καθὼς ἐν ἐμοὶ ὁ πατὴρ*»; 03, 05 e P75 leem «*πεινῶν*» em lugar de «*πίνων*».
 
 **6:57**
 
 - *ἀπέστειλέν* (apesteilen), «enviou»; *ζῶν* (zōn), «vivo»; *ζῶ* (zō), «vivo»; *ζήσει* (zēsei), «viverá»; *διʼ ἐμέ* (di' eme), «por causa de mim». A vida que vem do Pai passa pelo Filho e chega a quem o recebe.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:57: a base lê «*ζήσει*», com WH, Treg e NA28; RP lê «*ζήσεται*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:57: a base lê «*ζήσει*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ζήσεται*».
 
 **6:58**
 
 - *καταβάς* (katabas), «que desceu»; *ἔφαγον* (ephagon), «comeram»; *ἀπέθανον* (apethanon), «morreram»; *ζήσει* (zēsei), «viverá»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre». Retoma a oposição entre o maná e o pão verdadeiro e fecha o discurso.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:58: a base lê «*ἐξ*», com WH, Treg e NA28; RP lê «*ἐκ τοῦ*». A base lê «*πατέρες*», com WH, Treg e NA28; a NIV e RP acrescentam «*ὑμῶν τὸ μάννα*» (de vocês, o maná). A base lê «*ζήσει*», com WH, Treg e NA28; RP lê «*ζήσεται*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:58: a base lê «*ἐξ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἐκ τοῦ*». A base lê «*πατέρες*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ὑμῶν τὸ μάννα*» (de vocês, o maná), e 05 acrescenta «*ὑμῶν*»; a NIV segue essa leitura por escolha de tradução. A base lê «*ζήσει*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ζήσεται*».
 
 **6:59**
 
 - *συναγωγῇ* (synagōgē), «sinagoga»; *διδάσκων* (didaskōn), «ensinando». O discurso ocorre na sinagoga de Cafarnaum, num contexto de ensino público.
+- **Crítica Textual.** Na colação, 05 acrescenta «*τῇ*» antes de «*συναγωγῇ*» e «*σαββάτῳ*» («no sábado») depois de «*Καφαρναούμ*»; KJTR, RP, ST e Scrivener leem «*Καπερναούμ*».
 
 **6:60**
 
 - *σκληρός* (sklēros), «duro, difícil»; *ἀκούειν* (akouein), «ouvir, aceitar». Muitos discípulos acham o discurso difícil. A palavra «duro» mostra recusa, e não apenas dificuldade intelectual.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:60: a base lê «*ὁ λόγος οὗτος*», com WH, Treg e NA28; RP lê «*οὗτος ὁ λόγος*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:60: a base lê «*ὁ λόγος οὗτος*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*οὗτος ὁ λόγος*».
 
 **6:61**
 
@@ -2700,11 +2708,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:62**
 
 - *θεωρῆτε* (theōrēte), «virem»; *ἀναβαίνοντα* (anabainonta), «subindo»; *πρότερον* (proteron), «antes». A subida do Filho do Homem aponta para a sua partida e exaltação. O texto deixa a pergunta em aberto.
+- **Crítica Textual.** Na colação, 01 omite «*ἀναβαίνοντα*» («subindo») e lê «*θεωρῆται*» em lugar de «*θεωρῆτε*»; P66 lê «*θεωρήσηται*».
 
 **6:63**
 
 - *τὸ ζῳοποιοῦν* (to zōopoioun), «o que dá vida»; *ὠφελεῖ* (ōpheleī), «aproveita»; *ῥήματα* (rhēmata), «palavras»; *λελάληκα* (lelalēka), «falei», com efeito que permanece. A «carne» é o modo humano de entender, sem vida que venha do alto. A palavra de Jesus é a fonte dessa vida.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:63: a base lê «*λελάληκα*», com WH, Treg e NA28; RP lê «*λαλῶ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:63: a base lê «*λελάληκα*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*λαλῶ*».
 
 **6:64**
 
@@ -2713,12 +2722,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:65**
 
 - *εἴρηκα* (eirēka), «disse»; *δεδομένον* (dedomenon), «dado, concedido». A vinda a Jesus é dom do Pai, como já foi dito no versículo 44.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:65: a base lê «*πατρός*», com WH, Treg e NA28; RP acrescenta «*μου*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:65: a base lê «*πατρός*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*μου*».
 
 **6:66**
 
 - *ἀπῆλθον* (apēlthon), «afastaram-se»; *εἰς τὰ ὀπίσω* (eis ta opisō), «para trás»; *περιεπάτουν* (periepatoun), «andavam». A saída de muitos discípulos marca um ponto de rutura no evangelho.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:66: a base lê «*ἐκ*», com WH, Treg e NA28; RP omite. A base lê «*τῶν μαθητῶν αὐτοῦ ἀπῆλθον*», com WH, Treg e NA28; RP lê «*ἀπῆλθον τῶν μαθητῶν αὐτοῦ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:66: a base lê «*ἐκ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener omitem. A base lê «*τῶν μαθητῶν αὐτοῦ ἀπῆλθον*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*ἀπῆλθον τῶν μαθητῶν αὐτοῦ*».
 
 **6:67**
 
@@ -2727,12 +2736,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:68**
 
 - *πρὸς τίνα* (pros tina), «a quem»; *ἀπελευσόμεθα* (apeleusometha), «iremos»; *ῥήματα ζωῆς αἰωνίου* (rhēmata zōēs aiōniou), «palavras de vida eterna». Pedro reconhece que a palavra de Jesus dá vida eterna.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:68: a base lê «*ἀπεκρίθη*», com WH, Treg e NA28; RP acrescenta «*οὖν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:68: a base lê «*ἀπεκρίθη*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*οὖν*».
 
 **6:69**
 
 - *πεπιστεύκαμεν* (pepisteukamen), «cremos», com efeito que permanece; *ἐγνώκαμεν* (egnōkamen), «sabemos»; *ἅγιος* (hagios), «santo». A confissão da base é «o Santo de Deus», e a leitura do RP é mais explícita.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:69: a base lê «*ἅγιος*», com WH, Treg e NA28; RP lê «*χριστὸς ὁ υἱὸς*» (o Cristo, o Filho). A base lê «*θεοῦ*», com WH, Treg e NA28; RP acrescenta «*τοῦ ζῶντος*» (do Deus vivo).
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:69: a base lê «*ἅγιος*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*χριστὸς ὁ υἱὸς*» (o Cristo, o Filho). A base lê «*θεοῦ*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*τοῦ ζῶντος*» (do Deus vivo).
 
 **6:70**
 
@@ -2741,7 +2750,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:71**
 
 - *Ἰσκαριώτου* (Iskariōtou), «Iscariotes»; *ἔμελλεν* (emellen), «estava para»; *παραδιδόναι* (paradidonai), «entregar». O narrador identifica Judas com a traição.
-- **Crítica Textual.** Aparato de edições SBLGNT, 6:71: a base lê «*Ἰσκαριώτου*», com WH, Treg e NA28; RP lê «*Ἰσκαριώτην*». A base lê «*παραδιδόναι αὐτόν*», com WH, Treg e NA28; RP lê «*αὐτὸν παραδιδόναι*». A base lê «*εἷς*», com WH, Treg e NA28; RP acrescenta «*ὢν*» (sendo).
+- **Crítica Textual.** Aparato de edições SBLGNT, 6:71: a base lê «*Ἰσκαριώτου*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «*Ἰσκαριώτην*». A base lê «*παραδιδόναι αὐτόν*», com WH, Treg e NA28; RP lê «*αὐτὸν παραδιδόναι*». A base lê «*εἷς*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*ὢν*» (sendo).
 
 ### Notas do capítulo 7
 
