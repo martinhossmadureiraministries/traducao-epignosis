@@ -1,6 +1,6 @@
 # João 3 e 4 — confronto com o grego e a colação
 
-Estado: capítulo 3 aprovado pelo responsável. Capítulo 4 em `rascunho`, aguarda a sua leitura. Nenhum texto do capítulo 4 foi alterado neste documento.
+Estado: capítulo 3 aprovado pelo responsável. Capítulo 4 em `rascunho`, aguarda aprovação. As propostas 1–4 foram aplicadas às notas (sem alteração do texto); a sigla NIV em 4:1 continua por confirmar.
 
 Fontes: SBLGNT (base e aparato) e colação CNTR (`docs/colacao/João.json`). Li os 36 versículos do capítulo 3 e os 54 do capítulo 4, versículo a versículo, e confrontei as notas com o aparato e com as divergências da colação.
 
@@ -55,3 +55,14 @@ O aparato da SBLGNT, em 4:1, lista «WH Treg NIV RP». NIV é uma tradução por
 Não alterei a nota de 4:1 nem o texto de 4:9 (ordem de «mulher samaritana»), que confere com o aparato.
 
 Os quatro pontos acima são alterações pequenas. Se aprovar as propostas, aplico-as, regenero `JOAO.md` e corro as verificações antes de qualquer commit.
+
+---
+
+## Aplicado (2026-11-23)
+
+- 4:6: «sem cerimónia» (ortografia de português europeu, substituindo «cerimônia»).
+- 4:12: nota passa a citar P75 além de 04 e P66.
+- 4:24: acrescentada nota de Crítica Textual (01).
+- 4:36: nota passa a listar 01, 02, 05, KJTR, RP e ST.
+- 4:38: acrescentada nota de Crítica Textual (01 e 05).
+- 4:1 «NIV»: não alterado; a sigla precisa de confirmação no aparato original.

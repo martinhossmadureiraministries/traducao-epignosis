@@ -1967,7 +1967,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **4:6**
 
-- *Πηγή* (pēgḗ), «fonte», é a nascente; no versículo 11 o texto usa *φρέαρ* (phréar), «poço», que é uma cisterna escavada, e a tradução marca essa diferença. *Κεκοπιακὼς* (kekopiakōs), «cansado», é perfeito: o cansaço da viagem está presente. *Οὕτως* (hoútōs), «assim», sugere que Jesus se sentou sem cerimônia, como estava. A hora sexta, contada a partir do nascer do sol, cai perto do meio-dia (cf. 19:14). A NVI e a NVT dizem «por volta do meio-dia».
+- *Πηγή* (pēgḗ), «fonte», é a nascente; no versículo 11 o texto usa *φρέαρ* (phréar), «poço», que é uma cisterna escavada, e a tradução marca essa diferença. *Κεκοπιακὼς* (kekopiakōs), «cansado», é perfeito: o cansaço da viagem está presente. *Οὕτως* (hoútōs), «assim», sugere que Jesus se sentou sem cerimónia, como estava. A hora sexta, contada a partir do nascer do sol, cai perto do meio-dia (cf. 19:14). A NVI e a NVT dizem «por volta do meio-dia».
 - **Crítica Textual.** Aparato de edições SBLGNT, 4:6: WH, Treg e NA28 leem «*ὡς*» («cerca de»); RP lê «*ὡσεί*», outra forma do mesmo sentido. Na colação, KJTR, RP, ST e Scrivener seguem o RP. A tradução segue a base.
 
 **4:7**
@@ -1995,7 +1995,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:12**
 
 - *Μὴ … μείζων* (mḕ … meízōn), «acaso … maior», é pergunta com resposta negativa: a mulher não pensa que Jesus seja maior que Jacó. A tradução mantém a forma com «acaso», que faz esse papel em português. *Ἔδωκεν* (édōken), «deu», é aoristo, e a tradução diz «deu o poço» como a base. A ARC diz «És tu maior do que Jacó, o nosso pai»; a NVT transforma a pergunta em uma objeção sobre a água melhor.
-- **Crítica Textual.** Na colação, 04 e P66 leem «*δεδωκεν*» (perfeito: «que nos tem dado o poço») em lugar de «*ἔδωκεν*» (aoristo). A tradução segue a base, que tem o aoristo.
+- **Crítica Textual.** Na colação, 04, P66 e P75 leem «*δεδωκεν*» (perfeito: «que nos tem dado o poço») em lugar de «*ἔδωκεν*» (aoristo). A tradução segue a base, que tem o aoristo.
 
 **4:13**
 
@@ -2050,6 +2050,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:24**
 
 - *Πνεῦμα ὁ θεός* (pneûma ho theós), «Deus é espírito», não tem artigo antes de «espírito», o que faz de «espírito» uma qualidade de Deus, e não um nome. *Δεῖ προσκυνεῖν* (dei proskynêin), «devem adorar», é a obrigação de quem adora. A tradução mantém «Deus é espírito».
+- **Crítica Textual.** Na colação, 01 omite «*αὐτόν*» e um «*προσκυνεῖν*», e lê «*ἀληθείας*» sem «*καί*»; a tradução segue a base.
 
 **4:25**
 
@@ -2104,7 +2105,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:36**
 
 - *Μισθὸν λαμβάνει* (misthòn lambánei), «recebe o salário», é o pagamento do trabalhador. *Συνάγει καρπὸν* (synágei karpón), «ajunta fruto», é a colheita que dura. *Ὁμοῦ χαίρῃ* (homoû chaírēi), «se alegre juntamente», é a alegria comum de quem semeia e de quem colhe. A NVT diz «os frutos que ajuntam são as pessoas que passam a ter a vida eterna», uma leitura do fruto como pessoas; a base diz apenas «fruto».
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:36: WH, Treg e NA28 leem «*ὁ*» («o que ceifa»), e RP lê «*Καὶ ὁ*» («e o que ceifa»); WH, Treg e NA28 não têm «*καὶ*» antes de «*ἵνα*», que RP tem. Na colação, 05 e KJTR também acrescentam «*καὶ*». A tradução segue a base: «Já o que ceifa».
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:36: WH, Treg e NA28 leem «*ὁ*» («o que ceifa»), e RP lê «*Καὶ ὁ*» («e o que ceifa»); WH, Treg e NA28 não têm «*καὶ*» antes de «*ἵνα*», que RP tem. Na colação, 01, 02, 05, KJTR, RP e ST acrescentam «*καὶ*». A tradução segue a base: «Já o que ceifa».
 
 **4:37**
 
@@ -2114,6 +2115,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:38**
 
 - *Ἀπέστειλα* (apésteila), «enviei», é aoristo, e pode ser um aoristo de anúncio: o envio já está decidido. *Κεκοπιάκατε* (kekopiákate), «trabalharam», é perfeito, e *κεκοπιάκασιν* (kekopiákasin), «trabalharam», também. *Εἰσεληλύθατε* (eiselēlýthate), «entraram», é perfeito: vocês estão no trabalho que outros fizeram. A NVI diz «vocês vieram a usufruir do trabalho deles».
+- **Crítica Textual.** Na colação, 01 e 05 leem «*ἀπέσταλκα*» (perfeito) em lugar de «*ἀπέστειλα*» (aoristo), e 05 lê «*ἐκοπίασατε*» e «*ἐκοπίασαν*» no aoristo em lugar dos perfeitos. A tradução segue a base.
 
 **4:39**
 
