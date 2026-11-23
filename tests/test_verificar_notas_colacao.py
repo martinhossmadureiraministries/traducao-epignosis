@@ -136,9 +136,9 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
         return {'livro_bee': livro, 'versiculos': {'1:8': {'base': base,
                                                           'divergencias': []}}}
 
-    def _verificar(self, livro, comentario, aparato=()):
-        dados = {'chapters': {'1': [{'verse': 8, 'text': 'x',
-                                     'commentary': comentario}]}}
+    def _verificar(self, livro, comentario, aparato=(), capitulo='1'):
+        dados = {'chapters': {capitulo: [{'verse': 8, 'text': 'x',
+                                          'commentary': comentario}]}}
         return vnc.verificar(dados, self._colacao(livro, list(aparato)))
 
     def test_prosa_sem_variante_nao_pede_secoes(self):
@@ -149,8 +149,29 @@ class FormatoDeNotaPorLivro(unittest.TestCase):
         self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
 
     def test_formato_da_casa_pede_as_tres_secoes(self):
-        problemas = self._verificar(500, self.PROSA)
+        # João 3 segue o formato da casa; João 1–2 já estão em prosa.
+        problemas = self._verificar(500, self.PROSA, capitulo='3')
         self.assertTrue(any('secções da casa' in p for p in problemas))
+
+    def test_joao_1_2_em_prosa_pedem_ct_so_com_variante(self):
+        self.assertEqual(self._verificar(500, self.PROSA, capitulo='1'), [])
+        problemas = self._verificar(500, self.PROSA, ['1 a WH Treg NA28 ] b RP'],
+                                    capitulo='1')
+        self.assertTrue(any('variante do aparato sem Crítica Textual' in p for p in problemas))
+
+
+class FormatoPorCapitulo(unittest.TestCase):
+    """João 1–2 em prosa (2026-11-23); o resto do livro segue a casa."""
+
+    def test_joao_1_2_sao_prosa_e_3_em_diante_formato_da_casa(self):
+        from bee.inspetor import formato_casa_do_capitulo as f
+        self.assertFalse(f(500, 1))
+        self.assertFalse(f(500, 2))
+        self.assertTrue(f(500, 3))
+        self.assertTrue(f(500, 10))
+        self.assertFalse(f(570, 1))   # Filipenses: prosa desde sempre
+        self.assertTrue(f(None, 1))   # sem livro conhecido: regra antiga
+
 
 
 if __name__ == '__main__':

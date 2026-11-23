@@ -55,18 +55,21 @@ from bee.inspetor import (  # noqa: E402,F401  (reexportados para testes/CLI)
     _norm,
     analisar_comentario,
     analisar_texto,
+    formato_casa_do_capitulo,
     grego_sem_italico,
 )
 
 
 def analisar_dados(dados: dict,
                    incluir_comentario: bool = False,
+                   livro: int | None = None,
                    ) -> list[tuple[int, int, str, dict]]:
     """Percorre capítulos completos e em curso; devolve achados por versículo.
 
     ``incluir_comentario`` liga a verificação do formato das notas, que só
     se aplica à edição nova: a linha legada usa outro formato de nota e
-    não pode chumbar por ele.
+    não pode chumbar por ele. ``livro`` permite saber, capítulo a capítulo,
+    se o formato da casa (três secções) se aplica (CAPITULOS_EM_PROSA).
     """
     achados: list[tuple[int, int, str, dict]] = []
     for capitulo, versiculos in sorted({**dados.get('chapters', {}),
@@ -77,7 +80,9 @@ def analisar_dados(dados: dict,
             if incluir_comentario:
                 resultado['duros'] = sorted(set(
                     resultado['duros']
-                    + analisar_comentario(str(verso.get('commentary') or ''))
+                    + analisar_comentario(
+                        str(verso.get('commentary') or ''),
+                        formato_casa=formato_casa_do_capitulo(livro, int(capitulo)))
                     + grego_sem_italico(str(verso.get('commentary') or ''))))
             if resultado['duros'] or resultado['avisos']:
                 achados.append((int(capitulo), int(verso.get('verse', 0)),
@@ -108,7 +113,8 @@ def relatorio(pasta: Path, livros_filtro: set[int] | None, rigoroso: bool) -> in
         livro = POR_NUMERO.get(numero)
         nome = livro.nome if livro else str(numero)
         achados = analisar_dados(todos[numero],
-                                 incluir_comentario=_auditar_notas(pasta, numero))
+                                 incluir_comentario=_auditar_notas(pasta, numero),
+                                 livro=numero)
         if not achados:
             continue
         print(f'\n## {nome} ({numero})')

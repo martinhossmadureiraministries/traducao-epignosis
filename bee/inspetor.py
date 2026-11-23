@@ -105,6 +105,24 @@ SECCOES_CASA = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
 # o texto NOVO, e um livro entra nesta lista quando as notas forem harmonizadas.
 LIVROS_FORMATO_CASA = frozenset({500, 600, 630, 640, 700, 710, 720})
 
+# Capítulos já reescritos no formato das cartas e dos livros do AT aprovados
+# (2026-11-23): nota em prosa, sem rótulos, e Crítica Textual só quando há
+# variante no aparato. O resto do livro continua no formato da casa até ser
+# convertido capítulo a capítulo. João 1–2 são o primeiro bloco.
+CAPITULOS_EM_PROSA: dict[int, frozenset[int]] = {500: frozenset({1, 2})}
+
+
+def formato_casa_do_capitulo(livro: int | None, capitulo: int) -> bool:
+    """O capítulo leva as três secções (formato da casa)?
+
+    Livro desconhecido (None) segue a regra antiga: formato da casa.
+    """
+    if livro is None:
+        return True
+    if capitulo in CAPITULOS_EM_PROSA.get(livro, frozenset()):
+        return False
+    return livro in LIVROS_FORMATO_CASA
+
 
 def analisar_texto(texto: str) -> dict[str, list[str]]:
     """Classifica um texto de versículo. Devolve {'duros': […], 'avisos': […]}."""
@@ -143,8 +161,11 @@ def grego_sem_italico(comentario: str) -> list[str]:
         if grego_fora_de_italico(comentario or '') else []
 
 
-def analisar_comentario(comentario: str) -> list[str]:
+def analisar_comentario(comentario: str, formato_casa: bool = True) -> list[str]:
     """Falhas duras da NOTA: secções no formato da casa e grego sem mistura.
+
+    ``formato_casa=False`` (capítulo em prosa, ver CAPITULOS_EM_PROSA) dispensa
+    os rótulos; a mistura greco-latina continua a chumbar.
 
     A produção de 2026-11-20 gravou 30 notas com «<b>Análise Léxica</b> —»
     em vez de «<b>Análise Léxica:</b>»: o texto passava na porta e o
@@ -156,7 +177,7 @@ def analisar_comentario(comentario: str) -> list[str]:
     falhas = [
         f'nota sem «{seccao}:» no formato da casa'
         for seccao in SECCOES_CASA
-        if f'<b>{seccao}:</b>' not in nota
+        if formato_casa and f'<b>{seccao}:</b>' not in nota
     ]
     limpo = re.sub(r'<[^>]+>', ' ', nota)
     if any(_GREGO.search(tok) and re.search(r'[A-Za-z]', tok)

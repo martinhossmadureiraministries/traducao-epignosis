@@ -27,6 +27,7 @@ sys.path.insert(0, str(RAIZ / 'scripts'))
 
 from bee.arquivos import DadosInvalidos, validar_livro  # noqa: E402
 from bee.catalogo import POR_NUMERO  # noqa: E402
+from bee.inspetor import formato_casa_do_capitulo  # noqa: E402
 from bee.fontes import SBL_COMMIT, TR_COMMIT  # noqa: E402
 
 RELATORIO = RAIZ / 'docs' / 'colacao' / '2_Tessalonicenses.json'
@@ -746,6 +747,9 @@ class MigracaoNotasCincoLivrosTest(unittest.TestCase):
                         if numero in (600, 700, 710) else {'rascunho'})
             self.assertEqual(estados, esperado, ficheiro.name)
             for cap, versos in livro['chapters'].items():
+                if not formato_casa_do_capitulo(numero, int(cap)):
+                    # João 1–2: notas em prosa, como as cartas aprovadas.
+                    continue
                 for v in versos:
                     comentario = v.get('commentary', '') or ''
                     for seccao in ('Análise Léxica', 'Crítica Textual',
