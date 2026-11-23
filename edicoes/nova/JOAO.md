@@ -969,7 +969,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **28** Eu dou-lhes vida eterna; não se perderão para sempre, e ninguém as arrebatará da minha mão.
 
-**29** O Pai, que me deu, é maior do que todos; e ninguém pode arrebatá-las da mão do Pai.
+**29** O meu Pai, que me deu, é maior do que todos; e ninguém pode arrebatá-las da mão do Pai.
 
 **30** Eu e o Pai somos um.
 
@@ -1229,7 +1229,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:51**
 
-- *Ἀμὴν ἀμὴν λέγω ὑμῖν*, «em verdade, em verdade digo a vocês», é a fórmula dupla do evangelho (cf. 3:3). O plural «vocês» mostra que o dito vale para mais do que Natanael. A imagem de anjos *ἀναβαίνοντας καὶ καταβαίνοντας*, «subindo e descendo», retoma a escada de Jacó (Génesis 28:12). *Υἱὸν τοῦ ἀνθρώπου*, «Filho do Homem», é o título de Daniel 7:13, com maiúsculas na tradução.
+- *Ἀμὴν ἀμὴν λέγω ὑμῖν*, «em verdade, em verdade digo a vocês», é a fórmula dupla do evangelho (cf. 3:3). O plural «vocês» mostra que o dito vale para mais do que Natanael. A imagem de anjos *ἀναβαίνοντας καὶ καταβαίνοντας*, «subindo e descendo», retoma a escada de Jacó (Génesis 28:12). *υἱὸν τοῦ ἀνθρώπου*, «Filho do Homem», é o título de Daniel 7:13, com maiúsculas na tradução.
 - **Crítica Textual.** Aparato de edições SBLGNT, 1:51: WH, Treg e NA28 leem «*ὑμῖν*» sem acrescento; RP acrescenta «*ἀπʼ ἄρτι*» («desde agora»). Na colação, 02 traz a expressão antes do verbo, e KJTR, ST e Scrivener também a incluem. A tradução segue a base. O apoio da expressão é restrito a 02 e à família TR.
 
 ### Notas do capítulo 2
@@ -1522,7 +1522,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:1**
 
 - *Ἔγνω* (égnō), «soube», é aoristo: o conhecimento chegou e foi tomado. *Ποιεῖ μαθητάς* (poiei mathētás), «faz discípulos», é expressão de gerar seguidores, e a tradução mantém o verbo fazer. O travessão marca que a frase continua no versículo seguinte, que corrige o que foi dito.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:1: Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg e RP leem «*κύριος*» («o Senhor»). Na colação, «*κύριος*» aparece também em 𝔓66, 𝔓75, 02, 03, 032 e 04, e em KJTR; 01 segue a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2), e a leitura «o Senhor» pode ser uma troca reverente. Mas o testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg, NIV e RP leem «*κύριος*» («o Senhor»). Na colação, «*κύριος*» aparece nos manuscritos 𝔓66, 𝔓75, 02, 03, 032 e 04, e nas edições do Textus Receptus KJTR, RP, ST, SR e Scrivener; 01 e 05 leem «*Ἰησοῦς*» com a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2). O testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
 
 **4:2**
 
@@ -1718,7 +1718,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:44**
 
 - *Ἐμαρτύρησεν* (emartýrēsen), «declarou», é aoristo: a declaração é um facto. *Ἰδίᾳ πατρίδι* (idía patrídi), «sua própria pátria», é o lugar de origem, e o texto não diz se é a Galileia, a Judeia ou Nazaré. A interpretação é debatida, porque em 4:45 os galileus recebem Jesus. Marcos 6:4 e Lucas 4:24 trazem o mesmo ditado em contexto de Nazaré. A NVI traz entre parênteses «própria terra».
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:44: WH, Treg e NA28 leem «*γὰρ*» («porque»); RP acrescenta «*ὁ*» antes de «*Ἰησοῦς*». Na colação, KJTR, RP, ST e Scrivener também têm o artigo. A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:44: WH, Treg e NA28 leem «*γὰρ*» («porque»); RP acrescenta «*ὁ*» antes de «*Ἰησοῦς*». Na colação, o artigo aparece só nas edições KJTR, RP, ST e Scrivener; nenhum manuscrito colacionado o tem. A tradução segue a base.
 
 **4:45**
 
@@ -1767,8 +1767,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **4:54**
 
-- *Δεύτερον σημεῖον* (défteron sēmeion), «segundo sinal», liga este sinal ao primeiro de 2:11, também em Caná. A ARC diz «segundo milagre». A partícula *δέ*, que WH, Treg e NA28 leem, é ligação fraca e a tradução não a traduz; a leitura sem ela não muda o sentido.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:54: WH, Treg e NA28 leem «*δὲ*» («por sua vez»); RP omite-o. Na colação, 01, 02, KJTR, RP e ST omitem a partícula. A tradução segue a base.
+- *Δεύτερον σημεῖον* (défteron sēmeion), «segundo sinal», liga este sinal ao primeiro de 2:11, também em Caná. A partícula *δέ*, que WH, Treg e NA28 leem, é ligação fraca e a tradução não a traduz; a leitura sem ela não muda o sentido.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:54: WH, Treg e NA28 leem «*δὲ*» («por sua vez»); RP omite-o. Na colação, 01 e 02 omitem a partícula, e também as edições KJTR, RP, ST e Scrivener. A tradução segue a base.
 
 ### Notas do capítulo 5
 
@@ -2985,7 +2985,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **9:35**
 
 - *τοῦ ἀνθρώπου* (tou anthrōpou), «do homem»; *υἱόν* (huion), «filho». Jesus procura o homem depois de ele ser expulso. A tradução segue a base, «Filho do Homem».
-- **Crítica Textual.** Aparato de edições SBLGNT, 9:35: a base lê «*Υἱὸν τοῦ ἀνθρώπου*», com WH e NA28; Treg e RP leem «*Υἱὸν τοῦ θεοῦ*» (Filho de Deus). A base lê «*Ἤκουσεν*», com WH e NA28; Treg e RP acrescentam «*ὁ*». A base lê «*εἶπεν*», com WH e NA28; Treg e RP acrescentam «*αὐτῷ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 9:35: a base lê «*υἱὸν τοῦ ἀνθρώπου*», com WH e NA28; Treg e RP leem «*υἱὸν τοῦ θεοῦ*» (Filho de Deus). A base lê «*Ἤκουσεν*», com WH e NA28; Treg e RP acrescentam «*ὁ*». A base lê «*εἶπεν*», com WH e NA28; Treg e RP acrescentam «*αὐτῷ*».
 
 **9:36**
 
@@ -3150,7 +3150,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **10:29**
 
 - *δέδωκέν* (dedōken), «deu»; *μεῖζων* (meizōn), «maior»; *ἁρπάζειν* (harpazein), «arrebatar». A segurança vem da mão do Pai, que é maior do que tudo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 10:29: a base lê «*ὃ*», com WH, Treg e NA28; NIV e RP leem «*ὃς*». A base lê «*πάντων μεῖζων*», com Holmes e WH na margem; WH, Treg e NA28 leem «*πάντων μεῖζόν*»; a NIV e RP leem «*μείζων πάντων*». A base lê «*πατρός*», com WH e NA28; Treg e RP acrescentam «*μου*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 10:29: a base lê «*ὃ*», com WH, Treg e NA28; NIV e RP leem «*ὃς*». A base lê «*μοι*», com WH, Treg, RP e NA28; a NIV acrescenta «*αὐτὰ*». A base lê «*πάντων μεῖζων*», com Holmes e WH na margem; WH, Treg e NA28 leem «*πάντων μεῖζόν*»; a NIV e RP leem «*μείζων πάντων*». A base lê «*πατρός*», com WH e NA28; Treg e RP acrescentam «*μου*».
 
 **10:30**
 
@@ -3182,7 +3182,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **10:36**
 
-- *ἡγίασεν* (hēgiasen), «santificou»; *ἀπέστειλεν* (apesteilen), «enviou»; *Υἱὸς τοῦ θεοῦ* (Huios tou theou), «Filho de Deus». A distinção é de origem: a quem o Pai santificou e enviou não se pode chamar blasfemo por dizer a verdade.
+- *ἡγίασεν* (hēgiasen), «santificou»; *ἀπέστειλεν* (apesteilen), «enviou»; *υἱὸς τοῦ θεοῦ* (Huios tou theou), «Filho de Deus». A distinção é de origem: a quem o Pai santificou e enviou não se pode chamar blasfemo por dizer a verdade.
 
 **10:37**
 

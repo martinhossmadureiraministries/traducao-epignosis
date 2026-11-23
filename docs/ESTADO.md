@@ -59,10 +59,12 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   contra `docs/colacao/João.json` em 2026-11-20. As glosas das formas isoladas foram
   conferidas com o Dodson e o Abbott-Smith (ver `docs/EDITORIAL.md`, «Léxico»).
 - **5–6:** aprovados pelo responsável em 2026-11-23.
-- **7–10:** prosa em rascunho. Pendente: leitura do responsável; verificação versículo
-  a versículo de 8:9, 8:11, 8:41, 9:1–41 e 10:29 contra o aparato e a colação. Estes
-  versículos têm variantes com decisão difícil. Só depois de lidos e verificados
-  podem ser aprovados.
+- **7–10:** prosa em rascunho. Verificados versículo a versículo contra o aparato e a
+  colação: 8:9, 8:11, 8:41, 9:1–41 e 10:29. Corrigidos nessa verificação: em 10:29 a
+  tradução passa a «O meu Pai» (a base tem «ὁ πατήρ μου») e a CT regista a variante
+  «μοι» / «αὐτὰ» (NIV); em 9:35 e 10:36 (e 1:51) a maiúscula de «υἱός» a meio da frase
+  passa a minúscula. Todas as CT de 7–10 conferem com o aparato da colação. Pendente:
+  leitura do responsável; só depois podem ser aprovados.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
 - O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-20
@@ -72,7 +74,8 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
 
 Filemom, Tito, Judas, 2 João, 3 João e 2 Tessalonicenses estão em prosa, gravadas e
 conferidas com a colação respetiva (`scripts/verificar_notas_colacao.py`, rc 0).
-Todos os blocos estão em `rascunho`, à espera de leitura. Em 2 Tessalonicenses as notas
+Todos os blocos estão em `rascunho`, à espera de leitura. Decisão do responsável: a prosa
+gravada em 2 Tessalonicenses basta; não há conteúdo a restaurar. Em 2 Tessalonicenses as notas
 recuperaram o conteúdo editorial verificado da versão anterior: 1:2 (sem «nosso», seguindo
 a base), 1:11–12, 2:2, 2:13 (ἀπαρχήν, com a alternativa ἀπʼ ἀρχῆς), 3:6 (anártrico e
 terceira pessoa de παρελάβοσαν), 3:16 (τόπῳ/τρόπῳ). Não há níveis de certeza impressos.
@@ -110,8 +113,8 @@ Blocos em `rascunho`. Aguarda leitura do responsável.
    pelo responsável nem pelo agente.
 4. **João 1–4:** léxico conferido; falta a leitura do responsável.
 5. **`colacao/João.md`:** a versão em Markdown da colação ainda não foi revista.
-6. **Commit e merge:** o trabalho de 2026-11-20 está por commitar no ramo
-   `arena/86a50674-traducao-epignosis`, em conjunto com as alterações desta reescrita.
+6. **Ramo:** o trabalho de formato foi integrado em `main` (PR #71). O trabalho seguinte
+   faz-se no ramo de cada sessão.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 
 ## Nota sobre João 7–10 (2026-11-20)
