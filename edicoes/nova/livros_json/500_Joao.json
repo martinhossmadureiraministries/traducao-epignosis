@@ -4361,6 +4361,15 @@
       "model": "aprovação do responsável 2026-11-24 (sem IA no workflow)",
       "generated_at_utc": "2026-11-24T00:00:00+00:00",
       "nota": "capítulo 2 aprovado pelo responsável após alterações em 2:4 (tradução literal e aparato de καί), 2:10 (o bom vinho) e 2:24 (não se fiava neles); 2:19 sem alteração"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 36,
+      "provider": "agente",
+      "model": "aprovação do responsável (sem IA no workflow)",
+      "generated_at_utc": "2026-11-23T14:30:00+00:00",
+      "nota": "capítulo 3 aprovado pelo responsável sem alterações de texto; confronto com SBLGNT e colação feito, sem erros de fundo"
     }
   ],
   "sources": {
@@ -4433,8 +4442,8 @@
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 36,
-        "status": "rascunho",
-        "nota": "Capítulo 3 fechado: os versículos 1–33 foram lapidados em 2026-11-20 por scripts/lapidar_joao23.py e os versículos 34–36, produzidos na nuvem já depois dessa lapidação, por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato e da colação CNTR, capítulos 1–4; registo e pontuação normalizados). Continua RASCUNHO."
+        "status": "aprovado",
+        "nota": "Capítulo 3 fechado: os versículos 1–33 foram lapidados em 2026-11-20 por scripts/lapidar_joao23.py e os versículos 34–36, produzidos na nuvem já depois dessa lapidação, por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato e da colação CNTR, capítulos 1–4; registo e pontuação normalizados). Aprovado pelo responsável após leitura do capítulo 3; confronto com o grego e a colação feito em 2026-11-23 sem alterações."
       },
       {
         "chapter": 4,
