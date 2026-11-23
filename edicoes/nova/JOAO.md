@@ -1274,7 +1274,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **26** Jesus respondeu: «É aquele a quem eu der o pão molhado.» E, molhando o pão, deu-o a Judas, filho de Simão Iscariotes.
 
-**27** Depois do pão, Satanás entrou nele. Jesus disse-lhe: «O que fazes, faze-o depressa.»
+**27** Depois do pão, Satanás entrou nele. Jesus disse-lhe: «O que fazes, faz-o depressa.»
 
 **28** Nenhum dos que estavam à mesa percebeu para que lhe disse isto;
 
@@ -1342,7 +1342,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **21** Quem tem os meus mandamentos e os guarda, esse é que me ama; e quem me ama será amado pelo meu Pai, e eu o amarei e me manifestarei a ele.
 
-**22** Judas, não o Iscariotes, disse-lhe: «Senhor, o que aconteceu para que te manifestes a nós e não ao mundo?»
+**22** Judas, não o Iscariotes, disse-lhe: «Senhor, o que aconteceu para que te vás manifestar a nós e não ao mundo?»
 
 **23** Jesus respondeu: «Se alguém me ama, guardará a minha palavra; e o meu Pai o amará, e viremos a ele e faremos morada nele.»
 
@@ -2016,7 +2016,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **4:9**
 
-- *Συγχρῶνται* (synchrôntai), «se dão com», quer dizer ter relações de convivência e uso comum. A tradução mantém a frase do texto, e a NVT diz com clareza «se recusam a ter qualquer contato». Na SBLGNT, a expressão «mulher samaritana» tem uma ordem de palavras que o aparato registra como variável.
+- *Συγχρῶνται* (synchrôntai), «se dão com», quer dizer ter relações de convivência e uso comum. A tradução mantém a frase do texto, e a NVT diz com clareza «se recusam a ter qualquer contato». Na SBLGNT, a expressão «mulher samaritana» tem uma ordem de palavras que o aparato regista como variável.
 - **Crítica Textual.** Aparato de edições SBLGNT, 4:9: WH, Treg e NA28 leem «*γυναικὸς Σαμαρίτιδος οὔσης*» («sendo mulher samaritana»); RP lê «*οὔσης γυναικὸς Σαμαρείτιδος*», com a ordem invertida. A tradução segue a base; o sentido é o mesmo.
 
 **4:10**
@@ -2445,7 +2445,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:42**
 
 - *ἔγνωκα* (egnōka), «conheço», com sentido de conhecimento que se tem; *ἀγάπην τοῦ θεοῦ* (agapēn tou theou), «amor de Deus». Jesus conhece o interior dos ouvintes, e a falta de amor de Deus é o diagnóstico.
-- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*»; 05 desloca «*οὐκ ἔχετε*» para antes de «*τὴν ἀγάπην*»; 032 lê «*ἔχεται*» em lugar de «*ἔχετε*»; 02 apresenta outra forma verbal nesse lugar.
+- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
 **5:43**
 
@@ -2789,7 +2789,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:64**
 
 - *ἐξ ἀρχῆς* (ex archēs), «desde o princípio»; *ᾔδει* (ēdei), «sabia»; *παραδώσων* (paradōsōn), «que entregaria». O narrador anuncia a traição antes de falar de Judas.
-- **Crítica Textual.** Na colação, 01 lê «*ὁ σωτήρ*» em lugar de «*ὁ Ἰησοῦς*», «*ἀπ᾽ ἀρχῆς*» em lugar de «*ἐξ ἀρχῆς*», «*οἱ πιστεύοντες*» em lugar de «*οἳ οὐ πιστεύουσιν*» e «*καὶ ἦν ὁ μέλλων αὐτὸν παραδιδόναι*» em lugar de «*καὶ τίς ἐστιν ὁ παραδώσων αὐτόν*».
+- **Crítica Textual.** Na colação, 01 lê «*ὁ σωτήρ*» em lugar de «*ὁ Ἰησοῦς*», «*ἀπʼ ἀρχῆς*» em lugar de «*ἐξ ἀρχῆς*», «*οἱ πιστεύοντες*» em lugar de «*οἱ μὴ πιστεύοντες*» e «*καὶ ἦν ὁ μέλλων αὐτὸν παραδιδόναι*» em lugar de «*καὶ τίς ἐστιν ὁ παραδώσων αὐτόν*»; P66 lê «*ἀπʼ ἀρχῆς*» e «*καὶ τίς ἦν ὁ μέλλων αὐτὸν παραδιδόναι*»; 05 lê «*παραδιδούς*» em lugar de «*παραδώσων*»; 029 inverte «*τινες*» e «*ἐξ ὑμῶν*». As diferenças são de testemunhas da colação, e o aparato da SBLGNT não regista variante neste versículo; a base segue o texto que a SBLGNT imprime.
 
 **6:65**
 
@@ -4061,7 +4061,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **12:7**
 
 - *ἵνα ... τηρήσῃ* (hina ... tērēsēi), «para que guarde»; *ἐνταφιασμοῦ* (entaphiasmou), «sepultura». Jesus lê o gesto como preparação para a sua sepultura, e o texto é aqui mais difícil do que parece.
-- **Crítica Textual.** Aparato de edições SBLGNT, 12:7: a base lê «*ἵνα*», com WH, Treg e NA28; RP omite a palavra. A base lê «*τηρήσῃ*», com WH, Treg e NA28; RP lê «*τετήρηκεν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 12:7: a base lê «*ἵνα*», com WH, Treg e NA28; RP omite a palavra. A base lê «*τηρήσῃ*», com WH, Treg e NA28; RP lê «*τετήρηκεν*». Na colação, 02, KJTR, RP, ST e Scrivener omitem «*ἵνα*» e leem «*τετήρηκεν*»; 05 omite «*μου*» depois de «*ἐνταφιασμοῦ*». A variante muda a oração de finalidade («para que o guarde») numa afirmação de algo já guardado; a base segue WH, Treg e NA28, que mantêm a finalidade.
 
 **12:8**
 
@@ -4540,7 +4540,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **14:22**
 
-- *Ἰούδας, οὐχ ὁ Ἰσκαριώτης* (Ioudas, ouch ho Iskariōtēs), «Judas, não o Iscariotes»; *ἐμφανίζειν* (emphanizein), «manifestar». O narrador distingue este Judas do traidor.
+- *Ἰούδας, οὐχ ὁ Ἰσκαριώτης* (Ioudas, ouch ho Iskariōtēs), «Judas, não o Iscariotes»; *μέλλεις* (melleis), «estás para, vais»; *ἐμφανίζειν* (emphanizein), «manifestar». A forma «vás manifestar» traduz a intenção de *μέλλεις*, que o subjuntivo «manifestes» perdia. O narrador distingue este Judas do traidor.
 - **Crítica Textual.** Aparato de edições SBLGNT, 14:22: a base lê «*τί*», com WH e Treg; NA28 e RP leem «*καὶ τί*». A variante acrescenta «*καὶ*» (e) antes de «*τί*», sem mudar o sentido da pergunta; a base segue WH e Treg. Na colação, 01, 032 e P66 leem «*καὶ τί*»; P66 lê ainda «*λέγει πρὸς αὐτόν*» no lugar de «*λέγει αὐτῷ*»; 032 inverte «*ἡμῖν μέλλεις*» para «*μέλλεις ἡμῖν*»; 05 lê «*ἀπὸ Καρυώτου*» no lugar de «*Ἰσκαριώτης*» e «*τί ἐστιν*» no lugar de «*τί γέγονεν*».
 
 **14:23**

@@ -36,7 +36,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 em revisão; 14–15 rascunho | pendente |
+| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 em revisão (12:6 aprovado com «levava»); 14–15 rascunho (14:22 com a opção «te vás manifestar») | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -49,7 +49,7 @@ de processo antigos estão em `docs/arquivo/`.
 Total: 59 capítulos e 1329 versículos, todos em prosa. Números de `scripts/verificar_dados.py`.
 
 **Quem aprovou o quê.** Os oito livros do AT e Filipenses estão aprovados editorialmente
-pelo responsável. João 1–8 foram aprovados pelo responsável em 2026-11-24 («Aprovo todos os 1-8 com as alterações que fizeste»). A Crítica Textual de 1–8 foi completada depois dessa aprovação, a pedido do responsável; fica registada no `history`. João 9–11 e 13 foram aprovados pelo responsável na sessão de revisão de 9–13; o capítulo 12 está em revisão (12:6, «levava» ou «tomava», aguarda decisão do responsável). Os restantes estão em rascunho.
+pelo responsável. João 1–8 foram aprovados pelo responsável em 2026-11-24 («Aprovo todos os 1-8 com as alterações que fizeste»). A Crítica Textual de 1–8 foi completada depois dessa aprovação, a pedido do responsável; fica registada no `history`. João 9–11 e 13 foram aprovados pelo responsável na sessão de revisão de 9–13; o capítulo 12 está em revisão: 12:6 aprovado com «levava», e 12:7 e o resto do capítulo por rever. Os restantes estão em rascunho.
 Os blocos 7–10 apareceram marcados como aprovados no ficheiro em 2026-11-20, sem registo
 de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaixo).
 
