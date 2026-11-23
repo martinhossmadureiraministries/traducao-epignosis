@@ -2767,7 +2767,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:3**
 
 - *ἀδελφοί* (adelphoi), «irmãos», são parentes de Jesus que não são discípulos (cf. 7:5). *μετάβηθι* (metabēthi), «sai, muda-te»; *θεωρήσουσιν* (theōrēsousin), «verão»; *ἔργα* (erga), «obras». Os irmãos falam como quem propõe uma exposição pública: pedem uma demonstração, não uma adesão.
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*». A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*», ; a NIV segue «*τὰ ἔργα*» por escolha de tradução.
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*». A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*»; a NIV segue «*τὰ ἔργα*» por escolha de tradução.
 
 **7:4**
 
@@ -2791,7 +2791,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **7:8**
 
-- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH, RP e a NIV dizem «ainda não». A frase parece contradizer o versículo 10, onde Jesus sobe depois. A nota não resolve a contradição: o texto distingue o tempo de Jesus do tempo dos irmãos.
+- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH e RP dizem «ainda não», e a NIV traduz assim. A frase parece contradizer o versículo 10, onde Jesus sobe depois. A nota não resolve a contradição: o texto distingue o tempo de Jesus do tempo dos irmãos.
 - **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH e RP leem «*οὔπω*» («ainda não»), e a NIV segue essa leitura por escolha de tradução. A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» depois de «*ἑορτήν*».
 
 **7:9**
@@ -3122,7 +3122,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **8:25**
 
-- *Τὴν ἀρχὴν* (tēn archēn), «desde o princípio, em absoluto»; *ὅ τι* (ho ti), «o que». A frase grega é elíptica e tem várias leituras; a tradução escolhe «sou o que digo a vocês», com o sujeito em Jesus e o «o que» a referir-se à sua própria palavra. A resposta foge à pergunta direta e reafirma a sua palavra como revelação.
+- *Τὴν ἀρχὴν* (tēn archēn), «desde o princípio, em absoluto»; *ὅ τι* (ho ti), «o que». A frase grega é elíptica e tem várias leituras; a tradução escolhe «sou o que digo a vocês», em que quem fala e se identifica é Jesus. A resposta foge à pergunta direta e reafirma a sua palavra como revelação.
 - **Crítica Textual.** Aparato de edições SBLGNT, 8:25: a base lê «*εἶπεν*», com WH, Treg e NA28; RP lê «*Καὶ εἶπεν*». A base lê «*ὅ τι*», com Treg, NA28 e RP; WH lê «*ὅτι*».
 
 **8:26**
