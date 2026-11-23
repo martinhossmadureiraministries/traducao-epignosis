@@ -132,3 +132,7 @@ Blocos em `rascunho`. Aguarda leitura do responsável.
 O ficheiro chegou a ter os blocos 7–10 marcados como `aprovado`, com uma nota que dizia
 «aprovado pelo responsável após leitura». Não há registo de aprovação do responsável que a suporte. Foi revertida para `rascunho`, com a nota anterior, e o texto e as notas
 ficaram intactos (backup em `/tmp/conv/500_Joao.antes_reverte710.json`, efémero).
+
+## Correções em livros já aprovados (revisão de outros livros)
+
+Feitas nesta sessão, sem alterar a aprovação de nenhum livro: NIV reformulada como escolha de tradução onde diverge da base, e retirada onde concorda, em Filipenses (1:14, 3:13), 1 Tessalonicenses (2:7, 2:16, 3:13, 4:11), 2 Tessalonicenses (1:2, 2:13, 3:6), Tito (1:10) e Judas (1:15); sinais de aparato e aparato em bruto retirados (Filipenses 2:4); frase de processo «Sem colação direta de manuscritos nesta entrega» retirada das notas (45 notas; a limitação fica no JSON); ortografia PT-PT («perceção», «receção», «aceção», «ativa», «leem»); «ambiguar» (2 Tess 2:9) substituído por uma frase. Alteração de texto: 13:27 («faz-o», em vez de «faze-o»). Lista para aprovação: `docs/revisao/APROVACAO_PENDENTE.md`.
