@@ -4541,7 +4541,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **14:22**
 
 - *Ἰούδας, οὐχ ὁ Ἰσκαριώτης* (Ioudas, ouch ho Iskariōtēs), «Judas, não o Iscariotes»; *ἐμφανίζειν* (emphanizein), «manifestar». O narrador distingue este Judas do traidor.
-- **Crítica Textual.** Aparato de edições SBLGNT, 14:22: a base lê «*τί*», com WH e Treg; NA28 e RP leem «*καὶ τί*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 14:22: a base lê «*τί*», com WH e Treg; NA28 e RP leem «*καὶ τί*». A variante acrescenta «*καὶ*» (e) antes de «*τί*», sem mudar o sentido da pergunta; a base segue WH e Treg. Na colação, 01, 032 e P66 leem «*καὶ τί*»; P66 lê ainda «*λέγει πρὸς αὐτόν*» no lugar de «*λέγει αὐτῷ*»; 032 inverte «*ἡμῖν μέλλεις*» para «*μέλλεις ἡμῖν*»; 05 lê «*ἀπὸ Καρυώτου*» no lugar de «*Ἰσκαριώτης*» e «*τί ἐστιν*» no lugar de «*τί γέγονεν*».
 
 **14:23**
 
