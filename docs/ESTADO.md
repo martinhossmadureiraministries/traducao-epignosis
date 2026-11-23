@@ -36,7 +36,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 | 1–3, 5–6 aprovados; 4 rascunho; 7–10 rascunho | pendente |
+| João (500) | 10 | 479 | 276 | 1–6 aprovados; 7–10 rascunho | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |

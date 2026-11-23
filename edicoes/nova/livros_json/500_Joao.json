@@ -4370,6 +4370,15 @@
       "model": "aprovação do responsável (sem IA no workflow)",
       "generated_at_utc": "2026-11-23T14:30:00+00:00",
       "nota": "capítulo 3 aprovado pelo responsável sem alterações de texto; confronto com SBLGNT e colação feito, sem erros de fundo"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 54,
+      "provider": "agente",
+      "model": "aprovação do responsável (sem IA no workflow)",
+      "generated_at_utc": "2026-11-23T15:00:00+00:00",
+      "nota": "capítulo 4 aprovado pelo responsável; correções de notas (4:6 ortografia; 4:12 P75; 4:24 e 4:38 Crítica Textual; 4:36 lista) e sigla NIV em 4:1 por confirmar"
     }
   ],
   "sources": {
@@ -4449,8 +4458,8 @@
         "chapter": 4,
         "verse_from": 1,
         "verse_to": 54,
-        "status": "rascunho",
-        "nota": "Capítulo completo (54 versículos). foram lapidados em 2026-11-20 por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato da SBLGNT e da colação CNTR, capítulos 1–4, com níveis de certeza; registo «vocês», gerúndio e pontuação normalizados). Continua RASCUNHO."
+        "status": "aprovado",
+        "nota": "Capítulo completo (54 versículos). foram lapidados em 2026-11-20 por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato da SBLGNT e da colação CNTR, capítulos 1–4, com níveis de certeza; registo «vocês», gerúndio e pontuação normalizados). Aprovado pelo responsável após revisão do capítulo 4 (correções de notas aplicadas; sigla NIV em 4:1 ainda por confirmar)."
       },
       {
         "chapter": 5,

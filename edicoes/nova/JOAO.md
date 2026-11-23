@@ -9,7 +9,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 1 | aprovado | 51 |
 | 2 | aprovado | 25 |
 | 3 | aprovado | 36 |
-| 4 | rascunho | 54 |
+| 4 | aprovado | 54 |
 | 5 | aprovado | 47 |
 | 6 | aprovado | 71 |
 | 7 | rascunho | 53 |
