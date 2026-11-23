@@ -30,7 +30,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **2** Ele estava no princípio com Deus.
 
-**3** Todas as coisas foram feitas por meio dele, e sem ele nada foi feito do que existe.
+**3** Todas as coisas foram feitas por meio dele, e sem ele nem uma só coisa veio a existir.
 
 **4** Nele estava a vida, e a vida era a luz dos seres humanos.
 
@@ -48,19 +48,19 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **11** Ele veio aos seus, mas os seus não o receberam.
 
-**12** A todos os que o receberam, deu-lhes o direito de se tornarem filhos de Deus, aos que creem no seu nome,
+**12** Mas a todos quantos o receberam, deu-lhes o direito de virem a ser filhos de Deus: aos que creem no seu nome,
 
 **13** os quais não nasceram de sangue, nem por vontade da carne, nem por vontade de homem, mas de Deus.
 
 **14** E o Verbo se fez carne e habitou entre nós; e contemplámos a sua glória, glória como a do Filho único, vinda do Pai, cheio de graça e de verdade.
 
-**15** João dá testemunho dele e clama: «Este era aquele de quem eu disse: “O que vem depois de mim passou à minha frente, porque existia antes de mim.”»
+**15** João dá testemunho dele e clama: «Este era aquele de quem eu disse: “O que vem depois de mim ficou à minha frente, porque existia antes de mim.”»
 
 **16** Porque da sua plenitude todos nós recebemos, graça sobre graça.
 
 **17** Porque a lei foi dada por meio de Moisés; a graça e a verdade vieram por meio de Jesus Cristo.
 
-**18** Ninguém jamais viu a Deus. O Filho único, que é Deus e está junto do Pai, é quem o deu a conhecer.
+**18** Ninguém jamais viu a Deus. O unigénito, que é Deus, está junto do Pai, e é quem o deu a conhecer.
 
 **19** Este é o testemunho de João, quando os judeus enviaram de Jerusalém sacerdotes e levitas para lhe perguntarem: «Quem és tu?»
 
@@ -84,7 +84,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **29** No dia seguinte, ele vê Jesus aproximar-se e diz: «Eis o Cordeiro de Deus, que tira o pecado do mundo!»
 
-**30** Este é aquele a respeito de quem eu disse: «Depois de mim vem um homem que passou à minha frente, porque existia antes de mim.»
+**30** Este é aquele a respeito de quem eu disse: «Depois de mim vem um homem que ficou à minha frente, porque existia antes de mim.»
 
 **31** Eu também não o conhecia, mas vim batizar com água para que ele fosse revelado a Israel.
 
@@ -1432,7 +1432,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:3**
 
-- *Πάντα* (panta), «todas as coisas», e *διʼ αὐτοῦ* (di*’* autou), «por meio dele», mostram o Verbo como agente intermediário da criação; a origem última está em Deus (v. 1). *Οὐδὲ ἕν*, «nem uma coisa», tem a força de «nada». O versículo termina com *ὃ γέγονεν*, «o que foi feito»: a pontuação da SBLGNT pode também ligar essas palavras ao v. 4, «o que foi feito nele era vida». A tradução segue a divisão de versículos da base e não decide a ambiguidade.
+- *Πάντα* (panta), «todas as coisas», e *διʼ αὐτοῦ* (di*’* autou), «por meio dele», mostram o Verbo como agente intermediário da criação; a origem última está em Deus (v. 1). *Οὐδὲ ἕν* (oude hen), «nem uma só coisa», nega com força, e o versículo termina com *ὃ γέγονεν* (ho gegonen), «o que veio a existir», que repete e reforça a negação: nada do que veio a existir veio a existir sem ele. O grego não tem preposição de origem, por isso a tradução evita «do que existe» e «a partir do que existe», que sugerem origem a partir de algo já existente. A pontuação da SBLGNT, base do projeto, fecha o v. 3 com *ὃ γέγονεν*, e a tradução segue essa divisão. A NA28 e a UBS5 põem o ponto antes de *ὃ γέγονεν* e ligam a expressão ao v. 4, com a leitura «o que veio a existir nele era vida». Como se trata de pontuação, e não de variante de manuscrito, a diferença fica nesta nota e não na Crítica Textual.
+- **Crítica Textual.** Na colação, P66, 01 e 05 leem «*οὐδέν*» em vez de «*οὐδὲ ἕν*», com o mesmo sentido, e 05 traz outra grafia do verbo. 04 omite a frase «*πάντα δι᾽ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο*». WH, RP, KJTR e ST leem como a base. Nenhuma destas diferenças muda o sentido.
 
 **1:4**
 
@@ -1468,7 +1469,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:12**
 
-- *Ἐξουσίαν* (exousian) é «autoridade», «poder» ou «direito». «Direito» traz a ideia de estatuto legal, e «poder» é alternativa igualmente possível. *Τέκνα θεοῦ γενέσθαι*, «tornarem-se filhos de Deus», usa *γίνομαι*: o estatuto é dado pela ação de Deus. Em *τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ*, o verbo «crer» vem com *εἰς*, que indica adesão à pessoa; o «nome» representa quem ele é.
+- *Ὅσοι* (hosoi), «todos quantos», abre a frase com *δέ*, que opõe este versículo ao v. 11: onde os seus não o receberam, há quem o receba. *Ἐξουσίαν* (exousian) é «autoridade», «poder» ou «direito». «Direito» traz a ideia de estatuto legal, e «poder» é alternativa igualmente possível. *Τέκνα θεοῦ γενέσθαι* (tekna theou genesthai), «virem a ser filhos de Deus», usa *γίνομαι*, «vir a ser»: o estatuto é dado pela ação de Deus. Em *τοῖς πιστεύουσιν εἰς τὸ ὄνομα αὐτοῦ*, o verbo «crer» vem com *εἰς*, que indica adesão à pessoa, e o «nome» representa quem ele é. A oração «aos que creem no seu nome» explica quem são «todos quantos».
+- **Crítica Textual.** Na colação, 01 e 032 leem «*γενέσθε*» em vez de «*γενέσθαι*», uma forma do mesmo verbo; 03 lê «*ἔλαβαν*», grafia de «*ἔλαβον*»; e 05 omite «*δέ*» e lê «*ἔδων*», grafia de «*ἔδωκεν*». WH, RP, KJTR e ST leem «*γενέσθαι*», como a base, e a tradução segue essa leitura. Nenhuma destas diferenças muda o sentido essencial.
 
 **1:13**
 
@@ -1480,8 +1482,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:15**
 
-- *Κέκραγεν* (kekragen), «clama», é verbo de grito, no presente histórico. *Οὗτος ἦν ὃν εἶπον*, «este era aquele de quem eu disse», usa o relativo com o verbo dizer: «de quem eu falei». *Ἔμπροσθέν μου γέγονεν*, «passou à minha frente», significa tornar-se antes ou ter precedência, e o contexto (*πρῶτός μου ἦν*, «era antes de mim») fala de dignidade e não só de tempo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:15: Treg, NA28 e RP leem «*ὃν εἶπον*» («de quem eu disse»); WH lê «*ὁ εἰπών*» («o que disse»). Na colação, 04 e WH leem «*ὁ εἰπών*», com o mesmo sentido; 01 lê «*ὃν εἰπών*». A tradução segue a base. A leitura de WH tem apoio de testemunhos antigos, e a base não é unânime.
+- *Κέκραγεν* (kekragen), «clama», é um perfeito com sentido de presente, que descreve um grito que continua a fazer efeito no testemunho. *Ὁ ὀπίσω μου ἐρχόμενος* (ho opisō mou erchomenos), «o que vem depois de mim», descreve quem segue João na ordem do tempo e da pregação. *Ἔμπροσθέν μου γέγονεν* (emprosthen mou gegonen), «ficou à minha frente», usa o perfeito de *γίνομαι*: o resultado de um acontecimento que continua válido. Aqui quer dizer que quem vem depois ocupa um lugar anterior ao de João. A frase seguinte, *πρῶτός μου ἦν* (prōtos mou ēn), «porque existia antes de mim», pode referir-se ao tempo ou à dignidade. O contexto favorece a dignidade: no v. 27 João diz que não é digno de desamarrar a correia da sandália daquele que vem depois dele. Por isso a tradução atual, «passou à minha frente», sugere movimento no espaço, e «ficou à minha frente» diz melhor a precedência.
+- **Crítica Textual.** Aparato SBLGNT, 1:15: a base, Treg, NA28 e RP leem «*ὃν εἶπον*» («de quem eu disse»); WH lê «*ὁ εἰπών*» («aquele que disse»), com o mesmo sentido. Na colação, a leitura da base tem o apoio dos papiros P66 e P75, e também de 02, KJTR, RP, ST, Scrivener e SR. WH e 04 leem «*ὁ εἰπών*»; 01 lê «*ὃν εἰπών*». A tradução segue a base, que tem o apoio mais antigo; a diferença não muda o sentido.
 
 **1:16**
 
@@ -1494,8 +1496,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:18**
 
-- *Θεὸν οὐδεὶς ἑώρακεν πώποτε*, «a Deus ninguém jamais viu», retoma a tradição de que ninguém vê a Deus (cf. Êxodo 33:20). *Ἐξηγήσατο* (exēgēsato), «deu a conhecer», é a raiz de «exegese»: quem explica o que viu. *Κόλπον* (kolpon), «seio», é a imagem de proximidade íntima, como em 13:23. A escolha de traduzir *μονογενὴς θεὸς* por «o Filho único, que é Deus» é interpretativa: o texto da base diz «Deus unigénito», e a tradução lê o adjetivo à luz de 1:14, onde a glória é «de Filho único». A variante «Filho» (RP) está na Crítica Textual.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:18: WH, Treg e NA28 leem «*μονογενὴς θεὸς*» («Deus unigénito»); RP lê «*ὁ μονογενὴς υἱός*» («o Filho unigénito»). Na colação, 02 e 032 leem «*υἱός*», como o RP, e também KJTR, ST e Scrivener; 01, 03 e 04 leem «*θεός*», como a base. A tradução segue a base na palavra, com a leitura explicada na análise. A escolha entre «Deus» e «Filho» é substantiva.
+- *Θεὸν οὐδεὶς ἑώρακεν πώποτε* (theon oudeis heōraken pōpote), «a Deus ninguém jamais viu», retoma a tradição de que ninguém vê a Deus (cf. Êxodo 33:20). *Ὁ ὢν εἰς τὸν κόλπον τοῦ πατρός* (ho ōn eis ton kolpon tou patros), «que está junto do Pai», diz literalmente «que está no seio do Pai»; *κόλπον* (kolpon), «seio», é a imagem de proximidade íntima, como em 13:23. *Ἐξηγήσατο* (exēgēsato), «deu a conhecer», é a raiz de «exegese»: quem explica o que viu. A expressão *μονογενὴς θεός* (monogenēs theos) admite duas leituras. Pode ser «Deus unigénito», com o adjetivo a qualificar «Deus» (é a leitura de NVI, ARA e NAA). Ou pode ser «o unigénito, que é Deus», com «unigénito» como substantivo e «Deus» em aposição, como na NET («the only one, himself God»). A tradução escolhe a segunda: lê o adjetivo à luz de 1:14 e de 1:1, onde o Verbo «era Deus», e evita introduzir o «Filho», que a base não lê. A leitura «Deus unigénito» é igualmente fiel à base e fica como alternativa.
+- **Crítica Textual.** Aparato SBLGNT, 1:18: WH, Treg e NA28 leem «*μονογενὴς θεός*» («Deus unigénito»), como a base; RP lê «*ὁ μονογενὴς υἱός*» («o Filho unigénito»). Na colação, «*θεός*» tem o apoio dos papiros P66 e P75, de 01, 03 e 04, e de WH; «*υἱός*» tem o apoio de 02, 032, RP, KJTR, ST e Scrivener. «Filho» é a leitura da maioria dos manuscritos gregos e da ARC. A tradução segue a base; a escolha entre «Deus» e «Filho» é substantiva, e a leitura da base não é unânime nos manuscritos.
 
 **1:19**
 
@@ -1551,8 +1553,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:30**
 
-- *Ὑπὲρ οὗ* (hyper hou), «a respeito de quem», tem o sentido de «acerca de», como em 1:15. *Ἔμπροσθέν μου γέγονεν*, «passou à minha frente», é o verbo de 1:15, de precedência. A repetição mostra que João cita as próprias palavras de 1:15.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:30: WH, Treg e NA28 leem «*ὑπὲρ*» («a respeito de»); RP lê «*περὶ*», com o mesmo sentido. A tradução segue a base.
+- *Ὑπὲρ οὗ* (hyper hou), «a respeito de quem», usa *ὑπέρ* com genitivo no sentido de «acerca de», como *περί* em 1:15. O versículo retoma as palavras de João em 1:15, com três mudanças: o presente *ἐστιν* («é») em vez de *ἦν* («era»); *ἔρχεται ἀνὴρ* (erchetai anēr), «vem um homem», em vez do particípio *ὁ ἐρχόμενος*, «o que vem»; e *ἐγὼ εἶπον*, «eu disse», em vez de *ὃν εἶπον*, «de quem eu disse». A mudança para «um homem» dá à figura uma presença pessoal, e a tradução deve mantê-la. O verbo *γέγονεν*, «ficou à minha frente», é o de 1:15, e aplicam-se as mesmas opções de tradução.
+- **Crítica Textual.** Aparato SBLGNT, 1:30: WH, Treg e NA28 leem «*ὑπέρ*» («a respeito de»); RP lê «*περί*» («acerca de»), com o mesmo sentido. Na colação, a base tem o apoio de P66 e P75, e também de 01, 03 e 04; «*περί*» aparece em 02, 029, KJTR, RP, ST e Scrivener. A diferença não muda o sentido; a tradução segue a base.
 
 **1:31**
 
@@ -1570,8 +1572,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1:34**
 
-- *Κἀγὼ ἑώρακα* (kagō heōraka), «eu também vi», é perfeito: a visão continua a valer no presente do testemunho. A palavra decisiva é *ἐκλεκτός* (eklektos), «escolhido», que a base imprime, e a tradução segue a base. A diferença é grande, porque a outra leitura dá «Filho de Deus». Por isso a alternativa fica registada na Crítica Textual, e a escolha não é segura.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:34: a base («*ἐκλεκτός*») tem o apoio de Holmes e da margem de WH; WH no texto, Treg, NA28 e RP leem «*υἱός*» («Filho»). Na colação, 02, 03, 032, 04, P66, P75, KJTR, ST e Scrivener leem «Filho»; 01 segue a base. A tradução segue a base. A decisão é provável mas não segura, e a alternativa tem apoio mais amplo nas edições críticas.
+- *Κἀγὼ ἑώρακα* (kagō heōraka), «eu também vi», é perfeito: a visão continua a valer no presente do testemunho. A palavra decisiva é *ἐκλεκτός* (eklektos), «escolhido», que a base imprime. «Escolhido de Deus» diz que Jesus foi escolhido para a missão; «Filho de Deus», a leitura mais comum nos manuscritos e nas traduções em português, diz outra coisa, a filiação.
+- **Crítica Textual.** Aparato SBLGNT, 1:34: a base («*ἐκλεκτός*») tem o apoio de Holmes e da margem de WH. WH no texto, Treg, NA28 e RP leem «*υἱός*» («Filho»). Na colação, «escolhido» tem o apoio de 01 e dos papiros P5 e P106; «Filho» tem o apoio de 02, 03, 032, 04, P66, P75, KJTR, ST, SR e Scrivener. A ARC, a ARA, a NVI e a NTLH dizem «Filho de Deus». A tradução segue a base. A decisão não é segura, e a leitura «Filho de Deus» é a alternativa mais amplamente atestada; a diferença é substantiva, porque muda o título messiânico para uma confissão de filiação.
 
 **1:35**
 

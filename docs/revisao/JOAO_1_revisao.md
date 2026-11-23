@@ -1,6 +1,31 @@
 # João 1 — revisão (atualizada em 2026-11-24)
 
-Estado: capítulo 1 em `rascunho`. Este documento não altera o texto. Cada proposta aguarda a sua decisão.
+Estado: capítulo 1 em `rascunho`. Este documento regista as decisões do responsável e o que já foi aplicado à JSON.
+
+## Aplicado em 2026-11-24
+
+| Versículo | Decisão | Aplicado |
+|---|---|---|
+| 1:3 | Proposta A: «…e sem ele nem uma só coisa veio a existir.» Nota com a leitura da NA28 e a Crítica Textual da colação (P66, 01, 05 e 04). | sim |
+| 1:12 | Proposta A, com «direito» e «virem a ser». Nota com Crítica Textual (01, 032, 03, 05). | sim |
+| 1:15 | Nota aprovada, com «ficou à minha frente». | sim |
+| 1:18 | Recomendação B: «O unigénito, que é Deus, está junto do Pai». Nota com P66 e P75 e a alternativa «Deus unigénito». | sim |
+| 1:30 | Nota aprovada, com «ficou à minha frente». | sim |
+| 1:34 | «escolhido de Deus» mantido, com nota de Crítica Textual que explica «Filho». | sim (nota) |
+| 1:14 | «contemplámos» mantido. | — |
+
+Base: SBLGNT mantido. A NA28 entra como segunda referência nas notas (1:3–4 e 1:34). Decisão registada em `docs/EDITORIAL.md`.
+
+Hebreus 11:3 foi usado só para explicar a dificuldade. Não entra na nota de 1:3, porque Hebreus não faz parte da edição (`docs/COMPARACAO_POPULAR.md`).
+
+## Traduções de comparação: estado
+
+- **ALM1911:** 1:18 confirmado (texto já registado em `COMPARACAO_POPULAR.md`). 1:3 e 1:34 por verificar.
+- **TEB e Bíblia de Jerusalém:** não consegui consultar o texto em fonte primária. Uma página de terceiros cita, para 1:18, a TEB como «Deus Filho único, que está no seio do Pai, no-lo revelou» e a BJ como «o Filho único, que está voltado para o seio do Pai, este o deu a conhecer». Não é suficiente: confirmar na edição impressa antes de publicar. Para 1:3 e 1:34 não encontrei o texto.
+- **ARC, ARA, NVI, NTLH, NAA:** confirmadas para 1:3 e 1:34 (ARC, ARA, NVI, NTLH dizem «Filho de Deus» em 1:34; NVI, ARA e NAA dizem «Deus unigênito» em 1:18).
+
+---
+
 
 Esta versão responde a quatro pedidos: explicar 1:3; elevar 1:12; escolher a base do grego e as traduções de comparação; e mostrar como ficariam as notas de 1:15 e 1:30. Mantém-se «contemplámos» em 1:14, como pediu.
 
