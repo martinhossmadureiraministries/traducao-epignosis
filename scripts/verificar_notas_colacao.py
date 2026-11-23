@@ -31,7 +31,7 @@ from pathlib import Path
 
 RAIZ_REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ_REPO))
-from bee.inspetor import LIVROS_FORMATO_CASA  # noqa: E402
+from bee.inspetor import formato_casa_do_capitulo  # noqa: E402
 
 SECCOES = ('Análise Léxica:', 'Crítica Textual:', 'Síntese Exegética:')
 # Resíduos de processo: o histórico de correções e a produção automática não
@@ -83,8 +83,9 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
     problemas: list[str] = []
     versiculos = colacao.get('versiculos', {})
     livro = colacao.get('livro_bee')
-    formato_casa = True if livro is None else livro in LIVROS_FORMATO_CASA
     for cap, lista in sorted(dados.get('chapters', {}).items(), key=lambda kv: int(kv[0])):
+        # O formato é por capítulo: João 1–2 já estão em prosa (CAPITULOS_EM_PROSA).
+        formato_casa = formato_casa_do_capitulo(livro, int(cap))
         for verso in lista:
             ref = f"{cap}:{verso.get('verse')}"
             com = verso.get('commentary') or ''

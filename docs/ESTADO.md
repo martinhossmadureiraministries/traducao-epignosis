@@ -107,7 +107,7 @@ relatório sem módulos, a quarentena e os pacotes com o número da execução.
   total, `event=workflow_dispatch`; **0 `schedule`** em 5 h 30 desde que o
   workflow ficou activo. O cron de 20 em 20 minutos foi travado em silêncio
   (filtro anti-abuso do GitHub); passou a horário (`23 * * * *`) e ganhou o
-  `bee-relogio.yml`. Procedimento e verificação: [AGENDADOR.md](AGENDADOR.md) e
+  `bee-relogio.yml`. Procedimento e verificação: `AGENDADOR.md` e
   `python3 scripts/verificar_agendador.py`.
 - Apesar da falha, a execução `44115508985` (run 15) **produziu** os artefactos
   `BEE-modulos-15` (763 KB) e `BEE-capitulos-15` (253 KB), actualizou os HTML no

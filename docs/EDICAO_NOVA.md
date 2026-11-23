@@ -7,7 +7,7 @@ tradução, não a infraestrutura*.
 
 ## O que mudou no código
 
-Foi acrescentado um **perfil de edição** em [`bee/perfil.py`](../bee/perfil.py):
+Foi acrescentado um **perfil de edição** em ``bee/perfil.py``:
 
 | Perfil | Voz | Quando entra |
 |---|---|---|
@@ -98,7 +98,7 @@ Uma execução automática reproduziu Filemom **abaixo** do piloto aprovado («A
 «a tua amor», «entranhas», vv. 8–9 achatados). Os pilotos em `edicoes/piloto/`
 foram aprovados pelo responsável, portanto são eles o texto de partida da edição
 nova — não algo a regenerar por cima. O script
-[`scripts/importar_piloto.py`](../scripts/importar_piloto.py) copia-lhes o TEXTO
+``scripts/importar_piloto.py`` copia-lhes o TEXTO
 aprovado para os JSON de `edicoes/nova/livros_json`:
 
 ```bash
@@ -160,7 +160,7 @@ aprovado der aviso, o marcador está agressivo demais e deve ser afinado.
 
 **Ciclo de calibração (correr → guarda → repetir).** O motor não refaz capítulos
 completos; por isso um livro chumbado pelo guarda tem de ser reposto na fila com
-[`scripts/limpar_livro.py`](../scripts/limpar_livro.py) antes de voltar a correr:
+``scripts/limpar_livro.py`` antes de voltar a correr:
 
 ```bash
 python3 scripts/limpar_livro.py 600 --dry-run    # vê o que limpa
@@ -208,10 +208,10 @@ os provedores que escreveram mal.
 ## Revisão por segunda IA (P2 da convergência)
 
 Escolha confirmada: revisão **sempre, automática**. Cada capítulo fechado na
-edição nova é revisto por um provedor DIFERENTE do autor ([`bee/papeis.py`](../bee/papeis.py)
+edição nova é revisto por um provedor DIFERENTE do autor (``bee/papeis.py``
 define a prioridade — Cerebras, Gemini, Groq, OpenRouter…; o autor só revê se for
 o único disponível, porque produção revista vale mais do que nenhuma revisão).
-Implementação em [`bee/revisor.py`](../bee/revisor.py); o pedido viaja pelo método
+Implementação em ``bee/revisor.py``; o pedido viaja pelo método
 `MotorIA.rever()`, com o system prompt do REVISOR e toda a resiliência de rede
 existente (rodízio de chaves/modelos em 404/5xx/quota).
 
@@ -231,7 +231,7 @@ Desliga-se numa corrida com `BEE_REVISAO=desligado` (o modelo do fluxo traz
 
 ## Métricas por provedor e prioridades (P3 da convergência)
 
-[`bee/metricas.py`](../bee/metricas.py) recolhe, do que está gravado, o
+``bee/metricas.py`` recolhe, do que está gravado, o
 desempenho de cada provedor: versículos gerados (`history`), chumbos da porta
 (quarentena `chumbado-estilo`, contados pelas marcas e atribuídos a TODOS os que
 tentaram o lote), emendas recebidas do revisor (caderno `revisoes.json`) e
