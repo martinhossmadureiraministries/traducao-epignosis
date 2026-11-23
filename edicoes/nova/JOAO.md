@@ -13,7 +13,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 5 | aprovado | 47 |
 | 6 | aprovado | 71 |
 | 7 | aprovado | 53 |
-| 8 | rascunho | 59 |
+| 8 | aprovado | 59 |
 | 9 | rascunho | 41 |
 | 10 | rascunho | 42 |
 | 11 | rascunho | 57 |
@@ -1438,6 +1438,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:4**
 
 - *Ἐν αὐτῷ ζωὴ ἦν* (en autō zōē ēn), «nele estava a vida»: *ἐν* indica presença, não posse. «Dos seres humanos» traduz *τῶν ἀνθρώπων*, o genérico, e a frase fala da humanidade inteira, não só de Israel. A vida é descrita como luz, imagem que o prólogo retoma em 1:5 e 1:9.
+- **Crítica Textual.** Na colação, 01 e 05 leem «*ἐστιν*» em lugar de «*ἦν*»; 032 omite «*ἦν*»; P66 omite «*ἐν*».
 
 **1:5**
 
@@ -1446,10 +1447,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:6**
 
 - *Ἐγένετο* (egeneto), «apareceu», é o verbo de «foi feito» em 1:3, e marca a entrada de João na narrativa. *Ἀπεσταλμένος* (apestalmenos), «enviado», é o particípio de *ἀποστέλλω*, de onde vem «apóstolo». A frase não o apresenta como apóstolo, mas como enviado. «Cujo nome era João» traduz *ὄνομα αὐτῷ Ἰωάννης*, construção que dá a identidade sem título.
+- **Crítica Textual.** Na colação, 032 lê «*ἀπό*» em lugar de «*παρά*» e acrescenta «*ἦν*»; 05 lê «*κυρίου ἦν*» em lugar de «*θεοῦ*» e «*Ἰωάννην*» em lugar de «*Ἰωάννης*».
 
 **1:7**
 
 - *Μαρτυρία* (martyria) e o verbo *μαρτυρέω* (martyreō) formam o campo do testemunho, que atravessa o capítulo (vv. 7, 8, 15, 19, 32, 34). A BEE traduz os dois por «testemunho» e «dar testemunho» para manter a ligação. *Πιστεύσωσιν* (pisteusōsin), aoristo subjuntivo depois de *ἵνα*, indica o crer como resposta que acontece, e não como estado permanente; por isso «venham a crer». A preposição *διά* dá o caminho: por meio do testemunho de João.
+- **Crítica Textual.** Na colação, 05 lê «*πιστεύσουσιν*» em lugar de «*πιστεύσωσιν*»; P75 lê «*μαρτύριον*» em lugar de «*μαρτυρίαν*».
 
 **1:8**
 
@@ -1462,6 +1465,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:10**
 
 - *Ἐν τῷ κόσμῳ ἦν*, «estava no mundo», repete o ritmo do v. 4. *Κόσμος* (kosmos), «mundo», é a criação e a humanidade que a habita. *Ἔγνω* (egnō), «conheceu», é verbo de conhecimento que, no contexto, inclui o reconhecimento de quem alguém é; a tradução usa «reconheceu». A oposição com o v. 11 ajuda a ler o versículo: o mundo feito por ele não o acolheu.
+- **Crítica Textual.** Na colação, 01 lê «*αὐτόν*» em lugar de «*αὐτοῦ*»; P75 lê «*ἦμεν*» em lugar de «*ἦν*».
 
 **1:11**
 
@@ -1475,10 +1479,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:13**
 
 - A série de três negações afasta três origens humanas. *Θέλημα* (thelēma) é «vontade», e não «desejo»; por isso a tradução mantém «vontade». *Αἱμάτων* (haimatōn), «sangue», está no plural, que pode indicar linhagem; a tradução não o força. *Ἐγεννήθησαν* (egennēthēsan), «nasceram», está no passivo: o nascimento vem de Deus. O manuscrito 01 omite a preposição antes de «sangue»; a diferença não muda o sentido.
+- **Crítica Textual.** Na colação, 01 e 05 omitem «*ἐκ*» antes de «*αἱμάτων*», e 05 omite «*οἳ*».
 
 **1:14**
 
 - *Ἐγένετο σὰρξ* (egeneto sarx), «fez-se carne»: o verbo marca a entrada do Verbo numa condição humana. *Ἐσκήνωσεν* (eskēnōsen), «habitou», vem de *σκηνή*, «tenda»: o Verbo armou a sua tenda entre nós, eco do tabernáculo (cf. Êxodo 40:34–35). *Ἐθεασάμεθα* (etheasametha), «contemplámos», é olhar com atenção, mais do que «ver». *Μονογενοῦς* (monogenous), «único», traz a ideia de filiação; a tradução usa «Filho único», como em 3:16. A glória é «como de Filho único vinda do Pai», e a frase termina com «cheio de graça e de verdade»,
+- **Crítica Textual.** Na colação, 05 lê «*πλήρη*» em lugar de «*πλήρης*».
 
 **1:15**
 
@@ -1493,6 +1499,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:17**
 
 - *Ἐδόθη* (edothē), «foi dada», está no passivo, e o doador não é nomeado; o contexto aponta Deus. A preposição *διά* aparece duas vezes: a lei veio por meio de Moisés, e a graça e a verdade por meio de Jesus Cristo. A frase contrasta mediações e não diz que a lei seja má. «Graça e verdade» corresponde ao hebraico *ḥesed we’emet*, «amor fiel e verdade», de Êxodo 34:6.
+- **Crítica Textual.** Na colação, 01 omite «*Χριστοῦ*»; 032 e P66 acrescentam «*δέ*».
 
 **1:18**
 
@@ -1517,10 +1524,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:22**
 
 - *Ἵνα ἀπόκρισιν δῶμεν* (hina apokrisin dōmen), «para darmos uma resposta», tem o tom de quem precisa de relatório. *Τοῖς πέμψασιν ἡμᾶς*, «aos que nos enviaram», usa a família de «enviar» de 1:6 e 1:19. *Τί λέγεις περὶ σεαυτοῦ;*, «o que dizes de ti mesmo?», pede que João fale de si, e não que se defina por negação.
+- **Crítica Textual.** Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; P66 acrescenta «*σύ*»; P75 acrescenta «*σύ*» e lê «*ὑπέρ*» em lugar de «*περί*».
 
 **1:23**
 
 - *Φωνὴ βοῶντος* (phōnē boōntos), «voz de quem clama», vem de Isaías 40:3. A citação segue a forma da LXX, com *Εὐθύνατε τὴν ὁδὸν κυρίου*, «endireitem o caminho do Senhor». A LXX traz «preparem» (*ἑτοιμάσατε*) na primeira frase, e João usa «endireitem». João aplica a citação a si próprio: ele é o que prepara o caminho.
+- **Crítica Textual.** Na colação, 032 acrescenta uma frase de Isaías (Is 40:3) «*εὐθείας ποιεῖτε τὰς τρίβους αὐτοῦ*».
 
 **1:24**
 
@@ -1550,6 +1559,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:29**
 
 - *Ἴδε* (ide), «eis», chama a atenção para quem vem. *Ὁ ἀμνὸς τοῦ θεοῦ* (ho amnos tou theou), «o Cordeiro de Deus», tem vários ecos possíveis: o cordeiro pascal (Êxodo 12), o cordeiro conduzido ao matadouro de Isaías 53:7 e o sacrifício diário. O texto não escolhe um deles, e a nota também não. *Αἴρων* (airōn), «tirando», pode ser «tirar» ou «carregar»; a tradução usa «tira», que é o sentido de 1 João 3:5. *Τοῦ κόσμου*, «do mundo», é o alcance da obra.
+- **Crítica Textual.** Na colação, 01 lê «*ἐρῶν*» em lugar de «*αἴρων*»; 032 lê «*τὰς ἁμαρτίας*» em lugar de «*τὴν ἁμαρτίαν*» e omite «*πρὸς αὐτόν*»; KJTR, ST e Scrivener acrescentam «*ὁ Ἰωάννης*».
 
 **1:30**
 
@@ -1569,6 +1579,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:33**
 
 - *Ἐκεῖνος* (ekeinos), «aquele», é o Deus que enviou João, e a frase repete a confissão de 1:31. *Ἐφʼ ὃν ἂν ἴδῃς*, «sobre quem vires», é condicional com subjuntivo: dá o critério de reconhecimento. *Μένον* (menon), «permanecer», é o mesmo verbo de 1:32.
+- **Crítica Textual.** Na colação, 01 e P66 acrescentam «*τῷ*»; 04 e P75 acrescentam «*καὶ πυρί*» («e com fogo»).
 
 **1:34**
 
@@ -1583,6 +1594,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:36**
 
 - *Ἐμβλέψας* (emblepsas), «fixando o olhar», é o verbo de 1:42, quando Jesus olha para Simão. *Περιπατοῦντι* (peripatounti), «andando», é o particípio de «andar». A tradução «que passava» mantém a ideia de movimento sem parar. A fórmula de 1:29 repete-se com outros ouvintes.
+- **Crítica Textual.** Na colação, 04 acrescenta «*ὁ αἴρων τὴν ἁμαρτίαν τοῦ κόσμου*»; 032 acrescenta «*ὁ αἴρων τὰς ἁμαρτίας τοῦ κόσμου*».
 
 **1:37**
 
@@ -1602,6 +1614,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:40**
 
 - *Εἷς ἐκ τῶν δύο*, «um dos dois», identifica André e deixa anónimo o outro discípulo. A tradição posterior identifica-o com o autor do evangelho, mas o texto não o diz.
+- **Crítica Textual.** Na colação, 01 omite um dos artigos «*τῶν*» antes de «*ἀκουσάντων*»; 02 e 032 acrescentam «*δέ*»; 04 omite «*καὶ ἀκολουθησάντων αὐτῷ*».
 
 **1:41**
 
@@ -1616,10 +1629,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:43**
 
 - *Ἀκολούθει μοι*, «segue-me», é imperativo presente: ordem de discipulado, com o verbo de 1:37.
+- **Crítica Textual.** Na colação, KJTR, ST e Scrivener deslocam «*ὁ Ἰησοῦς*».
 
 **1:44**
 
 - *Βηθσαϊδά* (Bēthsaida) significa «casa da pesca» em aramaico. O texto indica a origem comum de Filipe, André e Pedro, e não a identifica com um ponto exato do lago.
+- **Crítica Textual.** Na colação, 01 lê «*ἡ*» em lugar de «*ἦν δὲ ὁ*» e «*Βηθσαϊδάν*» em lugar de «*Βηθσαϊδά*».
 
 **1:45**
 
@@ -1639,6 +1654,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **1:48**
 
 - *Ὑπὸ τὴν συκῆν* (hypo tēn sykēn), «debaixo da figueira», é imagem de paz e de sombra (cf. Miqueias 4:4). O texto não explica por que esse lugar importa, e a nota não supõe uma razão. *Εἶδόν σε*, «eu te vi», é aoristo: a visão é tomada como facto passado.
+- **Crítica Textual.** Na colação, 01, ST e Scrivener acrescentam o artigo «*ὁ*» antes de «*Ἰησοῦς*»; 03 lê «*σαί*» em lugar de «*σε*»; 032 lê «*φωνῆσε*» em lugar de «*φωνῆσαι*».
 
 **1:49**
 
@@ -1665,10 +1681,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:2**
 
 - *Ἐκλήθη* (eklēthē), «tinham sido convidados», está no passivo, e a ordem da frase põe Jesus e os discípulos em foco. A presença de Jesus no casamento prepara o sinal.
+- **Crítica Textual.** Na colação, 032 acrescenta «*ἐκεῖ*» depois de «*ὁ Ἰησοῦς*».
 
 **2:3**
 
 - *Ὑστερήσαντος οἴνου* (hysterēsantos oinou), «faltando vinho», é genitivo absoluto. A mãe não pede explicitamente; a frase é um aviso. «Não têm vinho» traduz *Οἶνον οὐκ ἔχουσιν*, sem pronome, e a terceira pessoa do plural deixa os noivos como sujeito indefinido.
+- **Crítica Textual.** Na colação, 01 lê «*οἶνος οὐκ ἔστιν*» em lugar de «*Οἶνον οὐκ ἔχουσιν*».
 
 **2:4**
 
@@ -1688,6 +1706,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:7**
 
 - *Γεμίσατε* (gemisate), imperativo. *Ἕως ἄνω* (heōs anō), «até em cima», mostra que o serviço foi completo. Os serventes obedecem sem perguntar.
+- **Crítica Textual.** Na colação, 01 acrescenta «*καί*», e 032 acrescenta «*καί*» antes de «*λέγει*».
 
 **2:8**
 
@@ -1716,10 +1735,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:13**
 
 - *Ἐγγύς* (engys), «próxima», e *τὸ πάσχα*, «a Páscoa», festa que levava peregrinos a Jerusalém. *Ἀνέβη* (anebē), «subiu», é o verbo usual para ir a Jerusalém, cidade no alto.
+- **Crítica Textual.** Na colação, 01 omite «*καί*» e acrescenta «*δέ*»; 02, P66 e P75 mudam a posição de «*ὁ Ἰησοῦς*».
 
 **2:14**
 
 - *Τῷ ἱερῷ* (tō hierō), «o templo», é o recinto com pátios, e não o santuário (*ναός*), que aparece em 2:19–21. *Κερματιστάς* (kermatistas), «cambistas», eram os que trocavam moedas para o pagamento no templo. Bois, ovelhas e pombas eram animais de sacrifício.
+- **Crítica Textual.** Na colação, 01 lê «*καὶ τὰ πρόβατα καί*» em lugar de «*καὶ πρόβατα*»; 032 lê «*κολλυβιστάς*» em lugar de «*κερματιστάς*».
 
 **2:15**
 
@@ -1729,6 +1750,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:16**
 
 - *Οἶκον ἐμπορίου* (oikon emporiou), «casa de comércio», é a casa usada como mercado. «Meu Pai» destaca a relação filial, e a expressão liga o templo à família de Deus.
+- **Crítica Textual.** Na colação, 02 lê «*ἐντεῦθε καί*» em lugar de «*ἐντεῦθεν*»; 032 desloca «*πωλοῦσιν*» e lê «*καί*» em lugar de «*μή*»; P66 lê «*ἄραται*» em lugar de «*ἄρατε*», acrescenta «*καί*» e lê «*ποιεῖται*» em lugar de «*ποιεῖτε*»; P75 lê «*οἴκου*» em lugar de «*οἶκον*».
 
 **2:17**
 
@@ -1738,6 +1760,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:18**
 
 - *Τί σημεῖον δεικνύεις ἡμῖν*, «que sinal nos mostras?», é exigência de credenciais. A frase *ὅτι ταῦτα ποιεῖς* pergunta com que autoridade Jesus age.
+- **Crítica Textual.** Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; P75 omite «*ἡμῖν*».
 
 **2:19**
 
@@ -1746,10 +1769,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:20**
 
 - *Τεσσεράκοντα καὶ ἓξ ἔτεσιν*, «em quarenta e seis anos», refere-se à longa obra de reforma do templo. A cifra é a contagem do texto, e não é preciso identificar o ano exato.
+- **Crítica Textual.** Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; 01 omite «*ἐν*» antes de «*τρισὶν*».
 
 **2:21**
 
 - *Τοῦ ναοῦ τοῦ σώματος αὐτοῦ*, «do santuário do seu corpo»: o evangelista explica a palavra de 2:19 como referência ao corpo de Jesus. A tradução mantém «santuário» por coerência com 2:19.
+- **Crítica Textual.** Na colação, 01 omite «*αὐτοῦ*»; 032 lê «*αὐτός*» em lugar de «*ἐκεῖνος*».
 
 **2:22**
 
@@ -1759,6 +1784,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:23**
 
 - *Ἐπίστευσαν εἰς τὸ ὄνομα*, «creram no nome», usa o verbo do v. 11. Em 2:24, o mesmo verbo aparece com reflexivo e significa «confiar-se»: o evangelho usa «crer» em dois sentidos, e a tradução mantém a diferença nas duas palavras.
+- **Crítica Textual.** Na colação, KJTR, ST e Scrivener omitem «*τοῖς*».
 
 **2:24**
 
@@ -1768,6 +1794,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **2:25**
 
 - *Οὐ χρείαν εἶχεν*, «não precisava», é a palavra de necessidade. *Ἄνθρωπος* (anthrōpos), aqui, é o ser humano em geral. A frase diz que Jesus conhecia o interior das pessoas, e por isso não precisava de testemunho.
+- **Crítica Textual.** Na colação, 02 omite «*ὅτι*».
 
 ### Notas do capítulo 3
 
@@ -1798,6 +1825,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:6**
 
 - *Σάρξ* (sárx), «carne», diz a natureza humana em sua fraqueza, e não apenas o corpo. *Πνεῦμα* (pneuma), «espírito», é o que vem de Deus. O versículo é uma regra de origem: cada coisa é do que nasce. A NVT parafraseia com «o Espírito dá à luz vida espiritual», que é uma forma de dizer o mesmo com outra imagem; a BEE mantém o paralelo do grego.
+- **Crítica Textual.** Na colação, 01 omite «*πνεύματος*» na segunda oração.
 
 **3:7**
 
@@ -1834,6 +1862,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:14**
 
 - *Ὕψωσεν* (hýpsōsen), «ergueu», e *ὑψωθῆναι* (hypsōthênai), «seja erguido», são o verbo do erguer e do exaltar. Aqui o verbo pode ser ler como erguer na cruz e como exaltar (cf. 8:28 e 12:32–34), e a tradução mantém a palavra única, sem escolher. A referência é Números 21:9, em que Moisés ergue uma serpente de bronze para os que foram mordidos.
+- **Crítica Textual.** Na colação, 02 desloca «*δεῖ*»; 032 altera a ordem de «*οὕτως ὑψωθῆναι δεῖ*».
 
 **3:15**
 
@@ -1893,6 +1922,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:26**
 
 - *Πέραν τοῦ Ἰορδάνου* (péran tou Iordánou), «do outro lado do Jordão», é a mesma expressão de 1:28. *Μεμαρτύρηκας* (memartýrēkas), «tens dado testemunho», é perfeito: o testemunho de João sobre Jesus continua. *Ἴδε* (íde), «olha», chama a atenção para um facto novo. A NVI diz «Mestre» e a NVT «Rabi», mas a BEE mantém «Rabi» como em 3:2.
+- **Crítica Textual.** Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; 03, 032, P75, SR e WH leem «*ἦλθαν*» em lugar de «*ἦλθον*»; 05 lê «*ἰδού*» em lugar de «*ἴδε*».
 
 **3:27**
 
@@ -1907,10 +1937,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:29**
 
 - *Νυμφίος* (numphíos), «noivo», e *νύμφη* (númphē), «noiva», são os papéis da festa de casamento. *Φίλος τοῦ νυμφίου* (phílos tou numphíou), «amigo do noivo», é o acompanhante que cuida da festa e fala por ele. *Χαρᾷ χαίρει* (charâi chaírei), «alegra-se com alegria», é a repetição do grego para dar força. *Πεπλήρωται* (peplḗrōtai), «está completa», é perfeito: a alegria chegou ao pleno e assim permanece. A NVI diz «agora se completa» e a ARC «está cumprida».
+- **Crítica Textual.** Na colação, 01 desloca «*αὐτοῦ*»; 05 lê «*ἑστώς*» em lugar de «*ἑστηκώς*».
 
 **3:30**
 
 - *Δεῖ* (dei), «é necessário», é o mesmo verbo de 3:7 e 3:14: uma obrigação do plano de Deus. *Αὐξάνειν* (auxánein), «crescer», e *ἐλαττοῦσθαι* (elattoûsthai), «diminuir», são verbos de sentido gradual. A forma passiva de «diminuir» (*ἐλαττοῦσθαι*) deixa a ação a cargo de outro; a tradução a deixa em «diminua», e a NVT diz «cada vez menor».
+- **Crítica Textual.** Na colação, 032 lê «*ἐκεῖνον διαυξάνειν*» em lugar de «*ἐκεῖνον δεῖ αὐξάνειν*».
 
 **3:31**
 
@@ -1925,6 +1957,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:33**
 
 - *Ἐσφράγισεν* (esphrágisen), «confirmou», quer dizer pôr um selo, ou seja, autenticar. Quem aceita o testemunho dá o seu selo de que Deus é verdadeiro. *Ἀληθής* (alēthḗs), «verdadeiro», é o que cumpre o que diz. A NVI e a NVT dizem «confirma que Deus é verdadeiro».
+- **Crítica Textual.** Na colação, 04 omite «*ὁ λαβὼν αὐτοῦ*»; P66 acrescenta «*οὗτος*».
 
 **3:34**
 
@@ -1934,6 +1967,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **3:35**
 
 - *Δέδωκεν* (dédōken), «entregou», é perfeito: a entrega é um facto que está em vigor. *Ἐν τῇ χειρὶ αὐτοῦ* (en tēi cheirì autoû), «na mão dele», é a imagem do poder confiado. A tradução pede «nas mãos», plural em português para a mesma imagem.
+- **Crítica Textual.** Na colação, 05 lê «*ἔδωκεν*» em lugar de «*δέδωκεν*».
 
 **3:36**
 
@@ -1950,6 +1984,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:2**
 
 - *Καίτοιγε* (kaítoige), «embora», reforça a ressalva: a afirmação é verdadeira, mas é preciso dizê-la. Este versículo corrige 3:22: o batismo era feito pelos discípulos. O travessão marca a continuação.
+- **Crítica Textual.** Na colação, 02 e 05 deslocam «*αὐτὸς*»; 04 lê «*καίτοι*» em lugar de «*καίτοιγε*».
 
 **4:3**
 
@@ -1973,6 +2008,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:7**
 
 - *Ἀντλῆσαι* (antlêsai), «tirar», é o verbo de puxar água do poço. *Δός μοι πεῖν* (dós moi peîn), «dá-me de beber», é um pedido curto, direto, sem apresentação. A NVI diz «Dê-me um pouco de água», e a NVT «Por favor, dê-me um pouco de água».
+- **Crítica Textual.** Na colação, 01 acrescenta «*τις*»; 032 acrescenta «*καί*» antes de «*ἔρχεται*».
 
 **4:8**
 
@@ -2024,10 +2060,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:18**
 
 - *Πέντε γὰρ ἄνδρας ἔσχες* (pénte gár ándras éschēs), «porque tiveste cinco maridos», usa o verbo «ter» no sentido de viver com alguém. *Ἀληθὲς εἴρηκας* (alēthès eírēkas), «disseste a verdade», é perfeito: a afirmação foi feita e vale. A frase não diz de quem ela está casada; diz que o homem atual não é marido.
+- **Crítica Textual.** Na colação, 01 lê «*ἀληθῶς*» em lugar de «*ἀληθές*»; P75 lê «*εἶπας*» em lugar de «*εἴρηκας*».
 
 **4:19**
 
 - *Θεωρῶ* (theōrō), «vejo», tem sentido de perceber e concluir. A mulher passa a um outro tema, o do culto. A NVI diz «vejo que é profeta».
+- **Crítica Textual.** Na colação, 01 omite «*Κύριε*».
 
 **4:20**
 
@@ -2046,6 +2084,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:23**
 
 - *Ἀληθινοὶ προσκυνηταί* (alēthinoì proskynētaí), «verdadeiros adoradores», são os que adoram de modo genuíno. *Ἔρχεται ὥρα καὶ νῦν ἐστιν* (érchetai hṓra kaì nŷn estín), «vem a hora, e já é agora», é a tensão entre futuro e presente que o evangelho usa muitas vezes. *Τοιούτους* (toioútous), «tais», indica o tipo de adorador que o Pai procura.
+- **Crítica Textual.** Na colação, 01 lê «*αὐτῷ*» em lugar de «*αὐτόν*»; 032 lê «*ἔρχετε*» em lugar de «*ἔρχεται*» e acrescenta «*ἐν πνεύματι*».
 
 **4:24**
 
@@ -2069,6 +2108,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:28**
 
 - *Ὑδρία* (hydría), «cântaro», é uma jarra grande de água; a NVT diz «vasilha de água». *Ἀνθρώποις* (anthrṓpois), «pessoas», é o plural geral, e a tradução evita o masculino «homens», porque o texto diz gente da cidade, sem distinção de sexo.
+- **Crítica Textual.** Na colação, 05 acrescenta «*ἡ γυνή*» e lê «*ἑαυτῆς*» em lugar de «*αὐτῆς*».
 
 **4:29**
 
@@ -2092,6 +2132,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:33**
 
 - *Μή* (mḗ) espera «não» como resposta: os discípulos perguntam entre si, sem ousar perguntar a Jesus, se alguém lhe trouxe comida. A pergunta é um mal-entendido que o versículo seguinte esclarece.
+- **Crítica Textual.** Na colação, 01 lê «*λέγουσιν*» em lugar de «*ἔλεγον οὖν*»; 05 lê «*δὲ ἐν ἑαυτοῖς*» em lugar de «*οὖν*» e omite «*πρὸς ἀλλήλους*».
 
 **4:34**
 
@@ -2101,6 +2142,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:35**
 
 - *Τετράμηνός* (tetrámēnos), «quatro meses», é o tempo entre a semeadura e a colheita, em um provérbio que o texto cita. *Λευκαί* (leukaí), «brancas», é a cor do campo maduro. O versículo termina com *ἤδη* (ḗdē), «já», que a tradução leva para o início do versículo 36. A NVI diz «Daqui a quatro meses haverá a colheita».
+- **Crítica Textual.** Na colação, 032 lê «*λέγεται*» em lugar de «*λέγετε*»; 032, ST e Scrivener leem «*τετράμηνον*» em lugar de «*τετράμηνος*»; 032 e 05 leem «*θεάσασθαι*» em lugar de «*θεάσασθε*»; 05 e P75 omitem «*ἔτι*».
 
 **4:36**
 
@@ -2125,10 +2167,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **4:40**
 
 - *Ἠρώτων* (ērṓtōn), «pediam», é imperfeito: um pedido insistente. *Μεῖναι παρʼ αὐτοῖς* (meînai par' autoîs), «ficasse com eles», é o verbo de permanecer, que João usa para a permanência com Jesus (1:39).
+- **Crítica Textual.** Na colação, 01 lê «*παρʼ αὐτοῖς*» em lugar de «*ἐκεῖ*» e omite «*ἡμέρας*»; 03 lê «*συνῆλθον*» em lugar de «*ἦλθον*»; 04 lê «*πρὸς αὐτούς*» em lugar de «*παρʼ αὐτοῖς*».
 
 **4:41**
 
 - *Πολλῷ πλείους* (pollôi pleíous), «muito mais», é o comparativo de número: muitos mais que os primeiros. *Λόγον* (lógon), «palavra», é a palavra de Jesus em sentido pleno, e a tradução o distingue de «fala» (4:42).
+- **Crítica Textual.** Na colação, P75 lê «*πλεῖον*» em lugar de «*πλείους*».
 
 **4:42**
 
@@ -2230,6 +2274,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:7**
 
 - O homem não responde com um pedido de cura, mas com uma explicação. *Κύριε* (kyrie), «senhor», é tratamento de respeito. *ἄνθρωπον* (anthrōpon), «alguém que o ajude»; *βάλῃ με* (balē me), «me leve» até à água; *ἄλλος πρὸ ἐμοῦ* (allos pro emou), «outro antes de mim». A resposta mostra anos de espera e falta de ajuda, sem acusar ninguém.
+- **Crítica Textual.** Na colação, 02 e 05 leem «*λέγει*» em lugar de «*ἀπεκρίθη*»; 04 lê «*ἐμβάλῃ*» em lugar de «*βάλῃ*»; KJTR, ST e Scrivener leem «*βάλλῃ*».
 
 **5:8**
 
@@ -2259,6 +2304,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:13**
 
 - *Ἰαθείς* (iatheis), «curado»; *ἐξένευσεν* (exeneusen), «afastou-se discretamente»; *ὄχλου* (ochlou), «multidão». Jesus não se exibe. Afasta-se da multidão, e isso explica por que o homem não sabe quem ele é.
+- **Crítica Textual.** Na colação, 01 lê «*μέσῳ*» em lugar de «*τόπῳ*»; 05 lê «*ἀσθενῶν*» em lugar de «*ἰαθείς*» e «*ἦν*» em lugar de «*ἐστιν*»; P75 lê «*δέ*» em lugar de «*γάρ*».
 
 **5:14**
 
@@ -2283,6 +2329,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:18**
 
 - O narrador explica a motivação. *ἔλυε* (elyen), «violava», a norma; *πατέρα ἴδιον* (patera idion), «pai próprio»; *ἴσον* (ison), «igual»; *ποιῶν* (poiōn), «fazendo-se». Jesus reivindica uma relação única com Deus, e a reação dos judeus responde a essa igualdade reivindicada.
+- **Crítica Textual.** Na colação, 01 omite «*οὖν*»; 05 omite «*οὖν*» e desloca «*οἱ Ἰουδαῖοι*» para antes de «*ἐζήτουν*», e P66 acrescenta-o; 032 desloca «*ἀποκτεῖναι*» para antes de «*οἱ Ἰουδαῖοι*»; 03, 032, P66, P75, SR, KJTR, RP e Scrivener leem «*ἔλεγεν*» em lugar de «*ἔλεγε*»; KJTR, RP e Scrivener leem «*ἔλυεν*» em lugar de «*ἔλυε*».
 
 **5:19**
 
@@ -2292,10 +2339,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:20**
 
 - *φιλεῖ* (philei), «ama»; *δείκνυσιν* (deiknysin), «mostra»; *μείζονα* (meizona), «maiores»; *θαυμάζητε* (thaumazēte), «admirem-se». A relação de amor entre o Pai e o Filho explica a revelação das obras. Jesus anuncia obras ainda maiores, para levar à admiração.
+- **Crítica Textual.** Na colação, 05 lê «*ἀγαπᾷ*» em lugar de «*φιλεῖ*», «*δεικνύει*» em lugar de «*δείκνυσιν*», «*ποιῇ*» em lugar de «*ποιεῖ*» e acrescenta «*ἄν*»; 05 lê «*δεικνύσιν*» em lugar de «*δείξει*»; 032 lê «*δείξῃ*»; 01 lê «*θαυμάζετε*» e desloca «*ἔργα*»; 02, 032 e P66 leem «*θαυμάζηται*» em lugar de «*θαυμάζητε*».
 
 **5:21**
 
 - *ἐγείρει* (egeirei), «ressuscita»; *ζῳοποιεῖ* (zōopoiei), «dá vida»; *θέλει* (thelei), «quer». A ação de dar vida, que é divina, é atribuída ao Filho, que age com a mesma autoridade do Pai.
+- **Crítica Textual.** Na colação, 032 desloca «*ἐγείρει*» para depois de «*τοὺς νεκροὺς*»; 01 lê «*ὡς*» em lugar de «*ὥσπερ*»; ST lê «*οὕτω*» em lugar de «*οὕτως*».
 
 **5:22**
 
@@ -2308,6 +2357,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:24**
 
 - *ἀκούων* (akouōn), «ouve»; *πιστεύων* (pisteuōn), «crê»; *εἰς κρίσιν οὐκ ἔρχεται* (eis krisin ouk erchetai), «não entra em juízo»; *μεταβέβηκεν* (metabebēken), «passou», com efeito que permanece. Quem ouve e crê já está na vida. A passagem da morte para a vida é um facto presente, e não só uma promessa futura.
+- **Crítica Textual.** Na colação, 032 desloca «*οὐκ ἔρχεται*»; 05 omite «*τὴν*» antes de «*ζωήν*».
 
 **5:25**
 
@@ -2346,18 +2396,22 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:32**
 
 - *ἄλλος* (allos), «outro»; *μαρτυρῶν* (martyrōn), «que dá testemunho»; *οἶδα* (oida), «sei». A outra testemunha não é nomeada de imediato, e o versículo prepara a menção de João.
+- **Crítica Textual.** Na colação, 01 lê «*οἶδαται*» em lugar de «*οἶδα*»; 05 lê «*οἴδατε*» em lugar de «*οἶδα*» e acrescenta «*μου*» depois de «*μαρτυρία*».
 
 **5:33**
 
 - *ἀπεστάλκατε* (apestalkate), «mandaram»; *μεμαρτύρηκε* (memartyrēke), «deu testemunho», com efeito que permanece; *τῇ ἀληθείᾳ* (tē alētheia), «da verdade». João deu testemunho da verdade, e os ouvintes são lembrados do que fizeram com esse testemunho.
+- **Crítica Textual.** Na colação, 02, 032, 05, P66, P75, KJTR, RP, SR e Scrivener leem «*μεμαρτύρηκεν*» em lugar de «*μεμαρτύρηκε*».
 
 **5:34**
 
 - *οὐ λαμβάνω* (ou lambanō), «não recebo»; *σωθῆτε* (sōthēte), «sejam salvos». Jesus não depende de testemunho humano. Diz estas coisas por causa dos ouvintes, para que sejam salvos.
+- **Crítica Textual.** Na colação, 05 lê «*ἀνθρώπων*» em lugar de «*ἀνθρώπου*» e «*μαρτυρείαν*» em lugar de «*μαρτυρίαν*»; P75 desloca «*λαμβάνω*» para antes de «*τὴν μαρτυρίαν*»; 032 lê «*σωθῆται*» em lugar de «*σωθῆτε*».
 
 **5:35**
 
 - *λύχνος* (lychnos), «lâmpada»; *φαίνων* (phainōn), «brilhando»; *ἠθελήσατε* (ēthelēsate), «quiseram»; *ἀγαλλιαθῆναι* (agalliathēnai), «alegrar-se»; *πρὸς ὥραν* (pros hōran), «por algum tempo». João é apresentado como lâmpada, luz que ilumina por algum tempo. A alegria dos ouvintes foi passageira.
+- **Crítica Textual.** Na colação, 01 e P66 leem «*ἠθελήσαται*» em lugar de «*ἠθελήσατε*»; 02 e 032 deslocam «*ἀγαλλιαθῆναι*»; 05 lê «*λύχλον*» em lugar de «*λύχνος*»; ST e Scrivener leem «*ἀγαλλιασθῆναι*».
 
 **5:36**
 
@@ -2377,6 +2431,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:39**
 
 - *Ἐραυνᾶτε* (eraunate), «examinem», pode ser lido também como indicativo, «vocês examinam», e as duas leituras são gramaticalmente possíveis; a tradução segue o imperativo. *γραφάς* (graphas), «Escrituras»; *μαρτυροῦσαι* (martyrousai), «dão testemunho». Jesus aponta as Escrituras como testemunho dele, mas não como fim em si mesmas. A busca da vida deve levar a ele.
+- **Crítica Textual.** Na colação, 01 e 032 leem «*δοκεῖται*» em lugar de «*δοκεῖτε*», e 032 lê «*αὐταί*» em lugar de «*ἐκεῖναί*»; P66 e 032 leem «*ἐραυνᾶται*» em lugar de «*ἐραυνᾶτε*»; 05 desloca «*ἔχειν*».
 
 **5:40**
 
@@ -2390,6 +2445,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:42**
 
 - *ἔγνωκα* (egnōka), «conheço», com sentido de conhecimento que se tem; *ἀγάπην τοῦ θεοῦ* (agapēn tou theou), «amor de Deus». Jesus conhece o interior dos ouvintes, e a falta de amor de Deus é o diagnóstico.
+- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*»; 05 desloca «*οὐκ ἔχετε*» para antes de «*τὴν ἀγάπην*»; 032 lê «*ἔχεται*» em lugar de «*ἔχετε*»; 02 apresenta outra forma verbal nesse lugar.
 
 **5:43**
 
@@ -2404,6 +2460,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:45**
 
 - *κατηγορήσω* (katēgorēsō), «acusarei»; *κατηγορῶν* (katēgorōn), «acusador»; *Μωϋσῆς* (Mōusēs), «Moisés»; *ἠλπίκατε* (ēlpikate), «puseram a esperança». Moisés, em quem os ouvintes esperam, é quem os acusa. A acusação vem de quem eles dizem seguir.
+- **Crítica Textual.** Na colação, 01 e 032 leem «*δοκεῖται*» em lugar de «*δοκεῖτε*»; 03 acrescenta «*πρὸς τὸ πατέρα*» entre «*ὑμῶν*» e «*Μωϋσῆς*»; 05 lê «*ὑμᾶς*» em lugar de «*ὑμῶν*» na primeira ocorrência.
 
 **5:46**
 
@@ -2420,6 +2477,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:1**
 
 - Abre o cenário junto ao lago. A palavra «mar» traduz *θάλασσα* (thalassa), que no texto designa o lago da Galileia; *Τιβεριάδος* (Tiberiados), «Tiberíades», é a cidade da margem ocidental, de onde vêm os barcos do versículo 23.
+- **Crítica Textual.** Na colação, 05 acrescenta «*εἰς τὰ μέρη*» depois de «*τῆς Γαλιλαίας*».
 
 **6:2**
 
@@ -2434,6 +2492,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:4**
 
 - A menção da Páscoa dá ao leitor a referência do calendário do evangelho. *ἐγγὺς τὸ πάσχα* (engus to pascha), «estava perto a Páscoa»; *ἑορτή* (heortē), «festa».
+- **Crítica Textual.** Na colação, 05 lê «*ἐγγὺς δέ*» em lugar de «*δὲ ἐγγύς*».
 
 **6:5**
 
@@ -2443,6 +2502,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:6**
 
 - *πειράζων* (peirazōn), «pondo à prova»; *ᾔδει* (ēdei), «sabia»; *ἔμελλεν* (emellen), «ia». O narrador revela a intenção de Jesus: pôr Filipe à prova, sabendo o que faria.
+- **Crítica Textual.** Na colação, 01 troca «*δέ*» e «*γάρ*» (lê «*τοῦτο γὰρ ἔλεγεν*» e «*αὐτὸς δὲ ᾔδει*») e lê «*ἔμελλε*» em lugar de «*ἔμελλεν*»; 05 e P66 leem «*ἤμελλεν*»; ST lê «*ἔλεγε*» e «*ἔμελλε*».
 
 **6:7**
 
@@ -2491,6 +2551,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:16**
 
 - *ὀψία* (opsia), «entardecer»; *κατέβησαν* (katebēsan), «desceram». A cena muda para a noite e para o barco. A frase continua no versículo seguinte.
+- **Crítica Textual.** Na colação, 032 omite «*οἱ μαθηταὶ αὐτοῦ*».
 
 **6:17**
 
@@ -2505,10 +2566,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:19**
 
 - *ἐληλακότες* (elēlakotes), «tendo remado»; *σταδίους* (stadious), «estádios», cerca de 185 metros cada; *θεωροῦσιν* (theorousin), «veem»; *περιπατοῦντα* (peripatounta), «andando»; *ἐφοβήθησαν* (ephobēthēsan), «ficaram com medo». Vinte e cinco a trinta estádios correspondem a cerca de cinco quilómetros. A visão de Jesus sobre o mar provoca medo, e não alívio.
+- **Crítica Textual.** Na colação, 02 e 05 leem «*ὡσεί*» em lugar de «*ὡς*»; 05 lê «*σταδία*» em lugar de «*σταδίους*»; 032 e P75 leem os numerais «*κε*» e «*λ*» em lugar de «*εἴκοσι πέντε*» e «*τριάκοντα*»; P75 lê «*τὴν θάλασσαν*» em lugar de «*τῆς θαλάσσης*».
 
 **6:20**
 
 - *Ἐγώ εἰμι* (egō eimi), «eu sou»; *μὴ φοβεῖσθε* (mē phobeisthe), «não tenham medo». A expressão «Eu sou» é a forma com que Jesus se apresenta. O eco de Êxodo 3:14 é debatido, e a nota não o afirma como certo.
+- **Crítica Textual.** Na colação, 01 lê «*καὶ λέγει*» em lugar de «*ὁ δὲ λέγει*» e «*φοβισθαι*» em lugar de «*φοβεῖσθε*»; 032 lê «*φοβεῖσθαι*».
 
 **6:21**
 
@@ -2533,6 +2596,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:25**
 
 - *Ῥαββί* (Rhabbi), «mestre»; *πότε* (pote), «quando»; *γέγονας* (gegonas), «chegaste, vieste a estar». A pergunta é sobre o momento da travessia, e não sobre o modo.
+- **Crítica Textual.** Na colação, 01 lê «*ἦλθες*» em lugar de «*γέγονας*»; 05 lê «*ἐληλυθᾶς*» em lugar de «*γέγονας*»; 032 lê «*εἶπαν*» em lugar de «*εἶπον*».
 
 **6:26**
 
@@ -2547,6 +2611,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:28**
 
 - *ποιῶμεν* (poiōmen), «façamos»; *ἐργαζώμεθα* (ergazōmetha), «trabalhemos». A pergunta busca uma tarefa que garanta a aprovação de Deus.
+- **Crítica Textual.** Na colação, 02 omite «*οὖν*»; 032 lê «*αὐτῷ*» em lugar de «*πρὸς αὐτόν*» e «*ποιήσωμεν*» em lugar de «*ποιῶμεν*»; 05 troca «*ποιῶμεν*» e «*ἐργαζώμεθα*», lendo «*ποιήσωμεν*» no segundo lugar; ST lê «*ποιοῦμεν*».
 
 **6:29**
 
@@ -2556,6 +2621,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:30**
 
 - *σημεῖον* (sēmeion), «sinal»; *ἴδωμεν* (idōmen), «vejamos»; *ἐργάζῃ* (ergazēi), «operas, realizas». Pedem um sinal depois do sinal dos pães. A pergunta mostra que não reconhecem o que já viram.
+- **Crítica Textual.** Na colação, 01 omite o segundo «*οὖν*» e desloca «*σημεῖον*» para antes de «*σὺ*»; 05 lê «*εἶπεν*» em lugar de «*εἶπον*», acrescenta «*σοι*» e omite «*σὺ*».
 
 **6:31**
 
@@ -2570,6 +2636,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:33**
 
 - *καταβαίνων* (katabainōn), «que desce»; *διδούς* (didous), «dando»; *τῷ κόσμῳ* (tō kosmō), «ao mundo». O pão de Deus é definido pelo que faz: dar vida ao mundo.
+- **Crítica Textual.** Na colação, 01 acrescenta o artigo «*ὁ*» antes de «*τοῦ θεοῦ*»; 02 desloca «*διδοὺς*» para antes de «*ζωήν*»; 05 lê «*διδῶς*» em lugar de «*διδούς*».
 
 **6:34**
 
@@ -2583,6 +2650,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:36**
 
 - *ἑωράκατέ* (heōrakate), «viram»; *οὐ πιστεύετε* (ou pisteuete), «não creem». Ver não basta para crer.
+- **Crítica Textual.** Na colação, 01 e P66 leem «*πιστεύεται*» em lugar de «*πιστεύετε*»; 01 e 02 omitem «*με*»; 02 acrescenta «*μοι*»; 032 lê «*ἑωράκαται*» e «*πιστεύεται μοι*».
 
 **6:37**
 
@@ -2607,6 +2675,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:41**
 
 - *ἐγόγγυζον* (egogguzon), «murmuravam»; *καταβὰς* (katabas), «que desceu». A murmuração lembra a do povo no deserto, tema que a nota não desenvolve.
+- **Crítica Textual.** Na colação, 05 lê «*δέ*» em lugar de «*οὖν*».
 
 **6:42**
 
@@ -2670,6 +2739,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:54**
 
 - *τρώγων* (trōgōn), «comendo, mastigando», verbo mais concreto que o usado no versículo 53; *πίνων* (pinōn), «bebendo»; *ἀναστήσω* (anastēsō), «ressuscitarei». A ressurreição do último dia está ligada a comer e beber o Filho.
+- **Crítica Textual.** Na colação, 04 acrescenta «*ἐν*» antes de «*τῇ ἐσχάτῃ*»; 05 lê «*αὐτοῦ*» em lugar de «*μου*» nas duas ocorrências; KJTR, RP, ST e Scrivener leem «*καὶ ἐγὼ*» em lugar de «*κἀγώ*».
 
 **6:55**
 
@@ -2704,6 +2774,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:61**
 
 - *γογγύζουσιν* (gogguzousin), «murmuram»; *σκανδαλίζει* (skandalizei), «faz tropeçar, escandaliza»; *εἰδὼς* (eidōs), «sabendo». Jesus conhece o que se passa no interior dos discípulos.
+- **Crítica Textual.** Na colação, 01 lê «*ἔγνω οὖν*» em lugar de «*εἰδὼς δέ*» e acrescenta «*καὶ*» antes de «*εἶπεν*»; 04 lê «*ἰδών*» em lugar de «*εἰδώς*»; 05 lê «*ὡς οὖν ἔγνω*» e «*ἐν ἑαυτοῖς*» em lugar de «*ἐν ἑαυτῷ*»; P66 acrescenta «*Ἰησοῦς*» depois de «*αὐτοῖς*».
 
 **6:62**
 
@@ -2733,6 +2804,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:67**
 
 - *Μὴ ... θέλετε ὑπάγειν* (mē ... thelete hypagein), «não querem ir embora»; a pergunta espera a resposta «não». Jesus põe os doze diante de uma escolha.
+- **Crítica Textual.** Na colação, 01 e 032 leem «*θέλεται*» em lugar de «*θέλετε*»; 05 lê «*δέ*» em lugar de «*οὖν*»; P75 lê «*ιβ*» em lugar de «*δώδεκα*».
 
 **6:68**
 
@@ -2747,6 +2819,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **6:70**
 
 - *ἐξελεξάμην* (exelexamēn), «escolhi»; *διάβολος* (diabolos), «diabo», isto é, acusador ou adversário. Jesus revela que um dos doze o trairá. A palavra designa um adversário, sem artigo no grego.
+- **Crítica Textual.** Na colação, 01 acrescenta «*Ἰησοῦς καὶ εἶπεν αὐτοῖς*», lê «*οὐχί*» em lugar de «*οὐκ*», desloca «*τοὺς δώδεκα*» e omite «*εἷς*»; 05 lê «*λέγων*» em lugar de «*αὐτοῖς*» e «*ιβ*» em lugar de «*δώδεκα*»; P66 omite o artigo «*ὁ*» e lê «*ιβ*»; P75 lê «*ιβ*».
 
 **6:71**
 
@@ -2816,6 +2889,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:13**
 
 - *παρρησίᾳ* (parrēsia), «abertamente»; *φόβον* (phobon), «medo». O medo calava as opiniões favoráveis. Mantém-se «os judeus», como no versículo 11.
+- **Crítica Textual.** Na colação, 01 e P66 deslocam «*ἐλάλει*» para depois de «*περὶ αὐτοῦ*»; P75 lê «*ὑπὲρ*» em lugar de «*περὶ*».
 
 **7:14**
 
@@ -2890,6 +2964,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:28**
 
 - *ἔκραξεν* (ekraxen), «clamou, proclamou em voz alta»; *Κἀμέ* (kame), «e a mim»; *ἀληθινός* (alēthinos), «verdadeiro, real»; *οἴδατε* (oidate), «sabem». A frase pode ler-se como pergunta («Vocês me conhecem e sabem de onde sou?»); a tradução adota a leitura afirmativa. Jesus responde ao argumento da origem: conhecem-no pela origem humana, e não conhecem quem o enviou.
+- **Crítica Textual.** Na colação, 01 desloca «*ὁ Ἰησοῦς*» para antes de «*ἐν τῷ ἱερῷ*», lê «*καὶ ἐμέ*» em lugar de «*Κἀμέ*», «*ἀληθής*» em lugar de «*ἀληθινὸς*» e «*οἴδαται*» em lugar de «*οἴδατε*» na última ocorrência; 032 omite «*ὁ*» e «*καὶ*» antes de «*λέγων*»; 05 lê «*ἔκραζεν*» em lugar de «*ἔκραξεν*» e desloca «*ὁ Ἰησοῦς διδάσκων*»; P66 lê «*δέ*» em lugar de «*οὖν*», «*οἴδαται*» em lugar de «*οἴδατε*» e «*ἀληθής*».
 
 **7:29**
 
@@ -2939,6 +3014,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:38**
 
 - *κοιλίας* (koilias), «ventre, interior»; *ῥεύσουσιν* (rheusousin), «correrão»; *ὕδατος ζῶντος* (hydatos zōntos), «água viva». A Escritura não é identificada com um texto único. A «água viva» de 4:10 volta aqui como dom para quem crê; o versículo 39 explica que se refere ao Espírito.
+- **Crítica Textual.** Na colação, 03 lê «*με*» em lugar de «*ἐμέ*».
 
 **7:39**
 
@@ -2988,6 +3064,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:48**
 
 - *ἀρχόντων* (archontōn), «chefes»; *μή* (mē), pergunta que espera «não». Apela à autoridade dos líderes como critério de verdade.
+- **Crítica Textual.** Na colação, 01 e 05 leem «*πιστεύει*» em lugar de «*ἐπίστευσεν*»; 032 lê «*τῷ*» em lugar de «*ἐκ τῶν*» antes de «*ἀρχόντων*».
 
 **7:49**
 
@@ -3024,42 +3101,52 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:2**
 
 - *Ὄρθρου* (orthrou), «de madrugada»; *λαός* (laos), «povo»; *καθίσας* (kathisas), «sentado», posição de mestre. A cena põe Jesus no templo a ensinar, como em 7:14. Passagem entre colchetes, como o versículo 1.
+- **Crítica Textual.** Na colação, 05 omite «*καὶ καθίσας ἐδίδασκεν αὐτούς*» e acrescenta «*πρὸς αὐτόν*» depois de «*ἤρχετο*»; KJTR, ST e Scrivener acrescentam «*πρὸς αὐτόν*» depois de «*ἤρχετο*».
 
 **8:3**
 
 - *γραμματεῖς* (grammateis), «escribas, doutores da lei»; *μοιχείᾳ* (moicheia), «adultério»; *καταλήφθεισαν* (katalēphtheisan), «apanhada». A cena é uma armadilha: a mulher serve de pretexto para pôr Jesus à prova. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 lê «*ἐπὶ ἁμαρτίᾳ*» em lugar de «*πρὸς αὐτὸν*» e «*εἰλημμένην*» em lugar de «*καταληφθεῖσαν*»; KJTR, ST e Scrivener leem «*κατειλημμένην*» em lugar de «*καταληφθεῖσαν*».
 
 **8:4**
 
 - *πειράζοντες* (peirazontes), «pondo à prova»; *διδάσκαλε* (didaskale), «mestre»; *ἐπʼ αὐτοφόρῳ* (ep' autophorō), «em flagrante». O flagrante é a acusação formal. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 acrescenta «*ἐκπειράζοντες αὐτὸν οἱ ἱερεῖς, ἵνα ἔχωσιν κατηγορίαν αὐτοῦ*» antes de «*διδάσκαλε*» e lê «*κατειλήπται*» em lugar de «*κατελήφθη*»; KJTR, ST e Scrivener omitem «*πειράζοντες*» e leem «*κατειλήφθη*» em lugar de «*κατελήφθη*».
 
 **8:5**
 
 - *ἐνετείλατο* (eneteilato), «ordenou»; *λιθοβολεῖσθαι* (lithobolesthai), «serem apedrejadas»; *τοιαύτας* (toiautas), «tais». Cf. Levítico 20:10 e Deuteronómio 22:22. A pergunta põe Jesus entre a lei e a misericórdia, e é esse dilema que o texto apresenta. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 omite «*ἡμῖν*», lê «*ἐκέλευσεν*» em lugar de «*ἐνετείλατο*», «*λιθάζειν*» em lugar de «*λιθοβολεῖσθαι*» e «*δὲ νῦν*» em lugar de «*οὖν*».
 
 **8:6**
 
 - *κατηγορεῖν* (katēgorein), «acusar»; *κύψας* (kypsas), «inclinando-se»; *ἔγραφεν* (egrapsen), «escrevia»; *μὴ προσποιούμενος* (mē prospoioumenos), «fingindo não ouvir». O texto não diz o que Jesus escreveu, e a nota não o supõe. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 omite «*τοῦτο δὲ ἔλεγον πειράζοντες αὐτόν, ἵνα ἔχωσιν κατηγορεῖν αὐτοῦ*» e lê «*κατεγραφεν*» em lugar de «*ἔγραφεν*»; ST omite «*μὴ προσποιούμενος*».
 
 **8:7**
 
 - *ἀναμάρτητος* (anamartētos), «sem pecado»; *βαλέτω* (baletō), «atire». A resposta inverte a pergunta: o juízo passa para a consciência de quem acusa. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 lê «*ἀνεκύψεν καὶ εἶπεν αὐτοῖς*» em lugar de «*ἀνακύψας εἶπεν πρὸς αὐτούς*», «*πρῶτος*» em lugar de «*πρῶτον*» e omite «*τὸν*» antes de «*λίθον*»; KJTR, ST e Scrivener leem «*πρῶτος τὸν λίθον ἐπ᾽ αὐτῇ*» em lugar de «*πρῶτον ἐπ᾽ αὐτὴν τὸν λίθον*»; ST lê «*εἶπε*» em lugar de «*εἶπεν*».
 
 **8:8**
 
 - *πάλιν* (palin), «de novo». O silêncio de Jesus separa a acusação do julgamento. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 lê «*κατακύψας τῷ δακτύλῳ κατέγραφεν*» em lugar de «*κάτω κύψας ἔγραφεν*».
 
 **8:9**
 
 - *συνειδήσεως* (syneidēseōs), «consciência»; *ἐλεγχόμενοι* (elenchomenoi), «convencidos, examinados»; *πρεσβυτέρων* (presbyterōn), «mais velhos». Os acusadores saem começando pelos mais velhos; o texto não explica a ordem. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 lê «*ἕκαστος δὲ τῶν Ἰουδαίων ἐξήρχετο*» e «*ὥστε πάντας ἐξελθεῖν*» em lugar de «*οἱ δέ, ἀκούσαντες … εἷς καθʼ εἷς*», e omite «*ὁ Ἰησοῦς*» depois de «*μόνος*»; KJTR, ST e Scrivener acrescentam «*ἕως τῶν ἐσχάτων*» depois de «*τῶν πρεσβυτέρων*» e leem «*ἑστῶσα*» em lugar de «*οὖσα*».
 
 **8:10**
 
 - *κατήγοροι* (katēgoroi), «acusadores»; *κατέκρινεν* (katekrinen), «condenou». A pergunta é o início do perdão. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 omite «*καὶ μηδένα θεασάμενος πλὴν τῆς γυναικός*» e «*ἐκεῖνοι οἱ κατήγοροί σου*», e lê «*τῇ γυναικί*» em lugar de «*αὐτῇ*»; KJTR, ST e Scrivener acrescentam «*ἡ γυνή*» depois de «*αὐτῇ*».
 
 **8:11**
 
 - *κύριε* (kyrie), «senhor»; *πορεύου* (poreuou), «vai»; *μηκέτι ἁμάρτανε* (mēketi hamartane), «não voltes a pecar» (cf. 5:14). A passagem termina com o perdão e a exortação a não pecar. Passagem entre colchetes.
+- **Crítica Textual.** Na colação, 05 lê «*κἀκείνη*» em lugar de «*ἡ δέ*», acrescenta «*αὐτῷ*» depois de «*εἶπεν*», lê «*ὁ δὲ εἶπεν*» sem «*ὁ Ἰησοῦς*», «*κατακρίνω*» em lugar de «*κρίνω*» e «*ὕπαγε ἀπὸ τοῦ νῦν*» em lugar de «*πορεύου καὶ*»; KJTR, ST e Scrivener acrescentam «*αὐτῇ*» depois de «*εἶπεν δέ*», leem «*κατακρινῶ*» em lugar de «*κρίνω*»; ST lê «*εἶπε*» na segunda ocorrência.
 
 **8:12**
 
@@ -3078,6 +3165,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:15**
 
 - *κατὰ τὴν σάρκα* (kata tēn sarka), «segundo a carne, segundo a aparência humana». Opõe-se o juízo humano ao de Jesus, que não condena (cf. 8:11).
+- **Crítica Textual.** Na colação, 03 lê «*τα τῇ*» em lugar de «*τὴν*»; 032 e P66 leem «*κρίνεται*» em lugar de «*κρίνετε*»; P75 acrescenta «*δέ*» depois de «*ἐγώ*».
 
 **8:16**
 
@@ -3087,10 +3175,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:17**
 
 - *γέγραπται* (gegraptai), «está escrito»; *δύο ἀνθρώπων* (dyo anthrōpōn), «de duas pessoas». A regra das duas testemunhas (cf. Deuteronómio 17:6; 19:15). Jesus aplica-a a si e ao Pai.
+- **Crítica Textual.** Na colação, 01 lê «*γεγραμμένον ἐστίν*» em lugar de «*γέγραπται*»; 032 lê «*ἀνθρώπον*» em lugar de «*ἀνθρώπων*»; P75 lê «*β ἀνθρώπον*» em lugar de «*δύο ἀνθρώπων*» e desloca «*ἐστιν*» para antes de «*ἀληθής*».
 
 **8:18**
 
 - *μαρτυρεῖ* (martyrei), «dá testemunho». O argumento das duas testemunhas: Jesus e o Pai.
+- **Crítica Textual.** Na colação, P75 omite «*περὶ ἐμοῦ*».
 
 **8:19**
 
@@ -3110,6 +3200,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:22**
 
 - *Μήτι* (mēti), «será que», pergunta que espera «não»; *ἀποκτενεῖ ἑαυτόν* (apokteinei heauton), «matar-se». Mal-entendido: pensam que fala de suicídio.
+- **Crítica Textual.** Na colação, 01 acrescenta «*ἄν*» depois de «*ὅπου*»; 01, 032 e P66 leem «*δύνασθαι*» em lugar de «*δύνασθε*»; 05 lê «*ἔλεγαν*» em lugar de «*ἔλεγον*» e «*αὐτόν*» em lugar de «*ἑαυτόν*»; P75 omite «*ἐγώ*».
 
 **8:23**
 
@@ -3119,6 +3210,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:24**
 
 - *πιστεύσητε ὅτι ἐγώ εἰμι* (pisteusēte hoti egō eimi), «crerem que eu sou». A expressão «eu sou», sem predicado, tem eco de Êxodo 3:14 (LXX), e a leitura é debatida. A fé em quem ele é decide a morte ou a vida.
+- **Crítica Textual.** Na colação, 01 e P66 leem «*πιστεύσηται*» em lugar de «*πιστεύσητε*» e 01 acrescenta «*μοι*» depois dele; 032 lê «*ἀποθανεῖσθαι*» nas duas ocorrências em lugar de «*ἀποθανεῖσθε*», e 05 na primeira; 05 acrescenta «*μοι*» depois de «*πιστεύσητε*»; P75 lê «*πιστεύητε*».
 
 **8:25**
 
@@ -3133,6 +3225,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:27**
 
 - *ἔγνωσαν* (egnōsan), «perceberam, conheceram». O narrador explica o mal-entendido.
+- **Crítica Textual.** Na colação, 01 acrescenta «*τὸν θεόν*» depois de «*ἔλεγεν*»; 05 lê «*αὐτοῦ λέγει τὸν θεόν*» em lugar de «*αὐτοῖς ἔλεγεν*».
 
 **8:28**
 
@@ -3151,6 +3244,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:31**
 
 - *πεπιστευκότας* (pepisteukotas), «que tinham crido», perfeito; *μείνητε* (meinēte), «permanecerem». A permanência na palavra é o teste dos discípulos.
+- **Crítica Textual.** Na colação, 01 omite «*ὁ*» antes de «*Ἰησοῦς*»; 032 lê «*μένηται*» em lugar de «*μείνητε*» e «*ἔσται*» em lugar de «*ἐστε*»; 05 e P66 leem «*μείνηται*» em lugar de «*μείνητε*»; 05 inverte «*ἐμῷ*» e «*λόγῳ*».
 
 **8:32**
 
@@ -3164,6 +3258,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:34**
 
 - *ποιῶν τὴν ἁμαρτίαν* (poiōn tēn hamartian), «pratica o pecado», de forma habitual. A escravidão é a prática habitual do pecado.
+- **Crítica Textual.** Na colação, 04 omite «*ἀπεκρίθη αὐτοῖς ὁ Ἰησοῦς· ἀμὴν ἀμὴν λέγω ὑμῖν ὅτι*» e lê «*ἐστι*» em lugar de «*ἐστιν*»; 05 omite «*τῆς ἁμαρτίας*»; P66 omite o artigo «*ὁ*» antes de «*Ἰησοῦς*».
 
 **8:35**
 
@@ -3173,10 +3268,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:36**
 
 - *ὄντως* (ontōs), «de facto, realmente». A liberdade é dada pelo Filho.
+- **Crítica Textual.** Na colação, 01 lê «*ἔσεσται*» em lugar de «*ἔσεσθε*»; 032 omite «*ὁ υἱός*» e lê «*ἔσεσθαι*»; 05 lê «*ἐλευθερώσει*» em lugar de «*ἐλευθερώσῃ*» e «*ἔσεσθαι*»; P66 lê «*ἔστε*» em lugar de «*ἔσεσθε*»; P75 omite «*οὖν*».
 
 **8:37**
 
 - *χωρεῖ* (chōrei), «cabe, tem lugar»; *ἐν ὑμῖν* (en hymin), «em vocês». A descendência física não garante a fé: a palavra não encontra lugar.
+- **Crítica Textual.** Na colação, 03 desloca «*ἀποκτεῖναι*» para antes de «*με*»; 032 lê «*ἔσται*» em lugar de «*ἐστε*» e «*ζητεῖται*» em lugar de «*ζητεῖτε*»; P66 lê «*ἔσται*» em lugar de «*ἐστε*»; 05 lê «*ἐμεῖν*» em lugar de «*ἐν ὑμῖν*».
 
 **8:38**
 
@@ -3191,6 +3288,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:40**
 
 - *ἄνθρωπον* (anthrōpon), «homem»; *λελάληκα* (lelalēka), «tenho dito», perfeito; *ἀλήθειαν* (alētheian), «verdade». Abraão, que confiou em Deus, não teria procurado matar quem diz a verdade.
+- **Crítica Textual.** Na colação, 032 lê «*ζητεῖται*» em lugar de «*ζητεῖτε*»; 05 omite «*ὑμῖν*» depois de «*λελάληκα*» e lê «*ἤκουσεν*» em lugar de «*ἤκουσα*».
 
 **8:41**
 
@@ -3205,6 +3303,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:43**
 
 - *λαλιὰν* (lalian), «fala, maneira de falar»; *γινώσκετε* (ginōskete), «compreendem». A dificuldade não é intelectual, é de disposição (cf. 7:17).
+- **Crítica Textual.** Na colação, 01, 032 e P66 leem «*γινώσκεται*» em lugar de «*γινώσκετε*»; 032 e P66 leem «*δυνασθαι*» em lugar de «*δύνασθε*»; 05 lê «*ἀλήθειαν*» em lugar de «*λαλιάν*» e «*δυνασθαι*» em lugar de «*δύνασθε*».
 
 **8:44**
 
@@ -3214,6 +3313,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:45**
 
 - *ὅτι* (hoti), «porque». A verdade provoca a incredulidade.
+- **Crítica Textual.** Na colação, 032 lê «*πιστεύεται*» em lugar de «*πιστεύετε*»; 04 acrescenta «*ὑμῖν*» depois de «*λέγω*»; 05 lê «*λαλῶ*» em lugar de «*λέγω*», omite «*δέ*» e acrescenta «*ὑμεῖς*» depois de «*μοι*».
 
 **8:46**
 
@@ -3223,6 +3323,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:47**
 
 - *ὁ ὢν ἐκ τοῦ θεοῦ* (ho ōn ek tou theou), «quem é de Deus». A escuta é o sinal da origem.
+- **Crítica Textual.** Na colação, 032 lê «*ἀκούεται*» em lugar de «*ἀκούετε*» e «*ἔσται*» em lugar de «*ἐστέ*»; P66 lê «*ἀκούεται*» em lugar de «*ἀκούετε*»; 05 omite «*ὅτι ἐκ τοῦ θεοῦ οὐκ ἐστέ*».
 
 **8:48**
 
@@ -3232,6 +3333,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:49**
 
 - *τιμῶ* (timō), «honro»; *ἀτιμάζετε* (atimazete), «desonram». Honra e desonra são a alternativa.
+- **Crítica Textual.** Na colação, 01 acrescenta «*καὶ εἶπεν*» depois de «*ἀπεκρίθη Ἰησοῦς*»; 05 acrescenta o artigo «*ὁ*» antes de «*Ἰησοῦς*» e lê «*τιμῶ μου τὸν πατέρα*» em lugar de «*τιμῶ τὸν πατέρα μου*»; 032 lê «*ἀτιμάζεται*» em lugar de «*ἀτιμάζετε*».
 
 **8:50**
 
@@ -3269,6 +3371,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **8:57**
 
 - *πεντήκοντα* (pentēkonta), «cinquenta»; *ἑώρακας* (heōrakas), «viste». A idade de Jesus é um detalhe que a pergunta usa como argumento.
+- **Crítica Textual.** Na colação, 01, 05 e WH leem «*εἶπαν*» em lugar de «*εἶπον*»; 01 e P75 leem «*ἑώρακέν σε*» em lugar de «*ἑώρακας*»; 05 lê «*οὐδέπω*» em lugar de «*οὔπω*».
 
 **8:58**
 
