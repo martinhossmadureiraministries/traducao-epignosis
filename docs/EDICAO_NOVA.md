@@ -1,358 +1,95 @@
-# Edição nova — como produzir na voz do ESTILO_BEE (v0.5)
+# Edição nova — como produzir (20/11/2026)
 
-Este documento liga a **voz** aprovada em [`ESTILO_BEE.md`](ESTILO_BEE.md) à
-infraestrutura existente **sem alterar a linha legada** e **sem ativar a
-automação da nova edição**. Cumpre a regra de ouro do guia: *recomeçar a
-tradução, não a infraestrutura*.
+Este documento descreve o processo **atual** de produção da edição nova. A voz e as
+regras de escrita estão em [`ESTILO_BEE.md`](ESTILO_BEE.md); o estado dos livros, em
+[`ESTADO.md`](ESTADO.md). O processo anterior (perfis, autopiloto, workflows,
+provedores de IA externos e a porta obrigatória do gerador) foi retirado e está no
+histórico do Git.
 
-## O que mudou no código
+## Princípios
 
-Foi acrescentado um **perfil de edição** em ``bee/perfil.py``:
+- **Sem serviços externos de IA.** Os textos e as notas são escritos e revistos
+  no repositório. Não há chaves de API nem produção automática.
+- **Sem automação de publicação.** O repositório não tem workflows de GitHub Actions.
+- **Rascunho primeiro.** Todo o livro nasce em `rascunho`. Só o responsável
+  aprova. O agente não aprova em nome dele.
+- **A colação manda na crítica textual.** Nenhuma testemunha é citada numa nota sem
+  constar do aparato SBLGNT ou de `docs/colacao/<livro>.json`.
 
-| Perfil | Voz | Quando entra |
-|---|---|---|
-| `legado` | prompts/glossário herdados, byte a byte | **sempre que nada é configurado** (padrão) |
-| `nova` | `ESTILO_BEE.md` v0.5 (português contemporâneo com cadência, nota separada do versículo, glossário de *ἐπίγνωσις* → «pleno conhecimento») | só com `BEE_EDICAO=nova` |
+## Fonte de verdade
 
-Pontos de injeção, todos preservando o comportamento por omissão:
-
-- `bee/ia.py` — `MotorIA` aceita `perfil` opcional; sem ele, `_system()`
-  devolve exatamente `SYSTEM_PROMPT + PROMPT_REVISAO`.
-- `bee/gerador.py` — `_contexto_estilo` usa o glossário do perfil ativo;
-  padrão = `GLOSSARIO_PADRAO`.
-- `autopiloto.py` / `gerar_bee.py` — passam o perfil resolvido do ambiente e
-  mostram a edição ativa no `--doctor`.
-
-Um nome de perfil desconhecido é **erro de configuração** (`ValueError`), nunca
-uma queda silenciosa para o legado: misturar vozes corrompe a calibração.
-
-## Isolar a nova edição (obrigatório)
-
-O guia manda isolar **diretório, checkpoints e artefactos** e não retomar nem
-misturar texto antigo. Os caminhos já são parametrizáveis, por isso basta apontar
-para outra pasta — o estado/diário/quarentena seguem automaticamente para
-`<dados>/.bee/`:
-
-```bash
-export GEMINI_API_KEY="a-sua-chave"     # só na sessão, nunca no Git
-export GROQ_API_KEY="a-sua-chave"        # reserva, opcional
-export BEE_EDICAO=nova                   # <-- ativa a voz nova
-
-pasta=edicoes/nova/livros_json           # raiz ISOLADA desta edição
-
-python3 autopiloto.py --doctor   --dados "$pasta"    # confirma edição+pasta, não gasta quota
-python3 autopiloto.py --testar   --dados "$pasta"    # confirma chave/modelo (1 pedido)
-python3 autopiloto.py --uma-vez  --dados "$pasta"    # primeira fatia real (começa em Filemom)
-python3 autopiloto.py --status   --dados "$pasta"    # progresso, sem gastar quota
-```
-
-Com a pasta nova **vazia**, a fila começa do início do plano editorial — e a
-fase 1 abre precisamente com **Filemom (640)**, o piloto de livro inteiro
-aprovado. A linha legada (`livros_json/`, com texto em João 1–21 e 17 decisões pendentes) não é tocada.
-
-Verificar e compilar de forma independente:
-
-```bash
-python3 scripts/verificar_dados.py --dados "$pasta" --minimo 0
-python3 gerar_bee.py --compilar --dados "$pasta" --saida edicoes/nova/modulos
-```
-
-Artefactos da nova edição devem sair rotulados como **prévia/rascunho** e ficar
-fora dos pacotes da linha legada (`entregas/auto/`).
-
-## Antes de gerar livros inteiros
-
-Do [`ESTILO_BEE.md`](ESTILO_BEE.md): **fixar a edição-base antes de gerar**. O
-SBLGNT usado hoje é uma edição crítica sob **CC BY 4.0**, não domínio público;
-se o requisito for domínio público sem exceções, documentar uma base compatível
-antes de migrar (não trocar só o rótulo da licença). Manter atribuições
-exigidas (texto, transcrição, morfologia e aparato conferidos separadamente).
-
-## Estado da automação
-
-- Já existe um workflow **isolado** para a nova edição:
-  [`.github/workflows/bee-nova-edicao.yml`](../.github/workflows/bee-nova-edicao.yml).
-  Ele define `BEE_EDICAO=nova`, `BEE_DADOS=edicoes/nova/livros_json` e
-  `BEE_SAIDA=edicoes/nova/entregas/auto` e publica num release separado
-  (`bee-previa-nova`). Todo o estado vive no Git, ao lado dos dados
-  (`edicoes/nova/livros_json/.bee/`). Não toca em nada da linha legada.
-- **Ativação continua a ser uma decisão explícita.** O `schedule` só dispara a
-  partir do `main` (depois do merge); entretanto use *Actions → "BEE — edição
-  nova" → Run workflow* para lançamentos manuais com controlo. Recomenda-se:
-  1. correr uma vez para **Filemom**, rever o HTML/JSON/módulo gerados;
-  2. só depois deixar o relógio ligado de forma contínua.
-  Validar Filemom de ponta a ponta (JSON íntegro, correspondência JSON↔SQLite,
-  abertura no MyBible) antes de produção em massa é a regra do guia de estilo.
-- O repositório público dá minutos ilimitados; o limite real é a **quota das
-  APIs** (Gemini ~480 pedidos/dia, Groq ~66/dia como reserva). Para dedicar toda
-  a quota à edição nova, **desative o workflow legado** na UI (Actions → Disable)
-  enquanto esta corre. Os dois partilham o grupo de concorrência `bee-producao`,
-  pelo que nunca escrevem no `main` ao mesmo tempo.
-- Produção contínua não é autorização de publicação: distinguir sempre os três
-  estados — cobertura (rascunho/parcial/completo), revisão editorial e revisão
-  especializada — nos artefactos e no diário (`edicoes/nova/livros_json/.bee/diario.md`).
-
-## Semente dos livros já aprovados
-
-Uma execução automática reproduziu Filemom **abaixo** do piloto aprovado («Apfia»,
-«a tua amor», «entranhas», vv. 8–9 achatados). Os pilotos em `edicoes/piloto/`
-foram aprovados pelo responsável, portanto são eles o texto de partida da edição
-nova — não algo a regenerar por cima. O script
-``scripts/importar_piloto.py`` copia-lhes o TEXTO
-aprovado para os JSON de `edicoes/nova/livros_json`:
-
-```bash
-python3 scripts/importar_piloto.py --dry-run     # confere contagens antes
-python3 scripts/importar_piloto.py               # escreve (sobrescreve com cuidado)
-```
-
-- Filemom, Tito, Judas, 2 João e 3 João ficam como capítulos **completos**; a
-  produção automática não os volta a gerar (já estão ao nível aprovado).
-- O comentário é reconstruído com as três secções obrigatórias usando as notas
-  exegéticas do piloto quando existem; onde faltam, fica marcado como rascunho a
-  migrar. Continua RASCUNHO até revisão especializada.
-- Um capítulo só vira completo se o número de versículos igualar o catálogo;
-  senão vai para `in_progress` com aviso (nunca marcamos lacunas como completas).
-
-## Provedores e resiliência (erros 503)
-
-O motor **suporta** uma fila alargada de serviços gratuitos:
-`gemini,cerebras,openrouter,nvidia,cohere,groq`. As chaves vêm dos secrets
-`CEREBRAS_API_KEY`, `OPENROUTER_API_KEY`, `NVIDIA_API_KEY` e `COHERE_API_KEY`, além
-das antigas; um provedor sem chave é simplesmente saltado. NVIDIA NIM e Cohere
-entram pelos seus endpoints compatíveis com OpenAI. A **Cloudflare Workers AI ainda
-não é suportada** (exige `CF_ACCOUNT_ID` e rota `@cf/...`).
-
-**Atenção à deriva:** modelos diferentes têm "sotaques" diferentes — foi isso que
-espalhou o «vós» em 2 Tessalonicenses quando vários provedores escreveram o mesmo
-livro. Por isso o **modelo atual do workflow calibra com poucos provedores**
-(`BEE_PROVEDORES='gemini,groq'`). Quando a voz agradar de forma consistente, alarga-se
-a fila editando essa linha. Vários livros gerados por um só provedor soam muito mais
-coesos.
-
-Sobre o HTTP 503 do Gemini (sobrecarga temporária, não bloqueio de chave): o motor
-**já** o trata como transitório — nova tentativa com espera curta e *backoff*, e,
-se persistir, passa ao provedor seguinte no próprio ciclo (o 429 salta de
-imediatamente). Lotes pequenos (4–6 versículos/pedido) reduzem respostas cortadas
-e a probabilidade de 503 em capítulos longos. O limite real de velocidade continua
-a ser a **quota diária** de cada serviço, não os minutos de Actions.
-
-## Guarda de estilo (anti-deriva)
-
-[`scripts/verificar_estilo.py`](../scripts/verificar_estilo.py) é uma rede de
-segurança independente do modelo: varre os versículos gerados e sinaliza
-
-- **falhas duras** — arcaísmos («vós/vos/sois/sejais/sabeis/padeceis…») e hesitação
-  dentro do verso («ou seja», travessão com alternativa); fazem o script sair com 1;
-- **avisos** — marcadores tipo Almeida («sobremaneira», «porventura», «o sem lei»…).
-
-```bash
-python3 scripts/verificar_estilo.py                 # edição nova inteira
-python3 scripts/verificar_estilo.py 600             # só 2 Tessalonicenses
-python3 scripts/verificar_estilo.py --rigoroso      # avisos também chumbam
-```
-
-O modelo do workflow corre-o no fim da produção como AUDITORIA BLOQUEANTE dos
-dados gravados (desde o P1): o relatório vai para o resumo da execução e a
-corrida falha se uma falha dura chegar ao disco — nenhuma regressão segue
-discretamente para os módulos. Os pilotos aprovados passam limpos — se um texto
-aprovado der aviso, o marcador está agressivo demais e deve ser afinado.
-
-**Ciclo de calibração (correr → guarda → repetir).** O motor não refaz capítulos
-completos; por isso um livro chumbado pelo guarda tem de ser reposto na fila com
-``scripts/limpar_livro.py`` antes de voltar a correr:
-
-```bash
-python3 scripts/limpar_livro.py 600 --dry-run    # vê o que limpa
-python3 scripts/limpar_livro.py 600              # repõe 2 Tessalonicenses na fila
-# depois: Run workflow com livros=600; repetir até o guarda dar limpo
-```
-
-Foi assim que 2 Tessalonicenses (escrito pelo Groq num momento em que o Gemini
-devolveu conteúdo inválido, daí o «vós» tipo Almeida) foi limpo para regenerar com
-a voz endurecida. Manter o Groq como reserva dá disponibilidade quando o Gemini
-falha (503/conteúdo inválido); a qualidade garante-se repetindo o que o guarda
-chumbar. Se preferir uma só voz durante a calibração, use `BEE_PROVEDORES='gemini'`
-aceitando progresso mais lento quando o Gemini estiver instável.
-
-## Porta obrigatória do motor (P1 da convergência)
-
-Desde o P1, a guarda anti-deriva não é só auditoria final: é uma PORTA dentro do
-próprio motor. O núcleo de análise vive em [`bee/inspetor.py`](../bee/inspetor.py)
-(a CLI e o motor usam a mesma fonte das proibições).
-
-Fluxo por lote gerado (só na edição nova; o legado fica exatamente igual):
-
-1. Um provedor devolve um lote válido → [`bee/porta.py`](../bee/porta.py)
-   inspeciona cada versículo. Falhas duras (arcaísmos/hesitação) levantam
-   `DerivaEstilo`; **o texto mau nunca chega ao disco**.
-2. O rodízio roda automaticamente para OUTRO provedor no mesmo lote — quem dériva
-   não escreve a passagem, outro tenta.
-3. Se nenhum provedor limpar o lote após as rondas, o versículo fica como marcador
-   `[Versículo pendente: deriva de estilo…]` (o livro avança com um buraco
-   explícito) e a entrada vai para `livros_json/.bee/quarentena.json` com
-   proveniência completa: `status: "chumbado-estilo"`, `provider`,
-   `providers_tried` (todos os autores da deriva), `style_marks` verso a verso.
-4. Na repetição do capítulo, o agendador lê a quarentena e EVITA esses provedores
-   naquele capítulo — **mas a disponibilidade vem sempre primeiro**: se o filtro
-   excluir todos os motores disponíveis, ignora-se nesse pedido.
-
-O marcador guardado NÃO cita as formas proibidas (cita-as a quarentena), para a
-auditoria não sinalizar o próprio marcador. Avisos (marcadores de Almeida) não
-bloqueiam a porta — são sinal de revisão, tal como na CLI.
-
-Para regenerar um capítulo chumbado depois de afinar a memória ou as chaves:
-`python3 scripts/limpar_livro.py <numero>` e correr de novo; a repetição já evita
-os provedores que escreveram mal.
-
-## Revisão por segunda IA (P2 da convergência)
-
-Escolha confirmada: revisão **sempre, automática**. Cada capítulo fechado na
-edição nova é revisto por um provedor DIFERENTE do autor (``bee/papeis.py``
-define a prioridade — Cerebras, Gemini, Groq, OpenRouter…; o autor só revê se for
-o único disponível, porque produção revista vale mais do que nenhuma revisão).
-Implementação em ``bee/revisor.py``; o pedido viaja pelo método
-`MotorIA.rever()`, com o system prompt do REVISOR e toda a resiliência de rede
-existente (rodízio de chaves/modelos em 404/5xx/quota).
-
-Proteções de quota decididas:
-
-- só os TEXTOS viajam no pedido (comentários ficam de fora), em lotes de 40 versículos;
-- o revisor devolve apenas `{"emendas":[{verse,texto,razao}]}` — mínimas, ou lista vazia;
-- cada emenda passa pela PORTA de estilo antes de entrar: uma "correção" que
-  introduzisse «vós» seria rejeitada;
-- primeiro revisor que responde fecha a revisão; falhas passam ao seguinte;
-  se todos falharem, o original fica intacto (a revisão nunca perde uma tradução).
-
-Auditoria: entradas `revisao:<provedor>` na `history` do livro e caderno próprio
-`livros_json/.bee/revisoes.json` (verso, texto aplicado, razão, revisor, data).
-Desliga-se numa corrida com `BEE_REVISAO=desligado` (o modelo do fluxo traz
-`sempre`). O legado não usa nada disto.
-
-## Métricas por provedor e prioridades (P3 da convergência)
-
-``bee/metricas.py`` recolhe, do que está gravado, o
-desempenho de cada provedor: versículos gerados (`history`), chumbos da porta
-(quarentena `chumbado-estilo`, contados pelas marcas e atribuídos a TODOS os que
-tentaram o lote), emendas recebidas do revisor (caderno `revisoes.json`) e
-capítulos revistos. O número comparável é **chumbos/100 versos**.
-
-```bash
-python3 scripts/metricas_provedores.py                # tabela + ordem de confiança
-python3 scripts/metricas_provedores.py --json m.json  # exportar tudo
-```
-
-O passo «Métricas por provedor» do workflow põe a tabela no resumo da execução e
-atualiza o cache `.bee/metricas.json` (pasta ignorada pelo Git). Com
-`BEE_PRIORIDADES=metricas`, o agendador ordena os revisores pela taxa de chumbo
-(menos deriva revista primeiro; sem medição vale a ordem dos papéis). A métrica
-nunca bloqueia produção — é sinal para decidir, como afinar filas ou chaves.
-
-## Crescer a memória com aprovações (P3)
-
-A memória é viva: aprovações humanas entram nela mecanicamente, sempre validadas
-contra o schema (uma alteração inválida é recusada antes de tocar no ficheiro):
-
-```bash
-# registar uma aprovação (entra em aprovacoes)
-python3 scripts/aprovar_voz.py capitulos 600 1 2 3 --nota "registo equilibrado"
-# fixar/acrescentar decisão lexical (dedup pela forma grega ou termo)
-python3 scripts/aprovar_voz.py glossario --grego μακροθυμία --transliteracao makrothymía \
-    --usar "«paciência»" --sentido "esperança ativa."
-# promover um versículo aprovado a âncora de voz do género
-python3 scripts/aprovar_voz.py amostra --referencia "2 Tessalonicenses 1:3" \
-    --texto "Devemos dar sempre graças a Deus por vocês…" --porque "ação de graças coesa"
-```
-
-(`--dry-run` mostra sem escrever.) É assim que glossário e âncoras crescem com os
-pilotos novos, mantendo a fonte única válida.
-
-## Memória de estilo (fonte única da voz)
-
-Vários provedores só convergem na mesma voz se receberem **exatamente as mesmas
-regras**. Por isso a edição nova deixou de ter regras de estilo espalhadas pelo
-código: tudo vive em [`modelos/estilo_bee.json`](../modelos/estilo_bee.json),
-renderizado nos prompts por [`bee/memoria_estilo.py`](../bee/memoria_estilo.py).
-Gemini, Groq ou qualquer reserva recebem o mesmo bloco — a memória é o P0 do
-sistema de convergência multi-provedor (P1 será o guarda como porta obrigatória
-com quarentena e repetição noutro provedor; P2 a revisão por segunda IA).
-
-A memória é v1.4 (v1.3 + protocolo de trabalho em 7 passos e a regra dura do desempate NA28, decisão do responsável de 2026-11-20). O JSON guarda, com dados reais dos pilotos aprovados, da
-regeneração editorial de 2 Tessalonicenses e da passagem de lapidação de
-20/11/2026 (`docs/OFICINA_TRADUCAO.md`):
-
-| Secção | Conteúdo |
+| Ficheiro | Conteúdo |
 |---|---|
-| `registro` | plural «vocês» obrigatório, `ortografia` (norma pt-PT: «connosco», «de facto», «registo») + lista negra de arcaísmos (espelho exato do que a guarda chumba) |
-| `regras_duras`, `aperto` | as 14 regressões proibidas e os 6 apertos de calibração, numerados. As cinco últimas vêm da crítica textual e da lapidação: pontuação e maiúscula inicial, SENHOR e Senhor, crítica textual só com evidência colacionada, ênclise com gerúndio, uniformidade só onde o grego é igual |
-| `glossario` | decisões por termo grego com `usar`, `contexto_reuso`, `livros_reuso`, `rejeitar` e exemplo aprovado (ex.: σπλάγχνα → «coração», mantido igual nos vv. 7/12/20 de Filemom) |
-| `rejeitados` | palavras/formulações vetadas com motivo e alternativa («ou seja» no verso, «sobremaneira», «o sem lei», «entranhas») |
-| `formulas_consolidadas` | saudação/ação de graças/bênção repetidas iguais em todos os livros (a saudação é letra a letra Filemom 1:3) |
-| `ancoras` | livros-base (Fm, Tt, Jd, 2Jo, 3Jo), amostras por género e lista EVITAR |
-| `contrastes` | pares mau→bom nascidos das regressões reais de 2Ts |
-| `aprovacoes` | em que assenta esta voz (pilotos, ESTILO_BEE v0.5, PR #50–#52, ESTILO_BEE v0.6) |
+| `edicoes/nova/livros_json/NNN_Livro.json` | Texto e notas. Fonte única. |
+| `edicoes/nova/<LIVRO>.md` | Leitura em Markdown, gerada a partir do JSON. Não se edita à mão. |
+| `docs/colacao/<livro>.json` e `.md` | Colação verificável, gerada por `scripts/colar.py`. |
+| `modelos/estilo_bee.json` | Memória de estilo: regras, glossário e vetos. Referência para quem escreve. |
 
-**Como o pedido recebe a memória.** O system prompt do perfil `nova` = contrato
-operacional (formato/rigor/comentário, no código) + `system_fragment()`; o campo
-`glossario` vem de `glossario_para_pedido()`, e `_contexto_estilo` passa-lhe o
-`book_number` do livro em tradução para marcar as decisões **JÁ APROVADAS nesse
-livro** (coesão intra-livro: o provedor repete a mesma palavra escolhida); o
-campo `amostras` = âncoras do género + contrastes + fórmulas.
+Estrutura de um JSON de livro:
 
-**Como evoluir a voz.** Editar o JSON e correr `python3 -m unittest
-tests.test_memoria_estilo` — o schema valida-se no arranque (um JSON malformado
-falha alto nos testes, nunca em corrida) e há um teste que garante que toda a
-lista negra da memória continua coberta pela guarda. Novas aprovações (mais
-pilotos) entram em `ancoras`/`aprovacoes`; novos vetos em `rejeitados`. O perfil
-legado não usa nada daqui — permanece byte-idêntico.
+- `chapters`: objeto cujas chaves são os capítulos (`"1"`, `"2"`, …), com uma lista de
+  versículos. Cada versículo tem `verse`, `text` (a tradução) e `commentary` (a nota).
+- `review.editorial_blocks`: lista de blocos por intervalo de versículos, com `chapter`,
+  `verse_from`, `verse_to`, `status` (`rascunho` ou `aprovado`) e `nota`.
+- `review.specialist`: revisão especializada, em regra `pendente`.
 
-## Proveniência e revisão declaradas no JSON
+## Formato da nota
 
-Um livro que cita manuscritos tem de dizer **de onde veio** e **até onde foi
-revisto**. Os dois campos existem no JSON de cada livro e são validados por
-`bee/arquivos.py`; o compilador (`bee/compilador.py`) leva-os para a base
-`BEE.commentaries.SQLite3`, onde `info.source` fica a ser o texto de atribuição
-completo das fontes do lote.
+Cada nota é um parágrafo de prosa, sem rótulos. A regra completa está em
+[`ESTILO_BEE.md`](ESTILO_BEE.md), secção «Formato das notas — prosa». Em resumo:
 
-`bibliography` — uma entrada por fonte **efetivamente consultada**, com:
+1. O termo grego vai em itálico, com a transliteração entre parênteses na primeira ocorrência.
+2. A razão da escolha e a alternativa rejeitada entram na própria prosa.
+3. A «Crítica Textual:» é um parágrafo próprio, só quando há variante, e cita as siglas
+   do aparato e da colação.
+4. Não se escrevem níveis de certeza (A, B, C) nem rótulos antigos. Uma passagem de
+   decisão difícil é assinalada em `review` para revisão especializada.
+5. Colchetes no texto só quando a evidência o pede (regra de 2026-11-22).
 
-| Campo | O que fixa |
-|---|---|
-| `name` | identificação da fonte, suficiente para a encontrar |
-| `revision` | o commit exato (para fontes de um repositório Git) |
-| `url` | de onde veio |
-| `license` | a licença declarada pelo fornecedor |
-| `attribution` | o que se fez com ela, quem é o autor e o que **não** se pode afirmar a partir dela |
+`bee/inspetor.analisar_comentario` verifica estas regras.
 
-`review` — três estados por trecho (`rascunho`, `em_revisao`, `revisado`), em
-`editorial_blocks` e `specialist`, cada um com `verse_from`, `verse_to` e `nota`.
-Cobertura **não** é revisão: um bloco pode cobrir os 47 versículos de um livro e
-continuar `rascunho`. É exatamente isso que 2 Tessalonicenses declara, com a
-nota a nomear as duas unidades de nível C que pedem leitura especializada.
+## Fluxo por livro
 
-Licenças com obrigação de partilha (o acervo CNTR é CC BY-SA 4.0) não impedem a
-citação: impedem a redistribuição. A regra do projeto é **custódia**, não
-incorporação — o acervo fica em `.bee-cache/` (fora do Git, ver `.gitignore`), o
-que se versiona é o nosso relatório de colação em `docs/colacao/`. O protocolo
-está em [`CRITICA_TEXTUAL.md`](CRITICA_TEXTUAL.md), §8.
+1. **Colação.** `python3 scripts/colar.py --livro N` gera `docs/colacao/<livro>.json` e `.md`.
+   Precisa das transcrições CNTR em `.bee-cache/cntr/`, que não estão no Git.
+2. **Texto e notas.** Escrever ou rever o JSON do livro, capítulo a capítulo.
+3. **Itálico do grego.** `python3 scripts/italico_grego.py --dados edicoes/nova/livros_json`
+   mostra o que falta. Com `--aplicar` altera todos os JSON da pasta: correr só depois de
+   rever o que vai mudar.
+4. **Verificar a voz.** `python3 scripts/verificar_estilo.py 500` (ou sem argumentos para
+   todos os livros). Com `--rigoroso`, os avisos de Almeida também chumbam.
+5. **Verificar a crítica textual.**
+   `python3 scripts/verificar_notas_colacao.py --dados edicoes/nova/livros_json/500_Joao.json --colacao docs/colacao/João.json`
+   Deve sair com rc 0. Toda a variante do aparato tem de ter CT no capítulo.
+6. **Ortografia.** `python3 scripts/verificar_ortografia.py` (alerta, não substitui leitura).
+7. **Leitura.** `python3 scripts/gerar_leitura_livro.py --livro 500 --saida edicoes/nova/JOAO.md`.
+8. **Integridade.** `python3 scripts/verificar_dados.py` e `python3 -m pytest`.
+9. **Estado e módulos.** `python3 gerar_bee.py --status`; `python3 gerar_bee.py --compilar`
+   compila os módulos MyBible (só capítulos completos e consecutivos desde o capítulo 1).
+
+## Aprovação
+
+- O agente não muda nenhum bloco para `aprovado`.
+- A aprovação é do responsável e fica registada em `review.editorial_blocks` com a
+  data e a nota.
+- Revisão especializada em línguas bíblicas é outra etapa e não se confunde com a
+  aprovação editorial.
+
+## Limitações conhecidas
+
+- Os scripts de conversão usados em 2026-11-20 (para passar notas de formato antigo
+  para prosa) não estão no repositório. Os JSON resultantes são a fonte; a reprodução
+  faz-se revendo o texto, não reexecutando um script.
+- A colação depende de `.bee-cache/` (ignorado pelo Git, com licença CC BY-SA das
+  transcrições). Sem esse cache, `colar.py` não corre.
+- `docs/colacao/João.md` ainda não foi revisto.
+- Marcos 16:9–20 não está produzido.
 
 ## Testes
 
-`tests/test_perfil.py` garante: legado idêntico por omissão, `nova` injeta voz,
-glossário e âncoras próprios, argumento explícito sobrepõe o ambiente, nome
-inválido é erro, e `_contexto_estilo` acompanha o perfil ativo.
-`tests/test_memoria_estilo.py` valida o schema do JSON de estilo, os
-renderizadores (marcas da voz, reuso por livro, fórmulas = texto do piloto), a
-montagem do perfil `nova` a partir da memória e a coerência lista negra ↔ guarda.
-`tests/test_porta_estilo.py` cobre a porta obrigatória (rotação por deriva,
-quarentena com proveniência, exclusões). `tests/test_revisor_voz.py` cobre a
-revisão por segunda IA (autor excluído, emendas validadas pela porta, falhas
-preservam o original, lotes de 40 versículos).
-`tests/test_metricas_p3.py` cobre as métricas por provedor (recolha, confiança,
-cache), prioridades com pontuações e a CLI de aprovações sobre uma cópia da memória.
-`tests/test_manuscritos.py` cobre o analisador MES e a colação (40 testes);
-`tests/test_critica_textual.py` confronta o protocolo com os dados reais de
-2 Tessalonicenses (69 testes, dos quais uma classe de lapidação corre sobre os
-sete livros da edição nova).
-`tests/test_importar_piloto.py` cobre a análise do markdown dos pilotos, a troca
-de livro no ficheiro conjunto 2/3 João e a reconstrução do comentário.
+```
+python3 -m venv /tmp/venv && /tmp/venv/bin/pip install pytest
+/tmp/venv/bin/python -m pytest -q
+```
+
+Em 2026-11-20: 163 passam, 1 ignorado.

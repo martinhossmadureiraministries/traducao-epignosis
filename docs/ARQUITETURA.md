@@ -1,85 +1,85 @@
-# Arquitetura — código, dados e compilação
+# Arquitetura
 
-## Entradas
+Estado em 2026-11-23, depois da retirada da produção por IA (`d82baf3`). O
+registo do que foi retirado está no histórico (`git show a80fa33:<caminho>`).
 
-| Ficheiro | Papel |
-|---|---|
-| `autopiloto.py` | Produção local em ciclos, com estado, diário e orçamento diário. |
-| `nuvem.py` | Uma fatia de produção numa GitHub Action: gera, compila, publica e empacota. |
-| `gerar_bee.py` | Percurso antigo de um livro inteiro por chamada; não tem janela, rodízio nem estado. |
-| `scripts/verificar_dados.py` | Verifica a integridade dos JSON versionados, sem rede. |
+## Fluxo de trabalho
+
+1. **Fontes fixadas.** O texto grego é o SBLGNT (`bee/fontes.py`), com o aparato
+   e o Textus Receptus como comparação. Cada versão tem um commit fixado.
+2. **Colação.** `scripts/colar.py` confronta o aparato com as testemunhas
+   consultadas (`bee/manuscritos.py`) e grava o relatório em `docs/colacao/`.
+3. **Redação.** Texto e nota de cada versículo ficam em
+   `edicoes/nova/livros_json/<número>_<Livro>.json`. O formato da nota é prosa
+   (ver `docs/ESTILO_BEE.md`).
+4. **Verificação.** `scripts/verificar_dados.py` (integridade),
+   `scripts/verificar_estilo.py` (estilo e marcação),
+   `scripts/verificar_notas_colacao.py` (notas contra a colação),
+   `scripts/verificar_ortografia.py` (ortografia europeia) e
+   `scripts/verificar_documentacao.py` (documentos contra os dados).
+5. **Leitura.** `scripts/gerar_leitura_livro.py` gera o Markdown de cada livro.
+6. **Compilação.** `gerar_bee.py --compilar` gera os módulos MyBible
+   (`BEE.SQLite3` e `BEE.commentaries.SQLite3`).
+
+A revisão editorial e a revisão especializada ficam registadas em `review` no
+próprio JSON, e nunca são confundidas com cobertura.
 
 ## Módulos (`bee/`)
 
-| Módulo | Responsabilidade |
+| Módulo | Função |
 |---|---|
-| `catalogo.py` | Os 66 livros, números MyBible, nomes de ficheiro e versículos por capítulo. |
-| `fontes.py` | Descarrega e alinha WLC/OSHB, SBLGNT e Textus Receptus; marca fontes ausentes. |
-| `ia.py` | Provedores, descoberta de modelos, prompts, validação da resposta e `Rodizio`. |
-| `rede.py` | `ClienteHTTP`: pausas, tentativas, 429 sem dormir, contagem real de pedidos. |
-| `gerador.py` | Gera por lotes, divide respostas truncadas, grava checkpoints e trata a quarentena. |
-| `arquivos.py` | Lê, valida e grava os JSON de forma atómica. |
-| `compilador.py` | Constrói `BEE.SQLite3` e `BEE.commentaries.SQLite3` no formato MyBible. |
-| `agenda.py` | Estado diário, diário legível, janela horária, tectos por provedor e decisões do ciclo. |
-| `trava.py` | Impede duas execuções a escrever nos mesmos dados. |
+| `arquivos.py` | leitura validada dos JSON e checkpoints atómicos |
+| `catalogo.py` | os 66 livros e a numeração MyBible |
+| `fontes.py` | textos originais fixados, cache e versificação |
+| `manuscritos.py` | leitura das transcrições e colação verificável |
+| `rede.py` | pedidos HTTPS com limite de ritmo, usados pela colação e pelas fontes |
+| `grego.py` | convenção do grego nas notas (itálico) |
+| `inspetor.py` | guarda determinística da voz: arcaísmos, marcas e formato único em prosa |
+| `compilador.py` | compilação dos módulos MyBible |
+| `trava.py` | trava de processo para que duas compilações não escrevam ao mesmo tempo |
+| `sanea.py` | validação de HTML simples; usado por `arquivos.py` na leitura das respostas |
 
-## Fluxo de uma fatia
+## Scripts principais (`scripts/`)
 
-1. `autopiloto.py`/`nuvem.py` escolhe os livros da fila e o próximo capítulo
-   incompleto.
-2. `bee/fontes.py` fornece o texto-base alinhado ao versículo.
-3. `bee/ia.py` pede um lote pequeno ao provedor disponível; em JSON inválido,
-   outro provedor/modelo é tentado.
-4. `bee/gerador.py` valida HTML, numeração e variantes; grava imediatamente em
-   `in_progress` (checkpoint após cada lote).
-5. Quando o capítulo fica completo, passa de `in_progress` para `chapters`.
-6. `bee/compilador.py` recompila os dois módulos com os capítulos completos.
-7. `nuvem.py` publica os JSON no `main`, exporta um HTML por capítulo e cria os
-   ZIP da execução.
+- `colar.py` — colação por livro.
+- `gerar_leitura_livro.py` — leitura em Markdown.
+- `verificar_*.py` — verificações listadas no fluxo acima.
+- `italico_grego.py` — aplica o itálico ao grego das notas.
+
+`gerar_bee.py` (na raiz) só faz `--compilar`, `--status` e `--listar-livros`.
+Não há produção automática nem chamadas a modelos de IA.
 
 ## Formato dos dados
 
-`livros_json/<número>_<Livro>.json`:
+Cada JSON de livro tem `format_version`, `book_number`, `book_name`,
+`chapter_count`, `chapters`, `in_progress`, `history`, `sources`,
+`bibliography` e `review`.
 
-```json
-{
-  "format_version": 1,
-  "book_number": 640,
-  "book_name": "Filemom",
-  "chapter_count": 1,
-  "sources": {"sblgnt_commit": "...", "textus_receptus_commit": "..."},
-  "chapters": {"1": [{"verse": 1, "text": "...", "commentary": "..."}]},
-  "in_progress": {"18": [{"verse": 1, "text": "...", "commentary": "..."}]},
-  "history": [{"chapter": 1, "verse_from": 1, "verse_to": 6,
-               "provider": "gemini", "model": "...", "generated_at_utc": "..."}]
-}
-```
-
-- `chapters`: capítulos estruturalmente completos; só estes entram nos módulos.
+- `chapters`: capítulos completos; só estes entram nos módulos. Cada versículo
+  tem `verse`, `text` e `commentary`.
 - `in_progress`: versículos já guardados de um capítulo ainda a meio.
-- Cada versículo tem `verse`, `text` e `commentary` com as três secções
-  obrigatórias (Análise Léxica, Crítica Textual, Síntese Exegética).
-- Marcadores que **não** são texto bíblico: `[Versículo sem texto
-  correspondente no WLC consultado.]` (fonte ausente) e `[Versículo pendente:
-  …]` (quarentena).
-- `livros_json/.bee/estado.json`: ciclos, consumo por dia/provedor, lote em
-  falta, última compilação.
-- `livros_json/.bee/diario.md`: registo legível.
-- `livros_json/.bee/quarentena.json`: referência, provedor, modelo, erro e data
-  dos versículos por refazer.
+- `bibliography`: fontes efetivamente consultadas, com commit, URL e licença.
+- `review`: estados de revisão editorial e especializada.
 
-## Compilação e artefactos
+Marcadores que **não** são texto bíblico: `[Versículo sem texto
+correspondente no WLC consultado.]` (fonte ausente) e `[Versículo pendente:
+…]` (quarentena).
 
-- `BEE.SQLite3`: texto bíblico; `BEE.commentaries.SQLite3`: comentários; ambos
-  com `bee_complete`, `bee_source_gaps`, `bee_pending_verses` e estado de
-  rascunho.
-- `nuvem.py` cria `BEE-modulos-<run>.zip`, `BEE-capitulos-<run>.zip` e
-  `BEE-diagnostico-<run>.zip` em `entregas/auto/`.
-- O release `bee-previa` recebe os HTML e os ZIP para descarregar sem sessão.
+Formato único (decisão de 2026-11-23): cada versículo tem um parágrafo de
+comentário em prosa, sem rótulos de secção e sem níveis de certeza. A
+Crítica Textual é um parágrafo próprio, «Crítica Textual:», e só aparece
+quando o aparato da SBLGNT ou a colação registam variante. Não há listas de
+livros ou capítulos com formato diferente: `bee/inspetor.analisar_comentario`
+verifica a regra para o livro inteiro.
 
-## Testes
+## Estado do repositório
 
-`tests/` cobre rede e 429, provedores/rodízio, geração e retoma, quarentena,
-validação dos JSON, compilação, workflow sincronizado e pacotes. Os testes
-principais não usam rede nem chaves. `worker/` é um protótipo separado para um
-deployment Mistral e não faz parte do fluxo principal.
+- `edicoes/nova/` é a única fonte de texto. A pasta legada `livros_json/` da raiz
+  foi retirada.
+- `livros_json/.bee/` (estado e diário da produção) mantém-se no repositório,
+  por decisão D11 em `docs/arquivo/PLANO_CORRECAO.md`, até existir um ramo de dados.
+
+
+## Código arquivado
+
+`arquivo/` guarda `bee/porta.py`, `bee/memoria_estilo.py`, `scripts/aprovar_voz.py` e `scripts/gerar_apresentacao.py`, fora do produto (ver `arquivo/LEIA-ME.md`). A apresentação antiga está em `docs/arquivo/APRESENTACAO_BEE.docx`. Os documentos `PLANO_CORRECAO.md` e `REVISAO_GERAL.md` estão em `docs/arquivo/`.

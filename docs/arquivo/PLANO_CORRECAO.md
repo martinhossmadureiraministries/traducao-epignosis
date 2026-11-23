@@ -1,3 +1,5 @@
+> **Documento histórico (arquivado em 2026-11-20).** Descreve um plano de etapas que já não é o estado atual do projeto. Para o estado atual, ver `docs/ESTADO.md` e `docs/EDICAO_NOVA.md`.
+
 # Plano de correção e reorganização
 
 Base: `docs/REVISAO_GERAL.md` (primeira varredura, commit `f507104`). Este plano transforma os achados A1–A9, M1–M16 e B1–B4 em etapas com critério de saída.

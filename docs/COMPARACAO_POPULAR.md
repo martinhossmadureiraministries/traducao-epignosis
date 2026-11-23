@@ -105,7 +105,7 @@ e a construção europeia «a vir».
 escreve «todo **o** desejo» para o grego sem artigo, a brasileira escreve
 «todo desejo». A BEE escreve «todo o desejo… e toda a obra», como a de 1911
 e como a NVI («todo bom propósito e toda obra»): o artigo é do português
-europeu, e o facto grego (anártrico, distributivo) está na Análise Léxica.
+europeu, e o facto grego (anártrico, distributivo) está na nota.
 
 ### 2 Tessalonicenses 2:3–4
 

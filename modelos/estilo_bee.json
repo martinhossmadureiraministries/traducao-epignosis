@@ -102,11 +102,11 @@
     },
     {
       "rotulo": "CRÍTICA TEXTUAL SÓ COM EVIDÊNCIA COLACIONADA",
-      "texto": "na nota, citar apenas as edições e as testemunhas que constem do aparato ou do relatório de colação fornecido (docs/colacao/). Uma edição impressa não é um manuscrito; uma tradução moderna não é evidência textual, é consequência de uma decisão alheia; «o Textus Receptus» não é um texto único (Scrivener, Stephanus, RP e KJTR divergem entre si). Idade e número de cópias são indícios, não critério: decidir por evidência externa e interna e dizer o nível de certeza (A segura, B provável, C disputa real que exige revisão especializada). Sem colação para o livro, não atribuir nenhuma leitura a um códice."
+      "texto": "na nota, citar apenas as edições e as testemunhas que constem do aparato ou do relatório de colação fornecido (docs/colacao/). Uma edição impressa não é um manuscrito; uma tradução moderna não é evidência textual, é consequência de uma decisão alheia; «o Textus Receptus» não é um texto único (Scrivener, Stephanus, RP e KJTR divergem entre si). Idade e número de cópias são indícios, não critério: decidir por evidência externa e interna. A classificação de certeza (A segura, B provável, C disputa real) é interna ao trabalho e não se imprime na nota; as passagens C ficam assinaladas em `review` para revisão especializada. Sem colação para o livro, não atribuir nenhuma leitura a um códice."
     },
     {
       "rotulo": "DESEMPATE NA28",
-      "texto": "quando as edições comparadas se dividirem, segue-se NA28 (decisão do responsável de 2026-11-20) e regista-se a alternativa com o nível de certeza; nunca se traduz contra a base em silêncio — divergência inevitável leva Nota de redação. Judas 1:5: «[[Jesus]]»."
+      "texto": "quando as edições comparadas se dividirem, segue-se NA28 (decisão do responsável de 2026-11-20) e regista-se a alternativa e a razão; nunca se traduz contra a base em silêncio — divergência inevitável leva Nota de redação. Judas 1:5: «[[Jesus]]»."
     }
   ],
   "aperto": [
@@ -271,7 +271,7 @@
       "transliteracao": "aparchḗ",
       "usar": "«primícias»",
       "sentido": "primeira porção da colheita ou da massa, oferecida a Deus e que garante o resto (Rm 16:5; 1Co 16:15; Tg 1:18).",
-      "nao_estender_a": "ἀπʼ ἀρχῆς («desde o princípio»), que é outra leitura e não outra tradução da mesma palavra — em 2Ts 2:13 é variante de nível C e pertence à nota",
+      "nao_estender_a": "ἀπʼ ἀρχῆς («desde o princípio»), que é outra leitura e não outra tradução da mesma palavra — em 2Ts 2:13 é variante de decisão difícil e pertence à nota",
       "livros_reuso": [
         600
       ],
@@ -302,7 +302,7 @@
       "grego": "πᾶς",
       "transliteracao": "pãs",
       "usar": "«todo o / toda a» com singular e «todos os / todas as» com plural, haja ou não artigo no grego: o artigo português depois de «todo» é gramatical e não traduz o artigo grego",
-      "sentido": "πᾶς anártrico distribui (cada um); πᾶς com artigo pode totalizar (o inteiro). A diferença regista-se na Análise Léxica, nunca no artigo português. Suprimir o artigo é importar o português do Brasil: lá «todo desejo» e «todo o desejo» distinguem-se, em Portugal não.",
+      "sentido": "πᾶς anártrico distribui (cada um); πᾶς com artigo pode totalizar (o inteiro). A diferença regista-se na nota, nunca no artigo português. Suprimir o artigo é importar o português do Brasil: lá «todo desejo» e «todo o desejo» distinguem-se, em Portugal não.",
       "contexto_reuso": "evidência de língua, não de texto: a Almeida de 1911, impressa em Portugal e em domínio público, escreve «todo o desejo» (2Ts 1:11) e «todo o irmão» (3:6) para grego anártrico; a ARC brasileira escreve «todo desejo». 2Ts 2:9 «com todo o poder» já seguia esta forma e deixa de ser exceção.",
       "livros_reuso": [
         600,
@@ -378,7 +378,7 @@
     {
       "item": "hífen não separável U+2011 («proclamando‑se»)",
       "motivo": "carácter invisível que quebra a pesquisa, a comparação e a normalização dos dados; entrou em 2Ts 2:4 sem que ninguém o visse.",
-      "alternativa": "hífen ASCII U+002D; scripts/regenerar_2ts.py chumba o U+2011."
+      "alternativa": "hífen ASCII U+002D; o U+2011 não se usa."
     }
   ],
   "formulas_consolidadas": {
@@ -554,11 +554,11 @@
   ],
   "protocolo": [
     "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",
-    "DESEMPATE NA28 (decisão do responsável, 2026-11-20): quando as edições comparadas se dividirem numa unidade de variação, segue-se NA28; regista-se a alternativa rejeitada e declara-se o nível de certeza (A segura, B provável, C disputa real). Exemplo em vigor: Judas 1:5 lê «[[Jesus]]» com NA28, contra «o Senhor» de WH/Tregelles/RP.",
+    "DESEMPATE NA28 (decisão do responsável, 2026-11-20): quando as edições comparadas se dividirem numa unidade de variação, segue-se NA28; regista-se a alternativa rejeitada e a nota diz a razão da escolha e a alternativa rejeitada, sem notação de nível. Exemplo em vigor: Judas 1:5 lê «[[Jesus]]» com NA28, contra «o Senhor» de WH/Tregelles/RP.",
     "COLAÇÃO ANTES DE CITAR: nenhuma testemunha (códice, papiro, versão antiga, Padre) é nomeada numa nota sem constar do aparato SBLGNT ou do relatório de colação do próprio livro (docs/colacao/, scripts/colar.py). O aparato nomeia edições, nunca manuscritos. Sem colação fornecida, escreva «sem variante verificada».",
-    "TRÊS SECÇÕES VERDADEIRAS, SEMPRE: Análise Léxica do texto real (forma, transliteração, sentido no contexto), Crítica Textual da evidência real com nível de certeza, Síntese Exegética do argumento da passagem. Texto de enchimento, etimologia inventada, código Strong não fornecido ou variante não observada chumbam o capítulo.",
+    "FORMATO EM PROSA: um parágrafo de comentário por versículo, sem rótulos nem notação de nível (A, B, C). O termo grego vai em itálico com transliteração na primeira ocorrência. A «Crítica Textual:» é um parágrafo próprio, só quando o aparato ou a colação registam variante, com as siglas e o que a variante muda. Texto de enchimento, etimologia inventada, código Strong não fornecido ou variante não observada chumbam o versículo.",
     "LAPIDAÇÃO MECÂNICA ao fechar o capítulo: ênclise portuguesa (nunca próclise com gerúndio), marcas «», <i> e <b> equilibradas ao nível do capítulo, verbos supridos pelo português em itálico, pontuação que preserva a relação sintática entre versículos (CRITICA_TEXTUAL.md §5.1), ortografia europeia (unigénito) e artigo obrigatório depois de «todo/toda» no singular — «todo o desejo»: o anártrico grego regista-se na nota, não se apaga o artigo.",
     "PROTEGER O QUE JÁ FOI APROVADO: texto de piloto aprovado pelo responsável não se reescreve em corrida automática. Correção indispensável entra com <b>Nota de redação</b> explicando a mudança e fica assinalada para leitura dele.",
-    "ESTATUTO HONESTO: todo o livro nasce RASCUNHO (review editorial «rascunho», revisão especializada «pendente») e só o responsável o promove. Nível C é sempre assinalado como prioridade de revisão especializada. Idade e número de cópias de um manuscrito são indícios, nunca o critério de decisão."
+    "ESTATUTO HONESTO: todo o livro nasce RASCUNHO (review editorial «rascunho», revisão especializada «pendente») e só o responsável o promove. Passagens de decisão substantiva são assinaladas como prioridade de revisão especializada, em `review`, e não na nota. Idade e número de cópias de um manuscrito são indícios, nunca o critério de decisão."
   ]
 }

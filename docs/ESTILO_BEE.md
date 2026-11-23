@@ -170,6 +170,27 @@ Filemom inteiro foi aprovado pelo responsável como referência de voz do piloto
 
 **Tito:** carta aprovada como referência de voz, incluindo «escravas do vinho» (2:3) e «conciliadores» (3:2). As notas explicam as nuances das duas escolhas. A aprovação editorial não substitui revisão especializada.
 
+## Formato das notas — prosa (vigente desde 2026-11-23)
+
+Este é o formato de todo o texto da edição nova. Aplica-se a todos os livros e
+capítulos, sem exceções por livro ou por capítulo.
+
+**Exemplo — Filipenses 2:6** (aprovado em voz e legibilidade; revisão especializada pendente):
+
+> *Texto:* que, existindo em forma de Deus, não considerou o ser igual a Deus algo a que se agarrasse,
+>
+> *Nota (um parágrafo, sem rótulos):* *ἁρπαγμός* é a palavra mais discutida do hino. Pode significar o que se agarra (uma presa a conquistar), o que já se possui e não se larga, ou o que se usa em vantagem própria. A ARC e a ARA dizem «usurpação»; a NVI, «usar como vantagem»; a NAA, «reter a qualquer custo»; a NVT, «apegar-se». A BEE escolhe a imagem do gesto — «algo a que se agarrasse» — porque mantém as duas pontas: não nega a igualdade (que *μορφὴ θεοῦ* afirma), nega o agarramento. O versículo não diz que Cristo deixou de ser Deus; diz que não reteve por força o que era seu.
+
+**Regras:**
+
+1. Um parágrafo de comentário por versículo. Sem rótulos («Análise Léxica», «Síntese Exegética») e sem notação de nível (A, B, C), nem como rótulo nem como «confirmação».
+2. Cada termo grego vem em itálico, com a transliteração entre parênteses na primeira ocorrência. O grego fica dentro da prosa, não numa lista.
+3. A «Crítica Textual» é um parágrafo próprio, que começa por «Crítica Textual:», e só aparece quando o aparato SBLGNT ou a colação regista variante. Cita as siglas (WH, Treg, NA28, RP, e as testemunhas da colação) e diz, em frase clara, o que a variante muda e porque a base foi seguida. Sem variante, não há parágrafo.
+4. A razão da escolha e a alternativa rejeitada entram no próprio parágrafo, não numa etiqueta. A revisão especializada é registada em `review`, não na nota.
+5. Colchetes no texto só para o que não aparece nos manuscritos; a nota explica-os (`docs/EDITORIAL.md`).
+
+Referência de estrutura: `docs/CRITICA_TEXTUAL.md`, secção 6.2.
+
 ## v0.6 — crítica textual, pontuação e arquivologia (20/11/2026)
 
 A voz continua a mesma; o que muda é a **exigência de prova** por detrás de cada
@@ -177,17 +198,14 @@ nota e a coerência gráfica entre versículos. O protocolo completo está em
 [CRITICA_TEXTUAL.md](CRITICA_TEXTUAL.md); aqui ficam as consequências para a
 redação, que são as que um revisor precisa de ter à mão.
 
-**Três secções obrigatórias, três condicionais.** Cada nota tem Análise Léxica,
-Crítica Textual e Síntese Exegética. A elas juntam-se, quando a passagem o pede,
-Hermenêutica e Contexto, Geografia e História e Nota de redação — esta última só
-para registar uma decisão que se afasta de uma redação anterior já aprovada.
+**Formato de notas (substituído).** A v0.6 pedia três secções e níveis de certeza. Esse formato foi retirado em 2026-11-23: ver «Formato das notas — prosa» acima.
 
 **Só se cita o que se colacionou.** O aparato do SBLGNT nomeia edições (WH, Treg,
 NA28, RP), nunca códices; por isso «o Sinaiticus lê X» só pode escrever-se onde
 existe colação (`docs/colacao/`). Uma edição impressa não é um manuscrito, uma
 tradução moderna não é evidência textual e «o Textus Receptus» não é um texto
 único. Idade e número de cópias são indícios, não critério: decide-se por
-evidência externa e interna, e diz-se o nível de certeza (A, B ou C).
+evidência externa e interna, e a nota diz a evidência e a razão da escolha, sem notação de nível.
 
 **Pontuação e maiúscula inicial.** Um versículo que continua a frase do anterior
 termina em vírgula (ou ponto e vírgula) e o seguinte começa em minúscula; um
@@ -225,7 +243,7 @@ infidelidade disfarçada de coerência.
 singular é obrigatório em português europeu e **não traduz o artigo grego**: «todo
 o desejo de bondade e toda a obra de fé» (2Ts 1:11), «todo o irmão» (2Ts 3:6),
 «toda a boa obra» (2Ts 2:17), «todo o homem» (João 1:9), «toda a iniquidade»
-(Tito 2:14). A distinção grega regista-se na Análise Léxica, não no artigo:
+(Tito 2:14). A distinção grega regista-se na nota, não no artigo:
 *πᾶς* anártrico distribui (cada desejo, cada obra); *πᾶς* com artigo pode
 totalizar («todos os que creram», «todas as perseguições»). A redação anterior
 desta regra mandava suprimir o artigo para marcar o anártrico; foi revertida no

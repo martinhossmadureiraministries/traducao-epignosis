@@ -24,11 +24,11 @@ class ItalicoGregoTest(unittest.TestCase):
         self.assertEqual(italico_grego(s), s)
 
     def test_nao_mexe_em_etiquetas_nem_em_transliteracao(self):
-        s = '<b>Análise Léxica:</b> (epýthleto) «ὁ»'
+        s = '<b>Crítica Textual:</b> (epýthleto) «ὁ»'
         o = italico_grego(s)
-        self.assertIn('<b>Análise Léxica:</b>', o)
+        self.assertIn('<b>Crítica Textual:</b>', o)
         self.assertIn('(epýthleto)', o)
-        self.assertEqual(o, '<b>Análise Léxica:</b> (epýthleto) «<i>ὁ</i>»')
+        self.assertEqual(o, '<b>Crítica Textual:</b> (epýthleto) «<i>ὁ</i>»')
 
     def test_so_as_marcas_i_mudam(self):
         s = '<p><b>Crítica Textual:</b> Treg lê ἀπʼ ἀρχῆς e WH também.</p>'

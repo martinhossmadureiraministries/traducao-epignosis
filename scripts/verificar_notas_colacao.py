@@ -7,7 +7,8 @@ que a colação regista (`docs/colacao/<livro>.json`):
 * resíduos de processo não podem estar no comentário publicado: marcadores
   `[[ … ]]` soltos, texto de quarentena, e o histórico de correções dentro das
   «Notas de redação» (a nota em si é legítima);
-* a CT tem de trazer, em ordem, as três secções da casa;
+* a nota é prosa: sem rótulos «Análise Léxica» / «Síntese Exegética» e sem
+  níveis de certeza A/B/C (`bee.inspetor.analisar_comentario`);
 * se o aparato da SBLGNT regista leituras, a CT tem de as citar pelas siglas
   (WH, Treg, NA28, RP…) e não pode dizer que não há variante;
 * se o aparato não regista nada, a CT não pode atribuir a uma edição uma
@@ -31,9 +32,8 @@ from pathlib import Path
 
 RAIZ_REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ_REPO))
-from bee.inspetor import formato_casa_do_capitulo  # noqa: E402
+from bee.inspetor import analisar_comentario  # noqa: E402
 
-SECCOES = ('Análise Léxica:', 'Crítica Textual:', 'Síntese Exegética:')
 # Resíduos de processo: o histórico de correções e a produção automática não
 # pertencem ao comentário publicado. A secção «Nota de redação» em si é legítima
 # (docs/CRITICA_TEXTUAL.md): só é resíduo quando conta a história da redação.
@@ -82,10 +82,7 @@ def _lados(entrada: str) -> tuple[set[str], set[str]]:
 def verificar(dados: dict, colacao: dict) -> list[str]:
     problemas: list[str] = []
     versiculos = colacao.get('versiculos', {})
-    livro = colacao.get('livro_bee')
     for cap, lista in sorted(dados.get('chapters', {}).items(), key=lambda kv: int(kv[0])):
-        # O formato é por capítulo: João 1–2 já estão em prosa (CAPITULOS_EM_PROSA).
-        formato_casa = formato_casa_do_capitulo(livro, int(cap))
         for verso in lista:
             ref = f"{cap}:{verso.get('verse')}"
             com = verso.get('commentary') or ''
@@ -102,16 +99,14 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                 problemas.append(f'{ref}: comentário sem rótulos')
             if re.search(r'<b>[^<]*[\u0370-\u03ff\u1f00-\u1fff][^<]*</b>', com):
                 problemas.append(f'{ref}: palavra grega em negrito (use itálico)')
-            rotulos = [r for r in re.findall(r'<b>([^<]+)</b>', com)]
-            pedidos = [r for r in rotulos if r in SECCOES]
-            if formato_casa and pedidos != list(SECCOES):
-                problemas.append(f'{ref}: secções da casa em falta ou fora de ordem ({pedidos})')
+            for falha in analisar_comentario(com):
+                problemas.append(f'{ref}: {falha}')
             ct = _ct(com)
             if ct is None:
-                # Nota em prosa (livros fora do formato da casa): a CT só aparece
-                # quando há variante, mas toda a variante do aparato tem de ter CT.
-                if not formato_casa and (versiculos.get(ref, {}).get('base', {})
-                                         .get('aparato_sblgnt') or []):
+                # Nota em prosa: a CT só aparece quando há variante, mas toda a
+                # variante do aparato tem de ter CT.
+                if (versiculos.get(ref, {}).get('base', {})
+                        .get('aparato_sblgnt') or []):
                     problemas.append(f'{ref}: variante do aparato sem Crítica Textual')
                 continue
             facto = versiculos.get(ref)

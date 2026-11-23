@@ -1,3 +1,5 @@
+# ARQUIVADO em 2026-11-20. Proposta de CI que não está ativa. O responsável retirou os
+# workflows do repositório; não reativar sem decisão dele.
 name: CI
 
 # Proposta de CI. Para ativar, copie este ficheiro para

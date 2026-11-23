@@ -26,9 +26,9 @@ sys.path.insert(0, str(RAIZ))
 
 from bee.catalogo import POR_NUMERO  # noqa: E402
 
-ROTULOS = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
+# Formato único: prosa por versículo; só a Crítica Textual tem rótulo.
 PARAGRAFO = re.compile(r'<p>(.*?)</p>', re.S)
-ROTULO = re.compile(r'^<b>(.*?):</b>\s*(.*)$', re.S)
+ROTULO = re.compile(r'^<b>(Crítica Textual):</b>\s*(.*)$', re.S)
 
 
 def _md(trecho: str) -> str:
@@ -109,8 +109,8 @@ def gerar(dados: dict) -> str:
         '---',
         '',
         f'Base grega: [SBLGNT]({"../../docs/SBLGNT.md"}) (revisão `{dados["sources"]["sblgnt_commit"][:8]}`, CC BY 4.0). '
-        'Textus Receptus de Scrivener para comparação. Colação: `docs/colacao/João.json` '
-        '(capítulos 1–4); os capítulos seguintes foram conferidos com a colação gerada por `scripts/colar.py`, que não é versionada por tamanho. '
+        'Textus Receptus de Scrivener só como comparação, quando a colação o regista. '
+        'Colação: `docs/colacao/João.json` (livro inteiro, gerada por `scripts/colar.py --livro 500`). '
         'Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente.',
         '',
     ]

@@ -95,33 +95,16 @@ _RE_EIS = re.compile(r'(?<![a-zà-ÿ])[a-z]+eis(?![a-zà-ÿ])')
 # a pontuação de Almeida que a produção nova usou em João 4.
 _RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
 
-SECCOES_CASA = ('Análise Léxica', 'Crítica Textual', 'Síntese Exegética')
-
-# Livros que a migração de 2026-11-20 deixou no formato da casa, com as três
-# secções em cada nota: os cinco curtos, João e 2 Tessalonicenses. Os lotes
-# posteriores da edição nova foram aprovados com notas BEE em prosa, onde a
-# Crítica Textual aparece só quando há variante. O auditor não lhes pede
-# rótulos que nunca tiveram; o motor (bee/porta.py) continua a exigi-los a todo
-# o texto NOVO, e um livro entra nesta lista quando as notas forem harmonizadas.
-LIVROS_FORMATO_CASA = frozenset({500, 600, 630, 640, 700, 710, 720})
-
-# Capítulos já reescritos no formato das cartas e dos livros do AT aprovados
-# (2026-11-23): nota em prosa, sem rótulos, e Crítica Textual só quando há
-# variante no aparato. O resto do livro continua no formato da casa até ser
-# convertido capítulo a capítulo. João 1–2 são o primeiro bloco; 3–4, o segundo.
-CAPITULOS_EM_PROSA: dict[int, frozenset[int]] = {500: frozenset({1, 2, 3, 4})}
-
-
-def formato_casa_do_capitulo(livro: int | None, capitulo: int) -> bool:
-    """O capítulo leva as três secções (formato da casa)?
-
-    Livro desconhecido (None) segue a regra antiga: formato da casa.
-    """
-    if livro is None:
-        return True
-    if capitulo in CAPITULOS_EM_PROSA.get(livro, frozenset()):
-        return False
-    return livro in LIVROS_FORMATO_CASA
+# Formato único das notas (decisão do responsável, 2026-11-23): um parágrafo de
+# comentário em prosa por versículo, sem rótulos de secção e sem níveis de
+# certeza (A, B, C). A Crítica Textual vai num parágrafo próprio, «Crítica
+# Textual:», só quando o aparato da SBLGNT ou a colação registam variante.
+# Os livros e capítulos antigos foram todos convertidos; não há exceções.
+_RE_ROTULO_ANTIGO = re.compile(
+    r'<b>\s*(Análise Léxica|Síntese Exegética)\s*:?\s*</b>', re.I)
+# Níveis só com maiúscula (A, B, C) e a expressão «nível de certeza».
+_RE_NIVEL = re.compile(
+    r'[Nn]ível de certeza|\b[Nn]ível [ABC]\b|\*\*[ABC]\*\*')
 
 
 def analisar_texto(texto: str) -> dict[str, list[str]]:
@@ -161,24 +144,20 @@ def grego_sem_italico(comentario: str) -> list[str]:
         if grego_fora_de_italico(comentario or '') else []
 
 
-def analisar_comentario(comentario: str, formato_casa: bool = True) -> list[str]:
-    """Falhas duras da NOTA: secções no formato da casa e grego sem mistura.
+def analisar_comentario(comentario: str) -> list[str]:
+    """Falhas duras da NOTA: rótulos e níveis antigos, grego misto.
 
-    ``formato_casa=False`` (capítulo em prosa, ver CAPITULOS_EM_PROSA) dispensa
-    os rótulos; a mistura greco-latina continua a chumbar.
-
-    A produção de 2026-11-20 gravou 30 notas com «<b>Análise Léxica</b> —»
-    em vez de «<b>Análise Léxica:</b>»: o texto passava na porta e o
-    formato errado só apareceu nos testes sobre o capítulo já fechado.
-    As palavras greco-latinas mistas («ἄνδra», com letras latinas dentro
-    da palavra grega) são gralha mecânica inequívoca: também chumbam.
+    A nota é prosa. Não pode trazer as antigas secções «Análise Léxica» e
+    «Síntese Exegética», nem níveis de certeza A/B/C, nem «nota de redação».
+    As palavras greco-latinas mistas («ἄνδra», com letras latinas dentro da
+    palavra grega) são gralha mecânica inequívoca: também chumbam.
     """
     nota = comentario or ''
-    falhas = [
-        f'nota sem «{seccao}:» no formato da casa'
-        for seccao in SECCOES_CASA
-        if formato_casa and f'<b>{seccao}:</b>' not in nota
-    ]
+    falhas: list[str] = []
+    if _RE_ROTULO_ANTIGO.search(nota):
+        falhas.append('rótulo de formato antigo na nota (Análise Léxica / Síntese Exegética)')
+    if _RE_NIVEL.search(nota):
+        falhas.append('nível de certeza (A/B/C) na nota: retirar')
     limpo = re.sub(r'<[^>]+>', ' ', nota)
     if any(_GREGO.search(tok) and re.search(r'[A-Za-z]', tok)
            for tok in limpo.split()):

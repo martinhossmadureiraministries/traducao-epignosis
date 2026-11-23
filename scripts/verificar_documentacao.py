@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verifica que a documentação principal não contradiz os dados versionados.
 
-Corre sem rede e sem chaves. É usado no CI proposto em `docs/ci.yml`.
+Corre sem rede e sem chaves. Não há CI ativa no repositório; corre-se à mão.
 """
 from __future__ import annotations
 
@@ -67,7 +67,7 @@ def entregas_sem_json() -> list[str]:
                 if re.search(rf'\b{re.escape(chave)}\b', n):
                     problemas.append(
                         f'{ficheiro.relative_to(RAIZ)}:{numero}: «entregue» para '
-                        f'{chave} sem JSON (ver docs/PLANO_CORRECAO.md, Etapa 7).')
+                        f'{chave} sem JSON (ver docs/arquivo/PLANO_CORRECAO.md, Etapa 7).')
                     break
     return problemas
 

@@ -1,6 +1,6 @@
 # Dependências de desenvolvimento e do worker experimental.
-# O fluxo principal (autopiloto.py, nuvem.py, gerar_bee.py e testes em tests/)
-# usa apenas a biblioteca padrão do Python 3.10+.
+# O fluxo principal (gerar_bee.py, scripts/ e testes em tests/) usa apenas a
+# biblioteca padrão do Python 3.10+.
 -r requirements.txt
 
 # Testes principais e do worker
