@@ -38,7 +38,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 e 14–17 aprovados (12:6 com «levava»; 14:22 com a opção «te vás manifestar»); 18 e 19 em revisão (rascunho) | pendente |
+| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 e 14–17 aprovados (12:6 com «levava»; 14:22 com a opção «te vás manifestar»); 18 e 19 aprovados | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -66,7 +66,7 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   Textual a partir do aparato da SBLGNT e da colação; confronto com o grego feito na redação.
   Em 16:25 e 16:29, «com clareza» (no lugar de «franqueza») aprovado pelo responsável. Paráclito: decidido pelo responsável, «Parácletos» (nominativo) e «Parácleton» (acusativo, em 14:16). Esta alteração toca 14:16, 14:26 e 15:26, já aprovados, e foi gravada nesses versículos.
   Aprovados pelo responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
-- **18–19:** rascunho, por aprovar (bloco de 2 capítulos, 18 com 40 versículos e 19 com 42). Crítica Textual redigida a partir do aparato da SBLGNT e da colação; as atribuições a testemunhas não foram conferidas linha a linha na transcrição, e a nota de 18:14 tem uma leitura marcada como incerta. Leitura em `docs/revisao/JOAO_18_19.md`.
+- **18–19:** aprovados pelo responsável (bloco de 2 capítulos, 18 com 40 versículos e 19 com 42). Crítica Textual revista contra a colação; correções em 18:17–38 e 19:4–31. As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições; a nota de 18:14 tem uma leitura marcada como incerta. Leitura em `docs/revisao/JOAO_18_19.md`.
 - **20–21:** por escrever na edição. Próximo bloco depois de 18–19.
 - **5:42:** aprovado pelo responsável. A CT regista a inferência sobre a forma da testemunha 02.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza

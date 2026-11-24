@@ -5395,15 +5395,15 @@
         "chapter": 18,
         "verse_from": 1,
         "verse_to": 40,
-        "status": "rascunho",
-        "nota": "Redigido a partir do aparato da SBLGNT e de divergencias da colação (docs/colacao/João.json). Aguarda revisão da Crítica Textual e aprovação do responsável."
+        "status": "aprovado",
+        "nota": "Capítulo aprovado pelo responsável, após leitura em docs/revisao/JOAO_18_19.md e revisão da Crítica Textual contra a colação (correções em 18:17, 18:20, 18:29, 18:31, 18:36, 18:37, 18:38). As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições; a nota de 18:14 tem uma leitura marcada como incerta."
       },
       {
         "chapter": 19,
         "verse_from": 1,
         "verse_to": 42,
-        "status": "rascunho",
-        "nota": "Redigido a partir do aparato da SBLGNT e de divergencias da colação (docs/colacao/João.json). Aguarda revisão da Crítica Textual e aprovação do responsável."
+        "status": "aprovado",
+        "nota": "Capítulo aprovado pelo responsável, após leitura em docs/revisao/JOAO_18_19.md e revisão da Crítica Textual contra a colação (correções em 19:4, 19:7, 19:11, 19:12, 19:15, 19:17, 19:20, 19:21, 19:24 e 19:31). As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições."
       }
     ],
     "specialist": [

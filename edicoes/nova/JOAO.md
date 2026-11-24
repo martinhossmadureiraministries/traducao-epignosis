@@ -23,8 +23,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 15 | aprovado | 27 |
 | 16 | aprovado | 33 |
 | 17 | aprovado | 26 |
-| 18 | rascunho | 40 |
-| 19 | rascunho | 42 |
+| 18 | aprovado | 40 |
+| 19 | aprovado | 42 |
 
 ## Texto
 
