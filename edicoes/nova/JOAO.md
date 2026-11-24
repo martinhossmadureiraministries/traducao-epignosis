@@ -23,8 +23,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 15 | aprovado | 27 |
 | 16 | aprovado | 33 |
 | 17 | aprovado | 26 |
-| 18 | aprovado | 40 |
-| 19 | aprovado | 42 |
+| 18 | rascunho | 40 |
+| 19 | rascunho | 42 |
 
 ## Texto
 
@@ -5378,7 +5378,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **18:17**
 
 - *μή* (mē), «não», partícula de pergunta que espera resposta negativa; *παιδίσκη* (paidiskē), «criada», moça de serviço. Esta é a primeira das três negações de Pedro.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:17: a base lê «*τῷ Πέτρῳ*» antes de «*ἡ παιδίσκη*» com WH, Treg e NA28; RP coloca «*τῷ Πέτρῳ*» depois de «*θυρωρός*», sem mudança de sentido. Na colação, 032 lê «*αὐτῷ*» em lugar de «*τῷ Πέτρῳ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:17: a base lê «*τῷ Πέτρῳ*» antes de «*ἡ παιδίσκη*» com WH, Treg e NA28; RP coloca «*τῷ Πέτρῳ*» depois de «*θυρωρός*», sem mudança de sentido. Na colação, 01, 02, 032, KJTR, SR, ST, Scrivener e 𝔓66 também deslocam «*τῷ Πέτρῳ*» para depois de «*θυρωρός*»; 032 lê «*αὐτῷ*» em lugar de «*τῷ Πέτρῳ*». 02, 032 e 04 leem «*ἄνου*» em lugar de «*ἀνθρώπου*» (abreviatura de expansão duvidosa).
 
 **18:18**
 
@@ -5392,7 +5392,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **18:20**
 
 - *παρρησίᾳ* (parrēsiai), «com clareza», o mesmo termo de 16:25 e 16:29; *ἐν κρυπτῷ* (en kryptō), «em segredo». Jesus defende a publicidade do seu ensino.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:20: a base lê «*ἀπεκρίθη αὐτῷ*» e «*λελάληκα*» («tenho falado») com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*» e lê «*ἐλάλησα*». A base lê «*πάντες*» com WH, Treg e NA28; RP lê «*πάντοτε*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener leem «*ἐλάλησα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:20: a base lê «*ἀπεκρίθη αὐτῷ*» e «*λελάληκα*» («tenho falado») com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*» e lê «*ἐλάλησα*». A base lê «*πάντες*» com WH, Treg e NA28; RP lê «*πάντοτε*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener leem «*ἐλάλησα*». KJTR, ST e Scrivener leem também «*πάντοτε*».
 
 **18:21**
 
@@ -5436,7 +5436,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **18:29**
 
 - *κατηγορίαν* (katēgorian), «acusação», termo jurídico; *φέρετε* (pherete), «trazem», literalmente «levam contra», como num tribunal. Pilatos começa pela pergunta de processo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:29: a base lê «*ἔξω*» e «*φησίν*» com WH, Treg e NA28; RP omite «*ἔξω*» e lê «*εἶπεν*». WH omite «*κατά*». Na colação, KJTR, RP, ST e Scrivener omitem «*ἔξω*»; ST lê «*εἶπε*»; 032 lê «*φέρεται*» em lugar de «*φέρετε*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:29: a base lê «*ἔξω*» e «*φησίν*» com WH, Treg e NA28; RP omite «*ἔξω*» e lê «*εἶπεν*». WH omite «*κατά*». Na colação, KJTR, RP, ST e Scrivener omitem «*ἔξω*»; 03 omite «*κατά*»; ST lê «*εἶπε*»; 032 lê «*φέρεται*» em lugar de «*φέρετε*». 02, 032 e 04 leem «*ἄνου*» em lugar de «*ἀνθρώπου*» (abreviatura de expansão duvidosa).
 
 **18:30**
 
@@ -5446,7 +5446,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **18:31**
 
 - *ἔξεστιν* (exestin), «é permitido», com o infinitivo «matar»: o texto explica por que os judeus precisam de Pilatos. A execução era do poder romano, e isso explica o que segue.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:31: WH omite o artigo «*ὁ*» antes de «*Πιλᾶτος*»; a base lê «*εἶπον*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*εἶπον*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener acrescentam «*οὖν*»; SR omite o artigo «*ὁ*»; 𝔓52 omite a ordem de Pilatos («*Λάβετε αὐτὸν ὑμεῖς … κρίνατε αὐτόν*»).
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:31: WH omite o artigo «*ὁ*» antes de «*Πιλᾶτος*»; a base lê «*εἶπον*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*εἶπον*». Na colação, 01, 032, 𝔓66, KJTR, RP, ST e Scrivener acrescentam «*οὖν*»; SR omite o artigo «*ὁ*»; 𝔓52 omite a ordem de Pilatos («*Λάβετε αὐτὸν ὑμεῖς … κρίνατε αὐτόν*»).
 
 **18:32**
 
@@ -5470,17 +5470,17 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **18:36**
 
 - *ἠγωνίζοντο ἄν* (ēgōnizonto an), «teriam combatido», imperfeito com *ἄν*, que marca a condição irreal: não combateram, porque o reino não é deste mundo. *ἐντεῦθεν* (entheuthen), «daqui», indica a origem do reino.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:36: a base lê «*οἱ ἐμοὶ ἠγωνίζοντο ἄν*» com WH, Treg e NA28; RP lê «*ἄν οἱ ἐμοὶ ἠγωνίζοντο*». Na colação, KJTR e RP leem «*ἄν*» antes de «*οἱ*»; ST e Scrivener acrescentam «*ὁ*» e mudam a posição de «*ἄν*»; 04 omite a oração condicional que começa em «*εἰ ἐκ τοῦ κόσμου τούτου*»; 𝔓66 omite «*ἄν*» e lê «*βασιλία*»; 𝔓90 tem omissões no início do versículo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:36: a base lê «*οἱ ἐμοὶ ἠγωνίζοντο ἄν*» com WH, Treg e NA28; RP lê «*ἄν οἱ ἐμοὶ ἠγωνίζοντο*». Na colação, KJTR e RP leem «*ἄν*» antes de «*οἱ*»; ST e Scrivener acrescentam «*ὁ*» e mudam a posição de «*ἄν*»; 04 omite desde «*εἰ ἐκ τοῦ κόσμου τούτου*» até «*ἐντεῦθεν*»; 𝔓66 omite «*ἄν*» e lê «*βασιλία*»; 𝔓90 (fragmento) omite desde «*ἀπεκρίθη Ἰησοῦς*» até «*ἦν ἡ*».
 
 **18:37**
 
 - *Σὺ λέγεις* (Sy legeis), «tu dizes», resposta que devolve a Pilatos a palavra; *γεγέννημαι* (gegennēmai), «nasci», perfeito: o nascimento tem efeito presente; *μαρτυρήσω* (martyrēsō), «darei testemunho». O testemunho da verdade é o centro da missão.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:37: a base lê «*ὁ Ἰησοῦς*» com WH, Treg e NA28; RP omite o artigo. A base lê «*βασιλεύς εἰμι*» com WH, Treg e NA28; RP acrescenta «*ἐγώ*» depois de «*εἰμι*». Na colação, 02, KJTR, ST e Scrivener acrescentam «*ἐγώ*»; 01 lê «*περὶ τῆς ἀληθίας*» («sobre a verdade») em lugar de «*τῇ ἀληθείᾳ*» («para a verdade»).
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:37: a base lê «*ὁ Ἰησοῦς*» com WH, Treg e NA28; RP omite o artigo. A base lê «*βασιλεύς εἰμι*» com WH, Treg e NA28; RP acrescenta «*ἐγώ*» depois de «*εἰμι*». Na colação, 02, KJTR, ST e Scrivener acrescentam «*ἐγώ*»; 01 lê «*περὶ τῆς ἀληθείας*» («sobre a verdade») em lugar de «*τῇ ἀληθείᾳ*» («à verdade»). 𝔓52 omite «*Εἶπεν οὖν αὐτῷ ὁ Πιλᾶτος· Οὐκοῦν βασιλεύς εἶ σύ; ἀπεκρίθη ὁ Ἰησοῦς· Σὺ λέγεις ὅτι βασιλεύς εἰμι ἐγώ· εἰς*» e uma ocorrência de «*εἰς τοῦτο*».
 
 **18:38**
 
 - *Τί ἐστιν ἀλήθεια* (ti estin alētheia), «o que é a verdade?», sem artigo: Pilatos responde ao testemunho com ceticismo. *αἰτίαν* (aitian), «culpa», termo jurídico: a declaração é de não culpa.
-- **Crítica Textual.** Aparato de edições SBLGNT, 18:38: a base lê «*εὑρίσκω ἐν αὐτῷ αἰτίαν*» com WH, Treg e NA28; RP inverte, «*αἰτίαν εὑρίσκω ἐν αὐτῷ*». Na colação, 02, 032, 𝔓66, KJTR, RP, ST e Scrivener mudam a posição de «*αἰτίαν*»; 𝔓52 omite «*εὑρίσκω ἐν αὐτῷ αἰτίαν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:38: a base lê «*εὑρίσκω ἐν αὐτῷ αἰτίαν*» com WH, Treg e NA28; RP inverte, «*αἰτίαν εὑρίσκω ἐν αὐτῷ*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, ST e Scrivener mudam a posição de «*αἰτίαν*»; 𝔓52 omite «*εὑρίσκω ἐν αὐτῷ αἰτίαν*».
 
 **18:39**
 
@@ -5512,7 +5512,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:4**
 
 - *Ἴδε* (ide), «vejam», chama a atenção do povo; *ἄγω* (agō), «trago», verbo de conduzir uma pessoa. Pilatos repete a declaração de não culpa (cf. 18:38), agora com Jesus diante do povo.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:4: a base lê «*καὶ ἐξῆλθεν*» com WH, Treg e NA28; RP lê «*Ἐξῆλθεν οὖν*». A base lê «*οὐδεμίαν αἰτίαν εὑρίσκω ἐν αὐτῷ*» com WH, Treg e NA28; RP lê «*ἐν αὐτῷ οὐδεμίαν αἰτίαν εὑρίσκω*». Na colação, 𝔓66, 𝔓90 e SR leem «*οὐχ εὑρίσκω*» em lugar de «*οὐδεμίαν αἰτίαν εὑρίσκω*»; KJTR, RP, ST e Scrivener acrescentam «*οὖν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:4: a base lê «*καὶ ἐξῆλθεν*» com WH, Treg e NA28; RP lê «*Ἐξῆλθεν οὖν*». A base lê «*οὐδεμίαν αἰτίαν εὑρίσκω ἐν αὐτῷ*» com WH, Treg e NA28; RP lê «*ἐν αὐτῷ οὐδεμίαν αἰτίαν εὑρίσκω*». Na colação, 𝔓66, 𝔓90 e SR leem «*οὐχ εὑρίσκω*» em lugar de «*οὐδεμίαν αἰτίαν εὑρίσκω*»; KJTR, RP, ST e Scrivener acrescentam «*οὖν*». 01 lê «*τί*» em lugar de «*ὅτι*», com «*ἐν αὐτῷ*» depois de «*εὑρίσκω*» («*ἵνα γνῶτε τί αἰτίαν οὐδεμίαν εὑρίσκω ἐν αὐτῷ*»).
 
 **19:5**
 
@@ -5527,7 +5527,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:7**
 
 - *ὀφείλει ἀποθανεῖν* (opheilei apothanein), «deve morrer»; *υἱὸν θεοῦ ἑαυτὸν ἐποίησεν*, «fez-se Filho de Deus». A acusação passa de política a religiosa, e por isso Pilatos fica temeroso (v. 8).
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:7: a base lê «*νόμον*» com WH, Treg e NA28; RP acrescenta «*ἡμῶν*» depois de «*νόμον*». A base lê «*υἱὸν θεοῦ ἑαυτὸν*» com WH, Treg e NA28; RP lê «*ἑαυτὸν υἱὸν θεοῦ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*ἡμῶν*»; 032 e Scrivener acrescentam «*τοῦ*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:7: a base lê «*νόμον*» com WH, Treg e NA28; RP acrescenta «*ἡμῶν*» depois de «*νόμον*». A base lê «*υἱὸν θεοῦ ἑαυτὸν*» com WH, Treg e NA28; RP lê «*ἑαυτὸν υἱὸν θεοῦ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*ἡμῶν*»; 032 e Scrivener acrescentam «*τοῦ*». 𝔓90 (fragmento) omite de «*νόμον ὀφείλει ἀποθανεῖν*» até «*ἐποίησεν*».
 
 **19:8**
 
@@ -5545,12 +5545,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:11**
 
 - *ἄνωθεν* (anōthen), «do alto», é o poder que vem de Deus. O texto não diz quem entregou Jesus a Pilatos; o contexto aponta para os principais sacerdotes (18:35).
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:11: RP omite «*αὐτῷ*» e inverte «*κατʼ ἐμοῦ οὐδεμίαν*» e «*δεδομένον σοι*». A base lê «*παραδούς*» com WH e NA28; Treg e RP leem «*παραδιδούς*». Na colação, 01, 02, 032, KJTR, ST e Scrivener leem «*ὁ*» em lugar de «*αὐτῷ*» ou acrescentam-no; 032, KJTR, RP, ST e Scrivener leem «*παραδιδούς*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:11: RP omite «*αὐτῷ*» e inverte «*κατʼ ἐμοῦ οὐδεμίαν*» e «*δεδομένον σοι*». A base lê «*παραδούς*» com WH e NA28; Treg e RP leem «*παραδιδούς*». Na colação, 01, 02, 032, KJTR, ST e Scrivener leem «*ὁ*» em lugar de «*αὐτῷ*» ou acrescentam-no; 02, 032, KJTR, RP, ST e Scrivener leem «*παραδιδούς*».
 
 **19:12**
 
 - *φίλος τοῦ Καίσαρος* (philos tou Kaisaros), «amigo de César», título de lealdade ao imperador; *ἀντιλέγει* (antilegei), «opõe-se», verbo de contestação. A ameaça é política: soltar Jesus seria trair o imperador.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:12: a base lê «*ὁ Πιλᾶτος ἐζήτει*» com WH, Treg e NA28; RP inverte, «*ἐζήτει ὁ Πιλᾶτος*». A base lê «*ἐκραύγασαν*» com WH, Treg e NA28; RP lê «*ἔκραζον*». Na colação, 01 lê «*ἔλεγον*»; KJTR, RP, ST e Scrivener leem «*ἔκραζον*»; ST e Scrivener leem «*αὐτόν*» em lugar de «*ἑαυτόν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:12: a base lê «*ὁ Πιλᾶτος ἐζήτει*» com WH, Treg e NA28; RP inverte, «*ἐζήτει ὁ Πιλᾶτος*». A base lê «*ἐκραύγασαν*» com WH, Treg e NA28; RP lê «*ἔκραζον*». Na colação, 01 lê «*ἔλεγον*»; 02 e 032 leem «*ἐκραύγαζον*» (imperfeito); KJTR, RP, ST e Scrivener leem «*ἔκραζον*»; ST e Scrivener leem «*αὐτόν*» em lugar de «*ἑαυτόν*».
 
 **19:13**
 
@@ -5565,7 +5565,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:15**
 
 - *Ἆρον* (Aron), «tira», imperativo: o grito pede que o tirem de cena. Os principais sacerdotes fecham o diálogo com a confissão de que não têm rei senão César.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:15: a base lê «*ἐκραύγασαν οὖν ἐκεῖνοι*» com WH, Treg e NA28; RP lê «*Οἱ δὲ ἐκραύγασαν*». Na colação, KJTR, RP, SR, ST e Scrivener leem «*οἱ δὲ*» e omitem «*οὖν ἐκεῖνοι*»; 01 e 032 leem «*ἔλεγον*»; 02 lê «*ἐκραύγασον*» (imperativo).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:15: a base lê «*ἐκραύγασαν οὖν ἐκεῖνοι*» com WH, Treg e NA28; RP lê «*Οἱ δὲ ἐκραύγασαν*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener leem «*οἱ δὲ*» e omitem «*οὖν ἐκεῖνοι*»; 01 e 032 leem «*ἔλεγον*»; 02 lê «*ἐκραύγασον*» (imperativo).
 
 **19:16**
 
@@ -5575,7 +5575,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:17**
 
 - *βαστάζων* (bastazōn), «levando»; *Κρανίου Τόπον* (Kraniou Topon), «Lugar da Caveira»; *Γολγοθᾶ* (Golgothā), «Gólgota», nome aramaico do lugar. O texto diz que Jesus levava a própria cruz.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:17: a base lê «*αὑτῷ*» com WH e Treg; NA28 lê «*ἑαυτῷ*»; RP lê «*τὸν σταυρὸν αὐτοῦ*» em lugar de «*αὑτῷ τὸν σταυρὸν*» e «*ὅς*» em lugar de «*ὃ*». Na colação, 01, 032, SR e 𝔓66 leem «*ἑαυτῷ*»; 03 lê «*λέγετε*» em lugar de «*λέγεται*»; KJTR, RP, ST e Scrivener leem «*αὐτοῦ*» e «*ὅς*»; 𝔓121 omite «*καὶ βαστάζων … ὃ λέγεται*» (fragmento).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:17: a base lê «*αὑτῷ*» com WH e Treg; NA28 lê «*ἑαυτῷ*»; RP lê «*τὸν σταυρὸν αὐτοῦ*» em lugar de «*αὑτῷ τὸν σταυρὸν*» e «*ὅς*» em lugar de «*ὃ*». Na colação, 01, 032, SR e 𝔓66 leem «*ἑαυτῷ*»; 02 lê «*ἑαυτοῦ*» em lugar de «*αὐτῷ*»; 03 lê «*λέγετε*» em lugar de «*λέγεται*»; KJTR, RP, ST e Scrivener leem «*αὐτοῦ*» e «*ὅς*»; RP omite o artigo «*τόν*» antes de «*τόπον*»; 𝔓121 omite «*καὶ βαστάζων … ὃ λέγεται*» (fragmento).
 
 **19:18**
 
@@ -5590,12 +5590,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:20**
 
 - *Ἑβραϊστί* (Hebraisti), «em hebraico»; *Ῥωμαϊστί* (Rhōmaisti), «em latim»; *Ἑλληνιστί* (Hellēnisti), «em grego». As três línguas mostram que o título era público e ao alcance de todos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:20: a base lê «*Ῥωμαϊστί, Ἑλληνιστί*» com WH, Treg e NA28; RP lê «*Ἑλληνιστί, Ῥωμαϊστί*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*Ἑλληνιστί*» antes de «*Ῥωμαϊστί*»; 032 lê «*τότε*» em lugar de «*τοῦτον*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:20: a base lê «*Ῥωμαϊστί, Ἑλληνιστί*» com WH, Treg e NA28; RP lê «*Ἑλληνιστί, Ῥωμαϊστί*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*Ἑλληνιστί*» antes de «*Ῥωμαϊστί*»; 032 lê «*τότε*» em lugar de «*τοῦτον*» e «*Ἑβραϊστί*» em lugar de «*Ἑλληνιστί*».
 
 **19:21**
 
 - *Μὴ γράφε* (Mē graphe), «não escrevas»: os sacerdotes pedem a Pilatos que mude o título. A mudança proposta reduz a realeza de Jesus a uma pretensão dita por ele.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:21: a base lê «*τῶν Ἰουδαίων εἰμί*» com WH e Treg; NA28 e RP leem «*εἰμι τῶν Ἰουδαίων*». Na colação, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener reordenam «*εἰμι*»; 032 lê «*εἰμει*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:21: a base lê «*τῶν Ἰουδαίων εἰμί*» com WH e Treg; NA28 e RP leem «*εἰμι τῶν Ἰουδαίων*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener reordenam «*εἰμι*»; 032 lê «*εἰμει*».
 
 **19:22**
 
@@ -5609,7 +5609,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:24**
 
 - *Διεμερίσαντο* (diemerisanto), «repartiram»: citação do Sl 22:18, dada com as palavras do salmo. *ἵνα … πληρωθῇ* (hina plērōthē), «para que se cumprisse»: a cena cumpre a Escritura.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:24: a base lê «*ἡ λέγουσα*» com Treg, NA28 e RP; WH omite. Na colação, 03 e WH omitem «*ἡ λέγουσα*»; 032 omite «*ἑαυτοῖς*»; 01 lê «*αὐτούς*» em lugar de «*ἀλλήλους*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:24: a base lê «*ἡ λέγουσα*» com Treg, NA28 e RP; WH omite. Na colação, 01 e 03 também omitem «*ἡ λέγουσα*»; 032 omite «*ἑαυτοῖς*»; 01 lê «*αὐτούς*» em lugar de «*ἀλλήλους*».
 
 **19:25**
 
@@ -5643,7 +5643,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **19:31**
 
 - *παρασκευή* (paraskeuē), «preparação», a sexta-feira; *ἵνα μὴ μείνῃ* (hina mē meinē), «para que não ficassem»: a lei que proíbe deixar corpos na cruz no sábado. *κατεαγῶσιν* (kataeagōsin), «quebrassem»: quebrar as pernas acelerava a morte.
-- **Crítica Textual.** Aparato de edições SBLGNT, 19:31: a base lê «*ἐπεὶ παρασκευὴ ἦν*» depois de «*ἵνα … σαββάτῳ*» com WH, Treg e NA28; RP desloca a oração para depois de «*σαββάτῳ*». Na colação, RP e ST deslocam a oração; 01 acrescenta «*οὖν*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:31: a base lê «*ἐπεὶ παρασκευὴ ἦν*» antes de «*ἵνα … σαββάτῳ*» com WH, Treg e NA28; RP desloca a oração para depois de «*σαββάτῳ*». Na colação, 02, RP e ST deslocam a oração; 01 acrescenta «*οὖν*».
 
 **19:32**
 
