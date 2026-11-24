@@ -327,6 +327,66 @@
       "usar": "«mãe que amamenta»",
       "sentido": "A mulher que amamenta e cria; não é μήτηρ, a palavra comum para mãe. O possessivo «os seus próprios filhos» (1Ts 2:7) fixa a imagem na mãe, não na ama assalariada; «ama» lê-se hoje mal em português.",
       "exemplo_aprovado": "Antes, fomos gentis no meio de vocês. Como uma mãe que amamenta cuida com ternura dos próprios filhos"
+    },
+    {
+      "grego": "Πιλᾶτος",
+      "transliteracao": "",
+      "usar": "Pilatos",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Ἅννας",
+      "transliteracao": "",
+      "usar": "Anás",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Κέδρων",
+      "transliteracao": "",
+      "usar": "Cedrom",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Μάλχος",
+      "transliteracao": "",
+      "usar": "Malco",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Βαραββᾶς",
+      "transliteracao": "",
+      "usar": "Barrabás",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
     }
   ],
   "rejeitados": [

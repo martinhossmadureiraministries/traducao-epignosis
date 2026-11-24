@@ -10,6 +10,20 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 foi confirmada na transcrição do CNTR.
 
+### João 20–21 — rascunho, por aprovar
+
+**Texto e leitura:** `docs/revisao/JOAO_20_21.md`. Bloco de 2 capítulos (20 com 31 versículos e 21 com 25). Redigido a partir do aparato SBLGNT e da colação; nada aprovado.
+
+**Pontos para decisão:**
+- 20:17: «Não me segures» (escolhido) ou «Não me toques» (leitura mais literal de *ἅπτου*).
+- 21:15–17: «amas-me» para *ἀγαπᾷς* e «queres-me bem» para *φιλεῖς*, com «te quero bem» como resposta de Pedro. A distinção de verbos é deliberada e está na nota.
+- 21:15: «mais do que estes» (escolhido) ou «mais do que estas coisas».
+- 21:16–17: a colação dá WH com «*προβάτια*», mas o aparato dá «*πρόβατα*». A base mantém «*πρόβατα*»; fica por confirmar na fonte.
+
+**Pergunta:** Aprova os capítulos 20 e 21 com estas escolhas, ou quer outra leitura?
+
+---
+
 ### João 4:1 — aprovado (Jesus)
 
 **Texto:** Quando Jesus soube que os fariseus tinham ouvido que ele fazia e batizava mais discípulos do que João —

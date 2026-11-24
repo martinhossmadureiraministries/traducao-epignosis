@@ -38,7 +38,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 e 14–17 aprovados (12:6 com «levava»; 14:22 com a opção «te vás manifestar»); 18 e 19 aprovados | pendente |
+| João (500) | 21 | 879 | 704 | aprovado (19) e rascunho (2): 20–21 por aprovar | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -48,7 +48,7 @@ de processo antigos estão em `docs/arquivo/`.
 | 3 João (710) | 1 | 14 | 8 | rascunho (1) | pendente |
 | Judas (720) | 1 | 25 | 14 | rascunho (1) | pendente |
 
-Total: 59 capítulos e 1329 versículos, todos em prosa. Números de `scripts/verificar_dados.py`.
+Total: 70 capítulos e 1729 versículos, todos em prosa. Números de `scripts/verificar_dados.py`.
 
 **Quem aprovou o quê.** Os oito livros do AT e Filipenses estão aprovados editorialmente
 pelo responsável. João 1–8 foram aprovados pelo responsável em 2026-11-24 («Aprovo todos os 1-8 com as alterações que fizeste»). A Crítica Textual de 1–8 foi completada depois dessa aprovação, a pedido do responsável; fica registada no `history`. João 9–11 e 13 foram aprovados pelo responsável na sessão de revisão de 9–13; o capítulo 12 está em revisão: 12:6 aprovado com «levava», e 12:7 e o resto do capítulo por rever. Os restantes estão em rascunho.
@@ -67,7 +67,7 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   Em 16:25 e 16:29, «com clareza» (no lugar de «franqueza») aprovado pelo responsável. Paráclito: decidido pelo responsável, «Parácletos» (nominativo) e «Parácleton» (acusativo, em 14:16). Esta alteração toca 14:16, 14:26 e 15:26, já aprovados, e foi gravada nesses versículos.
   Aprovados pelo responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
 - **18–19:** aprovados pelo responsável (bloco de 2 capítulos, 18 com 40 versículos e 19 com 42). Crítica Textual revista contra a colação; correções em 18:17–38 e 19:4–31. As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições; a nota de 18:14 tem uma leitura marcada como incerta. Leitura em `docs/revisao/JOAO_18_19.md`.
-- **20–21:** por escrever na edição. Próximo bloco depois de 18–19.
+- **20–21:** redigidos como rascunho (2026-11-24), por aprovar pelo responsável. Texto, nota e Crítica Textual a partir do aparato SBLGNT e da colação; leitura em `docs/revisao/JOAO_20_21.md`. Decisões de texto em aberto: 20:17 («não me segures» ou «não me toques»), 21:15–17 («amas-me» e «queres-me bem») e 21:15 («mais do que estes» ou «mais do que isto»). Em 21:16–17, a colação dá WH com «προβάτια», que o aparato não regista; fica por confirmar. Verificadores de estilo, convenções e colação passam; as transcrições CNTR não foram conferidas para estes versículos.
 - **5:42:** aprovado pelo responsável. A CT regista a inferência sobre a forma da testemunha 02.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.

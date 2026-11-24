@@ -343,6 +343,8 @@ palavra, por escolha de tradução»).
 **Termos fixos.** «Parácletos» (14:26, 15:26, 16:7) e «Parácleton» (14:16), com acento, transliteração literal. «Te vás manifestar» em 14:22
 (opção A). «levava» em 12:6, não «tomava».
 
+**Nomes próprios (aprovados pelo responsável, 2026-11-24).** Grafias fixas em toda a edição: «Pilatos», «Anás», «Cedrom», «Malco» e «Barrabás», usados em João 18–19. Usar estas formas sem variação (não «Pilato», «Anas» nem «Barrabas»). «Caifás» já vinha fixado em 1–17.
+
 **Confronto com o grego.** Antes de aprovar um capítulo, conferir cada versículo com o SBLGNT da
 colação (`docs/colacao/João.json`, campo `base.sblgnt`) e com as palavras citadas nas notas. Na
 revisão de 12, 14 e 15, não se encontrou omissão, acréscimo sem marca nem inversão de sentido.
