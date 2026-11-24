@@ -1,6 +1,6 @@
 # João · Bíblia de Estudo Epignósis
 
-Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 741 versículos.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 823 versículos.
 
 **Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
@@ -23,6 +23,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 15 | aprovado | 27 |
 | 16 | aprovado | 33 |
 | 17 | aprovado | 26 |
+| 18 | rascunho | 40 |
+| 19 | rascunho | 42 |
 
 ## Texto
 
@@ -1541,6 +1543,174 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **25** Pai justo, o mundo não te conheceu, mas eu te conheci, e estes conheceram que tu me enviaste.
 
 **26** E dei-lhes a conhecer o teu nome, e darei a conhecer, para que o amor com que me amaste esteja neles, e eu neles.
+
+### Capítulo 18
+
+**1** Tendo dito estas coisas, Jesus saiu com os seus discípulos para o outro lado da torrente de Cedrom, onde havia um jardim, no qual entrou ele e os seus discípulos.
+
+**2** Judas, o que o entregava, conhecia também o lugar, porque Jesus se reunira ali muitas vezes com os seus discípulos.
+
+**3** Judas, então, chega ali com a coorte e com guardas enviados pelos principais sacerdotes e pelos fariseus, trazendo lanternas, tochas e armas.
+
+**4** Jesus, então, sabendo tudo o que lhe havia de acontecer, adiantou-se e perguntou-lhes: «A quem procuram?»
+
+**5** Responderam-lhe: «Jesus, o nazareno.» Ele disse-lhes: «Eu sou.» Judas, o que o entregava, estava também de pé com eles.
+
+**6** Quando lhes disse: «Eu sou», retrocederam e caíram por terra.
+
+**7** Perguntou-lhes outra vez: «A quem procuram?» Eles disseram: «Jesus, o nazareno.»
+
+**8** Jesus respondeu: «Já disse a vocês que eu sou. Se, então, é a mim que procuram, deixem ir estes.»
+
+**9** Assim se cumpriu a palavra que ele dissera: «Dos que me deste, não perdi nenhum.»
+
+**10** Simão Pedro, que tinha uma espada, puxou-a, feriu o servo do sumo sacerdote e cortou-lhe a orelha direita. O servo chamava-se Malco.
+
+**11** Jesus disse a Pedro: «Põe a espada na bainha. Não hei de beber o cálice que o Pai me deu?»
+
+**12** Então a coorte, o comandante e os guardas dos judeus prenderam Jesus e amarraram-no.
+
+**13** Levaram-no primeiro a Anás, porque era sogro de Caifás, que era o sumo sacerdote naquele ano.
+
+**14** Caifás era quem tinha dado aos judeus o conselho de que convinha que um só homem morresse pelo povo.
+
+**15** Simão Pedro seguia Jesus, e também outro discípulo. Esse discípulo era conhecido do sumo sacerdote e entrou com Jesus no pátio do sumo sacerdote.
+
+**16** Pedro, porém, ficou de pé à porta, do lado de fora. Saiu, então, o outro discípulo, o conhecido do sumo sacerdote, falou com a porteira e levou Pedro para dentro.
+
+**17** A porteira disse então a Pedro: «Não és tu também dos discípulos deste homem?» Ele respondeu: «Não sou.»
+
+**18** Os servos e os guardas tinham feito uma fogueira de brasas, porque estava frio, e aqueciam-se. Pedro também estava com eles, de pé, aquecendo-se.
+
+**19** O sumo sacerdote interrogou Jesus sobre os seus discípulos e sobre o seu ensino.
+
+**20** Jesus respondeu: «Tenho falado com clareza ao mundo. Sempre ensinei na sinagoga e no templo, onde todos os judeus se reúnem, e nada falei em segredo.»
+
+**21** Por que me perguntas a mim? Pergunta aos que ouviram o que lhes falei. Eis que estes sabem o que eu disse.
+
+**22** Dito isto, um dos guardas que ali estavam deu uma bofetada em Jesus e disse: «É assim que respondes ao sumo sacerdote?»
+
+**23** Jesus respondeu: «Se falei mal, dá testemunho do mal; se falei bem, por que me bates?»
+
+**24** Anás, então, mandou-o amarrado a Caifás, o sumo sacerdote.
+
+**25** Simão Pedro estava de pé, aquecendo-se. Disseram-lhe: «Não és tu também dos discípulos dele?» Ele negou e disse: «Não sou.»
+
+**26** Um dos servos do sumo sacerdote, parente daquele a quem Pedro cortara a orelha, perguntou: «Não te vi eu com ele no jardim?»
+
+**27** Pedro negou de novo, e logo um galo cantou.
+
+**28** Levaram Jesus de Caifás para o pretório. Era de manhã cedo. Eles não entraram no pretório, para não se contaminarem, mas poderem comer a Páscoa.
+
+**29** Pilatos saiu então para fora, até eles, e perguntou: «Que acusação trazem contra este homem?»
+
+**30** Responderam-lhe: «Se este não fosse um malfeitor, não o teríamos entregado a ti.»
+
+**31** Pilatos disse-lhes: «Tomem-no vocês e julguem-no segundo a lei de vocês.» Os judeus responderam-lhe: «A nós não é permitido matar ninguém.»
+
+**32** Assim se cumpriu a palavra de Jesus, que indicara de que morte havia de morrer.
+
+**33** Pilatos entrou outra vez no pretório, chamou Jesus e perguntou-lhe: «Tu és o rei dos judeus?»
+
+**34** Jesus respondeu: «Dizes isso por ti mesmo, ou outros to disseram sobre mim?»
+
+**35** Pilatos respondeu: «Por acaso sou eu judeu? A tua nação e os principais sacerdotes entregaram-te a mim. Que fizeste?»
+
+**36** Jesus respondeu: «O meu reino não é deste mundo. Se o meu reino fosse deste mundo, os meus servos teriam combatido para que eu não fosse entregue aos judeus. Mas o meu reino não é daqui.»
+
+**37** Pilatos disse-lhe: «Então és rei?» Jesus respondeu: «Tu dizes que sou rei. Para isto nasci e para isto vim ao mundo: para dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.»
+
+**38** Pilatos disse-lhe: «O que é a verdade?» Dito isto, saiu outra vez para junto dos judeus e disse-lhes: «Eu não encontro nele nenhuma culpa.»
+
+**39** Há entre vocês o costume de que eu solte um preso na Páscoa. Querem, então, que eu solte para vocês o rei dos judeus?
+
+**40** Então gritaram outra vez: «Não este, mas Barrabás!» Barrabás era um assaltante.
+
+### Capítulo 19
+
+**1** Então Pilatos tomou Jesus e açoitou-o.
+
+**2** Os soldados, tecendo uma coroa de espinhos, puseram-na na cabeça dele, e vestiram-no com um manto de púrpura.
+
+**3** Aproximavam-se dele e diziam: «Salve, rei dos judeus!» E davam-lhe bofetadas.
+
+**4** Pilatos saiu outra vez para fora e disse-lhes: «Vejam, eu trago-o para fora até vocês, para que saibam que não encontro nele nenhuma culpa.»
+
+**5** Jesus saiu, então, trazendo a coroa de espinhos e o manto de púrpura. Pilatos disse-lhes: «Eis o homem!»
+
+**6** Quando o viram, os principais sacerdotes e os guardas gritaram: «Crucifica-o! Crucifica-o!» Pilatos disse-lhes: «Tomem-no vocês e crucifiquem-no, pois eu não encontro nele nenhuma culpa.»
+
+**7** Os judeus responderam-lhe: «Nós temos uma lei, e segundo a lei ele deve morrer, porque se fez Filho de Deus.»
+
+**8** Quando Pilatos ouviu estas palavras, ficou ainda mais temeroso.
+
+**9** Entrou outra vez no pretório e perguntou a Jesus: «De onde és tu?» Jesus, porém, não lhe deu resposta.
+
+**10** Pilatos disse-lhe então: «Não me falas? Não sabes que tenho poder para soltar-te e tenho poder para crucificar-te?»
+
+**11** Jesus respondeu: «Nenhum poder terias sobre mim, se não te tivesse sido dado do alto. Por isso, quem me entregou a ti tem maior pecado.»
+
+**12** Desde então, Pilatos procurava soltá-lo. Mas os judeus gritavam: «Se soltas este, não és amigo de César. Todo o que se faz rei opõe-se a César.»
+
+**13** Pilatos, ao ouvir estas palavras, trouxe Jesus para fora e sentou-se no tribunal, no lugar chamado Litóstrotos, em hebraico Gabatá.
+
+**14** Era a preparação da Páscoa, por volta da hora sexta. E disse aos judeus: «Vejam o rei de vocês!»
+
+**15** Eles gritaram: «Tira-o! Tira-o! Crucifica-o!» Pilatos disse-lhes: «Vou crucificar o rei de vocês?» Responderam os principais sacerdotes: «Não temos rei, senão César.»
+
+**16** Então entregou-o a eles para ser crucificado. Eles tomaram, então, Jesus,
+
+**17** e, levando ele mesmo a cruz, saiu para o lugar chamado Lugar da Caveira, que em hebraico se diz Gólgota.
+
+**18** Ali o crucificaram, e com ele outros dois, um de cada lado, e Jesus no meio.
+
+**19** Pilatos escreveu também um título e pô-lo sobre a cruz. Estava escrito: «Jesus, o Nazareno, o rei dos judeus.»
+
+**20** Muitos dos judeus leram este título, porque o lugar onde Jesus foi crucificado era perto da cidade. Estava escrito em hebraico, em latim e em grego.
+
+**21** Os principais sacerdotes dos judeus disseram a Pilatos: «Não escrevas: “O rei dos judeus”, mas que ele disse: “Sou o rei dos judeus”.»
+
+**22** Pilatos respondeu: «O que escrevi, escrevi.»
+
+**23** Os soldados, depois de crucificarem Jesus, tomaram as suas vestes e fizeram quatro partes, uma para cada soldado, e também a túnica. A túnica era sem costura, tecida de cima a baixo.
+
+**24** Disseram então uns aos outros: «Não a rasguemos, mas tiremos à sorte de quem será.» Para que se cumprisse a Escritura que diz: «Repartiram entre si as minhas vestes e lançaram sorte sobre a minha túnica.» Foi isso que os soldados fizeram.
+
+**25** Junto à cruz de Jesus estavam a sua mãe, a irmã da sua mãe, Maria, mulher de Clopas, e Maria Madalena.
+
+**26** Jesus, vendo a mãe e, junto dela, o discípulo a quem amava, disse à mãe: «Mulher, eis aí o teu filho!»
+
+**27** Depois disse ao discípulo: «Eis aí a tua mãe!» E desde aquela hora o discípulo a recebeu em sua casa.
+
+**28** Depois disto, Jesus, sabendo que já tudo estava consumado, para que a Escritura se cumprisse, disse: «Tenho sede.»
+
+**29** Havia ali um vaso cheio de vinagre. Então prenderam numa vara de hissopo uma esponja cheia de vinagre e levaram-na à boca dele.
+
+**30** Quando Jesus tomou o vinagre, disse: «Está consumado.» E, inclinando a cabeça, entregou o espírito.
+
+**31** Os judeus, porque era o dia da preparação e para que os corpos não ficassem na cruz no sábado — pois era grande aquele dia de sábado —, pediram a Pilatos que lhes quebrassem as pernas e fossem retirados.
+
+**32** Então vieram os soldados e quebraram as pernas do primeiro e do outro que tinha sido crucificado com ele.
+
+**33** Quando chegaram a Jesus e viram que já estava morto, não lhe quebraram as pernas.
+
+**34** Mas um dos soldados furou-lhe o lado com uma lança, e logo saiu sangue e água.
+
+**35** Quem viu deu testemunho, e o seu testemunho é verdadeiro; e ele sabe que diz a verdade, para que também vocês creiam.
+
+**36** Pois isto aconteceu para que a Escritura se cumprisse: «Nenhum osso dele será quebrado.»
+
+**37** E outra Escritura diz ainda: «Olharão para aquele que transpassaram.»
+
+**38** Depois disto, José de Arimateia, que era discípulo de Jesus, mas em segredo por medo dos judeus, pediu a Pilatos que lhe permitisse retirar o corpo de Jesus. Pilatos permitiu. Ele veio, então, e retirou o corpo.
+
+**39** Veio também Nicodemos, aquele que de noite tinha ido ter com ele pela primeira vez, trazendo cerca de cem libras de uma mistura de mirra e aloés.
+
+**40** Tomaram, então, o corpo de Jesus e envolveram-no em panos de linho com os aromas, segundo o costume de sepultar dos judeus.
+
+**41** Ora, no lugar onde ele foi crucificado havia um jardim, e no jardim um sepulcro novo, no qual ainda ninguém tinha sido posto.
+
+**42** Ali, por causa da preparação dos judeus, porque o sepulcro estava perto, depositaram Jesus.
 
 ## Notas
 
@@ -5123,6 +5293,409 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 - *ἐγνώρισα* (egnōrisa), «dei a conhecer», aoristo; *γνωρίσω* (gnōrisō), «darei a conhecer», futuro: a revelação do nome continua; *ἠγάπησάς* (ēgapēsas), «amaste».
 - **Crítica Textual.** Na colação, 05 lê «*ἡ*» (nominativo) em lugar de «*ἣν*» (acusativo do relativo); 𝔓66 faz a troca inversa.
+
+### Notas do capítulo 18
+
+**18:1**
+
+- *χειμάρρου* (cheimarrou), «torrente»: curso de água que corre na estação das chuvas. O jardim fica do outro lado do vale, fora da cidade.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:1: a base lê «*εἰπών*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*εἰπών*». Em «*Κεδρών*», a base lê «*τοῦ*» com Treg e NA28; WH e RP leem «*τῶν*». Na colação, 02, 032, 04, 05, KJTR, RP, ST e Scrivener acrescentam «*ὁ*» antes de «*Ἰησοῦς*».
+
+**18:2**
+
+- *ᾔδει* (ēdei), «conhecia», imperfeito: Judas já sabia do lugar. *συνήχθη* (synēchthē), «se reunira», passivo: Jesus costumava reunir-se ali com os discípulos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:2: a base lê «*συνήχθη*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*συνήχθη*». Na colação, 02, 032, 04, KJTR, RP, ST e Scrivener acrescentam «*ὁ*»; 03 e SR põem «*ἐκεῖ*» depois de «*μαθητῶν αὐτοῦ*»; 05 lê «*ὁ παραδιδών*» em lugar de «*ὁ παραδιδούς*».
+
+**18:3**
+
+- *σπεῖραν* (speiran), «coorte», destacamento de soldados romanos; *ὑπηρέτας* (hypēretas), «guardas», servidores dos sacerdotes. Soldados romanos e guardas judeus juntos mostram que a prisão foi conjunta. *φανῶν*, «lanternas»; *λαμπάδων*, «tochas».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:3: a base lê «*ἐκ τῶν*» antes de «*Φαρισαίων*» com WH, Treg e NA28; RP omite essa expressão. Na colação, 02, 032, P108, KJTR, RP, SR, ST e Scrivener também omitem «*ἐκ τῶν*» antes de «*Φαρισαίων*».
+
+**18:4**
+
+- *εἰδώς* (eidōs), «sabendo», com o sentido de conhecimento seguro; *τὰ ἐρχόμενα* (ta erchomena), «o que lhe havia de acontecer», literalmente «as coisas que vinham sobre ele». Jesus toma a iniciativa e sai ao encontro dos que o procuram.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:4: a base lê «*οὖν*» com WH, NA28 e RP; Treg lê «*δέ*». A base lê «*ἐξῆλθεν καὶ λέγει*» com WH, Treg e NA28; RP lê «*ἐξελθὼν εἶπεν*» («tendo saído, disse»). Na colação, 𝔓66 omite «*Ἰησοῦς*»; 01, 02, 032, P108, P66, KJTR, RP, SR, ST e Scrivener leem «*ἐξελθὼν εἶπεν*».
+
+**18:5**
+
+- *Ἐγώ εἰμι* (egō eimi), «eu sou»: fórmula que o evangelho repete (8:24, 28, 58; 13:19). *εἱστήκει* (heistēkei), «estava de pé», imperfeito: a presença de Judas é descrita como cena em curso.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:5: a base lê «*αὐτοῖς*» com WH, Treg e NA28; RP acrescenta «*ὁ Ἰησοῦς*» depois de «*αὐτοῖς*». Na colação, 01, 02, 032, 04, KJTR, RP, SR, ST e Scrivener acrescentam «*ὁ Ἰησοῦς*» na mesma posição; 05 lê «*Ναζαρηνόν*» em lugar de «*Ναζωραῖον*».
+
+**18:6**
+
+- *ὡς* (hōs), «quando», com o aoristo: um momento preciso. *ἀπῆλθον εἰς τὰ ὀπίσω* (apēlthon eis ta opisō), «retrocederam», literalmente «foram para trás»; *χαμαί* (chamai), «por terra». O texto descreve o movimento e não explica a causa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:6: a base lê «*αὐτοῖς*» com WH, Treg e NA28; RP acrescenta «*ὅτι*» depois de «*αὐτοῖς*». Na colação, 04, KJTR, RP, ST e Scrivener acrescentam «*ὅτι*»; KJTR, RP, ST e Scrivener leem «*ἔπεσον*» em lugar de «*ἔπεσαν*».
+
+**18:7**
+
+- *πάλιν* (palin), «outra vez», repete a pergunta do v. 4; *ἐπηρώτησεν* (epērōtēsen), «perguntou». A repetição confirma que a pergunta é dirigida a quem procura, e não a Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:7: a base lê «*ἐπηρώτησεν αὐτούς*» com WH, Treg e NA28; RP inverte, «*αὐτούς ἐπηρώτησεν*». Na colação, 01, 02, 03, 04, 032, KJTR, RP, SR, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; 05 acrescenta «*λέγων*» e «*πάλιν*» na resposta; 032 lê «*ζητεῖται*» em lugar de «*ζητεῖτε*».
+
+**18:8**
+
+- *ἄφετε* (aphete), «deixem», imperativo; *ὑπάγειν* (hypagein), «ir embora». O pedido liberta os discípulos, e o v. 9 liga essa libertação à palavra de Jesus.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 032 e 𝔓66 leem «*ζητεῖται*» em lugar de «*ζητεῖτε*»; 032 também lê «*ἄφεται*» em lugar de «*ἄφετε*»; 05 acrescenta «*αὐτοῖς ὁ*» antes de «*Ἰησοῦς*»; ST e Scrivener acrescentam «*ὁ*».
+
+**18:9**
+
+- *ἵνα πληρωθῇ* (hina plērōthē), «para que se cumprisse», fórmula de cumprimento. A palavra remete a 6:39 e 17:12, onde Jesus diz ao Pai o mesmo.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 05 e 𝔓66 leem «*ἔδωκας*» em lugar de «*δέδωκάς*»; 05 também troca a posição de «*οὐκ ἀπώλεσα*»; 02 lê «*ἐξ αὐτοῦ*» em lugar de «*ἐξ αὐτῶν*».
+
+**18:10**
+
+- *μάχαιραν* (machairan), «espada»; *ὠτάριον* (ōtarion), «orelha», diminutivo. O evangelho dá o nome do servo, Malco, num pormenor que o texto não comenta.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:10: a base lê «*ὠτάριον*» com WH, Treg e NA28; RP lê «*ὠτίον*». Na colação, 02, 05, 𝔓66, KJTR, RP, ST e Scrivener leem «*ὠτίον*»; 01, 02, 032, 04 e 𝔓66 leem «*ἔπεσεν*» («caiu») em lugar de «*ἔπαισεν*» («feriu»); 05 acrescenta «*τότε*».
+
+**18:11**
+
+- *ποτήριον* (potērion), «cálice», imagem do sofrimento que Jesus aceita como vontade do Pai. *οὐ μὴ πίω* (ou mē piō), «não beberei», com a negação enfática: a pergunta recusa a defesa armada.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:11: a base lê «*μάχαιραν*» com WH, Treg e NA28; RP acrescenta «*σου*» depois de «*μάχαιραν*». Na colação, KJTR, ST e Scrivener acrescentam «*σου*» na mesma posição; 05 lê «*ἔδωκεν*» em lugar de «*δέδωκέν*».
+
+**18:12**
+
+- *χιλίαρχος* (chiliarchos), «comandante», oficial que chefiava a coorte; *ἔδησαν* (edēsan), «amarraram». Jesus é preso e amarrado antes de ser levado a Anás.
+
+**18:13**
+
+- *πενθερός*, «sogro»; *ἀρχιερεὺς τοῦ ἐνιαυτοῦ ἐκείνου*, «sumo sacerdote naquele ano». Anás, sogro de Caifás, fora sumo sacerdote antes dele. O texto não explica por que o levam primeiro a Anás.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:13: a base lê «*ἤγαγον*» com WH, Treg e NA28; RP lê «*ἀπήγαγον αὐτόν*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἀπήγαγον αὐτόν*»; 04 lê «*ἀπήγαγον*» sem «*αὐτόν*».
+
+**18:14**
+
+- Remete a 11:49–50, onde o conselho de Caifás é dado. *συμφέρει* (sympherei), «convém», o mesmo verbo de 16:7; *ὑπὲρ τοῦ λαοῦ*, «pelo povo», prepara o sentido que o evangelho dará à morte de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:14: a base lê «*ἀποθανεῖν*» («morrer») com WH, Treg e NA28; RP lê «*ἀπολέσθαι*» («perecer»). Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἀπολέσθαι*»; 02, 032, 04 e 𝔓66 leem «*ἄνον*» em lugar de «*ἄνθρωπον*», forma abreviada de leitura incerta. A base segue «*ἀποθανεῖν*».
+
+**18:15**
+
+- *γνωστός* (gnōstos), «conhecido», no sentido de conhecido pessoal; o texto não diz o nome do outro discípulo. *συνεισῆλθεν* (syneisēlthen), «entrou com», mostra que ele entrou junto com Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:15: a base lê «*καὶ ἄλλος*» com WH e NA28; Treg e RP acrescentam o artigo «*ὁ*» depois de «*καὶ*». Na colação, RP e ST acrescentam «*ὁ*»; 04 lê «*αὐτοῖς*» em lugar de «*τῷ Ἰησοῦ*».
+
+**18:16**
+
+- *θυρωρῷ* (thyrōrō), «porteira»; *εἰσήγαγεν* (eisēgagen), «levou para dentro», verbo de quem introduz alguém. Pedro fica do lado de fora até o outro discípulo intervir.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:16: a base lê «*ὁ*» antes de «*γνωστός*» com WH, Treg e NA28; RP lê «*ὅς ἦν*» em lugar de «*ὁ*». RP lê «*τῷ ἀρχιερεῖ*» em lugar de «*τοῦ ἀρχιερέως*». Na colação, 01, 02, 032, KJTR, RP, ST e Scrivener leem «*ὃς ἦν*» e «*τῷ ἀρχιερεῖ*»; 01 omite «*ἔξω*».
+
+**18:17**
+
+- *μή* (mē), «não», partícula de pergunta que espera resposta negativa; *παιδίσκη* (paidiskē), «criada», moça de serviço. Esta é a primeira das três negações de Pedro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:17: a base lê «*τῷ Πέτρῳ*» antes de «*ἡ παιδίσκη*» com WH, Treg e NA28; RP coloca «*τῷ Πέτρῳ*» depois de «*θυρωρός*», sem mudança de sentido. Na colação, 032 lê «*αὐτῷ*» em lugar de «*τῷ Πέτρῳ*».
+
+**18:18**
+
+- *ἀνθρακιὰν* (anthrakia), «brasa», fogo de carvão; *ψῦχος* (psychos), «frio»; *θερμαινόμενος* (thermainomenos), «aquecendo-se», o mesmo verbo do v. 25. Pedro está entre os que servem o sumo sacerdote.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:18: a base lê «*καὶ ὁ Πέτρος μετʼ αὐτῶν*» com WH, Treg e NA28; RP lê «*μετʼ αὐτῶν ὁ Πέτρος*». Na colação, 02, KJTR, RP, ST e Scrivener têm a mesma ordem de RP.
+
+**18:19**
+
+- *ἠρώτησεν* (ērōtēsen), «interrogou», o mesmo verbo do v. 7; *διδαχῆς* (didachēs), «ensino». Jesus responde sobre o ensino (v. 20) e remete para os que o ouviram (v. 21).
+
+**18:20**
+
+- *παρρησίᾳ* (parrēsiai), «com clareza», o mesmo termo de 16:25 e 16:29; *ἐν κρυπτῷ* (en kryptō), «em segredo». Jesus defende a publicidade do seu ensino.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:20: a base lê «*ἀπεκρίθη αὐτῷ*» e «*λελάληκα*» («tenho falado») com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*» e lê «*ἐλάλησα*». A base lê «*πάντες*» com WH, Treg e NA28; RP lê «*πάντοτε*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener leem «*ἐλάλησα*».
+
+**18:21**
+
+- *ἀκηκοότας* (akēkootas), «os que ouviram», perfeito: quem ouviu e guarda a palavra; *ἴδε* (ide), «eis», chama a atenção para as testemunhas. Jesus devolve o interrogatório às testemunhas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:21: a base lê «*ἐρωτᾷς*» e «*ἐρώτησον*» com WH, Treg e NA28; RP lê «*ἐπερωτᾷς*» e «*Ἐπερώτησον*», com o prefixo «*ἐπι-*». Na colação, 02, KJTR, RP, ST e Scrivener leem as formas com «*ἐπι-*».
+
+**18:22**
+
+- *ῥάπισμα* (rhapisma), «bofetada», golpe com a mão aberta; *οὕτως* (houtōs), «assim»: a pergunta do guarda trata a resposta de Jesus como insolência.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:22: a base lê «*παρεστηκὼς τῶν ὑπηρετῶν*» com WH, Treg e NA28; RP inverte, «*τῶν ὑπηρετῶν παρεστηκὼς*». Na colação, 02, KJTR, RP, ST e Scrivener mudam a posição de «*παρεστηκώς*»; 04 lê «*παρεστώτων*» em lugar de «*παρεστηκώς*».
+
+**18:23**
+
+- *μαρτύρησον* (martyrēson), «dá testemunho», imperativo do verbo do testemunho jurídico; *δέρεις* (derheis), «bates», usado de agressão física. Jesus pede um processo justo, em que se apresente a prova do erro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:23: a base lê «*αὐτῷ*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*». Na colação, 01 e 032 leem «*ὁ δὲ Ἰησοῦς εἶπεν*» em lugar de «*ἀπεκρίθη αὐτῷ Ἰησοῦς*» e «*εἶπον*» em lugar de «*ἐλάλησα*»; 02, KJTR, RP, ST e Scrivener acrescentam «*ὁ*».
+
+**18:24**
+
+- *δεδεμένον* (dedemenon), «amarrado», particípio perfeito: Jesus continua preso. O texto não relata o que se passou em casa de Anás antes desta ordem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:24: a base lê «*οὖν*» com WH, Treg e NA28; RP omite. Na colação, 02, RP e ST omitem «*οὖν*»; 01 lê «*δέ*» em lugar de «*οὖν*».
+
+**18:25**
+
+- *ἠρνήσατο* (ērnēsato), «negou», aoristo médio: a negação é um ato completo. É a negação anunciada em 13:38.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:25: a base lê «*ἠρνήσατο*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*ἠρνήσατο*». Na colação, 02 lê «*λέγει*» em lugar de «*εἶπεν*» e P66 lê «*εἶπαν*» em lugar de «*εἶπον*».
+
+**18:26**
+
+- *συγγενής* (syngenēs), «parente», laço de família ou de sangue. A pergunta é a identificação decisiva da cena do jardim. *ὠτίον* (ōtion), «orelha», é a forma que a base usa aqui; no v. 10 usa-se *ὠτάριον*.
+
+**18:27**
+
+- *ἀλέκτωρ* (alektōr), «galo», sem artigo: o texto não diz a hora. *εὐθέως* (eutheōs), «logo», marca a rapidez: a negação cumpre-se de imediato.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:27: a base lê «*ἠρνήσατο*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*ἠρνήσατο*». Na colação, 01, KJTR, RP, ST e Scrivener acrescentam «*ὁ*»; 032 e 𝔓66 leem «*εὐθύς*» em lugar de «*εὐθέως*».
+
+**18:28**
+
+- *πραιτώριον* (praitōrion), «pretório», residência do governador romano em Jerusalém; *μιανθῶσιν* (mianthōsin), «se contaminassem», o temor de impureza ritual. Quem teme a impureza cerimonial prepara a condenação de um inocente, e o texto mostra esse contraste.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:28: a base lê «*ἀλλὰ φάγωσιν*» com WH, Treg e NA28; RP lê «*ἀλλʼ ἵνα φάγωσιν*». Na colação, KJTR, RP, ST e Scrivener leem «*ἀλλʼ ἵνα*».
+
+**18:29**
+
+- *κατηγορίαν* (katēgorian), «acusação», termo jurídico; *φέρετε* (pherete), «trazem», literalmente «levam contra», como num tribunal. Pilatos começa pela pergunta de processo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:29: a base lê «*ἔξω*» e «*φησίν*» com WH, Treg e NA28; RP omite «*ἔξω*» e lê «*εἶπεν*». WH omite «*κατά*». Na colação, KJTR, RP, ST e Scrivener omitem «*ἔξω*»; ST lê «*εἶπε*»; 032 lê «*φέρεται*» em lugar de «*φέρετε*».
+
+**18:30**
+
+- *κακὸν ποιῶν* (kakon poiōn), «fazendo mal», expressão de juízo; a resposta não repete a acusação, afirma apenas que Jesus é um malfeitor. *παρεδώκαμεν*, «entregamos», aoristo: a entrega já está feita.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:30: a base lê «*κακὸν ποιῶν*» com WH, Treg e NA28; RP lê «*κακοποιός*» («malfeitor»). Na colação, 02, KJTR, RP, ST e Scrivener leem «*κακοποιός*»; 04 e 𝔓66 leem «*κακοποιῶν*»; 01 lê «*ποιήσας*» em lugar de «*ποιῶν*».
+
+**18:31**
+
+- *ἔξεστιν* (exestin), «é permitido», com o infinitivo «matar»: o texto explica por que os judeus precisam de Pilatos. A execução era do poder romano, e isso explica o que segue.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:31: WH omite o artigo «*ὁ*» antes de «*Πιλᾶτος*»; a base lê «*εἶπον*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*εἶπον*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener acrescentam «*οὖν*»; SR omite o artigo «*ὁ*»; 𝔓52 omite a ordem de Pilatos («*Λάβετε αὐτὸν ὑμεῖς … κρίνατε αὐτόν*»).
+
+**18:32**
+
+- *ἤμελλεν ἀποθνῄσκειν* (ēmellen apothnēskein), «havia de morrer», imperfeito com infinitivo; a referência é a 12:32–33, onde Jesus fala de ser levantado da terra. A morte pela cruz é a do poder romano.
+
+**18:33**
+
+- *ἐφώνησεν* (ephōnēsen), «chamou», verbo de quem convoca alguém à presença da autoridade; *βασιλεύς* (basileus), «rei»: a pergunta do processo romano é sobre o título político.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:33: a base lê «*πάλιν εἰς τὸ πραιτώριον*» com WH, Treg e NA28; RP inverte, «*εἰς τὸ πραιτώριον πάλιν*». Na colação, 01, 02, KJTR, RP, ST e Scrivener mudam a posição de «*πάλιν*»; 02 lê «*αὐτοῖς*» em lugar de «*αὐτῷ*».
+
+**18:34**
+
+- *ἀπὸ σεαυτοῦ* (apo seautou), «por ti mesmo», isto é, por iniciativa própria; *εἶπόν σοι* (eipon soi), «disseram-te». A pergunta leva Pilatos a dizer de onde vem a acusação.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:34: a base lê «*ἀπεκρίθη*», «*Ἀπὸ σεαυτοῦ*» e «*εἶπόν σοι*» com WH, Treg e NA28; RP acrescenta «*αὐτῷ ὁ*» depois de «*ἀπεκρίθη*», lê «*Ἀφʼ ἑαυτοῦ*» e inverte, «*σοι εἶπόν*». Na colação, KJTR, RP, ST e Scrivener têm a mesma leitura de RP; 01 lê «*εἴπας*» em lugar de «*λέγεις*»; 02 lê «*ἀπεκρίνατο ὁ*» em lugar de «*ἀπεκρίθη*».
+
+**18:35**
+
+- *μήτι* (mēti), «por acaso», partícula que espera resposta negativa; *ἔθνος* (ethnos), «nação», usado para o povo judeu. Pilatos afasta-se do assunto religioso, que lhe é estranho.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01 e 032 leem «*μή*» em lugar de «*μήτι*»; 𝔓66 lê «*μὴ γάρ*»; 01 lê «*ὁ ἀρχιερεύς*» em lugar de «*οἱ ἀρχιερεῖς*».
+
+**18:36**
+
+- *ἠγωνίζοντο ἄν* (ēgōnizonto an), «teriam combatido», imperfeito com *ἄν*, que marca a condição irreal: não combateram, porque o reino não é deste mundo. *ἐντεῦθεν* (entheuthen), «daqui», indica a origem do reino.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:36: a base lê «*οἱ ἐμοὶ ἠγωνίζοντο ἄν*» com WH, Treg e NA28; RP lê «*ἄν οἱ ἐμοὶ ἠγωνίζοντο*». Na colação, KJTR e RP leem «*ἄν*» antes de «*οἱ*»; ST e Scrivener acrescentam «*ὁ*» e mudam a posição de «*ἄν*»; 04 omite a oração condicional que começa em «*εἰ ἐκ τοῦ κόσμου τούτου*»; 𝔓66 omite «*ἄν*» e lê «*βασιλία*»; 𝔓90 tem omissões no início do versículo.
+
+**18:37**
+
+- *Σὺ λέγεις* (Sy legeis), «tu dizes», resposta que devolve a Pilatos a palavra; *γεγέννημαι* (gegennēmai), «nasci», perfeito: o nascimento tem efeito presente; *μαρτυρήσω* (martyrēsō), «darei testemunho». O testemunho da verdade é o centro da missão.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:37: a base lê «*ὁ Ἰησοῦς*» com WH, Treg e NA28; RP omite o artigo. A base lê «*βασιλεύς εἰμι*» com WH, Treg e NA28; RP acrescenta «*ἐγώ*» depois de «*εἰμι*». Na colação, 02, KJTR, ST e Scrivener acrescentam «*ἐγώ*»; 01 lê «*περὶ τῆς ἀληθίας*» («sobre a verdade») em lugar de «*τῇ ἀληθείᾳ*» («para a verdade»).
+
+**18:38**
+
+- *Τί ἐστιν ἀλήθεια* (ti estin alētheia), «o que é a verdade?», sem artigo: Pilatos responde ao testemunho com ceticismo. *αἰτίαν* (aitian), «culpa», termo jurídico: a declaração é de não culpa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:38: a base lê «*εὑρίσκω ἐν αὐτῷ αἰτίαν*» com WH, Treg e NA28; RP inverte, «*αἰτίαν εὑρίσκω ἐν αὐτῷ*». Na colação, 02, 032, 𝔓66, KJTR, RP, ST e Scrivener mudam a posição de «*αἰτίαν*»; 𝔓52 omite «*εὑρίσκω ἐν αὐτῷ αἰτίαν*».
+
+**18:39**
+
+- *συνήθεια* (synētheia), «costume», prática pública; *βούλεσθε* (boulesthe), «querem», com o sentido de escolha deixada ao povo; *ἀπολύσω* (apolysō), «soltarei», verbo de libertar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:39: a base lê «*ἀπολύσω ὑμῖν*» com WH, Treg e NA28, nas duas ocorrências; RP inverte, «*ὑμῖν ἀπολύσω*». Na colação, KJTR, RP, ST e Scrivener invertem as duas ocorrências; 02 lê «*βουλέσθαι*» em lugar de «*βούλεσθε*»; 032 lê «*ἀπολύω*» e «*βουλέσθαι*».
+
+**18:40**
+
+- *λῃστής* (lēstēs), «assaltante», bandido de estrada ou de violência. A escolha de Barrabás é feita pelo grito do povo, e o texto descreve o homem sem comentar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:40: a base lê «*πάλιν*» com WH e NA28; Treg e RP acrescentam «*πάντες*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*πάντες*»; 𝔓66 omite «*οὖν*» e acrescenta «*πάντες*».
+
+### Notas do capítulo 19
+
+**19:1**
+
+- *ἐμαστίγωσεν* (emastigōsen), «açoitou»: flagelação, castigo que antecedia a crucificação. O sujeito é Pilatos, e o verbo está no aoristo, como ato consumado.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01, 032 e 𝔓90 leem «*λαβών*» em lugar de «*ἔλαβεν*».
+
+**19:2**
+
+- *στέφανον ἐξ ἀκανθῶν* (stephanon ex akanthōn), «coroa de espinhos»; *ἱμάτιον πορφυροῦν* (himation porphyroun), «manto de púrpura». Os soldados imitam a realeza para zombar de Jesus.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 02 lê «*ἐπὶ τὴν*» em lugar de «*τῇ*» antes de «*κεφαλῇ*»; 𝔓66 muda a posição de «*στέφανον*».
+
+**19:3**
+
+- *Χαῖρε* (Chaire), «salve», a saudação de um rei, usada aqui com ironia; *ῥαπίσματα* (rhapismata), «bofetadas»: a zombaria chega à violência.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:3: a base lê «*ἤρχοντο πρὸς αὐτὸν καὶ*» com WH, Treg e NA28; RP omite. Na colação, 02, KJTR, RP, ST e Scrivener omitem essa oração e leem «*ἐδίδουν*» em lugar de «*ἐδίδοσαν*».
+
+**19:4**
+
+- *Ἴδε* (ide), «vejam», chama a atenção do povo; *ἄγω* (agō), «trago», verbo de conduzir uma pessoa. Pilatos repete a declaração de não culpa (cf. 18:38), agora com Jesus diante do povo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:4: a base lê «*καὶ ἐξῆλθεν*» com WH, Treg e NA28; RP lê «*Ἐξῆλθεν οὖν*». A base lê «*οὐδεμίαν αἰτίαν εὑρίσκω ἐν αὐτῷ*» com WH, Treg e NA28; RP lê «*ἐν αὐτῷ οὐδεμίαν αἰτίαν εὑρίσκω*». Na colação, 𝔓66, 𝔓90 e SR leem «*οὐχ εὑρίσκω*» em lugar de «*οὐδεμίαν αἰτίαν εὑρίσκω*»; KJTR, RP, ST e Scrivener acrescentam «*οὖν*».
+
+**19:5**
+
+- *φορῶν* (phorōn), «trazendo», particípio presente: Jesus aparece com as insígnias da realeza zombada. *ὁ ἄνθρωπος* (ho anthrōpos), «o homem»: Pilatos mostra Jesus humilhado, em exposição pública.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:5: a base lê «*Ἰδοὺ*» com WH, Treg e NA28; RP lê «*Ἴδε*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἴδε*»; 𝔓66 lê «*ἔχων*» em lugar de «*φορῶν*» e omite «*καὶ λέγει αὐτοῖς· Ἰδοὺ ὁ ἄνθρωπος*».
+
+**19:6**
+
+- *Σταύρωσον* (Staurōson), «crucifica», imperativo repetido no grito. Pilatos devolve a decisão aos acusadores ao dizer «tomem-no vocês».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:6: a base lê «*σταύρωσον*» repetido com WH, Treg e NA28; RP acrescenta «*αὐτόν*» depois de «*σταύρωσον*». Na colação, 01 e 02 acrescentam «*αὐτόν*»; 𝔓90 lê «*αὐτόν*» em lugar de uma das ocorrências de «*σταύρωσον*»; 𝔓66 lê «*σον σον*» (forma truncada).
+
+**19:7**
+
+- *ὀφείλει ἀποθανεῖν* (opheilei apothanein), «deve morrer»; *υἱὸν θεοῦ ἑαυτὸν ἐποίησεν*, «fez-se Filho de Deus». A acusação passa de política a religiosa, e por isso Pilatos fica temeroso (v. 8).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:7: a base lê «*νόμον*» com WH, Treg e NA28; RP acrescenta «*ἡμῶν*» depois de «*νόμον*». A base lê «*υἱὸν θεοῦ ἑαυτὸν*» com WH, Treg e NA28; RP lê «*ἑαυτὸν υἱὸν θεοῦ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*ἡμῶν*»; 032 e Scrivener acrescentam «*τοῦ*».
+
+**19:8**
+
+- *μᾶλλον ἐφοβήθη* (mallon ephobēthē), «ficou ainda mais temeroso»: o medo cresce com a palavra sobre a filiação divina.
+
+**19:9**
+
+- *Πόθεν εἶ σύ* (Pothen ei sy), «de onde és tu?»: Pilatos pergunta pela origem de Jesus, e Jesus não responde. O silêncio diante do juiz continua o tema de 18:34–37.
+
+**19:10**
+
+- *ἐξουσίαν* (exousian), «poder», palavra-chave do diálogo: Pilatos alega ter poder sobre a vida de Jesus. O verbo *σταυρῶσαι* (staurōsai), «crucificar», fecha a frase.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:10: a base lê «*ἀπολῦσαί σε … ἔχω σταυρῶσαί*» com WH, Treg e NA28; RP inverte, «*σταυρῶσαί σε … ἔχω ἀπολῦσαί*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener trocam os dois infinitivos, «*ἀπολῦσαι*» e «*σταυρῶσαι*».
+
+**19:11**
+
+- *ἄνωθεν* (anōthen), «do alto», é o poder que vem de Deus. O texto não diz quem entregou Jesus a Pilatos; o contexto aponta para os principais sacerdotes (18:35).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:11: RP omite «*αὐτῷ*» e inverte «*κατʼ ἐμοῦ οὐδεμίαν*» e «*δεδομένον σοι*». A base lê «*παραδούς*» com WH e NA28; Treg e RP leem «*παραδιδούς*». Na colação, 01, 02, 032, KJTR, ST e Scrivener leem «*ὁ*» em lugar de «*αὐτῷ*» ou acrescentam-no; 032, KJTR, RP, ST e Scrivener leem «*παραδιδούς*».
+
+**19:12**
+
+- *φίλος τοῦ Καίσαρος* (philos tou Kaisaros), «amigo de César», título de lealdade ao imperador; *ἀντιλέγει* (antilegei), «opõe-se», verbo de contestação. A ameaça é política: soltar Jesus seria trair o imperador.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:12: a base lê «*ὁ Πιλᾶτος ἐζήτει*» com WH, Treg e NA28; RP inverte, «*ἐζήτει ὁ Πιλᾶτος*». A base lê «*ἐκραύγασαν*» com WH, Treg e NA28; RP lê «*ἔκραζον*». Na colação, 01 lê «*ἔλεγον*»; KJTR, RP, ST e Scrivener leem «*ἔκραζον*»; ST e Scrivener leem «*αὐτόν*» em lugar de «*ἑαυτόν*».
+
+**19:13**
+
+- *βήματος* (bēmatos), «tribunal», lugar elevado onde o juiz se senta; *Λιθόστρωτον* (Lithostrōton), «Litóstrotos», pavimento de pedra; *Ἑβραϊστί* (Hebraisti), «em hebraico», como o evangelho designa a língua local; *Γαββαθα* (Gabbatha), nome do mesmo lugar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:13: a base lê «*τῶν λόγων τούτων*» com WH, Treg e NA28; RP lê «*τοῦτον τὸν λόγον*». A base lê «*ἐπὶ*» com WH, Treg e NA28; RP acrescenta «*τοῦ*» depois de «*ἐπὶ*». Na colação, KJTR, RP, ST, Scrivener e 032 acrescentam «*τοῦ*»; 01 lê «*Γολγοθᾶ*» em lugar de «*Γαββαθα*».
+
+**19:14**
+
+- *παρασκευή* (paraskeuē), «preparação», o dia que antecede o sábado; *ὥρα ἕκτη* (hōra hekytē), «hora sexta», cerca do meio-dia. O evangelho situa esta cena no dia da preparação da Páscoa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:14: a base lê «*ἦν ὡς*» com WH, Treg e NA28; RP lê «*δὲ ὡσεί*». Na colação, KJTR, RP, ST e Scrivener leem «*δὲ ὡσεί*»; 032 lê «*ἔλεγεν*» em lugar de «*λέγει*».
+
+**19:15**
+
+- *Ἆρον* (Aron), «tira», imperativo: o grito pede que o tirem de cena. Os principais sacerdotes fecham o diálogo com a confissão de que não têm rei senão César.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:15: a base lê «*ἐκραύγασαν οὖν ἐκεῖνοι*» com WH, Treg e NA28; RP lê «*Οἱ δὲ ἐκραύγασαν*». Na colação, KJTR, RP, SR, ST e Scrivener leem «*οἱ δὲ*» e omitem «*οὖν ἐκεῖνοι*»; 01 e 032 leem «*ἔλεγον*»; 02 lê «*ἐκραύγασον*» (imperativo).
+
+**19:16**
+
+- *παρέδωκεν* (paredōken), «entregou», aoristo; *ἵνα σταυρωθῇ* (hina staurōthē), «para ser crucificado»: a entrega cumpre-se. Com esta frase, a responsabilidade do governador passa ao grupo que o leva.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:16: a base lê «*οὖν*» com WH, Treg e NA28; RP lê «*δέ*». A base lê «*Ἰησοῦν*» com WH, Treg e NA28; RP acrescenta «*καὶ ἤγαγον*» depois de «*Ἰησοῦν*». Na colação, 02, KJTR, ST e Scrivener leem «*δέ*» e acrescentam «*καὶ ἀπήγαγον*»; SR acrescenta «*αὐτὸν ἀπήγαγον*»; 01 e 032 leem «*οἱ δὲ … λαβόντες*» em lugar de «*παρέλαβον οὖν*».
+
+**19:17**
+
+- *βαστάζων* (bastazōn), «levando»; *Κρανίου Τόπον* (Kraniou Topon), «Lugar da Caveira»; *Γολγοθᾶ* (Golgothā), «Gólgota», nome aramaico do lugar. O texto diz que Jesus levava a própria cruz.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:17: a base lê «*αὑτῷ*» com WH e Treg; NA28 lê «*ἑαυτῷ*»; RP lê «*τὸν σταυρὸν αὐτοῦ*» em lugar de «*αὑτῷ τὸν σταυρὸν*» e «*ὅς*» em lugar de «*ὃ*». Na colação, 01, 032, SR e 𝔓66 leem «*ἑαυτῷ*»; 03 lê «*λέγετε*» em lugar de «*λέγεται*»; KJTR, RP, ST e Scrivener leem «*αὐτοῦ*» e «*ὅς*»; 𝔓121 omite «*καὶ βαστάζων … ὃ λέγεται*» (fragmento).
+
+**19:18**
+
+- *ἐσταύρωσαν* (estaurōsan), «crucificaram», aoristo: a crucificação já aconteceu. Jesus fica no meio dos dois, e a cena o coloca no centro.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 𝔓121 omite «*καὶ ἐντεῦθεν, μέσον δὲ τὸν Ἰησοῦν*» (fragmento); 𝔓66 lê «*ἐσαν*» em lugar de «*ἐσταύρωσαν*» (leitura incerta).
+
+**19:19**
+
+- *τίτλον* (titlon), «título», o letreiro que indicava a acusação; *γεγραμμένον* (gegrammenon), «escrito», perfeito: o letreiro continua escrito na cruz. O título é a acusação política, e não uma profissão de fé.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 02 lê «*ἐπέθηκεν*» em lugar de «*ἔθηκεν*»; 𝔓66 lê «*σου*» em lugar de «*σταυροῦ*» (leitura incerta).
+
+**19:20**
+
+- *Ἑβραϊστί* (Hebraisti), «em hebraico»; *Ῥωμαϊστί* (Rhōmaisti), «em latim»; *Ἑλληνιστί* (Hellēnisti), «em grego». As três línguas mostram que o título era público e ao alcance de todos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:20: a base lê «*Ῥωμαϊστί, Ἑλληνιστί*» com WH, Treg e NA28; RP lê «*Ἑλληνιστί, Ῥωμαϊστί*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*Ἑλληνιστί*» antes de «*Ῥωμαϊστί*»; 032 lê «*τότε*» em lugar de «*τοῦτον*».
+
+**19:21**
+
+- *Μὴ γράφε* (Mē graphe), «não escrevas»: os sacerdotes pedem a Pilatos que mude o título. A mudança proposta reduz a realeza de Jesus a uma pretensão dita por ele.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:21: a base lê «*τῶν Ἰουδαίων εἰμί*» com WH e Treg; NA28 e RP leem «*εἰμι τῶν Ἰουδαίων*». Na colação, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener reordenam «*εἰμι*»; 032 lê «*εἰμει*».
+
+**19:22**
+
+- *Ὃ γέγραφα γέγραφα* (ho gegrapha gegrapha), «o que escrevi, escrevi»: recusa firme de Pilatos. O perfeito indica um escrito que permanece.
+
+**19:23**
+
+- *χιτών* (chitōn), «túnica»; *ἄραφος* (araphos), «sem costura»; *ὑφαντὸς διʼ ὅλου* (hyphantos di’ holou), «tecida de alto a baixo»: a túnica não se podia repartir sem ser estragada.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01 lê «*οἱ σταυρώσαντες*» em lugar de «*ὅτε ἐσταύρωσαν*» e omite «*καὶ τὸν χιτῶνα*».
+
+**19:24**
+
+- *Διεμερίσαντο* (diemerisanto), «repartiram»: citação do Sl 22:18, dada com as palavras do salmo. *ἵνα … πληρωθῇ* (hina plērōthē), «para que se cumprisse»: a cena cumpre a Escritura.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:24: a base lê «*ἡ λέγουσα*» com Treg, NA28 e RP; WH omite. Na colação, 03 e WH omitem «*ἡ λέγουσα*»; 032 omite «*ἑαυτοῖς*»; 01 lê «*αὐτούς*» em lugar de «*ἀλλήλους*».
+
+**19:25**
+
+- *Εἱστήκεισαν* (heistēkeisan), «estavam de pé», imperfeito: as mulheres permanecem junto à cruz. *Μαρία ἡ τοῦ Κλωπᾶ*, literalmente «Maria, a de Clopas», identifica a segunda Maria pelo marido.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 032 omite «*τοῦ Ἰησοῦ*»; 01 lê «*Μαριαμ*» em lugar de «*Μαρία*».
+
+**19:26**
+
+- *γύναι* (gynai), «mulher», vocativo: Jesus não usa o termo «mãe» ao falar com ela. *ἴδε* (ide), «eis», introduz a entrega do discípulo à mãe.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:26: a base lê «*τῇ μητρί*» com WH, Treg e NA28; RP acrescenta «*αὐτοῦ*» depois de «*μητρί*». A base lê «*ἴδε*» com WH, Treg e NA28; RP lê «*ἰδοὺ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*αὐτοῦ*» e leem «*ἰδού*»; SR lê «*ἰδού*»; 032 omite «*παρεστῶτα*»; 01 lê «*δέ*» em lugar de «*οὖν*».
+
+**19:27**
+
+- *Ἴδε* (ide), «eis»; *εἰς τὰ ἴδια* (eis ta idia), «para a sua casa», expressão de quem acolhe alguém no seu lar. O discípulo passa a cuidar dela.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:27: a base lê «*Ἴδε*» com WH, Treg e NA28; RP lê «*Ἰδοὺ*». Na colação, 02 lê «*ἡμέρας*» em lugar de «*ὥρας*»; KJTR, RP, ST e Scrivener leem «*ἰδοὺ*»; 01 e 032 leem «*εἶδε*».
+
+**19:28**
+
+- *τετέλεσται* (tetelestai), «está consumado», perfeito: a obra está completa e continua concluída; *διψῶ* (dipsō), «tenho sede», remete ao Sl 69:21 sem o citar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:28: a base lê «*εἰδώς*» e «*ἤδη πάντα*» com WH, Treg e NA28; RP lê «*ἰδών*» e «*πάντα ἤδη*». Na colação, RP, KJTR, ST e Scrivener invertem «*ἤδη*» e «*πάντα*»; 032 omite «*ἤδη*»; 01 lê «*πληρωθῇ*» em lugar de «*τελειωθῇ*».
+
+**19:29**
+
+- *ὄξος* (oxos), «vinagre», vinho azedo, bebida comum dos soldados; *ὑσσώπῳ* (hyssōpō), «hissopo», planta usada para aspergir sangue (cf. Êx 12:22). O gesto faz a ligação com a Páscoa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:29: RP acrescenta «*οὖν*» depois de «*σκεῦος*»; a base lê «*σπόγγον οὖν μεστὸν τοῦ*» com WH, Treg e NA28, e RP lê «*οἱ δὲ πλήσαντες σπόγγον*»; a base lê «*ὑσσώπῳ*» e RP lê «*καὶ ὑσσώπῳ*». Na colação, 02 lê «*οἱ δὲ πλήσαντες σπόγγον*», como RP; 01 acrescenta «*δέ*» e omite «*τοῦ*»; KJTR, RP, ST e Scrivener acrescentam «*καὶ*».
+
+**19:30**
+
+- *Τετέλεσται* (Tetelestai), «está consumado»: a palavra final da obra; *παρέδωκεν τὸ πνεῦμα* (paredōken to pneuma), «entregou o espírito». O verbo mostra que Jesus entrega o espírito, e não que o perde.
+
+**19:31**
+
+- *παρασκευή* (paraskeuē), «preparação», a sexta-feira; *ἵνα μὴ μείνῃ* (hina mē meinē), «para que não ficassem»: a lei que proíbe deixar corpos na cruz no sábado. *κατεαγῶσιν* (kataeagōsin), «quebrassem»: quebrar as pernas acelerava a morte.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:31: a base lê «*ἐπεὶ παρασκευὴ ἦν*» depois de «*ἵνα … σαββάτῳ*» com WH, Treg e NA28; RP desloca a oração para depois de «*σαββάτῳ*». Na colação, RP e ST deslocam a oração; 01 acrescenta «*οὖν*».
+
+**19:32**
+
+- *συσταυρωθέντος* (systaurōthentos), «crucificado com»: o outro crucificado é um dos dois do v. 18.
+
+**19:33**
+
+- *τεθνηκότα* (tethnēkota), «morto», perfeito: a morte já aconteceu. O texto justifica por que não lhe quebraram as pernas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:33: a base lê «*ἤδη αὐτὸν*» com WH, Treg e NA28; RP lê «*αὐτὸν ἤδη*». Na colação, 02, KJTR, RP, ST e Scrivener mudam a posição de «*αὐτόν*»; 01 lê «*εὗρον αὐτόν*» em lugar de «*ὡς εἶδον*».
+
+**19:34**
+
+- *λόγχῃ* (logchē), «lança»; *ἔνυξεν* (enyxen), «furou», verbo de ferir com a ponta. O pormenor do sangue e da água é dado pelo texto, que o associa à testemunha do v. 35.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:34: a base lê «*ἐξῆλθεν εὐθύς*» com WH, Treg e NA28; RP lê «*εὐθέως ἐξῆλθεν*». Na colação, 02, KJTR, RP, ST e Scrivener usam a mesma ordem de RP.
+
+**19:35**
+
+- *ἑωρακώς* (heōrakōs), «quem viu», perfeito: o testemunho vem de quem viu e guarda o que viu; *μεμαρτύρηκεν* (memartyrēken), «deu testemunho», perfeito. O texto afirma a própria verdade do testemunho, com o fim de fazer crer.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:35: RP inverte «*αὐτοῦ ἐστιν*» e omite «*καὶ*» antes de «*ὑμεῖς*». A base lê «*πιστεύητε*» com WH e Treg; NA28 e RP leem «*πιστεύσητε*». Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*πιστεύσητε*»; 032 lê «*πιστεύσηται*».
+
+**19:36**
+
+- *Ὀστοῦν οὐ συντριβήσεται* (Ostoun ou syntribēsetai), «nenhum osso será quebrado», remete a Êx 12:46 e Sl 34:20. O cumprimento da Escritura é o do cordeiro pascal.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:36: a base lê «*αὐτοῦ*» com WH, Treg e NA28; RP lê «*ἀπʼ αὐτοῦ*». Na colação, 01 e RP acrescentam «*ἀπʼ*».
+
+**19:37**
+
+- *Ὄψονται* (Opsontai), «olharão», futuro; *ἐξεκέντησαν* (exekentēsan), «transpassaram», verbo de ferir com lança. A citação é de Zc 12:10.
+
+**19:38**
+
+- *κεκρυμμένος* (kekrymmenos), «escondido», particípio perfeito: José era discípulo em segredo, por medo. *ἀπὸ Ἁριμαθαίας*, «de Arimateia», indica a terra de origem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:38: a base lê «*δὲ*» com WH, Treg e NA28; RP omite. A base lê «*ἀπὸ*» com WH e Treg; NA28 e RP leem «*ὁ ἀπὸ*». A base lê «*αὐτοῦ*» com WH, Treg e NA28; RP lê «*τοῦ Ἰησοῦ*». Na colação, 01, 032 e SR leem «*ἦλθον*» e «*ἦραν αὐτόν*» em lugar de «*ἦλθεν … ἦρεν τὸ σῶμα αὐτοῦ*»; 02 omite «*καὶ ἐπέτρεψεν ὁ Πιλᾶτος· ἦλθεν οὖν καὶ ἦρεν τὸ σῶμα αὐτοῦ*»; KJTR, RP, ST e Scrivener leem «*τοῦ Ἰησοῦ*».
+
+**19:39**
+
+- *νυκτὸς τὸ πρῶτον* (nyktos to prōton), «de noite, pela primeira vez», refere-se a 3:1–2; *λίτρας ἑκατόν* (litras hekaton), «cem libras», cerca de 33 kg de aromas, quantidade de grande honra.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:39: a base lê «*αὐτόν*» com WH, Treg e NA28; RP lê «*τὸν Ἰησοῦν*». A base lê «*μίγμα*» com Treg, NA28 e RP; WH lê «*ἕλιγμα*». Na colação, 01, 03, 032, SR e WH leem «*ἕλιγμα*»; 01 e 032 leem «*ἔχων*» em lugar de «*φέρων*»; KJTR, RP, ST e Scrivener leem «*τὸν Ἰησοῦν*».
+
+**19:40**
+
+- *ὀθονίοις* (othoniois), «panos de linho»; *ἐνταφιάζειν* (entaphiazein), «sepultar», verbo do enterro judaico. O texto descreve o costume sem comentar o seu sentido.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:40: a base lê «*αὐτὸ*» com WH, Treg e NA28; RP acrescenta «*ἐν*» depois de «*αὐτὸ*». Na colação, 02 lê «*τοῦ θεοῦ*» em lugar de «*τοῦ Ἰησοῦ*»; 01 e 032 leem «*ἦν*» em lugar de «*ἐστιν*».
+
+**19:41**
+
+- *κῆπος* (kēpos), «jardim», e *μνημεῖον καινόν* (mnēmeion kainon), «sepulcro novo»: o detalhe prepara o relato da ressurreição, sem o nomear aqui.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:41: a base lê «*ἦν τεθειμένος*» com WH e NA28; Treg e RP leem «*ἐτέθη*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἐτέθη*».
+
+**19:42**
+
+- *παρασκευήν* (paraskeuēn), «preparação»; *ἐγγὺς* (engys), «perto», explica a escolha do sepulcro. O sepultamento foi feito depressa, por causa do sábado que se aproximava.
 
 ---
 
