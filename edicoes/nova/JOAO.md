@@ -21,8 +21,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 13 | aprovado | 38 |
 | 14 | aprovado | 31 |
 | 15 | aprovado | 27 |
-| 16 | rascunho | 33 |
-| 17 | rascunho | 26 |
+| 16 | aprovado | 33 |
+| 17 | aprovado | 26 |
 
 ## Texto
 
@@ -4899,7 +4899,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **16:15**
 
-- *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia.
+- *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia. A base tem *λαμβάνει*, presente, que a tradução lê como futuro («receberá»), em correspondência com «anunciará» (*ἀναγγελεῖ*).
+- **Crítica Textual.** Na colação, 02 lê «*λήμψεται*» («receberá») em lugar de «*λαμβάνει*» («recebe»); KJTR, ST e Scrivener leem «*ληψεται*», com a mesma forma de futuro. A base segue «*λαμβάνει*».
 
 **16:16**
 
@@ -4944,6 +4945,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **16:24**
 
 - *ᾐτήσατε* (ētēsate), «pedistes», aoristo; *λήμψεσθε* (lēmpsesthe), «recebereis»; *πεπληρωμένη* (peplērōmenē), «completa».
+- **Crítica Textual.** Na colação, 01 e 𝔓66 leem «*ἠτήσαται*» («pediu», terceira pessoa) em lugar de «*ᾐτήσατε*», e «*αἰτήσασθαι*» em lugar de «*αἰτεῖτε*»; 032 lê «*αἰτήσασθαι*» no mesmo lugar e «*λήμψεσθαι*» em lugar de «*λήμψεσθε*»; 02 lê «*ἠτήσασθαι*» em lugar de «*ᾐτήσατε*». 𝔓5 omite a frase «*ἕως ἄρτι … μου*» («até agora … em meu nome»). A base segue o texto da SBLGNT.
 
 **16:25**
 
@@ -4987,7 +4989,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **16:33**
 
-- *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada.
+- *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada. *ἔχετε* (echete), presente, traduzido por «terão», com sentido de futuro.
+- **Crítica Textual.** Na colação, 01, 032 e 𝔓66 leem «*θαρσεῖται*» («terá coragem») em lugar de «*θαρσεῖτε*»; 01 e 032 leem também «*ἔχηται*» em lugar de «*ἔχητε*» («tenham»). 𝔓66 omite «*ἐν τῷ κόσμῳ θλῖψιν ἔχετε*». KJTR, Scrivener e 05 leem «*ἔξετε*» (futuro) em lugar de «*ἔχετε*». A base segue «*θαρσεῖτε*» e «*ἔχετε*».
 
 ### Notas do capítulo 17
 
@@ -5029,11 +5032,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **17:8**
 
 - *ἔλαβον* (elabon), «receberam»; *ἐπίστευσαν* (episteusan), «creram»: receber e crer são dois passos descritos no texto.
-- **Crítica Textual.** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02, 032, 05 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
 
 **17:9**
 
 - *ἐρωτῶ* (erōtō), «rogo»; *ὧν* (hōn), «daqueles que»: Jesus separa os discípulos do mundo, sem os tirar dele.
+- **Crítica Textual.** Aparato de edições SBLGNT: sem variante. Na colação, 032 e 05 leem «*ἔδωκας*» («deste», aoristo) em lugar de «*δέδωκάς*» («tens dado», perfeito); 𝔓66 omite a primeira ocorrência de «*ἐρωτῶ*».
 
 **17:10**
 

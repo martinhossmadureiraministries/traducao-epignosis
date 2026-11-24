@@ -1,6 +1,6 @@
 # João 16
 
-**Estado:** rascunho, aguarda leitura do responsável. Bloco de 33 versículos. Texto da tradução, nota e Crítica Textual; o grego e as variantes vêm do aparato da SBLGNT e da colação (`docs/colacao/João.json`).
+**Estado:** aprovado pelo responsável. Bloco de 2 capítulos (16 e 17). Texto da tradução, nota e Crítica Textual; o grego e as variantes vêm do aparato da SBLGNT e da colação (`docs/colacao/João.json`).
 
 ---
 
@@ -68,7 +68,8 @@
 
 **16:15** Tudo o que o Pai tem é meu; por isso disse que ele receberá do que é meu e o anunciará a vocês.
 
-> *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia.
+> *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia. A base tem *λαμβάνει*, presente, que a tradução lê como futuro («receberá»), em correspondência com «anunciará» (*ἀναγγελεῖ*).
+> **Crítica Textual:** Na colação, 02 lê «*λήμψεται*» («receberá») em lugar de «*λαμβάνει*» («recebe»); KJTR, ST e Scrivener leem «*ληψεται*», com a mesma forma de futuro. A base segue «*λαμβάνει*».
 
 **16:16** Por pouco tempo, e já não me verão; e de novo, por pouco tempo, e me verão.
 
@@ -113,6 +114,7 @@
 **16:24** Até agora nada pediram em meu nome. Peçam, e receberão, para que a alegria de vocês seja completa.
 
 > *ᾐτήσατε* (ētēsate), «pedistes», aoristo; *λήμψεσθε* (lēmpsesthe), «recebereis»; *πεπληρωμένη* (peplērōmenē), «completa».
+> **Crítica Textual:** Na colação, 01 e 𝔓66 leem «*ἠτήσαται*» («pediu», terceira pessoa) em lugar de «*ᾐτήσατε*», e «*αἰτήσασθαι*» em lugar de «*αἰτεῖτε*»; 032 lê «*αἰτήσασθαι*» no mesmo lugar e «*λήμψεσθαι*» em lugar de «*λήμψεσθε*»; 02 lê «*ἠτήσασθαι*» em lugar de «*ᾐτήσατε*». 𝔓5 omite a frase «*ἕως ἄρτι … μου*» («até agora … em meu nome»). A base segue o texto da SBLGNT.
 
 **16:25** Disse estas coisas a vocês em parábolas; vem a hora em que já não falarei em parábolas, mas com clareza anunciarei a vocês o Pai.
 
@@ -156,5 +158,6 @@
 
 **16:33** Disse estas coisas a vocês para que tenham paz em mim. No mundo terão aflição; mas tenham coragem: eu venci o mundo.
 
-> *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada.
+> *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada. *ἔχετε* (echete), presente, traduzido por «terão», com sentido de futuro.
+> **Crítica Textual:** Na colação, 01, 032 e 𝔓66 leem «*θαρσεῖται*» («terá coragem») em lugar de «*θαρσεῖτε*»; 01 e 032 leem também «*ἔχηται*» em lugar de «*ἔχητε*» («tenham»). 𝔓66 omite «*ἐν τῷ κόσμῳ θλῖψιν ἔχετε*». KJTR, Scrivener e 05 leem «*ἔξετε*» (futuro) em lugar de «*ἔχετε*». A base segue «*θαρσεῖτε*» e «*ἔχετε*».
 

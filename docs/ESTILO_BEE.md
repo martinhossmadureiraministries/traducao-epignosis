@@ -288,7 +288,7 @@ Estas convenções saíram da revisão de João e valem para todos os livros nov
 as correções dos já aprovados. `scripts/verificar_convencoes_notas.py` confere as
 que se verificam sem ler o grego.
 
-1. **Nomes e termos fixos.** O Espírito é «Parácletos» (nominativo, com s, como em 14:26, 15:26 e 16:7), transliteração literal de παράκλητος, *parákletos* (acento no primeiro «a»; η dá «e»). O acusativo, em 14:16, é «Parácleton», *parákleton*. «Paráclito» e «Paracletos» não se usam. Decisão do responsável; antes era «Paráclito».
+1. **Nomes e termos fixos.** O Espírito é «Parácletos» (nominativo, com s, como em 14:26, 15:26 e 16:7), transliteração literal de παράκλητος, *parákletos* (acento no primeiro «a»; η dá «e»). O acusativo, em 14:16, é «Parácleton», *parákleton*. «Paráclito» e «Paracletos» não se usam. Decisão do responsável; antes era «Paráclito». Em 1 João 2:1, onde o original tem o mesmo acusativo (παράκλητον), usa-se «Parácleton» com nota sobre «consolador, advogado».
 2. **NIV é tradução, nunca testemunha.** Na Crítica Textual, a NIV só aparece quando
    diverge da base, como escolha de tradução: «a NIV segue essa leitura por escolha de
    tradução» ou «a NIV omite a palavra, por escolha de tradução». Quando concorda com a

@@ -1,6 +1,6 @@
 # João 17
 
-**Estado:** rascunho, aguarda leitura do responsável. Bloco de 26 versículos. Texto da tradução, nota e Crítica Textual; o grego e as variantes vêm do aparato da SBLGNT e da colação (`docs/colacao/João.json`).
+**Estado:** aprovado pelo responsável. Bloco de 2 capítulos (16 e 17). Texto da tradução, nota e Crítica Textual; o grego e as variantes vêm do aparato da SBLGNT e da colação (`docs/colacao/João.json`).
 
 ---
 
@@ -42,11 +42,12 @@
 **17:8** Porque lhes dei as palavras que me deste, e eles as receberam, e conheceram verdadeiramente que saí de junto de ti, e creram que tu me enviaste.
 
 > *ἔλαβον* (elabon), «receberam»; *ἐπίστευσαν* (episteusan), «creram»: receber e crer são dois passos descritos no texto.
-> **Crítica Textual:** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
+> **Crítica Textual:** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02, 032, 05 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
 
 **17:9** Eu rogo por eles; não rogo pelo mundo, mas por aqueles que me deste, porque são teus.
 
 > *ἐρωτῶ* (erōtō), «rogo»; *ὧν* (hōn), «daqueles que»: Jesus separa os discípulos do mundo, sem os tirar dele.
+> **Crítica Textual:** Aparato de edições SBLGNT: sem variante. Na colação, 032 e 05 leem «*ἔδωκας*» («deste», aoristo) em lugar de «*δέδωκάς*» («tens dado», perfeito); 𝔓66 omite a primeira ocorrência de «*ἐρωτῶ*».
 
 **17:10** Tudo o que é meu é teu, e o que é teu é meu; e neles sou glorificado.
 

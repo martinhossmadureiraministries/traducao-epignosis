@@ -62,10 +62,10 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   4:1 aprovado com «Jesus» na tradução; a alternativa «o Senhor» fica na nota.
 - **Pendências do livro:** 5:42 aprovado pelo responsável, com a forma da testemunha 02 confirmada na
   transcrição do CNTR («ουχ εται», sem palavra grega reconhecível). 13:27 e 12:50 já aprovados. Para revisão especializada, ver abaixo.
-- **16–17:** prosa em rascunho (bloco de 2 capítulos, 16 com 33 versículos e 17 com 26). Crítica
+- **16–17:** aprovados pelo responsável (bloco de 2 capítulos, 16 com 33 versículos e 17 com 26). Crítica
   Textual a partir do aparato da SBLGNT e da colação; confronto com o grego feito na redação.
   Em 16:25 e 16:29, «com clareza» (no lugar de «franqueza») aprovado pelo responsável. Paráclito: decidido pelo responsável, «Parácletos» (nominativo) e «Parácleton» (acusativo, em 14:16). Esta alteração toca 14:16, 14:26 e 15:26, já aprovados, e foi gravada nesses versículos.
-  Aguarda leitura do responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
+  Aprovados pelo responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
 - **18–21:** por escrever na edição. Próximo bloco depois de 16–17.
 - **5:42:** aprovado pelo responsável. A CT regista a inferência sobre a forma da testemunha 02.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
