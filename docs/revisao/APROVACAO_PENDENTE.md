@@ -6,7 +6,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
 
-**Atualizado (16–19):** 16 e 17 aprovados pelo responsável, com 16:25 e 16:29 «com clareza». 18–19 redigidos como rascunho e por aprovar; leitura em `docs/revisao/JOAO_18_19.md`.
+**Atualizado (16–19):** 16 e 17 aprovados pelo responsável, com 16:25 e 16:29 «com clareza». 18 e 19 aprovados pelo responsável; leitura em `docs/revisao/JOAO_18_19.md`.
 
 **Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 foi confirmada na transcrição do CNTR.
 
