@@ -23,6 +23,8 @@ de processo antigos estão em `docs/arquivo/`.
 - **Sem automação de produção.** O repositório não tem workflows de GitHub Actions. O
   responsável retirou-os; não se recriam nem se reativam sem decisão dele.
 - **Ortografia europeia** (pt-PT): «connosco», «de facto», «registo», «facto», «ação».
+  - **Norma decidida pelo responsável:** Acordo de 1990 (AO90) em toda a edição. Angola não ratificou o acordo; a escolha é editorial, não oficial. Formas: «ação», «aspeto», «atividade», «ato», «perceção», «receção», «aceção», «rutura», «leãozinhos».
+  - **Acréscimos no texto:** itálico `<i>…</i>` (regra de `docs/EDITORIAL.md`). Colchetes só para evidência de manuscritos.
 
 ## Estado dos livros (edição nova, `edicoes/nova/livros_json/`)
 
