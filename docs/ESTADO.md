@@ -57,23 +57,11 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
 
 ## João
 
-- **1–4:** prosa em rascunho. As Críticas Textuais de 4:1, 4:44 e 4:54 foram conferidas
-  contra `docs/colacao/João.json` em 2026-11-20. As glosas das formas isoladas foram
-  conferidas com o Dodson e o Abbott-Smith (ver `docs/EDITORIAL.md`, «Léxico»).
-- **5–6:** aprovados pelo responsável em 2026-11-23.
-- **7–10:** prosa em rascunho. Verificados versículo a versículo contra o aparato e a
-  colação: 8:9, 8:11, 8:41, 9:1–41 e 10:29. Corrigidos nessa verificação: em 10:29 a
-  tradução passa a «O meu Pai» (a base tem «ὁ πατήρ μου») e a CT regista a variante
-  «μοι» / «αὐτὰ» (NIV); em 9:35 e 10:36 (e 1:51) a maiúscula de «υἱός» a meio da frase
-  passa a minúscula. Todas as CT de 7–10 conferem com o aparato da colação. Pendente:
-  leitura do responsável; só depois podem ser aprovados.
-- **11:** prosa em rascunho (bloco 1 do trabalho por capítulos, 2026-11-24). Gravado
-  com 57 versículos e 26 com CT. Registo: «vocês», com cadência elevada (decisão do
-  responsável, 2026-11-24); revisto nessa linha em 14 versículos. Pendente: leitura do responsável.
-- **12 e 13:** prosa em rascunho (bloco 2, 2026-11-24; registo elevado). 12 com 50
-  versículos e 27 com CT; 13 com 38 versículos e 26 com CT. Pendente: leitura do responsável.
-- **14 e 15:** prosa em rascunho (bloco 3, 2026-11-24; registo elevado). 14 com 31
-  versículos e 21 com CT; 15 com 27 versículos e 16 com CT. Pendente: leitura do responsável.
+- **1–15:** aprovados pelo responsável (1–11, 12, 13, 14 e 15). Os capítulos 12, 14 e 15 foram
+  conferidos versículo a versículo com o SBLGNT da colação em 2026-11-24 (sem incoerências).
+  4:1 aprovado com «Jesus» na tradução; a alternativa «o Senhor» fica na nota.
+- **Pendências do livro:** 5:42, com a forma da testemunha 02 por confirmar no manuscrito (CT
+  provisória); 13:27 e 12:50 já aprovados. Para revisão especializada, ver abaixo.
 - **16–21:** por escrever na edição. Há uma primeira redação não revista em
   `arquivo/rascunhos_joao/500_Joao_12-21_nao_revisto.json` (16–21 no registo anterior,
   sem a revisão de cadência); não entra na edição nem no `JOAO.md`. Cada capítulo será escrito e apresentado ao responsável um de cada vez.

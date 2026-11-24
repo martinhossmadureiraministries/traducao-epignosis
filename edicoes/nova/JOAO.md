@@ -17,10 +17,10 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 9 | aprovado | 41 |
 | 10 | aprovado | 42 |
 | 11 | aprovado | 57 |
-| 12 | rascunho | 50 |
+| 12 | aprovado | 50 |
 | 13 | aprovado | 38 |
-| 14 | rascunho | 31 |
-| 15 | rascunho | 27 |
+| 14 | aprovado | 31 |
+| 15 | aprovado | 27 |
 
 ## Texto
 

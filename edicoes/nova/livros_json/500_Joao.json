@@ -4622,8 +4622,8 @@
         "chapter": 12,
         "verse_from": 1,
         "verse_to": 50,
-        "status": "rascunho",
-        "nota": "Capítulo redigido em prosa em 2026-11-24, registo elevado; aguarda leitura do responsável. Crítica Textual gerada a partir do aparato da colação. 12:6 aprovado pelo responsável com «levava» e a Crítica Textual completa; 12:7 e o resto do capítulo ainda por rever. Aprovados pelo responsável, nesta revisão: 12:6, 12:7 (Crítica Textual completada), 12:12 (sinais retirados) e 12:50 (frase retirada). O capítulo continua em revisão: falta ler 12:1–12:5, 12:8–12:49 e demais versículos."
+        "status": "aprovado",
+        "nota": "Capítulo redigido em prosa, registo elevado. 12:6 aprovado com «levava» e a Crítica Textual completa. 12:7 (Crítica Textual completada), 12:12 (sinais retirados) e 12:50 (frase retirada) aprovados na revisão anterior. Aprovado pelo responsável após confronto versículo a versículo com o SBLGNT da colação: sem incoerências nem erros de tradução."
       },
       {
         "chapter": 13,
@@ -4636,15 +4636,15 @@
         "chapter": 14,
         "verse_from": 1,
         "verse_to": 31,
-        "status": "rascunho",
-        "nota": "Capítulo redigido em prosa em 2026-11-24, registo elevado; aguarda leitura do responsável. Crítica Textual gerada a partir do aparato da colação. 14:22: opção A aprovada pelo responsável («te vás manifestar»), com nota sobre μέλλεις."
+        "status": "aprovado",
+        "nota": "Capítulo redigido em prosa, registo elevado. 14:22: opção A aprovada pelo responsável («te vás manifestar»), com nota sobre μέλλεις. Aprovado pelo responsável após confronto versículo a versículo com o SBLGNT da colação: sem incoerências nem erros de tradução."
       },
       {
         "chapter": 15,
         "verse_from": 1,
         "verse_to": 27,
-        "status": "rascunho",
-        "nota": "Capítulo redigido em prosa em 2026-11-24, registo elevado; aguarda leitura do responsável. Crítica Textual gerada a partir do aparato da colação."
+        "status": "aprovado",
+        "nota": "Capítulo redigido em prosa, registo elevado. Aprovado pelo responsável após confronto versículo a versículo com o SBLGNT da colação: sem incoerências nem erros de tradução."
       }
     ],
     "specialist": [

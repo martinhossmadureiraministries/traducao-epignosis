@@ -4,9 +4,11 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 ## 1. João — decisões e versículos alterados nesta revisão
 
+**Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
+
 **Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 continua por confirmar.
 
-### João 4:1 — escolha substantiva
+### João 4:1 — aprovado (Jesus)
 
 **Texto:** Quando Jesus soube que os fariseus tinham ouvido que ele fazia e batizava mais discípulos do que João —
 
@@ -16,7 +18,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Crítica Textual:** Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg e RP leem «*κύριος*» («o Senhor»); a NIV segue essa leitura por escolha de tradução. Na colação, «*κύριος*» aparece nos manuscritos 𝔓66, 𝔓75, 02, 03, 032 e 04, e nas edições do Textus Receptus KJTR, RP, ST, SR e Scrivener; 01 e 05 leem «*Ἰησοῦς*» com a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2). O testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
 
-**Pergunta:** «Jesus» (leitura da base, com NA28, 01 e 05) ou «o Senhor» (WH, Treg, RP; com 𝔓66, 𝔓75 e 03)? A tradução mantém «Jesus».
+**Decisão:** «Jesus» (leitura da base, com NA28, 01 e 05), aprovada pelo responsável. A alternativa «o Senhor» fica na nota.
 
 ---
 

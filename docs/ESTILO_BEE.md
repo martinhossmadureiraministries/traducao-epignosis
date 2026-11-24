@@ -315,6 +315,40 @@ que se verificam sem ler o grego.
    «o Senhor»), a nota diz qual é a leitura da base e qual é a alternativa, e o bloco
    fica com a nota «para decisão». A tradução segue a base até decisão contrária.
 
+## Estilo verificado — decisões aprovadas em João 1–15
+
+Estas decisões foram tomadas pelo responsável e valem para os capítulos seguintes e para os
+outros livros.
+
+**Norma ortográfica.** Acordo de 1990 (AO90) em toda a edição, em português europeu. Angola
+assinou o acordo, mas não o ratificou: a escolha é editorial, não oficial. Não se misturam
+formas de 1945 («ação» sim, «acção» não; «aspeto», «atividade», «ato», «perceção», «receção»,
+«aceção», «ativa», «rutura», «leãozinhos»). Exemplos corrigidos: 2 Tessalonicenses 3:14 («rutura»,
+não «ruptura», que é a grafia brasileira); Naum 2:11 e 2:13 («leãozinhos», não «leõezinhos»).
+
+**Acréscimos no texto.** Palavras acrescentadas por clareza ficam em `<i>…</i>`. Os colchetes
+ficam para a evidência dos manuscritos (regra de 2026-11-22). Exemplos: Habacuque 3:3, 3:9, 3:13
+e 3:19; Filipenses 1:16; 2 Tessalonicenses 1:5, 1:7, 2:3, 2:7, 2:9 e 3:9. «[Selá]» segue a
+convenção pública, à parte.
+
+**Colchetes de variante.** Quando a base lê uma palavra que a maioria não tem, põe-se a palavra
+entre colchetes simples, com nota que diz a evidência e a leitura alternativa. Não se usam
+colchetes duplos. Exemplo: Judas 1:5, «[Jesus]» (NA28 e base; WH e Treg leem «o Senhor»).
+
+**Nome de Jesus e leituras de «Senhor».** Em 4:1, a base lê «Jesus» (NA28, 01, 05); WH, Treg e
+RP leem «o Senhor». Decisão do responsável: «Jesus» no texto, com a alternativa na nota.
+
+**NIV.** Só aparece na Crítica Textual como escolha de tradução, quando diverge da base. Exemplos
+aprovados: 12:19 («a NIV acrescenta «ὅλος», por escolha de tradução»); 15:18 («a NIV omite a
+palavra, por escolha de tradução»).
+
+**Termos fixos.** «Paráclito», com acento (14:16, 14:26, 15:26). «Te vás manifestar» em 14:22
+(opção A). «levava» em 12:6, não «tomava».
+
+**Confronto com o grego.** Antes de aprovar um capítulo, conferir cada versículo com o SBLGNT da
+colação (`docs/colacao/João.json`, campo `base.sblgnt`) e com as palavras citadas nas notas. Na
+revisão de 12, 14 e 15, não se encontrou omissão, acréscimo sem marca nem inversão de sentido.
+
 ## Lista de verificação para cada capítulo novo
 
 1. Ler o original (SBLGNT) e a colação (`docs/colacao/João.json`, ou o equivalente do livro)
