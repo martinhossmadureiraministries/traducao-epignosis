@@ -1,6 +1,6 @@
 # João · Bíblia de Estudo Epignósis
 
-Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 682 versículos.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 741 versículos.
 
 **Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
@@ -21,6 +21,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 13 | aprovado | 38 |
 | 14 | aprovado | 31 |
 | 15 | aprovado | 27 |
+| 16 | rascunho | 33 |
+| 17 | rascunho | 26 |
 
 ## Texto
 
@@ -1417,6 +1419,128 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **26** Quando vier o Paráclito, que eu enviarei a vocês da parte do Pai, o Espírito da verdade que procede do Pai, esse dará testemunho de mim.
 
 **27** E vocês também darão testemunho, porque estão comigo desde o princípio.
+
+### Capítulo 16
+
+**1** Disse estas coisas a vocês para que não tropecem.
+
+**2** Vão expulsar vocês das sinagogas. Mas vem a hora em que todo aquele que matar vocês pensará estar a prestar culto a Deus.
+
+**3** E farão isto porque não conheceram o Pai nem a mim.
+
+**4** Disse estas coisas a vocês para que, quando chegar a hora delas, se lembrem de que eu as disse. Não disse isto desde o princípio, porque estava com vocês.
+
+**5** Agora vou para aquele que me enviou, e nenhum de vocês me pergunta: «Para onde vais?»
+
+**6** Mas, porque disse estas coisas, a tristeza encheu o coração de vocês.
+
+**7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Paráclito não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
+
+**8** E, quando ele vier, convencerá o mundo do pecado, da justiça e do juízo.
+
+**9** Do pecado, porque não creem em mim;
+
+**10** da justiça, porque vou para o Pai e já não me verão;
+
+**11** do juízo, porque o príncipe deste mundo já foi julgado.
+
+**12** Ainda tenho muitas coisas a dizer a vocês, mas não as podem suportar agora.
+
+**13** Quando ele vier, o Espírito da verdade, guiará vocês em toda a verdade. Pois não falará por si mesmo, mas dirá o que ouvir, e anunciará a vocês as coisas que hão de vir.
+
+**14** Ele me glorificará, porque receberá do que é meu e o anunciará a vocês.
+
+**15** Tudo o que o Pai tem é meu; por isso disse que ele receberá do que é meu e o anunciará a vocês.
+
+**16** Por pouco tempo, e já não me verão; e de novo, por pouco tempo, e me verão.
+
+**17** Então alguns dos discípulos disseram uns aos outros: «Que é isto que nos diz: "Por pouco tempo, e não me verão; e de novo, por pouco tempo, e me verão", e: "Porque vou para o Pai"?»
+
+**18** Diziam: «Que é isto que diz, "por pouco tempo"? Não sabemos o que fala.»
+
+**19** Jesus percebeu que queriam perguntar-lhe, e disse-lhes: «Estão a perguntar uns aos outros sobre isto, porque eu disse: "Por pouco tempo, e não me verão; e de novo, por pouco tempo, e me verão"?»
+
+**20** Em verdade, em verdade digo a vocês: vocês vão chorar e lamentar-se, mas o mundo se alegrará; vocês ficarão tristes, mas a tristeza de vocês se converterá em alegria.
+
+**21** Quando a mulher dá à luz, tem tristeza, porque chegou a sua hora; mas, quando dá à luz o menino, já não se lembra da angústia, por causa da alegria de ter nascido um ser humano no mundo.
+
+**22** Também vocês agora têm tristeza; mas de novo verei vocês, e o coração de vocês se alegrará, e ninguém tira de vocês a alegria.
+
+**23** Naquele dia não me perguntarão nada. Em verdade, em verdade digo a vocês: tudo o que pedirem ao Pai, ele lhes dará em meu nome.
+
+**24** Até agora nada pediram em meu nome. Peçam, e receberão, para que a alegria de vocês seja completa.
+
+**25** Disse estas coisas a vocês em parábolas; vem a hora em que já não falarei em parábolas, mas com franqueza anunciarei a vocês o Pai.
+
+**26** Naquele dia pedirão em meu nome; e não digo a vocês que eu rogarei ao Pai por vocês.
+
+**27** Pois o próprio Pai ama vocês, porque vocês me amaram e creram que saí de junto de Deus.
+
+**28** Saí do Pai e vim ao mundo; de novo deixo o mundo e vou para o Pai.
+
+**29** Dizem-lhe os seus discípulos: «Eis que agora falas com franqueza, e não dizes nenhuma parábola.»
+
+**30** Agora sabemos que sabes tudo e não precisas de que alguém te pergunte; por isto cremos que saíste de Deus.
+
+**31** Jesus respondeu-lhes: «Agora creem?»
+
+**32** Eis que vem a hora, e já chegou, em que vocês serão dispersos, cada um para o seu lado, e me deixarão sozinho; mas não estou sozinho, porque o Pai está comigo.
+
+**33** Disse estas coisas a vocês para que tenham paz em mim. No mundo terão aflição; mas tenham coragem: eu venci o mundo.
+
+### Capítulo 17
+
+**1** Jesus disse estas coisas; e, erguendo os olhos ao céu, disse: «Pai, chegou a hora. Glorifica o teu Filho, para que o Filho te glorifique.»
+
+**2** Como lhe deste poder sobre toda a carne, para que dê vida eterna a todos aqueles que lhe deste.
+
+**3** Esta é a vida eterna: que conheçam a ti, o único Deus verdadeiro, e a Jesus Cristo, a quem enviaste.
+
+**4** Eu te glorifiquei na terra, tendo acabado a obra que me deste para fazer.
+
+**5** E agora, glorifica-me tu, Pai, junto de ti mesmo, com a glória que tinha junto de ti antes que o mundo existisse.
+
+**6** Manifestei o teu nome aos homens que me deste do mundo. Eram teus, e tu mos deste; e guardaram a tua palavra.
+
+**7** Agora sabem que tudo o que me deste vem de ti.
+
+**8** Porque lhes dei as palavras que me deste, e eles as receberam, e conheceram verdadeiramente que saí de junto de ti, e creram que tu me enviaste.
+
+**9** Eu rogo por eles; não rogo pelo mundo, mas por aqueles que me deste, porque são teus.
+
+**10** Tudo o que é meu é teu, e o que é teu é meu; e neles sou glorificado.
+
+**11** Já não estou no mundo, mas eles estão no mundo, e eu vou para ti. Pai santo, guarda-os em teu nome, que me deste, para que sejam um, como nós somos.
+
+**12** Quando estava com eles, eu os guardava em teu nome, que me deste; e preservei-os, e nenhum deles se perdeu, a não ser o filho da ruína, para que a Escritura se cumprisse.
+
+**13** Agora vou para ti; e digo estas coisas no mundo para que tenham em si a minha alegria completa.
+
+**14** Eu lhes dei a tua palavra; e o mundo os odiou, porque não são do mundo, como eu não sou do mundo.
+
+**15** Não peço que os tires do mundo, mas que os guardes do mal.
+
+**16** Não são do mundo, como eu não sou do mundo.
+
+**17** Santifica-os na verdade; a tua palavra é verdade.
+
+**18** Como me enviaste ao mundo, também eu os enviei ao mundo.
+
+**19** E por eles eu me santifico a mim mesmo, para que também eles sejam santificados na verdade.
+
+**20** Não rogo só por estes, mas também por aqueles que, pela palavra deles, creem em mim.
+
+**21** Para que todos sejam um, como tu, Pai, estás em mim e eu em ti; para que também eles estejam em nós, a fim de que o mundo creia que tu me enviaste.
+
+**22** E eu dei-lhes a glória que me deste, para que sejam um, como nós somos um.
+
+**23** Eu neles e tu em mim, para que sejam levados à perfeita unidade, a fim de que o mundo conheça que tu me enviaste e os amaste como me amaste.
+
+**24** Pai, quero que os que me deste estejam comigo onde eu estou, para que vejam a minha glória, que me deste, porque me amaste antes da fundação do mundo.
+
+**25** Pai justo, o mundo não te conheceu, mas eu te conheci, e estes conheceram que tu me enviaste.
+
+**26** E dei-lhes a conhecer o teu nome, e darei a conhecer, para que o amor com que me amaste esteja neles, e eu neles.
 
 ## Notas
 
@@ -4708,6 +4832,293 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **15:27**
 
 - *μαρτυρεῖτε* (martyreite), «dai testemunho»; *ἀπʼ ἀρχῆς* (ap' archēs), «desde o princípio». O testemunho dos discípulos vem da companhia de Jesus desde o início.
+
+### Notas do capítulo 16
+
+**16:1**
+
+- *σκανδαλισθῆτε* (skandalisthēte), «tropecem»: o verbo descreve quem cai por causa de algo que não esperava. Jesus fala antes, para que a queda não aconteça na hora da prova.
+
+**16:2**
+
+- *ἀποσυναγώγους* (aposynagōgous), «expulsos da sinagoga»; *λατρείαν* (latreian), «culto». A violência será praticada em nome de Deus, e quem a pratica julgará servir-Lhe.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:2: sem variante no aparato. Na colação, 02 lê «*κυρίῳ*» («ao Senhor») em lugar de «*θεῷ*» («a Deus»); a base segue o texto da SBLGNT.
+
+**16:3**
+
+- *ἔγνωσαν* (egnōsan), «conheceram», aoristo: a falta de conhecimento vem do passado e explica a violência do presente.
+
+**16:4**
+
+- *μνημονεύητε* (mnēmoneuēte), «lembrem-se»; *ἐξ ἀρχῆς* (ex archēs), «desde o princípio». Jesus não precisava de dizer tudo enquanto estava com eles; agora diz, porque vai partir.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:4: a base lê «*αὐτῶν*» («delas»), com WH, Treg e NA28; RP e a NIV omitem a palavra, a NIV por escolha de tradução.
+
+**16:5**
+
+- *ἐρωτᾷ* (erōta), «pergunta»; *ὑπάγεις* (hypageis), «vais». A pergunta que não é feita mostra que a tristeza tomou o lugar da curiosidade.
+
+**16:6**
+
+- *λύπη* (lypē), «tristeza»; *πεπλήρωκεν* (peplērōken), «encheu», perfeito: o efeito permanece.
+
+**16:7**
+
+- *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Paráclito». A vinda do Espírito depende da partida de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:7: a base lê «*οὐ μὴ ἔλθῃ*», com WH e Treg; NA28 e RP leem «*οὐκ ἐλεύσεται*» («não virá»). RP acrescenta «*ἐγὼ*» depois de «*γὰρ*».
+
+**16:8**
+
+- *ἐλθὼν* (elthōn), «quando vier»; *ἐλέγξει* (elenxei), «convencerá, pôr em evidência». O verbo tem sentido de tribunal: o Espírito põe o mundo perante a verdade.
+
+**16:9**
+
+- *οὐ πιστεύουσιν* (ou pisteuousin), «não creem». A falta de fé é o pecado de que o Espírito convence.
+
+**16:10**
+
+- *δικαιοσύνης* (dikaiosynēs), «justiça». A justiça aparece na ida de Jesus para o Pai, e não em juízos humanos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:10: a base lê «*πατέρα*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*μου*» («meu»).
+
+**16:11**
+
+- *κέκριται* (kekritai), «já foi julgado», perfeito: a sentença já está dada.
+
+**16:12**
+
+- *βαστάζειν* (bastazein), «suportar, carregar»; *ἄρτι* (arti), «agora».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:12: a base lê «*ὑμῖν λέγειν*», com WH, Treg e NA28; RP lê «*λέγειν ὑμῖν*». A ordem das palavras não muda o sentido.
+
+**16:13**
+
+- *ὁδηγήσει* (hodēgēsei), «guiará»; *ἀκούσει* (akousei), «ouvirá»; *ἀναγγελεῖ* (anangelei), «anunciará». O Espírito não fala por si mesmo: ouve e anuncia.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:13: a base lê «*ἐν τῇ ἀληθείᾳ πάσῃ*», com NA28; WH e Treg leem «*εἰς τὴν ἀλήθειαν πᾶσαν*» («para a verdade toda»); RP lê «*εἰς πᾶσαν τὴν ἀλήθειαν*». A tradução segue a base. Em «*ἀκούσει*», a base lê com Treg e NA28; WH lê «*ἀκούει*» («ouve»); RP lê «*ἂν ἀκούσῃ*».
+
+**16:14**
+
+- *δοξάσει* (doxasei), «glorificará»; *λήμψεται* (lēmpsetai), «receberá», do que é de Jesus.
+
+**16:15**
+
+- *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia.
+
+**16:16**
+
+- *θεωρεῖτέ* (theōreite), «vedes»; *ὄψεσθέ* (opsesthe), «vereis», futuro. O verbo muda de tempo, mas a frase repete-se.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:16: a base lê «*οὐκέτι*», com WH, Treg e NA28; RP lê «*οὐ*». RP acrescenta, depois de «*με*», «*ὅτι ὑπάγω πρὸς τὸν πατέρα*» («porque vou para o Pai»), que os discípulos citam em 16:17.
+
+**16:17**
+
+- *εἶπαν* (eipan), «disseram»; *τί ἐστιν* (ti estin), «que é»: a pergunta repete a frase de Jesus sem a entender.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:17: a base lê «*Ὅτι*», com WH, Treg e NA28; RP acrescenta «*Ἐγὼ*» («eu») antes.
+
+**16:18**
+
+- *τί* (ti), «o que»; *λαλεῖ* (lalei), «fala»: os discípulos reconhecem que não entendem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:18: a base lê «*Τί ἐστιν τοῦτο*», com WH, Treg e NA28; RP lê «*Τοῦτο τί ἐστιν*». Em «*λέγει*», NA28 e RP acrescentam o artigo «*τὸ*».
+
+**16:19**
+
+- *ἔγνω* (egnō), «percebeu»; *ἤθελον* (ēthelon), «queriam»; *ἐρωτᾶν* (erōtan), «perguntar».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:19: a base lê «*ἔγνω*» sem acréscimo, com WH e Treg; NA28 acrescenta «*ὁ*» (artigo) e RP «*οὖν ὁ*».
+
+**16:20**
+
+- *κλαύσετε* (klausete), «chorareis»; *θρηνήσετε* (thrēnēsete), «lamentareis»; *χαρήσεται* (charēsetai), «alegrar-se-á». Contraste entre o luto dos discípulos e a alegria do mundo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:20: a base lê «*ὑμεῖς*», com WH, Treg e NA28; RP acrescenta «*δὲ*» («mas»).
+
+**16:21**
+
+- *τίκτῃ* (tiktē), «dá à luz»; *θλίψεως* (thlipseōs), «angústia»; *ἄνθρωπος* (anthrōpos), «ser humano», sem distinção de sexo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:21: sem variante no aparato. Na colação, 05 lê «*ἡμέρα*» («dia») em lugar de «*ὥρα*» («hora») e «*λύπης*» («tristeza») em lugar de «*θλίψεως*»; 𝔓66 lê também «*ἡμέρα*».
+
+**16:22**
+
+- *λύπην* (lypēn), «tristeza»; *ὄψομαι* (opsomai), «verei»; *αἴρει* (airei), «tira». A alegria não depende das circunstâncias.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:22: a base lê «*νῦν μὲν λύπην*», com WH, Treg e NA28; RP lê «*λύπην μὲν νῦν*». Em «*αἴρει*», a base lê com NA28 e RP; WH e Treg leem «*ἀρεῖ*», sem o prefixo.
+
+**16:23**
+
+- *ἐρωτήσετε* (erōtēsete), «perguntareis»; *αἰτήσητε* (aitēsēte), «pedirdes», subjuntivo com *ἄν*.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:23: a base lê «*ἄν τι*», com WH, Treg e NA28; RP lê «*ὅτι ὅσα ἄν*» («tudo o que»). A ordem de «*δώσει ὑμῖν ἐν τῷ ὀνόματί μου*» muda em WH e Treg.
+
+**16:24**
+
+- *ᾐτήσατε* (ētēsate), «pedistes», aoristo; *λήμψεσθε* (lēmpsesthe), «recebereis»; *πεπληρωμένη* (peplērōmenē), «completa».
+
+**16:25**
+
+- *παροιμίαις* (paroimiais), «parábolas, dizeres enigmáticos»; *παρρησίᾳ* (parrēsiai), «com franqueza»; *ἀπαγγελῶ* (apangelō), «anunciarei».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:25: a base lê «*ἔρχεται*», com WH, Treg e NA28; RP lê «*ἀλλʼ ἔρχεται*». Em «*ἀπαγγελῶ*», RP lê «*ἀναγγελῶ*», outro verbo para «anunciar».
+
+**16:26**
+
+- *αἰτήσεσθε* (aitēsesthe), «pedireis»; *ἐρωτήσω* (erōtēsō), «rogarei». Jesus não diz que pedirá por eles, porque eles mesmos pedirão em seu nome.
+- **Crítica Textual.** Aparato de edições SBLGNT: sem variante no aparato. Na colação, 01 e 032 leem «*αἰτήσασθαι*» em lugar de «*αἰτήσεσθε*».
+
+**16:27**
+
+- *φιλεῖ* (philei), «ama»; *πεφιλήκατε* (pephilēkate), «amastes», perfeito: o amor já existe e permanece; *ἐξῆλθον* (exēlthon), «saí».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:27: a base lê «*θεοῦ*» («de Deus»), com NA28 e RP; WH e Treg leem «*πατρός*» («do Pai»).
+
+**16:28**
+
+- *ἐξῆλθον* (exēlthon), «saí»; *ἀφίημι* (aphiēmi), «deixo». A saída e o regresso são ao Pai.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:28: a base lê «*ἐκ*» («de»), com WH e Treg; NA28 e RP leem «*παρὰ*» («de junto de»).
+
+**16:29**
+
+- *παροιμίαν* (paroimian), «parábola»; *παρρησίᾳ* (parrēsiai), «com franqueza»: os discípulos reconhecem que Jesus fala agora de modo direto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:29: a base lê «*Λέγουσιν*», com WH, Treg e NA28; RP acrescenta «*αὐτῷ*» («a ele»). RP omite «*ἐν*» antes de «*παρρησίᾳ*».
+
+**16:30**
+
+- *οἴδαμεν* (oidamen), «sabemos»; *χρείαν ἔχεις* (chreian echeis), «tens necessidade»; *ἐξῆλθες* (exēlthes), «saíste».
+- **Crítica Textual.** Na colação, 05 lê «*παρὰ*» em lugar de «*ἀπὸ*» («de»), sem mudar o sentido.
+
+**16:31**
+
+- *Ἄρτι πιστεύετε* (arti pisteuete), «agora credes?». A base lê como pergunta, e a tradução segue essa leitura.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:31: a base lê «*αὐτοῖς*», com WH, Treg e NA28; RP acrescenta o artigo «*ὁ*» antes de «*Ἰησοῦς*».
+
+**16:32**
+
+- *σκορπισθῆτε* (skorpisthēte), «sereis dispersos»; *ἀφῆτε* (aphēte), «deixareis»; *ἐστιν* (estin), «está». Jesus fala da dispersão para dizer que o Pai continua com ele.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:32: a base lê «*καὶ ἐλήλυθεν*», com WH, Treg e NA28; RP acrescenta «*νῦν*» («agora») no início da oração e lê «*καὶ ἐμέ*» em lugar de «*κἀμέ*».
+
+**16:33**
+
+- *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada.
+
+### Notas do capítulo 17
+
+**17:1**
+
+- *ἐπάρας* (eparas), «erguendo»; *δόξασόν* (doxason), «glorifica», imperativo; *ἐλήλυθεν* (elēlythen), «chegou», perfeito: a hora chegou e permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:1: a base lê «*ἐλάλησεν*», com WH, Treg e NA28; RP acrescenta «*ὁ*». A base tem «*ἐπάρας … εἶπεν*», com WH, Treg e NA28; RP lê «*ἐπῆρεν … καὶ εἶπεν*». RP acrescenta «*καὶ*» depois de «*ἵνα*» e «*σου*» depois de «*υἱὸς*».
+
+**17:2**
+
+- *ἐξουσίαν* (exousian), «poder, autoridade»; *δώσῃ* (dōsēi), «dê», subjuntivo depois de «*ἵνα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:2: a base lê «*δώσῃ*», com Treg e NA28; WH e RP leem «*δώσει*», futuro.
+
+**17:3**
+
+- *αἰώνιος* (aiōnios), «eterna»; *ἵνα γινώσκωσι* (hina ginōskōsi), «que conheçam». A vida eterna é definida como conhecimento, e não só como duração.
+- **Crítica Textual.** Na colação, 𝔓66 lê «*ἀπεπέμψας*» («enviaste») em lugar de «*ἀπέστειλας*», sinónimo, sem mudar o sentido.
+
+**17:4**
+
+- *τελειώσας* (teleiōsas), «tendo acabado», particípio aoristo: a obra está concluída antes da cruz.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:4: a base lê «*τελειώσας*», com WH, Treg e NA28; RP lê «*ἐτελείωσα*» («acabei»).
+
+**17:5**
+
+- *δόξασόν* (doxason), «glorifica»; *εἶχον* (eichon), «tinha»; *πρὸ τοῦ τὸν κόσμον εἶναι* (pro tou ton kosmon einai), «antes de o mundo existir».
+- **Crítica Textual.** Na colação, 05 lê «*γενέσθαι παρὰ σοί*» em lugar de «*εἶναι παρὰ σοί*» («existir», «estar junto de ti»); 𝔓66 acrescenta «*παρὰ σοί*».
+
+**17:6**
+
+- *ἐφανέρωσα* (ephanerōsa), «manifestei»; *τετήρηκαν* (tetērēkan), «guardaram», perfeito: a obediência dos discípulos permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:6: a base lê «*ἔδωκάς*» e «*ἔδωκας*», com WH, Treg e NA28; RP lê «*δέδωκάς*» e «*δέδωκας*», perfeito.
+
+**17:7**
+
+- *ἔγνωκαν* (egnōkan), «conhecem», perfeito: o conhecimento foi adquirido e permanece; *εἰσιν* (eisin), «são».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:7: a base lê «*δέδωκάς*», com Treg, NA28 e RP; WH lê «*ἔδωκάς*», aoristo. Em «*εἰσιν*», WH, Treg e NA28 leem «*εἰσιν*»; RP lê «*ἐστιν*».
+
+**17:8**
+
+- *ἔλαβον* (elabon), «receberam»; *ἐπίστευσαν* (episteusan), «creram»: receber e crer são dois passos descritos no texto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
+
+**17:9**
+
+- *ἐρωτῶ* (erōtō), «rogo»; *ὧν* (hōn), «daqueles que»: Jesus separa os discípulos do mundo, sem os tirar dele.
+
+**17:10**
+
+- *δεδόξασμαι* (dedoxasmai), «fui glorificado», perfeito: a glória já está presente nos discípulos.
+- **Crítica Textual.** Na colação, 01 lê «*ἐμοὶ αὐτοὺς ἔδωκας*» em lugar da primeira oração («o que é meu é teu»); 05 lê «*ἐδόξασάς με*» («me glorificaste») em lugar de «*δεδόξασμαι*».
+
+**17:11**
+
+- *πάτερ ἅγιε* (páter hagie), «Pai santo»; *τήρησον* (tērēson), «guarda»; *ἓν* (hen), «um», neutro: unidade, e não número de pessoas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:11: a base lê «*αὐτοὶ*» («eles»), com WH e NA28; Treg e RP leem «*οὗτοι*» («estes»). Em «*καθὼς*», a base lê com WH, NA28 e RP; Treg acrescenta «*καὶ*».
+
+**17:12**
+
+- *ἐτήρουν* (etēroun), «guardava», imperfeito: ação contínua no passado; *ἀπώλετο* (apōleto), «perdeu-se»; *ἀπωλείας* (apōleias), «ruína», o mesmo título de 2 Tessalonicenses 2:3.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:12: a base lê «*αὐτῶν*», com WH, Treg e NA28; RP acrescenta «*ἐν τῷ κόσμῳ*» («no mundo»). A base lê «*ᾧ*», com WH, Treg e NA28; RP lê «*οὓς*». A base tem «*καὶ*» antes de «*ἐφύλαξα*»; RP omite-o.
+
+**17:13**
+
+- *ἑαυτοῖς* (heautois), «em si», reflexivo; *πεπληρωμένην* (peplērōmenēn), «completa».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:13: a base lê «*ἑαυτοῖς*», com WH, Treg e NA28; RP lê «*αὐτοῖς*», sem o reflexivo.
+
+**17:14**
+
+- *ἐμίσησεν* (emisēsen), «odiou»; *εἰσὶν* (eisin), «são»: o mundo odeia porque os discípulos não são do mundo.
+- **Crítica Textual.** Na colação, 05 omite «*καθὼς ἐγὼ οὐκ εἰμὶ ἐκ τοῦ κόσμου*» («como eu não sou do mundo»).
+
+**17:15**
+
+- *ἄρῃς* (arēs), «tires»; *τηρήσῃς* (tērēsēs), «guardes»; *πονηροῦ* (ponērou), «do mal» (pode ser também «do maligno»).
+- **Crítica Textual.** Na colação, 03 omite «*κόσμου ἀλλʼ ἵνα τηρήσῃς αὐτοὺς ἐκ τοῦ*», por salto entre expressões semelhantes.
+
+**17:16**
+
+- *εἰσὶν* (eisin), «são», como em 17:14: a frase repete-se para sublinhar a separação.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:16: a base lê «*οὐκ εἰμὶ ἐκ τοῦ κόσμου*», com WH, Treg e NA28; RP inverte a ordem para «*ἐκ τοῦ κόσμου οὐκ εἰμὶ*».
+
+**17:17**
+
+- *ἁγίασον* (hagiason), «santifica, consagra»; *ἀλήθειά* (alētheia), «verdade». A palavra do Pai é a verdade que santifica.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:17: a base lê «*ἀληθείᾳ*», com WH, Treg e NA28; RP acrescenta «*σου*» («a tua»).
+
+**17:18**
+
+- *ἀπέστειλας* (apesteilas), «enviaste»; *ἀπέστειλα* (apesteila), «enviei». Jesus liga o envio dos discípulos ao seu próprio envio.
+- **Crítica Textual.** Na colação, 𝔓66 omite «*κἀγὼ ἀπέστειλα αὐτοὺς εἰς τὸν κόσμον*» («também eu os enviei ao mundo»); 03 repete «*εἰς τὸν κόσμον, κἀγὼ ἀπέστειλα αὐτούς*».
+
+**17:19**
+
+- *ἁγιάζω* (hagiazō), «santifico, consagro»; *ἡγιασμένοι* (hēgiasmenoi), «santificados», perfeito: a consagração dos discípulos liga-se à de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:19: a base lê «*ὦσιν καὶ αὐτοὶ*», com WH, Treg e NA28; RP lê «*καὶ αὐτοὶ ὦσιν*».
+
+**17:20**
+
+- *πιστευόντων* (pisteuontōn), «dos que creem»; *διὰ τοῦ λόγου αὐτῶν* (dia tou logou autōn), «pela palavra deles»: a oração alarga-se aos futuros crentes.
+- **Crítica Textual.** Na colação, KJTR, ST e Scrivener leem «*πιστευσόντων*» («dos que hão de crer») em lugar de «*πιστευόντων*»; 032 lê «*ὑπὲρ*» em lugar de «*περὶ*» (ambos «por»).
+
+**17:21**
+
+- *ἓν ὦσιν* (hen ōsin), «sejam um»; *πιστεύῃ* (pisteuē), «creia», subjuntivo. A unidade é o meio de o mundo crer.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:21: a base lê «*πάτερ*», com WH, NA28 e RP; Treg lê «*πατήρ*». A base lê «*ἡμῖν*», com WH, Treg e NA28; RP acrescenta «*ἓν*». A base lê «*πιστεύῃ*», com WH, Treg e NA28; RP lê «*πιστεύσῃ*».
+
+**17:22**
+
+- *τὴν δόξαν* (tēn doxan), «a glória»; *δέδωκα* (dedōka), «dei», perfeito: a glória foi dada e permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:22: a base lê «*ἕν*», com WH, Treg e NA28; RP acrescenta «*ἐσμεν*» («somos») depois de «*ἕν*».
+
+**17:23**
+
+- *τετελειωμένοι* (teteleiōmenoi), «levados à perfeição», perfeito: a unidade é completa; *ἠγάπησας* (ēgapēsas), «amaste», aoristo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:23: a base lê «*ἵνα*», com WH, Treg e NA28; RP acrescenta «*καὶ*» antes de «*ἵνα*».
+
+**17:24**
+
+- *θέλω* (thelō), «quero»: é uma vontade expressa, e não um pedido formal; *θεωρῶσιν* (theōrōsin), «vejam»; *πρὸ καταβολῆς κόσμου* (pro katabolēs kosmou), «antes da fundação do mundo».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:24: a base lê «*πάτερ*», com WH, NA28 e RP; Treg lê «*Πατήρ*». A base lê «*ὃ*» («aquilo que»), com WH, Treg e NA28; RP lê «*οὕς*» («os que»). A base lê «*δέδωκάς*», com WH, Treg e NA28; RP lê «*ἔδωκάς*».
+
+**17:25**
+
+- *δίκαιε* (dikaie), «justo»; *ἔγνων* (egnōn), «conheci», aoristo; *ἔγνωσαν* (egnōsan), «conheceram».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:25: a base lê «*Πάτερ*», com WH, NA28 e RP; Treg lê «*Πατὴρ*». Na colação, 05 lê «*ἔγνωκα*» (perfeito) em lugar de «*ἔγνων*».
+
+**17:26**
+
+- *ἐγνώρισα* (egnōrisa), «dei a conhecer», aoristo; *γνωρίσω* (gnōrisō), «darei a conhecer», futuro: a revelação do nome continua; *ἠγάπησάς* (ēgapēsas), «amaste».
+- **Crítica Textual.** Na colação, 05 lê «*ἡ*» (nominativo) em lugar de «*ἣν*» (acusativo do relativo); 𝔓66 faz a troca inversa.
 
 ---
 

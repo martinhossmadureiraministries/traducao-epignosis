@@ -62,9 +62,11 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   4:1 aprovado com «Jesus» na tradução; a alternativa «o Senhor» fica na nota.
 - **Pendências do livro:** 5:42, com a forma da testemunha 02 por confirmar no manuscrito (CT
   provisória); 13:27 e 12:50 já aprovados. Para revisão especializada, ver abaixo.
-- **16–21:** por escrever na edição. Há uma primeira redação não revista em
-  `arquivo/rascunhos_joao/500_Joao_12-21_nao_revisto.json` (16–21 no registo anterior,
-  sem a revisão de cadência); não entra na edição nem no `JOAO.md`. Cada capítulo será escrito e apresentado ao responsável um de cada vez.
+- **16–17:** prosa em rascunho (bloco de 2 capítulos, 16 com 33 versículos e 17 com 26). Crítica
+  Textual a partir do aparato da SBLGNT e da colação; confronto com o grego feito na redação.
+  Aguarda leitura do responsável. Pendente: a forma exata de 16:13 e 16:21 nas testemunhas.
+- **18–21:** por escrever na edição. Próximo bloco depois de 16–17.
+- **5:42:** a forma da testemunha 02 continua por confirmar no manuscrito (CT provisória).
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
 - O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
