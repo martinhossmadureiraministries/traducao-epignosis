@@ -7,7 +7,7 @@ versões populares? Onde coincide, onde difere — e difere porquê?
 **Método.** Doze passagens dos sete livros da edição nova, lado a lado com
 cinco versões de grande circulação: Almeida Revista e Corrigida (ARC),
 Almeida Corrigida Fiel (ACF), Nova Versão Internacional (NVI), Nova Tradução
-na Linguagem de Hoje (NTLH) e a Almeida de 1911 (ALM1911). As citações são
+na Linguagem de Hoje (NTLH), a Almeida de 1911 (ALM1911), a Tradução Ecumênica da Bíblia (TEB) e a Bíblia de Jerusalém (BJ). A TEB e a BJ entram na comparação desde 2026-11-24; os seus textos devem ser confirmados na edição impressa antes de qualquer publicação. As citações são
 curtas e servem só a esta comparação de estudo: ARC, ACF, NVI e NTLH
 pertencem às suas editoras; a ALM1911 está em domínio público. Os textos de
 comparação foram lidos de uma compilação pública de dados bíblicos e não são
@@ -75,12 +75,11 @@ sem maiúscula reverencial (regra da casa), e «que vem do Pai» por
 | ACF | Deus nunca foi visto por alguém. O Filho unigênito, que está no seio do Pai, esse o revelou. |
 | NVI | Ninguém jamais viu a Deus, mas o Deus Unigênito, que está junto do Pai, o tornou conhecido. |
 | NTLH | Ninguém nunca viu Deus. Somente o Filho único, que é Deus e está ao lado do Pai, foi quem nos mostrou quem é Deus. |
-| **BEE** | **Ninguém jamais viu a Deus; Deus, o unigénito, que está no seio do Pai, o revelou.** |
+| **BEE** | **Ninguém jamais viu a Deus. O unigénito, que é Deus, está junto do Pai, e é quem o deu a conhecer.** |
 
 Todas as Almeida leem «o Filho unigênito» porque seguem o texto bizantino
 (*ὁ μονογενὴς υἱός*, RP). A base fixada lê *μονογενὴς θεός* (WH, Tregelles,
-NA28) e a BEE segue a base: «Deus, o unigénito». É a NVI que aqui está mais
-perto da BEE («o Deus Unigênito»). Diferença de texto-fonte, não de gosto:
+NA28) e a BEE segue a base: «O unigénito, que é Deus», com «Deus» em aposição. A NVI, a ARA e a NAA leem «o Deus unigênito», sem aposição, e são a alternativa mais próxima. Diferença de texto-fonte, não de gosto:
 está registada na nota do versículo.
 
 ### João 1:29

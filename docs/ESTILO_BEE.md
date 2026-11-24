@@ -281,3 +281,54 @@ editorial, não saída de modelo, e o livro continua RASCUNHO: a voz da versão
 anterior tinha sido aprovada, esta redação ainda não foi lida pelo responsável.
 
 **Gente / pessoas.** Usar «gente» quando se ouve ou vê um conjunto (Mq 2:12); preferir «pessoas» quando se contam indivíduos (Jn 4:11). Não trocar «povo» por «gente» quando está em causa a identidade de uma comunidade. Evitar «essa gente» se introduzir desprezo que não vem do texto.
+
+## Convenções de notas — fixadas na revisão de João 1–15
+
+Estas convenções saíram da revisão de João e valem para todos os livros novos e para
+as correções dos já aprovados. `scripts/verificar_convencoes_notas.py` confere as
+que se verificam sem ler o grego.
+
+1. **Nomes e termos fixos.** O Espírito é «Paráclito» com acento (como em 14:16, 14:26
+   e 15:26). O grego é παράκλητος, *paráklētos* (acento no primeiro «a»); o acusativo
+   é *paraklēton*. «Paracletos» e «Parakletós» não se usam.
+2. **NIV é tradução, nunca testemunha.** Na Crítica Textual, a NIV só aparece quando
+   diverge da base, como escolha de tradução: «a NIV segue essa leitura por escolha de
+   tradução» ou «a NIV omite a palavra, por escolha de tradução». Quando concorda com a
+   base ou com um dos editores, não se cita.
+3. **Crítica Textual.** Um parágrafo próprio, «Crítica Textual:», uma só vez por
+   versículo. Cita WH, Treg, NA28, RP e as testemunhas da colação que diferem; diz o que
+   a variante muda; diz porque a base foi seguida. Quando a variante só existe na
+   colação (aparato vazio), diz-se que o aparato da SBLGNT não regista variante. Os
+   sinais de aparato (⸀ ⸁ ⸂ ⸃) não entram na nota.
+4. **«a base».** Depois dos dois pontos do aparato, «a base» em minúscula
+   («Aparato de edições SBLGNT, 9:8: a base lê…»). Com maiúscula só no início de frase.
+5. **Português europeu nas notas.** «leem» (não «lêm»), «regista» (não «registra»),
+   «contacto», «facto», «secção», «ativa» e «receção» conforme a norma do projeto. Formas
+   brasileiras só dentro de citação de outra tradução, entre aspas.
+6. **Transliteração.** Itálico para o grego, com a transliteração entre parênteses na
+   primeira ocorrência. Minúsculas nas formas gregas (*huios*, não *Huios*). Vogais
+   longas com macron ou circunflexo na transliteração (*melleis*, *paraklēton*).
+7. **Decisões do responsável.** Só o responsável aprova. Cada aprovação fica na nota do
+   bloco (`review.editorial_blocks`), com o que foi alterado depois dela. Mudança de
+   texto de versículo já aprovado fica registada na nota do bloco, com o motivo.
+8. **Escolhas de texto em aberto.** Quando a escolha é substantiva (ex.: 4:1, «Jesus» ou
+   «o Senhor»), a nota diz qual é a leitura da base e qual é a alternativa, e o bloco
+   fica com a nota «para decisão». A tradução segue a base até decisão contrária.
+
+## Lista de verificação para cada capítulo novo
+
+1. Ler o original (SBLGNT) e a colação (`docs/colacao/João.json`, ou o equivalente do livro)
+   antes de redigir. Para cada versículo, confrontar `divergencias` com a Crítica Textual.
+2. Redigir o texto e uma nota em prosa por versículo, sem rótulos, com o grego em itálico
+   e a transliteração na primeira ocorrência.
+3. Conferir a Crítica Textual: uma só, em parágrafo próprio, sem sinais de aparato, com as
+   siglas e as testemunhas que diferem, e com a NIV só como escolha de tradução.
+4. Correr as verificações: `python3 scripts/verificar_dados.py`,
+   `python3 scripts/verificar_estilo.py`, `python3 scripts/verificar_convencoes_notas.py`,
+   `python3 scripts/verificar_notas_colacao.py --dados edicoes/nova/livros_json --colacao docs/colacao/João.json`
+   (para João), `python3 -m unittest discover -s tests`, e o verificador ortográfico
+   com `pyspellchecker` instalado (alerta; confirmar à mão).
+5. Listar para o responsável as passagens que precisam de decisão, com a leitura da base e
+   a alternativa. Não aprovar nem marcar aprovação em nome dele.
+6. Regenerar a leitura do livro (`scripts/gerar_leitura_livro.py`), atualizar `docs/ESTADO.md`
+   e fazer commit no ramo de trabalho.

@@ -23,6 +23,8 @@ de processo antigos estão em `docs/arquivo/`.
 - **Sem automação de produção.** O repositório não tem workflows de GitHub Actions. O
   responsável retirou-os; não se recriam nem se reativam sem decisão dele.
 - **Ortografia europeia** (pt-PT): «connosco», «de facto», «registo», «facto», «ação».
+  - **Norma decidida pelo responsável:** Acordo de 1990 (AO90) em toda a edição. Angola não ratificou o acordo; a escolha é editorial, não oficial. Formas: «ação», «aspeto», «atividade», «ato», «perceção», «receção», «aceção», «rutura», «leãozinhos».
+  - **Acréscimos no texto:** itálico `<i>…</i>` (regra de `docs/EDITORIAL.md`). Colchetes só para evidência de manuscritos.
 
 ## Estado dos livros (edição nova, `edicoes/nova/livros_json/`)
 
@@ -36,7 +38,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 | 1–4 rascunho; 5–6 aprovado; 7–10 rascunho | pendente |
+| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 em revisão (12:6 aprovado com «levava»); 14–15 rascunho (14:22 com a opção «te vás manifestar») | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -49,7 +51,7 @@ de processo antigos estão em `docs/arquivo/`.
 Total: 59 capítulos e 1329 versículos, todos em prosa. Números de `scripts/verificar_dados.py`.
 
 **Quem aprovou o quê.** Os oito livros do AT e Filipenses estão aprovados editorialmente
-pelo responsável. João 5–6 foram aprovados em 2026-11-23. Os restantes estão em rascunho.
+pelo responsável. João 1–8 foram aprovados pelo responsável em 2026-11-24 («Aprovo todos os 1-8 com as alterações que fizeste»). A Crítica Textual de 1–8 foi completada depois dessa aprovação, a pedido do responsável; fica registada no `history`. João 9–11 e 13 foram aprovados pelo responsável na sessão de revisão de 9–13; o capítulo 12 está em revisão: 12:6 aprovado com «levava», e 12:7 e o resto do capítulo por rever. Os restantes estão em rascunho.
 Os blocos 7–10 apareceram marcados como aprovados no ficheiro em 2026-11-20, sem registo
 de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaixo).
 
@@ -59,20 +61,33 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   contra `docs/colacao/João.json` em 2026-11-20. As glosas das formas isoladas foram
   conferidas com o Dodson e o Abbott-Smith (ver `docs/EDITORIAL.md`, «Léxico»).
 - **5–6:** aprovados pelo responsável em 2026-11-23.
-- **7–10:** prosa em rascunho. Pendente: leitura do responsável; verificação versículo
-  a versículo de 8:9, 8:11, 8:41, 9:1–41 e 10:29 contra o aparato e a colação. Estes
-  versículos têm variantes com decisão difícil. Só depois de lidos e verificados
-  podem ser aprovados.
+- **7–10:** prosa em rascunho. Verificados versículo a versículo contra o aparato e a
+  colação: 8:9, 8:11, 8:41, 9:1–41 e 10:29. Corrigidos nessa verificação: em 10:29 a
+  tradução passa a «O meu Pai» (a base tem «ὁ πατήρ μου») e a CT regista a variante
+  «μοι» / «αὐτὰ» (NIV); em 9:35 e 10:36 (e 1:51) a maiúscula de «υἱός» a meio da frase
+  passa a minúscula. Todas as CT de 7–10 conferem com o aparato da colação. Pendente:
+  leitura do responsável; só depois podem ser aprovados.
+- **11:** prosa em rascunho (bloco 1 do trabalho por capítulos, 2026-11-24). Gravado
+  com 57 versículos e 26 com CT. Registo: «vocês», com cadência elevada (decisão do
+  responsável, 2026-11-24); revisto nessa linha em 14 versículos. Pendente: leitura do responsável.
+- **12 e 13:** prosa em rascunho (bloco 2, 2026-11-24; registo elevado). 12 com 50
+  versículos e 27 com CT; 13 com 38 versículos e 26 com CT. Pendente: leitura do responsável.
+- **14 e 15:** prosa em rascunho (bloco 3, 2026-11-24; registo elevado). 14 com 31
+  versículos e 21 com CT; 15 com 27 versículos e 16 com CT. Pendente: leitura do responsável.
+- **16–21:** por escrever na edição. Há uma primeira redação não revista em
+  `arquivo/rascunhos_joao/500_Joao_12-21_nao_revisto.json` (16–21 no registo anterior,
+  sem a revisão de cadência); não entra na edição nem no `JOAO.md`. Cada capítulo será escrito e apresentado ao responsável um de cada vez.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
-- O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-20
+- O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
   (`scripts/gerar_leitura_livro.py --livro 500`).
 
 ## Cartas
 
 Filemom, Tito, Judas, 2 João, 3 João e 2 Tessalonicenses estão em prosa, gravadas e
 conferidas com a colação respetiva (`scripts/verificar_notas_colacao.py`, rc 0).
-Todos os blocos estão em `rascunho`, à espera de leitura. Em 2 Tessalonicenses as notas
+Todos os blocos estão em `rascunho`, à espera de leitura. Decisão do responsável: a prosa
+gravada em 2 Tessalonicenses basta; não há conteúdo a restaurar. Em 2 Tessalonicenses as notas
 recuperaram o conteúdo editorial verificado da versão anterior: 1:2 (sem «nosso», seguindo
 a base), 1:11–12, 2:2, 2:13 (ἀπαρχήν, com a alternativa ἀπʼ ἀρχῆς), 3:6 (anártrico e
 terceira pessoa de παρελάβοσαν), 3:16 (τόπῳ/τρόπῳ). Não há níveis de certeza impressos.
@@ -110,8 +125,8 @@ Blocos em `rascunho`. Aguarda leitura do responsável.
    pelo responsável nem pelo agente.
 4. **João 1–4:** léxico conferido; falta a leitura do responsável.
 5. **`colacao/João.md`:** a versão em Markdown da colação ainda não foi revista.
-6. **Commit e merge:** o trabalho de 2026-11-20 está por commitar no ramo
-   `arena/86a50674-traducao-epignosis`, em conjunto com as alterações desta reescrita.
+6. **Ramo:** o trabalho de formato foi integrado em `main` (PR #71). O trabalho seguinte
+   faz-se no ramo de cada sessão.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 
 ## Nota sobre João 7–10 (2026-11-20)
@@ -119,3 +134,7 @@ Blocos em `rascunho`. Aguarda leitura do responsável.
 O ficheiro chegou a ter os blocos 7–10 marcados como `aprovado`, com uma nota que dizia
 «aprovado pelo responsável após leitura». Não há registo de aprovação do responsável que a suporte. Foi revertida para `rascunho`, com a nota anterior, e o texto e as notas
 ficaram intactos (backup em `/tmp/conv/500_Joao.antes_reverte710.json`, efémero).
+
+## Correções em livros já aprovados (revisão de outros livros)
+
+Feitas nesta sessão, sem alterar a aprovação de nenhum livro: NIV reformulada como escolha de tradução onde diverge da base, e retirada onde concorda, em Filipenses (1:14, 3:13), 1 Tessalonicenses (2:7, 2:16, 3:13, 4:11), 2 Tessalonicenses (1:2, 2:13, 3:6), Tito (1:10) e Judas (1:15); sinais de aparato e aparato em bruto retirados (Filipenses 2:4); frase de processo «Sem colação direta de manuscritos nesta entrega» retirada das notas (45 notas; a limitação fica no JSON); ortografia PT-PT («perceção», «receção», «aceção», «ativa», «leem»); «ambiguar» (2 Tess 2:9) substituído por uma frase. Alteração de texto: 13:27 («faz-o», em vez de «faze-o»). Lista para aprovação: `docs/revisao/APROVACAO_PENDENTE.md`.
