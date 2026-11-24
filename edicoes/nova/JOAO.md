@@ -25,7 +25,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 | 17 | aprovado | 26 |
 | 18 | aprovado | 40 |
 | 19 | aprovado | 42 |
-| 20 | rascunho | 31 |
+| 20 | aprovado | 31 |
 | 21 | aprovado | 25 |
 
 ## Texto
@@ -1744,7 +1744,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **14** Depois de dizer isto, voltou-se para trás e viu Jesus de pé, mas não sabia que era Jesus.
 
-**15** Jesus disse-lhe: «Mulher, porque choras? A quem procuras?» Ela, pensando que era o hortelão, disse-lhe: «Senhor, se foste tu que o levaste, diz-me onde o puseste, e eu vou buscá-lo.»
+**15** Jesus disse-lhe: «Mulher, porque choras? A quem procuras?» Ela, pensando que era o jardineiro, disse-lhe: «Senhor, se foste tu que o levaste, diz-me onde o puseste, e eu vou buscá-lo.»
 
 **16** Jesus disse-lhe: «Maria!» Ela voltou-se e disse-lhe em hebraico: «Rabôni!», que quer dizer meu mestre.
 
@@ -3276,7 +3276,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **7:8**
 
-- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH e RP dizem «ainda não», e a NIV traduz assim. A frase parece contradizer o versículo 10, onde Jesus sobe depois. A nota não resolve a contradição: o texto distingue o tempo de Jesus do tempo dos irmãos.
+- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH e RP dizem «ainda não», e a NIV segue essa leitura por escolha de tradução. A frase parece contradizer o versículo 10, onde Jesus sobe depois; o texto distingue o tempo de Jesus do tempo dos irmãos.
 - **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH e RP leem «*οὔπω*» («ainda não»), e a NIV segue essa leitura por escolha de tradução. A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» depois de «*ἑορτήν*».
 
 **7:9**
@@ -5885,7 +5885,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **20:15**
 
-- *κηπουρός* (kēpouros), «hortelão», a pessoa que cuida do jardim; *ἐβάστασας* (ebastasas), «levaste», aoristo de *βαστάζω*; *κἀγὼ αὐτὸν ἀρῶ* (kagō auton arō), «eu o levarei»: Maria oferece-se para levar o corpo. A ironia da cena está em o leitor saber quem fala.
+- *κηπουρός* (kēpouros), «jardineiro», a pessoa que cuida do jardim; *ἐβάστασας* (ebastasas), «levaste», aoristo de *βαστάζω*; *κἀγὼ αὐτὸν ἀρῶ* (kagō auton arō), «eu o levarei»: Maria oferece-se para levar o corpo. A ironia da cena está em o leitor saber quem fala.
 - **Crítica Textual.** O aparato da SBLGNT regista, em RP, a palavra «*ὁ*» antes de «*Ἰησοῦς*» («o Jesus»); WH, Treg e NA28 não a têm. A base não tem o artigo, e a diferença não muda a leitura. Na colação, 032 lê «*αὐτὸ κἀγὼ ἀρῶ*» (levarei-o) em lugar de «*κἀγὼ αὐτὸν ἀρῶ*», com o objeto antes do verbo. Não altera o sentido.
 
 **20:16**
@@ -6043,7 +6043,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **21:15**
 
 - *ἠρίστησαν* (ēristēsan), «acabaram de comer»; *ἀγαπᾷς* (agapas), «amas», de *ἀγαπάω*; *φιλῶ* (philō), «quero bem», de *φιλέω*; *πλέον τούτων* (pleon toutōn), «mais do que estes», ou «mais do que isto», as duas leituras são possíveis; *βόσκε* (boske), «apascenta», e *ἀρνία* (arnia), «cordeiros». A tradução marca a passagem entre os verbos: Jesus pergunta com «amar», e Pedro responde com «querer bem».
-- **Crítica Textual.** O aparato da SBLGNT regista «*Ἰωάννου*» (de João) com WH, Treg e NA28, e «*Ἰωνᾶ*» (Jonas) com RP, outra forma do nome do pai de Simão. Na colação, 032 lê «*πλεῖον παντῶν*» (mais do que todos) em lugar de «*πλέον τούτων*», e 04 lê «*πρόβατα*» (ovelhas) em lugar de «*ἀρνία*» (cordeiros). A base mantém «cordeiros». A forma «*τούτων*» pode ser masculina («estes», os outros discípulos) ou neutra («estas coisas»); a tradução escolhe «estes», e a outra leitura fica como decisão do responsável.
+- **Crítica Textual.** O aparato da SBLGNT regista «*Ἰωάννου*» (de João) com WH, Treg e NA28, e «*Ἰωνᾶ*» (Jonas) com RP, outra forma do nome do pai de Simão. Na colação, 032 lê «*πλεῖον παντῶν*» (mais do que todos) em lugar de «*πλέον τούτων*», e 04 lê «*πρόβατα*» (ovelhas) em lugar de «*ἀρνία*» (cordeiros). A base mantém «cordeiros». A forma «*τούτων*» pode ser masculina («estes», os outros discípulos) ou neutra («estas coisas»); a tradução escolhe «estes», porque são pessoas, e «mais do que isto» fica afastado. Decisão do responsável.
 
 **21:16**
 

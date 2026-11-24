@@ -6,26 +6,19 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
 
-**Atualizado (21):** 21 aprovado pelo responsável; 20 continua em rascunho, com 20:15 «hortelão/jardineiro» em aberto. NIV aprovada: as notas de 18–19 e capítulos anteriores que a mencionam como escolha de tradução ficam aprovadas.
+**Atualizado (20–21):** 20 e 21 aprovados pelo responsável; 20:15 «jardineiro»; grafias «Getsêmani», «Gólgota», «Arimateia», «Clopas» e «Madalena» aprovadas. NIV aprovada: as notas de 18–19 e capítulos anteriores que a mencionam como escolha de tradução ficam aprovadas.
 
 **Atualizado (16–19):** 16 e 17 aprovados pelo responsável, com 16:25 e 16:29 «com clareza». 18 e 19 aprovados pelo responsável; leitura em `docs/revisao/JOAO_18_19.md`.
 
 **Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 foi confirmada na transcrição do CNTR.
 
-### João 21 — aprovado
+### João 20–21 — aprovados
 
-**Texto e leitura:** `docs/revisao/JOAO_20_21.md`. Aprovado pelo responsável (21:1–25). Antes da aprovação, a Crítica Textual foi conferida com a colação.
+**Texto e leitura:** `docs/revisao/JOAO_20_21.md`. Aprovados pelo responsável.
 
-### João 20 — rascunho, por aprovar
+**Decisões registadas:** 20:15 «jardineiro» (não «hortelão»); 20:17 «Não me segures»; 21:15 «mais do que estes»; 21:15–17 «amas-me» e «queres-me bem».
 
-**Texto e leitura:** `docs/revisao/JOAO_20_21.md`. 31 versículos, redigidos a partir do aparato SBLGNT e da colação; nada aprovado.
-
-**Pontos para decisão:**
-- 20:15: «hortelão» ou «jardineiro» (*κηπουρός*). **Em aberto**, a pedido do responsável; ver as distinções angolanas (jardim, horta, lavra, fazenda).
-- 20:17: «Não me segures» (escolhido) ou «Não me toques» (leitura mais literal de *ἅπτου*).
-- 21:15: «mais do que estes» (escolhido) ou «mais do que isto».
-
-**Pergunta:** Aprova o capítulo 20 com estas escolhas, ou quer decidir 20:15 primeiro?
+**Por confirmar na fonte (sem efeito na aprovação):** 21:16–17, a colação dá WH com «*προβάτια*» e o aparato dá «*πρόβατα*»; a base mantém «*πρόβατα*».
 ---
 
 ### João 4:1 — aprovado (Jesus)

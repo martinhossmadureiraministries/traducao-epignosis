@@ -387,6 +387,64 @@
         500
       ],
       "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Γεθσημανῆ",
+      "transliteracao": "",
+      "usar": "Getsêmani",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Γολγοθᾶ",
+      "transliteracao": "",
+      "usar": "Gólgota",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Ἀριμαθαία",
+      "transliteracao": "",
+      "usar": "Arimateia",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Κλωπᾶς",
+      "transliteracao": "",
+      "usar": "Clopas",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Μαγδαληνή",
+      "transliteracao": "",
+      "usar": "Madalena",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
     }
   ],
   "rejeitados": [
