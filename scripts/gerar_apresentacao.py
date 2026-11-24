@@ -220,9 +220,9 @@ def construir(livros: list[dict] | None = None):
     lista([
         f'Revisão especializada dos {len(livros)} livros, por especialista externo.',
         f'Revisão aprovada pelo ministério: faltam {len(livros) - n_ministerio} livros com edição nova.',
-        'Próximo livro: 2 Pedro (61 versículos), com a colação já gerada. A ordem das cartas '
-        'segue os livros menores primeiro, com prioridade para os que fixam a voz e o vocabulário '
-        '(ver docs/PROXIMO_LIVRO.md).',
+        'Próximo livro: 1 Pedro (105 versículos), com colação gerada e variantes decididas; texto ainda por redigir. '
+        'A ordem das cartas segue os livros menores primeiro, com prioridade para os que fixam a voz '
+        'e o vocabulário (ver docs/RESUMO_ESTILO.md, secção 10).',
         f'{total_livros - len(livros)} livros do catálogo ainda sem edição nova, incluindo o Antigo '
         'Testamento inteiro.',
         'Passagens em aberto registadas no repositório, por exemplo Marcos 16:9–20.',
