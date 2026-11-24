@@ -4,6 +4,8 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 ## 1. João — decisões e versículos alterados nesta revisão
 
+**Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 continua por confirmar.
+
 ### João 4:1 — escolha substantiva
 
 **Texto:** Quando Jesus soube que os fariseus tinham ouvido que ele fazia e batizava mais discípulos do que João —

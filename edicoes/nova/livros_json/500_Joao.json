@@ -4546,14 +4546,14 @@
         "verse_from": 1,
         "verse_to": 51,
         "status": "aprovado",
-        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Continua RASCUNHO até leitura e aprovação do responsável; revisão especializada pendente. Revisão de 2026-11-24 (decisões do responsável): 1:3 (frase final), 1:12 (direito, «virem a ser»), 1:15 e 1:30 (ficou à minha frente), 1:18 (o unigénito, que é Deus), 1:34 (escolhido de Deus, com nota). Base SBLGNT mantida; NA28 como segunda referência. Aprovado pelo responsável em 2026-11-24."
+        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Continua RASCUNHO até leitura e aprovação do responsável; revisão especializada pendente. Revisão de 2026-11-24 (decisões do responsável): 1:3 (frase final), 1:12 (direito, «virem a ser»), 1:15 e 1:30 (ficou à minha frente), 1:18 (o unigénito, que é Deus), 1:34 (escolhido de Deus, com nota). Base SBLGNT mantida; NA28 como segunda referência. Aprovado pelo responsável em 2026-11-24. Aprovados pelo responsável, nesta revisão: 1:22 e 1:36 com a Crítica Textual só da colação, como estão."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 25,
         "status": "aprovado",
-        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Aprovado pelo responsável em 2026-11-24, após as alterações de 2:4, 2:10 e 2:24; revisão especializada pendente."
+        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Aprovado pelo responsável em 2026-11-24, após as alterações de 2:4, 2:10 e 2:24; revisão especializada pendente. Aprovados pelo responsável, nesta revisão: 2:16 e 2:18 com a Crítica Textual só da colação, como estão."
       },
       {
         "chapter": 3,
@@ -4567,21 +4567,21 @@
         "verse_from": 1,
         "verse_to": 54,
         "status": "aprovado",
-        "nota": "Capítulo completo (54 versículos). foram lapidados em 2026-11-20 por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato da SBLGNT e da colação CNTR, capítulos 1–4, com níveis de certeza; registo «vocês», gerúndio e pontuação normalizados). Aprovado pelo responsável após revisão do capítulo 4 (correções de notas aplicadas; sigla NIV em 4:1 ainda por confirmar)."
+        "nota": "Capítulo completo (54 versículos). foram lapidados em 2026-11-20 por scripts/lapidar_joao34.py (Crítica Textual refeita do aparato da SBLGNT e da colação CNTR, capítulos 1–4, com níveis de certeza; registo «vocês», gerúndio e pontuação normalizados). Aprovado pelo responsável após revisão do capítulo 4 (correções de notas aplicadas; sigla NIV em 4:1 ainda por confirmar). Aprovado pelo responsável, nesta revisão: 4:1 mantém «Jesus» (leitura da base); a leitura «o Senhor» fica como alternativa na nota, por decisão do responsável."
       },
       {
         "chapter": 5,
         "verse_from": 1,
         "verse_to": 47,
         "status": "aprovado",
-        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente."
+        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente. Aprovado pelo responsável, nesta revisão: Crítica Textual de 5:42 reescrita conforme a colação. A forma da testemunha 02 continua por confirmar no manuscrito."
       },
       {
         "chapter": 6,
         "verse_from": 1,
         "verse_to": 71,
         "status": "aprovado",
-        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente. Aprovado pelo responsável (2026-11-20)."
+        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente. Aprovado pelo responsável (2026-11-20). Aprovado pelo responsável, nesta revisão: Crítica Textual de 6:64 corrigida conforme a colação."
       },
       {
         "chapter": 7,
@@ -4616,21 +4616,21 @@
         "verse_from": 1,
         "verse_to": 57,
         "status": "aprovado",
-        "nota": "Aprovado pelo responsável em 2026-11-24 (sessão de revisão de 9–13). Depois da aprovação: 11:1, frase reescrita por clareza (sem alteração de sentido); «leem» em 11:20 e 11:45; Crítica Textual com a base em minúscula."
+        "nota": "Aprovado pelo responsável em 2026-11-24 (sessão de revisão de 9–13). Depois da aprovação: 11:1, frase reescrita por clareza (sem alteração de sentido); «leem» em 11:20 e 11:45; Crítica Textual com a base em minúscula. Aprovado pelo responsável, nesta revisão: 11:1 com a frase reescrita («é a doença que põe a história em marcha»)."
       },
       {
         "chapter": 12,
         "verse_from": 1,
         "verse_to": 50,
         "status": "rascunho",
-        "nota": "Capítulo redigido em prosa em 2026-11-24, registo elevado; aguarda leitura do responsável. Crítica Textual gerada a partir do aparato da colação. 12:6 aprovado pelo responsável com «levava» e a Crítica Textual completa; 12:7 e o resto do capítulo ainda por rever."
+        "nota": "Capítulo redigido em prosa em 2026-11-24, registo elevado; aguarda leitura do responsável. Crítica Textual gerada a partir do aparato da colação. 12:6 aprovado pelo responsável com «levava» e a Crítica Textual completa; 12:7 e o resto do capítulo ainda por rever. Aprovados pelo responsável, nesta revisão: 12:6, 12:7 (Crítica Textual completada), 12:12 (sinais retirados) e 12:50 (frase retirada). O capítulo continua em revisão: falta ler 12:1–12:5, 12:8–12:49 e demais versículos."
       },
       {
         "chapter": 13,
         "verse_from": 1,
         "verse_to": 38,
         "status": "aprovado",
-        "nota": "Aprovado pelo responsável em 2026-11-24 (sessão de revisão de 9–13). Depois da aprovação: 13:6 «nipteis» corrigido; Crítica Textual de 13:12 e 13:26 com a NIV reformulada como escolha de tradução; Crítica Textual de 13:36 reescrita sem repetição, com a colação completa."
+        "nota": "Aprovado pelo responsável em 2026-11-24 (sessão de revisão de 9–13). Depois da aprovação: 13:6 «nipteis» corrigido; Crítica Textual de 13:12 e 13:26 com a NIV reformulada como escolha de tradução; Crítica Textual de 13:36 reescrita sem repetição, com a colação completa. Aprovados pelo responsável, nesta revisão: 13:27 («faz-o depressa») e 13:36 (Crítica Textual reescrita)."
       },
       {
         "chapter": 14,
