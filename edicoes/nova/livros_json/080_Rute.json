@@ -474,6 +474,36 @@
         "verse_to": 22,
         "status": "aprovado editorialmente"
       }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 22,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 23,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 18,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 22,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      }
     ]
   }
 }

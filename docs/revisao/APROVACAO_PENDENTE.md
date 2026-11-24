@@ -6,6 +6,8 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
 
+**Livros concluídos:** Rute, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, Filipenses e João. Revisão especializada feita pelo responsável, que é o revisor especializado por decisão dele; revisão externa prevista para mais tarde.
+
 **João concluído:** editorial 1–21 aprovado; revisão especializada concluída, declarada pelo responsável; colchetes mantidos (3:13, 3:15, 3:34, 5:4, 7:53–8:11); base SBLGNT mantida onde verificável; «chamado» em itálico em 11:1; CNTR conferido.
 
 **Atualizado (20–21):** 20 e 21 aprovados pelo responsável; 20:15 «jardineiro»; grafias «Getsêmani», «Gólgota», «Arimateia», «Clopas» e «Madalena» aprovadas. NIV aprovada: as notas de 18–19 e capítulos anteriores que a mencionam como escolha de tradução ficam aprovadas.

@@ -224,6 +224,22 @@
         "status": "aprovado editorialmente",
         "nota": "Leitura integral aprovada pelo responsável; revisão especializada pendente."
       }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 15,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 23,
+        "status": "concluída",
+        "nota": "Revisão especializada concluída pelo responsável, que é o revisor especializado deste projeto por decisão dele. Revisão por especialistas externos (hebraístas, gregos, críticos textuais, teólogos) prevista para mais tarde."
+      }
     ]
   }
 }
