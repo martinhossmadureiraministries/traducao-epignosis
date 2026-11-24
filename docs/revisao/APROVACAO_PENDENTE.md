@@ -6,7 +6,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
 
-**Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 continua por confirmar.
+**Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 foi confirmada na transcrição do CNTR.
 
 ### João 4:1 — aprovado (Jesus)
 
@@ -32,7 +32,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Crítica Textual:** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
-**Pergunta:** Aceita a CT? A testemunha 02 só aparece transcrita como «ουχ εται», sem forma segura, e fica por confirmar no manuscrito.
+**Pergunta:** Aceita a CT? A testemunha 02 foi confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível. A CT regista isso.
 
 ---
 

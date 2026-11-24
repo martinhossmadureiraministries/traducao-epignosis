@@ -1470,7 +1470,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **24** Até agora nada pediram em meu nome. Peçam, e receberão, para que a alegria de vocês seja completa.
 
-**25** Disse estas coisas a vocês em parábolas; vem a hora em que já não falarei em parábolas, mas com franqueza anunciarei a vocês o Pai.
+**25** Disse estas coisas a vocês em parábolas; vem a hora em que já não falarei em parábolas, mas com clareza anunciarei a vocês o Pai.
 
 **26** Naquele dia pedirão em meu nome; e não digo a vocês que eu rogarei ao Pai por vocês.
 
@@ -1478,7 +1478,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **28** Saí do Pai e vim ao mundo; de novo deixo o mundo e vou para o Pai.
 
-**29** Dizem-lhe os seus discípulos: «Eis que agora falas com franqueza, e não dizes nenhuma parábola.»
+**29** Dizem-lhe os seus discípulos: «Eis que agora falas com clareza, e não dizes nenhuma parábola.»
 
 **30** Agora sabemos que sabes tudo e não precisas de que alguém te pergunte; por isto cremos que saíste de Deus.
 
@@ -2569,7 +2569,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:42**
 
 - *ἔγνωκα* (egnōka), «conheço», com sentido de conhecimento que se tem; *ἀγάπην τοῦ θεοῦ* (agapēn tou theou), «amor de Deus». Jesus conhece o interior dos ouvintes, e a falta de amor de Deus é o diagnóstico.
-- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
+- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 lê «*ουχ εται*» na transcrição do CNTR (manuscrito Alexandrino, class 1/02, João 5:42). Esta forma não corresponde a uma palavra grega reconhecível. O contexto sugere «*ἔχεται*» («tem»), como em 032; é uma inferência, e não uma leitura do manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
 **5:43**
 
@@ -4947,7 +4947,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **16:25**
 
-- *παροιμίαις* (paroimiais), «parábolas, dizeres enigmáticos»; *παρρησίᾳ* (parrēsiai), «com franqueza»; *ἀπαγγελῶ* (apangelō), «anunciarei».
+- *παροιμίαις* (paroimiais), «parábolas, dizeres enigmáticos»; *παρρησίᾳ* (parrēsiai), «com clareza», em oposição a «parábolas»; *ἀπαγγελῶ* (apangelō), «anunciarei».
 - **Crítica Textual.** Aparato de edições SBLGNT, 16:25: a base lê «*ἔρχεται*», com WH, Treg e NA28; RP lê «*ἀλλʼ ἔρχεται*». Em «*ἀπαγγελῶ*», RP lê «*ἀναγγελῶ*», outro verbo para «anunciar».
 
 **16:26**
@@ -4967,7 +4967,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **16:29**
 
-- *παροιμίαν* (paroimian), «parábola»; *παρρησίᾳ* (parrēsiai), «com franqueza»: os discípulos reconhecem que Jesus fala agora de modo direto.
+- *παροιμίαν* (paroimian), «parábola»; *παρρησίᾳ* (parrēsiai), «com clareza», em oposição a «parábolas»: os discípulos reconhecem que Jesus fala agora de modo direto.
 - **Crítica Textual.** Aparato de edições SBLGNT, 16:29: a base lê «*Λέγουσιν*», com WH, Treg e NA28; RP acrescenta «*αὐτῷ*» («a ele»). RP omite «*ἐν*» antes de «*παρρησίᾳ*».
 
 **16:30**

@@ -60,13 +60,13 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
 - **1–15:** aprovados pelo responsável (1–11, 12, 13, 14 e 15). Os capítulos 12, 14 e 15 foram
   conferidos versículo a versículo com o SBLGNT da colação em 2026-11-24 (sem incoerências).
   4:1 aprovado com «Jesus» na tradução; a alternativa «o Senhor» fica na nota.
-- **Pendências do livro:** 5:42, com a forma da testemunha 02 por confirmar no manuscrito (CT
-  provisória); 13:27 e 12:50 já aprovados. Para revisão especializada, ver abaixo.
+- **Pendências do livro:** 5:42: forma da testemunha 02 confirmada na transcrição do CNTR («ουχ εται»,
+  sem palavra grega reconhecível). 13:27 e 12:50 já aprovados. Para revisão especializada, ver abaixo.
 - **16–17:** prosa em rascunho (bloco de 2 capítulos, 16 com 33 versículos e 17 com 26). Crítica
   Textual a partir do aparato da SBLGNT e da colação; confronto com o grego feito na redação.
-  Aguarda leitura do responsável. Pendente: a forma exata de 16:13 e 16:21 nas testemunhas.
+  Aguarda leitura do responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
 - **18–21:** por escrever na edição. Próximo bloco depois de 16–17.
-- **5:42:** a forma da testemunha 02 continua por confirmar no manuscrito (CT provisória).
+- **5:42:** forma da testemunha 02 confirmada na transcrição do CNTR; a CT regista a inferência.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
 - O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
