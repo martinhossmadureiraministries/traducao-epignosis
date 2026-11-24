@@ -30,9 +30,9 @@
 
 > *λύπη* (lypē), «tristeza»; *πεπλήρωκεν* (peplērōken), «encheu», perfeito: o efeito permanece.
 
-**16:7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Paráclito não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
+**16:7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Parácletos não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
 
-> *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Paráclito». A vinda do Espírito depende da partida de Jesus.
+> *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Parácletos». A vinda do Espírito depende da partida de Jesus.
 > **Crítica Textual:** Aparato de edições SBLGNT, 16:7: a base lê «*οὐ μὴ ἔλθῃ*», com WH e Treg; NA28 e RP leem «*οὐκ ἐλεύσεται*» («não virá»). RP acrescenta «*ἐγὼ*» depois de «*γὰρ*».
 
 **16:8** E, quando ele vier, convencerá o mundo do pecado, da justiça e do juízo.

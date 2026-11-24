@@ -288,9 +288,7 @@ Estas convenções saíram da revisão de João e valem para todos os livros nov
 as correções dos já aprovados. `scripts/verificar_convencoes_notas.py` confere as
 que se verificam sem ler o grego.
 
-1. **Nomes e termos fixos.** O Espírito é «Paráclito» com acento (como em 14:16, 14:26
-   e 15:26). O grego é παράκλητος, *paráklētos* (acento no primeiro «a»); o acusativo
-   é *paraklēton*. «Paracletos» e «Parakletós» não se usam.
+1. **Nomes e termos fixos.** O Espírito é «Parácletos» (nominativo, com s, como em 14:26, 15:26 e 16:7), transliteração literal de παράκλητος, *parákletos* (acento no primeiro «a»; η dá «e»). O acusativo, em 14:16, é «Parácleton», *parákleton*. «Paráclito» e «Paracletos» não se usam. Decisão do responsável; antes era «Paráclito».
 2. **NIV é tradução, nunca testemunha.** Na Crítica Textual, a NIV só aparece quando
    diverge da base, como escolha de tradução: «a NIV segue essa leitura por escolha de
    tradução» ou «a NIV omite a palavra, por escolha de tradução». Quando concorda com a
@@ -342,7 +340,7 @@ RP leem «o Senhor». Decisão do responsável: «Jesus» no texto, com a altern
 aprovados: 12:19 («a NIV acrescenta «ὅλος», por escolha de tradução»); 15:18 («a NIV omite a
 palavra, por escolha de tradução»).
 
-**Termos fixos.** «Paráclito», com acento (14:16, 14:26, 15:26). «Te vás manifestar» em 14:22
+**Termos fixos.** «Parácletos» (14:26, 15:26, 16:7) e «Parácleton» (14:16), com acento, transliteração literal. «Te vás manifestar» em 14:22
 (opção A). «levava» em 12:6, não «tomava».
 
 **Confronto com o grego.** Antes de aprovar um capítulo, conferir cada versículo com o SBLGNT da

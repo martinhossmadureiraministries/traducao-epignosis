@@ -1332,7 +1332,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **15** Se me amam, guardarão os meus mandamentos.
 
-**16** E eu pedirei ao Pai, e ele dará a vocês outro Paráclito, para que esteja com vocês para sempre.
+**16** E eu pedirei ao Pai, e ele dará a vocês outro Parácleton, para que esteja com vocês para sempre.
 
 **17** O Espírito da verdade, que o mundo não pode receber, porque não o vê nem o conhece; vocês conhecem-no, porque ele permanece com vocês e estará em vocês.
 
@@ -1352,7 +1352,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **25** Disse estas coisas a vocês enquanto permaneço com vocês.
 
-**26** Mas o Paráclito, o Espírito Santo, que o Pai enviará em meu nome, esse ensinará a vocês todas as coisas e lhes fará lembrar tudo o que eu disse.
+**26** Mas o Parácletos, o Espírito Santo, que o Pai enviará em meu nome, esse ensinará a vocês todas as coisas e lhes fará lembrar tudo o que eu disse.
 
 **27** Deixo a paz a vocês, dou a vocês a minha paz. Não a dou como o mundo a dá. Não se perturbe o coração de vocês, nem se atemorizem.
 
@@ -1416,7 +1416,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **25** Mas é para que se cumpra a palavra escrita na lei deles: «Odiaram-me sem motivo.»
 
-**26** Quando vier o Paráclito, que eu enviarei a vocês da parte do Pai, o Espírito da verdade que procede do Pai, esse dará testemunho de mim.
+**26** Quando vier o Parácletos, que eu enviarei a vocês da parte do Pai, o Espírito da verdade que procede do Pai, esse dará testemunho de mim.
 
 **27** E vocês também darão testemunho, porque estão comigo desde o princípio.
 
@@ -1434,7 +1434,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **6** Mas, porque disse estas coisas, a tristeza encheu o coração de vocês.
 
-**7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Paráclito não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
+**7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Parácletos não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
 
 **8** E, quando ele vier, convencerá o mundo do pecado, da justiça e do juízo.
 
@@ -4636,7 +4636,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **14:16**
 
-- *παράκλητον* (paraklēton), «Paráclito, consolador, advogado»; *ἄλλον* (allon), «outro da mesma espécie»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre». A palavra «outro» afirma que o Espírito é da mesma natureza de Jesus.
+- *παράκλητον* (paraklēton), «Parácleton», acusativo de «Parácletos»; «consolador, advogado»; *ἄλλον* (allon), «outro da mesma espécie»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre». A palavra «outro» afirma que o Espírito é da mesma natureza de Jesus.
 - **Crítica Textual.** Aparato de edições SBLGNT, 14:16: a base lê «*ᾖ*», com WH e Treg; NA28 omite a palavra. A base lê «*ᾖ*», com WH e Treg; RP acrescenta «*μένῃ*». A base lê «*αἰῶνα*», com WH, Treg e RP; NA28 acrescenta «*ᾖ*».
 
 **14:17**
@@ -4863,7 +4863,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **16:7**
 
-- *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Paráclito». A vinda do Espírito depende da partida de Jesus.
+- *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Parácletos». A vinda do Espírito depende da partida de Jesus.
 - **Crítica Textual.** Aparato de edições SBLGNT, 16:7: a base lê «*οὐ μὴ ἔλθῃ*», com WH e Treg; NA28 e RP leem «*οὐκ ἐλεύσεται*» («não virá»). RP acrescenta «*ἐγὼ*» depois de «*γὰρ*».
 
 **16:8**
