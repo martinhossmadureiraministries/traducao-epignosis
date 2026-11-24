@@ -104,7 +104,7 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** 2 Pedro (61 versículos). A colação está em `docs/colacao/2_Pedro.json` e `.md`. Antes de redigir, o responsável decide:
+**Próximo livro:** 2 Pedro (61 versículos). Há um rascunho em `edicoes/nova/livros_json/680_2_Pedro.json`, ainda não aprovado. A colação está em `docs/colacao/2_Pedro.json` e `.md`. O responsável decide, antes de aprovar:
 
 1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** decidido pelo responsável: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção (`docs/ESTILO_BEE.md`, glossário). A colação regista divergências sobretudo ortográficas; não decide sozinha.
 2. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
