@@ -38,7 +38,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 21 | 879 | 704 | aprovado (21) | pendente |
+| João (500) | 21 | 879 | 704 | aprovado (21) | concluída |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -69,9 +69,10 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
 - **18–19:** aprovados pelo responsável, com confirmação expressa depois da revisão da CT (bloco de 2 capítulos, 18 com 40 versículos e 19 com 42). Crítica Textual revista contra a colação; correções em 18:17–38 e 19:4–31. As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições; a nota de 18:14 tem uma leitura marcada como incerta. Leitura em `docs/revisao/JOAO_18_19.md`.
 - **NIV:** aprovada pelo responsável. As 19 notas que mencionam a NIV como escolha de tradução ficam aprovadas, em 1–19 e capítulos anteriores; 8:28, 8:41, 13:26 e 14:7 já não a mencionam.
 - **Correções de 7:3, 7:8 e 8:25:** CT conferida com o aparato SBLGNT e a colação; a nota de 7:8 passa a dizer que a NIV segue «οὔπω» por escolha de tradução. Nomes próprios aprovados: «Getsêmani», «Gólgota», «Arimateia», «Clopas» e «Madalena» (ver `docs/ESTILO_BEE.md`).
+- **João concluído** (decisão do responsável): editorial 1–21 aprovado; revisão especializada concluída; colchetes mantidos em 3:13, 3:15, 3:34, 5:4 e 7:53–8:11 por evidência de manuscritos; base SBLGNT mantida onde verificável; «chamado» em itálico em 11:1; CNTR conferido: a colação de João é idêntica à gerada a partir das transcrições (revisão 4e743a41).
 - **20–21:** aprovados pelo responsável. 20:15 «jardineiro» (escolha do responsável, em vez de «hortelão»); 20:17 «Não me segures» mantido; 21:15 «mais do que estes»; 21:15–17 «amas-me» (ἀγαπᾷς) e «queres-me bem» (φιλεῖς), com «te quero bem» como resposta de Pedro. Em 21:16–17, a colação dá WH com «προβάτια», mas o aparato dá «πρόβατα»; a base mantém «πρόβατα», por confirmar na fonte. Leitura em `docs/revisao/JOAO_20_21.md`.
 - **5:42:** aprovado pelo responsável. A CT regista a inferência sobre a forma da testemunha 02.
-- **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
+- **Revisão especializada:** concluída em todo o livro, declarada pelo responsável (capítulo 1: 1:15, 1:16, 1:18, 1:34 e 1:39 incluídos). Os pontos antigos ficam como histórico em `review.specialist`. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
 - O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
   (`scripts/gerar_leitura_livro.py --livro 500`).

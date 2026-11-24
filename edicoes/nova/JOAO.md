@@ -1010,7 +1010,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 ### Capítulo 11
 
-**1** Estava doente um homem chamado Lázaro, de Betânia, a aldeia de Maria e de sua irmã Marta.
+**1** Estava doente um homem <i>chamado</i> Lázaro, de Betânia, a aldeia de Maria e de sua irmã Marta.
 
 **2** Esta Maria era a que ungiu o Senhor com perfume e lhe enxugou os pés com os cabelos. O irmão dela, Lázaro, estava doente.
 
