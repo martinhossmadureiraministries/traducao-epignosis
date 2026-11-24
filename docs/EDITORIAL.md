@@ -106,7 +106,7 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 **Próximo livro:** 2 Pedro (61 versículos). A colação está em `docs/colacao/2_Pedro.json` e `.md`. Antes de redigir, o responsável decide:
 
-1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** aplicar o glossário («pleno conhecimento», `docs/RESUMO_ESTILO.md`, secção 6) ou propor outra tradução para decisão. A colação regista divergências sobretudo ortográficas; não decide sozinha.
+1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** decidido pelo responsável: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção (`docs/ESTILO_BEE.md`, glossário). A colação regista divergências sobretudo ortográficas; não decide sozinha.
 2. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
 3. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
 4. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.

@@ -1450,7 +1450,7 @@
       {
         "verse": 3,
         "text": "Então os irmãos dele disseram-lhe: «Sai daqui e vai para a Judeia, para que também os teus discípulos vejam as obras que fazes.»",
-        "commentary": "<p><i>ἀδελφοί</i> (adelphoi), «irmãos», são parentes de Jesus que não são discípulos (cf. 7:5). <i>μετάβηθι</i> (metabēthi), «sai, muda-te»; <i>θεωρήσουσιν</i> (theōrēsousin), «verão»; <i>ἔργα</i> (erga), «obras». Os irmãos falam como quem propõe uma exposição pública: pedem uma demonstração, não uma adesão.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 7:3: a base lê «<i>θεωρήσουσιν</i>», com WH, Treg e NA28; RP lê «<i>θεωρήσωσιν</i>». A base lê «<i>σοῦ τὰ ἔργα</i>», com WH, Treg e NA28; RP lê «<i>τὰ ἔργα σου</i>»; a NIV segue «<i>τὰ ἔργα</i>» por escolha de tradução.</p>"
+        "commentary": "<p><i>ἀδελφοί</i> (adelphoi), «irmãos», são parentes de Jesus que não são discípulos (cf. 7:5). <i>μετάβηθι</i> (metabēthi), «sai, muda-te»; <i>θεωρήσουσιν</i> (theōrēsousin), «verão»; <i>ἔργα</i> (erga), «obras». Os irmãos falam como quem propõe uma exposição pública: pedem uma demonstração, não uma adesão.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 7:3: a base lê «<i>θεωρήσουσιν</i>», com WH, Treg e NA28; RP lê «<i>θεωρήσωσιν</i>», e a tradução segue RP («vejam»), por decisão do responsável. A base lê «<i>σοῦ τὰ ἔργα</i>», com WH, Treg e NA28; RP lê «<i>τὰ ἔργα σου</i>»; a NIV segue «<i>τὰ ἔργα</i>» por escolha de tradução.</p>"
       },
       {
         "verse": 4,
@@ -2497,8 +2497,8 @@
       },
       {
         "verse": 16,
-        "text": "Tomé, chamado Dídimo, <i>que quer dizer gémeo</i>, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»",
-        "commentary": "<p><i>Δίδυμος</i> (Didymos), «gémeo»; <i>συμμαθηταῖς</i> (symmathētais), «condiscípulos»; <i>ἀποθάνωμεν</i> (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem. A expressão «<i>que quer dizer gémeo</i>» no texto é explicação acrescentada, sem correspondência no grego, que tem só <i>ὁ λεγόμενος Δίδυμος</i>; por isso vai em itálico. «Chamado» traduz <i>λεγόμενος</i> e fica em tipo normal.</p>"
+        "text": "Tomé, <i>chamado</i> Dídimo, <i>que quer dizer gémeo</i>, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»",
+        "commentary": "<p><i>Δίδυμος</i> (Didymos), «gémeo»; <i>συμμαθηταῖς</i> (symmathētais), «condiscípulos»; <i>ἀποθάνωμεν</i> (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem. A expressão «<i>que quer dizer gémeo</i>» no texto é explicação acrescentada, sem correspondência no grego, que tem só <i>ὁ λεγόμενος Δίδυμος</i>; por isso vai em itálico. «Chamado» traduz <i>λεγόμενος</i>, que tem correspondência no grego; vai em itálico como em 11:1, por decisão do responsável.</p>"
       },
       {
         "verse": 17,

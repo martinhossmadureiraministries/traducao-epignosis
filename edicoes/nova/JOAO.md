@@ -1040,7 +1040,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **15** E, por causa de vocês, alegro-me de não ter estado lá, para que creiam. Mas vamos ter com ele.
 
-**16** Tomé, chamado Dídimo, *que quer dizer gémeo*, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»
+**16** Tomé, *chamado* Dídimo, *que quer dizer gémeo*, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»
 
 **17** Quando Jesus chegou, encontrou Lázaro sepultado havia quatro dias.
 
@@ -3252,7 +3252,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **7:3**
 
 - *ἀδελφοί* (adelphoi), «irmãos», são parentes de Jesus que não são discípulos (cf. 7:5). *μετάβηθι* (metabēthi), «sai, muda-te»; *θεωρήσουσιν* (theōrēsousin), «verão»; *ἔργα* (erga), «obras». Os irmãos falam como quem propõe uma exposição pública: pedem uma demonstração, não uma adesão.
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*». A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*»; a NIV segue «*τὰ ἔργα*» por escolha de tradução.
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:3: a base lê «*θεωρήσουσιν*», com WH, Treg e NA28; RP lê «*θεωρήσωσιν*», e a tradução segue RP («vejam»), por decisão do responsável. A base lê «*σοῦ τὰ ἔργα*», com WH, Treg e NA28; RP lê «*τὰ ἔργα σου*»; a NIV segue «*τὰ ἔργα*» por escolha de tradução.
 
 **7:4**
 
@@ -4251,7 +4251,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **11:16**
 
-- *Δίδυμος* (Didymos), «gémeo»; *συμμαθηταῖς* (symmathētais), «condiscípulos»; *ἀποθάνωμεν* (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem. A expressão «*que quer dizer gémeo*» no texto é explicação acrescentada, sem correspondência no grego, que tem só *ὁ λεγόμενος Δίδυμος*; por isso vai em itálico. «Chamado» traduz *λεγόμενος* e fica em tipo normal.
+- *Δίδυμος* (Didymos), «gémeo»; *συμμαθηταῖς* (symmathētais), «condiscípulos»; *ἀποθάνωμεν* (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem. A expressão «*que quer dizer gémeo*» no texto é explicação acrescentada, sem correspondência no grego, que tem só *ὁ λεγόμενος Δίδυμος*; por isso vai em itálico. «Chamado» traduz *λεγόμενος*, que tem correspondência no grego; vai em itálico como em 11:1, por decisão do responsável.
 
 **11:17**
 

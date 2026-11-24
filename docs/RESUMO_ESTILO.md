@@ -105,6 +105,6 @@ Já com edição nova: 2 João, 3 João, Filemom, Judas, Tito, 2 Tessalonicenses
 
 ## 11. Decisões pendentes que afetam o próximo livro
 
-- **2 Pedro — ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** aplicar o glossário («pleno conhecimento») ou propor alternativa para decisão do responsável. Colação: 60 de 61 versículos têm alguma testemunha divergente, sobretudo ortográfica; a colação bruta não decide sozinha.
+- **2 Pedro — ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** decidido pelo responsável: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. Colação: 60 de 61 versículos têm alguma testemunha divergente, sobretudo ortográfica; a colação bruta não decide sozinha.
 - **Colchetes por verificar:** 5:4 e 7:53–8:11 (João).
 - **Por confirmar na fonte:** «προβάτια» em 21:16–17 é citado para WH na colação, não no aparato SBLGNT.

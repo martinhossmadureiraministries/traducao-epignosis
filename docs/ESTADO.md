@@ -87,6 +87,6 @@ Ordem por tamanho, das menores para as maiores, com prioridade para os livros qu
 3. **Responsável:** decidir 11:16: itálico só em «que quer dizer gémeo» (como fica) ou também em «chamado».
 4. **Revisão especializada:** pendente nos 19 livros, a cargo de especialista externo.
 5. **Revisão do ministério:** pendente nos 17 livros anteriores (Oseias e Joel já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
-6. **2 Pedro:** decisão de ἐπίγνωσις antes de redigir.
+6. **2 Pedro:** ἐπίγνωσις decidida (alternar conforme a construção); falta redigir.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 8. **Joel e Oseias:** resolvido em 2026-11-24 (ver acima). Falta a revisão especializada, como nos demais livros.
