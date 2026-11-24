@@ -1,6 +1,6 @@
 # Plano de trabalho — Bíblia de Estudo Epignósis
 
-**Estado (20/11/2026):** a edição nova está em prosa em 19 livros: João, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, Rute, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, Filipenses, Oseias e Joel. Todos estão aprovados editorialmente pelo responsável. A revisão especializada está pendente (especialista externo) e a revisão aprovada pelo ministério é uma etapa nova: registada em Oseias e Joel, pendente nos restantes. Os blocos de cada livro estão em `review` no respetivo JSON, e a tabela de estados é a fonte de verdade.
+**Estado (20/11/2026):** a edição nova está em prosa em 22 livros: João, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, Rute, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, Filipenses, Oseias, Joel, 2 Pedro, Colossenses e 2 Timóteo. Todos estão aprovados editorialmente pelo responsável. A revisão especializada está pendente (especialista externo) e a revisão aprovada pelo ministério é uma etapa nova: registada em Oseias, Joel e 2 Pedro, pendente nos restantes. Os blocos de cada livro estão em `review` no respetivo JSON, e a tabela de estados é a fonte de verdade.
 
 ## 1. Objetivo e forma de trabalho
 
@@ -76,13 +76,13 @@ A ordem pode ser alterada pelo responsável. Dentro das cartas, a ordem é por t
 | 2. Evangelhos e Igreja nascente | Marcos; Mateus; Lucas; Atos | 4 | 96 | — | Por fazer. Marcos 16:9–20 ainda não produzido |
 | 3. Origens | Gênesis; Êxodo | 2 | 90 | — | Por fazer |
 | 4. Poesia e sabedoria | Salmos; Provérbios; Jó; Eclesiastes; Cânticos | 5 | 243 | — | Por fazer. Salmo 23 é amostra de calibração, não livro feito |
-| 5. Cartas restantes | Romanos; 1 e 2 Coríntios; Gálatas; Efésios; Filipenses; Colossenses; 1 e 2 Tessalonicenses; 1 e 2 Timóteo; Tito; Hebreus; Tiago; 1 e 2 Pedro; 1, 2 e 3 João; Judas | 20 | 120 | Filipenses, 1 e 2 Tessalonicenses, Tito, 2 e 3 João, Judas (7 de 20) | Em curso. Próximo: 2 Pedro, depois 2 Timóteo, Colossenses, 1 Pedro, 1 João, Tiago, 1 Timóteo, Hebreus e as maiores |
+| 5. Cartas restantes | Romanos; 1 e 2 Coríntios; Gálatas; Efésios; Filipenses; Colossenses; 1 e 2 Tessalonicenses; 1 e 2 Timóteo; Tito; Hebreus; Tiago; 1 e 2 Pedro; 1, 2 e 3 João; Judas | 20 | 120 | Filipenses, Colossenses, 1 e 2 Tessalonicenses, Tito, 2 Pedro, 2 e 3 João, Judas (9 de 20) | Em curso. Próximo: 2 Timóteo, depois 1 Pedro, 1 João, Tiago, 1 Timóteo, Hebreus e as maiores |
 | 6. Lei e história | Levítico; Números; Deuteronômio; Josué; Juízes; Rute; 1 e 2 Samuel; 1 e 2 Reis; 1 e 2 Crônicas; Esdras; Neemias; Ester | 15 | 346 | Rute (1 de 15) | Em curso |
 | 7. Profetas | Isaías; Jeremias; Lamentações; Ezequiel; Daniel; Oseias; Joel; Amós; Obadias; Jonas; Miqueias; Naum; Habacuque; Sofonias; Ageu; Zacarias; Malaquias | 17 | 250 | Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias (9 de 17) | Em curso. Amós, Obadias e Zacarias estão em `docs/arquivo/leituras_legadas/` |
 | 8. Apocalipse | Apocalipse | 1 | 22 | — | Por fazer |
-| **Total** | | **66** | **1.189** | **19 de 66 livros; 87 de 1.189 capítulos** | |
+| **Total** | | **66** | **1.189** | **22 de 66 livros aprovados; 98 de 1.189 capítulos guardados** | |
 
-Os 19 livros feitos estão listados em `docs/ESTADO.md`. Os 47 restantes do catálogo não têm edição nova.
+Os 22 livros feitos estão listados em `docs/ESTADO.md`. Os 45 restantes do catálogo não têm edição nova.
 
 ## 6. Ciclo de cada passagem, capítulo e livro
 
@@ -104,12 +104,15 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** 2 Pedro (61 versículos). A colação está em `docs/colacao/2_Pedro.json` e `.md`. Antes de redigir, o responsável decide:
+**Próximo livro:** 1 Pedro (105 versículos). A colação está em `docs/colacao/1_Pedro.json` e `.md`. O texto ainda não foi redigido. Decisões do responsável registadas: 1:8 base («tendo visto»); 1:21 base («fiéis»); 2:7 base («os que não creem»); 2:21 RP («por nós», ἡμῶν). Decisões do responsável: 1:22 RP e NA28 («de coração puro», ἐκ καθαρᾶς καρδίας); 2:2 base («para a salvação»); 3:8 base («humildes»); 3:15 base («santificai Cristo»). Decisões do responsável, continuação: 1:20 base («no fim dos tempos»); 3:18 base («sofreu»); 4:14 base (sem a expressão da RP); 4:16 RP e NA28 («neste aspeto», μέρει). Decisões do responsável, fim: 3:21 RP («nos», ἡμᾶς); 5:11 base («a ele o domínio»). Todas as variantes de 1 Pedro que mudam o sentido estão decididas. As restantes são de forma, ordem ou artigo, sem efeito no sentido, e seguem a base, como permite a regra de variantes menores. 2 Timóteo está aprovado editorialmente (620); falta a revisão especializada.
 
-1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** decidido pelo responsável: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção (`docs/ESTILO_BEE.md`, glossário). A colação regista divergências sobretudo ortográficas; não decide sozinha.
-2. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
-3. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
-4. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.
+2 Pedro foi aprovado editorialmente e pelo ministério em 2026-11-25. Colossenses foi aprovado pelo ministério na mesma etapa. Falta a revisão especializada, a cargo de especialista externo.
+
+O responsável decide, antes de aprovar:
+
+1. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
+2. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
+3. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.
 
 **Pendências de João, tratadas em 20/11/2026:** 11:1 e 11:16 com itálico e nota (em 11:16, só em «que quer dizer gémeo»: «chamado» traduz λεγόμενος); 20:15 com nota e CT conferidas; 7:3, 7:8 e 8:25 verificados e corretos; colchetes em 5:4, 3:13, 3:15, 3:34, 7:53 e 8:1–8:11 já existentes, com nota. Falta decidir 11:16 (itálico também em «chamado»?).
 

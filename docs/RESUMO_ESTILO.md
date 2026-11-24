@@ -99,7 +99,7 @@ Tamanho em versículos (catálogo):
 | 16 | Hebreus | 303 |
 | 17 | Apocalipse | 404 |
 
-Já com edição nova: 2 João, 3 João, Filemom, Judas, Tito, 2 Tessalonicenses, 1 Tessalonicenses, Filipenses. Em aberto nesta lista: **2 Pedro** (colação gerada, `docs/colacao/2_Pedro.json`), 2 Timóteo, Colossenses, 1 Pedro, 1 João, Tiago, 1 Timóteo, Hebreus e Apocalipse. Gálatas, Efésios, Romanos e os dois Coríntios também estão por fazer e entram depois das cartas menores, segundo a mesma regra de tamanho.
+Já com edição nova: 2 Pedro, 2 João, 3 João, Filemom, Judas, Tito, 2 Tessalonicenses, 1 Tessalonicenses, Filipenses. Em aberto nesta lista: 2 Timóteo, Colossenses, 1 Pedro, 1 João, Tiago, 1 Timóteo, Hebreus e Apocalipse. Gálatas, Efésios, Romanos e os dois Coríntios também estão por fazer e entram depois das cartas menores, segundo a mesma regra de tamanho.
 
 **Prioridade para o que define o estilo:** 2 Pedro, por causa da decisão pendente sobre ἐπίγνωσις, e depois Colossenses, que também deve usar ἐπίγνωσις (a confirmar na colação antes de redigir). Ambos testam a regra de termos fixos antes de Tiago e 1 Pedro, que dependem menos de termos já fixados.
 
