@@ -2,14 +2,14 @@
 
 Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capítulos disponíveis: 1, 2, 3, 4, 95 versículos.
 
-**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | pendente | 29 |
-| 2 | pendente | 23 |
-| 3 | pendente | 25 |
-| 4 | pendente | 18 |
+| 1 | aprovado editorialmente | 29 |
+| 2 | aprovado editorialmente | 23 |
+| 3 | aprovado editorialmente | 25 |
+| 4 | aprovado editorialmente | 18 |
 
 ## Texto
 
@@ -285,6 +285,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:15**
 
 - *εἰκὼν* (*eikōn*), imagem; *πρωτότοκος* (*prōtotokos*), primogénito, termo que indica prioridade e soberania e que, no contexto, não se refere apenas à ordem no tempo. O contexto de 1:16–17, que o põe como criador de todas as coisas, distingue-o do que foi criado.
+- Decisão do responsável: mantém-se «primogénito», sem «protótipo».
 
 **1:16**
 

@@ -78,7 +78,7 @@
       {
         "verse": 15,
         "text": "Ele é imagem do Deus invisível, primogénito de toda a criação;",
-        "commentary": "<p><i>εἰκὼν</i> (<i>eikōn</i>), imagem; <i>πρωτότοκος</i> (<i>prōtotokos</i>), primogénito, termo que indica prioridade e soberania e que, no contexto, não se refere apenas à ordem no tempo. O contexto de 1:16–17, que o põe como criador de todas as coisas, distingue-o do que foi criado.</p>"
+        "commentary": "<p><i>εἰκὼν</i> (<i>eikōn</i>), imagem; <i>πρωτότοκος</i> (<i>prōtotokos</i>), primogénito, termo que indica prioridade e soberania e que, no contexto, não se refere apenas à ordem no tempo. O contexto de 1:16–17, que o põe como criador de todas as coisas, distingue-o do que foi criado.</p><p>Decisão do responsável: mantém-se «primogénito», sem «protótipo».</p>"
       },
       {
         "verse": 16,
@@ -548,29 +548,29 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 29,
-        "status": "pendente",
-        "nota": "Redação inicial pelo agente, a partir do SBLGNT e da colação docs/colacao/Colossenses.json. Decisões do responsável (2026-11-24), variantes do aparato: 1:1 base (Cristo Jesus); 1:2 RP (com «e do Senhor Jesus Cristo»); 1:3 base; 1:4 base; 1:6 base; 1:7 base; 1:10 base (no conhecimento; sem «vocês»); 1:12 Treg e RP («nos»); 1:16 base; 1:18 WH (com artigo); 1:20 mantém «por meio dele» e «nos céus» (ἐν); 1:21–22 base (ἀποκατηλλάγητε); 1:23 base; 1:26 base; 1:27 base; 1:28 base. O capítulo não está aprovado: aguarda a aprovação do responsável e a revisão especializada."
+        "status": "aprovado editorialmente",
+        "nota": "Aprovado pelo responsável. Passagens de decisão resolvidas nas Críticas Textuais."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 23,
-        "status": "pendente",
-        "nota": "Redação inicial pelo agente. Variantes do aparato decididas pelo responsável (2:2, 2:11, 2:16, 2:18); as restantes seguem a base. Não está aprovada."
+        "status": "aprovado editorialmente",
+        "nota": "Aprovado pelo responsável. Passagens de decisão resolvidas nas Críticas Textuais."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "pendente",
-        "nota": "Redação inicial pelo agente. Variantes do aparato decididas pelo responsável onde indicado; as restantes seguem a base. Não está aprovada."
+        "status": "aprovado editorialmente",
+        "nota": "Aprovado pelo responsável. Passagens de decisão resolvidas nas Críticas Textuais."
       },
       {
         "chapter": 4,
         "verse_from": 1,
         "verse_to": 18,
-        "status": "pendente",
-        "nota": "Redação inicial pelo agente. Variantes do aparato decididas pelo responsável onde indicado; as restantes seguem a base. Não está aprovada."
+        "status": "aprovado editorialmente",
+        "nota": "Aprovado pelo responsável. Passagens de decisão resolvidas nas Críticas Textuais."
       }
     ],
     "specialist": [
@@ -579,34 +579,34 @@
         "verse_from": 1,
         "verse_to": 29,
         "status": "pendente",
-        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo)."
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 23,
         "status": "pendente",
-        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo)."
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 25,
         "status": "pendente",
-        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo)."
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
       },
       {
         "chapter": 4,
         "verse_from": 1,
         "verse_to": 18,
         "status": "pendente",
-        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo)."
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
       }
     ],
     "ministerio": {
       "status": "pendente",
       "ministerio": "Martinho S. S. Madureira Ministries",
-      "nota": "Revisão do ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada. Aplica-se aos livros com edição nova. Pendente."
+      "nota": "Aprovação pelo ministério pendente: etapa própria, distinta da revisão editorial e da especializada."
     }
   }
 }
