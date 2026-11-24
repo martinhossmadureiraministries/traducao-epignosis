@@ -1,12 +1,15 @@
 # Colossenses · Bíblia de Estudo Epignósis
 
-Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capítulos disponíveis: 1, 29 versículos.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capítulos disponíveis: 1, 2, 3, 4, 95 versículos.
 
 **Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
 | 1 | pendente | 29 |
+| 2 | pendente | 23 |
+| 3 | pendente | 25 |
+| 4 | pendente | 18 |
 
 ## Texto
 
@@ -70,6 +73,144 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 
 **29** Para isso também me esforço, lutando segundo a sua força, que opera em mim com poder.
 
+### Capítulo 2
+
+**1** Quero que saibam quão grande é a luta que tenho por vocês, pelos que estão em Laodiceia e por todos os que não viram o meu rosto em carne;
+
+**2** para que os corações deles sejam consolados, unidos no amor e em toda a riqueza da plena certeza do entendimento, para o pleno conhecimento do mistério de Deus, que é Cristo;
+
+**3** em quem estão escondidos todos os tesouros da sabedoria e do conhecimento.
+
+**4** Digo isto para que ninguém engane vocês com argumentos persuasivos.
+
+**5** Pois, ainda que esteja ausente na carne, estou com vocês em espírito, alegrando-me e vendo a ordem de vocês e a firmeza da fé de vocês em Cristo.
+
+**6** Assim, como vocês receberam Cristo Jesus, o Senhor, andem nele;
+
+**7** enraizados e edificados nele, firmados na fé, como vocês foram ensinados, e abundando em ação de graças.
+
+**8** Cuidado para que ninguém faça de vocês sua presa, por meio da filosofia e de vã enganação, segundo a tradição dos homens, segundo os elementos do mundo, e não segundo Cristo.
+
+**9** pois nele habita corporalmente toda a plenitude da divindade;
+
+**10** e vocês estão completos nele, que é a cabeça de todo principado e autoridade.
+
+**11** Nele também vocês foram circuncidados com uma circuncisão não feita por mão humana, pelo despojamento do corpo da carne, mediante a circuncisão de Cristo;
+
+**12** tendo sido sepultados com ele no batismo, no qual também vocês foram ressuscitados com ele, pela fé na ação de Deus, que o ressuscitou dentre os mortos;
+
+**13** E vocês, estando mortos nas transgressões e na incircuncisão da carne de vocês, ele deu vida a vocês juntamente com ele, perdoando-nos todas as transgressões;
+
+**14** tendo apagado o escrito de dívida que era contra nós, com as suas ordenanças, que nos eram contrárias; e o tirou do meio, pregando-o na cruz;
+
+**15** Tendo despojado os principados e as autoridades, expô-los em público, triunfando sobre eles nele.
+
+**16** Ninguém, pois, julgue vocês por causa de comida ou de bebida, ou de festa, de lua nova ou de sábados;
+
+**17** as quais são sombra das coisas futuras, mas o corpo é de Cristo.
+
+**18** Ninguém prive vocês do prémio, comprazendo-se em humildade e culto dos anjos, insistindo nas coisas que não viu, vaidoso sem razão pelo pensamento da sua carne;
+
+**19** e não se apega à cabeça, da qual todo o corpo, nutrido e unido por juntas e ligamentos, cresce com o crescimento de Deus.
+
+**20** Se morreram com Cristo para os elementos do mundo, por que se sujeitam a regras, como se ainda vivessem no mundo?
+
+**21** Não manuseies, nem proves, nem toques;
+
+**22** coisas que todas se destinam à destruição pelo uso, segundo os mandamentos e doutrinas dos homens?
+
+**23** As quais têm, de facto, aparência de sabedoria, em devoção voluntária, humildade e severidade com o corpo, mas sem valor algum para a saciedade da carne.
+
+### Capítulo 3
+
+**1** Se, pois, vocês foram ressuscitados com Cristo, busquem as coisas do alto, onde Cristo está, sentado à direita de Deus;
+
+**2** pensem nas coisas do alto, e não nas que estão na terra,
+
+**3** pois morreram, e a vida de vocês está escondida com Cristo em Deus;
+
+**4** quando Cristo, a nossa vida, se manifestar, então também vocês se manifestarão com ele em glória.
+
+**5** Mortifiquem, pois, os membros que estão na terra: prostituição, impureza, paixão, desejo mau, e a ganância, que é idolatria;
+
+**6** por causa das quais vem a ira de Deus sobre os filhos da desobediência;
+
+**7** Nessas coisas também vocês andaram outrora, quando nelas viviam;
+
+**8** mas agora deixem também vocês todas estas coisas: ira, indignação, maldade, calúnia, linguagem torpe da boca de vocês;
+
+**9** Não mintam uns aos outros, pois se despojaram do homem velho com as suas práticas,
+
+**10** e se revestiram do novo homem, que se renova em conhecimento pleno, segundo a imagem daquele que o criou;
+
+**11** onde não há grego e judeu, circuncisão e incircuncisão, bárbaro, cita, escravo, livre, mas Cristo é tudo e está em todos.
+
+**12** Revistam-se, pois, como eleitos de Deus, santos e amados, de entranhas de misericórdia, bondade, humildade, mansidão, paciência;
+
+**13** suportando-se uns aos outros e perdoando-se mutuamente, se alguém tiver queixa contra alguém; como o Senhor perdoou vocês, assim também vocês.
+
+**14** e acima de tudo isto, o amor, que é o vínculo da perfeição.
+
+**15** E que a paz de Cristo governe nos corações de vocês, para a qual também vocês foram chamados em um só corpo; e sejam gratos.
+
+**16** Que a palavra de Cristo habite em vocês abundantemente, em toda sabedoria; ensinando e admoestando uns aos outros com salmos, hinos e cânticos espirituais, cantando a Deus com graça nos corações de vocês.
+
+**17** E tudo o que fizerem, em palavra ou em obra, façam tudo em nome do Senhor Jesus, dando graças a Deus Pai por meio dele.
+
+**18** Mulheres, sujeitem-se aos seus maridos, como convém no Senhor.
+
+**19** Maridos, amem as suas mulheres e não sejam duros com elas.
+
+**20** Filhos, obedeçam aos pais em tudo, pois isto é agradável no Senhor.
+
+**21** Pais, não exasperem os filhos de vocês, para que não desanimem.
+
+**22** Escravos, obedeçam em tudo aos senhores segundo a carne, não com serviço só à vista, como agradadores de homens, mas com simplicidade de coração, temendo o Senhor.
+
+**23** Tudo o que fizerem, façam de coração, como para o Senhor e não para os homens,
+
+**24** sabendo que do Senhor receberão a herança como recompensa; sirvam ao Senhor Cristo.
+
+**25** Pois quem faz injustiça receberá o que praticou, e não há parcialidade.
+
+### Capítulo 4
+
+**1** Senhores, dêem aos escravos o que é justo e igual, sabendo que também vocês têm um Senhor no céu.
+
+**2** Perseverem na oração, vigiando nela com ação de graças.
+
+**3** orando também por nós, para que Deus nos abra porta à palavra, para falarmos o mistério de Cristo, pelo qual também estou preso;
+
+**4** para que o manifeste como devo falar.
+
+**5** Andem com sabedoria para com os de fora, aproveitando bem o tempo.
+
+**6** A palavra de vocês seja sempre com graça, temperada com sal, para saberem como devem responder a cada um.
+
+**7** Tíquico, irmão amado, fiel ministro e companheiro de serviço no Senhor, lhes dará a conhecer os meus assuntos.
+
+**8** para que vocês saibam das nossas coisas e ele console os corações de vocês;
+
+**9** com Onésimo, o fiel e amado irmão, que é de entre vocês; eles lhes darão a conhecer tudo o que aqui se passa.
+
+**10** Saúda vocês Aristarco, meu companheiro de prisão, e Marcos, primo de Barnabé, acerca de quem receberam instruções (se ele for até vocês, recebam-no);
+
+**11** e Jesus, *chamado* Justo; estes, que são da circuncisão, são os únicos colaboradores no Reino de Deus, e foram para mim um consolo.
+
+**12** Saúda vocês Epafras, que é de entre vocês, servo de Cristo, que sempre se empenha por vocês em orações, para que vocês permaneçam perfeitos e plenamente convictos em toda a vontade de Deus.
+
+**13** Pois dou-lhe testemunho de que tem grande esforço por vocês, e pelos que estão em Laodiceia, e pelos que estão em Hierápolis.
+
+**14** Saúda vocês Lucas, o médico amado, e Demas.
+
+**15** Saúdem os irmãos que estão em Laodiceia, e Ninfa e a igreja que está na casa dela.
+
+**16** E quando esta carta for lida entre vocês, façam que também seja lida na igreja dos laodiceus, e que também vocês leiam a que vem de Laodiceia.
+
+**17** E digam a Arquipo: Olha o ministério que recebeste no Senhor, para que o cumpras.
+
+**18** A saudação é de mim, Paulo, com a minha própria mão. Lembrem-se das minhas algemas. A graça esteja com vocês.
+
 ## Notas
 
 ### Notas do capítulo 1
@@ -120,7 +261,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:10**
 
 - *ἀξίως* (*axiōs*), de modo digno; *ἀρεσκείαν* (*areskeian*), agrado. *τῇ ἐπιγνώσει* (*tē epignōsei*), no conhecimento: aqui a construção é de lugar, «crescendo no conhecimento pleno de Deus», por isso a forma «conhecimento pleno».
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:10: a base lê «*περιπατῆσαι*» sem mais, com WH, Treg e NA28; RP acrescenta «*ὑμᾶς*» («andarem vocês»). A base lê «*τῇ ἐπιγνώσει*», com WH, Treg e NA28; RP lê «*εἰς τὴν ἐπίγνωσιν*» («para o conhecimento», com preposição). Na colação, KJTR, RP e ST seguem a leitura de RP. A tradução segue a base, por decisão do responsável.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:10: a base lê «*περιπατῆσαι*» sem mais, com WH, Treg e NA28; RP acrescenta «*ὑμᾶς*» («andarem vocês»). A base lê «*τῇ ἐπιγνώσει*», com WH, Treg e NA28; RP lê «*εἰς τὴν ἐπίγνωσιν*» («para o conhecimento», com preposição). Na colação, KJTR, RP e ST seguem a leitura de RP. Decisão do responsável: segue a base, sem «vocês».
 
 **1:11**
 
@@ -129,7 +270,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:12**
 
 - *ἱκανώσαντι* (*hikanōsanti*), que tornou apto ou capacitou. *μερίδα τοῦ κλήρου* (*meridan tou klērou*), a parte da herança: a imagem é de herança repartida, como em Atos 26:18. *φωτί* (*phōti*), na luz, é o domínio dos santos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*ὑμᾶς*» («vocês»), com WH e NA28; Treg e RP leem «*ἡμᾶς*» («nós»). Na colação, 02, 04, KJTR, RP e ST leem «*ἡμᾶς*»; 01, 03, SR e WH leem «*ὑμᾶς*». A tradução segue Treg e RP, por decisão do responsável.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*ὑμᾶς*» («vocês»), com WH e NA28; Treg e RP leem «*ἡμᾶς*» («nós»). Na colação, 02, 04, KJTR, RP e ST leem «*ἡμᾶς*»; 01, 03, SR e WH leem «*ὑμᾶς*». Decisão do responsável: segue Treg e RP, com «nos».
 
 **1:13**
 
@@ -207,11 +348,200 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:28**
 
 - *καταγγέλλομεν* (*kataggellomen*), anunciamos; *νουθετοῦντες* (*nouthetountes*), admoestando; *τέλειον* (*teleion*), perfeita, madura. «Cada pessoa» traduz *πάντα ἄνθρωπον*, em que cada pessoa é contada individualmente.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:28: a base lê «*ἐν Χριστῷ*», com WH, Treg e NA28; RP acrescenta «*Ἰησοῦ*» («em Cristo Jesus»). Na colação, KJTR, RP e ST acrescentam o mesmo nome. A tradução segue a base, por decisão do responsável.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:28: a base lê «*ἐν Χριστῷ*», com WH, Treg e NA28; RP acrescenta «*Ἰησοῦ*» («em Cristo Jesus»). Na colação, KJTR, RP e ST acrescentam o mesmo nome. Decisão do responsável: segue a base, sem «Jesus».
 
 **1:29**
 
 - *κοπιῶ* (*kopiō*), esforço-me, trabalho com fadiga; *ἀγωνιζόμενος* (*agōnizomenos*), lutando, como um atleta; *ἐνέργειαν* (*energeian*), força que opera.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:1: a base lê «*ὑπὲρ*», com WH, Treg e NA28; RP lê «*περὶ*». Fica a base; a diferença é de preposição e não muda o sentido da tradução.
+
+**2:2**
+
+- *ἐπίγνωσιν* (*epignōsin*) é o substantivo, com complemento «do mistério»: «pleno conhecimento», como em 1:9.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:2: a base lê «*συμβιβασθέντες*», com WH, Treg e NA28; RP lê «*συμβιβασθέντων*». Fica a base. A base lê «*πᾶν πλοῦτος*» (WH, NA28); Treg lê «*πᾶν τὸ πλοῦτος*» e RP «*πάντα πλοῦτον*»; as três leituras dão «toda a riqueza» e a tradução segue a base. RP acrescenta «*καὶ πατρὸς καὶ τοῦ*» depois de «*θεοῦ*» («do Pai e de Cristo»); fica a base, por decisão do responsável.
+
+**2:3**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:3: a base lê «*καὶ γνώσεως*» sem artigo, com WH, Treg e NA28; RP acrescenta o artigo «*τῆς*» antes de «*γνώσεως*». Fica a base.
+
+**2:4**
+
+- *πιθανολογίᾳ* (*pithanologia*): discurso persuasivo e plausível, mas enganador.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*τοῦτο λέγω*» sem partícula, com WH e NA28; Treg e RP acrescentam «*δὲ*». A base lê «*μηδεὶς*», com WH, Treg e NA28; RP lê «*μή τις*». Fica a base nos dois pontos.
+
+**2:7**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:7: a base lê «*βεβαιούμενοι τῇ πίστει*», com WH, Treg e NA28; RP acrescenta «*ἐν*» antes de «*τῇ πίστει*». A base lê «*περισσεύοντες ἐν εὐχαριστίᾳ*», com Treg e NA28; WH e RP acrescentam «*ἐν αὐτῇ*». Fica a base nos dois pontos.
+
+**2:8**
+
+- *στοιχεῖα τοῦ κόσμου* (*stoicheia tou kosmou*), «elementos do mundo»: expressão que pode designar princípios elementares ou poderes do mundo (cf. Gálatas 4:3). A tradução mantém a expressão sem decidir.
+
+**2:11**
+
+- *ἀχειροποιήτῳ* (*acheiropoiētō*), não feita por mão humana: a circuncisão é espiritual. O texto não descreve o ato.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:11: a base lê «*σώματος*», com WH, Treg e NA28; RP acrescenta «*τῶν ἁμαρτιῶν*» («do corpo dos pecados»). Fica a base, por decisão do responsável.
+
+**2:12**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:12: a base lê «*βαπτισμῷ*», com Treg e NA28; WH e RP leem «*βαπτίσματι*», outra forma da mesma palavra. A base lê «*ἐκ νεκρῶν*», com WH, Treg e NA28; RP acrescenta «*τῶν*». Fica a base nos dois pontos, sem efeito na tradução.
+
+**2:13**
+
+- O texto passa de «vocês» (ele deu vida a vocês) para «nós» (perdoando-nos). A tradução mantém a mudança de pessoa, que está no grego.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base lê «*ἐν τοῖς παραπτώμασιν*», com NA28 e RP; WH e Treg omitem «*ἐν*». Fica a base.
+
+**2:14**
+
+- *χειρόγραφον* (*cheirographon*): escrito de dívida assinado pelo devedor, imagem jurídica. *δόγμασιν* (*dogmasin*): ordenanças ou decretos.
+
+**2:15**
+
+- O texto diz *ἐν αὐτῷ* (*en autō*), «nele». Não se decide se se refere a Cristo ou à cruz; a tradução mantém a ambiguidade.
+
+**2:16**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:16: a base lê «*ἢ*» (ou), com Treg e RP; WH e NA28 leem «*καὶ*» (e). Fica a base, por decisão do responsável.
+
+**2:17**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:17: a base lê «*τοῦ Χριστοῦ*», com WH, Treg e NA28; RP omite «*τοῦ*». Fica a base. A leitura de RP deixaria a frase ainda mais elíptica («o corpo, Cristo»).
+
+**2:18**
+
+- *ἐμβατεύων* (*embateuōn*): entrar em pormenores, examinar minuciosamente. Com «que não viu» (RP), a frase diz que se insiste no que não se viu.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: a base lê «*ἃ ἑόρακεν*», com WH, Treg e NA28; RP acrescenta «*μὴ*» antes de «*ἃ*» («coisas que não viu»). A tradução segue RP, por decisão do responsável; esta leitura muda o sentido em relação à base.
+
+**2:23**
+
+- *ἐθελοθρησκίᾳ* (*ethelothrēskia*): culto voluntário, de vontade própria; palavra rara, que pode ter sentido pejorativo.
+
+### Notas do capítulo 3
+
+**3:4**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:4: a base lê «*ὑμῶν*» (a vossa vida), com Treg e NA28; WH e RP leem «*ἡμῶν*» (a nossa vida). A tradução segue WH e RP, por decisão do responsável.
+
+**3:5**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:5: a base lê «*μέλη*», com WH, Treg e NA28; NIV, por escolha de tradução, e RP acrescentam «*ὑμῶν*» («de vocês»). Fica a base, por decisão da tradução.
+
+**3:6**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:6: a base lê «*ἐπὶ τοὺς υἱοὺς τῆς ἀπειθείας*», com NA28 e RP; WH, Treg e NIV, por escolha de tradução, omitem a expressão. Fica a base, por decisão do responsável.
+
+**3:7**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:7: a base lê «*ἐν τούτοις*», com WH, Treg e NA28; RP lê «*αὐτοῖς*». Fica a base.
+
+**3:10**
+
+- *ἐπίγνωσιν* (*epignōsin*) é aqui complemento de «renova-se em», por isso «conhecimento pleno», como em 1:10.
+
+**3:11**
+
+- *Σκύθης* (*Skythēs*), cita, habitante da Cítia, usado como símbolo de povo estranho à cultura grega.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:11: a base lê «*τὰ πάντα*», com Treg, NA28 e RP; WH omite «*τὰ*». Fica a base.
+
+**3:13**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:13: a base lê «*κύριος*» (o Senhor), com WH, Treg e NA28; RP lê «*Χριστὸς*» (Cristo). Fica a base, por decisão da tradução.
+
+**3:14**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:14: a base lê «*ὅ*», com WH, Treg e NA28; RP lê «*ἥτις*». Fica a base.
+
+**3:15**
+
+- *βραβευέτω* (*brabeuetō*), arbitre, governe: termo de arbitragem em jogos. Aqui a paz de Cristo é quem decide nos corações.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:15: a base lê «*τοῦ Χριστοῦ*» (de Cristo), com WH, Treg e NA28; RP lê «*τοῦ θεοῦ*» (de Deus). A tradução segue a base, por decisão do responsável.
+
+**3:16**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:16: a base lê «*ψαλμοῖς*» e «*ὕμνοις*» sem «*καὶ*», com WH, Treg e NA28; RP acrescenta «*καὶ*» antes de cada um. A base lê «*ταῖς καρδίαις*» (com WH, Treg e NA28) e «*θεῷ*»; RP lê «*τῇ καρδίᾳ*» e «*κυρίῳ*». Fica a base em todos os pontos, por decisão da tradução.
+
+**3:17**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:17: a base lê «*ὅ τι*», «*ἐὰν*» e «*θεῷ*» sem «*καὶ*», com Treg e NA28; WH e RP leem outras formas («*ὅτι*», «*ἂν*» e «*καὶ θεῷ*»). Fica a base.
+
+**3:18**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:18: a base lê «*τοῖς ἀνδράσιν*», com WH, Treg e NA28; RP acrescenta «*ἰδίοις*» («próprios»). Fica a base.
+
+**3:20**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:20: a base lê «*εὐάρεστόν ἐστιν*», com WH, Treg e NA28; RP lê «*ἐστιν εὐάρεστον*». A diferença é de ordem, sem efeito na tradução.
+
+**3:22**
+
+- *ὀφθαλμοδουλίαις* (*ophthalmodouliais*), serviço só para ser visto. *ἀνθρωπάρεσκοι* (*anthrōparaskoi*), agradadores de homens.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:22: a base lê «*κύριον*» (o Senhor), com WH, Treg e NA28; RP lê «*θεόν*» (Deus). Fica a base, por decisão da tradução. A forma «*ὀφθαλμοδουλίαις*» segue WH, Treg e RP, com NA28 em outra forma; fica a base.
+
+**3:23**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:23: a base lê «*ὃ*», com WH, Treg e NA28; RP lê «*καὶ πᾶν ὃ τι*» («e tudo o que»). Fica a base.
+
+**3:24**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:24: a base lê «*ἀπολήμψεσθε*», com WH, Treg e NA28; RP lê «*λήψεσθε*». RP acrescenta «*γὰρ*» depois de «*τῷ*». Fica a base nos dois pontos.
+
+**3:25**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:25: a base lê «*γὰρ*» (pois), com WH, Treg e NA28; RP lê «*δὲ*» (mas). Fica a base.
+
+### Notas do capítulo 4
+
+**4:1**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:1: a base lê «*οὐρανῷ*», com WH, Treg e NA28; RP lê «*οὐρανοῖς*». A diferença é de número, sem efeito na tradução.
+
+**4:3**
+
+- *μυστήριον* (*mystērion*), como em 1:26–27: o que estava oculto e foi revelado.
+
+**4:5**
+
+- *ἐξαγοραζόμενοι* (*exagorazomenoi*): resgatar, aproveitar bem; *τοὺς ἔξω* (*tous exō*), os de fora, os que não pertencem à comunidade.
+
+**4:8**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:8: a base lê «*γνῶτε*» e «*ἡμῶν*», com WH, Treg e NA28; RP lê «*γνῷ*» e «*ὑμῶν*». Fica a base nos dois pontos, por decisão do responsável.
+
+**4:9**
+
+- Onésimo é o escravo da carta a Filemom (cf. Filemom 10–16). O texto não o identifica.
+
+**4:11**
+
+- *λεγόμενος* (*legomenos*), chamado: o itálico marca a palavra que traduz o particípio, sem equivalente exato na frase portuguesa.
+
+**4:12**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:12: a base lê «*Χριστοῦ*» (sem «Jesus»), com RP; WH, Treg e NA28 acrescentam «*Ἰησοῦ*». A base lê «*σταθῆτε*» e «*πεπληροφορημένοι*» (plenamente convictos), com WH, Treg e NA28; RP lê «*στῆτε*» e «*πεπληρωμένοι*» (cheios). Fica a base nos três pontos.
+
+**4:13**
+
+- Hierápolis: cidade vizinha de Colossos e Laodiceia, no vale do Lico.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:13: a base lê «*πολὺν πόνον*» (grande esforço), com WH, Treg e NA28; RP lê «*ζῆλον πολὺν*» (grande zelo). Fica a base, por decisão do responsável.
+
+**4:15**
+
+- A igreja reunia-se na casa de Ninfa; o texto indica a casa, sem dizer se havia outras reuniões.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:15: a base lê «*Νύμφαν*» e «*αὐτῆς*» (a casa dela), com WH e NA28; Treg lê «*αὐτῶν*» (a casa deles); RP lê «*Νυμφᾶν*» e «*αὐτοῦ*» (a casa dele). Fica a base, por decisão do responsável.
+
+**4:16**
+
+- A carta «de Laodiceia» não é conhecida com segurança; o texto não a identifica.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:16: a base lê «*Λαοδικέων*», com WH, Treg e NA28; RP lê «*Λαοδικαίων*». Diferença de grafia, sem efeito na tradução.
+
+**4:18**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:18: a base lê «*ὑμῶν*», com WH, Treg e NA28, sem «*Ἀμήν*» no fim; RP acrescenta «*Ἀμήν*». Fica a base.
 
 ---
 

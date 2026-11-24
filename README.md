@@ -41,9 +41,9 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   - `python3 scripts/verificar_documentacao.py`.
 - Compilação dos módulos MyBible, com a parte já completa:
   `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
-- Estado atual: 91 capítulos e 2089 versículos guardados na edição nova
+- Estado atual: 94 capítulos e 2155 versículos guardados na edição nova
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
-  Inclui 2 Pedro e Colossenses 1, em rascunho ainda não aprovado (ver `docs/ESTADO.md`).
+  Inclui 2 Pedro, aprovado editorialmente e pelo ministério, e Colossenses, em rascunho ainda não aprovado (ver `docs/ESTADO.md`).
 
 ## Testes
 

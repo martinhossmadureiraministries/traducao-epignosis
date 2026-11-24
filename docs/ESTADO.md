@@ -14,7 +14,7 @@ Não há revisão por inteligência artificial no processo. Nenhum agente aprova
 
 ## Livros com edição nova
 
-Edição nova: 21 livros, 91 capítulos e 2 089 versículos, todos em prosa. Destes, 19 livros estão `aprovado editorialmente`. O 20.º, **2 Pedro**, é um rascunho inicial (`review.editorial_blocks` pendente): ainda não está aprovado e não conta como livro entregue. O 21.º, **Colossenses**, tem em rascunho só o capítulo 1 (29 versículos); os capítulos 2 a 4 ainda não estão redigidos. O catálogo tem 66 livros: 45 ainda não têm edição nova. Os números vêm de `scripts/verificar_dados.py`.
+Edição nova: 21 livros, 94 capítulos e 2 155 versículos, todos em prosa. Destes, 20 livros estão `aprovado editorialmente`. O 20.º, **2 Pedro**, está aprovado editorialmente e pelo ministério em 2026-11-25; a revisão especializada está pendente, a cargo de especialista externo. O 21.º, **Colossenses**, tem rascunho dos capítulos 1 a 4 (95 versículos), com as variantes do aparato decididas pelo responsável onde indicado; ainda não está aprovado nem revisto. O catálogo tem 66 livros: 45 ainda não têm edição nova. Os números vêm de `scripts/verificar_dados.py`.
 
 Todos os 19 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João e Judas.
 
@@ -58,11 +58,11 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 ## Cartas seguintes
 
-Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. Em redação: **2 Pedro** (61 versículos) e **Colossenses** (95 versículos; o capítulo 1 está em rascunho em `edicoes/nova/livros_json/580_Colossenses.json`, com as variantes do aparato decididas pelo responsável; os capítulos 2 a 4 ainda não estão redigidos). O rascunho está em `edicoes/nova/livros_json/680_2_Pedro.json`, pendente de revisão do responsável. A colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. Em redação: **Colossenses** (95 versículos; rascunho dos capítulos 1 a 4 em `edicoes/nova/livros_json/580_Colossenses.json`, com as variantes decididas pelo responsável onde indicado). 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
 
 ## Verificações (2026-11-20)
 
-- `scripts/verificar_dados.py`: rc 0; 91 capítulos e 2 089 versículos (inclui os rascunhos de 2 Pedro e de Colossenses 1).
+- `scripts/verificar_dados.py`: rc 0; 94 capítulos e 2 155 versículos (inclui os rascunhos de Colossenses, 1 a 4).
 - `scripts/verificar_estilo.py`: rc 0; sem arcaísmos nem marcas de Almeida.
 - `scripts/verificar_convencoes_notas.py`: rc 0; 0 falhas, 0 avisos.
 - `scripts/verificar_documentacao.py`: rc 0.
@@ -86,7 +86,7 @@ Ordem por tamanho, das menores para as maiores, com prioridade para os livros qu
 2. **Responsável:** decidir se o documento de apresentação volta a ser a versão oficial (o README e `arquivo/LEIA-ME.md` diziam que estava arquivado de propósito).
 3. **Responsável:** decidir 11:16: itálico só em «que quer dizer gémeo» (como fica) ou também em «chamado».
 4. **Revisão especializada:** pendente nos 19 livros, a cargo de especialista externo.
-5. **Revisão do ministério:** pendente nos 17 livros anteriores (Oseias e Joel já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
-6. **2 Pedro:** rascunho redigido (61 versículos), não aprovado. O responsável revê as passagens de decisão assinaladas nas Críticas Textuais e aprova ou pede correções.
+5. **Revisão do ministério:** pendente nos 17 livros anteriores (Oseias, Joel e 2 Pedro já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
+6. **2 Pedro:** aprovado editorialmente e pelo ministério (2026-11-25). Falta a revisão especializada, a cargo de especialista externo.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 8. **Joel e Oseias:** resolvido em 2026-11-24 (ver acima). Falta a revisão especializada, como nos demais livros.

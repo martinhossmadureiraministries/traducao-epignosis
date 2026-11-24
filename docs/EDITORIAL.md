@@ -104,12 +104,15 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** 2 Pedro (61 versículos). Há um rascunho em `edicoes/nova/livros_json/680_2_Pedro.json`, ainda não aprovado. A colação está em `docs/colacao/2_Pedro.json` e `.md`. O responsável decide, antes de aprovar:
+**Próximo livro:** Colossenses (95 versículos). Há rascunho dos capítulos 1 a 4 em `edicoes/nova/livros_json/580_Colossenses.json`, com as variantes do aparato decididas pelo responsável onde indicado. A colação está em `docs/colacao/Colossenses.json` e `.md`.
 
-1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** decidido pelo responsável: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção (`docs/ESTILO_BEE.md`, glossário). A colação regista divergências sobretudo ortográficas; não decide sozinha.
-2. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
-3. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
-4. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.
+2 Pedro foi aprovado editorialmente e pelo ministério em 2026-11-25. Falta a revisão especializada, a cargo de especialista externo.
+
+O responsável decide, antes de aprovar:
+
+1. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
+2. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
+3. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.
 
 **Pendências de João, tratadas em 20/11/2026:** 11:1 e 11:16 com itálico e nota (em 11:16, só em «que quer dizer gémeo»: «chamado» traduz λεγόμενος); 20:15 com nota e CT conferidas; 7:3, 7:8 e 8:25 verificados e corretos; colchetes em 5:4, 3:13, 3:15, 3:34, 7:53 e 8:1–8:11 já existentes, com nota. Falta decidir 11:16 (itálico também em «chamado»?).
 
