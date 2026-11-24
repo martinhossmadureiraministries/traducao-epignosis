@@ -45,7 +45,7 @@
       "lembrai-vos"
     ],
     "nota_connosco": "A forma «connosco» é aceite quando soar natural (os pilotos aprovados de 2 João a mantêm); o que está proibido é «convosco» e o paradigma completo do «vós».",
-    "ortografia": "Português europeu, sem hesitação entre normas: «connosco» (nunca «conosco»), «de facto» (nunca «de fato»), «registo» (nunca «registro»), «secção», «aspeto», «ação», «facto». A norma não é capricho regional — é o que faz o texto soar ao mesmo livro de ponta a ponta; os pilotos aprovados e 2 Tessalonicenses seguem-na."
+    "ortografia": "Português europeu, sem hesitação entre normas: «connosco» (nunca «conosco»), «de facto» (nunca «de fato»), «registo» (nunca «registro»), «secção», «aspeto», «ação», «facto». Norma decidida pelo responsável: Acordo de 1990 (AO90) em toda a edição, sem misturar com a grafia de 1945 (Angola não ratificou o acordo; a escolha é editorial). A norma não é capricho regional — é o que faz o texto soar ao mesmo livro de ponta a ponta; os pilotos aprovados e 2 Tessalonicenses seguem-na."
   },
   "regras_duras": [
     {
@@ -327,6 +327,124 @@
       "usar": "«mãe que amamenta»",
       "sentido": "A mulher que amamenta e cria; não é μήτηρ, a palavra comum para mãe. O possessivo «os seus próprios filhos» (1Ts 2:7) fixa a imagem na mãe, não na ama assalariada; «ama» lê-se hoje mal em português.",
       "exemplo_aprovado": "Antes, fomos gentis no meio de vocês. Como uma mãe que amamenta cuida com ternura dos próprios filhos"
+    },
+    {
+      "grego": "Πιλᾶτος",
+      "transliteracao": "",
+      "usar": "Pilatos",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Ἅννας",
+      "transliteracao": "",
+      "usar": "Anás",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Κέδρων",
+      "transliteracao": "",
+      "usar": "Cedrom",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Μάλχος",
+      "transliteracao": "",
+      "usar": "Malco",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Βαραββᾶς",
+      "transliteracao": "",
+      "usar": "Barrabás",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável em 2026-11-24 (João 18–19).",
+      "nao_estender_a": "outras grafias («Pilato», «Anas», «Barrabas»)",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Γεθσημανῆ",
+      "transliteracao": "",
+      "usar": "Getsêmani",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Γολγοθᾶ",
+      "transliteracao": "",
+      "usar": "Gólgota",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Ἀριμαθαία",
+      "transliteracao": "",
+      "usar": "Arimateia",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Κλωπᾶς",
+      "transliteracao": "",
+      "usar": "Clopas",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
+    },
+    {
+      "grego": "Μαγδαληνή",
+      "transliteracao": "",
+      "usar": "Madalena",
+      "sentido": "nome próprio; grafia fixa aprovada pelo responsável para toda a edição.",
+      "nao_estender_a": "outras grafias",
+      "contexto_reuso": "toda a edição",
+      "livros_reuso": [
+        500
+      ],
+      "exemplo_aprovado": ""
     }
   ],
   "rejeitados": [
@@ -407,6 +525,10 @@
       {
         "numero": 710,
         "nome": "3 João"
+      },
+      {
+        "numero": 600,
+        "nome": "2 Tessalonicenses"
       }
     ],
     "por_genero": {
@@ -539,7 +661,7 @@
     "Pilotos aprovados pelo responsável: Filemom, Tito, Judas, 2 João e 3 João (edicoes/nova/livros_json)",
     "docs/ESTILO_BEE.md (v0.5) — documento de autoridade da voz",
     "Regras duras, aperto de calibração e guarda anti-deriva consolidados nos PR #50–#52",
-    "2 Tessalonicenses: voz da versão de 2026-11-19 aprovada pelo responsável («parece a ARC sem ser a ARC, com traços próprios»); livro regenerado a 2026-11-20 sob docs/CRITICA_TEXTUAL.md e lapidado no mesmo dia (12 versículos e 14 notas revistos sobre a colação — ver docs/OFICINA_TRADUCAO.md). A redação atual NÃO foi lida pelo responsável: continua RASCUNHO, com revisão editorial e especializada pendentes no campo review do JSON, e por isso 600 não é livro-base.",
+    "2 Tessalonicenses: aprovado editorialmente pelo responsável, que o indicou como livro-base da memória (decisão de 2026-11-20). Voz da versão de 2026-11-19 aprovada («parece a ARC sem ser a ARC, com traços próprios»); livro regenerado e lapidado sobre a colação. Revisão especializada (especialista externo) e revisão do ministério pendentes.",
     "Ageu (440), caps. 1, 2, aprovado pelo responsável em 2026-11-20 — Leitura integral de Ageu; revisão especializada pendente.",
     "Rute (80), caps. 1, 2, 3, 4, aprovado pelo responsável em 2026-11-21 — Narrativa e diálogo; revisão especializada pendente.",
     "Jonas (390), livro integral aprovado pelo responsável. Jonas 2 é referência de clareza na oração poética.",
@@ -556,7 +678,7 @@
     "BASE FIXA PRIMEIRO: antes de traduzir cada versículo, confirme a leitura da base SBLGNT fixada (revisão registada em bee/fontes.py). Nunca traduza em silêncio a leitura de outra edição: foi esse o erro de João 1:18, que seguia RP contra a base.",
     "DESEMPATE NA28 (decisão do responsável, 2026-11-20): quando as edições comparadas se dividirem numa unidade de variação, segue-se NA28; regista-se a alternativa rejeitada e a nota diz a razão da escolha e a alternativa rejeitada, sem notação de nível. Exemplo em vigor: Judas 1:5 lê «[[Jesus]]» com NA28, contra «o Senhor» de WH/Tregelles/RP.",
     "COLAÇÃO ANTES DE CITAR: nenhuma testemunha (códice, papiro, versão antiga, Padre) é nomeada numa nota sem constar do aparato SBLGNT ou do relatório de colação do próprio livro (docs/colacao/, scripts/colar.py). O aparato nomeia edições, nunca manuscritos. Sem colação fornecida, escreva «sem variante verificada».",
-    "FORMATO EM PROSA: um parágrafo de comentário por versículo, sem rótulos nem notação de nível (A, B, C). O termo grego vai em itálico com transliteração na primeira ocorrência. A «Crítica Textual:» é um parágrafo próprio, só quando o aparato ou a colação registam variante, com as siglas e o que a variante muda. Texto de enchimento, etimologia inventada, código Strong não fornecido ou variante não observada chumbam o versículo.",
+    "FORMATO EM PROSA: quando há nota, um parágrafo de comentário, sem rótulos nem notação de nível (A, B, C). A nota é opcional; é obrigatória com acréscimo em itálico ou colchetes simples no texto (nunca [[ ]]). O termo grego vai em itálico com transliteração na primeira ocorrência. A «Crítica Textual:» é um parágrafo próprio, só quando o aparato ou a colação registam variante, com as siglas e o que a variante muda. Texto de enchimento, etimologia inventada, código Strong não fornecido ou variante não observada chumbam o versículo.",
     "LAPIDAÇÃO MECÂNICA ao fechar o capítulo: ênclise portuguesa (nunca próclise com gerúndio), marcas «», <i> e <b> equilibradas ao nível do capítulo, verbos supridos pelo português em itálico, pontuação que preserva a relação sintática entre versículos (CRITICA_TEXTUAL.md §5.1), ortografia europeia (unigénito) e artigo obrigatório depois de «todo/toda» no singular — «todo o desejo»: o anártrico grego regista-se na nota, não se apaga o artigo.",
     "PROTEGER O QUE JÁ FOI APROVADO: texto de piloto aprovado pelo responsável não se reescreve em corrida automática. Correção indispensável entra com <b>Nota de redação</b> explicando a mudança e fica assinalada para leitura dele.",
     "ESTATUTO HONESTO: todo o livro nasce RASCUNHO (review editorial «rascunho», revisão especializada «pendente») e só o responsável o promove. Passagens de decisão substantiva são assinaladas como prioridade de revisão especializada, em `review`, e não na nota. Idade e número de cópias de um manuscrito são indícios, nunca o critério de decisão."

@@ -70,7 +70,9 @@ def verificar_edicao(pasta: Path) -> tuple[list[str], list[str]]:
         nome = Path(ficheiro).name
         for cap, versos in dados.get("chapters", {}).items():
             for v in versos:
-                f, a = verificar_nota(v.get("commentary", ""))
+                if not v.get("commentary"):
+                    continue  # nota opcional; a obrigatoriedade é verificada em verificar_dados
+                f, a = verificar_nota(v["commentary"])
                 for item in f:
                     falhas.append(f"{nome} {cap}:{v['verse']}: {item}")
                 for item in a:

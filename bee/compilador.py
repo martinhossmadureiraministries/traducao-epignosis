@@ -204,7 +204,7 @@ def _criar_comentarios(caminho: Path, livros: dict[int, dict[str, Any]], build_i
                  '', versiculo['commentary'], numero)
                 for numero, dados in sorted(livros.items())
                 for capitulo, versiculos in sorted(dados['chapters'].items(), key=lambda item: int(item[0]))
-                for versiculo in versiculos
+                for versiculo in versiculos if versiculo.get('commentary')
             )
             conexao.executemany(
                 'INSERT INTO commentaries (book_number, chapter_number_from, verse_number_from, '
@@ -299,7 +299,11 @@ def _compilar_travado(diretorio_json: Path, diretorio_saida: Path) -> dict[str, 
             bible_temp, livros, id_compilacao, completo, lacunas_fonte, pendentes)
         total_comentarios = _criar_comentarios(
             comentarios_temp, livros, id_compilacao, completo, lacunas_fonte, pendentes)
-        if total_versos == 0 or total_versos != total_comentarios:
+        # Um comentário por versículo com nota; os versículos sem nota não entram no módulo.
+        esperados_comentarios = sum(
+            1 for dados in livros.values() for versiculos in dados['chapters'].values()
+            for versiculo in versiculos if versiculo.get('commentary'))
+        if total_versos == 0 or total_comentarios != esperados_comentarios:
             raise ErroCompilacao('Inconsistência entre os módulos; os ficheiros anteriores foram preservados.')
         _publicar([
             (bible_temp, diretorio_saida / 'BEE.SQLite3'),

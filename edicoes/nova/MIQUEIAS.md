@@ -1,8 +1,22 @@
 # Miqueias · Bíblia de Estudo Epignósis
 
-Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (400). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 105 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 16 |
+| 2 | aprovado editorialmente | 13 |
+| 3 | aprovado editorialmente | 12 |
+| 4 | aprovado editorialmente | 13 |
+| 5 | aprovado editorialmente | 15 |
+| 6 | aprovado editorialmente | 16 |
+| 7 | aprovado editorialmente | 20 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Palavra do SENHOR que veio a Miqueias, de Moresete, nos dias de Jotão, Acaz e Ezequias, reis de Judá: o que viu acerca de Samaria e de Jerusalém.
 
@@ -36,7 +50,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **16** Corta o cabelo, rapa a cabeça por causa dos filhos que eram a tua alegria. Alarga a tua calva como a do abutre, porque eles vão para o exílio, para longe de ti.
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Ai dos que, deitados na cama, planeiam a injustiça e preparam o mal! Mal amanhece, põem mãos à obra, porque têm poder para isso.
 
@@ -64,7 +78,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **13** À frente deles sobe quem abre a brecha. Abrem passagem, atravessam a porta e saem. O seu rei passa à frente deles, o SENHOR à sua cabeça.»
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Eu disse: «Ouçam, chefes de Jacó, governantes da casa de Israel! Não lhes cabe conhecer a justiça?
 
@@ -90,7 +104,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **12** Por isso, por causa de vocês, Sião será lavrada como um campo. Jerusalém será um monte de ruínas, e o monte do templo, uma colina coberta de mato.
 
-## Capítulo 4
+### Capítulo 4
 
 **1** Nos dias que virão, o monte da casa do SENHOR estará firme, acima dos outros montes; erguer-se-á sobre as colinas, e os povos afluirão para lá.
 
@@ -118,7 +132,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **13** «Levanta-te e debulha, filha de Sião. Darei ferro aos teus chifres e bronze aos teus cascos. Esmagarás muitos povos.» Consagrarei ao SENHOR os ganhos deles, e a sua riqueza ao Senhor de toda a terra.
 
-## Capítulo 5
+### Capítulo 5
 
 **1** Agora reúne as tuas tropas, cidade de tropas! Apertaram o cerco contra nós. Com uma vara ferem na face o juiz de Israel.
 
@@ -150,7 +164,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **15** Com ira e indignação farei justiça contra as nações que não ouviram.»
 
-## Capítulo 6
+### Capítulo 6
 
 **1** Ouçam o que diz o SENHOR: «Levanta-te, apresenta a tua causa diante dos montes. Que as colinas ouçam a tua voz.»
 
@@ -184,7 +198,7 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **16** Observam-se as leis de Onri, imitam-se todas as obras da casa de Acabe. Vocês seguem os seus conselhos. Por isso farei de ti uma desolação e dos teus habitantes motivo de escárnio. Vocês carregarão a afronta do meu povo.»
 
-## Capítulo 7
+### Capítulo 7
 
 **1** Ai de mim! Estou como quem chega depois da colheita do verão, depois da vindima. Não há um cacho para comer, nem o primeiro figo maduro que tanto desejo.
 
@@ -226,14 +240,442 @@ Lote 2 · 7 capítulos, 105 versículos. Leitura integral aprovada editorialment
 
 **20** Mostrarás fidelidade a Jacó e amor leal a Abraão, como juraste aos nossos pais desde os dias antigos.
 
-## Notas para depois da leitura
+## Notas
 
-**1:10–15** · A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+### Notas do capítulo 1
 
-**4:13–5:2** · A versificação portuguesa inicia o capítulo 5 com a cidade sitiada; essa frase é 4:14 no WLC. Belém é 5:2 nesta edição e 5:1 no WLC. «Dias remotos» traduz a expressão temporal sem fechar no versículo a discussão sobre o alcance das origens.
+**1:1**
 
-**6:8** · Para ḥésed, a ARC privilegia o bem feito ao próximo, a NVI a lealdade e a NVT a misericórdia. «Bondade leal» conserva a ideia de uma bondade que não abandona o outro. A pergunta responde à escalada de ofertas de 6:6–7, não a uma pergunta abstrata sobre virtude.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**7:18–20** · Na oração, o jogo entre «Que Deus é como tu?» e o nome Miqueias prepara o fecho. No v. 19 a base passa de «nossas» a «deles»; a BEE não uniformiza os pronomes.
+**1:2**
 
-[Base hebraica: WLC/OSHB, revisão fixada](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Mic.xml), CC BY 4.0. [Cotejo pontual: ARC, NVI e NVT](https://www.bible.com/pt/bible/compare/MIC.6.8). Sem colação direta de manuscritos; a comparação integral e a revisão especializada estão pendentes.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:10**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:11**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:12**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:13**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:14**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:15**
+
+- A lamentação joga com os sons dos nomes das localidades. Conservamos esses nomes: o pó em Bete-Le-Afra e o engano em Aczibe são pistas do jogo verbal, não novos nomes portugueses.
+
+**1:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 4
+
+**4:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:13**
+
+- A versificação portuguesa inicia o capítulo 5 com a cidade sitiada; essa frase é 4:14 no WLC. Belém é 5:2 nesta edição e 5:1 no WLC. «Dias remotos» traduz a expressão temporal sem fechar no versículo a discussão sobre o alcance das origens.
+
+### Notas do capítulo 5
+
+**5:1**
+
+- A versificação portuguesa inicia o capítulo 5 com a cidade sitiada; essa frase é 4:14 no WLC. Belém é 5:2 nesta edição e 5:1 no WLC. «Dias remotos» traduz a expressão temporal sem fechar no versículo a discussão sobre o alcance das origens.
+
+**5:2**
+
+- A versificação portuguesa inicia o capítulo 5 com a cidade sitiada; essa frase é 4:14 no WLC. Belém é 5:2 nesta edição e 5:1 no WLC. «Dias remotos» traduz a expressão temporal sem fechar no versículo a discussão sobre o alcance das origens.
+
+**5:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**5:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 6
+
+**6:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:8**
+
+- Para ḥésed, a ARC privilegia o bem feito ao próximo, a NVI a lealdade e a NVT a misericórdia. «Bondade leal» conserva a ideia de uma bondade que não abandona o outro. A pergunta responde à escalada de ofertas de 6:6–7, não a uma pergunta abstrata sobre virtude.
+
+**6:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**6:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 7
+
+**7:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:17**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**7:18**
+
+- Na oração, o jogo entre «Que Deus é como tu?» e o nome Miqueias prepara o fecho. No v. 19 a base passa de «nossas» a «deles»; a BEE não uniformiza os pronomes.
+
+**7:19**
+
+- Na oração, o jogo entre «Que Deus é como tu?» e o nome Miqueias prepara o fecho. No v. 19 a base passa de «nossas» a «deles»; a BEE não uniformiza os pronomes.
+
+**7:20**
+
+- Na oração, o jogo entre «Que Deus é como tu?» e o nome Miqueias prepara o fecho. No v. 19 a base passa de «nossas» a «deles»; a BEE não uniformiza os pronomes.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

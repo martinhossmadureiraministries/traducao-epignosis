@@ -27,8 +27,8 @@
       },
       {
         "verse": 5,
-        "text": "Quero recordar-lhes algo, embora já saibam tudo isso: [[Jesus]] salvou um povo, tirando-o da terra do Egito, e depois destruiu os que não creram.",
-        "commentary": "<p>Judas lembra um caso da história de Israel: a libertação do Egito e, depois, a destruição dos que não creram. O versículo está escrito com a leitura de NA28, que põe o nome de Jesus. A tradução mantém essa leitura entre colchetes duplos para assinalar que a leitura é disputada. A expressão <i>τὸ δεύτερον</i> («na segunda vez») marca a sequência: a destruição dos que não creram vem depois da libertação.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:5: a base lê «<i>Ἰησοῦς</i>» («Jesus»), com NA28; WH e Treg leem «<i>κύριος</i>» («o Senhor»); RP lê «<i>ὁ κύριος</i>». A tradução segue a base e assinala a leitura com colchetes duplos.</p>"
+        "text": "Quero recordar-lhes algo, embora já saibam tudo isso: [Jesus] salvou um povo, tirando-o da terra do Egito, e depois destruiu os que não creram.",
+        "commentary": "<p>Judas lembra um caso da história de Israel: a libertação do Egito e, depois, a destruição dos que não creram. O versículo está escrito com a leitura de NA28, que põe o nome de Jesus. A tradução mantém essa leitura entre colchetes simples para assinalar que a leitura é disputada. A expressão <i>τὸ δεύτερον</i> («na segunda vez») marca a sequência: a destruição dos que não creram vem depois da libertação.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:5: a base lê «<i>Ἰησοῦς</i>» («Jesus»), com NA28; WH e Treg leem «<i>κύριος</i>» («o Senhor»); RP lê «<i>ὁ κύριος</i>». A tradução segue a base e assinala a leitura com colchetes simples.</p>"
       },
       {
         "verse": 6,
@@ -199,8 +199,8 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "rascunho",
-        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. A aprovação anterior foi retirada: continua RASCUNHO até leitura e aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. Aprovado pelo responsável."
       }
     ],
     "specialist": [
@@ -209,8 +209,13 @@
         "verse_from": 1,
         "verse_to": 25,
         "status": "pendente",
-        "nota": "1:22–23 (arranjo das cláusulas) continua nível C, a rever. 1:5 resolvido pelo responsável em 2026-11-20: seguir NA28 — «[[Jesus]] salvou um povo» mantém-se; só reabrir com evidência nova."
+        "nota": "1:22–23 (arranjo das cláusulas) continua nível C, a rever. 1:5 resolvido pelo responsável em 2026-11-20: seguir NA28 — «[Jesus] salvou um povo» mantém-se; só reabrir com evidência nova."
       }
-    ]
+    ],
+    "ministerio": {
+      "status": "pendente",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da revisão especializada. Aplica-se aos livros com edição nova. Pendente em todos."
+    }
   }
 }

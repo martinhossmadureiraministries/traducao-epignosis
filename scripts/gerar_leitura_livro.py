@@ -19,6 +19,7 @@ import html
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -62,6 +63,54 @@ def _intervalo(capitulos: list[int]) -> str:
     return ', '.join(str(c) for c in capitulos)
 
 
+def _cabecalho_estado(dados: dict) -> str:
+    blocos = (dados.get('review') or {}).get('editorial_blocks') or []
+    if blocos and all(str(b.get('status') or '').startswith('aprovado') for b in blocos):
+        editorial = ('**Estado editorial:** aprovado pelo responsável em todos os capítulos. ')
+    else:
+        editorial = ('**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` '
+                     'até aprovação do responsável. ')
+    return (editorial + '**Revisão especializada: pendente para todos os capítulos.** '
+            'O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.')
+
+
+def _sem_acentos_nome(texto: str) -> str:
+    return ''.join(c for c in unicodedata.normalize('NFKD', texto)
+                   if not unicodedata.combining(c)).lower()
+
+
+def _colacao(nome: str) -> Path | None:
+    """Ficheiro de colação do livro em docs/colacao/, se existir."""
+    alvo = _sem_acentos_nome(nome.replace(' ', '_')) + '.json'
+    for caminho in sorted((RAIZ / 'docs' / 'colacao').glob('*.json')):
+        if _sem_acentos_nome(caminho.name) == alvo:
+            return caminho
+    return None
+
+
+def _rodape(dados: dict, livro) -> str:
+    """Fontes do livro, só as que estão nos dados ou nos ficheiros."""
+    partes = []
+    if livro.numero >= 470:
+        revisao = (dados.get('sources') or {}).get('sblgnt_commit')
+        ref = f' (revisão `{revisao[:8]}`)' if revisao else ''
+        partes.append(f'Base grega: [SBLGNT](../../docs/SBLGNT.md){ref}, CC BY 4.0. '
+                      'Textus Receptus de Scrivener só como comparação, quando a colação o regista.')
+    else:
+        partes.append('Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0).')
+    caminho = _colacao(livro.nome)
+    if caminho:
+        partes.append(f'Colação: `docs/colacao/{caminho.name}` (livro inteiro, gerada por '
+                      f'`scripts/colar.py --livro {livro.numero}`).')
+    else:
+        partes.append('Colação de manuscritos: ainda não gerada para este livro.')
+    ministerio = str(((dados.get('review') or {}).get('ministerio') or {}).get('status') or 'pendente')
+    partes.append('Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; '
+                  + ('revisão aprovada pelo ministério.' if ministerio.startswith('aprovado')
+                     else 'revisão aprovada pelo ministério pendente.'))
+    return ' '.join(partes)
+
+
 def gerar(dados: dict) -> str:
     livro = POR_NUMERO[dados['book_number']]
     nome = dados['book_name']
@@ -75,9 +124,7 @@ def gerar(dados: dict) -> str:
         f'({dados["book_number"]}). Capítulos disponíveis: {_intervalo(capitulos)}, '
         f'{total_versos} versículos.',
         '',
-        '**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` '
-        'até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** '
-        'O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.',
+        _cabecalho_estado(dados),
         '',
         '| Capítulo | Estado | Versículos |',
         '|---|---|---|',
@@ -89,13 +136,15 @@ def gerar(dados: dict) -> str:
     for c in capitulos:
         linhas += [f'### Capítulo {c}', '']
         for v in dados['chapters'][str(c)]:
-            linhas.append(f'**{v["verse"]}** {v["text"]}')
+            linhas.append(f'**{v["verse"]}** {_md(v["text"])}')
             linhas.append('')
 
     linhas += ['## Notas', '']
     for c in capitulos:
         linhas += [f'### Notas do capítulo {c}', '']
         for v in dados['chapters'][str(c)]:
+            if not v.get('commentary'):
+                continue  # versículo sem nota: só aparece no texto
             linhas.append(f'**{c}:{v["verse"]}**')
             linhas.append('')
             for rotulo, texto in _notas(v['commentary']):
@@ -105,15 +154,7 @@ def gerar(dados: dict) -> str:
                     linhas.append(f'- {texto}')
             linhas.append('')
 
-    linhas += [
-        '---',
-        '',
-        f'Base grega: [SBLGNT]({"../../docs/SBLGNT.md"}) (revisão `{dados["sources"]["sblgnt_commit"][:8]}`, CC BY 4.0). '
-        'Textus Receptus de Scrivener só como comparação, quando a colação o regista. '
-        'Colação: `docs/colacao/João.json` (livro inteiro, gerada por `scripts/colar.py --livro 500`). '
-        'Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente.',
-        '',
-    ]
+    linhas += ['---', '', _rodape(dados, livro), '']
     return '\n'.join(linhas)
 
 

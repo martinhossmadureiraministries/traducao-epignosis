@@ -1,6 +1,6 @@
 # Arquitetura
 
-Estado em 2026-11-23, depois da retirada da produção por IA (`d82baf3`). O
+Estado em 20/11/2026, depois da retirada da produção por IA (`d82baf3`). O
 registo do que foi retirado está no histórico (`git show a80fa33:<caminho>`).
 
 ## Fluxo de trabalho
@@ -9,7 +9,7 @@ registo do que foi retirado está no histórico (`git show a80fa33:<caminho>`).
    e o Textus Receptus como comparação. Cada versão tem um commit fixado.
 2. **Colação.** `scripts/colar.py` confronta o aparato com as testemunhas
    consultadas (`bee/manuscritos.py`) e grava o relatório em `docs/colacao/`.
-3. **Redação.** Texto e nota de cada versículo ficam em
+3. **Redação.** Texto de cada versículo, e a nota quando a há, ficam em
    `edicoes/nova/livros_json/<número>_<Livro>.json`. O formato da nota é prosa
    (ver `docs/ESTILO_BEE.md`).
 4. **Verificação.** `scripts/verificar_dados.py` (integridade),
@@ -21,8 +21,8 @@ registo do que foi retirado está no histórico (`git show a80fa33:<caminho>`).
 6. **Compilação.** `gerar_bee.py --compilar` gera os módulos MyBible
    (`BEE.SQLite3` e `BEE.commentaries.SQLite3`).
 
-A revisão editorial e a revisão especializada ficam registadas em `review` no
-próprio JSON, e nunca são confundidas com cobertura.
+A revisão editorial, a especializada (especialista externo) e a aprovada pelo ministério
+ficam registadas em `review` no próprio JSON, e nunca são confundidas com cobertura.
 
 ## Módulos (`bee/`)
 
@@ -56,16 +56,17 @@ Cada JSON de livro tem `format_version`, `book_number`, `book_name`,
 `bibliography` e `review`.
 
 - `chapters`: capítulos completos; só estes entram nos módulos. Cada versículo
-  tem `verse`, `text` e `commentary`.
+  tem `verse` e `text`. `commentary` (a nota) é opcional: omite-se a chave quando
+  não há nota; se existir, não pode estar vazia.
 - `in_progress`: versículos já guardados de um capítulo ainda a meio.
 - `bibliography`: fontes efetivamente consultadas, com commit, URL e licença.
-- `review`: estados de revisão editorial e especializada.
+- `review`: estados das três revisões (editorial, especializada e ministério).
 
 Marcadores que **não** são texto bíblico: `[Versículo sem texto
 correspondente no WLC consultado.]` (fonte ausente) e `[Versículo pendente:
 …]` (quarentena).
 
-Formato único (decisão de 2026-11-23): cada versículo tem um parágrafo de
+Formato único (decisão de 2026-11-23): quando há nota, é um parágrafo de
 comentário em prosa, sem rótulos de secção e sem níveis de certeza. A
 Crítica Textual é um parágrafo próprio, «Crítica Textual:», e só aparece
 quando o aparato da SBLGNT ou a colação registam variante. Não há listas de
@@ -82,4 +83,4 @@ verifica a regra para o livro inteiro.
 
 ## Código arquivado
 
-`arquivo/` guarda `bee/porta.py`, `bee/memoria_estilo.py`, `scripts/aprovar_voz.py` e `scripts/gerar_apresentacao.py`, fora do produto (ver `arquivo/LEIA-ME.md`). A apresentação antiga está em `docs/arquivo/APRESENTACAO_BEE.docx`. Os documentos `PLANO_CORRECAO.md` e `REVISAO_GERAL.md` estão em `docs/arquivo/`.
+`arquivo/` guarda `bee/porta.py`, `bee/memoria_estilo.py`, `scripts/aprovar_voz.py` e a versão antiga de `scripts/gerar_apresentacao.py` (ver `arquivo/LEIA-ME.md`). O gerador ativo é `scripts/gerar_apresentacao.py`, que produz `docs/APRESENTACAO_BEE.docx` a partir dos JSON. A apresentação anterior está em `docs/arquivo/APRESENTACAO_BEE.docx`. Os documentos `PLANO_CORRECAO.md` e `REVISAO_GERAL.md` estão em `docs/arquivo/`.

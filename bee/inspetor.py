@@ -95,8 +95,8 @@ _RE_EIS = re.compile(r'(?<![a-zà-ÿ])[a-z]+eis(?![a-zà-ÿ])')
 # a pontuação de Almeida que a produção nova usou em João 4.
 _RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
 
-# Formato único das notas (decisão do responsável, 2026-11-23): um parágrafo de
-# comentário em prosa por versículo, sem rótulos de secção e sem níveis de
+# Formato único das notas (decisão do responsável, 2026-11-23): quando há nota, um parágrafo de
+# comentário em prosa, sem rótulos de secção e sem níveis de
 # certeza (A, B, C). A Crítica Textual vai num parágrafo próprio, «Crítica
 # Textual:», só quando o aparato da SBLGNT ou a colação registam variante.
 # Os livros e capítulos antigos foram todos convertidos; não há exceções.

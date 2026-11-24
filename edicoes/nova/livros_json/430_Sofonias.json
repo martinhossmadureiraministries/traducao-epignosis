@@ -310,6 +310,34 @@
         "verse_to": 20,
         "status": "aprovado editorialmente"
       }
-    ]
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 18,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 15,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      }
+    ],
+    "ministerio": {
+      "status": "pendente",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da revisão especializada. Aplica-se aos livros com edição nova. Pendente em todos."
+    }
   }
 }

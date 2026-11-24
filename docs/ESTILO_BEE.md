@@ -1,5 +1,7 @@
 # A voz da Bíblia de Estudo Epignósis
 
+> **Para o próximo livro, ler primeiro [RESUMO_ESTILO.md](RESUMO_ESTILO.md)**, que junta as regras vigentes. Este ficheiro guarda as calibrações e os exemplos de origem.
+
 **Proposta editorial v0.4 — amostras de calibração, não texto aprovado.**
 
 > Clareza para ler, cadência para proclamar, profundidade para estudar. O impacto deve vir do texto, não de frases que lhe acrescentamos.
@@ -25,7 +27,7 @@ Não combinar frases dessas versões nem as usar como texto de partida. A redaç
 
 **Convenção para toda a BEE — Selá.** Quando o original trouxer a indicação musical סֶלָה, mantê-la no lugar como *[Selá]* (no módulo MyBible: `<i>[Selá]</i>`). Na leitura pública a marca não se pronuncia. Não a acrescentar por sugestão de pausa nem aplicar a convenção a nomes de lugar.
 
-**Convenção para toda a BEE — rubricas de título.** Quando o original trouxer uma indicação dirigida ao regente ou aos instrumentos (por exemplo, «Ao mestre de música. Com os meus instrumentos de cordas.», Hab. 3:19), a leitura em Markdown dá-lhe uma linha própria, em itálico, depois do versículo. No JSON da edição nova a rubrica fica em `<i>` no fim do texto do versículo, porque o formato não tem quebra de parágrafo dentro de `text`. Não é texto do versículo em disputa e não leva `[[ ]]`.
+**Convenção para toda a BEE — rubricas de título.** Quando o original trouxer uma indicação dirigida ao regente ou aos instrumentos (por exemplo, «Ao mestre de música. Com os meus instrumentos de cordas.», Hab. 3:19), a leitura em Markdown dá-lhe uma linha própria, em itálico, depois do versículo. No JSON da edição nova a rubrica fica em `<i>` no fim do texto do versículo, porque o formato não tem quebra de parágrafo dentro de `text`. Não é texto do versículo em disputa e não leva colchetes.
 
 ## Três testes de voz
 
@@ -133,7 +135,7 @@ Aqui, **KJV** designa a King James Version inglesa, não a KJA portuguesa. Usá-
 
 - **Hebreus 11:1:** testar «A fé é o firme fundamento do que esperamos e a evidência do que não vemos.» ὑπόστασις permite discutir firmeza objetiva e segurança; «fundamento» é uma escolha contextual, não uma definição fixa nem a ideia de que a fé produz o que se espera. Comparar KJV (*substance*) e ESV (*assurance*). ἔλεγχος admite «evidência» e «convicção»; a primeira destaca a força probante, sem fazer da fé uma prova empírica. Ler com os exemplos do capítulo.
 - **Hebreus 11:3:** testar «Pela fé entendemos que Deus formou o universo pela sua palavra, de modo que aquilo que vemos não veio de coisas visíveis.» O grego nega a origem em coisas visíveis (μὴ ἐκ φαινομένων); «veio do invisível» formula positivamente uma leitura que a frase não enuncia nesses termos. O texto nomeia a palavra de Deus como meio; não identifica o invisível como matéria-prima.
-- **Marcos 16:17:** «[[Estes sinais seguirão os que crerem: em meu nome expulsarão demónios, falarão em novas línguas,]]». παρακολουθήσει admite «seguirão» e «acompanharão» (KJV *shall follow*; ESV *will accompany*). «Seguirão» não prova sequência cronológica ou posição física. A leitura dos sinais como consequência, não como alvo da missão, decorre de 16:15–20. Manter a sinalização do final longo.
+- **Marcos 16:17:** «[Estes sinais seguirão os que crerem: em meu nome expulsarão demónios, falarão em novas línguas,]]». παρακολουθήσει admite «seguirão» e «acompanharão» (KJV *shall follow*; ESV *will accompany*). «Seguirão» não prova sequência cronológica ou posição física. A leitura dos sinais como consequência, não como alvo da missão, decorre de 16:15–20. Manter a sinalização do final longo.
 
 ## Calibração — vocabulário tradicional e poesia sapiencial
 
@@ -183,7 +185,7 @@ capítulos, sem exceções por livro ou por capítulo.
 
 **Regras:**
 
-1. Um parágrafo de comentário por versículo. Sem rótulos («Análise Léxica», «Síntese Exegética») e sem notação de nível (A, B, C), nem como rótulo nem como «confirmação».
+1. Quando há nota, um parágrafo de comentário (a nota é opcional desde 2026-11-24; ver `docs/RESUMO_ESTILO.md` §2). Sem rótulos («Análise Léxica», «Síntese Exegética») e sem notação de nível (A, B, C), nem como rótulo nem como «confirmação».
 2. Cada termo grego vem em itálico, com a transliteração entre parênteses na primeira ocorrência. O grego fica dentro da prosa, não numa lista.
 3. A «Crítica Textual» é um parágrafo próprio, que começa por «Crítica Textual:», e só aparece quando o aparato SBLGNT ou a colação regista variante. Cita as siglas (WH, Treg, NA28, RP, e as testemunhas da colação) e diz, em frase clara, o que a variante muda e porque a base foi seguida. Sem variante, não há parágrafo.
 4. A razão da escolha e a alternativa rejeitada entram no próprio parágrafo, não numa etiqueta. A revisão especializada é registada em `review`, não na nota.
@@ -262,9 +264,8 @@ livro inteiro: *ἀτακτ-* → «viver desordenadamente» nos vv. 6, 7 e 11 d
 **Nota não inventa.** Nem etimologias, nem derivadas portuguesas que não existem,
 nem «todas as edições» quando se consultaram seis. E, acima de tudo, **a nota não
 pode contradizer o versículo**: se a nota regista que a base não tem uma palavra,
-o texto não a traduz. A passagem de lapidação de 2 Tessalonicenses — verso a
-verso, com a regra reutilizável de cada correção — está em
-`OFICINA_TRADUCAO.md`.
+o texto não a traduz. A passagem de lapidação de 2 Tessalonicenses, verso a verso,
+não está arquivada no repositório; ficam as regras reutilizáveis desta secção.
 
 **Proveniência.** Cada livro declara em `bibliography` as fontes efetivamente
 consultadas, com revisão (commit), URL, licença e o que se consultou nelas; e em
@@ -288,9 +289,7 @@ Estas convenções saíram da revisão de João e valem para todos os livros nov
 as correções dos já aprovados. `scripts/verificar_convencoes_notas.py` confere as
 que se verificam sem ler o grego.
 
-1. **Nomes e termos fixos.** O Espírito é «Paráclito» com acento (como em 14:16, 14:26
-   e 15:26). O grego é παράκλητος, *paráklētos* (acento no primeiro «a»); o acusativo
-   é *paraklēton*. «Paracletos» e «Parakletós» não se usam.
+1. **Nomes e termos fixos.** O Espírito é «Parácletos» (nominativo, com s, como em 14:26, 15:26 e 16:7), transliteração literal de παράκλητος, *parákletos* (acento no primeiro «a»; η dá «e»). O acusativo, em 14:16, é «Parácleton», *parákleton*. «Paráclito» e «Paracletos» não se usam. Decisão do responsável; antes era «Paráclito». Em 1 João 2:1, onde o original tem o mesmo acusativo (παράκλητον), usa-se «Parácleton» com nota sobre «consolador, advogado».
 2. **NIV é tradução, nunca testemunha.** Na Crítica Textual, a NIV só aparece quando
    diverge da base, como escolha de tradução: «a NIV segue essa leitura por escolha de
    tradução» ou «a NIV omite a palavra, por escolha de tradução». Quando concorda com a
@@ -315,11 +314,47 @@ que se verificam sem ler o grego.
    «o Senhor»), a nota diz qual é a leitura da base e qual é a alternativa, e o bloco
    fica com a nota «para decisão». A tradução segue a base até decisão contrária.
 
+## Estilo verificado — decisões aprovadas em João 1–15
+
+Estas decisões foram tomadas pelo responsável e valem para os capítulos seguintes e para os
+outros livros.
+
+**Norma ortográfica.** Acordo de 1990 (AO90) em toda a edição, em português europeu. Angola
+assinou o acordo, mas não o ratificou: a escolha é editorial, não oficial. Não se misturam
+formas de 1945 («ação» sim, «acção» não; «aspeto», «atividade», «ato», «perceção», «receção»,
+«aceção», «ativa», «rutura», «leãozinhos»). Exemplos corrigidos: 2 Tessalonicenses 3:14 («rutura»,
+não «ruptura», que é a grafia brasileira); Naum 2:11 e 2:13 («leãozinhos», não «leõezinhos»).
+
+**Acréscimos no texto.** Palavras acrescentadas por clareza ficam em `<i>…</i>`. Os colchetes
+ficam para a evidência dos manuscritos (regra de 2026-11-22). Exemplos: Habacuque 3:3, 3:9, 3:13
+e 3:19; Filipenses 1:16; 2 Tessalonicenses 1:5, 1:7, 2:3, 2:7, 2:9 e 3:9. «[Selá]» segue a
+convenção pública, à parte.
+
+**Colchetes de variante.** Quando a base lê uma palavra que a maioria não tem, põe-se a palavra
+entre colchetes simples, com nota que diz a evidência e a leitura alternativa. Não se usam
+colchetes duplos. Exemplo: Judas 1:5, «[Jesus]» (NA28 e base; WH e Treg leem «o Senhor»).
+
+**Nome de Jesus e leituras de «Senhor».** Em 4:1, a base lê «Jesus» (NA28, 01, 05); WH, Treg e
+RP leem «o Senhor». Decisão do responsável: «Jesus» no texto, com a alternativa na nota.
+
+**NIV.** Só aparece na Crítica Textual como escolha de tradução, quando diverge da base. Exemplos
+aprovados: 12:19 («a NIV acrescenta «ὅλος», por escolha de tradução»); 15:18 («a NIV omite a
+palavra, por escolha de tradução»).
+
+**Termos fixos.** «Parácletos» (14:26, 15:26, 16:7) e «Parácleton» (14:16), com acento, transliteração literal. «Te vás manifestar» em 14:22
+(opção A). «levava» em 12:6, não «tomava».
+
+**Nomes próprios (aprovados pelo responsável, 2026-11-24).** Grafias fixas em toda a edição: «Pilatos», «Anás», «Cedrom», «Malco» e «Barrabás», usados em João 18–19. Usar estas formas sem variação (não «Pilato», «Anas» nem «Barrabas»). «Caifás» já vinha fixado em 1–17. Também aprovadas pelo responsável para toda a edição: «Getsêmani», «Gólgota», «Arimateia», «Clopas» e «Madalena».
+
+**Confronto com o grego.** Antes de aprovar um capítulo, conferir cada versículo com o SBLGNT da
+colação (`docs/colacao/João.json`, campo `base.sblgnt`) e com as palavras citadas nas notas. Na
+revisão de 12, 14 e 15, não se encontrou omissão, acréscimo sem marca nem inversão de sentido.
+
 ## Lista de verificação para cada capítulo novo
 
 1. Ler o original (SBLGNT) e a colação (`docs/colacao/João.json`, ou o equivalente do livro)
    antes de redigir. Para cada versículo, confrontar `divergencias` com a Crítica Textual.
-2. Redigir o texto e uma nota em prosa por versículo, sem rótulos, com o grego em itálico
+2. Redigir o texto e, onde há algo a explicar, uma nota em prosa, sem rótulos, com o grego em itálico
    e a transliteração na primeira ocorrência.
 3. Conferir a Crítica Textual: uma só, em parágrafo próprio, sem sinais de aparato, com as
    siglas e as testemunhas que diferem, e com a NIV só como escolha de tradução.

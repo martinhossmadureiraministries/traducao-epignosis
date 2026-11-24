@@ -79,7 +79,8 @@ def _corte_valido(texto: str) -> Any:
         if isinstance(raiz, dict) and isinstance(raiz.get('verses'), list) and raiz['verses']:
             completos = [
                 v for v in raiz['verses']
-                if isinstance(v, dict) and v.get('text') and v.get('commentary')
+                if isinstance(v, dict) and v.get('text')
+                and ('commentary' not in v or v.get('commentary'))
             ]
             if completos:
                 raiz['verses'] = completos
@@ -140,26 +141,37 @@ def sanear_html(valor: Any, comentario: bool = False) -> Any:
 
 
 def validar_colchetes_variantes(valor: str, campo: str) -> None:
-    """Verifica a forma dos marcadores, não a existência ou a evidência da variante.
+    """Colchetes simples: `[ ]` para variante ou evidência de manuscritos.
 
-    Cada versículo é fechado independentemente, inclusive em passagens que
-    atravessam capítulos; o comentário identifica a leitura e a fonte utilizadas.
+    Convenção (2026-11-24): só colchetes simples, nunca `[[ ]]`. Verifica-se a
+    forma, não a existência nem a evidência da variante; a evidência fica na nota.
     """
-    inicio: int | None = None
-    for sinal in re.finditer(r'\[\[|\]\]', valor):
-        if sinal.group() == '[[':
-            if inicio is not None:
-                raise DadosInvalidos(f'{campo}: marcadores de variante aninhados.')
-            inicio = sinal.end()
-        else:
-            if inicio is None:
-                raise DadosInvalidos(f'{campo}: fechamento de variante sem abertura.')
-            conteudo = re.sub(r'<[^>]*>', '', valor[inicio:sinal.start()]).strip()
-            if not conteudo:
-                raise DadosInvalidos(f'{campo}: trecho de variante vazio.')
-            inicio = None
-    if inicio is not None:
-        raise DadosInvalidos(f'{campo}: marcador de variante sem fechamento.')
+    if '[[' in valor or ']]' in valor:
+        raise DadosInvalidos(f'{campo}: use colchetes simples, não duplos.')
+    if valor.count('[') != valor.count(']'):
+        raise DadosInvalidos(f'{campo}: colchetes desequilibrados.')
+
+
+_RE_ACRESCIMO = re.compile(r'<i[\s>]')
+
+
+def exige_nota(texto: Any) -> str | None:
+    """Motivo pelo qual o versículo tem de ter nota, ou `None` se a nota é opcional.
+
+    Regra (decisão de 2026-11-24): a nota é opcional. Fica obrigatória onde há
+    algo a explicar e que a máquina consegue ver no texto: um acréscimo em
+    itálico (palavra sem correspondência no grego) ou colchetes simples (variante
+    ou evidência de manuscritos). A variante do aparato da SBLGNT sem nota é
+    apanhada pelo `verificar_notas_colacao` (variante sem Crítica Textual). Os
+    marcadores de produção (`[Versículo …`) não são texto e não pedem nota.
+    """
+    if not isinstance(texto, str) or texto.startswith('[Versículo'):
+        return None
+    if _RE_ACRESCIMO.search(texto):
+        return 'o texto tem um acréscimo em itálico'
+    if '[' in texto:
+        return 'o texto tem colchetes (variante ou evidência de manuscritos)'
+    return None
 
 
 def validar_versiculos(versiculos: Any, esperados: range, contexto: str) -> None:
@@ -179,7 +191,13 @@ def validar_versiculos(versiculos: Any, esperados: range, contexto: str) -> None
         try:
             validar_html(item.get('text'), f'text de {contexto}:{numero}')
             validar_colchetes_variantes(item['text'], f'text de {contexto}:{numero}')
-            validar_html(item.get('commentary'), f'commentary de {contexto}:{numero}', True)
+            if 'commentary' in item:
+                # Chave presente: tem de ser nota não vazia. Chave ausente: versículo sem nota.
+                validar_html(item.get('commentary'), f'commentary de {contexto}:{numero}', True)
+            else:
+                motivo = exige_nota(item.get('text'))
+                if motivo:
+                    raise DadosInvalidos(f'sem nota, porque {motivo}.')
         except DadosInvalidos as exc:
             raise DadosInvalidos(f'{contexto}:{numero}: {exc}') from exc
 

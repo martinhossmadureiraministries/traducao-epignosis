@@ -1,8 +1,29 @@
 # Oseias · Bíblia de Estudo Epignósis
 
-Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmente; revisão especializada pendente. Notas depois do texto.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (350). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 197 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 11 |
+| 2 | aprovado editorialmente | 23 |
+| 3 | aprovado editorialmente | 5 |
+| 4 | aprovado editorialmente | 19 |
+| 5 | aprovado editorialmente | 15 |
+| 6 | aprovado editorialmente | 11 |
+| 7 | aprovado editorialmente | 16 |
+| 8 | aprovado editorialmente | 14 |
+| 9 | aprovado editorialmente | 17 |
+| 10 | aprovado editorialmente | 15 |
+| 11 | aprovado editorialmente | 12 |
+| 12 | aprovado editorialmente | 14 |
+| 13 | aprovado editorialmente | 16 |
+| 14 | aprovado editorialmente | 9 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Palavra do SENHOR que veio a Oseias, filho de Beeri, nos dias de Uzias, Jotão, Acaz e Ezequias, reis de Judá, e nos dias de Jeroboão, filho de Joás, rei de Israel.
 
@@ -26,9 +47,9 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **11** Os filhos de Judá e os filhos de Israel se reunirão, escolherão um só chefe e subirão da terra. Grande será o dia de Jezreel!
 
-## Capítulo 2
+### Capítulo 2
 
-**1** Digam aos seus irmãos: «Meu povo», e às suas irmãs: «Aquela que recebeu compaixão».
+**1** Digam aos seus irmãos: «Meu povo», e às suas irmãs: «Aquela que recebeu compaixão.»
 
 **2** «Acusem a sua mãe, acusem-na! Ela não é minha mulher e eu não sou seu marido. Que tire do rosto a sua prostituição e de entre os seios os sinais do seu adultério.
 
@@ -74,7 +95,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **23** Eu a semearei para mim na terra. Terei compaixão de Sem-Compaixão e direi a Não-Meu-Povo: “Tu és o meu povo.” E ele dirá: “Meu Deus!”»
 
-## Capítulo 3
+### Capítulo 3
 
 **1** O SENHOR voltou a falar-me: «Vai, ama uma mulher amada por outro e adúltera, tal como o SENHOR ama os filhos de Israel, embora se voltem para outros deuses e gostem de bolos de passas.»
 
@@ -86,7 +107,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **5** Depois voltarão e procurarão o SENHOR, seu Deus, e Davi, seu rei. Virão tremendo ao encontro do SENHOR e da sua bondade, nos dias que virão.
 
-## Capítulo 4
+### Capítulo 4
 
 **1** Ouçam a palavra do SENHOR, filhos de Israel. O SENHOR tem uma causa contra os habitantes da terra: não há fidelidade nem amor leal nem conhecimento de Deus na terra.
 
@@ -126,7 +147,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **19** O vento os envolverá nas suas asas, e os seus sacrifícios os cobrirão de vergonha.»
 
-## Capítulo 5
+### Capítulo 5
 
 **1** «Ouçam isto, sacerdotes! Prestem atenção, casa de Israel! Casa do rei, escuta! É contra vocês o juízo: foram armadilha em Mispá e rede estendida sobre o Tabor.
 
@@ -158,7 +179,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **15** Voltarei para o meu lugar até que reconheçam a sua culpa e procurem o meu rosto. Na sua angústia terão saudades de mim.»
 
-## Capítulo 6
+### Capítulo 6
 
 **1** «Venham, voltemos para o SENHOR. Ele despedaçou, mas há de nos curar; feriu, mas há de nos ligar as feridas.
 
@@ -166,11 +187,11 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **3** Conheçamos o SENHOR! Empenhemo-nos em conhecê-lo! A sua vinda é certa como a aurora; virá a nós como a chuva, como a chuva tardia que rega a terra.»
 
-**4** «Que te hei de fazer, Efraim? Que te hei de fazer, Judá? O vosso amor leal é como a nuvem da manhã, como o orvalho que cedo se vai.
+**4** «Que te hei de fazer, Efraim? Que te hei de fazer, Judá? O amor leal de vocês é como a nuvem da manhã, como o orvalho que cedo se vai.
 
 **5** Por isso os talhei por meio dos profetas; matei-os com as palavras da minha boca. Os teus juízos saem como a luz.
 
-**6** Pois quero amor leal, não sacrifício; conhecimento de Deus, mais do que holocaustos.
+**6** Pois quero amor leal, não sacrifício; conhecimento de Deus, mais do que holocaustos.»
 
 **7** Mas eles, como Adão, romperam a aliança. Ali foram desleais comigo.
 
@@ -182,7 +203,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **11** Também para ti, Judá, está marcada uma colheita, quando eu restaurar a sorte do meu povo.
 
-## Capítulo 7
+### Capítulo 7
 
 **1** Quando quero curar Israel, vem à luz a culpa de Efraim e a maldade de Samaria. Praticam o engano, o ladrão entra nas casas, o bando saqueia nas ruas.
 
@@ -216,7 +237,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **16** Voltam-se, mas não para o alto. São como arco que falha. Os seus chefes cairão pela espada por causa da insolência da sua língua. Por isso farão troça deles no Egito.
 
-## Capítulo 8
+### Capítulo 8
 
 **1** Leva a trompa à boca! Como águia vem o inimigo sobre a casa do SENHOR, porque romperam a minha aliança e se revoltaram contra a minha instrução.
 
@@ -244,9 +265,9 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **13** Oferecem-me sacrifícios de carne e comem-na; o SENHOR não os aceita. Agora se lembrará da culpa deles e lhes pedirá contas dos pecados. Voltarão ao Egito.
 
-**14** Israel esqueceu o seu Criador e construiu palácios; Judá multiplicou cidades fortificadas. Enviarei fogo contra as suas cidades, e ele devorará as suas fortalezas.»
+**14** Israel esqueceu o seu Criador e construiu palácios; Judá multiplicou cidades fortificadas. «Enviarei fogo contra as suas cidades, e ele devorará as suas fortalezas.»
 
-## Capítulo 9
+### Capítulo 9
 
 **1** Não te alegres, Israel, não exultes como os outros povos! Tu te prostituíste, afastando-te do teu Deus; amaste a paga recebida em cada eira de cereal.
 
@@ -282,7 +303,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **17** O meu Deus os rejeitará, porque não lhe deram ouvidos. Andarão errantes entre as nações.
 
-## Capítulo 10
+### Capítulo 10
 
 **1** Israel é videira viçosa, produz fruto para si. Quanto mais fruto, mais altares; quanto melhor a terra, mais belas as colunas sagradas.
 
@@ -304,7 +325,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **10** Quando eu quiser, vou discipliná-los. Povos se juntarão contra eles quando forem atados pelas suas duas culpas.
 
-**11** Efraim era novilha treinada que gostava de debulhar. Passei junto do seu belo pescoço. Porei Efraim sob o jugo; Judá lavrará, Jacó desfará os torrões.
+**11** Efraim era novilha treinada que gostava de debulhar. Passei junto do seu belo pescoço. Porei Efraim sob o jugo; Judá lavrará, Jacó desfará os torrões.»
 
 **12** Semeiem para vocês em justiça, colham segundo o amor leal. Lavrem terra ainda por cultivar. É tempo de procurar o SENHOR, até que venha e faça chover justiça sobre vocês.
 
@@ -314,7 +335,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **15** Assim lhes fará Betel, tamanha é a sua maldade. Ao romper da manhã, o rei de Israel terá desaparecido.
 
-## Capítulo 11
+### Capítulo 11
 
 **1** Quando Israel era menino, eu o amei. Do Egito chamei o meu filho.
 
@@ -330,7 +351,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **7** O meu povo insiste em se afastar de mim. Chamam-no para o alto, mas ninguém se levanta.
 
-**8** Como te entregaria, Efraim? Como te abandonaria, Israel? Como faria de ti outra Admá? Como te deixaria igual a Zeboim? O meu coração revira-se dentro de mim, toda a minha compaixão se acende.
+**8** «Como te entregaria, Efraim? Como te abandonaria, Israel? Como faria de ti outra Admá? Como te deixaria igual a Zeboim? O meu coração revira-se dentro de mim, toda a minha compaixão se acende.
 
 **9** Não darei curso ao ardor da minha ira, não voltarei a destruir Efraim. Pois sou Deus, não homem, o Santo no teu meio. Não entrarei na cidade.
 
@@ -340,7 +361,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **12** Efraim cercou-me de mentiras, e a casa de Israel, de engano. Judá ainda anda com Deus e permanece fiel ao Santo.
 
-## Capítulo 12
+### Capítulo 12
 
 **1** Efraim alimenta-se de vento, corre atrás do vento leste. O dia inteiro multiplica mentiras e violência. Fazem aliança com a Assíria e levam azeite ao Egito.
 
@@ -370,7 +391,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **14** Efraim provocou amarga indignação. Sobre ele o seu Senhor deixará a culpa do sangue derramado e lhe devolverá a afronta que fez.
 
-## Capítulo 13
+### Capítulo 13
 
 **1** Quando Efraim falava, havia tremor. Ele se elevou em Israel, mas tornou-se culpado por causa de Baal e morreu.
 
@@ -404,7 +425,7 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **16** Samaria responderá pela sua culpa, pois se revoltou contra o seu Deus. Cairão à espada; as suas crianças serão despedaçadas e as suas grávidas, rasgadas.»
 
-## Capítulo 14
+### Capítulo 14
 
 **1** Volta, Israel, para o SENHOR, teu Deus: foi na tua culpa que tropeçaste.
 
@@ -424,20 +445,64 @@ Lote 3 · 14 capítulos, 197 versículos. Leitura integral aprovada editorialmen
 
 **9** Quem é sábio, para entender estas coisas? Quem tem discernimento, para as conhecer? Os caminhos do SENHOR são retos. Os justos andam por eles, mas os rebeldes neles tropeçam.
 
-## Notas para depois da leitura
+## Notas
 
-**1:4–2:1** · Jezreel é lugar de sangue e nome associado a semear (2:23). Os outros dois nomes trazem a negação «não»; o apelo de 2:1 retira essa negação. WLC 2:1–2 corresponde aqui a 1:10–11.
+### Notas do capítulo 1
 
-**3:1** · O texto manda amar «uma mulher», mas não dá o seu nome neste versículo. Não antecipamos no diálogo a identificação com Gômer.
+**1:4**
 
-**6:6–7** · «Amor leal» retoma o vínculo que se desfaz como orvalho em 6:4. Em 6:7 «como Adão» é uma leitura de אדם; «como seres humanos» também é possível.
+- Jezreel é lugar de sangue e nome associado a semear (2:23). Os outros dois nomes trazem a negação «não»; o apelo de 2:1 retira essa negação. WLC 2:1–2 corresponde aqui a 1:10–11.
 
-**11:3–4** · A voz que ensinou o menino a andar muda de imagem: ao dar alimento, alivia o jugo. A BEE conserva essa passagem, sem dar à cena inteira uma única metáfora. ARC, NVI e NVT também leem o jugo; divergem no detalhe do gesto.
+### Notas do capítulo 2
 
-**11:9, 12** · O fecho de 11:9 admite traduções muito diferentes; «na cidade» conserva a leitura concreta de בעיר. A última oração de 11:12 também é discutida: a BEE apresenta Judá em contraste com Efraim, não como certeza sobre a sua fidelidade histórica.
+### Notas do capítulo 3
 
-**13:14** · A sequência pode ser lida como promessa de resgate ou como perguntas que recusam o resgate. Optámos pela interrogação por causa da recusa de compaixão no fim do verso. A citação de Paulo em 1 Coríntios 15 não substitui o contexto próprio de Oseias.
+**3:1**
 
-**14:2** · A base diz «novilhos» e «nossos lábios» numa construção difícil. A BEE entende os lábios que confessam como oferta. O capítulo 14 desta edição começa em WLC 14:2.
+- O texto manda amar «uma mulher», mas não dá o seu nome neste versículo. Não antecipamos no diálogo a identificação com Gômer.
 
-[Fonte: WLC/OSHB, revisão fixada](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Hos.xml), CC BY 4.0. [Cotejo pontual de traduções portuguesas](https://www.bible.com/pt/bible/compare/HOS.11.4). Sem colação direta de manuscritos; revisão filológica integral pendente.
+### Notas do capítulo 4
+
+### Notas do capítulo 5
+
+### Notas do capítulo 6
+
+**6:6**
+
+- «Amor leal» retoma o vínculo que se desfaz como orvalho em 6:4. Em 6:7 «como Adão» é uma leitura de אדם; «como seres humanos» também é possível.
+
+### Notas do capítulo 7
+
+### Notas do capítulo 8
+
+### Notas do capítulo 9
+
+### Notas do capítulo 10
+
+### Notas do capítulo 11
+
+**11:3**
+
+- A voz que ensinou o menino a andar muda de imagem: ao dar alimento, alivia o jugo. A BEE conserva essa passagem, sem dar à cena inteira uma única metáfora. ARC, NVI e NVT também leem o jugo; divergem no detalhe do gesto.
+
+**11:9**
+
+- O fecho de 11:9 admite traduções muito diferentes; «na cidade» conserva a leitura concreta de בעיר. A última oração de 11:12 também é discutida: a BEE apresenta Judá em contraste com Efraim, não como certeza sobre a sua fidelidade histórica.
+
+### Notas do capítulo 12
+
+### Notas do capítulo 13
+
+**13:14**
+
+- A sequência pode ser lida como promessa de resgate ou como perguntas que recusam o resgate. Optámos pela interrogação por causa da recusa de compaixão no fim do verso. A citação de Paulo em 1 Coríntios 15 não substitui o contexto próprio de Oseias.
+
+### Notas do capítulo 14
+
+**14:2**
+
+- A base diz «novilhos» e «nossos lábios» numa construção difícil. A BEE entende os lábios que confessam como oferta. O capítulo 14 desta edição começa em WLC 14:2.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

@@ -347,22 +347,24 @@ class MemoriaDeEstiloCoerenteTest(unittest.TestCase):
         for forma in ('connosco', 'de facto', 'registo'):
             self.assertIn(forma, ortografia)
 
-    def test_2ts_nao_ancora_a_memoria_com_revisao_especializada_pendente(self):
-        # 2 Tessalonicenses não entra como livro-base da memória enquanto a revisão
-        # especializada estiver pendente. Os blocos foram reconvertidos em prosa e
-        # voltam a rascunho até leitura e aprovação do responsável: não se aprova
-        # em nome de ninguém.
+    def test_2ts_entra_como_livro_base_com_aprovacao_editorial(self):
+        # 2 Tessalonicenses está aprovado editorialmente pelo responsável, que o
+        # indicou como livro-base. A revisão especializada (especialista externo)
+        # continua pendente e não é feita pelo agente nem pelo responsável.
         numeros = {l['numero'] for l in self.memoria['ancoras']['livros_base']}
-        self.assertNotIn(600, numeros)
+        self.assertIn(600, numeros)
         estados = {b['status'] for b in self.livro['review']['editorial_blocks']}
-        self.assertEqual(estados, {'rascunho'})
+        self.assertEqual(estados, {'aprovado editorialmente'})
+        self.assertTrue(self.livro['review']['specialist'])
+        self.assertTrue(all(b['status'] == 'pendente'
+                            for b in self.livro['review']['specialist']))
 
 
 class LapidacaoTest(unittest.TestCase):
     """Defeitos que uma leitura atenta apanha e que nenhum verificador apanhava.
 
     Todos os testes desta classe nasceram de um achado real na passagem de
-    lapidação de 2026-11-20 (docs/OFICINA_TRADUCAO.md). Ficam aqui para que o
+    lapidação de 2026-11-20 (a oficina de tradução não está no repositório). Ficam aqui para que o
     mesmo defeito não volte noutro livro.
     """
 

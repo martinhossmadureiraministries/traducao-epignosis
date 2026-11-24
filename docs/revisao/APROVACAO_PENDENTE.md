@@ -1,12 +1,31 @@
 # Versículos a aprovar
 
-Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, o texto e a nota como estão gravados agora. Nada aqui está aprovado; a aprovação é sua.
+Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, o texto e, quando existe, a nota como estão gravados agora. Nada aqui está aprovado; a aprovação é sua.
 
 ## 1. João — decisões e versículos alterados nesta revisão
 
-**Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 continua por confirmar.
+**Atualizado:** 4:1 aprovado com «Jesus»; capítulos 12, 14 e 15 aprovados após confronto com o grego; Judas 1:5 com colchetes simples.
 
-### João 4:1 — escolha substantiva
+**Livros aprovados editorialmente (19):** Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, Filipenses, João, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João e Judas. Revisão especializada pendente em todos (especialista externo). Revisão aprovada pelo ministério: registada em Oseias e Joel; pendente nos restantes (etapa nova).
+
+**João:** aprovado editorialmente (1–21); revisão especializada pendente. Colchetes mantidos (3:13, 3:15, 3:34, 5:4, 7:53–8:11); base SBLGNT mantida onde verificável; «chamado» em itálico em 11:1; CNTR conferido.
+
+**Atualizado (20–21):** 20 e 21 aprovados pelo responsável; 20:15 «jardineiro»; grafias «Getsêmani», «Gólgota», «Arimateia», «Clopas» e «Madalena» aprovadas. NIV aprovada: as notas de 18–19 e capítulos anteriores que a mencionam como escolha de tradução ficam aprovadas.
+
+**Atualizado (16–19):** 16 e 17 aprovados pelo responsável, com 16:25 e 16:29 «com clareza». 18 e 19 aprovados pelo responsável; leitura em `docs/revisao/JOAO_18_19.md`.
+
+**Estado:** aprovados pelo responsável, com as sugestões indicadas (4:1 mantém «Jesus»; 1:22, 1:36, 2:16, 2:18, 5:42, 6:64, 11:1, 12:7, 12:12, 12:50, 13:27 e 13:36 como estão). A testemunha 02 em 5:42 foi confirmada na transcrição do CNTR.
+
+### João 20–21 — aprovados
+
+**Texto e leitura:** `docs/revisao/JOAO_20_21.md`. Aprovados pelo responsável.
+
+**Decisões registadas:** 20:15 «jardineiro» (não «hortelão»); 20:17 «Não me segures»; 21:15 «mais do que estes»; 21:15–17 «amas-me» e «queres-me bem».
+
+**Por confirmar na fonte (sem efeito na aprovação):** 21:16–17, a colação dá WH com «*προβάτια*» e o aparato dá «*πρόβατα*»; a base mantém «*πρόβατα*».
+---
+
+### João 4:1 — aprovado (Jesus)
 
 **Texto:** Quando Jesus soube que os fariseus tinham ouvido que ele fazia e batizava mais discípulos do que João —
 
@@ -16,11 +35,11 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Crítica Textual:** Aparato de edições SBLGNT, 4:1: NA28 lê «*Ἰησοῦς*» («Jesus»); WH, Treg e RP leem «*κύριος*» («o Senhor»); a NIV segue essa leitura por escolha de tradução. Na colação, «*κύριος*» aparece nos manuscritos 𝔓66, 𝔓75, 02, 03, 032 e 04, e nas edições do Textus Receptus KJTR, RP, ST, SR e Scrivener; 01 e 05 leem «*Ἰησοῦς*» com a base. A tradução segue a base, «Jesus», porque o versículo seguinte volta a nomear «Jesus» («*Ἰησοῦς*», 4:2). O testemunho antigo de 𝔓66, 𝔓75 e 03 é forte, e a escolha é substantiva: pede revisão especializada.
 
-**Pergunta:** «Jesus» (leitura da base, com NA28, 01 e 05) ou «o Senhor» (WH, Treg, RP; com 𝔓66, 𝔓75 e 03)? A tradução mantém «Jesus».
+**Decisão:** «Jesus» (leitura da base, com NA28, 01 e 05), aprovada pelo responsável. A alternativa «o Senhor» fica na nota.
 
 ---
 
-### João 5:42 — Crítica Textual reescrita
+### João 5:42 — Crítica Textual reescrita (aprovado pelo responsável)
 
 **Texto:** mas conheço vocês: não têm em si o amor de Deus.
 
@@ -30,7 +49,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Crítica Textual:** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
-**Pergunta:** Aceita a CT? A testemunha 02 só aparece transcrita como «ουχ εται», sem forma segura, e fica por confirmar no manuscrito.
+**Aprovado:** a testemunha 02 foi confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível. A CT regista isso.
 
 ---
 

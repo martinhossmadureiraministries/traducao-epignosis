@@ -19,6 +19,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from bee.arquivos import DadosInvalidos, exige_nota, validar_colchetes_variantes  # noqa: E402
+
 
 def _numeros(versiculos: list[dict]) -> list[int]:
     return [v.get('verse') for v in versiculos if isinstance(v, dict)]
@@ -63,10 +66,24 @@ def verificar(dados: Path) -> tuple[int, int, list[str]]:
                         problemas.append(
                             f'{caminho.name} {chave}:{versiculo.get("verse")}: texto vazio'
                         )
-                    if not str(versiculo.get('commentary') or '').strip():
+                    try:
+                        validar_colchetes_variantes(str(versiculo.get('text') or ''), 'texto')
+                    except DadosInvalidos as exc:
                         problemas.append(
-                            f'{caminho.name} {chave}:{versiculo.get("verse")}: comentário vazio'
+                            f'{caminho.name} {chave}:{versiculo.get("verse")}: {exc}')
+                    comentario = versiculo.get('commentary')
+                    if comentario is not None and not str(comentario).strip():
+                        problemas.append(
+                            f'{caminho.name} {chave}:{versiculo.get("verse")}: '
+                            'comentário vazio (retire a chave se não há nota)'
                         )
+                    elif not comentario:
+                        motivo = exige_nota(versiculo.get('text'))
+                        if motivo:
+                            problemas.append(
+                                f'{caminho.name} {chave}:{versiculo.get("verse")}: '
+                                f'sem nota, porque {motivo}'
+                            )
                 if secao == 'chapters':
                     capitulos += 1
                     versiculos += len(lista)

@@ -1,0 +1,377 @@
+{
+  "bibliography": [
+    {
+      "name": "Open Scriptures Hebrew Bible / WLC",
+      "url": "https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Joel.xml",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Cotejo pontual de traduções portuguesas (bible.com)",
+      "url": "https://www.bible.com/pt/bible/compare/JOL.2.28",
+      "license": "consulta pontual; não reproduzido"
+    }
+  ],
+  "book_name": "Joel",
+  "book_number": 360,
+  "chapter_count": 3,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "Palavra do SENHOR que veio a Joel, filho de Petuel."
+      },
+      {
+        "verse": 2,
+        "text": "Ouçam isto, anciãos! Prestem ouvidos, todos os habitantes da terra! Aconteceu algo assim nos seus dias ou nos dias dos seus pais?"
+      },
+      {
+        "verse": 3,
+        "text": "Contem-no aos seus filhos, e os seus filhos aos filhos deles, e estes à geração que vier depois."
+      },
+      {
+        "verse": 4,
+        "text": "O que o gafanhoto cortador deixou, o migrador comeu; o que o migrador deixou, o rastejante comeu; o que o rastejante deixou, o devorador comeu.",
+        "commentary": "<p>Os quatro termos hebraicos distinguem os devastadores; os nomes portugueses são descritivos, não identificação zoológica de quatro espécies ou fases certas. O efeito é cumulativo: o que um deixa, outro come.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Acordem, bêbedos, e chorem! Lamentem-se, todos os que bebem vinho: o vinho doce foi tirado da sua boca.",
+        "commentary": "<p>«Bêbedos» significa «embriagados». O primeiro apelo dirige-se a quem se embriaga; o segundo, a todos os que bebem vinho.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Pois uma nação subiu contra a minha terra, poderosa e incontável. Tem dentes de leão, presas de leoa."
+      },
+      {
+        "verse": 7,
+        "text": "Fez da minha vinha um deserto e da minha figueira, lascas. Arrancou-lhe toda a casca e deitou-a fora; ficaram brancos os ramos."
+      },
+      {
+        "verse": 8,
+        "text": "Chora como uma jovem vestida de pano de saco pelo marido da sua juventude."
+      },
+      {
+        "verse": 9,
+        "text": "Cessaram na casa do SENHOR a oferta de cereal e a de bebida. Estão de luto os sacerdotes, os que servem o SENHOR."
+      },
+      {
+        "verse": 10,
+        "text": "O campo foi devastado, a terra está de luto. O cereal perdeu-se, secou o vinho novo, faltou o azeite."
+      },
+      {
+        "verse": 11,
+        "text": "Fiquem consternados, lavradores! Soltem lamentos, vinhateiros, pelo trigo e pela cevada: perdeu-se a colheita do campo."
+      },
+      {
+        "verse": 12,
+        "text": "Secou a vinha e a figueira murchou. A romeira, a tamareira, a macieira, todas as árvores do campo secaram. Secou também a alegria entre os seres humanos."
+      },
+      {
+        "verse": 13,
+        "text": "Vistam-se de pano de saco e chorem, sacerdotes; lamentem-se, servidores do altar. Venham passar a noite de pano de saco, servidores do meu Deus: a oferta de cereal e a de bebida foram retiradas da casa do seu Deus."
+      },
+      {
+        "verse": 14,
+        "text": "Consagrem um jejum, convoquem uma assembleia. Reúnam os anciãos e todos os habitantes da terra na casa do SENHOR, seu Deus, e clamem ao SENHOR."
+      },
+      {
+        "verse": 15,
+        "text": "Ai daquele dia! O dia do SENHOR está perto e vem como devastação da parte do Todo-Poderoso."
+      },
+      {
+        "verse": 16,
+        "text": "Não foi diante dos nossos olhos que desapareceu o alimento, e da casa do nosso Deus a alegria e o júbilo?"
+      },
+      {
+        "verse": 17,
+        "text": "As sementes ressequiram debaixo dos torrões. Os armazéns estão desertos e os celeiros desabam, porque secou o cereal."
+      },
+      {
+        "verse": 18,
+        "text": "Como geme o gado! As manadas vagueiam sem pastagem, até os rebanhos de ovelhas sofrem."
+      },
+      {
+        "verse": 19,
+        "text": "A ti, SENHOR, eu clamo. O fogo devorou as pastagens do deserto, a chama queimou todas as árvores do campo."
+      },
+      {
+        "verse": 20,
+        "text": "Até os animais do campo suspiram por ti: secaram os cursos de água, e o fogo devorou as pastagens do deserto."
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Toquem a trombeta em Sião! Deem o alarme no meu santo monte! Tremam todos os habitantes da terra: vem o dia do SENHOR, já está perto."
+      },
+      {
+        "verse": 2,
+        "text": "Dia de escuridão e trevas, dia de nuvens e sombra espessa! Como a aurora se estende sobre os montes um povo numeroso e forte. Nunca houve outro igual nem voltará a haver, geração após geração."
+      },
+      {
+        "verse": 3,
+        "text": "À sua frente o fogo devora, atrás dele a chama abrasa. À sua frente a terra é como o jardim do Éden; atrás dele, um deserto arrasado. Nada lhe escapa."
+      },
+      {
+        "verse": 4,
+        "text": "Têm a aparência de cavalos, correm como cavalaria."
+      },
+      {
+        "verse": 5,
+        "text": "Saltam pelos cumes dos montes com estrondo de carros, com o crepitar de uma chama que devora a palha, como um povo poderoso disposto para a batalha."
+      },
+      {
+        "verse": 6,
+        "text": "À sua frente os povos contorcem-se, todos os rostos perdem a cor."
+      },
+      {
+        "verse": 7,
+        "text": "Correm como guerreiros, escalam muralhas como soldados. Cada um segue o seu caminho sem se desviar da fila."
+      },
+      {
+        "verse": 8,
+        "text": "Não empurram uns aos outros: cada qual avança pela sua vereda. Atravessam a barreira de armas sem romper a formação."
+      },
+      {
+        "verse": 9,
+        "text": "Investem contra a cidade, correm pela muralha, sobem às casas, entram pelas janelas como ladrões."
+      },
+      {
+        "verse": 10,
+        "text": "Diante deles a terra estremece, os céus tremem. O sol e a lua escurecem; as estrelas recolhem o seu brilho."
+      },
+      {
+        "verse": 11,
+        "text": "O SENHOR faz ouvir a sua voz à frente do seu exército. Imenso é o seu acampamento, poderoso quem cumpre a sua palavra. Grande é o dia do SENHOR, e terrível: quem poderá suportá-lo?"
+      },
+      {
+        "verse": 12,
+        "text": "«Mesmo agora», declara o SENHOR, «voltem para mim de todo o coração, com jejum, choro e lamento.»"
+      },
+      {
+        "verse": 13,
+        "text": "Rasguem o coração, não as vestes. Voltem para o SENHOR, seu Deus, pois ele é bondoso e compassivo, lento para a ira e rico em amor leal; volta atrás quanto à desgraça anunciada.",
+        "commentary": "<p>«Quem sabe?» conserva o apelo sem transformá-lo numa garantia. A bênção imaginada deixaria novamente cereal e bebida para a oferta que faltava em 1:9.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Quem sabe? Talvez volte atrás, tenha compaixão e deixe depois de si uma bênção: uma oferta de cereal e uma oferta de bebida para o SENHOR, seu Deus."
+      },
+      {
+        "verse": 15,
+        "text": "Toquem a trombeta em Sião! Consagrem um jejum, convoquem uma assembleia."
+      },
+      {
+        "verse": 16,
+        "text": "Reúnam o povo, consagrem a comunidade, juntem os anciãos, reúnam as crianças, até as que mamam. Saia o noivo do seu quarto, e a noiva, dos seus aposentos."
+      },
+      {
+        "verse": 17,
+        "text": "Entre o pórtico e o altar chorem os sacerdotes, servidores do SENHOR. Digam: «Poupa o teu povo, SENHOR! Não entregues a tua herança à vergonha, ao escárnio das nações. Por que hão de perguntar entre os povos: “Onde está o Deus deles?”»"
+      },
+      {
+        "verse": 18,
+        "text": "Então o SENHOR teve zelo pela sua terra e compaixão do seu povo."
+      },
+      {
+        "verse": 19,
+        "text": "O SENHOR respondeu ao seu povo: «Vou enviar-lhes cereal, vinho novo e azeite; terão com que se fartar. Não voltarei a fazer de vocês motivo de escárnio entre as nações."
+      },
+      {
+        "verse": 20,
+        "text": "Afastarei de vocês o que vem do norte. Hei de o expulsar para uma terra seca e deserta, a vanguarda voltada para o mar oriental e a retaguarda para o mar ocidental. Subirá o seu mau cheiro, subirá o seu fedor, pois grandes coisas fez.»"
+      },
+      {
+        "verse": 21,
+        "text": "Não tenhas medo, terra! Alegra-te e exulta: grandes coisas fez o SENHOR."
+      },
+      {
+        "verse": 22,
+        "text": "Não tenham medo, animais do campo: as pastagens do deserto reverdeceram, a árvore dá o seu fruto, a figueira e a vinha dão a sua riqueza."
+      },
+      {
+        "verse": 23,
+        "text": "Filhos de Sião, alegrem-se, exultem no SENHOR, seu Deus. Ele lhes deu a primeira chuva na medida justa. Fez descer a chuva para vocês, a primeira e a tardia, como outrora.",
+        "commentary": "<p>A expressão sobre a primeira chuva admite outra leitura, «mestre de justiça». Aqui prevalece a leitura agrícola, dada a sequência de chuvas e colheitas.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "As eiras ficarão cheias de cereal, e as cubas transbordarão de vinho novo e azeite."
+      },
+      {
+        "verse": 25,
+        "text": "«Eu lhes restituirei os anos que o gafanhoto comeu: o migrador, o rastejante, o devorador e o cortador, o meu grande exército que enviei contra vocês."
+      },
+      {
+        "verse": 26,
+        "text": "Comerão até se fartar e louvarão o nome do SENHOR, seu Deus, que fez maravilhas por vocês. Nunca mais o meu povo será envergonhado."
+      },
+      {
+        "verse": 27,
+        "text": "Saberão que estou no meio de Israel, que eu sou o SENHOR, seu Deus, e não há outro. Nunca mais o meu povo será envergonhado.»"
+      },
+      {
+        "verse": 28,
+        "text": "Depois disso derramarei o meu Espírito sobre toda a carne. Os seus filhos e as suas filhas profetizarão, os seus velhos terão sonhos, os seus jovens verão visões.",
+        "commentary": "<p>A BEE mantém «toda a carne» como a ARC; a NVI e a NVT explicitam o alcance humano. A enumeração seguinte dá corpo à imagem: filhos e filhas, velhos e jovens, servos e servas. WLC 3:1–5 corresponde a estes cinco versículos; o capítulo 4 hebraico corresponde a Joel 3 na BEE.</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Até sobre os servos e as servas, naqueles dias, derramarei o meu Espírito."
+      },
+      {
+        "verse": 30,
+        "text": "Darei sinais nos céus e na terra: sangue, fogo e colunas de fumo."
+      },
+      {
+        "verse": 31,
+        "text": "O sol se tornará em trevas e a lua em sangue, antes de vir o grande e temível dia do SENHOR."
+      },
+      {
+        "verse": 32,
+        "text": "E todo aquele que invocar o nome do SENHOR escapará. Pois no monte Sião e em Jerusalém haverá quem escape, como disse o SENHOR, e entre os sobreviventes estarão aqueles que o SENHOR chamar."
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "«Pois naqueles dias, naquele tempo, quando eu restaurar a sorte de Judá e de Jerusalém,"
+      },
+      {
+        "verse": 2,
+        "text": "reunirei todas as nações e as farei descer ao vale de Josafá. Ali entrarei em juízo com elas por causa de Israel, meu povo e minha herança: espalharam-no entre as nações e repartiram a minha terra."
+      },
+      {
+        "verse": 3,
+        "text": "Lançaram sortes sobre o meu povo; deram um rapaz em troca de uma prostituta e venderam uma rapariga por vinho para beber."
+      },
+      {
+        "verse": 4,
+        "text": "E vocês, Tiro, Sídon e todas as regiões da Filístia, que têm contra mim? Querem retribuir-me alguma coisa? Se é retribuição que me trazem, depressa, bem depressa, farei que ela recaia sobre a sua cabeça."
+      },
+      {
+        "verse": 5,
+        "text": "Levaram a minha prata e o meu ouro; meteram nos seus templos os meus belos tesouros."
+      },
+      {
+        "verse": 6,
+        "text": "Venderam aos gregos os filhos de Judá e de Jerusalém, para os afastar do seu território."
+      },
+      {
+        "verse": 7,
+        "text": "Pois vou despertá-los, tirá-los do lugar para onde os venderam, e farei recair a sua retribuição sobre a sua cabeça."
+      },
+      {
+        "verse": 8,
+        "text": "Venderei os seus filhos e as suas filhas aos filhos de Judá, e estes os venderão aos sabeus, nação distante.» Foi o SENHOR quem falou."
+      },
+      {
+        "verse": 9,
+        "text": "Anunciem isto entre as nações: «Consagrem uma guerra, despertem os guerreiros! Aproximem-se e subam todos os combatentes!"
+      },
+      {
+        "verse": 10,
+        "text": "Das lâminas dos arados façam espadas; das podadeiras, lanças. Até o fraco diga: “Sou forte!”»",
+        "commentary": "<p>A transformação das ferramentas inverte o movimento de Miqueias 4:3. Quem decide no vale é o juiz de 3:12; não introduzimos no texto uma decisão religiosa individual.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Apressem-se e venham, nações de toda a volta, reúnam-se ali. Faz descer, SENHOR, os teus guerreiros!"
+      },
+      {
+        "verse": 12,
+        "text": "«Despertem as nações e subam ao vale de Josafá. Ali me sentarei para julgar todas as nações em redor."
+      },
+      {
+        "verse": 13,
+        "text": "Metam a foice, porque a colheita amadureceu. Venham pisar as uvas: o lagar está cheio, as cubas transbordam. Grande é a maldade deles!»"
+      },
+      {
+        "verse": 14,
+        "text": "Multidões e mais multidões no vale da decisão! Pois o dia do SENHOR está perto no vale da decisão."
+      },
+      {
+        "verse": 15,
+        "text": "O sol e a lua escurecem; as estrelas recolhem o seu brilho."
+      },
+      {
+        "verse": 16,
+        "text": "De Sião o SENHOR ruge, de Jerusalém faz ouvir a sua voz. Céus e terra tremem. Mas o SENHOR é abrigo para o seu povo, fortaleza para os filhos de Israel."
+      },
+      {
+        "verse": 17,
+        "text": "«Saberão que eu sou o SENHOR, seu Deus, que habita em Sião, meu santo monte. Jerusalém será santa; estrangeiros não voltarão a passar por ela."
+      },
+      {
+        "verse": 18,
+        "text": "Naquele dia os montes gotejarão vinho doce, as colinas verterão leite e todos os leitos de ribeiros de Judá correrão com água. Uma fonte sairá da casa do SENHOR e regará o vale das Acácias."
+      },
+      {
+        "verse": 19,
+        "text": "O Egito ficará deserto e Edom será um descampado desolado, pela violência contra os filhos de Judá, em cuja terra derramaram sangue inocente."
+      },
+      {
+        "verse": 20,
+        "text": "Mas Judá será habitada para sempre, e Jerusalém, de geração em geração."
+      },
+      {
+        "verse": 21,
+        "text": "Vingarei o sangue que ainda não vinguei.» E o SENHOR habita em Sião."
+      }
+    ]
+  },
+  "format_version": 1,
+  "history": [],
+  "in_progress": {},
+  "review": {
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "aprovado editorialmente",
+        "nota": "Leitura integral aprovada editorialmente pelo responsável (lote 3). Revisão especializada pendente."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 32,
+        "status": "aprovado editorialmente"
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "aprovado editorialmente"
+      }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 32,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      }
+    ],
+    "ministerio": {
+      "status": "aprovado pelo ministério",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries), por indicação do responsável. Revisão especializada pendente."
+    }
+  }
+}

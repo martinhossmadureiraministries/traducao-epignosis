@@ -23,7 +23,7 @@ class LeituraLivroTest(unittest.TestCase):
     def test_todos_os_versiculos_aparecem_no_texto(self):
         for capitulo, versos in self.dados['chapters'].items():
             for v in versos:
-                marca = f'**{v["verse"]}** {v["text"]}'
+                marca = f'**{v["verse"]}** {gerar_leitura_livro._md(v["text"])}'
                 self.assertIn(marca, self.md, f'{capitulo}:{v["verse"]} em falta')
 
     def test_cada_capitulo_tem_notas_e_contagem(self):

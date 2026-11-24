@@ -28,10 +28,18 @@ histórico do Git.
 Estrutura de um JSON de livro:
 
 - `chapters`: objeto cujas chaves são os capítulos (`"1"`, `"2"`, …), com uma lista de
-  versículos. Cada versículo tem `verse`, `text` (a tradução) e `commentary` (a nota).
-- `review.editorial_blocks`: lista de blocos por intervalo de versículos, com `chapter`,
-  `verse_from`, `verse_to`, `status` (`rascunho` ou `aprovado`) e `nota`.
-- `review.specialist`: revisão especializada, em regra `pendente`.
+  versículos. Cada versículo tem `verse` e `text` (a tradução). `commentary` (a nota)
+  é opcional: omite-se a chave quando não há nota; se existir, não pode estar vazia.
+  É obrigatória quando o texto tem acréscimo em itálico ou colchetes simples
+  (`bee/arquivos.exige_nota`).
+- `review.editorial_blocks`: blocos por intervalo de versículos, com `chapter`,
+  `verse_from`, `verse_to`, `status` (`rascunho` ou `aprovado editorialmente`) e `nota`.
+- `review.specialist`: revisão especializada, feita por especialista externo. Começa `pendente`.
+- `review.ministerio`: revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries), etapa própria.
+  Começa `pendente` e aplica-se aos livros com edição nova.
+
+As três revisões nunca se confundem: a editorial é do responsável, a especializada é de
+especialista externo e a do ministério é do ministério. Não há revisão por IA.
 
 ## Formato da nota
 
@@ -60,10 +68,12 @@ Cada nota é um parágrafo de prosa, sem rótulos. A regra completa está em
    todos os livros). Com `--rigoroso`, os avisos de Almeida também chumbam.
 5. **Verificar a crítica textual.**
    `python3 scripts/verificar_notas_colacao.py --dados edicoes/nova/livros_json/500_Joao.json --colacao docs/colacao/João.json`
-   Deve sair com rc 0. Toda a variante do aparato tem de ter CT no capítulo.
+   Deve sair com rc 0. Toda a variante do aparato tem de ter CT no capítulo. Para cada livro,
+   trocar o ficheiro de dados e o de colação correspondentes.
 6. **Ortografia.** `python3 scripts/verificar_ortografia.py` (alerta, não substitui leitura).
 7. **Leitura.** `python3 scripts/gerar_leitura_livro.py --livro 500 --saida edicoes/nova/JOAO.md`.
-8. **Integridade.** `python3 scripts/verificar_dados.py` e `python3 -m pytest`.
+8. **Integridade.** `python3 scripts/verificar_dados.py` e `python3 -m unittest discover -s tests`.
+   O `pytest` não está instalado por defeito; o `unittest` corre sem dependências.
 9. **Estado e módulos.** `python3 gerar_bee.py --status`; `python3 gerar_bee.py --compilar`
    compila os módulos MyBible (só capítulos completos e consecutivos desde o capítulo 1).
 
@@ -88,8 +98,7 @@ Cada nota é um parágrafo de prosa, sem rótulos. A regra completa está em
 ## Testes
 
 ```
-python3 -m venv /tmp/venv && /tmp/venv/bin/pip install pytest
-/tmp/venv/bin/python -m pytest -q
+python3 -m unittest discover -s tests
 ```
 
-Em 2026-11-20: 163 passam, 1 ignorado.
+Em 2026-11-20: 173 testes, OK. Saltam 5 sem `pyspellchecker` (verificação ortográfica) ou `python-docx` (documento de apresentação).

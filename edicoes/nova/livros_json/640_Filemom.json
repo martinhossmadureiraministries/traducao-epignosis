@@ -191,8 +191,8 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "rascunho",
-        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. A aprovação anterior foi retirada: continua RASCUNHO até leitura e aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. Aprovado pelo responsável."
       }
     ],
     "specialist": [
@@ -200,8 +200,14 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "pendente"
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
       }
-    ]
+    ],
+    "ministerio": {
+      "status": "pendente",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da revisão especializada. Aplica-se aos livros com edição nova. Pendente em todos."
+    }
   }
 }

@@ -1,8 +1,20 @@
 # 1 Tessalonicenses · Bíblia de Estudo Epignósis
 
-Leitura integral aprovada editorialmente pelo responsável (voz); revisão especializada pendente.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (590). Capítulos disponíveis: 1, 2, 3, 4, 5, 89 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 10 |
+| 2 | aprovado editorialmente | 20 |
+| 3 | aprovado editorialmente | 13 |
+| 4 | aprovado editorialmente | 18 |
+| 5 | aprovado editorialmente | 28 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Paulo, Silvano e Timóteo, à igreja dos tessalonicenses, em Deus Pai e no Senhor Jesus Cristo: graça e paz a vocês.
 
@@ -24,7 +36,7 @@ Leitura integral aprovada editorialmente pelo responsável (voz); revisão espec
 
 **10** e esperar dos céus o seu Filho, a quem ele ressuscitou dos mortos: Jesus, que nos livra da ira que vem.
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Vocês mesmos sabem, irmãos, que a nossa chegada ao seu meio não foi em vão.
 
@@ -66,7 +78,7 @@ Leitura integral aprovada editorialmente pelo responsável (voz); revisão espec
 
 **20** Sim, vocês são a nossa glória e a nossa alegria!
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Por isso, quando já não podíamos suportar a espera, achámos melhor ficar sozinhos em Atenas
 
@@ -94,7 +106,7 @@ Leitura integral aprovada editorialmente pelo responsável (voz); revisão espec
 
 **13** Assim ele firmará o seu coração, para que sejam irrepreensíveis em santidade diante do nosso Deus e Pai, na vinda do nosso Senhor Jesus com todos os seus santos.
 
-## Capítulo 4
+### Capítulo 4
 
 **1** Quanto ao mais, irmãos, pedimos e exortamos no Senhor Jesus: vocês receberam de nós instruções sobre como viver para agradar a Deus, e é assim que vivem. Continuem a progredir ainda mais.
 
@@ -132,7 +144,7 @@ Leitura integral aprovada editorialmente pelo responsável (voz); revisão espec
 
 **18** Portanto, consolem-se uns aos outros com estas palavras.
 
-## Capítulo 5
+### Capítulo 5
 
 **1** Quanto aos tempos e às épocas, irmãos, vocês não precisam que lhes escrevamos.
 
@@ -190,28 +202,380 @@ Leitura integral aprovada editorialmente pelo responsável (voz); revisão espec
 
 **28** A graça do nosso Senhor Jesus Cristo seja com vocês.
 
-## Notas para depois da leitura
+## Notas
 
-**1:1** · A saudação da base termina em «graça e paz». Não completar a fórmula a partir de 2Ts 1:2.
+### Notas do capítulo 1
 
-**1:3** · A fé aparece no que fazem, o amor no esforço que lhes custa, a esperança na sua perseverança. Os três termos voltam como armadura em 5:8.
+**1:1**
 
-**2:7** · τροφός é «ama»: a mulher que amamenta e cria. Não é a palavra comum para mãe (μήτηρ), mas o texto diz «os seus próprios filhos» (τὰ ἑαυτῆς τέκνα), e uma ama assalariada não fala assim dos filhos alheios; a imagem é a da mãe que amamenta, como traduzimos. «Ama» lê-se hoje mal, quase como forma do verbo amar. θάλπῃ é «aquece, aconchega»: o calor de quem traz o filho ao peito. A ARC diz «como a ama que cria seus filhos»; a ARA, «qual ama que acaricia os próprios filhos»; a NVI, a NAA e a NVT dizem «mãe». A base imprime ἤπιοι, «gentis»; o aparato atribui a WH e NA28 νήπιοι, «crianças pequenas». É diferença real de uma letra, não duas maneiras de traduzir a mesma palavra: com νήπιοι a frase passa a dizer que Paulo se fez criança no meio deles. Conservamos provisoriamente a base; a decisão requer revisão textual.
+- A saudação da base termina em «graça e paz». Não completar a fórmula a partir de 2Ts 1:2.
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*εἰρήνη*»; RP acrescenta «*ἀπὸ θεοῦ πατρὸς ἡμῶν καὶ κυρίου Ἰησοῦ Χριστοῦ*».
 
-**2:14** · A comparação incide em comunidades concretas e nos seus perseguidores. O texto não atribui culpa coletiva a um povo através das gerações.
+**1:2**
 
-**3:2** · A expressão forte «colaborador de Deus» descreve Timóteo ao serviço do evangelho. O aparato regista outras formulações para o seu serviço.
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*μνείαν*»; RP acrescenta «*ὑμῶν*».
 
-**4:4** · σκεῦος é literalmente «vaso». A ARC preserva a imagem; a NVI e a NVT entendem o próprio corpo. A BEE adota esta leitura; interpretar a expressão como referência à esposa é outra proposta. Trata-se de interpretação, não de manuscritos divergentes.
+**1:3**
 
-**4:13** · «Adormeceram» é a imagem para os que morreram. A frase não proíbe o luto: contrasta a tristeza dos irmãos com a de quem não tem esperança.
+- A fé aparece no que fazem, o amor no esforço que lhes custa, a esperança na sua perseverança. Os três termos voltam como armadura em 5:8.
 
-**4:17** · «Ao encontro» conserva a direção do movimento sem acrescentar o itinerário que se seguiria. A conclusão de Paulo é «sempre com o Senhor»; o imperativo do v. 18 é consolar.
+**1:4**
 
-**5:3** · As dores de parto ilustram a chegada inevitável e repentina, não oferecem uma data.
+- **Crítica Textual.** Aparato de edições SBLGNT: Treg e RP leem «*θεοῦ*»; WH e NA28 leem «*τοῦ θεοῦ*».
 
-**5:21** · A ordem vem depois das profecias: não desprezar não é o mesmo que aceitar sem exame.
+**1:5**
 
-**5:23** · A enumeração «espírito, alma e corpo» está dentro de uma oração pela pessoa inteira, não de um tratado sobre as suas partes.
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH lê «*καὶ*»; Treg, NA28 e RP acrescentam «*ἐν*». (2) Treg, NA28 e RP leem «*ἐν*»; WH omite.
 
-[Base grega SBLGNT](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgnt/text/1Thess.txt) e [aparato de edições](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgntapp/xml/1Thess.xml), CC BY 4.0. [Cotejo português de 2:7](https://www.bible.com/pt/bible/compare/1TH.2.7) e de [4:4](https://www.bible.com/pt/bible/compare/1TH.4.4). Revisão especializada pendente.
+**1:6**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**1:7**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH, Treg e NA28 leem «*τύπον*»; RP lê «*τύπους*». (2) WH, Treg e NA28 leem «*ἐν*»; RP omite.
+
+**1:8**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH e Treg leem «*καὶ*»; NA28 e RP acrescentam «*ἐν τῇ*». (2) WH, Treg e NA28 leem «*ἀλλʼ*»; RP lê «*ἀλλὰ καὶ*». (3) WH, Treg e NA28 leem «*ἔχειν ἡμᾶς*»; RP lê «*ἡμᾶς ἔχειν*».
+
+**1:9**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**1:10**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ἐκ*»; RP lê «*ἀπὸ*».
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:2**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:3**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*οὐδὲ*»; RP lê «*οὔτε*».
+
+**2:4**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*θεῷ*»; RP lê «*τῷ θεῷ*».
+
+**2:5**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: Treg, NA28 e RP leem «*ἐν*»; WH omite.
+
+**2:6**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:7**
+
+- *τροφός* é «ama»: a mulher que amamenta e cria. Não é a palavra comum para mãe (*μήτηρ*), mas o texto diz «os seus próprios filhos» (*τὰ ἑαυτῆς τέκνα*), e uma ama assalariada não fala assim dos filhos alheios; a imagem é a da mãe que amamenta, como traduzimos. «Ama» lê-se hoje mal, quase como forma do verbo amar. *θάλπῃ* é «aquece, aconchega»: o calor de quem traz o filho ao peito. A ARC diz «como a ama que cria seus filhos»; a ARA, «qual ama que acaricia os próprios filhos»; a NVI, a NAA e a NVT dizem «mãe».
+- A base imprime *ἤπιοι*, «gentis». O aparato atribui a WH e NA28 *νήπιοι*, «crianças pequenas». É diferença real de uma letra, não duas maneiras de traduzir a mesma palavra: com *νήπιοι* a frase passa a dizer que Paulo se fez criança no meio deles. Conservamos provisoriamente a base; a decisão requer revisão textual.
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) Treg e RP leem «*ἤπιοι*», e a NIV segue essa leitura por escolha de tradução; WH e NA28 leem «*νήπιοι*». (2) WH, Treg e NA28 leem «*ἐὰν*»; RP lê «*ἂν*».
+
+**2:8**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ἐγενήθητε*»; RP lê «*γεγένησθε*».
+
+**2:9**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*νυκτὸς*»; RP acrescenta «*γάρ*».
+
+**2:10**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:11**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:12**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*περιπατεῖν*»; RP lê «*περιπατῆσαι*».
+
+**2:13**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH, Treg e NA28 leem «*Καὶ*»; RP omite. (2) WH lê «*ἀληθῶς ἐστὶν*»; Treg, NA28 e RP leem «*ἐστιν ἀληθῶς*».
+
+**2:14**
+
+- A comparação incide em comunidades concretas e nos seus perseguidores. O texto não atribui culpa coletiva a um povo através das gerações.
+
+**2:15**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*τοὺς*»; RP acrescenta «*ἰδίους*».
+
+**2:16**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg, RP e NA28 leem «*ὀργὴ*»; a NIV acrescenta «*τοῦ θεοῦ*», por escolha de tradução.
+
+**2:17**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:18**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*διότι*»; RP lê «*διό*».
+
+**2:19**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**2:20**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:2**
+
+- A expressão forte «colaborador de Deus» descreve Timóteo ao serviço do evangelho. O aparato regista outras formulações para o seu serviço.
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) NA28 lê «*συνεργὸν*»; WH, Treg e RP leem «*διάκονον*». (2) WH, Treg e NA28 leem «*θεοῦ*»; RP acrescenta «*καὶ συνεργὸν ἡμῶν*». (3) WH, Treg e NA28 leem «*ὑπὲρ*»; RP lê «*ὑμᾶς περὶ*».
+
+**3:3**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:4**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:5**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:6**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:7**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ἀνάγκῃ καὶ θλίψει*»; RP lê «*θλίψει καὶ ἀνάγκῃ*».
+
+**3:8**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:9**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:10**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:11**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*Ἰησοῦς*»; RP acrescenta «*Χριστός*».
+
+**3:12**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**3:13**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH, Treg e NA28 leem «*Ἰησοῦ*»; RP acrescenta «*Χριστοῦ*». (2) WH, Treg e RP leem «*αὐτοῦ*», e a NIV segue essa leitura por escolha de tradução; NA28 acrescenta «*ἀμήν*».
+
+### Notas do capítulo 4
+
+**4:1**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) Treg, NA28 e RP leem «*οὖν*»; WH omite. (2) WH, Treg e NA28 leem «*ἵνα*»; RP omite. (3) WH, Treg e NA28 leem «*καθὼς καὶ περιπατεῖτε*»; RP omite.
+
+**4:2**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:3**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:4**
+
+- *σκεῦος* é literalmente «vaso». A ARC preserva a imagem; a NVI e a NVT entendem o próprio corpo. A BEE adota esta leitura; interpretar a expressão como referência à esposa é outra proposta. Trata-se de interpretação, não de manuscritos divergentes.
+
+**4:5**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:6**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*κύριος*»; RP lê «*ὁ κύριος*».
+
+**4:7**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:8**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) NA28 e RP leem «*καὶ*»; WH e Treg omitem. (2) WH, Treg e NA28 leem «*διδόντα*»; RP lê «*δόντα*».
+
+**4:9**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:10**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:11**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH e Treg leem «*ταῖς*», e a NIV segue essa leitura por escolha de tradução; RP e NA28 acrescentam «*ἰδίαις*».
+
+**4:12**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:13**
+
+- «Adormeceram» é a imagem para os que morreram. A frase não proíbe o luto: contrasta a tristeza dos irmãos com a de quem não tem esperança.
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*κοιμωμένων*»; RP lê «*κεκοιμημένων*».
+
+**4:14**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:15**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:16**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**4:17**
+
+- «Ao encontro» conserva a direção do movimento sem acrescentar o itinerário que se seguiria. A conclusão de Paulo é «sempre com o Senhor»; o imperativo do v. 18 é consolar.
+
+**4:18**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+### Notas do capítulo 5
+
+**5:1**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:2**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ὅτι*»; RP acrescenta «*ἡ*».
+
+**5:3**
+
+- As dores de parto ilustram a chegada inevitável e repentina, não oferecem uma data.
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ὅταν*»; RP acrescenta «*γὰρ*».
+
+**5:4**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: Treg, NA28 e RP leem «*κλέπτης*»; WH lê «*κλέπτας*».
+
+**5:5**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*γὰρ*»; RP omite.
+
+**5:6**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ὡς*»; RP acrescenta «*καὶ*».
+
+**5:7**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:8**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:9**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:10**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH e Treg leem «*περὶ*»; NA28 e RP leem «*ὑπὲρ*».
+
+**5:11**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:12**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:13**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH, NA28 e RP leem «*ὑπερεκπερισσοῦ*»; Treg lê «*ὑπερεκπερισσῶς*». (2) WH, NA28 e RP leem «*ἑαυτοῖς*»; Treg lê «*αὐτοῖς*».
+
+**5:14**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:15**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH e Treg leem «*διώκετε*»; NA28 e RP acrescentam «*καὶ*».
+
+**5:16**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:17**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:18**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:19**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:20**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:21**
+
+- A ordem vem depois das profecias: não desprezar não é o mesmo que aceitar sem exame.
+
+**5:22**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:23**
+
+- A enumeração «espírito, alma e corpo» está dentro de uma oração pela pessoa inteira, não de um tratado sobre as suas partes.
+
+**5:24**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:25**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: Treg e RP leem «*προσεύχεσθε*»; WH e NA28 acrescentam «*καὶ*».
+
+**5:26**
+
+- Sem nota de análise neste versículo; o aparato da SBLGNT não regista variante.
+
+**5:27**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: (1) WH, Treg e NA28 leem «*ἐνορκίζω*»; RP lê «*Ὁρκίζω*». (2) WH, Treg e NA28 leem «*τοῖς*»; RP acrescenta «*ἁγίοις*».
+
+**5:28**
+
+- **Crítica Textual.** Aparato de edições SBLGNT: WH, Treg e NA28 leem «*ὑμῶν*»; RP acrescenta «*Ἀμήν*».
+
+---
+
+Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_Tessalonicenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 590`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

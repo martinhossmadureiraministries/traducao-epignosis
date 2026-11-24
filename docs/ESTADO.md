@@ -1,140 +1,92 @@
 # Estado do projeto — 20/11/2026
 
-Este documento descreve o estado **atual**. O histórico de etapas (diário de
-2026-11-17 a 2026-11-23, incluindo os workflows retirados e as migrações de dados)
-está no Git: `git log` e os ficheiros anteriores a esta reescrita. Os documentos
-de processo antigos estão em `docs/arquivo/`.
+Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
 
-## Decisões em vigor
+## Três revisões, separadas
 
-- **Formato único em prosa** (2026-11-23). Toda a nota é um parágrafo de prosa, sem
-  rótulos («Análise Léxica», «Síntese Exegética»), sem níveis de certeza A/B/C impressos.
-  A «Crítica Textual:» é um parágrafo próprio, só quando o aparato ou a colação
-  registam variante. Regra verificada por `bee/inspetor.analisar_comentario`.
-- **Crítica textual só com evidência colacionada** (2026-11-20). Um códice ou papiro
-  só é citado onde existe colação em `docs/colacao/`. Edição impressa não é manuscrito;
-  tradução moderna não é evidência textual; «o Textus Receptus» não é um texto único.
-- **Desempate NA28** (decisão do responsável, 2026-11-20): quando as edições se dividem,
-  segue-se NA28, e a nota regista a alternativa e a razão.
-- **Colchetes só onde a evidência o pede** (regra do responsável, 2026-11-22).
-- **Estatuto honesto.** Todo o livro nasce em `rascunho` (`review.editorial_blocks`) e
-  a revisão especializada começa `pendente`. Só o responsável promove a `aprovado`.
-  Nenhum agente aprova em nome do responsável.
-- **Sem automação de produção.** O repositório não tem workflows de GitHub Actions. O
-  responsável retirou-os; não se recriam nem se reativam sem decisão dele.
-- **Ortografia europeia** (pt-PT): «connosco», «de facto», «registo», «facto», «ação».
-  - **Norma decidida pelo responsável:** Acordo de 1990 (AO90) em toda a edição. Angola não ratificou o acordo; a escolha é editorial, não oficial. Formas: «ação», «aspeto», «atividade», «ato», «perceção», «receção», «aceção», «rutura», «leãozinhos».
-  - **Acréscimos no texto:** itálico `<i>…</i>` (regra de `docs/EDITORIAL.md`). Colchetes só para evidência de manuscritos.
+| Revisão | Quem faz | Estado nos 19 livros |
+|---|---|---|
+| **Editorial** (`review.editorial_blocks`) | O responsável (Martinho S. S. Madureira). Só ele aprova. | `aprovado editorialmente` em todos os blocos |
+| **Especializada** (`review.specialist`) | Especialista externo (hebraísta, grecista, crítico textual ou teólogo). Não é feita pelo responsável nem pelo agente. | `pendente` em todos |
+| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 17 livros anteriores; `aprovado pelo ministério` em Oseias e Joel (aplica-se aos livros com edição nova) |
 
-## Estado dos livros (edição nova, `edicoes/nova/livros_json/`)
+Não há revisão por inteligência artificial no processo. Nenhum agente aprova em nome do responsável, nem declara a revisão especializada concluída.
 
-| Livro | Capítulos | Versículos | Com CT | Blocos editoriais | Revisão especializada |
-|---|---|---|---|---|---|
-| Rute (080) | 4 | 85 | 0 | aprovado (4) | — |
-| Jonas (390) | 4 | 48 | 0 | aprovado (4) | — |
-| Miqueias (400) | 7 | 105 | 0 | aprovado (7) | — |
-| Naum (410) | 3 | 47 | 0 | aprovado (3) | — |
-| Habacuque (420) | 3 | 56 | 0 | aprovado (3) | — |
-| Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
-| Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
-| Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 10 | 479 | 276 João 1–11 e 13 aprovados pelo responsável (1–8 em 2026-11-24; 9–11 e 13 na sessão de revisão de 9–13, com correções de Crítica Textual depois da aprovação); 12 em revisão (12:6 aprovado com «levava»); 14–15 rascunho (14:22 com a opção «te vás manifestar») | pendente |
-| Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
-| 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
-| 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
-| Tito (630) | 3 | 46 | 19 | rascunho (3) | pendente |
-| Filemom (640) | 1 | 25 | 14 | rascunho (1) | pendente |
-| 2 João (700) | 1 | 13 | 9 | rascunho (1) | pendente |
-| 3 João (710) | 1 | 14 | 8 | rascunho (1) | pendente |
-| Judas (720) | 1 | 25 | 14 | rascunho (1) | pendente |
+## Livros com edição nova
 
-Total: 59 capítulos e 1329 versículos, todos em prosa. Números de `scripts/verificar_dados.py`.
+Edição nova: 19 livros, 87 capítulos e 1 999 versículos, todos em prosa. O catálogo tem 66 livros: 47 ainda não têm edição nova. Os números vêm de `scripts/verificar_dados.py`.
 
-**Quem aprovou o quê.** Os oito livros do AT e Filipenses estão aprovados editorialmente
-pelo responsável. João 1–8 foram aprovados pelo responsável em 2026-11-24 («Aprovo todos os 1-8 com as alterações que fizeste»). A Crítica Textual de 1–8 foi completada depois dessa aprovação, a pedido do responsável; fica registada no `history`. João 9–11 e 13 foram aprovados pelo responsável na sessão de revisão de 9–13; o capítulo 12 está em revisão: 12:6 aprovado com «levava», e 12:7 e o resto do capítulo por rever. Os restantes estão em rascunho.
-Os blocos 7–10 apareceram marcados como aprovados no ficheiro em 2026-11-20, sem registo
-de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaixo).
+Todos os 19 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João e Judas.
+
+| Livro | Capítulos | Versículos | Notas com CT | Editorial | Especializada | Ministério |
+|---|---|---|---|---|---|---|
+| Rute (080) | 4 | 85 | 0 | aprovado | pendente | pendente |
+| Oseias (350) | 14 | 197 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Joel (360) | 3 | 73 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Jonas (390) | 4 | 48 | 0 | aprovado | pendente | pendente |
+| Miqueias (400) | 7 | 105 | 0 | aprovado | pendente | pendente |
+| Naum (410) | 3 | 47 | 0 | aprovado | pendente | pendente |
+| Habacuque (420) | 3 | 56 | 0 | aprovado | pendente | pendente |
+| Sofonias (430) | 3 | 53 | 0 | aprovado | pendente | pendente |
+| Ageu (440) | 2 | 38 | 0 | aprovado | pendente | pendente |
+| Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | pendente |
+| João (500) | 21 | 879 | 705 | aprovado | pendente | pendente |
+| Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | pendente |
+| 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | pendente |
+| 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | pendente |
+| Tito (630) | 3 | 46 | 19 | aprovado | pendente | pendente |
+| Filemom (640) | 1 | 25 | 14 | aprovado | pendente | pendente |
+| 2 João (700) | 1 | 13 | 9 | aprovado | pendente | pendente |
+| 3 João (710) | 1 | 14 | 8 | aprovado | pendente | pendente |
+| Judas (720) | 1 | 25 | 14 | aprovado | pendente | pendente |
+
+«Notas com CT» conta os versículos com parágrafo «Crítica Textual:». Os livros do AT não têm CT porque ainda não têm colação (`docs/colacao/`).
+
+**Leituras** (`edicoes/nova/*.md`) são geradas a partir dos JSON por `scripts/gerar_leitura_livro.py`. Os ficheiros de 2 João, 3 João, Filemom, Judas e Tito estão lá com o mesmo formato dos outros.
+
+**Joel e Oseias (lote 3):** entraram em `livros_json/` em 2026-11-24, com aprovação editorial do responsável em todos os capítulos e aprovação pelo ministério. As aspas de discurso direto foram acertadas conforme indicação do responsável: Oseias 6:4–6, 8:14, 10:9–11 e 11:8–11; Joel 2:25–27 e 3:1–8. Revisão especializada pendente, como nos outros livros. Por serem do AT, não têm colação de manuscritos nem «Crítica Textual».
 
 ## João
 
-- **1–4:** prosa em rascunho. As Críticas Textuais de 4:1, 4:44 e 4:54 foram conferidas
-  contra `docs/colacao/João.json` em 2026-11-20. As glosas das formas isoladas foram
-  conferidas com o Dodson e o Abbott-Smith (ver `docs/EDITORIAL.md`, «Léxico»).
-- **5–6:** aprovados pelo responsável em 2026-11-23.
-- **7–10:** prosa em rascunho. Verificados versículo a versículo contra o aparato e a
-  colação: 8:9, 8:11, 8:41, 9:1–41 e 10:29. Corrigidos nessa verificação: em 10:29 a
-  tradução passa a «O meu Pai» (a base tem «ὁ πατήρ μου») e a CT regista a variante
-  «μοι» / «αὐτὰ» (NIV); em 9:35 e 10:36 (e 1:51) a maiúscula de «υἱός» a meio da frase
-  passa a minúscula. Todas as CT de 7–10 conferem com o aparato da colação. Pendente:
-  leitura do responsável; só depois podem ser aprovados.
-- **11:** prosa em rascunho (bloco 1 do trabalho por capítulos, 2026-11-24). Gravado
-  com 57 versículos e 26 com CT. Registo: «vocês», com cadência elevada (decisão do
-  responsável, 2026-11-24); revisto nessa linha em 14 versículos. Pendente: leitura do responsável.
-- **12 e 13:** prosa em rascunho (bloco 2, 2026-11-24; registo elevado). 12 com 50
-  versículos e 27 com CT; 13 com 38 versículos e 26 com CT. Pendente: leitura do responsável.
-- **14 e 15:** prosa em rascunho (bloco 3, 2026-11-24; registo elevado). 14 com 31
-  versículos e 21 com CT; 15 com 27 versículos e 16 com CT. Pendente: leitura do responsável.
-- **16–21:** por escrever na edição. Há uma primeira redação não revista em
-  `arquivo/rascunhos_joao/500_Joao_12-21_nao_revisto.json` (16–21 no registo anterior,
-  sem a revisão de cadência); não entra na edição nem no `JOAO.md`. Cada capítulo será escrito e apresentado ao responsável um de cada vez.
-- **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
-  ficam como classificação interna do trabalho (`review`), não nas notas.
-- O ficheiro de leitura `edicoes/nova/JOAO.md` foi regenerado em 2026-11-24
-  (`scripts/gerar_leitura_livro.py --livro 500`).
+- **1–21:** aprovados pelo responsável como editorial. Os colchetes mantidos (3:13, 3:15, 3:34, 5:4, 7:53–8:11) são por evidência de manuscritos. Base SBLGNT mantida onde verificável.
+- **Decisões de texto registadas:** 4:1 «Jesus» (com «o Senhor» na nota); 14:16, 14:26, 15:26 e 16:7 «Parácletos» e «Parácleton»; 16:25 e 16:29 «com clareza»; 20:15 «Jardineiro»; 20:17 «Não me segures»; 21:15 «mais do que estes»; 21:15–17 «amas-me» e «queres-me bem»; 14:22 «te vás manifestar a nós».
+- **Pendências de texto de João, tratadas em 20/11/2026:** 11:1 «chamado» em itálico, com nota e CT (a colação regista que 02 omite «καὶ Μάρθας»). 11:16: itálico em «que quer dizer gémeo», com nota; «chamado» traduz λεγόμενος e fica em tipo normal (ver Pendências). 20:15: nota e CT conferidas com a colação (032 corrigido). 7:3, 7:8 e 8:25: CT conferida com o aparato e a colação; estava correta (7:8 com precisão sobre a primeira ocorrência de ἑορτήν). Colchetes já existentes, com nota: 5:4, 3:13, 3:15, 3:34, 7:53 e 8:1–8:11.
 
-## Cartas
+## 2 Tessalonicenses
 
-Filemom, Tito, Judas, 2 João, 3 João e 2 Tessalonicenses estão em prosa, gravadas e
-conferidas com a colação respetiva (`scripts/verificar_notas_colacao.py`, rc 0).
-Todos os blocos estão em `rascunho`, à espera de leitura. Decisão do responsável: a prosa
-gravada em 2 Tessalonicenses basta; não há conteúdo a restaurar. Em 2 Tessalonicenses as notas
-recuperaram o conteúdo editorial verificado da versão anterior: 1:2 (sem «nosso», seguindo
-a base), 1:11–12, 2:2, 2:13 (ἀπαρχήν, com a alternativa ἀπʼ ἀρχῆς), 3:6 (anártrico e
-terceira pessoa de παρελάβοσαν), 3:16 (τόπῳ/τρόπῳ). Não há níveis de certeza impressos.
+Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da memória de estilo (`modelos/estilo_bee.json`, `ancoras.livros_base`). A revisão especializada (especialista externo) e a revisão do ministério continuam pendentes.
 
-## 1 Tessalonicenses
+## Cartas seguintes
 
-Convertido e gravado (89 versículos, 38 com CT), `verificar_notas_colacao.py` rc 0.
-Blocos em `rascunho`. Aguarda leitura do responsável.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. Em preparação: **2 Pedro** (61 versículos). A colação está em `docs/colacao/2_Pedro.json` e `.md`. Não há texto gravado. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está pendente.
 
 ## Verificações (2026-11-20)
 
-- `python3 -m pytest`: 163 passam, 1 ignorado.
-- `python3 scripts/verificar_estilo.py`: rc 0 (nenhum arcaísmo, hesitação ou marcador de Almeida).
-- `python3 scripts/verificar_notas_colacao.py` para João, 1 Tessalonicenses, 2 Tessalonicenses,
-  Tito, Filemom, 2 e 3 João e Judas: rc 0.
-- `python3 scripts/verificar_dados.py`: dados íntegros.
+- `scripts/verificar_dados.py`: rc 0; 87 capítulos e 1 999 versículos.
+- `scripts/verificar_estilo.py`: rc 0; sem arcaísmos nem marcas de Almeida.
+- `scripts/verificar_convencoes_notas.py`: rc 0; 0 falhas, 0 avisos.
+- `scripts/verificar_documentacao.py`: rc 0.
+- `scripts/verificar_notas_colacao.py` (João, Filipenses, 1 e 2 Tessalonicenses, Tito, Filemom, 2 e 3 João, Judas): rc 0.
+- `python3 -m unittest discover -s tests`: 188 testes, OK. Saltam 5 quando faltam `pyspellchecker` (verificação ortográfica, que por isso não correu) ou `python-docx` (documento de apresentação).
+
+## Documento de apresentação
+
+`docs/APRESENTACAO_BEE.docx` é gerado por `scripts/gerar_apresentacao.py` (`pip install python-docx`). Os números e a tabela de estado vêm dos JSON. Não menciona revisão por IA. A versão anterior (com texto de 17/11) está em `docs/arquivo/APRESENTACAO_BEE.docx`. A pasta `arquivo/scripts/gerar_apresentacao.py` é o gerador antigo, arquivado.
 
 ## Código e arquivo
 
-- `bee/inspetor.py`: guarda da voz (arcaísmos, marcas de Almeida, rótulos antigos, grego
-  fora de itálico, `analisar_comentario`).
-- `bee/sanea.py`: **mantido**. `bee/arquivos.py` depende dele para ler e validar os JSON.
-- `bee/manuscritos.py`, `bee/fontes.py`, `bee/rede.py`, `bee/catalogo.py`, `bee/trava.py`,
-  `bee/compilador.py`, `bee/grego.py`: mantidos.
-- `arquivo/` (decisão do responsável, 2026-11-20): `bee/porta.py`, `bee/memoria_estilo.py`,
-  `scripts/aprovar_voz.py`. Não são importados por código ativo.
-- `docs/arquivo/`: `PLANO_CORRECAO.md`, `REVISAO_GERAL.md` e a proposta de CI `ci.yml`.
+- Mantidos e ativos: `bee/inspetor.py`, `bee/sanea.py`, `bee/arquivos.py`, `bee/manuscritos.py`, `bee/fontes.py`, `bee/rede.py`, `bee/catalogo.py`, `bee/trava.py`, `bee/compilador.py`, `bee/grego.py`.
+- Arquivados em `arquivo/`: `bee/porta.py`, `bee/memoria_estilo.py`, `scripts/aprovar_voz.py`. Não são importados por código ativo.
+- Arquivados em `docs/arquivo/`: `PLANO_CORRECAO.md`, `REVISAO_GERAL.md`, `ci.yml`, leituras antigas (lotes, calibração, Amós, Obadias, Zacarias) em `leituras_legadas/` e os pilotos em `piloto/`.
+- Sem automação de produção: o repositório não tem workflows de GitHub Actions. Não se recriam sem decisão do responsável.
 
 ## Pendências
 
-1. **Responsável:** ler João 7–10 (`edicoes/nova/JOAO.md`, linhas 602–999 e 2314–3216).
-   Depois, verificar os versículos listados acima e só então aprovar.
-2. **Responsável:** ler 1 Tessalonicenses e as cartas em rascunho.
-3. **Revisão especializada:** pendente nos livros indicados na tabela. Não é substituível
-   pelo responsável nem pelo agente.
-4. **João 1–4:** léxico conferido; falta a leitura do responsável.
-5. **`colacao/João.md`:** a versão em Markdown da colação ainda não foi revista.
-6. **Ramo:** o trabalho de formato foi integrado em `main` (PR #71). O trabalho seguinte
-   faz-se no ramo de cada sessão.
+1. **Responsável:** confirmar que `aprovado editorialmente` é o valor definitivo para os 19 livros.
+2. **Responsável:** decidir se o documento de apresentação volta a ser a versão oficial (o README e `arquivo/LEIA-ME.md` diziam que estava arquivado de propósito).
+3. **Responsável:** decidir 11:16: itálico só em «que quer dizer gémeo» (como fica) ou também em «chamado».
+4. **Revisão especializada:** pendente nos 19 livros, a cargo de especialista externo.
+5. **Revisão do ministério:** pendente nos 17 livros anteriores (Oseias e Joel já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
+6. **2 Pedro:** ἐπίγνωσις decidida (alternar conforme a construção); falta redigir.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
-
-## Nota sobre João 7–10 (2026-11-20)
-
-O ficheiro chegou a ter os blocos 7–10 marcados como `aprovado`, com uma nota que dizia
-«aprovado pelo responsável após leitura». Não há registo de aprovação do responsável que a suporte. Foi revertida para `rascunho`, com a nota anterior, e o texto e as notas
-ficaram intactos (backup em `/tmp/conv/500_Joao.antes_reverte710.json`, efémero).
-
-## Correções em livros já aprovados (revisão de outros livros)
-
-Feitas nesta sessão, sem alterar a aprovação de nenhum livro: NIV reformulada como escolha de tradução onde diverge da base, e retirada onde concorda, em Filipenses (1:14, 3:13), 1 Tessalonicenses (2:7, 2:16, 3:13, 4:11), 2 Tessalonicenses (1:2, 2:13, 3:6), Tito (1:10) e Judas (1:15); sinais de aparato e aparato em bruto retirados (Filipenses 2:4); frase de processo «Sem colação direta de manuscritos nesta entrega» retirada das notas (45 notas; a limitação fica no JSON); ortografia PT-PT («perceção», «receção», «aceção», «ativa», «leem»); «ambiguar» (2 Tess 2:9) substituído por uma frase. Alteração de texto: 13:27 («faz-o», em vez de «faze-o»). Lista para aprovação: `docs/revisao/APROVACAO_PENDENTE.md`.
+8. **Joel e Oseias:** resolvido em 2026-11-24 (ver acima). Falta a revisão especializada, como nos demais livros.
