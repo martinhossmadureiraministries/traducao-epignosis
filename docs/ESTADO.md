@@ -38,7 +38,7 @@ de processo antigos estão em `docs/arquivo/`.
 | Sofonias (430) | 3 | 53 | 0 | aprovado (3) | — |
 | Ageu (440) | 2 | 38 | 0 | aprovado (2) | — |
 | Malaquias (460) | 4 | 55 | 0 | aprovado (4) | — |
-| João (500) | 21 | 879 | 704 | aprovado (19) e rascunho (2): 20–21 por aprovar | pendente |
+| João (500) | 21 | 879 | 704 | aprovado (20) e rascunho (1): 20 por aprovar | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado (4) | — |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | rascunho (5) | — |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | rascunho (3) | pendente |
@@ -67,7 +67,8 @@ de aprovação do responsável. Foram revertidos para `rascunho` (ver nota abaix
   Em 16:25 e 16:29, «com clareza» (no lugar de «franqueza») aprovado pelo responsável. Paráclito: decidido pelo responsável, «Parácletos» (nominativo) e «Parácleton» (acusativo, em 14:16). Esta alteração toca 14:16, 14:26 e 15:26, já aprovados, e foi gravada nesses versículos.
   Aprovados pelo responsável. Leitura em `docs/revisao/JOAO_16.md` e `docs/revisao/JOAO_17.md`.
 - **18–19:** aprovados pelo responsável, com confirmação expressa depois da revisão da CT (bloco de 2 capítulos, 18 com 40 versículos e 19 com 42). Crítica Textual revista contra a colação; correções em 18:17–38 e 19:4–31. As atribuições a testemunhas foram conferidas com os dados da colação, não com as transcrições; a nota de 18:14 tem uma leitura marcada como incerta. Leitura em `docs/revisao/JOAO_18_19.md`.
-- **20–21:** redigidos como rascunho (2026-11-24), por aprovar pelo responsável. Texto, nota e Crítica Textual a partir do aparato SBLGNT e da colação; leitura em `docs/revisao/JOAO_20_21.md`. Decisões de texto em aberto: 20:17 («não me segures» ou «não me toques»), 21:15–17 («amas-me» e «queres-me bem») e 21:15 («mais do que estes» ou «mais do que isto»). Em 21:16–17, a colação dá WH com «προβάτια», que o aparato não regista; fica por confirmar. Verificadores de estilo, convenções e colação passam; as transcrições CNTR não foram conferidas para estes versículos.
+- **NIV:** aprovada pelo responsável. As 19 notas que mencionam a NIV como escolha de tradução ficam aprovadas, em 1–19 e capítulos anteriores; 8:28, 8:41, 13:26 e 14:7 já não a mencionam.
+- **20–21:** 21 aprovado pelo responsável (bloco de 21:1–25, depois de a Crítica Textual ser conferida com a colação; correções em 21:4, 21:5, 21:7, 21:10, 21:11, 21:14, 21:17, 21:18, 21:20 e 21:25). 20 continua em rascunho (31 versículos), por aprovar. Decisão pendente: 20:15, «hortelão» ou «jardineiro» (*κηπουρός*), deixada em aberto a pedido do responsável. Também em aberto: 20:17 («não me segures» mantido, ou «não me toques»); 21:15 («mais do que estes» ou «mais do que isto»); 21:15–17 («amas-me» e «queres-me bem»). Em 21:16–17, a colação dá WH com «προβάτια», que o aparato não regista; fica por confirmar. Leitura em `docs/revisao/JOAO_20_21.md`.
 - **5:42:** aprovado pelo responsável. A CT regista a inferência sobre a forma da testemunha 02.
 - **Revisão especializada:** pendente em todo o livro. Os níveis de certeza
   ficam como classificação interna do trabalho (`review`), não nas notas.
