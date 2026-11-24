@@ -161,13 +161,13 @@ comum» (NTLH) e «de uma vez por todas» (NVI) por *ἅπαξ*.
 | ALM1911 / ARC / ACF | …que, havendo o Senhor salvo um povo, tirando-o da terra do Egito, destruiu depois os que não creram; |
 | NVI | …quero lembrá-los de que o Senhor libertou um povo do Egito mas, posteriormente, destruiu os que não creram. |
 | NTLH | …quero lembrar que o Senhor salvou o povo de Israel, tirando-o da terra do Egito, mas depois destruiu aqueles que não creram. |
-| **BEE** | **Quero recordar-lhes algo, embora já saibam tudo isso: [[Jesus]] salvou um povo, tirando-o da terra do Egito, e depois destruiu os que não creram.** |
+| **BEE** | **Quero recordar-lhes algo, embora já saibam tudo isso: [Jesus] salvou um povo, tirando-o da terra do Egito, e depois destruiu os que não creram.** |
 
 Nenhuma das versões populares lê «Jesus»: todas seguem *κύριος* («o Senhor»).
 A base fixada imprime *Ἰησοῦς* com NA28, mas WH e Tregelles leem *κύριος* e,
 das testemunhas colacionadas, só 03 e SR acompanham a base (01 e 04 leem
 *κύριος*; P72 lê *θεὸς Χριστός*). É **nível de certeza C** como registo da
-dificuldade, assinalado com `[[ ]]` no texto — e **o responsável decidiu em
+dificuldade, assinalado com colchetes simples no texto — e **o responsável decidiu em
 2026-11-20: segue-se NA28**. «Jesus» fica; a pendência está encerrada e só
 reabre com evidência nova.
 

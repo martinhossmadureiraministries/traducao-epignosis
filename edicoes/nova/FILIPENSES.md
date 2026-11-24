@@ -1,8 +1,19 @@
 # Filipenses · Bíblia de Estudo Epignósis
 
-Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializada pendente: não é certificação de fidelidade textual.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (570). Capítulos disponíveis: 1, 2, 3, 4, 104 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 30 |
+| 2 | aprovado editorialmente | 30 |
+| 3 | aprovado editorialmente | 21 |
+| 4 | aprovado editorialmente | 23 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Paulo e Timóteo, servos de Cristo Jesus, a todos os santos em Cristo Jesus que estão em Filipos, com os bispos e diáconos:
 
@@ -34,7 +45,7 @@ Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializa
 
 **15** Alguns, é verdade, anunciam Cristo por inveja e rivalidade; outros, porém, por boa vontade.
 
-**16** Estes <i>anunciam</i> por amor, sabendo que estou posto para a defesa do evangelho;
+**16** Estes *anunciam* por amor, sabendo que estou posto para a defesa do evangelho;
 
 **17** aqueles, por rivalidade, anunciam Cristo sem pureza, pensando que assim levantam aflição contra as minhas cadeias.
 
@@ -64,7 +75,7 @@ Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializa
 
 **30** sustentando o mesmo combate que viram em mim e agora ouvem dizer de mim.
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Se há, pois, algum encorajamento em Cristo, algum consolo de amor, alguma comunhão do Espírito, algum afeto e compaixão,
 
@@ -126,7 +137,7 @@ Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializa
 
 **30** porque chegou perto da morte por causa da obra de Cristo, arriscando a própria vida para suprir o que faltava no serviço que vocês não podiam prestar-me.
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Finalmente, meus irmãos, alegrem-se no Senhor. Escrever-lhes as mesmas coisas não me pesa, e a vocês dá segurança.
 
@@ -170,7 +181,7 @@ Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializa
 
 **21** que transformará o nosso corpo humilhado, tornando-o semelhante ao seu corpo glorioso, pelo poder que ele tem de submeter a si mesmo todas as coisas.
 
-## Capítulo 4
+### Capítulo 4
 
 **1** Portanto, meus irmãos amados e muito queridos, minha alegria e minha coroa, permaneçam assim firmes no Senhor, amados.
 
@@ -218,48 +229,467 @@ Aprovada pelo responsável quanto à voz e à legibilidade. Revisão especializa
 
 **23** A graça do Senhor Jesus Cristo seja com o espírito de vocês.
 
-## Notas para depois da leitura
+## Notas
 
-**1:1** · Paulo chama-se «servo» (δοῦλος), o título mais baixo do mundo antigo, e chama «santos» a gente comum de Filipos: santo é quem está em Cristo, não quem já chegou. Os «bispos e diáconos» são, nesta altura, supervisores e servidores de uma igreja que ainda cabe numa casa.
+### Notas do capítulo 1
 
-**1:6** · Quem começou a obra é quem a acaba. Paulo não diz que os filipenses vão aguentar até ao fim; diz que Deus vai levar até ao fim o que começou neles.
+**1:1**
 
-**1:21** · «Lucro» é palavra de comércio (κέρδος), como em 3:7-8. A frase não despreza a vida: diz que Cristo é o conteúdo de viver e o ganho de morrer.
+- «Servos» traduz *δοῦλοι*: o título mais baixo do mundo antigo, assumido por Paulo sem vergonha e sem ornamento. «Santos» não é elogio moral, é a identidade de quem está «em Cristo Jesus». Os «bispos e diáconos» aparecem aqui antes de os termos fixarem ofício: *ἐπίσκοποι* são supervisores e *διάκονοι* servidores concretos de uma igreja que ainda cabe numa casa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:1: 1:1 *Χριστοῦ Ἰησοῦ* WH Treg NA28 ] *Ἰησοῦ Χριστοῦ* RP. A base imprime *Χριστοῦ Ἰησοῦ*, «Cristo Jesus»; a tradição bizantina inverte a ordem. Seguimos a base, e a nota não repete a variante no texto.
 
-**1:27** · «Vivam de maneira digna» traduz πολιτεύεσθε, «vivam como cidadãos». Filipos era colónia romana, e a palavra fazia sentido imediato: quem tem a pátria noutro lugar comporta-se à altura dela.
+**1:2**
 
-**2:1–2** · Quatro condições com «se», e depois um pedido: o mesmo modo de pensar. A alegria de Paulo não depende de notícias; depende de os filipenses pensarem juntos.
+- A base tem *πατρὸς ἡμῶν*, «nosso Pai»; 2Ts 1:2 não tem. A saudação segue o que cada base diz, sem uniformizar por fora.
 
-**2:6** · ἁρπαγμός é a palavra mais discutida do hino. A ARC e a ARA dizem «usurpação»; a NVI, «usar como vantagem»; a NAA, «reter a qualquer custo»; a NVT, «apegar-se». A BEE diz «algo a que se agarrasse» porque conserva as duas pontas: o texto afirma a forma de Deus e nega o agarramento. Não diz que Cristo deixou de ser Deus.
+**1:3**
 
-**2:7** · «Esvaziou-se» (ἐκένωσεν) tem conteúdo definido no próprio versículo: tomar a forma de servo. μορφή diz o que algo é; σχῆμα, no fim do versículo, diz como aparece. O versículo acaba sem ponto porque a frase continua no v. 8.
+- O versículo fica em aberto, com vírgula, porque o particípio *ποιούμενος* do v. 4 é que completa a frase. Fechar aqui com ponto obrigaria a inventar um sujeito novo no v. 4.
 
-**2:8** · A descida tem três degraus e o último é o mais duro: obediente, até à morte, e morte de cruz. Paulo não escreve apenas «morte»: nomeia a execução vergonhosa.
+**1:4**
 
-**2:9–11** · A cena cita Isaías 45:23, onde é o SENHOR quem diz que todo o joelho se dobrará. Paulo aplica-o a Jesus e fecha a frase «para glória de Deus Pai»: a confissão de que Jesus Cristo é Senhor não rouba glória ao Pai, devolve-a.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:4: sem entrada nesta referência.
 
-**2:12–13** · «Levem a cabo a sua salvação» soa a esforço próprio até se ler o versículo seguinte: é Deus que opera neles o querer e o realizar. O imperativo não é anulado; é sustentado.
+**1:5**
 
-**2:17** · Paulo descreve a própria morte possível como o vinho derramado sobre o sacrifício (σπένδομαι, libação) e chama-lhe motivo de alegria.
+- *κοινωνία* é «partilha» no glossário da casa: não é sentimento de companheirismo, é ter parte na mesma obra, com dinheiro e com pessoas. «Desde o primeiro dia até agora» delimita uma parceria real e verificável.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:5: 5 *τῆς* WH Treg NA28 ] – RP.
 
-**3:2** · «Cuidado com a mutilação» é um trocadilho amargo com «circuncisão»: κατατομή contra περιτομή. Paulo não despreza o rito; recusa quem corta a carne e perde o sentido dela.
+**1:6**
 
-**3:8** · «Lixo» traduz σκύβαλα, o que se varre e se deita fora. A palavra é crua de propósito: é a avaliação de Paulo sobre tudo o que ganhara, comparado com conhecer Cristo.
+- O par *ἐναρξάμενος*/*ἐπιτελέσει* junta o começo e o acabamento: quem começou a obra é quem a leva ao fim. «Até ao fim» traduz o verbo, não um prazo humano.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:6: 6 *Χριστοῦ Ἰησοῦ* Treg NA28 RP ] *Ἰησοῦ Χριστοῦ* WH. A base imprime *Χριστοῦ Ἰησοῦ* com Tregelles, NA28 e RP; WH lê *Ἰησοῦ Χριστοῦ*. A tradução segue a base.
 
-**3:9** · A justiça vem de Deus e assenta na fé. πίστις Χριστοῦ pode ser «fé em Cristo» ou «fidelidade de Cristo»: a BEE segue a primeira leitura, com a ARC, ARA, NVI e NVT, e regista a segunda como proposta séria.
+**1:7**
 
-**3:11** · ἐξανάστασις, «o levantar-se de fora», é palavra rara. A expressão pode designar a ressurreição final ou a dos justos; «se de algum modo» não é dúvida sobre Deus, é a linguagem de quem ainda não chegou.
+- *συγκοινωνούς*, «participantes comigo», é da mesma família de *κοινωνία* em 1:5: a parceria é na graça, e a graça inclui as cadeias. *δεσμοί* é a palavra corrente para as correntes da prisão.
 
-**3:20** · «Cidadania» traduz πολίτευμα: a colónia vive longe da pátria e espera de lá o que a salva. É a mesma raiz do «vivam como cidadãos» de 1:27.
+**1:8**
 
-**4:5** · «Amabilidade» traduz ἐπιεικές, a bondade que cede e não insiste no seu direito — a palavra que descrevia a clemência de um rei. «O Senhor está perto» pode ser perto no espaço ou no tempo; o grego não escolhe.
+- *σπλάγχνα* é «coração» no glossário. Aqui o grego põe-no em Cristo: o afeto não é apenas a emoção de Paulo, é o de Cristo nele; a tradução conserva o genitivo em vez de o diluir em sentimentalismo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:8: 8 *μου* WH Treg NA28 ] + *ἐστιν* RP | • *Χριστοῦ Ἰησοῦ* WH Treg NA28 ] *Ἰησοῦ Χριστοῦ* RP. A base tem *μου*, «minha testemunha», com WH, Tregelles e NA28; RP acrescenta *ἐστιν*. A ordem *Χριστοῦ Ἰησοῦ* é a da base; RP inverte.
 
-**4:6–7** · O que se proíbe é a ansiedade, não a prudência. A paz é descrita como guarnição (φρουρήσει): guarda o coração e os pensamentos, e guarda-os «em Cristo Jesus», não fora dos problemas.
+**1:9**
 
-**4:13** · O contexto é o contentamento dos vv. 11-12: «tudo posso» significa passar fome e ter abundância. A tradição bizantina acrescenta «em Cristo»; a base imprime só «naquele que me fortalece».
+- *ἐπίγνωσις* é «pleno conhecimento»; *αἴσθησις* é «discernimento», perceção treinada, não impulso. O amor que Paulo pede cresce com conhecimento, não apesar dele.
 
-**4:18–19** · O dinheiro enviado é descrito com linguagem de culto: perfume de aroma agradável, sacrifício aceitável. A promessa do v. 19 é de provisão, não de luxo, e o critério é «a sua riqueza em glória».
+**1:10**
 
-**4:23** · A bênção final é singular: «com o espírito de vocês». A tradição bizantina lê «com todos vocês» e acrescenta «Amém»; a base não.
+- *δοκιμάζειν τὰ διαφέροντα* é «reconhecer o que é melhor», a mesma família de Rm 12:2: não um código de casos, mas critério exercido. *εἰλικρινεῖς* é «puro», sem mistura; *ἀπρόσκοπτοι* é «sem tropeço», que não faz cair os outros.
 
-[Base grega SBLGNT](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgnt/text/Phil.txt) e [aparato de edições](https://github.com/Faithlife/SBLGNT/blob/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d/data/sblgntapp/xml/Phil.xml), CC BY 4.0. [Cotejo português de 2:6](https://www.bible.com/pt/bible/compare/PHP.2.6) e de [2:7](https://www.bible.com/pt/bible/compare/PHP.2.7), com ARC, ARA, NVI, NAA, NVT, NTLH e NBV-P. Revisão especializada pendente.
+**1:11**
+
+- O fruto é de justiça e vem «por Jesus Cristo»: a origem é ele. O singular da base contrasta com o plural da tradição bizantina, e a diferença fica registada abaixo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:11: 11 *καρπὸν δικαιοσύνης τὸν* WH Treg NA28 ] *καρπῶν δικαιοσύνης τῶν* RP. A base imprime o singular *καρπὸν δικαιοσύνης τὸν*; RP lê o plural *καρπῶν δικαιοσύνης τῶν*. A tradução segue o singular.
+
+**1:12**
+
+- *τὰ κατ*’ *ἐμέ*, «o que me aconteceu», resume a situação sem dramatizar. «Progresso» (*προκοπή*) é termo de avanço concreto, não de sentimento.
+
+**1:13**
+
+- «Pretório» pode ser a guarda pretoriana ou o quartel do governador; a nota não decide o que o texto deixa aberto. O que fica claro é a causa da prisão: «por causa de Cristo».
+
+**1:14**
+
+- A prisão de Paulo, em vez de calar os irmãos, deu-lhes confiança. O contraste entre o que se esperava e o que aconteceu é o argumento do parágrafo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:14: a base lê «*λόγον*», com RP e NA28; WH e Treg acrescentam «*τοῦ θεοῦ*», e a NIV segue essa leitura por escolha de tradução. Traduzimos o que a base tem: «a palavra».
+
+**1:15**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:15: sem entrada nesta referência.
+
+**1:16**
+
+- Nas edições críticas o amor vem primeiro (v. 16) e a rivalidade depois (v. 17); na tradição bizantina os dois versículos estão trocados. A base segue a ordem crítica e a numeração portuguesa mantém-se.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:16: 16–17 *ἀγάπης* … *κεῖμαι* WH Treg NA28 ] *ἐριθείας τὸν Χριστὸν καταγγέλλουσιν*, *οὐχ ἁγνῶς*, *οἰόμενοι θλῖψιν ἐπιφέρειν τοῖς δεσμοῖς μου* RP | • *ἐριθείας* … *δεσμοῖς μου* WH Treg NA28 ] *ἀγάπης*, *εἰδότες ὅτι εἰς ἀπολογίαν τοῦ εὐαγγελίου κεῖμαι* RP. As edições críticas (WH, Tregelles, NA28) põem o amor no v. 16 e a rivalidade no v. 17; RP troca os dois blocos. A base segue a ordem crítica.
+
+**1:17**
+
+- «Sem pureza» traduz *οὐχ ἁγνῶς*: o anúncio é verdadeiro e o motivo é torcido. «Levantam aflição contra as minhas cadeias» conserva a imagem de quem acrescenta peso a quem já está preso.
+
+**1:18**
+
+- O raciocínio de Paulo é áspero e honesto: o motivo do pregador não muda o conteúdo do anúncio. «Continuarei a alegrar-me» é futuro, não resignação passageira.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:18: 18 *ὅτι* WH Treg NA28 ] – RP. A base tem *ὅτι* com WH, Tregelles e NA28; RP omite. Não muda o sentido em português.
+
+**1:19**
+
+- *ἐπιχορηγία* é «socorro», o abastecimento que se faz a uma cidade ou a um coro. O Espírito é apresentado como provisão concreta, não como ideia.
+
+**1:20**
+
+- *ἀποκαραδοκία* é a expectativa de quem estica o pescoço a olhar. «Ousadia» traduz *παρρησία*, a liberdade de falar diante de todos; «no meu corpo» impede espiritualizar o que Paulo está a dizer.
+
+**1:21**
+
+- *κέρδος* é «lucro», termo comercial: o mesmo campo de 3:7-8. A frase não despreza a vida, subordina-a: Cristo é o conteúdo de viver e o ganho de morrer.
+
+**1:22**
+
+- «Carne» (*σάρξ*) aqui é a vida presente, não o pecado. O raciocínio é de quem tem os dois desejos e não escolhe por gosto.
+
+**1:23**
+
+- *συνέχομαι* é «apertado», encurralado pelos dois lados. *ἀναλῦσαι*, «partir», é desatar as amarras ou desmontar a tenda: a imagem da morte como levantar campo. O texto diz o desejo de Paulo, não uma cronologia do além.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:23: 23 *γὰρ* WH Treg NA28 ] – RP. A base tem *γάρ* com WH, Tregelles e NA28; RP omite a partícula. Traduzimos pelo encadeamento, sem acrescentar «porque» onde a base não o tem.
+
+**1:24**
+
+- «Ficar na carne» repete a expressão do v. 22 e mantém o mesmo sentido: continuar a viver aqui. O que decide não é o gosto pessoal, é a necessidade dos outros.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:24: 24 *ἐν* Treg NA28 RP ] – WH. A base tem *ἐν τῇ σαρκί* com Tregelles, NA28 e RP; WH omite a preposição. A tradução segue a base.
+
+**1:25**
+
+- A confiança de Paulo é «no Senhor», não em si mesmo, e serve «o progresso e a alegria da fé» deles: os dois benefícios que ele já tinha pedido em 1:11 e 1:4.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:25: 25 *παραμενῶ* WH Treg NA28 ] *συμπαραμενῶ* RP. A base imprime *παραμενῶ*; RP lê *συμπαραμενῶ*, «continuarei ao lado». «Continuarei com vocês» já dá o valor do composto sem lhe acrescentar nada.
+
+**1:26**
+
+- *καύχημα* é «motivo de orgulho», não vanglória. A presença de Paulo outra vez em Filipos dará aos filipenses razão concreta de se alegrarem em Cristo.
+
+**1:27**
+
+- *πολιτεύεσθε* é «vivam como cidadãos»: a mesma raiz de *πολίτευμα* em 3:20. «Firmes num só espírito, lutando juntos» junta a estabilidade militar e o esforço atlético (*συναθλοῦντες*).
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:27: 27 *ἀκούω* WH Treg NA28 ] *ἀκούσω* RP. A base tem *ἀκούω*; RP lê *ἀκούσω*, futuro. Traduzimos o presente da base: «ouça dizer».
+
+**1:28**
+
+- *πτυρόμενοι* é o espantar-se de um cavalo. O «sinal» (*ἔνδειξις*) é um só, lido de dois modos: ruína para quem se opõe, salvação para quem crê, e ambas as leituras dependem de Deus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:28: 28 *ἐστὶν αὐτοῖς* WH Treg NA28 ] *αὐτοῖς μέν ἐστιν* RP | • *ὑμῶν* WH Treg NA28 ] *ὑμῖν* RP. A base lê *ἐστὶν αὐτοῖς* … *ὑμῶν*, «é para eles sinal … e para vocês de salvação»; RP reorganiza (*αὐτοῖς μέν ἐστιν* … *ὑμῖν*). A tradução segue a base.
+
+**1:29**
+
+- *ἐχαρίσθη*, «foi dado como graça»: o sofrimento entra no mesmo dom que a fé. É a frase mais dura do capítulo e não admite ser suavizada.
+
+**1:30**
+
+- *ἀγών* é «combate», imagem desportiva; o mesmo termo volta em 4:3 para as mulheres que lutaram com Paulo. Os filipenses já viram este combate em Paulo e agora ouvem falar dele.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Quatro condições, todas com «se»: encorajamento (*παράκλησις*), consolo (*παραμύθιον*), *κοινωνία* do Espírito — aqui «comunhão» no sentido de participação nele —, e o par *σπλάγχνα* e *οἰκτιρμοί*, «afeto» e «compaixão». Os dois últimos não se dobram num só: um é o movimento interno, o outro a misericórdia que responde à miséria.
+
+**2:2**
+
+- *φρονέω*, «modo de pensar», é a espinha do capítulo (2:2, 5; 3:15, 19; 4:2, 10). A alegria de Paulo não depende de notícias, depende de os filipenses pensarem juntos. «Uma só alma, um só sentir» traduz *σύμψυχοι* e *τὸ ἓν φρονοῦντες*, duas expressões que se reforçam.
+
+**2:3**
+
+- *ἐριθεία* é «rivalidade», a mesma palavra do v. 17 do capítulo 1 aplicada agora dentro da igreja. *κενοδοξία* é literalmente «glória vazia». A humildade pedida é concreta: considerar o outro à frente, não dizer mal de si.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:3: 2:3 *μηδὲ κατὰ* WH Treg NA28 ] *ἢ* RP. A base tem *μηδὲ κατά* com WH, Tregelles e NA28; RP lê *ἢ*, «nem por vaidade». A tradução segue a base.
+
+**2:4**
+
+- A base lê *ἕκαστοι*, plural distributivo — «cada um de vocês» —, que casa com o plural do imperativo anterior. A tradição bizantina tem o singular e um imperativo em vez do particípio.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*ἕκαστοι*», com WH e Treg; NA28 e RP leem «*ἕκαστος*». A base lê «*σκοποῦντες*», com WH, Treg e NA28; RP lê o imperativo «*σκοπεῖτε*». Na segunda ocorrência de «*ἕκαστοι*», a base tem a mesma leitura de WH, Treg e NA28; RP lê «*ἕκαστος*». Traduzimos o plural distributivo e o particípio da base.
+
+**2:5**
+
+- Não é um conselho de imitação moral, é a entrada no hino que segue: o «modo de pensar» de Cristo é o conteúdo dos vv. 6-11. O *καί*, «também», liga o que se pede ao que já houve nele.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:5: 5 *φρονεῖτε* WH Treg NA28 ] *γὰρ φρονείσθω* RP. A base tem *φρονεῖτε*, imperativo presente; RP lê *γὰρ φρονείσθω*, terceira pessoa. A tradução segue o imperativo da base.
+
+**2:6**
+
+- *ἁρπαγμός* é a palavra mais discutida do hino. Pode significar o que se agarra (uma presa a conquistar), o que já se possui e não se larga, ou o que se usa em vantagem própria. A ARC e a ARA dizem «usurpação»; a NVI, «usar como vantagem»; a NAA, «reter a qualquer custo»; a NVT, «apegar-se». A BEE escolhe a imagem do gesto — «algo a que se agarrasse» — porque mantém as duas pontas: não nega a igualdade (que *μορφὴ θεοῦ* afirma), nega o agarramento. O versículo não diz que Cristo deixou de ser Deus; diz que não reteve por força o que era seu.
+
+**2:7**
+
+- *ἐκένωσεν*, «esvaziou-se», deu ao hino o nome que a teologia depois usou (*κένωσις*). O que o texto acrescenta é o conteúdo do esvaziamento: tomar *μορφήν*, «forma», de servo, não perder a forma de Deus. *μορφή* diz o que algo é; *σχῆμα*, no fim do versículo, diz como aparece. O v. 7 termina sem ponto porque a frase continua no v. 8.
+
+**2:8**
+
+- A descida tem três degraus e o último é o mais brutal: obediente, até à morte, e morte de cruz. Paulo não escreve «morte» e cala o modo: a cruz era a execução vergonhosa, e é dela que o hino faz o fundo da humilhação.
+
+**2:9**
+
+- *διὸ καί*, «por isso mesmo», liga a exaltação à obediência que a precedeu, sem dizer que a cruz comprou um prémio. *ὑπερύψωσεν* é palavra rara, «exaltou acima de tudo». «O nome» não é uma etiqueta nova: é o nome que o v. 11 vai declarar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:9: 9 *τὸ* WH Treg NA28 ] – RP. A base tem o artigo *τό* com WH, Tregelles e NA28; RP omite. Traduzimos «o nome», como a base.
+
+**2:10**
+
+- A cena cita Isaías 45:23, onde é o SENHOR quem diz que todo o joelho se dobrará a ele. Paulo aplica o texto a Jesus sem pedir desculpa e sem retirar a glória do Pai — o v. 11 resolve a tensão. «Nos céus, na terra e debaixo da terra» cobre o que existe, não hierarquiza mundos.
+
+**2:11**
+
+- *ἐξομολογήσηται* é «confessar abertamente», não murmurar. A confissão é «Jesus Cristo é Senhor» — o título que César reclamava e que a igreja dava a outro. O fim da frase impede que a confissão termine em Jesus: termina «para glória de Deus Pai».
+
+**2:12**
+
+- *κατεργάζεσθε* é «levem a cabo, trabalhem até ao fim», e «com temor e tremor» é a atitude de quem serve, não o pânico de quem duvida. O v. 13 é que impede ler aqui salvação por mérito próprio: o trabalhador é Deus.
+
+**2:13**
+
+- Deus opera (*ἐνεργῶν*) «tanto o querer como o realizar». A frase não anula o imperativo do v. 12 nem transforma a pessoa em autómato: dá-lhe razão para obedecer. *εὐδοκία* é «bom propósito», o desígnio que nasce do seu agrado.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: 13 *θεὸς* WH Treg NA28 ] *ὁ θεὸς* RP. A base tem *θεός* sem artigo, com WH, Tregelles e NA28; RP lê *ὁ θεός*. Sem artigo, o grego põe o acento na natureza do sujeito, e o português não distingue.
+
+**2:14**
+
+- *γογγυσμός* é o murmúrio de Israel no deserto (Êx 16:7-9); *διαλογισμός* é a discussão que divide. Os dois juntos descrevem a comunidade que trabalha e resmunga ao mesmo tempo.
+
+**2:15**
+
+- *ἄμωμος* é linguagem sacrificial, «sem defeito». «Luminares» (*φωστῆρες*) são as luzes do céu em Génesis 1:14-16 e os sábios de Daniel 12:3: a comparação não é com uma vela, é com astros num céu escuro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:15: 15 *ἄμωμα μέσον* WH Treg NA28 ] *ἀμώμητα ἐν μέσῳ* RP. A base imprime *ἄμωμα μέσον*, com WH, Tregelles e NA28; RP lê *ἀμώμητα ἐν μέσῳ*. A tradução segue a base.
+
+**2:16**
+
+- *ἐπέχοντες* é «segurar firme, retendo»: a palavra da vida não se anuncia só, segura-se. As imagens do fim do versículo — correr e trabalhar — são a atlética e a agrícola, as duas despesas de uma vida.
+
+**2:17**
+
+- *σπένδομαι*, «sou derramado como libação», é o vinho que se deitava sobre o sacrifício. Paulo descreve a própria morte possível como o acrescento ritual sobre a fé dos filipenses, e chama-lhe motivo de alegria.
+
+**2:18**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: sem entrada nesta referência.
+
+**2:19**
+
+- *εὐψυχῶ* é «ter bom ânimo»: Timóteo não vai só informar, vai aliviar. O envio é «no Senhor», não por cálculo pessoal.
+
+**2:20**
+
+- *ἰσόψυχον*, «de igual alma», é palavra que Paulo forma para esta carta: ninguém como Timóteo tem o mesmo ânimo. *γνησίως*, «genuinamente», qualifica o cuidado: não é cortesia, é interesse verdadeiro.
+
+**2:21**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:21: 21 *Ἰησοῦ Χριστοῦ* Treg NA28 ] *Χριστοῦ Ἰησοῦ* WH RP. A base tem *Ἰησοῦ Χριστοῦ* com Tregelles e NA28; WH e RP invertem para *Χριστοῦ Ἰησοῦ*. Traduzimos a ordem da base.
+
+**2:22**
+
+- A «prova» (*δοκιμή*) de Timóteo é o que já foi testado, não promessa. O verbo *ἐδούλευσεν*, «serviu como servo», devolve o *δοῦλοι* com que a carta abriu: Timóteo é o modelo concreto do que 1:1 diz.
+
+**2:23**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:23: sem entrada nesta referência.
+
+**2:24**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:24: sem entrada nesta referência.
+
+**2:25**
+
+- Epafrodito acumula títulos: irmão, colaborador, companheiro de luta (*συστρατιώτης*, o termo do glossário), «enviado de vocês» (*ἀπόστολος* em sentido corrente, não o dos Doze) e servidor da necessidade de Paulo (*λειτουργός*, o mesmo campo de 2:17).
+
+**2:26**
+
+- *ἀδημονῶν*, «angustiado», é o verbo de Getsémani em Marcos 14:33. A angústia não vem da doença, vem de saber que eles sofreram por ele ao receber a notícia.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:26: 26 *ὑμᾶς* Treg NA28 RP ] + *ἰδεῖν* WH. A base tem *ὑμᾶς* com Tregelles, NA28 e RP; WH acrescenta *ἰδεῖν*, «ver-vos». A tradução segue a base.
+
+**2:27**
+
+- «Quase à morte» (*παραπλήσιον θανάτῳ*) é o mínimo que o texto diz. A compaixão de Deus aparece aqui com objeto duplo: poupou Epafrodito e poupou Paulo de «tristeza sobre tristeza» — a expressão é literal e basta.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:27: 27 *θανάτῳ* Treg NA28 RP ] *θανάτου* WH | • *ἠλέησεν αὐτόν* WH Treg NA28 ] *αὐτόν ἠλέησεν* RP. A base tem *θανάτῳ* com Tregelles, NA28 e RP; WH lê *θανάτου*. A base imprime também *ἠλέησεν αὐτόν*, com WH, Tregelles e NA28, contra a ordem *αὐτόν ἠλέησεν* de RP.
+
+**2:28**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:28: sem entrada nesta referência.
+
+**2:29**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:29: sem entrada nesta referência.
+
+**2:30**
+
+- *παραβολευσάμενος* é termo do jogo: «arriscando a aposta», a vida posta em jogo. «Suprir o que faltava» (*ἀναπληρώσῃ τὸ ὑστέρημα*) diz o serviço que os filipenses, longe, não podiam fazer em pessoa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:30: 30 *Χριστοῦ* Treg NA28 ] *Κυρίου* WH; *τοῦ Χριστοῦ* RP | • *παραβολευσάμενος* WH Treg NA28 ] *παραβουλευσάμενος* RP. A base tem *Χριστοῦ* com Tregelles e NA28; WH lê *Κυρίου*, «do Senhor», e RP *τοῦ Χριστοῦ*. RP lê ainda *παραβουλευσάμενος*, «aconselhando mal», em vez de *παραβολευσάμενος*, «arriscando»: um erro de uma letra que troca o sentido, e a base imprime a segunda forma.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- «Finalmente» não fecha a carta: abre a última secção longa. «Escrever as mesmas coisas» é assumido por Paulo — repetir não é esquecimento, é proteção («segurança», *ἀσφαλές*).
+
+**3:2**
+
+- Três avisos com o mesmo verbo, *βλέπετε*. «Cães» era o insulto que se lançava aos gentios e que Paulo devolve a quem exige a circuncisão. *κατατομή*, «mutilação», é um trocadilho amargo com *περιτομή*, «circuncisão»: os que cortam a carne sem o sentido que ela tinha.
+
+**3:3**
+
+- A casa não traduz «adoramos» mas «servimos» (*λατρεύοντες*), porque o verbo é de culto e não de sentimento. As três negações do versículo — nem na carne, nem nos méritos, nem no rito — preparam a lista de credenciais que vem a seguir e que Paulo vai considerar perda.
+
+**3:4**
+
+- Paulo não despreza o que tem: diz que, se o critério fosse esse, ninguém o venceria. A comparação é retórica, e ele sabe disso.
+
+**3:5**
+
+- Sete credenciais em duas linhas, da mais herdada à mais conquistada: o rito, o povo, a tribo, a língua, a escola, o zelo, a conduta. «Hebreu de hebreus» não é grau de pureza étnica, é a pertença à linhagem e à língua originais.
+
+**3:6**
+
+- «Quanto ao zelo, perseguidor» é confissão, não currículo: o zelo que o levou a prender cristãos. «Irrepreensível» (*ἄμεμπτος*) vale no tribunal da lei, e é exatamente esse tribunal que ele vai recusar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:6: 3:6 *ζῆλος* WH Treg NA28 ] *ζῆλον* RP. A base imprime *ζῆλος*, nominativo, com WH, Tregelles e NA28; RP lê *ζῆλον*, acusativo. A tradução segue o caso da base: «quanto ao zelo».
+
+**3:7**
+
+- *κέρδη* e *ζημία* são os dois pratos da balança comercial, o mesmo par de 1:21 e 3:8. Não é desprezo pelas coisas: é uma troca, com ganho e perda declarados.
+
+**3:8**
+
+- *σκύβαλα* é o termo mais cru que Paulo tinha para o que se deita fora — restos, varreduras. «Lixo» mantém a força sem cair na palavra de esgoto que algumas versões usam. O infinitivo «para ganhar Cristo» é a finalidade de toda a perda.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:8: 8 *μενοῦνγε* WH NA28 ] *μέν οὖν* Treg RP | • *σκύβαλα* WH Treg NA28 ] + *εἶναι* RP. A base tem *μενοῦνγε* com WH e NA28; Tregelles e RP leem *μέν οὖν*. RP acrescenta ainda *εἶναι* depois de *σκύβαλα*.
+
+**3:9**
+
+- Eis o ponto que divide exegetas: *πίστις Χριστοῦ* pode ser «fé em Cristo» (a confiança do crente) ou «fidelidade de Cristo» (a conduta fiel dele). A BEE traduz «fé em Cristo», que é a leitura da ARC, ARA, NVI e NVT, e regista a outra como proposta séria: a justiça vem de Deus e assenta na fé, não na lei.
+
+**3:10**
+
+- Quatro infinitivos encadeados: conhecer, o poder da ressurreição, a comunhão dos sofrimentos, a conformidade com a morte. Não é uma escada de etapas — Paulo pede as quatro ao mesmo tempo, e a primeira não dispensa a terceira.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:10: 10 *κοινωνίαν* WH Treg ] *τὴν κοινωνίαν τῶν* NA28 RP | • *συμμορφιζόμενος* WH Treg NA28 ] *συμμορφούμενος* RP. A base tem *κοινωνίαν* sem artigo, com WH e Tregelles; NA28 e RP leem *τὴν κοινωνίαν τῶν*. A base lê também *συμμορφιζόμενος*, com WH, Tregelles e NA28, contra *συμμορφούμενος* em RP.
+
+**3:11**
+
+- *ἐξανάστασις* é palavra rara, «o levantar-se de fora», e a expressão admite ser lida como a ressurreição final ou como a dos justos. O «se de algum modo» não é dúvida sobre Deus: é a linguagem de quem ainda não chegou.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:11: 11 *τὴν ἐκ* WH Treg NA28 ] *τῶν* RP. A base tem *τὴν ἐκ*, com WH, Tregelles e NA28; RP lê *τῶν*, «a dos mortos». Traduzimos a expressão da base, que é a mais difícil e a que dá o sentido de «levantar-se de entre».
+
+**3:12**
+
+- O verbo é o mesmo de 3:6: «fui agarrado» (*κατελήμφθην*) e «agarrar» (*καταλάβω*). Paulo inverte a ordem: não é ele que segura Cristo, é Cristo que o segurou primeiro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:12: 12 *Χριστοῦ* Treg ] *Χριστοῦ Ἰησοῦ* WH NA28; *τοῦ Χριστοῦ Ἰησοῦ* RP. A base imprime *Χριστοῦ*, com Tregelles; WH e NA28 leem *Χριστοῦ Ἰησοῦ* e RP *τοῦ Χριστοῦ Ἰησοῦ*. Traduzimos «Cristo», como a base.
+
+**3:13**
+
+- «Esquecer» aqui não é apagar a memória — ele acabou de a escrever —, é não deixar que o passado determine o passo. A imagem é de corrida: corpo inclinado para a frente.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:13: a base lê «*οὐ*», com Treg, NA28 e RP; WH lê «*οὔπω*», «ainda não». A NIV segue WH por escolha de tradução. A diferença é mínima em português, e a tradução segue a base.
+
+**3:14**
+
+- *βραβεῖον* é o prémio oficial do vencedor, entregue pelo juiz da prova. «Do alto» (*ἄνω*) qualifica o chamamento: vem de cima e chama para cima.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:14: 14 *εἰς* WH Treg NA28 ] *ἐπὶ* RP. A base tem *εἰς* com WH, Tregelles e NA28; RP lê *ἐπί*. Traduzimos «para o prémio», como a base.
+
+**3:15**
+
+- *τέλειοι*, «maduros», é o mesmo campo de «já perfeito» em 3:12, e o jogo é intencional: os maduros são os que sabem que não chegaram. O que se pede não é uniformidade forçada, é disposição para ser corrigido por Deus.
+
+**3:16**
+
+- *στοιχεῖν* é «andar em linha», seguir uma regra de marcha. O versículo é curto e fecha a discussão: naquilo que já é luz, não há desculpa para recuar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:16: 16 *στοιχεῖν* WH Treg NA28 ] + *κανόνι τὸ ἀυτὸ φρονεῖν* RP. A base lê *τὸ αὐτὸ στοιχεῖν*, com WH, Tregelles e NA28; RP acrescenta *κανόνι τὸ αὐτὸ φρονεῖν*, «pela mesma regra, pensemos o mesmo». Traduzimos só o que a base tem.
+
+**3:17**
+
+- *συμμιμηταί*, «imitadores com», palavra composta para esta frase: Paulo não pede admiração, pede imitação partilhada, e indica pessoas concretas como modelo (*τύπος*, a marca do cunho).
+
+**3:18**
+
+- O contraste é violento: os que andam como inimigos da cruz são gente de dentro do círculo religioso, não pagãos distantes. «O digo a chorar» impede tratar o aviso como polémica de escola.
+
+**3:19**
+
+- Quatro acusações e um veredicto: o fim é a ruína, o deus é o ventre (*κοιλία*), a glória é a vergonha, o horizonte é a terra. *φρονοῦντες*, «pensam», fecha o ciclo do capítulo: o modo de pensar é o que está em jogo.
+
+**3:20**
+
+- *πολίτευμα* é «cidadania» ou «colónia»: os filipenses viviam numa colónia romana e sabiam o que era ter a pátria longe. A mesma raiz de 1:27: viver como cidadãos de um lugar onde ainda não se está.
+
+**3:21**
+
+- *μετασχηματίσει* não é criar outro corpo, é mudar a forma do que existe; *ταπείνωσις*, «humilhação», é o termo do hino (2:8). O corpo «humilhado» torna-se *σύμμορφον*, «da mesma forma», do corpo glorioso dele — a mesma palavra de 3:10 aplicada agora ao corpo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:21: 21 *ἡμῶν* WH Treg NA28 ] + *εἰς τὸ γενέσθαι αὐτὸ* RP | • *αὑτῷ* WH ] *αὐτῷ* Treg NA28; *ἑαυτῷ* RP. A base lê *ἡμῶν* com WH, Tregelles e NA28; RP acrescenta *εἰς τὸ γενέσθαι αὐτό*. A base tem *αὑτῷ* com WH; Tregelles e NA28 leem *αὐτῷ*, e RP *ἑαυτῷ* — a diferença é de acentuação e não muda o sentido.
+
+### Notas do capítulo 4
+
+**4:1**
+
+- «Coroa» (*στέφανος*) é a grinalda do vencedor ou da festa, não a coroa do rei. O versículo recolhe o que o capítulo 3 acabou de dizer e aplica-o em imperativo: porque a cidadania está nos céus, fiquem firmes aqui.
+
+**4:2**
+
+- Duas mulheres, dois pedidos, o mesmo verbo: Paulo não manda, pede (*παρακαλῶ*). O problema entre Evódia e Síntique não é doutrinal, é o «mesmo modo de pensar» que o capítulo 2 já pedira a toda a igreja.
+
+**4:3**
+
+- «Companheiro sincero» traduz *γνήσιε σύζυγε*, que pode ser um epíteto («verdadeiro companheiro de jugo») ou um nome próprio, Sízigo. A BEE traduz como epíteto e regista a outra possibilidade. «Livro da vida» é a lista dos que pertencem a Deus, imagem do registo de uma cidade.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:3: 4:3 *γνήσιε σύζυγε* WH Treg NA28 ] *σύζυγε γνήσιε* RP. A base imprime *γνήσιε σύζυγε* com WH, Tregelles e NA28; RP inverte para *σύζυγε γνήσιε*. A ordem não muda o sentido.
+
+**4:4**
+
+- O imperativo é repetido, e a repetição é deliberada: Paulo escreve de uma prisão. A alegria não é humor, é ordem, e o seu lugar é «no Senhor».
+
+**4:5**
+
+- *ἐπιεικές* é a bondade que cede, a equidade que não insiste no seu direito; era a palavra que descrevia a clemência de um rei. «O Senhor está perto» pode ser proximidade no espaço ou no tempo — o grego não escolhe, e a igreja leu as duas.
+
+**4:6**
+
+- *μεριμνᾶτε* é o verbo de Mateus 6:25, «andar ansioso»: o que se proíbe é a ansiedade, não a prudência. A oração tem três partes nomeadas — oração, súplica, ação de graças — e a gratidão entra antes de o pedido ser respondido.
+
+**4:7**
+
+- *φρουρήσει* é termo militar: «guardará como guarnição». O que fica guardado não é só o coração, são também «os pensamentos» (*νοήματα*), e o lugar da guarda é «em Cristo Jesus», não a ausência de problemas.
+
+**4:8**
+
+- Seis adjetivos e um critério: *σεμνά* é «digno, respeitável»; *προσφιλῆ*, «amável», o que se recebe com agrado; *εὔφημα*, «de boa fama», o que se pode dizer em público sem vergonha. *ἀρετή*, «virtude», é termo grego clássico, raro no Novo Testamento: Paulo toma a palavra da cultura e batiza-a.
+
+**4:9**
+
+- O que se pede não é novidade: é repetir o que já foi aprendido, recebido, ouvido e visto. A promessa final não é sucesso, é presença: «o Deus da paz estará com vocês».
+
+**4:10**
+
+- *ἀνεθάλετε* é «reflorescer», imagem de planta que volta a brotar: o cuidado deles não morreu, esteve adormecido. «Faltava-lhes oportunidade» (*ἠκαιρεῖσθε*) tira a censura da falta de amor.
+
+**4:11**
+
+- *αὐτάρκης* era a palavra dos filósofos para a autossuficiência; Paulo usa-a e redefine-a no v. 13: não é bastar-se a si mesmo, é ser sustentado. «Aprendi» (*ἔμαθον*) indica processo, não temperamento.
+
+**4:12**
+
+- *μεμύημαι* é «fui iniciado», verbo dos cultos de mistério: Paulo diz que aprendeu o segredo de viver em qualquer situação. O versículo enumera os dois extremos, cada um com o seu par: fartura e fome, abundância e necessidade.
+
+**4:13**
+
+- O versículo não é promessa de êxito em qualquer projeto: o contexto é o contentamento dos vv. 11-12, e «tudo» refere-se a passar fome e a ter abundância. «Naquele que me fortalece» traduz o particípio presente *ἐνδυναμοῦντι*, sem acrescentar o nome que a tradição bizantina lhe deu.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:13: 13 *με* WH Treg NA28 ] + *Χριστῷ* RP. A base lê *ἐν τῷ ἐνδυναμοῦντί με*, com WH, Tregelles e NA28; RP acrescenta *Χριστῷ*, «em Cristo». A tradução segue a base e não acrescenta o nome.
+
+**4:14**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:14: sem entrada nesta referência.
+
+**4:15**
+
+- «Conta de dar e receber» (*εἰς λόγον δόσεως καὶ λήμψεως*) é linguagem de livro-caixa: a parceria missionária foi contabilizada. Paulo nomeia os filipenses pelo gentílico, o único lugar do Novo Testamento em que o faz.
+
+**4:16**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:16: sem entrada nesta referência.
+
+**4:17**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:17: sem entrada nesta referência.
+
+**4:18**
+
+- Quatro imagens de culto seguidas: «perfume de aroma agradável», «sacrifício aceitável», «agradável a Deus», com o verbo *ἀπέχω*, que é o «recebi» do recibo. O dinheiro dos filipenses é descrito como liturgia, sem deixar de ser dinheiro.
+
+**4:19**
+
+- «Segundo a sua riqueza em glória» conserva o grego: *κατὰ τὸ πλοῦτος αὐτοῦ ἐν δόξῃ*. A promessa é de provisão, não de luxo, e o critério é a riqueza dele, não a necessidade nossa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:19: 19 *τὸ πλοῦτος* WH Treg NA28 ] *τὸν πλοῦτον* RP. A base tem *τὸ πλοῦτος*, com WH, Tregelles e NA28; RP lê *τὸν πλοῦτον*. O caso do artigo diverge, e o sentido em português é o mesmo.
+
+**4:20**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:20: sem entrada nesta referência.
+
+**4:21**
+
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:21: sem entrada nesta referência.
+
+**4:22**
+
+- «Os da casa de César» são os servidores do palácio imperial ou da administração — não a família do imperador. É a prova discreta de que o evangelho já tinha chegado ao centro do poder romano.
+
+**4:23**
+
+- A bênção final usa o singular: «com o espírito de vocês», não «com todos vocês». O grego tem *τοῦ πνεύματος ὑμῶν*, e a tradição bizantina substituiu-o por *πάντων* e acrescentou «Amém».
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:23: 23 *τοῦ πνεύματος* WH Treg NA28 ] *πάντων* RP | • *ὑμῶν* WH Treg NA28 ] + *Ἀμην* RP. A base tem *τοῦ πνεύματος ὑμῶν*, com WH, Tregelles e NA28; RP lê *πάντων*, «de todos vocês», e acrescenta *Ἀμήν*. Traduzimos o singular da base.
+
+---
+
+Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/Filipenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 570`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

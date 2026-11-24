@@ -9,3 +9,6 @@ pytest-asyncio>=0.23
 
 # Worker experimental (Mistral). Sem estas dependências, tests/ continua a correr.
 mistralai-workflows[mistralai]>=3.10
+
+# Documento de apresentação (scripts/gerar_apresentacao.py). Opcional.
+python-docx>=1.1

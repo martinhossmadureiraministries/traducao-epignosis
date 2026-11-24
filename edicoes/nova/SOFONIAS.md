@@ -1,8 +1,18 @@
 # Sofonias · Bíblia de Estudo Epignósis
 
-Lote 2 · 3 capítulos, 53 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (430). Capítulos disponíveis: 1, 2, 3, 53 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 18 |
+| 2 | aprovado editorialmente | 15 |
+| 3 | aprovado editorialmente | 20 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Palavra do SENHOR que veio a Sofonias, filho de Cusi, filho de Gedalias, filho de Amarias, filho de Ezequias, nos dias de Josias, filho de Amom, rei de Judá.
 
@@ -40,7 +50,7 @@ Lote 2 · 3 capítulos, 53 versículos. Leitura integral aprovada editorialmente
 
 **18** Nem a prata nem o ouro os poderão salvar no dia da ira do SENHOR. No fogo do seu zelo toda a terra será consumida: a todos os seus habitantes dará um fim, e que fim terrível!
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Reúnam-se, sim, reúnam-se, nação sem vergonha,
 
@@ -72,7 +82,7 @@ Lote 2 · 3 capítulos, 53 versículos. Leitura integral aprovada editorialmente
 
 **15** É esta a cidade jubilosa que vivia em segurança e dizia consigo: «Eu, e mais ninguém!» Como se tornou uma desolação, um lugar de descanso para os animais! Quem passar por ela assobiará e agitará a mão.
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Ai da cidade rebelde, manchada, cidade que oprime!
 
@@ -114,14 +124,226 @@ Lote 2 · 3 capítulos, 53 versículos. Leitura integral aprovada editorialmente
 
 **20** Naquele tempo eu os trarei de volta. Sim, naquele tempo eu os reunirei. Darei a vocês renome e louvor entre todos os povos da terra, quando restaurar a sua sorte diante dos seus próprios olhos», diz o SENHOR.
 
-## Notas para depois da leitura
+## Notas
 
-**1:12** · A figura é a do vinho deixado sobre a borra. A imobilidade dos moradores combina com a sua convicção de que o SENHOR não age.
+### Notas do capítulo 1
 
-**2:3** · «Talvez» conserva a abertura do apelo. A procura de humildade não é apresentada como garantia contratual de escapar.
+**1:1**
 
-**3:17** · יחריש permite «ficará em silêncio». A ARC conserva o silêncio, a NVI fala de renovação e a NVT explicita que o amor acalma os medos. A BEE mantém, sem os conciliar artificialmente, o silêncio e o canto no mesmo versículo.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**3:18** · A relação entre festa, afastamento e vergonha é incerta na sintaxe hebraica. A tradução entende que os dispersos lamentam a festa que não podem celebrar.
+**1:2**
 
-[Base hebraica: WLC/OSHB, revisão fixada](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Zeph.xml), CC BY 4.0. [Cotejo pontual: ARC, NVI e NVT](https://www.bible.com/pt/bible/compare/ZEP.3.17). Sem colação direta de manuscritos; a comparação integral e a revisão especializada estão pendentes.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:12**
+
+- A figura é a do vinho deixado sobre a borra. A imobilidade dos moradores combina com a sua convicção de que o SENHOR não age.
+
+**1:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:17**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:18**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:3**
+
+- «Talvez» conserva a abertura do apelo. A procura de humildade não é apresentada como garantia contratual de escapar.
+
+**2:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:17**
+
+- יחריש permite «ficará em silêncio». A ARC conserva o silêncio, a NVI fala de renovação e a NVT explicita que o amor acalma os medos. A BEE mantém, sem os conciliar artificialmente, o silêncio e o canto no mesmo versículo.
+
+**3:18**
+
+- A relação entre festa, afastamento e vergonha é incerta na sintaxe hebraica. A tradução entende que os dispersos lamentam a festa que não podem celebrar.
+
+**3:19**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:20**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

@@ -1,8 +1,19 @@
 # Malaquias · Bíblia de Estudo Epignósis
 
-Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente. Notas depois do texto.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (460). Capítulos disponíveis: 1, 2, 3, 4, 55 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 14 |
+| 2 | aprovado editorialmente | 17 |
+| 3 | aprovado editorialmente | 18 |
+| 4 | aprovado editorialmente | 6 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Oráculo. Palavra do SENHOR a Israel por meio de Malaquias.
 
@@ -32,7 +43,7 @@ Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente
 
 **14** «Maldito o que tem um macho no rebanho, faz um voto e depois sacrifica ao Senhor um animal defeituoso! Pois eu sou um grande rei», diz o SENHOR dos Exércitos, «e o meu nome inspira temor entre as nações.»
 
-## Capítulo 2
+### Capítulo 2
 
 **1** «Agora, sacerdotes, esta ordem é para vocês.
 
@@ -68,7 +79,7 @@ Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente
 
 **17** Vocês cansam o SENHOR com as suas palavras. Perguntam: «Em que o cansámos?» Quando dizem: «Quem pratica o mal é bom aos olhos do SENHOR, e ele tem prazer nessa gente», ou ainda: «Onde está o Deus da justiça?»
 
-## Capítulo 3
+### Capítulo 3
 
 **1** «Vou enviar o meu mensageiro. Ele abrirá o caminho diante de mim. E de repente virá ao seu templo o Senhor que vocês procuram. O mensageiro da aliança que tanto desejam, aí vem ele», diz o SENHOR dos Exércitos.
 
@@ -106,7 +117,7 @@ Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente
 
 **18** Então voltarão a ver a diferença entre o justo e o perverso, entre quem serve a Deus e quem não o serve.»
 
-## Capítulo 4
+### Capítulo 4
 
 **1** «Pois aí vem o dia, ardente como um forno. Todos os arrogantes e todos os que praticam o mal serão palha. O dia que vem há de os queimar», diz o SENHOR dos Exércitos. «Não lhes deixará raiz nem ramo.
 
@@ -120,14 +131,236 @@ Lote 2 · 4 capítulos, 55 versículos. Leitura integral aprovada editorialmente
 
 **6** Ele fará o coração dos pais voltar-se para os filhos e o coração dos filhos para os seus pais, para que eu não venha ferir a terra com destruição total.»
 
-## Notas para depois da leitura
+## Notas
 
-**1:2–3** · O contraste «amei / odiei» pertence à fala citada. Não inserimos «amei menos» nem uma explicação doutrinária na resposta.
+### Notas do capítulo 1
 
-**2:15–16** · O sujeito da primeira oração de 2:16 é disputado. ARC, NVI e NVT entendem que Deus odeia o repúdio. Nesta leitura, a forma hebraica de terceira pessoa refere-se ao marido que odeia e despede a mulher; o SENHOR denuncia o seu ato. A segunda leitura é proposta editorial, não uma variante comprovada. Em ambas, a ordem final é não trair. Também a ligação de «um» e «espírito» no v. 15 requer revisão especializada.
+**1:1**
 
-**3:10** · אֲרֻבּוֹת הַשָּׁמַיִם designa as aberturas do céu. «Janelas» preserva a imagem; «comportas» realça aquilo que por elas se derrama. O próprio versículo liga depósito, dízimo e alimento na casa. A nota não converte o desafio dirigido à comunidade numa promessa individual de riqueza.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**4:1–6** · Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+**1:2**
 
-[Base hebraica: WLC/OSHB, revisão fixada](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Mal.xml), CC BY 4.0. [Cotejo pontual: ARC, NVI e NVT](https://www.bible.com/pt/bible/compare/MAL.2.16). Sem colação direta de manuscritos; a comparação integral e a revisão especializada estão pendentes.
+- O contraste «amei / odiei» pertence à fala citada. Não inserimos «amei menos» nem uma explicação doutrinária na resposta.
+
+**1:3**
+
+- O contraste «amei / odiei» pertence à fala citada. Não inserimos «amei menos» nem uma explicação doutrinária na resposta.
+
+**1:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:15**
+
+- O sujeito da primeira oração de 2:16 é disputado. ARC, NVI e NVT entendem que Deus odeia o repúdio. Nesta leitura, a forma hebraica de terceira pessoa refere-se ao marido que odeia e despede a mulher; o SENHOR denuncia o seu ato. A segunda leitura é proposta editorial, não uma variante comprovada. Em ambas, a ordem final é não trair. Também a ligação de «um» e «espírito» no v. 15 requer revisão especializada.
+
+**2:16**
+
+- O sujeito da primeira oração de 2:16 é disputado. ARC, NVI e NVT entendem que Deus odeia o repúdio. Nesta leitura, a forma hebraica de terceira pessoa refere-se ao marido que odeia e despede a mulher; o SENHOR denuncia o seu ato. A segunda leitura é proposta editorial, não uma variante comprovada. Em ambas, a ordem final é não trair. Também a ligação de «um» e «espírito» no v. 15 requer revisão especializada.
+
+**2:17**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:10**
+
+- אֲרֻבּוֹת הַשָּׁמַיִם designa as aberturas do céu. «Janelas» preserva a imagem; «comportas» realça aquilo que por elas se derrama. O próprio versículo liga depósito, dízimo e alimento na casa. A nota não converte o desafio dirigido à comunidade numa promessa individual de riqueza.
+
+**3:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:14**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:17**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:18**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 4
+
+**4:1**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+**4:2**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+**4:3**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+**4:4**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+**4:5**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+**4:6**
+
+- Na base hebraica estas seis unidades são Malaquias 3:19–24. A BEE usa quatro capítulos sem suprimir nem repetir qualquer versículo. O livro termina com a advertência, sem acrescentar uma frase para lhe atenuar o efeito.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

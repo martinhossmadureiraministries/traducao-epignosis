@@ -1,26 +1,32 @@
 # João · Bíblia de Estudo Epignósis
 
-Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 682 versículos.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 879 versículos.
 
-**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | aprovado | 51 |
-| 2 | aprovado | 25 |
-| 3 | aprovado | 36 |
-| 4 | aprovado | 54 |
-| 5 | aprovado | 47 |
-| 6 | aprovado | 71 |
-| 7 | aprovado | 53 |
-| 8 | aprovado | 59 |
-| 9 | aprovado | 41 |
-| 10 | aprovado | 42 |
-| 11 | aprovado | 57 |
-| 12 | rascunho | 50 |
-| 13 | aprovado | 38 |
-| 14 | rascunho | 31 |
-| 15 | rascunho | 27 |
+| 1 | aprovado editorialmente | 51 |
+| 2 | aprovado editorialmente | 25 |
+| 3 | aprovado editorialmente | 36 |
+| 4 | aprovado editorialmente | 54 |
+| 5 | aprovado editorialmente | 47 |
+| 6 | aprovado editorialmente | 71 |
+| 7 | aprovado editorialmente | 53 |
+| 8 | aprovado editorialmente | 59 |
+| 9 | aprovado editorialmente | 41 |
+| 10 | aprovado editorialmente | 42 |
+| 11 | aprovado editorialmente | 57 |
+| 12 | aprovado editorialmente | 50 |
+| 13 | aprovado editorialmente | 38 |
+| 14 | aprovado editorialmente | 31 |
+| 15 | aprovado editorialmente | 27 |
+| 16 | aprovado editorialmente | 33 |
+| 17 | aprovado editorialmente | 26 |
+| 18 | aprovado editorialmente | 40 |
+| 19 | aprovado editorialmente | 42 |
+| 20 | aprovado editorialmente | 31 |
+| 21 | aprovado editorialmente | 25 |
 
 ## Texto
 
@@ -38,7 +44,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **6** Apareceu um homem enviado por Deus, cujo nome era João.
 
-**7** Ele veio como testemunha, para dar testemunho da luz, a fim de que todos venham a crer por meio dele.
+**7** Ele veio *como* testemunha, para dar testemunho da luz, a fim de que todos venham a crer por meio dele.
 
 **8** Ele não era a luz, mas veio para dar testemunho da luz.
 
@@ -52,7 +58,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **13** os quais não nasceram de sangue, nem por vontade da carne, nem por vontade de homem, mas de Deus.
 
-**14** E o Verbo se fez carne e habitou entre nós; e contemplámos a sua glória, glória como a do Filho único, vinda do Pai, cheio de graça e de verdade.
+**14** E o Verbo se fez carne e habitou entre nós; e contemplámos a sua glória, glória como a do Filho único, *vinda* do Pai, cheio de graça e de verdade.
 
 **15** João dá testemunho dele e clama: «Este era aquele de quem eu disse: “O que vem depois de mim ficou à minha frente, porque existia antes de mim.”»
 
@@ -94,7 +100,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **34** Eu também vi, e dou testemunho de que este é o escolhido de Deus.
 
-**35** No dia seguinte, João estava outra vez ali, de pé, com dois dos seus discípulos,
+**35** No dia seguinte, João estava outra vez *ali*, de pé, com dois dos seus discípulos,
 
 **36** e, fixando o olhar em Jesus, que passava, diz: «Eis o Cordeiro de Deus!»
 
@@ -136,7 +142,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **3** Quando faltou vinho, a mãe de Jesus disse-lhe: «Não têm vinho.»
 
-**4** Jesus disse-lhe: «Mulher, o que há entre mim e ti? A minha hora ainda não chegou.»
+**4** Jesus disse-lhe: «Mulher, o que *há* entre mim e ti? A minha hora ainda não chegou.»
 
 **5** A mãe dele disse aos serventes: «Façam o que ele disser a vocês.»
 
@@ -184,7 +190,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **1** Havia entre os fariseus um homem chamado Nicodemos, líder dos judeus.
 
-**2** Ele veio ter com Jesus de noite e disse-lhe: «Rabi, sabemos que vieste da parte de Deus como mestre, pois ninguém pode fazer estes sinais que tu fazes, se Deus não estiver com ele.»
+**2** Ele veio ter com Jesus de noite e disse-lhe: «Rabi, sabemos que vieste da parte de Deus *como* mestre, pois ninguém pode fazer estes sinais que tu fazes, se Deus não estiver com ele.»
 
 **3** Jesus respondeu-lhe: «Em verdade, em verdade te digo: se alguém não nascer de novo, não pode ver o reino de Deus.»
 
@@ -722,9 +728,9 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **4** [Disseram-lhe, para o pôr à prova: «Mestre, esta mulher foi apanhada em flagrante, no próprio ato de adultério.»]
 
-**5** [Na lei, Moisés ordenou que mulheres assim fossem apedrejadas. Tu, pois, o que dizes?]
+**5** [Na lei, Moisés ordenou que *mulheres* assim fossem apedrejadas. Tu, pois, o que dizes?]
 
-**6** [Diziam isto para o pôr à prova, para terem motivo para o acusar. Jesus, porém, inclinou-se e escrevia com o dedo na terra, como se não ouvisse.]
+**6** [Diziam isto para o pôr à prova, para terem *motivo* para o acusar. Jesus, porém, inclinou-se e escrevia com o dedo na terra, *como se não ouvisse*.]
 
 **7** [Como insistissem em perguntar, levantou-se e disse-lhes: «Quem de vocês não tem pecado, atire primeiro a pedra contra ela.»]
 
@@ -1004,7 +1010,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 ### Capítulo 11
 
-**1** Estava doente um homem chamado Lázaro, de Betânia, a aldeia de Maria e de sua irmã Marta.
+**1** Estava doente um homem *chamado* Lázaro, de Betânia, a aldeia de Maria e de sua irmã Marta.
 
 **2** Esta Maria era a que ungiu o Senhor com perfume e lhe enxugou os pés com os cabelos. O irmão dela, Lázaro, estava doente.
 
@@ -1034,7 +1040,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **15** E, por causa de vocês, alegro-me de não ter estado lá, para que creiam. Mas vamos ter com ele.
 
-**16** Tomé, chamado Dídimo, que quer dizer gémeo, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»
+**16** Tomé, chamado Dídimo, *que quer dizer gémeo*, disse aos condiscípulos: «Vamos também nós, para morrermos com ele.»
 
 **17** Quando Jesus chegou, encontrou Lázaro sepultado havia quatro dias.
 
@@ -1262,7 +1268,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **20** Em verdade, em verdade lhes digo: quem recebe o que eu envio, recebe-me a mim; e quem me recebe, recebe aquele que me enviou.
 
-**21** Tendo dito isto, Jesus perturbou-se no espírito e declarou com clareza: «Em verdade, em verdade lhes digo que um de vocês me entregará.»
+**21** Tendo dito isto, Jesus perturbou-se no espírito e declarou *com clareza*: «Em verdade, em verdade lhes digo que um de vocês me entregará.»
 
 **22** Os discípulos olhavam uns para os outros, sem saber de quem falava.
 
@@ -1330,7 +1336,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **15** Se me amam, guardarão os meus mandamentos.
 
-**16** E eu pedirei ao Pai, e ele dará a vocês outro Paráclito, para que esteja com vocês para sempre.
+**16** E eu pedirei ao Pai, e ele dará a vocês outro Parácleton, para que esteja com vocês para sempre.
 
 **17** O Espírito da verdade, que o mundo não pode receber, porque não o vê nem o conhece; vocês conhecem-no, porque ele permanece com vocês e estará em vocês.
 
@@ -1350,7 +1356,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **25** Disse estas coisas a vocês enquanto permaneço com vocês.
 
-**26** Mas o Paráclito, o Espírito Santo, que o Pai enviará em meu nome, esse ensinará a vocês todas as coisas e lhes fará lembrar tudo o que eu disse.
+**26** Mas o Parácletos, o Espírito Santo, que o Pai enviará em meu nome, esse ensinará a vocês todas as coisas e lhes fará lembrar tudo o que eu disse.
 
 **27** Deixo a paz a vocês, dou a vocês a minha paz. Não a dou como o mundo a dá. Não se perturbe o coração de vocês, nem se atemorizem.
 
@@ -1414,9 +1420,415 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **25** Mas é para que se cumpra a palavra escrita na lei deles: «Odiaram-me sem motivo.»
 
-**26** Quando vier o Paráclito, que eu enviarei a vocês da parte do Pai, o Espírito da verdade que procede do Pai, esse dará testemunho de mim.
+**26** Quando vier o Parácletos, que eu enviarei a vocês da parte do Pai, o Espírito da verdade que procede do Pai, esse dará testemunho de mim.
 
 **27** E vocês também darão testemunho, porque estão comigo desde o princípio.
+
+### Capítulo 16
+
+**1** Disse estas coisas a vocês para que não tropecem.
+
+**2** Vão expulsar vocês das sinagogas. Mas vem a hora em que todo aquele que matar vocês pensará estar a prestar culto a Deus.
+
+**3** E farão isto porque não conheceram o Pai nem a mim.
+
+**4** Disse estas coisas a vocês para que, quando chegar a hora delas, se lembrem de que eu as disse. Não disse isto desde o princípio, porque estava com vocês.
+
+**5** Agora vou para aquele que me enviou, e nenhum de vocês me pergunta: «Para onde vais?»
+
+**6** Mas, porque disse estas coisas, a tristeza encheu o coração de vocês.
+
+**7** Mas digo a verdade a vocês: é melhor para vocês que eu vá. Pois, se eu não for, o Parácletos não virá a vocês; mas, se eu for, enviá-lo-ei a vocês.
+
+**8** E, quando ele vier, convencerá o mundo do pecado, da justiça e do juízo.
+
+**9** Do pecado, porque não creem em mim;
+
+**10** da justiça, porque vou para o Pai e já não me verão;
+
+**11** do juízo, porque o príncipe deste mundo já foi julgado.
+
+**12** Ainda tenho muitas coisas a dizer a vocês, mas não as podem suportar agora.
+
+**13** Quando ele vier, o Espírito da verdade, guiará vocês em toda a verdade. Pois não falará por si mesmo, mas dirá o que ouvir, e anunciará a vocês as coisas que hão de vir.
+
+**14** Ele me glorificará, porque receberá do que é meu e o anunciará a vocês.
+
+**15** Tudo o que o Pai tem é meu; por isso disse que ele receberá do que é meu e o anunciará a vocês.
+
+**16** Por pouco tempo, e já não me verão; e de novo, por pouco tempo, e me verão.
+
+**17** Então alguns dos discípulos disseram uns aos outros: «Que é isto que nos diz: "Por pouco tempo, e não me verão; e de novo, por pouco tempo, e me verão", e: "Porque vou para o Pai"?»
+
+**18** Diziam: «Que é isto que diz, "por pouco tempo"? Não sabemos o que fala.»
+
+**19** Jesus percebeu que queriam perguntar-lhe, e disse-lhes: «Estão a perguntar uns aos outros sobre isto, porque eu disse: "Por pouco tempo, e não me verão; e de novo, por pouco tempo, e me verão"?»
+
+**20** Em verdade, em verdade digo a vocês: vocês vão chorar e lamentar-se, mas o mundo se alegrará; vocês ficarão tristes, mas a tristeza de vocês se converterá em alegria.
+
+**21** Quando a mulher dá à luz, tem tristeza, porque chegou a sua hora; mas, quando dá à luz o menino, já não se lembra da angústia, por causa da alegria de ter nascido um ser humano no mundo.
+
+**22** Também vocês agora têm tristeza; mas de novo verei vocês, e o coração de vocês se alegrará, e ninguém tira de vocês a alegria.
+
+**23** Naquele dia não me perguntarão nada. Em verdade, em verdade digo a vocês: tudo o que pedirem ao Pai, ele lhes dará em meu nome.
+
+**24** Até agora nada pediram em meu nome. Peçam, e receberão, para que a alegria de vocês seja completa.
+
+**25** Disse estas coisas a vocês em parábolas; vem a hora em que já não falarei em parábolas, mas com clareza anunciarei a vocês o Pai.
+
+**26** Naquele dia pedirão em meu nome; e não digo a vocês que eu rogarei ao Pai por vocês.
+
+**27** Pois o próprio Pai ama vocês, porque vocês me amaram e creram que saí de junto de Deus.
+
+**28** Saí do Pai e vim ao mundo; de novo deixo o mundo e vou para o Pai.
+
+**29** Dizem-lhe os seus discípulos: «Eis que agora falas com clareza, e não dizes nenhuma parábola.»
+
+**30** Agora sabemos que sabes tudo e não precisas de que alguém te pergunte; por isto cremos que saíste de Deus.
+
+**31** Jesus respondeu-lhes: «Agora creem?»
+
+**32** Eis que vem a hora, e já chegou, em que vocês serão dispersos, cada um para o seu lado, e me deixarão sozinho; mas não estou sozinho, porque o Pai está comigo.
+
+**33** Disse estas coisas a vocês para que tenham paz em mim. No mundo terão aflição; mas tenham coragem: eu venci o mundo.
+
+### Capítulo 17
+
+**1** Jesus disse estas coisas; e, erguendo os olhos ao céu, disse: «Pai, chegou a hora. Glorifica o teu Filho, para que o Filho te glorifique.»
+
+**2** Como lhe deste poder sobre toda a carne, para que dê vida eterna a todos aqueles que lhe deste.
+
+**3** Esta é a vida eterna: que conheçam a ti, o único Deus verdadeiro, e a Jesus Cristo, a quem enviaste.
+
+**4** Eu te glorifiquei na terra, tendo acabado a obra que me deste para fazer.
+
+**5** E agora, glorifica-me tu, Pai, junto de ti mesmo, com a glória que tinha junto de ti antes que o mundo existisse.
+
+**6** Manifestei o teu nome aos homens que me deste do mundo. Eram teus, e tu mos deste; e guardaram a tua palavra.
+
+**7** Agora sabem que tudo o que me deste vem de ti.
+
+**8** Porque lhes dei as palavras que me deste, e eles as receberam, e conheceram verdadeiramente que saí de junto de ti, e creram que tu me enviaste.
+
+**9** Eu rogo por eles; não rogo pelo mundo, mas por aqueles que me deste, porque são teus.
+
+**10** Tudo o que é meu é teu, e o que é teu é meu; e neles sou glorificado.
+
+**11** Já não estou no mundo, mas eles estão no mundo, e eu vou para ti. Pai santo, guarda-os em teu nome, que me deste, para que sejam um, como nós somos.
+
+**12** Quando estava com eles, eu os guardava em teu nome, que me deste; e preservei-os, e nenhum deles se perdeu, a não ser o filho da ruína, para que a Escritura se cumprisse.
+
+**13** Agora vou para ti; e digo estas coisas no mundo para que tenham em si a minha alegria completa.
+
+**14** Eu lhes dei a tua palavra; e o mundo os odiou, porque não são do mundo, como eu não sou do mundo.
+
+**15** Não peço que os tires do mundo, mas que os guardes do mal.
+
+**16** Não são do mundo, como eu não sou do mundo.
+
+**17** Santifica-os na verdade; a tua palavra é verdade.
+
+**18** Como me enviaste ao mundo, também eu os enviei ao mundo.
+
+**19** E por eles eu me santifico a mim mesmo, para que também eles sejam santificados na verdade.
+
+**20** Não rogo só por estes, mas também por aqueles que, pela palavra deles, creem em mim.
+
+**21** Para que todos sejam um, como tu, Pai, estás em mim e eu em ti; para que também eles estejam em nós, a fim de que o mundo creia que tu me enviaste.
+
+**22** E eu dei-lhes a glória que me deste, para que sejam um, como nós somos um.
+
+**23** Eu neles e tu em mim, para que sejam levados à perfeita unidade, a fim de que o mundo conheça que tu me enviaste e os amaste como me amaste.
+
+**24** Pai, quero que os que me deste estejam comigo onde eu estou, para que vejam a minha glória, que me deste, porque me amaste antes da fundação do mundo.
+
+**25** Pai justo, o mundo não te conheceu, mas eu te conheci, e estes conheceram que tu me enviaste.
+
+**26** E dei-lhes a conhecer o teu nome, e darei a conhecer, para que o amor com que me amaste esteja neles, e eu neles.
+
+### Capítulo 18
+
+**1** Tendo dito estas coisas, Jesus saiu com os seus discípulos para o outro lado da torrente de Cedrom, onde havia um jardim, no qual entrou ele e os seus discípulos.
+
+**2** Judas, o que o entregava, conhecia também o lugar, porque Jesus se reunira ali muitas vezes com os seus discípulos.
+
+**3** Judas, então, chega ali com a coorte e com guardas enviados pelos principais sacerdotes e pelos fariseus, trazendo lanternas, tochas e armas.
+
+**4** Jesus, então, sabendo tudo o que lhe havia de acontecer, adiantou-se e perguntou-lhes: «A quem procuram?»
+
+**5** Responderam-lhe: «Jesus, o nazareno.» Ele disse-lhes: «Eu sou.» Judas, o que o entregava, estava também de pé com eles.
+
+**6** Quando lhes disse: «Eu sou», retrocederam e caíram por terra.
+
+**7** Perguntou-lhes outra vez: «A quem procuram?» Eles disseram: «Jesus, o nazareno.»
+
+**8** Jesus respondeu: «Já disse a vocês que eu sou. Se, então, é a mim que procuram, deixem ir estes.»
+
+**9** Assim se cumpriu a palavra que ele dissera: «Dos que me deste, não perdi nenhum.»
+
+**10** Simão Pedro, que tinha uma espada, puxou-a, feriu o servo do sumo sacerdote e cortou-lhe a orelha direita. O servo chamava-se Malco.
+
+**11** Jesus disse a Pedro: «Põe a espada na bainha. Não hei de beber o cálice que o Pai me deu?»
+
+**12** Então a coorte, o comandante e os guardas dos judeus prenderam Jesus e amarraram-no.
+
+**13** Levaram-no primeiro a Anás, porque era sogro de Caifás, que era o sumo sacerdote naquele ano.
+
+**14** Caifás era quem tinha dado aos judeus o conselho de que convinha que um só homem morresse pelo povo.
+
+**15** Simão Pedro seguia Jesus, e também outro discípulo. Esse discípulo era conhecido do sumo sacerdote e entrou com Jesus no pátio do sumo sacerdote.
+
+**16** Pedro, porém, ficou de pé à porta, do lado de fora. Saiu, então, o outro discípulo, o conhecido do sumo sacerdote, falou com a porteira e levou Pedro para dentro.
+
+**17** A porteira disse então a Pedro: «Não és tu também dos discípulos deste homem?» Ele respondeu: «Não sou.»
+
+**18** Os servos e os guardas tinham feito uma fogueira de brasas, porque estava frio, e aqueciam-se. Pedro também estava com eles, de pé, aquecendo-se.
+
+**19** O sumo sacerdote interrogou Jesus sobre os seus discípulos e sobre o seu ensino.
+
+**20** Jesus respondeu: «Tenho falado com clareza ao mundo. Sempre ensinei na sinagoga e no templo, onde todos os judeus se reúnem, e nada falei em segredo.»
+
+**21** Por que me perguntas a mim? Pergunta aos que ouviram o que lhes falei. Eis que estes sabem o que eu disse.
+
+**22** Dito isto, um dos guardas que ali estavam deu uma bofetada em Jesus e disse: «É assim que respondes ao sumo sacerdote?»
+
+**23** Jesus respondeu: «Se falei mal, dá testemunho do mal; se falei bem, por que me bates?»
+
+**24** Anás, então, mandou-o amarrado a Caifás, o sumo sacerdote.
+
+**25** Simão Pedro estava de pé, aquecendo-se. Disseram-lhe: «Não és tu também dos discípulos dele?» Ele negou e disse: «Não sou.»
+
+**26** Um dos servos do sumo sacerdote, parente daquele a quem Pedro cortara a orelha, perguntou: «Não te vi eu com ele no jardim?»
+
+**27** Pedro negou de novo, e logo um galo cantou.
+
+**28** Levaram Jesus de Caifás para o pretório. Era de manhã cedo. Eles não entraram no pretório, para não se contaminarem, mas poderem comer a Páscoa.
+
+**29** Pilatos saiu então para fora, até eles, e perguntou: «Que acusação trazem contra este homem?»
+
+**30** Responderam-lhe: «Se este não fosse um malfeitor, não o teríamos entregado a ti.»
+
+**31** Pilatos disse-lhes: «Tomem-no vocês e julguem-no segundo a lei de vocês.» Os judeus responderam-lhe: «A nós não é permitido matar ninguém.»
+
+**32** Assim se cumpriu a palavra de Jesus, que indicara de que morte havia de morrer.
+
+**33** Pilatos entrou outra vez no pretório, chamou Jesus e perguntou-lhe: «Tu és o rei dos judeus?»
+
+**34** Jesus respondeu: «Dizes isso por ti mesmo, ou outros to disseram sobre mim?»
+
+**35** Pilatos respondeu: «Por acaso sou eu judeu? A tua nação e os principais sacerdotes entregaram-te a mim. Que fizeste?»
+
+**36** Jesus respondeu: «O meu reino não é deste mundo. Se o meu reino fosse deste mundo, os meus servos teriam combatido para que eu não fosse entregue aos judeus. Mas o meu reino não é daqui.»
+
+**37** Pilatos disse-lhe: «Então és rei?» Jesus respondeu: «Tu dizes que sou rei. Para isto nasci e para isto vim ao mundo: para dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.»
+
+**38** Pilatos disse-lhe: «O que é a verdade?» Dito isto, saiu outra vez para junto dos judeus e disse-lhes: «Eu não encontro nele nenhuma culpa.»
+
+**39** Há entre vocês o costume de que eu solte um preso na Páscoa. Querem, então, que eu solte para vocês o rei dos judeus?
+
+**40** Então gritaram outra vez: «Não este, mas Barrabás!» Barrabás era um assaltante.
+
+### Capítulo 19
+
+**1** Então Pilatos tomou Jesus e açoitou-o.
+
+**2** Os soldados, tecendo uma coroa de espinhos, puseram-na na cabeça dele, e vestiram-no com um manto de púrpura.
+
+**3** Aproximavam-se dele e diziam: «Salve, rei dos judeus!» E davam-lhe bofetadas.
+
+**4** Pilatos saiu outra vez para fora e disse-lhes: «Vejam, eu trago-o para fora até vocês, para que saibam que não encontro nele nenhuma culpa.»
+
+**5** Jesus saiu, então, trazendo a coroa de espinhos e o manto de púrpura. Pilatos disse-lhes: «Eis o homem!»
+
+**6** Quando o viram, os principais sacerdotes e os guardas gritaram: «Crucifica-o! Crucifica-o!» Pilatos disse-lhes: «Tomem-no vocês e crucifiquem-no, pois eu não encontro nele nenhuma culpa.»
+
+**7** Os judeus responderam-lhe: «Nós temos uma lei, e segundo a lei ele deve morrer, porque se fez Filho de Deus.»
+
+**8** Quando Pilatos ouviu estas palavras, ficou ainda mais temeroso.
+
+**9** Entrou outra vez no pretório e perguntou a Jesus: «De onde és tu?» Jesus, porém, não lhe deu resposta.
+
+**10** Pilatos disse-lhe então: «Não me falas? Não sabes que tenho poder para soltar-te e tenho poder para crucificar-te?»
+
+**11** Jesus respondeu: «Nenhum poder terias sobre mim, se não te tivesse sido dado do alto. Por isso, quem me entregou a ti tem maior pecado.»
+
+**12** Desde então, Pilatos procurava soltá-lo. Mas os judeus gritavam: «Se soltas este, não és amigo de César. Todo o que se faz rei opõe-se a César.»
+
+**13** Pilatos, ao ouvir estas palavras, trouxe Jesus para fora e sentou-se no tribunal, no lugar chamado Litóstrotos, em hebraico Gabatá.
+
+**14** Era a preparação da Páscoa, por volta da hora sexta. E disse aos judeus: «Vejam o rei de vocês!»
+
+**15** Eles gritaram: «Tira-o! Tira-o! Crucifica-o!» Pilatos disse-lhes: «Vou crucificar o rei de vocês?» Responderam os principais sacerdotes: «Não temos rei, senão César.»
+
+**16** Então entregou-o a eles para ser crucificado. Eles tomaram, então, Jesus,
+
+**17** e, levando ele mesmo a cruz, saiu para o lugar chamado Lugar da Caveira, que em hebraico se diz Gólgota.
+
+**18** Ali o crucificaram, e com ele outros dois, um de cada lado, e Jesus no meio.
+
+**19** Pilatos escreveu também um título e pô-lo sobre a cruz. Estava escrito: «Jesus, o Nazareno, o rei dos judeus.»
+
+**20** Muitos dos judeus leram este título, porque o lugar onde Jesus foi crucificado era perto da cidade. Estava escrito em hebraico, em latim e em grego.
+
+**21** Os principais sacerdotes dos judeus disseram a Pilatos: «Não escrevas: “O rei dos judeus”, mas que ele disse: “Sou o rei dos judeus”.»
+
+**22** Pilatos respondeu: «O que escrevi, escrevi.»
+
+**23** Os soldados, depois de crucificarem Jesus, tomaram as suas vestes e fizeram quatro partes, uma para cada soldado, e também a túnica. A túnica era sem costura, tecida de cima a baixo.
+
+**24** Disseram então uns aos outros: «Não a rasguemos, mas tiremos à sorte de quem será.» Para que se cumprisse a Escritura que diz: «Repartiram entre si as minhas vestes e lançaram sorte sobre a minha túnica.» Foi isso que os soldados fizeram.
+
+**25** Junto à cruz de Jesus estavam a sua mãe, a irmã da sua mãe, Maria, mulher de Clopas, e Maria Madalena.
+
+**26** Jesus, vendo a mãe e, junto dela, o discípulo a quem amava, disse à mãe: «Mulher, eis aí o teu filho!»
+
+**27** Depois disse ao discípulo: «Eis aí a tua mãe!» E desde aquela hora o discípulo a recebeu em sua casa.
+
+**28** Depois disto, Jesus, sabendo que já tudo estava consumado, para que a Escritura se cumprisse, disse: «Tenho sede.»
+
+**29** Havia ali um vaso cheio de vinagre. Então prenderam numa vara de hissopo uma esponja cheia de vinagre e levaram-na à boca dele.
+
+**30** Quando Jesus tomou o vinagre, disse: «Está consumado.» E, inclinando a cabeça, entregou o espírito.
+
+**31** Os judeus, porque era o dia da preparação e para que os corpos não ficassem na cruz no sábado — pois era grande aquele dia de sábado —, pediram a Pilatos que lhes quebrassem as pernas e fossem retirados.
+
+**32** Então vieram os soldados e quebraram as pernas do primeiro e do outro que tinha sido crucificado com ele.
+
+**33** Quando chegaram a Jesus e viram que já estava morto, não lhe quebraram as pernas.
+
+**34** Mas um dos soldados furou-lhe o lado com uma lança, e logo saiu sangue e água.
+
+**35** Quem viu deu testemunho, e o seu testemunho é verdadeiro; e ele sabe que diz a verdade, para que também vocês creiam.
+
+**36** Pois isto aconteceu para que a Escritura se cumprisse: «Nenhum osso dele será quebrado.»
+
+**37** E outra Escritura diz ainda: «Olharão para aquele que transpassaram.»
+
+**38** Depois disto, José de Arimateia, que era discípulo de Jesus, mas em segredo por medo dos judeus, pediu a Pilatos que lhe permitisse retirar o corpo de Jesus. Pilatos permitiu. Ele veio, então, e retirou o corpo.
+
+**39** Veio também Nicodemos, aquele que de noite tinha ido ter com ele pela primeira vez, trazendo cerca de cem libras de uma mistura de mirra e aloés.
+
+**40** Tomaram, então, o corpo de Jesus e envolveram-no em panos de linho com os aromas, segundo o costume de sepultar dos judeus.
+
+**41** Ora, no lugar onde ele foi crucificado havia um jardim, e no jardim um sepulcro novo, no qual ainda ninguém tinha sido posto.
+
+**42** Ali, por causa da preparação dos judeus, porque o sepulcro estava perto, depositaram Jesus.
+
+### Capítulo 20
+
+**1** No primeiro dia da semana, Maria Madalena foi ao túmulo de madrugada, quando ainda estava escuro, e viu que a pedra tinha sido retirada do túmulo.
+
+**2** Ela corre, então, e vai ter com Simão Pedro e com o outro discípulo, aquele a quem Jesus amava, e diz-lhes: «Levaram o Senhor do túmulo, e não sabemos onde o puseram.»
+
+**3** Saiu, então, Pedro com o outro discípulo, e iam para o túmulo.
+
+**4** Corriam os dois juntos, mas o outro discípulo correu mais depressa do que Pedro e chegou primeiro ao túmulo;
+
+**5** Inclinou-se, viu os panos de linho estendidos, mas não entrou.
+
+**6** Chega, então, também Simão Pedro, que o seguia; entrou no túmulo e viu os panos de linho estendidos,
+
+**7** e o pano que tinha estado sobre a cabeça dele não estava com os panos de linho, mas enrolado à parte, num lugar.
+
+**8** Então entrou também o outro discípulo, que tinha chegado primeiro ao túmulo; viu e acreditou.
+
+**9** Porque ainda não sabiam, pela Escritura, que ele devia ressuscitar dos mortos.
+
+**10** Os discípulos voltaram, então, para casa.
+
+**11** Maria, porém, estava de pé junto ao túmulo, do lado de fora, a chorar. Assim, enquanto chorava, inclinou-se para dentro do túmulo,
+
+**12** e viu dois anjos vestidos de branco, sentados, um à cabeceira e outro aos pés, onde estivera o corpo de Jesus.
+
+**13** Eles perguntaram-lhe: «Mulher, porque choras?» Ela respondeu-lhes: «Levaram o meu Senhor, e não sei onde o puseram.»
+
+**14** Depois de dizer isto, voltou-se para trás e viu Jesus de pé, mas não sabia que era Jesus.
+
+**15** Jesus disse-lhe: «Mulher, porque choras? A quem procuras?» Ela, pensando que era o jardineiro, disse-lhe: «Senhor, se foste tu que o levaste, diz-me onde o puseste, e eu vou buscá-lo.»
+
+**16** Jesus disse-lhe: «Maria!» Ela voltou-se e disse-lhe em hebraico: «Rabôni!», que quer dizer meu mestre.
+
+**17** Jesus disse-lhe: «Não me segures, porque ainda não subi para o Pai. Vai, porém, ter com os meus irmãos e diz-lhes: Subo para o meu Pai e Pai de vocês, para o meu Deus e Deus de vocês.»
+
+**18** Maria Madalena foi anunciar aos discípulos que tinha visto o Senhor, e contou-lhes o que ele lhe tinha dito.
+
+**19** Ao cair da tarde daquele primeiro dia da semana, estando as portas fechadas onde os discípulos estavam, por medo dos judeus, chegou Jesus, pôs-se no meio deles e disse: «A paz esteja com vocês!»
+
+**20** Depois de dizer isto, mostrou-lhes as mãos e o lado. Os discípulos alegraram-se ao ver o Senhor.
+
+**21** Jesus disse-lhes outra vez: «A paz esteja com vocês! Assim como o Pai me enviou, também eu envio vocês.»
+
+**22** Dito isto, soprou sobre eles e disse-lhes: «Recebam o Espírito Santo.»
+
+**23** A quem perdoarem os pecados, ficam-lhe perdoados; a quem os retiverem, ficam retidos.
+
+**24** Tomé, um dos doze, chamado Dídimo, não estava com eles quando veio Jesus.
+
+**25** Os outros discípulos disseram-lhe: «Vimos o Senhor!» Mas ele respondeu-lhes: «Se eu não vir nas mãos dele a marca dos pregos, não puser o meu dedo na marca dos pregos e a minha mão no lado dele, de modo nenhum acreditarei.»
+
+**26** Oito dias depois, os discípulos estavam outra vez lá dentro, e Tomé com eles. Estando as portas fechadas, veio Jesus, pôs-se no meio deles e disse: «A paz esteja com vocês!»
+
+**27** Depois disse a Tomé: «Põe aqui o teu dedo e vê as minhas mãos; estende a tua mão e põe-na no meu lado, e não sejas incrédulo, mas crê.»
+
+**28** Tomé respondeu-lhe: «Meu Senhor e meu Deus!»
+
+**29** Jesus disse-lhe: «Porque me viste, acreditaste? Felizes os que não viram e acreditaram.»
+
+**30** Jesus fez, na presença dos discípulos, muitos outros sinais que não estão escritos neste livro.
+
+**31** Estas coisas foram escritas para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e, crendo, tenham vida em nome dele.
+
+### Capítulo 21
+
+**1** Depois disto, Jesus manifestou-se outra vez aos discípulos, junto ao mar de Tiberíades. E manifestou-se desta maneira:
+
+**2** Estavam juntos Simão Pedro, Tomé, chamado Dídimo, Natanael de Caná da Galileia, os *filhos* de Zebedeu e outros dois dos seus discípulos.
+
+**3** Simão Pedro disse-lhes: «Vou pescar.» Disseram-lhe: «Vamos também nós contigo.» Saíram e entraram no barco, e naquela noite não apanharam nada.
+
+**4** Ao romper da manhã, já de dia, Jesus estava de pé na praia; os discípulos, porém, não sabiam que era Jesus.
+
+**5** Jesus perguntou-lhes: «Rapazes, não têm nada para comer?» Responderam-lhe: «Não.»
+
+**6** Ele disse-lhes: «Lancem a rede do lado direito do barco, e vão encontrar.» Lançaram-na, então, e já não conseguiam puxá-la, por causa da quantidade de peixes.
+
+**7** Então aquele discípulo a quem Jesus amava disse a Pedro: «É o Senhor!» Simão Pedro, ao ouvir que era o Senhor, cingiu à cintura a túnica, pois estava nu, e lançou-se ao mar.
+
+**8** Os outros discípulos vieram no barquinho, pois não estavam longe da terra, mas a uns duzentos côvados, arrastando a rede com os peixes.
+
+**9** Quando desembarcaram, viram umas brasas acesas, com um peixe em cima delas, e pão.
+
+**10** Jesus disse-lhes: «Tragam alguns dos peixes que agora apanharam.»
+
+**11** Simão Pedro subiu e puxou a rede para a terra, cheia de peixes grandes, cento e cinquenta e três; e, apesar de serem tantos, a rede não se rompeu.
+
+**12** Jesus disse-lhes: «Venham comer.» Nenhum dos discípulos se atrevia a perguntar-lhe: «Quem és tu?», porque sabiam que era o Senhor.
+
+**13** Jesus aproximou-se, tomou o pão e deu-o a eles, e fez o mesmo com o peixe.
+
+**14** Esta foi já a terceira vez que Jesus se manifestou aos discípulos depois de ressuscitar dos mortos.
+
+**15** Quando acabaram de comer, Jesus disse a Simão Pedro: «Simão, filho de João, amas-me mais do que estes?» Ele respondeu: «Sim, Senhor, tu sabes que te quero bem.» Jesus disse-lhe: «Apascenta os meus cordeiros.»
+
+**16** Disse-lhe outra vez, pela segunda vez: «Simão, filho de João, amas-me?» Ele respondeu: «Sim, Senhor, tu sabes que te quero bem.» Jesus disse-lhe: «Pastoreia as minhas ovelhas.»
+
+**17** Disse-lhe pela terceira vez: «Simão, filho de João, queres-me bem?» Pedro entristeceu-se por ele lhe ter perguntado pela terceira vez: «Queres-me bem?» Respondeu-lhe: «Senhor, tu sabes tudo; tu sabes que te quero bem.» Jesus disse-lhe: «Apascenta as minhas ovelhas.»
+
+**18** Em verdade, em verdade te digo: quando eras mais novo, cingias-te a ti mesmo e andavas por onde querias; mas quando envelheceres, estenderás as tuas mãos, e outro te cingirá e te levará para onde não queres.
+
+**19** Jesus disse isto para indicar com que morte Pedro havia de glorificar a Deus. E, depois de dizer isto, disse-lhe: «Segue-me.»
+
+**20** Pedro voltou-se e viu o discípulo a quem Jesus amava, que os seguia, aquele que se tinha reclinado ao colo dele na ceia e perguntara: «Senhor, quem é que te há de entregar?»
+
+**21** Ao vê-lo, Pedro perguntou a Jesus: «Senhor, e este, que vai ser dele?»
+
+**22** Jesus respondeu: «Se eu quiser que ele fique até que eu venha, que te importa? Quanto a ti, segue-me.»
+
+**23** Espalhou-se então entre os irmãos esta notícia: que aquele discípulo não morreria. Jesus, porém, não lhe disse que não morreria, mas: «Se eu quiser que ele fique até que eu venha, que te importa?»
+
+**24** Este é o discípulo que dá testemunho destas coisas e as escreveu; e sabemos que o seu testemunho é verdadeiro.
+
+**25** Há ainda muitas outras coisas que Jesus fez; se fossem escritas uma a uma, creio que nem o mundo conteria os livros que se escreveriam.
 
 ## Notas
 
@@ -2445,7 +2857,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 **5:42**
 
 - *ἔγνωκα* (egnōka), «conheço», com sentido de conhecimento que se tem; *ἀγάπην τοῦ θεοῦ* (agapēn tou theou), «amor de Deus». Jesus conhece o interior dos ouvintes, e a falta de amor de Deus é o diagnóstico.
-- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
+- **Crítica Textual.** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 lê «*ουχ εται*» na transcrição do CNTR (manuscrito Alexandrino, class 1/02, João 5:42). Esta forma não corresponde a uma palavra grega reconhecível. O contexto sugere «*ἔχεται*» («tem»), como em 032; é uma inferência, e não uma leitura do manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
 **5:43**
 
@@ -2864,8 +3276,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **7:8**
 
-- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH e RP dizem «ainda não», e a NIV traduz assim. A frase parece contradizer o versículo 10, onde Jesus sobe depois. A nota não resolve a contradição: o texto distingue o tempo de Jesus do tempo dos irmãos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH e RP leem «*οὔπω*» («ainda não»), e a NIV segue essa leitura por escolha de tradução. A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» depois de «*ἑορτήν*».
+- *ἀνάβητε* (anabēte), «subam»; *οὐκ ἀναβαίνω* (ouk anabainō), «não subo»; *πεπλήρωται* (peplērōtai), «cumpriu-se, completou-se». A base diz «não»; WH e RP dizem «ainda não», e a NIV segue essa leitura por escolha de tradução. A frase parece contradizer o versículo 10, onde Jesus sobe depois; o texto distingue o tempo de Jesus do tempo dos irmãos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:8: a base lê «*οὐκ*», com Treg e NA28; WH e RP leem «*οὔπω*» («ainda não»), e a NIV segue essa leitura por escolha de tradução. A base lê «*ἐμὸς καιρὸς*», com WH, Treg e NA28; RP inverte para «*καιρὸς ὁ ἐμὸς*». RP acrescenta «*ταύτην*» na primeira ocorrência de «*ἑορτήν*» (7:8a, «subam à festa»); a base já tem o termo na segunda.
 
 **7:9**
 
@@ -3775,7 +4187,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **11:1**
 
-- *Ἦν δέ τις ἀσθενῶν* (ēn de tis asthenōn), «havia um doente»; *κώμης* (kōmēs), «aldeia». Lázaro é apresentado pela doença, e não pela cura: é a doença que põe a história em marcha.
+- *Ἦν δέ τις ἀσθενῶν* (ēn de tis asthenōn), «havia um doente»; *κώμης* (kōmēs), «aldeia». Lázaro é apresentado pela doença, e não pela cura: é a doença que põe a história em marcha. A palavra «*chamado*» no texto é acréscimo sem correspondência no grego, que dá só *Λάζαρος*; por isso vai em itálico.
+- **Crítica Textual.** Aparato de edições SBLGNT, 11:1: não regista variante. Na colação, a testemunha 02 omite «*καὶ Μάρθας*» («e Marta») e lê «*αὐτοῦ*» em lugar de «*αὐτῆς*» («da irmã»). A testemunha 01 acrescenta «*τῆς*» antes de «*Μαρίας*», e a 05 acrescenta-o antes de «*Μαρίας*» e de «*Μάρθας*». A base segue o texto completo, com as duas irmãs, como a generalidade das testemunhas e o WH.
 
 **11:2**
 
@@ -3838,7 +4251,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **11:16**
 
-- *Δίδυμος* (Didymos), «gémeo»; *συμμαθηταῖς* (symmathētais), «condiscípulos»; *ἀποθάνωμεν* (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem.
+- *Δίδυμος* (Didymos), «gémeo»; *συμμαθηταῖς* (symmathētais), «condiscípulos»; *ἀποθάνωμεν* (apothanōmen), «morramos». Tomé fala com coragem e sem entender o que está a acontecer; a sua fidelidade vai ser testada na mesma passagem. A expressão «*que quer dizer gémeo*» no texto é explicação acrescentada, sem correspondência no grego, que tem só *ὁ λεγόμενος Δίδυμος*; por isso vai em itálico. «Chamado» traduz *λεγόμενος* e fica em tipo normal.
 
 **11:17**
 
@@ -4512,7 +4925,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 **14:16**
 
-- *παράκλητον* (paraklēton), «Paráclito, consolador, advogado»; *ἄλλον* (allon), «outro da mesma espécie»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre». A palavra «outro» afirma que o Espírito é da mesma natureza de Jesus.
+- *παράκλητον* (paraklēton), «Parácleton», acusativo de «Parácletos»; «consolador, advogado»; *ἄλλον* (allon), «outro da mesma espécie»; *εἰς τὸν αἰῶνα* (eis ton aiōna), «para sempre». A palavra «outro» afirma que o Espírito é da mesma natureza de Jesus.
 - **Crítica Textual.** Aparato de edições SBLGNT, 14:16: a base lê «*ᾖ*», com WH e Treg; NA28 omite a palavra. A base lê «*ᾖ*», com WH e Treg; RP acrescenta «*μένῃ*». A base lê «*αἰῶνα*», com WH, Treg e RP; NA28 acrescenta «*ᾖ*».
 
 **14:17**
@@ -4709,6 +5122,980 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 - *μαρτυρεῖτε* (martyreite), «dai testemunho»; *ἀπʼ ἀρχῆς* (ap' archēs), «desde o princípio». O testemunho dos discípulos vem da companhia de Jesus desde o início.
 
+### Notas do capítulo 16
+
+**16:1**
+
+- *σκανδαλισθῆτε* (skandalisthēte), «tropecem»: o verbo descreve quem cai por causa de algo que não esperava. Jesus fala antes, para que a queda não aconteça na hora da prova.
+
+**16:2**
+
+- *ἀποσυναγώγους* (aposynagōgous), «expulsos da sinagoga»; *λατρείαν* (latreian), «culto». A violência será praticada em nome de Deus, e quem a pratica julgará servir-Lhe.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:2: sem variante no aparato. Na colação, 02 lê «*κυρίῳ*» («ao Senhor») em lugar de «*θεῷ*» («a Deus»); a base segue o texto da SBLGNT.
+
+**16:3**
+
+- *ἔγνωσαν* (egnōsan), «conheceram», aoristo: a falta de conhecimento vem do passado e explica a violência do presente.
+
+**16:4**
+
+- *μνημονεύητε* (mnēmoneuēte), «lembrem-se»; *ἐξ ἀρχῆς* (ex archēs), «desde o princípio». Jesus não precisava de dizer tudo enquanto estava com eles; agora diz, porque vai partir.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:4: a base lê «*αὐτῶν*» («delas»), com WH, Treg e NA28; RP e a NIV omitem a palavra, a NIV por escolha de tradução.
+
+**16:5**
+
+- *ἐρωτᾷ* (erōta), «pergunta»; *ὑπάγεις* (hypageis), «vais». A pergunta que não é feita mostra que a tristeza tomou o lugar da curiosidade.
+
+**16:6**
+
+- *λύπη* (lypē), «tristeza»; *πεπλήρωκεν* (peplērōken), «encheu», perfeito: o efeito permanece.
+
+**16:7**
+
+- *συμφέρει* (sympherei), «é útil, convém»; *παράκλητος* (paraklētos), «Parácletos». A vinda do Espírito depende da partida de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:7: a base lê «*οὐ μὴ ἔλθῃ*», com WH e Treg; NA28 e RP leem «*οὐκ ἐλεύσεται*» («não virá»). RP acrescenta «*ἐγὼ*» depois de «*γὰρ*».
+
+**16:8**
+
+- *ἐλθὼν* (elthōn), «quando vier»; *ἐλέγξει* (elenxei), «convencerá, pôr em evidência». O verbo tem sentido de tribunal: o Espírito põe o mundo perante a verdade.
+
+**16:9**
+
+- *οὐ πιστεύουσιν* (ou pisteuousin), «não creem». A falta de fé é o pecado de que o Espírito convence.
+
+**16:10**
+
+- *δικαιοσύνης* (dikaiosynēs), «justiça». A justiça aparece na ida de Jesus para o Pai, e não em juízos humanos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:10: a base lê «*πατέρα*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*μου*» («meu»).
+
+**16:11**
+
+- *κέκριται* (kekritai), «já foi julgado», perfeito: a sentença já está dada.
+
+**16:12**
+
+- *βαστάζειν* (bastazein), «suportar, carregar»; *ἄρτι* (arti), «agora».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:12: a base lê «*ὑμῖν λέγειν*», com WH, Treg e NA28; RP lê «*λέγειν ὑμῖν*». A ordem das palavras não muda o sentido.
+
+**16:13**
+
+- *ὁδηγήσει* (hodēgēsei), «guiará»; *ἀκούσει* (akousei), «ouvirá»; *ἀναγγελεῖ* (anangelei), «anunciará». O Espírito não fala por si mesmo: ouve e anuncia.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:13: a base lê «*ἐν τῇ ἀληθείᾳ πάσῃ*», com NA28; WH e Treg leem «*εἰς τὴν ἀλήθειαν πᾶσαν*» («para a verdade toda»); RP lê «*εἰς πᾶσαν τὴν ἀλήθειαν*». A tradução segue a base. Em «*ἀκούσει*», a base lê com Treg e NA28; WH lê «*ἀκούει*» («ouve»); RP lê «*ἂν ἀκούσῃ*».
+
+**16:14**
+
+- *δοξάσει* (doxasei), «glorificará»; *λήμψεται* (lēmpsetai), «receberá», do que é de Jesus.
+
+**16:15**
+
+- *ἐμά* (ema), «meus»: o que é do Pai é também de Jesus, e por isso o Espírito recebe e anuncia. A base tem *λαμβάνει*, presente, que a tradução lê como futuro («receberá»), em correspondência com «anunciará» (*ἀναγγελεῖ*).
+- **Crítica Textual.** Na colação, 02 lê «*λήμψεται*» («receberá») em lugar de «*λαμβάνει*» («recebe»); KJTR, ST e Scrivener leem «*ληψεται*», com a mesma forma de futuro. A base segue «*λαμβάνει*».
+
+**16:16**
+
+- *θεωρεῖτέ* (theōreite), «vedes»; *ὄψεσθέ* (opsesthe), «vereis», futuro. O verbo muda de tempo, mas a frase repete-se.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:16: a base lê «*οὐκέτι*», com WH, Treg e NA28; RP lê «*οὐ*». RP acrescenta, depois de «*με*», «*ὅτι ὑπάγω πρὸς τὸν πατέρα*» («porque vou para o Pai»), que os discípulos citam em 16:17.
+
+**16:17**
+
+- *εἶπαν* (eipan), «disseram»; *τί ἐστιν* (ti estin), «que é»: a pergunta repete a frase de Jesus sem a entender.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:17: a base lê «*Ὅτι*», com WH, Treg e NA28; RP acrescenta «*Ἐγὼ*» («eu») antes.
+
+**16:18**
+
+- *τί* (ti), «o que»; *λαλεῖ* (lalei), «fala»: os discípulos reconhecem que não entendem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:18: a base lê «*Τί ἐστιν τοῦτο*», com WH, Treg e NA28; RP lê «*Τοῦτο τί ἐστιν*». Em «*λέγει*», NA28 e RP acrescentam o artigo «*τὸ*».
+
+**16:19**
+
+- *ἔγνω* (egnō), «percebeu»; *ἤθελον* (ēthelon), «queriam»; *ἐρωτᾶν* (erōtan), «perguntar».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:19: a base lê «*ἔγνω*» sem acréscimo, com WH e Treg; NA28 acrescenta «*ὁ*» (artigo) e RP «*οὖν ὁ*».
+
+**16:20**
+
+- *κλαύσετε* (klausete), «chorareis»; *θρηνήσετε* (thrēnēsete), «lamentareis»; *χαρήσεται* (charēsetai), «alegrar-se-á». Contraste entre o luto dos discípulos e a alegria do mundo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:20: a base lê «*ὑμεῖς*», com WH, Treg e NA28; RP acrescenta «*δὲ*» («mas»).
+
+**16:21**
+
+- *τίκτῃ* (tiktē), «dá à luz»; *θλίψεως* (thlipseōs), «angústia»; *ἄνθρωπος* (anthrōpos), «ser humano», sem distinção de sexo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:21: sem variante no aparato. Na colação, 05 lê «*ἡμέρα*» («dia») em lugar de «*ὥρα*» («hora») e «*λύπης*» («tristeza») em lugar de «*θλίψεως*»; 𝔓66 lê também «*ἡμέρα*».
+
+**16:22**
+
+- *λύπην* (lypēn), «tristeza»; *ὄψομαι* (opsomai), «verei»; *αἴρει* (airei), «tira». A alegria não depende das circunstâncias.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:22: a base lê «*νῦν μὲν λύπην*», com WH, Treg e NA28; RP lê «*λύπην μὲν νῦν*». Em «*αἴρει*», a base lê com NA28 e RP; WH e Treg leem «*ἀρεῖ*», sem o prefixo.
+
+**16:23**
+
+- *ἐρωτήσετε* (erōtēsete), «perguntareis»; *αἰτήσητε* (aitēsēte), «pedirdes», subjuntivo com *ἄν*.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:23: a base lê «*ἄν τι*», com WH, Treg e NA28; RP lê «*ὅτι ὅσα ἄν*» («tudo o que»). A ordem de «*δώσει ὑμῖν ἐν τῷ ὀνόματί μου*» muda em WH e Treg.
+
+**16:24**
+
+- *ᾐτήσατε* (ētēsate), «pedistes», aoristo; *λήμψεσθε* (lēmpsesthe), «recebereis»; *πεπληρωμένη* (peplērōmenē), «completa».
+- **Crítica Textual.** Na colação, 01 e 𝔓66 leem «*ἠτήσαται*» («pediu», terceira pessoa) em lugar de «*ᾐτήσατε*», e «*αἰτήσασθαι*» em lugar de «*αἰτεῖτε*»; 032 lê «*αἰτήσασθαι*» no mesmo lugar e «*λήμψεσθαι*» em lugar de «*λήμψεσθε*»; 02 lê «*ἠτήσασθαι*» em lugar de «*ᾐτήσατε*». 𝔓5 omite a frase «*ἕως ἄρτι … μου*» («até agora … em meu nome»). A base segue o texto da SBLGNT.
+
+**16:25**
+
+- *παροιμίαις* (paroimiais), «parábolas, dizeres enigmáticos»; *παρρησίᾳ* (parrēsiai), «com clareza», em oposição a «parábolas»; *ἀπαγγελῶ* (apangelō), «anunciarei».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:25: a base lê «*ἔρχεται*», com WH, Treg e NA28; RP lê «*ἀλλʼ ἔρχεται*». Em «*ἀπαγγελῶ*», RP lê «*ἀναγγελῶ*», outro verbo para «anunciar».
+
+**16:26**
+
+- *αἰτήσεσθε* (aitēsesthe), «pedireis»; *ἐρωτήσω* (erōtēsō), «rogarei». Jesus não diz que pedirá por eles, porque eles mesmos pedirão em seu nome.
+- **Crítica Textual.** Aparato de edições SBLGNT: sem variante no aparato. Na colação, 01 e 032 leem «*αἰτήσασθαι*» em lugar de «*αἰτήσεσθε*».
+
+**16:27**
+
+- *φιλεῖ* (philei), «ama»; *πεφιλήκατε* (pephilēkate), «amastes», perfeito: o amor já existe e permanece; *ἐξῆλθον* (exēlthon), «saí».
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:27: a base lê «*θεοῦ*» («de Deus»), com NA28 e RP; WH e Treg leem «*πατρός*» («do Pai»).
+
+**16:28**
+
+- *ἐξῆλθον* (exēlthon), «saí»; *ἀφίημι* (aphiēmi), «deixo». A saída e o regresso são ao Pai.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:28: a base lê «*ἐκ*» («de»), com WH e Treg; NA28 e RP leem «*παρὰ*» («de junto de»).
+
+**16:29**
+
+- *παροιμίαν* (paroimian), «parábola»; *παρρησίᾳ* (parrēsiai), «com clareza», em oposição a «parábolas»: os discípulos reconhecem que Jesus fala agora de modo direto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:29: a base lê «*Λέγουσιν*», com WH, Treg e NA28; RP acrescenta «*αὐτῷ*» («a ele»). RP omite «*ἐν*» antes de «*παρρησίᾳ*».
+
+**16:30**
+
+- *οἴδαμεν* (oidamen), «sabemos»; *χρείαν ἔχεις* (chreian echeis), «tens necessidade»; *ἐξῆλθες* (exēlthes), «saíste».
+- **Crítica Textual.** Na colação, 05 lê «*παρὰ*» em lugar de «*ἀπὸ*» («de»), sem mudar o sentido.
+
+**16:31**
+
+- *Ἄρτι πιστεύετε* (arti pisteuete), «agora credes?». A base lê como pergunta, e a tradução segue essa leitura.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:31: a base lê «*αὐτοῖς*», com WH, Treg e NA28; RP acrescenta o artigo «*ὁ*» antes de «*Ἰησοῦς*».
+
+**16:32**
+
+- *σκορπισθῆτε* (skorpisthēte), «sereis dispersos»; *ἀφῆτε* (aphēte), «deixareis»; *ἐστιν* (estin), «está». Jesus fala da dispersão para dizer que o Pai continua com ele.
+- **Crítica Textual.** Aparato de edições SBLGNT, 16:32: a base lê «*καὶ ἐλήλυθεν*», com WH, Treg e NA28; RP acrescenta «*νῦν*» («agora») no início da oração e lê «*καὶ ἐμέ*» em lugar de «*κἀμέ*».
+
+**16:33**
+
+- *θαρσεῖτε* (tharseite), «tenham coragem»; *νενίκηκα* (nenikēka), «venci», perfeito: a vitória já está consumada. *ἔχετε* (echete), presente, traduzido por «terão», com sentido de futuro.
+- **Crítica Textual.** Na colação, 01, 032 e 𝔓66 leem «*θαρσεῖται*» («terá coragem») em lugar de «*θαρσεῖτε*»; 01 e 032 leem também «*ἔχηται*» em lugar de «*ἔχητε*» («tenham»). 𝔓66 omite «*ἐν τῷ κόσμῳ θλῖψιν ἔχετε*». KJTR, Scrivener e 05 leem «*ἔξετε*» (futuro) em lugar de «*ἔχετε*». A base segue «*θαρσεῖτε*» e «*ἔχετε*».
+
+### Notas do capítulo 17
+
+**17:1**
+
+- *ἐπάρας* (eparas), «erguendo»; *δόξασόν* (doxason), «glorifica», imperativo; *ἐλήλυθεν* (elēlythen), «chegou», perfeito: a hora chegou e permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:1: a base lê «*ἐλάλησεν*», com WH, Treg e NA28; RP acrescenta «*ὁ*». A base tem «*ἐπάρας … εἶπεν*», com WH, Treg e NA28; RP lê «*ἐπῆρεν … καὶ εἶπεν*». RP acrescenta «*καὶ*» depois de «*ἵνα*» e «*σου*» depois de «*υἱὸς*».
+
+**17:2**
+
+- *ἐξουσίαν* (exousian), «poder, autoridade»; *δώσῃ* (dōsēi), «dê», subjuntivo depois de «*ἵνα*».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:2: a base lê «*δώσῃ*», com Treg e NA28; WH e RP leem «*δώσει*», futuro.
+
+**17:3**
+
+- *αἰώνιος* (aiōnios), «eterna»; *ἵνα γινώσκωσι* (hina ginōskōsi), «que conheçam». A vida eterna é definida como conhecimento, e não só como duração.
+- **Crítica Textual.** Na colação, 𝔓66 lê «*ἀπεπέμψας*» («enviaste») em lugar de «*ἀπέστειλας*», sinónimo, sem mudar o sentido.
+
+**17:4**
+
+- *τελειώσας* (teleiōsas), «tendo acabado», particípio aoristo: a obra está concluída antes da cruz.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:4: a base lê «*τελειώσας*», com WH, Treg e NA28; RP lê «*ἐτελείωσα*» («acabei»).
+
+**17:5**
+
+- *δόξασόν* (doxason), «glorifica»; *εἶχον* (eichon), «tinha»; *πρὸ τοῦ τὸν κόσμον εἶναι* (pro tou ton kosmon einai), «antes de o mundo existir».
+- **Crítica Textual.** Na colação, 05 lê «*γενέσθαι παρὰ σοί*» em lugar de «*εἶναι παρὰ σοί*» («existir», «estar junto de ti»); 𝔓66 acrescenta «*παρὰ σοί*».
+
+**17:6**
+
+- *ἐφανέρωσα* (ephanerōsa), «manifestei»; *τετήρηκαν* (tetērēkan), «guardaram», perfeito: a obediência dos discípulos permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:6: a base lê «*ἔδωκάς*» e «*ἔδωκας*», com WH, Treg e NA28; RP lê «*δέδωκάς*» e «*δέδωκας*», perfeito.
+
+**17:7**
+
+- *ἔγνωκαν* (egnōkan), «conhecem», perfeito: o conhecimento foi adquirido e permanece; *εἰσιν* (eisin), «são».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:7: a base lê «*δέδωκάς*», com Treg, NA28 e RP; WH lê «*ἔδωκάς*», aoristo. Em «*εἰσιν*», WH, Treg e NA28 leem «*εἰσιν*»; RP lê «*ἐστιν*».
+
+**17:8**
+
+- *ἔλαβον* (elabon), «receberam»; *ἐπίστευσαν* (episteusan), «creram»: receber e crer são dois passos descritos no texto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:8: a base lê «*ἔδωκάς*», com WH, Treg e NA28; RP lê «*δέδωκάς*». Na colação, 01, 02, 032, 05 e SR omitem «*καὶ ἔγνωσαν*» («e conheceram»); 𝔓66 omite «*καὶ αὐτοὶ ἔλαβον*» («e eles receberam»).
+
+**17:9**
+
+- *ἐρωτῶ* (erōtō), «rogo»; *ὧν* (hōn), «daqueles que»: Jesus separa os discípulos do mundo, sem os tirar dele.
+- **Crítica Textual.** Aparato de edições SBLGNT: sem variante. Na colação, 032 e 05 leem «*ἔδωκας*» («deste», aoristo) em lugar de «*δέδωκάς*» («tens dado», perfeito); 𝔓66 omite a primeira ocorrência de «*ἐρωτῶ*».
+
+**17:10**
+
+- *δεδόξασμαι* (dedoxasmai), «fui glorificado», perfeito: a glória já está presente nos discípulos.
+- **Crítica Textual.** Na colação, 01 lê «*ἐμοὶ αὐτοὺς ἔδωκας*» em lugar da primeira oração («o que é meu é teu»); 05 lê «*ἐδόξασάς με*» («me glorificaste») em lugar de «*δεδόξασμαι*».
+
+**17:11**
+
+- *πάτερ ἅγιε* (páter hagie), «Pai santo»; *τήρησον* (tērēson), «guarda»; *ἓν* (hen), «um», neutro: unidade, e não número de pessoas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:11: a base lê «*αὐτοὶ*» («eles»), com WH e NA28; Treg e RP leem «*οὗτοι*» («estes»). Em «*καθὼς*», a base lê com WH, NA28 e RP; Treg acrescenta «*καὶ*».
+
+**17:12**
+
+- *ἐτήρουν* (etēroun), «guardava», imperfeito: ação contínua no passado; *ἀπώλετο* (apōleto), «perdeu-se»; *ἀπωλείας* (apōleias), «ruína», o mesmo título de 2 Tessalonicenses 2:3.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:12: a base lê «*αὐτῶν*», com WH, Treg e NA28; RP acrescenta «*ἐν τῷ κόσμῳ*» («no mundo»). A base lê «*ᾧ*», com WH, Treg e NA28; RP lê «*οὓς*». A base tem «*καὶ*» antes de «*ἐφύλαξα*»; RP omite-o.
+
+**17:13**
+
+- *ἑαυτοῖς* (heautois), «em si», reflexivo; *πεπληρωμένην* (peplērōmenēn), «completa».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:13: a base lê «*ἑαυτοῖς*», com WH, Treg e NA28; RP lê «*αὐτοῖς*», sem o reflexivo.
+
+**17:14**
+
+- *ἐμίσησεν* (emisēsen), «odiou»; *εἰσὶν* (eisin), «são»: o mundo odeia porque os discípulos não são do mundo.
+- **Crítica Textual.** Na colação, 05 omite «*καθὼς ἐγὼ οὐκ εἰμὶ ἐκ τοῦ κόσμου*» («como eu não sou do mundo»).
+
+**17:15**
+
+- *ἄρῃς* (arēs), «tires»; *τηρήσῃς* (tērēsēs), «guardes»; *πονηροῦ* (ponērou), «do mal» (pode ser também «do maligno»).
+- **Crítica Textual.** Na colação, 03 omite «*κόσμου ἀλλʼ ἵνα τηρήσῃς αὐτοὺς ἐκ τοῦ*», por salto entre expressões semelhantes.
+
+**17:16**
+
+- *εἰσὶν* (eisin), «são», como em 17:14: a frase repete-se para sublinhar a separação.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:16: a base lê «*οὐκ εἰμὶ ἐκ τοῦ κόσμου*», com WH, Treg e NA28; RP inverte a ordem para «*ἐκ τοῦ κόσμου οὐκ εἰμὶ*».
+
+**17:17**
+
+- *ἁγίασον* (hagiason), «santifica, consagra»; *ἀλήθειά* (alētheia), «verdade». A palavra do Pai é a verdade que santifica.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:17: a base lê «*ἀληθείᾳ*», com WH, Treg e NA28; RP acrescenta «*σου*» («a tua»).
+
+**17:18**
+
+- *ἀπέστειλας* (apesteilas), «enviaste»; *ἀπέστειλα* (apesteila), «enviei». Jesus liga o envio dos discípulos ao seu próprio envio.
+- **Crítica Textual.** Na colação, 𝔓66 omite «*κἀγὼ ἀπέστειλα αὐτοὺς εἰς τὸν κόσμον*» («também eu os enviei ao mundo»); 03 repete «*εἰς τὸν κόσμον, κἀγὼ ἀπέστειλα αὐτούς*».
+
+**17:19**
+
+- *ἁγιάζω* (hagiazō), «santifico, consagro»; *ἡγιασμένοι* (hēgiasmenoi), «santificados», perfeito: a consagração dos discípulos liga-se à de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:19: a base lê «*ὦσιν καὶ αὐτοὶ*», com WH, Treg e NA28; RP lê «*καὶ αὐτοὶ ὦσιν*».
+
+**17:20**
+
+- *πιστευόντων* (pisteuontōn), «dos que creem»; *διὰ τοῦ λόγου αὐτῶν* (dia tou logou autōn), «pela palavra deles»: a oração alarga-se aos futuros crentes.
+- **Crítica Textual.** Na colação, KJTR, ST e Scrivener leem «*πιστευσόντων*» («dos que hão de crer») em lugar de «*πιστευόντων*»; 032 lê «*ὑπὲρ*» em lugar de «*περὶ*» (ambos «por»).
+
+**17:21**
+
+- *ἓν ὦσιν* (hen ōsin), «sejam um»; *πιστεύῃ* (pisteuē), «creia», subjuntivo. A unidade é o meio de o mundo crer.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:21: a base lê «*πάτερ*», com WH, NA28 e RP; Treg lê «*πατήρ*». A base lê «*ἡμῖν*», com WH, Treg e NA28; RP acrescenta «*ἓν*». A base lê «*πιστεύῃ*», com WH, Treg e NA28; RP lê «*πιστεύσῃ*».
+
+**17:22**
+
+- *τὴν δόξαν* (tēn doxan), «a glória»; *δέδωκα* (dedōka), «dei», perfeito: a glória foi dada e permanece.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:22: a base lê «*ἕν*», com WH, Treg e NA28; RP acrescenta «*ἐσμεν*» («somos») depois de «*ἕν*».
+
+**17:23**
+
+- *τετελειωμένοι* (teteleiōmenoi), «levados à perfeição», perfeito: a unidade é completa; *ἠγάπησας* (ēgapēsas), «amaste», aoristo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:23: a base lê «*ἵνα*», com WH, Treg e NA28; RP acrescenta «*καὶ*» antes de «*ἵνα*».
+
+**17:24**
+
+- *θέλω* (thelō), «quero»: é uma vontade expressa, e não um pedido formal; *θεωρῶσιν* (theōrōsin), «vejam»; *πρὸ καταβολῆς κόσμου* (pro katabolēs kosmou), «antes da fundação do mundo».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:24: a base lê «*πάτερ*», com WH, NA28 e RP; Treg lê «*Πατήρ*». A base lê «*ὃ*» («aquilo que»), com WH, Treg e NA28; RP lê «*οὕς*» («os que»). A base lê «*δέδωκάς*», com WH, Treg e NA28; RP lê «*ἔδωκάς*».
+
+**17:25**
+
+- *δίκαιε* (dikaie), «justo»; *ἔγνων* (egnōn), «conheci», aoristo; *ἔγνωσαν* (egnōsan), «conheceram».
+- **Crítica Textual.** Aparato de edições SBLGNT, 17:25: a base lê «*Πάτερ*», com WH, NA28 e RP; Treg lê «*Πατὴρ*». Na colação, 05 lê «*ἔγνωκα*» (perfeito) em lugar de «*ἔγνων*».
+
+**17:26**
+
+- *ἐγνώρισα* (egnōrisa), «dei a conhecer», aoristo; *γνωρίσω* (gnōrisō), «darei a conhecer», futuro: a revelação do nome continua; *ἠγάπησάς* (ēgapēsas), «amaste».
+- **Crítica Textual.** Na colação, 05 lê «*ἡ*» (nominativo) em lugar de «*ἣν*» (acusativo do relativo); 𝔓66 faz a troca inversa.
+
+### Notas do capítulo 18
+
+**18:1**
+
+- *χειμάρρου* (cheimarrou), «torrente»: curso de água que corre na estação das chuvas. O jardim fica do outro lado do vale, fora da cidade.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:1: a base lê «*εἰπών*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*εἰπών*». Em «*Κεδρών*», a base lê «*τοῦ*» com Treg e NA28; WH e RP leem «*τῶν*». Na colação, 02, 032, 04, 05, KJTR, RP, ST e Scrivener acrescentam «*ὁ*» antes de «*Ἰησοῦς*».
+
+**18:2**
+
+- *ᾔδει* (ēdei), «conhecia», imperfeito: Judas já sabia do lugar. *συνήχθη* (synēchthē), «se reunira», passivo: Jesus costumava reunir-se ali com os discípulos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:2: a base lê «*συνήχθη*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*συνήχθη*». Na colação, 02, 032, 04, KJTR, RP, ST e Scrivener acrescentam «*ὁ*»; 03 e SR põem «*ἐκεῖ*» depois de «*μαθητῶν αὐτοῦ*»; 05 lê «*ὁ παραδιδών*» em lugar de «*ὁ παραδιδούς*».
+
+**18:3**
+
+- *σπεῖραν* (speiran), «coorte», destacamento de soldados romanos; *ὑπηρέτας* (hypēretas), «guardas», servidores dos sacerdotes. Soldados romanos e guardas judeus juntos mostram que a prisão foi conjunta. *φανῶν*, «lanternas»; *λαμπάδων*, «tochas».
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:3: a base lê «*ἐκ τῶν*» antes de «*Φαρισαίων*» com WH, Treg e NA28; RP omite essa expressão. Na colação, 02, 032, P108, KJTR, RP, SR, ST e Scrivener também omitem «*ἐκ τῶν*» antes de «*Φαρισαίων*».
+
+**18:4**
+
+- *εἰδώς* (eidōs), «sabendo», com o sentido de conhecimento seguro; *τὰ ἐρχόμενα* (ta erchomena), «o que lhe havia de acontecer», literalmente «as coisas que vinham sobre ele». Jesus toma a iniciativa e sai ao encontro dos que o procuram.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:4: a base lê «*οὖν*» com WH, NA28 e RP; Treg lê «*δέ*». A base lê «*ἐξῆλθεν καὶ λέγει*» com WH, Treg e NA28; RP lê «*ἐξελθὼν εἶπεν*» («tendo saído, disse»). Na colação, 𝔓66 omite «*Ἰησοῦς*»; 01, 02, 032, P108, P66, KJTR, RP, SR, ST e Scrivener leem «*ἐξελθὼν εἶπεν*».
+
+**18:5**
+
+- *Ἐγώ εἰμι* (egō eimi), «eu sou»: fórmula que o evangelho repete (8:24, 28, 58; 13:19). *εἱστήκει* (heistēkei), «estava de pé», imperfeito: a presença de Judas é descrita como cena em curso.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:5: a base lê «*αὐτοῖς*» com WH, Treg e NA28; RP acrescenta «*ὁ Ἰησοῦς*» depois de «*αὐτοῖς*». Na colação, 01, 02, 032, 04, KJTR, RP, SR, ST e Scrivener acrescentam «*ὁ Ἰησοῦς*» na mesma posição; 05 lê «*Ναζαρηνόν*» em lugar de «*Ναζωραῖον*».
+
+**18:6**
+
+- *ὡς* (hōs), «quando», com o aoristo: um momento preciso. *ἀπῆλθον εἰς τὰ ὀπίσω* (apēlthon eis ta opisō), «retrocederam», literalmente «foram para trás»; *χαμαί* (chamai), «por terra». O texto descreve o movimento e não explica a causa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:6: a base lê «*αὐτοῖς*» com WH, Treg e NA28; RP acrescenta «*ὅτι*» depois de «*αὐτοῖς*». Na colação, 04, KJTR, RP, ST e Scrivener acrescentam «*ὅτι*»; KJTR, RP, ST e Scrivener leem «*ἔπεσον*» em lugar de «*ἔπεσαν*».
+
+**18:7**
+
+- *πάλιν* (palin), «outra vez», repete a pergunta do v. 4; *ἐπηρώτησεν* (epērōtēsen), «perguntou». A repetição confirma que a pergunta é dirigida a quem procura, e não a Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:7: a base lê «*ἐπηρώτησεν αὐτούς*» com WH, Treg e NA28; RP inverte, «*αὐτούς ἐπηρώτησεν*». Na colação, 01, 02, 03, 04, 032, KJTR, RP, SR, ST e Scrivener leem «*εἶπον*» em lugar de «*εἶπαν*»; 05 acrescenta «*λέγων*» e «*πάλιν*» na resposta; 032 lê «*ζητεῖται*» em lugar de «*ζητεῖτε*».
+
+**18:8**
+
+- *ἄφετε* (aphete), «deixem», imperativo; *ὑπάγειν* (hypagein), «ir embora». O pedido liberta os discípulos, e o v. 9 liga essa libertação à palavra de Jesus.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 032 e 𝔓66 leem «*ζητεῖται*» em lugar de «*ζητεῖτε*»; 032 também lê «*ἄφεται*» em lugar de «*ἄφετε*»; 05 acrescenta «*αὐτοῖς ὁ*» antes de «*Ἰησοῦς*»; ST e Scrivener acrescentam «*ὁ*».
+
+**18:9**
+
+- *ἵνα πληρωθῇ* (hina plērōthē), «para que se cumprisse», fórmula de cumprimento. A palavra remete a 6:39 e 17:12, onde Jesus diz ao Pai o mesmo.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 05 e 𝔓66 leem «*ἔδωκας*» em lugar de «*δέδωκάς*»; 05 também troca a posição de «*οὐκ ἀπώλεσα*»; 02 lê «*ἐξ αὐτοῦ*» em lugar de «*ἐξ αὐτῶν*».
+
+**18:10**
+
+- *μάχαιραν* (machairan), «espada»; *ὠτάριον* (ōtarion), «orelha», diminutivo. O evangelho dá o nome do servo, Malco, num pormenor que o texto não comenta.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:10: a base lê «*ὠτάριον*» com WH, Treg e NA28; RP lê «*ὠτίον*». Na colação, 02, 05, 𝔓66, KJTR, RP, ST e Scrivener leem «*ὠτίον*»; 01, 02, 032, 04 e 𝔓66 leem «*ἔπεσεν*» («caiu») em lugar de «*ἔπαισεν*» («feriu»); 05 acrescenta «*τότε*».
+
+**18:11**
+
+- *ποτήριον* (potērion), «cálice», imagem do sofrimento que Jesus aceita como vontade do Pai. *οὐ μὴ πίω* (ou mē piō), «não beberei», com a negação enfática: a pergunta recusa a defesa armada.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:11: a base lê «*μάχαιραν*» com WH, Treg e NA28; RP acrescenta «*σου*» depois de «*μάχαιραν*». Na colação, KJTR, ST e Scrivener acrescentam «*σου*» na mesma posição; 05 lê «*ἔδωκεν*» em lugar de «*δέδωκέν*».
+
+**18:12**
+
+- *χιλίαρχος* (chiliarchos), «comandante», oficial que chefiava a coorte; *ἔδησαν* (edēsan), «amarraram». Jesus é preso e amarrado antes de ser levado a Anás.
+
+**18:13**
+
+- *πενθερός*, «sogro»; *ἀρχιερεὺς τοῦ ἐνιαυτοῦ ἐκείνου*, «sumo sacerdote naquele ano». Anás, sogro de Caifás, fora sumo sacerdote antes dele. O texto não explica por que o levam primeiro a Anás.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:13: a base lê «*ἤγαγον*» com WH, Treg e NA28; RP lê «*ἀπήγαγον αὐτόν*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἀπήγαγον αὐτόν*»; 04 lê «*ἀπήγαγον*» sem «*αὐτόν*».
+
+**18:14**
+
+- Remete a 11:49–50, onde o conselho de Caifás é dado. *συμφέρει* (sympherei), «convém», o mesmo verbo de 16:7; *ὑπὲρ τοῦ λαοῦ*, «pelo povo», prepara o sentido que o evangelho dará à morte de Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:14: a base lê «*ἀποθανεῖν*» («morrer») com WH, Treg e NA28; RP lê «*ἀπολέσθαι*» («perecer»). Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἀπολέσθαι*»; 02, 032, 04 e 𝔓66 leem «*ἄνον*» em lugar de «*ἄνθρωπον*», forma abreviada de leitura incerta. A base segue «*ἀποθανεῖν*».
+
+**18:15**
+
+- *γνωστός* (gnōstos), «conhecido», no sentido de conhecido pessoal; o texto não diz o nome do outro discípulo. *συνεισῆλθεν* (syneisēlthen), «entrou com», mostra que ele entrou junto com Jesus.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:15: a base lê «*καὶ ἄλλος*» com WH e NA28; Treg e RP acrescentam o artigo «*ὁ*» depois de «*καὶ*». Na colação, RP e ST acrescentam «*ὁ*»; 04 lê «*αὐτοῖς*» em lugar de «*τῷ Ἰησοῦ*».
+
+**18:16**
+
+- *θυρωρῷ* (thyrōrō), «porteira»; *εἰσήγαγεν* (eisēgagen), «levou para dentro», verbo de quem introduz alguém. Pedro fica do lado de fora até o outro discípulo intervir.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:16: a base lê «*ὁ*» antes de «*γνωστός*» com WH, Treg e NA28; RP lê «*ὅς ἦν*» em lugar de «*ὁ*». RP lê «*τῷ ἀρχιερεῖ*» em lugar de «*τοῦ ἀρχιερέως*». Na colação, 01, 02, 032, KJTR, RP, ST e Scrivener leem «*ὃς ἦν*» e «*τῷ ἀρχιερεῖ*»; 01 omite «*ἔξω*».
+
+**18:17**
+
+- *μή* (mē), «não», partícula de pergunta que espera resposta negativa; *παιδίσκη* (paidiskē), «criada», moça de serviço. Esta é a primeira das três negações de Pedro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:17: a base lê «*τῷ Πέτρῳ*» antes de «*ἡ παιδίσκη*» com WH, Treg e NA28; RP coloca «*τῷ Πέτρῳ*» depois de «*θυρωρός*», sem mudança de sentido. Na colação, 01, 02, 032, KJTR, SR, ST, Scrivener e 𝔓66 também deslocam «*τῷ Πέτρῳ*» para depois de «*θυρωρός*»; 032 lê «*αὐτῷ*» em lugar de «*τῷ Πέτρῳ*». 02, 032 e 04 leem «*ἄνου*» em lugar de «*ἀνθρώπου*» (abreviatura de expansão duvidosa).
+
+**18:18**
+
+- *ἀνθρακιὰν* (anthrakia), «brasa», fogo de carvão; *ψῦχος* (psychos), «frio»; *θερμαινόμενος* (thermainomenos), «aquecendo-se», o mesmo verbo do v. 25. Pedro está entre os que servem o sumo sacerdote.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:18: a base lê «*καὶ ὁ Πέτρος μετʼ αὐτῶν*» com WH, Treg e NA28; RP lê «*μετʼ αὐτῶν ὁ Πέτρος*». Na colação, 02, KJTR, RP, ST e Scrivener têm a mesma ordem de RP.
+
+**18:19**
+
+- *ἠρώτησεν* (ērōtēsen), «interrogou», o mesmo verbo do v. 7; *διδαχῆς* (didachēs), «ensino». Jesus responde sobre o ensino (v. 20) e remete para os que o ouviram (v. 21).
+
+**18:20**
+
+- *παρρησίᾳ* (parrēsiai), «com clareza», o mesmo termo de 16:25 e 16:29; *ἐν κρυπτῷ* (en kryptō), «em segredo». Jesus defende a publicidade do seu ensino.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:20: a base lê «*ἀπεκρίθη αὐτῷ*» e «*λελάληκα*» («tenho falado») com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*» e lê «*ἐλάλησα*». A base lê «*πάντες*» com WH, Treg e NA28; RP lê «*πάντοτε*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener leem «*ἐλάλησα*». KJTR, ST e Scrivener leem também «*πάντοτε*».
+
+**18:21**
+
+- *ἀκηκοότας* (akēkootas), «os que ouviram», perfeito: quem ouviu e guarda a palavra; *ἴδε* (ide), «eis», chama a atenção para as testemunhas. Jesus devolve o interrogatório às testemunhas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:21: a base lê «*ἐρωτᾷς*» e «*ἐρώτησον*» com WH, Treg e NA28; RP lê «*ἐπερωτᾷς*» e «*Ἐπερώτησον*», com o prefixo «*ἐπι-*». Na colação, 02, KJTR, RP, ST e Scrivener leem as formas com «*ἐπι-*».
+
+**18:22**
+
+- *ῥάπισμα* (rhapisma), «bofetada», golpe com a mão aberta; *οὕτως* (houtōs), «assim»: a pergunta do guarda trata a resposta de Jesus como insolência.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:22: a base lê «*παρεστηκὼς τῶν ὑπηρετῶν*» com WH, Treg e NA28; RP inverte, «*τῶν ὑπηρετῶν παρεστηκὼς*». Na colação, 02, KJTR, RP, ST e Scrivener mudam a posição de «*παρεστηκώς*»; 04 lê «*παρεστώτων*» em lugar de «*παρεστηκώς*».
+
+**18:23**
+
+- *μαρτύρησον* (martyrēson), «dá testemunho», imperativo do verbo do testemunho jurídico; *δέρεις* (derheis), «bates», usado de agressão física. Jesus pede um processo justo, em que se apresente a prova do erro.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:23: a base lê «*αὐτῷ*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*αὐτῷ*». Na colação, 01 e 032 leem «*ὁ δὲ Ἰησοῦς εἶπεν*» em lugar de «*ἀπεκρίθη αὐτῷ Ἰησοῦς*» e «*εἶπον*» em lugar de «*ἐλάλησα*»; 02, KJTR, RP, ST e Scrivener acrescentam «*ὁ*».
+
+**18:24**
+
+- *δεδεμένον* (dedemenon), «amarrado», particípio perfeito: Jesus continua preso. O texto não relata o que se passou em casa de Anás antes desta ordem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:24: a base lê «*οὖν*» com WH, Treg e NA28; RP omite. Na colação, 02, RP e ST omitem «*οὖν*»; 01 lê «*δέ*» em lugar de «*οὖν*».
+
+**18:25**
+
+- *ἠρνήσατο* (ērnēsato), «negou», aoristo médio: a negação é um ato completo. É a negação anunciada em 13:38.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:25: a base lê «*ἠρνήσατο*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*ἠρνήσατο*». Na colação, 02 lê «*λέγει*» em lugar de «*εἶπεν*» e P66 lê «*εἶπαν*» em lugar de «*εἶπον*».
+
+**18:26**
+
+- *συγγενής* (syngenēs), «parente», laço de família ou de sangue. A pergunta é a identificação decisiva da cena do jardim. *ὠτίον* (ōtion), «orelha», é a forma que a base usa aqui; no v. 10 usa-se *ὠτάριον*.
+
+**18:27**
+
+- *ἀλέκτωρ* (alektōr), «galo», sem artigo: o texto não diz a hora. *εὐθέως* (eutheōs), «logo», marca a rapidez: a negação cumpre-se de imediato.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:27: a base lê «*ἠρνήσατο*» com WH, Treg e NA28; RP acrescenta «*ὁ*» depois de «*ἠρνήσατο*». Na colação, 01, KJTR, RP, ST e Scrivener acrescentam «*ὁ*»; 032 e 𝔓66 leem «*εὐθύς*» em lugar de «*εὐθέως*».
+
+**18:28**
+
+- *πραιτώριον* (praitōrion), «pretório», residência do governador romano em Jerusalém; *μιανθῶσιν* (mianthōsin), «se contaminassem», o temor de impureza ritual. Quem teme a impureza cerimonial prepara a condenação de um inocente, e o texto mostra esse contraste.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:28: a base lê «*ἀλλὰ φάγωσιν*» com WH, Treg e NA28; RP lê «*ἀλλʼ ἵνα φάγωσιν*». Na colação, KJTR, RP, ST e Scrivener leem «*ἀλλʼ ἵνα*».
+
+**18:29**
+
+- *κατηγορίαν* (katēgorian), «acusação», termo jurídico; *φέρετε* (pherete), «trazem», literalmente «levam contra», como num tribunal. Pilatos começa pela pergunta de processo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:29: a base lê «*ἔξω*» e «*φησίν*» com WH, Treg e NA28; RP omite «*ἔξω*» e lê «*εἶπεν*». WH omite «*κατά*». Na colação, KJTR, RP, ST e Scrivener omitem «*ἔξω*»; 03 omite «*κατά*»; ST lê «*εἶπε*»; 032 lê «*φέρεται*» em lugar de «*φέρετε*». 02, 032 e 04 leem «*ἄνου*» em lugar de «*ἀνθρώπου*» (abreviatura de expansão duvidosa).
+
+**18:30**
+
+- *κακὸν ποιῶν* (kakon poiōn), «fazendo mal», expressão de juízo; a resposta não repete a acusação, afirma apenas que Jesus é um malfeitor. *παρεδώκαμεν*, «entregamos», aoristo: a entrega já está feita.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:30: a base lê «*κακὸν ποιῶν*» com WH, Treg e NA28; RP lê «*κακοποιός*» («malfeitor»). Na colação, 02, KJTR, RP, ST e Scrivener leem «*κακοποιός*»; 04 e 𝔓66 leem «*κακοποιῶν*»; 01 lê «*ποιήσας*» em lugar de «*ποιῶν*».
+
+**18:31**
+
+- *ἔξεστιν* (exestin), «é permitido», com o infinitivo «matar»: o texto explica por que os judeus precisam de Pilatos. A execução era do poder romano, e isso explica o que segue.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:31: WH omite o artigo «*ὁ*» antes de «*Πιλᾶτος*»; a base lê «*εἶπον*» com WH, Treg e NA28; RP acrescenta «*οὖν*» depois de «*εἶπον*». Na colação, 01, 032, 𝔓66, KJTR, RP, ST e Scrivener acrescentam «*οὖν*»; SR omite o artigo «*ὁ*»; 𝔓52 omite a ordem de Pilatos («*Λάβετε αὐτὸν ὑμεῖς … κρίνατε αὐτόν*»).
+
+**18:32**
+
+- *ἤμελλεν ἀποθνῄσκειν* (ēmellen apothnēskein), «havia de morrer», imperfeito com infinitivo; a referência é a 12:32–33, onde Jesus fala de ser levantado da terra. A morte pela cruz é a do poder romano.
+
+**18:33**
+
+- *ἐφώνησεν* (ephōnēsen), «chamou», verbo de quem convoca alguém à presença da autoridade; *βασιλεύς* (basileus), «rei»: a pergunta do processo romano é sobre o título político.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:33: a base lê «*πάλιν εἰς τὸ πραιτώριον*» com WH, Treg e NA28; RP inverte, «*εἰς τὸ πραιτώριον πάλιν*». Na colação, 01, 02, KJTR, RP, ST e Scrivener mudam a posição de «*πάλιν*»; 02 lê «*αὐτοῖς*» em lugar de «*αὐτῷ*».
+
+**18:34**
+
+- *ἀπὸ σεαυτοῦ* (apo seautou), «por ti mesmo», isto é, por iniciativa própria; *εἶπόν σοι* (eipon soi), «disseram-te». A pergunta leva Pilatos a dizer de onde vem a acusação.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:34: a base lê «*ἀπεκρίθη*», «*Ἀπὸ σεαυτοῦ*» e «*εἶπόν σοι*» com WH, Treg e NA28; RP acrescenta «*αὐτῷ ὁ*» depois de «*ἀπεκρίθη*», lê «*Ἀφʼ ἑαυτοῦ*» e inverte, «*σοι εἶπόν*». Na colação, KJTR, RP, ST e Scrivener têm a mesma leitura de RP; 01 lê «*εἴπας*» em lugar de «*λέγεις*»; 02 lê «*ἀπεκρίνατο ὁ*» em lugar de «*ἀπεκρίθη*».
+
+**18:35**
+
+- *μήτι* (mēti), «por acaso», partícula que espera resposta negativa; *ἔθνος* (ethnos), «nação», usado para o povo judeu. Pilatos afasta-se do assunto religioso, que lhe é estranho.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01 e 032 leem «*μή*» em lugar de «*μήτι*»; 𝔓66 lê «*μὴ γάρ*»; 01 lê «*ὁ ἀρχιερεύς*» em lugar de «*οἱ ἀρχιερεῖς*».
+
+**18:36**
+
+- *ἠγωνίζοντο ἄν* (ēgōnizonto an), «teriam combatido», imperfeito com *ἄν*, que marca a condição irreal: não combateram, porque o reino não é deste mundo. *ἐντεῦθεν* (entheuthen), «daqui», indica a origem do reino.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:36: a base lê «*οἱ ἐμοὶ ἠγωνίζοντο ἄν*» com WH, Treg e NA28; RP lê «*ἄν οἱ ἐμοὶ ἠγωνίζοντο*». Na colação, KJTR e RP leem «*ἄν*» antes de «*οἱ*»; ST e Scrivener acrescentam «*ὁ*» e mudam a posição de «*ἄν*»; 04 omite desde «*εἰ ἐκ τοῦ κόσμου τούτου*» até «*ἐντεῦθεν*»; 𝔓66 omite «*ἄν*» e lê «*βασιλία*»; 𝔓90 (fragmento) omite desde «*ἀπεκρίθη Ἰησοῦς*» até «*ἦν ἡ*».
+
+**18:37**
+
+- *Σὺ λέγεις* (Sy legeis), «tu dizes», resposta que devolve a Pilatos a palavra; *γεγέννημαι* (gegennēmai), «nasci», perfeito: o nascimento tem efeito presente; *μαρτυρήσω* (martyrēsō), «darei testemunho». O testemunho da verdade é o centro da missão.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:37: a base lê «*ὁ Ἰησοῦς*» com WH, Treg e NA28; RP omite o artigo. A base lê «*βασιλεύς εἰμι*» com WH, Treg e NA28; RP acrescenta «*ἐγώ*» depois de «*εἰμι*». Na colação, 02, KJTR, ST e Scrivener acrescentam «*ἐγώ*»; 01 lê «*περὶ τῆς ἀληθείας*» («sobre a verdade») em lugar de «*τῇ ἀληθείᾳ*» («à verdade»). 𝔓52 omite «*Εἶπεν οὖν αὐτῷ ὁ Πιλᾶτος· Οὐκοῦν βασιλεύς εἶ σύ; ἀπεκρίθη ὁ Ἰησοῦς· Σὺ λέγεις ὅτι βασιλεύς εἰμι ἐγώ· εἰς*» e uma ocorrência de «*εἰς τοῦτο*».
+
+**18:38**
+
+- *Τί ἐστιν ἀλήθεια* (ti estin alētheia), «o que é a verdade?», sem artigo: Pilatos responde ao testemunho com ceticismo. *αἰτίαν* (aitian), «culpa», termo jurídico: a declaração é de não culpa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:38: a base lê «*εὑρίσκω ἐν αὐτῷ αἰτίαν*» com WH, Treg e NA28; RP inverte, «*αἰτίαν εὑρίσκω ἐν αὐτῷ*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, ST e Scrivener mudam a posição de «*αἰτίαν*»; 𝔓52 omite «*εὑρίσκω ἐν αὐτῷ αἰτίαν*».
+
+**18:39**
+
+- *συνήθεια* (synētheia), «costume», prática pública; *βούλεσθε* (boulesthe), «querem», com o sentido de escolha deixada ao povo; *ἀπολύσω* (apolysō), «soltarei», verbo de libertar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:39: a base lê «*ἀπολύσω ὑμῖν*» com WH, Treg e NA28, nas duas ocorrências; RP inverte, «*ὑμῖν ἀπολύσω*». Na colação, KJTR, RP, ST e Scrivener invertem as duas ocorrências; 02 lê «*βουλέσθαι*» em lugar de «*βούλεσθε*»; 032 lê «*ἀπολύω*» e «*βουλέσθαι*».
+
+**18:40**
+
+- *λῃστής* (lēstēs), «assaltante», bandido de estrada ou de violência. A escolha de Barrabás é feita pelo grito do povo, e o texto descreve o homem sem comentar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 18:40: a base lê «*πάλιν*» com WH e NA28; Treg e RP acrescentam «*πάντες*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*πάντες*»; 𝔓66 omite «*οὖν*» e acrescenta «*πάντες*».
+
+### Notas do capítulo 19
+
+**19:1**
+
+- *ἐμαστίγωσεν* (emastigōsen), «açoitou»: flagelação, castigo que antecedia a crucificação. O sujeito é Pilatos, e o verbo está no aoristo, como ato consumado.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01, 032 e 𝔓90 leem «*λαβών*» em lugar de «*ἔλαβεν*».
+
+**19:2**
+
+- *στέφανον ἐξ ἀκανθῶν* (stephanon ex akanthōn), «coroa de espinhos»; *ἱμάτιον πορφυροῦν* (himation porphyroun), «manto de púrpura». Os soldados imitam a realeza para zombar de Jesus.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 02 lê «*ἐπὶ τὴν*» em lugar de «*τῇ*» antes de «*κεφαλῇ*»; 𝔓66 muda a posição de «*στέφανον*».
+
+**19:3**
+
+- *Χαῖρε* (Chaire), «salve», a saudação de um rei, usada aqui com ironia; *ῥαπίσματα* (rhapismata), «bofetadas»: a zombaria chega à violência.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:3: a base lê «*ἤρχοντο πρὸς αὐτὸν καὶ*» com WH, Treg e NA28; RP omite. Na colação, 02, KJTR, RP, ST e Scrivener omitem essa oração e leem «*ἐδίδουν*» em lugar de «*ἐδίδοσαν*».
+
+**19:4**
+
+- *Ἴδε* (ide), «vejam», chama a atenção do povo; *ἄγω* (agō), «trago», verbo de conduzir uma pessoa. Pilatos repete a declaração de não culpa (cf. 18:38), agora com Jesus diante do povo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:4: a base lê «*καὶ ἐξῆλθεν*» com WH, Treg e NA28; RP lê «*Ἐξῆλθεν οὖν*». A base lê «*οὐδεμίαν αἰτίαν εὑρίσκω ἐν αὐτῷ*» com WH, Treg e NA28; RP lê «*ἐν αὐτῷ οὐδεμίαν αἰτίαν εὑρίσκω*». Na colação, 𝔓66, 𝔓90 e SR leem «*οὐχ εὑρίσκω*» em lugar de «*οὐδεμίαν αἰτίαν εὑρίσκω*»; KJTR, RP, ST e Scrivener acrescentam «*οὖν*». 01 lê «*τί*» em lugar de «*ὅτι*», com «*ἐν αὐτῷ*» depois de «*εὑρίσκω*» («*ἵνα γνῶτε τί αἰτίαν οὐδεμίαν εὑρίσκω ἐν αὐτῷ*»).
+
+**19:5**
+
+- *φορῶν* (phorōn), «trazendo», particípio presente: Jesus aparece com as insígnias da realeza zombada. *ὁ ἄνθρωπος* (ho anthrōpos), «o homem»: Pilatos mostra Jesus humilhado, em exposição pública.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:5: a base lê «*Ἰδοὺ*» com WH, Treg e NA28; RP lê «*Ἴδε*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἴδε*»; 𝔓66 lê «*ἔχων*» em lugar de «*φορῶν*» e omite «*καὶ λέγει αὐτοῖς· Ἰδοὺ ὁ ἄνθρωπος*».
+
+**19:6**
+
+- *Σταύρωσον* (Staurōson), «crucifica», imperativo repetido no grito. Pilatos devolve a decisão aos acusadores ao dizer «tomem-no vocês».
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:6: a base lê «*σταύρωσον*» repetido com WH, Treg e NA28; RP acrescenta «*αὐτόν*» depois de «*σταύρωσον*». Na colação, 01 e 02 acrescentam «*αὐτόν*»; 𝔓90 lê «*αὐτόν*» em lugar de uma das ocorrências de «*σταύρωσον*»; 𝔓66 lê «*σον σον*» (forma truncada).
+
+**19:7**
+
+- *ὀφείλει ἀποθανεῖν* (opheilei apothanein), «deve morrer»; *υἱὸν θεοῦ ἑαυτὸν ἐποίησεν*, «fez-se Filho de Deus». A acusação passa de política a religiosa, e por isso Pilatos fica temeroso (v. 8).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:7: a base lê «*νόμον*» com WH, Treg e NA28; RP acrescenta «*ἡμῶν*» depois de «*νόμον*». A base lê «*υἱὸν θεοῦ ἑαυτὸν*» com WH, Treg e NA28; RP lê «*ἑαυτὸν υἱὸν θεοῦ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*ἡμῶν*»; 032 e Scrivener acrescentam «*τοῦ*». 𝔓90 (fragmento) omite de «*νόμον ὀφείλει ἀποθανεῖν*» até «*ἐποίησεν*».
+
+**19:8**
+
+- *μᾶλλον ἐφοβήθη* (mallon ephobēthē), «ficou ainda mais temeroso»: o medo cresce com a palavra sobre a filiação divina.
+
+**19:9**
+
+- *Πόθεν εἶ σύ* (Pothen ei sy), «de onde és tu?»: Pilatos pergunta pela origem de Jesus, e Jesus não responde. O silêncio diante do juiz continua o tema de 18:34–37.
+
+**19:10**
+
+- *ἐξουσίαν* (exousian), «poder», palavra-chave do diálogo: Pilatos alega ter poder sobre a vida de Jesus. O verbo *σταυρῶσαι* (staurōsai), «crucificar», fecha a frase.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:10: a base lê «*ἀπολῦσαί σε … ἔχω σταυρῶσαί*» com WH, Treg e NA28; RP inverte, «*σταυρῶσαί σε … ἔχω ἀπολῦσαί*». Na colação, 032, 𝔓66, KJTR, RP, ST e Scrivener trocam os dois infinitivos, «*ἀπολῦσαι*» e «*σταυρῶσαι*».
+
+**19:11**
+
+- *ἄνωθεν* (anōthen), «do alto», é o poder que vem de Deus. O texto não diz quem entregou Jesus a Pilatos; o contexto aponta para os principais sacerdotes (18:35).
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:11: RP omite «*αὐτῷ*» e inverte «*κατʼ ἐμοῦ οὐδεμίαν*» e «*δεδομένον σοι*». A base lê «*παραδούς*» com WH e NA28; Treg e RP leem «*παραδιδούς*». Na colação, 01, 02, 032, KJTR, ST e Scrivener leem «*ὁ*» em lugar de «*αὐτῷ*» ou acrescentam-no; 02, 032, KJTR, RP, ST e Scrivener leem «*παραδιδούς*».
+
+**19:12**
+
+- *φίλος τοῦ Καίσαρος* (philos tou Kaisaros), «amigo de César», título de lealdade ao imperador; *ἀντιλέγει* (antilegei), «opõe-se», verbo de contestação. A ameaça é política: soltar Jesus seria trair o imperador.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:12: a base lê «*ὁ Πιλᾶτος ἐζήτει*» com WH, Treg e NA28; RP inverte, «*ἐζήτει ὁ Πιλᾶτος*». A base lê «*ἐκραύγασαν*» com WH, Treg e NA28; RP lê «*ἔκραζον*». Na colação, 01 lê «*ἔλεγον*»; 02 e 032 leem «*ἐκραύγαζον*» (imperfeito); KJTR, RP, ST e Scrivener leem «*ἔκραζον*»; ST e Scrivener leem «*αὐτόν*» em lugar de «*ἑαυτόν*».
+
+**19:13**
+
+- *βήματος* (bēmatos), «tribunal», lugar elevado onde o juiz se senta; *Λιθόστρωτον* (Lithostrōton), «Litóstrotos», pavimento de pedra; *Ἑβραϊστί* (Hebraisti), «em hebraico», como o evangelho designa a língua local; *Γαββαθα* (Gabbatha), nome do mesmo lugar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:13: a base lê «*τῶν λόγων τούτων*» com WH, Treg e NA28; RP lê «*τοῦτον τὸν λόγον*». A base lê «*ἐπὶ*» com WH, Treg e NA28; RP acrescenta «*τοῦ*» depois de «*ἐπὶ*». Na colação, KJTR, RP, ST, Scrivener e 032 acrescentam «*τοῦ*»; 01 lê «*Γολγοθᾶ*» em lugar de «*Γαββαθα*».
+
+**19:14**
+
+- *παρασκευή* (paraskeuē), «preparação», o dia que antecede o sábado; *ὥρα ἕκτη* (hōra hekytē), «hora sexta», cerca do meio-dia. O evangelho situa esta cena no dia da preparação da Páscoa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:14: a base lê «*ἦν ὡς*» com WH, Treg e NA28; RP lê «*δὲ ὡσεί*». Na colação, KJTR, RP, ST e Scrivener leem «*δὲ ὡσεί*»; 032 lê «*ἔλεγεν*» em lugar de «*λέγει*».
+
+**19:15**
+
+- *Ἆρον* (Aron), «tira», imperativo: o grito pede que o tirem de cena. Os principais sacerdotes fecham o diálogo com a confissão de que não têm rei senão César.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:15: a base lê «*ἐκραύγασαν οὖν ἐκεῖνοι*» com WH, Treg e NA28; RP lê «*Οἱ δὲ ἐκραύγασαν*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener leem «*οἱ δὲ*» e omitem «*οὖν ἐκεῖνοι*»; 01 e 032 leem «*ἔλεγον*»; 02 lê «*ἐκραύγασον*» (imperativo).
+
+**19:16**
+
+- *παρέδωκεν* (paredōken), «entregou», aoristo; *ἵνα σταυρωθῇ* (hina staurōthē), «para ser crucificado»: a entrega cumpre-se. Com esta frase, a responsabilidade do governador passa ao grupo que o leva.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:16: a base lê «*οὖν*» com WH, Treg e NA28; RP lê «*δέ*». A base lê «*Ἰησοῦν*» com WH, Treg e NA28; RP acrescenta «*καὶ ἤγαγον*» depois de «*Ἰησοῦν*». Na colação, 02, KJTR, ST e Scrivener leem «*δέ*» e acrescentam «*καὶ ἀπήγαγον*»; SR acrescenta «*αὐτὸν ἀπήγαγον*»; 01 e 032 leem «*οἱ δὲ … λαβόντες*» em lugar de «*παρέλαβον οὖν*».
+
+**19:17**
+
+- *βαστάζων* (bastazōn), «levando»; *Κρανίου Τόπον* (Kraniou Topon), «Lugar da Caveira»; *Γολγοθᾶ* (Golgothā), «Gólgota», nome aramaico do lugar. O texto diz que Jesus levava a própria cruz.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:17: a base lê «*αὑτῷ*» com WH e Treg; NA28 lê «*ἑαυτῷ*»; RP lê «*τὸν σταυρὸν αὐτοῦ*» em lugar de «*αὑτῷ τὸν σταυρὸν*» e «*ὅς*» em lugar de «*ὃ*». Na colação, 01, 032, SR e 𝔓66 leem «*ἑαυτῷ*»; 02 lê «*ἑαυτοῦ*» em lugar de «*αὐτῷ*»; 03 lê «*λέγετε*» em lugar de «*λέγεται*»; KJTR, RP, ST e Scrivener leem «*αὐτοῦ*» e «*ὅς*»; RP omite o artigo «*τόν*» antes de «*τόπον*»; 𝔓121 omite «*καὶ βαστάζων … ὃ λέγεται*» (fragmento).
+
+**19:18**
+
+- *ἐσταύρωσαν* (estaurōsan), «crucificaram», aoristo: a crucificação já aconteceu. Jesus fica no meio dos dois, e a cena o coloca no centro.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 𝔓121 omite «*καὶ ἐντεῦθεν, μέσον δὲ τὸν Ἰησοῦν*» (fragmento); 𝔓66 lê «*ἐσαν*» em lugar de «*ἐσταύρωσαν*» (leitura incerta).
+
+**19:19**
+
+- *τίτλον* (titlon), «título», o letreiro que indicava a acusação; *γεγραμμένον* (gegrammenon), «escrito», perfeito: o letreiro continua escrito na cruz. O título é a acusação política, e não uma profissão de fé.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 02 lê «*ἐπέθηκεν*» em lugar de «*ἔθηκεν*»; 𝔓66 lê «*σου*» em lugar de «*σταυροῦ*» (leitura incerta).
+
+**19:20**
+
+- *Ἑβραϊστί* (Hebraisti), «em hebraico»; *Ῥωμαϊστί* (Rhōmaisti), «em latim»; *Ἑλληνιστί* (Hellēnisti), «em grego». As três línguas mostram que o título era público e ao alcance de todos.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:20: a base lê «*Ῥωμαϊστί, Ἑλληνιστί*» com WH, Treg e NA28; RP lê «*Ἑλληνιστί, Ῥωμαϊστί*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*Ἑλληνιστί*» antes de «*Ῥωμαϊστί*»; 032 lê «*τότε*» em lugar de «*τοῦτον*» e «*Ἑβραϊστί*» em lugar de «*Ἑλληνιστί*».
+
+**19:21**
+
+- *Μὴ γράφε* (Mē graphe), «não escrevas»: os sacerdotes pedem a Pilatos que mude o título. A mudança proposta reduz a realeza de Jesus a uma pretensão dita por ele.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:21: a base lê «*τῶν Ἰουδαίων εἰμί*» com WH e Treg; NA28 e RP leem «*εἰμι τῶν Ἰουδαίων*». Na colação, 01, 02, 032, 𝔓66, KJTR, RP, SR, ST e Scrivener reordenam «*εἰμι*»; 032 lê «*εἰμει*».
+
+**19:22**
+
+- *Ὃ γέγραφα γέγραφα* (ho gegrapha gegrapha), «o que escrevi, escrevi»: recusa firme de Pilatos. O perfeito indica um escrito que permanece.
+
+**19:23**
+
+- *χιτών* (chitōn), «túnica»; *ἄραφος* (araphos), «sem costura»; *ὑφαντὸς διʼ ὅλου* (hyphantos di’ holou), «tecida de alto a baixo»: a túnica não se podia repartir sem ser estragada.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 01 lê «*οἱ σταυρώσαντες*» em lugar de «*ὅτε ἐσταύρωσαν*» e omite «*καὶ τὸν χιτῶνα*».
+
+**19:24**
+
+- *Διεμερίσαντο* (diemerisanto), «repartiram»: citação do Sl 22:18, dada com as palavras do salmo. *ἵνα … πληρωθῇ* (hina plērōthē), «para que se cumprisse»: a cena cumpre a Escritura.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:24: a base lê «*ἡ λέγουσα*» com Treg, NA28 e RP; WH omite. Na colação, 01 e 03 também omitem «*ἡ λέγουσα*»; 032 omite «*ἑαυτοῖς*»; 01 lê «*αὐτούς*» em lugar de «*ἀλλήλους*».
+
+**19:25**
+
+- *Εἱστήκεισαν* (heistēkeisan), «estavam de pé», imperfeito: as mulheres permanecem junto à cruz. *Μαρία ἡ τοῦ Κλωπᾶ*, literalmente «Maria, a de Clopas», identifica a segunda Maria pelo marido.
+- **Crítica Textual.** Aparato: sem variante. Na colação, 032 omite «*τοῦ Ἰησοῦ*»; 01 lê «*Μαριαμ*» em lugar de «*Μαρία*».
+
+**19:26**
+
+- *γύναι* (gynai), «mulher», vocativo: Jesus não usa o termo «mãe» ao falar com ela. *ἴδε* (ide), «eis», introduz a entrega do discípulo à mãe.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:26: a base lê «*τῇ μητρί*» com WH, Treg e NA28; RP acrescenta «*αὐτοῦ*» depois de «*μητρί*». A base lê «*ἴδε*» com WH, Treg e NA28; RP lê «*ἰδοὺ*». Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*αὐτοῦ*» e leem «*ἰδού*»; SR lê «*ἰδού*»; 032 omite «*παρεστῶτα*»; 01 lê «*δέ*» em lugar de «*οὖν*».
+
+**19:27**
+
+- *Ἴδε* (ide), «eis»; *εἰς τὰ ἴδια* (eis ta idia), «para a sua casa», expressão de quem acolhe alguém no seu lar. O discípulo passa a cuidar dela.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:27: a base lê «*Ἴδε*» com WH, Treg e NA28; RP lê «*Ἰδοὺ*». Na colação, 02 lê «*ἡμέρας*» em lugar de «*ὥρας*»; KJTR, RP, ST e Scrivener leem «*ἰδοὺ*»; 01 e 032 leem «*εἶδε*».
+
+**19:28**
+
+- *τετέλεσται* (tetelestai), «está consumado», perfeito: a obra está completa e continua concluída; *διψῶ* (dipsō), «tenho sede», remete ao Sl 69:21 sem o citar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:28: a base lê «*εἰδώς*» e «*ἤδη πάντα*» com WH, Treg e NA28; RP lê «*ἰδών*» e «*πάντα ἤδη*». Na colação, RP, KJTR, ST e Scrivener invertem «*ἤδη*» e «*πάντα*»; 032 omite «*ἤδη*»; 01 lê «*πληρωθῇ*» em lugar de «*τελειωθῇ*».
+
+**19:29**
+
+- *ὄξος* (oxos), «vinagre», vinho azedo, bebida comum dos soldados; *ὑσσώπῳ* (hyssōpō), «hissopo», planta usada para aspergir sangue (cf. Êx 12:22). O gesto faz a ligação com a Páscoa.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:29: RP acrescenta «*οὖν*» depois de «*σκεῦος*»; a base lê «*σπόγγον οὖν μεστὸν τοῦ*» com WH, Treg e NA28, e RP lê «*οἱ δὲ πλήσαντες σπόγγον*»; a base lê «*ὑσσώπῳ*» e RP lê «*καὶ ὑσσώπῳ*». Na colação, 02 lê «*οἱ δὲ πλήσαντες σπόγγον*», como RP; 01 acrescenta «*δέ*» e omite «*τοῦ*»; KJTR, RP, ST e Scrivener acrescentam «*καὶ*».
+
+**19:30**
+
+- *Τετέλεσται* (Tetelestai), «está consumado»: a palavra final da obra; *παρέδωκεν τὸ πνεῦμα* (paredōken to pneuma), «entregou o espírito». O verbo mostra que Jesus entrega o espírito, e não que o perde.
+
+**19:31**
+
+- *παρασκευή* (paraskeuē), «preparação», a sexta-feira; *ἵνα μὴ μείνῃ* (hina mē meinē), «para que não ficassem»: a lei que proíbe deixar corpos na cruz no sábado. *κατεαγῶσιν* (kataeagōsin), «quebrassem»: quebrar as pernas acelerava a morte.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:31: a base lê «*ἐπεὶ παρασκευὴ ἦν*» antes de «*ἵνα … σαββάτῳ*» com WH, Treg e NA28; RP desloca a oração para depois de «*σαββάτῳ*». Na colação, 02, RP e ST deslocam a oração; 01 acrescenta «*οὖν*».
+
+**19:32**
+
+- *συσταυρωθέντος* (systaurōthentos), «crucificado com»: o outro crucificado é um dos dois do v. 18.
+
+**19:33**
+
+- *τεθνηκότα* (tethnēkota), «morto», perfeito: a morte já aconteceu. O texto justifica por que não lhe quebraram as pernas.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:33: a base lê «*ἤδη αὐτὸν*» com WH, Treg e NA28; RP lê «*αὐτὸν ἤδη*». Na colação, 02, KJTR, RP, ST e Scrivener mudam a posição de «*αὐτόν*»; 01 lê «*εὗρον αὐτόν*» em lugar de «*ὡς εἶδον*».
+
+**19:34**
+
+- *λόγχῃ* (logchē), «lança»; *ἔνυξεν* (enyxen), «furou», verbo de ferir com a ponta. O pormenor do sangue e da água é dado pelo texto, que o associa à testemunha do v. 35.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:34: a base lê «*ἐξῆλθεν εὐθύς*» com WH, Treg e NA28; RP lê «*εὐθέως ἐξῆλθεν*». Na colação, 02, KJTR, RP, ST e Scrivener usam a mesma ordem de RP.
+
+**19:35**
+
+- *ἑωρακώς* (heōrakōs), «quem viu», perfeito: o testemunho vem de quem viu e guarda o que viu; *μεμαρτύρηκεν* (memartyrēken), «deu testemunho», perfeito. O texto afirma a própria verdade do testemunho, com o fim de fazer crer.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:35: RP inverte «*αὐτοῦ ἐστιν*» e omite «*καὶ*» antes de «*ὑμεῖς*». A base lê «*πιστεύητε*» com WH e Treg; NA28 e RP leem «*πιστεύσητε*». Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*πιστεύσητε*»; 032 lê «*πιστεύσηται*».
+
+**19:36**
+
+- *Ὀστοῦν οὐ συντριβήσεται* (Ostoun ou syntribēsetai), «nenhum osso será quebrado», remete a Êx 12:46 e Sl 34:20. O cumprimento da Escritura é o do cordeiro pascal.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:36: a base lê «*αὐτοῦ*» com WH, Treg e NA28; RP lê «*ἀπʼ αὐτοῦ*». Na colação, 01 e RP acrescentam «*ἀπʼ*».
+
+**19:37**
+
+- *Ὄψονται* (Opsontai), «olharão», futuro; *ἐξεκέντησαν* (exekentēsan), «transpassaram», verbo de ferir com lança. A citação é de Zc 12:10.
+
+**19:38**
+
+- *κεκρυμμένος* (kekrymmenos), «escondido», particípio perfeito: José era discípulo em segredo, por medo. *ἀπὸ Ἁριμαθαίας*, «de Arimateia», indica a terra de origem.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:38: a base lê «*δὲ*» com WH, Treg e NA28; RP omite. A base lê «*ἀπὸ*» com WH e Treg; NA28 e RP leem «*ὁ ἀπὸ*». A base lê «*αὐτοῦ*» com WH, Treg e NA28; RP lê «*τοῦ Ἰησοῦ*». Na colação, 01, 032 e SR leem «*ἦλθον*» e «*ἦραν αὐτόν*» em lugar de «*ἦλθεν … ἦρεν τὸ σῶμα αὐτοῦ*»; 02 omite «*καὶ ἐπέτρεψεν ὁ Πιλᾶτος· ἦλθεν οὖν καὶ ἦρεν τὸ σῶμα αὐτοῦ*»; KJTR, RP, ST e Scrivener leem «*τοῦ Ἰησοῦ*».
+
+**19:39**
+
+- *νυκτὸς τὸ πρῶτον* (nyktos to prōton), «de noite, pela primeira vez», refere-se a 3:1–2; *λίτρας ἑκατόν* (litras hekaton), «cem libras», cerca de 33 kg de aromas, quantidade de grande honra.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:39: a base lê «*αὐτόν*» com WH, Treg e NA28; RP lê «*τὸν Ἰησοῦν*». A base lê «*μίγμα*» com Treg, NA28 e RP; WH lê «*ἕλιγμα*». Na colação, 01, 03, 032, SR e WH leem «*ἕλιγμα*»; 01 e 032 leem «*ἔχων*» em lugar de «*φέρων*»; KJTR, RP, ST e Scrivener leem «*τὸν Ἰησοῦν*».
+
+**19:40**
+
+- *ὀθονίοις* (othoniois), «panos de linho»; *ἐνταφιάζειν* (entaphiazein), «sepultar», verbo do enterro judaico. O texto descreve o costume sem comentar o seu sentido.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:40: a base lê «*αὐτὸ*» com WH, Treg e NA28; RP acrescenta «*ἐν*» depois de «*αὐτὸ*». Na colação, 02 lê «*τοῦ θεοῦ*» em lugar de «*τοῦ Ἰησοῦ*»; 01 e 032 leem «*ἦν*» em lugar de «*ἐστιν*».
+
+**19:41**
+
+- *κῆπος* (kēpos), «jardim», e *μνημεῖον καινόν* (mnēmeion kainon), «sepulcro novo»: o detalhe prepara o relato da ressurreição, sem o nomear aqui.
+- **Crítica Textual.** Aparato de edições SBLGNT, 19:41: a base lê «*ἦν τεθειμένος*» com WH e NA28; Treg e RP leem «*ἐτέθη*». Na colação, 02, KJTR, RP, ST e Scrivener leem «*ἐτέθη*».
+
+**19:42**
+
+- *παρασκευήν* (paraskeuēn), «preparação»; *ἐγγὺς* (engys), «perto», explica a escolha do sepulcro. O sepultamento foi feito depressa, por causa do sábado que se aproximava.
+
+### Notas do capítulo 20
+
+**20:1**
+
+- *τῇ μιᾷ τῶν σαββάτων* (tē mia tōn sabbatōn), «no primeiro dia da semana», expressão que conta a semana a partir do sábado; *πρωῒ σκοτίας ἔτι οὔσης* (prōi skotias eti ousēs), «de madrugada, ainda estava escuro», com genitivo absoluto. *Μαρία ἡ Μαγδαληνή* (Maria hē Magdalēnē), «Maria Madalena», a mulher que esteve junto da cruz (19:25) e que vê primeiro o túmulo vazio.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:1. Na colação, 01 e 032 acrescentam «*ἀπὸ τῆς θύρας*» («da porta») depois de «*ἠρμένον*», e 032 lê «*ἐπί*» em lugar de «*εἰς*» e omite «*πρωΐ*». A base não tem estas palavras: a frase já diz que a pedra foi retirada do túmulo, e a expressão «da porta» não é necessária ao sentido.
+
+**20:2**
+
+- *τρέχει* (trechei), «corre»; *ἐφίλει* (ephilei), «amava», de *φιλέω*, verbo de afeto, próximo de *ἀγαπάω*; a tradução usa «amava» também para *ἠγάπα* de 13:23 e 21:7, sem distinguir os verbos. *Ἦραν* (ēran), «levaram», aoristo de *αἴρω*, «tirar, levar». Maria fala no plural («não sabemos»), como quem supõe que outros levaram o corpo.
+
+**20:3**
+
+- *ἐξῆλθεν* (exēlthen), «saiu»; *ἤρχοντο* (ērchonto), «iam», imperfeito que mostra o percurso em curso. O verbo está no plural, com os dois discípulos como sujeito. Pedro e o outro discípulo seguem a notícia de Maria.
+- **Crítica Textual.** Na colação, 01 omite «*καὶ ἤρχοντο εἰς τὸ μνημεῖον*» (e iam para o túmulo). A base mantém o final do versículo, porque é o que move a cena para o túmulo em 20:4.
+
+**20:4**
+
+- *ἔτρεχον* (etrechon), «corriam», imperfeito; *προέδραμεν* (proedramen), «correu à frente»; *τάχιον* (tachion), «mais depressa», comparativo de *ταχύς*. O texto não nomeia o outro discípulo, como também não o nomeia em 13:23 e 21:7.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:4. Na colação, 01 omite «*καὶ ὁ ἄλλος μαθητής*» (e o outro discípulo), o que deixa Pedro como único sujeito da corrida. 032 lê «*ἐπί*» em lugar de «*εἰς*». A base mantém o outro discípulo, porque a comparação entre os dois é o centro do versículo.
+
+**20:5**
+
+- *παρακύψας* (parakypsas), «inclinando-se», particípio de *παρακύπτω*; *ὀθόνια* (othonia), «panos de linho», as faixas em que o corpo fora envolvido (19:40); *κείμενα* (keimena), «estendidos». O discípulo vê de fora e espera.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:5. Na colação, 01 omite «*οὐ μέντοι εἰσῆλθεν*» (mas não entrou). A base mantém a recusa de entrar, que prepara a entrada de Pedro em 20:6.
+
+**20:6**
+
+- *ἀκολουθῶν* (akolouthōn), «seguindo», particípio que mostra Pedro atrás do outro discípulo; *θεωρεῖ* (theōrei), «vê», presente histórico. Pedro entra primeiro, ao contrário do outro discípulo.
+- **Crítica Textual.** O aparato da SBLGNT regista a palavra «*καί*» antes de «*Σίμων*»: a base lê «*καὶ Σίμων Πέτρος*», com WH, Treg e NA28; RP omite-a, e 02, KJTR, ST e Scrivener também. A tradução mantém «também», que traduz *καί*; a diferença é pequena e não muda o sentido.
+
+**20:7**
+
+- *σουδάριον* (soudarion), «pano para a cabeça», termo emprestado do latim; *ἐντετυλιγμένον* (entetyligmenon), «enrolado», perfeito de *ἐντυλίσσω*; *χωρὶς εἰς ἕνα τόπον* (chōris eis hena topon), «à parte, num lugar». O pormenor mostra que ninguém levou o corpo às pressas.
+
+**20:8**
+
+- *τότε οὖν* (tote oun), «então»; *εἶδεν* (eiden), «viu»; *ἐπίστευσεν* (episteusen), «acreditou», aoristo: a fé nasce do que vê, antes da compreensão da Escritura que o versículo seguinte aponta.
+
+**20:9**
+
+- *οὐδέπω* (oudepō), «ainda não»; *ᾔδεισαν* (ēdeisan), «sabiam», mais-que-perfeito de *οἶδα*; *τὴν γραφήν* (tēn graphēn), «a Escritura»; *δεῖ* (dei), «é necessário», com *ἀναστῆναι* (anastēnai), «ressuscitar». O versículo explica que a fé do outro discípulo ainda não se apoia na Escritura.
+
+**20:10**
+
+- *ἀπῆλθον* (apēlthon), «voltaram»; *πρὸς αὑτούς* (pros heautous), «para junto de si», expressão que quer dizer «para casa». A cena dos discípulos termina aqui e volta-se a Maria.
+- **Crítica Textual.** O aparato da SBLGNT regista três formas do pronome reflexivo. A base segue WH, que lê «*αὑτοὺς*»; Treg e NA28 leem «*αὐτοὺς*», sem reflexivo, e RP lê «*ἑαυτοὺς*». As três formas querem dizer «para junto de si»; a diferença é de grafia e de forma pronominal.
+
+**20:11**
+
+- *εἱστήκει* (heistēkei), «estava de pé», perfeito com sentido de estado; *κλαίουσα* (klaiousa), «a chorar», particípio de *κλαίω*; *ἔκλαιεν* (eklaien), «chorava», imperfeito. A repetição de «chorar» descreve a dor de Maria antes do reconhecimento.
+- **Crítica Textual.** O aparato da SBLGNT regista a ordem «*πρὸς τῷ μνημείῳ ἔξω κλαίουσα*», com WH, Treg e NA28; RP lê «*τὸ μνημεῖον κλαίουσα ἔξω*», com KJTR, ST e Scrivener. A ordem muda, mas o sentido é o mesmo, com «do lado de fora» e o túmulo como ponto de referência. Na colação, 01 lê «*ἐν τῷ μνημίῳ*» (no túmulo) em lugar de «*πρὸς τῷ μνημείῳ*» (junto ao túmulo), e 01 e 02 omitem «*ἔξω*». Essas leituras dizem que Maria estava dentro, ou não dizem a posição; a base mantém «junto ao túmulo, do lado de fora», que é o que a cena pede. 𝔓5 tem lacuna nas primeiras palavras («*Μαρία δὲ εἱστήκει πρὸς τῷ*»), que a colação dá entre colchetes; o resto segue a base.
+
+**20:12**
+
+- *λευκοῖς* (leukois), «de branco»; *καθεζομένους* (kathezomenous), «sentados»; *πρὸς τῇ κεφαλῇ* (pros tē kephalē), «à cabeceira»; *πρὸς τοῖς ποσίν* (pros tois posin), «aos pés». Os anjos ocupam o lugar onde o corpo esteve, como os panos de 20:5–7.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:12. Na colação, 01 omite «*δύο*» (dois), o que deixa a cena com um número diferente de anjos. A base mantém os dois.
+
+**20:13**
+
+- *Γύναι* (gynai), «mulher», vocativo de tratamento respeitoso; *τί κλαίεις* (ti klaieis), «porque choras»; *Κύριόν μου* (kyrion mou), «o meu Senhor». Maria usa a palavra «Senhor» sem ter ainda reconhecido Jesus.
+- **Crítica Textual.** Na colação, 05 lê «*τίνα ζητεῖς*» (a quem procuras?) em lugar de «*τί κλαίεις*» (porque choras), e tem «*τεθείκαν*» em lugar de «*ἔθηκαν*» (puseram). A testemunha 032 lê «*τεθείκασιν*» (tinham posto) na mesma posição. A base mantém a pergunta sobre o choro, que prepara o diálogo com Jesus em 20:15.
+
+**20:14**
+
+- *ταῦτα εἰποῦσα* (tauta eiposa), «depois de dizer isto»; *ἐστράφη* (estraphē), «voltou-se»; *ἑστῶτα* (hestōta), «de pé»; *οὐκ ᾔδει* (ouk ēdei), «não sabia». O reconhecimento não é imediato: o texto põe a cena na ignorância de Maria.
+- **Crítica Textual.** O aparato da SBLGNT regista a palavra «*Καὶ*» antes de «*ταῦτα*» em RP. A base lê «*ταῦτα εἰποῦσα*», com WH, Treg e NA28; RP, KJTR, ST e Scrivener acrescentam «*καί*» (e). A base não o tem, e a frase fica mais curta sem perder o sentido.
+
+**20:15**
+
+- *κηπουρός* (kēpouros), «jardineiro», a pessoa que cuida do jardim; *ἐβάστασας* (ebastasas), «levaste», aoristo de *βαστάζω*; *κἀγὼ αὐτὸν ἀρῶ* (kagō auton arō), «eu o levarei»: Maria oferece-se para levar o corpo. A ironia da cena está em o leitor saber quem fala.
+- **Crítica Textual.** O aparato da SBLGNT regista, em RP, a palavra «*ὁ*» antes de «*Ἰησοῦς*» («o Jesus»); WH, Treg e NA28 não a têm. A base não tem o artigo, e a diferença não muda a leitura. Na colação, 032 lê «*ἔθηκας αὐτὸ κἀγὼ ἀρῶ αὐτόν*» em lugar de «*ἔθηκας αὐτόν, κἀγὼ αὐτὸν ἀρῶ*», com o objeto deslocado. Não altera o sentido.
+
+**20:16**
+
+- *Μαριάμ* (Mariam), forma semítica do nome de Maria; *Ἑβραϊστί* (Hebraisti), «em hebraico», que no Novo Testamento designa com frequência o aramaico da Palestina; *Ῥαββουνί* (Rhabbouni), «meu mestre», forma aramaica de rabino, com o significado de «Mestre» dado pelo texto. O chamamento pelo nome é o que a faz reconhecer Jesus.
+- **Crítica Textual.** O aparato da SBLGNT regista três pontos. WH, Treg e NA28 leem «*Μαριάμ*», e RP lê «*Μαρία*»; a base segue a forma semítica. Depois, a base tem «*Ἑβραϊστί*», que RP omite. Na colação, 02, KJTR, ST e Scrivener também omitem «*Ἑβραϊστί*»; 03 e 05 variam a grafia de «*Ῥαββουνί*» (*ραββουνει*; *ραββωνει*). A base mantém a indicação de língua, porque explica a palavra estrangeira ao leitor.
+
+**20:17**
+
+- *Μή μου ἅπτου* (mē mou haptou), «não me toques» ou «não me segures», imperativo presente com *μή*, que pede que Maria deixe de se agarrar a ele; a tradução «não me segures» prefere o gesto de agarrar, e «não me toques» é a leitura mais literal. *ἀναβέβηκα* (anabebēka), «subi», perfeito: a subida ainda não aconteceu, mas está garantida. *ἀναβαίνω* (anabainō), «subo», presente com valor de futuro próximo.
+- **Crítica Textual.** O aparato da SBLGNT regista, em RP, a palavra «*μου*» depois do primeiro «*πατέρα*» («meu Pai»); WH, Treg e NA28 não a têm. RP também acrescenta «*ὁ*» antes de «*Ἰησοῦς*», que WH, Treg e NA28 não têm. Na colação, 01 acrescenta «*ὁ*» antes de «*Ἰησοῦς*» e «*ἰδού*» («eis») antes de «*ἀναβαίνω*», e omite o segundo «*μου*» de «*τοὺς ἀδελφούς μου*»; 02 também acrescenta «*ὁ*», omite «*δὲ*» e lê «*μου*» depois do primeiro «*πατέρα*»; 03 põe «*μου*» depois de «*ἅπτου*». A base segue WH, Treg e NA28, que não têm «*μου*» nessa frase; a distinção entre «meu Pai» (de Jesus) e «vosso Pai» (dos discípulos) fica na segunda frase.
+
+**20:18**
+
+- *ἀγγέλλουσα* (angellousa), «anunciando»; *ἑώρακα* (heōraka), «tinha visto», perfeito: a visão continua a ser o fundamento do anúncio. *Εἶπεν* (eipen), «disse», aoristo: Jesus falou-lhe, e ela relata.
+- **Crítica Textual.** O aparato da SBLGNT regista três leituras. WH, Treg e NA28 leem «*Μαριάμ*», «*ἀγγέλλουσα*» e «*ἑώρακα*»; RP lê «*Μαρία*», «*ἀπαγγέλλουσα*» (com *ἀπό*, «relatar») e «*ἑώρακεν*» (ela viu, em terceira pessoa). A base mantém a primeira pessoa do testemunho de Maria. Na colação, 05 acrescenta «*ἐμήνυσεν αὐτοῖς*» (anunciou-lhes), que a base não tem.
+
+**20:19**
+
+- *Οὔσης ὀψίας* (ousēs opsias), «ao cair da tarde», genitivo absoluto; *κεκλεισμένων* (kekleismenōn), «fechadas», perfeito: as portas estavam trancadas e continuam assim; *διὰ τὸν φόβον τῶν Ἰουδαίων* (dia ton phobon tōn Ioudaiōn), «por medo dos judeus». *Εἰρήνη ὑμῖν* (eirēnē hymin), «a paz esteja com vocês», saudação de Jesus ressuscitado.
+- **Crítica Textual.** O aparato da SBLGNT regista, em RP, a palavra «*τῶν*» antes de «*μιᾷ*» e «*συνηγμένοι*» («reunidos») depois de «*μαθηταί*»; WH, Treg e NA28 não as têm. KJTR, ST e Scrivener seguem RP. Na colação, 01 e 𝔓66 também acrescentam «*συνηγμένοι*». A 𝔓66 escreve ainda «*ἰσ*» em lugar de «*Ἰησοῦς*» (abreviatura sagrada) e «*ὑμεῖν*» em lugar de «*ὑμῖν*» (itacismo). A base não tem a palavra, e o versículo diz que as portas estavam fechadas, o que basta para a cena.
+
+**20:20**
+
+- *ἔδειξεν* (edeixen), «mostrou»; *τὰς χεῖρας* (tas cheiras), «as mãos»; *τὴν πλευρὰν* (tēn pleuran), «o lado», onde a lança atingiu Jesus (19:34); *ἐχάρησαν* (echarēsan), «alegraram-se», aoristo. O sinal das feridas faz a ponte entre o crucificado e o ressuscitado.
+- **Crítica Textual.** O aparato da SBLGNT regista que WH e Treg acrescentam «*καί*» depois de «*ἔδειξεν*»; RP acrescenta «*αὐτοῖς*» depois de «*ἔδειξεν*» e lê «*αὐτοῦ*» (dele) onde a base tem «*αὐτοῖς*» (a eles) depois de «*πλευρὰν*». A base segue NA28, que não tem «*καί*» e tem «*αὐτοῖς*»; a tradução «mostrou-lhes» segue a base, e a variante não muda a cena.
+
+**20:21**
+
+- *καθὼς ἀπέσταλκέν με* (kathōs apestalken me), «como me enviou», perfeito: o envio do Pai permanece; *κἀγὼ πέμπω ὑμᾶς* (kagō pempō hymas), «também eu envio vocês», presente. O envio dos discípulos repete o de 17:18, e a missão é a continuação da de Jesus.
+- **Crítica Textual.** O aparato da SBLGNT regista que Treg omite «*ὁ Ἰησοῦς*» (o próprio Jesus), que WH, NA28 e RP mantêm. A omissão não muda a frase, porque quem fala é claro. Na colação, 05 omite «*ὁ Ἰησοῦς*», lê «*ὑμεῖν*» em lugar de «*ὑμῖν*» e troca «*πέμπω*» por «*ἀποστέλλω*» (envio); o sentido é o mesmo.
+
+**20:22**
+
+- *ἐνεφύσησεν* (enephysēsen), «soprou», verbo que a LXX usa para o sopro de vida de Gênesis 2:7; *Λάβετε* (labete), «recebam», imperativo aoristo; *πνεῦμα ἅγιον* (pneuma hagion), «Espírito Santo», sem artigo, como na Escritura.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:22. Na colação, 032 lê «*λάβεται*» (receba-se) em lugar de «*λάβετε*» (recebam) e põe «*αὐτοῖς*» antes de «*καὶ λέγει*»; 05 omite «*καί*» e acrescenta «*αὐτοῖς*». A base mantém o imperativo plural, que se dirige aos discípulos.
+
+**20:23**
+
+- *ἀφῆτε* (aphēte), «perdoarem», subjuntivo aoristo com *ἄν*; *ἀφέωνται* (apheōntai), «ficam perdoados», perfeito passivo: o perdão é um estado que se mantém; *κρατῆτε* (kratēte), «retiverem», e *κεκράτηνται* (kekratēntai), «ficam retidos». A frase é geral e condicional; o texto não descreve como se faz.
+- **Crítica Textual.** O aparato da SBLGNT regista que WH, Treg e NA28 leem «*ἀφέωνται*» (perfeito), e que RP lê «*ἀφιένται*» (presente: são perdoados). KJTR, ST, Scrivener e 032 seguem RP. A base mantém o perfeito, que diz o estado que resulta da decisão; o presente diria um processo em curso.
+
+**20:24**
+
+- *Θωμᾶς* (Thōmas), «Tomé»; *Δίδυμος* (Didymos), «Dídimo», que quer dizer «gémeo», nome grego que corresponde ao nome aramaico Tomé; *ἦν μετʼ αὐτῶν* (ēn met' autōn), «estava com eles», e *οὐκ ἦν* (ouk ēn), «não estava». A ausência de Tomé prepara a dúvida e a confissão dos versículos seguintes.
+- **Crítica Textual.** O aparato da SBLGNT regista, em RP, a palavra «*ὁ*» antes de «*Ἰησοῦς*»; WH, Treg e NA28 não a têm. KJTR, ST, Scrivener, 02 e 032 seguem RP. A base não tem o artigo, e a diferença não muda o sentido.
+
+**20:25**
+
+- *Ἑωράκαμεν* (heōrakamen), «vimos», perfeito; *τὸν τύπον τῶν ἥλων* (ton typon tōn hēlōn), «a marca dos pregos», *τύπον* (typon) é a marca deixada por um golpe ou uma impressão; *οὐ μὴ πιστεύσω* (ou mē pisteusō), «de modo nenhum acreditarei», negação enfática no futuro.
+- **Crítica Textual.** O aparato da SBLGNT regista a ordem «*μου τὴν χεῖρα*» com WH, Treg e NA28; RP lê «*τὴν χεῖρά μου*», com o pronome depois do substantivo. A ordem não muda o sentido. Na colação, 05 acrescenta «*ὅτι*» (que) antes da frase, lê «*εἴδω εἰς τὰς χεῖρας*» em lugar de «*ἴδω ἐν ταῖς χερσίν*» e põe «*βάλω μου τὰς χεῖρας εἰς τὴν πλευρὰν αὐτοῦ*» antes de «*βάλω μου τὸν δάκτυλον*». Na 01, omite «*ἄλλοι*» e lê «*εἰς τὴν χεῖραν αὐτοῦ*» em lugar de «*εἰς τὸν τύπον τῶν ἥλων*» na segunda ocorrência. A base segue WH, Treg e NA28.
+
+**20:26**
+
+- *μεθʼ ἡμέρας ὀκτώ* (meth' hēmeras okto), «oito dias depois»; *ἔσω* (esō), «lá dentro»; *κεκλεισμένων* (kekleismenōn), «fechadas», como em 20:19. A cena repete a de 20:19 para que Tomé esteja presente.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:26. Na colação, 01 omite «*αὐτοῦ*» (dele) depois de «*μαθηταὶ*»; 05 acrescenta «*ὁ*» antes de «*Θωμᾶς*» e «*οὖν*» (então). As diferenças não mudam o sentido.
+
+**20:27**
+
+- *Φέρε* (phere), «põe» ou «traz», imperativo; *ἴδε* (ide), «vê»; *μὴ γίνου ἄπιστος ἀλλὰ πιστός* (mē ginou apistos alla pistos), «não sejas incrédulo, mas crê», com o adjetivo *πιστός*, que significa também «fiel». O convite a Tomé é o de ver e de crer.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 20:27. Na colação, 05 lê «*ἴσθι*» («sê») em lugar de «*γίνου*» («torna-te»). A diferença é de verbo («sê» ou «torna-te») e não muda o sentido; a base mantém «*γίνου*».
+
+**20:28**
+
+- *Ὁ κύριός μου καὶ ὁ θεός μου* (ho kyrios mou kai ho theos mou), «meu Senhor e meu Deus», com o artigo que serve de vocativo. É a confissão mais alta de João, dita por um discípulo ao ressuscitado.
+- **Crítica Textual.** O aparato da SBLGNT regista que RP lê «*Καὶ ἀπεκρίθη*» (e respondeu), com a conjunção no início; WH, Treg e NA28 leem «*ἀπεκρίθη*» sem ela. Na colação, 02, KJTR, RP, ST e Scrivener acrescentam «*καί*» antes de «*ἀπεκρίθη*»; ST e Scrivener acrescentam ainda o artigo «*ὁ*» antes de «*Θωμᾶς*». A base não tem a conjunção, e a frase fica mais direta.
+
+**20:29**
+
+- *ἑώρακάς* (heōrakas), «viste»; *πεπίστευκας* (pepisteukas), «acreditaste», perfeito: a fé já está firmada; *μακάριοι* (makarioi), «felizes», ou «bem-aventurados»; *οἱ μὴ ἰδόντες καὶ πιστεύσαντες* (hoi mē idontes kai pisteusantes), «os que não viram e acreditaram». A bem-aventurança dirige-se aos leitores que nunca viram Jesus.
+- **Crítica Textual.** Na colação, 01 e 032 leem «*εἶπεν δέ*» (disse) em lugar de «*λέγει*» (diz); 01 acrescenta ainda «*καί*» antes de «*πεπιστευκας*» e «*με*» depois de «*ἰδόντες*», e lê «*πιστεύσατες*», forma que parece erro de cópia por «*πιστεύσαντες*». KJTR, ST e Scrivener acrescentam «*Θωμᾶ*» (a Tomé) depois de «*ἑώρακάς με*». A base não tem o nome, porque o contexto é claro, e mantém o presente histórico.
+
+**20:30**
+
+- *σημεῖα* (sēmeia), «sinais»; *ἐνώπιον* (enōpion), «na presença de»; *γεγραμμένα* (gegrammena), «escritos», perfeito: estão escritos e continuam escritos. O versículo fala de um livro, e não de um rolo, o que pode indicar o texto como um todo.
+- **Crítica Textual.** O aparato da SBLGNT regista que NA28 e RP leem «*τῶν μαθητῶν αὐτοῦ*» (dos discípulos dele), com «*αὐτοῦ*»; WH e Treg leem «*τῶν μαθητῶν*» sem o pronome. A base segue WH e Treg. A diferença é de posse e não muda o sentido.
+
+**20:31**
+
+- *πιστεύητε* (pisteuēte), «creiam», presente subjuntivo, com valor durativo: continuar a crer. *Χριστός* (Christos), «Cristo», ou seja, o Messias; *ζωὴν ἔχητε* (zōēn echēte), «tenham vida». A tradução «creiam» não decide entre o sentido durativo e o pontual da variante.
+- **Crítica Textual.** O aparato da SBLGNT regista «*πιστεύητε*» (presente, «creiam») com WH; Treg, NA28 e RP leem «*πιστεύσητε*» (aoristo, «venham a crer»). A base segue WH, porque o presente diz uma fé que permanece. Na colação, 01, 04 e 05 acrescentam «*αἰώνιον*» (eterna) à frase da vida; 04 repete a palavra («*αἰώνιον αἰώνιον*») e lê também «*πιστεύσητε*»; 05 lê «*χρς υιος*» (abreviado) em lugar de «*ὁ χριστὸς ὁ υἱὸς*», e 01 escreve «*θυ*» por «*θεοῦ*». A base não tem «eterna», porque a frase já fala de vida em nome de Jesus.
+
+### Notas do capítulo 21
+
+**21:1**
+
+- *Μετὰ ταῦτα* (meta tauta), «depois disto»; *ἐφανέρωσεν* (ephanerōsen), «manifestou-se», verbo que dá o tom do capítulo; *τῆς Τιβεριάδος* (tēs Tiberiados), «de Tiberíades», o mesmo mar de 6:1. O capítulo começa como um novo episódio, depois do fecho de 20:30–31.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ὁ*» antes de «*Ἰησοῦς*» com NA28 e RP; WH e Treg não o têm. A base mantém o artigo, e a diferença não muda a frase. Na colação, 03, 04 e SR também omitem o artigo.
+
+**21:2**
+
+- *Θωμᾶς ὁ λεγόμενος Δίδυμος* (Thōmas ho legomenos Didymos), «Tomé, chamado Dídimo», como em 20:24; *Ναθαναὴλ ὁ ἀπὸ Κανὰ τῆς Γαλιλαίας* (Nathanaēl ho apo Kana tēs Galilaias), «Natanael de Caná da Galileia», o discípulo de 1:45–51. *οἱ τοῦ Ζεβεδαίου* (hoi tou Zebedaiou), «os de Zebedeu»: a base omite «filhos» e a tradução acrescenta-o em itálico, por clareza.
+- **Crítica Textual.** Na colação, 01 lê «*οἱ υἱοὶ Ζεβεδαίου*» (os filhos de Zebedeu), com o termo «*υἱοί*» expresso, e 04 lê «*οἱ τοῦ Ζεβεδαίου υἱοί*». A base não tem «*υἱοί*», e a tradução marca a palavra acrescentada em itálico.
+
+**21:3**
+
+- *Ὑπάγω ἁλιεύειν* (hypagō halieuein), «vou pescar»; *Ἐρχόμεθα καὶ ἡμεῖς σὺν σοί* (erchometha kai hēmeis syn soi), «vamos também nós contigo»; *ἐπίασαν οὐδέν* (epiasanouden), «não apanharam nada». Pedro retoma a sua profissão de pescador, e a noite infrutífera prepara o sinal da manhã.
+- **Crítica Textual.** O aparato da SBLGNT regista que RP acrescenta «*εὐθύς*» (logo) depois de «*πλοῖον*»; WH, Treg e NA28 não o têm. KJTR, ST e Scrivener seguem RP, e também leem «*ἀνέβησαν*» (subiram) em lugar de «*ἐνέβησαν*» (entraram). A base mantém «entraram» e não tem «logo».
+
+**21:4**
+
+- *Πρωΐας δὲ ἤδη γενομένης* (prōias de ēdē genomenēs), «ao romper da manhã», genitivo absoluto; *ἔστη* (estē), «estava de pé»; *αἰγιαλόν* (aigialon), «margem», «praia»; *ᾔδεισαν* (ēdeisan), «sabiam». O reconhecimento falha mais uma vez, como em 20:14.
+- **Crítica Textual.** O aparato da SBLGNT regista «*γενομένης*» (tendo chegado) com NA28 e RP, e «*γινομένης*» com WH e Treg, forma verbal diferente com o mesmo sentido. RP acrescenta «*ὁ*» antes de «*Ἰησοῦς*». Na colação, 032 omite todo o trecho que vai de «*εἰς τὸν αἰγιαλόν*» ao fim do versículo; 01 omite «*ἤδη*» e lê «*ἐπὶ*» em lugar de «*εἰς*»; 01 e 𝔓66 leem «*ἔγνωσαν*» (reconheceram) em lugar de «*ᾔδεισαν*» (sabiam). A base mantém o texto completo e o verbo de conhecimento.
+
+**21:5**
+
+- *Παιδία* (paidia), «rapazes», vocativo do diminutivo de «criança», tratamento familiar; *προσφάγιον* (prosphagion), «algo para acompanhar o pão», sobretudo peixe; *μή τι* (mē ti), que pede a resposta «não». Jesus pergunta sabendo a resposta, e os discípulos respondem a esse convite.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ὁ*» antes de «*Ἰησοῦς*» com Treg, NA28 e RP; WH omite-o. Na colação, 01 omite «*ὁ*» e «*τι*» (algo); 032 acrescenta «*καί*», omite «*οὖν*», «*ὁ Ἰησοῦς*» e «*τι*», e lê «*ἔχεται*» (tem) em lugar de «*ἔχετε*» (têm). A base mantém o artigo e a pergunta completa, que tem a forma plural dos discípulos.
+
+**21:6**
+
+- *Βάλετε* (balete), «lancem», imperativo; *τὰ δεξιὰ μέρη* (ta dexia merē), «o lado direito»; *ἴσχυον* (ischyon), «conseguiam», imperfeito; *ἑλκύσαι* (helkysai), «puxar»; *πλήθους* (plēthous), «quantidade». A ordem de Jesus obedece-lhe, e a abundância impede a pesca.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ἴσχυον*» (imperfeito, «conseguiam») com WH, Treg e NA28; RP lê «*ἴσχυσαν*» (aoristo, «conseguiram»). Na colação, 02 e 032 também leem «*ἴσχυσαν*». 01 e 05 acrescentam «*οἱ δὲ*» (eles, então) antes de «*ἔβαλον*». A base mantém o imperfeito, que descreve a incapacidade contínua de puxar a rede.
+
+**21:7**
+
+- *ὃν ἠγάπα ὁ Ἰησοῦς* (hon ēgapa ho Iēsous), «a quem Jesus amava», como em 13:23; *ἐπενδύτην* (ependytēn), «túnica», veste exterior; *διεζώσατο* (diezōsato), «cingiu-se», como Jesus se cingiu com a toalha em 13:4–5; *ἦν γὰρ γυμνός* (ēn gar gymnos), «estava nu», no sentido de sem a veste de cima. Pedro põe-se em movimento antes de os outros chegarem.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 21:7. Na colação, 05 lê «*ἤλατο*» (saltou) em lugar de «*ἔβαλεν ἑαυτὸν*» (lançou-se), acrescenta «*ἡμῶν*» (nosso) depois de «*κύριος*» e omite «*ὁ*» antes de «*Ἰησοῦς*». A base mantém a leitura de «lançou-se», que descreve o gesto de Pedro com precisão.
+
+**21:8**
+
+- *πλοιαρίῳ* (ploiariō), «barquinho», diminutivo de barco; *πηχῶν διακοσίων* (pēchōn diakosiōn), «duzentos côvados», cerca de noventa metros, medida que o texto usa para a distância; *σύροντες* (syrontes), «arrastando», particípio. O pormenor da distância explica por que os outros chegaram depois.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 21:8. Na colação, 01 acrescenta «*ἄλλῳ*» (outro) antes de «*πλοιαρίῳ*», e 032 lê «*πλοίῳ*» (barco) em lugar de «*πλοιαρίῳ*». A base mantém «*πλοιαρίῳ*», o barquinho, o pequeno barco de apoio; a leitura de 032 («barco») não distingue o barquinho do barco principal.
+
+**21:9**
+
+- *ἀνθρακιὰν* (anthrakian), «brasas», carvão em brasa; *ὀψάριον* (opsarion), «peixe», para comer, diminutivo; *ἄρτον* (arton), «pão». A cena lembra a refeição de 6:11, mas a ceia é preparada por Jesus na praia, antes de eles terem trazido nada.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 21:9. Na colação, 01 e 032 leem «*ἀνέβησαν*» (subiram) em lugar de «*ἀπέβησαν*» (desembarcaram). A base segue o verbo que descreve a chegada à terra.
+
+**21:10**
+
+- *Ἐνέγκατε* (enenkate), «tragam», imperativo aoristo; *ὧν ἐπιάσατε νῦν* (hōn epiasate nyn), «que agora apanharam»: os peixes são deles, e Jesus pede-lhes que participem na refeição.
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 21:10. Na colação, 01 e 032 leem «*ἐνέγκαται*» em lugar de «*ἐνέγκατε*» (tragam), e 032 lê também «*ἐπιάσαται*» em lugar de «*ἐπιάσατε*» (apanharam); 03 escreve «*ισ*» por «*Ἰησοῦς*» (abreviatura sagrada); 05 lê «*ἐκ*» em lugar de «*ἀπό*». As formas de 01 e 032 parecem erros de cópia, e as diferenças não mudam o pedido. A base mantém o imperativo «*ἐνέγκατε*».
+
+**21:11**
+
+- *ἀνέβη* (anebē), «subiu»; *εἵλκυσεν* (heilkysen), «puxou», aoristo de *ἕλκω*; *ἑκατὸν πεντήκοντα τριῶν* (hekaton pentēkonta triōn), «cento e cinquenta e três»; *ἐσχίσθη* (eschisthē), «rompeu-se». O número é exato e não tem uma interpretação única nos comentários; a nota não o alegoriza.
+- **Crítica Textual.** O aparato da SBLGNT regista que RP omite «*οὖν*» (então) e lê «*ἐπὶ τῆς γῆς*» (sobre a terra) em lugar de «*εἰς τὴν γῆν*» (para a terra), com WH, Treg e NA28. Na colação, 01 lê «*ἐνέβη*» (entrou) em lugar de «*ἀνέβη*» (subiu) e escreve «*πεντηκοτα*» por «*πεντήκοντα*»; 05 escreve o número em algarismos gregos («*ρ ν γ*») e lê «*ἐπὶ τὴν γῆν*». A base segue WH, Treg e NA28, e a tradução mantém «para a terra», que descreve o movimento da rede.
+
+**21:12**
+
+- *Δεῦτε ἀριστήσατε* (deute aristēsate), «venham comer», imperativo aoristo do verbo que designa a refeição da manhã; *ἐξετάσαι* (exetasai), «interrogar»; *εἰδότες* (eidotes), «sabendo», particípio de *οἶδα*. A pergunta «quem és tu?» fica por fazer, porque os discípulos já sabem quem é.
+- **Crítica Textual.** O aparato da SBLGNT regista «*δέ*» (mas) com Treg, NA28 e RP; WH omite-o. Na colação, 032 lê «*ἀρίσταται*», outra forma do verbo, em lugar de «*ἀριστήσατε*». A base mantém «*δέ*» e o imperativo, que dá ordem clara ao convite.
+
+**21:13**
+
+- *ἔρχεται* (erchetai), «aproxima-se», presente histórico; *λαμβάνει* (lambanei), «toma»; *δίδωσιν* (didōsin), «dá»; *ὁμοίως* (homoiōs), «do mesmo modo». Jesus serve como anfitrião, como em 6:11.
+- **Crítica Textual.** O aparato da SBLGNT regista «*οὖν*» (então) depois de «*ἔρχεται*» em RP, que também tem «*ὁ*» antes de «*Ἰησοῦς*»; WH, Treg e NA28 omitem o artigo. Na colação, 05 lê «*εὐχαριστήσας ἔδωκε*» (tendo dado graças, deu) em lugar de «*καὶ δίδωσιν*» (e deu). A base mantém o presente e o artigo.
+
+**21:14**
+
+- *τοῦτο ἤδη τρίτον* (touto ēdē triton), «esta foi já a terceira vez»: a contagem refere-se às aparições ao grupo, em 20:19, 20:26 e aqui; *ἐγερθεὶς ἐκ νεκρῶν* (egertheis ek nekrōn), «ressuscitado dos mortos», particípio aoristo passivo.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ὁ*» antes de «*Ἰησοῦς*» com RP, e a omissão em WH, Treg e NA28. RP acrescenta «*αὐτοῦ*» (dele) depois de «*μαθηταῖς*», e a colação mostra o mesmo acréscimo em 05. Na colação, 03, 04, 05 e SR omitem o artigo, e 032 omite «*ὁ Ἰησοῦς*» inteiro. A base mantém o artigo, e a tradução «Jesus» não depende dele.
+
+**21:15**
+
+- *ἠρίστησαν* (ēristēsan), «acabaram de comer»; *ἀγαπᾷς* (agapas), «amas», de *ἀγαπάω*; *φιλῶ* (philō), «quero bem», de *φιλέω*; *πλέον τούτων* (pleon toutōn), «mais do que estes», ou «mais do que isto», as duas leituras são possíveis; *βόσκε* (boske), «apascenta», e *ἀρνία* (arnia), «cordeiros». A tradução marca a passagem entre os verbos: Jesus pergunta com «amar», e Pedro responde com «querer bem».
+- **Crítica Textual.** O aparato da SBLGNT regista «*Ἰωάννου*» (de João) com WH, Treg e NA28, e «*Ἰωνᾶ*» (Jonas) com RP, outra forma do nome do pai de Simão. Na colação, 032 lê «*πλεῖον παντῶν*» (mais do que todos) em lugar de «*πλέον τούτων*», e 04 lê «*πρόβατα*» (ovelhas) em lugar de «*ἀρνία*» (cordeiros). A base mantém «cordeiros». A forma «*τούτων*» pode ser masculina («estes», os outros discípulos) ou neutra («estas coisas»); a tradução escolhe «estes», porque são pessoas, e «mais do que isto» fica afastado. Decisão do responsável.
+
+**21:16**
+
+- *δεύτερον* (deuteron), «pela segunda vez»; *ποίμαινε* (poimaine), «pastoreia», verbo do pastor, mais amplo do que «apascentar»; *τὰ πρόβατά μου* (ta probata mou), «as minhas ovelhas». A pergunta repete a de 21:15 sem o comparativo, o que a torna mais direta.
+- **Crítica Textual.** O aparato da SBLGNT regista «*Ἰωάννου*» com WH, Treg e NA28, e «*Ἰωνᾶ*» com RP. Na colação, 05 acrescenta «*ὁ κύριος*» (o Senhor) antes de «*Σίμων*» e 03 e 04 leem «*προβάτια*» (ovelhinhas) em lugar de «*πρόβατα*». A base mantém «ovelhas» («*πρόβατα*»). A colação dá também «*προβάτια*» para WH neste versículo, mas o aparato da SBLGNT não regista essa diferença; fica por confirmar na fonte.
+
+**21:17**
+
+- *φιλεῖς* (phileis), «queres bem», de *φιλέω*, o verbo que Jesus usa agora, como o do discípulo amado em 20:2; *ἐλυπήθη* (elypēthē), «entristeceu-se», passivo de *λυπέω*; *πάντα σὺ οἶδας* (panta sy oidas), «tu sabes tudo»; *γινώσκεις* (ginōskeis), «conheces». Jesus desce ao verbo de Pedro, e a tristeza de Pedro vem da repetição da pergunta.
+- **Crítica Textual.** A base lê «*πάντα σὺ οἶδας*» (tu sabes tudo) com WH, Treg e NA28; RP lê «*σὺ πάντα*», com a ordem invertida. NA28 lê «*λέγει*» (diz) em lugar de «*εἶπεν*» (disse). Treg lê «*προβάτια*» (ovelhinhas) em lugar de «*πρόβατα*», e WH e Treg omitem o artigo antes de «*Ἰησοῦς*». RP lê «*Ἰωνᾶ*» em lugar de «*Ἰωάννου*», como em 21:15–16. A base mantém «*πρόβατα*», com WH, NA28 e RP, segundo o aparato, e o artigo, com NA28 e RP. A colação dá «*προβάτια*» também para WH neste versículo, o que contradiz o aparato; fica por confirmar na fonte, como em 21:16.
+
+**21:18**
+
+- *ἀμὴν ἀμήν* (amēn amēn), «em verdade, em verdade», fórmula de João; *ἐζώννυες* (ezōnnyes), «cingias», imperfeito; *ἐκτενεῖς* (ekteneis), «estenderás»; *ζώσει* (zōsei), «cingirá»; *οἴσει* (oisei), «levará». O versículo fala de uma morte violenta, que o texto não nomeia; o v. 19 explica-o.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ἄλλος σε ζώσει*» (outro te cingirá) com NA28 e RP, e «*ζώσει σε*» com WH e Treg, com o pronome antes do verbo. A base segue NA28 e RP. Na colação, 01 lê «*ἄλλοι ζωσουσιν*» (outros cingirão) em lugar de «*ἄλλος σε ζώσει*» e «*ποιήσουσίν σοι ὅσα*» (farão-te o que) em lugar de «*οἴσει ὅπου*» (levará para onde); 032 lê o plural «*ἄλλοι*» e «*ἀποίσουσίν σε*» (levar-te-ão) em lugar de «*οἴσει*» (levará). A base mantém o singular, que dá uma só pessoa como agente.
+
+**21:19**
+
+- *σημαίνων* (sēmainōn), «indicando»; *δοξάσει* (doxasei), «glorificará», futuro de *δοξάζω*, o verbo da glória em 17:1–5; *Ἀκολούθει μοι* (akolouthei moi), «segue-me», a ordem do primeiro chamamento (1:43).
+- **Crítica Textual.** O aparato da SBLGNT não regista variante em 21:19. Na colação, 032 lê «*ἔλεγεν*» (dizia) em lugar de «*εἶπεν*» (disse), e 05 lê «*ταῦτα*» (estas coisas) em lugar de «*τοῦτο*» (isto). A base mantém o aoristo e o singular, porque o versículo refere uma única frase de Jesus.
+
+**21:20**
+
+- *Ἐπιστραφεὶς* (epistrapheis), «voltou-se»; *ἀκολουθοῦντα* (akolouthounta), «que os seguia»; *ἀνέπεσεν* (anepesen), «reclinou-se», como na ceia de 13:23–25; *ὁ παραδιδούς* (ho paradidous), «o que entrega», particípio presente com valor de futuro iminente. Pedro vê o discípulo amado seguir Jesus, e a pergunta da ceia volta.
+- **Crítica Textual.** O aparato da SBLGNT regista que WH, Treg e NA28 não têm «*δὲ*» (e) depois de «*Ἐπιστραφεὶς*», e que RP o acrescenta. Na colação, 01 acrescenta também «*δὲ*», omite «*ὃς*» (que) e lê «*λέγει αὐτῷ*» (disse-lhe) em lugar de «*εἶπεν*». 032 omite «*ἀκολουθοῦντα*» (que os seguia), e 04 lê «*τοῦ Ἰησοῦ*» (de Jesus) em lugar de «*αὐτοῦ*» (dele) depois de «*στῆθος*». A base mantém «que os seguia», que é o que prepara a pergunta de Pedro em 21:21.
+
+**21:21**
+
+- *τοῦτον* (touton), «este», acusativo; *ἰδὼν* (idōn), «tendo visto»; *οὗτος δὲ τί* (houtos de ti), «e este, que (será)?», elipse do verbo. Pedro pergunta pelo outro discípulo.
+- **Crítica Textual.** O aparato da SBLGNT regista «*οὖν*» (então) com WH, Treg e NA28; RP omite-o. Na colação, 01 omite «*Κύριε*» (Senhor) e lê «*εἶπεν*» (disse) em lugar de «*λέγει*» (diz); 032 também lê «*εἶπεν*». A base mantém «Senhor», que é a forma de tratamento de Pedro.
+
+**21:22**
+
+- *Ἐὰν αὐτὸν θέλω μένειν* (ean auton thelō menein), «se eu quiser que ele fique», com o subjuntivo de *ἐάν*; *ἕως ἔρχομαι* (heōs erchomai), «até que eu venha»; *τί πρὸς σέ* (ti pros se), «que te importa?»; *σύ μοι ἀκολούθει*, «quanto a ti, segue-me». O sentido de «vir» (uma vinda de Jesus à morte, ao regresso ou à vinda final) é discutido, e a tradução não decide entre eles.
+- **Crítica Textual.** O aparato da SBLGNT regista «*μοι ἀκολούθει*» (segue-me) com WH, Treg e NA28; RP lê «*ἀκολούθει μοι*». A ordem muda o peso da frase, mas não o sentido. Na colação, 05 acrescenta «*οὕτως*» (assim) à frase. A base segue WH, Treg e NA28.
+
+**21:23**
+
+- *οὗτος ὁ λόγος* (houtos ho logos), «esta notícia», ou «este dito»; *οὐκ ἀποθνῄσκει* (ouk apothnēskei), «não morre», presente; *οὐκ εἶπεν δὲ* (ouk eipen de), «não disse»: o versículo corrige um mal-entendido que já circulava entre os irmãos.
+- **Crítica Textual.** O aparato da SBLGNT regista que WH, Treg e NA28 leem «*οὗτος ὁ λόγος*» e «*οὐκ εἶπεν δέ*»; RP lê «*ὁ λόγος οὗτος*» com a ordem invertida, e «*καὶ οὐκ εἶπεν*» (e não disse) em lugar de «*οὐκ εἶπεν δέ*». Na colação, 05 acrescenta «*καὶ ἔδοξαν*» (e pensaram), o que dá a razão do boato. A base mantém a correção direta de Jesus.
+
+**21:24**
+
+- *μαρτυρῶν* (martyrōn), «dá testemunho», de *μαρτυρέω*; *μαρτυρία* (martyria), «testemunho»; *ὁ γράψας* (ho grapsas), «o que escreveu»; *οἴδαμεν* (oidamen), «sabemos», plural: a comunidade confirma o testemunho.
+- **Crítica Textual.** O aparato da SBLGNT regista que RP omite o artigo antes de «*γράψας*» e lê «*ἐστὶν ἡ μαρτυρία αὐτοῦ*» (é o seu testemunho), com a ordem invertida em relação a WH, Treg e NA28. Na colação, 03, 032 e 𝔓109 acrescentam «*καί*» (e). A base segue WH, Treg e NA28.
+
+**21:25**
+
+- *ἅτινα* (hatina), «coisas que»; *καθʼ ἕν* (kath' hen), «uma a uma»; *οἶμαι* (oimai), «creio», com tom de modéstia; *χωρήσειν* (chōrēsein), «conteria»; *τὰ γραφόμενα βιβλία* (ta graphomena biblia), «os livros que se escreveriam». O versículo fecha o livro com exagero retórico, que é a forma de dizer que a obra é só uma seleção.
+- **Crítica Textual.** O aparato da SBLGNT regista «*ἃ*» (que) com WH, Treg e NA28, e «*ὅσα*» (todas as que) com RP. Regista também «*χωρήσειν*» (conteria) com WH e Treg, e «*χωρῆσαι*» (conter) com NA28 e RP. Por fim, RP acrescenta «*Ἀμήν*» (Amém) no fim do livro. Na colação, 05 lê «*ὅσα*» como RP, acrescenta «*χρς*» (Cristo) antes de «*Ἰησοῦς*», lê «*χωρησε*» em lugar de «*χωρήσειν*» e «*βιβλεια*» em lugar de «*βιβλία*». A base segue WH e Treg, e a tradução mantém a frase sem o «Amém», que só RP tem.
+
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`, CC BY 4.0). Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/João.json` (livro inteiro, gerada por `scripts/colar.py --livro 500`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/João.json` (livro inteiro, gerada por `scripts/colar.py --livro 500`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

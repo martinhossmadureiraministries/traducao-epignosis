@@ -1,6 +1,6 @@
 # Plano de trabalho — Bíblia de Estudo Epignósis
 
-**Estado (20/11/2026):** a edição nova está em prosa em todos os livros já tratados: João 1–10, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João e Judas. João 5–6 foram aprovados pelo responsável em 23/11; o restante está em rascunho, à espera de leitura e aprovação. Os blocos de cada livro estão em `review` no respetivo JSON, e a tabela de estados é a fonte de verdade. Nada disto é aprovação editorial sem leitura do responsável, e tudo precisa de revisão especializada antes de publicação.
+**Estado (20/11/2026):** a edição nova está em prosa em 19 livros: João, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, Rute, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, Filipenses, Oseias e Joel. Todos estão aprovados editorialmente pelo responsável. A revisão especializada está pendente (especialista externo) e a revisão aprovada pelo ministério é uma etapa nova: registada em Oseias e Joel, pendente nos restantes. Os blocos de cada livro estão em `review` no respetivo JSON, e a tabela de estados é a fonte de verdade.
 
 ## 1. Objetivo e forma de trabalho
 
@@ -13,14 +13,14 @@ O assistente prepara os rascunhos, consulta as fontes efetivamente disponíveis,
 - **Português claro, atual e reverente:** frases naturais, sem arcaísmos desnecessários ou paráfrases longas. Empregar “vocês” para o plural quando adequado; “tu” e os seus correspondentes podem ser mantidos em oração direta, com concordância consistente.
 - **Texto bíblico distinto do comentário:** manter no texto aquilo que a passagem expressa e reservar explicações, inferências e aplicações para as notas. Distinguir observação linguística de interpretação teológica.
 - **Redação própria:** a fluidez de traduções contemporâneas pode inspirar características gerais de linguagem, mas a BEE não deve copiar a redação de uma tradução protegida. Conferir os direitos dos exemplos e das fontes antes da distribuição.
-- **Acréscimos:** usar `<i>...</i>` para palavras acrescentadas por clareza que não estejam expressas no original, segundo um critério editorial consistente. Não marcar automaticamente cada palavra exigida pela gramática portuguesa; documentar decisões difíceis.
+- **Acréscimos:** usar `<i>...</i>` para palavras acrescentadas por clareza que não estejam expressas no original (regra do responsável, 2026-11-24: acréscimos no texto em itálico; colchetes só para evidência de manuscritos). Usar esse critério de forma consistente. Não marcar automaticamente cada palavra exigida pela gramática portuguesa; documentar decisões difíceis.
 - **Nome divino:** propor `SENHOR` para o Tetragrama, distinguindo-o de `Senhor` para *Adonai*; decidir os casos em que os dois nomes ocorrem juntos.
 - **Títulos dos Salmos:** preservar e identificar as inscrições hebraicas quando pertinentes, sem deslocar a numeração dos versículos. O tratamento atual das superscrições no gerador precisará de revisão antes de publicar Salmos.
 - **Texto e versificação:** usar o WLC por meio da Open Scriptures Hebrew Bible para o AT; o SBLGNT para o NT, com Textus Receptus de Scrivener e aparato SBLGNT como comparação ou suplemento identificado quando necessário. A numeração-alvo segue o inventário tradicional adotado no projeto; diferenças de versificação deverão ser sinalizadas e revistas.
 
 ### Convenção de variantes textuais
 
-Seguir a edição crítica escolhida para o texto-base, considerando os testemunhos antigos e a crítica textual sem pressupor que o manuscrito mais antigo tenha sempre razão. O SBLGNT é uma edição eclética, não a cópia de um único manuscrito. Assinalar variantes relevantes com `[[...]]` no trecho correspondente e explicar objetivamente no comentário as leituras e as evidências disponíveis, sem ocultar testemunhos que apoiem a alternativa nem forçar conclusões dogmáticas. Os levantamentos consultados e suas limitações devem ser identificados; não apresentar comparação de edições como exame direto de manuscritos.
+Seguir a edição crítica escolhida para o texto-base, considerando os testemunhos antigos e a crítica textual sem pressupor que o manuscrito mais antigo tenha sempre razão. O SBLGNT é uma edição eclética, não a cópia de um único manuscrito. Assinalar variantes relevantes com colchetes simples no trecho correspondente, só quando a evidência dos manuscritos o pede (ver a regra de 22/11 abaixo; colchetes duplos não se usam) e explicar objetivamente no comentário as leituras e as evidências disponíveis, sem ocultar testemunhos que apoiem a alternativa nem forçar conclusões dogmáticas. Os levantamentos consultados e suas limitações devem ser identificados; não apresentar comparação de edições como exame direto de manuscritos.
 
 **Regra do responsável (2026-11-22):** colchetes no texto da tradução só para o que não aparece nos manuscritos ou situação semelhante (passagem ausente da maioria ou das testemunhas mais antigas, suplemento de edição, variante substantiva). Cada passagem marcada tem nota com a evidência e a razão da escolha. «[Selá]» não entra nesta regra: é a marca musical da convenção pública.
 
@@ -30,7 +30,7 @@ O procedimento completo está em [CRITICA_TEXTUAL.md](CRITICA_TEXTUAL.md), que f
 
 Ao chegar a Marcos 16:9–20 e João 7:53–8:11, marcar cada versículo da passagem longa independentemente, inclusive ao atravessar capítulos, e mencionar a evidência pertinente e as leituras alternativas nas notas. Em 1 João 5:7–8, conservar sem colchetes as palavras comuns e marcar somente a expansão disputada se for apresentada como suplemento, identificando sua fonte. João 7:53–8:11 **foi produzida** no bloco B (2026-11-22), entre colchetes, com revisão especializada pendente; Marcos 16:9–20 **ainda não foi produzida**. Quando os dados forem insuficientes, registrar a lacuna e submetê-la a revisão especializada.
 
-## 3. Comentários por versículo
+## 3. Comentários (opcionais por versículo)
 
 Cada nota é um parágrafo em prosa, sem rótulos. Dentro dele, o comentário cobre três conteúdos:
 
@@ -41,8 +41,11 @@ Cada nota é um parágrafo em prosa, sem rótulos. Dentro dele, o comentário co
 Para Salmos 23, foram consultadas manualmente entradas da transcrição resumida de BDB e do dicionário de Strong na [Open Scriptures Hebrew Lexicon](https://github.com/openscriptures/HebrewLexicon); essa transcrição está em desenvolvimento e não é uma edição completa do BDB. Para Filemom, foram consultados os léxicos de Dodson e Abbott-Smith; para João 1–4 a conferência com esses dois léxicos foi feita em 2026-11-20 (ver «Léxico» abaixo). Para Filemom, também foram consultadas as entradas [G2842](https://www.blueletterbible.org/lexicon/g2842/kjv/tr/0-1/), [G1922](https://www.blueletterbible.org/lexicon/g1922/kjv/tr/0-1/) e [G4698](https://www.blueletterbible.org/lexicon/g4698/kjv/tr/0-1/) de Thayer disponibilizadas pela Blue Letter Bible. A base eletrônica de Thayer exibida pelo sítio tem aviso de direitos da Biblesoft: foi consultada, não incorporada; verifique direitos antes de qualquer reprodução. As referências, revisões, entradas consultadas e limitações constam dos respetivos JSON. Os léxicos não foram integrados à CLI nem fornecidos ao gerador legado. O Nestle-Aland não foi consultado diretamente. Não atribuir definições ou leituras a obras sem acesso e consulta verificáveis. O aparato SBLGNT compara edições; não deve ser apresentado, por si só, como consulta direta aos manuscritos. A disponibilidade de códigos Strong e dados morfológicos também varia conforme a fonte.
 
 **Base e comparação (decisão de 2026-11-24).** O texto-base continua a ser o SBLGNT. Quando a NA28 divergir do SBLGNT, a nota dá a leitura da NA28 como segunda referência explícita (João 1:34; pontuação de 1:3–4). Para comparação de tradução, usam-se ARC, ACF, NVI, NTLH e Almeida 1911 (`docs/COMPARACAO_POPULAR.md`), acrescidas de TEB e Bíblia de Jerusalém. Antes de publicar, os textos da TEB e da Bíblia de Jerusalém são confirmados na edição impressa; citações de terceiros não bastam.
+**Regras fixadas em João (decisões do responsável).** (a) **Base verificável:** o texto-base é o SBLGNT, e mantém-se sempre que a leitura for verificável no aparato SBLGNT e na colação CNTR. (b) **Acréscimos:** palavras sem correspondência no grego ficam em itálico no texto (por exemplo, «chamado» em 11:1); quando a escolha de tradução pede explicação, fica na nota. (c) **Colchetes:** mantêm-se onde há evidência de manuscritos (3:13, 3:15, 3:34, 5:4 e 7:53–8:11). (d) **Revisão especializada:** a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). (e) **Revisão aprovada pelo ministério:** etapa própria, a cargo de Martinho S. S. Madureira Ministries, registada em `review.ministerio`; aplica-se aos 17 livros e está pendente em todos.
 
-**Formato das notas (decisão de 2026-11-23).** As notas seguem o formato das cartas e dos livros do AT já aprovados (Filipenses, 1 e 2 Tessalonicenses, Rute, Jonas, Ageu, e o piloto Filemom): um parágrafo de comentário em prosa por versículo, sem rótulos. A Crítica Textual vai num parágrafo próprio, «Crítica Textual:», **só quando** o aparato da SBLGNT ou a colação registam variante; cita as siglas do aparato (WH, Treg, NA28, RP, Holmes, WHmarg) e diz, em frase clara, o que a variante muda. Não se usa notação de nível (A, B, C) nem «confirmação» como rótulo. Cada nota abre com o termo grego em itálico e a transliteração, expõe as opções de tradução e justifica a escolha. Toda a variante do aparato tem de ter CT nos capítulos em prosa.
+**Formato das notas (decisão de 2026-11-23).** As notas seguem o formato das cartas e dos livros do AT já aprovados (Filipenses, 1 e 2 Tessalonicenses, Rute, Jonas, Ageu, e o piloto Filemom): um parágrafo de comentário em prosa, sem rótulos, quando o versículo tem nota. A Crítica Textual vai num parágrafo próprio, «Crítica Textual:», **só quando** o aparato da SBLGNT ou a colação registam variante; cita as siglas do aparato (WH, Treg, NA28, RP, Holmes, WHmarg) e diz, em frase clara, o que a variante muda. Não se usa notação de nível (A, B, C) nem «confirmação» como rótulo. Cada nota abre com o termo grego em itálico e a transliteração, expõe as opções de tradução e justifica a escolha. Toda a variante do aparato tem de ter CT nos capítulos em prosa.
+
+**Nota opcional (decisão de 2026-11-24).** Escreve-se nota onde há algo a explicar: acréscimo em itálico, variante do aparato ou da colação, escolha de tradução a justificar, ponto de interpretação. Sem nota, o versículo fica só com o texto. A obrigatoriedade é verificada por máquina em dois casos: texto com acréscimo em itálico ou colchetes simples (`verificar_dados`), e variante do aparato da SBLGNT (`verificar_notas_colacao`, que exige CT).
 
 **Formato único (decisão de 2026-11-20).** Todo o texto da edição nova está em prosa, e não há formato por livro nem por capítulo. `bee/inspetor.analisar_comentario` verifica a regra: sem rótulos antigos («Análise Léxica», «Síntese Exegética»), sem níveis de certeza A/B/C impressos, e sem palavras greco-latinas mistas fora de itálico. A «Crítica Textual:» é um parágrafo próprio, só quando o aparato ou a colação registam variante. A porta do gerador por máquina foi arquivada, e nenhum texto novo entra por essa via.
 
@@ -63,21 +66,23 @@ Para Salmos 23, foram consultadas manualmente entradas da transcrição resumida
 
 Revisar uniformidade editorial e teológica, códigos Strong, transliterações, variantes, títulos, numeração, licenças e atribuições. Conferir as duas bases SQLite, testar os módulos no MyBible e submeter o material a revisão especializada. Corrigir ou manter explicitamente identificadas todas as lacunas antes de qualquer publicação; cobertura estrutural não significa revisão completa.
 
-## 5. Oito fases de produção propostas
+## 5. Oito fases de produção (estado em 20/11/2026)
 
-A ordem pode ser alterada pelo responsável. Filemom é proposto como primeiro livro completo por ter um capítulo: permite testar o fluxo e os módulos antes de avançar para livros longos. As contagens abaixo cobrem cada livro exatamente uma vez.
+A ordem pode ser alterada pelo responsável. Dentro das cartas, a ordem é por tamanho, das menores para as maiores, com prioridade para os livros que definem a voz (ver `docs/RESUMO_ESTILO.md`, secção 10). Os estados vêm dos JSON: «Feito» = edição nova em JSON, `aprovado editorialmente`; revisões especializada e do ministério continuam pendentes em todos os livros feitos.
 
-| Fase | Livros e ordem proposta | Livros | Capítulos |
-|---|---|---:|---:|
-| 1. Piloto e Evangelho | Filemom; João | 2 | 22 |
-| 2. Evangelhos e Igreja nascente | Marcos; Mateus; Lucas; Atos | 4 | 96 |
-| 3. Origens | Gênesis; Êxodo | 2 | 90 |
-| 4. Poesia e sabedoria | Salmos; Provérbios; Jó; Eclesiastes; Cânticos | 5 | 243 |
-| 5. Cartas restantes | Romanos; 1 e 2 Coríntios; Gálatas; Efésios; Filipenses; Colossenses; 1 e 2 Tessalonicenses; 1 e 2 Timóteo; Tito; Hebreus; Tiago; 1 e 2 Pedro; 1, 2 e 3 João; Judas | 20 | 120 |
-| 6. Lei e história | Levítico; Números; Deuteronômio; Josué; Juízes; Rute; 1 e 2 Samuel; 1 e 2 Reis; 1 e 2 Crônicas; Esdras; Neemias; Ester | 15 | 346 |
-| 7. Profetas | Isaías; Jeremias; Lamentações; Ezequiel; Daniel; Oseias; Joel; Amós; Obadias; Jonas; Miqueias; Naum; Habacuque; Sofonias; Ageu; Zacarias; Malaquias | 17 | 250 |
-| 8. Apocalipse | Apocalipse | 1 | 22 |
-| **Total** | | **66** | **1.189** |
+| Fase | Livros (ordem proposta) | Livros | Capítulos | Feitos | Estado |
+|---|---|---:|---:|---|---|
+| 1. Piloto e Evangelho | Filemom; João | 2 | 22 | Filemom, João | Feito |
+| 2. Evangelhos e Igreja nascente | Marcos; Mateus; Lucas; Atos | 4 | 96 | — | Por fazer. Marcos 16:9–20 ainda não produzido |
+| 3. Origens | Gênesis; Êxodo | 2 | 90 | — | Por fazer |
+| 4. Poesia e sabedoria | Salmos; Provérbios; Jó; Eclesiastes; Cânticos | 5 | 243 | — | Por fazer. Salmo 23 é amostra de calibração, não livro feito |
+| 5. Cartas restantes | Romanos; 1 e 2 Coríntios; Gálatas; Efésios; Filipenses; Colossenses; 1 e 2 Tessalonicenses; 1 e 2 Timóteo; Tito; Hebreus; Tiago; 1 e 2 Pedro; 1, 2 e 3 João; Judas | 20 | 120 | Filipenses, 1 e 2 Tessalonicenses, Tito, 2 e 3 João, Judas (7 de 20) | Em curso. Próximo: 2 Pedro, depois 2 Timóteo, Colossenses, 1 Pedro, 1 João, Tiago, 1 Timóteo, Hebreus e as maiores |
+| 6. Lei e história | Levítico; Números; Deuteronômio; Josué; Juízes; Rute; 1 e 2 Samuel; 1 e 2 Reis; 1 e 2 Crônicas; Esdras; Neemias; Ester | 15 | 346 | Rute (1 de 15) | Em curso |
+| 7. Profetas | Isaías; Jeremias; Lamentações; Ezequiel; Daniel; Oseias; Joel; Amós; Obadias; Jonas; Miqueias; Naum; Habacuque; Sofonias; Ageu; Zacarias; Malaquias | 17 | 250 | Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias (9 de 17) | Em curso. Amós, Obadias e Zacarias estão em `docs/arquivo/leituras_legadas/` |
+| 8. Apocalipse | Apocalipse | 1 | 22 | — | Por fazer |
+| **Total** | | **66** | **1.189** | **19 de 66 livros; 87 de 1.189 capítulos** | |
+
+Os 19 livros feitos estão listados em `docs/ESTADO.md`. Os 47 restantes do catálogo não têm edição nova.
 
 ## 6. Ciclo de cada passagem, capítulo e livro
 
@@ -99,10 +104,13 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-Continuar João a partir de **19:13** (o capítulo 19 tem 38 versículos; os
-primeiros 12 já estão guardados), sem pedir aprovação a cada bloco e
-actualizando as prévias quando o capítulo fechar. João 5:4 não consta no SBLGNT
-fixado e exige tratamento explícito da versificação e da evidência se for
-apresentado como suplemento. Os textos novos continuam provisórios e precisam
-de revisão especializada. A ordem das fases posteriores e o momento da revisão
-de Romanos 12:2 podem ser ajustados.
+**Próximo livro:** 2 Pedro (61 versículos). A colação está em `docs/colacao/2_Pedro.json` e `.md`. Antes de redigir, o responsável decide:
+
+1. **ἐπίγνωσις em 1:2, 1:3, 1:8 e 2:20:** aplicar o glossário («pleno conhecimento», `docs/RESUMO_ESTILO.md`, secção 6) ou propor outra tradução para decisão. A colação regista divergências sobretudo ortográficas; não decide sozinha.
+2. **Estados:** confirmar que `aprovado editorialmente` é o valor definitivo.
+3. **Documento de apresentação:** confirmar se volta a ser oficial (ver `README.md`).
+4. **Joel e Oseias:** resolvido em 2026-11-24 (ver `docs/ESTADO.md`). Falta a revisão especializada.
+
+**Pendências de João, tratadas em 20/11/2026:** 11:1 e 11:16 com itálico e nota (em 11:16, só em «que quer dizer gémeo»: «chamado» traduz λεγόμενος); 20:15 com nota e CT conferidas; 7:3, 7:8 e 8:25 verificados e corretos; colchetes em 5:4, 3:13, 3:15, 3:34, 7:53 e 8:1–8:11 já existentes, com nota. Falta decidir 11:16 (itálico também em «chamado»?).
+
+Os textos novos continuam a ser rascunhos até à revisão especializada, feita por especialista externo, e à revisão do ministério.

@@ -1,8 +1,19 @@
 # Rute · Bíblia de Estudo Epignósis
 
-Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Revisão especializada pendente.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (80). Capítulos disponíveis: 1, 2, 3, 4, 85 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 22 |
+| 2 | aprovado editorialmente | 23 |
+| 3 | aprovado editorialmente | 18 |
+| 4 | aprovado editorialmente | 22 |
+
+## Texto
+
+### Capítulo 1
 
 **1** No tempo em que os juízes governavam, houve fome na terra. Um homem de Belém de Judá foi morar por algum tempo nos campos de Moabe, com a mulher e os dois filhos.
 
@@ -48,7 +59,7 @@ Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Rev
 
 **22** Assim Noemi voltou dos campos de Moabe com a sua nora Rute, a moabita. Chegaram a Belém quando começava a colheita da cevada.
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Noemi tinha, do lado do marido, um parente de posição, da família de Elimeleque. Chamava-se Boaz.
 
@@ -96,7 +107,7 @@ Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Rev
 
 **23** Rute ficou junto das trabalhadoras de Boaz, apanhando espigas até ao fim da colheita da cevada e da do trigo. E continuou a viver com a sogra.
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Um dia Noemi, sua sogra, disse-lhe: «Minha filha, não hei de procurar para ti um lugar de descanso, onde possas viver bem?
 
@@ -134,7 +145,7 @@ Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Rev
 
 **18** Noemi disse: «Espera, minha filha, até saberes como acaba o assunto. Aquele homem não descansará enquanto não o resolver, e ainda hoje.»
 
-## Capítulo 4
+### Capítulo 4
 
 **1** Boaz subiu à porta da cidade e sentou-se ali. Quando passou o parente de que tinha falado, chamou-o: «Vem cá, meu amigo. Senta-te aqui.» O homem aproximou-se e sentou-se.
 
@@ -180,28 +191,358 @@ Edição de leitura aprovada editorialmente · 4 capítulos, 85 versículos. Rev
 
 **22** Obede foi pai de Jessé, e Jessé foi pai de Davi.
 
-## Notas para depois da leitura
+## Notas
 
-**1:8–18 · Voltar.** O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+### Notas do capítulo 1
 
-**1:14–15 · A despedida.** O v. 14 contrapõe o beijo de Orfa ao apego de Rute. Só no v. 15 Noemi diz explicitamente que Orfa voltou ao seu povo.
+**1:1**
 
-**1:20–21 · Os nomes.** Noemi associa o seu nome à doçura e pede outro, Mara, que exprime amargura. A afirmação de que regressou vazia é da própria Noemi. O narrador não a corrige: acaba o capítulo mostrando Rute ao seu lado e a cevada pronta para a colheita.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**2:3, 7 · O campo.** «Por acaso» conta como Rute chegou à parcela de Boaz; não pretende decidir se a história é ou não providencial. A última oração de 2:7 é difícil; a menção a uma breve paragem no abrigo é interpretativa.
+**1:2**
 
-**2:12 e 3:9 · As asas e o manto.** A palavra hebraica כנף liga as duas cenas. No campo, Boaz fala das asas do Deus de Israel; na eira, Rute pede a Boaz que estenda sobre ela a aba do seu próprio manto. Em vez de explicar o gesto no diálogo, deixamos aqui o elo entre os versos.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**2:14 · À mesa.** O hebraico ḥómeṣ indica vinagre ou vinho avinagrado. Boaz convida Rute a molhar o seu pedaço de pão; o narrador não diz que todos o fizeram.
+**1:3**
 
-**2:20 · Quem mostrou bondade?** A bênção nomeia Boaz e o SENHOR. O hebraico não torna inequívoco a qual deles se refere a oração seguinte; a tradução não introduz um novo nome para resolver a ambiguidade. Amparar as viúvas honra também os familiares falecidos. Boaz é um dos parentes com direito de resgate, não necessariamente o primeiro.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**3:14 · Antes de amanhecer.** A frase hebraica diz que Boaz falou, sem exigir o mais-que-perfeito «tinha dito». O que ele pede que não se divulgue é a visita à eira; o narrador não afirma que houve relações sexuais nem explica a motivação de Boaz.
+**1:4**
 
-**3:15–17 · Seis porções.** O hebraico não dá a unidade da medida. «Porções» evita converter o presente numa quantidade moderna exata. A ordem de não voltar «de mãos vazias» responde às palavras de Noemi em 1:21.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**4:5–10 · O resgate.** O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+**1:5**
 
-**4:14–22 · O filho de quem?** O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**Fonte e revisão:** [WLC / Open Scriptures Hebrew Bible, Ruth.xml](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Ruth.xml), CC BY 4.0. Leitura de trabalho da edição eletrónica hebraica; cotejo sistemático das traduções e auditoria de testemunhos manuscritos pendentes.
+**1:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:8**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:9**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:10**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:11**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:12**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:13**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:14**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+- A despedida. O v. 14 contrapõe o beijo de Orfa ao apego de Rute. Só no v. 15 Noemi diz explicitamente que Orfa voltou ao seu povo.
+
+**1:15**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+- A despedida. O v. 14 contrapõe o beijo de Orfa ao apego de Rute. Só no v. 15 Noemi diz explicitamente que Orfa voltou ao seu povo.
+
+**1:16**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:17**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:18**
+
+- Voltar. O verbo reaparece na estrada. Noemi pede que as noras voltem, mas para Rute voltar para trás significaria deixar Noemi. «O teu povo é o meu povo» conserva a concisão da resposta. A fórmula de juramento invoca o SENHOR, sem nomear um castigo específico.
+
+**1:19**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:20**
+
+- Os nomes. Noemi associa o seu nome à doçura e pede outro, Mara, que exprime amargura. A afirmação de que regressou vazia é da própria Noemi. O narrador não a corrige: acaba o capítulo mostrando Rute ao seu lado e a cevada pronta para a colheita.
+
+**1:21**
+
+- Os nomes. Noemi associa o seu nome à doçura e pede outro, Mara, que exprime amargura. A afirmação de que regressou vazia é da própria Noemi. O narrador não a corrige: acaba o capítulo mostrando Rute ao seu lado e a cevada pronta para a colheita.
+
+**1:22**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:3**
+
+- O campo. «Por acaso» conta como Rute chegou à parcela de Boaz; não pretende decidir se a história é ou não providencial. A última oração de 2:7 é difícil; a menção a uma breve paragem no abrigo é interpretativa.
+
+**2:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:7**
+
+- O campo. «Por acaso» conta como Rute chegou à parcela de Boaz; não pretende decidir se a história é ou não providencial. A última oração de 2:7 é difícil; a menção a uma breve paragem no abrigo é interpretativa.
+
+**2:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:9**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:12**
+
+- As asas e o manto. A palavra hebraica כנף liga as duas cenas. No campo, Boaz fala das asas do Deus de Israel; na eira, Rute pede a Boaz que estenda sobre ela a aba do seu próprio manto. Em vez de explicar o gesto no diálogo, deixamos aqui o elo entre os versos.
+
+**2:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:14**
+
+- À mesa. O hebraico ḥómeṣ indica vinagre ou vinho avinagrado. Boaz convida Rute a molhar o seu pedaço de pão; o narrador não diz que todos o fizeram.
+
+**2:15**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:16**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:17**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:18**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:19**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:20**
+
+- Quem mostrou bondade? A bênção nomeia Boaz e o SENHOR. O hebraico não torna inequívoco a qual deles se refere a oração seguinte; a tradução não introduz um novo nome para resolver a ambiguidade. Amparar as viúvas honra também os familiares falecidos. Boaz é um dos parentes com direito de resgate, não necessariamente o primeiro.
+
+**2:21**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:22**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:23**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:5**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:6**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:7**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:8**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:9**
+
+- As asas e o manto. A palavra hebraica כנף liga as duas cenas. No campo, Boaz fala das asas do Deus de Israel; na eira, Rute pede a Boaz que estenda sobre ela a aba do seu próprio manto. Em vez de explicar o gesto no diálogo, deixamos aqui o elo entre os versos.
+
+**3:10**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:14**
+
+- Antes de amanhecer. A frase hebraica diz que Boaz falou, sem exigir o mais-que-perfeito «tinha dito». O que ele pede que não se divulgue é a visita à eira; o narrador não afirma que houve relações sexuais nem explica a motivação de Boaz.
+
+**3:15**
+
+- Seis porções. O hebraico não dá a unidade da medida. «Porções» evita converter o presente numa quantidade moderna exata. A ordem de não voltar «de mãos vazias» responde às palavras de Noemi em 1:21.
+
+**3:16**
+
+- Seis porções. O hebraico não dá a unidade da medida. «Porções» evita converter o presente numa quantidade moderna exata. A ordem de não voltar «de mãos vazias» responde às palavras de Noemi em 1:21.
+
+**3:17**
+
+- Seis porções. O hebraico não dá a unidade da medida. «Porções» evita converter o presente numa quantidade moderna exata. A ordem de não voltar «de mãos vazias» responde às palavras de Noemi em 1:21.
+
+**3:18**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 4
+
+**4:1**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:2**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:3**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:4**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:5**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:6**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:7**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:8**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:9**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:10**
+
+- O resgate. O negócio diz respeito tanto à terra como à continuidade do nome do falecido. Em 4:5 segue-se a leitura tradicional em segunda pessoa na fala de Boaz ao outro parente; não se combinam as pessoas verbais da forma escrita e da lida. O relato explica a entrega da sandália: não é necessário explicar o costume dentro da fala das personagens.
+
+**4:11**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:12**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:13**
+
+- Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**4:14**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:15**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:16**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:17**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:18**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:19**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:20**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:21**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+**4:22**
+
+- O filho de quem? O narrador diz que Rute deu à luz; são as vizinhas que anunciam o nascimento de um filho a Noemi. Mantêm-se as duas vozes. A genealogia liga essa criança, Obede, a Davi.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

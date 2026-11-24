@@ -39,14 +39,6 @@ def _colacao(entradas):
 
 
 class MarcadorDeTextoTest(unittest.TestCase):
-    def test_colchetes_duplos_no_texto_nao_sao_problema(self):
-        # Leitura assinalada no texto (nível de colação), não resíduo.
-        dados = _dados('nossa [[irmã]] querida', 'Treg e WH registam variante.')
-        colacao = _colacao(['φλογὶ Treg ] πυρὶ WH NA28'])
-        problemas = vnc.verificar(dados, colacao)
-        self.assertFalse([p for p in problemas if '[[' in p or 'texto do versículo' in p],
-                         problemas)
-
     def test_colchetes_duplos_soltos_na_nota_continuam_a_ser_problema(self):
         dados = _dados('texto simples', 'Treg e WH [[ficou]] aqui.')
         colacao = _colacao(['φλογὶ Treg ] πυρὶ WH'])

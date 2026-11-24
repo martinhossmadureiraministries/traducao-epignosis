@@ -1,8 +1,18 @@
 # Joel · Bíblia de Estudo Epignósis
 
-Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente; revisão especializada pendente. Notas depois do texto.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (360). Capítulos disponíveis: 1, 2, 3, 73 versículos.
 
-## Capítulo 1
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 20 |
+| 2 | aprovado editorialmente | 32 |
+| 3 | aprovado editorialmente | 21 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Palavra do SENHOR que veio a Joel, filho de Petuel.
 
@@ -44,7 +54,7 @@ Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente
 
 **20** Até os animais do campo suspiram por ti: secaram os cursos de água, e o fogo devorou as pastagens do deserto.
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Toquem a trombeta em Sião! Deem o alarme no meu santo monte! Tremam todos os habitantes da terra: vem o dia do SENHOR, já está perto.
 
@@ -98,7 +108,7 @@ Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente
 
 **26** Comerão até se fartar e louvarão o nome do SENHOR, seu Deus, que fez maravilhas por vocês. Nunca mais o meu povo será envergonhado.
 
-**27** Saberão que estou no meio de Israel, que eu sou o SENHOR, seu Deus, e não há outro. Nunca mais o meu povo será envergonhado.
+**27** Saberão que estou no meio de Israel, que eu sou o SENHOR, seu Deus, e não há outro. Nunca mais o meu povo será envergonhado.»
 
 **28** Depois disso derramarei o meu Espírito sobre toda a carne. Os seus filhos e as suas filhas profetizarão, os seus velhos terão sonhos, os seus jovens verão visões.
 
@@ -110,9 +120,9 @@ Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente
 
 **32** E todo aquele que invocar o nome do SENHOR escapará. Pois no monte Sião e em Jerusalém haverá quem escape, como disse o SENHOR, e entre os sobreviventes estarão aqueles que o SENHOR chamar.
 
-## Capítulo 3
+### Capítulo 3
 
-**1** Pois naqueles dias, naquele tempo, quando eu restaurar a sorte de Judá e de Jerusalém,
+**1** «Pois naqueles dias, naquele tempo, quando eu restaurar a sorte de Judá e de Jerusalém,
 
 **2** reunirei todas as nações e as farei descer ao vale de Josafá. Ali entrarei em juízo com elas por causa de Israel, meu povo e minha herança: espalharam-no entre as nações e repartiram a minha terra.
 
@@ -154,18 +164,38 @@ Lote 3 · 3 capítulos, 73 versículos. Leitura integral aprovada editorialmente
 
 **21** Vingarei o sangue que ainda não vinguei.» E o SENHOR habita em Sião.
 
-## Notas para depois da leitura
+## Notas
 
-**1:5** · «Bêbedos» significa «embriagados». O primeiro apelo dirige-se a quem se embriaga; o segundo, a todos os que bebem vinho.
+### Notas do capítulo 1
 
-**1:4** · Os quatro termos hebraicos distinguem os devastadores; os nomes portugueses são descritivos, não identificação zoológica de quatro espécies ou fases certas. O efeito é cumulativo: o que um deixa, outro come.
+**1:4**
 
-**2:13–14** · «Quem sabe?» conserva o apelo sem transformá-lo numa garantia. A bênção imaginada deixaria novamente cereal e bebida para a oferta que faltava em 1:9.
+- Os quatro termos hebraicos distinguem os devastadores; os nomes portugueses são descritivos, não identificação zoológica de quatro espécies ou fases certas. O efeito é cumulativo: o que um deixa, outro come.
 
-**2:23** · A expressão sobre a primeira chuva admite outra leitura, «mestre de justiça». Aqui prevalece a leitura agrícola, dada a sequência de chuvas e colheitas.
+**1:5**
 
-**2:28–32** · A BEE mantém «toda a carne» como a ARC; a NVI e a NVT explicitam o alcance humano. A enumeração seguinte dá corpo à imagem: filhos e filhas, velhos e jovens, servos e servas. WLC 3:1–5 corresponde a estes cinco versículos; o capítulo 4 hebraico corresponde a Joel 3 na BEE.
+- «Bêbedos» significa «embriagados». O primeiro apelo dirige-se a quem se embriaga; o segundo, a todos os que bebem vinho.
 
-**3:10, 14** · A transformação das ferramentas inverte o movimento de Miqueias 4:3. Quem decide no vale é o juiz de 3:12; não introduzimos no texto uma decisão religiosa individual.
+### Notas do capítulo 2
 
-[Fonte: WLC/OSHB, revisão fixada](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Joel.xml), CC BY 4.0. [Cotejo pontual de traduções portuguesas](https://www.bible.com/pt/bible/compare/JOL.2.28). Sem colação direta de manuscritos; revisão filológica integral pendente.
+**2:13**
+
+- «Quem sabe?» conserva o apelo sem transformá-lo numa garantia. A bênção imaginada deixaria novamente cereal e bebida para a oferta que faltava em 1:9.
+
+**2:23**
+
+- A expressão sobre a primeira chuva admite outra leitura, «mestre de justiça». Aqui prevalece a leitura agrícola, dada a sequência de chuvas e colheitas.
+
+**2:28**
+
+- A BEE mantém «toda a carne» como a ARC; a NVI e a NVT explicitam o alcance humano. A enumeração seguinte dá corpo à imagem: filhos e filhas, velhos e jovens, servos e servas. WLC 3:1–5 corresponde a estes cinco versículos; o capítulo 4 hebraico corresponde a Joel 3 na BEE.
+
+### Notas do capítulo 3
+
+**3:10**
+
+- A transformação das ferramentas inverte o movimento de Miqueias 4:3. Quem decide no vale é o juiz de 3:12; não introduzimos no texto uma decisão religiosa individual.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

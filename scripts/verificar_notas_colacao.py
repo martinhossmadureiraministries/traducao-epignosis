@@ -87,9 +87,9 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
             ref = f"{cap}:{verso.get('verse')}"
             com = verso.get('commentary') or ''
             texto = verso.get('text') or ''
-            # O «[[ ]]» é marca legítima no texto (leitura assinalada); as
-            # regras de resíduo aplicam-se só ao comentário. No texto, só
-            # se procura marcador de produção (pendente/quarentena).
+            # Os colchetes do texto são verificados em verificar_dados (só
+            # colchetes simples). Aqui as regras de resíduo aplicam-se ao
+            # comentário; no texto, só se procura marcador de produção.
             for regex, nome in RESIDUOS:
                 if regex.search(com):
                     problemas.append(f'{ref}: {nome}')
@@ -107,7 +107,9 @@ def verificar(dados: dict, colacao: dict) -> list[str]:
                 # variante do aparato tem de ter CT.
                 if (versiculos.get(ref, {}).get('base', {})
                         .get('aparato_sblgnt') or []):
-                    problemas.append(f'{ref}: variante do aparato sem Crítica Textual')
+                    problemas.append(
+                        f'{ref}: variante do aparato sem '
+                        + ('nota' if not com.strip() else 'Crítica Textual'))
                 continue
             facto = versiculos.get(ref)
             if facto is None:

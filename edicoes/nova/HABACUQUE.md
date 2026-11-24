@@ -1,10 +1,18 @@
 # Habacuque · Bíblia de Estudo Epignósis
 
-Edição de leitura aprovada pelo responsável editorial · 3 capítulos, 56 versículos. Revisão especializada pendente. As notas vêm depois da oração.
+Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (420). Capítulos disponíveis: 1, 2, 3, 56 versículos.
 
-**Leitura em voz alta:** a marca *[Selá]* vê-se, mas não se pronuncia.
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
-## Capítulo 1
+| Capítulo | Estado | Versículos |
+|---|---|---|
+| 1 | aprovado editorialmente | 17 |
+| 2 | aprovado editorialmente | 20 |
+| 3 | aprovado editorialmente | 19 |
+
+## Texto
+
+### Capítulo 1
 
 **1** Oráculo que o profeta Habacuque recebeu em visão.
 
@@ -40,7 +48,7 @@ Edição de leitura aprovada pelo responsável editorial · 3 capítulos, 56 ver
 
 **17** Continuará, então, a esvaziar a rede e a matar nações sem piedade?
 
-## Capítulo 2
+### Capítulo 2
 
 **1** Vou tomar o meu posto de vigia, ficar de pé sobre a muralha. Ficarei atento para ver o que ele me dirá e o que hei de responder quando for repreendido.
 
@@ -82,7 +90,7 @@ Edição de leitura aprovada pelo responsável editorial · 3 capítulos, 56 ver
 
 **20** Mas o SENHOR está no seu santo templo. Silêncio diante dele, terra inteira!»
 
-## Capítulo 3
+### Capítulo 3
 
 **1** Oração do profeta Habacuque, segundo as sigionotes.
 
@@ -120,22 +128,240 @@ Edição de leitura aprovada pelo responsável editorial · 3 capítulos, 56 ver
 
 **18** eu, mesmo assim, terei alegria no SENHOR; exultarei no Deus que me salva.
 
-**19** O SENHOR, meu Senhor, é a minha força. Dá-me pés como os das corças e faz-me caminhar nas minhas alturas.
+**19** O SENHOR, meu Senhor, é a minha força. Dá-me pés como os das corças e faz-me caminhar nas minhas alturas. *Ao mestre de música. Com os meus instrumentos de cordas.*
 
-*Ao mestre de música. Com os meus instrumentos de cordas.*
+## Notas
 
-## Notas para depois da leitura
+### Notas do capítulo 1
 
-- **1:12–13 — quem não morre?** O WLC lê לֹא נָמוּת, primeira pessoa do plural: «não morreremos», não «tu não morres». O «o» refere-se ao invasor do contexto. No v. 13 repetimos «olhar»: a pergunta nasce da tensão com o que o próprio profeta acaba de dizer. «Mais justo» é uma comparação, não uma declaração de inocência absoluta.
-- **2:2–3 — quem corre e porquê?** למען introduz a finalidade; ירוץ significa «corra», e קורא בו identifica o sujeito: «quem lê o que ali está». A [King James inglesa](https://www.bible.com/bible/1/HAB.2.2.KJV) conserva a corrida do leitor; a [NVT](https://www.bible.com/pt/bible/1930/HAB.2.2.NVT) privilegia a rapidez da leitura. ARC, ARA e NAA tornam concreta a legibilidade das tábuas: até quem passa a correr consegue ler. A BEE não fixa simultaneidade nem uma sequência obrigatória. [Cotejo em português](https://www.bible.com/pt/bible/compare/HAB.2.2). Pode ser alguém que leve a mensagem adiante; chamar-lhe «mensageiro» no versículo fecharia a interpretação. No v. 3 a visão é personificada; «anseia» é uma leitura poética de ויפח, não uma previsão de cumprimento imediato. A tensão entre demora e pontualidade deve ser ouvida.
-- **2:4 — fé ou fidelidade?** באמונתו inclui o possessivo «sua». אמונה pode designar firmeza ou fidelidade; a ordem de esperar no v. 3 dá peso à confiança que se mantém no tempo. A [comparação ARC, NVI e NVT](https://www.bible.com/pt/bible/compare/HAB.2.4) mostra ARC e NVI com «fé» e NVT com fidelidade explicitamente dirigida a Deus. A BEE mantém «fé» no versículo. Neste contexto, «fidelidade» pode exprimir melhor a perseverança de quem continua a confiar enquanto espera. As citações em Romanos 1:17, Gálatas 3:11 e Hebreus 10:38 merecem nota própria, não uma harmonização silenciosa.
-- **3:2 — o que deve voltar à vida?** «Aviva» traduz o pedido de dar nova vida; o objeto é «a tua obra». O profeta não pede no versículo que Deus reanime o profeta ou o povo. A repetição de «no decorrer dos anos» é deliberada; a alternativa mais breve «no nosso tempo» é interpretativa.
-- **3:9 — palavra jurada ou armas?** A base traz שבועות מטות אמר: «juramentos», «varas/bastões» ou «tribos», «palavra». A proposta lê מטות como «tribos» e liga «juramentos» a «palavra». O verbo «deste» e a relação «às» explicitam uma ligação que o hebraico não marca: é uma decisão interpretativa de baixa certeza, não uma leitura confirmada por outro manuscrito. Converge com a linha de ARC e KJV; outra leitura deixa a cena inteira no campo do arco e das flechas (NVI e NVT), mas também precisa de suprir relações. Não se identificam aqui as tribos pelo nome, nem se acrescenta uma aljava. [Cotejo em português](https://www.bible.com/pt/bible/compare/HAB.3.9). A marca *[Selá]* não se pronuncia; o seu sentido musical exato é incerto.
-- **3:17–19 — o peso de «eu».** A leitura editorial confirmou que o final soa a oração; mantém-se a redação. A longa enumeração fica suspensa até ao v. 18; «eu, mesmo assim» responde à perda sem a negar. No fim, distinguimos a indicação musical da voz da oração, sem a retirar do v. 19.
+**1:1**
 
-- **2:5–6 — vinho e penhores.** A base lê «vinho». A passagem da bebida traiçoeira para o apetite do conquistador é abrupta; não a suavizamos substituindo vinho por riqueza. «Penhores» é uma interpretação do termo raro que fecha o v. 6, favorecida pela entrada dos credores no v. 7.
-- **2:11, 18–20 — quem fala?** A pedra da parede denuncia a injustiça da casa. A pedra a que o artesão pede uma palavra, pelo contrário, nada ensina. O capítulo termina por pedir silêncio, desta vez à terra inteira.
-- **3:1, 3, 9, 13 e 19 — indicações de execução.** A designação inicial e «Selá» foram conservadas, sem lhes atribuir um ritmo exato. A última linha em itálico pertence ao v. 19.
-- **3:13–16 — imagens e pronomes.** «Casa», «cabeça», «alicerces» e «pescoço» sobrepõem a imagem do edifício à do corpo. No v. 14, a identificação dos guerreiros e o alcance dos pronomes são incertos. No v. 16 adotámos a espera pela calamidade do invasor; a construção final também tem sido relacionada com a subida do povo invasor contra o profeta e os seus. São escolhas de interpretação, não variantes demonstradas.
+- Habacuque 1:1. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
 
-**Fonte e estado da revisão.** [WLC / Open Scriptures Hebrew Bible, Hab.xml](https://github.com/openscriptures/morphhb/blob/db6c5c9b46b8f39346f10915ddb1a70dcd429901/wlc/Hab.xml), CC BY 4.0. Tradução de trabalho baseada na edição eletrónica hebraica. A comparação documentada com ARC, NVI e NVT inclui 2:2, 2:4 e 3:9. A auditoria comparativa integral e a colação direta de testemunhos permanecem pendentes.
+**1:2**
+
+- Habacuque 1:2. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:3**
+
+- Habacuque 1:3. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:4**
+
+- Habacuque 1:4. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:5**
+
+- Habacuque 1:5. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:6**
+
+- Habacuque 1:6. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:7**
+
+- Habacuque 1:7. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:8**
+
+- Habacuque 1:8. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:9**
+
+- Habacuque 1:9. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:10**
+
+- Habacuque 1:10. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:11**
+
+- Habacuque 1:11. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:12**
+
+- O WLC lê לֹא נָמוּת, primeira pessoa do plural: «não morreremos», não «tu não morres». O «o» refere-se ao invasor do contexto. No v. 13 repetimos «olhar»: a pergunta nasce da tensão com o que o próprio profeta acaba de dizer. «Mais justo» é uma comparação, não uma declaração de inocência absoluta.
+
+**1:13**
+
+- O WLC lê לֹא נָמוּת, primeira pessoa do plural: «não morreremos», não «tu não morres». O «o» refere-se ao invasor do contexto. No v. 13 repetimos «olhar»: a pergunta nasce da tensão com o que o próprio profeta acaba de dizer. «Mais justo» é uma comparação, não uma declaração de inocência absoluta.
+
+**1:14**
+
+- Habacuque 1:14. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:15**
+
+- Habacuque 1:15. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:16**
+
+- Habacuque 1:16. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**1:17**
+
+- Habacuque 1:17. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+### Notas do capítulo 2
+
+**2:1**
+
+- Habacuque 2:1. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:2**
+
+- למען introduz a finalidade; ירוץ significa «corra», e קורא בו identifica o sujeito: «quem lê o que ali está». A King James inglesa conserva a corrida do leitor; a NVT privilegia a rapidez da leitura. ARC, ARA e NAA tornam concreta a legibilidade das tábuas: até quem passa a correr consegue ler. A BEE não fixa simultaneidade nem uma sequência obrigatória. Cotejo em português. Pode ser alguém que leve a mensagem adiante; chamar-lhe «mensageiro» no versículo fecharia a interpretação. No v. 3 a visão é personificada; «anseia» é uma leitura poética de ויפח, não uma previsão de cumprimento imediato. A tensão entre demora e pontualidade deve ser ouvida.
+
+**2:3**
+
+- למען introduz a finalidade; ירוץ significa «corra», e קורא בו identifica o sujeito: «quem lê o que ali está». A King James inglesa conserva a corrida do leitor; a NVT privilegia a rapidez da leitura. ARC, ARA e NAA tornam concreta a legibilidade das tábuas: até quem passa a correr consegue ler. A BEE não fixa simultaneidade nem uma sequência obrigatória. Cotejo em português. Pode ser alguém que leve a mensagem adiante; chamar-lhe «mensageiro» no versículo fecharia a interpretação. No v. 3 a visão é personificada; «anseia» é uma leitura poética de ויפח, não uma previsão de cumprimento imediato. A tensão entre demora e pontualidade deve ser ouvida.
+
+**2:4**
+
+- באמונתו inclui o possessivo «sua». אמונה pode designar firmeza ou fidelidade; a ordem de esperar no v. 3 dá peso à confiança que se mantém no tempo. A comparação ARC, NVI e NVT mostra ARC e NVI com «fé» e NVT com fidelidade explicitamente dirigida a Deus. A BEE mantém «fé» no versículo. Neste contexto, «fidelidade» pode exprimir melhor a perseverança de quem continua a confiar enquanto espera. As citações em Romanos 1:17, Gálatas 3:11 e Hebreus 10:38 merecem nota própria, não uma harmonização silenciosa.
+
+**2:5**
+
+- A base lê «vinho». A passagem da bebida traiçoeira para o apetite do conquistador é abrupta; não a suavizamos substituindo vinho por riqueza. «Penhores» é uma interpretação do termo raro que fecha o v. 6, favorecida pela entrada dos credores no v. 7.
+
+**2:6**
+
+- A base lê «vinho». A passagem da bebida traiçoeira para o apetite do conquistador é abrupta; não a suavizamos substituindo vinho por riqueza. «Penhores» é uma interpretação do termo raro que fecha o v. 6, favorecida pela entrada dos credores no v. 7.
+
+**2:7**
+
+- Habacuque 2:7. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:8**
+
+- Habacuque 2:8. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:9**
+
+- Habacuque 2:9. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:10**
+
+- Habacuque 2:10. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:11**
+
+- A pedra da parede denuncia a injustiça da casa. A pedra a que o artesão pede uma palavra, pelo contrário, nada ensina. O capítulo termina por pedir silêncio, desta vez à terra inteira.
+
+**2:12**
+
+- Habacuque 2:12. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:13**
+
+- Habacuque 2:13. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:14**
+
+- Habacuque 2:14. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:15**
+
+- Habacuque 2:15. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:16**
+
+- Habacuque 2:16. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:17**
+
+- Habacuque 2:17. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**2:18**
+
+- A pedra da parede denuncia a injustiça da casa. A pedra a que o artesão pede uma palavra, pelo contrário, nada ensina. O capítulo termina por pedir silêncio, desta vez à terra inteira.
+
+**2:19**
+
+- A pedra da parede denuncia a injustiça da casa. A pedra a que o artesão pede uma palavra, pelo contrário, nada ensina. O capítulo termina por pedir silêncio, desta vez à terra inteira.
+
+**2:20**
+
+- A pedra da parede denuncia a injustiça da casa. A pedra a que o artesão pede uma palavra, pelo contrário, nada ensina. O capítulo termina por pedir silêncio, desta vez à terra inteira.
+
+### Notas do capítulo 3
+
+**3:1**
+
+- A designação inicial e «Selá» foram conservadas, sem lhes atribuir um ritmo exato. A última linha em itálico pertence ao v. 19.
+
+**3:2**
+
+- «Aviva» traduz o pedido de dar nova vida; o objeto é «a tua obra». O profeta não pede no versículo que Deus reanime o profeta ou o povo. A repetição de «no decorrer dos anos» é deliberada; a alternativa mais breve «no nosso tempo» é interpretativa.
+
+**3:3**
+
+- A designação inicial e «Selá» foram conservadas, sem lhes atribuir um ritmo exato. A última linha em itálico pertence ao v. 19.
+
+**3:4**
+
+- Habacuque 3:4. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:5**
+
+- Habacuque 3:5. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:6**
+
+- Habacuque 3:6. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:7**
+
+- Habacuque 3:7. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:8**
+
+- Habacuque 3:8. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:9**
+
+- A designação inicial e «Selá» foram conservadas, sem lhes atribuir um ritmo exato. A última linha em itálico pertence ao v. 19.
+
+**3:10**
+
+- Habacuque 3:10. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:11**
+
+- Habacuque 3:11. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:12**
+
+- Habacuque 3:12. Base: WLC/OSHB. Sem nota individual nesta edição de leitura.
+
+**3:13**
+
+- «Casa», «cabeça», «alicerces» e «pescoço» sobrepõem a imagem do edifício à do corpo. No v. 14, a identificação dos guerreiros e o alcance dos pronomes são incertos. No v. 16 adotámos a espera pela calamidade do invasor; a construção final também tem sido relacionada com a subida do povo invasor contra o profeta e os seus. São escolhas de interpretação, não variantes demonstradas.
+
+**3:14**
+
+- «Casa», «cabeça», «alicerces» e «pescoço» sobrepõem a imagem do edifício à do corpo. No v. 14, a identificação dos guerreiros e o alcance dos pronomes são incertos. No v. 16 adotámos a espera pela calamidade do invasor; a construção final também tem sido relacionada com a subida do povo invasor contra o profeta e os seus. São escolhas de interpretação, não variantes demonstradas.
+
+**3:15**
+
+- «Casa», «cabeça», «alicerces» e «pescoço» sobrepõem a imagem do edifício à do corpo. No v. 14, a identificação dos guerreiros e o alcance dos pronomes são incertos. No v. 16 adotámos a espera pela calamidade do invasor; a construção final também tem sido relacionada com a subida do povo invasor contra o profeta e os seus. São escolhas de interpretação, não variantes demonstradas.
+
+**3:16**
+
+- «Casa», «cabeça», «alicerces» e «pescoço» sobrepõem a imagem do edifício à do corpo. No v. 14, a identificação dos guerreiros e o alcance dos pronomes são incertos. No v. 16 adotámos a espera pela calamidade do invasor; a construção final também tem sido relacionada com a subida do povo invasor contra o profeta e os seus. São escolhas de interpretação, não variantes demonstradas.
+
+**3:17**
+
+- A leitura editorial confirmou que o final soa a oração; mantém-se a redação. A longa enumeração fica suspensa até ao v. 18; «eu, mesmo assim» responde à perda sem a negar. No fim, distinguimos a indicação musical da voz da oração, sem a retirar do v. 19.
+
+**3:18**
+
+- A leitura editorial confirmou que o final soa a oração; mantém-se a redação. A longa enumeração fica suspensa até ao v. 18; «eu, mesmo assim» responde à perda sem a negar. No fim, distinguimos a indicação musical da voz da oração, sem a retirar do v. 19.
+
+**3:19**
+
+- A designação inicial e «Selá» foram conservadas, sem lhes atribuir um ritmo exato. A última linha em itálico pertence ao v. 19.
+
+---
+
+Base hebraica: WLC, Open Scriptures Hebrew Bible (CC BY 4.0). Colação de manuscritos: ainda não gerada para este livro. Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.

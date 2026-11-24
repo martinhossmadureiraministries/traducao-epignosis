@@ -41,7 +41,7 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   - `python3 scripts/verificar_documentacao.py`.
 - Compilação dos módulos MyBible, com a parte já completa:
   `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
-- Estado atual: 64 capítulos e 1532 versículos guardados na edição nova
+- Estado atual: 87 capítulos e 1999 versículos guardados na edição nova
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
 
 ## Testes
@@ -60,6 +60,6 @@ produto oficial ou aprovado pelo MyBible.
 
 Referências, licenças e detalhes ficam nos JSON e nos metadados dos módulos.
 
-**Leia:** [Filemom — piloto completo](edicoes/piloto/FILEMOM.md) · [Judas](edicoes/piloto/JUDAS.md) · [Tito](edicoes/piloto/TITO.md) · [2 João](edicoes/piloto/2_JOAO.md) · [3 João](edicoes/piloto/3_JOAO.md).
+**Leia:** [Filemom](edicoes/nova/FILEMOM.md) · [Judas](edicoes/nova/JUDAS.md) · [Tito](edicoes/nova/TITO.md) · [2 João](edicoes/nova/2_JOAO.md) · [3 João](edicoes/nova/3_JOAO.md) · [Filipenses](edicoes/nova/FILIPENSES.md) · [1 Tessalonicenses](edicoes/nova/1_TESSALONICENSES.md) · [2 Tessalonicenses](edicoes/nova/2_TESSALONICENSES.md) · [João](edicoes/nova/JOAO.md).
 
-**Apresentação da BEE:** o documento de apresentação foi arquivado em [`docs/arquivo/APRESENTACAO_BEE.docx`](docs/arquivo/APRESENTACAO_BEE.docx) porque descreve uma arquitetura anterior; uma versão atualizada fica para o encerramento do projeto.
+**Apresentação da BEE:** [`docs/APRESENTACAO_BEE.docx`](docs/APRESENTACAO_BEE.docx), gerada por `scripts/gerar_apresentacao.py` a partir dos JSON. A versão anterior fica em `docs/arquivo/APRESENTACAO_BEE.docx`.

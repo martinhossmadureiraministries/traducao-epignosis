@@ -246,7 +246,7 @@ diz que precisa delas.
 
 | Marca | Uso | Exemplo |
 |---|---|---|
-| `[[ … ]]` | leitura assinalada: adotada pela base mas ausente noutros testemunhos; alternativa substantiva; ou suplemento do Scrivener ausente do SBLGNT | Marcos 16:9-20 |
+| `[ … ]` | leitura assinalada (colchetes simples): adotada pela base mas ausente noutros testemunhos; alternativa substantiva; ou suplemento do Scrivener ausente do SBLGNT | Marcos 16:9-20 |
 | `<i>…</i>` | palavra acrescentada pela tradução para clareza, sem correspondente no original | 2Ts 2:3 `<i>esse dia não virá</i>`; 1:5 `<i>Isso é</i>`; 2:9 `<i>acontece</i>` |
 | `SENHOR` (maiúsculas) | **só** o Tetragrama יהוה no AT | Sl 23:1 |
 | `Senhor` | κύριος/אֲדֹנָי, inclusive no NT | 2Ts 2:2 «o dia do Senhor» |
@@ -320,8 +320,10 @@ mecanicamente pelo verificador de pontuação e maiúscula, e por
 
 ### 6.2 Estrutura da nota de cada versículo
 
-Forma vigente (desde 2026-11-23): **um parágrafo de prosa por versículo, sem
-rótulos e sem notação de nível.** A Crítica Textual é um parágrafo próprio, só
+Forma vigente (desde 2026-11-23): **quando há nota, um parágrafo de prosa, sem
+rótulos e sem notação de nível.** A nota é opcional (desde 2026-11-24): é
+obrigatória quando o texto tem acréscimo em itálico ou colchetes simples,
+e quando o aparato regista variante. A Crítica Textual é um parágrafo próprio, só
 quando há variante registada:
 
 1. **Comentário** (um parágrafo) — o termo grego em itálico com transliteração,
@@ -352,6 +354,7 @@ valida (`bee/arquivos.py`). O campo `sources` continua a fixar os commits.
 | **Cobertura** | quantos versículos/capítulos existem e são estruturalmente válidos | `chapters` / `in_progress` |
 | **Revisão editorial** | o responsável leu e aprovou a voz e as decisões | `review.editorial_blocks` |
 | **Revisão especializada** | hebraísta/grecista/crítico textual/teólogo reviu | `review.specialist` |
+| **Revisão aprovada pelo ministério** | responsável, como Martinho S. S. Madureira Ministries; etapa própria, distinta das anteriores | `review.ministerio` |
 
 Cobertura completa **não** é aprovação editorial, e aprovação editorial **não** é
 revisão especializada. O compilador copia os estados declarados e valida os
@@ -423,7 +426,7 @@ prioridade de revisão especializada.
 | 3:13 | ἐγκακήσητε / ἐκκακήσητε | ἐγκακήσητε | ἐκκακήσητε: RP, ST, KJTR, Scrivener; 03 lê ἐνκακήσητε | ortográfica; segue a base |
 | 3:14 | μὴ συναναμίγνυσθαι / καὶ μὴ συναναμίγνυσθε | infinitivo, sem καί | καὶ + imperativo: RP, ST, KJTR, Scrivener | segue a base |
 | 3:16 | ἐν παντὶ **τρόπῳ** | τρόπῳ («de todas as maneiras») | 02 escreveu **τόπῳ** («em todo o lugar») na mão original e foi corrigido para τρόπῳ | segue a base; a correção de 02 é o achado manuscritológico mais interessante do capítulo e vai na nota |
-| 3:18 | μετὰ πάντων ὑμῶν [ἀμήν] | sem ἀμήν | + ἀμήν: 02, RP, ST, KJTR, Scrivener; 01 e 03 não o têm | segue a base; não se marca com `[[ ]]` porque não é texto traduzido, é fecho litúrgico bizantino — registado na nota |
+| 3:18 | μετὰ πάντων ὑμῶν [ἀμήν] | sem ἀμήν | + ἀμήν: 02, RP, ST, KJTR, Scrivener; 01 e 03 não o têm | segue a base; não se marca com colchetes porque não é texto traduzido, é fecho litúrgico bizantino — registado na nota |
 
 ### 9.1 Achados manuscritológicos de 2 Tessalonicenses
 
@@ -477,7 +480,7 @@ versículo mais o relatório do livro; aqui ficam as decisões de consequência.
 
 | Ref. | Unidade | Decisão |
 |---|---|---|
-| Jd 1:5 | *Ἰησοῦς* (NA28) / *κύριος* (WH, Tregelles) / *ὁ κύριος* (RP) | segue a base: «[[Jesus]] salvou um povo». Das testemunhas colacionadas, 03 e SR leem com a base; 01 e 04 leem *κύριος*; P72 lê *θεὸς Χριστός*. **Decisão do responsável (2026-11-20): seguir NA28** — a leitura mantém-se; a dificuldade fica registada na nota, não como pendência |
+| Jd 1:5 | *Ἰησοῦς* (NA28) / *κύριος* (WH, Tregelles) / *ὁ κύριος* (RP) | segue a base: «[Jesus] salvou um povo». Das testemunhas colacionadas, 03 e SR leem com a base; 01 e 04 leem *κύριος*; P72 lê *θεὸς Χριστός*. **Decisão do responsável (2026-11-20): seguir NA28** — a leitura mantém-se; a dificuldade fica registada na nota, não como pendência |
 | Jd 1:22–23 | *ἐλεᾶτε* (WH, NA28) / *ἐλεεῖτε* (RP) / *ἐλέγχετε* (Tregelles), com três arranjos das cláusulas | segue a base; o arranjo RP desloca «em temor» para junto de «salvai» |
 | Fm 1:6 | *τοῦ* (WH, NA28, RP) / omissão (Tregelles, 02, 04); *ἡμῖν* / *ὑμῖν* (01, TR) | segue a base: «o bem que há em nós» |
 | 2 Jo 1:8 | *εἰργασάμεθα* «nós trabalhámos» / *εἰργάσασθε* «vocês trabalharam» (Tregelles, NIV; 02, SR) | segue a base; a pessoa dos três verbos fica registada na nota |
