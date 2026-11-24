@@ -22,7 +22,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 ---
 
-### João 5:42 — Crítica Textual reescrita
+### João 5:42 — Crítica Textual reescrita (aprovado pelo responsável)
 
 **Texto:** mas conheço vocês: não têm em si o amor de Deus.
 
@@ -32,7 +32,7 @@ Documento gerado a partir de `edicoes/nova/livros_json/`. Para cada versículo, 
 
 **Crítica Textual:** Na colação, 01 repete «*οὐκ ἔχετε*» depois de «*τὴν ἀγάπην τοῦ θεοῦ*»; 05 coloca «*οὐκ ἔχετε*» antes de «*τὴν ἀγάπην*» e omite-o no fim; 032 lê «*οὐκ ἔχεται*» (terceira pessoa) em lugar de «*οὐκ ἔχετε*»; 02 tem outra forma nesse lugar, que a colação transcreve apenas como «*ουχ εται*» e que fica por confirmar no manuscrito. O aparato da SBLGNT não regista variante, e a base segue o texto que a SBLGNT imprime.
 
-**Pergunta:** Aceita a CT? A testemunha 02 foi confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível. A CT regista isso.
+**Aprovado:** a testemunha 02 foi confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível. A CT regista isso.
 
 ---
 

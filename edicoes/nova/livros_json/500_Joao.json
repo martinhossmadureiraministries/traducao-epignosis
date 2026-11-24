@@ -4873,7 +4873,7 @@
         "verse_from": 1,
         "verse_to": 47,
         "status": "aprovado",
-        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente. Aprovado pelo responsável, nesta revisão: Crítica Textual de 5:42 reescrita conforme a colação. Forma da testemunha 02 confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível; a CT do versículo diz isso mesmo."
+        "nota": "Capítulo aprovado pelo responsável em 2026-11-23, em prosa, sem rótulos de secção nem níveis A/B/C. O texto da tradução não foi alterado. A Crítica Textual regista só as variantes do aparato da SBLGNT (commit d7f35ad) e a colação de João regenerada em docs/colacao/João.json. A revisão especializada continua pendente. Aprovado pelo responsável, nesta revisão: Crítica Textual de 5:42 reescrita conforme a colação. Forma da testemunha 02 confirmada na transcrição do CNTR (class 1/02, João 5:42): «ουχ εται», sem palavra grega reconhecível; a CT do versículo diz isso mesmo. 5:42 aprovado pelo responsável nesta revisão."
       },
       {
         "chapter": 6,
@@ -4950,7 +4950,7 @@
         "verse_from": 1,
         "verse_to": 33,
         "status": "rascunho",
-        "nota": "Capítulo redigido em prosa, registo elevado. Crítica Textual a partir do aparato da SBLGNT e da colação. Aguarda leitura do responsável."
+        "nota": "Capítulo redigido em prosa, registo elevado. Crítica Textual a partir do aparato da SBLGNT e da colação. Aguarda leitura do responsável. Em 16:25 e 16:29, «com clareza» aprovado pelo responsável. Paráclito: decisão em aberto."
       },
       {
         "chapter": 17,
