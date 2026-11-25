@@ -4,16 +4,21 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 
 ## Estado atual
 
-- **28 livros** em `edicoes/nova/livros_json/`: 18 do Novo Testamento e 10 do Antigo.
-- **Editorial:** os 28 estão `aprovado editorialmente` pelo responsável.
-- **Ministério:** aprovado em 27 livros. Gálatas (550) está pendente.
-- **Especializada:** pendente nos 28, a cargo de especialista externo.
-- **Novo Testamento:** faltam **9 livros**: Mateus, Marcos, Lucas, Atos, Romanos, 1 Coríntios, Efésios, Hebreus e Apocalipse. Efésios conta como falta porque o texto aprovado não está no repositório. Sem Efésios, faltam 8.
-- **Efésios:** o responsável aprovou o texto editorial e o do ministério, mas o JSON e a leitura não estão neste ramo nem em `main`. É preciso recuperá-los ou refazer o texto e aprová-lo de novo. Decisões já registadas: 1:1 «em Éfeso» entre colchetes com nota; 5:9 «fruto da luz»; 5:2 «nos amou» e «por nós»; 5:17 e 6:17 imperativos; 3:3 passiva; 6:16 «em todas»; 1:18 «coração» (καρδίας, base); 3:9 «administração» (οἰκονομία, base); e acréscimos da RP e omissões da WH na base.
-- **2 Coríntios (540):** aprovado editorialmente e pelo ministério em 2026-11-27. A revisão especializada está pendente.
-- **Gálatas (550):** aprovado editorialmente. Revisão especializada e do ministério pendentes.
-- **1 Timóteo (610):** aprovado editorialmente e pelo ministério. Revisão especializada pendente. Não há perguntas em aberto registadas no JSON.
-- Verificações: dados, estilo, convenções, notas com colação e documentação passam. Testes: `python3 -m unittest discover -s tests`, 188 testes OK.
+Atualizado em 2026-11-20, depois da aprovação de Efésios e Hebreus.
+
+- **30 livros** em `edicoes/nova/livros_json/`: 20 do Novo Testamento e 10 do Antigo. 157 capítulos e 3 533 versículos.
+- **Editorial:** os 30 estão `aprovado editorialmente` pelo responsável.
+- **Ministério:** os 30 estão `aprovado pelo ministério`, por indicação do responsável.
+- **Especializada:** pendente nos 30, a cargo de especialista externo.
+- **Novo Testamento:** faltam **7 livros**: Mateus, Marcos, Lucas, Atos, Romanos, 1 Coríntios e Apocalipse.
+- **Efésios (560):** o ficheiro aprovado original não foi encontrado em Git, em ramos nem no sistema de ficheiros. O texto foi refeito a partir do grego (`.bee-cache/efe/`, fora do Git) com o aparato da colação. O responsável confirmou em 2026-11-20 que o texto refeito corresponde ao aprovado. Decisões registadas: 1:1 «em Éfeso» entre colchetes, com nota; 1:18 «coração» (base, καρδίας); 3:9 «administração» (base, οἰκονομία); 5:2 «nos amou» e «por nós»; 5:9 «fruto da luz»; 5:17 e 6:17 imperativos; 6:16 «em todas».
+- **Hebreus (650):** aprovado editorialmente e pelo ministério em 2026-11-20, por indicação do responsável. Decisões registadas: 2:7 acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar `χάριτι`; 8:8 `αὐτούς`, 9:11 `γενομένων`, 9:14 `ἡμῶν` e 10:34 `δεσμίοις` seguem a base; 11:11 «a própria Sara», sem «estéril» no texto, com nota a registar NA28 e P46. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes) seguem a base, confirmadas pelo responsável.
+  - **Pontos abertos, sem decisão:** diferenças entre a colação e as transcrições em 1:8, 3:6, 9:14 e 13:21, por confirmar.
+  - **Revisão de 12:1–13:25:** feita por amostragem (12:27, 13:21, 11:4, 11:37 e as CTs geradas do aparato). Não foi lida versículo a versículo. Recomenda-se rever antes da revisão especializada.
+  - **Ortografia:** `verificar_ortografia.py` não foi reexecutado sobre Hebreus nesta etapa.
+  - **Estudo prévio:** `docs/estudos/HEBREUS.md` é rascunho. Corrigidas as atribuições de P46 em 9:14, de P13 em 10:34 e a afirmação sobre 01 em 1:8, que não batiam com as transcrições. Não está aprovado como estudo. Deve ser revisto com o responsável.
+- **Próximo livro:** **Apocalipse (730, 404 versículos)**, pela ordem de tamanho de `docs/RESUMO_ESTILO.md`, secção 10. Começar só após decisão do responsável sobre o início do trabalho.
+- Verificações (2026-11-20): `verificar_dados.py`, `verificar_estilo.py`, `verificar_convencoes_notas.py`, `verificar_notas_colacao.py` (560 e 650) e `verificar_documentacao.py` passam. Testes: `python3 -m unittest discover -s tests`, 188 testes, OK.
 
 ## Regras de processo (instruções do responsável)
 
@@ -52,7 +57,7 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 - **Colossenses 1:15:** «primogénito de toda a criação» (decisão do responsável). Não trocar por «protótipo» sem nova decisão.
 - **2 Timóteo 4:13 e 4:20:** não interpretados no cruzamento com o SBLGNT.
 
-**Revisão especializada (especialista externo), nos 28 livros.** Itens conhecidos: 2 Pedro 2:4 (WH e Treg com «σιροῖς» segundo o aparato, mas a colação regista «σειροῖς» para WH; discrepância na CT); 1 João 3:19 e 5:13 decididos como base pelo responsável; 1 Pedro, 2 Timóteo e Colossenses com as variantes de forma seguindo a base.
+**Revisão especializada (especialista externo), nos 30 livros.** Itens conhecidos: 2 Pedro 2:4 (WH e Treg com «σιροῖς» segundo o aparato, mas a colação regista «σειροῖς» para WH; discrepância na CT); 1 João 3:19 e 5:13 decididos como base pelo responsável; 1 Pedro, 2 Timóteo e Colossenses com as variantes de forma seguindo a base.
 
 **Dívida de processo:** 1 João foi commitado como rascunho antes da aprovação do MD (commit `2a94b90`). A aprovação indevida que veio a seguir (`465016b`) foi revertida em `6856c2a`. Não repetir: aprovar o MD antes de commitar texto.
 
