@@ -2,14 +2,18 @@
 
 Documento de passagem, escrito em 2026-11-26, depois da varredura completa que precedeu o merge do PR 75 para `main`. Serve para quem retomar o trabalho num ramo novo. Ler antes de tocar em texto.
 
-## Estado após o merge
+## Estado atual
 
-- **27 livros** em `edicoes/nova/livros_json/`: 1 Timóteo (26.º) está aprovado editorialmente e pelo ministério; Gálatas (27.º) está aprovado editorialmente, com revisão especializada e do ministério pendentes. **125 capítulos**, **2 818 versículos**, todos completos.
-- **Editorial:** os 25 estão `aprovado editorialmente` pelo responsável.
-- **Ministério:** aprovado em 8 livros: Oseias, Joel, Colossenses, 2 Timóteo, Tiago, 1 Pedro, 2 Pedro e 1 João. Pendente nos outros 17.
-- **Especializada:** pendente nos 25, a cargo de especialista externo.
-- **Próximo livro:** **Efésios (155 versículos)**, recomendação do agente pela ordem de tamanho; a confirmar pelo responsável. Depois, 2 Coríntios (257) e Hebreus (303).
-- Verificações de 2026-11-26: dados, estilo, convenções e documentação passam. As notas de cada livro com colação conferem com a colação. As 25 leituras em `edicoes/nova/*.md` estão iguais aos JSON. Testes: `./.venv/bin/python -m unittest discover -s tests`, 188 testes OK.
+- **28 livros** em `edicoes/nova/livros_json/`: 18 do Novo Testamento e 10 do Antigo.
+- **Editorial:** os 28 estão `aprovado editorialmente` pelo responsável.
+- **Ministério:** aprovado em 27 livros. Gálatas (550) está pendente.
+- **Especializada:** pendente nos 28, a cargo de especialista externo.
+- **Novo Testamento:** faltam **9 livros**: Mateus, Marcos, Lucas, Atos, Romanos, 1 Coríntios, Efésios, Hebreus e Apocalipse. Efésios conta como falta porque o texto aprovado não está no repositório. Sem Efésios, faltam 8.
+- **Efésios:** o responsável aprovou o texto editorial e o do ministério, mas o JSON e a leitura não estão neste ramo nem em `main`. É preciso recuperá-los ou refazer o texto e aprová-lo de novo. Decisões já registadas: 1:1 «em Éfeso» entre colchetes com nota; 5:9 «fruto da luz»; 5:2 «nos amou» e «por nós»; 5:17 e 6:17 imperativos; 3:3 passiva; 6:16 «em todas»; 1:18 «coração» (καρδίας, base); 3:9 «administração» (οἰκονομία, base); e acréscimos da RP e omissões da WH na base.
+- **2 Coríntios (540):** aprovado editorialmente e pelo ministério em 2026-11-27. A revisão especializada está pendente.
+- **Gálatas (550):** aprovado editorialmente. Revisão especializada e do ministério pendentes.
+- **1 Timóteo (610):** aprovado editorialmente e pelo ministério. Revisão especializada pendente. Não há perguntas em aberto registadas no JSON.
+- Verificações: dados, estilo, convenções, notas com colação e documentação passam. Testes: `python3 -m unittest discover -s tests`, 188 testes OK.
 
 ## Regras de processo (instruções do responsável)
 
@@ -48,7 +52,7 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 - **Colossenses 1:15:** «primogénito de toda a criação» (decisão do responsável). Não trocar por «protótipo» sem nova decisão.
 - **2 Timóteo 4:13 e 4:20:** não interpretados no cruzamento com o SBLGNT.
 
-**Revisão especializada (especialista externo), nos 25 livros.** Itens conhecidos: 2 Pedro 2:4 (WH e Treg com «σιροῖς» segundo o aparato, mas a colação regista «σειροῖς» para WH; discrepância na CT); 1 João 3:19 e 5:13 decididos como base pelo responsável; 1 Pedro, 2 Timóteo e Colossenses com as variantes de forma seguindo a base.
+**Revisão especializada (especialista externo), nos 28 livros.** Itens conhecidos: 2 Pedro 2:4 (WH e Treg com «σιροῖς» segundo o aparato, mas a colação regista «σειροῖς» para WH; discrepância na CT); 1 João 3:19 e 5:13 decididos como base pelo responsável; 1 Pedro, 2 Timóteo e Colossenses com as variantes de forma seguindo a base.
 
 **Dívida de processo:** 1 João foi commitado como rascunho antes da aprovação do MD (commit `2a94b90`). A aprovação indevida que veio a seguir (`465016b`) foi revertida em `6856c2a`. Não repetir: aprovar o MD antes de commitar texto.
 
