@@ -2,15 +2,15 @@
 
 Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capítulos disponíveis: 1, 2, 3, 4, 5, 105 versículos.
 
-**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | rascunho | 25 |
-| 2 | rascunho | 25 |
-| 3 | rascunho | 22 |
-| 4 | rascunho | 19 |
-| 5 | rascunho | 14 |
+| 1 | aprovado editorialmente | 25 |
+| 2 | aprovado editorialmente | 25 |
+| 3 | aprovado editorialmente | 22 |
+| 4 | aprovado editorialmente | 19 |
+| 5 | aprovado editorialmente | 14 |
 
 ## Texto
 
@@ -724,4 +724,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_Pedro.json` (livro inteiro, gerada por `scripts/colar.py --livro 670`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_Pedro.json` (livro inteiro, gerada por `scripts/colar.py --livro 670`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

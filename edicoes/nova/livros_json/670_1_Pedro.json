@@ -631,36 +631,36 @@
         "chapter": 1,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aguarda aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aprovado pelo responsável."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 25,
-        "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aguarda aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aprovado pelo responsável."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 22,
-        "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aguarda aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aprovado pelo responsável."
       },
       {
         "chapter": 4,
         "verse_from": 1,
         "verse_to": 19,
-        "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aguarda aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aprovado pelo responsável."
       },
       {
         "chapter": 5,
         "verse_from": 1,
         "verse_to": 14,
-        "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aguarda aprovação do responsável."
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_Pedro.json. Decisões do responsável registadas nas CT e em docs/EDITORIAL.md. Aprovado pelo responsável."
       }
     ],
     "specialist": [
@@ -701,9 +701,9 @@
       }
     ],
     "ministerio": {
-      "status": "pendente",
+      "status": "aprovado pelo ministério",
       "ministerio": "Martinho S. S. Madureira Ministries",
-      "nota": "Aguarda revisão do ministério (etapa própria, distinta da revisão editorial e da especializada)."
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada."
     }
   }
 }
