@@ -527,7 +527,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **4:15**
 
 - *φυλάσσου* (*phylassou*), acautela-te.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:15: a base lê «*ἀντέστη*» (aoristo), com WH, Treg e NA28; RP lê «*ἀνθέστηκεν*» (perfeito). Na colação, KJTR, RP e ST leem «*ἀνθέστηκεν*». A diferença é de tempo verbal, e a tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:15: a base lê «*ἀντέστη*» (aoristo), com WH, Treg e NA28; RP lê «*ἀνθέστηκεν*» (perfeito). Na colação, KJTR, RP e Scrivener leem «*ἀνθέστηκεν*», e ST lê a forma sem o «nu» final, «*ἀνθέστηκε*». A diferença é de tempo verbal, e a tradução segue a base.
 
 **4:16**
 
