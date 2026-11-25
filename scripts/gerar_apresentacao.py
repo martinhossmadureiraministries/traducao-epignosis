@@ -220,7 +220,7 @@ def construir(livros: list[dict] | None = None):
     lista([
         f'Revisão especializada dos {len(livros)} livros, por especialista externo.',
         f'Revisão aprovada pelo ministério: faltam {len(livros) - n_ministerio} livros com edição nova.',
-        'Próximo livro: Tiago (108 versículos), com colação feita; texto ainda por redigir. '
+        'Próximo livro: 1 João (105 versículos), redigido em rascunho e à espera de aprovação editorial e do ministério; seguinte na ordem: Tiago (108 versículos). '
         'A ordem das cartas segue os livros menores primeiro, com prioridade para os que fixam a voz '
         'e o vocabulário (ver docs/RESUMO_ESTILO.md, secção 10).',
         f'{total_livros - len(livros)} livros do catálogo ainda sem edição nova, incluindo o Antigo '

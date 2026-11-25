@@ -2,15 +2,15 @@
 
 Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capítulos disponíveis: 1, 2, 3, 4, 5, 105 versículos.
 
-**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | aprovado editorialmente | 10 |
-| 2 | aprovado editorialmente | 29 |
-| 3 | aprovado editorialmente | 24 |
-| 4 | aprovado editorialmente | 21 |
-| 5 | aprovado editorialmente | 21 |
+| 1 | rascunho | 10 |
+| 2 | rascunho | 29 |
+| 3 | rascunho | 24 |
+| 4 | rascunho | 21 |
+| 5 | rascunho | 21 |
 
 ## Texto
 
@@ -403,7 +403,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **3:19**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:19: a base lê «*γνωσόμεθα*» (saberemos, futuro), com WH, Treg e NA28; RP lê «*γινώσκομεν*» (conhecemos). **Decisão do responsável:** base («saberemos», futuro).
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:19: a base lê «*γνωσόμεθα*» (saberemos, futuro), com WH, Treg e NA28; RP lê «*γινώσκομεν*» (conhecemos). **Decisão pendente do responsável:** a tradução segue a base por enquanto, e a escolha entre futuro e presente fica por confirmar.
 
 **3:21**
 
@@ -503,7 +503,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **5:13**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiais). A tradução segue a base. **Confirmado pelo responsável:** a base tem esta expressão, e a tradução segue-a.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiais). A tradução segue a base. **A confirmar:** a decisão do responsável foi tomada com uma descrição que dizia que a base não tinha esta expressão; a base tem-na.
 
 **5:15**
 
@@ -523,4 +523,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_João.json` (livro inteiro, gerada por `scripts/colar.py --livro 690`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_João.json` (livro inteiro, gerada por `scripts/colar.py --livro 690`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
