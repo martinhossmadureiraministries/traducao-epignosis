@@ -4,7 +4,7 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 
 ## Estado após o merge
 
-- **25 livros** em `edicoes/nova/livros_json/`, **113 capítulos**, **2 556 versículos**, todos completos.
+- **26 livros** em `edicoes/nova/livros_json/` (o 26.º, 1 Timóteo, está redigido e **por aprovar**), **119 capítulos**, **2 669 versículos**, todos completos.
 - **Editorial:** os 25 estão `aprovado editorialmente` pelo responsável.
 - **Ministério:** aprovado em 8 livros: Oseias, Joel, Colossenses, 2 Timóteo, Tiago, 1 Pedro, 2 Pedro e 1 João. Pendente nos outros 17.
 - **Especializada:** pendente nos 25, a cargo de especialista externo.

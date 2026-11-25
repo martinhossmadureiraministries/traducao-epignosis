@@ -242,9 +242,9 @@
       }
     ],
     "ministerio": {
-      "status": "pendente",
+      "status": "aprovado pelo ministério",
       "ministerio": "Martinho S. S. Madureira Ministries",
-      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da revisão especializada. Aplica-se aos livros com edição nova. Pendente em todos."
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries), por indicação do responsável: etapa própria, distinta da revisão editorial e da especializada."
     }
   }
 }
