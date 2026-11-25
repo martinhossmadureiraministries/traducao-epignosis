@@ -1,0 +1,672 @@
+{
+  "format_version": 1,
+  "book_number": 690,
+  "book_name": "1 João",
+  "chapter_count": 5,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "O que era desde o princípio, o que ouvimos, o que vimos com os nossos olhos, o que contemplámos e as nossas mãos apalparam, acerca da palavra da vida.",
+        "commentary": "<p><i>λόγου τῆς ζωῆς</i> (<i>lógou tēs zōēs</i>), a palavra da vida: a expressão abre a carta com a experiência direta dos apóstolos.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E a vida foi manifestada; e nós vimos, testemunhamos e anunciamos a vocês a vida eterna, que estava junto do Pai e nos foi manifestada.",
+        "commentary": "<p><i>αἰώνιον</i> (<i>aiṓnion</i>), eterna. A vida é aquela que estava <i>πρὸς τὸν πατέρα</i> (<i>pròs tòn patéra</i>), junto do Pai.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "O que vimos e ouvimos, isso anunciamos também a vocês, para que também vocês tenham comunhão connosco; e a nossa comunhão é com o Pai e com o seu Filho Jesus Cristo.",
+        "commentary": "<p><i>κοινωνίαν</i> (<i>koinōnían</i>), comunhão, participação comum.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:3: <i>καὶ</i> WH Treg NA28 ] – RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "E estas coisas escrevemos a vocês, para que a nossa alegria seja completa.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:4: a base lê «<i>ἡμεῖς</i>» (nós) e «<i>ἡμῶν</i>», com WH, Treg e NA28; RP lê «<i>ὑμῖν</i>» (vós). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «<i>ὑμῖν</i>»; 02, KJTR e Scrivener leem também «<i>ὑμῶν</i>». A tradução segue a base, «a nossa alegria», por decisão do responsável (2026-11-26).</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Esta é a mensagem que ouvimos dele e anunciamos a vocês: Deus é luz, e nele não há trevas nenhumas.",
+        "commentary": "<p><i>ἀγγελία</i> (<i>angelía</i>), mensagem; <i>σκοτία</i> (<i>skotía</i>), trevas.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:5: <i>ἐν αὐτῷ οὐκ ἔστιν</i> NA28 RP ] <i>οὐκ ἔστιν ἐν αὐτῷ</i> WH Treg. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Se dissermos que temos comunhão com ele e andamos nas trevas, mentimos e não praticamos a verdade."
+      },
+      {
+        "verse": 7,
+        "text": "Mas, se andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:7: NA28 omite «<i>δὲ</i>»; RP acrescenta «<i>Χριστοῦ</i>» depois de «Jesus». A tradução segue a base, sem o acrescento.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Se dissermos que não temos pecado, enganamo-nos a nós mesmos, e a verdade não está em nós.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:8: <i>οὐκ ἔστιν ἐν ἡμῖν</i> WH NA28 RP ] <i>ἐν ἡμῖν οὐκ ἔστιν</i> Treg. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Se confessarmos os nossos pecados, ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça.",
+        "commentary": "<p><i>ὁμολογῶμεν</i> (<i>homologṓmen</i>), confessar, dizer em conjunto o que é verdadeiro.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Se dissermos que não pecámos, fazemo-lo mentiroso, e a sua palavra não está em nós."
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Filhinhos meus, escrevo estas coisas a vocês para que não pequem. E, se alguém pecar, temos junto do Pai um advogado, Jesus Cristo, o justo.",
+        "commentary": "<p><i>παράκλητον</i> (<i>paráklēton</i>), advogado, defensor junto do Pai; o mesmo termo, em João, aplica-se ao Espírito.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E ele é a propiciação pelos nossos pecados; e não só pelos nossos, mas também pelos de todo o mundo.",
+        "commentary": "<p><i>ἱλασμός</i> (<i>hilasmós</i>), propiciação, aquilo que aplaca e afasta a ira; o termo é o mesmo de Romanos 3:25.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E nisto sabemos que o conhecemos: se guardarmos os seus mandamentos."
+      },
+      {
+        "verse": 4,
+        "text": "Quem diz: Eu o conheço, e não guarda os seus mandamentos, é mentiroso, e nele não está a verdade.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: <i>ὅτι</i> WH Treg NA28 ] – RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Mas quem guarda a sua palavra, nele o amor de Deus está verdadeiramente aperfeiçoado. Nisto sabemos que estamos nele.",
+        "commentary": "<p><i>τετελείωται</i> (<i>teteleíōtai</i>), foi levado à perfeição, chegou à plenitude.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Quem diz que permanece nele deve andar como ele andou.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:6: <i>αὐτὸς</i> WH Treg ] + <i>οὕτως</i> NA28 RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Irmãos, não escrevo a vocês mandamento novo, mas mandamento antigo, que tinham desde o princípio; o mandamento antigo é a palavra que ouviram desde o princípio.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:7: a base lê «<i>Ἀγαπητοί</i>» (amados), com WH, Treg e NA28; RP lê «<i>Ἀδελφοί</i>» (irmãos). RP acrescenta «<i>ἀπʼ ἀρχῆς</i>» (desde o princípio) depois de «<i>ἠκούσατε</i>» (ouvistes). Por decisão do responsável (2026-11-26), a tradução segue a RP: «Irmãos» e «desde o princípio».</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Contudo, escrevo a vocês um mandamento novo, que é verdadeiro nele e em vocês, porque as trevas estão a passar e a luz verdadeira já brilha."
+      },
+      {
+        "verse": 9,
+        "text": "Quem diz que está na luz e odeia o seu irmão continua nas trevas até agora."
+      },
+      {
+        "verse": 10,
+        "text": "Quem ama o seu irmão permanece na luz, e nele não há ocasião de tropeço.",
+        "commentary": "<p><i>σκάνδαλον</i> (<i>skándalon</i>), ocasião de queda, armadilha.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Mas quem odeia o seu irmão está nas trevas, anda nas trevas e não sabe para onde vai, porque as trevas cegaram os seus olhos."
+      },
+      {
+        "verse": 12,
+        "text": "Escrevo a vocês, filhinhos, porque os pecados de vocês foram perdoados por causa do seu nome."
+      },
+      {
+        "verse": 13,
+        "text": "Escrevo a vocês, pais, porque conhecem aquele que é desde o princípio. Escrevo a vocês, jovens, porque venceram o maligno. Escrevi a vocês, filhinhos, porque conhecem o Pai.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:13 (posição 14 do versículo): a base lê «<i>ἔγραψα</i>» (escrevi), com WH, Treg e NA28; RP lê «<i>Γράφω</i>» (escrevo). Na colação, KJTR, RP, ST e WH omitem a frase «<i>ἔγραψα ὑμῖν, παιδία, ὅτι ἐγνώκατε τὸν πατέρα</i>». Esta passagem tem desalinhamento entre a colação de 2:13 e a de 2:14, a conferir antes da revisão final. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Escrevi a vocês, pais, porque conhecem aquele que é desde o princípio. Escrevi a vocês, jovens, porque são fortes, a palavra de Deus permanece em vocês e venceram o maligno.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:14 (posição 14): a base lê «<i>ἔγραψα</i>» (escrevi), com WH, Treg e NA28; RP lê «<i>Γράφω</i>» (escrevo). A colação desta frase tem o mesmo desalinhamento de 2:13, a conferir. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Não amem o mundo, nem as coisas que há no mundo. Se alguém ama o mundo, o amor do Pai não está nele."
+      },
+      {
+        "verse": 16,
+        "text": "Porque tudo o que há no mundo — a concupiscência da carne, a concupiscência dos olhos e a arrogância da vida — não procede do Pai, mas do mundo.",
+        "commentary": "<p><i>ἀλαζονεία</i> (<i>alazoneía</i>), arrogância, vaidade ostentosa.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "E o mundo passa, e também a sua concupiscência; mas quem faz a vontade de Deus permanece para sempre."
+      },
+      {
+        "verse": 18,
+        "text": "Filhinhos, é a última hora; e, como ouviram que vem o anticristo, também agora se levantaram muitos anticristos. Por isso sabemos que é a última hora.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:18: <i>ὅτι</i> WH Treg NA28 ] + <i>ὁ</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Saíram do nosso meio, mas não eram dos nossos; porque, se fossem dos nossos, teriam permanecido connosco. Mas saíram para que se manifestasse que nem todos são dos nossos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:19: <i>ἐξ ἡμῶν ἦσαν</i> WH Treg NA28 ] <i>ἦσαν ἐξ ἡμῶν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "E vocês têm unção da parte do Santo, e todos sabem.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:20: a base lê «<i>πάντες</i>» (todos), com WH e NA28; Treg e RP leem «<i>πάντα</i>» (tudo). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «<i>πάντα</i>». A tradução segue a base, «vocês todos sabem», por decisão do responsável (2026-11-26).</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Não escrevi a vocês porque não conhecem a verdade, mas porque a conhecem, e porque nenhuma mentira procede da verdade."
+      },
+      {
+        "verse": 22,
+        "text": "Quem é o mentiroso, senão quem nega que Jesus é o Cristo? Esse é o anticristo: quem nega o Pai e o Filho."
+      },
+      {
+        "verse": 23,
+        "text": "Todo aquele que nega o Filho também não tem o Pai. [Todo aquele que confessa o Filho tem também o Pai.]",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:23: a segunda metade do versículo vem entre colchetes na base, com WH, Treg e NA28 a lerem-na; RP e ST omitem-na. Na colação, 01, 02 e 04 têm variantes de grafia nesta frase («<i>υἱόν</i>», «<i>πατέρα</i>»), com expansões de abreviatura duvidosas em 02 e 04. Por decisão do responsável (2026-11-26), mantém-se entre colchetes, como na base.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Quanto a vocês, permaneça em vocês o que ouviram desde o princípio. Se em vocês permanecer o que desde o princípio ouviram, também vocês permanecerão no Filho e no Pai.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:24: <i>ὑμεῖς</i> WH Treg NA28 ] + <i>οὐν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "E esta é a promessa que ele mesmo nos fez: a vida eterna."
+      },
+      {
+        "verse": 26,
+        "text": "Estas coisas escrevi a vocês acerca dos que os enganam."
+      },
+      {
+        "verse": 27,
+        "text": "E quanto a vocês, a unção que receberam dele permanece em vocês, e não têm necessidade de que alguém os ensine; mas, como a sua unção os ensina acerca de tudo, e é verdadeira e não é mentira, permaneçam nele, como ela os ensinou.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:27: a base lê «<i>αὐτοῦ</i>» (dele), com WH, Treg e NA28; RP lê «<i>αὐτὸ</i>» (isso). A tradução segue a base.</p>"
+      },
+      {
+        "verse": 28,
+        "text": "E agora, filhinhos, permaneçam nele, para que, se ele se manifestar, tenhamos confiança e não nos envergonhemos diante dele na sua vinda.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:28: a base lê «<i>ἐάν</i>» (se), com WH, Treg e NA28; RP, KJTR, ST e Scrivener leem «<i>ὅταν</i>» (quando). A diferença é condicional ou temporal. Por decisão do responsável (2026-11-26), a tradução segue a base, «se».</p>"
+      },
+      {
+        "verse": 29,
+        "text": "Se sabem que ele é justo, saibam também que todo aquele que pratica a justiça nasceu dele.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:29: <i>ὅτι</i> WH RP ] + <i>καὶ</i> NA28 Treg. A tradução segue a base.</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Vejam que grande amor nos deu o Pai, para que sejamos chamados filhos de Deus, e somos. Por isso o mundo não nos conhece, porque não o conheceu a ele.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:1: a base lê «<i>ἡμᾶς</i>» (nós) e «<i>καὶ ἐσμέν</i>» (e somos), com WH, Treg e NA28; RP lê «<i>ὑμᾶς</i>» (vós) e omite «<i>καὶ ἐσμέν</i>». Por decisão do responsável (2026-11-26), a tradução segue a base.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que seremos. Sabemos que, se ele se manifestar, seremos semelhantes a ele, porque o veremos como ele é.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:2: <i>οἴδαμεν</i> WH Treg NA28 ] + <i>δὲ</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "E todo aquele que tem esta esperança nele purifica-se a si mesmo, como aquele é puro."
+      },
+      {
+        "verse": 4,
+        "text": "Todo aquele que pratica o pecado pratica também a iniquidade, e o pecado é a iniquidade.",
+        "commentary": "<p><i>ἀνομία</i> (<i>anomía</i>), iniquidade, transgressão da lei.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "E sabem que ele se manifestou para tirar os pecados, e nele não há pecado.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:5: <i>ἁμαρτίας</i> WH Treg NA28 ] + <i>ἡμῶν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Todo aquele que permanece nele não peca; todo aquele que peca não o viu nem o conheceu."
+      },
+      {
+        "verse": 7,
+        "text": "Filhinhos, ninguém os engane: o que pratica a justiça é justo, como aquele é justo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:7: <i>τεκνία</i> WH Treg NA27 RP ] <i>παιδία</i> NA28 WHmarg. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "O que pratica o pecado é do diabo, porque o diabo peca desde o princípio. Para isto se manifestou o Filho de Deus: para desfazer as obras do diabo.",
+        "commentary": "<p><i>λύσῃ</i> (<i>lýsē</i>), desfazer, destruir.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Todo aquele que nasceu de Deus não pratica o pecado, porque a sua semente permanece nele; e não pode pecar, porque nasceu de Deus.",
+        "commentary": "<p><i>σπέρμα</i> (<i>spérma</i>), semente, descendência; o termo é aqui metáfora da vida gerada por Deus.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Nisto se manifestam os filhos de Deus e os filhos do diabo: todo aquele que não pratica a justiça não é de Deus, nem quem não ama o seu irmão."
+      },
+      {
+        "verse": 11,
+        "text": "Porque esta é a mensagem que ouviram desde o princípio: que nos amemos uns aos outros."
+      },
+      {
+        "verse": 12,
+        "text": "Não como Caim, que era do maligno e matou o seu irmão. E por que motivo o matou? Porque as suas obras eram más, e as do irmão, justas."
+      },
+      {
+        "verse": 13,
+        "text": "Não se admirem, irmãos, se o mundo os odeia.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:13: <i>μὴ</i> WH Treg RP ] <i>καὶ μὴ</i> NA28; <i>ἀδελφοί</i> WH Treg NA28 ] + <i>μου</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Nós sabemos que passámos da morte para a vida, porque amamos os irmãos. Quem não ama permanece na morte.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:14: <i>ἀγαπῶν</i> WH Treg NA28 ] + <i>τὸν ἀδελφόν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Todo aquele que odeia o seu irmão é homicida; e sabem que nenhum homicida tem em si vida eterna permanente.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:15: a base lê «<i>αὐτῷ</i>» (nele), com WH, Treg e NA28; RP lê «<i>ἑαυτῷ</i>» (em si mesmo). A tradução segue a base.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Nisto conhecemos o amor: ele deu a sua vida por nós; e nós devemos dar a vida pelos irmãos.",
+        "commentary": "<p><i>θεῖναι</i> (<i>theînai</i>), pôr, dar; a expressão repete a de João 10:11.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:16: <i>θεῖναι</i> WH Treg NA28 ] <i>τιθέναι</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Mas quem tiver os bens do mundo, e vir o seu irmão em necessidade, e fechar o seu coração para com ele, como permanece nele o amor de Deus?",
+        "commentary": "<p><i>σπλάγχνα</i> (<i>splánchna</i>), entranhas, compaixão; «fechar as entranhas» é recusar a compaixão.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Filhinhos, não amemos com palavra nem com a língua, mas em obra e em verdade.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:18: <i>Τεκνία</i> WH Treg NA28 ] + <i>μου</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Nisto saberemos que somos da verdade e tranquilizaremos o nosso coração diante dele,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:19: a base lê «<i>γνωσόμεθα</i>» (saberemos, futuro), com WH, Treg e NA28; RP lê «<i>γινώσκομεν</i>» (conhecemos). <b>Decisão pendente do responsável:</b> a tradução segue a base por enquanto, e a escolha entre futuro e presente fica por confirmar.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "porque, se o nosso coração nos condenar, Deus é maior do que o nosso coração, e conhece todas as coisas."
+      },
+      {
+        "verse": 21,
+        "text": "Amados, se o nosso coração não nos condenar, temos confiança diante de Deus,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:21: <i>μὴ καταγινώσκῃ ἡμῶν</i> Treg ] <i>μὴ καταγινώσκῃ</i> WH; <i>ἡμῶν μὴ καταγινώσκῃ</i> NA28; <i>ἡμῶν μὴ καταγινώσκῃ ἡμῶν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "e tudo o que pedirmos recebemos dele, porque guardamos os seus mandamentos e fazemos o que lhe agrada.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:22: <i>ἐὰν</i> Treg NA28 RP ] <i>ἂν</i> WH; <i>ἀπʼ</i> WH Treg NA28 ] <i>παρʼ</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "E este é o seu mandamento: que creiamos no nome do seu Filho, Jesus Cristo, e que nos amemos uns aos outros, como ele nos ordenou.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:23: <i>πιστεύσωμεν</i> WH NA28 RP ] <i>πιστεύωμεν</i> Treg; <i>ἡμῖν</i> WH Treg NA28 ] – RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Quem guarda os seus mandamentos permanece nele, e ele nele. E nisto sabemos que ele permanece em nós: pelo Espírito que nos deu."
+      }
+    ],
+    "4": [
+      {
+        "verse": 1,
+        "text": "Amados, não creiam em todo espírito, mas provem os espíritos, se são de Deus; porque muitos falsos profetas saíram pelo mundo.",
+        "commentary": "<p><i>δοκιμάζετε</i> (<i>dokimázete</i>), provai, examinai com critério.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Nisto conhecem o Espírito de Deus: todo espírito que confessa Jesus Cristo vindo em carne é de Deus,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:2: a base lê «<i>γινώσκετε</i>» (conhecem), com WH, Treg e NA28; RP lê «<i>γινώσκεται</i>» (é conhecido). Por decisão do responsável (2026-11-26), a tradução segue a base.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "e todo espírito que não confessa Jesus não é de Deus. Este é o espírito do anticristo, do qual ouviram que vem e que agora já está no mundo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:3: a base lê «<i>τὸν Ἰησοῦν</i>», com WH, Treg e NA28, sem «<i>Χριστὸν ἐν σαρκὶ ἐληλυθότα</i>» (Cristo vindo em carne); RP omite «<i>τὸν</i>» e acrescenta a expressão; KJTR, ST e Scrivener acrescentam-na. Por decisão do responsável (2026-11-26), a tradução segue a base, sem o acrescento.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Vocês são de Deus, filhinhos, e venceram aqueles, porque é maior o que está em vocês do que o que está no mundo;"
+      },
+      {
+        "verse": 5,
+        "text": "eles são do mundo; por isso falam do mundo, e o mundo os ouve."
+      },
+      {
+        "verse": 6,
+        "text": "Nós somos de Deus. Quem conhece a Deus ouve-nos; quem não é de Deus não nos ouve. Nisto conhecemos o espírito da verdade e o espírito do erro."
+      },
+      {
+        "verse": 7,
+        "text": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; e todo aquele que ama nasceu de Deus e conhece a Deus."
+      },
+      {
+        "verse": 8,
+        "text": "Quem não ama não conheceu a Deus, porque Deus é amor."
+      },
+      {
+        "verse": 9,
+        "text": "Nisto se manifestou o amor de Deus entre nós: que Deus enviou ao mundo o seu Filho unigénito, para que vivamos por meio dele.",
+        "commentary": "<p><i>μονογενῆ</i> (<i>monogenē</i>), unigénito, único em seu género.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Nisto está o amor: não em que nós tenhamos amado a Deus, mas em que ele nos amou e enviou o seu Filho como propiciação pelos nossos pecados.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:10: <i>ἠγαπήκαμεν</i> WH NA28 ] <i>ἠγαπήσαμεν</i> Treg RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Amados, se Deus assim nos amou, também nós devemos amar uns aos outros."
+      },
+      {
+        "verse": 12,
+        "text": "A Deus ninguém jamais viu. Se nos amarmos uns aos outros, Deus permanece em nós, e o seu amor está em nós aperfeiçoado.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:12: <i>ἐν ἡμῖν τετελειωμένη ἐστιν</i> NA28 ] <i>τετελειωμένη ἐν ἡμῖν ἐστίν</i> WH Treg; <i>τετελειωμένη ἐστιν ἐν ἡμῖν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Nisto sabemos que permanecemos nele, e ele em nós: porque nos deu do seu Espírito."
+      },
+      {
+        "verse": 14,
+        "text": "E nós vimos e testemunhamos que o Pai enviou o Filho como salvador do mundo."
+      },
+      {
+        "verse": 15,
+        "text": "Quem confessar que Jesus é o Filho de Deus, Deus permanece nele, e ele em Deus.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:15: <i>ἐὰν</i> WH NA28 ] <i>ἂν</i> Treg RP; <i>Ἰησοῦς</i> Treg NA28 RP ] + <i>Χριστός</i> WH. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "E nós conhecemos e cremos no amor que Deus tem por nós. Deus é amor; e quem permanece no amor permanece em Deus, e Deus nele.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:16: <i>μένει</i> WH NA28 RP ] – Treg. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Nisto o amor se aperfeiçoa entre nós, para que tenhamos confiança no dia do juízo; porque, como ele é, também nós somos neste mundo."
+      },
+      {
+        "verse": 18,
+        "text": "No amor não há medo; antes o amor perfeito lança fora o medo, porque o medo tem castigo; e quem teme não está aperfeiçoado no amor.",
+        "commentary": "<p><i>κόλασιν</i> (<i>kólasin</i>), castigo, tormento.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Nós amamos porque ele nos amou primeiro.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:19: <i>ἀγαπῶμεν</i> WH Treg NA28 ] + <i>αὐτόν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Se alguém disser: Amo a Deus, e odeia o seu irmão, é mentiroso; porque quem não ama o seu irmão, a quem vê, como pode amar a Deus, a quem não vê?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:20: a base lê «<i>οὐ δύναται</i>» (não pode), com WH, Treg e NA28; RP, KJTR e Scrivener leem «<i>πῶς δύναται</i>» (como pode), em forma de pergunta. Por decisão do responsável (2026-11-26), a tradução segue a RP, em forma de pergunta.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "E temos dele este mandamento: que quem ama a Deus ame também o seu irmão."
+      }
+    ],
+    "5": [
+      {
+        "verse": 1,
+        "text": "Todo aquele que crê que Jesus é o Cristo nasceu de Deus; e todo aquele que ama o que gerou também ama o que dele foi gerado.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:1: <i>καὶ</i> Treg NA28 RP ] – WH. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Nisto conhecemos que amamos os filhos de Deus: quando amamos a Deus e praticamos os seus mandamentos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:2: <i>ποιῶμεν</i> WH Treg NA28 ] <i>τηρῶμεν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Porque este é o amor a Deus: que guardemos os seus mandamentos; e os seus mandamentos não são pesados,"
+      },
+      {
+        "verse": 4,
+        "text": "porque tudo o que nasceu de Deus vence o mundo; e esta é a vitória que venceu o mundo: a nossa fé."
+      },
+      {
+        "verse": 5,
+        "text": "Quem é que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:5: <i>δέ ἐστιν</i> Treg NA28 ] <i>ἐστιν δὲ</i> WH; <i>ἐστιν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Este é o que veio por água e sangue, Jesus Cristo; não só com água, mas com água e com sangue. E o Espírito é o que dá testemunho, porque o Espírito é a verdade.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:6: <i>ἐν</i> WH Treg NA28 ] – RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Porque há três que testemunham [no céu: o Pai, o Verbo e o Espírito Santo; e estes três são um];",
+        "commentary": "<p><b>Crítica Textual:</b> A passagem, conhecida como <i>Comma Johanneum</i>, não consta da base SBLGNT nem da RP de Robinson. Na colação, KJTR, ST e Scrivener incluem a parte celeste («<i>ἐν τῷ οὐρανῷ</i>» e seguintes) nesta posição, e a parte terrestre no versículo 8. Por decisão do responsável (2026-11-26), o texto fica entre colchetes, com esta nota, para que o leitor veja a diferença sem o assumir como original.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "[E há três que testemunham na terra:] o Espírito, a água e o sangue; e os três são um.",
+        "commentary": "<p><b>Crítica Textual:</b> A parte terrestre, «<i>καὶ τρεῖς εἰσιν οἱ μαρτυροῦντες ἐν τῇ γῇ</i>», está em KJTR, ST e Scrivener, antes de «<i>τὸ πνεῦμα</i>». Fica entre colchetes com o versículo 7, por decisão do responsável (2026-11-26).</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Se recebemos o testemunho dos homens, o testemunho de Deus é maior, porque este é o testemunho de Deus, que deu testemunho acerca do seu Filho.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:9: <i>ὅτι</i> WH Treg NA28 ] <i>ἥν</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Quem crê no Filho de Deus tem o testemunho em si mesmo; quem não crê em Deus faz dele um mentiroso, porque não creu no testemunho que Deus deu acerca do seu Filho.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:10: <i>αὑτῷ</i> WH ] <i>αὐτῷ</i> Treg NA28 RP; <i>ἑαυτῷ</i> NA27. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "E este é o testemunho: que Deus nos deu a vida eterna, e esta vida está no seu Filho.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:11: <i>ὁ θεὸς ἡμῖν</i> WH ] <i>ἡμῖν ὁ θεὸς</i> Treg NA28 RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Quem tem o Filho tem a vida; quem não tem o Filho de Deus não tem a vida."
+      },
+      {
+        "verse": 13,
+        "text": "Estas coisas escrevi a vocês para que saibam que têm vida eterna, vocês que creem no nome do Filho de Deus.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «<i>τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ</i>» (vocês que creem no nome do Filho de Deus) e «<i>ἔχετε αἰώνιον</i>». KJTR, RP, ST e Scrivener trocam a ordem para «<i>αἰώνιον ἔχετε</i>» e acrescentam «<i>καὶ ἵνα πιστεύητε</i>» (e para que creiais). A tradução segue a base. <b>A confirmar:</b> a decisão do responsável foi tomada com uma descrição que dizia que a base não tinha esta expressão; a base tem-na.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E esta é a confiança que temos nele: que, se pedirmos algo segundo a sua vontade, ele nos ouve."
+      },
+      {
+        "verse": 15,
+        "text": "E, se sabemos que ele nos ouve em tudo o que pedimos, sabemos que temos as petições que dele pedimos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:15: <i>ἐὰν</i> WH NA28 RP ] <i>ἂν</i> Treg; <i>ἀπʼ</i> WH Treg NA28 ] <i>παρʼ</i> RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Se alguém vir o seu irmão a pecar um pecado que não é para morte, pedirá, e Deus dará vida aos que pecam sem que seja para morte. Há pecado para morte; não digo que se peça por esse."
+      },
+      {
+        "verse": 17,
+        "text": "Toda a injustiça é pecado, e há pecado que não é para morte."
+      },
+      {
+        "verse": 18,
+        "text": "Sabemos que todo aquele que nasceu de Deus não peca; mas aquele que nasceu de Deus o guarda, e o maligno não o toca.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:18: <i>αὐτόν</i> WH Treg NA27 ] <i>ἑαυτόν</i> NA28 RP. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Sabemos que somos de Deus, e o mundo inteiro jaz no maligno."
+      },
+      {
+        "verse": 20,
+        "text": "E sabemos que o Filho de Deus veio e nos deu entendimento para conhecermos o verdadeiro; e estamos no verdadeiro, em seu Filho Jesus Cristo. Este é o Deus verdadeiro e a vida eterna.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:20: <i>γινώσκωμεν</i> NA28 RP ] <i>γινώσκομεν</i> WH Treg. A tradução segue a base.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Filhinhos, guardem-se dos ídolos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:21: <i>εἰδώλων</i> WH Treg NA28 ] + <i>Ἀμήν</i> RP. A tradução segue a base.</p>"
+      }
+    ]
+  },
+  "in_progress": {},
+  "history": [
+    {
+      "chapter": 1,
+      "verse_from": 1,
+      "verse_to": 10,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/1_João.json",
+      "generated_at_utc": "2026-11-25T01:33:47+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 29,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/1_João.json",
+      "generated_at_utc": "2026-11-25T01:33:47+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 24,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/1_João.json",
+      "generated_at_utc": "2026-11-25T01:33:47+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 21,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/1_João.json",
+      "generated_at_utc": "2026-11-25T01:33:47+00:00"
+    },
+    {
+      "chapter": 5,
+      "verse_from": 1,
+      "verse_to": 21,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/1_João.json",
+      "generated_at_utc": "2026-11-25T01:33:47+00:00"
+    }
+  ],
+  "sources": {
+    "versification": "KJV/tradicional",
+    "alignment_version": 1,
+    "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+    "cntr_transcriptions_commit": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+    "collation_report": "docs/colacao/1_João.json"
+  },
+  "bibliography": [
+    {
+      "name": "SBLGNT — The Greek New Testament, SBL Edition",
+      "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "url": "https://github.com/Faithlife/SBLGNT",
+      "text_url": "https://codeload.github.com/Faithlife/SBLGNT/zip/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "license": "CC BY 4.0",
+      "attribution": "Base fixada do projeto. O aparato nomeia apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações sobre manuscritos vêm da colação CNTR.",
+      "papel": "base"
+    },
+    {
+      "name": "Textus Receptus — edição de Scrivener (Robinson)",
+      "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "url": "https://github.com/byztxt/greektext-scrivener",
+      "text_url": "https://codeload.github.com/byztxt/greektext-scrivener/zip/6049a43b135ed870f843b83eb6a04764fc796678",
+      "license": "domínio público segundo o fornecedor",
+      "attribution": "Comparação, não base. «O Textus Receptus» não é um texto único: esta edição difere de RP e do KJTR.",
+      "papel": "comparação"
+    },
+    {
+      "name": "CNTR Transcriptions (Center for New Testament Restoration)",
+      "revision": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+      "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Alan Bunning / Center for New Testament Restoration. Testemunhas de Filemom consultadas: 01, 02, 04, P139, P87; textos críticos: KJTR, RP, SR, ST, WH. Custódia: o acervo vive em .bee-cache/ (excluída pelo .gitignore) — é consultado e citado, nunca redistribuído; só o relatório de colação é versionado.",
+      "papel": "testemunhas e textos críticos"
+    },
+    {
+      "name": "Relatório de colação de Filemom (obra do projeto)",
+      "url": "docs/colacao/Filemom.json",
+      "attribution": "Gerado por scripts/colar.py com bee/manuscritos.py. É a evidência verificável de cada afirmação sobre manuscritos destas notas: uma linha do relatório por testemunha citada. O protocolo está em docs/CRITICA_TEXTUAL.md.",
+      "papel": "evidência"
+    }
+  ],
+  "review": {
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 10,
+        "status": "rascunho",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 29,
+        "status": "rascunho",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 24,
+        "status": "rascunho",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "rascunho",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "rascunho",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+      }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 10,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 29,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 24,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      }
+    ],
+    "ministerio": {
+      "status": "pendente",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Aprovação pelo ministério pendente, etapa própria."
+    }
+  }
+}

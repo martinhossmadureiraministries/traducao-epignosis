@@ -104,7 +104,11 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** 1 João (105 versículos). A colação está em `docs/colacao/1_Joao.json` e `.md`.
+**Próximo livro:** Tiago (108 versículos), na ordem de `docs/RESUMO_ESTILO.md`, depois de 1 João.
+
+**1 João (690)** está redigido em rascunho (`edicoes/nova/livros_json/690_1_Joao.json` e `edicoes/nova/1_JOAO.md`), por aprovar pelo responsável e pelo ministério. A colação está em `docs/colacao/1_João.json` e `.md`. Decisões do responsável (2026-11-26): 1:4 base («a nossa alegria»); 2:7 RP («irmãos», com «desde o princípio»); 2:20 base («vocês todos sabem»); 2:23 entre colchetes, como na base; 2:28 base («se ele se manifestar»); 4:2 base («conhecem»); 4:3 base (sem acréscimo); 4:20 RP (em forma de pergunta: «como pode amar a Deus, a quem não vê?»); 5:7–8 entre colchetes, com nota (passagem em disputa; a base e a RP de Robinson não a têm); 5:18 base («o guarda»); 5:13 base, **a confirmar** (ver abaixo); 3:1 base («sejamos chamados»).
+
+**Pontos em aberto em 1 João:** (a) 3:19, «γνωσόμεθα» (saberemos, base) ou «γινώσκομεν» (conhecemos, RP); a tradução segue a base, à espera de decisão. (b) 5:13: a decisão de base foi tomada com uma descrição errada, que dizia que a base não tinha «aos que creem no nome do Filho de Deus»; a base tem a expressão, e a RP, KJTR, ST e Scrivener trocam-na por «e para que creiais». Confirmar a base. (c) Variantes de forma ou sentido menor seguem a base e estão registadas nas CT: 2:27 («dele», RP «isso»); 3:15 («nele», RP «em si mesmo»); 5:2 («praticamos», RP «guardamos»).
 
 **1 Pedro (670)** está aprovado editorialmente e pelo ministério em 2026-11-26. Decisões registadas: 1:8 base («tendo visto»); 1:20 base («no fim dos tempos»); 1:21 base («fiéis»); 1:22 RP e NA28 («de coração puro», ἐκ καθαρᾶς καρδίας); 2:2 base («para a salvação»); 2:7 base («os que não creem»); 2:21 RP («por nós», ἡμῶν); 3:8 base («humildes»); 3:13 base («zelosos», ζηλωταί); 3:15 base («santificai Cristo»); 3:16 base («sois difamados», καταλαλεῖσθε); 3:18 base («sofreu»); 3:21 RP («nos», ἡμᾶς); 4:1 base (sem «por nós»); 4:14 base (sem a expressão da RP); 4:16 RP e NA28 («neste aspeto», μέρει); 5:8 RP («a quem possa devorar», τίνα καταπίῃ); 5:10 base («em Cristo», καταρτίσει); 5:11 base («a ele o domínio»). As restantes diferenças são de forma, ordem ou artigo, sem efeito no sentido, e seguem a base. A revisão especializada continua pendente.
 
