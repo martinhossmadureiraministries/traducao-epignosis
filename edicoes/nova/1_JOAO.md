@@ -403,7 +403,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **3:19**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:19: a base lê «*γνωσόμεθα*» (saberemos, futuro), com WH, Treg e NA28; RP lê «*γινώσκομεν*» (conhecemos). **Decisão pendente do responsável:** a tradução segue a base por enquanto, e a escolha entre futuro e presente fica por confirmar.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:19: a base lê «*γνωσόμεθα*» (saberemos, futuro), com WH, Treg e NA28; RP lê «*γινώσκομεν*» (conhecemos). **Decisão do responsável:** base («saberemos», futuro).
 
 **3:21**
 
@@ -503,7 +503,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **5:13**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiais). A tradução segue a base. **A confirmar:** a decisão do responsável foi tomada com uma descrição que dizia que a base não tinha esta expressão; a base tem-na.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiais). A tradução segue a base. **Decisão do responsável:** base, sem «e para que creiais». A descrição anterior dizia que a base não tinha «vocês que creem no nome do Filho de Deus»; a base tem-na.
 
 **5:15**
 

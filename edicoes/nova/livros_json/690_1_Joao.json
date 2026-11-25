@@ -279,7 +279,7 @@
       {
         "verse": 19,
         "text": "Nisto saberemos que somos da verdade e tranquilizaremos o nosso coração diante dele,",
-        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:19: a base lê «<i>γνωσόμεθα</i>» (saberemos, futuro), com WH, Treg e NA28; RP lê «<i>γινώσκομεν</i>» (conhecemos). <b>Decisão pendente do responsável:</b> a tradução segue a base por enquanto, e a escolha entre futuro e presente fica por confirmar.</p>"
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:19: a base lê «<i>γνωσόμεθα</i>» (saberemos, futuro), com WH, Treg e NA28; RP lê «<i>γινώσκομεν</i>» (conhecemos). <b>Decisão do responsável:</b> base («saberemos», futuro).</p>"
       },
       {
         "verse": 20,
@@ -463,7 +463,7 @@
       {
         "verse": 13,
         "text": "Estas coisas escrevi a vocês para que saibam que têm vida eterna, vocês que creem no nome do Filho de Deus.",
-        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «<i>τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ</i>» (vocês que creem no nome do Filho de Deus) e «<i>ἔχετε αἰώνιον</i>». KJTR, RP, ST e Scrivener trocam a ordem para «<i>αἰώνιον ἔχετε</i>» e acrescentam «<i>καὶ ἵνα πιστεύητε</i>» (e para que creiais). A tradução segue a base. <b>A confirmar:</b> a decisão do responsável foi tomada com uma descrição que dizia que a base não tinha esta expressão; a base tem-na.</p>"
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «<i>τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ</i>» (vocês que creem no nome do Filho de Deus) e «<i>ἔχετε αἰώνιον</i>». KJTR, RP, ST e Scrivener trocam a ordem para «<i>αἰώνιον ἔχετε</i>» e acrescentam «<i>καὶ ἵνα πιστεύητε</i>» (e para que creiais). A tradução segue a base. <b>Decisão do responsável:</b> base, sem «e para que creiais». A descrição anterior dizia que a base não tinha «vocês que creem no nome do Filho de Deus»; a base tem-na.</p>"
       },
       {
         "verse": 14,
@@ -595,35 +595,35 @@
         "verse_from": 1,
         "verse_to": 10,
         "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base; 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 base («saberemos»)."
       },
       {
         "chapter": 2,
         "verse_from": 1,
         "verse_to": 29,
         "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base; 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 base («saberemos»)."
       },
       {
         "chapter": 3,
         "verse_from": 1,
         "verse_to": 24,
         "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base; 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 base («saberemos»)."
       },
       {
         "chapter": 4,
         "verse_from": 1,
         "verse_to": 21,
         "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base; 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 base («saberemos»)."
       },
       {
         "chapter": 5,
         "verse_from": 1,
         "verse_to": 21,
         "status": "rascunho",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base (a confirmar); 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 pendente."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/1_João.json. Por aprovar pelo responsável. Decisões do responsável (2026-11-26) registadas nas CT: 1:4 base («nossa»); 2:7 RP («irmãos», «desde o princípio»); 2:20 base; 2:23 entre colchetes; 2:28 base («se»); 4:20 RP (pergunta); 5:7–8 entre colchetes; 5:13 base; 5:18 base; 4:2 e 4:3 base; 3:1 base; 3:19 base («saberemos»)."
       }
     ],
     "specialist": [
