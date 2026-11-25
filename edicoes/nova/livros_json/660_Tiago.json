@@ -1,0 +1,672 @@
+{
+  "format_version": 1,
+  "book_number": 660,
+  "book_name": "Tiago",
+  "chapter_count": 5,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "Tiago, servo de Deus e do Senhor Jesus Cristo, às doze tribos que estão na dispersão: saudações."
+      },
+      {
+        "verse": 2,
+        "text": "Considerem motivo de toda alegria, meus irmãos, quando passarem por provações variadas,"
+      },
+      {
+        "verse": 3,
+        "text": "sabendo que a prova da fé de vocês produz perseverança."
+      },
+      {
+        "verse": 4,
+        "text": "E a perseverança tenha a sua obra completa, para que sejam perfeitos e íntegros, sem faltar em nada."
+      },
+      {
+        "verse": 5,
+        "text": "Se algum de vocês carece de sabedoria, peça a Deus, que a todos dá generosamente e sem censura, e ela lhe será dada.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:5: <i>μὴ</i> WH Treg NA28 ] <i>οὐκ</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas peça com fé, sem duvidar, pois quem duvida é como a onda do mar, agitada e levada pelo vento."
+      },
+      {
+        "verse": 7,
+        "text": "Pois não suponha esse homem que receberá alguma coisa do Senhor,"
+      },
+      {
+        "verse": 8,
+        "text": "homem de ânimo dividido, instável em todos os seus caminhos."
+      },
+      {
+        "verse": 9,
+        "text": "Glorie-se o irmão humilde na sua exaltação,"
+      },
+      {
+        "verse": 10,
+        "text": "e o rico na sua humilhação, porque ele passará como a flor da erva."
+      },
+      {
+        "verse": 11,
+        "text": "Pois o sol nasce com o seu calor abrasador, seca a erva, a sua flor cai e a beleza do seu aspeto perece; assim também o rico murchará nos seus empreendimentos."
+      },
+      {
+        "verse": 12,
+        "text": "Bem-aventurado é o homem que suporta a provação, porque, depois de aprovado, receberá a coroa da vida, que ele prometeu aos que o amam.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:12: <i>ἐπηγγείλατο</i> WH Treg NA28 ] + <i>ὁ κύριος</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Ninguém, quando for tentado, diga: Sou tentado por Deus; pois Deus não é tentado pelo mal, e ele mesmo a ninguém tenta."
+      },
+      {
+        "verse": 14,
+        "text": "Mas cada um é tentado pela sua própria concupiscência, sendo atraído e seduzido por ela."
+      },
+      {
+        "verse": 15,
+        "text": "Depois, a concupiscência, tendo concebido, gera o pecado; e o pecado, uma vez consumado, dá à luz a morte."
+      },
+      {
+        "verse": 16,
+        "text": "Não se enganem, meus amados irmãos."
+      },
+      {
+        "verse": 17,
+        "text": "Toda boa dádiva e todo dom perfeito vêm do alto, descendo do Pai das luzes, em quem não há variação nem sombra de mudança."
+      },
+      {
+        "verse": 18,
+        "text": "Ele, por sua própria vontade, nos gerou pela palavra da verdade, para que fôssemos como primícias das suas criaturas."
+      },
+      {
+        "verse": 19,
+        "text": "Sabei isto, meus amados irmãos: que cada um seja pronto para ouvir, tardio para falar, tardio para se irar,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:19: <i>Ἴστε</i> WH Treg NA28 ] <i>Ὥστε</i> RP; <i>δὲ</i> WH Treg NA28 ] – RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "pois a ira do homem não produz a justiça de Deus.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:20: <i>οὐκ ἐργάζεται</i> WH Treg NA27 ] <i>οὐ κατεργάζεται</i> NA28 RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Por isso, despojando-se de toda impureza e de todo excesso de maldade, recebam com mansidão a palavra implantada, que pode salvar as suas almas."
+      },
+      {
+        "verse": 22,
+        "text": "Mas sejam praticantes da palavra, e não apenas ouvintes, enganando-se a si mesmos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:22: <i>ἀκροαταὶ μόνον</i> WH Treg ] <i>μόνον ἀκροαταὶ</i> NA28 RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Porque, se alguém é ouvinte da palavra e não praticante, este é semelhante a um homem que observa no espelho o seu rosto natural;"
+      },
+      {
+        "verse": 24,
+        "text": "pois se observa, vai embora e logo esquece como era."
+      },
+      {
+        "verse": 25,
+        "text": "Mas quem olha atentamente para a lei perfeita, a da liberdade, e nela permanece, não sendo ouvinte que esquece, mas praticante da obra, este será bem-aventurado na sua prática.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:25: <i>οὐκ</i> WH Treg NA28 ] <i>οὗτος οὐκ</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 26,
+        "text": "Se alguém pensa ser religioso, mas não refreia a sua língua e engana o seu coração, a sua religião é vã.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:26: <i>εἶναι</i> WH Treg NA28 ] + <i>ἐν ὑμῖν</i> RP; <i>αὐτοῦ</i> Treg NA28 RP ] <i>ἑαυτοῦ</i> WH; <i>αὐτοῦ</i> Treg NA28 RP ] <i>ἑαυτοῦ</i> WH. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 27,
+        "text": "A religião pura e sem mácula diante de Deus e Pai é esta: visitar órfãos e viúvas nas suas aflições, e guardar-se sem mancha do mundo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:27: <i>τῷ</i> WH Treg NA28 ] – RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Meus irmãos, não conciliem com acepção de pessoas a fé em nosso Senhor Jesus Cristo, o Senhor da glória."
+      },
+      {
+        "verse": 2,
+        "text": "Pois se entrar na assembleia de vocês um homem com anel de ouro e roupa resplandecente, e entrar também um pobre com roupa suja,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:2: <i>εἰς</i> WH Treg NA28 ] + <i>τὴν</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 3,
+        "text": "e vocês olharem para o que veste a roupa resplandecente e disserem: Sente-se aqui, em bom lugar; e ao pobre disserem: Fique aí em pé, ou sente-se ali, debaixo do meu estrado,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:3: <i>ἐπιβλέψητε δὲ</i> WH NA28 ] <i>καὶ ἐπιβλέψητε</i> Treg RP; <i>εἴπητε</i> WH Treg NA28 ] + <i>αὐτῷ</i> RP; <i>ἢ κάθου ἐκεῖ</i> WH NA28 ] <i>ἐκεῖ ἢ κάθου</i> Treg NA27; <i>ἐκεῖ ἢ κάθου ὧδε</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 4,
+        "text": "não fizeram discriminação dentro de vocês mesmos e se tornaram juízes com maus raciocínios?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: <i>οὐ</i> WH Treg NA27 ] <i>καὶ οὐ</i> NA28 RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Ouçam, meus amados irmãos: Deus não escolheu os pobres quanto ao mundo para serem ricos em fé e herdeiros do reino que prometeu aos que o amam?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:5: <i>τῷ κόσμῳ</i> WH Treg NA28 ] <i>τοῦ κόσμου</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas vocês desonraram o pobre. Não são os ricos que os oprimem e que os arrastam aos tribunais?"
+      },
+      {
+        "verse": 7,
+        "text": "Não são eles que blasfemam o bom nome que foi invocado sobre vocês?"
+      },
+      {
+        "verse": 8,
+        "text": "Se, de facto, cumprem a lei real segundo a Escritura: Amarás o teu próximo como a ti mesmo, fazem bem;"
+      },
+      {
+        "verse": 9,
+        "text": "mas, se fazem acepção de pessoas, cometem pecado, sendo convencidos pela lei como transgressores."
+      },
+      {
+        "verse": 10,
+        "text": "Pois quem guarda toda a lei, mas tropeça em um só ponto, tornou-se culpado de todos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:10: <i>τηρήσῃ πταίσῃ</i> WH Treg NA28 ] <i>τηρήσει πταίσει</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Pois aquele que disse: Não adulteres, disse também: Não mates. Se não comete adultério, mas mata, tornou-se transgressor da lei.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:11: <i>μοιχεύσῃς</i> WH Treg NA28 ] <i>μοιχεύσεις</i> RP; <i>φονεύσῃς</i> WH Treg NA28 ] <i>φονεύσεις</i> RP; <i>μοιχεύεις φονεύεις</i> WH Treg NA28 ] <i>μοιχεύσεις φονεύσεις</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Assim falem e assim ajam, como os que hão de ser julgados pela lei da liberdade."
+      },
+      {
+        "verse": 13,
+        "text": "Pois o juízo é sem misericórdia para quem não praticou misericórdia; a misericórdia triunfa sobre o juízo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:13: <i>ἔλεος</i> WH Treg NA28 ] <i>ἔλεον</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Que proveito há, meus irmãos, se alguém diz ter fé, mas não tem obras? Pode a fé salvá-lo?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:14: <i>Τί</i> WH ] + <i>τὸ</i> Treg NA28 RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Se um irmão ou uma irmã estiverem nus e sem o alimento diário,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:15: <i>ἐὰν</i> WH Treg NA28 ] + <i>δὲ</i> RP; <i>λειπόμενοι</i> WH Treg NA27 ] + <i>ὦσιν</i> NA28 RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "e algum de vocês lhes disser: Vão em paz, aqueçam-se e saciem-se, mas não lhes derem o necessário para o corpo, que proveito há?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:16: <i>τί</i> WH ] + <i>τὸ</i> Treg NA28 RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Assim também a fé: se não tiver obras, por si mesma está morta.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:17: <i>ἔχῃ ἔργα</i> WH Treg NA28 ] <i>ἔργα ἔχῃ</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Mas alguém dirá: Tu tens fé, e eu tenho obras. Mostra-me a tua fé sem as tuas obras, e eu te mostrarei a minha fé pelas minhas obras.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:18: <i>χωρὶς</i> WH Treg NA28 ] <i>ἐκ</i> RP; <i>ἔργων</i> WH Treg NA28 ] + <i>σου</i> RP; <i>σοι δείξω</i> WH Treg NA28 ] <i>δείξω σοι</i> RP; <i>πίστιν</i> WH Treg NA28 ] + <i>μου</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Tu crês que Deus é um só? Fazes bem; também os demónios creem e estremecem.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:19: <i>εἷς ἐστιν ὁ θεός</i> Treg NA28 ] <i>εἷς θεός ἐστιν</i> WH; <i>ὁ θεὸς εἷς ἐστιν</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Mas queres saber, ó homem vazio, que a fé sem obras é morta?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:20: <i>ἀργή</i> WH Treg NA28 ] <i>νεκρά</i> RP. Decisão do responsável: RP.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Não foi justificado pelas obras Abraão, nosso pai, ao oferecer Isaque, seu filho, sobre o altar?"
+      },
+      {
+        "verse": 22,
+        "text": "Vê-se que a fé cooperava com as obras dele, e que, pelas obras, a fé foi aperfeiçoada,"
+      },
+      {
+        "verse": 23,
+        "text": "e cumpriu-se a Escritura que diz: Abraão creu em Deus, e isso lhe foi imputado como justiça, e foi chamado amigo de Deus."
+      },
+      {
+        "verse": 24,
+        "text": "Vejam que o homem é justificado pelas obras, e não só pela fé.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:24: <i>ὁρᾶτε</i> WH Treg NA28 ] + <i>τοίνυν</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 25,
+        "text": "De modo semelhante, também Raabe, a prostituta, não foi justificada pelas obras, ao acolher os mensageiros e fazê-los sair por outro caminho?"
+      },
+      {
+        "verse": 26,
+        "text": "Pois, assim como o corpo sem espírito está morto, assim também a fé sem obras está morta.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:26: <i>γὰρ</i> Treg NA28 RP ] – WH; <i>χωρὶς</i> WH NA28 ] + <i>τῶν</i> Treg RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Não se tornem muitos mestres, meus irmãos, sabendo que receberemos maior juízo."
+      },
+      {
+        "verse": 2,
+        "text": "Pois todos tropeçamos em muitas coisas. Se alguém não tropeça no falar, este é homem perfeito, capaz de refrear também todo o corpo."
+      },
+      {
+        "verse": 3,
+        "text": "Se colocamos freios na boca dos cavalos para que nos obedeçam, também dirigimos todo o corpo deles.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:3: <i>εἰ δὲ</i> WH Treg NA28 ] <i>Ἴδε</i> RP; <i>εἰς</i> WH Treg NA28 ] <i>πρὸς</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Eis também os navios: embora sejam tão grandes e impelidos por ventos fortes, são dirigidos por um pequeno leme, para onde a vontade do timoneiro quiser.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:4: <i>ἀνέμων σκληρῶν</i> WH Treg NA28 ] <i>σκληρῶν ἀνέμων</i> RP; <i>ἡ</i> … <i>βούλεται</i> WH Treg NA28 ] <i>ἂν ἡ</i> … <i>βούληται</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Assim também a língua é um pequeno membro e se gaba de grandes coisas. Eis um pouco de fogo que incendeia uma floresta tão grande.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:5: <i>μεγάλα αὐχεῖ</i> WH Treg NA28 ] <i>μεγαλαυχεῖ</i> RP; <i>ἡλίκον</i> WH Treg NA28 ] <i>ὀλίγον</i> RP. Decisão do responsável: RP quanto a «<i>ὀλίγον</i>» («um pouco de fogo»). Quanto a «<i>μεγάλα αὐχεῖ</i>» (base) e «<i>μεγαλαυχεῖ</i>» (RP), a tradução segue a base, por forma (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 6,
+        "text": "E a língua é fogo, o mundo da iniquidade; a língua se estabelece entre os nossos membros, contaminando todo o corpo, incendiando o curso da existência e sendo incendiada pela geena.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:6: <i>ἀδικίας</i> WH Treg NA28 ] + <i>οὕτως</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Pois toda espécie de feras, de aves, de répteis e de seres marinhos é domada e tem sido domada pela natureza humana;"
+      },
+      {
+        "verse": 8,
+        "text": "mas a língua nenhum dos homens consegue domar: é um mal instável, cheio de veneno mortal.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:8: <i>δαμάσαι δύναται ἀνθρώπων</i> WH Treg NA28 ] <i>δύναται ἀνθρώπων δαμάσαι</i> RP; <i>ἀκατάστατον</i> WH Treg NA28 ] <i>ἀκατάσχετον</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Com ela bendizemos o Senhor e Pai, e com ela amaldiçoamos os homens feitos à semelhança de Deus.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:9: <i>κύριον</i> WH Treg NA28 ] <i>θεὸν</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Da mesma boca sai bênção e maldição. Não convém, meus irmãos, que isto seja assim."
+      },
+      {
+        "verse": 11,
+        "text": "Acaso a fonte jorra pela mesma abertura o doce e o amargo?"
+      },
+      {
+        "verse": 12,
+        "text": "Não pode, meus irmãos, a figueira produzir azeitonas, ou a videira figos? Nem a fonte salgada pode dar água doce.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:12: <i>οὔτε ἁλυκὸν</i> WH Treg NA28 ] <i>Οὕτως οὐδεμια πηγὴ ἁλυκὸν καὶ</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Quem é sábio e entendido entre vocês? Mostre pelas suas obras, na mansidão da sabedoria, a sua boa conduta."
+      },
+      {
+        "verse": 14,
+        "text": "Mas, se têm amargo zelo e espírito de rivalidade no coração, não se gabem nem mintam contra a verdade."
+      },
+      {
+        "verse": 15,
+        "text": "Esta sabedoria não é a que desce do alto, mas é terrena, psíquica, demoníaca."
+      },
+      {
+        "verse": 16,
+        "text": "Pois onde há zelo e rivalidade, aí há desordem e toda coisa má."
+      },
+      {
+        "verse": 17,
+        "text": "Mas a sabedoria que vem do alto é, antes de tudo, pura; depois, pacífica, amável, dócil, cheia de misericórdia e de bons frutos, imparcial, sem hipocrisia.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:17: <i>ἀδιάκριτος</i> WH Treg NA28 ] + <i>καὶ</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "E o fruto da justiça semeia-se em paz para os que praticam a paz.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 3:18: <i>δὲ</i> WH Treg NA28 ] + <i>τῆς</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      }
+    ],
+    "4": [
+      {
+        "verse": 1,
+        "text": "De onde vêm guerras e conflitos entre vocês? Não vêm daqui, dos prazeres de vocês que guerreiam nos seus membros?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:1: <i>πόθεν</i> WH Treg NA28 ] – RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Desejam e não têm; matam e invejam, e não conseguem alcançar; combatem e guerreiam. Não têm, porque não pedem;"
+      },
+      {
+        "verse": 3,
+        "text": "pedem e não recebem, porque pedem mal, para gastar em seus prazeres."
+      },
+      {
+        "verse": 4,
+        "text": "Adúlteras, não sabem que a amizade com o mundo é inimizade com Deus? Quem, portanto, quiser ser amigo do mundo torna-se inimigo de Deus.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:4: <i>μοιχαλίδες</i> WH Treg NA28 ] <i>Μοιχοὶ καὶ μοιχαλίδες</i> RP; <i>ἐὰν</i> WH NA28 ] <i>ἂν</i> Treg RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Acaso pensam que é em vão que a Escritura diz: O Espírito que ele fez habitar em nós deseja com ciúme?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:5: <i>κατῴκισεν</i> WH Treg NA28 ] <i>κατῴκησεν</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas ele dá maior graça. Por isso diz: Deus resiste aos soberbos, mas dá graça aos humildes."
+      },
+      {
+        "verse": 7,
+        "text": "Submetam-se, portanto, a Deus; resistam ao diabo, e ele fugirá de vocês."
+      },
+      {
+        "verse": 8,
+        "text": "Aproximem-se de Deus, e ele se aproximará de vocês. Lavem as mãos, pecadores, e purifiquem os corações, homens de ânimo dividido.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:8: <i>ἐγγιεῖ</i> Treg NA28 RP ] <i>ἐγγίσει</i> WH. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Sofram, lamentem-se e chorem: que o riso de vocês se torne luto, e a alegria, tristeza.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:9: <i>μετατραπήτω</i> WH NA28 ] <i>μεταστραφήτω</i> Treg RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Humilhem-se diante do Senhor, e ele os exaltará.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:10: <i>κυρίου</i> WH Treg NA27 ] <i>τοῦ κυρίου</i> NA28 RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Não falem mal uns dos outros, irmãos. Quem fala mal do irmão ou julga o seu irmão fala mal da lei e julga a lei; mas quem julga a lei não é praticante da lei, mas juiz.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:11: <i>ἢ</i> WH Treg NA28 ] <i>καὶ</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Um só é o legislador e juiz, aquele que pode salvar e destruir. Mas quem és tu, que julgas o próximo?",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:12: <i>ἐστιν</i> WH ] + <i>ὁ</i> Treg NA28 RP; <i>καὶ κριτής</i> WH Treg NA28 ] – RP; <i>ὁ κρίνων</i> WH Treg NA28 ] <i>ὃς κρίνεις</i> RP; <i>πλησίον</i> WH Treg NA28 ] <i>ἕτερον</i> RP. Decisão do responsável: base quanto a «<i>ὁ κρίνων τὸν πλησίον</i>» e quanto a «<i>καὶ κριτής</i>» (com «e juiz»). Quanto a «<i>ὁ</i>» (WH sem; Treg, NA28 e RP com) e à ordem, a tradução segue a base, por forma (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Atenção agora, os que dizem: Hoje ou amanhã iremos a tal cidade, passaremos lá um ano, negociaremos e lucraremos;",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:13: <i>ἢ</i> WH Treg NA28 ] <i>καὶ</i> RP; <i>πορευσόμεθα</i> WH Treg NA28 ] <i>πορευσώμεθα</i> RP; <i>ποιήσομεν</i> WH NA28 ] <i>ποιήσωμεν</i> Treg RP; <i>ἐνιαυτὸν</i> WH Treg NA28 ] + <i>ἕνα</i> RP; <i>ἐμπορευσόμεθα</i> WH Treg NA28 ] <i>ἐμπορευσώμεθα</i> RP; <i>κερδήσομεν</i> WH Treg NA28 ] <i>κερδήσωμεν</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "vocês que não sabem o que será amanhã: qual é a vida de vocês? Pois são um vapor que aparece por um pouco e depois desaparece.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:14: <i>τὸ</i> Treg NA28 RP ] – WH; <i>ποία</i> WH NA28 ] + <i>γὰρ</i> Treg RP; <i>ἐστε</i> WH Treg NA28 ] <i>ἔσται</i> RP; <i>ἡ</i> Treg NA28 RP ] – WH; <i>ἔπειτα</i> WH Treg NA28 ] + <i>δὲ</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Em vez de dizerem: Se o Senhor quiser, viveremos e faremos isto ou aquilo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 4:15: <i>θελήσῃ</i> Treg NA28 RP ] <i>θέλῃ</i> WH; <i>ζήσομεν</i> WH Treg NA28 ] <i>ζήσωμεν</i> RP; <i>ποιήσομεν</i> WH Treg NA28 ] <i>ποιήσωμεν</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Mas agora gloriam-se nas suas arrogâncias; toda gloriação dessas é má."
+      },
+      {
+        "verse": 17,
+        "text": "Portanto, para quem sabe fazer o bem e não o faz, isso é pecado."
+      }
+    ],
+    "5": [
+      {
+        "verse": 1,
+        "text": "Atenção agora, os ricos: chorem e gritem por causa das misérias que vêm sobre vocês."
+      },
+      {
+        "verse": 2,
+        "text": "A riqueza de vocês apodreceu, e as roupas de vocês estão roídas pelas traças."
+      },
+      {
+        "verse": 3,
+        "text": "O ouro e a prata de vocês estão enferrujados, e a ferrugem deles será testemunho contra vocês e devorará as suas carnes como fogo. Acumularam tesouros nos últimos dias."
+      },
+      {
+        "verse": 4,
+        "text": "Eis que o salário dos trabalhadores que ceifaram os seus campos, retido por vocês, clama, e os gritos dos ceifeiros chegaram aos ouvidos do Senhor dos Exércitos.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:4: <i>ἀφυστερημένος</i> WH Treg ] <i>ἀπεστερημένος</i> NA28 RP; <i>εἰσεληλύθασιν</i> NA28 RP ] <i>εἰσελήλυθαν</i> WH Treg. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Vocês viveram em luxo sobre a terra e se entregaram aos prazeres; engordaram os seus corações num dia de matança.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:5: <i>ὑμῶν</i> WH Treg NA28 ] + <i>ὡς</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Condenaram e mataram o justo; ele não lhes resiste?"
+      },
+      {
+        "verse": 7,
+        "text": "Tenham paciência, portanto, irmãos, até à vinda do Senhor. Eis que o lavrador espera o precioso fruto da terra, tendo paciência por ele até receber a chuva temporã e a serôdia.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:7: <i>αὐτῷ</i> WH Treg NA28 ] <i>αὐτόν</i> RP; <i>λάβῃ</i> WH Treg NA28 ] + <i>ὑετὸν</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Tenham paciência também vocês, fortaleçam os seus corações, porque a vinda do Senhor está próxima."
+      },
+      {
+        "verse": 9,
+        "text": "Não se queixem uns dos outros, irmãos, para não serem julgados; eis que o juiz está às portas.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:9: <i>ἀδελφοί κατʼ ἀλλήλων</i> WH Treg NA28 ] <i>κατʼ ἀλλήλων ἀδελφοί</i> RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Tomem como exemplo de sofrimento e de paciência os profetas, que falaram em nome do Senhor.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:10: <i>ἀδελφοί</i> WH Treg NA28 ] + <i>μου</i> RP; <i>ἐν</i> WH Treg NA28 ] – RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Eis que consideramos bem-aventurados os que perseveraram. Ouviram falar da perseverança de Job, e viram o desfecho dado pelo Senhor, porque o Senhor é cheio de compaixão e misericordioso.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:11: <i>ὑπομείναντας</i> WH Treg NA28 ] <i>ὑπομένοντας</i> RP; <i>εἴδετε</i> WH Treg NA28 ] <i>ἴδετε</i> RP; <i>ὁ κύριος</i> WH Treg NA28 ] – RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Sobretudo, meus irmãos, não jurem, nem pelo céu, nem pela terra, nem por nenhum outro juramento. Que o de vocês seja: sim, sim; e não, não, para que não caiam sob juízo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:12: <i>ὑπὸ κρίσιν</i> WH Treg NA28 ] <i>εἴς ὑπὸκρίσιν</i> RP. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Está alguém entre vocês em sofrimento? Ore. Está alguém alegre? Cante louvores."
+      },
+      {
+        "verse": 14,
+        "text": "Está alguém doente entre vocês? Chame os presbíteros da igreja, e orem sobre ele, ungindo-o com óleo em nome do Senhor.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:14: <i>αὐτὸν</i> Treg NA28 RP ] – WH. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 15,
+        "text": "E a oração da fé salvará o doente, e o Senhor o levantará; e, se tiver cometido pecados, ser-lhe-ão perdoados."
+      },
+      {
+        "verse": 16,
+        "text": "Confessem, pois, uns aos outros os pecados e orem uns pelos outros, para que sejam curados. Muito pode a oração eficaz do justo.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:16: <i>οὖν</i> WH Treg NA28 ] – RP; <i>τὰς ἁμαρτίας</i> WH Treg NA28 ] <i>τὰ παραπτώματα</i> RP; <i>εὔχεσθε</i> Treg NA28 RP ] <i>προσεύχεσθε</i> WH. Decisão do responsável: base.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Elias era homem sujeito aos mesmos sentimentos que nós; orou com oração para que não chovesse, e não choveu sobre a terra durante três anos e seis meses."
+      },
+      {
+        "verse": 18,
+        "text": "E orou de novo, e o céu deu chuva, e a terra produziu o seu fruto.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:18: <i>ὑετὸν ἔδωκεν</i> WH NA28 RP ] <i>ἔδωκεν ὑετὸν</i> Treg. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Meus irmãos, se algum de vocês se desviar da verdade e alguém o trouxer de volta,",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:19: <i>μου</i> WH Treg NA28 ] – RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      },
+      {
+        "verse": 20,
+        "text": "saiba que quem converter um pecador do erro do seu caminho salvará a alma dele da morte e cobrirá uma multidão de pecados.",
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 5:20: <i>γινωσκέτω</i> Treg NA28 RP ] <i>γινώσκετε</i> WH; <i>αὐτοῦ</i> WH NA28 ] – Treg RP. Variantes de forma, artigo ou pronome sem efeito no sentido: a tradução segue a base (decisão do agente, a rever).</p>"
+      }
+    ]
+  },
+  "in_progress": {},
+  "history": [
+    {
+      "chapter": 1,
+      "verse_from": 1,
+      "verse_to": 27,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/Tiago.json",
+      "generated_at_utc": "2026-11-25T02:17:23+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 26,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/Tiago.json",
+      "generated_at_utc": "2026-11-25T02:17:23+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 18,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/Tiago.json",
+      "generated_at_utc": "2026-11-25T02:17:23+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 17,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/Tiago.json",
+      "generated_at_utc": "2026-11-25T02:17:23+00:00"
+    },
+    {
+      "chapter": 5,
+      "verse_from": 1,
+      "verse_to": 20,
+      "provider": "agente",
+      "model": "redação inicial a partir do SBLGNT e da colação docs/colacao/Tiago.json",
+      "generated_at_utc": "2026-11-25T02:17:23+00:00"
+    }
+  ],
+  "sources": {
+    "versification": "KJV/tradicional",
+    "alignment_version": 1,
+    "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+    "cntr_transcriptions_commit": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+    "collation_report": "docs/colacao/Tiago.json"
+  },
+  "bibliography": [
+    {
+      "name": "SBLGNT — The Greek New Testament, SBL Edition",
+      "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "url": "https://github.com/Faithlife/SBLGNT",
+      "text_url": "https://codeload.github.com/Faithlife/SBLGNT/zip/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "license": "CC BY 4.0",
+      "attribution": "Base fixada do projeto. O aparato nomeia apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações sobre manuscritos vêm da colação CNTR.",
+      "papel": "base"
+    },
+    {
+      "name": "Textus Receptus — edição de Scrivener (Robinson)",
+      "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "url": "https://github.com/byztxt/greektext-scrivener",
+      "text_url": "https://codeload.github.com/byztxt/greektext-scrivener/zip/6049a43b135ed870f843b83eb6a04764fc796678",
+      "license": "domínio público segundo o fornecedor",
+      "attribution": "Comparação, não base. «O Textus Receptus» não é um texto único: esta edição difere de RP e do KJTR.",
+      "papel": "comparação"
+    },
+    {
+      "name": "CNTR Transcriptions (Center for New Testament Restoration)",
+      "revision": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+      "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Alan Bunning / Center for New Testament Restoration. Testemunhas de Filemom consultadas: 01, 02, 04, P139, P87; textos críticos: KJTR, RP, SR, ST, WH. Custódia: o acervo vive em .bee-cache/ (excluída pelo .gitignore) — é consultado e citado, nunca redistribuído; só o relatório de colação é versionado.",
+      "papel": "testemunhas e textos críticos"
+    },
+    {
+      "name": "Relatório de colação de Filemom (obra do projeto)",
+      "url": "docs/colacao/Filemom.json",
+      "attribution": "Gerado por scripts/colar.py com bee/manuscritos.py. É a evidência verificável de cada afirmação sobre manuscritos destas notas: uma linha do relatório por testemunha citada. O protocolo está em docs/CRITICA_TEXTUAL.md.",
+      "papel": "evidência"
+    }
+  ],
+  "review": {
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 27,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 26,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 18,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 17,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+      }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 27,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 26,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 18,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 17,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Sem pontos indicados até agora."
+      }
+    ],
+    "ministerio": {
+      "status": "aprovado pelo ministério",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries) em 2026-11-26: etapa própria, distinta da revisão editorial e da especializada."
+    }
+  }
+}

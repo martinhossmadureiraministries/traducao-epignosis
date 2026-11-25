@@ -1,22 +1,22 @@
-# Estado do projeto — 20/11/2026
+# Estado do projeto — 26/11/2026
 
 Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
 
 ## Três revisões, separadas
 
-| Revisão | Quem faz | Estado nos 24 livros |
+| Revisão | Quem faz | Estado nos 25 livros |
 |---|---|---|
 | **Editorial** (`review.editorial_blocks`) | O responsável (Martinho S. S. Madureira). Só ele aprova. | `aprovado editorialmente` em todos os blocos |
 | **Especializada** (`review.specialist`) | Especialista externo (hebraísta, grecista, crítico textual ou teólogo). Não é feita pelo responsável nem pelo agente. | `pendente` em todos |
-| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 18 livros; `aprovado pelo ministério` em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro e 1 Pedro |
+| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 17 livros; `aprovado pelo ministério` em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago |
 
 Não há revisão por inteligência artificial no processo. Nenhum agente aprova em nome do responsável, nem declara a revisão especializada concluída.
 
 ## Livros com edição nova
 
-Edição nova: 24 livros, 108 capítulos e 2 448 versículos, todos em prosa. Os 23 livros aprovados estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos) e 1 Pedro (670, 5 capítulos, 105 versículos). **1 João (690, 5 capítulos, 105 versículos)** está redigido em rascunho (`edicoes/nova/livros_json/690_1_Joao.json`), por aprovar pelo responsável e pelo ministério. A revisão especializada está pendente nos 23, a cargo de especialista externo. A aprovação pelo ministério está registada em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro e 1 Pedro (aprovado pelo responsável e pelo ministério em 2026-11-26).
+Edição nova: 25 livros, 113 capítulos e 2 556 versículos, todos em prosa. Os 25 livros estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago (2026-11-26).
 
-Todos os 23 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses, 2 Timóteo e 1 Pedro.
+Todos os 25 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses, 2 Timóteo, 1 Pedro, 1 João e Tiago.
 
 | Livro | Capítulos | Versículos | Notas com CT | Editorial | Especializada | Ministério |
 |---|---|---|---|---|---|---|
@@ -39,7 +39,8 @@ Todos os 23 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Jo
 | Tito (630) | 3 | 46 | 19 | aprovado | pendente | pendente |
 | Filemom (640) | 1 | 25 | 14 | aprovado | pendente | pendente |
 | 2 Pedro (680) | 3 | 61 | 36 | aprovado | pendente | aprovado pelo ministério |
-| 1 João (690) | 5 | 105 | 53 | rascunho | pendente | pendente |
+| 1 João (690) | 5 | 105 | 53 | aprovado | pendente | aprovado pelo ministério |
+| Tiago (660) | 5 | 108 | 56 | aprovado | pendente | aprovado pelo ministério |
 | 1 Pedro (670) | 5 | 105 | 64 | aprovado | pendente | aprovado pelo ministério |
 | 2 João (700) | 1 | 13 | 9 | aprovado | pendente | pendente |
 | 3 João (710) | 1 | 14 | 8 | aprovado | pendente | pendente |
@@ -63,16 +64,17 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 ## Cartas seguintes
 
-Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **Próximo livro: 1 Timóteo (113 versículos).** Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
 
-## Verificações (2026-11-20)
+## Verificações (2026-11-26)
 
-- `scripts/verificar_dados.py`: rc 0; 103 capítulos e 2 343 versículos (inclui Colossenses, 1 a 4, e 2 Timóteo, 1 a 4, aprovado editorialmente).
-- `scripts/verificar_estilo.py`: rc 0; sem arcaísmos nem marcas de Almeida.
-- `scripts/verificar_convencoes_notas.py`: rc 0; 0 falhas, 0 avisos.
-- `scripts/verificar_documentacao.py`: rc 0.
-- `scripts/verificar_notas_colacao.py` (João, Filipenses, 1 e 2 Tessalonicenses, Tito, Filemom, 2 e 3 João, Judas): rc 0.
-- `python3 -m unittest discover -s tests`: 188 testes, OK. Saltam 5 quando faltam `pyspellchecker` (verificação ortográfica, que por isso não correu) ou `python-docx` (documento de apresentação).
+- `scripts/verificar_dados.py`: rc 0; 113 capítulos e 2 556 versículos completos.
+- `scripts/verificar_estilo.py`: sem falhas duras nem avisos; sem arcaísmos nem marcas de Almeida.
+- `scripts/verificar_convencoes_notas.py`: 0 falhas, 0 avisos.
+- `scripts/verificar_documentacao.py`: rc 0; 113 capítulos e 2 556 versículos, 0 em curso.
+- `scripts/verificar_notas_colacao.py`: confere as notas de 1 João (690) e de Tiago (660) com as respetivas colações; as restantes colações foram conferidas em verificações anteriores.
+- `python3 -m unittest discover -s tests`: não repetido nesta atualização (última execução em 2026-11-20: 188 testes, OK; 5 saltados por falta de `pyspellchecker` e `python-docx`).
+- Ortografia (`scripts/verificar_ortografia.py`): verificação de 2026-11-26, sem erros confirmados nos livros do PR.
 
 ## Documento de apresentação
 
