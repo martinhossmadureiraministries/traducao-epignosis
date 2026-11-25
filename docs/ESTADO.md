@@ -1,6 +1,6 @@
 # Estado do projeto — 26/11/2026
 
-Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
+Para retomar o trabalho num ramo novo, ver `docs/PASSAGEM_DE_SESSAO.md`. Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
 
 ## Três revisões, separadas
 
@@ -30,10 +30,10 @@ Todos os 25 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Jo
 | Sofonias (430) | 3 | 53 | 0 | aprovado | pendente | pendente |
 | Ageu (440) | 2 | 38 | 0 | aprovado | pendente | pendente |
 | Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | pendente |
-| João (500) | 21 | 879 | 705 | aprovado | pendente | pendente |
+| João (500) | 21 | 879 | 706 | aprovado | pendente | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | pendente |
 | Colossenses (580) | 4 | 95 | 57 | aprovado | pendente | aprovado pelo ministério |
-| 2 Timóteo (620) | 4 | 83 | 0 | aprovado | pendente | aprovado pelo ministério |
+| 2 Timóteo (620) | 4 | 83 | 33 | aprovado | pendente | aprovado pelo ministério |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | pendente |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | pendente |
 | Tito (630) | 3 | 46 | 19 | aprovado | pendente | pendente |

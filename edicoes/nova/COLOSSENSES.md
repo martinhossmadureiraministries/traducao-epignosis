@@ -33,7 +33,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 
 **9** Por isso também nós, desde o dia em que o ouvimos, não cessamos de orar por vocês e de pedir que sejam cheios do pleno conhecimento da sua vontade, em toda sabedoria e entendimento espiritual,
 
-**10** para andarem de modo digno do Senhor, em tudo agradando-lhe, frutificando em toda boa obra e crescendo no conhecimento pleno de Deus.
+**10** para andarem de modo digno do Senhor, em tudo agradando-lhe, frutificando em toda a boa obra e crescendo no conhecimento pleno de Deus.
 
 **11** fortalecidos com toda a força, segundo o poder da sua glória, para toda a perseverança e paciência, com alegria,
 

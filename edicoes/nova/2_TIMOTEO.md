@@ -93,7 +93,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **20** Numa casa grande há não só vasos de ouro e de prata, mas também de madeira e de barro; uns para honra, outros para desonra.
 
-**21** Se alguém se purificar destas coisas, será vaso para honra, santificado, útil ao dono, preparado para toda boa obra.
+**21** Se alguém se purificar destas coisas, será vaso para honra, santificado, útil ao dono, preparado para toda a boa obra.
 
 **22** Foge das paixões da juventude; segue a justiça, a fé, o amor e a paz, com os que invocam o Senhor de coração puro.
 
@@ -139,7 +139,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **16** Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a educação na justiça,
 
-**17** para que o homem de Deus seja perfeito, preparado para toda boa obra.
+**17** para que o homem de Deus seja perfeito, preparado para toda a boa obra.
 
 ### Capítulo 4
 
@@ -177,7 +177,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **17** Mas o Senhor esteve ao meu lado e deu-me forças, para que por meu intermédio a pregação fosse plenamente cumprida e todos os gentios a ouvissem; e fui libertado da boca do leão.
 
-**18** O Senhor me livrará de toda obra má e me salvará para o seu reino celeste; a ele a glória pelos séculos dos séculos. Amém.
+**18** O Senhor me livrará de toda a obra má e me salvará para o seu reino celeste; a ele a glória pelos séculos dos séculos. Amém.
 
 **19** Saúda Prisca e Áquila e a casa de Onesíforo.
 
