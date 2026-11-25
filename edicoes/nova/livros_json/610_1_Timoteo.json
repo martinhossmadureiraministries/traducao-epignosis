@@ -302,8 +302,8 @@
       },
       {
         "verse": 10,
-        "text": "Pois por isto trabalhamos e somos censurados, porque esperamos no Deus vivo, que é Salvador de todos os homens, sobretudo dos fiéis.",
-        "commentary": "<p><i>κοπιῶμεν</i> (<i>kopiōmen</i>), trabalhamos com esforço; <i>ὀνειδιζόμεθα</i> (<i>oneidizometha</i>), somos censurados, insultados.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:10: a base lê «<i>ὀνειδιζόμεθα</i>» (somos censurados), com apoio da RP; WH, Treg e NA28 leem «<i>ἀγωνιζόμεθα</i>» (lutamos). A RP acrescenta «<i>καὶ</i>» (também) depois de «<i>γὰρ</i>», e KJTR, ST e Scrivener têm o mesmo acréscimo. Na colação, WH, NA28, Treg, 01, 02, 04 e SR leem «<i>ἀγωνιζόμεθα</i>». O texto segue a base, por decisão do responsável. A colação mostra que «<i>ἀγωνιζόμεθα</i>» tem mais testemunhas do que a base; a escolha entre «somos censurados» e «lutamos» fica assinalada para a revisão especializada.</p>"
+        "text": "Pois por isto trabalhamos e lutamos, porque esperamos no Deus vivo, que é Salvador de todos os homens, sobretudo dos fiéis.",
+        "commentary": "<p><i>κοπιῶμεν</i> (<i>kopiōmen</i>), trabalhamos com esforço; <i>ἀγωνιζόμεθα</i> (<i>agōnizometha</i>), lutamos, combatemos.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:10: WH, Treg e NA28 leem «<i>ἀγωνιζόμεθα</i>» (lutamos); a base lê «<i>ὀνειδιζόμεθα</i>» (somos censurados), apoiada pela RP. A RP acrescenta «<i>καὶ</i>» (também) depois de «<i>γὰρ</i>», e KJTR, ST e Scrivener têm o mesmo acréscimo. Na colação, WH, NA28, Treg, 01, 02, 04 e SR leem «<i>ἀγωνιζόμεθα</i>»; KJTR, RP, ST e Scrivener leem «<i>ὀνειδιζόμεθα</i>». O texto segue WH, Treg e NA28 por decisão do responsável, afastando-se da base SBLGNT neste versículo; a escolha fica assinalada para a revisão especializada.</p>"
       },
       {
         "verse": 11,
@@ -684,7 +684,7 @@
         "verse_from": 1,
         "verse_to": 16,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 4:10 «lutamos» (ἀγωνιζόμεθα, WH, Treg e NA28), afastando-se da base SBLGNT; 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
       },
       {
         "chapter": 5,
@@ -728,7 +728,7 @@
         "verse_from": 1,
         "verse_to": 16,
         "status": "pendente",
-        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ἀγωνιζόμεθα, por decisão do responsável; afasta-se da base SBLGNT ὀνειδιζόμεθα); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
       },
       {
         "chapter": 5,

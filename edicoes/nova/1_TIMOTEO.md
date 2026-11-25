@@ -143,7 +143,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (610). Capít
 
 **9** Palavra fiel e digna de toda a aceitação.
 
-**10** Pois por isto trabalhamos e somos censurados, porque esperamos no Deus vivo, que é Salvador de todos os homens, sobretudo dos fiéis.
+**10** Pois por isto trabalhamos e lutamos, porque esperamos no Deus vivo, que é Salvador de todos os homens, sobretudo dos fiéis.
 
 **11** Ordena e ensina estas coisas.
 
@@ -480,8 +480,8 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (610). Capít
 
 **4:10**
 
-- *κοπιῶμεν* (*kopiōmen*), trabalhamos com esforço; *ὀνειδιζόμεθα* (*oneidizometha*), somos censurados, insultados.
-- **Crítica Textual.** Aparato SBLGNT, 4:10: a base lê «*ὀνειδιζόμεθα*» (somos censurados), com apoio da RP; WH, Treg e NA28 leem «*ἀγωνιζόμεθα*» (lutamos). A RP acrescenta «*καὶ*» (também) depois de «*γὰρ*», e KJTR, ST e Scrivener têm o mesmo acréscimo. Na colação, WH, NA28, Treg, 01, 02, 04 e SR leem «*ἀγωνιζόμεθα*». O texto segue a base, por decisão do responsável. A colação mostra que «*ἀγωνιζόμεθα*» tem mais testemunhas do que a base; a escolha entre «somos censurados» e «lutamos» fica assinalada para a revisão especializada.
+- *κοπιῶμεν* (*kopiōmen*), trabalhamos com esforço; *ἀγωνιζόμεθα* (*agōnizometha*), lutamos, combatemos.
+- **Crítica Textual.** Aparato SBLGNT, 4:10: WH, Treg e NA28 leem «*ἀγωνιζόμεθα*» (lutamos); a base lê «*ὀνειδιζόμεθα*» (somos censurados), apoiada pela RP. A RP acrescenta «*καὶ*» (também) depois de «*γὰρ*», e KJTR, ST e Scrivener têm o mesmo acréscimo. Na colação, WH, NA28, Treg, 01, 02, 04 e SR leem «*ἀγωνιζόμεθα*»; KJTR, RP, ST e Scrivener leem «*ὀνειδιζόμεθα*». O texto segue WH, Treg e NA28 por decisão do responsável, afastando-se da base SBLGNT neste versículo; a escolha fica assinalada para a revisão especializada.
 
 **4:12**
 
