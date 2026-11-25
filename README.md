@@ -41,7 +41,7 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   - `python3 scripts/verificar_documentacao.py`.
 - Compilação dos módulos MyBible, com a parte já completa:
   `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
-- Estado atual: 119 capítulos e 2669 versículos guardados na edição nova (inclui 1 Timóteo, 113 versículos, redigido e à espera da aprovação editorial do responsável)
+- Estado atual: 125 capítulos e 2818 versículos guardados na edição nova (inclui 1 Timóteo, 113 versículos, e Gálatas, 149 versículos, aprovado editorialmente pelo responsável; revisão especializada e do ministério pendentes)
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
   Inclui 2 Pedro, aprovado editorialmente e pelo ministério, Colossenses, aprovado editorialmente e pelo ministério, e 2 Timóteo, aprovado editorialmente e pelo ministério. 1 Pedro (670, 5 capítulos, 105 versículos), 1 João (690) e Tiago (660, 5 capítulos, 108 versículos) estão aprovados editorialmente e pelo ministério (ver `docs/ESTADO.md`).
 
