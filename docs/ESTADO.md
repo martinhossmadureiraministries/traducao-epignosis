@@ -14,7 +14,7 @@ Não há revisão por inteligência artificial no processo. Nenhum agente aprova
 
 ## Livros com edição nova
 
-Edição nova: 26 livros, 119 capítulos e 2 669 versículos, todos em prosa. O 26.º é 1 Timóteo (610, 6 capítulos, 113 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/610_1_Timoteo.json`, `edicoes/nova/1_TIMOTEO.md`), **aprovado editorialmente e pelo ministério**, com 1:1 RP e 2:9 com «καὶ» (base). A revisão especializada está pendente. Os 25 livros anteriores estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada nos 25 livros, por indicação do responsável nesta sessão. O ministério também aprovou as variações de forma sugeridas pelo agente (ver `docs/EDITORIAL.md`).
+Edição nova: 27 livros, 125 capítulos e 2 818 versículos, todos em prosa. O 27.º é Gálatas (550, 6 capítulos, 149 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/550_Galatas.json`), aprovado editorialmente pelo responsável (2026-11-27); revisão especializada e do ministério pendentes. O 26.º é 1 Timóteo (610, 6 capítulos, 113 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/610_1_Timoteo.json`, `edicoes/nova/1_TIMOTEO.md`), **aprovado editorialmente e pelo ministério**, com 1:1 RP e 2:9 com «καὶ» (base). A revisão especializada está pendente. Os 25 livros anteriores estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada nos 25 livros, por indicação do responsável nesta sessão. O ministério também aprovou as variações de forma sugeridas pelo agente (ver `docs/EDITORIAL.md`).
 
 Todos os 25 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses, 2 Timóteo, 1 Pedro, 1 João e Tiago.
 
@@ -69,7 +69,7 @@ Ordem por tamanho, das menores para as maiores, com prioridade para os livros qu
 
 ## Verificações (2026-11-27)
 
-- `scripts/verificar_dados.py`: íntegro; 119 capítulos e 2 669 versículos completos.
+- `scripts/verificar_dados.py`: íntegro; 125 capítulos e 2 818 versículos completos (Gálatas incluído, por aprovar).
 - `scripts/verificar_notas_colacao.py` em 1 Timóteo (610): conferem com a colação.
 - `scripts/verificar_estilo.py` e `scripts/verificar_convencoes_notas.py` em 1 Timóteo: sem falhas.
 - `unittest discover -s tests`: ver a secção de testes após a atualização de 2026-11-27.

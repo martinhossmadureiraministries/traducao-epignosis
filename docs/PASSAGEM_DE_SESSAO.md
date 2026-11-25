@@ -4,11 +4,11 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 
 ## Estado após o merge
 
-- **26 livros** em `edicoes/nova/livros_json/` (o 26.º, 1 Timóteo, está redigido e **por aprovar**), **119 capítulos**, **2 669 versículos**, todos completos.
+- **27 livros** em `edicoes/nova/livros_json/`: 1 Timóteo (26.º) está aprovado editorialmente e pelo ministério; Gálatas (27.º) está aprovado editorialmente, com revisão especializada e do ministério pendentes. **125 capítulos**, **2 818 versículos**, todos completos.
 - **Editorial:** os 25 estão `aprovado editorialmente` pelo responsável.
 - **Ministério:** aprovado em 8 livros: Oseias, Joel, Colossenses, 2 Timóteo, Tiago, 1 Pedro, 2 Pedro e 1 João. Pendente nos outros 17.
 - **Especializada:** pendente nos 25, a cargo de especialista externo.
-- **Próximo livro:** **Gálatas (550, 149 versículos)**, na ordem de `docs/RESUMO_ESTILO.md`, secção 10.
+- **Próximo livro:** **Efésios (155 versículos)**, recomendação do agente pela ordem de tamanho; a confirmar pelo responsável. Depois, 2 Coríntios (257) e Hebreus (303).
 - Verificações de 2026-11-26: dados, estilo, convenções e documentação passam. As notas de cada livro com colação conferem com a colação. As 25 leituras em `edicoes/nova/*.md` estão iguais aos JSON. Testes: `./.venv/bin/python -m unittest discover -s tests`, 188 testes OK.
 
 ## Regras de processo (instruções do responsável)
