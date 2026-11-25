@@ -1,0 +1,1811 @@
+{
+ "format_version": 1,
+ "book_number": 650,
+ "book_name": "Hebreus",
+ "chapter_count": 13,
+ "chapters": {
+  "1": [
+   {
+    "verse": 1,
+    "text": "Deus, que outrora falou aos antepassados, em muitas partes e de muitos modos, pelos profetas,",
+    "commentary": "<p><i>πολυμερῶς</i> (<i>polymerōs</i>), em muitas partes, em porções; <i>πολυτρόπως</i> (<i>polytropōs</i>), de muitos modos. O autor abre com dois advérbios que dizem a pluralidade da revelação antiga antes de nomear o Filho. <i>τοῖς πατράσιν</i> (<i>tois patrasin</i>) são os antepassados, e não só os pais em sentido familiar.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "nestes dias finais falou-nos em <i>um</i> Filho, a quem constituiu herdeiro de tudo e por meio de quem também fez os mundos.",
+    "commentary": "<p><i>ἐν υἱῷ</i> (<i>en huiō</i>), sem artigo e sem numeral. O itálico marca o «um» que o português pede. A preposição indica a esfera em que Deus fala, e por isso a tradução mantém «em um Filho», e não «por meio de um Filho». <i>αἰῶνας</i> (<i>aiōnas</i>) pode ser tempo ou mundo; a tradução escolhe «os mundos», porque em 11:3 o termo designa o mundo criado pela palavra de Deus.</p><p><b>Crítica Textual:</b> Aparato de edições, 1:2: base «<i>ἐποίησεν τοὺς αἰῶνας</i>» com WH, Treg e NA28; RP lê «<i>τοὺς αἰῶνας ἐποίησεν</i>».</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Ele, que é o resplendor da glória e a marca exata da sua essência, sustenta todas as coisas pela palavra do seu poder; e, depois de ter feito, por si mesmo, a purificação dos pecados, sentou-se à direita da Majestade, nas alturas;",
+    "commentary": "<p><i>ἀπαύγασμα</i> (<i>apaugasma</i>), resplendor, reflexo que vem da própria luz. <i>χαρακτήρ</i> (<i>charaktēr</i>), a marca cunhada no metal, a impressão exata. <i>ὑπόστασις</i> (<i>hypostasis</i>), aqui essência ou ser, aquilo que uma coisa é. A tradução usa «essência» em 1:3 e «garantia» em 11:1, porque o mesmo termo tem sentidos diferentes nos dois lugares.</p><p><b>Crítica Textual:</b> Aparato de edições, 1:3: base «<i>διʼ αὑτοῦ</i>» com Holmes; WH, Treg e NA28 leem «<i>αὐτοῦ</i>»; RP lê «<i>αὐτοῦ διʼ ἑαυτοῦ</i>»; base «<i>τῶν ἁμαρτιῶν ποιησάμενος</i>» com WH, Treg e NA28; RP lê «<i>ποιησάμενος τῶν ἁμαρτιῶν ἡμῶν</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "tornando-se tão superior aos anjos quanto o nome que herdou é mais excelente do que o deles."
+   },
+   {
+    "verse": 5,
+    "text": "Pois a qual dos anjos disse Deus alguma vez: «Tu és meu Filho; eu hoje te gerei?» E outra vez: «Eu serei para ele um pai, e ele será para mim um filho?»"
+   },
+   {
+    "verse": 6,
+    "text": "E, quando outra vez introduz o primogénito no mundo habitado, diz: «Adorem-no todos os anjos de Deus.»",
+    "commentary": "<p><i>πρωτότοκον</i> (<i>prōtotokon</i>), primogénito, título de posição e de herança, não de nascimento no tempo. <i>οἰκουμένην</i> (<i>oikoumenēn</i>), o mundo habitado.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "E, quanto aos anjos, diz: «O que faz dos seus anjos espíritos, e dos seus ministros labareda de fogo.»",
+    "commentary": "<p><i>πνεύματα</i> (<i>pneumata</i>), espíritos ou ventos; o salmo da Septuaginta permite as duas leituras. A tradução escolhe «espíritos», que dá o sentido de seres celestes servidores.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Mas, quanto ao Filho: «O teu trono, ó Deus, é para todo o sempre; e o cetro de justiça é o cetro do teu reino.»",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 1:8: base «<i>καὶ ἡ ῥάβδος τῆς εὐθύτητος</i>» com WH, Treg e NA28; RP lê «<i>ῥάβδος εὐθύτητος ἡ</i>»; base «<i>σου</i>» com Treg, NA28 e RP; WH lê «<i>αὐτοῦ</i>».</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Amaste a justiça e odiaste a iniquidade; por isso Deus, o teu Deus, ungiu-te com óleo de alegria, mais do que aos teus companheiros.",
+    "commentary": "<p><i>μέτοχοι</i> (<i>metochoi</i>), companheiros, os que partilham uma mesma condição ou função. <i>ἔλαιον ἀγαλλιάσεως</i>, óleo de alegria, a unção que acompanha a realeza.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "E ainda: «Tu, Senhor, no princípio fundaste a terra, e os céus são obra das tuas mãos;"
+   },
+   {
+    "verse": 11,
+    "text": "eles perecerão, mas tu permaneces; e todos, como um manto, envelhecerão,"
+   },
+   {
+    "verse": 12,
+    "text": "e como um manto os enrolarás, e serão trocados; mas tu és o mesmo, e os teus anos não terão fim.»",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 1:12: RP omite «<i>ὡς ἱμάτιον</i>», que a base tem com WH, Treg e NA28.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "Mas a qual dos anjos disse ele alguma vez: «Senta-te à minha direita, até que eu ponha os teus inimigos como estrado dos teus pés?»"
+   },
+   {
+    "verse": 14,
+    "text": "Não são todos eles espíritos ministradores, enviados para servir os que hão de herdar a salvação?",
+    "commentary": "<p><i>λειτουργικὰ πνεύματα</i> (<i>leitourgika pneumata</i>), espíritos que servem, com a palavra <i>λειτουργός</i> ligada ao serviço do culto. <i>κληρονομεῖν σωτηρίαν</i>, herdar a salvação, é a expressão que liga os anjos aos destinatários da carta.</p>"
+   }
+  ],
+  "2": [
+   {
+    "verse": 1,
+    "text": "Por isso devemos prestar mais atenção ao que ouvimos, para não sermos levados à deriva.",
+    "commentary": "<p><i>παραρυῶμεν</i> (<i>pararyōmen</i>), deslizar, ser levado à deriva. A imagem é a de um barco que se afasta do porto sem o perceber.</p><p><b>Crítica Textual:</b> Aparato de edições, 2:1: base «<i>προσέχειν ἡμᾶς</i>» com WH, Treg e NA28; RP lê «<i>ἡμᾶς προσέχειν</i>».</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Pois, se a palavra falada por meio de anjos se tornou firme, e toda transgressão e desobediência recebeu justa retribuição,"
+   },
+   {
+    "verse": 3,
+    "text": "como escaparemos nós, se negligenciarmos uma salvação tão grande? Ela, que começou por ser anunciada pelo Senhor, foi-nos confirmada por aqueles que a ouviram,",
+    "commentary": "<p><i>σωτηρία</i> (<i>sōtēria</i>), salvação, aqui com o sentido da mensagem que a traz. <i>ἐβεβαιώθη</i> (<i>ebebaiōthē</i>), foi confirmada; a passiva diz que a confirmação veio de fora, dos que ouviram.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "testemunhando também Deus com sinais e maravilhas, com poderes diversos e com dons distribuídos pelo Espírito Santo, segundo a sua vontade?"
+   },
+   {
+    "verse": 5,
+    "text": "Pois não sujeitou a anjos o mundo que há de vir, a respeito do qual falamos.",
+    "commentary": "<p><i>οἰκουμένην τὴν μέλλουσαν</i> (<i>oikoumenēn tēn mellousan</i>), o mundo que há de vir. O autor fala de uma ordem futura, sobre a qual os anjos não têm autoridade.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "Alguém, em certo lugar, testemunhou dizendo: «Que é o homem, para que dele te lembres, ou o filho do homem, para que o visites?",
+    "commentary": "<p><i>ἄνθρωπος</i> e <i>υἱὸς ἀνθρώπου</i> (<i>anthrōpos</i>; <i>huios anthrōpou</i>), o homem e o filho do homem. A citação é do Salmo 8, e a tradução mantém as duas expressões paralelas.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Tu o fizeste um pouco inferior aos anjos, de glória e de honra o coroaste [e constituíste-o sobre as obras das tuas mãos],",
+    "commentary": "<p>O acréscimo entre colchetes, «e constituíste-o sobre as obras das tuas mãos», corresponde à citação completa do Salmo 8:6 (LXX). O aparato SBLGNT não o inclui no texto da base; a tradução põe-no entre colchetes simples, como decidiu o responsável.</p><p><b>Crítica Textual:</b> A base (SBLGNT) lê «<i>αὐτόν</i>» sem o acréscimo, com NA28 e RP. WH e Treg acrescentam «<i>καὶ κατέστησας αὐτὸν ἐπὶ τὰ ἔργα τῶν χειρῶν σου</i>». Na colação, o acréscimo aparece em 01, 02, 04, KJTR, ST, WH e Scrivener, e falta em 03 e P46; RP e SR leem como NA28. A tradução mantém o acréscimo entre colchetes simples, como decidiu o responsável.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "tudo submeteste debaixo dos seus pés.» Pois, ao submeter-lhe tudo, nada deixou sem lhe estar sujeito. Agora, porém, ainda não vemos que todas as coisas lhe estejam sujeitas.",
+    "commentary": "<p><i>ὑποτάσσω</i> (<i>hypotassō</i>), submeter, pôr sob. O verbo repete-se para dizer que o domínio prometido ainda não se vê realizado.</p><p><b>Crítica Textual:</b> Aparato de edições, 2:8: base «<i>τῷ γὰρ</i>» com WH, Treg e NA28; RP lê «<i>γὰρ τῷ</i>»; WH, Treg, NA28 e RP acrescentam «<i>αὐτῷ</i>», que Holmes e WHmarg não têm.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Mas vemos Jesus, que foi feito um pouco inferior aos anjos, coroado de glória e de honra por causa do sofrimento da morte, para que, [sem Deus], provasse a morte por todos.",
+    "commentary": "<p>O acréscimo entre colchetes, «sem Deus», traduz a leitura da base, <i>χωρὶς θεοῦ</i>, que só Holmes apresenta. Os colchetes simples marcam que a base lê uma expressão que a maioria dos testemunhos não tem.</p><p><b>Crítica Textual:</b> A base lê «<i>χωρὶς θεοῦ</i>», com Holmes. WH, Treg, NA28 e RP leem «<i>χάριτι</i>», «pela graça». Na colação, todos os testemunhos que contêm a passagem leem «<i>χάριτι</i>» (01, 02, 03, 04, P46, P116, KJTR, RP, SR, ST, WH e Scrivener). Holmes é a única edição que lê «<i>χωρὶς θεοῦ</i>». A tradução mantém «sem Deus» entre colchetes simples, como decidiu o responsável, e a nota regista que os manuscritos colacionados leem «<i>χάριτι</i>».</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Pois convinha àquele, por causa de quem e por meio de quem existem todas as coisas, que, levando muitos filhos à glória, aperfeiçoasse por meio de sofrimentos o autor da salvação deles.",
+    "commentary": "<p><i>ἀρχηγός</i> (<i>archēgos</i>), autor, pioneiro, o que abre o caminho. <i>τελειῶσαι</i> (<i>teleiōsai</i>), levar à perfeição ou à consumação, não no sentido moral de ausência de erro, mas de chegar ao fim do que foi destinado.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Pois tanto o que santifica como os que são santificados vêm todos de um só; por isso ele não se envergonha de os chamar irmãos,",
+    "commentary": "<p><i>ἐξ ἑνὸς</i> (<i>ex henos</i>), de um só. O texto não diz de quem; a tradução mantém a indeterminação.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "dizendo: «Anunciarei o teu nome aos meus irmãos; no meio da assembleia cantar-te-ei louvores»;",
+    "commentary": "<p><i>ἐκκλησία</i> (<i>ekklēsia</i>), assembleia, reunião do povo. A citação é do Salmo 22:22 (LXX 21:23).</p>"
+   },
+   {
+    "verse": 13,
+    "text": "e outra vez: «Eu porei a minha confiança nele»; e outra vez: «Eis-me aqui, e os filhos que Deus me deu.»"
+   },
+   {
+    "verse": 14,
+    "text": "Ora, visto que os filhos participam de sangue e de carne, ele também participou das mesmas coisas, para que, pela morte, reduzisse à impotência aquele que tinha o poder da morte, o diabo,",
+    "commentary": "<p><i>καταργήσῃ</i> (<i>katargēsē</i>), reduzir à impotência, tornar sem efeito. <i>διάβολον</i> (<i>diabolon</i>), o acusador, o diabo.</p><p><b>Crítica Textual:</b> Aparato de edições, 2:14: base «<i>αἵματος καὶ σαρκός</i>» com WH, Treg e NA28; RP lê «<i>σαρκός καὶ αἵματος</i>».</p>"
+   },
+   {
+    "verse": 15,
+    "text": "e libertasse aqueles que, por medo da morte, estavam sujeitos à servidão durante toda a vida."
+   },
+   {
+    "verse": 16,
+    "text": "Pois, sem dúvida, não ampara anjos, mas ampara a descendência de Abraão.",
+    "commentary": "<p><i>ἐπιλαμβάνεται</i> (<i>epilambanetai</i>), tomar para si, amparar. O verbo serve para o ato de socorro que se presta a alguém em perigo.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Por isso devia tornar-se semelhante aos irmãos em tudo, para ser um sumo sacerdote misericordioso e fiel nas coisas que dizem respeito a Deus, a fim de expiar os pecados do povo.",
+    "commentary": "<p><i>ἱλάσκεσθαι</i> (<i>hilaskesthai</i>), expiar, aplacar. A tradução mantém a ideia de reconciliação diante de Deus. <i>ἐλεήμων</i> (<i>eleēmōn</i>), misericordioso; <i>πιστός</i> (<i>pistos</i>), fiel.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "Pois, tendo ele mesmo sofrido ao ser tentado, pode socorrer os que são tentados.",
+    "commentary": "<p><i>πειρασθείς</i> (<i>peirastheis</i>), tentado, provado. O verbo serve para a provação que põe à prova a fidelidade, e é o mesmo que aparece em 4:15.</p>"
+   }
+  ],
+  "3": [
+   {
+    "verse": 1,
+    "text": "Por isso, irmãos santos, participantes de uma vocação celeste, considerem o apóstolo e sumo sacerdote da nossa confissão, Jesus,",
+    "commentary": "<p><i>ἀπόστολος</i> (<i>apostolos</i>), enviado. O título é aplicado a Jesus, o que é raro no NT. <i>ὁμολογία</i> (<i>homologia</i>), confissão, a fé professada publicamente.</p><p><b>Crítica Textual:</b> Aparato de edições, 3:1: RP acrescenta «<i>Χριστόν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "fiel àquele que o constituiu, como também Moisés na sua casa.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 3:2: WH, Treg, NA28 e RP acrescentam «<i>ὅλῳ</i>», que Holmes e WHmarg não têm.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Pois este foi considerado digno de maior glória do que Moisés, na medida em que quem construiu a casa tem mais honra do que a casa.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 3:3: base «<i>οὗτος δόξης</i>» com WH, Treg e NA28; RP lê «<i>δόξης οὗτος</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Pois toda casa é construída por alguém, mas quem construiu todas as coisas é Deus.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 3:4: RP acrescenta «<i>τὰ</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "E Moisés, na verdade, foi fiel em toda a casa dele como servo, para testemunho do que haveria de ser dito,"
+   },
+   {
+    "verse": 6,
+    "text": "mas Cristo, como Filho, está sobre a sua casa; e a casa dele somos nós, se mantivermos firmes a confiança e a exultação da esperança.",
+    "commentary": "<p><i>οἶκος</i> (<i>oikos</i>), casa, no sentido de família ou de casa de Deus. <i>καύχημα</i> (<i>kauchēma</i>), motivo de exultação, o que se gloria.</p><p><b>Crítica Textual:</b> Aparato de edições, 3:6: base «<i>ὃς</i>» com Holmes; WH, Treg, NA28 e RP leem «<i>οὗ</i>»; base «<i>ἐὰν</i>» com WH e Treg; NA28 e RP leem «<i>ἐάνπερ</i>»; WH, Treg e RP acrescentam «<i>μέχρι τέλους βεβαίαν</i>», que NA28 não tem.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Por isso, como diz o Espírito Santo: «Hoje, se ouvirem a sua voz,"
+   },
+   {
+    "verse": 8,
+    "text": "não endureçam os corações de vocês, como na provocação, no dia da tentação no deserto,"
+   },
+   {
+    "verse": 9,
+    "text": "onde os pais de vocês me puseram à prova, e viram as minhas obras durante quarenta anos;",
+    "commentary": "<p><i>ἐν δοκιμασίᾳ</i> (<i>en dokimasia</i>), em prova, em exame. A SBLGNT assinala a expressão com um sinal de forma e não de manuscrito; a tradução exprime o sentido com «puseram à prova», sem a repetir.</p><p><b>Crítica Textual:</b> Aparato de edições, 3:9: RP acrescenta «<i>με</i>», que WH, Treg e NA28 não têm; base «<i>ἐν δοκιμασίᾳ</i>» com WH, Treg e NA28; RP lê «<i>ἐδοκιμασάν με</i>».</p>"
+   },
+   {
+    "verse": 10,
+    "text": "por isso me indignei contra esta geração e disse: “Estão sempre a errar no coração; e não conheceram os meus caminhos”;",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 3:10: base «<i>ταύτῃ</i>» com WH, Treg e NA28; RP lê «<i>ἐκείνῃ</i>».</p>"
+   },
+   {
+    "verse": 11,
+    "text": "como jurei na minha ira: “Não entrarão no meu repouso.”»",
+    "commentary": "<p>A forma <i>Εἰ εἰσελεύσονται</i> (<i>ei eiselseuntai</i>), literalmente «se entrarão», é uma fórmula de juramento na Septuaginta. A tradução «Não entrarão» traduz esse valor.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Tomem cuidado, irmãos, para que não haja em nenhum de vocês um coração mau, sem fé, que se afaste do Deus vivo,"
+   },
+   {
+    "verse": 13,
+    "text": "mas exortem-se uns aos outros cada dia, enquanto se chama «Hoje», para que nenhum de vocês seja endurecido pelo engano do pecado.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 3:13: base «<i>τις ἐξ ὑμῶν</i>» com WH, Treg e NA28; RP lê «<i>ἐξ ὑμῶν τις</i>».</p>"
+   },
+   {
+    "verse": 14,
+    "text": "Pois nos tornámos participantes de Cristo, se mantivermos firme até ao fim o começo da nossa confiança.",
+    "commentary": "<p><i>ὑπόστασις</i> (<i>hypostasis</i>), aqui firmeza ou confiança, o fundamento em que a vida se apoia. A expressão «até ao fim firme» está na base, e por isso a tradução a mantém.</p><p><b>Crítica Textual:</b> Aparato de edições, 3:14: base «<i>τοῦ Χριστοῦ γεγόναμεν</i>» com WH, Treg e NA28; RP lê «<i>γεγόναμεν τοῦ Χριστοῦ</i>».</p>"
+   },
+   {
+    "verse": 15,
+    "text": "Enquanto se diz: «Hoje, se ouvirem a sua voz, não endureçam os corações de vocês, como na provocação.»"
+   },
+   {
+    "verse": 16,
+    "text": "Pois quem, depois de ouvir, o provocou? Não foram todos os que saíram do Egito por meio de Moisés?"
+   },
+   {
+    "verse": 17,
+    "text": "E contra quem se indignou durante quarenta anos? Não foi contra os que pecaram, cujos corpos caíram no deserto?"
+   },
+   {
+    "verse": 18,
+    "text": "E a quem jurou que não entrariam no seu repouso, senão aos que foram desobedientes?"
+   },
+   {
+    "verse": 19,
+    "text": "E vemos que não puderam entrar por causa da incredulidade."
+   }
+  ],
+  "4": [
+   {
+    "verse": 1,
+    "text": "Temamos, portanto, que, deixada a promessa de entrar no seu repouso, algum de vocês pareça ter ficado para trás."
+   },
+   {
+    "verse": 2,
+    "text": "Pois também nós recebemos a boa notícia, como eles; mas a palavra que ouviram não lhes aproveitou, porque não se uniram pela fé aos que a ouviram.",
+    "commentary": "<p><i>συγκεκερασμένους</i> (<i>synkekerasmenous</i>), misturados, unidos. A ideia é de quem recebe a palavra e a faz sua pela fé.</p><p><b>Crítica Textual:</b> Aparato de edições, 4:2: base «<i>συγκεκερασμένους</i>» com WH, Treg, RP e NA28 (a NIV segue essa leitura por escolha de tradução).</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Pois nós, os que cremos, entramos no repouso, como ele disse: «Como jurei na minha ira: “Não entrarão no meu repouso”», embora as obras tivessem ficado prontas desde a fundação do mundo.",
+    "commentary": "<p><i>κατάπαυσις</i> (<i>katapausis</i>), repouso, descanso. A palavra é a mesma que aparece na citação do Salmo 95 (LXX 94).</p><p><b>Crítica Textual:</b> Aparato de edições, 4:3: WH, Treg, NA28 e RP acrescentam «<i>τὴν</i>», que Holmes e WHmarg não têm.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Pois ele disse, em certo lugar, acerca do sétimo dia: «E Deus descansou no sétimo dia de todas as suas obras.»"
+   },
+   {
+    "verse": 5,
+    "text": "E outra vez, nisto: «Não entrarão no meu repouso.»"
+   },
+   {
+    "verse": 6,
+    "text": "Visto, pois, que alguns devem ainda entrar nele, e os que primeiro receberam a boa notícia não entraram por causa da desobediência,"
+   },
+   {
+    "verse": 7,
+    "text": "de novo define um dia, «Hoje», dizendo por meio de Davi, depois de tanto tempo, como foi dito antes: «Hoje, se ouvirem a sua voz, não endureçam os corações de vocês.»",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 4:7: base «<i>προείρηται</i>» com WH, Treg e NA28; RP lê «<i>εἴρηται</i>».</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Pois, se Josué lhes tivesse dado o repouso, Deus não falaria depois disso de outro dia.",
+    "commentary": "<p><i>Ἰησοῦς</i> (<i>Iēsous</i>), aqui Josué, o sucessor de Moisés. O nome é o mesmo que o de Jesus; a tradução usa «Josué» para não confundir os dois.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Portanto, resta um repouso sabático para o povo de Deus.",
+    "commentary": "<p><i>σαββατισμός</i> (<i>sabbatismos</i>), repouso sabático. A palavra só aparece aqui no NT, e a tradução escolhe «repouso sabático» para manter a relação com o sábado.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Pois quem entrou no seu repouso também ele repousou das suas obras, como Deus das suas."
+   },
+   {
+    "verse": 11,
+    "text": "Esforcemo-nos, pois, por entrar naquele repouso, para que ninguém caia no mesmo exemplo de desobediência."
+   },
+   {
+    "verse": 12,
+    "text": "Pois a palavra de Deus é viva, eficaz e mais cortante do que qualquer espada de dois gumes; penetra até à divisão de alma e espírito, de juntas e de medulas, e discerne os pensamentos e as intenções do coração.",
+    "commentary": "<p><i>ζῶν</i> (<i>zōn</i>), viva; <i>ἐνεργής</i> (<i>energēs</i>), eficaz, em ação. <i>ἁρμῶν</i> (<i>harmōn</i>), juntas; <i>μυελῶν</i> (<i>myelōn</i>), medulas. A imagem é a de uma espada que atravessa até ao fundo do ser.</p><p><b>Crítica Textual:</b> Aparato de edições, 4:12: base «<i>καὶ</i>» com WH, Treg e NA28; RP lê «<i>τε καὶ</i>».</p>"
+   },
+   {
+    "verse": 13,
+    "text": "E não há criatura que não esteja manifesta diante dele; tudo está nu e exposto aos olhos daquele a quem temos de prestar contas."
+   },
+   {
+    "verse": 14,
+    "text": "Tendo, pois, um sumo sacerdote grande, que atravessou os céus, Jesus, o Filho de Deus, mantenhamos firme a confissão.",
+    "commentary": "<p><i>διεληλυθότα</i> (<i>dielēlythota</i>), que atravessou. A imagem é de uma passagem completa pelos céus, até ao lugar de Deus.</p>"
+   },
+   {
+    "verse": 15,
+    "text": "Pois não temos um sumo sacerdote incapaz de se compadecer das nossas fraquezas, mas um que foi provado em tudo, como nós, mas sem pecado.",
+    "commentary": "<p><i>πεπειρασμένον</i> (<i>pepeirasmenon</i>), provado, posto à prova. A expressão «sem pecado» vem depois, com a palavra <i>χωρὶς</i> (<i>chōris</i>), sem.</p><p><b>Crítica Textual:</b> Aparato de edições, 4:15: base «<i>πεπειρασμένον</i>» com WH, Treg e NA28; RP lê «<i>πεπειραμένον</i>».</p>"
+   },
+   {
+    "verse": 16,
+    "text": "Aproximemo-nos, pois, com confiança do trono da graça, para recebermos misericórdia e encontrarmos graça para socorro oportuno.",
+    "commentary": "<p><i>θρόνῳ τῆς χάριτος</i> (<i>thronō tēs charitos</i>), trono da graça. A palavra <i>εὔκαιρον</i> (<i>eukairon</i>) quer dizer oportuno, no momento certo.</p>"
+   }
+  ],
+  "5": [
+   {
+    "verse": 1,
+    "text": "Pois todo o sumo sacerdote, tomado dentre os homens, é constituído a favor dos homens nas coisas que dizem respeito a Deus, para oferecer dons e sacrifícios pelos pecados;",
+    "commentary": "<p><i>ἀρχιερεύς</i> (<i>archiereus</i>), sumo sacerdote. O texto descreve a função antes de aplicar a Cristo: escolhido entre os homens, para as coisas de Deus.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "capaz de se compadecer dos ignorantes e dos que erram, pois ele próprio está cercado de fraqueza;",
+    "commentary": "<p><i>μετριοπαθεῖν</i> (<i>metriopathein</i>), ter compreensão moderada, sentir com medida. A palavra descreve a capacidade de se compadecer sem perder a firmeza.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "e, por causa dela, deve oferecer sacrifícios pelos pecados tanto por si mesmo como pelo povo.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 5:3: base «<i>διʼ αὐτὴν</i>» com WH, Treg e NA28; RP lê «<i>διὰ ταύτην</i>»; base «<i>αὑτοῦ</i>» com Holmes; WH, Treg e RP leem «<i>ἑαυτοῦ</i>»; NA28 lê «<i>αὐτοῦ</i>»; base «<i>περὶ</i>» com WH, Treg e NA28; RP lê «<i>ὑπὲρ</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "E ninguém toma para si esta honra, senão o que é chamado por Deus, como também Arão.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 5:4: base «<i>καθώσπερ</i>» com WH, Treg e NA28; RP lê «<i>καθάπερ</i>».</p>"
+   },
+   {
+    "verse": 5,
+    "text": "Assim também o Cristo não se glorificou a si mesmo para se tornar sumo sacerdote, mas aquele que lhe disse: «Tu és meu Filho; eu hoje te gerei»;",
+    "commentary": "<p>A citação é do Salmo 2:7, a mesma de 1:5. O autor usa-a aqui para mostrar que a glória do sacerdócio vem de quem fala, não de quem a recebe.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "como também noutro lugar diz: «Tu és sacerdote para sempre, segundo a ordem de Melquisedeque.»"
+   },
+   {
+    "verse": 7,
+    "text": "Ele, nos dias da sua carne, ofereceu súplicas e petições, com forte clamor e lágrimas, àquele que o podia salvar da morte; e foi ouvido por causa da sua reverência.",
+    "commentary": "<p><i>εὐλάβεια</i> (<i>eulabeia</i>), reverência, piedade, temor de Deus. A palavra diz a atitude que levou à resposta, e por isso a tradução usa «reverência».</p>"
+   },
+   {
+    "verse": 8,
+    "text": "embora fosse Filho, aprendeu a obediência pelo que sofreu;",
+    "commentary": "<p><i>ἔμαθεν</i> (<i>emathen</i>), aprendeu. O verbo aplica-se à obediência de Jesus, que se aprende pelo que se sofre.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "e, depois de aperfeiçoado, tornou-se autor de salvação eterna para todos os que lhe obedecem,",
+    "commentary": "<p><i>τελειωθείς</i> (<i>teleiōtheis</i>), levado à consumação. A palavra é a mesma que aparece em 2:10 e em 7:28, e a tradução usa o verbo «aperfeiçoar» de forma coerente.</p><p><b>Crítica Textual:</b> Aparato de edições, 5:9: base «<i>πᾶσιν τοῖς ὑπακούουσιν αὐτῷ</i>» com WH, Treg e NA28; RP lê «<i>τοῖς ὑπακούουσιν αὐτῷ πᾶσιν</i>».</p>"
+   },
+   {
+    "verse": 10,
+    "text": "saudado por Deus como sumo sacerdote segundo a ordem de Melquisedeque."
+   },
+   {
+    "verse": 11,
+    "text": "Sobre isto temos muito a dizer, e é difícil de explicar, porque vocês se tornaram lentos para ouvir.",
+    "commentary": "<p><i>νωθροί</i> (<i>nōthroi</i>), lentos, preguiçosos no ouvir. <i>δυσερμήνευτος</i> (<i>dysermēneutos</i>), difícil de explicar.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Pois, devendo já ser mestres pelo tempo decorrido, têm outra vez necessidade de que alguém ensine a vocês os elementos iniciais das palavras de Deus; e tornaram-se necessitados de leite, e não de alimento sólido.",
+    "commentary": "<p><i>στοιχεῖα</i> (<i>stoicheia</i>), elementos, princípios iniciais, as primeiras letras de uma matéria. A palavra mostra o nível de ensino que os destinatários precisam de rever.</p><p><b>Crítica Textual:</b> Aparato de edições, 5:12: base «<i>τινὰ</i>» com WH e NA28; Treg e RP leem «<i>τίνα</i>»; base «<i>οὐ</i>» com WH; Treg, NA28 e RP leem «<i>καὶ οὐ</i>».</p>"
+   },
+   {
+    "verse": 13,
+    "text": "Pois todo aquele que se alimenta de leite não tem experiência da palavra de justiça, porque é criança;"
+   },
+   {
+    "verse": 14,
+    "text": "mas o alimento sólido é para os adultos, para aqueles que, pelo hábito, têm os sentidos exercitados para discernir entre o bem e o mal.",
+    "commentary": "<p><i>τελείων</i> (<i>teleiōn</i>), dos adultos, dos que chegaram à maturidade. <i>αἰσθητήρια</i> (<i>aisthētēria</i>), sentidos, órgãos de percepção.</p>"
+   }
+  ],
+  "6": [
+   {
+    "verse": 1,
+    "text": "Por isso, deixando a palavra do começo sobre Cristo, avancemos para a maturidade, sem lançar outra vez o fundamento: o arrependimento das obras mortas e a fé em Deus,",
+    "commentary": "<p><i>τελειότης</i> (<i>teleiotēs</i>), maturidade, plenitude. O autor pede que se avance para ela, não que se deixe o começo.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "o ensino sobre batismos, a imposição das mãos, a ressurreição dos mortos e o juízo eterno.",
+    "commentary": "<p><b>Crítica Textual:</b> A base (SBLGNT) lê «<i>διδαχήν</i>» (acusativo), como WH, P46, SR e 03. Treg, NA28 e RP lêem «<i>διδαχῆς</i>» (genitivo), e o mesmo acontece em 01, 02, 04, KJTR, ST e Scrivener; em 0252 a leitura é suprida numa lacuna. A tradução «o ensino sobre batismos» serve para as duas construções, por isso a variante não muda o português. A base fica.</p><p>Há ainda uma segunda diferença: o segundo «<i>τε</i>», depois de «<i>ἀναστάσεώς</i>», falta em WH e em 03, e está em Treg, NA28 e RP. A tradução usa «e» antes de «a ressurreição» e não traduz a partícula em separado; a diferença é de ligação e não altera o sentido.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "E isto faremos, se Deus o permitir.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 6:3: base «<i>ποιήσομεν</i>» com WH, Treg e NA28; RP lê «<i>ποιήσωμεν</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Pois é impossível que os que uma vez foram iluminados, que provaram o dom celeste e se tornaram participantes do Espírito Santo,",
+    "commentary": "<p><i>Ἀδύνατον γὰρ</i> (<i>adynaton gar</i>), é impossível. A frase é longa, e o verbo principal só chega em 6:6; a tradução mantém essa ordem.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "e provaram a boa palavra de Deus e os poderes do século que há de vir,"
+   },
+   {
+    "verse": 6,
+    "text": "e caíram, renová-los outra vez para o arrependimento, crucificando de novo para si mesmos o Filho de Deus e expondo-o à vergonha.",
+    "commentary": "<p><i>ἀνασταυροῦντας</i> (<i>anastaurountas</i>), crucificar de novo; <i>παραδειγματίζοντας</i> (<i>paradeigmatizontas</i>), expor à vergonha em público.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Pois a terra que bebe a chuva que cai muitas vezes sobre ela e produz erva útil àqueles por quem é cultivada recebe bênção de Deus;",
+    "commentary": "<p><i>γεωργεῖται</i> (<i>geōrgeitai</i>), é cultivada. A imagem da terra é a da comparação com a palavra recebida.</p><p><b>Crítica Textual:</b> Aparato de edições, 6:7: base «<i>ἐρχόμενον πολλάκις</i>» com WH, Treg e NA28; RP lê «<i>πολλάκις ἐρχόμενον</i>».</p>"
+   },
+   {
+    "verse": 8,
+    "text": "mas a que produz espinhos e cardos é reprovada e está perto da maldição; o seu fim é ser queimada."
+   },
+   {
+    "verse": 9,
+    "text": "Mas estamos persuadidos, amados, a respeito de vocês, de coisas melhores e ligadas à salvação, ainda que falemos assim."
+   },
+   {
+    "verse": 10,
+    "text": "Pois Deus não é injusto para esquecer o trabalho de vocês e o amor que mostraram pelo seu nome, ao servir os santos e ao continuar a servi-los.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 6:10: RP acrescenta «<i>τοῦ κόπου</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Mas desejamos que cada um de vocês mostre o mesmo empenho até ao fim, para plena certeza da esperança,",
+    "commentary": "<p><i>πληροφορία</i> (<i>plērophoria</i>), plena certeza, convicção completa. A palavra descreve a esperança levada até ao fim.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "para que não se tornem lentos, mas imitadores dos que, pela fé e pela paciência, herdam as promessas."
+   },
+   {
+    "verse": 13,
+    "text": "Pois, quando Deus fez a promessa a Abraão, como não tinha ninguém maior por quem jurar, jurou por si mesmo,"
+   },
+   {
+    "verse": 14,
+    "text": "dizendo: «Certamente te abençoarei e te multiplicarei abundantemente.»",
+    "commentary": "<p><i>Εἰ μὴν</i> (<i>ei mēn</i>), fórmula de juramento, com valor de «certamente». A citação é de Gênesis 22:17 (LXX), onde Deus jura por si mesmo.</p><p><b>Crítica Textual:</b> Aparato de edições, 6:14: base «<i>Εἰ</i>» com WH, Treg e NA28; RP lê «<i>Ἦ</i>».</p>"
+   },
+   {
+    "verse": 15,
+    "text": "E assim, depois de esperar com paciência, obteve a promessa."
+   },
+   {
+    "verse": 16,
+    "text": "Pois os homens juram por algo maior do que eles, e para eles o juramento é o fim de toda contradição, como garantia.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 6:16: RP acrescenta «<i>μὲν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Nisto, querendo Deus mostrar com mais clareza aos herdeiros da promessa a imutabilidade da sua decisão, interpôs um juramento,"
+   },
+   {
+    "verse": 18,
+    "text": "para que, por meio de duas coisas imutáveis, nas quais é impossível que Deus minta, tenhamos forte encorajamento, nós que nos refugiámos para segurar a esperança que está diante de nós;",
+    "commentary": "<p><i>καταφυγόντες</i> (<i>kataphygontes</i>), os que se refugiaram. A imagem é a de quem corre para um abrigo.</p><p><b>Crítica Textual:</b> Aparato de edições, 6:18: base «<i>θεόν</i>» com WH, Treg e RP; NA28 lê «<i>τὸν θεόν</i>».</p>"
+   },
+   {
+    "verse": 19,
+    "text": "a qual temos como âncora da alma, segura e firme, e que entra até ao interior do véu,",
+    "commentary": "<p><i>ἄγκυραν</i> (<i>ankyran</i>), âncora. A imagem fixa a esperança no que está para além do véu.</p><p><b>Crítica Textual:</b> Aparato de edições, 6:19: base «<i>ἀσφαλῆ</i>» com WH, NA28 e RP; Treg lê «<i>ἀσφαλήν</i>».</p>"
+   },
+   {
+    "verse": 20,
+    "text": "onde entrou como precursor por nós Jesus, feito sumo sacerdote para sempre segundo a ordem de Melquisedeque.",
+    "commentary": "<p><i>πρόδρομος</i> (<i>prodromos</i>), precursor, o que entra antes para abrir caminho.</p>"
+   }
+  ],
+  "7": [
+   {
+    "verse": 1,
+    "text": "Pois este Melquisedeque, rei de Salém, sacerdote do Deus altíssimo, que foi ao encontro de Abraão depois da derrota dos reis e o abençoou,",
+    "commentary": "<p>A narrativa de Melquisedeque vem de Gênesis 14:18–20. <i>ὑψίστου</i> (<i>hypsistou</i>), altíssimo, título de Deus.</p><p><b>Crítica Textual:</b> Aparato de edições, 7:1: base «<i>ὁ</i>» com WH, NA28 e RP; Treg lê «<i>ὃς</i>».</p>"
+   },
+   {
+    "verse": 2,
+    "text": "a quem Abraão também deu o dízimo de tudo, sendo que o seu nome, traduzido, quer dizer primeiro «rei de justiça», e depois também «rei de Salém», que quer dizer «rei de paz»,",
+    "commentary": "<p><i>ἑρμηνευόμενος</i> (<i>hermēneuomenos</i>), traduzido, interpretado. O autor explica o nome em grego, por isso a tradução mantém os dois sentidos.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "sem pai, sem mãe, sem genealogia, sem princípio de dias nem fim de vida; e, feito semelhante ao Filho de Deus, permanece sacerdote para sempre.",
+    "commentary": "<p><i>ἀπάτωρ</i> (<i>apatōr</i>), sem pai; <i>ἀμήτωρ</i> (<i>amētōr</i>), sem mãe; <i>ἀγενεαλόγητος</i> (<i>agenealogētos</i>), sem genealogia. O argumento depende do silêncio da Escritura sobre a sua origem, e não de uma afirmação sobre ela.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Considerem quão grande é este, a quem até o patriarca Abraão deu o dízimo dos melhores despojos.",
+    "commentary": "<p><i>ἀκροθινίων</i> (<i>akrothinion</i>), o melhor dos despojos, as primícias da guerra. O dízimo de Abraão é uma prova de superioridade.</p><p><b>Crítica Textual:</b> Aparato de edições, 7:4: NA28 e RP acrescentam «<i>καὶ</i>», que WH e Treg não têm.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "E os que, dos filhos de Levi, recebem o sacerdócio têm mandamento de cobrar dízimo do povo, segundo a lei, os seus próprios irmãos, ainda que estes também tenham saído dos lombos de Abraão;"
+   },
+   {
+    "verse": 6,
+    "text": "mas aquele que não descende deles recebeu o dízimo de Abraão, e abençoou aquele que tinha as promessas.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:6: base «<i>Ἀβραάμ</i>» com WH, Treg e NA28; RP lê «<i>τὸν Ἀβραάμ</i>».</p>"
+   },
+   {
+    "verse": 7,
+    "text": "E, sem contradição alguma, o menor é abençoado pelo maior."
+   },
+   {
+    "verse": 8,
+    "text": "Aqui recebem dízimos homens que morrem, mas ali, quem recebe é aquele de quem se testemunha que vive."
+   },
+   {
+    "verse": 9,
+    "text": "E, por assim dizer, por meio de Abraão, até Levi, que recebe dízimos, pagou o dízimo;"
+   },
+   {
+    "verse": 10,
+    "text": "pois ainda estava nos lombos do pai quando Melquisedeque foi ao seu encontro.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:10: base «<i>Μελχισέδεκ</i>» com WH, Treg e NA28; RP lê «<i>ὁ Μελχισέδεκ</i>».</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Ora, se a perfeição tivesse vindo pelo sacerdócio levítico — pois sob ele o povo recebeu a lei —, que necessidade haveria ainda de que se levantasse outro sacerdote segundo a ordem de Melquisedeque, e não se dissesse segundo a ordem de Arão?",
+    "commentary": "<p><i>τελείωσις</i> (<i>teleiōsis</i>), perfeição, consumação. O argumento é que a lei levítica não podia levar à perfeição.</p><p><b>Crítica Textual:</b> Aparato de edições, 7:11: base «<i>αὐτῆς</i>» com WH, Treg e NA28; RP lê «<i>αὐτῇ</i>»; base «<i>νενομοθέτηται</i>» com WH, Treg e NA28; RP lê «<i>νενομοθέτητο</i>».</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Pois, mudando-se o sacerdócio, necessariamente também se faz mudança de lei."
+   },
+   {
+    "verse": 13,
+    "text": "Pois aquele de quem se dizem estas coisas pertence a outra tribo, da qual ninguém se dedicou ao altar."
+   },
+   {
+    "verse": 14,
+    "text": "Pois é evidente que o nosso Senhor surgiu de Judá, tribo acerca da qual Moisés nada disse sobre sacerdotes.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:14: base «<i>περὶ ἱερέων οὐδὲν</i>» com WH, Treg e NA28; RP lê «<i>οὐδὲν περὶ ἱερωσύνης</i>».</p>"
+   },
+   {
+    "verse": 15,
+    "text": "E isto é ainda mais evidente, se surge um outro sacerdote, segundo a semelhança de Melquisedeque,"
+   },
+   {
+    "verse": 16,
+    "text": "que não se tornou sacerdote por uma lei de mandamento carnal, mas segundo o poder de uma vida indestrutível;",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:16: base «<i>σαρκίνης</i>» com WH, Treg e NA28; RP lê «<i>σαρκικῆς</i>».</p>"
+   },
+   {
+    "verse": 17,
+    "text": "pois dele se testemunha: «Tu és sacerdote para sempre, segundo a ordem de Melquisedeque.»",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:17: base «<i>μαρτυρεῖται</i>» com WH, Treg e NA28; RP lê «<i>μαρτυρεῖ</i>».</p>"
+   },
+   {
+    "verse": 18,
+    "text": "Pois dá-se a anulação de um mandamento anterior, por causa da sua fraqueza e inutilidade,"
+   },
+   {
+    "verse": 19,
+    "text": "pois a lei não levou nada à perfeição; e introduziu-se uma esperança melhor, pela qual nos aproximamos de Deus."
+   },
+   {
+    "verse": 20,
+    "text": "E, pelo facto de não ter sido sem juramento (pois aqueles se tornaram sacerdotes sem juramento,"
+   },
+   {
+    "verse": 21,
+    "text": "mas este, com juramento, por aquele que lhe disse: «O Senhor jurou, e não se arrependerá: tu és sacerdote para sempre»),",
+    "commentary": "<p>A citação é do Salmo 110:4 (LXX 109:4).</p><p><b>Crítica Textual:</b> WH, Treg e NA28 lêem «<i>εἰς τὸν αἰῶνα</i>» sem acréscimo. RP acrescenta «<i>κατὰ τὴν τάξιν Μελχισέδεκ</i>», «segundo a ordem de Melquisedeque». Na colação, o mesmo acréscimo aparece em 02, KJTR, ST e Scrivener, e não aparece em 01, 03, 04 nem P46. Em 01 falta «<i>εἰς τὸν αἰῶνα</i>». A base fica e a tradução segue-a, mas a nota regista a variante.</p>"
+   },
+   {
+    "verse": 22,
+    "text": "na mesma medida, Jesus tornou-se garante de uma aliança superior.",
+    "commentary": "<p><i>ἔγγυος</i> (<i>engyos</i>), garante, fiador. Jesus garante a aliança com a sua própria vida.</p><p><b>Crítica Textual:</b> Aparato de edições, 7:22: base «<i>τοσοῦτο</i>» com WH, Treg e NA28; RP lê «<i>τοσοῦτον</i>»; base «<i>κρείττονος</i>» com Treg e RP; WH e NA28 leem «<i>καὶ κρείττονος</i>».</p>"
+   },
+   {
+    "verse": 23,
+    "text": "E os que se tornaram sacerdotes eram muitos, porque a morte os impedia de permanecer."
+   },
+   {
+    "verse": 24,
+    "text": "Mas ele, por permanecer para sempre, tem um sacerdócio que não passa a outro."
+   },
+   {
+    "verse": 25,
+    "text": "Por isso também pode salvar totalmente os que por ele se aproximam de Deus, pois vive sempre para interceder por eles.",
+    "commentary": "<p><i>ἐντυγχάνειν</i> (<i>entynchanein</i>), interceder, apresentar uma súplica. A intercessão é a função atual do sacerdote que vive para sempre.</p>"
+   },
+   {
+    "verse": 26,
+    "text": "Pois é tal o sumo sacerdote que nos convinha: santo, inocente, imaculado, separado dos pecadores e feito mais alto do que os céus;",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 7:26: RP omite «<i>καὶ</i>», que a base tem com WH, Treg e NA28.</p>"
+   },
+   {
+    "verse": 27,
+    "text": "o qual não tem necessidade, dia após dia, como os sumos sacerdotes, de oferecer primeiro sacrifícios pelos seus próprios pecados e depois pelos do povo; porque isto ele fez de uma vez por todas, ao oferecer-se a si mesmo.",
+    "commentary": "<p><i>ἀνενέγκας</i> (<i>anenenkas</i>), tendo oferecido, levado para cima. O sacrifício é oferecido uma só vez.</p>"
+   },
+   {
+    "verse": 28,
+    "text": "Pois a lei constitui sumos sacerdotes homens que têm fraqueza; mas a palavra do juramento, posterior à lei, constitui o Filho, que para sempre é aperfeiçoado."
+   }
+  ],
+  "8": [
+   {
+    "verse": 1,
+    "text": "Ora, o ponto principal do que dizemos é este: temos um sumo sacerdote tal, que se assentou à direita do trono da majestade nos céus,"
+   },
+   {
+    "verse": 2,
+    "text": "ministro dos santos e do verdadeiro tabernáculo, que o Senhor erigiu, e não o homem.",
+    "commentary": "<p><i>ἀληθινῆς</i> (<i>alēthinēs</i>), verdadeira, real, em oposição à cópia. <i>ἔπηξεν</i> (<i>epēxen</i>), erigiu, fixou.</p><p><b>Crítica Textual:</b> Aparato de edições, 8:2: base «<i>οὐκ</i>» com WH, Treg e NA28; RP lê «<i>καὶ οὐκ</i>».</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Pois todo sumo sacerdote é constituído para oferecer dons e sacrifícios; por isso é necessário que este também tenha algo que oferecer."
+   },
+   {
+    "verse": 4,
+    "text": "Se ele estivesse na terra, nem sequer seria sacerdote, visto que há os que oferecem os dons segundo a lei;",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 8:4: base «<i>οὖν</i>» com WH, Treg e NA28; RP lê «<i>γὰρ</i>»; RP acrescenta «<i>τῶν ἱερέων</i>», que WH, Treg e NA28 não têm; base «<i>νόμον</i>» com WH, Treg e NA28; RP lê «<i>τὸν νόμον</i>».</p>"
+   },
+   {
+    "verse": 5,
+    "text": "(os quais servem como cópia e sombra das realidades celestes, como Moisés foi advertido por revelação divina, quando estava para construir a tenda: «Vê», diz ele, «que faças tudo segundo o modelo que te foi mostrado no monte»).",
+    "commentary": "<p><i>ὑποδείγματι</i> (<i>hypodeigmati</i>), cópia, esboço; <i>σκιᾷ</i> (<i>skia</i>), sombra. A citação é do modelo que Moisés recebeu no monte (Êxodo 25:40 LXX).</p>"
+   },
+   {
+    "verse": 6,
+    "text": "Mas agora ele obteve um ministério tanto mais excelente quanto é também mediador de uma aliança melhor, estabelecida sobre promessas melhores.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 8:6: base «<i>νυνὶ</i>» com Treg, NA28 e RP; WH lê «<i>νῦν</i>».</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Pois, se aquela primeira fosse irrepreensível, não se procuraria lugar para uma segunda."
+   },
+   {
+    "verse": 8,
+    "text": "Pois, censurando-os, diz: «Eis que vêm dias, diz o Senhor, e concluirei com a casa de Israel e com a casa de Judá uma aliança nova,",
+    "commentary": "<p><b>Crítica Textual:</b> A base (SBLGNT, WH, NA28) lê «<i>αὐτούς</i>» (acusativo, «censurando-os»). Treg e RP lêem «<i>αὐτοῖς</i>» (dativo). Nos testemunhos colacionados, 01 e 02 leem o acusativo; 03 e P46 leem o dativo, o mesmo que KJTR, RP, SR, ST e Scrivener. A tradução «censurando-os» serve para as duas construções, por isso a diferença fica só na nota. A base fica.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "não segundo a aliança que fiz com os pais deles no dia em que os tomei pela mão para os tirar da terra do Egito; porque eles não permaneceram na minha aliança, e eu desinteressei-me deles, diz o Senhor.",
+    "commentary": "<p><i>ἠμέλησα</i> (<i>ēmelēsa</i>), desinteressar-me, desprezar. O verbo diz a indiferença de Deus diante de uma aliança quebrada, e não a sua falta de amor.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Pois esta é a aliança que concluirei com a casa de Israel depois daqueles dias, diz o Senhor: porei as minhas leis na mente deles e escreverei nos corações deles; e serei o Deus deles, e eles serão o meu povo.",
+    "commentary": "<p><i>διάνοια</i> (<i>dianoia</i>), mente, inteligência. O texto fala da lei interior que a nova aliança põe na mente e no coração.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "E não ensinará cada um ao seu conterrâneo, nem cada um ao seu irmão, dizendo: «Conhece o Senhor», porque todos me conhecerão, desde o menor até ao maior deles.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 8:11: RP acrescenta «<i>αὐτῶν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Porque serei propício às suas injustiças, e não me lembrarei mais dos seus pecados.»",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 8:12: RP acrescenta «<i>καὶ τῶν ἀνομιῶν αὐτῶν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "Ao dizer «nova», declarou antiga a primeira; e o que envelhece e se torna antigo está perto de desaparecer.",
+    "commentary": "<p><i>παλαιούμενον</i> (<i>palaioumenon</i>), o que envelhece; <i>γηράσκον</i> (<i>gēraskon</i>), o que se torna velho. A aliança antiga já é descrita como o que está para desaparecer.</p>"
+   }
+  ],
+  "9": [
+   {
+    "verse": 1,
+    "text": "Ora, também a primeira aliança tinha regras de culto e um santuário terrestre.",
+    "commentary": "<p><i>δικαιώματα λατρείας</i> (<i>dikaiōmata latreias</i>), regras e ordenações do culto. <i>τὸ ἅγιον κοσμικόν</i> (<i>to hagion kosmikon</i>), o santuário terrestre, em oposição ao celeste de 9:11 e 9:24.</p><p><b>Crítica Textual:</b> A base (SBLGNT) lê «<i>οὖν</i>», sem «<i>καί</i>», com Holmes e WHmarg. WH, Treg, NA28 e RP leem «<i>οὖν καί</i>». Na colação, 01, 02, KJTR, RP, ST, WH e Scrivener trazem «<i>καί</i>»; 03 e P46 não o têm. A tradução «Ora» dispensa a conjunção, e a base fica.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Foi armada, com efeito, uma tenda, a primeira, na qual estavam o candelabro, a mesa e os pães da presença, e que se chama o Santo.",
+    "commentary": "<p><i>πρόθεσις τῶν ἄρτων</i> (<i>prothesis tōn artōn</i>), os pães da presença, postos diante de Deus. <i>Ἅγια</i> (<i>Hagia</i>), o Santo, a primeira divisão do santuário.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Depois do segundo véu, havia a tenda chamada Santo dos Santos,",
+    "commentary": "<p><i>Ἅγια Ἁγίων</i> (<i>Hagia Hagiōn</i>), Santo dos Santos, o lugar mais interior do santuário, atrás do segundo véu.</p><p><b>Crítica Textual:</b> A base lê «<i>Ἅγια Ἁγίων</i>», com WH, NA28 e RP. Treg lê «<i>τὰ ἅγια τῶν ἁγίων</i>», com o artigo. Na colação, 03 acrescenta «<i>τα</i>» e «<i>τω</i>». A diferença não muda a leitura em português. A base fica.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "com o altar de incenso de ouro e a arca da aliança, coberta de ouro por todos os lados, na qual estavam a urna de ouro com o maná, a vara de Arão que tinha brotado e as tábuas da aliança;",
+    "commentary": "<p><i>θυμιατήριον</i> (<i>thymiatērion</i>), altar de incenso. O Êxodo (30:6) coloca o altar do incenso diante do véu, e não dentro do Santo dos Santos. A carta fala dele como se pertencesse a esse lugar, e a tradução segue o grego sem corrigir a descrição. <i>στάμνος</i> (<i>stamnos</i>), urna; <i>ῥάβδος</i> (<i>rhabdos</i>), vara, bastão.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "e sobre ela os querubins da glória, que cobriam o propiciatório. Sobre estas coisas não é agora o momento de falar uma a uma.",
+    "commentary": "<p><i>Χερουβίν δόξης</i> (<i>Cheroubin dochēs</i>), querubins da glória; <i>ἱλαστήριον</i> (<i>hilastērion</i>), propiciatório, a placa de ouro sobre a arca (Êxodo 25:17–22, LXX). O autor não desenvolve a descrição, e diz que não é o momento de a fazer.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "Depois de estes espaços estarem assim preparados, os sacerdotes entram sempre na primeira tenda, para cumprir os serviços do culto;"
+   },
+   {
+    "verse": 7,
+    "text": "mas na segunda entra só o sumo sacerdote, uma vez por ano, e não sem sangue, que oferece por si mesmo e pelas ignorâncias do povo.",
+    "commentary": "<p><i>ἀγνοημάτων</i> (<i>agnoēmatōn</i>), ignorâncias, pecados cometidos por ignorância, para os quais se oferecia sangue no Dia da Expiação.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Com isto o Espírito Santo mostra que o caminho para o santuário ainda não estava manifesto, enquanto a primeira tenda mantinha o seu lugar.",
+    "commentary": "<p><i>ὁδὸν τῶν ἁγίων</i> (<i>hodon tōn hagiōn</i>), o caminho para o santuário celeste; <i>στάσιν</i> (<i>stasin</i>), posição, lugar que ocupa.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Ela é uma figura para o tempo presente. Segundo ela, oferecem-se dons e sacrifícios que não podem levar à perfeição a consciência de quem presta culto,",
+    "commentary": "<p><i>παραβολή</i> (<i>parabolē</i>), figura, símbolo, sentido de comparação. <i>συνείδησιν</i> (<i>syneidēsin</i>), consciência.</p><p><b>Crítica Textual:</b> A base lê «<i>ἣν</i>», com WH, Treg e NA28, em «<i>καθʼ ἣν</i>». RP lê «<i>ὃν</i>», com o relativo no masculino, e KJTR, ST e Scrivener leem o mesmo. Na colação, 01, 02 e P46 trazem «<i>συνιδησιν</i>», forma ortográfica sem efeito no sentido. P130 tem uma lacuna que se estende por toda a cláusula «<i>ἥτις παραβολὴ … κατὰ συνείδησιν</i>»; a transcrição assinala-a como suprida. A tradução «segundo ela» segue a base.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "pois consistem apenas em comidas, bebidas e diversas abluções, ordenações da carne, impostas até ao tempo da correção.",
+    "commentary": "<p><i>βαπτισμοῖς</i> (<i>baptismois</i>), abluções, purificações por imersão ou aspersão. <i>δικαιώματα σαρκός</i> (<i>dikaiōmata sarkos</i>), ordenações que dizem respeito à carne, ao corpo, e não à consciência.</p><p><b>Crítica Textual:</b> A base lê «<i>δικαιώματα</i>», com WH e NA28. Treg lê «<i>καὶ δικαιώματα</i>», e RP «<i>καὶ δικαιώμασιν</i>». Na colação, 03 e P130 acrescentam «<i>καὶ</i>»; KJTR, RP, ST e Scrivener leem «<i>καὶ δικαιώμασιν</i>» ou forma equivalente. A tradução «ordenações da carne» serve para as três leituras. A base fica.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Cristo, porém, tendo chegado como sumo sacerdote dos bens já realizados, por meio da tenda maior e mais perfeita, não feita por mãos humanas, não desta criação,",
+    "commentary": "<p><i>γενομένων</i> (<i>genomenōn</i>), os bens que já vieram a ser, que já estão realizados; <i>μελλόντων</i> (<i>mellontōn</i>), os bens futuros. A leitura da base enquadra-se na ideia de que a nova realidade já chegou (cf. 10:1, onde a lei tem «sombra dos bens futuros»).</p><p><b>Crítica Textual:</b> A base lê «<i>γενομένων</i>», com WH e NA28. Treg e RP leem «<i>μελλόντων</i>». Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «<i>μελλόντων</i>»; 03 lê «<i>γενομένων</i>», e P46 lê «<i>γεναμένων</i>», forma ortográfica. A base fica, por decisão do responsável. A leitura «futuros» ajustar-se-ia ao paralelo de 10:1, mas a base mantém o sentido de bens já realizados.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "e não por sangue de bodes e de bezerros, mas pelo seu próprio sangue, entrou uma vez por todas no santuário, tendo obtido uma redenção eterna.",
+    "commentary": "<p><i>λύτρωσιν</i> (<i>lytrōsin</i>), resgate, libertação. O autor fala de redenção eterna em vez de remissão temporária, e o sangue de Cristo é o meio dessa redenção.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "Pois, se o sangue de bodes e de touros, e a cinza de uma novilha, aspergida sobre os contaminados, os santifica para a pureza da carne,",
+    "commentary": "<p><i>σποδὸς δαμάλεως</i> (<i>spodos damaleōs</i>), cinza de novilha, usada na purificação ritual de Números 19; <i>κεκοινωμένους</i> (<i>kekoinōmenous</i>), contaminados.</p><p><b>Crítica Textual:</b> A base lê «<i>τράγων καὶ ταύρων</i>», com WH, Treg e NA28. RP lê «<i>ταύρων καὶ τράγων</i>», com a ordem invertida. Na colação, KJTR, RP, ST e Scrivener seguem a ordem da RP. A tradução não distingue as ordens, e a base fica.</p>"
+   },
+   {
+    "verse": 14,
+    "text": "quanto mais o sangue de Cristo, que por um Espírito eterno se ofereceu a si mesmo sem defeito a Deus, purificará a nossa consciência das obras mortas, para servirmos o Deus vivo!",
+    "commentary": "<p><i>πνεύματος αἰωνίου</i> (<i>pneumatos aiōniou</i>), por um Espírito eterno. <i>νεκρῶν ἔργων</i> (<i>nekrōn ergōn</i>), obras mortas, obras que levam à morte.</p><p><b>Crítica Textual:</b> A base lê «<i>ἡμῶν</i>», «nossa», com WH e NA28. Treg e RP leem «<i>ὑμῶν</i>», «vossa». Na colação, 01, KJTR, RP, SR, ST e Scrivener leem «<i>ὑμῶν</i>». A 02 lê «<i>ἡμῶν</i>» e acrescenta, no fim do versículo, «<i>καὶ ἀληθινῷ</i>». Em 03, P17 e P46 o trecho final, até «<i>ζῶντι</i>», está em lacuna física, assinalada na transcrição; não é omissão textual. A base fica.</p>"
+   },
+   {
+    "verse": 15,
+    "text": "Por isso ele é mediador de uma aliança nova, para que, tendo havido uma morte para resgate das transgressões cometidas sob a primeira aliança, os chamados recebam a promessa da herança eterna.",
+    "commentary": "<p><i>μεσίτης</i> (<i>mesitēs</i>), mediador, o que garante uma aliança entre duas partes; <i>κληρονομίας</i> (<i>klēronomias</i>), herança.</p>"
+   },
+   {
+    "verse": 16,
+    "text": "Pois, onde há uma disposição testamentária, é necessário que conste a morte de quem a fez.",
+    "commentary": "<p><i>διαθήκη</i> (<i>diathēkē</i>), palavra que significa tanto aliança como testamento; o texto usa o sentido de disposição testamentária para introduzir a ideia da morte.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Com efeito, um testamento vale sobre os mortos, pois nunca tem força enquanto vive quem o fez.",
+    "commentary": "<p><i>μήποτε</i> (<i>mēpote</i>), nunca.</p><p><b>Crítica Textual:</b> A base lê «<i>μήποτε</i>», com Treg, NA28 e RP. WH lê «<i>μὴ τότε</i>», «não então». Na colação, 01 lê «<i>μη τοτε</i>»; 02 tem «<i>μηποτε</i>» com «<i>ισχυι</i>», forma ortográfica. A tradução «nunca» segue a base.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "Por isso nem sequer a primeira foi inaugurada sem sangue.",
+    "commentary": "<p><i>ἐγκεκαίνισται</i> (<i>enkekainistai</i>), foi inaugurada, dedicada, sentido que retoma o de 9:15 e 9:17.</p>"
+   },
+   {
+    "verse": 19,
+    "text": "Pois, depois de Moisés ter proclamado a todo o povo cada mandamento segundo a lei, tomou o sangue dos bezerros, com água, lã escarlate e hissopo, e aspergiu tanto o livro como todo o povo,",
+    "commentary": "<p><i>μόσχων</i> (<i>moschōn</i>), bezerros; <i>ὑσσώπου</i> (<i>hyssōpou</i>), hissopo, planta usada para aspergir (Êxodo 24:6–8).</p><p><b>Crítica Textual:</b> Aparato de edições, 9:19: RP omite «<i>τὸν</i>», que a base tem com WH, Treg e NA28; WH, Treg e NA28 acrescentam «<i>καὶ τῶν τράγων</i>», que a base não tem (a NIV segue a base por escolha de tradução); RP lê «<i>καὶ τράγων</i>».</p>"
+   },
+   {
+    "verse": 20,
+    "text": "dizendo: «Este é o sangue da aliança que Deus ordenou para vocês.»",
+    "commentary": "<p><i>ἐνετείλατο</i> (<i>eneteilato</i>), ordenou; a citação segue Êxodo 24:8.</p>"
+   },
+   {
+    "verse": 21,
+    "text": "E também aspergiu do mesmo modo, com o sangue, a tenda e todos os utensílios do culto.",
+    "commentary": "<p><i>λειτουργίας</i> (<i>leitourgias</i>), serviço, culto.</p>"
+   },
+   {
+    "verse": 22,
+    "text": "Quase tudo se purifica com sangue, segundo a lei, e sem derramamento de sangue não há perdão.",
+    "commentary": "<p><i>αἱματεκχυσίας</i> (<i>haimatekchysias</i>), derramamento de sangue. O princípio é o de Levítico 17:11, apresentado como regra geral do culto.</p>"
+   },
+   {
+    "verse": 23,
+    "text": "Era necessário, pois, que os modelos das coisas celestes fossem purificados com estas; mas as próprias coisas celestes, com sacrifícios melhores do que estes.",
+    "commentary": "<p><i>ὑποδείγματα</i> (<i>hypodeigmata</i>), modelos, cópias; <i>ἐπουράνια</i> (<i>epourania</i>), coisas celestes.</p>"
+   },
+   {
+    "verse": 24,
+    "text": "Pois Cristo não entrou em santuários feitos por mãos humanas, que são figuras das verdadeiras, mas no próprio céu, para se apresentar agora diante da face de Deus por nós;",
+    "commentary": "<p><i>ἀντίτυπα</i> (<i>antitypa</i>), figuras correspondentes, réplicas; <i>ἀληθινῶν</i> (<i>alēthinōn</i>), verdadeiras, reais.</p><p><b>Crítica Textual:</b> A base lê «<i>εἰσῆλθεν ἅγια</i>», com WH, Treg e NA28. RP lê «<i>ἅγια εἰσῆλθεν ὁ</i>», com a ordem invertida. Na colação, KJTR, RP, ST e Scrivener acrescentam «<i>ἅγια</i>» e leem «<i>ὁ</i>» no lugar do segundo «<i>ἅγια</i>». Em 04 há um acréscimo e uma omissão de «<i>ἅγια</i>» na mesma passagem. A tradução não distingue a ordem, e a base fica.</p>"
+   },
+   {
+    "verse": 25,
+    "text": "e não para se oferecer muitas vezes, como o sumo sacerdote entra no santuário cada ano com sangue alheio,",
+    "commentary": "<p><i>ἀλλοτρίῳ</i> (<i>allotriō</i>), alheio, de outro; o sangue do sumo sacerdote não é o seu próprio.</p>"
+   },
+   {
+    "verse": 26,
+    "text": "pois então teria de sofrer muitas vezes desde a fundação do mundo. Mas agora, uma vez por todas, na consumação dos séculos, manifestou-se para anular o pecado pelo sacrifício de si mesmo.",
+    "commentary": "<p><i>συντελείᾳ τῶν αἰώνων</i> (<i>syntelei tōn aiōnōn</i>), consumação dos séculos; <i>ἀθέτησιν</i> (<i>athetēsin</i>), anulação, supressão.</p><p><b>Crítica Textual:</b> Aparato de edições, 9:26: base «<i>νυνὶ</i>» com WH, Treg e NA28; RP lê «<i>νῦν</i>»; base «<i>ἁμαρτίας</i>» com RP; WH, Treg e NA28 leem «<i>τῆς ἁμαρτίας</i>» (a NIV segue a base por escolha de tradução).</p>"
+   },
+   {
+    "verse": 27,
+    "text": "E, como está destinado aos homens morrer uma só vez, e depois disto vir o juízo,",
+    "commentary": "<p><i>ἀπόκειται</i> (<i>apokeitai</i>), está reservado, está destinado.</p>"
+   },
+   {
+    "verse": 28,
+    "text": "assim também Cristo, tendo sido oferecido uma só vez para levar os pecados de muitos, aparecerá pela segunda vez, sem pecado, aos que o aguardam para a salvação.",
+    "commentary": "<p><i>ἀπεκδεχομένοις</i> (<i>apekdechomenois</i>), aos que aguardam com expectativa.</p>"
+   }
+  ],
+  "10": [
+   {
+    "verse": 1,
+    "text": "Pois a lei, tendo sombra dos bens futuros e não a própria imagem das realidades, nunca pode, com os mesmos sacrifícios que oferecem ano após ano, aperfeiçoar os que se aproximam.",
+    "commentary": "<p><i>σκιὰν</i> (<i>skian</i>), sombra; <i>εἰκόνα</i> (<i>eikona</i>), imagem, forma exata. A lei é apresentada como sombra, e não como a forma exata das realidades.</p><p><b>Crítica Textual:</b> A base lê «<i>δύναται</i>», com NA28. WH, Treg e RP leem «<i>δύνανται</i>», no plural. Na colação, 01, 02, 04 e SR leem também o plural; em 02 a forma está corrompida. A tradução segue a base, com o verbo no singular, e a diferença não afeta o sentido.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Se não, já teriam deixado de ser oferecidos? Pois os que prestam culto, uma vez purificados, já não teriam consciência de pecados.",
+    "commentary": "<p><i>συνείδησιν ἁμαρτιῶν</i> (<i>syneidēsin hamartiōn</i>), consciência de pecados, a consciência de culpa.</p><p><b>Crítica Textual:</b> A base lê «<i>κεκαθαρισμένους</i>», com WH, Treg e NA28. RP lê «<i>κεκαθαρμένους</i>», forma mais curta. Na colação, KJTR, RP, ST e Scrivener têm a forma curta. A diferença é só de forma verbal, e a tradução é a mesma. A base fica.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Mas nesses sacrifícios há uma recordação dos pecados, ano após ano.",
+    "commentary": "<p><i>ἀνάμνησις</i> (<i>anamnēsis</i>), recordação, memória.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Pois é impossível que o sangue de touros e de bodes tire pecados."
+   },
+   {
+    "verse": 5,
+    "text": "Por isso, ao entrar no mundo, diz: «Sacrifício e oferta não quiseste, mas um corpo me preparaste;",
+    "commentary": "<p><i>κατηρτίσω</i> (<i>katērtisō</i>), preparaste. A citação segue a Septuaginta do Salmo 40:6–8, que diz «um corpo me preparaste». O texto hebraico tem «ouvidos me abriste». O autor segue a versão grega, e a tradução segue o grego.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "holocaustos e sacrifícios pelo pecado não te agradaram.»",
+    "commentary": "<p><i>ὁλοκαυτώματα</i> (<i>holokautōmata</i>), holocaustos, sacrifícios queimados por inteiro.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Então eu disse: «Eis que venho; no rolo do livro está escrito a meu respeito, para fazer, ó Deus, a tua vontade.»",
+    "commentary": "<p><i>κεφαλίδι βιβλίου</i> (<i>kephalidi biblou</i>), rolo do livro, o rolo enrolado em torno de um eixo.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Dizendo antes: «Sacrifícios e ofertas, holocaustos e sacrifícios pelo pecado não quiseste, nem neles te comprouveste», que são oferecidos segundo a lei,",
+    "commentary": "<p><i>ἀνώτερον λέγων</i> (<i>anōteron legōn</i>), dizendo antes, retomando o que já foi dito.</p><p><b>Crítica Textual:</b> A base lê «<i>Θυσίας καὶ προσφορὰς</i>» e «<i>νόμον</i>», com WH, Treg e NA28. RP lê «<i>Θυσίαν καὶ προσφοράν</i>», no singular, e «<i>τὸν νόμον</i>», com artigo. Na colação, KJTR, RP, ST e Scrivener têm os singulares e acrescentam «<i>τὸν</i>» antes de «<i>νόμον</i>». P13 omite «<i>ἀνώτερον λέγων ὅτι θυσίας καὶ</i>». A tradução «sacrifícios e ofertas» segue a base.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "então disse: «Eis que venho para fazer a tua vontade.» Suprime o primeiro para estabelecer o segundo.",
+    "commentary": "<p><i>ἀναιρεῖ</i> (<i>anairei</i>), suprime, elimina; <i>στήσῃ</i> (<i>stēsēi</i>), estabeleça.</p><p><b>Crítica Textual:</b> A base lê «<i>ποιῆσαι</i>», com WH, Treg e NA28. RP acrescenta «<i>ὁ θεός</i>», «ó Deus». Na colação, KJTR, RP, ST e Scrivener têm «<i>ὁ θεός</i>». A tradução não o inclui, como na base.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Nessa vontade fomos santificados, pela oferta do corpo de Jesus Cristo, uma vez por todas.",
+    "commentary": "<p><i>ἡγιασμένοι</i> (<i>hēgiasmenoi</i>), santificados, postos à parte para Deus.</p><p><b>Crítica Textual:</b> A base lê «<i>ἐσμὲν</i>», com WH, Treg e NA28. RP acrescenta «<i>οἱ</i>» antes de «<i>ἡγιασμένοι</i>». Na colação, ST também acrescenta «<i>οἱ</i>», e ST e Scrivener acrescentam «<i>τοῦ</i>». A base fica.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "E todo sacerdote está de pé dia após dia, servindo e oferecendo muitas vezes os mesmos sacrifícios, que nunca podem tirar pecados.",
+    "commentary": "<p><i>περιελεῖν</i> (<i>perielein</i>), tirar, remover.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Mas este, tendo oferecido um só sacrifício pelos pecados, assentou-se para sempre à direita de Deus,",
+    "commentary": "<p><i>εἰς τὸ διηνεκὲς</i> (<i>eis to diēnekes</i>), para sempre, de modo contínuo.</p><p><b>Crítica Textual:</b> A base lê «<i>οὗτος</i>», com WH, Treg e NA28. RP lê «<i>αὐτὸς</i>», «ele mesmo». Na colação, KJTR, RP, ST e Scrivener têm «<i>αὐτὸς</i>». A tradução «este» serve para as duas formas, e a base fica.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "esperando desde então até que os seus inimigos sejam postos como escabelo dos seus pés."
+   },
+   {
+    "verse": 14,
+    "text": "Pois com uma só oferta aperfeiçoou para sempre os que são santificados.",
+    "commentary": "<p><i>τοὺς ἁγιαζομένους</i> (<i>tous hagiazomenous</i>), os que são santificados, os que estão a ser postos à parte para Deus.</p><p><b>Crítica Textual:</b> Na colação, P46 lê «<i>ἀνασωζομένους</i>», «os que são salvos», em lugar de «<i>ἁγιαζομένους</i>». A base fica.</p>"
+   },
+   {
+    "verse": 15,
+    "text": "E também o Espírito Santo nos dá testemunho, pois, depois de ter dito:",
+    "commentary": "<p><i>μαρτυρεῖ</i> (<i>martyrei</i>), dá testemunho.</p><p><b>Crítica Textual:</b> A base lê «<i>εἰρηκέναι</i>», com WH, Treg e NA28. RP lê «<i>προειρηκέναι</i>», «ter dito antes». Na colação, KJTR, RP, ST e Scrivener têm «<i>προειρηκέναι</i>». A tradução «depois de ter dito» segue a base e serve para as duas formas.</p>"
+   },
+   {
+    "verse": 16,
+    "text": "«Esta é a aliança que farei com eles depois daqueles dias, diz o Senhor: porei as minhas leis nos seus corações e na sua mente as escreverei,",
+    "commentary": "<p><i>διδοὺς νόμους μου</i> (<i>didous nomous mou</i>), dando as minhas leis. A citação é de Jeremias 38:33 (LXX; 31:33 no texto hebraico).</p><p><b>Crítica Textual:</b> A base lê «<i>τὴν διάνοιαν</i>», com WH, Treg e NA28. RP lê «<i>τῶν διανοιῶν</i>», no plural. Na colação, KJTR, RP, ST e Scrivener têm «<i>τῶν διανοιῶν</i>»; P13 acrescenta «<i>δέ</i>» depois de «<i>αὕτη</i>». A base fica, e a tradução «na sua mente» segue-a.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "e não me lembrarei mais dos seus pecados e das suas iniquidades.»",
+    "commentary": "<p><i>ἀνομιῶν</i> (<i>anomiōn</i>), iniquidades, transgressões da lei.</p><p><b>Crítica Textual:</b> A base lê «<i>καὶ</i>» no início do versículo, com WH, Treg, NA28 e RP. A NIV lê «<i>ὕστερον λέγει καὶ</i>», «depois diz também», por escolha de tradução. A base lê «<i>μνησθήσομαι</i>», com WH, Treg e NA28. RP, KJTR, ST e Scrivener leem «<i>μνησθῶ</i>», forma de conjuntivo; P46 também. Na colação, P13 lê «<i>μιμνησθησομαι</i>» e tem lacuna no trecho. P13 e P46 registam só um dos dois «<i>αὐτῶν</i>». A base fica.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "Ora, onde há perdão destes, já não há oferta pelo pecado.",
+    "commentary": "<p><i>προσφορὰ περὶ ἁμαρτίας</i> (<i>prosphora peri hamartias</i>), oferta pelo pecado.</p>"
+   },
+   {
+    "verse": 19,
+    "text": "Tendo, pois, irmãos, confiança para entrar no santuário pelo sangue de Jesus,"
+   },
+   {
+    "verse": 20,
+    "text": "pelo caminho novo e vivo que ele inaugurou para nós através do véu, que é a sua carne,",
+    "commentary": "<p><i>πρόσφατον καὶ ζῶσαν</i> (<i>prosphaton kai zōsan</i>), caminho novo e vivo; <i>καταπετάσματος</i> (<i>katapetasmatos</i>), véu.</p><p><b>Crítica Textual:</b> Na colação, P46 omite «<i>ἐστιν τῆς σαρκὸς αὐτοῦ</i>», «isto é, da sua carne». A base fica, e a tradução mantém a expressão.</p>"
+   },
+   {
+    "verse": 21,
+    "text": "e tendo um grande sacerdote sobre a casa de Deus,"
+   },
+   {
+    "verse": 22,
+    "text": "aproximemo-nos com coração sincero, em plena certeza da fé, tendo os corações aspergidos e purificados de uma consciência má, e o corpo lavado com água pura.",
+    "commentary": "<p><i>πληροφορίᾳ πίστεως</i> (<i>plērophoria pisteōs</i>), plena certeza da fé, convicção completa; <i>ῥαντισμένοι</i> (<i>rhantismenoi</i>), aspergidos.</p><p><b>Crítica Textual:</b> Na colação, P13 tem lacuna desde «<i>ἀληθινῆς καρδίας</i>» até «<i>ὕδατι καθαρῷ</i>», assinalada na transcrição. KJTR, RP, ST e Scrivener leem «<i>ἐρραντισμένοι</i>» e «<i>λελουμένοι</i>»; SR tem «<i>λελουμένοι</i>». São formas ortográficas. A base fica.</p>"
+   },
+   {
+    "verse": 23,
+    "text": "Mantenhamos firme a confissão da esperança, sem vacilar, pois fiel é o que prometeu;"
+   },
+   {
+    "verse": 24,
+    "text": "e consideremo-nos uns aos outros, para nos estimularmos ao amor e às boas obras,",
+    "commentary": "<p><i>παροξυσμὸν</i> (<i>paroxysmon</i>), estímulo, incitação, sentido positivo no contexto.</p><p><b>Crítica Textual:</b> Na colação, 04 omite «<i>καὶ καλῶν ἔργων</i>». P46 lê «<i>κατανοήσωμεν</i>», no conjuntivo aoristo, e «<i>ἐκ παροξυσμοῦ</i>». A base fica.</p>"
+   },
+   {
+    "verse": 25,
+    "text": "não abandonando a nossa reunião, como é costume de alguns, mas exortando-nos, e tanto mais quanto vemos que se aproxima o dia.",
+    "commentary": "<p><i>ἐπισυναγωγὴν</i> (<i>episynagōgēn</i>), reunião, assembleia.</p>"
+   },
+   {
+    "verse": 26,
+    "text": "Pois, se pecarmos voluntariamente depois de termos recebido o pleno conhecimento da verdade, já não resta sacrifício pelos pecados,",
+    "commentary": "<p><i>ἐπίγνωσιν τῆς ἀληθείας</i> (<i>epignōsin tēs alētheias</i>), pleno conhecimento da verdade, o conhecimento que supõe aceitação pessoal. <i>ἑκουσίως</i> (<i>hekousiōs</i>), voluntariamente.</p>"
+   },
+   {
+    "verse": 27,
+    "text": "mas uma certa expectação terrível de juízo e um ardor de fogo que há de devorar os adversários.",
+    "commentary": "<p><i>ἐκδοχὴ</i> (<i>ekdochē</i>), expectação, espera; <i>ζῆλος</i> (<i>zēlos</i>), ardor, zelo.</p>"
+   },
+   {
+    "verse": 28,
+    "text": "Quem desprezou a lei de Moisés morre, sem misericórdia, diante de duas ou três testemunhas.",
+    "commentary": "<p>A referência segue Deuteronómio 17:6 e 19:15, sobre a exigência de duas ou três testemunhas.</p>"
+   },
+   {
+    "verse": 29,
+    "text": "Quanto pior castigo julgam vocês que merece quem pisou o Filho de Deus, e considerou comum o sangue da aliança com que foi santificado, e ultrajou o Espírito da graça?",
+    "commentary": "<p><i>καταπατήσας</i> (<i>katapatēsas</i>), pisou aos pés, desprezou; <i>ἐνυβρίσας</i> (<i>enybrisas</i>), ultrajou.</p>"
+   },
+   {
+    "verse": 30,
+    "text": "Pois conhecemos aquele que disse: «A mim pertence a vingança; eu retribuirei.» E outra vez: «O Senhor julgará o seu povo.»",
+    "commentary": "<p>As citações são de Deuteronómio 32:35–36 (LXX).</p><p><b>Crítica Textual:</b> A base lê «<i>ἀνταποδώσω</i>», com WH, Treg e NA28. RP acrescenta «<i>λέγει κύριος</i>», «diz o Senhor». Na colação, 02, KJTR, ST e Scrivener têm também «<i>λέγει κύριος</i>». A base lê «<i>Κρινεῖ κύριος</i>», com WH, Treg e NA28. RP lê «<i>κύριος κρινεῖ</i>», com a ordem invertida, e KJTR, ST e Scrivener seguem essa ordem. Na colação, P46 omite «<i>αὐτοῦ</i>» em «<i>τὸν λαὸν αὐτοῦ</i>». A tradução segue a base nos dois casos.</p>"
+   },
+   {
+    "verse": 31,
+    "text": "Terrível coisa é cair nas mãos do Deus vivo."
+   },
+   {
+    "verse": 32,
+    "text": "Lembrem-se, porém, dos dias anteriores, em que, depois de iluminados, suportaram um grande combate de sofrimentos,",
+    "commentary": "<p><i>φωτισθέντες</i> (<i>phōtisthentes</i>), iluminados, o termo usado para o batismo nos primeiros tempos; ver 6:4.</p>"
+   },
+   {
+    "verse": 33,
+    "text": "ora expostos ao opróbrio e às tribulações, em espetáculo público, ora tornados companheiros dos que assim eram tratados.",
+    "commentary": "<p><i>θεατριζόμενοι</i> (<i>theatrizomenoi</i>), expostos em espetáculo público.</p>"
+   },
+   {
+    "verse": 34,
+    "text": "Pois também se compadeceram dos presos, e aceitaram com alegria o roubo dos seus bens, sabendo que vocês mesmos têm uma posse melhor e permanente.",
+    "commentary": "<p><i>δεσμίοις</i> (<i>desmiois</i>), aos presos.</p><p><b>Crítica Textual:</b> A base lê «<i>δεσμίοις</i>», com WH, Treg e NA28. RP lê «<i>δεσμοῖς μου</i>», «aos meus presos». Na colação, 01, KJTR, RP, ST e Scrivener leem «<i>δεσμοῖς μου</i>»; P46 lê «<i>δεσμοῖς</i>». A base fica, por decisão do responsável. Quanto a «<i>ἑαυτούς</i>», WH, Treg e NA28 leem o acusativo; RP lê «<i>ἑαυτοῖς</i>», e KJTR, ST e Scrivener leem «<i>ἐν ἑαυτοῖς</i>». RP, KJTR, ST e Scrivener acrescentam «<i>ἐν οὐρανοῖς</i>», «nos céus», depois de «<i>ὕπαρξιν</i>»; a base não o tem. A tradução segue a base nos três casos.</p>"
+   },
+   {
+    "verse": 35,
+    "text": "Não lancem fora, pois, a confiança de vocês, que tem grande recompensa.",
+    "commentary": "<p><i>παρρησίαν</i> (<i>parrēsian</i>), confiança, franqueza diante de Deus.</p><p><b>Crítica Textual:</b> A base lê «<i>μεγάλην μισθαποδοσίαν</i>», com WH, Treg e NA28. RP inverte a ordem, «<i>μισθαποδοσίαν μεγάλην</i>», e KJTR, ST e Scrivener seguem essa ordem. Na colação, P46 lê «<i>ἡμῶν</i>» em vez de «<i>ὑμῶν</i>», em «<i>τὴν παρρησίαν</i>». A tradução «que tem grande recompensa» segue a base, e a diferença de ordem não altera o sentido.</p>"
+   },
+   {
+    "verse": 36,
+    "text": "Pois têm necessidade de perseverança, para que, tendo feito a vontade de Deus, recebam a promessa."
+   },
+   {
+    "verse": 37,
+    "text": "Pois, ainda um pouquinho, muito pouco, e o que há de vir virá e não tardará;",
+    "commentary": "<p>A citação segue Habacuque 2:3 (LXX), com a ideia de que o que vem não tardará.</p>"
+   },
+   {
+    "verse": 38,
+    "text": "mas o meu justo viverá pela fé; e, se retroceder, a minha alma não se compraz nele.",
+    "commentary": "<p>A citação segue Habacuque 2:4 (LXX).</p><p><b>Crítica Textual:</b> A base lê «<i>ὁ δὲ δίκαιός μου</i>», com WH, Treg e NA28, e «<i>εὐδοκεῖ ἡ ψυχή μου</i>». RP, KJTR, ST e Scrivener omitem o primeiro «<i>μου</i>», mas mantêm «<i>ἡ ψυχή μου</i>». P46 tem os dois «<i>μου</i>», mas põe o segundo depois de «<i>εὐδοκεῖ</i>»; P13, com lacuna suprida na transcrição, omite o primeiro e também põe o segundo depois de «<i>εὐδοκεῖ</i>». A tradução inclui o possessivo, como na base.</p>"
+   },
+   {
+    "verse": 39,
+    "text": "Nós, porém, não somos dos que retrocedem para perdição, mas dos que creem para a salvação da alma.",
+    "commentary": "<p><i>ὑποστολῆς</i> (<i>hypostolēs</i>), retrocesso, recuo.</p>"
+   }
+  ],
+  "11": [
+   {
+    "verse": 1,
+    "text": "Ora, a fé é a firmeza das coisas que se esperam, a prova das realidades que não se veem.",
+    "commentary": "<p><i>ὑπόστασις</i> (<i>hypostasis</i>), firmeza, fundamento, o que sustenta; <i>ἔλεγχος</i> (<i>elenchos</i>), prova, demonstração. A fé é apresentada como aquilo que dá realidade ao que se espera e como prova do que não se vê.</p><p><b>Crítica Textual:</b> A base lê «<i>βλεπομένων</i>» (<i>blepomenōn</i>), «dos que se veem». A testemunha 02 lê «<i>βουλομένων</i>» (<i>boulomenōn</i>), «dos que se desejam», leitura confirmada na transcrição. P13 omite «<i>ὑπόστασις</i>», e a transcrição assinala lacuna. P46 omite «<i>δέ</i>» e lê «<i>ἔλλεγχος</i>». Na colação, ST lê «<i>ἐστι</i>» no lugar de «<i>ἐστιν</i>». A base fica.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Pois por ela foram os antigos bem testemunhados.",
+    "commentary": "<p><i>ἐμαρτυρήθησαν</i> (<i>emartyrēthēsan</i>), foram testemunhados, receberam bom testemunho. <i>οἱ πρεσβύτεροι</i> (<i>hoi presbyteroi</i>), os antigos, os que vieram antes.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Pela fé entendemos que os mundos foram formados pela palavra de Deus, de modo que o que se vê não veio do que aparece.",
+    "commentary": "<p><i>κατηρτίσθαι</i> (<i>katērtisthai</i>), ter sido formados, ordenados; <i>αἰῶνας</i> (<i>aiōnas</i>), os mundos, os séculos, a criação no tempo.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:3: base «<i>τὸ βλεπόμενον</i>» com WH, Treg e NA28; RP lê «<i>τά βλεπόμενα</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Pela fé, Abel ofereceu a Deus um sacrifício superior ao de Caim, pelo qual foi testemunhado que era justo, Deus dando testemunho dos seus dons; e por ele, mesmo morto, ainda fala.",
+    "commentary": "<p><i>πλείονα θυσίαν</i> (<i>pleiona thysian</i>), sacrifício superior; <i>ἔτι λαλεῖ</i> (<i>eti lalei</i>), ainda fala. Em 12:24, o sangue de Jesus fala melhor do que o de Abel.</p><p><b>Crítica Textual:</b> A base lê «<i>τοῦ θεοῦ</i>», «de Deus», depois de «<i>τοῖς δώροις αὐτοῦ</i>», com WH, NA28 e RP. Treg lê «<i>τῷ θεῷ</i>». A base lê «<i>λαλεῖ</i>», com WH, Treg e NA28. RP lê «<i>λαλεῖται</i>», «é falado». A tradução segue a base nos dois casos.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "Pela fé, Enoque foi transladado para não ver a morte, e não foi achado, porque Deus o transladou; pois antes da trasladação foi testemunhado que agradou a Deus.",
+    "commentary": "<p><i>μετετέθη</i> (<i>metetethē</i>), foi transladado. A raiz é a de Génesis 5:24 (LXX), onde Enoque é transladado.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:5: RP acrescenta «<i>αὐτοῦ</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "Ora, sem fé é impossível agradar a Deus, pois quem se aproxima dele deve crer que ele existe e que se torna recompensador dos que o buscam.",
+    "commentary": "<p><i>μισθαποδότης</i> (<i>misthapodotēs</i>), o que retribui com recompensa.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Pela fé, Noé, avisado acerca de coisas que ainda não se viam, com temor preparou uma arca para a salvação da sua casa; por ela condenou o mundo e tornou-se herdeiro da justiça que vem pela fé.",
+    "commentary": "<p><i>εὐλαβηθείς</i> (<i>eulabētheis</i>), com temor reverente; <i>κιβωτόν</i> (<i>kibōton</i>), arca, a mesma palavra da arca de Noé.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Pela fé, Abraão, chamado, obedeceu para sair para o lugar que havia de receber como herança, e saiu sem saber para onde ia.",
+    "commentary": "<p>A citação é de Génesis 12:1–4 e 15:18 (LXX), no sentido de uma saída sem saber o destino.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:8: Treg acrescenta «<i>ὁ</i>», que WH, NA28 e RP não têm; base «<i>τόπον</i>» com WH, Treg e NA28; RP lê «<i>τὸν τόπον</i>».</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Pela fé, habitou na terra da promessa como em terra estranha, morando em tendas com Isaque e Jacó, herdeiros com ele da mesma promessa;",
+    "commentary": "<p><i>παρῴκησεν</i> (<i>parōikēsen</i>), habitou como estrangeiro; <i>συγκληρονόμων</i> (<i>synklēronomōn</i>), co-herdeiros.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "pois esperava a cidade que tem fundamentos, cujo arquiteto e construtor é Deus.",
+    "commentary": "<p><i>τοὺς θεμελίους ἔχουσαν</i> (<i>tous themelious echousan</i>), que tem fundamentos, cidade estável.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Pela fé, também a própria Sara recebeu força para conceber, e isso para além do tempo da idade, porque considerou fiel quem tinha prometido.",
+    "commentary": "<p><i>στεῖρα</i> (<i>steira</i>), estéril. A palavra não está no texto da base, e a tradução não a põe, por decisão do responsável.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:11: base «<i>αὐτῇ Σάρρᾳ</i>» com Holmes e WHmarg; WH, Treg e RP leem «<i>αὐτὴ Σάρρα</i>»; NA28 lê «<i>αὐτὴ Σάρρα στεῖρα</i>»; RP acrescenta «<i>ἔτεκεν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Por isso também, de um só, e este já sem vigor, nasceram descendentes como as estrelas do céu em número e como a areia inumerável que está à beira do mar.",
+    "commentary": "<p><i>νενεκρωμένου</i> (<i>nenekrōmenou</i>), já sem vigor, quase morto quanto à geração; a expressão aplica-se a Abraão.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "Na fé morreram todos estes, sem terem recebido as promessas, mas vendo-as de longe, e saudando-as, e confessando que eram estrangeiros e peregrinos na terra.",
+    "commentary": "<p><i>πόρρωθεν</i> (<i>porrōthen</i>), de longe; <i>ἀσπασάμενοι</i> (<i>aspasamenoi</i>), saudando, acolhendo com alegria.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:13: base «<i>λαβόντες</i>» com NA28 e RP; WH e Treg leem «<i>κομισάμενοι</i>».</p>"
+   },
+   {
+    "verse": 14,
+    "text": "Pois os que dizem tais coisas mostram que procuram uma pátria.",
+    "commentary": "<p><i>πατρίδα</i> (<i>patrida</i>), pátria, terra de origem.</p>"
+   },
+   {
+    "verse": 15,
+    "text": "E se, de facto, se lembrassem daquela de onde saíram, teriam tido ocasião de voltar.",
+    "commentary": "<p><i>ἐξέβησαν</i> (<i>exebēsan</i>), saíram; <i>εἶχον ἄν καιρὸν</i> (<i>eichon an kairon</i>), teriam tido ocasião.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:15: base «<i>μνημονεύουσιν</i>» com Treg; WH, NA28 e RP leem «<i>ἐμνημόνευον</i>»; base «<i>ἐξέβησαν</i>» com WH, Treg e NA28; RP lê «<i>ἐξῆλθον</i>».</p>"
+   },
+   {
+    "verse": 16,
+    "text": "Mas agora desejam uma melhor, a celeste. Por isso Deus não se envergonha de ser chamado o Deus deles, pois lhes preparou uma cidade."
+   },
+   {
+    "verse": 17,
+    "text": "Pela fé, Abraão, ao ser posto à prova, ofereceu Isaque; o que tinha recebido as promessas oferecia o seu filho único,",
+    "commentary": "<p><i>πειραζόμενος</i> (<i>peirazomenos</i>), posto à prova; a palavra não diz tentado no sentido moral.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "a quem tinha sido dito: «Em Isaque será chamada a tua descendência»;"
+   },
+   {
+    "verse": 19,
+    "text": "pois considerou que Deus é poderoso até para ressuscitar dos mortos; por isso também o recobrou como figura.",
+    "commentary": "<p><i>ἐν παραβολῇ</i> (<i>en parabolē</i>), como figura, em sentido figurado.</p>"
+   },
+   {
+    "verse": 20,
+    "text": "Pela fé, Isaque abençoou, quanto ao futuro, Jacó e Esaú.",
+    "commentary": "<p><b>Crítica Textual:</b> Aparato de edições, 11:20: RP omite «<i>καὶ</i>», que a base tem com WH, Treg e NA28.</p>"
+   },
+   {
+    "verse": 21,
+    "text": "Pela fé, Jacó, ao morrer, abençoou cada um dos filhos de José, e adorou apoiado no alto do seu bastão.",
+    "commentary": "<p>A citação segue Génesis 47:31 na Septuaginta, que lê «apoiado no alto do bastão», onde o texto hebraico tem «à cabeceira da cama».</p>"
+   },
+   {
+    "verse": 22,
+    "text": "Pela fé, José, ao morrer, falou da saída dos filhos de Israel e deu ordens acerca dos seus ossos."
+   },
+   {
+    "verse": 23,
+    "text": "Pela fé, Moisés, depois de nascer, foi escondido três meses pelos seus pais, porque viram que a criança era bela, e não temeram o decreto do rei.",
+    "commentary": "<p><i>ἀστεῖον</i> (<i>asteion</i>), belo, de boa aparência.</p>"
+   },
+   {
+    "verse": 24,
+    "text": "Pela fé, Moisés, já crescido, recusou ser chamado filho da filha do Faraó,"
+   },
+   {
+    "verse": 25,
+    "text": "preferindo ser maltratado com o povo de Deus a ter o gozo transitório do pecado;",
+    "commentary": "<p><i>συγκακουχεῖσθαι</i> (<i>synkakoucheisthai</i>), ser maltratado em conjunto.</p>"
+   },
+   {
+    "verse": 26,
+    "text": "considerando o opróbrio de Cristo uma riqueza maior do que os tesouros do Egito, porque olhava para a recompensa.",
+    "commentary": "<p><i>ὀνειδισμὸν τοῦ Χριστοῦ</i> (<i>oneidismon tou Christou</i>), o opróbrio de Cristo. O genitivo pode ser lido como o opróbrio que Cristo sofreu ou como o que se sofre por causa dele; a tradução mantém essa ambiguidade.</p>"
+   },
+   {
+    "verse": 27,
+    "text": "Pela fé, deixou o Egito sem temer a ira do rei; pois perseverou como quem vê o invisível."
+   },
+   {
+    "verse": 28,
+    "text": "Pela fé, celebrou a Páscoa e a aspersão do sangue, para que o destruidor dos primogénitos não os tocasse.",
+    "commentary": "<p><i>πρόσχυσιν</i> (<i>proschysin</i>), aspersão.</p>"
+   },
+   {
+    "verse": 29,
+    "text": "Pela fé, atravessaram o Mar Vermelho como por terra seca; ao tentarem isso, os egípcios foram submergidos.",
+    "commentary": "<p><i>πεῖραν λαβόντες</i> (<i>peiran labontes</i>), ao tentarem isso, tendo feito a experiência.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:29: RP omite «<i>γῆς</i>», que a base tem com WH, Treg e NA28.</p>"
+   },
+   {
+    "verse": 30,
+    "text": "Pela fé, caíram os muros de Jericó, depois de rodeados durante sete dias.",
+    "commentary": "<p><i>κυκλωθέντα</i> (<i>kyklōthenta</i>), rodeados, cercados.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:30: base «<i>ἔπεσαν</i>» com WH, Treg e NA28; RP lê «<i>ἔπεσεν</i>».</p>"
+   },
+   {
+    "verse": 31,
+    "text": "Pela fé, Raabe, a prostituta, não pereceu com os desobedientes, porque acolheu os espias em paz.",
+    "commentary": "<p><i>πόρνη</i> (<i>pornē</i>), prostituta.</p>"
+   },
+   {
+    "verse": 32,
+    "text": "E que mais direi? Pois o tempo me faltaria para contar de Gedeão, de Baraque, de Sansão, de Jefté, de Davi, de Samuel e dos profetas,",
+    "commentary": "<p><i>ἐπιλείψει</i> (<i>epileipsei</i>), faltará, vai faltar.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:32: base «<i>με γὰρ</i>» com WH, Treg e NA28; RP lê «<i>γὰρ με</i>»; base «<i>Σαμψών</i>» com WH, Treg e NA28; RP lê «<i>τε καὶ Σαμψών καὶ</i>».</p>"
+   },
+   {
+    "verse": 33,
+    "text": "os quais, pela fé, conquistaram reinos, praticaram a justiça, obtiveram promessas, fecharam as bocas dos leões,"
+   },
+   {
+    "verse": 34,
+    "text": "apagaram a força do fogo, escaparam ao fio da espada, de fraqueza se tornaram fortes, foram valentes na guerra, puseram em fuga exércitos estrangeiros.",
+    "commentary": "<p><i>στόματα μαχαίρης</i> (<i>stomata machairēs</i>), o fio da espada, literalmente a boca da espada.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:34: base «<i>μαχαίρης</i>» com WH, Treg e NA28; RP lê «<i>μαχαίρας</i>»; base «<i>ἐδυναμώθησαν</i>» com WH, Treg e NA28; RP lê «<i>ἐνεδυναμώθησαν</i>».</p>"
+   },
+   {
+    "verse": 35,
+    "text": "Mulheres receberam os seus mortos pela ressurreição; outros foram torturados, não aceitando a libertação, para alcançarem uma ressurreição melhor.",
+    "commentary": "<p><i>ἐτυμπανίσθησαν</i> (<i>etympanisthēsan</i>), foram torturados. O verbo deriva de <i>τύμπανον</i> (<i>tympanon</i>), tambor, mas o mecanismo do suplício não é claro.</p>"
+   },
+   {
+    "verse": 36,
+    "text": "Outros passaram pela prova de zombarias e de açoites, e ainda de cadeias e de prisão;"
+   },
+   {
+    "verse": 37,
+    "text": "foram apedrejados, serrados, mortos à espada; andaram cobertos com peles de ovelhas e de cabras, em penúria, atribulados, maltratados;",
+    "commentary": "<p><i>ἐπρίσθησαν</i> (<i>epristhēsan</i>), foram serrados.</p> <p><b>Crítica Textual:</b> A base lê «<i>ἐπρίσθησαν</i>», «foram serrados», sem «<i>ἐπειράσθησαν</i>», com Treg e NA28. WH lê «<i>ἐπειράσθησαν ἐπρίσθησαν</i>», «foram tentados, foram serrados»; RP lê o mesmo par na ordem inversa. Na colação, 02, KJTR, RP, SR, ST, WH e Scrivener têm «<i>ἐπειράσθησαν</i>»; 01 e P13 têm a forma «<i>ἐπιράσθησαν</i>»; P46 omite o verbo. Quanto a «<i>μαχαίρης</i>», base com WH, Treg e NA28; RP lê «<i>μαχαίρας</i>». A base fica, e a tradução segue-a.</p>"
+   },
+   {
+    "verse": 38,
+    "text": "dos quais o mundo não era digno, errando por desertos, montes, cavernas e buracos da terra.",
+    "commentary": "<p><i>ὀπαῖς</i> (<i>opais</i>), buracos, aberturas na rocha.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:38: base «<i>ἐπὶ</i>» com WH, Treg e NA28; RP lê «<i>ἐν</i>».</p>"
+   },
+   {
+    "verse": 39,
+    "text": "E todos, tendo obtido bom testemunho pela fé, não alcançaram a promessa,",
+    "commentary": "<p><i>μαρτυρηθέντες</i> (<i>martyrēthentes</i>), testemunhados, aprovados.</p><p><b>Crítica Textual:</b> Aparato de edições, 11:39: WH, Treg, NA28 e RP acrescentam «<i>οὗτοι</i>», que Holmes não tem.</p>"
+   },
+   {
+    "verse": 40,
+    "text": "porque Deus previu algo melhor a nosso respeito, para que não fossem aperfeiçoados sem nós.",
+    "commentary": "<p><i>προβλεψαμένου</i> (<i>problepsamenou</i>), tendo previsto, tendo provido.</p>"
+   }
+  ],
+  "12": [
+   {
+    "verse": 1,
+    "text": "Por isso também nós, tendo à nossa volta uma tão grande nuvem de testemunhas, despojemo-nos de todo o peso e do pecado que nos envolve com facilidade, e corramos com perseverança a corrida que nos está proposta,",
+    "commentary": "<p><i>νέφος μαρτύρων</i> (<i>nephos martyrōn</i>), nuvem de testemunhas. A imagem é a de uma multidão que assiste, e não de testemunhas que depõem; a tradução «testemunhas» segue o texto. <i>εὐπερίστατον</i> (<i>euperistaton</i>), que envolve com facilidade.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "olhando para Jesus, o autor e consumador da fé, que, em vez da alegria que lhe estava proposta, suportou a cruz, desprezando a vergonha, e está sentado à direita do trono de Deus.",
+    "commentary": "<p><i>ἀρχηγὸν καὶ τελειωτὴν</i> (<i>archēgon kai teleiōtēn</i>), autor e consumador, o que começa e leva à perfeição.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Pensem, pois, naquele que suportou tal oposição dos pecadores, para que não se cansem nem desfaleçam nas suas almas.",
+    "commentary": "<p><i>ἀντιλογίαν</i> (<i>antilogian</i>), oposição, contradição.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:3: base «<i>ἑαυτοὺς</i>» com WH; NA28 e Treg leem «<i>ἑαυτὸν</i>»; RP lê «<i>ἀυτὸν</i>».</p>"
+   },
+   {
+    "verse": 4,
+    "text": "Ainda não resistiram até ao sangue, combatendo contra o pecado;",
+    "commentary": "<p><i>ἀντικατέστητε</i> (<i>antikatestēte</i>), resististes, opuseram-se.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "e esqueceram-se da exortação que se dirige a vocês como a filhos: «Filho meu, não desprezes a disciplina do Senhor, nem desfaleças quando por ele fores repreendido;",
+    "commentary": "<p><i>παράκλησις</i> (<i>paraklēsis</i>), exortação, palavra de encorajamento. A citação é de Provérbios 3:11–12 (LXX).</p>"
+   },
+   {
+    "verse": 6,
+    "text": "pois o Senhor corrige a quem ama, e açoita todo filho que recebe.»"
+   },
+   {
+    "verse": 7,
+    "text": "É para disciplina que suportam; Deus trata vocês como filhos. Pois qual é o filho que o pai não corrige?",
+    "commentary": "<p><i>παιδείαν</i> (<i>paideian</i>), disciplina, educação pela correção.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:7: RP acrescenta «<i>ἐστιν</i>», que WH, Treg e NA28 não têm.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Mas, se estão sem disciplina, da qual todos se tornaram participantes, então são bastardos, e não filhos.",
+    "commentary": "<p><i>νόθοι</i> (<i>nothoi</i>), bastardos, filhos ilegítimos.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:8: base «<i>καὶ οὐχ υἱοί ἐστε</i>» com WH, Treg e NA28; RP lê «<i>ἐστε καὶ οὐχ υἱοί</i>».</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Além disso, tivemos pais segundo a carne que nos corrigiam, e nós os respeitávamos; não nos havemos de sujeitar muito mais ao Pai dos espíritos, e viver?",
+    "commentary": "<p><i>ἐνετρεπόμεθα</i> (<i>enetrepometha</i>), respeitávamos, dávamos atenção. <i>τῷ πατρὶ τῶν πνευμάτων</i> (<i>tō patri tōn pneumatōn</i>), o Pai dos espíritos, expressão rara.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:9: base «<i>πολὺ</i>» com WH e Treg; NA28 lê «<i>πολὺ δὲ</i>»; RP lê «<i>πολλῷ</i>».</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Pois aqueles corrigiam-nos por poucos dias, como lhes parecia; mas este, para o nosso proveito, para participarmos da sua santidade.",
+    "commentary": "<p><i>τὸ μεταλαβεῖν</i> (<i>to metalabein</i>), para participarem, para terem parte.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Ora, toda a disciplina, no momento presente, não parece ser motivo de alegria, mas de tristeza; depois, porém, dá fruto pacífico de justiça aos que foram por ela exercitados.",
+    "commentary": "<p><i>γεγυμνασμένοις</i> (<i>gegymnasmenois</i>), exercitados, formados.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:11: base «<i>δὲ</i>» com Treg, NA28 e RP; WH lê «<i>μὲν</i>».</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Por isso, levantem as mãos cansadas e os joelhos enfraquecidos,"
+   },
+   {
+    "verse": 13,
+    "text": "e façam trilhos retos para os seus pés, para que o que é manco não se desvie, mas antes seja curado.",
+    "commentary": "<p><i>τροχιὰς ὀρθὰς</i> (<i>trochias orthas</i>), trilhos retos, caminhos direitos.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:13: base «<i>ποιεῖτε</i>» com WH, Treg e NA28; RP lê «<i>ποιήσατε</i>».</p>"
+   },
+   {
+    "verse": 14,
+    "text": "Procurem a paz com todos, e a santificação, sem a qual ninguém verá o Senhor;"
+   },
+   {
+    "verse": 15,
+    "text": "cuidando para que ninguém deixe de alcançar a graça de Deus, para que nenhuma raiz de amargura, brotando, cause dano, e por ela muitos sejam contaminados;",
+    "commentary": "<p><i>ῥίζα πικρίας</i> (<i>rhiza pikrias</i>), raiz de amargura, alusão a Deuteronómio 29 (LXX).</p><p><b>Crítica Textual:</b> Aparato de edições, 12:15: base «<i>διʼ αὐτῆς</i>» com WH e NA28; Treg e RP leem «<i>διὰ ταύτης</i>»; base «<i>πολλοί</i>» com NA28 e RP; WH e Treg leem «<i>οἱ πολλοί</i>».</p>"
+   },
+   {
+    "verse": 16,
+    "text": "para que ninguém seja fornicador ou profano, como Esaú, que por uma só refeição vendeu os seus direitos de primogenitura.",
+    "commentary": "<p><i>βέβηλος</i> (<i>bebēlos</i>), profano, o que não respeita o que é sagrado; <i>πρωτοτόκια</i> (<i>prōtotokia</i>), direitos de primogenitura.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:16: base «<i>ἑαυτοῦ</i>» com WH, Treg e NA28; RP lê «<i>αὐτοῦ</i>».</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Pois sabem que, depois, querendo herdar a bênção, foi rejeitado, pois não encontrou lugar para arrependimento, embora o tenha buscado com lágrimas.",
+    "commentary": "<p><i>μετανοίας τόπον</i> (<i>metanoias topon</i>), lugar para arrependimento. A expressão pode referir-se ao arrependimento de Esaú ou à mudança de disposição do pai, Isaque. A tradução mantém a ambiguidade do grego.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "Pois não vieram a algo que se pudesse tocar, nem a um fogo ardente, nem a escuridão, nem trevas, nem tempestade,",
+    "commentary": "<p><i>ψηλαφωμένῳ</i> (<i>psēlaphōmenō</i>), palpável, que se pode tocar; <i>γνόφῳ</i> (<i>gnophō</i>), escuridão densa.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:18: RP acrescenta «<i>ὄρει</i>», que WH, Treg e NA28 não têm; base «<i>ζόφῳ</i>» com WH, Treg e NA28; RP lê «<i>σκότῳ</i>».</p>"
+   },
+   {
+    "verse": 19,
+    "text": "nem a som de trombeta, nem a voz de palavras, voz que os que a ouviram pediram que não se lhes falasse mais;",
+    "commentary": "<p><i>παρῃτήσαντο</i> (<i>parēitēsanto</i>), pediram, recusaram ouvir.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:19: WH omite «<i>μὴ</i>», que a base tem com Treg, NA28 e RP.</p>"
+   },
+   {
+    "verse": 20,
+    "text": "pois não suportavam o que era ordenado: «Se até um animal tocar o monte, será apedrejado.»",
+    "commentary": "<p><i>διαστελλόμενον</i> (<i>diastellomenon</i>), o que era ordenado, o que estava determinado.</p>"
+   },
+   {
+    "verse": 21,
+    "text": "E tão terrível era a aparência, que Moisés disse: «Estou aterrorizado e trémulo.»"
+   },
+   {
+    "verse": 22,
+    "text": "Mas vieram ao monte Sião, à cidade do Deus vivo, à Jerusalém celeste, e a miríades de anjos,",
+    "commentary": "<p><i>μυριάσιν</i> (<i>myriasin</i>), milhares, miríades.</p>"
+   },
+   {
+    "verse": 23,
+    "text": "à assembleia festiva e à igreja dos primogénitos inscritos nos céus, e a Deus, juiz de todos, e aos espíritos dos justos aperfeiçoados,",
+    "commentary": "<p><i>πανηγύρει</i> (<i>panēgyrei</i>), assembleia festiva; <i>πρωτοτόκων</i> (<i>prōtotokōn</i>), primogénitos, os que pertencem à herança de Deus.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:23: base «<i>ἀπογεγραμμένων ἐν οὐρανοῖς</i>» com WH, Treg e NA28; RP lê «<i>ἐν οὐρανοῖς ἀπογεγραμμένων</i>».</p>"
+   },
+   {
+    "verse": 24,
+    "text": "e a Jesus, mediador de uma aliança nova, e ao sangue da aspersão, que fala melhor do que o de Abel."
+   },
+   {
+    "verse": 25,
+    "text": "Vejam que não recusem aquele que fala. Pois, se aqueles não escaparam quando recusaram o que os advertia na terra, muito menos nós, se nos afastarmos daquele que nos adverte dos céus.",
+    "commentary": "<p><i>χρηματίζοντα</i> (<i>chrēmatizonta</i>), o que dá oráculos, o que fala por revelação.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:25: base «<i>ἐξέφυγον</i>» com WH, Treg e NA28; RP lê «<i>ἔφυγον</i>»; base «<i>ἐπὶ γῆς παραιτησάμενοι τὸν</i>» com WH, Treg e NA28; RP lê «<i>τὸν ἐπὶ γῆς παραιτησάμενοι</i>»; base «<i>πολὺ</i>» com WH, Treg e NA28; RP lê «<i>πολλῷ</i>».</p>"
+   },
+   {
+    "verse": 26,
+    "text": "Cuja voz abalou então a terra; mas agora prometeu, dizendo: «Ainda uma vez abalarei não só a terra, mas também o céu.»",
+    "commentary": "<p>A citação é de Ageu 2:6 (LXX). <i>σείσω</i> (<i>seisō</i>), abalarei.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:26: base «<i>σείσω</i>» com WH, Treg e NA28; RP lê «<i>σείω</i>».</p>"
+   },
+   {
+    "verse": 27,
+    "text": "Ora, a expressão «ainda uma vez» indica a remoção das coisas que são abaladas, como coisas feitas, para que permaneçam as que não são abaladas.",
+    "commentary": "<p><i>μετάθεσιν</i> (<i>metathesin</i>), remoção, transferência para outro estado.</p><p><b>Crítica Textual:</b> A base lê «<i>τῶν σαλευομένων</i>» com Holmes e WHmarg. WH, Treg e NA28 leem «<i>τὴν τῶν σαλευομένων</i>», com o artigo antes do genitivo; RP lê «<i>τῶν σαλευομένων τὴν</i>», com o artigo no fim. A tradução não distingue estas ordens, e a base fica.</p>"
+   },
+   {
+    "verse": 28,
+    "text": "Por isso, recebendo um reino que não pode ser abalado, tenhamos graça, pela qual prestemos culto a Deus de modo agradável, com reverência e temor;",
+    "commentary": "<p><i>εὐλαβείας καὶ δέους</i> (<i>eulabeias kai deous</i>), reverência e temor.</p><p><b>Crítica Textual:</b> Aparato de edições, 12:28: base «<i>λατρεύωμεν</i>» com WH, Treg e NA28; RP lê «<i>λατρεύομεν</i>»; base «<i>εὐλαβείας καὶ δέους</i>» com WH, Treg e NA28; RP lê «<i>αἰδοῦς καὶ εὐλαβείας</i>».</p>"
+   },
+   {
+    "verse": 29,
+    "text": "pois também o nosso Deus é fogo que consome.",
+    "commentary": "<p>A frase cita Deuteronómio 4:24 (LXX), «o Senhor teu Deus é fogo que consome».</p>"
+   }
+  ],
+  "13": [
+   {
+    "verse": 1,
+    "text": "O amor fraterno permaneça.",
+    "commentary": "<p><i>φιλαδελφία</i> (<i>philadelphia</i>), amor fraterno.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Não se esqueçam da hospitalidade, pois por ela alguns, sem o saberem, hospedaram anjos.",
+    "commentary": "<p><i>ξενίσαντες</i> (<i>xenisantes</i>), hospedando; a referência é a Génesis 18 e 19.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Lembrem-se dos presos, como se estivessem presos com eles; dos maltratados, como também vocês mesmos, que estão no corpo."
+   },
+   {
+    "verse": 4,
+    "text": "O casamento seja honrado por todos, e o leito seja sem mácula; pois Deus julgará os fornicários e os adúlteros.",
+    "commentary": "<p><i>τίμιος</i> (<i>timios</i>), honrado, digno de honra; <i>ἀμίαντος</i> (<i>amiantos</i>), sem mácula.</p><p><b>Crítica Textual:</b> Aparato de edições, 13:4: base «<i>γὰρ</i>» com WH, Treg e NA28; RP lê «<i>δὲ</i>».</p>"
+   },
+   {
+    "verse": 5,
+    "text": "O modo de vida seja sem amor ao dinheiro, contentando-se com o que tem; pois ele mesmo disse: «De modo nenhum te deixarei, nem de modo nenhum te abandonarei.»",
+    "commentary": "<p><i>ἀφιλάργυρος</i> (<i>aphilargyros</i>), isento de amor ao dinheiro. A citação está próxima de Deuteronómio 31:6 e Josué 1:5 (LXX).</p><p><b>Crítica Textual:</b> Aparato de edições, 13:5: base «<i>ἐγκαταλίπω</i>» com WH, Treg e NA28; RP lê «<i>ἐγκαταλείπω</i>».</p>"
+   },
+   {
+    "verse": 6,
+    "text": "De modo que, com confiança, digamos: «O Senhor é o meu auxílio; não temerei; que me fará o homem?.»",
+    "commentary": "<p>A citação é do Salmo 118:6 (LXX, 117:6 no texto hebraico).</p><p><b>Crítica Textual:</b> Aparato de edições, 13:6: base «<i>οὐ</i>» com WH; Treg, NA28 e RP leem «<i>καὶ οὐ</i>».</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Lembrem-se dos guias de vocês, que falaram a vocês a palavra de Deus; e, considerando o fim da sua maneira de viver, imitem a fé deles.",
+    "commentary": "<p><i>ἡγουμένων</i> (<i>hēgoumenōn</i>), dos que conduzem, dos guias. <i>ἀναθεωροῦντες</i> (<i>anatheōrountes</i>), considerando com atenção.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Jesus Cristo é o mesmo ontem, hoje e para sempre."
+   },
+   {
+    "verse": 9,
+    "text": "Não se deixem levar por doutrinas variadas e estranhas; pois é bom que o coração se fortaleça pela graça, e não por alimentos, dos quais não tiraram proveito os que andam nisso.",
+    "commentary": "<p><i>ποικίλαις καὶ ξέναις</i> (<i>poikilais kai xenais</i>), variadas e estranhas, doutrinas que não pertencem à tradição recebida.</p><p><b>Crítica Textual:</b> Aparato de edições, 13:9: base «<i>περιπατοῦντες</i>» com WH, Treg e NA28; RP lê «<i>περιπατήσαντες</i>».</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Temos um altar, do qual não têm autoridade para comer os que prestam culto na tenda.",
+    "commentary": "<p><i>θυσιαστήριον</i> (<i>thysiastērion</i>), altar. O versículo opõe o culto da tenda a um altar que o autor não especifica. A identificação deste altar divide os comentadores, e a tradução não a decide.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "Pois os corpos dos animais cujo sangue é levado ao santuário pelo sumo sacerdote, como sacrifício pelo pecado, são queimados fora do acampamento."
+   },
+   {
+    "verse": 12,
+    "text": "Por isso também Jesus, para santificar o povo pelo seu próprio sangue, sofreu fora da porta."
+   },
+   {
+    "verse": 13,
+    "text": "Saiamos, pois, ao seu encontro, para fora do acampamento, levando o seu opróbrio."
+   },
+   {
+    "verse": 14,
+    "text": "Pois não temos aqui cidade permanente, mas buscamos a que há de vir."
+   },
+   {
+    "verse": 15,
+    "text": "Por ele, portanto, ofereçamos continuamente a Deus um sacrifício de louvor, fruto de lábios que confessam o seu nome.",
+    "commentary": "<p><i>θυσίαν αἰνέσεως</i> (<i>thysian aineseōs</i>), sacrifício de louvor, citação implícita de Oseias 14:2–3 (LXX).</p><p><b>Crítica Textual:</b> Aparato de edições, 13:15: WH omite «<i>οὖν</i>», que a base tem com Treg, NA28 e RP.</p>"
+   },
+   {
+    "verse": 16,
+    "text": "Não se esqueçam da prática do bem e da partilha, pois com tais sacrifícios Deus se agrada.",
+    "commentary": "<p><i>κοινωνίας</i> (<i>koinōnias</i>), partilha, comunhão, participação nos bens.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Obedeçam aos guias de vocês e submetam-se a eles, pois velam pelas almas de vocês, como quem há de prestar contas; para que o façam com alegria e não com gemido, pois isso não seria proveitoso para vocês."
+   },
+   {
+    "verse": 18,
+    "text": "Orem por nós, pois confiamos que temos boa consciência, desejando proceder bem em tudo.",
+    "commentary": "<p><i>πείθομεθα</i> (<i>peithometha</i>), confiamos, estamos persuadidos.</p><p><b>Crítica Textual:</b> Aparato de edições, 13:18: base «<i>πειθόμεθα</i>» com WH, Treg e NA28; RP lê «<i>πεποίθαμεν</i>».</p>"
+   },
+   {
+    "verse": 19,
+    "text": "E peço a vocês ainda com mais insistência que façam isto, para que eu seja restituído a vocês mais depressa."
+   },
+   {
+    "verse": 20,
+    "text": "O Deus da paz, que trouxe de entre os mortos o grande pastor das ovelhas, pelo sangue da aliança eterna, o nosso Senhor Jesus,",
+    "commentary": "<p><i>ἀναγαγὼν</i> (<i>anagagōn</i>), que trouxe de volta, que fez subir; <i>ποιμένα τῶν προβάτων</i> (<i>poimena tōn probatōn</i>), pastor das ovelhas.</p>"
+   },
+   {
+    "verse": 21,
+    "text": "aperfeiçoe vocês em todo o bem, para que façam a sua vontade, realizando em nós o que lhe é agradável, por meio de Jesus Cristo, a quem seja a glória pelos séculos. Amém.",
+    "commentary": "<p><i>καταρτίσαι</i> (<i>katartisai</i>), aperfeiçoar, pôr em ordem; <i>εὐάρεστον</i> (<i>euareston</i>), agradável.</p><p><b>Crítica Textual:</b> A base lê «<i>ἡμῖν</i>», «em nós», com WH e NA28. Treg e RP leem «<i>ὑμῖν</i>», «em vós». Treg e RP acrescentam «<i>ἔργῳ</i>», «obra», depois de «<i>παντὶ</i>», que WH e NA28 não têm; na colação, 02 e 04 também o têm, e 02 acrescenta «<i>καὶ λόγῳ</i>». WH, Treg, NA28 e RP acrescentam «<i>τῶν αἰώνων</i>», «dos séculos», a seguir a «<i>τοὺς αἰῶνας</i>», que Holmes não tem. A base fica, e a tradução segue-a.</p>"
+   },
+   {
+    "verse": 22,
+    "text": "Peço a vocês, irmãos, que suportem a palavra de exortação; pois, em poucas palavras, escrevi a vocês.",
+    "commentary": "<p><i>λόγου τῆς παρακλήσεως</i> (<i>logou tēs paraklēseōs</i>), palavra de exortação, o próprio escrito.</p>"
+   },
+   {
+    "verse": 23,
+    "text": "Saibam que o nosso irmão Timóteo foi posto em liberdade e, se vier depressa, irei com vocês vê-lo.",
+    "commentary": "<p><i>ἀπολελυμένον</i> (<i>apolelymenon</i>), libertado, posto em liberdade.</p><p><b>Crítica Textual:</b> Aparato de edições, 13:23: RP omite «<i>ἡμῶν</i>», que a base tem com WH, Treg e NA28.</p>"
+   },
+   {
+    "verse": 24,
+    "text": "Saúdem todos os guias de vocês e todos os santos. Saúdam vocês os da Itália."
+   },
+   {
+    "verse": 25,
+    "text": "A graça seja com todos vocês.",
+    "commentary": "<p><i>ἡ χάρις</i> (<i>hē charis</i>), a graça; a fórmula final.</p><p><b>Crítica Textual:</b> Aparato de edições, 13:25: Treg e RP acrescentam «<i>ἀμήν</i>», que WH e NA28 não têm.</p>"
+   }
+  ]
+ },
+ "in_progress": {},
+ "history": [
+  {
+   "chapter": 1,
+   "verse_from": 1,
+   "verse_to": 14,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 2,
+   "verse_from": 1,
+   "verse_to": 18,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 3,
+   "verse_from": 1,
+   "verse_to": 19,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 4,
+   "verse_from": 1,
+   "verse_to": 16,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 5,
+   "verse_from": 1,
+   "verse_to": 14,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 6,
+   "verse_from": 1,
+   "verse_to": 20,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 7,
+   "verse_from": 1,
+   "verse_to": 28,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 8,
+   "verse_from": 1,
+   "verse_to": 13,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 9,
+   "verse_from": 1,
+   "verse_to": 28,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 10,
+   "verse_from": 1,
+   "verse_to": 39,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 11,
+   "verse_from": 1,
+   "verse_to": 40,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 12,
+   "verse_from": 1,
+   "verse_to": 29,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "chapter": 13,
+   "verse_from": 1,
+   "verse_to": 25,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+   "generated_at_utc": "2026-11-20T12:00:00+00:00"
+  }
+ ],
+ "bibliography": [
+  {
+   "name": "SBLGNT — The Greek New Testament, SBL Edition",
+   "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+   "url": "https://github.com/Faithlife/SBLGNT",
+   "text_url": "https://codeload.github.com/Faithlife/SBLGNT/zip/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+   "license": "CC BY 4.0",
+   "attribution": "Base fixada do projeto. O aparato nomeia apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações sobre manuscritos vêm da colação CNTR.",
+   "papel": "base"
+  },
+  {
+   "name": "Textus Receptus — edição de Scrivener (Robinson)",
+   "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+   "url": "https://github.com/byztxt/greektext-scrivener",
+   "text_url": "https://codeload.github.com/byztxt/greektext-scrivener/zip/6049a43b135ed870f843b83eb6a04764fc796678",
+   "license": "domínio público segundo o fornecedor",
+   "attribution": "Comparação, não base. «O Textus Receptus» não é um texto único: esta edição difere de RP e do KJTR.",
+   "papel": "comparação"
+  },
+  {
+   "name": "CNTR Transcriptions (Center for New Testament Restoration)",
+   "revision": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+   "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Alan Bunning / Center for New Testament Restoration. Testemunhas de Filemom consultadas: 01, 02, 04, P139, P87; textos críticos: KJTR, RP, SR, ST, WH. Custódia: o acervo vive em .bee-cache/ (excluída pelo .gitignore) — é consultado e citado, nunca redistribuído; só o relatório de colação é versionado.",
+   "papel": "testemunhas e textos críticos"
+  },
+  {
+   "name": "Relatório de colação de Filemom (obra do projeto)",
+   "url": "docs/colacao/Filemom.json",
+   "attribution": "Gerado por scripts/colar.py com bee/manuscritos.py. É a evidência verificável de cada afirmação sobre manuscritos destas notas: uma linha do relatório por testemunha citada. O protocolo está em docs/CRITICA_TEXTUAL.md.",
+   "papel": "evidência"
+  }
+ ],
+ "sources": {
+  "versification": "KJV/tradicional",
+  "alignment_version": 1,
+  "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+  "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+  "cntr_transcriptions_commit": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+  "collation_report": "docs/colacao/Hebreus.json"
+ },
+ "review": {
+  "editorial_blocks": [
+   {
+    "chapter": 1,
+    "verse_from": 1,
+    "verse_to": 14,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 2,
+    "verse_from": 1,
+    "verse_to": 18,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 3,
+    "verse_from": 1,
+    "verse_to": 19,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 4,
+    "verse_from": 1,
+    "verse_to": 16,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 5,
+    "verse_from": 1,
+    "verse_to": 14,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 6,
+    "verse_from": 1,
+    "verse_to": 20,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 7,
+    "verse_from": 1,
+    "verse_to": 28,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 8,
+    "verse_from": 1,
+    "verse_to": 13,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 9,
+    "verse_from": 1,
+    "verse_to": 28,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 10,
+    "verse_from": 1,
+    "verse_to": 39,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 11,
+    "verse_from": 1,
+    "verse_to": 40,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 12,
+    "verse_from": 1,
+    "verse_to": 29,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   },
+   {
+    "chapter": 13,
+    "verse_from": 1,
+    "verse_to": 25,
+    "status": "aprovado editorialmente",
+    "nota": "Aprovado editorialmente por indicação do responsável em 2026-11-20. Decisões do responsável aplicadas: 2:7 com o acréscimo entre colchetes simples; 2:9 «sem Deus» entre colchetes simples, com nota a registar «χάριτι»; 8:8, 9:11, 9:14 e 10:34 seguem a base; 11:11 sem «estéril» no texto. Variantes menores (3:6, 7:21, 11:37, 12:27, 13:21 e as restantes): base, confirmada pelo responsável. Pontos abertos para a revisão especializada, diferenças entre a colação e as transcrições por confirmar: 1:8, 3:6, 9:14 e 13:21. A revisão de 12:1–13:25 foi feita por amostragem nas CTs e nas notas de léxico, não versículo a versículo."
+   }
+  ],
+  "specialist": [
+   {
+    "chapter": 1,
+    "verse_from": 1,
+    "verse_to": 14,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 2,
+    "verse_from": 1,
+    "verse_to": 18,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 3,
+    "verse_from": 1,
+    "verse_to": 19,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 4,
+    "verse_from": 1,
+    "verse_to": 16,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 5,
+    "verse_from": 1,
+    "verse_to": 14,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 6,
+    "verse_from": 1,
+    "verse_to": 20,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 7,
+    "verse_from": 1,
+    "verse_to": 28,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 8,
+    "verse_from": 1,
+    "verse_to": 13,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 9,
+    "verse_from": 1,
+    "verse_to": 28,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 10,
+    "verse_from": 1,
+    "verse_to": 39,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 11,
+    "verse_from": 1,
+    "verse_to": 40,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 12,
+    "verse_from": 1,
+    "verse_to": 29,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   },
+   {
+    "chapter": 13,
+    "verse_from": 1,
+    "verse_to": 25,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 1:8; 2:7; 2:9; 3:6; 9:14; 11:37; 13:21."
+   }
+  ],
+  "ministerio": {
+   "status": "aprovado pelo ministério",
+   "ministerio": "Martinho S. S. Madureira Ministries",
+   "nota": "Aprovado pelo ministério por indicação do responsável em 2026-11-20. Revisão especializada pendente."
+  }
+ }
+}

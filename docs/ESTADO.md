@@ -1,22 +1,22 @@
-# Estado do projeto — após a aprovação de 2 Coríntios
+# Estado do projeto — após a aprovação de Hebreus (2026-11-20)
 
 Para retomar o trabalho num ramo novo, ver `docs/PASSAGEM_DE_SESSAO.md`. Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
 
 ## Três revisões, separadas
 
-| Revisão | Quem faz | Estado nos 28 livros |
+| Revisão | Quem faz | Estado nos 30 livros |
 |---|---|---|
 | **Editorial** (`review.editorial_blocks`) | O responsável (Martinho S. S. Madureira). Só ele aprova. | `aprovado editorialmente` em todos os blocos |
 | **Especializada** (`review.specialist`) | Especialista externo (hebraísta, grecista, crítico textual ou teólogo). Não é feita pelo responsável nem pelo agente. | `pendente` em todos |
-| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `aprovado pelo ministério` em 27 livros; Gálatas (550) pendente (indicação do responsável) |
+| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `aprovado pelo ministério` em todos os 30 livros (indicação do responsável) |
 
 Não há revisão por inteligência artificial no processo. Nenhum agente aprova em nome do responsável, nem declara a revisão especializada concluída.
 
 ## Livros com edição nova
 
-Edição nova: 28 livros, 138 capítulos e 3 075 versículos, todos em prosa. O 28.º é 2 Coríntios (540, 13 capítulos, 257 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/540_2_Corintios.json`, `docs/colacao/2_Coríntios.json`), **aprovado editorialmente e pelo ministério** (2026-11-27); revisão especializada pendente. O 27.º é Gálatas (550, 6 capítulos, 149 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/550_Galatas.json`), aprovado editorialmente pelo responsável (2026-11-27); revisão especializada e do ministério pendentes. O 26.º é 1 Timóteo (610, 6 capítulos, 113 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/610_1_Timoteo.json`, `edicoes/nova/1_TIMOTEO.md`), **aprovado editorialmente e pelo ministério**, com 1:1 RP e 2:9 com «καὶ» (base). A revisão especializada está pendente. Os 25 livros anteriores estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada nos 25 livros, por indicação do responsável nesta sessão. O ministério também aprovou as variações de forma sugeridas pelo agente (ver `docs/EDITORIAL.md`).
+Edição nova: 30 livros no repositório, 157 capítulos e 3 533 versículos, todos em prosa. Todos os 30 estão aprovados editorialmente e pelo ministério, por indicação do responsável; a revisão especializada está pendente em todos. O 28.º é 2 Coríntios (540, 13 capítulos, 257 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/540_2_Corintios.json`, `docs/colacao/2_Coríntios.json`), **aprovado editorialmente e pelo ministério** (2026-11-27); revisão especializada pendente. O 27.º é Gálatas (550, 6 capítulos, 149 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/550_Galatas.json`), aprovado editorialmente pelo responsável (2026-11-27); revisão especializada e do ministério pendentes. O 26.º é 1 Timóteo (610, 6 capítulos, 113 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/610_1_Timoteo.json`, `edicoes/nova/1_TIMOTEO.md`), **aprovado editorialmente e pelo ministério**, com 1:1 RP e 2:9 com «καὶ» (base). A revisão especializada está pendente. Os 25 livros anteriores estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada nos 25 livros, por indicação do responsável nesta sessão. O ministério também aprovou as variações de forma sugeridas pelo agente (ver `docs/EDITORIAL.md`).
 
-Os 28 livros do repositório estão `aprovado editorialmente` pelo responsável. Efésios (560) está aprovado, mas o texto não está neste repositório (ver Cobertura do Novo Testamento).
+Os 30 livros estão `aprovado editorialmente` pelo responsável. Efésios (560) foi refeito a partir do grego e o responsável confirmou que corresponde ao texto aprovado antes; Hebreus (650) foi aprovado editorialmente e pelo ministério em 2026-11-20 (ver Cobertura do Novo Testamento).
 
 | Livro | Capítulos | Versículos | Notas com CT | Editorial | Especializada | Ministério |
 |---|---|---|---|---|---|---|
@@ -31,18 +31,22 @@ Os 28 livros do repositório estão `aprovado editorialmente` pelo responsável.
 | Ageu (440) | 2 | 38 | 0 | aprovado | pendente | aprovado pelo ministério |
 | Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | aprovado pelo ministério |
 | João (500) | 21 | 879 | 706 | aprovado | pendente | aprovado pelo ministério |
+| 2 Coríntios (540) | 13 | 257 | 120 | aprovado | pendente | aprovado pelo ministério |
+| Gálatas (550) | 6 | 149 | 65 | aprovado | pendente | aprovado pelo ministério |
+| Efésios (560) | 6 | 155 | 70 | aprovado | pendente | aprovado pelo ministério |
 | Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | aprovado pelo ministério |
 | Colossenses (580) | 4 | 95 | 57 | aprovado | pendente | aprovado pelo ministério |
-| 2 Timóteo (620) | 4 | 83 | 33 | aprovado | pendente | aprovado pelo ministério |
-| 1 Timóteo (610) | 6 | 113 | 36 | aprovado | pendente | aprovado pelo ministério |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | aprovado pelo ministério |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | aprovado pelo ministério |
+| 1 Timóteo (610) | 6 | 113 | 36 | aprovado | pendente | aprovado pelo ministério |
+| 2 Timóteo (620) | 4 | 83 | 33 | aprovado | pendente | aprovado pelo ministério |
 | Tito (630) | 3 | 46 | 19 | aprovado | pendente | aprovado pelo ministério |
 | Filemom (640) | 1 | 25 | 14 | aprovado | pendente | aprovado pelo ministério |
-| 2 Pedro (680) | 3 | 61 | 36 | aprovado | pendente | aprovado pelo ministério |
-| 1 João (690) | 5 | 105 | 53 | aprovado | pendente | aprovado pelo ministério |
+| Hebreus (650) | 13 | 303 | 120 | aprovado | pendente | aprovado pelo ministério |
 | Tiago (660) | 5 | 108 | 56 | aprovado | pendente | aprovado pelo ministério |
 | 1 Pedro (670) | 5 | 105 | 64 | aprovado | pendente | aprovado pelo ministério |
+| 2 Pedro (680) | 3 | 61 | 36 | aprovado | pendente | aprovado pelo ministério |
+| 1 João (690) | 5 | 105 | 53 | aprovado | pendente | aprovado pelo ministério |
 | 2 João (700) | 1 | 13 | 9 | aprovado | pendente | aprovado pelo ministério |
 | 3 João (710) | 1 | 14 | 8 | aprovado | pendente | aprovado pelo ministério |
 | Judas (720) | 1 | 25 | 14 | aprovado | pendente | aprovado pelo ministério |
@@ -55,13 +59,14 @@ Os 28 livros do repositório estão `aprovado editorialmente` pelo responsável.
 
 ## Cobertura do Novo Testamento
 
-O Novo Testamento tem 27 livros. No repositório estão **18**:
+O Novo Testamento tem 27 livros. No repositório estão **20**, todos aprovados editorialmente e pelo ministério. Aprovados:
 
 - João (500), 2 Coríntios (540), Gálatas (550), Filipenses (570), Colossenses (580), 1 Tessalonicenses (590), 2 Tessalonicenses (600), 1 Timóteo (610), 2 Timóteo (620), Tito (630), Filemom (640), Tiago (660), 1 Pedro (670), 2 Pedro (680), 1 João (690), 2 João (700), 3 João (710) e Judas (720).
 
-**Em falta: 9 livros.** Mateus (470), Marcos (480), Lucas (490), Atos (510), Romanos (520), 1 Coríntios (530), Efésios (560), Hebreus (650) e Apocalipse (730).
+**Em falta: 7 livros.** Mateus (470), Marcos (480), Lucas (490), Atos (510), Romanos (520), 1 Coríntios (530) e Apocalipse (730).
 
-- **Efésios (560)** foi aprovado editorialmente e pelo ministério pelo responsável, mas os ficheiros aprovados (JSON e leitura MD) não estão neste repositório. Não se reconstruiu o texto a partir de memória. Para o incluir, é preciso recuperar o ficheiro aprovado ou refazer o texto e aprová-lo de novo. Ficam em falta 8 livros se Efésios voltar.
+- **Efésios (560)**: o ficheiro aprovado pelo responsável não foi encontrado (nem em Git, nem em ramos, nem no sistema de ficheiros). O texto foi refeito a partir do grego, com o aparato da colação, e o responsável confirmou em 2026-11-20 que corresponde ao texto aprovado. Aprovado editorialmente e pelo ministério. Revisão especializada pendente, a cargo de especialista externo.
+- **Hebreus (650)**: 13 capítulos e 303 versículos. Aprovado editorialmente e pelo ministério em 2026-11-20, por indicação do responsável. Revisão especializada pendente. Pontos abertos registados em `review.editorial_blocks`: 1:8, 3:6, 9:14 e 13:21 (diferenças entre a colação e as transcrições, por confirmar); a revisão de 12:1–13:25 foi feita por amostragem.
 - Decisões de Efésios já registadas pelo responsável: 1:18 «coração» (base, καρδίας); 3:9 «administração» (base, οἰκονομία). As restantes estão em `docs/PASSAGEM_DE_SESSAO.md`.
 
 ## João
@@ -76,7 +81,16 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 ## Cartas seguintes
 
-Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **1 Timóteo (610, 113 versículos) está aprovado editorialmente e pelo ministério** (indicação do responsável); a revisão especializada está pendente. Próximo livro do Novo Testamento: **Efésios (560, 155 versículos)**, a recuperar (ver Cobertura do Novo Testamento). Depois, Hebreus (650), por decisão do responsável sobre autoria e exegese. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **1 Timóteo (610, 113 versículos) está aprovado editorialmente e pelo ministério** (indicação do responsável); a revisão especializada está pendente. Próximo passo: **Apocalipse (730, 404 versículos)**, pela ordem de `docs/RESUMO_ESTILO.md`, secção 10; começar só após decisão do responsável. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+
+## Verificações (2026-11-20)
+
+- `scripts/verificar_dados.py`: íntegro; 157 capítulos e 3 533 versículos completos.
+- `scripts/verificar_documentacao.py`: coerente; 157 capítulos, 3 533 versículos, 0 em curso.
+- `scripts/verificar_estilo.py`: limpo em 560 (Efésios) e 650 (Hebreus). Global: 1 falha dura pré-existente em 1 Timóteo (610), 5:18 («ponto fora das aspas»). Não foi tocada: alterar um livro aprovado depende de decisão do responsável.
+- `scripts/verificar_convencoes_notas.py`: 0 falhas, 0 avisos.
+- `scripts/verificar_notas_colacao.py`: conferem em Efésios (560) e Hebreus (650).
+- `python3 -m unittest discover -s tests`: 188 testes, OK, 5 saltados (sem `pyspellchecker` e `python-docx` no Python do sistema). Com `/tmp/spellenv/bin/python`, 188 testes, OK, 1 saltado.
 
 ## Verificações (2026-11-27)
 
@@ -111,8 +125,8 @@ Ordem por tamanho, das menores para as maiores, com prioridade para os livros qu
 1. **Responsável:** confirmar que `aprovado editorialmente` é o valor definitivo para os livros aprovados.
 2. **Responsável:** decidir se o documento de apresentação volta a ser a versão oficial (o README e `arquivo/LEIA-ME.md` diziam que estava arquivado de propósito).
 3. **Responsável:** decidir 11:16: itálico só em «que quer dizer gémeo» (como fica) ou também em «chamado».
-4. **Revisão especializada:** pendente nos 28 livros, a cargo de especialista externo.
-5. **Revisão do ministério:** registada em 27 livros, por indicação do responsável. Gálatas (550) está pendente. A estrutura de `review.ministerio` é provisória, a confirmar.
+4. **Revisão especializada:** pendente nos 30 livros, a cargo de especialista externo.
+5. **Revisão do ministério:** registada em 30 livros, por indicação do responsável. A estrutura de `review.ministerio` é provisória, a confirmar.
 6. **2 Pedro:** aprovado editorialmente e pelo ministério (2026-11-25). Falta a revisão especializada, a cargo de especialista externo.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 8. **Joel e Oseias:** resolvido em 2026-11-24 (ver acima). Falta a revisão especializada, como nos demais livros.
