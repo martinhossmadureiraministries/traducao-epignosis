@@ -238,7 +238,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 **2:4**
 
 - *ταρταρώσας* (*tartarōsas*), tendo lançado no Tártaro: o verbo só aparece aqui no Novo Testamento, e a tradução o mantém.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*σειραῖς*», com RP e NA28; WH e Treg leem «*σιροῖς*» (poço), segundo o aparato SBLGNT; a NIV, por escolha de tradução, segue essa leitura. As duas palavras são diferentes: «*σειρά*» é corrente ou cadeia, e «*σιρός*» designa um poço ou fosso. Na colação, 01 lê «*σιροῖς*»; 02, 03, 04, SR e WH leem «*σειροῖς*» (com diferença de grafia). A colação regista «*σειροῖς*» para WH, enquanto o aparato lhe atribui «*σιροῖς*»; esta discrepância fica por resolver. ST e Scrivener leem «*τετηρημένους*» em lugar de «*τηρουμένους*». A base segue o texto fixado no projeto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*σειραῖς*», com RP e NA28; WH e Treg leem «*σιροῖς*» (poço), segundo o aparato SBLGNT; a NIV, por escolha de tradução, segue essa leitura. As duas palavras são diferentes: «*σειρά*» é corrente ou cadeia, e «*σιρός*» designa um poço ou fosso. Na colação, 01 lê «*σιροῖς*»; 02, 03, 04, SR e WH leem «*σειροῖς*» (com diferença de grafia). A colação regista «*σειροῖς*» para WH, enquanto o aparato lhe atribui «*σιροῖς*»; a discrepância sobre WH é de registo das fontes e fica por confirmar, sem efeito no texto. ST e Scrivener leem «*τετηρημένους*» em lugar de «*τηρουμένους*». Decisão do responsável (2026-11-26): base, «cadeias de trevas» (*σειραῖς*), aprovada.
 
 **2:5**
 

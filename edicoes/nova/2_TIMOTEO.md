@@ -325,7 +325,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **2:13**
 
 - *ἀπιστοῦμεν* (*apistoumen*), somos infiéis; *ἀρνήσασθαι* (*arnēsasthai*), negar-se.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base não tem «*γὰρ*» (pois) antes de «*ἀρνήσασθαι*», e RP também não o tem. WH, Treg e NA28 acrescentam «*γὰρ*». Na colação, 01, 04, SR e WH acrescentam «*γὰρ*». A tradução segue a base, sem conjunção.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base não tem «*γὰρ*» (pois) antes de «*ἀρνήσασθαι*», e RP também não o tem. WH, Treg e NA28 acrescentam «*γὰρ*». Na colação, 01, 04, SR e WH acrescentam «*γὰρ*». A tradução segue a base, sem conjunção. Decisão do responsável (2026-11-26): base.
 
 **2:14**
 
@@ -347,7 +347,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **2:18**
 
 - *ἠστόχησαν* (*ēstochēsan*), desviaram-se do alvo; *ἀνατρέπουσιν* (*anatrepousin*), destroem.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: a base lê «*λέγοντες ἀνάστασιν*» sem artigo, com WH e Treg; NA28 e RP acrescentam «*τὴν*». Na colação, KJTR, RP, SR, ST e 04 acrescentam «*τὴν*». A tradução usa o artigo português e não altera o sentido.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: a base lê «*λέγοντες ἀνάστασιν*» sem artigo, com WH e Treg; NA28 e RP acrescentam «*τὴν*». Na colação, KJTR, RP, SR, ST e 04 acrescentam «*τὴν*». A tradução usa o artigo português e não altera o sentido. Decisão do responsável (2026-11-26): base, sem artigo grego.
 
 **2:19**
 

@@ -160,7 +160,7 @@
       {
         "verse": 13,
         "text": "se somos infiéis, ele permanece fiel; não pode negar-se a si mesmo.",
-        "commentary": "<p><i>ἀπιστοῦμεν</i> (<i>apistoumen</i>), somos infiéis; <i>ἀρνήσασθαι</i> (<i>arnēsasthai</i>), negar-se.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:13: a base não tem «<i>γὰρ</i>» (pois) antes de «<i>ἀρνήσασθαι</i>», e RP também não o tem. WH, Treg e NA28 acrescentam «<i>γὰρ</i>». Na colação, 01, 04, SR e WH acrescentam «<i>γὰρ</i>». A tradução segue a base, sem conjunção.</p>"
+        "commentary": "<p><i>ἀπιστοῦμεν</i> (<i>apistoumen</i>), somos infiéis; <i>ἀρνήσασθαι</i> (<i>arnēsasthai</i>), negar-se.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:13: a base não tem «<i>γὰρ</i>» (pois) antes de «<i>ἀρνήσασθαι</i>», e RP também não o tem. WH, Treg e NA28 acrescentam «<i>γὰρ</i>». Na colação, 01, 04, SR e WH acrescentam «<i>γὰρ</i>». A tradução segue a base, sem conjunção. Decisão do responsável (2026-11-26): base.</p>"
       },
       {
         "verse": 14,
@@ -185,7 +185,7 @@
       {
         "verse": 18,
         "text": "os quais se desviaram da verdade, dizendo que a ressurreição já aconteceu, e destroem a fé de alguns.",
-        "commentary": "<p><i>ἠστόχησαν</i> (<i>ēstochēsan</i>), desviaram-se do alvo; <i>ἀνατρέπουσιν</i> (<i>anatrepousin</i>), destroem.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:18: a base lê «<i>λέγοντες ἀνάστασιν</i>» sem artigo, com WH e Treg; NA28 e RP acrescentam «<i>τὴν</i>». Na colação, KJTR, RP, SR, ST e 04 acrescentam «<i>τὴν</i>». A tradução usa o artigo português e não altera o sentido.</p>"
+        "commentary": "<p><i>ἠστόχησαν</i> (<i>ēstochēsan</i>), desviaram-se do alvo; <i>ἀνατρέπουσιν</i> (<i>anatrepousin</i>), destroem.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:18: a base lê «<i>λέγοντες ἀνάστασιν</i>» sem artigo, com WH e Treg; NA28 e RP acrescentam «<i>τὴν</i>». Na colação, KJTR, RP, SR, ST e 04 acrescentam «<i>τὴν</i>». A tradução usa o artigo português e não altera o sentido. Decisão do responsável (2026-11-26): base, sem artigo grego.</p>"
       },
       {
         "verse": 19,
@@ -519,7 +519,7 @@
         "verse_from": 1,
         "verse_to": 26,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação. Decisões do responsável: 2:3 base («sofre comigo»); 2:7 futuro («dará»), 2:12 futuro («negarmos»), 2:14 «perante o Senhor». Aprovado pelo responsável."
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação. Decisões do responsável: 2:3 base («sofre comigo»); 2:7 futuro («dará»), 2:12 futuro («negarmos»), 2:14 «perante o Senhor». 2:13 base (sem «pois»); 2:18 base (sem artigo). Aprovado pelo responsável."
       },
       {
         "chapter": 3,

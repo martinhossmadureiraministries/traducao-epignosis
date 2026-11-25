@@ -104,7 +104,13 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** 1 Pedro (105 versículos). A colação está em `docs/colacao/1_Pedro.json` e `.md`. O texto está redigido em rascunho (`edicoes/nova/livros_json/670_1_Pedro.json` e `edicoes/nova/1_PEDRO.md`), por aprovar pelo responsável. Decisões do responsável registadas: 1:8 base («tendo visto»); 1:21 base («fiéis»); 2:7 base («os que não creem»); 2:21 RP («por nós», ἡμῶν). Decisões do responsável: 1:22 RP e NA28 («de coração puro», ἐκ καθαρᾶς καρδίας); 2:2 base («para a salvação»); 3:8 base («humildes»); 3:15 base («santificai Cristo»). Decisões do responsável, continuação: 1:20 base («no fim dos tempos»); 3:18 base («sofreu»); 4:14 base (sem a expressão da RP); 4:16 RP e NA28 («neste aspeto», μέρει). Decisões do responsável, fim: 3:21 RP («nos», ἡμᾶς); 5:11 base («a ele o domínio»). Decisões do responsável, variantes de sentido (perguntadas depois): 3:13 base («zelosos», ζηλωταί); 3:16 base («sois difamados», καταλαλεῖσθε); 4:1 base (sem «por nós»); 5:8 RP («a quem possa devorar», τίνα καταπίῃ); 5:10 base («em Cristo», καταρτίσει). As restantes diferenças são de forma, ordem ou artigo, sem efeito no sentido, e seguem a base, como permite a regra de variantes menores. 2 Timóteo está aprovado editorialmente (620); falta a revisão especializada.
+**Próximo livro:** 1 João (105 versículos). A colação está em `docs/colacao/1_Joao.json` e `.md`.
+
+**1 Pedro (670)** está aprovado editorialmente e pelo ministério em 2026-11-26. Decisões registadas: 1:8 base («tendo visto»); 1:20 base («no fim dos tempos»); 1:21 base («fiéis»); 1:22 RP e NA28 («de coração puro», ἐκ καθαρᾶς καρδίας); 2:2 base («para a salvação»); 2:7 base («os que não creem»); 2:21 RP («por nós», ἡμῶν); 3:8 base («humildes»); 3:13 base («zelosos», ζηλωταί); 3:15 base («santificai Cristo»); 3:16 base («sois difamados», καταλαλεῖσθε); 3:18 base («sofreu»); 3:21 RP («nos», ἡμᾶς); 4:1 base (sem «por nós»); 4:14 base (sem a expressão da RP); 4:16 RP e NA28 («neste aspeto», μέρει); 5:8 RP («a quem possa devorar», τίνα καταπίῃ); 5:10 base («em Cristo», καταρτίσει); 5:11 base («a ele o domínio»). As restantes diferenças são de forma, ordem ou artigo, sem efeito no sentido, e seguem a base. A revisão especializada continua pendente.
+
+**2 Timóteo (620), decisões de 2026-11-26:** 2:13 base (sem «γάρ», «pois»); 2:18 base (sem «τὴν», artigo). Em 4:15, a nota regista que ST lê a forma sem o nu final (ἀνθέστηκε).
+
+**2 Pedro (680), decisão de 2026-11-26:** 2:4 base («cadeias de trevas», σειραῖς), aprovada pelo responsável. A discrepância de registo sobre WH (aparato SBLGNT «σιροῖς»; colação «σειροῖς») fica por confirmar nas fontes, sem efeito no texto.
 
 2 Pedro foi aprovado editorialmente e pelo ministério em 2026-11-25. Colossenses foi aprovado pelo ministério na mesma etapa. Falta a revisão especializada, a cargo de especialista externo.
 

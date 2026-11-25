@@ -127,7 +127,7 @@
       {
         "verse": 4,
         "text": "Porque, se Deus não poupou os anjos que pecaram, mas, lançando-os no Tártaro, os entregou a cadeias de trevas, reservados para o juízo,",
-        "commentary": "<p><i>ταρταρώσας</i> (<i>tartarōsas</i>), tendo lançado no Tártaro: o verbo só aparece aqui no Novo Testamento, e a tradução o mantém.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: a base lê «<i>σειραῖς</i>», com RP e NA28; WH e Treg leem «<i>σιροῖς</i>» (poço), segundo o aparato SBLGNT; a NIV, por escolha de tradução, segue essa leitura. As duas palavras são diferentes: «<i>σειρά</i>» é corrente ou cadeia, e «<i>σιρός</i>» designa um poço ou fosso. Na colação, 01 lê «<i>σιροῖς</i>»; 02, 03, 04, SR e WH leem «<i>σειροῖς</i>» (com diferença de grafia). A colação regista «<i>σειροῖς</i>» para WH, enquanto o aparato lhe atribui «<i>σιροῖς</i>»; esta discrepância fica por resolver. ST e Scrivener leem «<i>τετηρημένους</i>» em lugar de «<i>τηρουμένους</i>». A base segue o texto fixado no projeto.</p>"
+        "commentary": "<p><i>ταρταρώσας</i> (<i>tartarōsas</i>), tendo lançado no Tártaro: o verbo só aparece aqui no Novo Testamento, e a tradução o mantém.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:4: a base lê «<i>σειραῖς</i>», com RP e NA28; WH e Treg leem «<i>σιροῖς</i>» (poço), segundo o aparato SBLGNT; a NIV, por escolha de tradução, segue essa leitura. As duas palavras são diferentes: «<i>σειρά</i>» é corrente ou cadeia, e «<i>σιρός</i>» designa um poço ou fosso. Na colação, 01 lê «<i>σιροῖς</i>»; 02, 03, 04, SR e WH leem «<i>σειροῖς</i>» (com diferença de grafia). A colação regista «<i>σειροῖς</i>» para WH, enquanto o aparato lhe atribui «<i>σιροῖς</i>»; a discrepância sobre WH é de registo das fontes e fica por confirmar, sem efeito no texto. ST e Scrivener leem «<i>τετηρημένους</i>» em lugar de «<i>τηρουμένους</i>». Decisão do responsável (2026-11-26): base, «cadeias de trevas» (<i>σειραῖς</i>), aprovada.</p>"
       },
       {
         "verse": 5,
@@ -387,7 +387,7 @@
         "verse_from": 1,
         "verse_to": 22,
         "status": "aprovado editorialmente",
-        "nota": "Aprovado pelo responsável (2026-11-25). Passagens de decisão resolvidas nas Críticas Textuais."
+        "nota": "Aprovado pelo responsável (2026-11-25). Passagens de decisão resolvidas nas Críticas Textuais. Decisão do responsável (2026-11-26): 2:4 base («cadeias de trevas», σειραῖς)."
       },
       {
         "chapter": 3,
