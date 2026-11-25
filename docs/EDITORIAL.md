@@ -104,7 +104,7 @@ Manter amostras isoladas e capítulos incompletos fora dos capítulos estrutural
 
 ## Próxima decisão
 
-**Próximo livro:** Efésios (155 versículos), recomendação do agente pela ordem de `docs/RESUMO_ESTILO.md`, secção 10, depois de Gálatas (a confirmar pelo responsável).
+**Próximo livro:** Efésios (155 versículos), aprovado pelo responsável, mas o texto não está no repositório: recuperar ou refazer e aprovar de novo. Depois, Hebreus (650), por decisão do responsável sobre autoria e exegese.
 
 **1 João (690)** está aprovado editorialmente pelo responsável e aprovado pelo ministério em 2026-11-26 (`edicoes/nova/livros_json/690_1_Joao.json` e `edicoes/nova/1_JOAO.md`). A colação está em `docs/colacao/1_João.json` e `.md`. Decisões do responsável (2026-11-26): 1:4 base («a nossa alegria»); 2:7 RP («irmãos», com «desde o princípio»); 2:20 base («vocês todos sabem»); 2:23 entre colchetes, como na base; 2:28 base («se ele se manifestar»); 4:2 base («conhecem»); 4:3 base (sem acréscimo); 4:20 RP (em forma de pergunta: «como pode amar a Deus, a quem não vê?»); 5:7–8 entre colchetes, com nota (passagem em disputa; a base e a RP de Robinson não a têm); 5:18 base («o guarda»); 5:13 base (sem «e para que creiais»); 3:1 base («sejamos chamados»); 3:19 base («saberemos»).
 

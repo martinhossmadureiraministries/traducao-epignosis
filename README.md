@@ -41,9 +41,8 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   - `python3 scripts/verificar_documentacao.py`.
 - Compilação dos módulos MyBible, com a parte já completa:
   `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
-- Estado atual: 125 capítulos e 2818 versículos guardados na edição nova (inclui 1 Timóteo, 113 versículos, e Gálatas, 149 versículos, aprovado editorialmente pelo responsável; revisão especializada e do ministério pendentes)
+- Estado atual: 28 livros na edição nova (18 do Novo Testamento e 10 do Antigo), 138 capítulos e 3075 versículos guardados. Aprovados editorialmente: os 28. Aprovados pelo ministério: 27 (Gálatas pendente). Efésios está aprovado, mas o texto não está neste repositório. Faltam 9 livros do Novo Testamento (ver `docs/ESTADO.md`).
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
-  Inclui 2 Pedro, aprovado editorialmente e pelo ministério, Colossenses, aprovado editorialmente e pelo ministério, e 2 Timóteo, aprovado editorialmente e pelo ministério. 1 Pedro (670, 5 capítulos, 105 versículos), 1 João (690) e Tiago (660, 5 capítulos, 108 versículos) estão aprovados editorialmente e pelo ministério (ver `docs/ESTADO.md`).
 
 ## Testes
 
