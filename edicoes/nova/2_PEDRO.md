@@ -177,7 +177,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 
 **1:9**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:9: a base lê «*ἁμαρτημάτων*», com Treg; WH, NA28 e RP leem «*ἁμαρτιῶν*». As duas formas querem dizer «pecados», e a tradução não muda. Na colação, 03, 04, P72, KJTR, RP, SR, ST e WH leem «*ἁμαρτιῶν*». A base segue o texto fixado no projeto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:9: a base lê «*ἁμαρτημάτων*», com Treg; WH, NA28 e RP leem «*ἁμαρτιῶν*». As duas formas querem dizer «pecados», e a tradução não muda. Na colação, 03, 04, P72, KJTR, RP, SR, ST, WH e Scrivener leem «*ἁμαρτιῶν*». A base segue o texto fixado no projeto.
 
 **1:10**
 
@@ -186,7 +186,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 **1:12**
 
 - O verbo *μέλλω*, na forma *μελλήσω* (*mellēsō*), traz a ideia de estar prestes a ou de ter a intenção de; a tradução aproxima-o de «estar pronto». A edição RP lê outra palavra, que daria «não deixarei de lembrar-lhes».
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*μελλήσω*» (com WH, Treg e NA28); RP lê «*οὐκ ἀμελήσω*» («não deixarei de»). Na colação, KJTR, RP e ST têm a leitura com «*οὐκ ἀμελήσω*». A base segue o texto fixado no projeto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*μελλήσω*» (com WH, Treg e NA28); RP lê «*οὐκ ἀμελήσω*» («não deixarei de»). Na colação, KJTR, RP, ST e Scrivener têm a leitura com «*οὐκ ἀμελήσω*». A base segue o texto fixado no projeto.
 
 **1:13**
 
@@ -211,7 +211,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 
 **1:18**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:18: a base lê «*ἁγίῳ ὄρει*» («monte santo»), com WH, Treg e NA28; RP lê «*ὄρει τῷ ἁγίῳ*», com as mesmas palavras em outra ordem. Na colação, 01, 02, KJTR, RP e ST seguem RP. A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:18: a base lê «*ἁγίῳ ὄρει*» («monte santo»), com WH, Treg e NA28; RP lê «*ὄρει τῷ ἁγίῳ*», com as mesmas palavras em outra ordem. Na colação, 01, 02, KJTR, RP, ST e Scrivener seguem RP. A tradução segue a base.
 
 **1:19**
 
@@ -223,7 +223,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 
 **1:21**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:21: a base lê «*προφητεία ποτέ*», com WH, Treg e NA28; RP lê «*ποτὲ προφητεία*». A base lê «*ἀπὸ θεοῦ ἄνθρωποι*» («homens da parte de Deus»), com WH e NA28; Treg e RP leem «*ἅγιοι θεοῦ ἄνθρωποι*» («homens santos de Deus»). Na colação, 01, 02, KJTR, RP e ST leem «*ἅγιοι*» em lugar de «*ἀπό*»; 04 e SR acrescentam «*ἅγιοι*» sem retirar «*ἀπό*». A base segue o texto fixado no projeto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:21: a base lê «*προφητεία ποτέ*», com WH, Treg e NA28; RP lê «*ποτὲ προφητεία*». A base lê «*ἀπὸ θεοῦ ἄνθρωποι*» («homens da parte de Deus»), com WH e NA28; Treg e RP leem «*ἅγιοι θεοῦ ἄνθρωποι*» («homens santos de Deus»). Na colação, 01, 02, KJTR, RP, ST e Scrivener leem «*ἅγιοι*» em lugar de «*ἀπό*»; 04 e SR acrescentam «*ἅγιοι*» sem retirar «*ἀπό*». A base segue o texto fixado no projeto.
 
 ### Notas do capítulo 2
 
@@ -238,7 +238,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 **2:4**
 
 - *ταρταρώσας* (*tartarōsas*), tendo lançado no Tártaro: o verbo só aparece aqui no Novo Testamento, e a tradução o mantém.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*σειραῖς*», com RP e NA28; a NIV segue outra leitura por escolha de tradução. As duas palavras são diferentes: «*σειρά*» é corrente ou cadeia, e «*σιρός*» designa um poço ou fosso. Na colação, 01 lê «*σιροῖς*»; 02, 03, 04, SR e WH leem «*σειροῖς*» (com diferença de grafia). ST lê «*τετηρημένους*» em lugar de «*τηρουμένους*». A base segue o texto fixado no projeto.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:4: a base lê «*σειραῖς*», com RP e NA28; WH e Treg leem «*σιροῖς*» (poço), segundo o aparato SBLGNT; a NIV, por escolha de tradução, segue essa leitura. As duas palavras são diferentes: «*σειρά*» é corrente ou cadeia, e «*σιρός*» designa um poço ou fosso. Na colação, 01 lê «*σιροῖς*»; 02, 03, 04, SR e WH leem «*σειροῖς*» (com diferença de grafia). A colação regista «*σειροῖς*» para WH, enquanto o aparato lhe atribui «*σιροῖς*»; esta discrepância fica por resolver. ST e Scrivener leem «*τετηρημένους*» em lugar de «*τηρουμένους*». A base segue o texto fixado no projeto.
 
 **2:5**
 
@@ -266,7 +266,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (680). Capít
 
 **2:13**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base lê «*ἀδικούμενοι*» («sofrendo injustiça»), com WH e NA28; Treg e RP leem «*κομιούμενοι*» («recebendo»), que se aproxima de «paga da injustiça». A base lê «*ἀπάταις*» («enganos»), com WH, NA28 e RP; Treg lê «*ἀγάπαις*» («banquetes de amor»). Na colação, 02, 04, KJTR, RP e ST leem «*κομιούμενοι*», e 02 e 03 leem «*ἀγάπαις*». A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base lê «*ἀδικούμενοι*» («sofrendo injustiça»), com WH e NA28; Treg e RP leem «*κομιούμενοι*» («recebendo»), que se aproxima de «paga da injustiça». A base lê «*ἀπάταις*» («enganos»), com WH, NA28 e RP; Treg lê «*ἀγάπαις*» («banquetes de amor»). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «*κομιούμενοι*», e 02 e 03 leem «*ἀγάπαις*». A tradução segue a base.
 
 **2:14**
 

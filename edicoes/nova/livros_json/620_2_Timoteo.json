@@ -567,9 +567,9 @@
       }
     ],
     "ministerio": {
-      "status": "pendente",
+      "status": "aprovado pelo ministério",
       "ministerio": "Martinho S. S. Madureira Ministries",
-      "nota": "Aprovação pelo ministério pendente: etapa própria, distinta da revisão editorial e da especializada."
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada."
     }
   }
 }

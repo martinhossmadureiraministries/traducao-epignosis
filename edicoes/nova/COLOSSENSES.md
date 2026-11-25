@@ -261,7 +261,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:10**
 
 - *ἀξίως* (*axiōs*), de modo digno; *ἀρεσκείαν* (*areskeian*), agrado. *τῇ ἐπιγνώσει* (*tē epignōsei*), no conhecimento: aqui a construção é de lugar, «crescendo no conhecimento pleno de Deus», por isso a forma «conhecimento pleno».
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:10: a base lê «*περιπατῆσαι*» sem mais, com WH, Treg e NA28; RP acrescenta «*ὑμᾶς*» («andarem vocês»). A base lê «*τῇ ἐπιγνώσει*», com WH, Treg e NA28; RP lê «*εἰς τὴν ἐπίγνωσιν*» («para o conhecimento», com preposição). Na colação, KJTR, RP e ST seguem a leitura de RP. Decisão do responsável: segue a base, sem «vocês».
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:10: a base lê «*περιπατῆσαι*» sem mais, com WH, Treg e NA28; RP acrescenta «*ὑμᾶς*» («andarem vocês»). A base lê «*τῇ ἐπιγνώσει*», com WH, Treg e NA28; RP lê «*εἰς τὴν ἐπίγνωσιν*» («para o conhecimento», com preposição). Na colação, KJTR, RP, ST e Scrivener seguem a leitura de RP. Decisão do responsável: segue a base, sem «vocês».
 
 **1:11**
 
@@ -270,7 +270,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:12**
 
 - *ἱκανώσαντι* (*hikanōsanti*), que tornou apto ou capacitou. *μερίδα τοῦ κλήρου* (*meridan tou klērou*), a parte da herança: a imagem é de herança repartida, como em Atos 26:18. *φωτί* (*phōti*), na luz, é o domínio dos santos.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*ὑμᾶς*» («vocês»), com WH e NA28; Treg e RP leem «*ἡμᾶς*» («nós»). Na colação, 02, 04, KJTR, RP e ST leem «*ἡμᾶς*»; 01, 03, SR e WH leem «*ὑμᾶς*». Decisão do responsável: segue Treg e RP, com «nos».
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*ὑμᾶς*» («vocês»), com WH e NA28; Treg e RP leem «*ἡμᾶς*» («nós»). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «*ἡμᾶς*»; 01, 03, P46, SR e WH leem «*ὑμᾶς*». Decisão do responsável: segue Treg e RP, com «nos».
 
 **1:13**
 
@@ -349,7 +349,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:28**
 
 - *καταγγέλλομεν* (*kataggellomen*), anunciamos; *νουθετοῦντες* (*nouthetountes*), admoestando; *τέλειον* (*teleion*), perfeita, madura. «Cada pessoa» traduz *πάντα ἄνθρωπον*, em que cada pessoa é contada individualmente.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:28: a base lê «*ἐν Χριστῷ*», com WH, Treg e NA28; RP acrescenta «*Ἰησοῦ*» («em Cristo Jesus»). Na colação, KJTR, RP e ST acrescentam o mesmo nome. Decisão do responsável: segue RP, com «Jesus».
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:28: a base lê «*ἐν Χριστῷ*», com WH, Treg e NA28; RP acrescenta «*Ἰησοῦ*» («em Cristo Jesus»). Na colação, KJTR, RP, ST e Scrivener acrescentam o mesmo nome. Decisão do responsável: segue RP, com «Jesus».
 
 **1:29**
 
