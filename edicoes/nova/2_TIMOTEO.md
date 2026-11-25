@@ -93,7 +93,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **20** Numa casa grande há não só vasos de ouro e de prata, mas também de madeira e de barro; uns para honra, outros para desonra.
 
-**21** Se alguém se purificar destas coisas, será vaso para honra, santificado, útil ao dono, preparado para toda boa obra.
+**21** Se alguém se purificar destas coisas, será vaso para honra, santificado, útil ao dono, preparado para toda a boa obra.
 
 **22** Foge das paixões da juventude; segue a justiça, a fé, o amor e a paz, com os que invocam o Senhor de coração puro.
 
@@ -139,7 +139,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **16** Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a educação na justiça,
 
-**17** para que o homem de Deus seja perfeito, preparado para toda boa obra.
+**17** para que o homem de Deus seja perfeito, preparado para toda a boa obra.
 
 ### Capítulo 4
 
@@ -177,7 +177,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 **17** Mas o Senhor esteve ao meu lado e deu-me forças, para que por meu intermédio a pregação fosse plenamente cumprida e todos os gentios a ouvissem; e fui libertado da boca do leão.
 
-**18** O Senhor me livrará de toda obra má e me salvará para o seu reino celeste; a ele a glória pelos séculos dos séculos. Amém.
+**18** O Senhor me livrará de toda a obra má e me salvará para o seu reino celeste; a ele a glória pelos séculos dos séculos. Amém.
 
 **19** Saúda Prisca e Áquila e a casa de Onesíforo.
 
@@ -325,7 +325,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **2:13**
 
 - *ἀπιστοῦμεν* (*apistoumen*), somos infiéis; *ἀρνήσασθαι* (*arnēsasthai*), negar-se.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base não tem «*γὰρ*» (pois) antes de «*ἀρνήσασθαι*», e RP também não o tem. WH, Treg e NA28 acrescentam «*γὰρ*». Na colação, 01, 04, SR e WH acrescentam «*γὰρ*». A tradução segue a base, sem conjunção.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:13: a base não tem «*γὰρ*» (pois) antes de «*ἀρνήσασθαι*», e RP também não o tem. WH, Treg e NA28 acrescentam «*γὰρ*». Na colação, 01, 04, SR e WH acrescentam «*γὰρ*». A tradução segue a base, sem conjunção. Decisão do responsável (2026-11-26): base.
 
 **2:14**
 
@@ -347,7 +347,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **2:18**
 
 - *ἠστόχησαν* (*ēstochēsan*), desviaram-se do alvo; *ἀνατρέπουσιν* (*anatrepousin*), destroem.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: a base lê «*λέγοντες ἀνάστασιν*» sem artigo, com WH e Treg; NA28 e RP acrescentam «*τὴν*». Na colação, KJTR, RP, SR, ST e 04 acrescentam «*τὴν*». A tradução usa o artigo português e não altera o sentido.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:18: a base lê «*λέγοντες ἀνάστασιν*» sem artigo, com WH e Treg; NA28 e RP acrescentam «*τὴν*». Na colação, KJTR, RP, SR, ST e 04 acrescentam «*τὴν*». A tradução usa o artigo português e não altera o sentido. Decisão do responsável (2026-11-26): base, sem artigo grego.
 
 **2:19**
 
@@ -527,7 +527,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 **4:15**
 
 - *φυλάσσου* (*phylassou*), acautela-te.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:15: a base lê «*ἀντέστη*» (aoristo), com WH, Treg e NA28; RP lê «*ἀνθέστηκεν*» (perfeito). Na colação, KJTR, RP e ST leem «*ἀνθέστηκεν*». A diferença é de tempo verbal, e a tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:15: a base lê «*ἀντέστη*» (aoristo), com WH, Treg e NA28; RP lê «*ἀνθέστηκεν*» (perfeito). Na colação, KJTR, RP e Scrivener leem «*ἀνθέστηκεν*», e ST lê a forma sem o «nu» final, «*ἀνθέστηκε*». A diferença é de tempo verbal, e a tradução segue a base.
 
 **4:16**
 
@@ -564,4 +564,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (620). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Timóteo.json` (livro inteiro, gerada por `scripts/colar.py --livro 620`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Timóteo.json` (livro inteiro, gerada por `scripts/colar.py --livro 620`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

@@ -1,22 +1,22 @@
-# Estado do projeto — 20/11/2026
+# Estado do projeto — 26/11/2026
 
-Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
+Para retomar o trabalho num ramo novo, ver `docs/PASSAGEM_DE_SESSAO.md`. Este documento descreve o estado **atual**. O histórico (diário de 17 a 24 de novembro, workflows retirados, migrações de dados) está no Git (`git log`). Os documentos de processo antigos estão em `docs/arquivo/`.
 
 ## Três revisões, separadas
 
-| Revisão | Quem faz | Estado nos 22 livros |
+| Revisão | Quem faz | Estado nos 25 livros |
 |---|---|---|
 | **Editorial** (`review.editorial_blocks`) | O responsável (Martinho S. S. Madureira). Só ele aprova. | `aprovado editorialmente` em todos os blocos |
 | **Especializada** (`review.specialist`) | Especialista externo (hebraísta, grecista, crítico textual ou teólogo). Não é feita pelo responsável nem pelo agente. | `pendente` em todos |
-| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 18 livros; `aprovado pelo ministério` em Oseias, Joel, 2 Pedro e Colossenses |
+| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 17 livros; `aprovado pelo ministério` em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago |
 
 Não há revisão por inteligência artificial no processo. Nenhum agente aprova em nome do responsável, nem declara a revisão especializada concluída.
 
 ## Livros com edição nova
 
-Edição nova: 22 livros, 98 capítulos e 2 238 versículos, todos em prosa. Os 22 livros estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos). A revisão especializada está pendente nos 22, a cargo de especialista externo. A aprovação pelo ministério está registada em Oseias, Joel e 2 Pedro.
+Edição nova: 25 livros, 113 capítulos e 2 556 versículos, todos em prosa. Os 25 livros estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago (2026-11-26).
 
-Todos os 22 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses e 2 Timóteo.
+Todos os 25 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses, 2 Timóteo, 1 Pedro, 1 João e Tiago.
 
 | Livro | Capítulos | Versículos | Notas com CT | Editorial | Especializada | Ministério |
 |---|---|---|---|---|---|---|
@@ -30,15 +30,18 @@ Todos os 22 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Jo
 | Sofonias (430) | 3 | 53 | 0 | aprovado | pendente | pendente |
 | Ageu (440) | 2 | 38 | 0 | aprovado | pendente | pendente |
 | Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | pendente |
-| João (500) | 21 | 879 | 705 | aprovado | pendente | pendente |
+| João (500) | 21 | 879 | 706 | aprovado | pendente | pendente |
 | Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | pendente |
 | Colossenses (580) | 4 | 95 | 57 | aprovado | pendente | aprovado pelo ministério |
-| 2 Timóteo (620) | 4 | 83 | 0 | aprovado | pendente | pendente |
+| 2 Timóteo (620) | 4 | 83 | 33 | aprovado | pendente | aprovado pelo ministério |
 | 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | pendente |
 | 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | pendente |
 | Tito (630) | 3 | 46 | 19 | aprovado | pendente | pendente |
 | Filemom (640) | 1 | 25 | 14 | aprovado | pendente | pendente |
 | 2 Pedro (680) | 3 | 61 | 36 | aprovado | pendente | aprovado pelo ministério |
+| 1 João (690) | 5 | 105 | 53 | aprovado | pendente | aprovado pelo ministério |
+| Tiago (660) | 5 | 108 | 56 | aprovado | pendente | aprovado pelo ministério |
+| 1 Pedro (670) | 5 | 105 | 64 | aprovado | pendente | aprovado pelo ministério |
 | 2 João (700) | 1 | 13 | 9 | aprovado | pendente | pendente |
 | 3 João (710) | 1 | 14 | 8 | aprovado | pendente | pendente |
 | Judas (720) | 1 | 25 | 14 | aprovado | pendente | pendente |
@@ -61,16 +64,17 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 ## Cartas seguintes
 
-Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **Próximo livro: 1 Timóteo (113 versículos).** Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
 
-## Verificações (2026-11-20)
+## Verificações (2026-11-26)
 
-- `scripts/verificar_dados.py`: rc 0; 98 capítulos e 2 238 versículos (inclui Colossenses, 1 a 4, e 2 Timóteo, 1 a 4, aprovado editorialmente).
-- `scripts/verificar_estilo.py`: rc 0; sem arcaísmos nem marcas de Almeida.
-- `scripts/verificar_convencoes_notas.py`: rc 0; 0 falhas, 0 avisos.
-- `scripts/verificar_documentacao.py`: rc 0.
-- `scripts/verificar_notas_colacao.py` (João, Filipenses, 1 e 2 Tessalonicenses, Tito, Filemom, 2 e 3 João, Judas): rc 0.
-- `python3 -m unittest discover -s tests`: 188 testes, OK. Saltam 5 quando faltam `pyspellchecker` (verificação ortográfica, que por isso não correu) ou `python-docx` (documento de apresentação).
+- `scripts/verificar_dados.py`: rc 0; 113 capítulos e 2 556 versículos completos.
+- `scripts/verificar_estilo.py`: sem falhas duras nem avisos; sem arcaísmos nem marcas de Almeida.
+- `scripts/verificar_convencoes_notas.py`: 0 falhas, 0 avisos.
+- `scripts/verificar_documentacao.py`: rc 0; 113 capítulos e 2 556 versículos, 0 em curso.
+- `scripts/verificar_notas_colacao.py`: confere as notas de 1 João (690) e de Tiago (660) com as respetivas colações; as restantes colações foram conferidas em verificações anteriores.
+- `python3 -m unittest discover -s tests`: não repetido nesta atualização (última execução em 2026-11-20: 188 testes, OK; 5 saltados por falta de `pyspellchecker` e `python-docx`).
+- Ortografia (`scripts/verificar_ortografia.py`): verificação de 2026-11-26, sem erros confirmados nos livros do PR.
 
 ## Documento de apresentação
 
@@ -85,11 +89,11 @@ Ordem por tamanho, das menores para as maiores, com prioridade para os livros qu
 
 ## Pendências
 
-1. **Responsável:** confirmar que `aprovado editorialmente` é o valor definitivo para os 22 livros.
+1. **Responsável:** confirmar que `aprovado editorialmente` é o valor definitivo para os 23 livros aprovados, e para 1 João quando estiver aprovado.
 2. **Responsável:** decidir se o documento de apresentação volta a ser a versão oficial (o README e `arquivo/LEIA-ME.md` diziam que estava arquivado de propósito).
 3. **Responsável:** decidir 11:16: itálico só em «que quer dizer gémeo» (como fica) ou também em «chamado».
-4. **Revisão especializada:** pendente nos 22 livros, a cargo de especialista externo.
-5. **Revisão do ministério:** pendente nos 18 livros (Oseias, Joel, 2 Pedro e Colossenses já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
+4. **Revisão especializada:** pendente nos 24 livros, a cargo de especialista externo.
+5. **Revisão do ministério:** pendente nos 18 livros (Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro e 1 Pedro já a têm registada). A estrutura de `review.ministerio` é provisória, a confirmar.
 6. **2 Pedro:** aprovado editorialmente e pelo ministério (2026-11-25). Falta a revisão especializada, a cargo de especialista externo.
 7. **Marcos 16:9–20:** ainda não produzido (ver `docs/EDITORIAL.md`).
 8. **Joel e Oseias:** resolvido em 2026-11-24 (ver acima). Falta a revisão especializada, como nos demais livros.
