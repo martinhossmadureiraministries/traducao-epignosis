@@ -2,23 +2,23 @@
 
 Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (540). Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 257 versículos.
 
-**Estado editorial (a aprovar por bloco):** cada capítulo está em `rascunho` até aprovação do responsável. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
+**Estado editorial:** aprovado pelo responsável em todos os capítulos. **Revisão especializada: pendente para todos os capítulos.** O texto segue a base grega SBLGNT; a crítica textual vem do aparato e da colação CNTR.
 
 | Capítulo | Estado | Versículos |
 |---|---|---|
-| 1 | rascunho | 24 |
-| 2 | rascunho | 17 |
-| 3 | rascunho | 18 |
-| 4 | rascunho | 18 |
-| 5 | rascunho | 21 |
-| 6 | rascunho | 18 |
-| 7 | rascunho | 16 |
-| 8 | rascunho | 24 |
-| 9 | rascunho | 15 |
-| 10 | rascunho | 18 |
-| 11 | rascunho | 33 |
-| 12 | rascunho | 21 |
-| 13 | rascunho | 14 |
+| 1 | aprovado editorialmente | 24 |
+| 2 | aprovado editorialmente | 17 |
+| 3 | aprovado editorialmente | 18 |
+| 4 | aprovado editorialmente | 18 |
+| 5 | aprovado editorialmente | 21 |
+| 6 | aprovado editorialmente | 18 |
+| 7 | aprovado editorialmente | 16 |
+| 8 | aprovado editorialmente | 24 |
+| 9 | aprovado editorialmente | 15 |
+| 10 | aprovado editorialmente | 18 |
+| 11 | aprovado editorialmente | 33 |
+| 12 | aprovado editorialmente | 21 |
+| 13 | aprovado editorialmente | 14 |
 
 ## Texto
 
@@ -1184,4 +1184,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (540). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Coríntios.json` (livro inteiro, gerada por `scripts/colar.py --livro 540`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Coríntios.json` (livro inteiro, gerada por `scripts/colar.py --livro 540`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.
