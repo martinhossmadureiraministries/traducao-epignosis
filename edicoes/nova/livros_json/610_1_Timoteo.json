@@ -746,8 +746,9 @@
       }
     ],
     "ministerio": {
-      "status": "pendente",
-      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada. Pendente."
+      "status": "aprovado pelo ministério",
+      "ministerio": "Martinho S. S. Madureira Ministries",
+      "nota": "Aprovado pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada. Indicação do responsável nesta sessão."
     }
   }
 }

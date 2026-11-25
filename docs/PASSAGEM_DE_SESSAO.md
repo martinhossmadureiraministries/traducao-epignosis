@@ -8,7 +8,7 @@ Documento de passagem, escrito em 2026-11-26, depois da varredura completa que p
 - **Editorial:** os 25 estão `aprovado editorialmente` pelo responsável.
 - **Ministério:** aprovado em 8 livros: Oseias, Joel, Colossenses, 2 Timóteo, Tiago, 1 Pedro, 2 Pedro e 1 João. Pendente nos outros 17.
 - **Especializada:** pendente nos 25, a cargo de especialista externo.
-- **Próximo livro:** **1 Timóteo (610, 113 versículos)**, na ordem de `docs/RESUMO_ESTILO.md`, secção 10.
+- **Próximo livro:** **Gálatas (550, 149 versículos)**, na ordem de `docs/RESUMO_ESTILO.md`, secção 10.
 - Verificações de 2026-11-26: dados, estilo, convenções e documentação passam. As notas de cada livro com colação conferem com a colação. As 25 leituras em `edicoes/nova/*.md` estão iguais aos JSON. Testes: `./.venv/bin/python -m unittest discover -s tests`, 188 testes OK.
 
 ## Regras de processo (instruções do responsável)
