@@ -1,0 +1,753 @@
+{
+  "format_version": 1,
+  "book_number": 610,
+  "book_name": "1 Timóteo",
+  "chapter_count": 6,
+  "chapters": {
+    "1": [
+      {
+        "verse": 1,
+        "text": "Paulo, apóstolo de Cristo Jesus, por ordem de Deus, nosso Salvador, e do Senhor Jesus Cristo, a nossa esperança,",
+        "commentary": "<p><i>ἀπόστολος</i> (<i>apostolos</i>), enviado; <i>κατʼ ἐπιταγὴν</i> (<i>kat’ epitagēn</i>), por ordem. <i>σωτήρ</i> (<i>sōtēr</i>), salvador, é título dado a Deus e a Cristo nas cartas pastorais; <i>ἐλπίς</i> (<i>elpis</i>), esperança.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:1: na primeira ocorrência de «Cristo Jesus», WH, Treg e NA28 leem «<i>Χριστοῦ Ἰησοῦ</i>», e a RP lê «<i>Ἰησοῦ Χριστοῦ</i>». Na segunda, a base lê «<i>Χριστοῦ Ἰησοῦ</i>», e a RP lê «<i>κυρίου Ἰησοῦ Χριστοῦ</i>» (Senhor Jesus Cristo). Na colação, KJTR, RP, SR, ST e Scrivener têm «<i>κυρίου</i>» na segunda ocorrência, e o códice 02 tem a ordem «<i>Ἰησοῦ Χριστοῦ</i>» na primeira. O texto segue a base na primeira ocorrência e a RP na segunda, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "a Timóteo, meu verdadeiro filho na fé: graça, misericórdia e paz da parte de Deus Pai e de Cristo Jesus, nosso Senhor.",
+        "commentary": "<p><i>γνησίῳ τέκνῳ</i> (<i>gnēsiō teknō</i>), filho verdadeiro: Timóteo é filho de Paulo na fé, na relação de confiança e afeto que a carta supõe.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:2: WH, Treg e NA28 leem «<i>θεοῦ πατρὸς</i>» sem complemento; a RP acrescenta «<i>ἡμῶν</i>» (nosso Pai). Na colação, o acréscimo aparece em KJTR, RP, ST e Scrivener. A diferença é pronominal e não altera a saudação; o texto segue a base.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Como te roguei que permanecesses em Éfeso, quando parti para a Macedónia, para que ordenasses a alguns que não ensinem outra doutrina,",
+        "commentary": "<p><i>ἑτεροδιδασκαλεῖν</i> (<i>heterodidaskalein</i>), ensinar outra doutrina: o verbo volta em 6:3 para descrever o ensino que se afasta da sã doutrina.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "nem se ocupem de fábulas e de genealogias sem fim, que produzem mais investigações do que o plano de Deus, que se cumpre pela fé.",
+        "commentary": "<p><i>μύθοις</i> (<i>mythois</i>), fábulas; <i>γενεαλογίαις</i> (<i>genealogiais</i>), genealogias; <i>ἐκζητήσεις</i> (<i>ekzētēseis</i>), investigações, indagações; <i>οἰκονομίαν</i> (<i>oikonomian</i>), administração ou plano. Paulo opõe as especulações ao plano de Deus, que se recebe pela fé.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:4: WH, Treg e NA28 leem «<i>ἐκζητήσεις</i>», e a RP lê «<i>ζητήσεις</i>» (questões). Na colação, KJTR, RP, ST e Scrivener leem «<i>ζητήσεις</i>»; no Scrivener aparece ainda «<i>οἰκοδομίαν</i>» (edificação) em vez de «<i>οἰκονομίαν</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Mas o fim do mandamento é o amor, que procede de coração puro, de consciência boa e de fé não fingida.",
+        "commentary": "<p><i>παραγγελίας</i> (<i>parangelias</i>), mandamento; <i>τέλος</i> (<i>telos</i>), fim ou objetivo; <i>ἀνυποκρίτου</i> (<i>anypokritou</i>), não fingida, sem hipocrisia.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Algumas pessoas, tendo-se desviado destas coisas, voltaram-se para conversas vãs,"
+      },
+      {
+        "verse": 7,
+        "text": "querendo ser mestres da lei, sem compreender nem aquilo que dizem nem aquilo sobre que fazem afirmações categóricas.",
+        "commentary": "<p><i>νομοδιδάσκαλοι</i> (<i>nomodidaskaloi</i>), mestres da lei: os que querem ensinar a Lei sem a compreender.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Mas sabemos que a lei é boa, se alguém a usa de modo legítimo,",
+        "commentary": "<p><i>νομίμως</i> (<i>nomimōs</i>), legitimamente, conforme o seu fim.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "sabendo isto: a lei não foi feita para o justo, mas para os transgressores e rebeldes, para os ímpios e pecadores, para os profanos e irreligiosos, para os que matam pai e mãe, para os homicidas,"
+      },
+      {
+        "verse": 10,
+        "text": "para os impuros, para os que se deitam com homens, para os traficantes de pessoas, para os mentirosos, para os perjuros, e para tudo o que se opõe à sã doutrina,",
+        "commentary": "<p><i>ἀρσενοκοίταις</i> (<i>arsenokoitais</i>), os que se deitam com homens: termo raro, que aparece também em 1 Coríntios 6:9, e cujo sentido exato é discutido. <i>ἀνδραποδισταῖς</i> (<i>andrapodistais</i>), os que raptam ou escravizam pessoas.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "segundo o Evangelho da glória do Deus bem-aventurado, que me foi confiado."
+      },
+      {
+        "verse": 12,
+        "text": "Dou graças àquele que me deu força, Cristo Jesus, nosso Senhor, porque me considerou fiel, pondo-me no ministério,",
+        "commentary": "<p><i>Χάριν ἔχω</i> (<i>charin echō</i>), tenho gratidão, dou graças.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:12: WH, Treg e NA28 leem «<i>Χάριν</i>», e a RP lê «<i>Καὶ χάριν</i>» (e tenho gratidão). Na colação, KJTR, RP, ST e Scrivener acrescentam «<i>καὶ</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "eu, que antes era blasfemo, perseguidor e insolente; mas alcancei misericórdia, porque agia por ignorância, na incredulidade.",
+        "commentary": "<p><i>βλάσφημον</i> (<i>blasphēmon</i>), blasfemo; <i>διώκτην</i> (<i>diōkten</i>), perseguidor; <i>ὑβριστήν</i> (<i>hybristēn</i>), insolente.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:13: WH, Treg e NA28 leem «<i>τὸ πρότερον</i>», e a RP lê «<i>τὸν πρότερον</i>», com o artigo no masculino, concordando com «<i>με</i>». Na colação, KJTR, RP, ST e Scrivener leem «<i>τὸν</i>», e o códice 02 acrescenta «<i>με</i>». A diferença é de artigo e não muda o sentido; o texto segue a base.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "E a graça de nosso Senhor transbordou com a fé e o amor que há em Cristo Jesus."
+      },
+      {
+        "verse": 15,
+        "text": "Palavra fiel e digna de toda a aceitação: Cristo Jesus veio ao mundo para salvar os pecadores, dos quais eu sou o primeiro.",
+        "commentary": "<p><i>πιστὸς ὁ λόγος</i> (<i>pistos ho logos</i>), palavra fiel: fórmula que as cartas pastorais usam para introduzir afirmações firmes (1:15; 3:1; 4:9).</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Mas por isso alcancei misericórdia: para que, em mim, o primeiro, Cristo Jesus mostrasse toda a sua longanimidade, como modelo para os que haveriam de crer nele para a vida eterna.",
+        "commentary": "<p><i>ὑποτύπωσιν</i> (<i>hypotypōsin</i>), modelo, exemplo, como um esboço que outros seguem; <i>μακροθυμίαν</i> (<i>makrothymian</i>), longanimidade, paciência prolongada.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:16: WH, Treg e NA28 leem «<i>Χριστὸς Ἰησοῦς</i>» e «<i>ἅπασαν</i>»; a RP lê «<i>Ἰησοῦς Χριστὸς</i>» e «<i>πᾶσαν</i>». Na colação, KJTR, RP, SR, ST e Scrivener têm a ordem da RP, e KJTR, RP, ST e Scrivener leem «<i>πᾶσαν</i>». A diferença não altera o sentido; o texto segue a base, e «toda a» é a forma que o português exige.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Ao Rei dos séculos, incorruptível, invisível, Deus único, sejam honra e glória pelos séculos dos séculos. Amém.",
+        "commentary": "<p><i>ἀφθάρτῳ</i> (<i>aphthartō</i>), incorruptível; <i>ἀοράτῳ</i> (<i>aoratō</i>), invisível.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:17: WH, Treg e NA28 leem «<i>μόνῳ θεῷ</i>»; a RP acrescenta «<i>σοφῷ</i>» (Deus único e sábio). Na colação, KJTR, RP, ST e Scrivener têm o acréscimo. O texto segue a base.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Esta ordem te confio, filho Timóteo, segundo as profecias que antes foram pronunciadas sobre ti, para que, por elas, combatas o bom combate,",
+        "commentary": "<p><i>παραγγελίαν</i> (<i>parangelian</i>), ordem; <i>στρατεύῃ</i> (<i>strateuēi</i>), combater como soldado; <i>στρατεία</i> (<i>strateia</i>), campanha militar.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 1:18: WH, NA28 e RP leem «<i>στρατεύῃ</i>» (presente); Treg lê «<i>στρατεύσῃ</i>» (aoristo). Na colação, 01 lê «<i>στρατεύσῃ</i>». A diferença é de aspeto verbal; o texto segue a base.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "tendo fé e boa consciência, que alguns rejeitaram e, quanto à fé, naufragaram.",
+        "commentary": "<p><i>ἐναυάγησαν</i> (<i>enauagēsan</i>), naufragaram: metáfora náutica para a perda da fé.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Entre eles estão Himeneu e Alexandre, que entreguei a Satanás, para que aprendessem a não blasfemar.",
+        "commentary": "<p><i>παρέδωκα τῷ Σατανᾷ</i> (<i>paredōka tō Satanā</i>), entreguei a Satanás: expressão de disciplina da comunidade, que retira o transgressor da proteção da igreja, com o objetivo de corrigi-lo.</p>"
+      }
+    ],
+    "2": [
+      {
+        "verse": 1,
+        "text": "Exorto, pois, antes de tudo, que se façam súplicas, orações, intercessões e ações de graças por todos os homens,",
+        "commentary": "<p><i>δεήσεις</i> (<i>deēseis</i>), súplicas; <i>ἐντεύξεις</i> (<i>enteuxeis</i>), intercessões; <i>εὐχαριστίας</i> (<i>eucharistias</i>), ações de graças.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "pelos reis e por todos os que estão em posições de autoridade, para que vivamos vida tranquila e sossegada, com toda a piedade e dignidade.",
+        "commentary": "<p><i>ἤρεμον καὶ ἡσύχιον</i> (<i>ēremon kai hēsychion</i>), tranquila e sossegada; <i>σεμνότητι</i> (<i>semnotēti</i>), dignidade, seriedade.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Isto é bom e aceitável diante de Deus, nosso Salvador,",
+        "commentary": "<p><i>ἀπόδεκτον</i> (<i>apodekton</i>), aceitável, agradável.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:3: WH, Treg e NA28 leem «<i>τοῦτο καλὸν</i>»; a RP acrescenta «<i>γὰρ</i>» antes de «<i>τοῦτο</i>» (Pois isto é bom). Na colação, KJTR, RP, ST e Scrivener têm «<i>γὰρ</i>». O texto segue a RP, por decisão do responsável, e a conjunção «pois» liga esta frase ao pedido de 2:1–2.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "o qual deseja que todos os homens sejam salvos e cheguem ao conhecimento da verdade."
+      },
+      {
+        "verse": 5,
+        "text": "Pois há um só Deus e um só mediador entre Deus e os homens: o homem Cristo Jesus,",
+        "commentary": "<p><i>μεσίτης</i> (<i>mesitēs</i>), mediador, intermediário.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "que se deu a si mesmo em resgate por todos, testemunho dado nos tempos próprios;",
+        "commentary": "<p><i>ἀντίλυτρον</i> (<i>antilytron</i>), resgate em lugar de outro; <i>μαρτύριον</i> (<i>martyrion</i>), testemunho.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "para isto fui designado pregador e apóstolo (digo a verdade, não minto), mestre dos gentios na fé e na verdade.",
+        "commentary": "<p><i>κῆρυξ</i> (<i>kēryx</i>), pregador, arauto.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:7: WH, Treg e NA28 leem «<i>λέγω</i>»; a RP acrescenta «<i>ἐν Χριστῷ</i>» (em Cristo) depois de «<i>ἀλήθειαν λέγω</i>». Na colação, o acréscimo aparece em 01, KJTR, RP, SR, ST e Scrivener; 02 tem outra leitura nesta frase. O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Quero, pois, que os homens orem em todo o lugar, levantando mãos santas, sem ira e sem discussões.",
+        "commentary": "<p><i>διαλογισμοῦ</i> (<i>dialogismou</i>), discussão, raciocínio em disputa.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:8: WH lê «<i>διαλογισμῶν</i>» (plural); Treg, NA28 e RP leem «<i>διαλογισμοῦ</i>» (singular), que é a base. Na colação, WH é o único com o plural. A diferença é de número e não altera o sentido; o texto segue a base.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Quero também que as mulheres se adornem com vestuário decoroso, com pudor e modéstia, não com tranças, ou com ouro, ou com pérolas, ou com roupas caras,",
+        "commentary": "<p><i>καταστολῇ κοσμίῳ</i> (<i>katastolē kosmiō</i>), vestuário decoroso; <i>αἰδοῦς</i> (<i>aidous</i>), pudor; <i>σωφροσύνης</i> (<i>sōphrosynēs</i>), prudência, moderação.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:9: WH, Treg e NA28 leem «<i>καὶ</i>» entre «<i>πλέγμασιν</i>» e «<i>χρυσίῳ</i>», e a RP lê «<i>ἢ</i>» (ou), com «<i>χρυσῷ</i>» em lugar de «<i>χρυσίῳ</i>». Na colação, WH, 01, 02 e SR omitem a primeira «<i>καὶ</i>» antes de «<i>γυναῖκας</i>», e KJTR, RP, ST e Scrivener acrescentam «<i>τὰς</i>». O texto segue a RP para a alternância «ou», por decisão do responsável; mantém «<i>χρυσίῳ</i>» da base, sem efeito no sentido, e a conjunção antes de «mulheres», como em Treg, NA28 e RP.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "mas, como convém a mulheres que professam piedade, com boas obras.",
+        "commentary": "<p><i>θεοσέβειαν</i> (<i>theosebeian</i>), piedade, temor de Deus.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "A mulher aprenda em silêncio, com plena submissão.",
+        "commentary": "<p><i>ἡσυχίᾳ</i> (<i>hēsychia</i>), quietude, silêncio respeitoso; <i>ὑποταγῇ</i> (<i>hypotagē</i>), submissão.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Mas não permito que uma mulher ensine ou exerça autoridade sobre o homem; que permaneça em silêncio.",
+        "commentary": "<p><i>αὐθεντεῖν</i> (<i>authentein</i>), exercer autoridade; o verbo é raro no Novo Testamento.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:12: WH, Treg e NA28 leem «<i>διδάσκειν δὲ γυναικὶ</i>»; a RP lê «<i>Γυναικὶ δὲ διδάσκειν</i>» (ordem das palavras). Na colação, KJTR, RP, ST e Scrivener têm a ordem da RP. A diferença é de ordem e não muda o sentido; o texto segue a base.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Pois Adão foi formado primeiro, depois Eva."
+      },
+      {
+        "verse": 14,
+        "text": "E não foi Adão quem foi enganado, mas a mulher, que, enganada, caiu em transgressão.",
+        "commentary": "<p><i>ἐξαπατηθεῖσα</i> (<i>exapatētheisa</i>), enganada por completo; <i>παραβάσει</i> (<i>parabasei</i>), transgressão.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 2:14: WH, Treg e NA28 leem «<i>ἐξαπατηθεῖσα</i>»; a RP lê «<i>ἀπατηθεῖσα</i>», sem o prefixo «<i>ἐξ-</i>». Na colação, KJTR, RP, ST e Scrivener têm a forma sem prefixo. A diferença está na intensidade do engano, não na ideia; o texto segue a base, por decisão de forma do agente.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Mas ela será salva pela maternidade, se elas permanecerem na fé, no amor e na santidade, com modéstia.",
+        "commentary": "<p><i>τεκνογονίας</i> (<i>teknogonias</i>), geração de filhos, maternidade.</p>"
+      }
+    ],
+    "3": [
+      {
+        "verse": 1,
+        "text": "Palavra fiel: se alguém deseja o cargo de supervisor, deseja uma obra boa.",
+        "commentary": "<p><i>ἐπισκοπῆς</i> (<i>episkopēs</i>), supervisão, cargo de supervisor (bispo); <i>ὀρέγεται</i> (<i>oregetai</i>), deseja, aspira.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "Convém, pois, que o supervisor seja irrepreensível, marido de uma só mulher, sóbrio, prudente, respeitável, hospitaleiro, apto para ensinar,",
+        "commentary": "<p><i>ἀνεπίλημπτον</i> (<i>anepilēmpton</i>), irrepreensível, sem falha reconhecida; <i>νηφάλιον</i> (<i>nēphalion</i>), sóbrio, sem embriaguez.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "não dado ao vinho, não violento, mas gentil, pacífico, não apegado ao dinheiro.",
+        "commentary": "<p><i>πάροινον</i> (<i>paroinon</i>), dado ao vinho; <i>πλήκτην</i> (<i>plēktēn</i>), violento; <i>ἀφιλάργυρον</i> (<i>aphilargyron</i>), não amigo do dinheiro.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 3:3: WH, Treg e NA28 não trazem a frase «<i>μὴ αἰσχροκερδῆ</i>» (não ganancioso); a RP a acrescenta depois de «<i>πλήκτην</i>». Na colação, KJTR, RP, ST e Scrivener têm a frase. O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "que governe bem a própria casa, tendo os filhos em sujeição com toda a dignidade,",
+        "commentary": "<p><i>προϊστάμενον</i> (<i>proistamenon</i>), governar, presidir; <i>σεμνότητος</i> (<i>semnotētos</i>), dignidade.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "pois, se alguém não sabe governar a própria casa, como cuidará da igreja de Deus?",
+        "commentary": "<p>Parêntese no texto grego (<i>εἰ δέ τις ... ἐπιμελήσεται</i>): argumento de comparação, que liga a casa à igreja.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "não recém-convertido, para que, cegado pelo orgulho, não caia na condenação do Diabo.",
+        "commentary": "<p><i>νεόφυτον</i> (<i>neophyton</i>), recém-plantado, recém-convertido; <i>τυφωθείς</i> (<i>typhōtheis</i>), cegado pelo orgulho.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Convém também que tenha bom testemunho dos de fora, para que não caia em opróbrio e no laço do Diabo.",
+        "commentary": "<p><i>ὀνειδισμόν</i> (<i>oneidismon</i>), opróbrio, censura; <i>παγίδα</i> (<i>pagida</i>), armadilha, laço.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 3:7: WH, Treg e NA28 não trazem «<i>αὐτὸν</i>» (ele), e a RP acrescenta-o depois de «<i>δὲ</i>». Na colação, KJTR, RP, ST e Scrivener têm «<i>αὐτὸν</i>». O texto segue a base, por decisão de forma do agente.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Do mesmo modo, os diáconos devem ser respeitáveis, não de língua dupla, não dados ao vinho em excesso, não ávidos de lucro vergonhoso,",
+        "commentary": "<p><i>διακόνους</i> (<i>diakonous</i>), diáconos, servidores; <i>διλόγους</i> (<i>dilogous</i>), de duas palavras, de língua dupla; <i>αἰσχροκερδεῖς</i> (<i>aischrokerdeis</i>), ávidos de lucro vergonhoso.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "guardando o mistério da fé numa consciência pura.",
+        "commentary": "<p><i>μυστήριον</i> (<i>mystērion</i>), mistério: a verdade revelada da fé.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Também estes sejam provados primeiro; depois, se forem irrepreensíveis, sirvam."
+      },
+      {
+        "verse": 11,
+        "text": "As mulheres, do mesmo modo, respeitáveis, não caluniadoras, sóbrias, fiéis em tudo.",
+        "commentary": "<p><i>διαβόλους</i> (<i>diabolous</i>), caluniadoras, aqui no sentido de difamadoras.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Os diáconos sejam maridos de uma só mulher, governando bem os filhos e as próprias casas."
+      },
+      {
+        "verse": 13,
+        "text": "Pois os que servem bem adquirem para si boa posição e grande confiança na fé que é em Cristo Jesus.",
+        "commentary": "<p><i>βαθμὸν</i> (<i>bathmon</i>), posição, degrau; <i>παρρησίαν</i> (<i>parrēsian</i>), confiança, franqueza.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Escrevo-te estas coisas, esperando ir ter contigo em breve,",
+        "commentary": "<p><i>ἐν τάχει</i> (<i>en tachei</i>), em breve.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 3:14: WH, Treg e NA28 leem «<i>ἐν τάχει</i>» (em breve); a RP lê «<i>τάχιον</i>» (mais depressa, mais cedo). Na colação, 01, KJTR, RP, ST e Scrivener leem «<i>τάχιον</i>»; P133 omite «<i>πρὸς σέ</i>» (ir ter contigo). O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "mas, se eu demorar, para que saibas como convém conduzir-te na casa de Deus, que é a igreja do Deus vivo, coluna e fundamento da verdade.",
+        "commentary": "<p><i>στῦλος</i> (<i>stylos</i>), coluna; <i>ἑδραίωμα</i> (<i>hedraiōma</i>), firmeza, fundamento.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "E, sem contestação, grande é o mistério da piedade: Aquele que foi manifestado na carne, justificado no Espírito, visto pelos anjos, proclamado entre as nações, crido no mundo, elevado na glória.",
+        "commentary": "<p><i>μυστήριον τῆς εὐσεβείας</i> (<i>mystērion tēs eusebeias</i>), mistério da piedade; <i>ὁμολογουμένως</i> (<i>homologoumenōs</i>), sem contestação, reconhecidamente.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 3:16: WH, Treg e NA28 leem «<i>Ὃς</i>» (Aquele que), e a RP lê «<i>θεὸς</i>» (Deus foi manifestado na carne). Na colação, 02, KJTR, RP, ST e Scrivener leem «<i>θεὸς</i>»; 01 lê «<i>Ὃς</i>», com diferenças de abreviação. A leitura «<i>θεὸς</i>» tem apoio nos códices 02 e na RP, e a base segue WH, Treg e NA28. A diferença muda a referência do relativo: «Aquele» (Cristo) ou «Deus». O texto segue a base, por decisão do responsável.</p>"
+      }
+    ],
+    "4": [
+      {
+        "verse": 1,
+        "text": "O Espírito diz expressamente que, nos últimos tempos, alguns se afastarão da fé, dando atenção a espíritos enganadores e a doutrinas de demónios,",
+        "commentary": "<p><i>ῥητῶς</i> (<i>rhētōs</i>), expressamente; <i>ὑστέροις καιροῖς</i> (<i>hysterois kairois</i>), tempos posteriores; <i>δαιμονίων</i> (<i>daimoniōn</i>), de demónios.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "pela hipocrisia de mentirosos, cujas consciências foram cauterizadas,",
+        "commentary": "<p><i>κεκαυστηριασμένων</i> (<i>kekaustēriasmenōn</i>), marcados a ferro em brasa, cauterizados: imagem de uma consciência insensível.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "os quais proíbem o casamento e mandam abster-se de alimentos que Deus criou para serem recebidos com ação de graças pelos fiéis e pelos que conhecem a verdade.",
+        "commentary": "<p><i>μετάλημψιν</i> (<i>metalēmpsin</i>), recebimento, participação.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Pois toda a criatura de Deus é boa, e nada é recusável quando é recebido com ação de graças,",
+        "commentary": "<p><i>κτίσμα</i> (<i>ktisma</i>), criatura, coisa criada; <i>ἀπόβλητον</i> (<i>apobleton</i>), recusável, rejeitável.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "pois é santificado pela palavra de Deus e pela oração."
+      },
+      {
+        "verse": 6,
+        "text": "Ao expor estas coisas aos irmãos, serás bom ministro de Cristo Jesus, nutrido pelas palavras da fé e da boa doutrina que tens seguido.",
+        "commentary": "<p><i>διάκονος</i> (<i>diakonos</i>), ministro, servidor; <i>ἐντρεφόμενος</i> (<i>entrephomenos</i>), nutrido, criado.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:6: WH, Treg e NA28 leem «<i>Χριστοῦ Ἰησοῦ</i>»; a RP lê «<i>Ἰησοῦ Χριστοῦ</i>». Na colação, KJTR, RP, ST e Scrivener têm a ordem da RP, e 04 e P133 têm abreviações de nomes sagrados. A diferença é de ordem; o texto segue a base.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Rejeita as fábulas profanas e as tolices de velhas mulheres; exercita-te, porém, na piedade.",
+        "commentary": "<p><i>βεβήλους</i> (<i>bebēlous</i>), profanos; <i>γραώδεις</i> (<i>graōdeis</i>), próprias de velhas, tolas; <i>γύμναζε</i> (<i>gymnaze</i>), exercita-te, treina-te.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Pois o exercício corporal para pouco aproveita, mas a piedade para tudo aproveita, tendo promessa da vida presente e da futura."
+      },
+      {
+        "verse": 9,
+        "text": "Palavra fiel e digna de toda a aceitação."
+      },
+      {
+        "verse": 10,
+        "text": "Pois por isto trabalhamos e somos censurados, porque esperamos no Deus vivo, que é Salvador de todos os homens, sobretudo dos fiéis.",
+        "commentary": "<p><i>κοπιῶμεν</i> (<i>kopiōmen</i>), trabalhamos com esforço; <i>ὀνειδιζόμεθα</i> (<i>oneidizometha</i>), somos censurados, insultados.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:10: a base lê «<i>ὀνειδιζόμεθα</i>» (somos censurados), com apoio da RP; WH, Treg e NA28 leem «<i>ἀγωνιζόμεθα</i>» (lutamos). A RP acrescenta «<i>καὶ</i>» (também) depois de «<i>γὰρ</i>», e KJTR, ST e Scrivener têm o mesmo acréscimo. Na colação, WH, NA28, Treg, 01, 02, 04 e SR leem «<i>ἀγωνιζόμεθα</i>». O texto segue a base, por decisão do responsável. A colação mostra que «<i>ἀγωνιζόμεθα</i>» tem mais testemunhas do que a base; a escolha entre «somos censurados» e «lutamos» fica assinalada para a revisão especializada.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Ordena e ensina estas coisas."
+      },
+      {
+        "verse": 12,
+        "text": "Ninguém despreze a tua juventude; sê exemplo dos fiéis em palavra, em conduta, em amor, no espírito, em fé e em pureza.",
+        "commentary": "<p><i>ἀναστροφῇ</i> (<i>anastrophē</i>), conduta, modo de viver; <i>ἁγνείᾳ</i> (<i>hagneia</i>), pureza.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:12: WH, Treg e NA28 não trazem «<i>ἐν πνεύματι</i>» (no espírito); a RP o acrescenta depois de «<i>ἐν ἀγάπῃ</i>». Na colação, o acréscimo aparece em KJTR, RP, ST e Scrivener. O texto segue a RP, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Até que eu chegue, dedica-te à leitura, à exortação e ao ensino.",
+        "commentary": "<p><i>ἀναγνώσει</i> (<i>anagnōsei</i>), leitura pública das Escrituras; <i>παρακλήσει</i> (<i>paraklēsei</i>), exortação.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Não negligencies o dom que há em ti, que te foi dado mediante profecia, com a imposição das mãos do presbitério.",
+        "commentary": "<p><i>χαρίσματος</i> (<i>charismatos</i>), dom de graça; <i>πρεσβυτερίου</i> (<i>presbyteriou</i>), presbitério, conselho de presbíteros.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Cuida destas coisas, aplica-te nelas, para que o teu progresso seja manifesto a todos.",
+        "commentary": "<p><i>προκοπὴ</i> (<i>prokopē</i>), progresso, avanço.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 4:15: WH, Treg e NA28 leem «<i>ᾖ</i>» sem preposição; a RP acrescenta «<i>ἐν</i>» antes de «<i>ᾖ</i>». Na colação, KJTR, RP, ST e Scrivener têm «<i>ἐν</i>». A diferença é de forma, sem efeito no sentido; o texto segue a base, por decisão de forma do agente.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "Atenta em ti mesmo e na doutrina; persiste nestas coisas, pois, fazendo isto, salvarás a ti mesmo e aos que te ouvem."
+      }
+    ],
+    "5": [
+      {
+        "verse": 1,
+        "text": "Não repreendas com dureza um presbítero, mas exorta-o como a um pai; aos mais jovens, como a irmãos;",
+        "commentary": "<p><i>ἐπιπλήξῃς</i> (<i>epiplēxēs</i>), repreender com dureza; <i>παρακάλει</i> (<i>parakalei</i>), exortar, encorajar.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "às mulheres idosas, como a mães; às mais jovens, como a irmãs, em toda a pureza."
+      },
+      {
+        "verse": 3,
+        "text": "Honra as viúvas que são verdadeiramente viúvas.",
+        "commentary": "<p><i>τίμα</i> (<i>tima</i>), honra; sustento e reconhecimento da comunidade; <i>ὄντως</i> (<i>ontōs</i>), verdadeiramente.</p>"
+      },
+      {
+        "verse": 4,
+        "text": "Mas, se alguma viúva tem filhos ou netos, que eles aprendam primeiro a exercer piedade para com a própria casa e a retribuir aos pais, pois isso é aceitável diante de Deus.",
+        "commentary": "<p><i>ἔκγονα</i> (<i>ekgona</i>), netos ou descendentes; <i>ἀμοιβὰς ἀποδιδόναι</i> (<i>amoibas apodidonai</i>), retribuir, pagar o que é devido.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "Aquela que é verdadeiramente viúva e está só pôs a sua esperança em Deus e persevera em súplicas e orações noite e dia.",
+        "commentary": "<p><i>μεμονωμένη</i> (<i>memonōmenē</i>), só, sem família.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:5: NA28 lê «<i>θεὸν</i>» (Deus, sem artigo); WH, Treg e RP leem «<i>τὸν θεὸν</i>», com artigo. Na colação, o artigo aparece em WH, KJTR, RP, ST e Scrivener. A diferença é de artigo e não muda o sentido; o texto segue a base.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas a que vive em prazeres está morta, ainda que viva.",
+        "commentary": "<p><i>σπαταλῶσα</i> (<i>spatalōsa</i>), que vive em luxo e prazer.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Ordena também estas coisas, para que sejam irrepreensíveis."
+      },
+      {
+        "verse": 8,
+        "text": "Se alguém não cuida dos seus, e sobretudo dos da própria casa, negou a fé e é pior do que o descrente.",
+        "commentary": "<p><i>προνοεῖ</i> (<i>pronoei</i>), cuida, provê.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:8: WH, Treg e NA28 leem «<i>μάλιστα</i>» sem artigo; a RP acrescenta «<i>τῶν</i>» (dos da casa). Na colação, o artigo aparece em 04, KJTR, RP, ST e Scrivener. Também no aparato, Treg lê «<i>προνοεῖται</i>» (cuida-se), e a base e a RP leem «<i>προνοεῖ</i>»; 01 também lê «<i>προνοεῖται</i>». O texto segue a base, por decisão de forma do agente.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Que se inscreva como viúva a que não tenha menos de sessenta anos e tenha sido mulher de um só marido,",
+        "commentary": "<p><i>καταλεγέσθω</i> (<i>katalegesthō</i>), que seja inscrita numa lista; <i>ἑνὸς ἀνδρὸς γυνή</i> (<i>henos andros gynē</i>), mulher de um só marido.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "reconhecida por boas obras: se criou filhos, se hospedou estrangeiros, se lavou os pés dos santos, se socorreu os atribulados, se se dedicou a toda a obra boa.",
+        "commentary": "<p><i>ἐξενοδόχησεν</i> (<i>exenodochēsen</i>), hospedou estrangeiros; <i>ἐπηκολούθησεν</i> (<i>epēkolouthēsen</i>), dedicou-se.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Mas recusa as viúvas mais jovens; pois, quando os desejos as afastam de Cristo, querem casar-se,",
+        "commentary": "<p><i>καταστρηνιάσωσιν</i> (<i>katastrēniasōsin</i>), tornam-se inquietas por desejo sensual.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "incorrendo em condenação, por terem anulado a primeira fé.",
+        "commentary": "<p><i>ἠθέτησαν</i> (<i>ēthetēsan</i>), anularam, rejeitaram.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "E, além disso, aprendem a estar ociosas, andando de casa em casa; e não só ociosas, mas também faladoras e curiosas, dizendo coisas que não convêm.",
+        "commentary": "<p><i>φλύαροι</i> (<i>phlyaroi</i>), faladoras; <i>περίεργοι</i> (<i>periergoi</i>), curiosas, intrometidas.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "Quero, pois, que as mais jovens casem, tenham filhos, governem a casa, e não deem ao adversário nenhuma ocasião de calúnia.",
+        "commentary": "<p><i>οἰκοδεσποτεῖν</i> (<i>oikodespotein</i>), governar a casa; <i>ἀντικειμένῳ</i> (<i>antikeimenō</i>), o adversário; <i>λοιδορίας</i> (<i>loidorias</i>), insulto, calúnia.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "Pois já algumas se desviaram para seguir Satanás."
+      },
+      {
+        "verse": 16,
+        "text": "Se alguma crente tem viúvas, socorra-as, e a Igreja não seja sobrecarregada, para que possa socorrer as que são verdadeiramente viúvas.",
+        "commentary": "<p><i>βαρείσθω</i> (<i>bareisthō</i>), seja sobrecarregada.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:16: WH, Treg e NA28 não trazem «<i>πιστὸς ἢ</i>» (crente ou) antes de «<i>τις</i>», e a RP acrescenta-o. Na colação, o acréscimo aparece em KJTR, RP, ST e Scrivener. Além disso, Treg lê «<i>ἐπαρκείσθω</i>» (seja socorrida) em vez de «<i>ἐπαρκείτω</i>» (socorra), leitura que também aparece em 01, 02 e SR. O texto segue a base, por decisão do responsável, e mantém «<i>ἐπαρκείτω</i>».</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Os presbíteros que presidem bem sejam considerados dignos de dupla honra, principalmente os que se dedicam à palavra e ao ensino.",
+        "commentary": "<p><i>διπλῆς τιμῆς</i> (<i>diplēs timēs</i>), dupla honra, que pode incluir sustento material.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "Pois a Escritura diz: «Não amordaçarás o boi que debulha»; e: «O trabalhador é digno do seu salário».",
+        "commentary": "<p>A primeira citação corresponde a Deuteronômio 25:4; a segunda corresponde a Lucas 10:7, e ambas são introduzidas como Escritura.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "Não aceites acusação contra um presbítero, a não ser com duas ou três testemunhas."
+      },
+      {
+        "verse": 20,
+        "text": "Os que pecam, repreende-os diante de todos, para que também os outros tenham temor.",
+        "commentary": "<p><i>ἔλεγχε</i> (<i>elegche</i>), repreender, convencer de culpa.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:20: Treg, NA28 e RP leem «<i>τοὺς</i>» sem partícula; WH lê «<i>τοὺς δὲ</i>» (mas os que pecam). Na colação, WH e 02 trazem «<i>δὲ</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "Conjuro-te diante de Deus, de Cristo Jesus e dos anjos eleitos, que guardes estas coisas sem preconceito, nada fazendo por parcialidade.",
+        "commentary": "<p><i>διαμαρτύρομαι</i> (<i>diamartyromai</i>), testemunho solene, conjuro; <i>πρόκριμα</i> (<i>prokrima</i>), preconceito, juízo antecipado; <i>πρόσκλισιν</i> (<i>proklisin</i>), parcialidade, favoritismo.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:21: WH, Treg e NA28 leem «<i>Χριστοῦ Ἰησοῦ</i>»; a RP lê «<i>κυρίου Ἰησοῦ Χριστοῦ</i>» (Senhor Jesus Cristo). Na colação, KJTR, RP, ST e Scrivener têm «<i>κυρίου</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 22,
+        "text": "Não imponhas as mãos a ninguém precipitadamente, nem tomes parte nos pecados alheios; conserva-te puro.",
+        "commentary": "<p><i>χεῖρας ἐπιτίθει</i> (<i>cheiras epitithei</i>), impor as mãos: gesto de investidura ou de bênção.</p>"
+      },
+      {
+        "verse": 23,
+        "text": "Já não bebas somente água; usa um pouco de vinho, por causa do estômago e das tuas frequentes enfermidades.",
+        "commentary": "<p><i>ὑδροπότει</i> (<i>hydropotei</i>), bebe água somente; <i>στόμαχον</i> (<i>stomachon</i>), estômago.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:23: WH, Treg e NA28 não trazem «<i>σου</i>» (teu) depois de «<i>στόμαχον</i>»; a RP acrescenta-o. Na colação, o acréscimo aparece em KJTR, RP, ST e Scrivener. O texto segue a base, por decisão de forma do agente.</p>"
+      },
+      {
+        "verse": 24,
+        "text": "Os pecados de alguns homens são manifestos, indo adiante para o juízo; em outros, porém, seguem depois."
+      },
+      {
+        "verse": 25,
+        "text": "Do mesmo modo, as boas obras são manifestas, e as que não são assim não podem ficar ocultas.",
+        "commentary": "<p><i>ἔργα τὰ καλὰ</i> (<i>erga ta kala</i>), as boas obras; <i>πρόδηλα</i> (<i>prodēla</i>), manifestas.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 5:25: WH, Treg e NA28 leem «<i>ἔργα τὰ καλὰ</i>» e «<i>πρόδηλα</i>» sem verbo; a RP lê «<i>καλὰ ἔργα</i>» e acrescenta «<i>ἐστίν</i>». Na colação, KJTR, RP, ST e Scrivener têm a ordem e o verbo da RP. A diferença é de ordem e de forma; o texto segue a base.</p>"
+      }
+    ],
+    "6": [
+      {
+        "verse": 1,
+        "text": "Os servos que estão sob jugo considerem os seus senhores dignos de toda a honra, para que o nome de Deus e o ensino não sejam blasfemados.",
+        "commentary": "<p><i>ὑπὸ ζυγὸν δοῦλοι</i> (<i>hypo zygon douloi</i>), servos sob jugo, escravizados; <i>τιμῆς</i> (<i>timēs</i>), honra.</p>"
+      },
+      {
+        "verse": 2,
+        "text": "E os que têm senhores crentes não os desprezem, porque são irmãos; antes sirvam-nos melhor, pois são fiéis e amados os que recebem o benefício do serviço. Ensina estas coisas e exorta.",
+        "commentary": "<p><i>εὐεργεσίας</i> (<i>euergesias</i>), benefício, serviço prestado com boa vontade.</p>"
+      },
+      {
+        "verse": 3,
+        "text": "Se alguém ensina outra doutrina e não adere às sãs palavras de nosso Senhor Jesus Cristo e à doutrina conforme a piedade,"
+      },
+      {
+        "verse": 4,
+        "text": "é orgulhoso e nada sabe, mas tem doença por questões e contendas de palavras, das quais nascem inveja, discórdia, blasfémias e suspeitas malignas,",
+        "commentary": "<p><i>τετύφωται</i> (<i>tetyphōtai</i>), está cegado pelo orgulho; <i>ζητήσεις</i> (<i>zētēseis</i>), questões; <i>λογομαχίας</i> (<i>logomachias</i>), contendas de palavras; <i>ἔρις</i> (<i>eris</i>), rivalidade.</p>"
+      },
+      {
+        "verse": 5,
+        "text": "contínuos atritos de homens de mente corrompida e privados da verdade, que supõem que a piedade é fonte de lucro.",
+        "commentary": "<p><i>διαπαρατριβαὶ</i> (<i>diaparatribai</i>), atritos contínuos; <i>πορισμὸν</i> (<i>porismon</i>), ganho, lucro.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:5: WH, Treg e NA28 não trazem a frase «<i>Ἀφίστασο ἀπὸ τῶν τοιούτων</i>» (Afasta-te destes), que a RP acrescenta depois de «<i>εὐσέβειαν</i>». Na colação, a frase aparece em KJTR, RP, ST e Scrivener; 01 e 02 não a têm. O texto segue a base, por decisão do responsável. A frase está ausente da base e não consta do texto traduzido.</p>"
+      },
+      {
+        "verse": 6,
+        "text": "Mas a piedade com contentamento é grande ganho.",
+        "commentary": "<p><i>αὐταρκείας</i> (<i>autarkeias</i>), contentamento, suficiência.</p>"
+      },
+      {
+        "verse": 7,
+        "text": "Pois nada trouxemos para o mundo, e nada podemos levar dele.",
+        "commentary": "<p><i>εἰσηνέγκαμεν</i> (<i>eisenenkamen</i>), trouxemos para dentro.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:7: WH, Treg e NA28 leem «<i>ὅτι</i>»; a RP lê «<i>δῆλον ὅτι</i>» (é evidente que). Na colação, KJTR, RP, ST e Scrivener têm «<i>δῆλον</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 8,
+        "text": "Tendo, porém, alimento e roupa, com isso nos contentaremos.",
+        "commentary": "<p><i>διατροφὰς</i> (<i>diatrophas</i>), alimento; <i>σκεπάσματα</i> (<i>skepasmata</i>), roupa, abrigo.</p>"
+      },
+      {
+        "verse": 9,
+        "text": "Os que querem enriquecer caem em tentação e em armadilha, e em muitas paixões insensatas e nocivas, que afundam os homens na ruína e na destruição.",
+        "commentary": "<p><i>πειρασμὸν</i> (<i>peirasmon</i>), tentação; <i>ὄλεθρον</i> (<i>olethron</i>), ruína; <i>ἀπώλειαν</i> (<i>apōleian</i>), destruição.</p>"
+      },
+      {
+        "verse": 10,
+        "text": "Pois o amor ao dinheiro é raiz de todos os males; por ele alguns se desviaram da fé e se trespassaram com muitas dores.",
+        "commentary": "<p><i>φιλαργυρία</i> (<i>philargyria</i>), amor ao dinheiro; <i>περιέπειραν</i> (<i>periepeiran</i>), trespassaram-se.</p>"
+      },
+      {
+        "verse": 11,
+        "text": "Mas tu, homem de Deus, foge destas coisas; persegue a justiça, a piedade, a fé, o amor, a paciência, a mansidão.",
+        "commentary": "<p><i>ἄνθρωπε θεοῦ</i> (<i>anthrōpe theou</i>), homem de Deus: título de servidor de Deus no Antigo Testamento (cf. 2 Reis 1:9ss.); <i>πραϋπαθίαν</i> (<i>prapathian</i>), paciência, serenidade diante do sofrimento.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:11: WH, Treg e NA28 leem «<i>πραϋπαθίαν</i>» (paciência) e «<i>θεοῦ</i>» sem artigo; a RP lê «<i>πρᾳότητα</i>» (mansidão) e «<i>τοῦ θεοῦ</i>». Na colação, KJTR, RP, ST e Scrivener têm «<i>πρᾳότητα</i>» e o artigo; 01 omite «<i>εὐσέβειαν</i>» (piedade), que WH, Treg, NA28 e a RP mantêm. O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 12,
+        "text": "Combate o bom combate da fé; apodera-te da vida eterna, para a qual foste chamado e fizeste a boa confissão diante de muitas testemunhas.",
+        "commentary": "<p><i>ἀγωνίζου</i> (<i>agōnizou</i>), combate; <i>ἐπιλαβοῦ</i> (<i>epilabou</i>), apodera-te; <i>ὁμολογίαν</i> (<i>homologian</i>), confissão.</p>"
+      },
+      {
+        "verse": 13,
+        "text": "Ordeno-te diante de Deus, que dá vida a todas as coisas, e de Cristo Jesus, que testemunhou sob Pôncio Pilatos a boa confissão,",
+        "commentary": "<p><i>ζῳογονοῦντος</i> (<i>zōogonountos</i>), que dá vida; <i>μαρτυρήσαντος</i> (<i>martyrēsantos</i>), que testemunhou.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:13: WH, Treg e NA28 leem «<i>ζῳογονοῦντος</i>»; a RP lê «<i>ζωοποιοῦντος</i>», sinónimo com o mesmo sentido. Na colação, 01, KJTR, RP, SR, ST e Scrivener leem «<i>ζωοποιοῦντος</i>», e 02 segue a base. O texto segue a base, por decisão de forma do agente. Além disso, 01 omite «<i>σοι</i>» (a ti) e «<i>τοῦ</i>» nesta frase, diferenças que não passam para o texto traduzido.</p>"
+      },
+      {
+        "verse": 14,
+        "text": "que guardes o mandamento sem mácula e irrepreensível até à manifestação de nosso Senhor Jesus Cristo,",
+        "commentary": "<p><i>ἐπιφανείας</i> (<i>epiphaneias</i>), aparição, manifestação.</p>"
+      },
+      {
+        "verse": 15,
+        "text": "a qual, a seu tempo, mostrará o bem-aventurado e único Soberano, o Rei dos reis e Senhor dos senhores,",
+        "commentary": "<p><i>δυνάστης</i> (<i>dynastēs</i>), soberano, poderoso.</p>"
+      },
+      {
+        "verse": 16,
+        "text": "o único que tem imortalidade, que habita em luz inacessível, a quem nenhum homem viu nem pode ver. A quem seja honra e domínio eterno. Amém.",
+        "commentary": "<p><i>ἀθανασίαν</i> (<i>athanasian</i>), imortalidade; <i>ἀπρόσιτον</i> (<i>aprositon</i>), inacessível.</p>"
+      },
+      {
+        "verse": 17,
+        "text": "Aos ricos deste mundo, ordena que não sejam altivos nem ponham a esperança na incerteza das riquezas, mas em Deus, que nos dá tudo com abundância para desfrutarmos;",
+        "commentary": "<p><i>ὑψηλοφρονεῖν</i> (<i>hypsēlophronein</i>), ser altivo, arrogante; <i>ἀδηλότητι</i> (<i>adēlotēti</i>), incerteza; <i>ἀπόλαυσιν</i> (<i>apolausin</i>), desfrute.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:17: WH, Treg e NA28 leem «<i>ἐπὶ θεῷ</i>» (em Deus); a RP lê «<i>ἐν τῷ θεῷ τῷ ζῶντι</i>» (no Deus vivo). Na colação, KJTR, RP, ST e Scrivener leem «<i>ἐν τῷ θεῷ τῷ ζῶντι</i>»; 02 acrescenta artigos. O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 18,
+        "text": "que façam o bem, sejam ricos em boas obras, generosos e prontos a repartir,",
+        "commentary": "<p><i>εὐμεταδότους</i> (<i>eumetadotous</i>), generosos, prontos a repartir; <i>κοινωνικούς</i> (<i>koinōnikous</i>), solidários.</p>"
+      },
+      {
+        "verse": 19,
+        "text": "acumulando para si um bom fundamento para o futuro, a fim de que alcancem a verdadeira vida.",
+        "commentary": "<p><i>ἀποθησαυρίζοντας</i> (<i>apothēsaurizontas</i>), acumulando como tesouro; <i>ὄντως ζωῆς</i> (<i>ontōs zōēs</i>), verdadeira vida.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:19: WH, Treg e NA28 leem «<i>ὄντως</i>» (verdadeira); a RP lê «<i>αἰωνίου</i>» (eterna). Na colação, KJTR, RP, ST e Scrivener leem «<i>αἰωνίου</i>». O texto segue a base, por decisão do responsável.</p>"
+      },
+      {
+        "verse": 20,
+        "text": "Ó Timóteo, guarda o depósito, evitando as conversas profanas e vãs e as contradições da falsamente chamada ciência,",
+        "commentary": "<p><i>παραθήκην</i> (<i>parathēkēn</i>), depósito, o que foi confiado; <i>κενοφωνίας</i> (<i>kenophōnias</i>), conversas vãs; <i>ἀντιθέσεις</i> (<i>antitheseis</i>), oposições, contradições; <i>ψευδωνύμου γνώσεως</i> (<i>pseudōnymou gnōseōs</i>), a ciência falsamente assim chamada.</p>"
+      },
+      {
+        "verse": 21,
+        "text": "pois alguns, professando-a, desviaram-se da fé. A graça esteja contigo. Amém.",
+        "commentary": "<p><i>ἐπαγγελλόμενοι</i> (<i>epangellomenoi</i>), professando, prometendo; <i>ἠστόχησαν</i> (<i>ēstochēsan</i>), erraram o alvo.</p><p><b>Crítica Textual:</b> Aparato SBLGNT, 6:21: WH, Treg e NA28 leem «<i>μεθʼ ὑμῶν</i>» (com vocês, no plural), e a RP lê «<i>μετὰ σοῦ Ἀμήν</i>» (contigo. Amém). Na colação, KJTR, RP, ST e Scrivener têm a leitura da RP. O texto segue a RP, por decisão do responsável, e fica em tom singular, como o resto da carta.</p>"
+      }
+    ]
+  },
+  "in_progress": {},
+  "history": [
+    {
+      "chapter": 1,
+      "verse_from": 1,
+      "verse_to": 20,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    },
+    {
+      "chapter": 2,
+      "verse_from": 1,
+      "verse_to": 15,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    },
+    {
+      "chapter": 3,
+      "verse_from": 1,
+      "verse_to": 16,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    },
+    {
+      "chapter": 4,
+      "verse_from": 1,
+      "verse_to": 16,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    },
+    {
+      "chapter": 5,
+      "verse_from": 1,
+      "verse_to": 25,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    },
+    {
+      "chapter": 6,
+      "verse_from": 1,
+      "verse_to": 21,
+      "provider": "agente",
+      "model": "redação a partir do SBLGNT e da colação, com decisões do responsável",
+      "generated_at_utc": "2026-11-27T12:00:00+00:00"
+    }
+  ],
+  "sources": {
+    "versification": "KJV/tradicional",
+    "alignment_version": 1,
+    "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+    "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+    "cntr_transcriptions_commit": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+    "collation_report": "docs/colacao/1_Timóteo.json"
+  },
+  "bibliography": [
+    {
+      "name": "SBLGNT — The Greek New Testament, SBL Edition",
+      "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "url": "https://github.com/Faithlife/SBLGNT",
+      "text_url": "https://codeload.github.com/Faithlife/SBLGNT/zip/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+      "license": "CC BY 4.0",
+      "attribution": "Base fixada do projeto. O aparato nomeia apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações sobre manuscritos vêm da colação CNTR.",
+      "papel": "base"
+    },
+    {
+      "name": "Textus Receptus — edição de Scrivener (Robinson)",
+      "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+      "url": "https://github.com/byztxt/greektext-scrivener",
+      "text_url": "https://codeload.github.com/byztxt/greektext-scrivener/zip/6049a43b135ed870f843b83eb6a04764fc796678",
+      "license": "domínio público segundo o fornecedor",
+      "attribution": "Comparação, não base. «O Textus Receptus» não é um texto único: esta edição difere de RP e do KJTR.",
+      "papel": "comparação"
+    },
+    {
+      "name": "CNTR Transcriptions (Center for New Testament Restoration)",
+      "revision": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+      "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Alan Bunning / Center for New Testament Restoration. Testemunhas de Filemom consultadas: 01, 02, 04, P139, P87; textos críticos: KJTR, RP, SR, ST, WH. Custódia: o acervo vive em .bee-cache/ (excluída pelo .gitignore) — é consultado e citado, nunca redistribuído; só o relatório de colação é versionado.",
+      "papel": "testemunhas e textos críticos"
+    },
+    {
+      "name": "Relatório de colação de Filemom (obra do projeto)",
+      "url": "docs/colacao/Filemom.json",
+      "attribution": "Gerado por scripts/colar.py com bee/manuscritos.py. É a evidência verificável de cada afirmação sobre manuscritos destas notas: uma linha do relatório por testemunha citada. O protocolo está em docs/CRITICA_TEXTUAL.md.",
+      "papel": "evidência"
+    }
+  ],
+  "review": {
+    "editorial_blocks": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 15,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 16,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 16,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 25,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      },
+      {
+        "chapter": 6,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "aprovado editorialmente",
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+      }
+    ],
+    "specialist": [
+      {
+        "chapter": 1,
+        "verse_from": 1,
+        "verse_to": 20,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      },
+      {
+        "chapter": 2,
+        "verse_from": 1,
+        "verse_to": 15,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      },
+      {
+        "chapter": 3,
+        "verse_from": 1,
+        "verse_to": 16,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      },
+      {
+        "chapter": 4,
+        "verse_from": 1,
+        "verse_to": 16,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      },
+      {
+        "chapter": 5,
+        "verse_from": 1,
+        "verse_to": 25,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      },
+      {
+        "chapter": 6,
+        "verse_from": 1,
+        "verse_to": 21,
+        "status": "pendente",
+        "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grego, crítico textual ou teólogo). Pontos a rever: 4:10 (ὀνειδιζόμεθα contra ἀγωνιζόμεθα, com a base em minoria na colação); 3:16 (ὃς contra θεὸς); 2:9 (conjunção antes de γυναῖκας). Sem outros pontos indicados até agora."
+      }
+    ],
+    "ministerio": {
+      "status": "pendente",
+      "nota": "Revisão aprovada pelo ministério (Martinho S. S. Madureira Ministries): etapa própria, distinta da revisão editorial e da especializada. Pendente."
+    }
+  }
+}

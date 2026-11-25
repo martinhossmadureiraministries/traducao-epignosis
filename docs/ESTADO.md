@@ -8,43 +8,43 @@ Para retomar o trabalho num ramo novo, ver `docs/PASSAGEM_DE_SESSAO.md`. Este do
 |---|---|---|
 | **Editorial** (`review.editorial_blocks`) | O responsável (Martinho S. S. Madureira). Só ele aprova. | `aprovado editorialmente` em todos os blocos |
 | **Especializada** (`review.specialist`) | Especialista externo (hebraísta, grecista, crítico textual ou teólogo). Não é feita pelo responsável nem pelo agente. | `pendente` em todos |
-| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `pendente` nos 17 livros; `aprovado pelo ministério` em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago |
+| **Aprovada pelo ministério** (`review.ministerio`) | Martinho S. S. Madureira Ministries, etapa própria. | `aprovado pelo ministério` nos 25 livros (indicação do responsável, nesta sessão) |
 
 Não há revisão por inteligência artificial no processo. Nenhum agente aprova em nome do responsável, nem declara a revisão especializada concluída.
 
 ## Livros com edição nova
 
-Edição nova: 25 livros, 113 capítulos e 2 556 versículos, todos em prosa. Os 25 livros estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada em Oseias, Joel, Colossenses, 2 Timóteo, 2 Pedro, 1 Pedro, 1 João e Tiago (2026-11-26).
+Edição nova: 26 livros, 119 capítulos e 2 669 versículos, todos em prosa. O 26.º é 1 Timóteo (610, 6 capítulos, 113 versículos), redigido pelo agente a partir do SBLGNT e da colação (`edicoes/nova/livros_json/610_1_Timoteo.json`, `edicoes/nova/1_TIMOTEO.md`), **aprovado editorialmente pelo responsável em 2026-11-27**, com 1:1 RP e 2:9 com «καὶ» (base). A revisão especializada e a do ministério estão pendentes. Os 25 livros anteriores estão `aprovado editorialmente` pelo responsável, incluindo 2 Timóteo (620, 4 capítulos, 83 versículos), 1 Pedro (670, 5 capítulos, 105 versículos), **1 João (690, 5 capítulos, 105 versículos)** e **Tiago (660, 5 capítulos, 108 versículos)**, aprovados em 2026-11-26. A revisão especializada está pendente nos 25, a cargo de especialista externo. A aprovação pelo ministério está registada nos 25 livros, por indicação do responsável nesta sessão. O ministério também aprovou as variações de forma sugeridas pelo agente (ver `docs/EDITORIAL.md`).
 
 Todos os 25 estão `aprovado editorialmente` pelo responsável: Rute, Oseias, Joel, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Malaquias, João, Filipenses, 1 Tessalonicenses, 2 Tessalonicenses, Tito, Filemom, 2 João, 3 João, Judas, 2 Pedro, Colossenses, 2 Timóteo, 1 Pedro, 1 João e Tiago.
 
 | Livro | Capítulos | Versículos | Notas com CT | Editorial | Especializada | Ministério |
 |---|---|---|---|---|---|---|
-| Rute (080) | 4 | 85 | 0 | aprovado | pendente | pendente |
+| Rute (080) | 4 | 85 | 0 | aprovado | pendente | aprovado pelo ministério |
 | Oseias (350) | 14 | 197 | 0 | aprovado | pendente | aprovado pelo ministério |
 | Joel (360) | 3 | 73 | 0 | aprovado | pendente | aprovado pelo ministério |
-| Jonas (390) | 4 | 48 | 0 | aprovado | pendente | pendente |
-| Miqueias (400) | 7 | 105 | 0 | aprovado | pendente | pendente |
-| Naum (410) | 3 | 47 | 0 | aprovado | pendente | pendente |
-| Habacuque (420) | 3 | 56 | 0 | aprovado | pendente | pendente |
-| Sofonias (430) | 3 | 53 | 0 | aprovado | pendente | pendente |
-| Ageu (440) | 2 | 38 | 0 | aprovado | pendente | pendente |
-| Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | pendente |
-| João (500) | 21 | 879 | 706 | aprovado | pendente | pendente |
-| Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | pendente |
+| Jonas (390) | 4 | 48 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Miqueias (400) | 7 | 105 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Naum (410) | 3 | 47 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Habacuque (420) | 3 | 56 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Sofonias (430) | 3 | 53 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Ageu (440) | 2 | 38 | 0 | aprovado | pendente | aprovado pelo ministério |
+| Malaquias (460) | 4 | 55 | 0 | aprovado | pendente | aprovado pelo ministério |
+| João (500) | 21 | 879 | 706 | aprovado | pendente | aprovado pelo ministério |
+| Filipenses (570) | 4 | 104 | 48 | aprovado | pendente | aprovado pelo ministério |
 | Colossenses (580) | 4 | 95 | 57 | aprovado | pendente | aprovado pelo ministério |
 | 2 Timóteo (620) | 4 | 83 | 33 | aprovado | pendente | aprovado pelo ministério |
-| 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | pendente |
-| 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | pendente |
-| Tito (630) | 3 | 46 | 19 | aprovado | pendente | pendente |
-| Filemom (640) | 1 | 25 | 14 | aprovado | pendente | pendente |
+| 1 Tessalonicenses (590) | 5 | 89 | 38 | aprovado | pendente | aprovado pelo ministério |
+| 2 Tessalonicenses (600) | 3 | 47 | 28 | aprovado | pendente | aprovado pelo ministério |
+| Tito (630) | 3 | 46 | 19 | aprovado | pendente | aprovado pelo ministério |
+| Filemom (640) | 1 | 25 | 14 | aprovado | pendente | aprovado pelo ministério |
 | 2 Pedro (680) | 3 | 61 | 36 | aprovado | pendente | aprovado pelo ministério |
 | 1 João (690) | 5 | 105 | 53 | aprovado | pendente | aprovado pelo ministério |
 | Tiago (660) | 5 | 108 | 56 | aprovado | pendente | aprovado pelo ministério |
 | 1 Pedro (670) | 5 | 105 | 64 | aprovado | pendente | aprovado pelo ministério |
-| 2 João (700) | 1 | 13 | 9 | aprovado | pendente | pendente |
-| 3 João (710) | 1 | 14 | 8 | aprovado | pendente | pendente |
-| Judas (720) | 1 | 25 | 14 | aprovado | pendente | pendente |
+| 2 João (700) | 1 | 13 | 9 | aprovado | pendente | aprovado pelo ministério |
+| 3 João (710) | 1 | 14 | 8 | aprovado | pendente | aprovado pelo ministério |
+| Judas (720) | 1 | 25 | 14 | aprovado | pendente | aprovado pelo ministério |
 
 «Notas com CT» conta os versículos com parágrafo «Crítica Textual:». Os livros do AT não têm CT porque ainda não têm colação (`docs/colacao/`).
 
@@ -64,7 +64,14 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 ## Cartas seguintes
 
-Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **Próximo livro: 1 Timóteo (113 versículos).** Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **1 Timóteo (610, 113 versículos) está aprovado editorialmente (2026-11-27)**; a revisão especializada e a do ministério estão pendentes. Próximo passo: ver `docs/PASSAGEM_DE_SESSAO.md`. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
+
+## Verificações (2026-11-27)
+
+- `scripts/verificar_dados.py`: íntegro; 119 capítulos e 2 669 versículos completos.
+- `scripts/verificar_notas_colacao.py` em 1 Timóteo (610): conferem com a colação.
+- `scripts/verificar_estilo.py` e `scripts/verificar_convencoes_notas.py` em 1 Timóteo: sem falhas.
+- `unittest discover -s tests`: ver a secção de testes após a atualização de 2026-11-27.
 
 ## Verificações (2026-11-26)
 
