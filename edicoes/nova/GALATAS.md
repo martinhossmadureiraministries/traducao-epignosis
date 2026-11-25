@@ -340,7 +340,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **1:4**
 
 - *ὑπὲρ τῶν ἁμαρτιῶν* (*hyper tōn hamartiōn*), por causa dos nossos pecados, em favor deles. A preposição indica substituição e entrega, o centro da carta.
-- **Crítica Textual.** WH, NA28 e a base leem «*ὑπὲρ*»; Treg e RP leem «*περὶ*». Decisão do responsável: «*ὑπέρ*». A RP também inverte «*τοῦ ἐνεστῶτος αἰῶνος*» (base: «*αἰῶνος τοῦ ἐνεστῶτος*», com WH, Treg e NA28). Ordem: forma, base.
+- **Crítica Textual.** WH, NA28 e a base leem «*ὑπὲρ*»; Treg e RP leem «*περὶ*». Decisão do agente, por confirmar: «*ὑπέρ*». A RP também inverte «*τοῦ ἐνεστῶτος αἰῶνος*» (base: «*αἰῶνος τοῦ ἐνεστῶτος*», com WH, Treg e NA28). Ordem: forma, base.
 
 **1:6**
 
@@ -358,7 +358,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **1:11**
 
-- **Crítica Textual.** WH, Treg e NA28 leem «*γάρ*» (base); RP e Byz leem «*δέ*», e 02 e P46 também. Decisão do responsável: «*γάρ*», com a frase a explicar a maldição de 1:8–9.
+- **Crítica Textual.** WH, Treg e NA28 leem «*γάρ*» (base); RP e Byz leem «*δέ*», e 02 e P46 também. Decisão do agente, por confirmar: «*γάρ*», com a frase a explicar a maldição de 1:8–9.
 
 **1:12**
 
@@ -394,7 +394,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **2:4**
 
 - *παρεισάκτους* (*pareisaktous*), introduzidos às escondidas, infiltrados.
-- **Crítica Textual.** «*καταδουλώσουσιν*» (futuro, base; WH, Treg, NA28) contra «*καταδουλώσωνται*» (subjuntivo médio, RP). Decisão do responsável: futuro, com «*ἵνα*». A construção é irregular e os copistas tendem a corrigi-la, o que a torna mais provável como original.
+- **Crítica Textual.** «*καταδουλώσουσιν*» (futuro, base; WH, Treg, NA28) contra «*καταδουλώσωνται*» (subjuntivo médio, RP). Decisão do agente, por confirmar: futuro, com «*ἵνα*». A construção é irregular e os copistas tendem a corrigi-la, o que a torna mais provável como original.
 
 **2:6**
 
@@ -447,7 +447,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **3:1**
 
 - *ἐβάσκανεν* (*ebaskanen*), enfeitiçou, lançou mau-olhado. A figura é de quem é levado por uma força estranha.
-- **Crítica Textual.** WH, Treg e NA28 leem «*ἐβάσκανεν*» e «*προεγράφη*» sem complemento; RP acrescenta «*τῇ ἀληθείᾳ μὴ πείθεσθαι*» e «*ἐν ὑμῖν*». Decisão do responsável: base, sem as adições. A frase da RP repete quase literalmente 5:7, pelo que é provável conflação.
+- **Crítica Textual.** WH, Treg e NA28 leem «*ἐβάσκανεν*» e «*προεγράφη*» sem complemento; RP acrescenta «*τῇ ἀληθείᾳ μὴ πείθεσθαι*» e «*ἐν ὑμῖν*». Decisão do agente, por confirmar: base, sem as adições. A frase da RP repete quase literalmente 5:7, pelo que é provável conflação.
 
 **3:2**
 
@@ -500,7 +500,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **3:17**
 
-- **Crítica Textual.** WH, Treg e NA28 leem «*τοῦ θεοῦ*» e «*τετρακόσια καὶ τριάκοντα ἔτη*»; RP acrescenta «*εἰς Χριστόν*» depois de «*θεοῦ*» e inverte «*ἔτη τετρακόσια καὶ τριάκοντα*». Decisão do responsável: base, sem a adição. A ordem é forma; base.
+- **Crítica Textual.** WH, Treg e NA28 leem «*τοῦ θεοῦ*» e «*τετρακόσια καὶ τριάκοντα ἔτη*»; RP acrescenta «*εἰς Χριστόν*» depois de «*θεοῦ*» e inverte «*ἔτη τετρακόσια καὶ τριάκοντα*». Decisão do agente, por confirmar: base, sem a adição. A ordem é forma; base.
 
 **3:18**
 
@@ -509,7 +509,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **3:19**
 
 - *τῶν παραβάσεων χάριν* (*tōn parabaseōn charin*), por causa das transgressões, para as tornar visíveis. *διαταγεὶς* (*diatageis*), ordenada, promulgada.
-- **Crítica Textual.** «*ἄχρις οὗ*» (base; P46, 01, 02, Treg, NA28, RP) contra «*ἄχρις ἄν*» (WH; 03). Decisão do responsável: base.
+- **Crítica Textual.** «*ἄχρις οὗ*» (base; P46, 01, 02, Treg, NA28, RP) contra «*ἄχρις ἄν*» (WH; 03). Decisão do agente, por confirmar: base.
 
 **3:20**
 
@@ -517,7 +517,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **3:21**
 
-- **Crítica Textual.** «*ἐκ νόμου ἂν*» (base; Treg, NA28) contra «*ἐν νόμῳ ἂν*» (WH; P46, 03) e «*ἂν ἐκ νόμου*» (RP). Decisão do responsável: «*ἐκ νόμου ἂν*».
+- **Crítica Textual.** «*ἐκ νόμου ἂν*» (base; Treg, NA28) contra «*ἐν νόμῳ ἂν*» (WH; P46, 03) e «*ἂν ἐκ νόμου*» (RP). Decisão do agente, por confirmar: «*ἐκ νόμου ἂν*».
 
 **3:22**
 
@@ -567,7 +567,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **4:6**
 
 - *Αββα* (*Abba*), palavra aramaica para pai, mantida no grego; *ὁ πατήρ* traduz o termo.
-- **Crítica Textual.** «*ἡμῶν*» (base; WH, Treg, NA28, 01, 02, P46) contra «*ὑμῶν*» (RP, KJTR, ST, Scrivener). Decisão do responsável: «*ἡμῶν*».
+- **Crítica Textual.** «*ἡμῶν*» (base; WH, Treg, NA28, 01, 02, P46) contra «*ὑμῶν*» (RP, KJTR, ST, Scrivener). Decisão do agente, por confirmar: «*ἡμῶν*».
 
 **4:7**
 
@@ -594,12 +594,12 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **4:14**
 
 - *πειρασμός* (*peirasmos*), prova, provação.
-- **Crítica Textual.** «*ὑμῶν*» (base; WH, Treg, NA28, 01, 02, 03) contra «*μου*» (RP, KJTR; P46, 04). Decisão do responsável: «*ὑμῶν*».
+- **Crítica Textual.** «*ὑμῶν*» (base; WH, Treg, NA28, 01, 02, 03) contra «*μου*» (RP, KJTR; P46, 04). Decisão do agente, por confirmar: «*ὑμῶν*».
 
 **4:15**
 
 - *μακαρισμός* (*makarismos*), a felicidade proclamada, a bem-aventurança de que falam.
-- **Crítica Textual.** «*ποῦ*» (base; WH, Treg, NA28, 01, 02, 03, P46) contra «*Τίς*» (RP, Byz). Decisão do responsável: «*ποῦ*». «*οὖν*» sem «*ἦν*» (base) contra «*+ ἦν*» (RP) e «*ἐξορύξαντες*» sem «*ἄν*» (base) contra «*+ ἄν*» (RP): forma; base.
+- **Crítica Textual.** «*ποῦ*» (base; WH, Treg, NA28, 01, 02, 03, P46) contra «*Τίς*» (RP, Byz). Decisão do agente, por confirmar: «*ποῦ*». «*οὖν*» sem «*ἦν*» (base) contra «*+ ἦν*» (RP) e «*ἐξορύξαντες*» sem «*ἄν*» (base) contra «*+ ἄν*» (RP): forma; base.
 
 **4:17**
 
@@ -632,7 +632,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **4:26**
 
-- **Crítica Textual.** WH, Treg e NA28 leem «*μήτηρ ἡμῶν*»; RP, KJTR, ST e Scrivener acrescentam «*πάντων*» depois de «*μήτηρ*» («mãe de todos»). Decisão do responsável: base, sem a adição.
+- **Crítica Textual.** WH, Treg e NA28 leem «*μήτηρ ἡμῶν*»; RP, KJTR, ST e Scrivener acrescentam «*πάντων*» depois de «*μήτηρ*» («mãe de todos»). Decisão do agente, por confirmar: base, sem a adição.
 
 **4:27**
 
@@ -640,7 +640,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **4:28**
 
-- **Crítica Textual.** «*ὑμεῖς*» (base; Treg, NA28, P46) contra «*ἡμεῖς*» (WH, RP; 01, 02, 04). Decisão do responsável: «*ὑμεῖς*». Com ele, «*ἐστέ*» (base; Treg, NA28) contra «*ἐσμέν*» (WH, RP) fica igual à base.
+- **Crítica Textual.** «*ὑμεῖς*» (base; Treg, NA28, P46) contra «*ἡμεῖς*» (WH, RP; 01, 02, 04). Decisão do agente, por confirmar: «*ὑμεῖς*». Com ele, «*ἐστέ*» (base; Treg, NA28) contra «*ἐσμέν*» (WH, RP) fica igual à base.
 
 **4:30**
 
@@ -725,7 +725,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **5:21**
 
 - *κῶμοι* (*kōmoi*), festas de excesso, orgias.
-- **Crítica Textual.** RP e Treg acrescentam «*φόνοι*» (assassínios) depois de «*φθόνοι*»; WH e NA28 não. Decisão do responsável: omitir. «*καθὼς*» (base) contra «*καὶ καθὼς*» (RP): forma; base.
+- **Crítica Textual.** RP e Treg acrescentam «*φόνοι*» (assassínios) depois de «*φθόνοι*»; WH e NA28 não. Decisão do agente, por confirmar: omitir. «*καθὼς*» (base) contra «*καὶ καθὼς*» (RP): forma; base.
 
 **5:22**
 
@@ -756,7 +756,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **6:2**
 
 - *ἀναπληρώσετε* (*anaplērōsete*), cumprir até ao fim, completar.
-- **Crítica Textual.** «*ἀναπληρώσετε*» (futuro, base; Treg, NA28, P46) contra «*ἀναπληρώσατε*» (imperativo; WH, RP; 01, 02, 04). Decisão do responsável: futuro.
+- **Crítica Textual.** «*ἀναπληρώσετε*» (futuro, base; Treg, NA28, P46) contra «*ἀναπληρώσατε*» (imperativo; WH, RP; 01, 02, 04). Decisão do agente, por confirmar: futuro.
 
 **6:3**
 
@@ -792,7 +792,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **6:10**
 
 - *οἰκείους* (*oikeious*), os de casa, os da família.
-- **Crítica Textual.** «*ἔχομεν*» (indicativo, base; Treg, NA28, RP) contra «*ἔχωμεν*» (subjuntivo; WH, 01, 03). Decisão do responsável: indicativo.
+- **Crítica Textual.** «*ἔχομεν*» (indicativo, base; Treg, NA28, RP) contra «*ἔχωμεν*» (subjuntivo; WH, 01, 03). Decisão do agente, por confirmar: indicativo.
 
 **6:11**
 
@@ -805,7 +805,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 
 **6:13**
 
-- **Crítica Textual.** «*περιτεμνόμενοι*» (presente, base; WH, Treg, NA28) contra «*περιτετμημένοι*» (perfeito; RP; P46, 03). Decisão do responsável: presente.
+- **Crítica Textual.** «*περιτεμνόμενοι*» (presente, base; WH, Treg, NA28) contra «*περιτετμημένοι*» (perfeito; RP; P46, 03). Decisão do agente, por confirmar: presente.
 
 **6:14**
 
@@ -814,7 +814,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (550). Capít
 **6:15**
 
 - *καινὴ κτίσις* (*kainē ktisis*), nova criação, tema central da carta.
-- **Crítica Textual.** WH, Treg e NA28 leem «*οὔτε γὰρ περιτομή τί ἐστιν*»; RP, KJTR, ST e Scrivener acrescentam «*ἐν γὰρ Χριστῷ Ἰησοῦ*» (01, 02, 04 e Byz) e trocam «*ἐστιν*» por «*ἰσχύει*». Decisão do responsável: base.
+- **Crítica Textual.** WH, Treg e NA28 leem «*οὔτε γὰρ περιτομή τί ἐστιν*»; RP, KJTR, ST e Scrivener acrescentam «*ἐν γὰρ Χριστῷ Ἰησοῦ*» (01, 02, 04 e Byz) e trocam «*ἐστιν*» por «*ἰσχύει*». Decisão do agente, por confirmar: base.
 
 **6:16**
 
