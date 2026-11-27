@@ -32,9 +32,9 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (500). Capít
 
 ### Capítulo 1
 
-**1** No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.
+**1** No princípio era o Verbo; o Verbo estava junto de Deus, e o Verbo era Deus.
 
-**2** Ele estava no princípio com Deus.
+**2** Ele estava no princípio junto de Deus.
 
 **3** Todas as coisas foram feitas por meio dele, e sem ele nem uma só coisa veio a existir.
 

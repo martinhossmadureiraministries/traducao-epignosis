@@ -7,12 +7,12 @@
     "1": [
       {
         "verse": 1,
-        "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+        "text": "No princípio era o Verbo; o Verbo estava junto de Deus, e o Verbo era Deus.",
         "commentary": "<p><i>Ἐν ἀρχῇ</i> (en archē), «no princípio», ecoa a primeira palavra de Génesis na LXX (Génesis 1:1). <i>Ὁ λόγος</i> (ho logos) é traduzido «o Verbo», termo que o prólogo explica em 1:14 e que não tem o sentido de palavra falada. Em <i>θεὸς ἦν ὁ λόγος</i> (theos ēn ho logos), «Deus» vem sem artigo: descreve a natureza do Verbo e não identifica uma pessoa. A tradução mantém a ordem do grego, que deixa «Deus» no fim da frase.</p>"
       },
       {
         "verse": 2,
-        "text": "Ele estava no princípio com Deus.",
+        "text": "Ele estava no princípio junto de Deus.",
         "commentary": "<p><i>Οὗτος</i> (houtos), «ele», retoma o Verbo do versículo anterior. A frase repete <i>ἐν ἀρχῇ</i> e <i>πρὸς τὸν θεόν</i> do v. 1 como um resumo antes da série sobre a criação no v. 3. <i>Ἦν</i> (ēn), «estava», é o mesmo imperfeito do v. 1, e a tradução o mantém.</p>"
       },
       {
@@ -5579,7 +5579,7 @@
         "verse_from": 1,
         "verse_to": 51,
         "status": "aprovado editorialmente",
-        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Continua RASCUNHO até leitura e aprovação do responsável; revisão especializada pendente. Revisão de 2026-11-24 (decisões do responsável): 1:3 (frase final), 1:12 (direito, «virem a ser»), 1:15 e 1:30 (ficou à minha frente), 1:18 (o unigénito, que é Deus), 1:34 (escolhido de Deus, com nota). Base SBLGNT mantida; NA28 como segunda referência. Aprovado pelo responsável em 2026-11-24. Aprovados pelo responsável, nesta revisão: 1:22 e 1:36 com a Crítica Textual só da colação, como estão."
+        "nota": "Capítulos 1–2 redigidos de novo em 2026-11-23 no formato das cartas e dos livros do AT aprovados: nota em prosa, sem rótulos; Crítica Textual só quando o aparato da SBLGNT ou a colação registam variante. Texto e notas conferidos contra o grego (SBLGNT e aparato), a colação CNTR (docs/colacao/João.json) e o verificador de notas. Continua RASCUNHO até leitura e aprovação do responsável; revisão especializada pendente. Revisão de 2026-11-24 (decisões do responsável): 1:3 (frase final), 1:12 (direito, «virem a ser»), 1:15 e 1:30 (ficou à minha frente), 1:18 (o unigénito, que é Deus), 1:34 (escolhido de Deus, com nota). Base SBLGNT mantida; NA28 como segunda referência. Aprovado pelo responsável em 2026-11-24. Aprovados pelo responsável, nesta revisão: 1:22 e 1:36 com a Crítica Textual só da colação, como estão. Correção de forma e de fidelidade registada conforme docs/RESUMO_ESTILO.md §8, pedido do utilizador nesta sessão (2026-11-20): 1:1–2, «com Deus» passa a «junto de Deus» para o πρὸς τὸν θεόν (relação de proximidade, não só de companhia), e a frase de 1:1 ganha ritmo próprio, sem a estrutura idêntica à da ARC. Sentido e base grega inalterados. Escolha de «Verbo» mantida; decisão do responsável a confirmar."
       },
       {
         "chapter": 2,

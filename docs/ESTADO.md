@@ -102,6 +102,13 @@ Nota: na CT de 1 Pedro 3:16 a decisão do responsável («segue a base, «sois d
 
 **Problema de dados na colação de Filipenses.** Em `docs/colacao/Filipenses.json`, o trecho «καὶ σχήματι εὑρεθεὶς ὡς ἄνθρωπος» está no versículo 8, e não no 7 (como no texto traduzido e na versificação padrão). A tradução de 2:7–8 está correta; a colação precisa de ser realinhada com o SBLGNT. Não corrigido: o SBLGNT não está no espaço de trabalho para confirmar a divisão.
 
+## Módulos MyBible (2026-11-27, ramo `arena/70dc3bda`)
+
+- Pasta `mybible/`: `BEE.SQLite3` (Bíblia) e `BEE.commentaries.SQLite3` (comentários). Estado: **RASCUNHO PARCIAL**, 30 livros, 157 de 1189 capítulos, 3533 versículos, 2822 notas. Integridade verificada. Não são edição final.
+- As permissões dos módulos passaram a `0644` (antes saíam `0600` e outros utilizadores não os conseguiam abrir).
+- Medição das marcas de estilo ARC: `scripts/auditar_marcas_arc.py` → `docs/revisao/MARCAS_ARC.md`. Maiores concentrações: «Em verdade, em verdade» (25, só em João), abertura com «E» (252) e «Pois» (246), cadeias de quatro «e» (19).
+- João 1:1–2: «com Deus» → «junto de Deus» (πρὸς τὸν θεόν); motivo registado no bloco de João 1.
+
 **Plano em curso:** `docs/PLANO_NT.md` (fases 1 a 4 para completar o Novo Testamento, bloco a bloco).
 
 ## Verificações (2026-11-20)

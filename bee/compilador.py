@@ -234,6 +234,8 @@ def _publicar(pares: list[tuple[Path, Path]], pasta: Path) -> None:
                 backups[destino] = None
         for origem, destino in pares:
             os.replace(origem, destino)
+            # mkstemp cria 0600; o módulo publicado deve ser legível como um ficheiro comum.
+            os.chmod(destino, 0o644)
             publicados.append(destino)
     except BaseException as original:
         erros: list[str] = []

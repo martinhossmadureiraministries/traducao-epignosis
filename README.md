@@ -39,8 +39,10 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   - `python3 scripts/verificar_estilo.py <número>` (estilo e marcação);
   - `python3 scripts/verificar_notas_colacao.py --dados edicoes/nova/livros_json/<ficheiro>.json --colacao docs/colacao/<livro>.json`;
   - `python3 scripts/verificar_documentacao.py`.
-- Compilação dos módulos MyBible, com a parte já completa:
-  `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida entregas/nova`.
+- Compilação dos módulos MyBible, com a parte já completa, na pasta `mybible/`:
+  `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida mybible`.
+  Os `.SQLite3` ficam fora do Git (regra `*.SQLite3` do `.gitignore`); geram-se de novo a partir dos JSON.
+- Marcas de estilo de Almeida na edição nova (medição, não correção): `python3 scripts/auditar_marcas_arc.py --saida docs/revisao/MARCAS_ARC.md`.
 - Estado atual: 30 livros na edição nova (20 do Novo Testamento e 10 do Antigo), 157 capítulos e 3533 versículos guardados. Aprovados editorialmente: 30. Aprovados pelo ministério: 30. Revisão especializada pendente nos 30. Faltam 7 livros do Novo Testamento (ver `docs/ESTADO.md`).
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
 
