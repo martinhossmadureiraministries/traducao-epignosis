@@ -1,0 +1,54 @@
+# Compila os módulos MyBible da BEE e disponibiliza-os para descarregar.
+#
+# Para ativar: mova este ficheiro para .github/workflows/compilar-mybible.yml
+# na branch main. O GitHub só corre workflows que estejam em .github/workflows/.
+#
+# Como usar: no GitHub, separador "Actions" → "Compilar módulos MyBible" →
+# "Run workflow". Quando terminar, abra a execução e descarregue o artefacto
+# "mybible-rascunho-parcial" (ZIP com BEE.SQLite3 e BEE.commentaries.SQLite3).
+# Os ficheiros ficam guardados 90 dias.
+
+name: Compilar módulos MyBible
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compilar os módulos
+        run: python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida exportacao
+
+      - name: Verificar integridade
+        run: |
+          python3 - <<'EOF'
+          import sqlite3, sys
+          for f in ["exportacao/BEE.SQLite3", "exportacao/BEE.commentaries.SQLite3"]:
+              resultado = sqlite3.connect(f).execute("PRAGMA integrity_check").fetchone()[0]
+              print(f, resultado)
+              if resultado != "ok":
+                  sys.exit(1)
+          EOF
+
+      - name: Publicar o artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: mybible-rascunho-parcial
+          path: |
+            exportacao/BEE.SQLite3
+            exportacao/BEE.commentaries.SQLite3
+          retention-days: 90
+          if-no-files-found: error
