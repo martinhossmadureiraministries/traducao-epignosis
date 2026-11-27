@@ -1123,7 +1123,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (650). Capít
 **9:14**
 
 - *πνεύματος αἰωνίου* (*pneumatos aiōniou*), por um Espírito eterno. *νεκρῶν ἔργων* (*nekrōn ergōn*), obras mortas, obras que levam à morte.
-- **Crítica Textual.** A base lê «*ἡμῶν*», «nossa», com WH e NA28. Treg e RP leem «*ὑμῶν*», «vossa». Na colação, 01, KJTR, RP, SR, ST e Scrivener leem «*ὑμῶν*». A 02 lê «*ἡμῶν*» e acrescenta, no fim do versículo, «*καὶ ἀληθινῷ*». Em 03, P17 e P46 o trecho final, até «*ζῶντι*», está em lacuna física, assinalada na transcrição; não é omissão textual. A base fica.
+- **Crítica Textual.** A base lê «*ἡμῶν*», «nossa», com WH e NA28. Treg e RP leem «*ὑμῶν*», «de vocês». Na colação, 01, KJTR, RP, SR, ST e Scrivener leem «*ὑμῶν*». A 02 lê «*ἡμῶν*» e acrescenta, no fim do versículo, «*καὶ ἀληθινῷ*». Em 03, P17 e P46 o trecho final, até «*ζῶντι*», está em lacuna física, assinalada na transcrição; não é omissão textual. A base fica.
 
 **9:15**
 
@@ -1382,7 +1382,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (650). Capít
 **11:11**
 
 - *στεῖρα* (*steira*), estéril. A palavra não está no texto da base, e a tradução não a põe, por decisão do responsável.
-- **Crítica Textual.** Aparato de edições, 11:11: base «*αὐτῇ Σάρρᾳ*» com Holmes e WHmarg; WH, Treg e RP leem «*αὐτὴ Σάρρα*»; NA28 lê «*αὐτὴ Σάρρα στεῖρα*»; RP acrescenta «*ἔτεκεν*», que WH, Treg e NA28 não têm.
+- **Crítica Textual.** Aparato de edições, 11:11: base «*αὐτῇ Σάρρᾳ*» com Holmes e WHmarg; WH, Treg e RP leem «*αὐτὴ Σάρρα*»; NA28 lê «*αὐτὴ Σάρρα στεῖρα*»; RP acrescenta «*ἔτεκεν*», que WH, Treg e NA28 não têm. Na colação, P46 traz «*στεῖρα*» depois de «*αὐτὴ Σάρρα*», como acrescento marcado.
 
 **11:12**
 
@@ -1653,7 +1653,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (650). Capít
 **13:21**
 
 - *καταρτίσαι* (*katartisai*), aperfeiçoar, pôr em ordem; *εὐάρεστον* (*euareston*), agradável.
-- **Crítica Textual.** A base lê «*ἡμῖν*», «em nós», com WH e NA28. Treg e RP leem «*ὑμῖν*», «em vós». Treg e RP acrescentam «*ἔργῳ*», «obra», depois de «*παντὶ*», que WH e NA28 não têm; na colação, 02 e 04 também o têm, e 02 acrescenta «*καὶ λόγῳ*». WH, Treg, NA28 e RP acrescentam «*τῶν αἰώνων*», «dos séculos», a seguir a «*τοὺς αἰῶνας*», que Holmes não tem. A base fica, e a tradução segue-a.
+- **Crítica Textual.** A base lê «*ἡμῖν*», «em nós», com WH e NA28. Treg e RP leem «*ὑμῖν*», «em vocês». Treg e RP acrescentam «*ἔργῳ*», «obra», depois de «*παντὶ*», que WH e NA28 não têm; na colação, 02 e 04 também o têm, e 02 acrescenta «*καὶ λόγῳ*». WH, Treg, NA28 e RP acrescentam «*τῶν αἰώνων*», «dos séculos», a seguir a «*τοὺς αἰῶνας*», que Holmes não tem. A base fica, e a tradução segue-a.
 
 **13:22**
 

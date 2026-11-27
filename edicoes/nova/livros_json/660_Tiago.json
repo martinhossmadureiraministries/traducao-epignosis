@@ -81,7 +81,7 @@
       },
       {
         "verse": 19,
-        "text": "Sabei isto, meus amados irmãos: que cada um seja pronto para ouvir, tardio para falar, tardio para se irar,",
+        "text": "Saibam isto, meus amados irmãos: que cada um seja pronto para ouvir, tardio para falar, tardio para se irar,",
         "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:19: <i>Ἴστε</i> WH Treg NA28 ] <i>Ὥστε</i> RP; <i>δὲ</i> WH Treg NA28 ] – RP. Decisão do responsável: base.</p>"
       },
       {
@@ -595,7 +595,7 @@
         "verse_from": 1,
         "verse_to": 27,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Tiago.json. Aprovado pelo responsável em 2026-11-26. Decisões do responsável (2026-11-26) registadas nas CT. Texto de 1:19: «Sabei isto» passa a «Saibam isto». Correção de forma registada conforme docs/RESUMO_ESTILO.md §8: «vós» e as formas verbais de 2.ª pessoa do plural passam a «vocês» no texto e nas glosas das notas (estágio BEE, pedido do utilizador nesta sessão). Sentido e base grega inalterados. A aprovação editorial e a do ministério referem-se à forma anterior; confirmação do responsável pendente."
       },
       {
         "chapter": 2,

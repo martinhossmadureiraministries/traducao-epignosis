@@ -285,7 +285,7 @@
       {
         "verse": 26,
         "text": "porque tinha saudades de todos vocês e estava angustiado por vocês terem ouvido que ele estava doente.",
-        "commentary": "<p><i>ἀδημονῶν</i>, «angustiado», é o verbo de Getsémani em Marcos 14:33. A angústia não vem da doença, vem de saber que eles sofreram por ele ao receber a notícia.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:26: 26 <i>ὑμᾶς</i> Treg NA28 RP ] + <i>ἰδεῖν</i> WH. A base tem <i>ὑμᾶς</i> com Tregelles, NA28 e RP; WH acrescenta <i>ἰδεῖν</i>, «ver-vos». A tradução segue a base.</p>"
+        "commentary": "<p><i>ἀδημονῶν</i>, «angustiado», é o verbo de Getsémani em Marcos 14:33. A angústia não vem da doença, vem de saber que eles sofreram por ele ao receber a notícia.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 2:26: 26 <i>ὑμᾶς</i> Treg NA28 RP ] + <i>ἰδεῖν</i> WH. A base tem <i>ὑμᾶς</i> com Tregelles, NA28 e RP; WH acrescenta <i>ἰδεῖν</i>, «ver vocês». A tradução segue a base.</p>"
       },
       {
         "verse": 27,
@@ -563,7 +563,7 @@
         "verse_from": 1,
         "verse_to": 30,
         "status": "aprovado editorialmente",
-        "nota": "Primeira redação BEE a partir do SBLGNT e do seu aparato, com cotejo pontual de 2:6-7 (ARC, ARA, NVI, NAA, NVT, NTLH, NBV-P). Lida e aprovada pelo responsável quanto à voz e à legibilidade; não é aprovação de fidelidade, e a revisão especializada está pendente."
+        "nota": "Primeira redação BEE a partir do SBLGNT e do seu aparato, com cotejo pontual de 2:6-7 (ARC, ARA, NVI, NAA, NVT, NTLH, NBV-P). Lida e aprovada pelo responsável quanto à voz e à legibilidade; não é aprovação de fidelidade, e a revisão especializada está pendente. Correção de forma registada conforme docs/RESUMO_ESTILO.md §8: «vós» e as formas verbais de 2.ª pessoa do plural passam a «vocês» no texto e nas glosas das notas (estágio BEE, pedido do utilizador nesta sessão). Sentido e base grega inalterados. A aprovação editorial e a do ministério referem-se à forma anterior; confirmação do responsável pendente."
       },
       {
         "chapter": 3,

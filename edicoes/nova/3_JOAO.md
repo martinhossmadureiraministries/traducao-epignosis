@@ -96,7 +96,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (710). Capít
 **1:12**
 
 - Demétrio tem bom testemunho de todos e da própria verdade. O presbítero também dá testemunho, e Gaio sabe que o testemunho dele é verdadeiro. A carta termina com um reconhecimento que pesa como recomendação.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*οἶδας*» («sabes»), com WH, Treg e NA28; RP lê «*οἴδατε*» («sabeis»).
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:12: a base lê «*οἶδας*» («sabes»), com WH, Treg e NA28; RP lê «*οἴδατε*» («sabem»).
 
 **1:13**
 
@@ -110,4 +110,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (710). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/3_João.json` (livro inteiro, gerada por `scripts/colar.py --livro 710`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/3_João.json` (livro inteiro, gerada por `scripts/colar.py --livro 710`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

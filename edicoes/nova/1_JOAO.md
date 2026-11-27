@@ -253,7 +253,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **1:4**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:4: a base lê «*ἡμεῖς*» (nós) e «*ἡμῶν*», com WH, Treg e NA28; RP lê «*ὑμῖν*» (vós). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «*ὑμῖν*»; 02, KJTR e Scrivener leem também «*ὑμῶν*». A tradução segue a base, «a nossa alegria», por decisão do responsável (2026-11-26).
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:4: a base lê «*ἡμεῖς*» (nós) e «*ἡμῶν*», com WH, Treg e NA28; RP lê «*ὑμῖν*» (vocês). Na colação, 02, 04, KJTR, RP, ST e Scrivener leem «*ὑμῖν*»; 02, KJTR e Scrivener leem também «*ὑμῶν*». A tradução segue a base, «a nossa alegria», por decisão do responsável (2026-11-26).
 
 **1:5**
 
@@ -296,7 +296,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **2:7**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:7: a base lê «*Ἀγαπητοί*» (amados), com WH, Treg e NA28; RP lê «*Ἀδελφοί*» (irmãos). RP acrescenta «*ἀπʼ ἀρχῆς*» (desde o princípio) depois de «*ἠκούσατε*» (ouvistes). Por decisão do responsável (2026-11-26), a tradução segue a RP: «Irmãos» e «desde o princípio».
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:7: a base lê «*Ἀγαπητοί*» (amados), com WH, Treg e NA28; RP lê «*Ἀδελφοί*» (irmãos). RP acrescenta «*ἀπʼ ἀρχῆς*» (desde o princípio) depois de «*ἠκούσατε*» (vocês ouviram). Por decisão do responsável (2026-11-26), a tradução segue a RP: «Irmãos» e «desde o princípio».
 
 **2:10**
 
@@ -350,7 +350,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **3:1**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:1: a base lê «*ἡμᾶς*» (nós) e «*καὶ ἐσμέν*» (e somos), com WH, Treg e NA28; RP lê «*ὑμᾶς*» (vós) e omite «*καὶ ἐσμέν*». Por decisão do responsável (2026-11-26), a tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:1: a base lê «*ἡμᾶς*» (nós) e «*καὶ ἐσμέν*» (e somos), com WH, Treg e NA28; RP lê «*ὑμᾶς*» (vocês) e omite «*καὶ ἐσμέν*». Por decisão do responsável (2026-11-26), a tradução segue a base.
 
 **3:2**
 
@@ -503,7 +503,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (690). Capít
 
 **5:13**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiais). A tradução segue a base. **Decisão do responsável:** base, sem «e para que creiais». A descrição anterior dizia que a base não tinha «vocês que creem no nome do Filho de Deus»; a base tem-na.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:13: a base (com WH, Treg e NA28) tem «*τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ*» (vocês que creem no nome do Filho de Deus) e «*ἔχετε αἰώνιον*». KJTR, RP, ST e Scrivener trocam a ordem para «*αἰώνιον ἔχετε*» e acrescentam «*καὶ ἵνα πιστεύητε*» (e para que creiam). A tradução segue a base. **Decisão do responsável:** base, sem «e para que creiam». A descrição anterior dizia que a base não tinha «vocês que creem no nome do Filho de Deus»; a base tem-na.
 
 **5:15**
 

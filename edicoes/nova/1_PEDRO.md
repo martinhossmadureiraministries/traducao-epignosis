@@ -306,7 +306,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **1:16**
 
 - O versículo cita Levítico 11:44–45 e 19:2, na forma grega.
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:16: a base lê «*ὅτι*» depois de «*γέγραπται*» (está escrito), com WH e NA27; Treg, NA28 e RP omitem a palavra. A base lê «*ἔσεσθε*» (sereis), com WH, Treg e NA28; RP lê «*γίνεσθε*» (sejam). A base lê «*ἅγιος*» sem «*εἰμι*»; NA27 e RP acrescentam «*εἰμι*». Na colação, RP é a única testemunha que lê «*γίνεσθε*». A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:16: a base lê «*ὅτι*» depois de «*γέγραπται*» (está escrito), com WH e NA27; Treg, NA28 e RP omitem a palavra. A base lê «*ἔσεσθε*» (vocês serão), com WH, Treg e NA28; RP lê «*γίνεσθε*» (sejam). A base lê «*ἅγιος*» sem «*εἰμι*»; NA27 e RP acrescentam «*εἰμι*». Na colação, RP é a única testemunha que lê «*γίνεσθε*». A tradução segue a base.
 
 **1:17**
 
@@ -536,7 +536,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **3:16**
 
 - *συνείδησιν* (*syneidēsin*), consciência; *ἐπηρεάζοντες* (*epēreazontes*), os que caluniam, os que maltratam.
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:16: a base lê «*καταλαλεῖσθε*» (sois difamados, na voz passiva), com WH e NA28; Treg e RP lê «*καταλαλοῦσιν ὑμῶν ὡς κακοποιῶν*» (falam mal de vós como malfeitores). Decisão do responsável: segue a base, «sois difamados».
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:16: a base lê «*καταλαλεῖσθε*» (são difamados, na voz passiva), com WH e NA28; Treg e RP lê «*καταλαλοῦσιν ὑμῶν ὡς κακοποιῶν*» (falam mal de vocês como malfeitores). Decisão do responsável: segue a base, «são difamados».
 
 **3:17**
 
@@ -545,7 +545,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **3:18**
 
 - *ἅπαξ* (*hapax*), uma vez; *δίκαιος* (*dikaios*), justo; *ζῳοποιηθεὶς* (*zōopoiētheis*), vivificado, trazido à vida.
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:18: a base lê «*ἔπαθεν*» (sofreu), com NA28 e RP; WH e Treg lêem «*ἀπέθανεν*» (morreu). Decisão do responsável: segue a base, «sofreu». A base lê «*ὑμᾶς*» (vos), com WH, NA28 e RP; Treg lê «*ἡμᾶς*» (nos). A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:18: a base lê «*ἔπαθεν*» (sofreu), com NA28 e RP; WH e Treg lêem «*ἀπέθανεν*» (morreu). Decisão do responsável: segue a base, «sofreu». A base lê «*ὑμᾶς*» (vocês), com WH, NA28 e RP; Treg lê «*ἡμᾶς*» (nos). A tradução segue a base.
 
 **3:19**
 
@@ -559,7 +559,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **3:21**
 
 - *ἀντίτυπον* (*antitypon*), correspondente, figura; *ῥύπου* (*rhypou*), sujeira; *ἐπερώτημα* (*eperōtēma*), pergunta, pedido, compromisso.
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:21: a base lê «*καὶ ὑμᾶς ἀντίτυπον νῦν*» (que agora também vos salva), com WH, Treg e NA28; RP lê «*ἀντίτυπον νῦν καὶ ἡμᾶς*» (que agora também nos salva). Decisão do responsável: segue RP, «nos». A tradução segue essa leitura.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:21: a base lê «*καὶ ὑμᾶς ἀντίτυπον νῦν*» (que agora também salva vocês), com WH, Treg e NA28; RP lê «*ἀντίτυπον νῦν καὶ ἡμᾶς*» (que agora também nos salva). Decisão do responsável: segue RP, «nos». A tradução segue essa leitura.
 
 **3:22**
 
@@ -630,7 +630,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **4:14**
 
 - *ὀνειδίζεσθε* (*oneidizesthe*), são insultados; *ἀναπαύεται* (*anapauetai*), repousa.
-- **Crítica Textual.** Aparato de edições SBLGNT, 4:14: a base, com WH, Treg e NA28, não tem a frase «*κατὰ μὲν αὐτοὺς βλασφημεῖται κατὰ δὲ ὑμᾶς δοξάζεται*» (segundo eles é blasfemado, segundo vós é glorificado), que RP acrescenta. Decisão do responsável: segue a base, sem essa expressão.
+- **Crítica Textual.** Aparato de edições SBLGNT, 4:14: a base, com WH, Treg e NA28, não tem a frase «*κατὰ μὲν αὐτοὺς βλασφημεῖται κατὰ δὲ ὑμᾶς δοξάζεται*» (segundo eles é blasfemado, segundo vocês é glorificado), que RP acrescenta. Decisão do responsável: segue a base, sem essa expressão.
 
 **4:15**
 
@@ -711,11 +711,11 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (670). Capít
 **5:12**
 
 - *διʼ ὀλίγων* (*di' oligōn*), em poucas palavras; *ἐπιμαρτυρῶν* (*epimartyrōn*), testemunhando; *στῆτε* (*stēte*), permaneçam firmes.
-- **Crítica Textual.** Aparato de edições SBLGNT, 5:12: a base lê «*στῆτε*» (permaneçam firmes, imperativo), com WH, Treg e NA28; RP lê «*ἑστήκατε*» (estais firmes). A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 5:12: a base lê «*στῆτε*» (permaneçam firmes, imperativo), com WH, Treg e NA28; RP lê «*ἑστήκατε*» (vocês estão firmes). A tradução segue a base.
 
 **5:13**
 
-- *συνεκλεκτὴ* (*synekletē*), eleita junto convosco; a expressão refere-se à comunidade de Babilónia, provavelmente Roma.
+- *συνεκλεκτὴ* (*synekletē*), eleita junto de vocês; a expressão refere-se à comunidade de Babilónia, provavelmente Roma.
 
 **5:14**
 

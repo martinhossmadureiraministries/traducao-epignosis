@@ -578,4 +578,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (590). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_Tessalonicenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 590`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/1_Tessalonicenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 590`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

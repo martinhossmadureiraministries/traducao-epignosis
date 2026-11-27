@@ -63,7 +63,7 @@
       {
         "verse": 12,
         "text": "Todos dão bom testemunho de Demétrio, e a própria verdade também. Nós também damos testemunho, e tu sabes que o nosso testemunho é verdadeiro.",
-        "commentary": "<p>Demétrio tem bom testemunho de todos e da própria verdade. O presbítero também dá testemunho, e Gaio sabe que o testemunho dele é verdadeiro. A carta termina com um reconhecimento que pesa como recomendação.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:12: a base lê «<i>οἶδας</i>» («sabes»), com WH, Treg e NA28; RP lê «<i>οἴδατε</i>» («sabeis»).</p>"
+        "commentary": "<p>Demétrio tem bom testemunho de todos e da própria verdade. O presbítero também dá testemunho, e Gaio sabe que o testemunho dele é verdadeiro. A carta termina com um reconhecimento que pesa como recomendação.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:12: a base lê «<i>οἶδας</i>» («sabes»), com WH, Treg e NA28; RP lê «<i>οἴδατε</i>» («sabem»).</p>"
       },
       {
         "verse": 13,
@@ -137,7 +137,7 @@
         "verse_from": 1,
         "verse_to": 14,
         "status": "aprovado editorialmente",
-        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. Aprovado pelo responsável."
+        "nota": "Capítulo convertido para prosa (sem rótulos de secção nem níveis de certeza). Crítica Textual só quando o aparato da SBLGNT regista variante. A tradução não foi alterada. Aprovado pelo responsável. Correção de forma registada conforme docs/RESUMO_ESTILO.md §8: «vós» e as formas verbais de 2.ª pessoa do plural passam a «vocês» no texto e nas glosas das notas (estágio BEE, pedido do utilizador nesta sessão). Sentido e base grega inalterados. A aprovação editorial e a do ministério referem-se à forma anterior; confirmação do responsável pendente."
       }
     ],
     "specialist": [

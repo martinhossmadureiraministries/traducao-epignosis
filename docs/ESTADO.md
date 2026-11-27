@@ -83,11 +83,30 @@ Aprovado editorialmente pelo responsável, que o indicou como **livro-base** da 
 
 Ordem por tamanho, das menores para as maiores, com prioridade para os livros que definem o estilo: ver `docs/RESUMO_ESTILO.md`, secção 10. **1 Timóteo (610, 113 versículos) está aprovado editorialmente e pelo ministério** (indicação do responsável); a revisão especializada está pendente. Próximo passo: **Apocalipse (730, 404 versículos)**, pela ordem de `docs/RESUMO_ESTILO.md`, secção 10; começar só após decisão do responsável. Colossenses (95 versículos) está aprovado editorialmente em `edicoes/nova/livros_json/580_Colossenses.json`; a decisão de 1:15 manteve «primogénito». 2 Pedro está concluído na edição nova (`edicoes/nova/livros_json/680_2_Pedro.json`); a colação está em `docs/colacao/2_Pedro.json` e `.md`. A decisão de ἐπίγνωσις (1:2, 1:3, 1:8, 2:20) está aplicada no rascunho: alternar «pleno conhecimento» e «conhecimento pleno» conforme a construção. As passagens que pedem decisão estão nas Críticas Textuais.
 
+## Correções desta sessão (2026-11-20, ramo `arena/16306170`)
+
+**Varredura dos livros aprovados.** Os verificadores passaram a apanhar as formas de «vós» que o padrão «-eis» não cobria (imperativos «crede», «sabei»; subjuntivos «creiais», «saibais», «reconheçais»; futuros «pedirdes»). Lista em `bee/inspetor.py` (`_FORMAS_VOS_2PL`). Os seis versículos com essas formas no texto eram João 10:37, 10:38, 14:13, 14:14 e Tiago 1:19.
+
+**«vocês» no lugar de «vós»** (pedido do utilizador nesta sessão, estágio BEE). Alteração de forma, sem mudança de sentido nem da base grega. Corrigidos o texto de João 10:37–38, 14:13–14 e Tiago 1:19, e as glosas das notas de 20 livros (João, 1 João, 3 João, 2 Tessalonicenses, Colossenses, 2 Coríntios, Filipenses, Filemom, Hebreus, 1 Pedro). Ficaram como estavam as citações da ARC («se vos falei», João 3:12) e as formas do vocativo transliterado («ide», «íde»). Cada bloco afetado tem, na nota do bloco, o motivo, como manda `docs/RESUMO_ESTILO.md` §8. As aprovações editorial e do ministério referem-se à forma anterior: **confirmação do responsável pendente** nesses blocos.
+
+Nota: na CT de 1 Pedro 3:16 a decisão do responsável («segue a base, «sois difamados»») passa a «são difamados». O sentido da decisão mantém-se.
+
+**Correções de texto e nota.**
+- 1 Timóteo 5:18: ponto final dentro das aspas («…do seu salário.»). Pontuação apenas, sem palavras alteradas. Motivo registado no bloco de 5.
+- Hebreus 11:11: a nota passa a registar que P46, na colação, traz «στεῖρα» depois de «αὐτὴ Σάρρα» como acréscimo marcado (além de NA28, já registado).
+- Gerados de novo os MD de todos os 30 livros. Rute, Ageu, Tito, Judas e outros tinham MD antigos com a revisão do ministério por registar. O gerador lê agora o estado do JSON.
+
+**Verificadores após as correções:** `verificar_estilo.py`, limpo; `verificar_convencoes_notas.py`, 0 falhas; `verificar_notas_colacao.py`, conferem em todos os livros com colação; `verificar_dados.py`, íntegro, 157 capítulos e 3 533 versículos; `unittest`, 188 testes OK.
+
+**Varredura léxica heurística (não é prova, só lista para revisão).** Compara os quatro primeiros caracteres sem acentos de cada palavra grega citada nas notas com o SBLGNT. Dá 83 sinalizações; a maior parte são formas de lema, referências cruzadas e variantes. Verificadas à mão: 2 Tessalonicenses 1:2 (a saudação está correta); Filipenses 2:7 (ver abaixo); 1 Pedro 4:16 (correta). Não foi feita revisão manual das 83 entradas.
+
+**Problema de dados na colação de Filipenses.** Em `docs/colacao/Filipenses.json`, o trecho «καὶ σχήματι εὑρεθεὶς ὡς ἄνθρωπος» está no versículo 8, e não no 7 (como no texto traduzido e na versificação padrão). A tradução de 2:7–8 está correta; a colação precisa de ser realinhada com o SBLGNT. Não corrigido: o SBLGNT não está no espaço de trabalho para confirmar a divisão.
+
 ## Verificações (2026-11-20)
 
 - `scripts/verificar_dados.py`: íntegro; 157 capítulos e 3 533 versículos completos.
 - `scripts/verificar_documentacao.py`: coerente; 157 capítulos, 3 533 versículos, 0 em curso.
-- `scripts/verificar_estilo.py`: limpo em 560 (Efésios) e 650 (Hebreus). Global: 1 falha dura pré-existente em 1 Timóteo (610), 5:18 («ponto fora das aspas»). Não foi tocada: alterar um livro aprovado depende de decisão do responsável.
+- `scripts/verificar_estilo.py`: limpo em todo o repositório. A falha de 1 Timóteo 5:18 («ponto fora das aspas») foi corrigida nesta sessão, com motivo registado no bloco (ver «Correções desta sessão»).
 - `scripts/verificar_convencoes_notas.py`: 0 falhas, 0 avisos.
 - `scripts/verificar_notas_colacao.py`: conferem em Efésios (560) e Hebreus (650).
 - `python3 -m unittest discover -s tests`: 188 testes, OK, 5 saltados (sem `pyspellchecker` e `python-docx` no Python do sistema). Com `/tmp/spellenv/bin/python`, 188 testes, OK, 1 saltado.

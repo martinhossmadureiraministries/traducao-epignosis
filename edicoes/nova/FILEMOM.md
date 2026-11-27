@@ -90,7 +90,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (640). Capít
 
 **1:6**
 
-- *κοινωνία τῆς πίστεως* (partilha da fé) é a palavra-chave: a fé de Filemom é partilhada com os outros e deve tornar-se *ἐνεργής*, eficaz. O conhecimento *ἐπίγνωσις* de todo o bem «em nós» (ou «em vós», segundo a leitura) é o resultado dessa partilha.
+- *κοινωνία τῆς πίστεως* (partilha da fé) é a palavra-chave: a fé de Filemom é partilhada com os outros e deve tornar-se *ἐνεργής*, eficaz. O conhecimento *ἐπίγνωσις* de todo o bem «em nós» (ou «em vocês», segundo a leitura) é o resultado dessa partilha.
 - **Crítica Textual.** Aparato de edições SBLGNT, 1:6: a base lê «*τοῦ*» antes de «*ἐν ἡμῖν*», com WH, NA28 e RP; Treg omite. Na mesma frase, a base lê «*εἰς Χριστόν*», com WH, Treg e NA28; RP acrescenta «*Ἰησοῦν*».
 
 **1:7**
@@ -182,4 +182,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (640). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/Filemom.json` (livro inteiro, gerada por `scripts/colar.py --livro 640`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/Filemom.json` (livro inteiro, gerada por `scripts/colar.py --livro 640`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

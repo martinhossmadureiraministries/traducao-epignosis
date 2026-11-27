@@ -314,7 +314,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 **1:21**
 
 - *ἀπηλλοτριωμένους* (*apēllotriōmenous*), afastados, alheados; *τῇ διανοίᾳ* (*tē dianoia*), no pensamento. No fim de 1:21 a frase fica «mas agora foram reconciliados»; em WH, Treg, NA28 e RP, 1:22 começa com «*νυνὶ δὲ ἀποκατήλλαξεν*».
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:21: a base lê «*ἀποκατηλλάγητε*» (vocês «foram reconciliados»), com Holmes, no fim de 1:21. WH, Treg, NA28 e RP leem «*ἀποκατήλλαξεν*» (ele «vos reconciliou»), e colocam a frase no início de 1:22. 01, 02, 04, KJTR, RP, ST e WH leem essa forma em 1:22; 03, P46 e SR leem «*ἀποκατηλλάγητε*» em 1:22. A tradução segue a base; a divisão de versículos segue a da base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:21: a base lê «*ἀποκατηλλάγητε*» (vocês «foram reconciliados»), com Holmes, no fim de 1:21. WH, Treg, NA28 e RP leem «*ἀποκατήλλαξεν*» (ele «reconciliou vocês»), e colocam a frase no início de 1:22. 01, 02, 04, KJTR, RP, ST e WH leem essa forma em 1:22; 03, P46 e SR leem «*ἀποκατηλλάγητε*» em 1:22. A tradução segue a base; a divisão de versículos segue a da base.
 
 **1:22**
 
@@ -426,7 +426,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (580). Capít
 
 **3:4**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 3:4: a base lê «*ὑμῶν*» (a vossa vida), com Treg e NA28; WH e RP leem «*ἡμῶν*» (a nossa vida). A tradução segue WH e RP, por decisão do responsável.
+- **Crítica Textual.** Aparato de edições SBLGNT, 3:4: a base lê «*ὑμῶν*» (a vida de vocês), com Treg e NA28; WH e RP leem «*ἡμῶν*» (a nossa vida). A tradução segue WH e RP, por decisão do responsável.
 
 **3:5**
 

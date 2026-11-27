@@ -594,7 +594,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (540). Capít
 
 **1:11**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 1:11: a base lê «*ἡμῶν*» (nosso) com WH, Treg e NA28; RP lê «*ὑμῶν*» (vosso) no lugar desse pronome. A base segue WH, Treg e NA28, e a leitura mantém a oração como ajuda da comunidade ao apóstolo.
+- **Crítica Textual.** Aparato de edições SBLGNT, 1:11: a base lê «*ἡμῶν*» (nosso) com WH, Treg e NA28; RP lê «*ὑμῶν*» (de vocês) no lugar desse pronome. A base segue WH, Treg e NA28, e a leitura mantém a oração como ajuda da comunidade ao apóstolo.
 
 **1:12**
 
@@ -885,7 +885,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (540). Capít
 
 **7:13**
 
-- **Crítica Textual.** Aparato de edições SBLGNT, 7:13: a base lê «*ἡμῶν*» (nossa) com WH, Treg e NA28; RP lê «*ὑμῶν*» (vossa). A base segue WH, Treg e NA28.
+- **Crítica Textual.** Aparato de edições SBLGNT, 7:13: a base lê «*ἡμῶν*» (nossa) com WH, Treg e NA28; RP lê «*ὑμῶν*» (de vocês). A base segue WH, Treg e NA28.
 
 **7:14**
 

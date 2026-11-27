@@ -95,6 +95,18 @@ _RE_EIS = re.compile(r'(?<![a-zà-ÿ])[a-z]+eis(?![a-zà-ÿ])')
 # a pontuação de Almeida que a produção nova usou em João 4.
 _RE_PONTO_FORA = re.compile(r'»(?=[.?!])')
 
+# Formas de «vós» que o padrão «-eis» não apanha (estágio BEE de 2026-11-20):
+# imperativos («crede», «sabei»), subjuntivos em «-ais» («creiais», «saibais»,
+# «reconheçais») e futuros do subjuntivo em «-des» («pedirdes»). Lista fechada
+# para não tocar em palavras como «mais», «jamais», «animais» ou «sinais».
+_FORMAS_VOS_2PL = frozenset({
+    'crede', 'sabei', 'amai', 'guardai', 'fazei', 'vede', 'olhai', 'orai', 'vinde',
+    'tomai', 'recebei', 'andai', 'levai', 'ide', 'dai', 'pregai', 'anunciai', 'ponde',
+    'creiais', 'saibais', 'reconheçais', 'conheçais', 'façais', 'vejais', 'ouçais',
+    'deis', 'vades', 'andeis', 'pedirdes', 'ouvirdes', 'perguntardes', 'falardes',
+    'vierdes', 'fizerdes', 'derdes', 'estiverdes',
+})
+
 # Formato único das notas (decisão do responsável, 2026-11-23): quando há nota, um parágrafo de
 # comentário em prosa, sem rótulos de secção e sem níveis de
 # certeza (A, B, C). A Crítica Textual vai num parágrafo próprio, «Crítica
@@ -123,6 +135,8 @@ def analisar_texto(texto: str) -> dict[str, list[str]]:
             duros.append(rotulo)
     if any(tok not in _EXCECOES_EIS for tok in _RE_EIS.findall(orig_baixo)):
         duros.append('forma verbal de «vós» (-eis)')
+    if any(tok in _FORMAS_VOS_2PL for tok in re.findall(r'[a-zà-ÿ]+', orig_baixo)):
+        duros.append('forma de «vós» (imperativo ou subjuntivo)')
     if _RE_PONTO_FORA.search(texto):
         duros.append('ponto fora das aspas')
     avisos = [rotulo for norma, rotulo in _MARCADORES_ALMEIDA_NORM if norma in baixo]
