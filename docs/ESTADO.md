@@ -104,7 +104,7 @@ Nota: na CT de 1 Pedro 3:16 a decisão do responsável («segue a base, «sois d
 
 ## Módulos MyBible (2026-11-27, ramo `arena/70dc3bda`)
 
-- Pasta `mybible/`: `BEE.SQLite3` (Bíblia) e `BEE.commentaries.SQLite3` (comentários). Estado: **RASCUNHO PARCIAL**, 30 livros, 157 de 1189 capítulos, 3533 versículos, 2822 notas. Integridade verificada. Não são edição final.
+- Pasta `exportacao/` (fora do Git; ver README): `BEE.SQLite3` (Bíblia) e `BEE.commentaries.SQLite3` (comentários). Estado: **RASCUNHO PARCIAL**, 30 livros, 157 de 1189 capítulos, 3533 versículos, 2822 notas. Integridade verificada. Não são edição final.
 - As permissões dos módulos passaram a `0644` (antes saíam `0600` e outros utilizadores não os conseguiam abrir).
 - Medição das marcas de estilo ARC: `scripts/auditar_marcas_arc.py` → `docs/revisao/MARCAS_ARC.md`. Maiores concentrações: «Em verdade, em verdade» (25, só em João), abertura com «E» (252) e «Pois» (246), cadeias de quatro «e» (19).
 - João 1:1–2: «com Deus» → «junto de Deus» (πρὸς τὸν θεόν); motivo registado no bloco de João 1.
