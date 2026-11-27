@@ -54,7 +54,7 @@
       {
         "verse": 11,
         "text": "também vocês, ajudando-nos com a oração, para que, por meio de muitos, o dom que nos foi concedido seja agradecido por muitos em nosso favor.",
-        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:11: a base lê «<i>ἡμῶν</i>» (nosso) com WH, Treg e NA28; RP lê «<i>ὑμῶν</i>» (vosso) no lugar desse pronome. A base segue WH, Treg e NA28, e a leitura mantém a oração como ajuda da comunidade ao apóstolo.</p>"
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:11: a base lê «<i>ἡμῶν</i>» (nosso) com WH, Treg e NA28; RP lê «<i>ὑμῶν</i>» (de vocês) no lugar desse pronome. A base segue WH, Treg e NA28, e a leitura mantém a oração como ajuda da comunidade ao apóstolo.</p>"
       },
       {
         "verse": 12,
@@ -604,7 +604,7 @@
       {
         "verse": 13,
         "text": "Por isso fomos consolados. E, além da nossa consolação, alegrámo-nos ainda mais com a alegria de Tito, porque o seu espírito foi refrescado por todos vocês.",
-        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 7:13: a base lê «<i>ἡμῶν</i>» (nossa) com WH, Treg e NA28; RP lê «<i>ὑμῶν</i>» (vossa). A base segue WH, Treg e NA28.</p>"
+        "commentary": "<p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 7:13: a base lê «<i>ἡμῶν</i>» (nossa) com WH, Treg e NA28; RP lê «<i>ὑμῶν</i>» (de vocês). A base segue WH, Treg e NA28.</p>"
       },
       {
         "verse": 14,
@@ -1356,7 +1356,7 @@
         "verse_from": 1,
         "verse_to": 24,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/2_Coríntios.json. Decisões do responsável: 1:12 base («santidade»); 1:15 base («graça»); 1:18 base («é»); 1:20 base («por ele»). As demais escolhas de forma e de artigo são do agente, registadas nas CT. Aprovado pelo responsável (2026-11-27), com as decisões registadas."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/2_Coríntios.json. Decisões do responsável: 1:12 base («santidade»); 1:15 base («graça»); 1:18 base («é»); 1:20 base («por ele»). As demais escolhas de forma e de artigo são do agente, registadas nas CT. Aprovado pelo responsável (2026-11-27), com as decisões registadas. Correção de forma registada conforme docs/RESUMO_ESTILO.md §8: «vós» e as formas verbais de 2.ª pessoa do plural passam a «vocês» no texto e nas glosas das notas (estágio BEE, pedido do utilizador nesta sessão). Sentido e base grega inalterados. A aprovação editorial e a do ministério referem-se à forma anterior; confirmação do responsável pendente."
       },
       {
         "chapter": 2,
@@ -1398,7 +1398,7 @@
         "verse_from": 1,
         "verse_to": 16,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/2_Coríntios.json. Decisão do agente: 7:12 base (οὐδὲ) e forma de «ἕνεκεν». As demais escolhas de forma e de artigo são do agente, registadas nas CT. Aprovado pelo responsável (2026-11-27), com as decisões registadas."
+        "nota": "Redigido pelo agente a partir do SBLGNT e da colação docs/colacao/2_Coríntios.json. Decisão do agente: 7:12 base (οὐδὲ) e forma de «ἕνεκεν». As demais escolhas de forma e de artigo são do agente, registadas nas CT. Aprovado pelo responsável (2026-11-27), com as decisões registadas. Correção de forma registada conforme docs/RESUMO_ESTILO.md §8: «vós» e as formas verbais de 2.ª pessoa do plural passam a «vocês» no texto e nas glosas das notas (estágio BEE, pedido do utilizador nesta sessão). Sentido e base grega inalterados. A aprovação editorial e a do ministério referem-se à forma anterior; confirmação do responsável pendente."
       },
       {
         "chapter": 8,

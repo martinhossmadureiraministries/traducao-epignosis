@@ -237,7 +237,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (600). Capít
 **2:14**
 
 - *εἰς ὃ*, «para o que», retoma a salvação do versículo 13. *καλέω* é chamar com eficácia, no uso paulino. *περιποίησις* é aquisição, posse obtida: «para aquisição de glória», isto é, para alcançarem a glória. *δόξα* aqui é a glória de Cristo, participada pelos chamados. A cadeia dos versículos 13-14 é escolha, chamamento, glória, com o evangelho como instrumento e a glória como destino. O versículo 14 não acrescenta condição à escolha do versículo 13: descreve como ela chegou aos destinatários, «por meio do nosso evangelho».
-- **Crítica Textual.** Aparato SBLGNT, 2:14: a base lê «*εἰς ὃ*», com WH, Treg e RP; NA28 acrescenta «*καὶ*» antes de «*ἐκάλεσεν*». Na colação, o Vaticanus (03) e o Alexandrinus (02) leem «*ἡμᾶς*» («nos chamou») em vez de «*ὑμᾶς*» («vos chamou»). Decisão: seguir a base, «*ὑμᾶς*», apoiada pelo sentido; a leitura de primeira pessoa é antiga e fica registada aqui.
+- **Crítica Textual.** Aparato SBLGNT, 2:14: a base lê «*εἰς ὃ*», com WH, Treg e RP; NA28 acrescenta «*καὶ*» antes de «*ἐκάλεσεν*». Na colação, o Vaticanus (03) e o Alexandrinus (02) leem «*ἡμᾶς*» («nos chamou») em vez de «*ὑμᾶς*» («chamou vocês»). Decisão: seguir a base, «*ὑμᾶς*», apoiada pelo sentido; a leitura de primeira pessoa é antiga e fica registada aqui.
 
 **2:15**
 
@@ -271,7 +271,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (600). Capít
 **3:4**
 
 - *πεποίθαμεν* é perfeito com valor de presente: estar persuadido, confiar. *ἐν κυρίῳ* localiza a confiança: no Senhor, não nos destinatários. *παραγγέλλω* é transmitir ordem com autoridade, verbo-chave do capítulo, nos versículos 4, 6, 10 e 12. A confiança tem objeto preciso: a obediência às ordens que se seguem. Os dois verbos, presente e futuro, dizem que a obediência já existe e continuará. É preparação para o contraste do versículo 6, onde a ordem se dirige aos que não obedecem: a maioria obedece, alguns não.
-- **Crítica Textual.** Aparato SBLGNT, 3:4: a base lê «*παραγγέλλομεν*», com WH, Treg e NA28; RP acrescenta «*ὑμῖν*». Na colação, o Vaticanus (03) acrescenta um verbo, «*ἐποιήσατε*» («fizestes»), na forma «*ἃ παραγγέλλομεν καὶ ἐποιήσατε καὶ ποιεῖτε καὶ ποιήσετε*». Decisão: seguir a base; a expansão de 03 fica registada.
+- **Crítica Textual.** Aparato SBLGNT, 3:4: a base lê «*παραγγέλλομεν*», com WH, Treg e NA28; RP acrescenta «*ὑμῖν*». Na colação, o Vaticanus (03) acrescenta um verbo, «*ἐποιήσατε*» («fizeram»), na forma «*ἃ παραγγέλλομεν καὶ ἐποιήσατε καὶ ποιεῖτε καὶ ποιήσετε*». Decisão: seguir a base; a expansão de 03 fica registada.
 
 **3:5**
 
@@ -338,4 +338,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (600). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Tessalonicenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 600`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md) (revisão `d7f35adc`), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/2_Tessalonicenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 600`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

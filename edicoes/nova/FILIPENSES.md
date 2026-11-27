@@ -477,7 +477,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (570). Capít
 **2:26**
 
 - *ἀδημονῶν*, «angustiado», é o verbo de Getsémani em Marcos 14:33. A angústia não vem da doença, vem de saber que eles sofreram por ele ao receber a notícia.
-- **Crítica Textual.** Aparato de edições SBLGNT, 2:26: 26 *ὑμᾶς* Treg NA28 RP ] + *ἰδεῖν* WH. A base tem *ὑμᾶς* com Tregelles, NA28 e RP; WH acrescenta *ἰδεῖν*, «ver-vos». A tradução segue a base.
+- **Crítica Textual.** Aparato de edições SBLGNT, 2:26: 26 *ὑμᾶς* Treg NA28 RP ] + *ἰδεῖν* WH. A base tem *ὑμᾶς* com Tregelles, NA28 e RP; WH acrescenta *ἰδεῖν*, «ver vocês». A tradução segue a base.
 
 **2:27**
 
@@ -692,4 +692,4 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (570). Capít
 
 ---
 
-Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/Filipenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 570`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério pendente.
+Base grega: [SBLGNT](../../docs/SBLGNT.md), CC BY 4.0. Textus Receptus de Scrivener só como comparação, quando a colação o regista. Colação: `docs/colacao/Filipenses.json` (livro inteiro, gerada por `scripts/colar.py --livro 570`). Tradução e notas: revisão editorial pelo responsável; revisão especializada pendente; revisão aprovada pelo ministério.

@@ -28,6 +28,17 @@ class AnalisarTextoTest(unittest.TestCase):
         limpo = ve.analisar_texto('Isto é bom para todos.')
         self.assertNotIn('isto é,', limpo['duros'], 'sem vírgula não é glosa')
 
+    def test_formas_de_vos_de_imperativo_e_subjuntivo_sao_falha_dura(self):
+        # Estágio BEE de 2026-11-20: o padrão «-eis» não cobria estas formas.
+        for frase in ('não me creiais.', 'crede nas obras', 'para que saibais e reconheçais',
+                      'E tudo o que pedirdes em meu nome', 'Sabei isto, meus irmãos'):
+            res = ve.analisar_texto(frase)
+            self.assertTrue(res['duros'], frase)
+
+    def test_formas_de_vos_nao_apanham_palavras_parecidas(self):
+        for frase in ('mais de cinco sinais e animais', 'as talhas eram seis', 'o rei e as leis'):
+            self.assertEqual(ve.analisar_texto(frase)['duros'], [], frase)
+
     def test_marcador_almeida_e_apenas_aviso(self):
         res = ve.analisar_texto('a fé cresce sobremaneira')
         self.assertEqual(res['duros'], [])

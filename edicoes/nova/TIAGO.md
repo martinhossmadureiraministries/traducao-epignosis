@@ -52,7 +52,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (660). Capít
 
 **18** Ele, por sua própria vontade, nos gerou pela palavra da verdade, para que fôssemos como primícias das suas criaturas.
 
-**19** Sabei isto, meus amados irmãos: que cada um seja pronto para ouvir, tardio para falar, tardio para se irar,
+**19** Saibam isto, meus amados irmãos: que cada um seja pronto para ouvir, tardio para falar, tardio para se irar,
 
 **20** pois a ira do homem não produz a justiça de Deus.
 

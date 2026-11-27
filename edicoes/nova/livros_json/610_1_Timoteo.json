@@ -419,7 +419,7 @@
       },
       {
         "verse": 18,
-        "text": "Pois a Escritura diz: «Não amordaçarás o boi que debulha»; e: «O trabalhador é digno do seu salário».",
+        "text": "Pois a Escritura diz: «Não amordaçarás o boi que debulha»; e: «O trabalhador é digno do seu salário.»",
         "commentary": "<p>A primeira citação corresponde a Deuteronômio 25:4; a segunda corresponde a Lucas 10:7, e ambas são introduzidas como Escritura.</p>"
       },
       {
@@ -691,7 +691,7 @@
         "verse_from": 1,
         "verse_to": 25,
         "status": "aprovado editorialmente",
-        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações."
+        "nota": "Redigido pelo agente, a partir do SBLGNT e da colação docs/colacao/1_Timóteo.json. Decisões do responsável (2026-11-27): 1:1 RP no segundo «Senhor» («do Senhor Jesus Cristo»), base na primeira ocorrência (confirmado); 1:4 base («investigações»); 1:12 base; 1:17 base; 2:3 RP («pois isto é bom»); 2:7 base; 2:9 RP («ou»); 3:3 base; 3:14 base («em breve»); 3:16 base («Aquele que foi manifestado»); 4:10 base («somos censurados»); 4:12 RP («no espírito»); 5:16 base; 5:20 base; 5:21 base («Cristo Jesus»); 6:5 base; 6:7 base; 6:11 base («paciência»); 6:17 base («em Deus»); 6:19 base («verdadeira vida»); 6:21 RP («contigo. Amém»). Decisões de forma do agente, registadas nas CT: 1:2, 1:13, 1:16, 1:18, 2:8, 2:12, 2:14, 3:7, 4:6, 4:15, 5:5, 5:8, 5:23, 5:25, 6:11 (artigo), 6:13. Conjunção «καὶ» antes de «γυναῖκας» (2:9) mantida como em Treg, NA28 e RP, com WH sem ela; confirmado pelo responsável. Aprovado pelo responsável (2026-11-27), com 1:1 RP e 2:9 com «καὶ» (base, Treg, NA28 e RP), conforme as suas confirmações. Correção de pontuação registada conforme docs/RESUMO_ESTILO.md §8 e §4: em 5:18, o ponto passa para dentro das aspas («…do seu salário.»); sem alteração de palavras. Confirmação do responsável pendente."
       },
       {
         "chapter": 6,

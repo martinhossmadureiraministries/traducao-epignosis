@@ -193,7 +193,7 @@ Leitura em Markdown gerada a partir de `edicoes/nova/livros_json/` (610). Capít
 
 **17** Os presbíteros que presidem bem sejam considerados dignos de dupla honra, principalmente os que se dedicam à palavra e ao ensino.
 
-**18** Pois a Escritura diz: «Não amordaçarás o boi que debulha»; e: «O trabalhador é digno do seu salário».
+**18** Pois a Escritura diz: «Não amordaçarás o boi que debulha»; e: «O trabalhador é digno do seu salário.»
 
 **19** Não aceites acusação contra um presbítero, a não ser com duas ou três testemunhas.
 
