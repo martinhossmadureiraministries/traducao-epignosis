@@ -102,6 +102,8 @@ Nota: na CT de 1 Pedro 3:16 a decisão do responsável («segue a base, «sois d
 
 **Problema de dados na colação de Filipenses.** Em `docs/colacao/Filipenses.json`, o trecho «καὶ σχήματι εὑρεθεὶς ὡς ἄνθρωπος» está no versículo 8, e não no 7 (como no texto traduzido e na versificação padrão). A tradução de 2:7–8 está correta; a colação precisa de ser realinhada com o SBLGNT. Não corrigido: o SBLGNT não está no espaço de trabalho para confirmar a divisão.
 
+**Plano em curso:** `docs/PLANO_NT.md` (fases 1 a 4 para completar o Novo Testamento, bloco a bloco).
+
 ## Verificações (2026-11-20)
 
 - `scripts/verificar_dados.py`: íntegro; 157 capítulos e 3 533 versículos completos.
