@@ -6,7 +6,7 @@ Este plano segue `docs/RESUMO_ESTILO.md` (§8 correções de texto aprovado, §9
 
 ## Estado de partida
 
-- 30 livros em `edicoes/nova/livros_json/`: 157 capítulos e 3 533 versículos.
+- 30 livros em `edicoes/nova/livros_json/`: 157 capítulos e 3 533 versículos. Apocalipse (730) em curso desde 2026-11-27: capítulo 1 em rascunho.
 - Novo Testamento em falta (7 livros): **Mateus, Marcos, Lucas, Atos, Romanos, 1 Coríntios e Apocalipse.**
 - Marcos 16:9–20 ainda não produzido (`docs/ESTADO.md`, pendência 7).
 

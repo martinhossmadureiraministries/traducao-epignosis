@@ -1,0 +1,188 @@
+{
+ "format_version": 1,
+ "book_number": 730,
+ "book_name": "Apocalipse",
+ "chapter_count": 22,
+ "chapters": {
+  "1": [
+   {
+    "verse": 1,
+    "text": "Revelação de Jesus Cristo, que Deus lhe deu para mostrar aos seus servos o que deve acontecer em breve; ele a deu a conhecer por sinais, enviando-a pelo seu anjo ao seu servo João.",
+    "commentary": "<p>A palavra <i>ἀποκάλυψις</i> (<i>apokalypsis</i>, «revelação», literalmente «desvelamento») dá o nome ao livro. O genitivo «de Jesus Cristo» pode ser revelação que Jesus recebe e transmite ou revelação acerca dele. A frase seguinte, que diz que Deus a deu a Jesus, favorece a primeira leitura, sem excluir a segunda. A expressão <i>ἐν τάχει</i> (<i>en tachei</i>) pode querer dizer «em breve», no sentido de tempo, ou «com rapidez», no sentido de prontidão; a tradução escolhe «em breve», sem fechar a questão. O verbo <i>σημαίνω</i> (<i>sēmainō</i>), «dar a conhecer por sinais», vem da mesma raiz de «sinal» e prepara a linguagem simbólica do livro. <i>Δοῦλος</i> (<i>doulos</i>) é traduzido por «servo», a mesma palavra que o livro usa para os crentes em 1:1 e em 22:6.</p><p><b>Crítica Textual:</b> A base lê «<i>δούλοις</i>» («servos»), com KJTR, RP, ST, Scrivener e WH. Na transcrição do CNTR, o Sinaiticus (01) lê «<i>ἁγίοις</i>» («santos»), leitura isolada e sem apoio das outras testemunhas colacionadas. A tradução segue a base. O aparato SBLGNT não regista variante neste versículo.</p>"
+   },
+   {
+    "verse": 2,
+    "text": "Ele deu testemunho da palavra de Deus e do testemunho de Jesus Cristo, tudo o que viu.",
+    "commentary": "<p>O verbo <i>μαρτυρέω</i> (<i>martyreō</i>, «dar testemunho») e o substantivo <i>μαρτυρία</i> (<i>martyria</i>, «testemunho») pertencem à mesma família, e a tradução mantém essa família em «testemunho». O genitivo «de Jesus Cristo» (<i>τὴν μαρτυρίαν Ἰησοῦ Χριστοῦ</i>) pode ser o testemunho que Jesus dá ou o testemunho dado acerca dele. O versículo não escolhe, e o livro mantém as duas ideias juntas (cf. 1:5 e 1:9). O verbo «viu» (<i>εἶδεν</i>) marca a visão como a fonte do testemunho.</p>"
+   },
+   {
+    "verse": 3,
+    "text": "Feliz quem lê em voz alta as palavras desta profecia, e felizes os que as ouvem e guardam o que nela está escrito, porque o tempo está perto.",
+    "commentary": "<p><i>Μακάριος</i> (<i>makarios</i>) é o adjetivo das bem-aventuranças. A tradução escolhe «feliz», mais próximo do ouvido atual, e mantém a ideia de uma felicidade que vem de Deus. <i>Ἀναγινώσκων</i> (<i>anaginōskōn</i>) é o leitor que lê em voz alta, num contexto de leitura pública, e <i>οἱ ἀκούοντες</i> (<i>hoi akouontes</i>) são os que ouvem. O versículo alterna o singular do leitor com o plural da assembleia, e a tradução mantém essa alternância. <i>Τηροῦντες</i> (<i>tērountes</i>), «guardam», pede obediência, e não apenas a conservação na memória. <i>Καιρός</i> (<i>kairos</i>) é o tempo oportuno, não o tempo cronológico (<i>chronos</i>), e «perto» (<i>ἐγγύς</i>) diz proximidade sem data.</p>"
+   },
+   {
+    "verse": 4,
+    "text": "João, às sete igrejas que estão na Ásia: graça e paz a vocês, da parte daquele que é, que era e que vem, e da parte dos sete espíritos que estão diante do seu trono,",
+    "commentary": "<p>João escreve às <i>ἑπτὰ ἐκκλησίαις</i> (<i>hepta ekklēsiais</i>), às sete igrejas da província romana da Ásia, que o texto nomeia em 1:11. A saudação segue o modelo epistolar «graça e paz». O particípio <i>ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος</i> (quem é, quem era e quem vem) aparece na forma nominativa, depois de <i>ἀπό</i>, o que quebra a sintaxe normal da preposição. A tradução mantém «daquele que é», que se lê sem tropeço, e não corrige a construção do grego. Os «sete espíritos» diante do trono são referidos sem explicação nesta passagem.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:4: a base lê «<i>ἀπὸ</i>», com WH, Treg e NA28; RP lê «<i>ἀπὸ θεοῦ</i>» («da parte de Deus»). A diferença é de acréscimo. A tradução segue a base, que já nomeia Deus no particípio.</p>"
+   },
+   {
+    "verse": 5,
+    "text": "e da parte de Jesus Cristo, a testemunha fiel, o primogénito dos mortos e o soberano dos reis da terra; àquele que nos ama e nos libertou dos nossos pecados pelo seu sangue,",
+    "commentary": "<p><i>Μάρτυς</i> (<i>martys</i>) é «testemunha», com o sentido de quem comparece para dar prova. O adjetivo <i>πιστός</i> (<i>pistos</i>) qualifica-a como fiel, e o título repete a «testemunha» de 1:2. O título <i>πρωτότοκος τῶν νεκρῶν</i> (<i>prōtotokos tōn nekrōn</i>) é «primogénito dos mortos», a mesma forma que a BEE usa em Colossenses. <i>Ἄρχων</i> (<i>archōn</i>) é «soberano», para evitar a ideia de um príncipe menor. O particípio <i>ἀγαπῶντι</i> (<i>agapōnti</i>) está no presente e descreve um amor contínuo, não um ato único. A preposição de <i>ἐν τῷ αἵματι</i> (<i>en tō haimati</i>) indica o meio: fomos libertados pelo sangue.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:5: a base lê «<i>λύσαντι</i>» («libertou») e «<i>ἐκ</i>» («dos»), com WH, Treg e NA28; RP lê «<i>λούσαντι</i>» («lavou») e «<i>ἀπὸ</i>» («dos»). Na colação, KJTR, ST e Scrivener seguem RP nestas duas leituras e leem ainda «<i>ἀγαπήσαντι</i>» («amou», no aoristo) em vez de «<i>ἀγαπῶντι</i>». A troca de uma só letra entre «<i>λύσαντι</i>» e «<i>λούσαντι</i>» é das causas típicas de erro de cópia, e o sentido de libertação da base é o que o versículo pede, com o sangue como meio.</p>"
+   },
+   {
+    "verse": 6,
+    "text": "e fez de nós um reino, sacerdotes para o seu Deus e Pai. A ele pertencem a glória e o poder para todo o sempre. Amém.",
+    "commentary": "<p>A imagem vem da promessa a Israel de ser «reino de sacerdotes» (Êxodo 19:6), que o livro aplica aos crentes. <i>Βασιλεία</i> (<i>basileia</i>) é «reino», um reino em que os crentes são parte, e não «reis». <i>Ἱερεῖς τῷ θεῷ καὶ πατρὶ αὐτοῦ</i> (sacerdotes para o seu Deus e Pai) descreve o serviço, não um título. A doxologia <i>εἰς τοὺς αἰῶνας τῶν αἰώνων</i> (<i>eis tous aiōnas tōn aiōnōn</i>), literalmente «pelos séculos dos séculos», traduz-se por «para todo o sempre», que conserva a força da repetição.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:6: a base lê «<i>τῶν αἰώνων</i>» («dos séculos»), com Treg, NA28 e RP; WH omite a expressão. A tradução inclui-a, com a base. Na colação, KJTR, ST e Scrivener leem «<i>βασιλεῖς καὶ ἱερεῖς</i>» («reis e sacerdotes») em vez de «<i>βασιλείαν ἱερεῖς</i>» («um reino de sacerdotes»). A forma com «reis» é a da KJV (<i>kings and priests</i>) e coincide com 5:10, onde a harmonização a passagens paralelas é uma das direções habituais do erro de cópia. A base mantém «reino», que é a leitura mais difícil.</p>"
+   },
+   {
+    "verse": 7,
+    "text": "Eis que vem com as nuvens, e todo olho o verá, até os que o trespassaram; e todas as tribos da terra baterão no peito por causa dele. Sim, amém.",
+    "commentary": "<p>A frase anuncia a vinda com as nuvens (cf. Daniel 7:13) e o luto das tribos, que ecoa Zacarias 12:10–14. O verbo <i>ἐξεκέντησαν</i> (<i>exekentēsan</i>), «trespassaram», é o de João 19:37, e a alusão liga a vinda à morte de Jesus. <i>Κόψονται</i> (<i>kopsontai</i>) é o gesto de luto, «bater no peito», que a tradução conserva. «Sim, amém» traduz <i>ναί, ἀμήν</i>, a dupla confirmação final.</p><p><b>Crítica Textual:</b> A base lê «<i>μετὰ τῶν νεφελῶν</i>» («com as nuvens»). Na colação, 04 lê «<i>ἐπὶ</i>» («sobre»). A diferença é de preposição e não altera a vinda; a tradução segue a base.</p>"
+   },
+   {
+    "verse": 8,
+    "text": "Eu sou o Alfa e o Ómega, diz o Senhor Deus, aquele que é, que era e que vem, o Todo-Poderoso.",
+    "commentary": "<p><i>Ἄλφα</i> e <i>Ὦ</i> são a primeira e a última letras do alfabeto grego; a tradução mantém as letras, como o original. A fórmula <i>λέγει κύριος, ὁ θεός</i> («diz o Senhor, Deus») atribui a palavra ao próprio Deus. <i>Παντοκράτωρ</i> (<i>pantokratōr</i>) é o título de soberania que a LXX usa com frequência, e «Todo-Poderoso» o traduz. A fórmula «aquele que é, que era e que vem» repete 1:4.</p><p><b>Crítica Textual:</b> Sem entrada no aparato SBLGNT neste versículo. Na colação, KJTR, ST e Scrivener acrescentam «<i>ἡ ἀρχὴ καὶ τὸ τέλος</i>» («o princípio e o fim») e omitem «<i>ὁ θεός</i>» («Deus»). A forma acrescentada reproduz 22:13, onde o livro diz «eu sou o Alfa e o Ómega, o princípio e o fim», e a harmonização a passagens paralelas é uma das direções habituais do erro de cópia. A base segue o texto sem o acréscimo.</p>"
+   },
+   {
+    "verse": 9,
+    "text": "Eu, João, irmão de vocês e companheiro na tribulação, no reino e na perseverança em Jesus, estava na ilha chamada Patmos por causa da palavra de Deus e do testemunho de Jesus.",
+    "commentary": "<p><i>Συγκοινωνός</i> (<i>sykoinōnos</i>) é o que partilha, o companheiro. A tribulação, o reino e a perseverança (<i>ὑπομονή</i>, <i>hypomonē</i>, a firmeza que resiste) são apresentados como um só movimento: sofre-se, reina-se e persevera-se em Jesus. A tradução mantém «em Jesus» da base. A tradição leu aqui um exílio em Patmos, mas o texto diz apenas que João estava na ilha por causa da palavra de Deus. Por isso «estava» traduz <i>ἐγενόμην</i>, sem decidir se o afastamento foi forçado.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:9: a base lê «<i>συγκοινωνὸς</i>» («companheiro»), com WH, Treg e NA28; RP lê «<i>κοινωνὸς</i>» («participante»), sem o prefixo. A base lê «<i>ἐν Ἰησοῦ</i>» («em Jesus»), com WH, Treg e NA28; RP lê «<i>ἐν Χριστῷ Ἰησοῦ</i>». RP acrescenta «<i>διά</i>» antes de «<i>τὴν μαρτυρίαν</i>» («pelo testemunho») e lê «<i>Ἰησοῦ Χριστοῦ</i>» no fim. Na colação, KJTR, ST e Scrivener acrescentam «<i>καί</i>», artigos e «<i>Χριστοῦ</i>» em mais de um lugar. As diferenças são de expansão, e a base é a leitura mais breve; a tradução segue-a.</p>"
+   },
+   {
+    "verse": 10,
+    "text": "Eu estava no Espírito no dia do Senhor, e ouvi atrás de mim uma voz forte, como de trombeta,",
+    "commentary": "<p><i>Ἐγενόμην ἐν πνεύματι</i> (<i>egenomēn en pneumati</i>) é a fórmula de visão, e a tradução escreve «no Espírito», com maiúscula, porque o contexto fala da ação do Espírito que leva João à visão. <i>Ἡ κυριακὴ ἡμέρα</i> (<i>hē kyriakē hēmera</i>) é «dia do Senhor». O adjetivo <i>κυριακός</i> aparece no NT só aqui e em 1 Coríntios 11:20, na expressão «ceia do Senhor». A nota não decide se a expressão designa o domingo; a tradução mantém o adjetivo. <i>Ὀπίσω μου</i> («atrás de mim») indica a direção da voz.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:10: a base lê «<i>ὀπίσω μου φωνὴν</i>» («atrás de mim, uma voz»), com WH, Treg e NA28; RP lê «<i>φωνὴν ὀπίσω μου</i>» («uma voz atrás de mim»). A diferença é só de ordem das palavras, e a tradução segue a base.</p>"
+   },
+   {
+    "verse": 11,
+    "text": "que dizia: «O que vês, escreve num livro e envia às sete igrejas: a Éfeso, a Esmirna, a Pérgamo, a Tiatira, a Sardes, a Filadélfia e a Laodiceia.»",
+    "commentary": "<p>O imperativo <i>γράψον</i> (<i>grapson</i>), «escreve», é dirigido a João na segunda pessoa do singular. A tradução usa «tu» neste ponto, porque a ordem é pessoal, e mantém o «tu» em 1:17 e 1:19. A lista das cidades segue a ordem de um percurso a partir de Éfeso, em que as igrejas são nomeadas uma a uma. A tradução mantém os nomes na forma portuguesa de Portugal.</p><p><b>Crítica Textual:</b> Sem entrada no aparato SBLGNT neste versículo. Na colação, KJTR, ST e Scrivener acrescentam «<i>Ἐγώ εἰμι τὸ Ἄλφα καὶ τὸ Ὦ, ὁ πρῶτος καὶ ὁ ἔσχατος</i>» antes de «<i>Ὃ βλέπεις</i>», e acrescentam «<i>ταῖς ἐν Ἀσίᾳ</i>» («às que estão na Ásia») antes de «às sete igrejas». Os acréscimos repetem fórmulas do livro (1:8, 1:17 e 22:13), e a base segue o texto sem eles. O Sinaiticus (01) tem a lista das cidades deteriorada, com omissão de Esmirna e uma forma abreviada por resolver; essa leitura não serve de prova, e a base não depende dela. Os demais desvios de 02 e de 04 nos nomes são ortográficos.</p>"
+   },
+   {
+    "verse": 12,
+    "text": "Voltei-me para ver quem falava comigo; e, ao voltar-me, vi sete candelabros de ouro,",
+    "commentary": "<p>A construção <i>ἐπέστρεψα βλέπειν τὴν φωνήν</i> (literalmente «virei-me para ver a voz») liga a voz à pessoa que fala. A tradução diz «quem falava», porque «ver uma voz» não se entende bem em português, e a nota regista que o grego diz «a voz». <i>Λυχνίαι</i> (<i>lychniai</i>) são candelabros, e a tradução usa «candelabros» para as igrejas e as lâmpadas, como em 1:20. <i>Χρυσᾶς</i> é o adjetivo de matéria, «de ouro».</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:12: a base lê «<i>Καὶ</i>» («e»), com WH, Treg e NA28; RP acrescenta «<i>ἐκεῖ</i>» («ali») depois de «<i>Καὶ</i>». A tradução segue a base.</p>"
+   },
+   {
+    "verse": 13,
+    "text": "no meio dos candelabros, com aparência de filho de homem, vestido até aos pés e cingido à altura do peito com um cinto de ouro.",
+    "commentary": "<p>O título <i>υἱὸν ἀνθρώπου</i> (<i>huion anthrōpou</i>, «filho de homem») é a expressão de Daniel 7:13. No grego não há artigo, e a tradução mantém o indefinido, «com aparência de filho de homem». A figura não é nomeada como Jesus neste ponto; a identificação vem das palavras que ela diz nos vv. 17–18. <i>Ποδήρης</i> (<i>podērēs</i>) é a veste que chega aos pés. A expressão <i>πρὸς τοῖς μαστοῖς</i> (literalmente «junto aos peitos») indica um cinto alto, na altura do peito, e a tradução diz «à altura do peito».</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:13: a base lê «<i>ἐν μέσῳ τῶν λυχνιῶν</i>» («no meio dos candelabros»), com WH, NA28; Treg e RP acrescentam «<i>ἑπτὰ</i>» («sete»). A base lê «<i>υἱὸν</i>» («filho», acusativo), com WH e NA28; Treg e RP leem «<i>υἱῷ</i>» (dativo). Na colação, KJTR, ST e Scrivener seguem Treg e RP nestas duas diferenças. A tradução segue a base, e a escolha de caso não muda a frase portuguesa.</p>"
+   },
+   {
+    "verse": 14,
+    "text": "A cabeça e os cabelos eram brancos como lã branca, como neve; e os olhos, como chama de fogo;",
+    "commentary": "<p>A descrição ecoa a visão do Ancião de Dias em Daniel 7:9, pela imagem da cabeça e dos cabelos brancos como lã. Os olhos como chama (<i>φλὸξ πυρός</i>) indicam um olhar que penetra. A repetição do branco («lã branca, como neve») é do original e a tradução a conserva.</p>"
+   },
+   {
+    "verse": 15,
+    "text": "os pés semelhantes a bronze aquecido numa fornalha, e a voz como o som de muitas águas;",
+    "commentary": "<p><i>Χαλκολίβανον</i> (<i>chalkolibanon</i>) é uma liga de bronze cujo sentido exato não se conhece com certeza; a tradução diz só «bronze», para não fingir precisão. O particípio <i>πεπυρωμένης</i> (<i>pepyrōmenēs</i>), «aquecido», descreve o metal posto ao fogo numa fornalha, e a imagem é de brilho e pureza. A voz como «som de muitas águas» é imagem de Ezequiel 1:24.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:15: a base lê «<i>πεπυρωμένης</i>» (genitivo, que concorda com «<i>καμίνῳ</i>»), com WH, Treg e NA28; RP lê «<i>πεπυρωμένοι</i>» (nominativo plural). Na colação, KJTR, ST e Scrivener seguem RP. A diferença é gramatical e não muda a imagem; a tradução segue a base.</p>"
+   },
+   {
+    "verse": 16,
+    "text": "Tinha na mão direita sete estrelas; e da boca saía uma espada afiada, de dois gumes; e o seu rosto era como o sol quando brilha com toda a sua força.",
+    "commentary": "<p><i>Ῥομφαία δίστομος</i> (<i>rhomphaia distomos</i>) é uma espada longa, de dois gumes, diferente da <i>μάχαιρα</i> de uso comum; a tradução diz «espada» e mantém «de dois gumes». O sol que brilha «com toda a sua força» traduz <i>ἐν τῇ δυνάμει αὐτοῦ</i>, literalmente «na sua força». As sete estrelas são explicadas em 1:20.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:16: a base lê «<i>ἐν τῇ δεξιᾷ χειρὶ αὐτοῦ</i>» («na mão direita dele»), com WH, Treg e NA28; RP lê «<i>ἐν τῇ δεξιᾷ αὐτοῦ χειρὶ</i>», com as mesmas palavras em outra ordem. A diferença é só de ordem, e a tradução segue a base.</p>"
+   },
+   {
+    "verse": 17,
+    "text": "Quando o vi, caí aos pés dele como morto. Ele pôs sobre mim a mão direita e disse: «Não tenhas medo. Eu sou o primeiro e o último,",
+    "commentary": "<p>A reação de João, a queda como morto, pertence ao tipo de encontro com Deus que a Escritura conhece. A ordem <i>Μὴ φοβοῦ</i> (<i>mē phobou</i>) é «não tenhas medo», na segunda pessoa do singular, como o resto do diálogo com João. A tradução mantém «tu» aqui e em 1:19.</p>"
+   },
+   {
+    "verse": 18,
+    "text": "e o que vive. Eu estive morto, mas eis que estou vivo para todo o sempre, e tenho as chaves da morte e do Hades.»",
+    "commentary": "<p>A autodescrição <i>ὁ ζῶν</i> (<i>ho zōn</i>, «o que vive») é a fórmula do Deus vivo. Os verbos <i>ἐγενόμην νεκρός</i> (<i>egenomēn nekros</i>, «estive morto») e <i>ζῶν εἰμι</i> («estou vivo») fazem o contraste entre a morte e a vida. As <i>κλεῖς</i> (chaves) são o poder de abrir e fechar. <i>ᾅδης</i> (<i>hadēs</i>) é o lugar dos mortos, sem o sentido de inferno do uso moderno. A tradução segue a ordem da base: «morte e Hades».</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:18: a base não tem «<i>ἀμήν</i>» depois de «<i>τῶν αἰώνων</i>»; WH, Treg e NA28 seguem a base, e RP acrescenta «<i>ἀμήν</i>». Na colação, KJTR, ST e Scrivener leem «<i>τοῦ ᾅδου καὶ τοῦ θανάτου</i>» («do Hades e da morte»), na ordem inversa, que a KJV traduz («hell and of death»). A base mantém a ordem da morte antes do Hades, e a tradução segue-a.</p>"
+   },
+   {
+    "verse": 19,
+    "text": "Escreve, portanto, o que viste, o que é e o que vai acontecer depois destas coisas.",
+    "commentary": "<p><i>Γράψον οὖν</i> (<i>grapson oun</i>) é a ordem que organiza o livro: escrever o que foi visto, o que é e o que deve acontecer. A tradução diz «o que é» para <i>ἃ εἰσὶν</i>, as coisas presentes, e «o que vai acontecer» para <i>ἃ μέλλει γίνεσθαι</i>, que não dá data. A divisão em passado, presente e futuro é a leitura mais comum, mas o texto não a impõe.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:19: a base lê «<i>γίνεσθαι</i>» («acontecer»), com WH, Treg e RP; NA28 lê «<i>γενέσθαι</i>», forma de aoristo. Na colação, KJTR e Scrivener omitem «<i>οὖν</i>» («portanto»). A tradução segue a base e mantém «portanto».</p>"
+   },
+   {
+    "verse": 20,
+    "text": "O mistério das sete estrelas que viste na minha mão direita e dos sete candelabros de ouro: as sete estrelas são os anjos das sete igrejas, e os candelabros são as sete igrejas.",
+    "commentary": "<p><i>Τὸ μυστήριον</i> (<i>to mystērion</i>) não é um segredo a decifrar sozinho: é o sentido oculto que a visão revela, e a tradução mantém «mistério». <i>Ἄγγελοι</i> (<i>angeloi</i>) são «anjos», e a palavra pode também significar «mensageiros»; o texto não decide entre as duas leituras, e a tradução usa «anjos», que é o uso mais corrente. As igrejas são as <i>λυχνίαι</i>, candelabros, e as estrelas são <i>ἀστέρες</i>, o que liga a visão às igrejas.</p><p><b>Crítica Textual:</b> Aparato de edições SBLGNT, 1:20: a base lê «<i>οὓς</i>» («que»), com WH, Treg e NA28; RP lê «<i>ὧν</i>», forma de genitivo. A diferença é de caso gramatical e não muda a identificação das estrelas; a tradução segue a base.</p>"
+   }
+  ]
+ },
+ "in_progress": {},
+ "history": [
+  {
+   "chapter": 1,
+   "verse_from": 1,
+   "verse_to": 20,
+   "provider": "agente",
+   "model": "redação a partir do SBLGNT e da colação docs/colacao/Apocalipse.json",
+   "generated_at_utc": "2026-11-27T23:58:00+00:00"
+  }
+ ],
+ "sources": {
+  "versification": "KJV/tradicional",
+  "alignment_version": 1,
+  "sblgnt_commit": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+  "textus_receptus_commit": "6049a43b135ed870f843b83eb6a04764fc796678",
+  "cntr_transcriptions_commit": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+  "collation_report": "docs/colacao/Apocalipse.json"
+ },
+ "bibliography": [
+  {
+   "name": "SBLGNT — The Greek New Testament, SBL Edition",
+   "revision": "d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+   "url": "https://github.com/Faithlife/SBLGNT",
+   "text_url": "https://codeload.github.com/Faithlife/SBLGNT/zip/d7f35adca9ec410e1d1499c63b4dd989d76c8d4d",
+   "license": "CC BY 4.0",
+   "attribution": "Base fixada do projeto. O aparato nomeia apenas edições (WH, Treg, NA28, RP), nunca códices: as afirmações sobre manuscritos vêm da colação CNTR.",
+   "papel": "base"
+  },
+  {
+   "name": "Textus Receptus — edição de Scrivener (Robinson)",
+   "revision": "6049a43b135ed870f843b83eb6a04764fc796678",
+   "url": "https://github.com/byztxt/greektext-scrivener",
+   "text_url": "https://codeload.github.com/byztxt/greektext-scrivener/zip/6049a43b135ed870f843b83eb6a04764fc796678",
+   "license": "domínio público segundo o fornecedor",
+   "attribution": "Comparação, não base. «O Textus Receptus» não é um texto único: esta edição difere de RP e do KJTR.",
+   "papel": "comparação"
+  },
+  {
+   "name": "CNTR Transcriptions (Center for New Testament Restoration)",
+   "revision": "4e743a41a4b2ca010ece53229cd272aa59b1efe6",
+   "url": "https://github.com/Center-for-New-Testament-Restoration/transcriptions",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Alan Bunning / Center for New Testament Restoration. Testemunhas de Apocalipse consultadas: 01, 0169, 02, 0207, 0308, 0326, 04, P115, P18, P24, P47, P85, P98; textos críticos: KJTR, RP, SR, ST, WH. Custódia: o acervo vive em .bee-cache/ (excluída pelo .gitignore) — é consultado e citado, nunca redistribuído; só o relatório de colação é versionado.",
+   "papel": "testemunhas e textos críticos"
+  },
+  {
+   "name": "Relatório de colação de Apocalipse (obra do projeto)",
+   "url": "docs/colacao/Apocalipse.json",
+   "attribution": "Gerado por scripts/colar.py com bee/manuscritos.py. É a evidência verificável de cada afirmação sobre manuscritos destas notas: uma linha do relatório por testemunha citada. O protocolo está em docs/CRITICA_TEXTUAL.md.",
+   "papel": "evidência"
+  }
+ ],
+ "review": {
+  "editorial_blocks": [
+   {
+    "chapter": 1,
+    "verse_from": 1,
+    "verse_to": 20,
+    "status": "rascunho",
+    "nota": "Rascunho redigido pelo agente a partir do SBLGNT e da colação docs/colacao/Apocalipse.json. Não aprovado. Passagens que pedem decisão do responsável: 1:1 «servos» (base) e não «santos» (01); 1:3 «feliz» como escolha de tradução; 1:6 «reino» (base) e não «reis» (KJTR, ST, Scrivener); 1:10 «no Espírito» com maiúscula; 1:11 e 1:17 «tu» para João, com «vocês» reservado às igrejas."
+   }
+  ],
+  "specialist": [
+   {
+    "chapter": 1,
+    "verse_from": 1,
+    "verse_to": 20,
+    "status": "pendente",
+    "nota": "Revisão especializada pendente, a cargo de especialista externo (hebraísta, grecista, crítico textual ou teólogo)."
+   }
+  ],
+  "ministerio": {
+   "status": "pendente",
+   "ministerio": "Martinho S. S. Madureira Ministries",
+   "nota": "Revisão do ministério pendente."
+  }
+ }
+}
