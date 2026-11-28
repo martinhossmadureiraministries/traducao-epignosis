@@ -43,7 +43,7 @@ escolhido, com compilação para os módulos MyBible `BEE.SQLite3` e
   `python3 gerar_bee.py --compilar --dados edicoes/nova/livros_json --saida exportacao`.
   A pasta `exportacao/` não se versiona: está excluída só no clone local (`.git/info/exclude`), não no `.gitignore`, para que os ficheiros não se percam entre sessões. Num clone novo, gerar de novo a partir dos JSON.
 - Marcas de estilo de Almeida na edição nova (medição, não correção): `python3 scripts/auditar_marcas_arc.py --saida docs/revisao/MARCAS_ARC.md`.
-- Estado atual: 30 livros na edição nova (20 do Novo Testamento e 10 do Antigo), 157 capítulos e 3533 versículos guardados. Aprovados editorialmente: 30. Aprovados pelo ministério: 30. Revisão especializada pendente nos 30. Faltam 7 livros do Novo Testamento (ver `docs/ESTADO.md`).
+- Estado atual: 31 livros na edição nova (21 do Novo Testamento e 10 do Antigo), 158 capítulos e 3553 versículos guardados. Aprovados editorialmente: 30 (Apocalipse está em rascunho, capítulo 1). Aprovados pelo ministério: 30. Revisão especializada pendente nos 31. Faltam 6 livros do Novo Testamento (ver `docs/ESTADO.md`).
   (`verificar_documentacao.py`), dos 1.189 capítulos e 31.102 versículos do cânone.
 
 ## Testes
